@@ -961,6 +961,20 @@ object {
   }
 }
 
+.nhsuk-panel-with-label {
+  .nhsuk-panel-with-label__label {
+    a, a:visited {
+      color: #ffffff;
+    }
+  }
+
+  .entry-footer {
+    span {
+      padding: 0 10px;
+    }
+  }
+}
+
 //end image extending
 //style default button as secondary button
 .wp-block-button {

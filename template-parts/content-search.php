@@ -10,26 +10,32 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+    <div class="nhsuk-panel-with-label">
 
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			nightingale_2_0_posted_on();
-			nightingale_2_0_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+        <?php the_title(sprintf('<h3 class="nhsuk-panel-with-label__label"><a href="%s" rel="bookmark">', esc_url(get_permalink())
+        ), '</a></h3>'); ?>
+        <?php if ('post' === get_post_type()) : ?>
+            <div class="entry-meta">
+                <?php
+                nightingale_2_0_posted_on();
+                nightingale_2_0_posted_by();
+                ?>
+            </div><!-- .entry-meta -->
+        <?php endif; ?>
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+                <?php nightingale_2_0_post_thumbnail(); ?>
+            </div>
+            <div class="nhsuk-grid-column-two-thirds">
 
-	<?php nightingale_2_0_post_thumbnail(); ?>
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+                <div class="entry-summary">
+                    <?php the_excerpt(); ?>
+                </div><!-- .entry-summary -->
+                <footer class="entry-footer">
+                    <?php nightingale_2_0_entry_footer(); ?>
+                </footer><!-- .entry-footer -->
+            </div>
 
-	<footer class="entry-footer">
-		<?php nightingale_2_0_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        </div>
 </article><!-- #post-<?php the_ID(); ?> -->
