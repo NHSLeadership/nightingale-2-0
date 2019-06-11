@@ -292,7 +292,14 @@ function gutenberg_sections_register_acf_color_palette() {
     <?php
 }
 
+/**
+ * Enqueue Gutenberg block editor style
+ */
+function nhsl_gutenberg_editor_styles() {
+    wp_enqueue_style( 'nhsl-block-editor-styles', get_theme_file_uri( '/style-gutenburg.css' ), false, '1.0', 'all' );
+}
 
+add_action( 'enqueue_block_editor_assets', 'nhsl_gutenberg_editor_styles' );
 
 /**
  * Implement the Custom Header feature.

@@ -42,6 +42,8 @@ test.html
 node_modules/
 style.css
 style.min.css
+style-gutenburg.css
+style-gutenburg.min.css
 .sass-cache/
 
 # Docker stuff

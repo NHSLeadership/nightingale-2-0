@@ -16,10 +16,14 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-    <script src="node_modules/nhsuk-frontend/dist/nhsuk.min.js" defer></script>
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/node_modules/nhsuk-frontend/dist/nhsuk.min.js"
+            defer></script>
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/js/tabs.js" defer></script>
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-    <link rel="apple-touch-icon" href="node_modules/nhsuk-frontend/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" href="node_modules/nhsuk-frontend/assets/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="<?php echo get_bloginfo('template_directory');
+    ?>/node_modules/nhsuk-frontend/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" href="<?php echo get_bloginfo('template_directory');
+    ?>/node_modules/nhsuk-frontend/assets/favicons/favicon.png">
 
 	<?php wp_head(); ?>
 </head>
@@ -116,3 +120,31 @@
 
 	<div id="content" class="site-content">
         <?php nightingale_breadcrumb() ?>
+
+        <?php // add in hero image section
+        /* Removed old way of doing hero image
+if ( is_singular() and has_post_thumbnail( $post->ID ))
+    {
+        $featured_id = get_the_post_thumbnail('full');
+echo '<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description" style="background-image: url(\''
+. get_the_post_thumbnail_url() . '\');">
+<div class="nhsuk-hero__overlay">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-hero-content">
+          <h1 class="nhsuk-u-margin-bottom-3">'.get_the_title($featured_id).'</h1>
+          <p class="nhsuk-body-l nhsuk-u-margin-bottom-0">'.get_the_post_thumbnail_caption($featured_id).'</p>
+          <span class="nhsuk-hero__arrow" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section><p></p>';
+    }
+        */
+        include_once('wp-content/plugins/nhsl-blocks/blocks/content-hero.php');
+    //end hero image section
+
+?>

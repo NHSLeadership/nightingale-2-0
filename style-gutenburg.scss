@@ -1,0 +1,19 @@
+.edit-post-visual-editor { // target only the editor itself
+  background-color: #f0f4f5;
+
+  .block-editor-block-list__block {
+    font-family: 'Frutiger W01', 'Helvetica', 'Arial', 'Sans-serif';
+    font-size: 16px;
+    .nhsuk-care-card__heading{
+      span {
+        font-size: 24px;
+        color: #ffffff;
+      }
+    }
+  }
+  @import 'style.scss';
+  .editor-post-title__input {
+    font-family: 'Frutiger W01', 'Helvetica', 'Arial', 'Sans-serif';
+    @extend h1;
+  }
+}

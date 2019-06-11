@@ -941,62 +941,11 @@ object {
   text-align: center;
 }
 
-/*--------------------------------------------------------------
-## Galleries
---------------------------------------------------------------*/
-.gallery {
-  margin-bottom: 1.5em;
-}
-
-.gallery-item {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-  max-width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-  max-width: 33.33%;
-}
-
-.gallery-columns-4 .gallery-item {
-  max-width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-  max-width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-  max-width: 16.66%;
-}
-
-.gallery-columns-7 .gallery-item {
-  max-width: 14.28%;
-}
-
-.gallery-columns-8 .gallery-item {
-  max-width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-  max-width: 11.11%;
-}
-
-.gallery-caption {
-  display: block;
-}
 
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
 // Core (required)
 @import 'node_modules/nhsuk-frontend/packages/core/all';
 
-// Individual component (optional)
-@import 'node_modules/nhsuk-frontend/packages/components/action-link/action-link';
 
 //extend the native image class
 .wp-block-image {
@@ -1107,4 +1056,23 @@ object {
       }
     }
   }
+}
+
+// promo box tweak
+.nhsuk-promo {
+  img.nhsuk-promo__img {
+    padding: 10px;
+  }
+}
+
+//reversed quote tweak
+.nhsuk-inset-text--rev {
+  background: #005EB8;
+  border: 10px solid #005EB8;
+  box-shadow: inset 12px 0px 0px 0px #ffffff;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #ffffff;
+  width: 100%;
 }
