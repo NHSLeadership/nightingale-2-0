@@ -964,7 +964,7 @@ object {
 .nhsuk-panel-with-label {
   .nhsuk-panel-with-label__label {
     a, a:visited {
-      color: #ffffff;
+      color: $color_nhsuk-white;
     }
   }
 
@@ -989,14 +989,14 @@ object {
 .rd {
   * {
     box-sizing: border-box;
-    font-family: "Frutiger W01";
+    font-family: $nhsuk-font, $nhsuk-font-fallback;
   }
 
 
   .nhsuk-global-footer {
-    background-color: #005EB8;
+    background-color: $color_nhsuk-blue;
     width: 100%;
-    color: #FFFFFF;
+    color: $color_nhsuk-white;
     display: flex;
 
     ul {
@@ -1022,7 +1022,7 @@ object {
 
       li {
         display: inline-block;
-        font-size: 17px;
+        font-size: $nhsuk-base-font-size;
         padding-right: 25px;
 
 
@@ -1031,13 +1031,13 @@ object {
     }
 
     p {
-      color: #ffffff;
+      color: $color_nhsuk-white;
     }
   }
 }
 
 .nhsuk-footer__list-item-link {
-  color: #ffffff !important;
+  color: $color_nhsuk-white !important;
 }
 
 //end footer styling segment
@@ -1045,31 +1045,39 @@ object {
 //style out any widgets in the right hand column
 #secondary {
   section {
+
+    @extend .nhsuk-panel-with-label;
+    background: $color_nhsuk-white;
+    margin-top: 32px;
+
     h2.widget-title {
-      @extend .nhsuk-list-panel__label;
+      @extend .nhsuk-panel-with-label__label;
     }
 
     div {
-      @extend .nhsuk-list-panel__box--with-label;
-      background: #ffffff;
 
       p {
         @extend .nhsuk-list-panel--results-items__no-results;
       }
+    }
 
-      ul {
-        @extend .nhsuk-list-panel__list;
+    ul {
+      @extend .nhsuk-list-panel__list;
 
-        li {
-          @extend .nhsuk-list-panel__item;
+      li {
+        @extend .nhsuk-list-panel__item;
 
-          a {
-            @extend .nhsuk-list-panel__link;
-          }
+        a {
+          @extend .nhsuk-list-panel__link;
         }
       }
     }
   }
+}
+
+//when button is a link, something goes wonky
+.nhsuk-button--reverse:visited {
+  color: #212b32;
 }
 
 // promo box tweak
@@ -1081,12 +1089,157 @@ object {
 
 //reversed quote tweak
 .nhsuk-inset-text--rev {
-  background: #005EB8;
-  border: 10px solid #005EB8;
-  box-shadow: inset 12px 0px 0px 0px #ffffff;
+  background: $color_nhsuk-blue;
+  border: 10px solid $color_nhsuk-blue;
+  box-shadow: inset 12px 0px 0px 0px $color_nhsuk-white;
   box-sizing: border-box;
   padding-left: 30px;
   margin: 1rem 0;
-  color: #ffffff;
+  color: $color_nhsuk-white;
   width: 100%;
+}
+
+$color_nhsuk-dark-blue: #003087;
+$color_nhsuk-bright-blue: #0072ce;
+$color_nhsuk-light-blue: #41b6e6;
+$color_nhsuk-mid-grey: #768692;
+$color_nhsuk-light-grey: e8edee;
+$color_nhsuk-dark-grey: #425563;
+$color_nhsuk-pink: #ae2573;
+$color_nhsuk-light-purple: #704c9c;
+$color_nhsuk-light-green: #78be20;
+$color_nhsuk-dark-green: #006747;
+$color_nhsuk-emergency-red: #da291c;
+
+// colour palette settings to pull through
+.has-white-color {
+  color: $color_nhsuk-white;
+}
+
+.has-nhs-dark-blue-color {
+  color: $color_nhsuk-dark-blue;
+}
+
+.has-nhs-bright-blue-color {
+  color: $color_nhsuk-bright-blue;
+}
+
+.has-nhs-light-blue-color {
+  color: $color_nhsuk-light-blue;
+}
+
+.has-nhs-mid-grey-color {
+  color: $color_nhsuk-mid-grey;
+}
+
+.has-nhs-light-grey-color {
+  color: $color_nhsuk-light-grey;
+}
+
+.has-nhs-dark-grey-color {
+  color: $color_nhsuk-dark-grey;
+}
+
+.has-nhs-purple-color {
+  color: $color_nhsuk-purple;
+}
+
+.has-nhs-pink-color {
+  color: $color_nhsuk-pink;
+}
+
+.has-nhs-light-purple-color {
+  color: $color_nhsuk-light-purple;
+}
+
+.has-nhs-light-green-color {
+  color: $color_nhsuk-light-green;
+}
+
+.has-nhs-dark-green-color {
+  color: $color_nhsuk-dark-green;
+}
+
+.has-nhs-aqua-green-color {
+  color: $color_nhsuk-aqua-green;
+}
+
+.has-nhs-black-color {
+  color: $color_nhsuk-black;
+}
+
+.has-emergency-red-color {
+  color: $color_nhsuk-red;
+}
+
+.has-nhs-yellow-color {
+  color: $color_nhsuk-yellow;
+}
+
+.has-nhs-warm-yellow-color {
+  color: $color_nhsuk-warm-yellow
+}
+
+.has-white-background-color {
+  background-color: $color_nhsuk-white;
+}
+
+.has-nhs-dark-blue-background-color {
+  background-color: $color_nhsuk-dark-blue;
+}
+
+.has-nhs-bright-blue-background-color {
+  background-color: $color_nhsuk-bright-blue;
+}
+
+.has-nhs-light-blue-background-color {
+  background-color: $color_nhsuk-light-blue;
+}
+
+.has-nhs-mid-grey-background-color {
+  background-color: $color_nhsuk-mid-grey;
+}
+
+.has-nhs-light-grey-background-color {
+  background-color: $color_nhsuk-light-grey;
+}
+
+.has-nhs-dark-grey-background-color {
+  background-color: $color_nhsuk-dark-grey;
+}
+
+.has-nhs-purple-background-color {
+  background-color: $color_nhsuk-purple;
+}
+
+.has-nhs-pink-background-color {
+  background-color: $color_nhsuk-pink;
+}
+
+.has-nhs-light-purple-background-color {
+  background-color: $color_nhsuk-light-purple;
+}
+
+.has-nhs-light-green-background-color {
+  background-color: $color_nhsuk-light-green;
+}
+
+.has-nhs-dark-green-background-color {
+  background-color: $color_nhsuk-dark-green;
+}
+
+.has-nhs-black-background-color {
+  background-color: $color_nhsuk-black;
+}
+
+.has-emergency-red-background-color {
+  background-color: $color_nhsuk-red;
+}
+
+.has-nhs-yellow-background-color {
+  background-color: $color_nhsuk-yellow;
+}
+
+.has-nhs-warm-yellow-background-color {
+  background-color: $color_nhsuk-warm-yellow
 }
