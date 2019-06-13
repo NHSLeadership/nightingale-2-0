@@ -22,6 +22,7 @@ function nightingale_2_0_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+    $classes[] = nightingale_2_0_get_header_style();
 	return $classes;
 }
 add_filter( 'body_class', 'nightingale_2_0_body_classes' );
@@ -35,3 +36,20 @@ function nightingale_2_0_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'nightingale_2_0_pingback_header' );
+
+if( ! function_exists( 'nightingale_2_0_get_header_style' ) ) {
+    function nightingale_2_0_get_header_style() {
+
+        $themeoptions_header_style = esc_attr(get_theme_mod( 'theme-header-style', 'default' ));
+
+        if ( $themeoptions_header_style == 'default' ) {
+            $default_position = 'page-header-default';
+        } elseif ( $themeoptions_header_style == 'centered' ) {
+            $default_position = 'page-header-white';
+        }
+
+        return $default_position;
+    }
+}
+
+

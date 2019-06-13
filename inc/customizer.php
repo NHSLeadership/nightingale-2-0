@@ -10,6 +10,8 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
+
+
 function nightingale_2_0_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
@@ -25,6 +27,32 @@ function nightingale_2_0_customize_register( $wp_customize ) {
 			'render_callback' => 'nightingale_2_0_customize_partial_blogdescription',
 		) );
 	}
+    /**
+    ------------------------------------------------------------
+    SECTION: Header
+    ------------------------------------------------------------
+     **/
+    $wp_customize->add_section('section_header', array(
+        'title'          => esc_html__('Header', 'nightingale_2_0'),
+        'description'    => esc_attr__( 'Choose a Header Style', 'nightingale_2_0' ),
+        'priority'       => 1,
+    ));
+
+    /**
+    Header Styles
+     **/
+    $wp_customize->add_setting( 'header_styles', array(
+        'default'    => 'normal',
+    ));
+    $wp_customize->add_control( 'header_styles', array(
+        'label'      => esc_html__( 'Header Styles', 'nightingale_2_0' ),
+        'section'    => 'section_header',
+        'type'       => 'radio',
+        'choices'    => array(
+            'normal'    => esc_html__('Standard (Solid Blue)', 'nightingale_2_0'),
+            'inverted'    => esc_html__('Non Standard (White Logo Bar)', 'nightingale_2_0'),
+        ),
+    ));
 }
 add_action( 'customize_register', 'nightingale_2_0_customize_register' );
 

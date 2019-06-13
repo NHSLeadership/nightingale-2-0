@@ -984,6 +984,20 @@ object {
   }
 }
 
+.nhsuk-header--transactional {
+  .nhsuk-inverted-header {
+    background: $color_nhsuk-white;
+    color: $color_nhsuk-black;
+
+    .nhsuk_header__logo {
+      padding: 0 0 10px 0;
+
+    }
+    .nhsuk-header__link {
+      height: 0;
+    }
+  }
+}
 
 //style the footer
 .rd {
@@ -1019,6 +1033,7 @@ object {
         }
       }
     }
+
     .nhsuk-footer__copyright {
       width: auto;
     }
