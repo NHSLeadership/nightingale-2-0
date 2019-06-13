@@ -3,7 +3,7 @@
 ### This is in a pre-release version. Do not use on production sites
 
 ## Dependancies
- - This theme requires an active WordPress install
+ - This theme requires an active WordPress install of *version 5 or higher*
  - This theme works best with the [NHSL-Blocks plugin](https://github.com/NHSLeadership/nhsl-wp-blocks)
  - You will need to either be able to run node, or to run node locally to build the scss files then upload
  - This theme will pull in the NHS Frontend Library via node commands
@@ -41,7 +41,7 @@
  - [ ] Forms elements
  - [ ] Add Gravity Forms compatability
  - [ ] Composer build (including auto load NHSL Blocks plugin)
- - [ ] Dependancy hint to suggest or force plugin dependancy load (for non-composer install)
+ - [x] Dependancy hint to suggest or force plugin dependancy load (for non-composer install)
  - [ ] Widgetize footer region
  - [ ] Alternative navigation aid to Tabs
  - [ ] Device checks (mobile, tablet, TV etc)
