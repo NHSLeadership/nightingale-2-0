@@ -999,39 +999,28 @@ object {
     color: $color_nhsuk-white;
     display: flex;
 
-    ul {
-      border-bottom: none;
-      list-style-type: none;
-      margin: 0;
-      padding: 25px 0;
-
-      .nhsuk-global-footer__logo {
-        border: 0;
-        height: 40px;
-        max-width: 100px;
-        vertical-align: middle;
-        width: 99px;
-        float: left;
-        margin-right: 30px;
-
-        .nhsuk-logo {
-          max-height: 40px;
-          max-width: 100px;
-        }
-      }
-
-      li {
-        display: inline-block;
-        font-size: $nhsuk-base-font-size;
-        padding-right: 25px;
-
-
-      }
-
-    }
-
     p {
       color: $color_nhsuk-white;
+    }
+
+    .menu-footer-links-container {
+      float: left;
+
+      .menu {
+        li {
+          @extend .nhsuk-footer__list-item;
+          display: inline-block;
+          font-size: $nhsuk-base-font-size;
+          padding-right: 25px;
+
+          a {
+            @extend .nhsuk-footer__list-item-link;
+          }
+        }
+      }
+    }
+    .nhsuk-footer__copyright {
+      width: auto;
     }
   }
 }

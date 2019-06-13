@@ -47,7 +47,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
             register_nav_menus(
                 array(
                     'main-menu' => __( 'Main Menu' ),
-                    'footer-menu' => __( 'Extra Menu' )
+                    'footer-menu' => __( 'Footer Links' )
                 )
             );
         }
