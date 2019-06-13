@@ -20,7 +20,7 @@
  - [x] Load in the NHS Frontend library
  - [x] Style header, amend markup to match expected output
  - [x] Provide zone for WordPress controlled menu
- - [ ] Provide alternative header for NHS Organisations with white logo including title
+ - [x] Provide alternative header for NHS Organisations with white logo including title
  - [x] Add Hero banner (via NHSL Blocks plugin)
  - [x] Style sidebar to match contents list styling
  - [ ] Pagination styling
