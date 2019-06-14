@@ -16,7 +16,7 @@
  output css before uploading
  - Activate the theme 
  - email tony.blacker@leadershipacademy for the ACF Pro license key, and you will need to install this manually
- - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins.
+ - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins. *Install and enable ACF Pro before the blocks plugin to ensure full functionality*
  
 ## Progress
  - [x] Load in the NHS Frontend library
