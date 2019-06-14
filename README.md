@@ -4,7 +4,7 @@
 
 ## Dependancies
  - This theme requires an active WordPress install of *version 5 or higher*
- - This theme works best with the [NHSL-Blocks plugin](https://github.com/NHSLeadership/nhsl-wp-blocks)
+ - This theme works best with the [NHSL-Blocks plugin](https://github.com/NHSLeadership/nhsl-wp-blocks) and the [Advanced Custom Fields Pro plugin](https://www.advancedcustomfields.com/pro/) - generously they have given us an NHS wide license key
  - You will need to either be able to run node, or to run node locally to build the scss files then upload
  - This theme will pull in the NHS Frontend Library via node commands
  
@@ -15,12 +15,14 @@
  - If you dont have command line access to your server, you will need to run these commands locally to generate the 
  output css before uploading
  - Activate the theme 
+ - email tony.blacker@leadershipacademy for the ACF Pro license key
+ - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins.
  
 ## Progress
  - [x] Load in the NHS Frontend library
  - [x] Style header, amend markup to match expected output
  - [x] Provide zone for WordPress controlled menu
- - [ ] Provide alternative header for NHS Organisations with white logo including title
+ - [x] Provide alternative header for NHS Organisations with white logo including title
  - [x] Add Hero banner (via NHSL Blocks plugin)
  - [x] Style sidebar to match contents list styling
  - [ ] Pagination styling
