@@ -15,7 +15,7 @@
  - If you dont have command line access to your server, you will need to run these commands locally to generate the 
  output css before uploading
  - Activate the theme 
- - email tony.blacker@leadershipacademy for the ACF Pro license key
+ - email tony.blacker@leadershipacademy for the ACF Pro license key, and you will need to install this manually
  - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins.
  
 ## Progress

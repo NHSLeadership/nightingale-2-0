@@ -319,7 +319,8 @@ function nightingale_2_0_register_required_plugins() {
             'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
         ),
 
-        // This is an example of how to include a plugin from an arbitrary external source in your theme.
+        /* temporarily removed this block so we can open up the repo
+            // This is an example of how to include a plugin from an arbitrary external source in your theme.
         array(
             'name'         => 'Advanced Custom Fields PRO', // The plugin name.
             'slug'         => 'advanced-custom-fields-pro', // The plugin slug (typically the folder name).
@@ -332,6 +333,7 @@ function nightingale_2_0_register_required_plugins() {
             'external_url'       => '', // If set, overrides default API URL and points to an external URL.
             'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
         ),
+        */
 
     );
 
@@ -404,4 +406,3 @@ require get_template_directory() . '/inc/breadcrumbs.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

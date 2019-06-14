@@ -38,7 +38,7 @@ get_header();
 
 			endwhile;
 
-			the_posts_pagination();
+            nightingale_pagination();
 
 		else :
 
