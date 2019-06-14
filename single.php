@@ -10,8 +10,11 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+    <div id="primary" class="nhsuk-width-container">
+        <main id="maincontent" class="nhsuk-main-wrapper">
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid__item nhsuk-grid-column-two-thirds">
+                    <div class="nhsuk-grid-row">
 
 		<?php
 		while ( have_posts() ) :
@@ -29,8 +32,10 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+                    </div>
+                </div>
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
 <?php
 get_sidebar();

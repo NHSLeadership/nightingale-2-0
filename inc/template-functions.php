@@ -51,5 +51,3 @@ if( ! function_exists( 'nightingale_2_0_get_header_style' ) ) {
         return $default_position;
     }
 }
-
-

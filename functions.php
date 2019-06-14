@@ -389,6 +389,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/walker-menu.php';
 
 /**
+ * Pagination
+ */
+require get_template_directory() . '/inc/pagination.php';
+
+/**
  * Breadcrumb element.
  */
 require get_template_directory() . '/inc/breadcrumbs.php';
