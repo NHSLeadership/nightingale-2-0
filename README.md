@@ -25,7 +25,7 @@
  - [x] Provide alternative header for NHS Organisations with white logo including title
  - [x] Add Hero banner (via NHSL Blocks plugin)
  - [x] Style sidebar to match contents list styling
- - [ ] Pagination styling
+ - [x] Pagination styling
  - [x] Footer styling and WordPress menu inclusion
  - [x] Re-style core images output
  - [x] Re-style core buttons output
