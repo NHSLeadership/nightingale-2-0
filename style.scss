@@ -1129,6 +1129,28 @@ object {
   width: 100%;
 }
 
+//pagination fix
+.nhsuk-pagination-item {
+  float: left;
+  padding: 0 20px;
+  .nhsuk-pagination__link {
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0px 10px;
+  }
+  .current {
+    font-size: 1.5rem;
+    color: $color_nhsuk-white;
+    background: $color_nhsuk-blue;
+    border-radius: 50%;
+    padding: 5px 10px;
+  }
+}
+
+.nhsuk-pagination-item--previous, .nhsuk-pagination-item--next {
+  width: auto;
+}
+
 $color_nhsuk-dark-blue: #003087;
 $color_nhsuk-bright-blue: #0072ce;
 $color_nhsuk-light-blue: #41b6e6;
