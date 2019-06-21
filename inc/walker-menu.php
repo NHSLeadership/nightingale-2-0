@@ -41,8 +41,8 @@ class Walker_Nightingale_Menu extends Walker_Nav_Menu {
 
         // menus without childen (including sub-menus)
         // Display standard menu item
-        $item_output .= '<li class="nhsuk-header__navigation-item"><a aria-atomic="tony" 
-href="' . $item->url . '" class="nhsuk-header__navigation-link" >' . $item->title . '</a></li><!-- .c-nav-primary__item -->';
+        $item_output .= '<li class="nhsuk-header__navigation-item"><a
+href="' . $item->url . '" class="nhsuk-header__navigation-link" >' . $item->title . '</a></li>';
 
         $this->menuID = $item->ID;  // store the menu ID
 
@@ -54,7 +54,7 @@ href="' . $item->url . '" class="nhsuk-header__navigation-link" >' . $item->titl
       // end element output
       if( $depth == 0 && $args->walker->has_children ) {
         // parent-menus
-        $output .= '</li><!-- .c-nav-primary__item -->';
+        $output .= '</li>';
       }
     }
 
