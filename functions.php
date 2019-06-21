@@ -309,8 +309,8 @@ function nightingale_2_0_register_required_plugins() {
         array(
             'name'               => 'NHS Leadership Academy Blocks for Gutenberg', // The plugin name.
             'slug'               => 'nhsl-blocks', // The plugin slug (typically the folder name).
-            'source'             => get_template_directory() . '/lib/plugins/nhsl-blocks.zip', // The plugin source.
-            'required'           => true, // If false, the plugin is only 'recommended' instead of required.
+            'source'             => 'https://github.com/NHSLeadership/nhsl-wp-blocks/blob/master/nhsl-blocks.ziphttps://github.com/NHSLeadership/nhsl-wp-blocks/blob/master/nhsl-blocks.zip', // The plugin source.
+            'required'           => false, // If false, the plugin is only 'recommended' instead of required.
             'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
             'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be
             // deactivated until theme switch.
@@ -319,21 +319,7 @@ function nightingale_2_0_register_required_plugins() {
             'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
         ),
 
-        /* temporarily removed this block so we can open up the repo
-            // This is an example of how to include a plugin from an arbitrary external source in your theme.
-        array(
-            'name'         => 'Advanced Custom Fields PRO', // The plugin name.
-            'slug'         => 'advanced-custom-fields-pro', // The plugin slug (typically the folder name).
-            'source'       => get_template_directory() . '/lib/plugins/advanced-custom-fields-pro.zip', // The plugin
-            // source.
-            'required'     => true, // If false, the plugin is only 'recommended' instead of required.
-            'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be
-            // deactivated until theme switch.
-            'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-            'external_url'       => '', // If set, overrides default API URL and points to an external URL.
-            'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
-        ),
-        */
+
 
     );
 
@@ -346,7 +332,9 @@ function nightingale_2_0_register_required_plugins() {
         'menu'         => 'tgmpa-install-plugins', // Menu slug.
         'has_notices'  => true,                    // Show admin notices or not.
         'dismissable'  => false,                    // If false, a user cannot dismiss the nag message.
-        'dismiss_msg'  => 'You must install the required plugins for this theme to function',                      //
+        'dismiss_msg'  => 'We recommend you install this plugin to add the full NHS Frontend library range of components to your wordpress editor. This plugin will only work if you already have ACF Pro installed (if you are an NHS organisation, you can get this for free with an NHS wide license, available by emailing tony.blacker@leadershipacademy.nhs.uk)',
+
+        //
         // If 'dismissable' is false, this message will be output at top of nag.
         'is_automatic' => true,                   // Automatically activate plugins after installation or not.
         'message'      => '',                      // Message to output right before the plugins table.
