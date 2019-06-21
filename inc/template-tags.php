@@ -30,7 +30,7 @@ if ( ! function_exists( 'nightingale_2_0_posted_on' ) ) :
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
-		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+		echo '<p><span class="nhsuk-u-visually-hidden">Posted on: </span>' . $time_string . '</p>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -40,13 +40,9 @@ if ( ! function_exists( 'nightingale_2_0_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function nightingale_2_0_posted_by() {
-		$byline = sprintf(
-			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'nightingale-2-0' ),
-			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-		);
 
-		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+		echo '<p><span class="nhsuk-u-visually-hidden">Posted by: </span><a class="url fn n" 
+ href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></p>'; // WPCS: XSS OK.
 
 	}
 endif;
@@ -62,19 +58,21 @@ if ( ! function_exists( 'nightingale_2_0_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'nightingale-2-0' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'nightingale-2-0' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<p class="cat-links">' . esc_html__( 'Posted in %1$s', 'nightingale-2-0' ) . '</p>',
+                    $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'nightingale-2-0' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'nightingale-2-0' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<p class="tags-links">' . esc_html__( 'Tagged %1$s', 'nightingale-2-0' ) . '</p>',
+                    $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo '<p class="comments-link">';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
@@ -89,14 +87,14 @@ if ( ! function_exists( 'nightingale_2_0_entry_footer' ) ) :
 					get_the_title()
 				)
 			);
-			echo '</span>';
+			echo '</p>';
 		}
 
 		edit_post_link(
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'nightingale-2-0' ),
+					__( 'Edit <p class="screen-reader-text">%s</p>', 'nightingale-2-0' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -105,8 +103,8 @@ if ( ! function_exists( 'nightingale_2_0_entry_footer' ) ) :
 				),
 				get_the_title()
 			),
-			'<span class="edit-link">',
-			'</span>'
+			'<p class="edit-link">',
+			'</p>'
 		);
 	}
 endif;

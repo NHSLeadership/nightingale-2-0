@@ -10,28 +10,30 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="article-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="nhsuk-heading-xl">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="nhsuk-heading-l"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
+            <div class="nhsuk-review-date">
+                <p class="nhsuk-body-s">
 				<?php
+                nightingale_2_0_posted_by();
 				nightingale_2_0_posted_on();
-				nightingale_2_0_posted_by();
 				?>
-			</div><!-- .entry-meta -->
+                </p>
+			</div><!-- .article-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header><!-- .article-header -->
 
 	<?php nightingale_2_0_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<article>
 		<?php
 		the_content( sprintf(
 			wp_kses(
@@ -51,9 +53,17 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
+    </article><!-- .article-content -->
 
-	<footer class="entry-footer">
+	<footer class="article-footer"><details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Meta information
+    </span>
+            </summary>
+            <div class="nhsuk-details__text">
 		<?php nightingale_2_0_entry_footer(); ?>
+            </div>
+        </details>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
