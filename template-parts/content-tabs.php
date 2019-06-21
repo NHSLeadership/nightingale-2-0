@@ -48,7 +48,10 @@ if (!empty($post->post_parent) || !empty(get_children($args))) {
     $link .= get_the_title($post_parent);
     $link .= '</a>';
     $link .= '</li>';
-    // Start unordered list
+    // Create nav panel with parent page as title, then move into
+    // starting the unordered list
+    // Weird code order because needed the parent page title to create the panel, and this is also the first link in
+    // the list so needed to generate then create markup..
     echo '<div class="nhsuk-list-panel nhsuk-grid-column-one-third nhsuk-nav-minisite__menu">';
     echo '<nav class="nhsuk-contents-list" role = "navigation" aria - label = "Pages in this section" >
   <h2 class="nhsuk-list-panel__label" > ' .
