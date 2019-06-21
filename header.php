@@ -27,9 +27,9 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body class="js-enabled">
 
-<div id="page" class="site">
+
     <a class="skip-link screen-reader-text"
        href="#content"><?php esc_html_e('Skip to content', 'nightingale-2-0'); ?></a>
 
@@ -63,7 +63,7 @@
 
     </header>
 
-    <div id="content" class="site-content">
+    <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
         <?php nightingale_breadcrumb() ?>
 
         <?php
