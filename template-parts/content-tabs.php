@@ -21,51 +21,7 @@ $args = array(
     ),
 );
 if (!empty($post->post_parent) || !empty(get_children($args))) {
-    /*
-     * <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-      <h2 class="nhsuk-u-visually-hidden">Contents</h2>
-      <ol class="nhsuk-contents-list__list">
-            <li class="nhsuk-contents-list__item" aria-current="page">
-              <span class="nhsuk-contents-list__current">What is AMD?</span>
-            </li>
-            <li class="nhsuk-contents-list__item">
-              <a class="nhsuk-contents-list__link" href="https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/symptoms/">Symptoms</a>
-            </li>
-            <li class="nhsuk-contents-list__item">
-              <a class="nhsuk-contents-list__link" href="https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/getting-diagnosed/">Getting diagnosed</a>
-            </li>
-            <li class="nhsuk-contents-list__item">
-              <a class="nhsuk-contents-list__link" href="https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/treatment/">Treatments</a>
-            </li>
-            <li class="nhsuk-contents-list__item">
-              <a class="nhsuk-contents-list__link" href="https://www.nhs.uk/conditions/age-related-macular-degeneration-amd/living-with-amd/">Living with AMD</a>
-            </li>
-      </ol>
-    </nav>
 
-    <div class="nhsuk-list-panel">
-  <h2 class="nhsuk-list-panel__label" id="A">A</h2>
-  <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">
-    <li class="nhsuk-list-panel__item">
-      <a class="nhsuk-list-panel__link" href="/conditions/abdominal-aortic-aneurysm/">AAA</a>
-    </li>
-    <li class="nhsuk-list-panel__item">
-      <a class="nhsuk-list-panel__link" href="/conditions/abdominal-aortic-aneurysm/">Abdominal aortic aneurysm</a>
-    </li>
-    <li class="nhsuk-list-panel__item">
-      <a class="nhsuk-list-panel__link" href="/conditions/abscess/">Abscess</a>
-    </li>
-  </ul>
-  <div class="nhsuk-back-to-top">
-    <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
-      <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
-      </svg>
-      Back to top
-    </a>
-  </div>
-</div>
-     */
 
 
     // Start first "Overview" link to parent page
