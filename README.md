@@ -50,3 +50,6 @@
  - [ ] Print layout / styling
  - [ ] Accesibility audit
  
+ ## Licence
+ 
+ The codebase is released under the Open Government 3.0 licence, unless stated otherwise. This covers both the codebase and any sample code in the documentation. The documentation is © Crown copyright and available under the terms of the Open Government 3.0 licence.

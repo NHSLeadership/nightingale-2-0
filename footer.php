@@ -13,33 +13,31 @@
 
 
 </div>
-<div class="rd">
+
     <footer role="contentinfo">
-        <div class="nhsuk-global-footer" id="nhsuk-footer">
-
+        <div class="nhsuk-footer" id="nhsuk-footer">
             <div class="nhsuk-width-container">
-                     <?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
-                    <?php
-                   /* global $post;
-                    $thePostID = $post->ID;
-                    if ($menu = wp_get_nav_menu_object('Footer Links')):
-                        $menu_items = wp_get_nav_menu_items($menu->term_id);
-                        ?>
-                        <?php foreach ((array)$menu_items as $key => $menu_item) { ?>
-                        <li class="nhsuk-footer__list-item<?php if ($thePostID == $menu_item->object_id) echo ' active'; ?>">
-                            <a class="nhsuk-footer__list-item-link"
-                               href="<?php echo $menu_item->url; ?>"><?php echo $menu_item->title; ?></a>
-                        </li>
-                    <?php }
-                    endif;
-                   */
-                   ?>
+                <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+                <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+                     <?php //wp_nav_menu( array( 'theme_location' => 'footer-menu' ) );
+                     $menuLocations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
+                     // This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);
 
+                     $menuID = $menuLocations['footer-menu']; // Get the *footer-menu* menu ID
+                     $footerNav = wp_get_nav_menu_items($menuID); // Get the array of wp objects, the nav items for our
+                     // queried location
+                     foreach ( $footerNav as $navItem ) {
+
+                         echo '<li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="'
+                             .$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+
+                     }
+                     ?>
+                </ul>
                 <p class="nhsuk-footer__copyright">&copy; Copyright, <?php bloginfo('name'); ?> <?php echo date("Y"); ?></p>
             </div>
         </div>
     </footer>
-</div>
 
 <?php wp_footer(); ?>
 </div>
