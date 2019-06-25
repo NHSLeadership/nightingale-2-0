@@ -63,7 +63,7 @@
 
     </header>
 
-    <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
+    <div id="content" class="nhsuk-width-container--full">
         <?php nightingale_breadcrumb() ?>
 
         <?php
