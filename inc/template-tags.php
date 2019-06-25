@@ -30,7 +30,7 @@ if ( ! function_exists( 'nightingale_2_0_posted_on' ) ) :
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
-		echo '<p><span class="nhsuk-u-visually-hidden">Posted on: </span>' . $time_string . '</p>'; // WPCS: XSS OK.
+		echo '<span class="nhsuk-u-visually-hidden">Posted on: </span>' . $time_string . ' '; // WPCS: XSS OK.
 
 	}
 endif;
@@ -41,8 +41,8 @@ if ( ! function_exists( 'nightingale_2_0_posted_by' ) ) :
 	 */
 	function nightingale_2_0_posted_by() {
 
-		echo '<p><span class="nhsuk-u-visually-hidden">Posted by: </span><a class="url fn n" 
- href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></p>'; // WPCS: XSS OK.
+		echo '<span class="nhsuk-u-visually-hidden">Posted by: </span><a class="url fn n" 
+ href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a>&nbsp;-&nbsp;'; // WPCS: XSS OK.
 
 	}
 endif;
