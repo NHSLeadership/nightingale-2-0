@@ -18,7 +18,9 @@
 
 		<?php
 			get_template_part( 'template-parts/content', 'tabs' );
-
+?>
+        <div class="nhsuk-grid-column-two-thirds">
+        <?php
 			the_content();
 
 			wp_link_pages( array(
@@ -26,6 +28,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+        </div>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
