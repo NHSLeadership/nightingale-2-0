@@ -68,8 +68,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     @extend .nhsuk-image__caption;
   }
 }
-
+.nhsuk-promo-group__item {
+  margin-bottom: 36px;
+}
 .nhsuk-panel-with-label {
+  width: 100%;
   .nhsuk-panel-with-label__label {
     a, a:visited {
       color: $color_nhsuk-white;
@@ -82,7 +85,29 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     }
   }
 }
+//Dashboard group extended from panel group
+.nhsuk-dashboard {
+  .nhsuk-promo__link-wrapper {
+    background: inherit;
+    box-shadow: none;
+    .nhsuk-panel-with-label {
+      background: inherit;
+      margin: 0;
+      padding: 0;
+      .nhsuk-panel-with-label__label {
+        z-index: 2;
+        top: 0;
+        margin: 0 -20px
 
+      }
+      .nhsuk-promo__img {
+        position: relative;
+        top: -16px;
+        z-index: 1;
+      }
+    }
+  }
+}
 //minisite block positioning
 .nhsuk-nav-minisite__menu {
   padding: 0 32px 0 0;
