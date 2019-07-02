@@ -48,8 +48,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import 'layouts/default'; // @todo clean this up, its a hangover from underscores that we could do with getting rid of
-
+@import 'layouts/default';
+// @todo clean this up, its a hangover from underscores that we could do with getting rid of
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
 // Core (required)
 @import 'node_modules/nhsuk-frontend/packages/core/all';
@@ -68,11 +68,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     @extend .nhsuk-image__caption;
   }
 }
+
 .nhsuk-promo-group__item {
   margin-bottom: 36px;
 }
+
 .nhsuk-panel-with-label {
   width: 100%;
+
   .nhsuk-panel-with-label__label {
     a, a:visited {
       color: $color_nhsuk-white;
@@ -85,29 +88,52 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     }
   }
 }
+
 //Dashboard group extended from panel group
 .nhsuk-dashboard {
-  .nhsuk-promo__link-wrapper {
-    background: inherit;
-    box-shadow: none;
-    .nhsuk-panel-with-label {
-      background: inherit;
-      margin: 0;
-      padding: 0;
-      .nhsuk-panel-with-label__label {
-        z-index: 2;
-        top: 0;
-        margin: 0 -20px
+  .nhsuk-panel-group__item {
+    overflow: hidden;
+    margin-bottom: 2rem;
 
-      }
-      .nhsuk-promo__img {
-        position: relative;
-        top: -16px;
-        z-index: 1;
+    .nhsuk-promo__link-wrapper {
+      background: inherit;
+      box-shadow: none;
+
+      .nhsuk-panel-with-label {
+        background: inherit;
+        margin: 0;
+        padding: 0;
+
+        .nhsuk-panel-with-label__label {
+          z-index: 2;
+          top: 0;
+          margin: 0 -20px;
+
+        }
+
+        .nhsuk-promo__img {
+          position: relative;
+          top: -16px;
+          z-index: 1;
+        }
       }
     }
   }
+
+  .nhsuk-grid-column-full-width {
+    max-height: 300px;
+  }
+
+  .nhsuk-grid-column-one-half {
+    max-height: 250px;
+  }
+
+  .nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds {
+    max-height: 200px;
+  }
+
 }
+
 //minisite block positioning
 .nhsuk-nav-minisite__menu {
   padding: 0 32px 0 0;
@@ -132,38 +158,44 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
       padding: 0 0 10px 0;
 
     }
+
     .nhsuk-header__link {
       height: 0;
     }
+
     .nhsuk-header__menu {
       .nhsuk-header__menu-toggle {
         border: 2px solid $color_nhsuk-blue;
         color: $color_nhsuk-blue;
       }
+
       .nhsuk-header__menu-toggle.is-active {
         color: $color_nhsuk-white;
         border: 0px;
       }
     }
-    .nhsuk-header__search-toggle{
+
+    .nhsuk-header__search-toggle {
       background-color: $color_nhsuk-grey-5;
       border-color: $color_nhsuk-blue;
       box-shadow: none;
       color: $color_nhsuk-blue;
+
       .nhsuk-icon__search {
         fill: $color_nhsuk-blue;
       }
     }
+
     .nhsuk-header__search-toggle.is_active {
       background-color: $color_nhsuk-blue;
       color: $color_nhsuk-white;
+
       .nhsuk-icon__search {
         fill: $color_nhsuk-white;
       }
     }
   }
 }
-
 
 
 //style out any widgets in the right hand column
@@ -210,16 +242,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     padding: 10px;
   }
 }
+
 //pagination modification
 .nhsuk-pagination {
   .nhsuk-pagination__list {
     .nhsuk-pagination-item--previous, .nhsuk-pagination-item--next {
       width: 30%;
     }
+
     .nhsuk-pagination-item {
       width: 8%;
       float: left;
     }
+
     .nhsuk-pagination__link:hover {
       box-shadow: 0 0 0 16px #ffcd60 inset;
     }
