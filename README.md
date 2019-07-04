@@ -15,7 +15,7 @@
  - If you dont have command line access to your server, you will need to run these commands locally to generate the 
  output css before uploading
  - Activate the theme 
- - email tony.blacker@leadershipacademy for the ACF Pro license key, and you will need to install this manually
+ - email tony.blacker@leadershipacademy.nhs.uk for the ACF Pro license key, and you will need to install this manually
  - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins. *Install and enable ACF Pro before the blocks plugin to ensure full functionality*
  
 ## Progress
@@ -42,10 +42,10 @@
  - [ ] Feedback Banner
  - [ ] Forms elements
  - [ ] Add Gravity Forms compatability
- - [ ] Composer build (including auto load NHSL Blocks plugin)
+ - [x] Composer build (including auto load NHSL Blocks plugin)
  - [x] Dependancy hint to suggest or force plugin dependancy load (for non-composer install)
  - [ ] Widgetize footer region
- - [ ] Alternative navigation aid to Tabs
+ - [x] Alternative navigation aid to Tabs
  - [ ] Device checks (mobile, tablet, TV etc)
  - [ ] Print layout / styling
  - [ ] Accesibility audit
