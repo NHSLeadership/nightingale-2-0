@@ -17,9 +17,8 @@ get_header();
 
     <div id="primary" class="nhsuk-width-container">
         <main id="maincontent" class="nhsuk-main-wrapper">
-            <div class="nhsuk-grid-row">
                 <div class="nhsuk-grid__item nhsuk-grid-column-two-thirds">
-                    <div class="nhsuk-grid-row">
+
                         <?php
                         while (have_posts()) :
                             the_post();
@@ -33,14 +32,12 @@ get_header();
 
                         endwhile; // End of the loop.
                         ?>
-                    </div>
                 </div>
                 <div class="nhsuk-grid__item nhsuk-grid-column-one-third">
                     <?php
                     get_sidebar();
                     ?>
                 </div>
-            </div>
         </main><!-- #main -->
     </div><!-- #primary -->
 
