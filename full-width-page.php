@@ -16,7 +16,7 @@ get_header();
 ?>
 
     <div id="primary" class="nhsuk-width-container">
-        <main id="maincontent" class="nhsuk-main-wrapper">
+        <main id="maincontent" class="nhsuk-main-wrapper nhsuk-grid-row">
 
                 <?php
                 while (have_posts()) :
