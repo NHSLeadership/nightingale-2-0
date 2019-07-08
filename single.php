@@ -11,7 +11,7 @@ get_header();
 ?>
 
     <div id="primary" class="nhsuk-width-container">
-        <main id="maincontent" class="nhsuk-main-wrapper">
+        <main id="maincontent" class="nhsuk-main-wrapper nhsuk-grid-row">
             <div class="nhsuk-grid-row">
                 <div class="nhsuk-grid__item nhsuk-grid-column-two-thirds">
                     <div class="nhsuk-grid-row">
