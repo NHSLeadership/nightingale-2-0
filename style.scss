@@ -54,7 +54,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // Core (required)
 @import 'node_modules/nhsuk-frontend/packages/core/all';
 
-
+.nhsuk-width-container--full {
+  margin: 0;
+  max-width: none;
+}
+.nhsuk-panel-group {
+  margin-left: 0;
+  margin-right: 0;
+}
 //extend the native image class
 .wp-block-image {
   @extend .nhsuk-image;
