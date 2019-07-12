@@ -416,3 +416,36 @@ $color_nhsuk-emergency-red: #da291c;
 .has-nhs-warm-yellow-background-color {
   background-color: $color_nhsuk-warm-yellow
 }
+//subpages nav alteration
+#secondary .widget_subpages>ul>li {
+  border-bottom: 1px solid #d8dde0;
+}
+#secondary .widget_subpages>ul>li>ul>li, #secondary .widget_subpages>ul>li>ul>li>ul>li {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+}
+#secondary .widget_subpages>ul>li>ul>li:last-of-type, #secondary .widget_subpages>ul>li>ul>li>ul>li:last-of-type {
+  margin-bottom: 20px;
+}
+#secondary .widget_subpages>ul>li>ul>li>a {
+  border-left: 2px solid $color_nhsuk-blue;
+
+  padding: 0 0 0 10px;
+  margin: 10px 0 0 10px;
+}
+#secondary .widget_subpages>ul>li>ul>li>ul>li>a {
+
+  padding: 0 0 0 10px;
+  margin: 10px 0 0 20px;
+  border-bottom: none;
+  &:before {
+    content: "-  ";
+    color: $color_nhsuk-light-grey;
+  }
+}
+
+#secondary .widget_subpages ul li a {
+  border-bottom: none;
+  padding: 5px 10px;
+}

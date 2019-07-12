@@ -11,7 +11,7 @@
 
 ?>
 
-
+</main>
 </div>
 
     <footer role="contentinfo">

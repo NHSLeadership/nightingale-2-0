@@ -9,11 +9,8 @@
 
 get_header();
 ?>
-    <div id="primary" class="nhsuk-width-container">
-        <main id="maincontent" class="nhsuk-main-wrapper">
-            <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid__item nhsuk-grid-column-two-thirds">
-                    <div class="nhsuk-grid-row">
+    <div id="primary" class=" nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -48,8 +45,7 @@ get_header();
 		?>
 
     </div>
-    </div>
-    </main><!-- #main -->
+
     </div><!-- #primary -->
 
 <?php
