@@ -62,9 +62,11 @@
         </nav>
 
     </header>
+    <?php nightingale_breadcrumb() ?>
+    <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
+        <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent" role="main">
 
-    <div id="content" class="nhsuk-width-container--full">
-        <?php nightingale_breadcrumb() ?>
+
 
         <?php
         // add ACF generated HERO block
