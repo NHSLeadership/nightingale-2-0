@@ -18,6 +18,10 @@
  - email tony.blacker@leadershipacademy.nhs.uk for the ACF Pro license key, and you will need to install this manually
  - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins. *Install and enable ACF Pro before the blocks plugin to ensure full functionality*
  
+## To be aware of
+ - XML/RPC will be disabled on activation of the theme. This is a sensible security setting, and if you currently use
+  XML RPC I suggest you have a Google to see exactly why its a bad idea to leave it turned on.
+  
 ## Progress
  - [x] Load in the NHS Frontend library
  - [x] Style header, amend markup to match expected output
