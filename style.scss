@@ -102,6 +102,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     overflow: hidden;
     margin-bottom: 2rem;
 
+
     .nhsuk-promo__link-wrapper {
       background: inherit;
       box-shadow: none;
@@ -110,12 +111,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         background: inherit;
         margin: 0;
         padding: 0;
+        background-size: cover;
+        position: relative;
+        padding-top: 33.33%;
 
         .nhsuk-panel-with-label__label {
           z-index: 2;
           top: 0;
           margin: 0 -20px;
-
+          position: absolute;
+          top: 50%;
+          left: 10%;
+          max-width: 85%;
+          font-size: 1.3rem;
         }
 
         .nhsuk-promo__img {
@@ -180,7 +188,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         border: 0px;
       }
     }
-
+    input[type="text"] {
+      border-radius: 4px 0 0 4px;
+      border-right: none;
+    }
+    .nhsuk-search__submit {
+      border: 1px solid #ccc;
+      border-left: none;
+    }
     .nhsuk-header__search-toggle {
       background-color: $color_nhsuk-grey-5;
       border-color: $color_nhsuk-blue;

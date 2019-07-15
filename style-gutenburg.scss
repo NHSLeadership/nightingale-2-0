@@ -1,12 +1,20 @@
 .edit-post-visual-editor { // target only the editor itself
+  @import 'layouts/default';
+  // @todo clean this up, its a hangover from underscores that we could do with getting rid of
   @import 'node_modules/nhsuk-frontend/packages/nhsuk';
   // Core (required)
   @import 'node_modules/nhsuk-frontend/packages/core/all';
   background-color: $color_nhsuk-grey-5;
-
+  .wp-block{
+    max-width: 800px;
+  }
+  .wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
+    max-width: 1228px;
+  }
   .block-editor-block-list__block {
     font-family: $nhsuk-font, $nhsuk-font-fallback;
     font-size: 16px;
+
     .nhsuk-care-card__heading{
       span {
         font-size: 24px;
