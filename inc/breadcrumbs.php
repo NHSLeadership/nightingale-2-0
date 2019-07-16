@@ -50,7 +50,15 @@ function nightingale_breadcrumb() {
                         echo '<li class="nhsuk-breadcrumb__item">' . get_the_archive_title() . '</li>';
                     }
 					else {
-          ?>
+						if (($post_type = get_post_type()) && $post_type !== 'page') {
+							$type = get_post_type_object($post_type);
+							echo '<li class="nhsuk-breadcrumb__item">';
+							echo $type->has_archive ? '<a class="nhsuk-breadcrumb__link" href =' . get_post_type_archive_link($post_type) . '>' : '';
+                            echo $type->label;
+                            echo $type->has_archive ? '</a>' : '';
+                            echo '</li>';
+						}
+					?>
 	          <!-- Display title current post/page as last item in breadcrumb -->
 	          <li class="nhsuk-breadcrumb__item"><?php echo the_title(); ?></li>
 					<?php
