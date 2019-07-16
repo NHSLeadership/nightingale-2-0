@@ -43,15 +43,15 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
         add_theme_support( 'post-thumbnails' );
 
         // This theme uses wp_nav_menu() in one location.
-        function register_my_menus() {
+        //function register_my_menus() {
             register_nav_menus(
                 array(
                     'main-menu' => __( 'Main Menu' ),
                     'footer-menu' => __( 'Footer Links' )
                 )
             );
-        }
-        add_action( 'init', 'register_my_menus' );
+        //}
+        //add_action( 'init', 'register_my_menus' );
 
         /*
          * Switch default core markup for search form, comment form, and comments
@@ -96,17 +96,32 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
             'widgets'     => array(
                 // Place three core-defined widgets in the sidebar area.
                 'sidebar-1' => array(
-                    'Nightingale_2_0_Subpages_Widget',
+                    'subpages-widget',
                 ),
+            ),
+            'posts'       => array(
+                'home',
+                'blog',
+            ),
+            // Default to a static front page and assign the front and posts pages.
+            'options'     => array(
+                'show_on_front'  => 'page',
+                'page_on_front'  => '{{home}}',
+                'page_for_posts' => '{{blog}}',
+            ),
+            'theme_mods'  => array(
+                'panel_1' => '{{homepage-section}}',
+                'panel_2' => '{{blog}}',
             ),
 
             // Set up nav menus for each of the two areas registered in the theme.
             'nav_menus'   => array(
                 // Assign a menu to the "main-menu" location.
                 'main-menu'    => array(
-                    'name'  => __( 'menu-top-menu', 'nightingale_2_0' ),
+                    'name'  => __( 'Main Menu', 'nightingale_2_0' ),
                     'items' => array(
                         'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
+                        'page_blog',
                     ),
                 ),
                 // Assign a menu to the "footer-menu" location.
@@ -114,6 +129,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
                     'name'  => __( 'Footer Links', 'nightingale_2_0' ),
                     'items' => array(
                         'link_home',
+                        'page-blog',
                     ),
                 ),
             ),
