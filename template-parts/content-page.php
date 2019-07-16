@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php nightingale_2_0_post_thumbnail(); ?>
+
 
 	<div class="entry-content">
 		<?php
