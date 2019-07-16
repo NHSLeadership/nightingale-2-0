@@ -17,7 +17,7 @@ function nightingale_breadcrumb() {
 
           <!-- Check if the current page is a category, an archive or a single page. If so link to category or archive -->
           <?php
-          if (is_category() || is_single() ){
+          if (is_category() ){
             echo '<li class="nhsuk-breadcrumb__item"><a href="';
             $perma_cat = get_post_meta(get_the_ID(), '_category_permalink', true);
             if ( $perma_cat != null ) {
@@ -46,8 +46,19 @@ function nightingale_breadcrumb() {
 						echo '<li class="nhsuk-breadcrumb__item">Search Results</li>';
 						echo '<li class="nhsuk-breadcrumb__item">' . get_search_query() . '</li>';
 					}
+					elseif( is_archive() ) {
+                        echo '<li class="nhsuk-breadcrumb__item">' . get_the_archive_title() . '</li>';
+                    }
 					else {
-          ?>
+						if (($post_type = get_post_type()) && $post_type !== 'page') {
+							$type = get_post_type_object($post_type);
+							echo '<li class="nhsuk-breadcrumb__item">';
+							echo $type->has_archive ? '<a class="nhsuk-breadcrumb__link" href =' . get_post_type_archive_link($post_type) . '>' : '';
+                            echo $type->label;
+                            echo $type->has_archive ? '</a>' : '';
+                            echo '</li>';
+						}
+					?>
 	          <!-- Display title current post/page as last item in breadcrumb -->
 	          <li class="nhsuk-breadcrumb__item"><?php echo the_title(); ?></li>
 					<?php
