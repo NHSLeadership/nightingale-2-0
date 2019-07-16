@@ -17,7 +17,7 @@ function nightingale_breadcrumb() {
 
           <!-- Check if the current page is a category, an archive or a single page. If so link to category or archive -->
           <?php
-          if (is_category() || is_single() ){
+          if (is_category() ){
             echo '<li class="nhsuk-breadcrumb__item"><a href="';
             $perma_cat = get_post_meta(get_the_ID(), '_category_permalink', true);
             if ( $perma_cat != null ) {
