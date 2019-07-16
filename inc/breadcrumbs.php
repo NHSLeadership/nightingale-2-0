@@ -46,6 +46,9 @@ function nightingale_breadcrumb() {
 						echo '<li class="nhsuk-breadcrumb__item">Search Results</li>';
 						echo '<li class="nhsuk-breadcrumb__item">' . get_search_query() . '</li>';
 					}
+					elseif( is_archive() ) {
+                        echo '<li class="nhsuk-breadcrumb__item">' . get_the_archive_title() . '</li>';
+                    }
 					else {
           ?>
 	          <!-- Display title current post/page as last item in breadcrumb -->
