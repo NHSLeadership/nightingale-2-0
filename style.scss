@@ -189,14 +189,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         border: 0px;
       }
     }
-    input[type="text"] {
-      border-radius: 4px 0 0 4px;
-      border-right: none;
-    }
-    .nhsuk-search__submit {
-      border: 1px solid #ccc;
-      border-left: none;
-    }
+
     .nhsuk-header__search-toggle {
       background-color: $color_nhsuk-grey-5;
       border-color: $color_nhsuk-blue;
@@ -216,6 +209,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         fill: $color_nhsuk-white;
       }
     }
+  }
+  input[type="text"] {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+  }
+  .nhsuk-search__submit {
+    border: 1px solid #ccc;
+    border-left: none;
   }
 }
 
