@@ -1,0 +1,61 @@
+.nhsuk-width-container--full {
+  margin: 0;
+  max-width: none;
+}
+.nhsuk-panel-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+//extend the native image class
+.wp-block-image {
+  @extend .nhsuk-image;
+  width: 100%;
+
+  img {
+    @extend .nhsuk-image__img;
+  }
+
+  figcaption {
+    @extend .nhsuk-image__caption;
+  }
+}
+
+//end image extending
+//style default button as secondary button
+
+  .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+    @extend .nhsuk-button;
+    border-radius: 4px;
+    background: $nhsuk-button-colour;
+    font-size: $nhsuk-button-text-colour;
+    padding: 1px 8px;
+    position: relative;
+    top: -5px;
+    margin-bottom: 5px;
+  }
+
+
+//when button is a link, something goes wonky
+.nhsuk-button--reverse:visited {
+  color: #212b32;
+}
+
+
+
+//pagination modification
+.nhsuk-pagination {
+  .nhsuk-pagination__list {
+    .nhsuk-pagination-item--previous, .nhsuk-pagination-item--next {
+      width: 30%;
+    }
+
+    .nhsuk-pagination-item {
+      width: 8%;
+      float: left;
+    }
+
+    .nhsuk-pagination__link:hover {
+      box-shadow: 0 0 0 16px #ffcd60 inset;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.nhsuk-header--transactional {
+  .nhsuk-header__inverted {
+    background: $color_nhsuk-white;
+    color: $color_nhsuk-black;
+
+    .nhsuk_header__logo {
+      padding: 0 0 10px 0;
+
+    }
+
+    .nhsuk-header__link {
+      height: 0;
+    }
+
+    .nhsuk-header__menu {
+      .nhsuk-header__menu-toggle {
+        border: 2px solid $color_nhsuk-blue;
+        color: $color_nhsuk-blue;
+      }
+
+      .nhsuk-header__menu-toggle.is-active {
+        color: $color_nhsuk-white;
+        border: 0px;
+      }
+    }
+    input[type="text"] {
+      border-radius: 4px 0 0 4px;
+      border-right: none;
+    }
+    .nhsuk-search__submit {
+      border: 1px solid #ccc;
+      border-left: none;
+    }
+    .nhsuk-header__search-toggle {
+      background-color: $color_nhsuk-grey-5;
+      border-color: $color_nhsuk-blue;
+      box-shadow: none;
+      color: $color_nhsuk-blue;
+
+      .nhsuk-icon__search {
+        fill: $color_nhsuk-blue;
+      }
+    }
+
+    .nhsuk-header__search-toggle.is_active {
+      background-color: $color_nhsuk-blue;
+      color: $color_nhsuk-white;
+
+      .nhsuk-icon__search {
+        fill: $color_nhsuk-white;
+      }
+    }
+  }
+}
