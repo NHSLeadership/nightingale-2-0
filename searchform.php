@@ -15,7 +15,7 @@ if (!empty(get_search_query())) {
     $query = 'Search';
 }
 ?>
-<button class="nhsuk-header__search-toggle" id="toggle-search" aria-controls="search" aria-label="Open search">
+<button class="nhsuk-header__search-toggle" id="toggle-search" aria-controls="wrap-search" aria-label="Open search">
     <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
     </svg>
@@ -24,7 +24,7 @@ if (!empty(get_search_query())) {
 <div class="nhsuk-header__search-wrap" id="wrap-search">
     <form class="nhsuk-header__search-form" id="searchform" action="<?php echo home_url( '/' ); ?>" method="get"
           role="search">
-        <label class="nhsuk-u-visually-hidden" for="search-field">Search this NHS website</label>
+        <label class="nhsuk-u-visually-hidden" for="ss">Search this NHS website</label>
         <div class="autocomplete-container" id="autocomplete-container"><div class="autocomplete__wrapper"
                                                                              role="combobox"
                                                                              aria-expanded="false"><div
@@ -34,7 +34,7 @@ if (!empty(get_search_query())) {
                     results.<span>,,</span></div><input aria-owns="search-field__listbox" autocomplete="off"
                                                         class="autocomplete__input autocomplete__input--default"
                                                         id="ss" name="s" placeholder="<?php echo $query; ?>"
-                                                        type="text" role="textbox"><ul class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden" id="search-field__listbox" role="listbox" style="width: 279px; top: 92px;"></ul></div></div>
+                                                        type="text"><ul class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden" id="search-field__listbox" role="listbox" style="width: 279px; top: 92px;"></ul></div></div>
 
         <button class="nhsuk-search__submit" type="submit">
             <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">

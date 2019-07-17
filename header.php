@@ -33,13 +33,13 @@
     <a class="skip-link screen-reader-text"
        href="#content"><?php esc_html_e('Skip to content', 'nightingale-2-0'); ?></a>
 
-    <header class="nhsuk-header nhsuk-header--transactional" role="banner">
+    <header class="nhsuk-header nhsuk-header--transactional">
         <?php
         $header_layout = get_theme_mod('header_styles', 'normal');
         get_template_part('partials/header_'. $header_layout);
         ?>
 
-        <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation"
+        <nav class="nhsuk-header__navigation" id="header-navigation" aria-label="Primary navigation"
              aria-labelledby="label-navigation">
             <p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
                 <button class="nhsuk-header__navigation-close" id="close-menu">
@@ -77,5 +77,5 @@
         //end hero image section
 
         ?>
-        <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent" role="main">
+        <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent">
             <div id="contentinner" class="nhsuk-width-container">

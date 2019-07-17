@@ -13,11 +13,9 @@
 <div class="nhsuk-header nhsuk-header__inverted">
         <div class="nhsuk-width-container nhsuk-header__container">
             <div class="nhsuk-header__logo">
-                    <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
                         <?php
                         the_custom_logo();
                         ?>
-                    </a>
             </div>
 
             <div class="nhsuk-header__content" id="content-header">
