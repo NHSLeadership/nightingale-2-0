@@ -14,7 +14,7 @@
 </main>
 </div>
 
-    <footer role="contentinfo">
+    <footer>
         <div class="nhsuk-footer" id="nhsuk-footer">
             <div class="nhsuk-width-container">
                 <h2 class="nhsuk-u-visually-hidden">Support links</h2>
@@ -40,6 +40,5 @@
     </footer>
 
 <?php wp_footer(); ?>
-</div>
 </body>
 </html>

@@ -51,3 +51,32 @@ if( ! function_exists( 'nightingale_2_0_get_header_style' ) ) {
         return $default_position;
     }
 }
+
+// remove "type" from script and style tags - not needed for html 5 validation
+add_filter( 'script_loader_tag', 'nightingale_2_0__remove_type', 10, 3 );
+add_filter( 'style_loader_tag', 'nightingale_2_0__remove_type', 10, 3 );  // Ignore the $media argument to allow for a common function.
+function nightingale_2_0__remove_type( $markup, $handle, $href ) {
+
+    // Remove the 'type' attribute.
+    $markup = str_replace( " type='text/javascript'", '', $markup );
+    $markup = str_replace( " type='text/css'", '', $markup );
+    return $markup;
+}
+// Store and process wp_head output to operate on inline scripts and styles.
+add_action( 'wp_head', 'nightingale_2_0__wp_head_ob_start', 0 );
+function nightingale_2_0__wp_head_ob_start() {
+    ob_start();
+}
+add_action( 'wp_head', 'nightingale_2_0__wp_head_ob_end', 10000 );
+function nightingale_2_0__wp_head_ob_end() {
+    $wp_head_markup = ob_get_contents();
+    ob_end_clean();
+
+    // Remove the 'type' attribute. Note the use of single and double quotes.
+    $wp_head_markup = str_replace( " type='text/javascript'", '', $wp_head_markup );
+    $wp_head_markup = str_replace( ' type="text/javascript"', '', $wp_head_markup );
+    $wp_head_markup = str_replace( ' type="text/css"', '', $wp_head_markup );
+    $wp_head_markup = str_replace( " type='text/css'", '', $wp_head_markup );
+    echo $wp_head_markup;
+}
+// end remove "type" from script and style tags
