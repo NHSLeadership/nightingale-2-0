@@ -4,7 +4,7 @@
 
 ## Dependancies
  - This theme requires an active WordPress install of *version 5 or higher*
- - This theme works best with the [NHSL-Blocks plugin](https://github.com/NHSLeadership/nhsl-wp-blocks) and the [Advanced Custom Fields Pro plugin](https://www.advancedcustomfields.com/pro/) - generously they have given us an NHS wide license key
+ - ACF Pro and NHSL-Blocks (optional) see below
  - You will need to either be able to run node, or to run node locally to build the scss files then upload
  - This theme will pull in the NHS Frontend Library via node commands
  
@@ -15,6 +15,13 @@
  - If you dont have command line access to your server, you will need to run these commands locally to generate the 
  output css before uploading
  - Activate the theme 
+ - To populate the site with basic elements, we suggest the following:
+   - enable the subpages widget in the sidebar. Configuration works best if you select to use parent page as title, show subpages, and enable ul for subpages
+   - Create a top menu assigned to the Main Menu region and add your default homepage. You can add extra pages later. N.B. the top menu will only show top level links, it does not display any dropdowns for sub pages (hence the need for the subpages widget in sidebar)
+   - Create a footer menu assigned to the Footer Links region and add at least one link. Again this is static links only, it has no dropdown functionality
+   
+## Optional but recommended
+This theme works best with the [NHSL-Blocks plugin](https://github.com/NHSLeadership/nhsl-wp-blocks) and the [Advanced Custom Fields Pro plugin](https://www.advancedcustomfields.com/pro/) - generously they have given us an NHS wide license key
  - email tony.blacker@leadershipacademy.nhs.uk for the ACF Pro license key, and you will need to install this manually
  - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins. *Install and enable ACF Pro before the blocks plugin to ensure full functionality*
  
@@ -37,9 +44,8 @@
  - [x] Style tables
  - [x] Restrict Editor colour palettes to NHS Brand guideline colours
  - [x] Search results page layout
- - [ ] Add icons
  - [x] Template layout code
- - [ ] Typographic classes
+ - [x] Typographic classes
  - [x] Custom Gutenburg Blocks (via NHSL-Blocks plugin)
  - [x] Breadcrumb trail styling and addition
  - [ ] Emergency alert
