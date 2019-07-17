@@ -80,3 +80,5 @@ function nightingale_2_0__wp_head_ob_end() {
     echo $wp_head_markup;
 }
 // end remove "type" from script and style tags
+
+

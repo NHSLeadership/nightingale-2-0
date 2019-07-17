@@ -1,0 +1,40 @@
+
+$color_nhsuk-dark-blue: #003087;
+$color_nhsuk-bright-blue: #0072ce;
+$color_nhsuk-light-blue: #41b6e6;
+$color_nhsuk-mid-grey: #768692;
+$color_nhsuk-light-grey: e8edee;
+$color_nhsuk-dark-grey: #425563;
+$color_nhsuk-pink: #ae2573;
+$color_nhsuk-light-purple: #704c9c;
+$color_nhsuk-light-green: #78be20;
+$color_nhsuk-dark-green: #006747;
+$colours: (
+        'white'         : $color_nhsuk-white,
+        'nhs-dark-blue' : $color_nhsuk_dark-blue,
+        'nhs-bright-blue': $color_nhsuk-bright-blue,
+        'nhs-light-blue': $color_nhsuk-light-blue,
+        'nhs-mid-grey'  : $color_nhsuk-mid-grey,
+        'nhs-light-grey': $color_nhsuk_light-grey,
+        'nhs-dark-grey' : $color-nhsuk-dark-grey,
+        'nhs-purple'    : $color-nhsuk-purple,
+        'nhs-pink'      : $color_nhsuk-pink,
+        'nhs-light-purple': $color_nhsuk-light-purple,
+        'nhs-light-green': $color_nhsuk-light-green,
+        'nhs-dark-green': $color_nhsuk-dark-green,
+        'nhs-aqua-green': $color_nhsuk-aqua-green,
+        'nhs-black'     : $color_nhsuk-black,
+        'emergency-red' : $color_nhsuk-red,
+        'nhs-yellow'    : $color_nhsuk-yellow,
+        'nhs-warm-yellow': $color_nhsuk-warm-yellow,
+);
+@each $name, $colour in $colours {
+
+  .has-#{$name}-color {
+    color: $colour;
+  }
+
+  .has-#{$name}-background-color {
+    background-color: $colour;
+  }
+}

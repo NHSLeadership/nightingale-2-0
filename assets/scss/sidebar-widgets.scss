@@ -1,0 +1,69 @@
+
+//style out any widgets in the right hand column
+#secondary {
+  section {
+
+    @extend .nhsuk-panel-with-label;
+    background: $color_nhsuk-white;
+    margin-top: 32px;
+
+    h2.widget-title {
+      @extend .nhsuk-panel-with-label__label;
+    }
+
+    div {
+
+      p {
+        @extend .nhsuk-list-panel--results-items__no-results;
+      }
+    }
+
+    ul {
+      @extend .nhsuk-list-panel__list;
+
+      li {
+        @extend .nhsuk-list-panel__item;
+
+        a {
+          @extend .nhsuk-list-panel__link;
+        }
+      }
+    }
+
+
+    //subpages nav alteration
+    .widget_subpages>ul>li {
+      border-bottom: 1px solid #d8dde0;
+    }
+    .widget_subpages>ul>li>ul>li, #secondary .widget_subpages>ul>li>ul>li>ul>li {
+      padding: 0;
+      margin: 0;
+      border-bottom: none;
+    }
+    .widget_subpages>ul>li>ul>li:last-of-type, #secondary .widget_subpages>ul>li>ul>li>ul>li:last-of-type {
+      margin-bottom: 20px;
+    }
+    .widget_subpages>ul>li>ul>li>a {
+      border-left: 2px solid $color_nhsuk-blue;
+
+      padding: 0 0 0 10px;
+      margin: 10px 0 0 10px;
+    }
+    .widget_subpages>ul>li>ul>li>ul>li>a {
+
+      padding: 0 0 0 10px;
+      margin: 10px 0 0 20px;
+      border-bottom: none;
+      &:before {
+        content: "-  ";
+        color: $color_nhsuk-light-grey;
+      }
+    }
+
+    .widget_subpages ul li a {
+      border-bottom: none;
+      padding: 5px 10px;
+    }
+  }
+}
+
