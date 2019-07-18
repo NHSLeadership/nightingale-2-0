@@ -1,33 +1,33 @@
-# Nightingale 2.0 WordPress Theme for NHS Frontend Library
+# Nightingale 2.0
+#### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 
-### This is in a pre-release version. Do not use on production sites
+:exclamation: This is a pre-release version. Do not use on production sites.
 
-## Dependancies
+## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
- - ACF Pro and NHSL-Blocks (optional) see below
- - You will need to either be able to run node, or to run node locally to build the scss files then upload
- - This theme will pull in the NHS Frontend Library via node commands
+ - [ACF Pro](https://www.advancedcustomfields.com/pro/) and [nhsl-wp-blocks](https://github.com/NHSLeadership/nhsl-wp-blocks) (optional) - see below
+ - You will need to either be able to run `node` either locally or on your server for the Sass SCSS files to be generated
+ - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node`
  
 ## Installation
  - Add to your WordPress files, in the `wp-content/themes` folder
- - If you have command line access, run `npm install` then `npm run build`. This will generate your output css files.
-  Any time you edit the scss, you will need to rerun `npm run build` in the command line
- - If you dont have command line access to your server, you will need to run these commands locally to generate the 
- output css before uploading
+ - If you have command line access, run `npm install` then `npm run build`. This will generate CSS files via Sass (any time you edit the SCSS, you will need to rerun `npm run build`)
+ - If you don't have command line access to your server, you will need to run these commands locally to generate the output CSS before uploading
  - Activate the theme 
  - To populate the site with basic elements, we suggest the following:
-   - enable the subpages widget in the sidebar. Configuration works best if you select to use parent page as title, show subpages, and enable ul for subpages
+   - Enable the subpages widget in the sidebar. Configuration works best if you select *use parent page as title*, *show subpages*, and *enable ul for subpages*
    - Create a top menu assigned to the Main Menu region and add your default homepage. You can add extra pages later. N.B. the top menu will only show top level links, it does not display any dropdowns for sub pages (hence the need for the subpages widget in sidebar)
    - Create a footer menu assigned to the Footer Links region and add at least one link. Again this is static links only, it has no dropdown functionality
    
 ## Optional but recommended
-This theme works best with the [NHSL-Blocks plugin](https://github.com/NHSLeadership/nhsl-wp-blocks) and the [Advanced Custom Fields Pro plugin](https://www.advancedcustomfields.com/pro/) - generously they have given us an NHS wide license key
- - email tony.blacker@leadershipacademy.nhs.uk for the ACF Pro license key, and you will need to install this manually
- - Activate the `ACF Pro` and `NHS Leadership Academy Blocks for Gutenburg` plugins - either from the themes page or in plugins. *Install and enable ACF Pro before the blocks plugin to ensure full functionality*
+This theme works best with the [nhsl-wp-blocks](https://github.com/NHSLeadership/nhsl-wp-blocks) and [ACF Pro](https://www.advancedcustomfields.com/pro/) plugins.
+
+Generously, the NHS has been granted a nationwide license. You can currently obtain the details from `tony.blacker@leadershipacademy.nhs.uk`.
+
+:exclamation: ACF Pro should be installed before the nhsl-wp-blocks plugin for full functionality.
  
-## To be aware of
- - XML/RPC will be disabled on activation of the theme. This is a sensible security setting, and if you currently use
-  XML RPC I suggest you have a Google to see exactly why its a bad idea to leave it turned on.
+## Please note
+ - XML/RPC will be disabled on activation of the theme. If you have a specific need to re-enable XML-RPC you may do so at the bottom of `functions.php`.
   
 ## Progress
  - [x] Load in the NHS Frontend library
@@ -51,15 +51,15 @@ This theme works best with the [NHSL-Blocks plugin](https://github.com/NHSLeader
  - [ ] Emergency alert
  - [ ] Feedback Banner
  - [ ] Forms elements
- - [ ] Add Gravity Forms compatability
+ - [ ] Add Gravity Forms compatibility
  - [x] Composer build (including auto load NHSL Blocks plugin)
  - [x] Dependancy hint to suggest or force plugin dependancy load (for non-composer install)
  - [ ] Widgetize footer region
  - [x] Alternative navigation aid to Tabs
  - [ ] Device checks (mobile, tablet, TV etc)
  - [ ] Print layout / styling
- - [ ] Accesibility audit
+ - [ ] Accessibility audit
  
  ## Licence
  
- The codebase is released under the Open Government 3.0 licence, unless stated otherwise. This covers both the codebase and any sample code in the documentation. The documentation is © Crown copyright and available under the terms of the Open Government 3.0 licence.
+ The codebase is released under the [Open Government Licence 3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), unless stated otherwise. This covers both the codebase and any sample code in the documentation. The documentation is © Crown copyright and available under the terms of the Open Government License 3.0. Please see the [National Archives](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/) website for more information on the Open Government Licensing Framework.
