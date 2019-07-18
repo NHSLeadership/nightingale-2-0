@@ -166,11 +166,18 @@ function nightingale_2_0_widgets_init() {
     register_sidebar( array(
         'name'          => esc_html__( 'Sidebar', 'nightingale-2-0' ),
         'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add widgets here.', 'nightingale-2-0' ),
+        'description'   => esc_html__( 'Elements to show int he sidebar. each widget will show as a panel.', 'nightingale-2-0' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Footer Region', 'nightingale-2-0' ),
+        'id'            => 'footer-region',
+        'description'   => esc_html__( 'Widgets to show in the footer zone.', 'nightingale-2-0' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
     ) );
 }
 add_action( 'widgets_init', 'nightingale_2_0_widgets_init' );
@@ -248,15 +255,6 @@ function nightingale_2_0_register_required_plugins() {
 }
 
 /**
- * Enqueue Gutenberg block editor style
- */
-function nhsl_gutenberg_editor_styles() {
-    wp_enqueue_style( 'nhsl-block-editor-styles', get_theme_file_uri( '/style-gutenburg.css' ), false, '1.0', 'all' );
-}
-
-add_action( 'enqueue_block_editor_assets', 'nhsl_gutenberg_editor_styles' );
-
-/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -274,16 +272,15 @@ require get_template_directory() . '/inc/template-functions.php';
  * Add in a limitation to only NHS colour blocks.
  */
 require get_template_directory() . '/inc/custom-colours.php';
+/**
+ * Add in custom Gutenberg modifications.
+ */
+require get_template_directory() . '/inc/custom-gutenberg.php';
 
 /**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Main menu (using Walker Nav Menu).
- */
-require get_template_directory() . '/inc/walker-menu.php';
 
 /**
  * Pagination
@@ -300,13 +297,7 @@ require get_template_directory() . '/inc/breadcrumbs.php';
  */
 require get_template_directory() . '/inc/gravity-forms.php';
 
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-    require get_template_directory() . '/inc/jetpack.php';
 
-}
 
 /**
  * Auto deploy subpages widget.
