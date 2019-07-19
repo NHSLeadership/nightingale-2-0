@@ -139,6 +139,11 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
         add_theme_support( 'starter-content', $starter_content );
         unregister_widget('WP_Widget_Search'); // taking out search widget as included in header by default
 
+        /**
+         * Disable XML RPC by default
+         */
+        add_filter( 'xmlrpc_enabled', '__return_false' );
+
     }
 endif;
 add_action( 'after_setup_theme', 'nightingale_2_0_setup' );
@@ -314,7 +319,3 @@ require get_template_directory() . '/inc/gravity-forms.php';
  */
 require get_template_directory() . '/inc/nightingale_subpages_widget.php';
 
-/**
- * Disable XML RPC by default
- */
-add_filter( 'xmlrpc_enabled', '__return_false' );
