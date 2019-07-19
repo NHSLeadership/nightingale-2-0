@@ -33,6 +33,7 @@
   //subpages nav alteration
   .widget_subpages>ul>li {
     border-bottom: 1px solid #d8dde0;
+
   }
   .widget_subpages>ul>li>ul>li, #secondary .widget_subpages>ul>li>ul>li>ul>li {
     padding: 0;
@@ -59,9 +60,23 @@
     }
   }
 
-  .widget_subpages ul li a {
-    border-bottom: none;
-    padding: 5px 10px;
+  .widget_subpages{
+    ul {
+      li {
+        a {
+
+          border-bottom: none;
+          padding: 5px 10px;
+        }
+      }
+      li.widget_subpages__active {
+        &>a {
+          background: $color_nhsuk-blue;
+          color: $color_nhsuk-white;
+        }
+      }
+
+    }
   }
 }
 

@@ -127,7 +127,7 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
 
             // Set special class for current page
             if ( $subpage->ID == $post->ID )
-                $class[] = 'widget_subpages_current_page';
+                $class[] = 'widget_subpages__active';
 
             // First menu item
             if( $nightingale_2_0_subpages_is_first )
