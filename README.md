@@ -47,14 +47,16 @@ Generously, the NHS has been granted a nationwide license. You can currently obt
  - [x] Template layout code
  - [x] Typographic classes
  - [x] Custom Gutenburg Blocks (via NHSL-Blocks plugin)
+ - [ ] Native Gutenberg blocks (phase 2 to replace NHSL_Blocks quickfix)
  - [x] Breadcrumb trail styling and addition
- - [ ] Emergency alert
- - [ ] Feedback Banner
+ - [x] Emergency alert
+ - [x] Feedback Banner
  - [ ] Forms elements
  - [ ] Add Gravity Forms compatibility
+ - [ ] Add theme update routine [possible route here](https://wpmayor.com/how-to-integrate-wordpress-plugin-update-notifications-into-your-commercial-plugin/)
  - [x] Composer build (including auto load NHSL Blocks plugin)
  - [x] Dependancy hint to suggest or force plugin dependancy load (for non-composer install)
- - [ ] Widgetize footer region
+ - [x] Widgetize footer region
  - [x] Alternative navigation aid to Tabs
  - [ ] Device checks (mobile, tablet, TV etc)
  - [ ] Print layout / styling

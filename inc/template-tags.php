@@ -124,9 +124,9 @@ if ( ! function_exists( 'nightingale_2_0_post_thumbnail' ) ) :
 		if ( is_singular() ) :
 			?>
 
-			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
-			</div><!-- .post-thumbnail -->
+			<fig class="nhsuk-image">
+				<?php the_post_thumbnail('thumbnail', array('class' => 'nhsuk-image__img')); ?>
+			</fig><!-- .post-thumbnail -->
 
 		<?php else : ?>
 

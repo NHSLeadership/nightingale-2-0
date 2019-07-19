@@ -7,10 +7,7 @@
   margin-right: 0;
 }
 //extend the native image class
-.wp-block-image {
-  @extend .nhsuk-image;
-  width: 100%;
-
+.nhsuk-image {
   img {
     @extend .nhsuk-image__img;
   }
