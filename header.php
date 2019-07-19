@@ -8,10 +8,8 @@
  *
  * @package Nightingale_2.0
  */
-
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
+<!doctype html><html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,14 +24,14 @@
 
     <?php wp_head(); ?>
 </head>
-
 <body class="js-enabled">
-
-
-    <a class="skip-link screen-reader-text"
+<a class="skip-link screen-reader-text"
        href="#content"><?php esc_html_e('Skip to content', 'nightingale-2-0'); ?></a>
-
-    <header class="nhsuk-header nhsuk-header--transactional">
+<?php if (get_theme_mod('emergency_on') == 'yes') {
+    get_template_part('partials/emergency-alert');
+}
+?>
+<header class="nhsuk-header nhsuk-header--transactional">
         <?php
         $header_layout = get_theme_mod('header_styles', 'normal');
         get_template_part('partials/header_'. $header_layout);

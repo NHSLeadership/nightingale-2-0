@@ -137,6 +137,12 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 
         $starter_content = apply_filters( 'nightingale_2_0_starter_content', $starter_content );
         add_theme_support( 'starter-content', $starter_content );
+        unregister_widget('WP_Widget_Search'); // taking out search widget as included in header by default
+
+        /**
+         * Disable XML RPC by default
+         */
+        add_filter( 'xmlrpc_enabled', '__return_false' );
 
     }
 endif;
@@ -219,7 +225,7 @@ function nightingale_2_0_register_required_plugins() {
         array(
             'name'               => 'NHS Leadership Academy Blocks for Gutenberg', // The plugin name.
             'slug'               => 'nhsl-blocks', // The plugin slug (typically the folder name).
-            'source'             => 'https://github.com/NHSLeadership/nhsl-wp-blocks/blob/master/nhsl-blocks.ziphttps://github.com/NHSLeadership/nhsl-wp-blocks/blob/master/nhsl-blocks.zip', // The plugin source.
+            'source'             => 'https://github.com/NHSLeadership/nhsl-wp-blocks/blob/master/nhsl-blocks.zip', // The plugin source.
             'required'           => false, // If false, the plugin is only 'recommended' instead of required.
             'version'            => '', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
             'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be
@@ -253,6 +259,15 @@ function nightingale_2_0_register_required_plugins() {
 
     tgmpa( $plugins, $config );
 }
+
+function nightingale_2_0_blacklist_blocks() {
+    wp_enqueue_script(
+        'nightingale_2_0_blacklist_blocks',
+        get_template_directory() . '/assets/editor.js',
+        array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' )
+    );
+}
+add_action( 'enqueue_block_editor_assets', 'nightingale_2_0_blacklist_blocks' );
 
 /**
  * Implement the Custom Header feature.
@@ -304,7 +319,3 @@ require get_template_directory() . '/inc/gravity-forms.php';
  */
 require get_template_directory() . '/inc/nightingale_subpages_widget.php';
 
-/**
- * Disable XML RPC by default
- */
-add_filter( 'xmlrpc_enabled', '__return_false' );

@@ -45,7 +45,10 @@
             </div>
         </div>
     </footer>
-
+<?php if (get_theme_mod('feedback_on') == 'yes') {
+    get_template_part('partials/feedback-banner');
+}
+?>
 <?php wp_footer(); ?>
 </body>
 </html>
