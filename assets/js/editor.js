@@ -1,5 +1,11 @@
+/**
+ *  Custom changes to Gutenberg editor to make it more NHS Friendly
+ *  @author Tony Blacker, NHS Leadership Academy
+ *  @version 1.0 22nd July 2019
+ */
+
 wp.domReady( function() {
-    //take out a chunk of the complexity for end users, leave them with tools they will actually use
+   /* //take out a chunk of the complexity for end users, leave them with tools they will actually use
     wp.blocks.unregisterBlockType( 'core/verse' );
     wp.blocks.unregisterBlockType( 'core/list' );
     wp.blocks.unregisterBlockType( 'core/quote' );
@@ -29,6 +35,7 @@ wp.domReady( function() {
     wp.blocks.unregisterBlockType( 'core/scribd' );
     wp.blocks.unregisterBlockType( 'core/smugmug' );
     wp.blocks.unregisterBlockType( 'core/wordpress-tv' );
+    */
 
 
     // modify classname added to images

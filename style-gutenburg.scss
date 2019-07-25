@@ -38,6 +38,8 @@
   @import 'node_modules/nhsuk-frontend/packages/core/utilities/typography';
   @import 'node_modules/nhsuk-frontend/packages/core/utilities/visually-hidden';
   @import 'node_modules/nhsuk-frontend/packages/core/utilities/widths';
+
+  @import 'assets/scss/style_variations';//gutenberg blocks style variations
   .acf-block-component {
     a {
       pointer-events: none;
@@ -71,5 +73,25 @@
   .editor-post-title__input {
     font-family: $nhsuk-font, $nhsuk-font-fallback;;
     @extend h1;
+  }
+}
+//promo panel blockquote address button
+.nhsuk-promo__content {
+  .editor-inner-blocks {
+    .editor-block-list__block ~ .block-list-appender {
+      display: none;
+    }
+  }
+  .editor-inserter {
+    button {
+      width: 20px;
+      height: 20px;
+      padding-top: 0;
+    }
+  };
+  .editor-url-input__button {
+    width: 0;
+    height: 0;
+    float: right;
   }
 }

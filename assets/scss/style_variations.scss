@@ -1,0 +1,78 @@
+/*
+// variations to styling required for gutenberg native blocks
+// @author Tony Blacker, NHS Leadership Academy
+// @version 1.0 22nd July 2019
+*/
+// button extension
+.is-style-secondary { // secondary button style
+  @extend .nhsuk-button--secondary;
+}
+.is-style-reverse { // reverse button style
+  @extend .nhsuk-button--reverse;
+}
+// reveal extension
+.is-style-expander { // expander reveal style
+  @extend .nhsuk-expander;
+}
+//care card extension
+.is-style-urgent { // urgent infocard
+  @extend .nhsuk-care-card--urgent;
+}
+.is-style-immediate { // urgent infocard
+  @extend .nhsuk-care-card--immediate;
+}
+//panel extension
+.is-style-panel-grey {
+  .nhsuk-panel {
+    @extend .nhsuk-panel--grey;
+  }
+}
+.is-style-panel-with-label {
+  .nhsuk-panel {
+    @extend .nhsuk-panel-with-label;
+
+    h3 {
+      @extend .nhsuk-panel-with-label__label;
+    }
+  }
+}
+//do and dont list extension
+.nhsuk-do-dont-list {
+
+
+
+
+  .is-style-default {
+    @extend .nhsuk-list--tick;
+
+    svg.nhsuk-icon {
+      background-image: url('assets/tick.svg');
+    }
+  }
+
+  .is-style-dont {
+    @extend .nhsuk-list--cross;
+
+    /*svg.nhsuk-icon {
+      background-image: url('assets/cross.svg');
+      -webkit-filter: drop-shadow(34px 0px red);
+      filter: drop-shadow(34px 0px red);
+    }*/
+    svg.nhsuk-icon__ {
+      -webkit-filter: drop-shadow(34px 0px red);
+      filter: drop-shadow(34px 0px red);
+    }
+
+    .nhsuk-icon {
+      -webkit-filter: drop-shadow(34px 0px black);
+      filter: drop-shadow(34px 0px black);
+      background-position: -100% 0;
+      margin-left: -34px;
+      display: block;
+      width: 35px; /* +1px for chrome bug...*/
+      height: 34px;
+      background-image: url('assets/cross.svg');
+    }
+  }
+}
+

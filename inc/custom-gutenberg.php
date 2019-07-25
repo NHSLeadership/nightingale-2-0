@@ -23,3 +23,15 @@ function be_gutenberg_scripts() {
     );
 }
 add_action( 'enqueue_block_editor_assets', 'be_gutenberg_scripts' );
+if ( ! function_exists( 'button_block_output' ) ) :
+    /**
+     * @param string $output - block output.
+     * @param array  $attributes - block attributes.
+     */
+    function button_block_output( $output, $attributes ) {
+        ob_start();
+        ?>
+        <a href="<?php echo $attributes['buttonLink']; ?>" class="nhsuk-button"><?php echo $attributes['buttonLabel']; ?></a>
+        <?php return ob_get_clean();
+    }
+endif;
