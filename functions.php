@@ -204,10 +204,6 @@ function nightingale_2_0_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'nightingale_2_0_scripts' );
 
-
-
-
-
 /**
  * Force download of dependancy plugins
  */
@@ -260,14 +256,7 @@ function nightingale_2_0_register_required_plugins() {
     tgmpa( $plugins, $config );
 }
 
-function nightingale_2_0_blacklist_blocks() {
-    wp_enqueue_script(
-        'nightingale_2_0_blacklist_blocks',
-        get_template_directory() . '/assets/editor.js',
-        array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' )
-    );
-}
-add_action( 'enqueue_block_editor_assets', 'nightingale_2_0_blacklist_blocks' );
+
 
 /**
  * Implement the Custom Header feature.
