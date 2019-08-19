@@ -83,7 +83,7 @@
 }
 
 //reversed quote tweak
-.nhsuk-inset-text--rev {
+.nhsuk-inset-text--rev, .is-style-quote-reverse {
   background: $color_nhsuk-blue;
   border: 10px solid $color_nhsuk-blue;
   box-shadow: inset 12px 0px 0px 0px $color_nhsuk-white;
