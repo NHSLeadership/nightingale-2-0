@@ -1,20 +1,30 @@
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+@import 'node_modules/nhsuk-frontend/packages/core/settings/all';
+// Styles
+@import 'node_modules/nhsuk-frontend/packages/core/styles/icons';
+
+ul {
+  list-style: none;
+}
+
+// Tools
+@import 'node_modules/nhsuk-frontend/packages/core/tools/all';
+// Generic
+@import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
+@import 'node_modules/nhsuk-frontend/packages/core/generic/font-face';
+@import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
+
 .edit-post-visual-editor { // target only the editor itself
 
-  @import 'node_modules/nhsuk-frontend/packages/nhsuk';
-  @import 'node_modules/nhsuk-frontend/packages/core/settings/all';
 
-  // Tools
-  @import 'node_modules/nhsuk-frontend/packages/core/tools/all';
 
-  // Generic
-  @import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
-  @import 'node_modules/nhsuk-frontend/packages/core/generic/font-face';
-  @import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
+
+
 
   // Elements
   @import 'node_modules/nhsuk-frontend/packages/core/elements/forms';
   @import 'node_modules/nhsuk-frontend/packages/core/elements/links';
-//  @import 'node_modules/nhsuk-frontend/packages/core/elements/page';
+  /*@import 'node_modules/nhsuk-frontend/packages/core/elements/page';*/
   @import 'node_modules/nhsuk-frontend/packages/core/elements/table';
 
   // Objects
@@ -23,8 +33,7 @@
   @import 'node_modules/nhsuk-frontend/packages/core/objects/main-wrapper';
   @import 'node_modules/nhsuk-frontend/packages/core/objects/width-container';
 
-  // Styles
-  @import 'node_modules/nhsuk-frontend/packages/core/styles/icons';
+
   @import 'node_modules/nhsuk-frontend/packages/core/styles/lists';
   @import 'node_modules/nhsuk-frontend/packages/core/styles/section-break';
   @import 'node_modules/nhsuk-frontend/packages/core/styles/typography';
@@ -38,60 +47,119 @@
   @import 'node_modules/nhsuk-frontend/packages/core/utilities/typography';
   @import 'node_modules/nhsuk-frontend/packages/core/utilities/visually-hidden';
   @import 'node_modules/nhsuk-frontend/packages/core/utilities/widths';
-
-  @import 'assets/scss/style_variations';//gutenberg blocks style variations
-  .acf-block-component {
-    a {
-      pointer-events: none;
-      cursor: default;
-      // this has been added on purpose to prevent links in blocks being clickable - its really annoying when editing to accidentally click a link and be taken off the edit screen!
-    }
-  }
   background-color: $color_nhsuk-grey-5;
-  .wp-block{
-    max-width: 800px;
+  .nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover {
+    color: #ffffff;
+    text-decoration: none;
   }
-  .wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
-    max-width: 1228px;
-  }
-  .block-editor-block-list__block {
-    font-family: $nhsuk-font, $nhsuk-font-fallback;
-    font-size: 16px;
-
-    .nhsuk-care-card__heading{
-      span {
-        font-size: 24px;
-        color: $color_nhsuk-white;
-      }
-    }
-  }
-  // start importing the theme specific settings
-
-  @import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
-  @import 'assets/scss/nhs-colours'; // nhs colour pallette
-  @import 'assets/scss/nhsl-blocks'; // specific elements for nhsl-blocks plugin
-  .editor-post-title__input {
-    font-family: $nhsuk-font, $nhsuk-font-fallback;;
-    @extend h1;
+  .is-style-reverse:visited, is-style-reverse:link {
+    color: #212b32;
   }
 }
+
+.acf-block-component {
+  a {
+    pointer-events: none;
+    cursor: default;
+    // this has been added on purpose to prevent links in blocks being clickable - its really annoying when editing to accidentally click a link and be taken off the edit screen!
+  }
+}
+.wp-block{
+  max-width: 800px;
+}
+.wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
+  max-width: 1228px;
+}
+.block-editor-block-list__block {
+  font-family: $nhsuk-font, $nhsuk-font-fallback;
+  font-size: 16px;
+
+  .nhsuk-care-card__heading{
+    span {
+      font-size: 24px;
+      color: $color_nhsuk-white;
+    }
+  }
+}
+// start importing the theme specific settings
+
+@import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
+@import 'assets/scss/nhs-colours'; // nhs colour pallette
+@import 'assets/scss/nhsl-blocks'; // specific elements for nhsl-blocks plugin
+.editor-post-title__input {
+  font-family: $nhsuk-font, $nhsuk-font-fallback;;
+  @extend h1;
+}
 //promo panel blockquote address button
-.nhsuk-promo__content {
-  .editor-inner-blocks {
-    .editor-block-list__block ~ .block-list-appender {
+.nhsuk-promo {
+  background: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 0 0 #d8dde0;
+  .nhsuk-promo__content {
+    .editor-url-input__button {
+      width: 100%;
+      text-align: center;
+    }
+    .editor-url-input__button:before {
+      content: "Add link for this promo box";
+    }
+    [data-type="core/image"] ~ .block-list-appender {
       display: none;
     }
   }
-  .editor-inserter {
-    button {
-      width: 20px;
-      height: 20px;
-      padding-top: 0;
-    }
-  };
-  .editor-url-input__button {
-    width: 0;
-    height: 0;
-    float: right;
+}
+
+.nhsuk-list--cross {
+  .editor-rich-text {
+    padding-left: 34px;
   }
 }
+
+.nhsuk-button {
+  /*
+  move the url field outside of the button
+   */
+  .editor-url-input__button {
+    position: absolute;
+    right: -50px;
+    top: 0;
+  }
+}
+
+.wp-block-nhsblocks-panel1 {
+  /* remove ability to add extra blocks inside panels, but leave ability to remove and move current inner blocks */
+  .editor-default-block-appender, .editor-block-list__insertion-point {
+    display: none;
+  }
+}
+
+@import 'assets/scss/style_variations';//gutenberg blocks style variations
+.is-style-panel-with-label {
+  h3 {
+    width: fit-content;
+    height: 10px;
+  }
+}
+.editor-styles-wrapper h3.nhsuk-care-card__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* admin styles widget tweaks */
+.block-editor-block-styles__item-preview {
+  .editor-styles-wrapper {
+    font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
+  }
+  .wp-block-nhsblocks-nhsbutton {
+    padding: 5px;
+    font-size: 0.7rem;
+  }
+  .is-style-expander {
+    .nhsuk-details__summary {
+      padding: 0;
+    }
+  }
+  .nhsuk-inset-text {
+    margin-top: 0;
+  }
+}
+
