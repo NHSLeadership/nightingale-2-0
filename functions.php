@@ -301,6 +301,11 @@ require get_template_directory() . '/inc/breadcrumbs.php';
  */
 require get_template_directory() . '/inc/gravity-forms.php';
 
+/**
+ * Retina Ready Image code.
+ */
+require get_template_directory() . '/inc/retina-images.php';
+
 
 
 /**

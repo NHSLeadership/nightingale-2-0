@@ -83,6 +83,7 @@ function nightingale_2_0__wp_head_ob_end() {
 
 //customise the read more link
 function nightingale_2_0_read_more() {
+    $post_id = get_the_ID();
 
     return '<div class="nhsuk-action-link">
   <a class="nhsuk-action-link__link" href="'.get_permalink().'"><svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
@@ -94,6 +95,4 @@ function nightingale_2_0_read_more() {
 
 
 add_filter( 'excerpt_more', 'nightingale_2_0_read_more', 10, 1 );
-
-
 
