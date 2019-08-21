@@ -7,6 +7,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Nightingale_2.0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
  */
 
 ?>

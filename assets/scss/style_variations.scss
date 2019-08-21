@@ -51,4 +51,12 @@
     display: flow-root;
   }
 }
-
+// fix for ever diminishing panels
+.wp-block-nhsblock-rowgroup {
+  .nhsuk-panel-group {
+    padding: 0;
+  }
+}
+.nhsuk-hero__overlay {
+  margin-bottom: 50px;
+}

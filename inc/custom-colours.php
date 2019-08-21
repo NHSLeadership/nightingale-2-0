@@ -1,6 +1,10 @@
 <?php
 /**
  * Set the theme colors
+ *
+ * @package Nightingale-2-0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
  */
 // -- Disable Custom Colors
 add_action( 'after_setup_theme', 'prefix_register_colors' );

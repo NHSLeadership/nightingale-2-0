@@ -180,11 +180,23 @@ h3.nhsuk-do-dont-list__label {
 }
 div[data-type="nhsblocks/heroblock"] {
   max-width: 100%;
+  div[data-type="nhsblocks/heroinner"] ~ div {
+    display: none;
+  }
+  .editor-inserter {
+    position: relative;
+    top: -100px;
+    background: white;
+    left: -400px;
+  }
+  editor-inserter:nth-of-type(2) {
+    display: none;
+  }
   .nhsuk-hero--image {
     .nhsuk-hero__overlay {
       position: relative;
       top: 270px;
-      margin-bottom: 80px;
+      margin-bottom: 100px;
       background: none;
     }
   }

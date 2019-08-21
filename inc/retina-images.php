@@ -1,4 +1,11 @@
 <?php
+/**
+ * Nightingale 2.0 Retina Image
+ *
+ * @package Nightingale_2.0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
+ * **/
 
 /*
  * The below is all to detect, serve and process retina quality images. Taken from tutorial at https://code.tutsplus.com/tutorials/ensuring-your-theme-has-retina-support--wp-33430

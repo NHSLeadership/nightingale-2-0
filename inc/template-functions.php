@@ -3,6 +3,8 @@
  * Functions which enhance the theme by hooking into WordPress
  *
  * @package Nightingale_2.0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
  */
 
 /**

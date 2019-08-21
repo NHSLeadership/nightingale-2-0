@@ -5,27 +5,31 @@
 
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
- - [ACF Pro](https://www.advancedcustomfields.com/pro/) and [nhsl-wp-blocks](https://github.com/NHSLeadership/nhsl-wp-blocks) (optional) - see below
- - You will need to either be able to run `node` either locally or on your server for the Sass SCSS files to be generated
- - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node`
+ - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will auto install on theme activation and is a 
+ requirement. This extends the native Gutenberg WP functionality to include latest developments.
+ - *optional* If you wish to edit the styles and/or blocks, You will need to either be able to run `node` either 
+ locally or on your server for the Sass SCSS files to be generated. In the nightingale-2-0 folder, after installing 
+ node using `npm install`, run `npm run build` to compile your css. In the nightingale-2-0/nhsblocks folder, after 
+ running `npm  install`, you can generate the ES6 required to recompile your Gutenberg blocks using `npm run build`
+ - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node` if you 
+install using the optional commands above
  
 ## Installation
  - Add to your WordPress files, in the `wp-content/themes` folder
- - If you have command line access, run `npm install` then `npm run build`. This will generate CSS files via Sass (any time you edit the SCSS, you will need to rerun `npm run build`)
- - If you don't have command line access to your server, you will need to run these commands locally to generate the output CSS before uploading
- - Activate the theme 
+ - Activate the theme
+   - You will be prompted to install the Gutenberg plugin. Please do so and activate it. 
  - To populate the site with basic elements, we suggest the following:
    - Enable the subpages widget in the sidebar. Configuration works best if you select *use parent page as title*, *show subpages*, and *enable ul for subpages*
    - Create a top menu assigned to the Main Menu region and add your default homepage. You can add extra pages later. N.B. the top menu will only show top level links, it does not display any dropdowns for sub pages (hence the need for the subpages widget in sidebar)
    - Create a footer menu assigned to the Footer Links region and add at least one link. Again this is static links only, it has no dropdown functionality
    
-## Optional but recommended
-This theme works best with the [nhsl-wp-blocks](https://github.com/NHSLeadership/nhsl-wp-blocks) and [ACF Pro](https://www.advancedcustomfields.com/pro/) plugins.
-
-Generously, the NHS has been granted a nationwide license. You can currently obtain the details from `tony.blacker@leadershipacademy.nhs.uk`.
-
-:exclamation: ACF Pro should be installed before the nhsl-wp-blocks plugin for full functionality.
- 
+## Feedback / Improvement / Development
+ - If you see any issues, faults or have suggestions for improvements, please add them as issues to our Git 
+ repository so we can action them.
+ - If you have developed improvements, please consider giving back to the Open Source community by submitting them as
+  pull requests to this repository
+  
+  
 ## Please note
  - XML/RPC will be disabled on activation of the theme. If you have a specific need to re-enable XML-RPC you may do so at the bottom of `functions.php`.
   
@@ -47,19 +51,20 @@ Generously, the NHS has been granted a nationwide license. You can currently obt
  - [x] Template layout code
  - [x] Typographic classes
  - [x] Custom Gutenburg Blocks (via NHSL-Blocks plugin)
- - [ ] Native Gutenberg blocks (phase 2 to replace NHSL_Blocks quickfix)
+ - [x] Native Gutenberg blocks (phase 2 to replace NHSL_Blocks quickfix)
  - [x] Breadcrumb trail styling and addition
  - [x] Emergency alert
  - [x] Feedback Banner
- - [ ] Forms elements
+ - [x] Forms elements
  - [ ] Add Gravity Forms compatibility
- - [ ] Add theme update routine [possible route here](https://wpmayor.com/how-to-integrate-wordpress-plugin-update-notifications-into-your-commercial-plugin/)
+ - [x] Add theme update routine [possible route here](https://wpmayor
+ .com/how-to-integrate-wordpress-plugin-update-notifications-into-your-commercial-plugin/)
  - [x] Composer build (including auto load NHSL Blocks plugin)
  - [x] Dependancy hint to suggest or force plugin dependancy load (for non-composer install)
  - [x] Widgetize footer region
  - [x] Alternative navigation aid to Tabs
- - [ ] Device checks (mobile, tablet, TV etc)
- - [ ] Print layout / styling
+ - [x] Device checks (mobile, tablet, TV etc)
+ - [x] Print layout / styling
  - [ ] Accessibility audit
  
  ## Licence

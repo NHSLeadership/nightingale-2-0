@@ -10193,6 +10193,14 @@ section {
   display: flow-root;
 }
 
+.wp-block-nhsblock-rowgroup .nhsuk-panel-group {
+  padding: 0;
+}
+
+.nhsuk-hero__overlay {
+  margin-bottom: 50px;
+}
+
 .is-style-panel-with-label h3 {
   width: fit-content;
   height: 10px;
@@ -10239,9 +10247,24 @@ div[data-type="nhsblocks/heroblock"] {
   max-width: 100%;
 }
 
+div[data-type="nhsblocks/heroblock"] div[data-type="nhsblocks/heroinner"] ~ div {
+  display: none;
+}
+
+div[data-type="nhsblocks/heroblock"] .editor-inserter {
+  position: relative;
+  top: -100px;
+  background: white;
+  left: -400px;
+}
+
+div[data-type="nhsblocks/heroblock"] editor-inserter:nth-of-type(2) {
+  display: none;
+}
+
 div[data-type="nhsblocks/heroblock"] .nhsuk-hero--image .nhsuk-hero__overlay {
   position: relative;
   top: 270px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   background: none;
 }

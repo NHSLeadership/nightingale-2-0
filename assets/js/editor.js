@@ -1,7 +1,11 @@
 /**
+ *
+ *
  *  Custom changes to Gutenberg editor to make it more NHS Friendly
- *  @author Tony Blacker, NHS Leadership Academy
- *  @version 1.0 22nd July 2019
+ *
+ *  @package Nightingale_2.0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
  */
 
 wp.domReady( function() {

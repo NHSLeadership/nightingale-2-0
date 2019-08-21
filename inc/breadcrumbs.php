@@ -1,6 +1,10 @@
 <?php
 /**
 * Generate breadcrumbs
+ *
+ * @package Nightingale-2-0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
 */
 function nightingale_breadcrumb() {
 

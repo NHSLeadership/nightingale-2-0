@@ -1,4 +1,17 @@
+<?php
+/**
+ * The standard header for our theme
+ *
+ * This is the template that displays the standard header region
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Nightingale_2.0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
+ */
 
+?>
         <div class="nhsuk-width-container nhsuk-header__container">
 
             <div class="nhsuk-header__logo">
