@@ -290,10 +290,22 @@ registerBlockType("nhsblock/rowgroup", {
     title: __("Grouped Items", "nhsblocks"),
     category: "nhsblocks",
     icon: 'layout',
-
+    attributes: {
+        template: {
+            type: "array"
+        }
+    },
 
     edit: props => {
-        const [ template, setTemplate ] = useState( template );
+        const {
+            attributes: {
+                template
+            },
+            setAttributes,
+        } = props;
+        const onChangetemplate = newTemplate => {
+            setAttributes({ template: newTemplate });
+        };
         const showTemplateSelector = ( template === null ) || ! template;
         return (
             <div className="nhsuk-grid-row">
@@ -301,19 +313,19 @@ registerBlockType("nhsblock/rowgroup", {
             <InnerBlocks
         template={ showTemplateSelector ? null : template }
         __experimentalTemplateOptions={ GRID_OPTIONS }
-        __experimentalOnSelectTemplateOption={ ( nextTemplate ) => {
-            if ( nextTemplate === undefined ) {
-                nextTemplate = "'nhsblocks/onehalf','nhsblocks/onehalf'";
-            }
-
-            setTemplate( nextTemplate );
-        } }
+        __experimentalOnSelectTemplateOption={ onChangetemplate }
         />
         </div>
         </div>
     );
     },
     save: props => {
+        const {
+            attributes:
+            {
+                template
+            }
+        } = props;
         return (
             <div className="nhsuk-grid-row">
             <div className="nhsuk-panel-group nhsuk-grid-column-full">
@@ -328,21 +340,40 @@ registerBlockType("nhsblocks/onehalf", {
     title: __("One Half Width", "nhsblocks"),
     category: "nhsblocks",
     parent: ["nhsblock/rowgroup"],
-
+    attributes: {
+        template: {
+            type: "array"
+        }
+    },
 
     edit: props => {
-        const [ template, setTemplate ] = useState( null );
+        const {
+            attributes: {
+                template
+            },
+            setAttributes,
+        } = props;
+        const onChangetemplate = newTemplate => {
+            setAttributes({ template: newTemplate });
+        };
+        const showTemplateSelector = ( template === null ) || ! template;
         return (
             <div className="nhsuk-grid-column-one-half">
             <InnerBlocks
-        template={ template }
+        template={ showTemplateSelector ? null : template }
         __experimentalTemplateOptions={ ITEM_OPTIONS }
-        __experimentalOnSelectTemplateOption={ setTemplate }
+        __experimentalOnSelectTemplateOption={ onChangetemplate }
         />
         </div>
     );
     },
     save: props => {
+        const {
+            attributes:
+                {
+                    template
+                }
+        } = props;
         return (
             <div className="nhsuk-grid-column-one-half">
             <InnerBlocks.Content />
@@ -354,21 +385,40 @@ registerBlockType("nhsblocks/onethird", {
     title: __("One Third Width", "nhsblocks"),
     category: "nhsblocks",
     parent: ["nhsblock/rowgroup"],
-
+    attributes: {
+        template: {
+            type: "array"
+        }
+    },
 
     edit: props => {
-        const [ template, setTemplate ] = useState( null );
+        const {
+            attributes: {
+                template
+            },
+            setAttributes,
+        } = props;
+        const onChangetemplate = newTemplate => {
+            setAttributes({ template: newTemplate });
+        };
+        const showTemplateSelector = ( template === null ) || ! template;
         return (
             <div className="nhsuk-grid-column-one-third">
             <InnerBlocks
-        template={ template }
+        template={ showTemplateSelector ? null : template }
         __experimentalTemplateOptions={ ITEM_OPTIONS }
-        __experimentalOnSelectTemplateOption={ setTemplate }
+        __experimentalOnSelectTemplateOption={ onChangetemplate }
         />
         </div>
     );
     },
     save: props => {
+        const {
+            attributes:
+                {
+                    template
+                }
+        } = props;
         return (
             <div className="nhsuk-grid-column-one-third">
             <InnerBlocks.Content />
@@ -381,21 +431,40 @@ registerBlockType("nhsblocks/onequarter", {
     title: __("One Quarter Width", "nhsblocks"),
     category: "nhsblocks",
     parent: ["nhsblock/rowgroup"],
-
+    attributes: {
+        template: {
+            type: "array"
+        }
+    },
 
     edit: props => {
-        const [ template, setTemplate ] = useState( null );
+        const {
+            attributes: {
+                template
+            },
+            setAttributes,
+        } = props;
+        const onChangetemplate = newTemplate => {
+            setAttributes({ template: newTemplate });
+        };
+        const showTemplateSelector = ( template === null ) || ! template;
         return (
             <div className="nhsuk-grid-column-one-quarter">
             <InnerBlocks
-        template={ template }
+        template={ showTemplateSelector ? null : template }
         __experimentalTemplateOptions={ ITEM_OPTIONS }
-        __experimentalOnSelectTemplateOption={ setTemplate }
+        __experimentalOnSelectTemplateOption={ onChangetemplate }
         />
         </div>
     );
     },
     save: props => {
+        const {
+            attributes:
+                {
+                    template
+                }
+        } = props;
         return (
             <div className="nhsuk-grid-column-one-quarter">
             <InnerBlocks.Content />
@@ -408,21 +477,40 @@ registerBlockType("nhsblocks/twothirds", {
     title: __("Two Thirds Width", "nhsblocks"),
     category: "nhsblocks",
     parent: ["nhsblock/rowgroup"],
-
+    attributes: {
+        template: {
+            type: "array"
+        }
+    },
 
     edit: props => {
-        const [ template, setTemplate ] = useState( null );
+        const {
+            attributes: {
+                template
+            },
+            setAttributes,
+        } = props;
+        const onChangetemplate = newTemplate => {
+            setAttributes({ template: newTemplate });
+        };
+        const showTemplateSelector = ( template === null ) || ! template;
         return (
             <div className="nhsuk-grid-column-two-thirds">
             <InnerBlocks
-        template={ template }
+        template={ showTemplateSelector ? null : template }
         __experimentalTemplateOptions={ ITEM_OPTIONS }
-        __experimentalOnSelectTemplateOption={ setTemplate }
+        __experimentalOnSelectTemplateOption={ onChangetemplate }
         />
         </div>
     );
     },
     save: props => {
+        const {
+            attributes:
+                {
+                    template
+                }
+        } = props;
         return (
             <div className="nhsuk-grid-column-two-thirds">
             <InnerBlocks.Content />
@@ -435,21 +523,40 @@ registerBlockType("nhsblocks/threequarters", {
     title: __("Three Quarter Width", "nhsblocks"),
     category: "nhsblocks",
     parent: ["nhsblock/rowgroup"],
-
+    attributes: {
+        template: {
+            type: "array"
+        }
+    },
 
     edit: props => {
-        const [ template, setTemplate ] = useState( null );
+        const {
+            attributes: {
+                template
+            },
+            setAttributes,
+        } = props;
+        const onChangetemplate = newTemplate => {
+            setAttributes({ template: newTemplate });
+        };
+        const showTemplateSelector = ( template === null ) || ! template;
         return (
             <div className="nhsuk-grid-column-three-quarters">
             <InnerBlocks
-        template={ template }
+        template={ showTemplateSelector ? null : template }
         __experimentalTemplateOptions={ ITEM_OPTIONS }
-        __experimentalOnSelectTemplateOption={ setTemplate }
+        __experimentalOnSelectTemplateOption={ onChangetemplate }
         />
         </div>
     );
     },
     save: props => {
+        const {
+            attributes:
+                {
+                    template
+                }
+        } = props;
         return (
             <div className="nhsuk-grid-column-three-quarters">
             <InnerBlocks.Content />

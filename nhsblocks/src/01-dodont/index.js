@@ -7,8 +7,7 @@
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText, InnerBlocks } = wp.blockEditor;
-//@todo add in Panel class variations
-//@todo add in width variations
+
 
 registerBlockType("nhsblocks/dodont", {
     title: __("Do and Don't List", "nhsblocks"),
@@ -37,7 +36,7 @@ registerBlockType("nhsblocks/dodont", {
         const onChangePanelTitle = newPanelTitle => {
             setAttributes({ panelTitle: newPanelTitle });
         };
-        const ALLOWED_BLOCKS = [];
+        const ALLOWED_BLOCKS = [ ];
 
 
 
