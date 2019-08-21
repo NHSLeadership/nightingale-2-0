@@ -37,3 +37,11 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
+?>
+
+<script>
+    if(jQuery(".wp-block-nhsblocks-heroblock"). length){
+        jQuery("#content").prepend(jQuery(".wp-block-nhsblocks-heroblock"));
+        jQuery(".nhsuk-breadcrumb").remove();
+    }
+</script>

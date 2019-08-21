@@ -10,15 +10,16 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Nightingale_2.0
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.1 21st August 2019
  */
 
 get_header();
 ?>
 
-    <div id="primary" class=" nhsuk-grid-row">
-        <div class="nhsuk-grid-column-two-thirds">
-
-                        <?php
+<div id="primary" class=" nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+<?php
                         while (have_posts()) :
                             the_post();
 
@@ -42,3 +43,10 @@ get_header();
 
 <?php
 get_footer();
+?>
+<script>
+    if(jQuery(".wp-block-nhsblocks-heroblock"). length){
+        jQuery("#content").prepend(jQuery(".wp-block-nhsblocks-heroblock"));
+        jQuery(".nhsuk-breadcrumb").remove();
+    }
+</script>
