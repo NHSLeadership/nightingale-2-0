@@ -168,3 +168,24 @@ ul {
     width: 100%;
   }
 }
+/* Panel Group editor tweak */
+.nhsuk-promo-group .block-editor-inner-blocks {
+  width: 100%;
+  float: left;
+}
+h3.nhsuk-do-dont-list__label {
+  .rich-text {
+    color: #ffffff;
+  }
+}
+div[data-type="nhsblocks/heroblock"] {
+  max-width: 100%;
+  .nhsuk-hero--image {
+    .nhsuk-hero__overlay {
+      position: relative;
+      top: 270px;
+      margin-bottom: 80px;
+      background: none;
+    }
+  }
+}
