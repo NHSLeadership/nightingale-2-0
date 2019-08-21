@@ -1,0 +1,6 @@
+/* Panel Group editor tweak */
+.nhsuk-promo-group .block-editor-inner-blocks {
+    width: 100%;
+    float: left;
+}
+

@@ -40,9 +40,8 @@ test.html
 
 # NPM Generated Files
 node_modules/
-style.css
+nhsblocks/node_modules/
 style.min.css
-style-gutenburg.css
 style-gutenburg.min.css
 .sass-cache/
 

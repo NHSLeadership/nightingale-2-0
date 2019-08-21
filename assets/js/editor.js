@@ -47,7 +47,7 @@ wp.domReady( function() {
         return blockName === 'core/image' ?
             'nhsuk-image' :
             className;
-    }*/
+    }
 
     wp.hooks.addFilter(
         'blocks.getBlockDefaultClassName',

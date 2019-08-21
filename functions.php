@@ -326,3 +326,9 @@ require get_template_directory() . '/inc/retina-images.php';
  */
 require get_template_directory() . '/inc/nightingale_subpages_widget.php';
 
+
+/**
+ * NHS Blocks for Gutenberg.
+ */
+require get_template_directory() . '/nhsblocks/nhsblocks.php';
+
