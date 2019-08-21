@@ -16,7 +16,8 @@ registerBlockType("nhsblocks/latestnews", {
   category: "nhsblocks",
 
 
-  edit: withSelect( select => {
+  edit:
+      withSelect( select => {
     return {
       // Send a GET query to the REST API.
       posts: select( "core" ).getEntityRecords( "postType", "post", {
@@ -36,7 +37,6 @@ registerBlockType("nhsblocks/latestnews", {
 
     // Grab the first post.
     const post = posts[0];
-    console.info(post);
 
     const featImg = imageURL => {
       return imageURL ? imageURL : '';

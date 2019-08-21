@@ -63,5 +63,6 @@ wp.domReady( function() {
     if(jQuery("*[data-type='nhsblocks/heroblock']"). length){
         jQuery(".block-editor-block-list__layout").prepend(jQuery('*[data-type="nhsblocks/heroblock"]'));
     }*/
+
 } );
 

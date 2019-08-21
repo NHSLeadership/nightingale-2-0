@@ -4,7 +4,6 @@
  *  @author Tony Blacker, NHS Leadership Academy
  *  @version 1.1 19th August 2019
  */
-import "./00-columns";
 import "./01-dodont";
 import "./02-button";
 import "./03-reveal";
