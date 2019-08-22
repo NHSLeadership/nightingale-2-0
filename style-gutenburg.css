@@ -10247,6 +10247,19 @@ h3.nhsuk-do-dont-list__label .rich-text {
   color: #ffffff;
 }
 
+.wp-block-nhsblocks-dashpanel .nhsuk-panel-with-label__label, .wp-block-nhsblocks-dashpanel .is-style-panel-with-label h3, .is-style-panel-with-label .wp-block-nhsblocks-dashpanel h3, .wp-block-nhsblocks-dashpanel .is-style-panel-with-label h3 .rich-text, .is-style-panel-with-label h3 .wp-block-nhsblocks-dashpanel .rich-text {
+  z-index: 2;
+  top: 0;
+  margin: 0 -20px;
+  top: 50%;
+  max-width: 90%;
+}
+
+.wp-block-nhsblocks-dashpanel .nhsuk-panel-with-label__label .rich-text, .wp-block-nhsblocks-dashpanel .is-style-panel-with-label h3 .rich-text, .is-style-panel-with-label .wp-block-nhsblocks-dashpanel h3 .rich-text, .is-style-panel-with-label h3 .wp-block-nhsblocks-dashpanel .rich-text .rich-text {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
 div[data-type="nhsblocks/heroblock"] {
   max-width: 100%;
 }

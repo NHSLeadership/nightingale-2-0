@@ -178,6 +178,19 @@ h3.nhsuk-do-dont-list__label {
     color: #ffffff;
   }
 }
+.wp-block-nhsblocks-dashpanel {
+  .nhsuk-panel-with-label__label {
+    z-index: 2;
+    top: 0;
+    margin: 0 -20px;
+    top: 50%;
+    max-width: 90%;
+    .rich-text {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+  }
+}
 div[data-type="nhsblocks/heroblock"] {
   max-width: 100%;
   div[data-type="nhsblocks/heroinner"] ~ div {
