@@ -70,23 +70,13 @@ function nhsblocks_register_blocks()
         false
     );
 
-    // Array of block created in this plugin.
-    $blocks = [
-        'nhsblocks/dodont',
-        'nhsblocks/button',
-        'nhsblocks/reveal1',
-        'nhsblocks/promo1',
-        'nhsblocks/quote1',
-        'nhsblocks/card',
 
-    ];
 
-    // Loop through $blocks and register each block with the same script and styles.
-    foreach ($blocks as $block) {
-        register_block_type($block, array(
+
+        register_block_type('nhsblocks/panel1', array(
             'editor_script' => 'nhsblocks-editor-script',                    // Calls registered script above
         ));
-    }
+
 
     if (function_exists('wp_set_script_translations')) {
         /**
