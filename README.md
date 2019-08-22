@@ -1,28 +1,37 @@
 # Nightingale 2.0
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 
-:exclamation: This is a pre-release version. Do not use on production sites.
+:exclamation: This is a Release Candidate version. Do not use on production sites. `Feedback is positively encouraged,
+ please see how to get involved below`
 
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
  - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will auto install on theme activation and is a 
  requirement. This extends the native Gutenberg WP functionality to include latest developments.
- - *optional* If you wish to edit the styles and/or blocks, You will need to either be able to run `node` either 
- locally or on your server for the Sass SCSS files to be generated. In the nightingale-2-0 folder, after installing 
- node using `npm install`, run `npm run build` to compile your css. In the nightingale-2-0/nhsblocks folder, after 
- running `npm  install`, you can generate the ES6 required to recompile your Gutenberg blocks using `npm run build`
- - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node` if you 
-install using the optional commands above
+ - *optional* For any editing of the theme (in particular the css files) we strongly advise you to use the NPM 
+ installation route detailed in `Optional Settings` below.
  
 ## Installation
  - Add to your WordPress files, in the `wp-content/themes` folder
  - Activate the theme
    - You will be prompted to install the Gutenberg plugin. Please do so and activate it. 
+   - You will be advised to install Cookie Notice plugin (see `Optional Settings` section below)
  - To populate the site with basic elements, we suggest the following:
    - Enable the subpages widget in the sidebar. Configuration works best if you select *use parent page as title*, *show subpages*, and *enable ul for subpages*
    - Create a top menu assigned to the Main Menu region and add your default homepage. You can add extra pages later. N.B. the top menu will only show top level links, it does not display any dropdowns for sub pages (hence the need for the subpages widget in sidebar)
    - Create a footer menu assigned to the Footer Links region and add at least one link. Again this is static links only, it has no dropdown functionality
-   
+ 
+## Optional Settings
+ - `Cookie Notice plugin` - This adds a cookie notice banner to your site. You can modify the text that displays, and
+  this gives your users an easy to use way of opting out of cookies. This, however, is an implied consent approach to
+   cookies. If you wish to have an informed consent route to cookie adoption, you will need an alternative solution.
+ - If you wish to edit the styles and/or blocks, You will need to either be able to run `node` either 
+    locally or on your server for the Sass SCSS files to be generated. In the nightingale-2-0 folder, after installing 
+    node using `npm install`, run `npm run build` to compile your css. In the nightingale-2-0/nhsblocks folder, after 
+    running `npm  install`, you can generate the ES6 required to recompile your Gutenberg blocks using `npm run build`
+    - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node` if you 
+   install using the optional commands above
+      
 ## Feedback / Improvement / Development
  - If you see any issues, faults or have suggestions for improvements, please add them as issues to our Git 
  repository so we can action them.
