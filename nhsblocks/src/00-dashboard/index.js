@@ -9,7 +9,6 @@ const { useState, setState } = wp.element;
 const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 const { RichText, InspectorControls, URLInputButton, ColorPalette, MediaUpload, InnerBlocks } = wp.blockEditor;
-
 const onecolsIcon = wp.element.createElement('svg',
     {
         width: 60,
@@ -287,7 +286,7 @@ const GRID_OPTIONS = [
 registerBlockType("nhsblock/dashboardnav", {
     title: __("Dashboard Navigation", "nhsblocks"),
     category: "nhsblocks",
-    icon: 'layout',
+    icon: 'tagcloud',
     attributes: {
         template: {
             type: "array"
