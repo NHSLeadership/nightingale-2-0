@@ -261,7 +261,7 @@ function nightingale_2_0_register_required_plugins() {
         'menu'         => 'tgmpa-install-plugins', // Menu slug.
         'has_notices'  => true,                    // Show admin notices or not.
         'dismissable'  => false,                    // If false, a user cannot dismiss the nag message.
-        'dismiss_msg'  => 'We recommend you install this plugin to add the full NHS Frontend library range of components to your wordpress editor. This plugin will only work if you already have ACF Pro installed (if you are an NHS organisation, you can get this for free with an NHS wide license, available by emailing tony.blacker@leadershipacademy.nhs.uk)',
+        'dismiss_msg'  => 'We recommend you install these plugin to add the full NHS Frontend library range of components to your wordpress editor. ',
 
         //
         // If 'dismissable' is false, this message will be output at top of nag.
