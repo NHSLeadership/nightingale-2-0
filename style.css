@@ -1,4 +1,784 @@
 @charset "UTF-8";
+/*
+Theme Name: Nightingale 2.0
+Author: Tony Blacker, NHS Leadership Academy
+Description: NHS Digital frontend framework WordPress theme
+Version: 2.0
+Tags: NHS, NHS Digital, NHS Frontend
+*/
+/*!
+Theme Name: Nightingale 2.0
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: nightingale-2-0
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Nightingale 2.0 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+  # Normalize
+  --------------------------------------------------------------*/
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+       ========================================================================== */
+/**
+   * 1. Correct the line height in all browsers.
+   * 2. Prevent adjustments of font size after orientation changes in iOS.
+   */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul, ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  @extent .nhsuk-button;
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
+}
+
+.site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
+  margin: 0 0 1.5em;
+  overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+
+.widget select {
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
 /* ==========================================================================
    GENERIC / #BOX-SIZING
    ========================================================================== */
@@ -14,7 +794,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: inherit;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -598,7 +1380,7 @@ caption {
  * 2. 'Random number' used to give sufficient spacing between text and icon.
  * 3. 'Random number' used to align icon and text.
  */
-.nhsuk-list, ul, ol, .edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+.nhsuk-list, ul, ol {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -609,7 +1391,7 @@ caption {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-list, ul, ol, .edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+  .nhsuk-list, ul, ol {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -617,39 +1399,39 @@ caption {
 }
 
 @media print {
-  .nhsuk-list, ul, ol, .edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+  .nhsuk-list, ul, ol {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-list, ul, ol, .edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+  .nhsuk-list, ul, ol {
     margin-bottom: 24px;
   }
 }
 
-.nhsuk-list > li, ul > li, ol > li, .edit-post-visual-editor .nhsuk-list > li, .edit-post-visual-editor ul > li, .edit-post-visual-editor ol > li {
+.nhsuk-list > li, ul > li, ol > li {
   margin-bottom: 8px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-list > li, ul > li, ol > li, .edit-post-visual-editor .nhsuk-list > li, .edit-post-visual-editor ul > li, .edit-post-visual-editor ol > li {
+  .nhsuk-list > li, ul > li, ol > li {
     margin-bottom: 8px;
   }
 }
 
-.nhsuk-list > li:last-child, ul > li:last-child, ol > li:last-child, .edit-post-visual-editor .nhsuk-list > li:last-child, .edit-post-visual-editor ul > li:last-child, .edit-post-visual-editor ol > li:last-child {
+.nhsuk-list > li:last-child, ul > li:last-child, ol > li:last-child {
   margin-bottom: 0;
 }
 
-.nhsuk-list--bullet, ul, .edit-post-visual-editor .nhsuk-list--bullet, .edit-post-visual-editor ul {
+.nhsuk-list--bullet, ul {
   list-style-type: disc;
   padding-left: 20px;
   /* [1] */
 }
 
-.nhsuk-list--number, ol, .edit-post-visual-editor .nhsuk-list--number, .edit-post-visual-editor ol {
+.nhsuk-list--number, ol {
   list-style-type: decimal;
   padding-left: 20px;
   /* [1] */
@@ -683,63 +1465,63 @@ caption {
  * Original code taken from GDS (Government Digital Service)
  * https://github.com/alphagov/govuk-frontend
  */
-.nhsuk-section-break, hr, .edit-post-visual-editor .nhsuk-section-break, .edit-post-visual-editor hr {
+.nhsuk-section-break, hr {
   border: 0;
   margin: 0;
 }
 
-.nhsuk-section-break--xl, .edit-post-visual-editor .nhsuk-section-break--xl {
+.nhsuk-section-break--xl {
   margin-top: 48px;
   margin-bottom: 48px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-section-break--xl, .edit-post-visual-editor .nhsuk-section-break--xl {
+  .nhsuk-section-break--xl {
     margin-top: 56px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-section-break--xl, .edit-post-visual-editor .nhsuk-section-break--xl {
+  .nhsuk-section-break--xl {
     margin-bottom: 56px;
   }
 }
 
-.nhsuk-section-break--l, hr, .edit-post-visual-editor .nhsuk-section-break--l, .edit-post-visual-editor hr {
+.nhsuk-section-break--l, hr {
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-section-break--l, hr, .edit-post-visual-editor .nhsuk-section-break--l, .edit-post-visual-editor hr {
+  .nhsuk-section-break--l, hr {
     margin-top: 40px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-section-break--l, hr, .edit-post-visual-editor .nhsuk-section-break--l, .edit-post-visual-editor hr {
+  .nhsuk-section-break--l, hr {
     margin-bottom: 40px;
   }
 }
 
-.nhsuk-section-break--m, .edit-post-visual-editor .nhsuk-section-break--m {
+.nhsuk-section-break--m {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-section-break--m, .edit-post-visual-editor .nhsuk-section-break--m {
+  .nhsuk-section-break--m {
     margin-top: 24px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-section-break--m, .edit-post-visual-editor .nhsuk-section-break--m {
+  .nhsuk-section-break--m {
     margin-bottom: 24px;
   }
 }
 
-.nhsuk-section-break--visible, hr, .edit-post-visual-editor .nhsuk-section-break--visible, .edit-post-visual-editor hr {
+.nhsuk-section-break--visible, hr {
   border-bottom: 1px solid #d8dde0;
 }
 
@@ -751,9 +1533,8 @@ hr {
    STYLES / #TYPOGRAPHY
    ========================================================================== */
 /* Headings */
-h1, .editor-post-title__input,
-.nhsuk-heading-xl, .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-.edit-post-visual-editor .nhsuk-heading-xl {
+h1,
+.nhsuk-heading-xl {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.25;
@@ -764,9 +1545,8 @@ h1, .editor-post-title__input,
 }
 
 @media (min-width: 40.0625em) {
-  h1, .editor-post-title__input,
-  .nhsuk-heading-xl, .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+  h1,
+  .nhsuk-heading-xl {
     font-size: 48px;
     font-size: 3rem;
     line-height: 1.16667;
@@ -774,25 +1554,22 @@ h1, .editor-post-title__input,
 }
 
 @media print {
-  h1, .editor-post-title__input,
-  .nhsuk-heading-xl, .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+  h1,
+  .nhsuk-heading-xl {
     font-size: 32pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  h1, .editor-post-title__input,
-  .nhsuk-heading-xl, .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+  h1,
+  .nhsuk-heading-xl {
     margin-bottom: 48px;
   }
 }
 
 h2,
-.nhsuk-heading-l, .edit-post-visual-editor h2,
-.edit-post-visual-editor .nhsuk-heading-l {
+.nhsuk-heading-l {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.33333;
@@ -804,8 +1581,7 @@ h2,
 
 @media (min-width: 40.0625em) {
   h2,
-  .nhsuk-heading-l, .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+  .nhsuk-heading-l {
     font-size: 32px;
     font-size: 2rem;
     line-height: 1.25;
@@ -814,8 +1590,7 @@ h2,
 
 @media print {
   h2,
-  .nhsuk-heading-l, .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+  .nhsuk-heading-l {
     font-size: 24pt;
     line-height: 1.05;
   }
@@ -823,15 +1598,13 @@ h2,
 
 @media (min-width: 40.0625em) {
   h2,
-  .nhsuk-heading-l, .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+  .nhsuk-heading-l {
     margin-bottom: 24px;
   }
 }
 
 h3,
-.nhsuk-heading-m, .edit-post-visual-editor h3,
-.edit-post-visual-editor .nhsuk-heading-m {
+.nhsuk-heading-m {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -843,8 +1616,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m, .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m {
+  .nhsuk-heading-m {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -853,8 +1625,7 @@ h3,
 
 @media print {
   h3,
-  .nhsuk-heading-m, .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m {
+  .nhsuk-heading-m {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -862,15 +1633,13 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m, .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m {
+  .nhsuk-heading-m {
     margin-bottom: 24px;
   }
 }
 
 h4,
-.nhsuk-heading-s, .edit-post-visual-editor h4,
-.edit-post-visual-editor .nhsuk-heading-s {
+.nhsuk-heading-s {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556;
@@ -882,8 +1651,7 @@ h4,
 
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s, .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+  .nhsuk-heading-s {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -892,8 +1660,7 @@ h4,
 
 @media print {
   h4,
-  .nhsuk-heading-s, .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+  .nhsuk-heading-s {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -901,15 +1668,13 @@ h4,
 
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s, .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+  .nhsuk-heading-s {
     margin-bottom: 24px;
   }
 }
 
 h5,
-.nhsuk-heading-xs, .edit-post-visual-editor h5,
-.edit-post-visual-editor .nhsuk-heading-xs {
+.nhsuk-heading-xs {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -921,8 +1686,7 @@ h5,
 
 @media (min-width: 40.0625em) {
   h5,
-  .nhsuk-heading-xs, .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+  .nhsuk-heading-xs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -931,8 +1695,7 @@ h5,
 
 @media print {
   h5,
-  .nhsuk-heading-xs, .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+  .nhsuk-heading-xs {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -940,15 +1703,13 @@ h5,
 
 @media (min-width: 40.0625em) {
   h5,
-  .nhsuk-heading-xs, .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+  .nhsuk-heading-xs {
     margin-bottom: 24px;
   }
 }
 
 h6,
-.nhsuk-heading-xxs, .edit-post-visual-editor h6,
-.edit-post-visual-editor .nhsuk-heading-xxs {
+.nhsuk-heading-xxs {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -960,8 +1721,7 @@ h6,
 
 @media (min-width: 40.0625em) {
   h6,
-  .nhsuk-heading-xxs, .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+  .nhsuk-heading-xxs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -970,8 +1730,7 @@ h6,
 
 @media print {
   h6,
-  .nhsuk-heading-xxs, .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+  .nhsuk-heading-xxs {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -979,8 +1738,7 @@ h6,
 
 @media (min-width: 40.0625em) {
   h6,
-  .nhsuk-heading-xxs, .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+  .nhsuk-heading-xxs {
     margin-bottom: 24px;
   }
 }
@@ -1066,7 +1824,7 @@ h6,
 }
 
 /* Body (paragraphs) */
-.nhsuk-body-l, .edit-post-visual-editor .nhsuk-body-l {
+.nhsuk-body-l {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -1076,7 +1834,7 @@ h6,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-l, .edit-post-visual-editor .nhsuk-body-l {
+  .nhsuk-body-l {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1084,21 +1842,20 @@ h6,
 }
 
 @media print {
-  .nhsuk-body-l, .edit-post-visual-editor .nhsuk-body-l {
+  .nhsuk-body-l {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-l, .edit-post-visual-editor .nhsuk-body-l {
+  .nhsuk-body-l {
     margin-bottom: 32px;
   }
 }
 
 p,
-.nhsuk-body-m, address, .edit-post-visual-editor p,
-.edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+.nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -1109,8 +1866,7 @@ p,
 
 @media (min-width: 40.0625em) {
   p,
-  .nhsuk-body-m, address, .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+  .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1119,8 +1875,7 @@ p,
 
 @media print {
   p,
-  .nhsuk-body-m, address, .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+  .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -1128,8 +1883,7 @@ p,
 
 @media (min-width: 40.0625em) {
   p,
-  .nhsuk-body-m, address, .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+  .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
@@ -1139,7 +1893,7 @@ p,
   color: inherit;
 }
 
-.nhsuk-body-s, .edit-post-visual-editor .nhsuk-body-s {
+.nhsuk-body-s {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -1149,7 +1903,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .edit-post-visual-editor .nhsuk-body-s {
+  .nhsuk-body-s {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -1157,14 +1911,14 @@ p,
 }
 
 @media print {
-  .nhsuk-body-s, .edit-post-visual-editor .nhsuk-body-s {
+  .nhsuk-body-s {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .edit-post-visual-editor .nhsuk-body-s {
+  .nhsuk-body-s {
     margin-bottom: 24px;
   }
 }
@@ -1182,15 +1936,13 @@ address {
  * https://github.com/alphagov/nhsuk-frontend
  */
 .nhsuk-body-l + h2,
-.nhsuk-body-l + .nhsuk-heading-l, .edit-post-visual-editor .nhsuk-body-l + h2,
-.edit-post-visual-editor .nhsuk-body-l + .nhsuk-heading-l {
+.nhsuk-body-l + .nhsuk-heading-l {
   padding-top: 4px;
 }
 
 @media (min-width: 40.0625em) {
   .nhsuk-body-l + h2,
-  .nhsuk-body-l + .nhsuk-heading-l, .edit-post-visual-editor .nhsuk-body-l + h2,
-  .edit-post-visual-editor .nhsuk-body-l + .nhsuk-heading-l {
+  .nhsuk-body-l + .nhsuk-heading-l {
     padding-top: 8px;
   }
 }
@@ -1198,26 +1950,15 @@ address {
 p + h2, .nhsuk-body-m + h2, address + h2,
 p + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
-address + .nhsuk-heading-l, .edit-post-visual-editor p + h2, .edit-post-visual-editor .nhsuk-body-m + h2, .edit-post-visual-editor address + h2,
-.edit-post-visual-editor p + .nhsuk-heading-l,
-.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-l,
-.edit-post-visual-editor address + .nhsuk-heading-l,
+address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
 .nhsuk-body-s + .nhsuk-heading-l,
-.edit-post-visual-editor .nhsuk-body-s + h2,
-.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-l,
 .nhsuk-list + h2,
 ul + h2,
 ol + h2,
 .nhsuk-list + .nhsuk-heading-l,
 ul + .nhsuk-heading-l,
-ol + .nhsuk-heading-l,
-.edit-post-visual-editor .nhsuk-list + h2,
-.edit-post-visual-editor ul + h2,
-.edit-post-visual-editor ol + h2,
-.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-l,
-.edit-post-visual-editor ul + .nhsuk-heading-l,
-.edit-post-visual-editor ol + .nhsuk-heading-l {
+ol + .nhsuk-heading-l {
   padding-top: 16px;
 }
 
@@ -1225,26 +1966,15 @@ ol + .nhsuk-heading-l,
   p + h2, .nhsuk-body-m + h2, address + h2,
   p + .nhsuk-heading-l,
   .nhsuk-body-m + .nhsuk-heading-l,
-  address + .nhsuk-heading-l, .edit-post-visual-editor p + h2, .edit-post-visual-editor .nhsuk-body-m + h2, .edit-post-visual-editor address + h2,
-  .edit-post-visual-editor p + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-l,
-  .edit-post-visual-editor address + .nhsuk-heading-l,
+  address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
   .nhsuk-body-s + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-body-s + h2,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-l,
   .nhsuk-list + h2,
   ul + h2,
   ol + h2,
   .nhsuk-list + .nhsuk-heading-l,
   ul + .nhsuk-heading-l,
-  ol + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-list + h2,
-  .edit-post-visual-editor ul + h2,
-  .edit-post-visual-editor ol + h2,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-l,
-  .edit-post-visual-editor ul + .nhsuk-heading-l,
-  .edit-post-visual-editor ol + .nhsuk-heading-l {
+  ol + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
@@ -1252,54 +1982,29 @@ ol + .nhsuk-heading-l,
 p + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .edit-post-visual-editor p + h3, .edit-post-visual-editor .nhsuk-body-m + h3, .edit-post-visual-editor address + h3,
-.edit-post-visual-editor p + .nhsuk-heading-m,
-.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-m,
-.edit-post-visual-editor address + .nhsuk-heading-m,
+address + .nhsuk-heading-m,
 .nhsuk-body-s + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
-.edit-post-visual-editor .nhsuk-body-s + h3,
-.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-m,
 .nhsuk-list + h3,
 ul + h3,
 ol + h3,
 .nhsuk-list + .nhsuk-heading-m,
 ul + .nhsuk-heading-m,
 ol + .nhsuk-heading-m,
-.edit-post-visual-editor .nhsuk-list + h3,
-.edit-post-visual-editor ul + h3,
-.edit-post-visual-editor ol + h3,
-.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-m,
-.edit-post-visual-editor ul + .nhsuk-heading-m,
-.edit-post-visual-editor ol + .nhsuk-heading-m,
 p + h4,
 .nhsuk-body-m + h4,
 address + h4,
 p + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
-.edit-post-visual-editor p + h4,
-.edit-post-visual-editor .nhsuk-body-m + h4,
-.edit-post-visual-editor address + h4,
-.edit-post-visual-editor p + .nhsuk-heading-s,
-.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-s,
-.edit-post-visual-editor address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
 .nhsuk-body-s + .nhsuk-heading-s,
-.edit-post-visual-editor .nhsuk-body-s + h4,
-.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-s,
 .nhsuk-list + h4,
 ul + h4,
 ol + h4,
 .nhsuk-list + .nhsuk-heading-s,
 ul + .nhsuk-heading-s,
-ol + .nhsuk-heading-s,
-.edit-post-visual-editor .nhsuk-list + h4,
-.edit-post-visual-editor ul + h4,
-.edit-post-visual-editor ol + h4,
-.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-s,
-.edit-post-visual-editor ul + .nhsuk-heading-s,
-.edit-post-visual-editor ol + .nhsuk-heading-s {
+ol + .nhsuk-heading-s {
   padding-top: 4px;
 }
 
@@ -1307,54 +2012,29 @@ ol + .nhsuk-heading-s,
   p + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .edit-post-visual-editor p + h3, .edit-post-visual-editor .nhsuk-body-m + h3, .edit-post-visual-editor address + h3,
-  .edit-post-visual-editor p + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-m,
-  .edit-post-visual-editor address + .nhsuk-heading-m,
+  address + .nhsuk-heading-m,
   .nhsuk-body-s + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-body-s + h3,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-m,
   .nhsuk-list + h3,
   ul + h3,
   ol + h3,
   .nhsuk-list + .nhsuk-heading-m,
   ul + .nhsuk-heading-m,
   ol + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-list + h3,
-  .edit-post-visual-editor ul + h3,
-  .edit-post-visual-editor ol + h3,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-m,
-  .edit-post-visual-editor ul + .nhsuk-heading-m,
-  .edit-post-visual-editor ol + .nhsuk-heading-m,
   p + h4,
   .nhsuk-body-m + h4,
   address + h4,
   p + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
-  .edit-post-visual-editor p + h4,
-  .edit-post-visual-editor .nhsuk-body-m + h4,
-  .edit-post-visual-editor address + h4,
-  .edit-post-visual-editor p + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-s,
-  .edit-post-visual-editor address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
   .nhsuk-body-s + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-body-s + h4,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-s,
   .nhsuk-list + h4,
   ul + h4,
   ol + h4,
   .nhsuk-list + .nhsuk-heading-s,
   ul + .nhsuk-heading-s,
-  ol + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-list + h4,
-  .edit-post-visual-editor ul + h4,
-  .edit-post-visual-editor ol + h4,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-s,
-  .edit-post-visual-editor ul + .nhsuk-heading-s,
-  .edit-post-visual-editor ol + .nhsuk-heading-s {
+  ol + .nhsuk-heading-s {
     padding-top: 8px;
   }
 }
@@ -6370,7 +7050,22 @@ b {
  *    as background-color and color need to always be set together, color should
  *    not be set either.
  */
-.nhsuk-input {
+.nhsuk-input, input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -6392,7 +7087,22 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-input {
+  .nhsuk-input, input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  textarea {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -6400,25 +7110,88 @@ b {
 }
 
 @media print {
-  .nhsuk-input {
+  .nhsuk-input, input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="range"],
+  input[type="date"],
+  input[type="month"],
+  input[type="week"],
+  input[type="time"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="color"],
+  textarea {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-input:focus {
+.nhsuk-input:focus, input:focus[type="text"],
+input:focus[type="email"],
+input:focus[type="url"],
+input:focus[type="password"],
+input:focus[type="search"],
+input:focus[type="number"],
+input:focus[type="tel"],
+input:focus[type="range"],
+input:focus[type="date"],
+input:focus[type="month"],
+input:focus[type="week"],
+input:focus[type="time"],
+input:focus[type="datetime"],
+input:focus[type="datetime-local"],
+input:focus[type="color"],
+textarea:focus {
   box-shadow: 0 0 0 4px #ffb81C;
   outline: 4px solid transparent;
   outline-offset: 4px;
 }
 
-.nhsuk-input::-webkit-outer-spin-button,
-.nhsuk-input::-webkit-inner-spin-button {
+.nhsuk-input::-webkit-outer-spin-button, input[type="text"]::-webkit-outer-spin-button,
+input[type="email"]::-webkit-outer-spin-button,
+input[type="url"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-outer-spin-button,
+input[type="search"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+input[type="tel"]::-webkit-outer-spin-button,
+input[type="range"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="month"]::-webkit-outer-spin-button,
+input[type="week"]::-webkit-outer-spin-button,
+input[type="time"]::-webkit-outer-spin-button,
+input[type="datetime"]::-webkit-outer-spin-button,
+input[type="datetime-local"]::-webkit-outer-spin-button,
+input[type="color"]::-webkit-outer-spin-button,
+textarea::-webkit-outer-spin-button,
+.nhsuk-input::-webkit-inner-spin-button,
+input[type="text"]::-webkit-inner-spin-button,
+input[type="email"]::-webkit-inner-spin-button,
+input[type="url"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-inner-spin-button,
+input[type="search"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="tel"]::-webkit-inner-spin-button,
+input[type="range"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-inner-spin-button,
+input[type="week"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="datetime"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="color"]::-webkit-inner-spin-button,
+textarea::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.nhsuk-input[type="number"] {
+.nhsuk-input[type="number"],
+input[type="number"],
+textarea[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -6734,7 +7507,7 @@ b {
   }
 }
 
-.nhsuk-list-panel__list,
+.nhsuk-list-panel__list, #secondary section ul,
 .nhsuk-list-panel__box {
   background-color: #ffffff;
   margin: 0;
@@ -6742,7 +7515,7 @@ b {
 }
 
 @media print {
-  .nhsuk-list-panel__list,
+  .nhsuk-list-panel__list, #secondary section ul,
   .nhsuk-list-panel__box {
     border-top: 0;
   }
@@ -6767,31 +7540,31 @@ b {
   }
 }
 
-.nhsuk-list-panel__item {
+.nhsuk-list-panel__item, #secondary section ul li {
   background-color: #ffffff;
   list-style: none;
   /* [4] */
   margin-bottom: 0;
 }
 
-.nhsuk-list-panel__link {
+.nhsuk-list-panel__link, #secondary section ul li a {
   border-bottom: 1px solid #d8dde0;
   display: block;
   padding: 12px 16px;
   text-decoration: none;
 }
 
-.nhsuk-list-panel__link:hover {
+.nhsuk-list-panel__link:hover, #secondary section ul li a:hover {
   box-shadow: 0 -1px 0 0 #ffcd60;
   /* [5] */
 }
 
-.nhsuk-list-panel__link:focus {
+.nhsuk-list-panel__link:focus, #secondary section ul li a:focus {
   box-shadow: 0 -1px 0 0 #ffb81C;
   /* [5] */
 }
 
-.nhsuk-list-panel__link:hover, .nhsuk-list-panel__link:focus {
+.nhsuk-list-panel__link:hover, #secondary section ul li a:hover, .nhsuk-list-panel__link:focus, #secondary section ul li a:focus {
   border-color: transparent;
   /* [6] */
   text-decoration: underline;
@@ -6799,12 +7572,12 @@ b {
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-list-panel__link {
+  .nhsuk-list-panel__link, #secondary section ul li a {
     padding: 8px 16px;
   }
 }
 
-.nhsuk-list-panel--results-items__no-results {
+.nhsuk-list-panel--results-items__no-results, #secondary section div p {
   border-bottom: 1px solid #d8dde0;
   color: #425563;
   margin: 0;
@@ -7221,7 +7994,7 @@ b {
 
 /* Panel with label
    ========================================================================== */
-.nhsuk-panel-with-label, .is-style-panel-with-label {
+.nhsuk-panel-with-label, #secondary section, .is-style-panel-with-label {
   margin-bottom: 40px;
   margin-top: 40px;
   padding: 24px;
@@ -7230,40 +8003,40 @@ b {
   padding-top: 0 !important;
 }
 
-.nhsuk-panel-with-label > *:first-child, .is-style-panel-with-label > *:first-child {
+.nhsuk-panel-with-label > *:first-child, #secondary section > *:first-child, .is-style-panel-with-label > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-panel-with-label > *:last-child, .is-style-panel-with-label > *:last-child {
+.nhsuk-panel-with-label > *:last-child, #secondary section > *:last-child, .is-style-panel-with-label > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-panel-with-label, .is-style-panel-with-label {
+  .nhsuk-panel-with-label, #secondary section, .is-style-panel-with-label {
     margin-bottom: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-panel-with-label, .is-style-panel-with-label {
+  .nhsuk-panel-with-label, #secondary section, .is-style-panel-with-label {
     margin-top: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-panel-with-label, .is-style-panel-with-label {
+  .nhsuk-panel-with-label, #secondary section, .is-style-panel-with-label {
     padding: 32px;
   }
 }
 
 @media print {
-  .nhsuk-panel-with-label, .is-style-panel-with-label {
+  .nhsuk-panel-with-label, #secondary section, .is-style-panel-with-label {
     border: 1px solid #212b32;
     page-break-inside: avoid;
   }
 }
 
-.nhsuk-panel-with-label__label, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
+.nhsuk-panel-with-label__label, #secondary section h2.widget-title, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -7277,7 +8050,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-panel-with-label__label, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
+  .nhsuk-panel-with-label__label, #secondary section h2.widget-title, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -7285,14 +8058,14 @@ b {
 }
 
 @media print {
-  .nhsuk-panel-with-label__label, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
+  .nhsuk-panel-with-label__label, #secondary section h2.widget-title, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-panel-with-label__label, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
+  .nhsuk-panel-with-label__label, #secondary section h2.widget-title, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
     margin-left: -24px;
     margin-right: -24px;
     padding: 8px 24px;
@@ -7301,7 +8074,7 @@ b {
 }
 
 @media print {
-  .nhsuk-panel-with-label__label, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
+  .nhsuk-panel-with-label__label, #secondary section h2.widget-title, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
     background: none;
     color: #212b32;
     top: 0;
@@ -7309,11 +8082,11 @@ b {
 }
 
 @media print {
-  .nhsuk-panel-with-label__label, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
+  .nhsuk-panel-with-label__label, #secondary section h2.widget-title, .is-style-panel-with-label h3, .is-style-panel-with-label h3 .rich-text {
     color: #212b32;
     fill: #212b32;
   }
-  .nhsuk-panel-with-label__label:active, .is-style-panel-with-label h3:active, .is-style-panel-with-label h3 .rich-text:active, .nhsuk-panel-with-label__label:focus, .is-style-panel-with-label h3:focus, .is-style-panel-with-label h3 .rich-text:focus, .nhsuk-panel-with-label__label:visited, .is-style-panel-with-label h3:visited, .is-style-panel-with-label h3 .rich-text:visited {
+  .nhsuk-panel-with-label__label:active, #secondary section h2.widget-title:active, .is-style-panel-with-label h3:active, .is-style-panel-with-label h3 .rich-text:active, .nhsuk-panel-with-label__label:focus, #secondary section h2.widget-title:focus, .is-style-panel-with-label h3:focus, .is-style-panel-with-label h3 .rich-text:focus, .nhsuk-panel-with-label__label:visited, #secondary section h2.widget-title:visited, .is-style-panel-with-label h3:visited, .is-style-panel-with-label h3 .rich-text:visited {
     color: #212b32;
   }
 }
@@ -8325,6 +9098,326 @@ b {
 }
 
 /* ==========================================================================
+   GENERIC / #BOX-SIZING
+   ========================================================================== */
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * http://paulirish.com/2012/box-sizing-border-box-ftw
+ */
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix");
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
+}
+
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix");
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
+}
+
+/* ==========================================================================
+   GENERIC / #IE
+   ========================================================================== */
+/**
+ * Add the correct display for HTML5 elements in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/* ==========================================================================
+   ELEMENTS / #FORMS
+   ========================================================================== */
+/**
+ * Make sure our form elements don’t use any UA-specific font styles: we want
+ * them to use ours. This may need reverting as more design information becomes
+ * available, and we start putting together more complete forms.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* ==========================================================================
+   ELEMENTS / #LINKS
+   ========================================================================== */
+/**
+ * Our basic `<a>` elements only need very minimal styling.
+ * It uses the @mixin nhsuk-link-style-default within tools/links.
+ * Anything more opinionated (e.g. buttons, calls-to-action, etc.) will need a
+ * class defining in the Components layer.
+ *
+ * 1. Outputs full link URL for print.
+ * 2. Point unit used for print.
+ */
+a {
+  color: #005eb8;
+}
+
+a:visited {
+  color: #330072;
+}
+
+a:focus {
+  background-color: #ffb81C;
+  box-shadow: 0 0 0 4px #ffb81C;
+  color: #212b32;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+}
+
+a:hover {
+  background-color: #ffcd60;
+  box-shadow: 0 0 0 4px #ffcd60;
+  color: #212b32;
+  text-decoration: none;
+}
+
+a:active {
+  color: #374047;
+}
+
+@media print {
+  a:after {
+    color: #212b32;
+    content: " (Link: " attr(href) ")";
+    /* [1] */
+    font-size: 14pt;
+    /* [2] */
+  }
+}
+
+/* ==========================================================================
+   ELEMENTS / #PAGE
+   ========================================================================== */
+/**
+ * High-level, page-level styling.
+ *
+ * 1. The reason for this is to prevent "centering jumps" when navigating back
+ *    and forth between pages with enough content to have a vertical scroll bar
+ *    and pages that do not.
+ * 2. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ * 3. Override the user agent style margin of 8px.
+ * 4. Ensure the page always fills at least the entire height of the viewport.
+ */
+html {
+  background-color: #d8dde0;
+  font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
+  overflow-y: scroll;
+  /* [1] */
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  /* [2] */
+  -webkit-font-smoothing: antialiased;
+  /* [2] */
+  background-color: #f0f4f5;
+  color: #212b32;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  /* [3] */
+  min-height: 100%;
+  /* [4] */
+}
+
+/* ==========================================================================
+   ELEMENTS / #TABLES
+   ========================================================================== */
+/**
+ * 1. Force `<table>`s to be full-width by default.
+ * 2. Captions are used to improve accessibility,
+ *    but we do not need them visually displayed.
+ */
+table {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-spacing: 0;
+  vertical-align: top;
+  width: 100%;
+  /* [1] */
+}
+
+@media (min-width: 40.0625em) {
+  table {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  table {
+    margin-top: 48px;
+  }
+}
+
+@media print {
+  table {
+    page-break-inside: avoid;
+  }
+}
+
+thead th {
+  border-bottom: 2px solid #d8dde0;
+}
+
+th,
+td {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px;
+  border-bottom: 1px solid #d8dde0;
+  text-align: left;
+}
+
+@media (min-width: 40.0625em) {
+  th,
+  td {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+
+@media print {
+  th,
+  td {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  th,
+  td {
+    padding: 16px;
+  }
+}
+
+th {
+  font-weight: 600;
+}
+
+caption {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* [2] */
+}
+
+.nhsuk-form-group {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-form-group {
+    margin-bottom: 24px;
+  }
+}
+
+.nhsuk-form-group .nhsuk-form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.nhsuk-form-group--wrapper {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-form-group--wrapper {
+    margin-bottom: 32px;
+  }
+}
+
+.nhsuk-form-group--error {
+  border-left: 4px solid #da291c;
+  padding-left: 16px;
+}
+
+.nhsuk-form-group--error .nhsuk-form-group {
+  border: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   OBJECTS / #GRID
+   ========================================================================== */
+/* ==========================================================================
+   OBJECTS / #MAIN-WRAPPER
+   ========================================================================== */
+/**
+ * Page wrapper for the grid system
+ *
+ * Usage:
+ * <div class="nhsuk-width-container">
+ *   <div class="nhsuk-main-wrapper">
+ *    <!-- Wrapper for the main content of your page which applies padding
+ *         to the top / bottom -->
+ *   </div>
+ * </div>
+ *
+ * Original code taken from GDS (Government Digital Service)
+ * https://github.com/alphagov/govuk-frontend
+ *
+ * 1. In IE11 the `main` element can be used, but is not recognized  –
+ *    meaning it's not defined in IE's default style sheet,
+ *    so it uses CSS initial value, which is inline.
+ */
+/* ==========================================================================
+   OBJECTS / #WIDTH-CONTAINER
+   ========================================================================== */
+/**
+ * Page width for the grid system
+ *
+ * Original code taken from GDS (Government Digital Service)
+ * https://github.com/alphagov/govuk-frontend
+ *
+ * 1. On mobile, add half width gutters
+ * 2. Limit the width of the container to the page width
+ * 3. From desktop, add full width gutters
+ * 4. As soon as the viewport is greater than the width of the page plus the
+ *    gutters, just centre the content instead of adding gutters.
+ * 5. Full width container, spanning the entire width of the viewport
+ */
+/* ==========================================================================
    STYLES / #ICONS
    ========================================================================== */
 /**
@@ -8426,419 +9519,15 @@ b {
   width: 68px;
 }
 
-ul {
-  list-style: none;
-}
-
 /* ==========================================================================
-   GENERIC / #BOX-SIZING
-   ========================================================================== */
-/**
- * Set the global `box-sizing` state to `border-box`.
- *
- * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
- * http://paulirish.com/2012/box-sizing-border-box-ftw
- */
-html {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -moz-box-sizing: inherit;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-@font-face {
-  font-family: 'Frutiger W01';
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix");
-  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
-}
-
-@font-face {
-  font-family: 'Frutiger W01';
-  font-display: swap;
-  font-style: normal;
-  font-weight: 600;
-  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix");
-  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
-}
-
-/* ==========================================================================
-   GENERIC / #IE
-   ========================================================================== */
-/**
- * Add the correct display for HTML5 elements in IE 9-.
- */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-.edit-post-visual-editor {
-  /* ==========================================================================
-   ELEMENTS / #FORMS
-   ========================================================================== */
-  /**
- * Make sure our form elements don’t use any UA-specific font styles: we want
- * them to use ours. This may need reverting as more design information becomes
- * available, and we start putting together more complete forms.
- */
-  /* ==========================================================================
-   ELEMENTS / #LINKS
-   ========================================================================== */
-  /**
- * Our basic `<a>` elements only need very minimal styling.
- * It uses the @mixin nhsuk-link-style-default within tools/links.
- * Anything more opinionated (e.g. buttons, calls-to-action, etc.) will need a
- * class defining in the Components layer.
- *
- * 1. Outputs full link URL for print.
- * 2. Point unit used for print.
- */
-  /*@import 'node_modules/nhsuk-frontend/packages/core/elements/page';*/
-  /* ==========================================================================
-   ELEMENTS / #TABLES
-   ========================================================================== */
-  /**
- * 1. Force `<table>`s to be full-width by default.
- * 2. Captions are used to improve accessibility,
- *    but we do not need them visually displayed.
- */
-  /* ==========================================================================
-   OBJECTS / #GRID
-   ========================================================================== */
-  /* ==========================================================================
-   OBJECTS / #MAIN-WRAPPER
-   ========================================================================== */
-  /**
- * Page wrapper for the grid system
- *
- * Usage:
- * <div class="nhsuk-width-container">
- *   <div class="nhsuk-main-wrapper">
- *    <!-- Wrapper for the main content of your page which applies padding
- *         to the top / bottom -->
- *   </div>
- * </div>
- *
- * Original code taken from GDS (Government Digital Service)
- * https://github.com/alphagov/govuk-frontend
- *
- * 1. In IE11 the `main` element can be used, but is not recognized  –
- *    meaning it's not defined in IE's default style sheet,
- *    so it uses CSS initial value, which is inline.
- */
-  /* ==========================================================================
-   OBJECTS / #WIDTH-CONTAINER
-   ========================================================================== */
-  /**
- * Page width for the grid system
- *
- * Original code taken from GDS (Government Digital Service)
- * https://github.com/alphagov/govuk-frontend
- *
- * 1. On mobile, add half width gutters
- * 2. Limit the width of the container to the page width
- * 3. From desktop, add full width gutters
- * 4. As soon as the viewport is greater than the width of the page plus the
- *    gutters, just centre the content instead of adding gutters.
- * 5. Full width container, spanning the entire width of the viewport
- */
-  /* ==========================================================================
    STYLES / #LISTS
    ========================================================================== */
-  /**
+/**
  * 1. 'Random number' used to align ul and ol left with content.
  * 2. 'Random number' used to give sufficient spacing between text and icon.
  * 3. 'Random number' used to align icon and text.
  */
-  /* ==========================================================================
-   STYLES / #SECTION-BREAK
-   ========================================================================== */
-  /**
- * 1. Extended the section-break--l code for usage of a semantic <hr> with
- * no class name.
- *
- * Original code taken from GDS (Government Digital Service)
- * https://github.com/alphagov/govuk-frontend
- */
-  /* ==========================================================================
-   STYLES / #TYPOGRAPHY
-   ========================================================================== */
-  /* Headings */
-  /* Captions to be used inside headings */
-  /* Body (paragraphs) */
-  /**
- * Contextual adjustments
- *
- * Add top padding to headings that appear directly after paragraphs.
- *
- * Original code taken from GDS (Government Digital Service)
- * https://github.com/alphagov/nhsuk-frontend
- */
-  /* Font weight for <strong> and <b> */
-  /* ==========================================================================
-   UTILITIES / #CLEARFIX
-   ========================================================================== */
-  /**
- * Automatically clear an elements
- * child elements
- *
- * Usage: class="nhsuk-u-clear"
- * See tools/mixins
- */
-  /* ==========================================================================
-   UTILITIES / #GRID
-   ========================================================================== */
-  /**
- * Force grid widths on all screen sizes
- * By default all grid elements will go to 100% width
- * on screen sizes below tablet, these utilities can force
- * custom widths on all screen sizes
- *
- * Usage: class="nhsuk-u-one-half"
- */
-  /**
- * Force grid widths on screen sizes on tablet
- * and above
- *
- * By default all grid elements will go to 100% width
- * on every screen size, these utilities can force
- * custom widths on screen sizes on tablet
- * and above
- *
- * Usage: class="nhsuk-u-one-half-tablet"
- */
-  /* ==========================================================================
-   UTILITIES / #LINK-NOWRAP
-   ========================================================================== */
-  /**
- * Prevent long anchor links from line breaking
- * on smaller screens
- *
- * Usage: class="nhsuk-u-nowrap"
- */
-  /* ==========================================================================
-   UTILITIES / #READING-WIDTH
-   ========================================================================== */
-  /**
- * Reading width mixin, add a maximum width
- * to large pieces of content
- *
- * Usage: class="nhsuk-u-reading-width"
- * See tools/mixins
- */
-  /* ==========================================================================
-   UTILITIES / #TYPOGRAPHY
-   ========================================================================== */
-  /**
- * Font size and line height
- *
- * Generate typography override classes for each responsive font map in the
- * typography scale eg .nhsuk-u-font-size-48
- *
- * Original code taken from GDS (Government Digital Service)
- * https://github.com/alphagov/govuk-frontend
- */
-  /* Weights
-   ========================================================================== */
-  /**
- * Generate font weight override classes for normal and bold
- * eg .nhsuk-u-font-weight-normal
- */
-  /* ==========================================================================
-   UTILITIES / #VISUALLY-HIDDEN
-   ========================================================================== */
-  /**
- * Hide elements visually but keep it in the DOM
- *
- * Usage: class="nhsuk-u-visually-hidden"
- * See tools/mixins
- */
-  /* ==========================================================================
-   UTILITIES / #WIDTH
-   ========================================================================== */
-  /**
- * Original code taken from GDS (Government Digital Service)
- * https://github.com/alphagov/govuk-frontend
- * Force element widths on all screen sizes
- *
- * Usage: class="nhsuk-u-width-full"
- */
-  background-color: #f0f4f5;
-}
-
-.edit-post-visual-editor button,
-.edit-post-visual-editor input,
-.edit-post-visual-editor select,
-.edit-post-visual-editor textarea {
-  font-family: inherit;
-}
-
-.edit-post-visual-editor a {
-  color: #005eb8;
-}
-
-.edit-post-visual-editor a:visited {
-  color: #330072;
-}
-
-.edit-post-visual-editor a:focus {
-  background-color: #ffb81C;
-  box-shadow: 0 0 0 4px #ffb81C;
-  color: #212b32;
-  outline: 4px solid transparent;
-  outline-offset: 4px;
-}
-
-.edit-post-visual-editor a:hover {
-  background-color: #ffcd60;
-  box-shadow: 0 0 0 4px #ffcd60;
-  color: #212b32;
-  text-decoration: none;
-}
-
-.edit-post-visual-editor a:active {
-  color: #374047;
-}
-
-@media print {
-  .edit-post-visual-editor a:after {
-    color: #212b32;
-    content: " (Link: " attr(href) ")";
-    /* [1] */
-    font-size: 14pt;
-    /* [2] */
-  }
-}
-
-.edit-post-visual-editor table {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  border-spacing: 0;
-  vertical-align: top;
-  width: 100%;
-  /* [1] */
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor table {
-    margin-bottom: 48px;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor table {
-    margin-top: 48px;
-  }
-}
-
-@media print {
-  .edit-post-visual-editor table {
-    page-break-inside: avoid;
-  }
-}
-
-.edit-post-visual-editor thead th {
-  border-bottom: 2px solid #d8dde0;
-}
-
-.edit-post-visual-editor th,
-.edit-post-visual-editor td {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 8px;
-  border-bottom: 1px solid #d8dde0;
-  text-align: left;
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.47368;
-  }
-}
-
-@media print {
-  .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
-    padding: 16px;
-  }
-}
-
-.edit-post-visual-editor th {
-  font-weight: 600;
-}
-
-.edit-post-visual-editor caption {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* [2] */
-}
-
-.edit-post-visual-editor .nhsuk-form-group {
-  margin-bottom: 16px;
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-form-group {
-    margin-bottom: 24px;
-  }
-}
-
-.edit-post-visual-editor .nhsuk-form-group .nhsuk-form-group:last-of-type {
-  margin-bottom: 0;
-}
-
-.edit-post-visual-editor .nhsuk-form-group--wrapper {
-  margin-bottom: 24px;
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-form-group--wrapper {
-    margin-bottom: 32px;
-  }
-}
-
-.edit-post-visual-editor .nhsuk-form-group--error {
-  border-left: 4px solid #da291c;
-  padding-left: 16px;
-}
-
-.edit-post-visual-editor .nhsuk-form-group--error .nhsuk-form-group {
-  border: 0;
-  padding: 0;
-}
-
-.edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+.nhsuk-list, ul, ol {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -8849,7 +9538,7 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+  .nhsuk-list, ul, ol {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -8857,46 +9546,46 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+  .nhsuk-list, ul, ol {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-list, .edit-post-visual-editor ul, .edit-post-visual-editor ol {
+  .nhsuk-list, ul, ol {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor .nhsuk-list > li, .edit-post-visual-editor ul > li, .edit-post-visual-editor ol > li {
+.nhsuk-list > li, ul > li, ol > li {
   margin-bottom: 8px;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-list > li, .edit-post-visual-editor ul > li, .edit-post-visual-editor ol > li {
+  .nhsuk-list > li, ul > li, ol > li {
     margin-bottom: 8px;
   }
 }
 
-.edit-post-visual-editor .nhsuk-list > li:last-child, .edit-post-visual-editor ul > li:last-child, .edit-post-visual-editor ol > li:last-child {
+.nhsuk-list > li:last-child, ul > li:last-child, ol > li:last-child {
   margin-bottom: 0;
 }
 
-.edit-post-visual-editor .nhsuk-list--bullet, .edit-post-visual-editor ul {
+.nhsuk-list--bullet, ul {
   list-style-type: disc;
   padding-left: 20px;
   /* [1] */
 }
 
-.edit-post-visual-editor .nhsuk-list--number, .edit-post-visual-editor ol {
+.nhsuk-list--number, ol {
   list-style-type: decimal;
   padding-left: 20px;
   /* [1] */
 }
 
-.edit-post-visual-editor .nhsuk-list--tick,
-.edit-post-visual-editor .nhsuk-list--cross {
+.nhsuk-list--tick,
+.nhsuk-list--cross {
   list-style: none;
   margin-top: 0;
   padding-left: 40px;
@@ -8904,8 +9593,8 @@ section {
   position: relative;
 }
 
-.edit-post-visual-editor .nhsuk-list--tick svg,
-.edit-post-visual-editor .nhsuk-list--cross svg {
+.nhsuk-list--tick svg,
+.nhsuk-list--cross svg {
   left: -4px;
   /* [3] */
   margin-top: -5px;
@@ -8913,72 +9602,86 @@ section {
   position: absolute;
 }
 
-.edit-post-visual-editor .nhsuk-section-break, .edit-post-visual-editor hr {
+/* ==========================================================================
+   STYLES / #SECTION-BREAK
+   ========================================================================== */
+/**
+ * 1. Extended the section-break--l code for usage of a semantic <hr> with
+ * no class name.
+ *
+ * Original code taken from GDS (Government Digital Service)
+ * https://github.com/alphagov/govuk-frontend
+ */
+.nhsuk-section-break, hr {
   border: 0;
   margin: 0;
 }
 
-.edit-post-visual-editor .nhsuk-section-break--xl {
+.nhsuk-section-break--xl {
   margin-top: 48px;
   margin-bottom: 48px;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-section-break--xl {
+  .nhsuk-section-break--xl {
     margin-top: 56px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-section-break--xl {
+  .nhsuk-section-break--xl {
     margin-bottom: 56px;
   }
 }
 
-.edit-post-visual-editor .nhsuk-section-break--l, .edit-post-visual-editor hr {
+.nhsuk-section-break--l, hr {
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-section-break--l, .edit-post-visual-editor hr {
+  .nhsuk-section-break--l, hr {
     margin-top: 40px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-section-break--l, .edit-post-visual-editor hr {
+  .nhsuk-section-break--l, hr {
     margin-bottom: 40px;
   }
 }
 
-.edit-post-visual-editor .nhsuk-section-break--m {
+.nhsuk-section-break--m {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-section-break--m {
+  .nhsuk-section-break--m {
     margin-top: 24px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-section-break--m {
+  .nhsuk-section-break--m {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor .nhsuk-section-break--visible, .edit-post-visual-editor hr {
+.nhsuk-section-break--visible, hr {
   border-bottom: 1px solid #d8dde0;
 }
 
-.edit-post-visual-editor hr {
+hr {
   /* [1] */
 }
 
-.edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-.edit-post-visual-editor .nhsuk-heading-xl {
+/* ==========================================================================
+   STYLES / #TYPOGRAPHY
+   ========================================================================== */
+/* Headings */
+h1,
+.nhsuk-heading-xl {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.25;
@@ -8989,8 +9692,8 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+  h1,
+  .nhsuk-heading-xl {
     font-size: 48px;
     font-size: 3rem;
     line-height: 1.16667;
@@ -8998,22 +9701,22 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+  h1,
+  .nhsuk-heading-xl {
     font-size: 32pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+  h1,
+  .nhsuk-heading-xl {
     margin-bottom: 48px;
   }
 }
 
-.edit-post-visual-editor h2,
-.edit-post-visual-editor .nhsuk-heading-l {
+h2,
+.nhsuk-heading-l {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.33333;
@@ -9024,8 +9727,8 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+  h2,
+  .nhsuk-heading-l {
     font-size: 32px;
     font-size: 2rem;
     line-height: 1.25;
@@ -9033,22 +9736,22 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+  h2,
+  .nhsuk-heading-l {
     font-size: 24pt;
     line-height: 1.05;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+  h2,
+  .nhsuk-heading-l {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor h3,
-.edit-post-visual-editor .nhsuk-heading-m {
+h3,
+.nhsuk-heading-m {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -9059,8 +9762,8 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m {
+  h3,
+  .nhsuk-heading-m {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -9068,22 +9771,22 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m {
+  h3,
+  .nhsuk-heading-m {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m {
+  h3,
+  .nhsuk-heading-m {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor h4,
-.edit-post-visual-editor .nhsuk-heading-s {
+h4,
+.nhsuk-heading-s {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556;
@@ -9094,8 +9797,8 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+  h4,
+  .nhsuk-heading-s {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -9103,22 +9806,22 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+  h4,
+  .nhsuk-heading-s {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+  h4,
+  .nhsuk-heading-s {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor h5,
-.edit-post-visual-editor .nhsuk-heading-xs {
+h5,
+.nhsuk-heading-xs {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -9129,8 +9832,8 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+  h5,
+  .nhsuk-heading-xs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9138,22 +9841,22 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+  h5,
+  .nhsuk-heading-xs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+  h5,
+  .nhsuk-heading-xs {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor h6,
-.edit-post-visual-editor .nhsuk-heading-xxs {
+h6,
+.nhsuk-heading-xxs {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -9164,8 +9867,8 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+  h6,
+  .nhsuk-heading-xxs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9173,21 +9876,22 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+  h6,
+  .nhsuk-heading-xxs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+  h6,
+  .nhsuk-heading-xxs {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor .nhsuk-caption-xl {
+/* Captions to be used inside headings */
+.nhsuk-caption-xl {
   font-weight: 400;
   font-size: 24px;
   font-size: 1.5rem;
@@ -9198,7 +9902,7 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-caption-xl {
+  .nhsuk-caption-xl {
     font-size: 32px;
     font-size: 2rem;
     line-height: 1.25;
@@ -9206,13 +9910,13 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-caption-xl {
+  .nhsuk-caption-xl {
     font-size: 24pt;
     line-height: 1.05;
   }
 }
 
-.edit-post-visual-editor .nhsuk-caption-l {
+.nhsuk-caption-l {
   font-weight: 400;
   font-size: 20px;
   font-size: 1.25rem;
@@ -9223,7 +9927,7 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-caption-l {
+  .nhsuk-caption-l {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -9231,13 +9935,13 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-caption-l {
+  .nhsuk-caption-l {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
-.edit-post-visual-editor .nhsuk-caption-m {
+.nhsuk-caption-m {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -9247,7 +9951,7 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-caption-m {
+  .nhsuk-caption-m {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9255,18 +9959,19 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-caption-m {
+  .nhsuk-caption-m {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.edit-post-visual-editor .nhsuk-caption--bottom {
+.nhsuk-caption--bottom {
   margin-bottom: 0;
   margin-top: 4px;
 }
 
-.edit-post-visual-editor .nhsuk-body-l {
+/* Body (paragraphs) */
+.nhsuk-body-l {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -9276,7 +9981,7 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-body-l {
+  .nhsuk-body-l {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -9284,20 +9989,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-body-l {
+  .nhsuk-body-l {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-body-l {
+  .nhsuk-body-l {
     margin-bottom: 32px;
   }
 }
 
-.edit-post-visual-editor p,
-.edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+p,
+.nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -9307,8 +10012,8 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+  p,
+  .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9316,26 +10021,26 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+  p,
+  .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m, .edit-post-visual-editor address {
+  p,
+  .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor p,
-.edit-post-visual-editor .nhsuk-body-m {
+p,
+.nhsuk-body-m {
   color: inherit;
 }
 
-.edit-post-visual-editor .nhsuk-body-s {
+.nhsuk-body-s {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -9345,7 +10050,7 @@ section {
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-body-s {
+  .nhsuk-body-s {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -9353,235 +10058,307 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-body-s {
+  .nhsuk-body-s {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-body-s {
+  .nhsuk-body-s {
     margin-bottom: 24px;
   }
 }
 
-.edit-post-visual-editor address {
+address {
   font-style: normal;
 }
 
-.edit-post-visual-editor .nhsuk-body-l + h2,
-.edit-post-visual-editor .nhsuk-body-l + .nhsuk-heading-l {
+/**
+ * Contextual adjustments
+ *
+ * Add top padding to headings that appear directly after paragraphs.
+ *
+ * Original code taken from GDS (Government Digital Service)
+ * https://github.com/alphagov/nhsuk-frontend
+ */
+.nhsuk-body-l + h2,
+.nhsuk-body-l + .nhsuk-heading-l {
   padding-top: 4px;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-body-l + h2,
-  .edit-post-visual-editor .nhsuk-body-l + .nhsuk-heading-l {
+  .nhsuk-body-l + h2,
+  .nhsuk-body-l + .nhsuk-heading-l {
     padding-top: 8px;
   }
 }
 
-.edit-post-visual-editor p + h2, .edit-post-visual-editor .nhsuk-body-m + h2, .edit-post-visual-editor address + h2,
-.edit-post-visual-editor p + .nhsuk-heading-l,
-.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-l,
-.edit-post-visual-editor address + .nhsuk-heading-l,
-.edit-post-visual-editor .nhsuk-body-s + h2,
-.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-l,
-.edit-post-visual-editor .nhsuk-list + h2,
-.edit-post-visual-editor ul + h2,
-.edit-post-visual-editor ol + h2,
-.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-l,
-.edit-post-visual-editor ul + .nhsuk-heading-l,
-.edit-post-visual-editor ol + .nhsuk-heading-l {
+p + h2, .nhsuk-body-m + h2, address + h2,
+p + .nhsuk-heading-l,
+.nhsuk-body-m + .nhsuk-heading-l,
+address + .nhsuk-heading-l,
+.nhsuk-body-s + h2,
+.nhsuk-body-s + .nhsuk-heading-l,
+.nhsuk-list + h2,
+ul + h2,
+ol + h2,
+.nhsuk-list + .nhsuk-heading-l,
+ul + .nhsuk-heading-l,
+ol + .nhsuk-heading-l {
   padding-top: 16px;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor p + h2, .edit-post-visual-editor .nhsuk-body-m + h2, .edit-post-visual-editor address + h2,
-  .edit-post-visual-editor p + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-l,
-  .edit-post-visual-editor address + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-body-s + h2,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-list + h2,
-  .edit-post-visual-editor ul + h2,
-  .edit-post-visual-editor ol + h2,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-l,
-  .edit-post-visual-editor ul + .nhsuk-heading-l,
-  .edit-post-visual-editor ol + .nhsuk-heading-l {
+  p + h2, .nhsuk-body-m + h2, address + h2,
+  p + .nhsuk-heading-l,
+  .nhsuk-body-m + .nhsuk-heading-l,
+  address + .nhsuk-heading-l,
+  .nhsuk-body-s + h2,
+  .nhsuk-body-s + .nhsuk-heading-l,
+  .nhsuk-list + h2,
+  ul + h2,
+  ol + h2,
+  .nhsuk-list + .nhsuk-heading-l,
+  ul + .nhsuk-heading-l,
+  ol + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
 
-.edit-post-visual-editor p + h3, .edit-post-visual-editor .nhsuk-body-m + h3, .edit-post-visual-editor address + h3,
-.edit-post-visual-editor p + .nhsuk-heading-m,
-.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-m,
-.edit-post-visual-editor address + .nhsuk-heading-m,
-.edit-post-visual-editor .nhsuk-body-s + h3,
-.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-m,
-.edit-post-visual-editor .nhsuk-list + h3,
-.edit-post-visual-editor ul + h3,
-.edit-post-visual-editor ol + h3,
-.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-m,
-.edit-post-visual-editor ul + .nhsuk-heading-m,
-.edit-post-visual-editor ol + .nhsuk-heading-m,
-.edit-post-visual-editor p + h4,
-.edit-post-visual-editor .nhsuk-body-m + h4,
-.edit-post-visual-editor address + h4,
-.edit-post-visual-editor p + .nhsuk-heading-s,
-.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-s,
-.edit-post-visual-editor address + .nhsuk-heading-s,
-.edit-post-visual-editor .nhsuk-body-s + h4,
-.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-s,
-.edit-post-visual-editor .nhsuk-list + h4,
-.edit-post-visual-editor ul + h4,
-.edit-post-visual-editor ol + h4,
-.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-s,
-.edit-post-visual-editor ul + .nhsuk-heading-s,
-.edit-post-visual-editor ol + .nhsuk-heading-s {
+p + h3, .nhsuk-body-m + h3, address + h3,
+p + .nhsuk-heading-m,
+.nhsuk-body-m + .nhsuk-heading-m,
+address + .nhsuk-heading-m,
+.nhsuk-body-s + h3,
+.nhsuk-body-s + .nhsuk-heading-m,
+.nhsuk-list + h3,
+ul + h3,
+ol + h3,
+.nhsuk-list + .nhsuk-heading-m,
+ul + .nhsuk-heading-m,
+ol + .nhsuk-heading-m,
+p + h4,
+.nhsuk-body-m + h4,
+address + h4,
+p + .nhsuk-heading-s,
+.nhsuk-body-m + .nhsuk-heading-s,
+address + .nhsuk-heading-s,
+.nhsuk-body-s + h4,
+.nhsuk-body-s + .nhsuk-heading-s,
+.nhsuk-list + h4,
+ul + h4,
+ol + h4,
+.nhsuk-list + .nhsuk-heading-s,
+ul + .nhsuk-heading-s,
+ol + .nhsuk-heading-s {
   padding-top: 4px;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor p + h3, .edit-post-visual-editor .nhsuk-body-m + h3, .edit-post-visual-editor address + h3,
-  .edit-post-visual-editor p + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-m,
-  .edit-post-visual-editor address + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-body-s + h3,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-list + h3,
-  .edit-post-visual-editor ul + h3,
-  .edit-post-visual-editor ol + h3,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-m,
-  .edit-post-visual-editor ul + .nhsuk-heading-m,
-  .edit-post-visual-editor ol + .nhsuk-heading-m,
-  .edit-post-visual-editor p + h4,
-  .edit-post-visual-editor .nhsuk-body-m + h4,
-  .edit-post-visual-editor address + h4,
-  .edit-post-visual-editor p + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-s,
-  .edit-post-visual-editor address + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-body-s + h4,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-list + h4,
-  .edit-post-visual-editor ul + h4,
-  .edit-post-visual-editor ol + h4,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-s,
-  .edit-post-visual-editor ul + .nhsuk-heading-s,
-  .edit-post-visual-editor ol + .nhsuk-heading-s {
+  p + h3, .nhsuk-body-m + h3, address + h3,
+  p + .nhsuk-heading-m,
+  .nhsuk-body-m + .nhsuk-heading-m,
+  address + .nhsuk-heading-m,
+  .nhsuk-body-s + h3,
+  .nhsuk-body-s + .nhsuk-heading-m,
+  .nhsuk-list + h3,
+  ul + h3,
+  ol + h3,
+  .nhsuk-list + .nhsuk-heading-m,
+  ul + .nhsuk-heading-m,
+  ol + .nhsuk-heading-m,
+  p + h4,
+  .nhsuk-body-m + h4,
+  address + h4,
+  p + .nhsuk-heading-s,
+  .nhsuk-body-m + .nhsuk-heading-s,
+  address + .nhsuk-heading-s,
+  .nhsuk-body-s + h4,
+  .nhsuk-body-s + .nhsuk-heading-s,
+  .nhsuk-list + h4,
+  ul + h4,
+  ol + h4,
+  .nhsuk-list + .nhsuk-heading-s,
+  ul + .nhsuk-heading-s,
+  ol + .nhsuk-heading-s {
     padding-top: 8px;
   }
 }
 
-.edit-post-visual-editor strong,
-.edit-post-visual-editor b {
+/* Font weight for <strong> and <b> */
+strong,
+b {
   font-weight: 600;
 }
 
-.edit-post-visual-editor .nhsuk-u-clear:after {
+/* ==========================================================================
+   UTILITIES / #CLEARFIX
+   ========================================================================== */
+/**
+ * Automatically clear an elements
+ * child elements
+ *
+ * Usage: class="nhsuk-u-clear"
+ * See tools/mixins
+ */
+.nhsuk-u-clear:after {
   clear: both;
   content: '';
   display: block;
 }
 
-.edit-post-visual-editor .nhsuk-u-one-half {
+/* ==========================================================================
+   UTILITIES / #GRID
+   ========================================================================== */
+/**
+ * Force grid widths on all screen sizes
+ * By default all grid elements will go to 100% width
+ * on screen sizes below tablet, these utilities can force
+ * custom widths on all screen sizes
+ *
+ * Usage: class="nhsuk-u-one-half"
+ */
+.nhsuk-u-one-half {
   float: left;
   width: 50% !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-one-third {
+.nhsuk-u-one-third {
   float: left;
   width: 33.33333% !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-two-thirds {
+.nhsuk-u-two-thirds {
   float: left;
   width: 66.66667% !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-one-quarter {
+.nhsuk-u-one-quarter {
   float: left;
   width: 25% !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-three-quarters {
+.nhsuk-u-three-quarters {
   float: left;
   width: 75% !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-one-half-tablet {
+/**
+ * Force grid widths on screen sizes on tablet
+ * and above
+ *
+ * By default all grid elements will go to 100% width
+ * on every screen size, these utilities can force
+ * custom widths on screen sizes on tablet
+ * and above
+ *
+ * Usage: class="nhsuk-u-one-half-tablet"
+ */
+.nhsuk-u-one-half-tablet {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-one-half-tablet {
+  .nhsuk-u-one-half-tablet {
     float: left;
     width: 50% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-one-third-tablet {
+.nhsuk-u-one-third-tablet {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-one-third-tablet {
+  .nhsuk-u-one-third-tablet {
     float: left;
     width: 33.33333% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-two-thirds-tablet {
+.nhsuk-u-two-thirds-tablet {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-two-thirds-tablet {
+  .nhsuk-u-two-thirds-tablet {
     float: left;
     width: 66.66667% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-one-quarter-tablet {
+.nhsuk-u-one-quarter-tablet {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-one-quarter-tablet {
+  .nhsuk-u-one-quarter-tablet {
     float: left;
     width: 25% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-three-quarters-tablet {
+.nhsuk-u-three-quarters-tablet {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-three-quarters-tablet {
+  .nhsuk-u-three-quarters-tablet {
     float: left;
     width: 75% !important;
   }
 }
 
+/* ==========================================================================
+   UTILITIES / #LINK-NOWRAP
+   ========================================================================== */
+/**
+ * Prevent long anchor links from line breaking
+ * on smaller screens
+ *
+ * Usage: class="nhsuk-u-nowrap"
+ */
 @media (max-width: 40.0525em) {
-  .edit-post-visual-editor .nhsuk-u-nowrap {
+  .nhsuk-u-nowrap {
     white-space: nowrap;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-reading-width {
+/* ==========================================================================
+   UTILITIES / #READING-WIDTH
+   ========================================================================== */
+/**
+ * Reading width mixin, add a maximum width
+ * to large pieces of content
+ *
+ * Usage: class="nhsuk-u-reading-width"
+ * See tools/mixins
+ */
+.nhsuk-u-reading-width {
   max-width: 44em;
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-64 {
+/* ==========================================================================
+   UTILITIES / #TYPOGRAPHY
+   ========================================================================== */
+/**
+ * Font size and line height
+ *
+ * Generate typography override classes for each responsive font map in the
+ * typography scale eg .nhsuk-u-font-size-48
+ *
+ * Original code taken from GDS (Government Digital Service)
+ * https://github.com/alphagov/govuk-frontend
+ */
+.nhsuk-u-font-size-64 {
   font-size: 48px !important;
   font-size: 3rem !important;
   line-height: 1.16667 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-64 {
+  .nhsuk-u-font-size-64 {
     font-size: 64px !important;
     font-size: 4rem !important;
     line-height: 1.125 !important;
@@ -9589,20 +10366,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-64 {
+  .nhsuk-u-font-size-64 {
     font-size: 53pt !important;
     line-height: 1.1 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-48 {
+.nhsuk-u-font-size-48 {
   font-size: 32px !important;
   font-size: 2rem !important;
   line-height: 1.25 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-48 {
+  .nhsuk-u-font-size-48 {
     font-size: 48px !important;
     font-size: 3rem !important;
     line-height: 1.16667 !important;
@@ -9610,20 +10387,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-48 {
+  .nhsuk-u-font-size-48 {
     font-size: 32pt !important;
     line-height: 1.15 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-32 {
+.nhsuk-u-font-size-32 {
   font-size: 24px !important;
   font-size: 1.5rem !important;
   line-height: 1.33333 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-32 {
+  .nhsuk-u-font-size-32 {
     font-size: 32px !important;
     font-size: 2rem !important;
     line-height: 1.25 !important;
@@ -9631,20 +10408,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-32 {
+  .nhsuk-u-font-size-32 {
     font-size: 24pt !important;
     line-height: 1.05 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-24 {
+.nhsuk-u-font-size-24 {
   font-size: 20px !important;
   font-size: 1.25rem !important;
   line-height: 1.4 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-24 {
+  .nhsuk-u-font-size-24 {
     font-size: 24px !important;
     font-size: 1.5rem !important;
     line-height: 1.33333 !important;
@@ -9652,20 +10429,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-24 {
+  .nhsuk-u-font-size-24 {
     font-size: 18pt !important;
     line-height: 1.15 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-22 {
+.nhsuk-u-font-size-22 {
   font-size: 18px !important;
   font-size: 1.125rem !important;
   line-height: 1.55556 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-22 {
+  .nhsuk-u-font-size-22 {
     font-size: 22px !important;
     font-size: 1.375rem !important;
     line-height: 1.45455 !important;
@@ -9673,20 +10450,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-22 {
+  .nhsuk-u-font-size-22 {
     font-size: 18pt !important;
     line-height: 1.15 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-19 {
+.nhsuk-u-font-size-19 {
   font-size: 16px !important;
   font-size: 1rem !important;
   line-height: 1.5 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-19 {
+  .nhsuk-u-font-size-19 {
     font-size: 19px !important;
     font-size: 1.1875rem !important;
     line-height: 1.47368 !important;
@@ -9694,20 +10471,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-19 {
+  .nhsuk-u-font-size-19 {
     font-size: 14pt !important;
     line-height: 1.15 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-16 {
+.nhsuk-u-font-size-16 {
   font-size: 14px !important;
   font-size: 0.875rem !important;
   line-height: 1.71429 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-16 {
+  .nhsuk-u-font-size-16 {
     font-size: 16px !important;
     font-size: 1rem !important;
     line-height: 1.5 !important;
@@ -9715,20 +10492,20 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-16 {
+  .nhsuk-u-font-size-16 {
     font-size: 14pt !important;
     line-height: 1.2 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-size-14 {
+.nhsuk-u-font-size-14 {
   font-size: 12px !important;
   font-size: 0.75rem !important;
   line-height: 1.66667 !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-font-size-14 {
+  .nhsuk-u-font-size-14 {
     font-size: 14px !important;
     font-size: 0.875rem !important;
     line-height: 1.71429 !important;
@@ -9736,21 +10513,36 @@ section {
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-u-font-size-14 {
+  .nhsuk-u-font-size-14 {
     font-size: 12pt !important;
     line-height: 1.2 !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-font-weight-normal {
+/* Weights
+   ========================================================================== */
+/**
+ * Generate font weight override classes for normal and bold
+ * eg .nhsuk-u-font-weight-normal
+ */
+.nhsuk-u-font-weight-normal {
   font-weight: 400 !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-font-weight-bold {
+.nhsuk-u-font-weight-bold {
   font-weight: 600 !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-visually-hidden {
+/* ==========================================================================
+   UTILITIES / #VISUALLY-HIDDEN
+   ========================================================================== */
+/**
+ * Hide elements visually but keep it in the DOM
+ *
+ * Usage: class="nhsuk-u-visually-hidden"
+ * See tools/mixins
+ */
+.nhsuk-u-visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -9762,91 +10554,68 @@ section {
   width: 1px;
 }
 
-.edit-post-visual-editor .nhsuk-u-width-full {
+/* ==========================================================================
+   UTILITIES / #WIDTH
+   ========================================================================== */
+/**
+ * Original code taken from GDS (Government Digital Service)
+ * https://github.com/alphagov/govuk-frontend
+ * Force element widths on all screen sizes
+ *
+ * Usage: class="nhsuk-u-width-full"
+ */
+.nhsuk-u-width-full {
   width: 100% !important;
 }
 
-.edit-post-visual-editor .nhsuk-u-width-three-quarters {
+.nhsuk-u-width-three-quarters {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-width-three-quarters {
+  .nhsuk-u-width-three-quarters {
     width: 75% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-width-two-thirds {
+.nhsuk-u-width-two-thirds {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-width-two-thirds {
+  .nhsuk-u-width-two-thirds {
     width: 66.66% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-width-one-half {
+.nhsuk-u-width-one-half {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-width-one-half {
+  .nhsuk-u-width-one-half {
     width: 50% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-width-one-third {
+.nhsuk-u-width-one-third {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-width-one-third {
+  .nhsuk-u-width-one-third {
     width: 33.33% !important;
   }
 }
 
-.edit-post-visual-editor .nhsuk-u-width-one-quarter {
+.nhsuk-u-width-one-quarter {
   width: 100% !important;
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-u-width-one-quarter {
+  .nhsuk-u-width-one-quarter {
     width: 25% !important;
   }
-}
-
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:active, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:focus, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:focus, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:hover, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:visited, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:visited, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.edit-post-visual-editor .is-style-reverse:visited, .edit-post-visual-editor is-style-reverse:link {
-  color: #212b32;
-}
-
-.acf-block-component a {
-  pointer-events: none;
-  cursor: default;
-}
-
-.wp-block {
-  max-width: 800px;
-}
-
-.wp-block[data-align=wide] {
-  /* it can be "data-align=full" and also "right", "left" and "center" */
-  max-width: 1228px;
-}
-
-.block-editor-block-list__block {
-  font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
-  font-size: 16px;
-}
-
-.block-editor-block-list__block .nhsuk-care-card__heading span {
-  font-size: 24px;
-  color: #ffffff;
 }
 
 .nhsuk-width-container--full {
@@ -10026,15 +10795,15 @@ section {
   margin-bottom: 36px;
 }
 
-.nhsuk-panel-with-label, .is-style-panel-with-label {
+.nhsuk-panel-with-label, #secondary section, .is-style-panel-with-label {
   width: 100%;
 }
 
-.nhsuk-panel-with-label .nhsuk-panel-with-label__label a, .is-style-panel-with-label .nhsuk-panel-with-label__label a, .nhsuk-panel-with-label .is-style-panel-with-label h3 a, .is-style-panel-with-label .nhsuk-panel-with-label h3 a, .is-style-panel-with-label h3 a, .is-style-panel-with-label h3 .rich-text a, .nhsuk-panel-with-label .nhsuk-panel-with-label__label a:visited, .is-style-panel-with-label .nhsuk-panel-with-label__label a:visited, .nhsuk-panel-with-label .is-style-panel-with-label h3 a:visited, .is-style-panel-with-label .nhsuk-panel-with-label h3 a:visited, .is-style-panel-with-label h3 a:visited, .is-style-panel-with-label h3 .rich-text a:visited {
+.nhsuk-panel-with-label .nhsuk-panel-with-label__label a, #secondary section .nhsuk-panel-with-label__label a, .is-style-panel-with-label .nhsuk-panel-with-label__label a, #secondary section h2.widget-title a, .nhsuk-panel-with-label .is-style-panel-with-label h3 a, .is-style-panel-with-label .nhsuk-panel-with-label h3 a, #secondary section .is-style-panel-with-label h3 a, .is-style-panel-with-label #secondary section h3 a, .is-style-panel-with-label h3 a, .is-style-panel-with-label h3 #secondary section .rich-text a, .is-style-panel-with-label h3 .rich-text a, .nhsuk-panel-with-label .nhsuk-panel-with-label__label a:visited, #secondary section .nhsuk-panel-with-label__label a:visited, .is-style-panel-with-label .nhsuk-panel-with-label__label a:visited, #secondary section h2.widget-title a:visited, .nhsuk-panel-with-label .is-style-panel-with-label h3 a:visited, .is-style-panel-with-label .nhsuk-panel-with-label h3 a:visited, #secondary section .is-style-panel-with-label h3 a:visited, .is-style-panel-with-label #secondary section h3 a:visited, .is-style-panel-with-label h3 a:visited, .is-style-panel-with-label h3 #secondary section .rich-text a:visited, .is-style-panel-with-label h3 .rich-text a:visited {
   color: #ffffff;
 }
 
-.nhsuk-panel-with-label .entry-footer span, .is-style-panel-with-label .entry-footer span {
+.nhsuk-panel-with-label .entry-footer span, #secondary section .entry-footer span, .is-style-panel-with-label .entry-footer span {
   padding: 0 10px;
 }
 
@@ -10048,7 +10817,7 @@ section {
   box-shadow: none;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label {
   background: inherit;
   margin: 0;
   padding: 0;
@@ -10057,7 +10826,7 @@ section {
   padding-top: 33.33%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .is-style-panel-with-label h3, .is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label h3, .is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label h3 .rich-text {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-panel-with-label__label, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label .nhsuk-panel-with-label__label, #secondary section .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h2.widget-title, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section h2.widget-title, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section h2.widget-title, #secondary section .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label h2.widget-title, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .is-style-panel-with-label h3, .is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .is-style-panel-with-label h3, .is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section h3, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .is-style-panel-with-label h3, .is-style-panel-with-label #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label h3, .is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .is-style-panel-with-label h3 .rich-text, .is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .rich-text, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .is-style-panel-with-label h3 .rich-text, .is-style-panel-with-label h3 #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label h3 .rich-text {
   z-index: 2;
   top: 0;
   margin: 0 -20px;
@@ -10068,12 +10837,12 @@ section {
   font-size: 1.1rem;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label .nhsuk-dashboard__image {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-dashboard__image, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label .nhsuk-dashboard__image {
   width: 100%;
   height: 100%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label .nhsuk-promo__img {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-promo__img, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .is-style-panel-with-label .nhsuk-promo__img {
   position: relative;
   top: -16px;
   z-index: 1;
@@ -10106,51 +10875,103 @@ section {
   width: 100%;
 }
 
-.editor-post-title__input {
-  font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
-}
-
-.nhsuk-promo {
+#secondary section {
   background: #ffffff;
-  border: 1px solid transparent;
-  box-shadow: 0 4px 0 0 #d8dde0;
+  margin-top: 32px;
 }
 
-.nhsuk-promo .nhsuk-promo__content .editor-url-input__button {
-  width: 100%;
-  text-align: center;
+#secondary .widget_subpages > ul > li {
+  border-bottom: 1px solid #d8dde0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .editor-url-input__button:before {
-  content: "Add link for this promo box";
+#secondary .widget_subpages > ul > li > ul > li, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
 }
 
-.nhsuk-promo .nhsuk-promo__content [data-type="core/image"] ~ .block-list-appender {
-  display: none;
+#secondary .widget_subpages > ul > li > ul > li:last-of-type, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li:last-of-type {
+  margin-bottom: 20px;
 }
 
-.nhsuk-list--cross .editor-rich-text {
-  padding-left: 34px;
+#secondary .widget_subpages > ul > li > ul > li > a {
+  border-left: 2px solid #005eb8;
+  padding: 0 0 0 10px;
+  margin: 10px 0 0 10px;
 }
 
-.nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
-  /*
-  move the url field outside of the button
-   */
+#secondary .widget_subpages > ul > li > ul > li > ul > li > a {
+  padding: 0 0 0 10px;
+  margin: 10px 0 0 20px;
+  border-bottom: none;
 }
 
-.nhsuk-button .editor-url-input__button, .wp-block-button__link .editor-url-input__button, .wp-block-file__button .editor-url-input__button, .wp-block-file a.wp-block-file__button .editor-url-input__button {
-  position: absolute;
-  right: -50px;
-  top: 0;
+#secondary .widget_subpages > ul > li > ul > li > ul > li > a:before {
+  content: "-  ";
+  color: e8edee;
 }
 
-.wp-block-nhsblocks-panel1 {
-  /* remove ability to add extra blocks inside panels, but leave ability to remove and move current inner blocks */
+#secondary .widget_subpages ul li a {
+  border-bottom: none;
+  padding: 5px 10px;
 }
 
-.wp-block-nhsblocks-panel1 .editor-default-block-appender, .wp-block-nhsblocks-panel1 .editor-block-list__insertion-point {
-  display: none;
+#secondary .widget_subpages ul li.widget_subpages__active > a {
+  background: #005eb8;
+  color: #ffffff;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted {
+  background: #ffffff;
+  color: #212b32;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk_header__logo {
+  padding: 0 0 10px 0;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__link {
+  height: 0;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__menu .nhsuk-header__menu-toggle {
+  border: 2px solid #005eb8;
+  color: #005eb8;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__menu .nhsuk-header__menu-toggle.is-active {
+  color: #ffffff;
+  border: 0px;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted input[type="text"] {
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-search__submit {
+  border: 1px solid #ccc;
+  border-left: none;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__search-toggle {
+  background-color: #f0f4f5;
+  border-color: #005eb8;
+  box-shadow: none;
+  color: #005eb8;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__search-toggle .nhsuk-icon__search {
+  fill: #005eb8;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__search-toggle.is_active {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+  fill: #ffffff;
 }
 
 /*
@@ -10203,85 +11024,4 @@ section {
 
 .nhsuk-header__search-wrap input[type="text"] {
   border: 1px solid #cccccc;
-}
-
-.is-style-panel-with-label h3 {
-  width: fit-content;
-  height: 10px;
-}
-
-.editor-styles-wrapper h3.nhsuk-care-card__heading {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/* admin styles widget tweaks */
-.block-editor-block-styles__item-preview .editor-styles-wrapper {
-  font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
-}
-
-.block-editor-block-styles__item-preview .wp-block-nhsblocks-nhsbutton {
-  padding: 5px;
-  font-size: 0.7rem;
-}
-
-.block-editor-block-styles__item-preview .is-style-expander .nhsuk-details__summary {
-  padding: 0;
-}
-
-.block-editor-block-styles__item-preview .nhsuk-inset-text {
-  margin-top: 0;
-}
-
-.nhsuk-grid-column-full .block-editor-inner-blocks {
-  width: 100%;
-}
-
-/* Panel Group editor tweak */
-.nhsuk-promo-group .block-editor-inner-blocks {
-  width: 100%;
-  float: left;
-}
-
-h3.nhsuk-do-dont-list__label .rich-text {
-  color: #ffffff;
-}
-
-.wp-block-nhsblocks-dashpanel .nhsuk-panel-with-label__label, .wp-block-nhsblocks-dashpanel .is-style-panel-with-label h3, .is-style-panel-with-label .wp-block-nhsblocks-dashpanel h3, .wp-block-nhsblocks-dashpanel .is-style-panel-with-label h3 .rich-text, .is-style-panel-with-label h3 .wp-block-nhsblocks-dashpanel .rich-text {
-  z-index: 2;
-  top: 0;
-  margin: 0 -20px;
-  top: 50%;
-  max-width: 90%;
-}
-
-.wp-block-nhsblocks-dashpanel .nhsuk-panel-with-label__label .rich-text, .wp-block-nhsblocks-dashpanel .is-style-panel-with-label h3 .rich-text, .is-style-panel-with-label .wp-block-nhsblocks-dashpanel h3 .rich-text, .is-style-panel-with-label h3 .wp-block-nhsblocks-dashpanel .rich-text .rich-text {
-  font-size: 1.1rem;
-  color: #fff;
-}
-
-div[data-type="nhsblocks/heroblock"] {
-  max-width: 100%;
-}
-
-div[data-type="nhsblocks/heroblock"] div[data-type="nhsblocks/heroinner"] ~ div {
-  display: none;
-}
-
-div[data-type="nhsblocks/heroblock"] .editor-inserter {
-  position: relative;
-  top: -100px;
-  background: white;
-  left: -400px;
-}
-
-div[data-type="nhsblocks/heroblock"] editor-inserter:nth-of-type(2) {
-  display: none;
-}
-
-div[data-type="nhsblocks/heroblock"] .nhsuk-hero--image .nhsuk-hero__overlay {
-  position: relative;
-  top: 270px;
-  margin-bottom: 100px;
-  background: none;
 }
