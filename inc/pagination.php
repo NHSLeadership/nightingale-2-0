@@ -96,8 +96,8 @@ function nightingale_paginate_links( $args = '' ) {
         'aria_current'       => 'page',
         'show_all'           => false,
         'prev_next'          => true,
-        'prev_text'          => __( 'Previous' ),
-        'next_text'          => __( 'Next' ),
+        'prev_text'          => __( 'Previous', 'nightingale-2-0' ),
+        'next_text'          => __( 'Next', 'nightingale-2-0' ),
         'end_size'           => 1,
         'mid_size'           => 2,
         'type'               => 'plain',
@@ -191,7 +191,7 @@ function nightingale_paginate_links( $args = '' ) {
       " . $args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number'] . '</a></li>';
                 $dots         = true;
             elseif ( $dots && ! $args['show_all'] ) :
-                $page_links[] = '<li class="nhsuk-pagination-item"><span class="nhsuk-pagination__title dots">' . __( '&hellip;'
+                $page_links[] = '<li class="nhsuk-pagination-item"><span class="nhsuk-pagination__title dots">' . __( '&hellip;', 'nightingale-2-0'
                     ) . '</span></li>';
                 $dots         = false;
             endif;

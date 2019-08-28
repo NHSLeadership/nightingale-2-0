@@ -1,27 +1,18 @@
 @charset "UTF-8";
-/*
-Theme Name: Nightingale 2.0
-Author: Tony Blacker, NHS Leadership Academy
-Description: NHS Digital frontend framework WordPress theme
-Version: 2.0
-Tags: NHS, NHS Digital, NHS Frontend
-*/
 /*!
 Theme Name: Nightingale 2.0
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Theme URI: http://www.leadershipacademy.nhs.uk/
+Author: Tony Blacker, NHS Leadership Academy
+Description: NHS Digital frontend framework WordPress theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: nightingale-2-0
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: NHS, NHS Digital, NHS Frontend
 
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
 
-Nightingale 2.0 is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1928,6 +1919,102 @@ address {
 }
 
 /**
+ * Lede text
+ *
+ * 1. Apply lede text styling to p and ul within the lede element
+ * 2. Reduces the spacing between the page heading and the lede text
+ */
+.nhsuk-lede-text {
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  /* [1] */
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+
+@media print {
+  .nhsuk-lede-text {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text {
+    margin-bottom: 48px;
+  }
+}
+
+.nhsuk-lede-text p,
+.nhsuk-lede-text ul {
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text p,
+  .nhsuk-lede-text ul {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+
+@media print {
+  .nhsuk-lede-text p,
+  .nhsuk-lede-text ul {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+.nhsuk-lede-text--small {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text--small {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+
+@media print {
+  .nhsuk-lede-text--small {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text--small {
+    margin-bottom: 32px;
+  }
+}
+
+/* [2] */
+h1 + .nhsuk-lede-text,
+h1 + .nhsuk-lede-text--small {
+  margin-top: -24px;
+}
+
+/**
  * Contextual adjustments
  *
  * Add top padding to headings that appear directly after paragraphs.
@@ -3386,6 +3473,16 @@ b {
   font-weight: 600 !important;
 }
 
+/* Colours
+   ========================================================================== */
+/**
+ * Secondary text colour $nhsuk-secondary-text-color
+ * eg <p class="nhsuk-u-secondary-text-color">Published on: 15 March 2018</p>
+ */
+.nhsuk-u-secondary-text-color {
+  color: #425563 !important;
+}
+
 /* ==========================================================================
    UTILITIES / #VISUALLY-HIDDEN
    ========================================================================== */
@@ -4259,6 +4356,16 @@ b {
   /* [1] */
 }
 
+.nhsuk-care-card--immediate .nhsuk-details, .is-style-immediate .nhsuk-details,
+.nhsuk-care-card--immediate .nhsuk-details__summary,
+.is-style-immediate .nhsuk-details__summary {
+  color: #ffffff;
+}
+
+.nhsuk-care-card--immediate .nhsuk-details__summary:hover, .is-style-immediate .nhsuk-details__summary:hover, .nhsuk-care-card--immediate .nhsuk-details__summary:focus, .is-style-immediate .nhsuk-details__summary:focus {
+  color: #212b32;
+}
+
 /* ==========================================================================
    COMPONENTS/ #CHECKBOXES
    ========================================================================== */
@@ -4410,12 +4517,12 @@ b {
   }
 }
 
-.js-enabled .nhsuk-checkboxes__conditional--hidden {
-  display: none;
-}
-
 .nhsuk-checkboxes__conditional > :last-child {
   margin-bottom: 0;
+}
+
+.js-enabled .nhsuk-checkboxes__conditional--hidden {
+  display: none;
 }
 
 /* ==========================================================================
@@ -4587,17 +4694,6 @@ b {
   border-left-color: inherit;
 }
 
-.nhsuk-details[open] > .nhsuk-details__summary:before {
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: transparent;
-  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-  border-width: 12.124px 7px 0 7px;
-  border-top-color: inherit;
-}
-
 .nhsuk-details__summary:focus {
   box-shadow: 0 0 0 8px #ffb81C;
   color: #212b32;
@@ -4615,6 +4711,17 @@ b {
 .nhsuk-details__summary:hover .nhsuk-details__summary-text {
   color: #212b32;
   text-decoration: none;
+}
+
+.nhsuk-details[open] > .nhsuk-details__summary:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit;
 }
 
 .nhsuk-details__summary-text {
@@ -4740,6 +4847,18 @@ b {
 @media (min-width: 40.0625em) {
   .nhsuk-expander-group {
     margin-bottom: 24px;
+  }
+}
+
+.nhsuk-details + h2,
+.nhsuk-details + .nhsuk-heading-l {
+  padding-top: 16px;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-details + h2,
+  .nhsuk-details + .nhsuk-heading-l {
+    padding-top: 24px;
   }
 }
 
@@ -7018,7 +7137,7 @@ b {
   width: 100%;
 }
 
-.nhsuk-image__caption, .nhsuk-image figcaption {
+.nhsuk-image__caption, .nhsuk-image figcaption, .gallery-caption {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -7026,7 +7145,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-image__caption, .nhsuk-image figcaption {
+  .nhsuk-image__caption, .nhsuk-image figcaption, .gallery-caption {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -7034,7 +7153,7 @@ b {
 }
 
 @media print {
-  .nhsuk-image__caption, .nhsuk-image figcaption {
+  .nhsuk-image__caption, .nhsuk-image figcaption, .gallery-caption {
     font-size: 14pt;
     line-height: 1.2;
   }
@@ -8543,12 +8662,12 @@ textarea[type="number"] {
   }
 }
 
-.js-enabled .nhsuk-radios__conditional--hidden {
-  display: none;
-}
-
 .nhsuk-radios__conditional > :last-child {
   margin-bottom: 0;
+}
+
+.js-enabled .nhsuk-radios__conditional--hidden {
+  display: none;
 }
 
 /* ==========================================================================
@@ -10075,6 +10194,102 @@ address {
 }
 
 /**
+ * Lede text
+ *
+ * 1. Apply lede text styling to p and ul within the lede element
+ * 2. Reduces the spacing between the page heading and the lede text
+ */
+.nhsuk-lede-text {
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  /* [1] */
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+
+@media print {
+  .nhsuk-lede-text {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text {
+    margin-bottom: 48px;
+  }
+}
+
+.nhsuk-lede-text p,
+.nhsuk-lede-text ul {
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text p,
+  .nhsuk-lede-text ul {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+
+@media print {
+  .nhsuk-lede-text p,
+  .nhsuk-lede-text ul {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+.nhsuk-lede-text--small {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text--small {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+
+@media print {
+  .nhsuk-lede-text--small {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-lede-text--small {
+    margin-bottom: 32px;
+  }
+}
+
+/* [2] */
+h1 + .nhsuk-lede-text,
+h1 + .nhsuk-lede-text--small {
+  margin-top: -24px;
+}
+
+/**
  * Contextual adjustments
  *
  * Add top padding to headings that appear directly after paragraphs.
@@ -10531,6 +10746,16 @@ b {
 
 .nhsuk-u-font-weight-bold {
   font-weight: 600 !important;
+}
+
+/* Colours
+   ========================================================================== */
+/**
+ * Secondary text colour $nhsuk-secondary-text-color
+ * eg <p class="nhsuk-u-secondary-text-color">Published on: 15 March 2018</p>
+ */
+.nhsuk-u-secondary-text-color {
+  color: #425563 !important;
 }
 
 /* ==========================================================================

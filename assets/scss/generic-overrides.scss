@@ -56,3 +56,6 @@
     }
   }
 }
+.gallery-caption {
+  @extend .nhsuk-image__caption;
+}

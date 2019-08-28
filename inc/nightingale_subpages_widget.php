@@ -5,7 +5,6 @@ Plugin URI: http://www.billerickson.net
 Description: Lists subpages of the current section
 Version: 1.7
 Author: Bill Erickson
-Author URI: http://www.billerickson.net
 License: GPLv2
 Modified by Tony Blacker, July 2019 to include inside Nightingale 2.0 Theme as a self contained widget so it can be auto deployed on theme activation
 All nightingale_2_0_ functions renamed to nightingale_ to avoid clashes if BE Subpages widget is also installed
@@ -35,9 +34,9 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
      * @return void
      **/
     function __construct() {
-        load_plugin_textdomain( 'nightingale_2_0-subpages', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-        $widget_ops = array( 'classname' => 'widget_subpages', 'description' => __( 'Lists current section subpages', 'nightingale_2_0-subpages' ) );
-        parent::__construct( 'subpages-widget', __( 'Subpages Widget', 'nightingale_2_0-subpages' ), $widget_ops );
+        load_plugin_textdomain( 'nightingale-2-0', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+        $widget_ops = array( 'classname' => 'widget_subpages', 'description' => __( 'Lists current section subpages', 'nightingale-2-0' ) );
+        parent::__construct( 'subpages-widget', __( 'Subpages Widget', 'nightingale-2-0' ), $widget_ops );
     }
 
     /**
@@ -197,28 +196,28 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
         $instance = wp_parse_args( (array) $instance, $defaults ); ?>
 
         <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'nightingale_2_0-subpages' );?></label>
+            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'nightingale-2-0' );?></label>
             <input class="widefat" type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" />
         </p>
 
         <p>
             <input class="checkbox" type="checkbox" value="1" <?php checked( $instance['title_from_parent'], 1 ); ?> id="<?php echo $this->get_field_id( 'title_from_parent' ); ?>" name="<?php echo $this->get_field_name( 'title_from_parent' ); ?>" />
-            <label for="<?php echo $this->get_field_id( 'title_from_parent' ); ?>"><?php _e( 'Use top level page as section title.', 'nightingale_2_0-subpages' );?></label>
+            <label for="<?php echo $this->get_field_id( 'title_from_parent' ); ?>"><?php _e( 'Use top level page as section title.', 'nightingale-2-0' );?></label>
         </p>
 
         <p>
             <input class="checkbox" type="checkbox" value="1" <?php checked( $instance['title_link'], 1 ); ?> id="<?php echo $this->get_field_id( 'title_link' ); ?>" name="<?php echo $this->get_field_name( 'title_link' ); ?>" />
-            <label for="<?php echo $this->get_field_id( 'title_link' ); ?>"><?php _e( 'Make title a link', 'nightingale_2_0-subpages' ); echo '<br /><em>('; _e( 'only if "use top level page" is checked', 'nightingale_2_0-subpages' ); echo ')</em></label>';?>
+            <label for="<?php echo $this->get_field_id( 'title_link' ); ?>"><?php _e( 'Make title a link', 'nightingale-2-0' ); echo '<br /><em>('; _e( 'only if "use top level page" is checked', 'nightingale-2-0' ); echo ')</em></label>';?>
         </p>
 
         <p>
             <input class="checkbox" type="checkbox" value="1" <?php checked( $instance['deep_subpages'], 1 ); ?> id="<?php echo $this->get_field_id( 'deep_subpages' ); ?>" name="<?php echo $this->get_field_name( 'deep_subpages' ); ?>" />
-            <label for="<?php echo $this->get_field_id( 'deep_subpages' ); ?>"><?php _e( 'Include the current page\'s subpages', 'nightingale_2_0-subpages' ); ?></label>
+            <label for="<?php echo $this->get_field_id( 'deep_subpages' ); ?>"><?php _e( 'Include the current page\'s subpages', 'nightingale-2-0' ); ?></label>
         </p>
 
         <p>
             <input class="checkbox" type="checkbox" value="1" <?php checked( $instance['nest_subpages'], 1 ); ?> id="<?php echo $this->get_field_id( 'nest_subpages' ); ?>" name="<?php echo $this->get_field_name( 'nest_subpages' ); ?>" />
-            <label for="<?php echo $this->get_field_id( 'nest_subpages' ); ?>"><?php _e( 'Nest sub-page &lt;ul&gt; inside parent &lt;li&gt;', 'nightingale_2_0-subpages' ); echo '<br /><em>('; _e( "only if &quot;Include the current page's subpages&quot; is checked", 'nightingale_2_0-subpages' ); echo ')</em></label>';?></p>
+            <label for="<?php echo $this->get_field_id( 'nest_subpages' ); ?>"><?php _e( 'Nest sub-page &lt;ul&gt; inside parent &lt;li&gt;', 'nightingale-2-0' ); echo '<br /><em>('; _e( "only if &quot;Include the current page's subpages&quot; is checked", 'nightingale-2-0' ); echo ')</em></label>';?></p>
 
         <?php
     }

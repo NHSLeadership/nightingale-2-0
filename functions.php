@@ -48,8 +48,8 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
         //function register_my_menus() {
             register_nav_menus(
                 array(
-                    'main-menu' => __( 'Main Menu' ),
-                    'footer-menu' => __( 'Footer Links' )
+                    'main-menu' => __( 'Main Menu', 'nightingale-2-0' ),
+                    'footer-menu' => __( 'Footer Links', 'nightingale-2-0' )
                 )
             );
         //}
@@ -96,7 +96,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
         // Define and register starter content to showcase the theme on new sites.
         $starter_content = array(
             'widgets'     => array(
-                // Place three core-defined widgets in the sidebar area.
+                // Place pre-defined widget in the sidebar area.
                 'sidebar-1' => array(
                     'subpages-widget',
                 ),
@@ -120,7 +120,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
             'nav_menus'   => array(
                 // Assign a menu to the "main-menu" location.
                 'main-menu'    => array(
-                    'name'  => __( 'Main Menu', 'nightingale_2_0' ),
+                    'name'  => __( 'Main Menu', 'nightingale-2-0' ),
                     'items' => array(
                         'link_home', // Note that the core "home" page is actually a link in case a static front page is not used.
                         'page_blog',
@@ -128,7 +128,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
                 ),
                 // Assign a menu to the "footer-menu" location.
                 'footer-menu' => array(
-                    'name'  => __( 'Footer Links', 'nightingale_2_0' ),
+                    'name'  => __( 'Footer Links', 'nightingale-2-0' ),
                     'items' => array(
                         'link_home',
                         'page-blog',
@@ -256,7 +256,7 @@ function nightingale_2_0_register_required_plugins() {
      * Array of configuration settings. Amend each line as needed.
      */
     $config = array(
-        'id'           => 'NHS',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+        'id'           => 'nightingale-2-0',                 // Unique ID for hashing notices for multiple instances of TGMPA.
         'default_path' => '',                      // Default absolute path to bundled plugins.
         'menu'         => 'tgmpa-install-plugins', // Menu slug.
         'has_notices'  => true,                    // Show admin notices or not.
