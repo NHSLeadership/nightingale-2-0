@@ -22,13 +22,13 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-            <div class="nhsuk-review-date">
-                <p class="nhsuk-body-s">
-				<?php
-                nightingale_2_0_posted_by();
-				nightingale_2_0_posted_on();
-				?>
-                </p>
+			<div class="nhsuk-review-date">
+				<p class="nhsuk-body-s">
+					<?php
+					nightingale_2_0_posted_by();
+					nightingale_2_0_posted_on();
+					?>
+				</p>
 			</div><!-- .article-meta -->
 		<?php endif; ?>
 	</header><!-- .article-header -->
@@ -37,35 +37,40 @@
 
 	<article>
 		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nightingale-2-0' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
+		the_content(
+			sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nightingale-2-0' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			)
+		);
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nightingale-2-0' ),
-			'after'  => '</div>',
-		) );
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nightingale-2-0' ),
+				'after'  => '</div>',
+			)
+		);
 		?>
-    </article><!-- .article-content -->
+	</article><!-- .article-content -->
 
-	<footer class="article-footer"><details class="nhsuk-details nhsuk-expander">
-            <summary class="nhsuk-details__summary">
-    <span class="nhsuk-details__summary-text">
-      Meta information
-    </span>
-            </summary>
-            <div class="nhsuk-details__text">
-		<?php nightingale_2_0_entry_footer(); ?>
-            </div>
-        </details>
+	<footer class="article-footer">
+		<details class="nhsuk-details nhsuk-expander">
+			<summary class="nhsuk-details__summary">
+	<span class="nhsuk-details__summary-text">
+	  Meta information
+	</span>
+			</summary>
+			<div class="nhsuk-details__text">
+				<?php nightingale_2_0_entry_footer(); ?>
+			</div>
+		</details>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

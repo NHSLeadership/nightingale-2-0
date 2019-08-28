@@ -19,20 +19,15 @@ if ( ! function_exists( 'nightingale_2_0_posted_on' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( DATE_W3C ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( DATE_W3C ) ),
 			esc_html( get_the_modified_date() )
 		);
 
-		$posted_on = sprintf(
-			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'nightingale-2-0' ),
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-		);
-
-		echo '<span class="nhsuk-u-visually-hidden">Posted on: </span>' . $time_string . ' '; // WPCS: XSS OK.
+		echo '<span class="nhsuk-u-visually-hidden">Posted on: </span>' . $time_string . ' '; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	}
 endif;
@@ -44,7 +39,7 @@ if ( ! function_exists( 'nightingale_2_0_posted_by' ) ) :
 	function nightingale_2_0_posted_by() {
 
 		echo '<span class="nhsuk-u-visually-hidden">Posted by: </span><a class="url fn n" 
- href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a>&nbsp;-&nbsp;'; // WPCS: XSS OK.
+ href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a>&nbsp;-&nbsp;'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 	}
 endif;
@@ -60,16 +55,14 @@ if ( ! function_exists( 'nightingale_2_0_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'nightingale-2-0' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<p class="cat-links">' . esc_html__( 'Posted in %1$s', 'nightingale-2-0' ) . '</p>',
-                    $categories_list ); // WPCS: XSS OK.
+				printf( '<p class="cat-links">' . esc_html__( 'Posted in %1$s', 'nightingale-2-0' ) . '</p>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'nightingale-2-0' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<p class="tags-links">' . esc_html__( 'Tagged %1$s', 'nightingale-2-0' ) . '</p>',
-                    $tags_list ); // WPCS: XSS OK.
+				printf( '<p class="tags-links">' . esc_html__( 'Tagged %1$s', 'nightingale-2-0' ) . '</p>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 
@@ -127,22 +120,26 @@ if ( ! function_exists( 'nightingale_2_0_post_thumbnail' ) ) :
 			?>
 
 			<fig class="nhsuk-image">
-				<?php the_post_thumbnail('thumbnail', array('class' => 'nhsuk-image__img')); ?>
+				<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'nhsuk-image__img' ) ); ?>
 			</fig><!-- .post-thumbnail -->
 
 		<?php else : ?>
 
-		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+				<?php
+				the_post_thumbnail(
+					'post-thumbnail',
+					array(
+						'alt' => the_title_attribute(
+							array(
+								'echo' => false,
+							)
+						),
+					)
+				);
+				?>
+			</a>
 			<?php
-			the_post_thumbnail( 'post-thumbnail', array(
-				'alt' => the_title_attribute( array(
-					'echo' => false,
-				) ),
-			) );
-			?>
-		</a>
-
-		<?php
 		endif; // End is_singular().
 	}
 endif;
