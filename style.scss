@@ -1,13 +1,14 @@
-/*!
+@charset "UTF-8";
+/*********************************************************************************************
 Theme Name: Nightingale 2.0
 Theme URI: http://www.leadershipacademy.nhs.uk/
 Author: Tony Blacker, NHS Leadership Academy
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: nightingale-2-0
+Tags: NHS, NHS Digital, NHS Frontend, National Health Service, Leadership Academy
 Description: NHS Digital frontend framework WordPress theme
 Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: nightingale-2-0
-Tags: NHS, NHS Digital, NHS Frontend
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -16,10 +17,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
-/*--------------------------------------------------------------
+**********************************************************************************************
+
 >>> TABLE OF CONTENTS:
-----------------------------------------------------------------
+
 # Normalize
 # Typography
 # Elements
@@ -38,7 +39,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
---------------------------------------------------------------*/
+
+**********************************************************************************************/
 @import 'layouts/default';
 // @todo clean this up, its a hangover from underscores that we could do with getting rid of
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
