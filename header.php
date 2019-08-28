@@ -16,17 +16,17 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <script src="<?php echo get_bloginfo('template_directory'); ?>/node_modules/nhsuk-frontend/dist/nhsuk.min.js"
+    <script src="<?php echo get_template_directory_uri(); ?>/node_modules/nhsuk-frontend/dist/nhsuk.min.js"
             defer></script>
-    <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
-    <link rel="apple-touch-icon" href="<?php echo get_bloginfo('template_directory');
+    <link href="<?php echo get_template_directory_uri(); ?>/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri();
     ?>/node_modules/nhsuk-frontend/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" href="<?php echo get_bloginfo('template_directory');
+    <link rel="icon" href="<?php echo get_template_directory_uri();
     ?>/node_modules/nhsuk-frontend/assets/favicons/favicon.png">
 
     <?php wp_head(); ?>
 </head>
-<body class="js-enabled">
+<body <?php body_class('js-enabled'); ?>>
 <a class="skip-link screen-reader-text"
        href="#content"><?php esc_html_e('Skip to content', 'nightingale-2-0'); ?></a>
 <?php if (get_theme_mod('emergency_on') == 'yes') {
@@ -75,18 +75,5 @@
     </header>
 
     <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
-
-
-
-
-
-        <?php
-        // add ACF generated HERO block
-        if (is_singular()) {
-            include_once('wp-content/plugins/nhsl-blocks/blocks/content-hero.php');
-        }
-        //end hero image section
-
-        ?>
         <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent">
             <div id="contentinner" class="nhsuk-width-container">

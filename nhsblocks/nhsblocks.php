@@ -39,7 +39,7 @@ function nhsblocks_block_categories($categories, $post)
         array(
             array(
                 'slug' => 'nhsblocks',
-                'title' => __('NHS Frontend Blocks', 'nhsblocks'),
+                'title' => __('NHS Frontend Blocks', 'nightingale-2-0'),
                 'icon' => 'screen',
             ),
         )
@@ -85,7 +85,7 @@ function nhsblocks_register_blocks()
          * @link https://wordpress.org/gutenberg/handbook/designers-developers/developers/internationalization/
          * @link https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wordpress/
          */
-        wp_set_script_translations('nhsblocks-editor-script', 'nhsblocks', get_template_directory_uri() . '/languages');
+        wp_set_script_translations('nhsblocks-editor-script', 'nightingale-2-0', get_template_directory_uri() . '/languages');
     }
 
 }
@@ -153,17 +153,11 @@ function nhsblocks_render_block_latest_news($attributes)
         endwhile;
         wp_reset_postdata();
     else:
-        $newsout .= '<p>' . __('No News') . '</p>';
+        $newsout .= '<p>' . __('No News', 'nightingale-2-0') . '</p>';
     endif;
     $newsout .= '</div></div>';
     return $newsout;
-    /*$post = $recent_posts[ 0 ];
-    $post_id = $post['ID'];
-    return sprintf(
-        '<a class="wp-block-riad-latest-post" href="%1$s">%2$s</a>',
-        esc_url( get_permalink( $post_id ) ),
-        esc_html( get_the_title( $post_id ) )
-    );*/
+
 }
 
 register_block_type('nhsblocks/latestnews', array(
