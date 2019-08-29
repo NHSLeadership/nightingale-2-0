@@ -38,7 +38,7 @@ if ( ! function_exists( 'nightingale_pagination' ) ) :
 		$pagenum_link = remove_query_arg( array_keys( $query_args ), $pagenum_link );
 		$pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
 
-		$format = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
+		$format  = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
 		$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
 
 		// Set up paginated links.
@@ -91,7 +91,7 @@ function nightingale_paginate_links( $args = '' ) {
 	$pagenum_link = trailingslashit( $url_parts[0] ) . '%_%';
 
 	// URL base depends on permalink settings.
-	$format = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
+	$format  = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
 	$format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%', 'paged' ) : '?paged=%#%';
 
 	$defaults = array(
@@ -160,7 +160,7 @@ function nightingale_paginate_links( $args = '' ) {
 	$dots       = false;
 
 	if ( $args['prev_next'] && $current && 1 < $current ) :
-		$link = str_replace( '%_%', 2 == $current ? '' : $args['format'], $args['base'] );
+		$link = str_replace( '%_%', 2 === $current ? '' : $args['format'], $args['base'] );
 		$link = str_replace( '%#%', $current - 1, $link );
 		if ( $add_args ) {
 			$link = add_query_arg( $add_args, $link );
@@ -182,12 +182,12 @@ function nightingale_paginate_links( $args = '' ) {
 	</li>';
 	endif;
 	for ( $n = 1; $n <= $total; $n ++ ) :
-		if ( $n == $current ) :
+		if ( $n === $current ) :
 			$page_links[] = "<li class=\"nhsuk-pagination-item\"><span aria-current='" . esc_attr( $args['aria_current'] ) . "' class='nhsuk-pagination__title current'>" . $args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number'] . '</span></li>';
 			$dots         = true;
 		else :
 			if ( $args['show_all'] || ( $n <= $end_size || ( $current && $n >= $current - $mid_size && $n <= $current + $mid_size ) || $n > $total - $end_size ) ) :
-				$link = str_replace( '%_%', 1 == $n ? '' : $args['format'], $args['base'] );
+				$link = str_replace( '%_%', 1 === $n ? '' : $args['format'], $args['base'] );
 				$link = str_replace( '%#%', $n, $link );
 				if ( $add_args ) {
 					$link = add_query_arg( $add_args, $link );

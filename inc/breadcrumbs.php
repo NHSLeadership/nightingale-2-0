@@ -58,7 +58,8 @@ function nightingale_breadcrumb() {
 					} elseif ( is_archive() ) {
 						echo '<li class="nhsuk-breadcrumb__item">' . esc_html( get_the_archive_title() ) . '</li>';
 					} else {
-						if ( ( $post_type = get_post_type() ) && 'page' !== $post_type ) {
+						$post_type = get_post_type();
+						if ( ( $post_type ) && 'page' !== $post_type ) {
 							$type = get_post_type_object( $post_type );
 							echo '<li class="nhsuk-breadcrumb__item">';
 							echo $type->has_archive ? '<a class="nhsuk-breadcrumb__link" href =' . esc_url( get_post_type_archive_link( $post_type ) ) . '>' : '';

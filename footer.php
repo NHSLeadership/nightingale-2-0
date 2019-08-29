@@ -28,15 +28,15 @@
 			$menu_locations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).
 			// This returns an array of menu locations ([LOCATION_NAME] = MENU_ID).
 
-			$menu_id = $menu_locations['footer-menu']; // Get the *footer-menu* menu ID.
+			$menu_id   = $menu_locations['footer-menu']; // Get the *footer-menu* menu ID.
 			$menu_item = wp_get_nav_menu_items( $menu_id );
-			if ( $footer_nav = $menu_item ) { // Get the array of wp objects, the nav items for our queried location.
+			if ( $menu_item ) { // Get the array of wp objects, the nav items for our queried location.
 				?>
 				<h2 class="nhsuk-u-visually-hidden">Support links</h2>
 				<ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
 					<?php
 
-					foreach ( $footer_nav as $nav_item ) {
+					foreach ( $menu_item as $nav_item ) {
 
 						echo '<li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="'
 							. esc_url( $nav_item->url ) . '" title="' . esc_html( $nav_item->title ) . '">' . esc_html( $nav_item->title ) . '</a></li>';

@@ -77,7 +77,8 @@ function nightingale_2_0_blocks_register_blocks() {
 		'nhsblocks-editor-script',                                            // label.
 		get_template_directory_uri() . '/nhsblocks/build/index.js',                        // script file.
 		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-data' ),        // dependencies.
-		'20190828'
+		'20190828',
+		'in_footer'
 	);
 
 	register_block_type(
@@ -131,7 +132,7 @@ function nightingale_2_0_blocks_render_block_latest_news( $attributes ) {
 	$total    = 6;
 	$columns  = 3;
 	$category = '';
-	if ( 2 == $columns ) {
+	if ( 2 === $columns ) {
 		$width = 'half';
 	} else {
 		$width = 'third';
@@ -159,9 +160,9 @@ function nightingale_2_0_blocks_render_block_latest_news( $attributes ) {
 			$newsout .= nightingale_2_0_read_more();
 			$newsout .= '   </div>
 					  </div>';
-			if ( $i == $columns ) {
+			if ( $i === $columns ) {
 				$newsout .= '</div><div class="nhsuk-panel-group">';
-				$i       = 0;
+				$i        = 0;
 			}
 
 			$i ++;

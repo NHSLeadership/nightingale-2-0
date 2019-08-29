@@ -53,9 +53,9 @@ if ( ! function_exists( 'nightingale_2_0_get_header_style' ) ) {
 
 		$themeoptions_header_style = esc_attr( get_theme_mod( 'theme-header-style', 'default' ) );
 
-		if ( 'default' == $themeoptions_header_style ) {
+		if ( 'default' === $themeoptions_header_style ) {
 			$default_position = 'page-header-default';
-		} elseif ( 'centered' == $themeoptions_header_style ) {
+		} elseif ( 'centered' === $themeoptions_header_style ) {
 			$default_position = 'page-header-white';
 		}
 

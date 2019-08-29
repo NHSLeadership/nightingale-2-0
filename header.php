@@ -39,11 +39,11 @@ if ( get_theme_mod( 'emergency_on' ) === 'yes' ) {
 	$menu_locations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php)
 	// This returns an array of menu locations ([LOCATION_NAME] = MENU_ID);.
 
-	$menu_id = $menu_locations['main-menu']; // Get the *footer-menu* menu ID.
-	if ( $header_nav = wp_get_nav_menu_items( $menu_id ) ) { // Get the array of wp objects, the nav items for our queried location.
+	$menu_id    = $menu_locations['main-menu']; // Get the *footer-menu* menu ID.
+	$header_nav = wp_get_nav_menu_items( $menu_id );
+	if ( $header_nav ) { // Get the array of wp objects, the nav items for our queried location.
 		?>
-		<nav class="nhsuk-header__navigation" id="header-navigation" aria-label="Primary navigation"
-			 aria-labelledby="label-navigation">
+		<nav class="nhsuk-header__navigation" id="header-navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
 			<p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
 				<button class="nhsuk-header__navigation-close" id="close-menu">
 					<svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
