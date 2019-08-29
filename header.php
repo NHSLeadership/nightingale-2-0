@@ -11,10 +11,14 @@
  * @version 1.1 21st August 2019
  */
 
+	// Leverage Browser Caching
+	header("Cache-Control: max-age=2592000"); //30days (60sec * 60min * 24hours * 30days)
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
