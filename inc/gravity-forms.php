@@ -78,33 +78,33 @@ add_filter(
 	function ( $field_content, $field ) {
 
 		// Text inputs.
-		if ( 'text' == $field->type ) {
+		if ( 'text' === $field->type ) {
 			$field_content = str_replace( "type='text' value='' class='", "type='text' value='' class='c-form-input ", $field_content );
 		}
 
 		// Text areas.
-		if ( 'textarea' == $field->type ) {
+		if ( 'textarea' === $field->type ) {
 			$field_content = preg_replace( "#<textarea(.*?)class='#", "<textarea$1class='nhsuk-textarea ", $field_content );
 		}
 
 		// Selects.
-		if ( 'select' == $field->type ) {
+		if ( 'select' === $field->type ) {
 			$field_content = str_replace( 'ginput_container ginput_container_select', 'c-form-dropdown', $field_content );
 			$field_content = str_replace( 'gfield_select', 'nhsuk-select', $field_content );
 		}
 
 		// Emails.
-		if ( 'email' == $field->type ) {
+		if ( 'email' === $field->type ) {
 			$field_content = str_replace( "type='email' value='' class='", "type='email' value='' class='c-form-input ", $field_content );
 		}
 
 		// Numbers.
-		if ( 'number' == $field->type ) {
+		if ( 'number' === $field->type ) {
 			$field_content = preg_replace( "#<input(.*?)class='#", "<input$1class='c-form-input ", $field_content );
 		}
 
 		// Checkboxes.
-		if ( 'checkbox' == $field->type ) {
+		if ( 'checkbox' === $field->type ) {
 
 			// Replace <li> elements with suitably-styled <label>s.
 			$field_content = str_replace( "<li class='", "<label class='c-form-checkbox ", $field_content );
@@ -116,7 +116,7 @@ add_filter(
 		}
 
 		// Radio buttons.
-		if ( 'radio' == $field->type ) {
+		if ( 'radio' === $field->type ) {
 
 			// Replace <li> elements with <label>s with Nightingale CSS classes.
 			$field_content = str_replace( "<li class='", "<label class='c-form-checkbox c-form-checkbox--radio ", $field_content );

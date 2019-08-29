@@ -27,7 +27,7 @@ add_filter( 'wp_generate_attachment_metadata', 'retina_support_attachment_meta',
  * This function is attached to the 'wp_generate_attachment_metadata' filter hook.
  *
  * @param array   $metadata The image file information.
- * @param integer $attachment_id the wordpress generated image resource identifier.
+ * @param integer $attachment_id the WordPress generated image resource identifier.
  */
 function retina_support_attachment_meta( $metadata, $attachment_id ) {
 	foreach ( $metadata as $key => $value ) {

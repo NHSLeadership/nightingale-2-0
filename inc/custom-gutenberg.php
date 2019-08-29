@@ -41,8 +41,7 @@ if ( ! function_exists( 'button_block_output' ) ) :
 	function button_block_output( $output, $attributes ) {
 		ob_start();
 		?>
-		<a href="<?php echo esc_url( $attributes['buttonLink'] ); ?>"
-		   class="nhsuk-button"><?php echo esc_html( $attributes['buttonLabel'] ); ?></a>
+		<a href="<?php echo esc_url( $attributes['buttonLink'] ); ?>" class="nhsuk-button"><?php echo esc_html( $attributes['buttonLabel'] ); ?></a>
 		<?php
 		return ob_get_clean();
 	}

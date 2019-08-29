@@ -65,7 +65,7 @@
 		<details class="nhsuk-details nhsuk-expander">
 			<summary class="nhsuk-details__summary">
 	<span class="nhsuk-details__summary-text">
-	  Meta information
+	Meta information
 	</span>
 			</summary>
 			<div class="nhsuk-details__text">

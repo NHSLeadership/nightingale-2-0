@@ -55,7 +55,6 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
 	 * @return void Echoes it's output
 	 **/
 	public function widget( $args, $instance ) {
-		extract( $args, EXTR_SKIP );
 
 		// Only run on hierarchical post types.
 		$post_types = get_post_types( array( 'hierarchical' => true ) );
@@ -71,36 +70,36 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
 		$parents              = apply_filters( 'nightingale_2_0_subpages_widget_parents', $parents );
 
 		// Build a menu listing top level parent's children.
-		$args     = array(
+		$subargs     = array(
 			'child_of'    => $parents[0],
 			'parent'      => $parents[0],
 			'sort_column' => 'menu_order',
 			'post_type'   => get_post_type(),
 		);
 		$depth    = 1;
-		$subpages = get_pages( apply_filters( 'nightingale_2_0_subpages_widget_args', $args, $depth ) );
+		$subpages = get_pages( apply_filters( 'nightingale_2_0_subpages_widget_args', $subargs, $depth ) );
 
 		// If there are pages, display the widget.
 		if ( empty( $subpages ) ) {
 			return;
 		}
 
-		echo esc_html( $before_widget );
+		echo $args['before_widget'];
 
 		global $nightingale_2_0_subpages_is_first;
 		$nightingale_2_0_subpages_is_first = true;
 
 		// Build title.
 		$title = esc_attr( $instance['title'] );
-		if ( 1 == $instance['title_from_parent'] ) {
+		if ( 1 === $instance['title_from_parent'] ) {
 			$title = apply_filters( 'nightingale_2_0_subpages_widget_title', get_the_title( $parents[0] ) );
-			if ( 1 == $instance['title_link'] ) {
+			if ( 1 === $instance['title_link'] ) {
 				$title = '<a href="' . esc_url( get_permalink( $parents[0] ) ) . '">' . esc_html( $title ) . '</a>';
 			}
 		}
 
 		if ( ! empty( $title ) ) {
-			echo esc_html( $before_title . $title . $after_title );
+			echo $args['before_title'] . $title . $args['after_title'];
 		}
 
 		if ( ! isset( $instance['deep_subpages'] ) ) {
@@ -114,7 +113,7 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
 		// Print the tree.
 		$this->build_subpages( $subpages, $parents, $instance['deep_subpages'], $depth, $instance['nest_subpages'] );
 
-		echo esc_html( $after_widget );
+		echo $args['after_widget'];
 	}
 
 	/**
@@ -143,7 +142,7 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
 			$class[] = 'menu-item-' . $subpage->ID;
 
 			// Set special class for current page.
-			if ( $subpage->ID == $post->ID ) {
+			if ( $subpage->ID === $post->ID ) {
 				$class[] = 'widget_subpages__active';
 			}
 
@@ -165,7 +164,7 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
 			do_action( 'nightingale_2_0_subpages_widget_menu_extra', $subpage, $class );
 
 			// Check if the subpage is in parent tree to go deeper.
-			if ( $deep_subpages && in_array( $subpage->ID, $parents ) ) {
+			if ( $deep_subpages && in_array( $subpage->ID, $parents, true ) ) {
 				$args         = array(
 					'child_of'    => $subpage->ID,
 					'parent'      => $subpage->ID,
