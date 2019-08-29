@@ -28,7 +28,7 @@
 			$menu_locations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).
 			// This returns an array of menu locations ([LOCATION_NAME] = MENU_ID).
 
-			$menu_id = $menu_locations['footer-menu']; // Get the *footer-menu* menu ID.
+			$menu_id   = $menu_locations['footer-menu']; // Get the *footer-menu* menu ID.
 			$menu_item = wp_get_nav_menu_items( $menu_id );
 			if ( $footer_nav = $menu_item ) { // Get the array of wp objects, the nav items for our queried location.
 				?>

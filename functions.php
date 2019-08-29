@@ -383,4 +383,4 @@ require get_template_directory() . '/nhsblocks/nhsblocks.php';
 /**
  * Performance Boosters - should be loaded as last element of functions file
  */
-require get_template_directory() . '/inc/performance_optimisations.php';
+require get_template_directory() . '/inc/performance-optimisations.php';
