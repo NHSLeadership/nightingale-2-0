@@ -15,6 +15,8 @@
  */
 
 get_header();
+
+flush();
 ?>
 
 <div id="primary" class=" nhsuk-grid-row">
@@ -42,6 +44,7 @@ get_header();
 </div><!-- #primary -->
 
 <?php
+flush();
 get_footer();
 ?>
 <script>
