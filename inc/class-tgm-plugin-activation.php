@@ -8,7 +8,7 @@
  * or theme author for support.
  *
  * @package   TGM-Plugin-Activation
- * @version   2.6.1 - modified very slightly for theme Nightingale-2-0 for publication on WordPress.org by Tony Blacker, NHS Leadership Academy
+ * @version   2.6.1 for parent theme Nightingale 2 0 for publication on WordPress.org
  * @link      http://tgmpluginactivation.com/
  * @author    Thomas Griffin, Gary Jones, Juliette Reinders Folmer
  * @copyright Copyright (c) 2011, Thomas Griffin
@@ -258,6 +258,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 			// Announce that the class is ready, and pass the object (for advanced use).
 			do_action_ref_array( 'tgmpa_init', array( $this ) );
+
 
 			// When the rest of WP has loaded, kick-start the rest of the class.
 			add_action( 'init', array( $this, 'init' ) );
@@ -727,7 +728,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			}
 
 			// All plugin information will be stored in an array for processing.
-			$slug = $this->sanitize_key( urldecode( esc_url( wp_unslash( $_GET['plugin'] ) ) ) );
+			$slug = $this->sanitize_key( urldecode( $_GET['plugin'] ) );
 
 			if ( ! isset( $this->plugins[ $slug ] ) ) {
 				return false;
@@ -2849,10 +2850,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				if ( is_array( $_POST['plugin'] ) ) {
-					$plugins_to_install = (array) esc_attr( wp_unslash( $_POST['plugin'] ) );
+					$plugins_to_install = (array) $_POST['plugin'];
 				} elseif ( is_string( $_POST['plugin'] ) ) {
 					// Received via Filesystem page - un-flatten array (WP bug #19643).
-					$plugins_to_install = explode( ',', esc_attr( wp_unslash( $_POST['plugin'] ) ) );
+					$plugins_to_install = explode( ',', $_POST['plugin'] );
 				}
 
 				// Sanitize the received input.
@@ -2902,7 +2903,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 				$method = ''; // Leave blank so WP_Filesystem can populate it as necessary.
 				$fields = array_keys( $_POST ); // Extra fields to pass to WP_Filesystem.
-				$creds = request_filesystem_credentials( esc_url_raw( $url ), $method, false, false, $fields );
+				$creds  = request_filesystem_credentials( esc_url_raw( $url ), $method, false, false, $fields );
 				if ( false === ( $creds ) ) {
 					return true; // Stop the normal page form from displaying, credential request form will be shown.
 				}
@@ -2997,7 +2998,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// Grab plugin data from $_POST.
 				$plugins = array();
 				if ( isset( $_POST['plugin'] ) ) {
-					$plugins = array_map( 'urldecode', (array) esc_attr( wp_unslash( $_POST['plugin'] ) ) );
+					$plugins = array_map( 'urldecode', (array) $_POST['plugin'] );
 					$plugins = array_map( array( $this->tgmpa, 'sanitize_key' ), $plugins );
 				}
 
@@ -3031,10 +3032,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 					$last_plugin  = array_pop( $plugin_names ); // Pop off last name to prep for readability.
 					$imploded     = empty( $plugin_names ) ? $last_plugin : ( implode( ', ', $plugin_names ) . ' ' . esc_html_x( 'and', 'plugin A *and* plugin B', 'nightingale-2-0' ) . ' ' . $last_plugin );
 
-					printf( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					printf( // phpcs:ignore Standard.Category.SniffName.ErrorCode.
 						'<div id="message" class="updated"><p>%1$s %2$s.</p></div>',
 						esc_html( _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'nightingale-2-0' ) ),
-						esc_attr( $imploded )
+						$imploded
 					);
 
 					// Update recently activated plugins option.
@@ -3394,7 +3395,6 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 
 						$this->skin->footer();
 
-						// [TGMPA + ] Remove our auto-activation hook.
 						remove_filter( 'upgrader_post_install', array( $this, 'auto_activate' ), 10 );
 
 						// Force refresh of plugin update information.

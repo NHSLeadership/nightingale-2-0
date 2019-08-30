@@ -70,7 +70,7 @@ class Nightingale_2_0_Subpages_Widget extends WP_Widget {
 		$parents              = apply_filters( 'nightingale_2_0_subpages_widget_parents', $parents );
 
 		// Build a menu listing top level parent's children.
-		$subargs     = array(
+		$subargs  = array(
 			'child_of'    => $parents[0],
 			'parent'      => $parents[0],
 			'sort_column' => 'menu_order',
