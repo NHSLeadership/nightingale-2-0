@@ -44,13 +44,12 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus(
-			array(
-				'main-menu'   => __( 'Main Menu', 'nightingale-2-0' ),
-				'footer-menu' => __( 'Footer Links', 'nightingale-2-0' ),
-			)
+		// This theme uses wp_nav_menus() in two location.
+		$locations = array(
+			'Main Menu'    => __( 'The menu to show at the top of your site (does not show child options, only top level navigation)', 'nightingale-2-0' ),
+			'Footer Links' => __( 'The footer navigation area - this is great for showing more detailed links and deeper navigation.', 'nightingale-2-0' ),
 		);
+		register_nav_menus( $locations );
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -220,8 +219,6 @@ function nightingale_2_0_scripts() {
 
 	wp_enqueue_script( 'nightingale-2-0-navigation', get_template_directory_uri() . '/js/nhsuk.min.js', array(), '20190828', true );
 
-	wp_enqueue_script( 'jquerymin', get_template_directory_uri() . '/js/jquery.min.js', array(), '3.4.1', true );
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -232,7 +229,7 @@ add_action( 'wp_enqueue_scripts', 'nightingale_2_0_scripts' );
 /**
  * Force download of dependancy plugins
  */
-require_once get_template_directory() . '/lib/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
 
 add_action( 'tgmpa_register', 'nightingale_2_0_register_required_plugins' );
 /**
