@@ -59,3 +59,10 @@
 .gallery-caption {
   @extend .nhsuk-image__caption;
 }
+
+.sticky {
+  @extend .nhsuk-panel;
+}
+.is-style-outline .wp-block-button__link {
+  color: $color_nhsuk-blue;
+}

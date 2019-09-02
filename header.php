@@ -75,8 +75,9 @@ if ( get_theme_mod( 'emergency_on' ) === 'yes' ) {
 		} // end header nav check.
 	} // end check to see if a menu has been assigned.
 	?>
-
 </header>
+
+<?php echo nightingale_breadcrumb() ?>
 <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
 	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent">
 		<div id="contentinner" class="nhsuk-width-container">

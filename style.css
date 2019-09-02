@@ -1,14 +1,14 @@
 @charset "UTF-8";
 /*********************************************************************************************
 Theme Name: Nightingale 2.0
-Theme URI: http://www.leadershipacademy.nhs.uk/
+Theme URI: http://wpdemo.leadershipacademy.nhs.uk/
 Author: Tony Blacker, NHS Leadership Academy
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: nightingale-2-0
-Tags: NHS, NHS Digital, NHS Frontend, National Health Service, Leadership Academy
+Tags: right-sidebar, accessibility-ready, custom-menu, full-width-template, theme-options, education, news
 Description: NHS Digital frontend framework WordPress theme
-Version: 1.0.0
+Version: 1.0.1
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -17,29 +17,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-**********************************************************************************************
-
->>> TABLE OF CONTENTS:
-
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
-
 **********************************************************************************************/
 /*--------------------------------------------------------------
   # Normalize
@@ -8064,7 +8041,7 @@ textarea[type="number"] {
 /* ==========================================================================
    COMPONENTS / #PANEL
    ========================================================================== */
-.nhsuk-panel {
+.nhsuk-panel, .sticky {
   margin-bottom: 40px;
   margin-top: 40px;
   padding: 24px;
@@ -8073,34 +8050,34 @@ textarea[type="number"] {
   width: 100%;
 }
 
-.nhsuk-panel > *:first-child {
+.nhsuk-panel > *:first-child, .sticky > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-panel > *:last-child {
+.nhsuk-panel > *:last-child, .sticky > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-panel {
+  .nhsuk-panel, .sticky {
     margin-bottom: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-panel {
+  .nhsuk-panel, .sticky {
     margin-top: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-panel {
+  .nhsuk-panel, .sticky {
     padding: 32px;
   }
 }
 
 @media print {
-  .nhsuk-panel {
+  .nhsuk-panel, .sticky {
     border: 1px solid #212b32;
     page-break-inside: avoid;
   }
@@ -8251,7 +8228,7 @@ textarea[type="number"] {
   }
 }
 
-.nhsuk-panel-group__item .nhsuk-panel {
+.nhsuk-panel-group__item .nhsuk-panel, .nhsuk-panel-group__item .sticky {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -10879,6 +10856,10 @@ b {
 
 .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination__link:hover {
   box-shadow: 0 0 0 16px #ffcd60 inset;
+}
+
+.is-style-outline .wp-block-button__link {
+  color: #005eb8;
 }
 
 .has-white-color {

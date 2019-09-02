@@ -148,7 +148,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 			),
 		);
 
-		$starter_content = apply_filters( 'nightingale_2_0_starter_content', $starter_content );
+		//$starter_content = apply_filters( 'nightingale_2_0_starter_content', $starter_content );
 		add_theme_support( 'starter-content', $starter_content );
 		unregister_widget( 'WP_Widget_Search' ); // taking out search widget as included in header by default.
 
@@ -187,7 +187,7 @@ function nightingale_2_0_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar', 'nightingale-2-0' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Elements to show int he sidebar. each widget will show as a panel.', 'nightingale-2-0' ),
+			'description'   => esc_html__( 'Elements to show in the sidebar. each widget will show as a panel.', 'nightingale-2-0' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -272,7 +272,7 @@ function nightingale_2_0_register_required_plugins() {
 			// The plugin slug (typically the folder name).
 			'source'             => '',
 			// The plugin source.
-			'required'           => true,
+			'required'           => false,
 			// If false, the plugin is only 'recommended' instead of required.
 			'version'            => '6.3.0',
 			// E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
@@ -285,7 +285,7 @@ function nightingale_2_0_register_required_plugins() {
 			// If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '',
 			// If set, this callable will be be checked for availability to determine if a plugin is active.
-		),
+		), // @todo add in nhsblocks plugin once approved
 	);
 
 	/*
