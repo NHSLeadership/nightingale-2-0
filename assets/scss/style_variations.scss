@@ -7,43 +7,67 @@
 .is-style-secondary { /* secondary button style*/
   @extend .nhsuk-button--secondary;
 }
+
 .is-style-reverse { /* reverse button style*/
   @extend .nhsuk-button--reverse;
 }
+
 /* reveal extension*/
 .is-style-expander { /* expander reveal style*/
   @extend .nhsuk-expander;
 }
+
 /*care card extension*/
 .is-style-urgent { /* urgent infocard*/
   @extend .nhsuk-care-card--urgent;
 }
+
 .is-style-immediate { /* urgent infocard*/
   @extend .nhsuk-care-card--immediate;
 }
-/*panel extension*/
-.is-style-panel-grey {
-    @extend .nhsuk-panel--grey;
-}
-.is-style-panel-with-label {
-    @extend .nhsuk-panel-with-label;
 
-    h3, h3 .rich-text {
-      @extend .nhsuk-panel-with-label__label;
+.nhsuk-care-card__heading-container {
+  h3 {
+    color: #ffffff !important;
+    margin: 0 !important;
   }
 }
+/*panel extension*/
+.is-style-panel-grey {
+  @extend .nhsuk-panel--grey;
+}
+
+.is-style-panel-with-label {
+  @extend .nhsuk-panel-with-label;
+
+  h3, h3 .rich-text {
+    @extend .nhsuk-panel-with-label__label;
+  }
+}
+
 /* promo extension */
 .is-style-promo-small {
   @extend .nhsuk-promo--small;
 }
+
 /*do and dont list extension*/
 .nhsuk-do-dont-list {
 
-    svg.nhsuk-icon {
-      width: 35px;
-      height: 34px;
-    }
+  svg.nhsuk-icon {
+    width: 35px;
+    height: 34px;
+  }
 
+}
+
+/* Inset text inverted link amendment */
+.nhsuk-inset-text is-style-quote-reverse {
+  .nhsuk-inset-text__quote {
+    a {
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
 }
 
 .wp-block-nhsblocks-panel1 {
@@ -51,17 +75,46 @@
     display: flow-root;
   }
 }
+
+.nhsuk-grid-column-full > :first-child {
+  padding-left: 16px !important;
+}
+
+.nhsuk-grid-column-full > :last-child {
+  padding-right: 16px !important;
+}
 // fix for ever diminishing panels
 .wp-block-nhsblock-rowgroup {
   .nhsuk-panel-group {
     padding: 0;
   }
+  .nhsuk-panel-group > :first-child {
+    padding-left: 0 !important;
+  }
+
+  .nhsuk-panel-group > :last-child {
+    padding-right: 0 !important;
+  }
 }
+
+
 .nhsuk-hero__overlay {
   margin-bottom: 50px;
 }
+
 .nhsuk-header__search-wrap {
   input[type="text"] {
     border: 1px solid #cccccc;
   }
+}
+
+/* Hero fix so it works on all templates */
+.wp-block-nhsblocks-heroblock {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }

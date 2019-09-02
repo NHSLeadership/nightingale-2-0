@@ -37,13 +37,6 @@
  repository so we can action them.
  - If you have developed improvements, please consider giving back to the Open Source community by submitting them as
   pull requests to this repository
- - Developing this theme. We encourage and appreciate community involvement. If you would like to help develop this theme further, please follow this quick guide:
-   - Download the full repo from https://github.com/NHSLeadership/nightingale-2-0 (CD to your themes directory then `git clone https://github.com/NHSLeadership/nightingale-2-0`)
-   - Please ensure any changes you make conform to WordPress coding standards, are fully documented in comments.
-   - If you make any changes to the scss files, you will need to ensure you have run `npm install` from within the nightingale-2-0 folder. To generate new css output, you will need to run `npm run build`
-   - If you make any changes to the Gutenberg blocks, you will need to ensure you have run `npm install` from within the nightingale-2-0/nhsblocks folder. Then run `npm run build` to generate the Gutenberg js
-   - To test your code, you will need to create a new theme .zip file. To do this, within the nightingale-2-0 folder (again ensure that you have run `npm install`) then run `npm run zip`. You can then install this zip as a new theme on a different WP install to ensure all works as intended
-   - Please submit changes as a pull request to our repository. The more comments and information you can put in the commits, the easier it is for us to assess the changes.
   
   
 ## Please note
@@ -85,4 +78,4 @@
  
  ## Licence
  
- The codebase is released under the [Open Government Licence 3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), unless stated otherwise. This covers both the codebase and any sample code in the documentation. The documentation is © Crown copyright and available under the terms of the Open Government License 3.0. Please see the [National Archives](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/) website for more information on the Open Government Licensing Framework.
+ The codebase is released under the[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), unless stated otherwise. The upstream NHS Frontend Library is released under the MIT license, for details please see [NHSUK Frontend](https://github.com/nhsuk/nhsuk-frontend). The documentation is © Crown copyright and available under the terms of the Open Government License 3.0. Please see the [National Archives](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/) website for more information on the Open Government Licensing Framework.
