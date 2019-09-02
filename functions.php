@@ -46,7 +46,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 
 		// This theme uses wp_nav_menus() in two location.
 		$locations = array(
-			'main-menu'    => __( 'The menu to show at the top of your site (does not show child options, only top level navigation)', 'nightingale-2-0' ),
+			'main-menu'   => __( 'The menu to show at the top of your site (does not show child options, only top level navigation)', 'nightingale-2-0' ),
 			'footer-menu' => __( 'The footer navigation area - this is great for showing more detailed links and deeper navigation.', 'nightingale-2-0' ),
 		);
 		register_nav_menus( $locations );
@@ -318,21 +318,24 @@ function nightingale_2_0_register_required_plugins() {
 
 
 add_action( 'admin_notices', 'nightingale_2_0_admin_notice_demo_data' );
+/**
+ * Function to add in nag notice and welcome message on theme activation.
+ */
 function nightingale_2_0_admin_notice_demo_data() {
 
-	// Hide bizberg admin message
-	if( !empty( $_GET['status'] ) && $_GET['status'] == 'nightingale_2_0_hide_msg' ){
+	// Hide bizberg admin message.
+	if ( ! empty( $_GET['status'] ) && 'nightingale_2_0_hide_msg' === $_GET['status'] ) {
 		update_option( 'nightingale_2_0_hide_msg', true );
 	}
 
 	$status = get_option( 'nightingale_2_0_hide_msg' );
-	if( $status == true ){
+	if ( true === $status ) {
 		return;
 	}
 
 	$check_gutenberg_block_plugin_status = is_plugin_active( 'gutenberg/gutenberg.php' ) ? true : false;
 
-	$my_theme = wp_get_theme();
+	$my_theme   = wp_get_theme();
 	$theme_name = $my_theme->get( 'Name' );
 
 	?>
@@ -350,21 +353,22 @@ function nightingale_2_0_admin_notice_demo_data() {
 			<?php
 			echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
 			printf(
+				/* translators: 1: theme name. */
 				esc_html__( 'Thank you for installing %1$s', 'nightingale-2-0' ),
 				$theme_name
 			);
 			echo '</strong>';
-			echo '<p>' . esc_html__( "This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK" , 'nightingale-2-0' ) . '</p>';
-			echo '<p><b>' . esc_html__( "Install all recommended plugins to get started." , 'nightingale-2-0' ) . '</b></p>';
+			echo '<p>' . esc_html__( 'This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK', 'nightingale-2-0' ) . '</p>';
+			echo '<p><b>' . esc_html__( 'Install all recommended plugins to get started.', 'nightingale-2-0' ) . '</b></p>';
 			?>
 
 			<div class="button_wrapper_theme" style="margin-top: 20px;">
 				<a href="<?php echo esc_url( admin_url( $check_gutenberg_block_plugin_status ? 'themes.php?status=nightingale_2_0_hide_msg' : 'themes.php?page=tgmpa-install-plugins&status=nightingale_2_0_hide_msg' ) ); ?>" class="button button-primary button-hero" style="background: #78BE20;">
-					<?php esc_html_e( 'Get Started', 'nightingale-2-0' ) ?>
+					<?php esc_html_e( 'Get Started', 'nightingale-2-0' ); ?>
 				</a>
 
-				<a href="<?php echo esc_url( admin_url('/?status=nightingale_2_0_hide_msg') ); ?>" class="button button-default button-hero" >
-					<?php esc_html_e( 'Close', 'nightingale-2-0' ) ?>
+				<a href="<?php echo esc_url( admin_url( '/?status=nightingale_2_0_hide_msg' ) ); ?>" class="button button-default button-hero">
+					<?php esc_html_e( 'Close', 'nightingale-2-0' ); ?>
 				</a>
 			</div>
 
