@@ -19,92 +19,92 @@ function prefix_register_colors() {
 		'editor-color-palette',
 		array(
 			array(
-				'name'  => esc_html__( 'NHS Blue', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Blue', 'nightingale' ),
 				'slug'  => 'nhs_blue',
 				'color' => '#005eb8',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Dark Blue', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Dark Blue', 'nightingale' ),
 				'slug'  => 'nhs_dark_blue',
 				'color' => '#003087',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Bright Blue', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Bright Blue', 'nightingale' ),
 				'slug'  => 'nhs_bright_blue',
 				'color' => '#0072ce',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Light Blue', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Light Blue', 'nightingale' ),
 				'slug'  => 'nhs_light_blue',
 				'color' => '#41b6e6',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Mid Grey', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Mid Grey', 'nightingale' ),
 				'slug'  => 'nhs_mid_grey',
 				'color' => '#768692',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Light Grey', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Light Grey', 'nightingale' ),
 				'slug'  => 'nhs_light_grey',
 				'color' => '#e8edee',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Purple', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Purple', 'nightingale' ),
 				'slug'  => 'nhs_purple',
 				'color' => '#330072',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Pink', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Pink', 'nightingale' ),
 				'slug'  => 'nhs_pink',
 				'color' => '#ae2573',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Light Purple', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Light Purple', 'nightingale' ),
 				'slug'  => 'nhs_light_purple',
 				'color' => '#704c9c',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Light Green', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Light Green', 'nightingale' ),
 				'slug'  => 'nhs_light_green',
 				'color' => '#78be20',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Dark Green', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Dark Green', 'nightingale' ),
 				'slug'  => 'nhs_dark_green',
 				'color' => '#006747',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Aqua Green', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Aqua Green', 'nightingale' ),
 				'slug'  => 'nhs_aqua_green',
 				'color' => '#00a499',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Black', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Black', 'nightingale' ),
 				'slug'  => 'nhs_black',
 				'color' => '#231f20',
 			),
 			array(
-				'name'  => esc_html__( 'Emergency Services Red', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'Emergency Services Red', 'nightingale' ),
 				'slug'  => 'emergency_red',
 				'color' => '#da291c',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Yellow', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Yellow', 'nightingale' ),
 				'slug'  => 'nhs_yellow',
 				'color' => '#fae100',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Warm Yellow', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Warm Yellow', 'nightingale' ),
 				'slug'  => 'nhs_warm_yellow',
 				'color' => '#ffb81c',
 			),
 			array(
-				'name'  => esc_html__( 'NHS Dark Grey', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'NHS Dark Grey', 'nightingale' ),
 				'slug'  => 'nhs_grey_dark',
 				'color' => '#425563',
 			),
 			array(
-				'name'  => esc_html__( 'White', 'nightingale-2-0' ),
+				'name'  => esc_html__( 'White', 'nightingale' ),
 				'slug'  => 'white',
 				'color' => '#ffffff',
 			),
@@ -177,7 +177,7 @@ function output_tinymce_colors() {
  *
  * @return array $init the formatted array returned back.
  */
-function nightingale_2_0_mce4_options( $init ) {
+function nightingale_mce4_options( $init ) {
 
 	$custom_colours = output_tinymce_colors();
 
@@ -191,4 +191,4 @@ function nightingale_2_0_mce4_options( $init ) {
 	return $init;
 }
 
-add_filter( 'tiny_mce_before_init', 'nightingale_2_0_mce4_options' );
+add_filter( 'tiny_mce_before_init', 'nightingale_mce4_options' );

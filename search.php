@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
@@ -21,7 +21,7 @@ get_header();
 					<h1 class="entry-title">
 						<?php
 						/* translators: %s: search query. */
-						printf( esc_html__( 'Search Results for: %s', 'nightingale-2-0' ), '<span>' . get_search_query() . '</span>' );
+						printf( esc_html__( 'Search Results for: %s', 'nightingale' ), '<span>' . get_search_query() . '</span>' );
 						?>
 					</h1>
 				</header><!-- .page-header -->

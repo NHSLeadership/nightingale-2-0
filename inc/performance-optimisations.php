@@ -2,7 +2,7 @@
 /**
  * Performance tweaks to improve load times and overall performance of site.
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
@@ -68,12 +68,12 @@ add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );
  */
 
 // remove header links.
-add_action( 'init', 'nightingale_2_0_head_cleanup' );
+add_action( 'init', 'nightingale_head_cleanup' );
 
 /**
  * Remove a chunk of stuff from the header to optimise loading.
  */
-function nightingale_2_0_head_cleanup() {
+function nightingale_head_cleanup() {
 	remove_action( 'wp_head', 'feed_links_extra', 3 );                      // Category Feeds.
 	remove_action( 'wp_head', 'feed_links', 2 );                            // Post and Comment Feeds.
 	remove_action( 'wp_head', 'rsd_link' );                                 // EditURI link.
@@ -88,9 +88,9 @@ function nightingale_2_0_head_cleanup() {
 /**
  * Put a more modern, remote hosted version of jQuery into our theme
  */
-function nightingale_2_0_include_custom_jquery() {
+function nightingale_include_custom_jquery() {
 	wp_register_script( 'jquerynew', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true ); // Re-Register correct version of jQuery, remote loaded through Google CDN.
 	wp_enqueue_script( 'jquerynew', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true ); // Queue it up.
 }
 
-add_action( 'wp_enqueue_scripts', 'nightingale_2_0_include_custom_jquery' );
+add_action( 'wp_enqueue_scripts', 'nightingale_include_custom_jquery' );

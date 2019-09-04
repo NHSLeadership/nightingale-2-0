@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
@@ -30,7 +30,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class( 'js-enabled' ); ?>>
-<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nightingale-2-0' ); ?></a>
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nightingale' ); ?></a>
 <?php
 if ( get_theme_mod( 'emergency_on' ) === 'yes' ) {
 	get_template_part( 'partials/emergency-alert' );
@@ -77,7 +77,7 @@ if ( get_theme_mod( 'emergency_on' ) === 'yes' ) {
 	?>
 </header>
 
-<?php echo nightingale_breadcrumb() ?>
+<?php echo nightingale_breadcrumb(); ?>
 <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
 	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent">
 		<div id="contentinner" class="nhsuk-width-container">

@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  * @link https://nhsuk.github.io/nhsuk-frontend/components/emergency-alert/index.html
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */

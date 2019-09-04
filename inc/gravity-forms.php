@@ -3,7 +3,7 @@
  *
  * Functions which enhance the theme integration with Gravity forms
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  *

@@ -3,7 +3,7 @@
  *
  *  Custom changes to Gutenberg editor to make it more NHS Friendly
  *
- *  @package Nightingale_2.0
+ *  @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
@@ -55,7 +55,7 @@ wp.domReady( function() {
 
     wp.hooks.addFilter(
         'blocks.getBlockDefaultClassName',
-        'nightingale_2_0/set-block-custom-class-name',
+        'nightingale/set-block-custom-class-name',
         setBlockCustomClassName
     );
     */

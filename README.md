@@ -26,8 +26,8 @@
   this gives your users an easy to use way of opting out of cookies. This, however, is an implied consent approach to
    cookies. If you wish to have an informed consent route to cookie adoption, you will need an alternative solution.
  - If you wish to edit the styles and/or blocks, You will need to either be able to run `node` either 
-    locally or on your server for the Sass SCSS files to be generated. In the nightingale-2-0 folder, after installing 
-    node using `npm install`, run `npm run build` to compile your css. In the nightingale-2-0/nhsblocks folder, after 
+    locally or on your server for the Sass SCSS files to be generated. In the nightingale folder, after installing 
+    node using `npm install`, run `npm run build` to compile your css. In the nightingale/nhsblocks folder, after 
     running `npm  install`, you can generate the ES6 required to recompile your Gutenberg blocks using `npm run build`
     - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node` if you 
    install using the optional commands above

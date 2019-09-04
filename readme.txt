@@ -16,7 +16,7 @@ Yes, the only restriction being that you need to have WordPress running first :)
 = Can I use it on a non NHS website
 Yes, it is open source code and can be used anywhere. However, you may not use the NHS logo or pass your site off as an NHS organisation if you are not.
 = Do you offer support?
-Yes, either through the themes support pages on WordPress, or via our GitHub project https://github.com/NHSLeadership/nightingale-2-0
+Yes, either through the themes support pages on WordPress, or via our GitHub project https://github.com/NHSLeadership/nightingale
 = Can I get involved?
 Yes - please do! Whether you work in the NHS or would just liek to contribute, we are happy to involve the wider community in this work and will consider any pull requests or code snippets you are happy to contribute.
 

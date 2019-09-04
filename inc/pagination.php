@@ -2,7 +2,7 @@
 /**
  * Replace css classes in standard navigation with Nightingale classes
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  **/
@@ -50,8 +50,8 @@ if ( ! function_exists( 'nightingale_pagination' ) ) :
 				'current'   => $paged,
 				'mid_size'  => 1,
 				'add_args'  => array_map( 'urlencode', $query_args ),
-				'prev_text' => __( 'Previous', 'nightingale-2-0' ),
-				'next_text' => __( 'Next', 'nightingale-2-0' ),
+				'prev_text' => __( 'Previous', 'nightingale' ),
+				'next_text' => __( 'Next', 'nightingale' ),
 			)
 		);
 
@@ -104,8 +104,8 @@ function nightingale_paginate_links( $args = '' ) {
 		'aria_current'       => 'page',
 		'show_all'           => false,
 		'prev_next'          => true,
-		'prev_text'          => __( 'Previous', 'nightingale-2-0' ),
-		'next_text'          => __( 'Next', 'nightingale-2-0' ),
+		'prev_text'          => __( 'Previous', 'nightingale' ),
+		'next_text'          => __( 'Next', 'nightingale' ),
 		'end_size'           => 1,
 		'mid_size'           => 2,
 		'type'               => 'plain',
@@ -200,7 +200,7 @@ function nightingale_paginate_links( $args = '' ) {
 	  "' . $args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number'] . '</a></li>';
 				$dots         = true;
 			elseif ( $dots && ! $args['show_all'] ) :
-				$page_links[] = '<li class="nhsuk-pagination-item"><span class="nhsuk-pagination__title dots">' . __( '&hellip;', 'nightingale-2-0' ) . '</span></li>';
+				$page_links[] = '<li class="nhsuk-pagination-item"><span class="nhsuk-pagination__title dots">' . __( '&hellip;', 'nightingale' ) . '</span></li>';
 				$dots         = false;
 			endif;
 		endif;

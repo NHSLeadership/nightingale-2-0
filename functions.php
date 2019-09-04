@@ -4,12 +4,19 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version 2.0 4th September 2019
  */
 
-if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
+
+/**
+ * Auto deploy subpages widget.
+ * Moved to top of file to allow template to initialise widget in sidebar
+ */
+require get_template_directory() . '/inc/class-nightingale-subpages-widget.php';
+
+// if ( ! function_exists( 'nightingale_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -17,14 +24,14 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function nightingale_2_0_setup() {
+	function nightingale_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Nightingale 2.0, use a find and replace
-		 * to change 'nightingale-2-0' to the name of your theme in all the template files.
+		 * to change 'nightingale' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'nightingale-2-0', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'nightingale', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -46,8 +53,8 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 
 		// This theme uses wp_nav_menus() in two location.
 		$locations = array(
-			'main-menu'   => __( 'The menu to show at the top of your site (does not show child options, only top level navigation)', 'nightingale-2-0' ),
-			'footer-menu' => __( 'The footer navigation area - this is great for showing more detailed links and deeper navigation.', 'nightingale-2-0' ),
+			'main-menu'   => __( 'The menu to show at the top of your site (does not show child options, only top level navigation)', 'nightingale' ),
+			'footer-menu' => __( 'The footer navigation area - this is great for showing more detailed links and deeper navigation.', 'nightingale' ),
 		);
 		register_nav_menus( $locations );
 
@@ -70,7 +77,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'nightingale_2_0_custom_background_args',
+				'nightingale_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -108,7 +115,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 			'widgets'    => array(
 				// Place pre-defined widget in the sidebar area.
 				'sidebar-1' => array(
-					'subpages-widget',
+					'Nightingale_Subpages_Widget',
 				),
 			),
 			'posts'      => array(
@@ -130,7 +137,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 			'nav_menus'  => array(
 				// Assign a menu to the "main-menu" location.
 				'main-menu'   => array(
-					'name'  => __( 'Main Menu', 'nightingale-2-0' ),
+					'name'  => __( 'Main Menu', 'nightingale' ),
 					'items' => array(
 						'link_home',
 						// Note that the core "home" page is actually a link in case a static front page is not used.
@@ -139,7 +146,7 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 				),
 				// Assign a menu to the "footer-menu" location.
 				'footer-menu' => array(
-					'name'  => __( 'Footer Links', 'nightingale-2-0' ),
+					'name'  => __( 'Footer Links', 'nightingale' ),
 					'items' => array(
 						'link_home',
 						'page-blog',
@@ -147,9 +154,10 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 				),
 			),
 		);
-
-		//$starter_content = apply_filters( 'nightingale_2_0_starter_content', $starter_content );
 		add_theme_support( 'starter-content', $starter_content );
+
+		remove_theme_support( "custom-header" );
+		remove_theme_support( "custom-background" );
 		unregister_widget( 'WP_Widget_Search' ); // taking out search widget as included in header by default.
 
 		/**
@@ -158,8 +166,8 @@ if ( ! function_exists( 'nightingale_2_0_setup' ) ) :
 		add_filter( 'xmlrpc_enabled', '__return_false' );
 
 	}
-endif;
-add_action( 'after_setup_theme', 'nightingale_2_0_setup' );
+// endif;
+add_action( 'after_setup_theme', 'nightingale_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -168,26 +176,26 @@ add_action( 'after_setup_theme', 'nightingale_2_0_setup' );
  *
  * @global int $content_width
  */
-function nightingale_2_0_content_width() {
+function nightingale_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'nightingale_2_0_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'nightingale_content_width', 640 );
 }
 
-add_action( 'after_setup_theme', 'nightingale_2_0_content_width', 0 );
+add_action( 'after_setup_theme', 'nightingale_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function nightingale_2_0_widgets_init() {
+function nightingale_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'nightingale-2-0' ),
+			'name'          => esc_html__( 'Sidebar', 'nightingale' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Elements to show in the sidebar. each widget will show as a panel.', 'nightingale-2-0' ),
+			'description'   => esc_html__( 'Elements to show in the sidebar. each widget will show as a panel.', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -196,46 +204,46 @@ function nightingale_2_0_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Region', 'nightingale-2-0' ),
+			'name'          => esc_html__( 'Footer Region', 'nightingale' ),
 			'id'            => 'footer-region',
-			'description'   => esc_html__( 'Widgets to show in the footer zone.', 'nightingale-2-0' ),
+			'description'   => esc_html__( 'Widgets to show in the footer zone.', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 		)
 	);
 }
 
-add_action( 'widgets_init', 'nightingale_2_0_widgets_init' );
+add_action( 'widgets_init', 'nightingale_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function nightingale_2_0_scripts() {
-	wp_enqueue_style( 'nightingale-2-0-style', get_stylesheet_uri(), array(), '20190828' );
+function nightingale_scripts() {
+	wp_enqueue_style( 'nightingale-style', get_stylesheet_uri(), array(), '20190828' );
 
-	wp_enqueue_script( 'nightingale-2-0-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20190828', true );
+	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', '', '20190828', true );
 
-	wp_enqueue_script( 'nightingale-2-0-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20190828', true );
+	wp_enqueue_script( 'nightingale-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', '', '20190828', true );
 
-	wp_enqueue_script( 'nightingale-2-0-navigation', get_template_directory_uri() . '/js/nhsuk.min.js', array(), '20190828', true );
+	wp_enqueue_script( 'nightingale-nhs-library', get_template_directory_uri() . '/js/nhsuk.min.js', '', '20190828', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'nightingale_2_0_scripts' );
+add_action( 'wp_enqueue_scripts', 'nightingale_scripts' );
 
 /**
  * Force download of dependancy plugins
  */
 require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'nightingale_2_0_register_required_plugins' );
+add_action( 'tgmpa_register', 'nightingale_register_required_plugins' );
 /**
  *  Set which plugins we need to setup with the theme
  */
-function nightingale_2_0_register_required_plugins() {
+function nightingale_register_required_plugins() {
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -292,7 +300,7 @@ function nightingale_2_0_register_required_plugins() {
 	 * Array of configuration settings. Amend each line as needed.
 	 */
 	$config = array(
-		'id'           => 'nightingale-2-0',
+		'id'           => 'nightingale',
 		// Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',
 		// Default absolute path to bundled plugins.
@@ -317,18 +325,18 @@ function nightingale_2_0_register_required_plugins() {
 }
 
 
-add_action( 'admin_notices', 'nightingale_2_0_admin_notice_demo_data' );
+add_action( 'admin_notices', 'nightingale_admin_notice_demo_data' );
 /**
  * Function to add in nag notice and welcome message on theme activation.
  */
-function nightingale_2_0_admin_notice_demo_data() {
+function nightingale_admin_notice_demo_data() {
 
 	// Hide bizberg admin message.
-	if ( ! empty( $_GET['status'] ) && 'nightingale_2_0_hide_msg' === $_GET['status'] ) {
-		update_option( 'nightingale_2_0_hide_msg', true );
+	if ( ! empty( $_GET['status'] ) && 'nightingale_hide_msg' === $_GET['status'] ) {
+		update_option( 'nightingale_hide_msg', true );
 	}
 
-	$status = get_option( 'nightingale_2_0_hide_msg' );
+	$status = get_option( 'nightingale_hide_msg' );
 	if ( true === $status ) {
 		return;
 	}
@@ -354,21 +362,21 @@ function nightingale_2_0_admin_notice_demo_data() {
 			echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
 			printf(
 				/* translators: 1: theme name. */
-				esc_html__( 'Thank you for installing %1$s', 'nightingale-2-0' ),
+				esc_html__( 'Thank you for installing %1$s', 'nightingale' ),
 				$theme_name
 			);
 			echo '</strong>';
-			echo '<p>' . esc_html__( 'This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK', 'nightingale-2-0' ) . '</p>';
-			echo '<p><b>' . esc_html__( 'Install all recommended plugins to get started.', 'nightingale-2-0' ) . '</b></p>';
+			echo '<p>' . esc_html__( 'This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK', 'nightingale' ) . '</p>';
+			echo '<p><b>' . esc_html__( 'Install all recommended plugins to get started.', 'nightingale' ) . '</b></p>';
 			?>
 
 			<div class="button_wrapper_theme" style="margin-top: 20px;">
-				<a href="<?php echo esc_url( admin_url( $check_gutenberg_block_plugin_status ? 'themes.php?status=nightingale_2_0_hide_msg' : 'themes.php?page=tgmpa-install-plugins&status=nightingale_2_0_hide_msg' ) ); ?>" class="button button-primary button-hero" style="background: #78BE20;">
-					<?php esc_html_e( 'Get Started', 'nightingale-2-0' ); ?>
+				<a href="<?php echo esc_url( admin_url( $check_gutenberg_block_plugin_status ? 'themes.php?status=nightingale_hide_msg' : 'themes.php?page=tgmpa-install-plugins&status=nightingale_hide_msg' ) ); ?>" class="button button-primary button-hero" style="background: #78BE20;">
+					<?php esc_html_e( 'Get Started', 'nightingale' ); ?>
 				</a>
 
-				<a href="<?php echo esc_url( admin_url( '/?status=nightingale_2_0_hide_msg' ) ); ?>" class="button button-default button-hero">
-					<?php esc_html_e( 'Close', 'nightingale-2-0' ); ?>
+				<a href="<?php echo esc_url( admin_url( '/?status=nightingale_hide_msg' ) ); ?>" class="button button-default button-hero">
+					<?php esc_html_e( 'Close', 'nightingale' ); ?>
 				</a>
 			</div>
 
@@ -426,11 +434,6 @@ require get_template_directory() . '/inc/gravity-forms.php';
  * Retina Ready Image code.
  */
 require get_template_directory() . '/inc/retina-images.php';
-
-/**
- * Auto deploy subpages widget.
- */
-require get_template_directory() . '/inc/class-nightingale-2-0-subpages-widget.php';
 
 /**
  * Performance Boosters - should be loaded as last element of functions file

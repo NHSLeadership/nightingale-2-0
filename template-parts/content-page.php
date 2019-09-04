@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
@@ -23,7 +23,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nightingale-2-0' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nightingale' ),
 				'after'  => '</div>',
 			)
 		);
@@ -37,7 +37,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'nightingale-2-0' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'nightingale' ),
 						array(
 							'span' => array(
 								'class' => array(),

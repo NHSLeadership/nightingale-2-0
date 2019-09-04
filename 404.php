@@ -4,22 +4,21 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
 
 get_header();
 ?>
-	<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description"
-			 style="background-image: url('<?php echo esc_url( get_theme_file_uri( '/assets/404.png' ) ); ?>')">
+	<section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description" style="background-image: url('<?php echo esc_url( get_theme_file_uri( '/assets/404.png' ) ); ?>')">
 		<div class="nhsuk-hero__overlay">
 			<div class="nhsuk-width-container nhsuk-hero--border">
 				<div class="nhsuk-grid-row">
 					<div class="nhsuk-grid-column-two-thirds">
 						<div class="nhsuk-hero-content">
 							<h1 class="nhsuk-u-margin-bottom-3">Page not found</h1>
-							<p class="nhsuk-body-l nhsuk-u-margin-bottom-0"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'nightingale-2-0' ); ?></p>
+							<p class="nhsuk-body-l nhsuk-u-margin-bottom-0"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'nightingale' ); ?></p>
 							<span class="nhsuk-hero__arrow" aria-hidden="true"></span></div>
 					</div>
 				</div>
@@ -53,7 +52,7 @@ get_header();
 							?>
 
 							<div class="widget widget_categories">
-								<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'nightingale-2-0' ); ?></h2>
+								<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'nightingale' ); ?></h2>
 								<ul>
 									<?php
 									wp_list_categories(
@@ -71,8 +70,8 @@ get_header();
 
 							<?php
 							/* translators: %1$s: smiley */
-							$nightingale_2_0_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'nightingale-2-0' ), convert_smilies( ':)' ) ) . '</p>';
-							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$nightingale_2_0_archive_content" );
+							$nightingale_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'nightingale' ), convert_smilies( ':)' ) ) . '</p>';
+							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$nightingale_archive_content" );
 
 							the_widget( 'WP_Widget_Tag_Cloud' );
 							?>

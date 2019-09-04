@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Nightingale_2.0
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
@@ -18,14 +18,14 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta">
 				<?php
-				nightingale_2_0_posted_on();
-				nightingale_2_0_posted_by();
+				nightingale_posted_on();
+				nightingale_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 		<div class="nhsuk-grid-row">
 			<div class="nhsuk-grid-column-one-third">
-				<?php nightingale_2_0_post_thumbnail(); ?>
+				<?php nightingale_post_thumbnail(); ?>
 			</div>
 			<div class="nhsuk-grid-column-two-thirds">
 
@@ -34,7 +34,7 @@
 					<?php the_excerpt(); ?>
 				</div><!-- .entry-summary -->
 				<footer class="entry-footer">
-					<?php nightingale_2_0_entry_footer(); ?>
+					<?php nightingale_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
 			</div>
 
