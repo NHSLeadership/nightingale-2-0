@@ -5,7 +5,7 @@ Tested up to: 5.2
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-Version: 1.0.1
+Version: 2.0.1
 
 == Description ==
 A responsive and accessible theme for NHS organisations based on the NHSUK Frontend Library.
@@ -22,9 +22,9 @@ Yes - please do! Whether you work in the NHS or would just liek to contribute, w
 
 == Changelog
 
-= 1.0.0 =
+= 2.0.0 =
 Initial work on theme, standardised and tested for accessibility and optimised for performance.
 
-= 1.0.1 =
-Remedial work to fix readme, re-enable breadcrumbs and add some basic wordpress style classes to the library as well as fix the starter_content routine.
+= 2.0.1 =
+Add in nhsblocks plugin to TGM plugin install routine
 

@@ -6,7 +6,7 @@
  *
  * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 2.0 4th September 2019
+ * @version 2.0.1 5th September 2019
  */
 
 
@@ -249,30 +249,7 @@ function nightingale_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
-		// This is an example of how to include a plugin bundled with a theme.
-		array(
-			'name'               => 'Cookie Notice for GDPR',
-			// The plugin name.
-			'slug'               => 'cookie-notice',
-			// The plugin slug (typically the folder name).
-			'source'             => '',
-			// The plugin source.
-			'required'           => false,
-			// If false, the plugin is only 'recommended' instead of required.
-			'version'            => '1.2.46',
-			// E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => false,
-			// If true, plugin is activated upon theme activation and cannot be
-			// deactivated until theme switch.
-			'force_deactivation' => false,
-			// If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
-			'external_url'       => '',
-			// If set, overrides default API URL and points to an external URL.
-			'is_callable'        => '',
-			// If set, this callable will be be checked for availability to determine if a plugin is active.
-		),
-		// Load in Gutenberg plugin directly from WP repo.
+        // Load in Gutenberg plugin directly from WP repo.
 		array(
 			'name'               => 'Gutenberg',
 			// The plugin name.
@@ -293,7 +270,31 @@ function nightingale_register_required_plugins() {
 			// If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '',
 			// If set, this callable will be be checked for availability to determine if a plugin is active.
-		), // @todo add in nhsblocks plugin once approved
+		),
+		// Load in NHSBlocks plugin directly from WP repo.
+		array(
+			'name'               => 'NHS Blocks',
+			'slug'               => 'nhsblocks',
+			'source'             => '',
+			'required'           => false,
+			'version'            => '1.0.1',
+			'force_activation'   => true,
+			'force_deactivation' => false,
+			'external_url'       => '',
+			'is_callable'        => '',
+		),
+		// Optional activate Cookie Notice plugin.
+		array(
+			'name'               => 'Cookie Notice for GDPR',
+			'slug'               => 'cookie-notice',
+			'source'             => '',
+			'required'           => false,
+			'version'            => '1.2.46',
+			'force_activation'   => false,
+			'force_deactivation' => false,
+			'external_url'       => '',
+			'is_callable'        => '',
+		),
 	);
 
 	/*
