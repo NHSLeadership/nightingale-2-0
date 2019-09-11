@@ -57,7 +57,7 @@ function nightingale_add_rel_preload( $html, $handle, $href, $media ) {
 
 	$html = <<<EOT
 <link rel='preload' as='style' onerror="this.rel='stylesheet'" onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' media='all' />
-<link rel='stylesheet' id='$handle' href='$href' media='all' />
+<link rel='stylesheet' id='$handle-non-preload' href='$href' media='all' />
 EOT;
 
 	return $html;
