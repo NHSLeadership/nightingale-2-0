@@ -32,6 +32,7 @@
     margin: 0 !important;
   }
 }
+
 /*panel extension*/
 .is-style-panel-grey {
   @extend .nhsuk-panel--grey;
@@ -83,11 +84,13 @@
 .nhsuk-grid-column-full > :last-child {
   padding-right: 16px !important;
 }
+
 // fix for ever diminishing panels
 .wp-block-nhsblock-rowgroup {
   .nhsuk-panel-group {
     padding: 0;
   }
+
   .nhsuk-panel-group > :first-child {
     padding-left: 0 !important;
   }
@@ -117,4 +120,23 @@
   position: relative;
   right: 50%;
   width: 100vw;
+}
+
+/* Latest Posts skinning */
+.nightingale-latest-news {
+  .nhsuk-panel {
+    margin-bottom: 20px;
+    a {
+      @extend .nhsuk-heading-m;
+      text-decoration: none;
+    }
+
+    .wp-block-latest-posts__post-excerpt {
+      a:last-of-type {
+        @extend .nhsuk-action-link__link;
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
 }

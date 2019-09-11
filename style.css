@@ -1574,7 +1574,7 @@ h2,
 }
 
 h3,
-.nhsuk-heading-m {
+.nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -1586,7 +1586,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1595,7 +1595,7 @@ h3,
 
 @media print {
   h3,
-  .nhsuk-heading-m {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -1603,7 +1603,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     margin-bottom: 24px;
   }
 }
@@ -2048,15 +2048,23 @@ ol + .nhsuk-heading-l {
 p + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
+.nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
+.nightingale-latest-news .sticky .nhsuk-body-s + a,
 .nhsuk-list + h3,
 ul + h3,
 ol + h3,
 .nhsuk-list + .nhsuk-heading-m,
 ul + .nhsuk-heading-m,
 ol + .nhsuk-heading-m,
+.nightingale-latest-news .nhsuk-panel .nhsuk-list + a,
+.nightingale-latest-news .nhsuk-panel ul + a,
+.nightingale-latest-news .nhsuk-panel ol + a,
+.nightingale-latest-news .sticky .nhsuk-list + a,
+.nightingale-latest-news .sticky ul + a,
+.nightingale-latest-news .sticky ol + a,
 p + h4,
 .nhsuk-body-m + h4,
 address + h4,
@@ -2078,15 +2086,23 @@ ol + .nhsuk-heading-s {
   p + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
+  .nightingale-latest-news .sticky .nhsuk-body-s + a,
   .nhsuk-list + h3,
   ul + h3,
   ol + h3,
   .nhsuk-list + .nhsuk-heading-m,
   ul + .nhsuk-heading-m,
   ol + .nhsuk-heading-m,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-list + a,
+  .nightingale-latest-news .nhsuk-panel ul + a,
+  .nightingale-latest-news .nhsuk-panel ol + a,
+  .nightingale-latest-news .sticky .nhsuk-list + a,
+  .nightingale-latest-news .sticky ul + a,
+  .nightingale-latest-news .sticky ol + a,
   p + h4,
   .nhsuk-body-m + h4,
   address + h4,
@@ -3570,7 +3586,7 @@ b {
   }
 }
 
-.nhsuk-action-link__link {
+.nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.125rem;
@@ -3587,7 +3603,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-action-link__link {
+  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -3595,48 +3611,48 @@ b {
 }
 
 @media print {
-  .nhsuk-action-link__link {
+  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-action-link__link {
+  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
     padding-left: 36px;
     /* [2] */
   }
 }
 
 @media print {
-  .nhsuk-action-link__link {
+  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
     color: #212b32;
   }
-  .nhsuk-action-link__link:visited {
+  .nhsuk-action-link__link:visited, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:visited:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:visited:last-of-type {
     color: #212b32;
   }
 }
 
-.nhsuk-action-link__link:focus {
+.nhsuk-action-link__link:focus, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:focus:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:focus:last-of-type {
   box-shadow: 0 0 0 8px #ffb81C;
   /* [5] */
 }
 
-.nhsuk-action-link__link:focus .nhsuk-action-link__text {
+.nhsuk-action-link__link:focus .nhsuk-action-link__text, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:focus:last-of-type .nhsuk-action-link__text, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:focus:last-of-type .nhsuk-action-link__text {
   text-decoration: underline;
 }
 
-.nhsuk-action-link__link:hover {
+.nhsuk-action-link__link:hover, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:hover:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:hover:last-of-type {
   box-shadow: 0 0 0 8px #ffcd60;
   /* [5] */
 }
 
-.nhsuk-action-link__link:hover .nhsuk-action-link__text {
+.nhsuk-action-link__link:hover .nhsuk-action-link__text, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:hover:last-of-type .nhsuk-action-link__text, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:hover:last-of-type .nhsuk-action-link__text {
   text-decoration: underline;
   /* [6] */
 }
 
-.nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+.nhsuk-action-link__link .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle {
   fill: #007f3b;
   height: 40px;
   left: -3px;
@@ -3646,17 +3662,17 @@ b {
 }
 
 @media print {
-  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle {
     color: #212b32;
     fill: #212b32;
   }
-  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:active, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:focus, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:visited {
+  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:active, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:active, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:active, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:focus, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:focus, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:focus, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:visited, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:visited, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:visited {
     color: #212b32;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle {
     height: 34px;
     margin-bottom: -9px;
     top: -3px;
@@ -9849,7 +9865,7 @@ h2,
 }
 
 h3,
-.nhsuk-heading-m {
+.nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -9861,7 +9877,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -9870,7 +9886,7 @@ h3,
 
 @media print {
   h3,
-  .nhsuk-heading-m {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -9878,7 +9894,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     margin-bottom: 24px;
   }
 }
@@ -10323,15 +10339,23 @@ ol + .nhsuk-heading-l {
 p + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
+.nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
+.nightingale-latest-news .sticky .nhsuk-body-s + a,
 .nhsuk-list + h3,
 ul + h3,
 ol + h3,
 .nhsuk-list + .nhsuk-heading-m,
 ul + .nhsuk-heading-m,
 ol + .nhsuk-heading-m,
+.nightingale-latest-news .nhsuk-panel .nhsuk-list + a,
+.nightingale-latest-news .nhsuk-panel ul + a,
+.nightingale-latest-news .nhsuk-panel ol + a,
+.nightingale-latest-news .sticky .nhsuk-list + a,
+.nightingale-latest-news .sticky ul + a,
+.nightingale-latest-news .sticky ol + a,
 p + h4,
 .nhsuk-body-m + h4,
 address + h4,
@@ -10353,15 +10377,23 @@ ol + .nhsuk-heading-s {
   p + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
+  .nightingale-latest-news .sticky .nhsuk-body-s + a,
   .nhsuk-list + h3,
   ul + h3,
   ol + h3,
   .nhsuk-list + .nhsuk-heading-m,
   ul + .nhsuk-heading-m,
   ol + .nhsuk-heading-m,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-list + a,
+  .nightingale-latest-news .nhsuk-panel ul + a,
+  .nightingale-latest-news .nhsuk-panel ol + a,
+  .nightingale-latest-news .sticky .nhsuk-list + a,
+  .nightingale-latest-news .sticky ul + a,
+  .nightingale-latest-news .sticky ol + a,
   p + h4,
   .nhsuk-body-m + h4,
   address + h4,
@@ -11270,4 +11302,18 @@ b {
   position: relative;
   right: 50%;
   width: 100vw;
+}
+
+/* Latest Posts skinning */
+.nightingale-latest-news .nhsuk-panel, .nightingale-latest-news .sticky {
+  margin-bottom: 20px;
+}
+
+.nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
+  text-decoration: none;
+}
+
+.nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
