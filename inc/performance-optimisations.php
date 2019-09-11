@@ -14,7 +14,7 @@
  *
  * @return string $url Javascript file with defer tag added.
  */
-function defer_parsing_js( $url ) {
+function nightingale_defer_parsing_js( $url ) {
 	// Add the files to exclude from defer. Add jquery.js by default.
 	$exclude_files = array( 'jquery.min.js' );
 	// Bypass JS defer for logged in users.
@@ -36,7 +36,7 @@ function defer_parsing_js( $url ) {
 
 }
 
-add_filter( 'clean_url', 'defer_parsing_js', 11, 1 );
+add_filter( 'clean_url', 'nightingale_defer_parsing_js', 11, 1 );
 
 /**
  * Defer CSS Loading to after load.
@@ -48,20 +48,22 @@ add_filter( 'clean_url', 'defer_parsing_js', 11, 1 );
  *
  * @return string
  */
-function add_rel_preload( $html, $handle, $href, $media ) {
+function nightingale_add_rel_preload( $html, $handle, $href, $media ) {
 
 	if ( is_admin() ) {
 		return $html;
 	}
 
+
 	$html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+<link rel='preload' as='style' onerror="this.rel='stylesheet'" onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' media='all' />
+<link rel='stylesheet' id='$handle' href='$href' media='all' />
 EOT;
 
 	return $html;
 }
 
-add_filter( 'style_loader_tag', 'add_rel_preload', 10, 4 );
+add_filter( 'style_loader_tag', 'nightingale_add_rel_preload', 10, 4 );
 
 /*
  * Clean up the WordPress head.
