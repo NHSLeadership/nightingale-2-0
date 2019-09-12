@@ -77,7 +77,7 @@ if ( get_theme_mod( 'emergency_on' ) === 'yes' ) {
 	?>
 </header>
 
-<?php echo nightingale_breadcrumb(); ?>
+<?php echo nightingale_breadcrumb(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
 	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent">
 		<div id="contentinner" class="nhsuk-width-container">

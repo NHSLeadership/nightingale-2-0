@@ -65,9 +65,9 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 		// Find top level parent and create path to it.
 		global $post;
 		$nightingale_post = apply_filters( 'nightingale_subpages_widget_override_post', $post );
-		$parents              = array_reverse( get_ancestors( $nightingale_post->ID, 'page' ) );
-		$parents[]            = $nightingale_post->ID;
-		$parents              = apply_filters( 'nightingale_subpages_widget_parents', $parents );
+		$parents          = array_reverse( get_ancestors( $nightingale_post->ID, 'page' ) );
+		$parents[]        = $nightingale_post->ID;
+		$parents          = apply_filters( 'nightingale_subpages_widget_parents', $parents );
 
 		// Build a menu listing top level parent's children.
 		$subargs  = array(
@@ -84,7 +84,7 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 			return;
 		}
 
-		echo $args['before_widget'];
+		echo $args['before_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		global $nightingale_subpages_is_first;
 		$nightingale_subpages_is_first = true;
@@ -99,7 +99,7 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 		}
 
 		if ( ! empty( $title ) ) {
-			echo $args['before_title'] . $title . $args['after_title'];
+			echo $args['before_title'] . $title . $args['after_title']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 
 		if ( ! isset( $instance['deep_subpages'] ) ) {
@@ -113,7 +113,7 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 		// Print the tree.
 		$this->build_subpages( $subpages, $parents, $instance['deep_subpages'], $depth, $instance['nest_subpages'] );
 
-		echo $args['after_widget'];
+		echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**

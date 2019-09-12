@@ -109,7 +109,8 @@ function nightingale__wp_head_ob_end() {
 	$wp_head_markup = str_replace( ' type="text/javascript"', '', $wp_head_markup );
 	$wp_head_markup = str_replace( ' type="text/css"', '', $wp_head_markup );
 	$wp_head_markup = str_replace( " type='text/css'", '', $wp_head_markup );
-	echo $wp_head_markup;
+	echo $wp_head_markup; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
 }
 
 // end remove "type" from script and style tags.
