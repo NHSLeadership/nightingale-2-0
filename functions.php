@@ -9,164 +9,162 @@
  * @version 2.0.1 5th September 2019
  */
 
-
 /**
  * Auto deploy subpages widget.
  * Moved to top of file to allow template to initialise widget in sidebar
  */
 require get_template_directory() . '/inc/class-nightingale-subpages-widget.php';
 
-// if ( ! function_exists( 'nightingale_setup' ) ) :
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
+function nightingale_setup() {
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on Nightingale 2.0, use a find and replace
+	 * to change 'nightingale' to the name of your theme in all the template files.
 	 */
-	function nightingale_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Nightingale 2.0, use a find and replace
-		 * to change 'nightingale' to the name of your theme in all the template files.
-		 */
-		load_theme_textdomain( 'nightingale', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'nightingale', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'automatic-feed-links' );
 
-		/*
-		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
-		 * provide it for us.
-		 */
-		add_theme_support( 'title-tag' );
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
 
-		/*
-		 * Enable support for Post Thumbnails on posts and pages.
-		 *
-		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		 */
-		add_theme_support( 'post-thumbnails' );
+	/*
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	 */
+	add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menus() in two location.
-		$locations = array(
-			'main-menu'   => __( 'The menu to show at the top of your site (does not show child options, only top level navigation)', 'nightingale' ),
-			'footer-menu' => __( 'The footer navigation area - this is great for showing more detailed links and deeper navigation.', 'nightingale' ),
-		);
-		register_nav_menus( $locations );
+	// This theme uses wp_nav_menus() in two location.
+	$locations = array(
+		'main-menu'   => __( 'The menu to show at the top of your site (does not show child options, only top level navigation)', 'nightingale' ),
+		'footer-menu' => __( 'The footer navigation area - this is great for showing more detailed links and deeper navigation.', 'nightingale' ),
+	);
+	register_nav_menus( $locations );
 
-		/*
-		 * Switch default core markup for search form, comment form, and comments
-		 * to output valid HTML5.
-		 */
-		add_theme_support(
-			'html5',
+	/*
+	 * Switch default core markup for search form, comment form, and comments
+	 * to output valid HTML5.
+	 */
+	add_theme_support(
+		'html5',
+		array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		)
+	);
+
+	// Set up the WordPress core custom background feature.
+	add_theme_support(
+		'custom-background',
+		apply_filters(
+			'nightingale_custom_background_args',
 			array(
-				'search-form',
-				'comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
+				'default-color' => 'ffffff',
+				'default-image' => '',
 			)
-		);
+		)
+	);
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support(
-			'custom-background',
-			apply_filters(
-				'nightingale_custom_background_args',
-				array(
-					'default-color' => 'ffffff',
-					'default-image' => '',
-				)
-			)
-		);
+	// Add theme support for selective refresh for widgets.
+	add_theme_support(
+		'customize-selective-refresh-widgets'
+	);
 
-		// Add theme support for selective refresh for widgets.
-		add_theme_support(
-			'customize-selective-refresh-widgets'
-		);
+	/**
+	 * Add support for core custom logo.
+	 *
+	 * @link https://codex.wordpress.org/Theme_Logo
+	 */
+	add_theme_support(
+		'custom-logo',
+		array(
+			'height'      => 250,
+			'width'       => 250,
+			'flex-width'  => true,
+			'flex-height' => true,
+		)
+	);
+	// Load regular editor styles into the new block-based editor.
+	add_theme_support( 'editor-styles' );
+	// Load default block styles.
+	add_theme_support( 'wp-block-styles' );
+	// Add support for responsive embeds.
+	add_theme_support( 'responsive-embeds' );
+	// Define and register starter content to showcase the theme on new sites.
+	$starter_content = array(
+		'widgets'    => array(
+			// Place pre-defined widget in the sidebar area.
+			'sidebar-1' => array(
+				'Nightingale_Subpages_Widget',
+			),
+		),
+		'posts'      => array(
+			'home',
+			'blog',
+		),
+		// Default to a static front page and assign the front and posts pages.
+		'options'    => array(
+			'show_on_front'  => 'page',
+			'page_on_front'  => '{{home}}',
+			'page_for_posts' => '{{blog}}',
+		),
+		'theme_mods' => array(
+			'panel_1' => '{{homepage-section}}',
+			'panel_2' => '{{blog}}',
+		),
 
-		/**
-		 * Add support for core custom logo.
-		 *
-		 * @link https://codex.wordpress.org/Theme_Logo
-		 */
-		add_theme_support(
-			'custom-logo',
-			array(
-				'height'      => 250,
-				'width'       => 250,
-				'flex-width'  => true,
-				'flex-height' => true,
-			)
-		);
-		// Load regular editor styles into the new block-based editor.
-		add_theme_support( 'editor-styles' );
-		// Load default block styles.
-		add_theme_support( 'wp-block-styles' );
-		// Add support for responsive embeds.
-		add_theme_support( 'responsive-embeds' );
-		// Define and register starter content to showcase the theme on new sites.
-		$starter_content = array(
-			'widgets'    => array(
-				// Place pre-defined widget in the sidebar area.
-				'sidebar-1' => array(
-					'Nightingale_Subpages_Widget',
+		// Set up nav menus for each of the two areas registered in the theme.
+		'nav_menus'  => array(
+			// Assign a menu to the "main-menu" location.
+			'main-menu'   => array(
+				'name'  => __( 'Main Menu', 'nightingale' ),
+				'items' => array(
+					'link_home',
+					// Note that the core "home" page is actually a link in case a static front page is not used.
+					'page_blog',
 				),
 			),
-			'posts'      => array(
-				'home',
-				'blog',
-			),
-			// Default to a static front page and assign the front and posts pages.
-			'options'    => array(
-				'show_on_front'  => 'page',
-				'page_on_front'  => '{{home}}',
-				'page_for_posts' => '{{blog}}',
-			),
-			'theme_mods' => array(
-				'panel_1' => '{{homepage-section}}',
-				'panel_2' => '{{blog}}',
-			),
-
-			// Set up nav menus for each of the two areas registered in the theme.
-			'nav_menus'  => array(
-				// Assign a menu to the "main-menu" location.
-				'main-menu'   => array(
-					'name'  => __( 'Main Menu', 'nightingale' ),
-					'items' => array(
-						'link_home',
-						// Note that the core "home" page is actually a link in case a static front page is not used.
-						'page_blog',
-					),
-				),
-				// Assign a menu to the "footer-menu" location.
-				'footer-menu' => array(
-					'name'  => __( 'Footer Links', 'nightingale' ),
-					'items' => array(
-						'link_home',
-						'page-blog',
-					),
+			// Assign a menu to the "footer-menu" location.
+			'footer-menu' => array(
+				'name'  => __( 'Footer Links', 'nightingale' ),
+				'items' => array(
+					'link_home',
+					'page-blog',
 				),
 			),
-		);
-		add_theme_support( 'starter-content', $starter_content );
+		),
+	);
+	add_theme_support( 'starter-content', $starter_content );
 
-		remove_theme_support( "custom-header" );
-		remove_theme_support( "custom-background" );
-		unregister_widget( 'WP_Widget_Search' ); // taking out search widget as included in header by default.
+	remove_theme_support( 'custom-header' );
+	remove_theme_support( 'custom-background' );
+	unregister_widget( 'WP_Widget_Search' ); // taking out search widget as included in header by default.
 
-		/**
-		 * Disable XML RPC by default
-		 */
-		add_filter( 'xmlrpc_enabled', '__return_false' );
+	/**
+	 * Disable XML RPC by default
+	 */
+	add_filter( 'xmlrpc_enabled', '__return_false' );
 
-	}
-// endif;
+}
+
 add_action( 'after_setup_theme', 'nightingale_setup' );
 
 /**
@@ -249,7 +247,7 @@ function nightingale_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-        // Load in Gutenberg plugin directly from WP repo.
+		// Load in Gutenberg plugin directly from WP repo.
 		array(
 			'name'               => 'Gutenberg',
 			// The plugin name.
@@ -333,7 +331,7 @@ add_action( 'admin_notices', 'nightingale_admin_notice_demo_data' );
 function nightingale_admin_notice_demo_data() {
 
 	// Hide bizberg admin message.
-	if ( ! empty( $_GET['status'] ) && 'nightingale_hide_msg' === $_GET['status'] ) {
+	if ( ! empty( $_GET['status'] ) && 'nightingale_hide_msg' === $_GET['status'] ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		update_option( 'nightingale_hide_msg', true );
 	}
 
@@ -363,8 +361,11 @@ function nightingale_admin_notice_demo_data() {
 			echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
 			printf(
 				/* translators: 1: theme name. */
-				esc_html__( 'Thank you for installing %1$s', 'nightingale' ),
-				$theme_name
+				esc_html__(
+					'Thank you for installing %1$s',
+					'nightingale'
+				),
+				esc_html( $theme_name )
 			);
 			echo '</strong>';
 			echo '<p>' . esc_html__( 'This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK', 'nightingale' ) . '</p>';
@@ -437,36 +438,57 @@ require get_template_directory() . '/inc/gravity-forms.php';
 require get_template_directory() . '/inc/retina-images.php';
 
 /**
- * Performance Boosters - should be loaded as last element of functions file
+ * Performance Boosters - should be loaded as last element of functions file.
  */
 require get_template_directory() . '/inc/performance-optimisations.php';
 
-add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3);
+add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3 );
 
 /**
- * Amend the markup in the latest news block to bring in to NHSUK styling
- * @param $block_content - the generated html from core block
- * @param $block - the name of the block
+ * Amend the markup in the latest news block to bring in to NHSUK styling.
  *
- * @return $output - the amended html markup
+ * @param string $block_content - the generated html from core block.
+ * @param string $block - the name of the block.
+ *
+ * @return string $output - the amended html markup.
  */
 function nightingale_latest_posts_block_filter( $block_content, $block ) {
 
-	if( "core/latest-posts" !== $block['blockName'] ) {
+	if ( 'core/latest-posts' !== $block['blockName'] ) {
 		return $block_content;
 	}
 
-	$block_content = str_replace(array('<ul class="wp-block-latest-posts wp-block-latest-posts__list">'), '<div class="nhsuk-panel-group">', $block_content);
-	$block_content = str_replace(array('</ul>'), '</div>', $block_content);
-	$block_content = str_replace(array('<li>'), '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">', $block_content);
-	$block_content = str_replace(array('</li>'), '</div></div>', $block_content);
-	$block_content = str_replace(array('Read more'), '<svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+	$block_content = str_replace(
+		array( '<ul class="wp-block-latest-posts wp-block-latest-posts__list">' ),
+		'<div class="nhsuk-panel-group">',
+		$block_content
+	);
+	$block_content = str_replace(
+		array( '</ul>' ),
+		'</div>',
+		$block_content
+	);
+	$block_content = str_replace(
+		array( '<li>' ),
+		'<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">',
+		$block_content
+	);
+	$block_content = str_replace(
+		array( '</li>' ),
+		'</div></div>',
+		$block_content
+	);
+	$block_content = str_replace(
+		array( 'Read more' ),
+		'<svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
 	  <path d="M0 0h24v24H0z" fill="none"></path>
 	  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-	</svg><span class="nhsuk-action-link__text">read more</span>', $block_content);
-	$output = '<div class="nhsuk-grid-row nightingale-latest-news">';
-	$output .= $block_content;
-	$output .= '</div>';
+	</svg><span class="nhsuk-action-link__text">read more</span>',
+		$block_content
+	);
+	$output        = '<div class="nhsuk-grid-row nightingale-latest-news">';
+	$output       .= $block_content;
+	$output       .= '</div>';
 
 	return $output;
 }

@@ -23,8 +23,8 @@ function nightingale_load_css() {
 	if ( is_admin() ) {
 		return;
 	}
-	wp_register_script( 'loadcss', get_template_directory_uri() . '/js/loadcss.js', array(), '30072019', false ); // Register loadCSS javascript function
-	wp_enqueue_script( 'loadcss', get_template_directory_uri() . '/js/loadcss.js', array(), '30072019' ); // Queue it up.
+	wp_register_script( 'loadcss', get_template_directory_uri() . '/js/loadcss.js', array(), '30072019', false ); // Register loadCSS javascript function.
+	wp_enqueue_script( 'loadcss', get_template_directory_uri() . '/js/loadcss.js', array(), '30072019', false ); // Queue it up.
 
 }
 
@@ -35,9 +35,9 @@ add_filter( 'style_loader_tag', 'nightingale_loadcss_files', 9999, 3 );
 /**
  * Run all css includes through loadcss function.
  *
- * @param $html
- * @param $handle
- * @param $href
+ * @param string $html full string of original declaration.
+ * @param string $handle unique identifier.
+ * @param string $href precise link of stylesheet.
  *
  * @return string
  */
