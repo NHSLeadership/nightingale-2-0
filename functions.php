@@ -458,21 +458,21 @@ function nightingale_latest_posts_block_filter( $block_content, $block ) {
 		return $block_content;
 	}
 	$output = '<div class="nhsuk-grid-row nightingale-latest-news"><div class="nhsuk-panel-group">';
-	$dom = new DOMDocument();
+	$dom    = new DOMDocument();
 	$dom->loadHTML( $block_content );
-	$lis = $dom->getElementsByTagName('li' );
+	$lis = $dom->getElementsByTagName( 'li' );
 	foreach ( $lis as $li ) {
-	    $output .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
-	    $titles = $li->getElementsByTagName( 'a' );
-	    $title = $titles->item( 0 )->nodeValue;
-	    $link = $titles->item( 0 )->getAttribute('href');
-        $contents = $li->getElementsByTagName( 'div' );
-        $excerpt = $contents->item( 0 )->nodeValue;
-	    $output .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
-	    $output .= '<p>' . substr( $excerpt, 0, -13) . '</p>';
-        $output .= nightingale_read_more_posts( $link, $title );
-	    $output .= '</div></div>';
-    }
+		$output  .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
+		$titles   = $li->getElementsByTagName( 'a' );
+		$title    = $titles->item( 0 )->nodeValue;
+		$link     = $titles->item( 0 )->getAttribute( 'href' );
+		$contents = $li->getElementsByTagName( 'div' );
+		$excerpt  = $contents->item( 0 )->nodeValue;
+		$output  .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
+		$output  .= '<p>' . substr( $excerpt, 0, -13 ) . '</p>';
+		$output  .= nightingale_read_more_posts( $link, $title );
+		$output  .= '</div></div>';
+	}
 	$output .= '</div></div>';
 	return $output;
 }
