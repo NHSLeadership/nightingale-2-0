@@ -457,38 +457,22 @@ function nightingale_latest_posts_block_filter( $block_content, $block ) {
 	if ( 'core/latest-posts' !== $block['blockName'] ) {
 		return $block_content;
 	}
-
-	$block_content = str_replace(
-		array( '<ul class="wp-block-latest-posts wp-block-latest-posts__list">' ),
-		'<div class="nhsuk-panel-group">',
-		$block_content
-	);
-	$block_content = str_replace(
-		array( '</ul>' ),
-		'</div>',
-		$block_content
-	);
-	$block_content = str_replace(
-		array( '<li>' ),
-		'<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">',
-		$block_content
-	);
-	$block_content = str_replace(
-		array( '</li>' ),
-		'</div></div>',
-		$block_content
-	);
-	$block_content = str_replace(
-		array( 'Read more' ),
-		'<svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-	  <path d="M0 0h24v24H0z" fill="none"></path>
-	  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-	</svg><span class="nhsuk-action-link__text">read more</span>',
-		$block_content
-	);
-	$output        = '<div class="nhsuk-grid-row nightingale-latest-news">';
-	$output       .= $block_content;
-	$output       .= '</div>';
-
+	$output = '<div class="nhsuk-grid-row nightingale-latest-news"><div class="nhsuk-panel-group">';
+	$dom    = new DOMDocument();
+	$dom->loadHTML( $block_content );
+	$lis = $dom->getElementsByTagName( 'li' );
+	foreach ( $lis as $li ) {
+		$output  .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
+		$titles   = $li->getElementsByTagName( 'a' );
+		$title    = $titles->item( 0 )->nodeValue;
+		$link     = $titles->item( 0 )->getAttribute( 'href' );
+		$contents = $li->getElementsByTagName( 'div' );
+		$excerpt  = $contents->item( 0 )->nodeValue;
+		$output  .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
+		$output  .= '<p>' . substr( $excerpt, 0, -13 ) . '</p>';
+		$output  .= nightingale_read_more_posts( $link, $title );
+		$output  .= '</div></div>';
+	}
+	$output .= '</div></div>';
 	return $output;
 }
