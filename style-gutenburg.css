@@ -10561,6 +10561,7 @@ section {
 .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
   margin-top: 30px;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .is-style-panel-with-label h3 {
