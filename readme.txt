@@ -1,4 +1,4 @@
-=== Nightingale 2.0 ===
+=== Nightingale ===
 Contributors: tblacker
 Requires at least: 5.0
 Tested up to: 5.2
@@ -18,7 +18,7 @@ Yes, it is open source code and can be used anywhere. However, you may not use t
 = Do you offer support?
 Yes, either through the themes support pages on WordPress, or via our GitHub project https://github.com/NHSLeadership/nightingale
 = Can I get involved?
-Yes - please do! Whether you work in the NHS or would just liek to contribute, we are happy to involve the wider community in this work and will consider any pull requests or code snippets you are happy to contribute.
+Yes - please do! Whether you work in the NHS or would just like to contribute, we are happy to involve the wider community in this work and will consider any pull requests or code snippets you are happy to contribute.
 
 == Changelog
 
@@ -28,3 +28,8 @@ Initial work on theme, standardised and tested for accessibility and optimised f
 = 2.0.1 =
 Add in nhsblocks plugin to TGM plugin install routine
 
+= 2.0.2 =
+Added in latest-posts (core block) reworking for theme consistency
+Added performance improvements, deferring javascript and preload css
+Updated upstream nhsuk-frontend library
+Cleaned Customizer output

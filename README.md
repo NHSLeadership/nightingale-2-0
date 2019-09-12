@@ -1,4 +1,4 @@
-# Nightingale 2.0
+# Nightingale 2.0.2
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 
 :exclamation: This is a Release Candidate version. Do not use on production sites. `Feedback is positively encouraged,
@@ -6,8 +6,9 @@
 
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
- - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will auto install on theme activation and is a 
+ - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) *optional but advised* - this will auto install on theme activation and is a 
  requirement. This extends the native Gutenberg WP functionality to include latest developments.
+ - [NHSBlocks](https://en-gb.wordpress.org/plugins/nhsblocks/) *optional but advised*  - This adds a series of components to your edit screen, including the vast majority of the components from the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend). *NHSBlocks will not function correctly without also having the Gutenberg plugin active*
  - *optional* For any editing of the theme (in particular the css files) we strongly advise you to use the NPM 
  installation route detailed in `Optional Settings` below.
  
@@ -65,7 +66,7 @@
  - [x] Emergency alert
  - [x] Feedback Banner
  - [x] Forms elements
- - [ ] Add Gravity Forms compatibility
+ - [x] Add Gravity Forms compatibility
  - [x] Add theme update routine [possible route here](https://wpmayor
  .com/how-to-integrate-wordpress-plugin-update-notifications-into-your-commercial-plugin/)
  - [x] Composer build (including auto load NHSL Blocks plugin)
@@ -74,7 +75,7 @@
  - [x] Alternative navigation aid to Tabs
  - [x] Device checks (mobile, tablet, TV etc)
  - [x] Print layout / styling
- - [ ] Accessibility audit
+ - [x] Accessibility audit
  
  ## Licence
  
