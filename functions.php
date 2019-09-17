@@ -351,16 +351,18 @@ function nightingale_admin_notice_demo_data() {
 
 		<div class="theme-info-wrapper" style="padding: 20px 20px 20px 5px;">
 
-			<svg class="nhsuk-logo nhsuk-logo--white" style="width: 80px; height: 32px;" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
+			<svg class="nhsuk-logo nhsuk-logo--white" style="width: 80px; height: 32px;"
+				 xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
 				<path fill="#fff" d="M0 0h40v16H0z"></path>
-				<path fill="#005eb8" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+				<path fill="#005eb8"
+					  d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
 				<image src="https://assets.nhs.uk/images/nhs-logo.png" xlink:href=""></image>
 			</svg>
 
 			<?php
 			echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
 			printf(
-				/* translators: 1: theme name. */
+			/* translators: 1: theme name. */
 				esc_html__(
 					'Thank you for installing %1$s',
 					'nightingale'
@@ -373,11 +375,13 @@ function nightingale_admin_notice_demo_data() {
 			?>
 
 			<div class="button_wrapper_theme" style="margin-top: 20px;">
-				<a href="<?php echo esc_url( admin_url( $check_gutenberg_block_plugin_status ? 'themes.php?status=nightingale_hide_msg' : 'themes.php?page=tgmpa-install-plugins&status=nightingale_hide_msg' ) ); ?>" class="button button-primary button-hero" style="background: #78BE20;">
+				<a href="<?php echo esc_url( admin_url( $check_gutenberg_block_plugin_status ? 'themes.php?status=nightingale_hide_msg' : 'themes.php?page=tgmpa-install-plugins&status=nightingale_hide_msg' ) ); ?>"
+				   class="button button-primary button-hero" style="background: #78BE20;">
 					<?php esc_html_e( 'Get Started', 'nightingale' ); ?>
 				</a>
 
-				<a href="<?php echo esc_url( admin_url( '/?status=nightingale_hide_msg' ) ); ?>" class="button button-default button-hero">
+				<a href="<?php echo esc_url( admin_url( '/?status=nightingale_hide_msg' ) ); ?>"
+				   class="button button-default button-hero">
 					<?php esc_html_e( 'Close', 'nightingale' ); ?>
 				</a>
 			</div>
@@ -442,6 +446,11 @@ require get_template_directory() . '/inc/retina-images.php';
  */
 require get_template_directory() . '/inc/performance-optimisations.php';
 
+/**
+ * Shove the critical path css directly into the header.
+ */
+require get_template_directory() . '/inc/critical-style.php';
+
 add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3 );
 
 /**
@@ -462,17 +471,18 @@ function nightingale_latest_posts_block_filter( $block_content, $block ) {
 	$dom->loadHTML( $block_content );
 	$lis = $dom->getElementsByTagName( 'li' );
 	foreach ( $lis as $li ) {
-		$output  .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
+		$output   .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
 		$titles   = $li->getElementsByTagName( 'a' );
 		$title    = $titles->item( 0 )->nodeValue;
 		$link     = $titles->item( 0 )->getAttribute( 'href' );
 		$contents = $li->getElementsByTagName( 'div' );
 		$excerpt  = $contents->item( 0 )->nodeValue;
-		$output  .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
-		$output  .= '<p>' . substr( $excerpt, 0, -13 ) . '</p>';
-		$output  .= nightingale_read_more_posts( $link, $title );
-		$output  .= '</div></div>';
+		$output   .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
+		$output   .= '<p>' . substr( $excerpt, 0, - 13 ) . '</p>';
+		$output   .= nightingale_read_more_posts( $link, $title );
+		$output   .= '</div></div>';
 	}
 	$output .= '</div></div>';
+
 	return $output;
 }
