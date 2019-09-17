@@ -59,5 +59,6 @@ if ( get_theme_mod( 'feedback_on' ) === 'yes' ) {
 }
 ?>
 <?php wp_footer(); ?>
+<script src="//instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
 </body>
 </html>
