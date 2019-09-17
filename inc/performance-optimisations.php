@@ -20,9 +20,6 @@ add_action( 'wp_enqueue_scripts', 'nightingale_include_custom_jquery' );
  * Load in the loadcss javascript file to header inline.
  */
 function nightingale_load_css() {
-	if ( is_admin() ) {
-		return;
-	}
 	wp_register_script( 'loadcss', get_template_directory_uri() . '/js/loadcss.js', array(), '30072019', false ); // Register loadCSS javascript function.
 	wp_enqueue_script( 'loadcss', get_template_directory_uri() . '/js/loadcss.js', array(), '30072019', false ); // Queue it up.
 
