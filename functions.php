@@ -479,7 +479,7 @@ function nightingale_latest_posts_block_filter( $block_content, $block ) {
 		$excerpt  = $contents->item( 0 )->nodeValue;
 		$output   .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
 		$output   .= '<p>' . substr( $excerpt, 0, - 13 ) . '</p>';
-		$output   .= nightingale_read_more_posts( $link, $title );
+		$output   .= nightingale_read_more_posts( $title, $link );
 		$output   .= '</div></div>';
 	}
 	$output .= '</div></div>';
