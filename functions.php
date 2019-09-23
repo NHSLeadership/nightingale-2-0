@@ -323,7 +323,6 @@ function nightingale_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 
-
 add_action( 'admin_notices', 'nightingale_admin_notice_demo_data' );
 /**
  * Function to add in nag notice and welcome message on theme activation.
@@ -340,57 +339,31 @@ function nightingale_admin_notice_demo_data() {
 		return;
 	}
 
-	$check_gutenberg_block_plugin_status = is_plugin_active( 'gutenberg/gutenberg.php' ) ? true : false;
-
-	$my_theme   = wp_get_theme();
-	$theme_name = $my_theme->get( 'Name' );
-
-	?>
-
-	<div class="theme-info-start notice notice-info" style="background: #005cb8; color: #ffffff; margin-bottom: 20px;">
-
-		<div class="theme-info-wrapper" style="padding: 20px 20px 20px 5px;">
-
-			<svg class="nhsuk-logo nhsuk-logo--white" style="width: 80px; height: 32px;"
+	if ( ! is_plugin_active( 'gutenberg/gutenberg.php' ) ) {
+		$my_theme   = wp_get_theme();
+		$theme_name = $my_theme->get( 'Name' );
+		echo '<div id="message" class="notice-info settings-error notice is-dismissible"><p>';
+		echo '<svg class="nhsuk-logo nhsuk-logo--white" style="width: 80px; height: 32px;"
 				 xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
 				<path fill="#fff" d="M0 0h40v16H0z"></path>
 				<path fill="#005eb8"
 					  d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
 				<image src="https://assets.nhs.uk/images/nhs-logo.png" xlink:href=""></image>
-			</svg>
-
-			<?php
-			echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
-			printf(
-			/* translators: 1: theme name. */
-				esc_html__(
-					'Thank you for installing %1$s',
-					'nightingale'
-				),
-				esc_html( $theme_name )
-			);
-			echo '</strong>';
-			echo '<p>' . esc_html__( 'This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK', 'nightingale' ) . '</p>';
-			echo '<p><b>' . esc_html__( 'Install all recommended plugins to get started.', 'nightingale' ) . '</b></p>';
-			?>
-
-			<div class="button_wrapper_theme" style="margin-top: 20px;">
-				<a href="<?php echo esc_url( admin_url( $check_gutenberg_block_plugin_status ? 'themes.php?status=nightingale_hide_msg' : 'themes.php?page=tgmpa-install-plugins&status=nightingale_hide_msg' ) ); ?>"
-				   class="button button-primary button-hero" style="background: #78BE20;">
-					<?php esc_html_e( 'Get Started', 'nightingale' ); ?>
-				</a>
-
-				<a href="<?php echo esc_url( admin_url( '/?status=nightingale_hide_msg' ) ); ?>"
-				   class="button button-default button-hero">
-					<?php esc_html_e( 'Close', 'nightingale' ); ?>
-				</a>
-			</div>
-
-		</div>
-
-	</div>
-
-	<?php
+			</svg>';
+		echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
+		printf(
+		/* translators: 1: theme name. */
+			esc_html__(
+				'Thank you for installing %1$s',
+				'nightingale'
+			),
+			esc_html( $theme_name )
+		);
+		echo '</strong>';
+		echo '<p>' . esc_html__( 'This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK', 'nightingale' ) . '</p>';
+		echo '<p><b>' . esc_html__( 'Install all recommended plugins below to get started.', 'nightingale' ) . '</b></p>';
+		echo '</p></div>';
+	}
 }
 
 /**

@@ -10,10 +10,6 @@
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
-
-// Leverage Browser Caching.
-header( 'Cache-Control: max-age=2592000' ); // 30days (60sec * 60min * 24hours * 30days).
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -47,12 +43,10 @@ if ( get_theme_mod( 'emergency_on' ) === 'yes' ) {
 		$header_nav = wp_get_nav_menu_items( $menu_id );
 		if ( $header_nav ) { // Get the array of wp objects, the nav items for our queried location.
 			?>
-			<nav class="nhsuk-header__navigation" id="header-navigation" aria-label="Primary navigation"
-				 aria-labelledby="label-navigation">
+			<nav class="nhsuk-header__navigation" id="header-navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
 				<p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
 					<button class="nhsuk-header__navigation-close" id="close-menu">
-						<svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-							 aria-hidden="true" focusable="false">
+						<svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
 							<path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
 						</svg>
 						<span class="nhsuk-u-visually-hidden">Close menu</span>

@@ -23,7 +23,7 @@ flush();
 				<div id="nhsuk-footer-widgets" class="nhsuk-footer__widgets widget-area" role="complementary">
 					<?php dynamic_sidebar( 'footer-region' ); ?>
 				</div>
-				<?php
+			<?php
 			endif;
 			$menu_locations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).
 			// This returns an array of menu locations ([LOCATION_NAME] = MENU_ID).
@@ -59,6 +59,5 @@ if ( get_theme_mod( 'feedback_on' ) === 'yes' ) {
 }
 ?>
 <?php wp_footer(); ?>
-<script src="//instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
 </body>
 </html>
