@@ -27,7 +27,16 @@ function nightingale_load_css() {
 
 add_action( 'wp_head', 'nightingale_load_css', 1 );
 
-add_filter( 'style_loader_tag', 'nightingale_loadcss_files', 9999, 3 );
+/**
+ * Load in the instantpage javascript file to header inline.
+ */
+function nightingale_load_instantpage() {
+	wp_register_script( 'instantpage', get_template_directory_uri() . '/js/instantpage.js', array(), '23092019', false ); // Register instantpage javascript function.
+	wp_enqueue_script( 'instantpage', get_template_directory_uri() . '/js/instantpage.js', array(), '23092019', false ); // Queue it up.
+
+}
+
+add_action( 'login_head', 'nightingale_load_instantpage', 99 );
 
 /**
  * Run all css includes through loadcss function.
@@ -48,6 +57,8 @@ function nightingale_loadcss_files( $html, $handle, $href ) {
 
 	return "<script>loadCSS('" . $a->getAttribute( 'href' ) . "',0,'" . $a->getAttribute( 'media' ) . "');</script>\n";
 }
+
+add_filter( 'style_loader_tag', 'nightingale_loadcss_files', 9999, 3 );
 
 /**
  * Defer JS to footer

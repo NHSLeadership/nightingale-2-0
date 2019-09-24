@@ -16,11 +16,6 @@ ul {
 
 .edit-post-visual-editor { // target only the editor itself
 
-
-
-
-
-
   // Elements
   @import 'node_modules/nhsuk-frontend/packages/core/elements/forms';
   @import 'node_modules/nhsuk-frontend/packages/core/elements/links';
@@ -54,6 +49,9 @@ ul {
   }
   .is-style-reverse:visited, is-style-reverse:link {
     color: #212b32;
+  }
+  div.components-toolbar>div {
+    display: -ms-flex;
   }
 }
 
