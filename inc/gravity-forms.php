@@ -1,168 +1,151 @@
 <?php
 /**
- *
- * Functions which enhance the theme integration with Gravity forms
- *
- * @package Nightingale
- * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
- *
- * Style Gravity Forms
- * Field Types are:
- *  text
- *  textarea
- *  checkbox
- *  radio
- *  email
- *  number
- *  select
- *  multiselect
+ * Customised Gravity Forms output markup
+ * @date July 17 2019
+ * @version 0.1
+ * @author Tony Blacker
+ * @organisation NHS Leadership Academy
+ * @copyright OGL v3
  */
-
-// Use gform_get_form_filter to style main form elements.
-// See https://docs.gravityforms.com/gform_get_form_filter/.
-add_filter(
-	'gform_get_form_filter',
-	function ( $form_string, $form ) {
-		// Replace form description span with <small> elements.
-		$form_string = preg_replace( "#<span class='gform_description'>(.*?)</span>#", '<small>$1</small>', $form_string );
-
-		// Style error messages.
-		// Message at top of form.
-		$form_string = str_replace( 'validation_error', 'c-form-input is-error validation_error', $form_string );
-		// Fields with CSS class = "gfield_error".
-		$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
-		// Fields contained in <li> elements that have CSS class = "gfield_error".
-		$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );
-		// Error messages below fields.
-		$form_string = str_replace( 'validation_message', 'c-form-error validation_message', $form_string );
-
-		// Style <ul>.
-		$form_string = str_replace( "class='gform_fields", "class='c-form-list gform_fields", $form_string );
-
-		// Replace <h3> with <h2>.
-		$form_string = str_replace( '<h3', '<h2', $form_string );
-		$form_string = str_replace( '/h3>', '/h2>', $form_string );
-
-		// Replace field description divs with <small> elements.
-		$form_string = preg_replace( "#<div class='gfield_description'>(.*?)</div>#", '<small>$1</small>', $form_string );
-
-		// Replace field instruction divs with <small> elements.
-		$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
-
-		// Indicate mandatory fields with "Required" rather than "*".
-		$form_string = str_replace( "<span class='gfield_required'>*</span>", "<span class='gfield_required'> (Required)</span>", $form_string );
-
-		// Replace main <label> elements with <strong>s.
-		$form_string = preg_replace( "#<label class='gfield_label'(.*?)>(.*?)</label>#", "<strong class='c-form-label'>$2</strong>", $form_string );
-
-		// Remove <ul>s around elements.
-		$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );
-
-		// Replace checkbox and radio option <label>s with <span>s.
-		$form_string = preg_replace( "#<label for='choice(.*?)>(.*?)</label>#i", "<span class='c-form-checkbox__faux'></span>$2", $form_string );
-
-		// Style the submit button.
-		$form_string = str_replace( 'gform_button', 'c-btn c-btn--submit gform_button', $form_string );
-
-		return $form_string;
-	},
-	10,
-	2
-);
-
-// Use gform_field_content to style individual fields.
-// See https://docs.gravityforms.com/gform_field_content/.
-add_filter(
-	'gform_field_content',
-	function ( $field_content, $field ) {
-
-		// Text inputs.
-		if ( 'text' === $field->type ) {
-			$field_content = str_replace( "type='text' value='' class='", "type='text' value='' class='c-form-input ", $field_content );
-		}
-
-		// Text areas.
-		if ( 'textarea' === $field->type ) {
-			$field_content = preg_replace( "#<textarea(.*?)class='#", "<textarea$1class='nhsuk-textarea ", $field_content );
-		}
-
-		// Selects.
-		if ( 'select' === $field->type ) {
-			$field_content = str_replace( 'ginput_container ginput_container_select', 'c-form-dropdown', $field_content );
-			$field_content = str_replace( 'gfield_select', 'nhsuk-select', $field_content );
-		}
-
-		// Emails.
-		if ( 'email' === $field->type ) {
-			$field_content = str_replace( "type='email' value='' class='", "type='email' value='' class='c-form-input ", $field_content );
-		}
-
-		// Numbers.
-		if ( 'number' === $field->type ) {
-			$field_content = preg_replace( "#<input(.*?)class='#", "<input$1class='c-form-input ", $field_content );
-		}
-
-		// Checkboxes.
-		if ( 'checkbox' === $field->type ) {
-
-			// Replace <li> elements with suitably-styled <label>s.
-			$field_content = str_replace( "<li class='", "<label class='c-form-checkbox ", $field_content );
-			$field_content = str_replace( '</li', '</label', $field_content );
-
-			// Style <input>s.
-			$field_content = str_replace( "type='checkbox'", "type='checkbox' class='nhsuk-checkboxes__input'", $field_content );
-
-		}
-
-		// Radio buttons.
-		if ( 'radio' === $field->type ) {
-
-			// Replace <li> elements with <label>s with Nightingale CSS classes.
-			$field_content = str_replace( "<li class='", "<label class='c-form-checkbox c-form-checkbox--radio ", $field_content );
-			$field_content = str_replace( '</li', '</label', $field_content );
-
-			// Style <input>s.
-			$field_content = str_replace( "type='radio'", "type='radio' class='c-form-checkbox__input'", $field_content );
-
-		}
-
-		return $field_content;
-	},
-	10,
-	2
-);
-
-/*
- * Styling for the extra bits that sit outside the main form area in multipage forms.
- */
-
-// Style the previous button.
-add_filter( 'gform_previous_button', 'form_previous_button', 10, 2 );
-
-/**
- * Create a previous button for pagination purposes
- *
- * @param string $button  The original button.
- * @param array  $form  The form the button sits in (unused).
- *
- * @return string $button The cleaned up button
- */
-function form_previous_button( $button, $form ) {
-	return str_replace( 'gform_previous_button button', 'nhsuk-button nhsuk-button--reverse', $button );
+add_filter( 'gform_field_content', 'nightingale_2_0_clean_gf_inputs', 10, 5);
+function nightingale_2_0_clean_gf_inputs( $input, $field, $value, $lead_id, $form_id )
+{
+	/*
+	echo '<pre>';
+	echo print_r($field);
+	echo '</pre>';
+	echo '<hr />';
+	*/
+	if ($field->validation_message != '') {
+		$errorflag = 1;
+		$grouperror = ' nhsuk-form-group--error';
+	} else {
+		$errorflag = 0;
+		$grouperror = '';
+	}
+	$fieldset = '<div class="nhsuk-form-group'.$grouperror.'"><fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                                      <legend class="nhsuk-fieldset__legend">
+                                        ' . $field->label . '';
+	if ($field->isRequired != '') {
+		$fieldset .= '<span class="nhsuk-required-message"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+<g stroke="#ffa300" stroke-width="2.23"><circle fill="#ffffff" cx="10" cy="10" r="8.5652"/>
+<path d="M10,4.188V12.657M10,13.438V15.813"/></g></svg> Required</span>';
+	}
+	if ($errorflag == 1) {
+		$fieldset .= '<span class="nhsuk-error-message">'.$field->validation_message.'</span>';
+	}
+	$fieldset .= '</legend>';
+	if (!empty($field->description)) {
+		$newinput = '<span class="nhsuk-hint">
+                                        ' . $field->description . '
+                                      </span>';
+	}
+	$ender = '';
+	$wrapper = '';
+	$choices = ''; // initialise all the strings
+	switch ($field->type) { // available values: radio, poll, survey, email, number, multiselect, text, textarea, checkbox, select
+		case 'multiselect':
+			break;
+		case 'checkbox':
+			$wrapper .= '<div class="nhsuk-checkboxes" id="input_' . $form_id . '_' . $field->id . '">';
+			$i = 0;
+			foreach ($field->choices as $selection) {
+				$choices .= '<div class="nhsuk-checkboxes__item">
+                                      <input class="nhsuk-checkboxes__input" id="choice_' . $form_id . '_' . $field->id . '_' . $i . '" name="input_' . $field->id . '" type="checkbox" value="' . $selection['value'] . '"'.$extra.'>
+                                      <label class="nhsuk-label nhsuk-checkboxes__label" for="choice_' . $form_id . '_' . $field->id . '_' . $i . '" id="label_' . $form_id . '_' . $field->id . '_' . $i . '">
+                                        ' . $selection['text'] . '
+                                      </label>
+                                    </div>';
+				$i++;
+			}
+			$ender .= '</div>';
+			break;
+		case 'poll':
+		case 'radio':
+			$wrapper .= '<div class="nhsuk-radios  nhsuk-radios--inline" id="input_' . $form_id . '_' . $field->id . '">';
+			$i = 0;
+			foreach ($field->choices as $selection) {
+				$choices .= '<div class="nhsuk-radios__item">
+                                      <input class="nhsuk-radios__input" id="choice_' . $form_id . '_' . $field->id . '_' . $i . '" name="input_' . $field->id . '" type="radio" value="' . $selection['value'] . '">
+                                      <label class="nhsuk-label nhsuk-radios__label" for="choice_' . $form_id . '_' . $field->id . '_' . $i . '" id="label_' . $form_id . '_' . $field->id . '_' . $i . '">
+                                        ' . $selection['text'] . '
+                                      </label>
+                                    </div>';
+				$i++;
+			}
+			$ender .= '</div>';
+			break;
+		case 'survey':
+			//@todo this looks pants in mobile view. It really needs to be made into a div layout
+			$choices .= '<table class="gsurveytable"><tr><td ></td>';
+			foreach ($field->choices as $options) {
+				$choices .= '<td>'.$options['text'].'</td>';
+			}
+			$choices .= '</tr>';
+			$i = 1;
+			if ($field->inputs) {
+				foreach ($field->inputs as $selection) {
+					$choices .= '<tr class="nhsuk-radios nhsuk-radios--inline"><td>'.$selection['label'].'</td>';
+					$j = 1;
+					foreach ($field->choices as $options) {
+						if ($selection['isSelected'] == '1') {
+							$extra = ' checked';
+						} else {
+							$extra = '';
+						}
+						$choices .= '<td><div class="nhsuk-radios__item">
+                                        <input class="nhsuk-radios__input" id="choice_' . $form_id . '_' . $field->id . '_' . $i . '_'. $j . '" name="input_' . $field->id . '.'.$i.'" type="radio" value="' . $options['value'] . '"'.$extra.'>
+                                        <label class="nhsuk-label nhsuk-radios__label" for="choice_' . $form_id . '_' . $field->id . '_' . $i . '_'. $j . '">'.$options['text'].'</label>
+                                      </div></td>';
+						$j++;
+					}
+					$choices .= '</tr>';
+					$i++;
+				}
+			}
+			$choices .= '</table>';
+			break;
+		case 'textarea' : // text field
+			$choices .= '<textarea rows="5" class="nhsuk-textarea" id="label_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '"></textarea>';
+			break;
+		case 'number':
+			$choices .= '<input class="nhsuk-input nhsuk-input--width-10" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="number" placeholder="'.$field->placeholder.'" value="'.$field->defaultValue.'">';
+			break;
+		case 'email':
+			$choices .= '<input class="nhsuk-input nhsuk-input--width-20" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="email" placeholder="'.$field->placeholder.'" value="'.$field->defaultValue.'">';
+			break;
+		case 'text':
+			$choices .= '<input class="nhsuk-input" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="text" placeholder="'.$field->placeholder.'" value="'.$field->defaultValue.'">';
+			break;
+		case 'select':
+			$choices .= '<select class="nhsuk-select" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '">';
+			$i = 0;
+			foreach ($field->choices as $selection) {
+				if ($selection['isSelected'] == '1') {
+					$extra = ' selected';
+				} else {
+					$extra = '';
+				}
+				$choices .= '<option value="' . $selection['value'] . '"'.$extra.'>'.$selection['value'].'</option>';
+				$i++;
+			}
+			$choices .= '</select>';
+			break;
+		default:
+			break;
+	}
+	$ender .= '</fieldset></div>';
+	$collection = $fieldset . $wrapper . $choices . $ender;
+	return $collection;
+};
+// Extend expiration of save and continue links from 30 days to 1 year
+add_filter( 'gform_incomplete_submissions_expiration_days', 'gwp_days', 10, 1 );
+function gwp_days( $expiration_days ) {
+	$expiration_days = 365;
+	return $expiration_days;
 }
-
-// Style the next button.
-add_filter( 'gform_next_button', 'form_next_button', 10, 2 );
-
-/**
- * Create a next button for pagination purposes
- *
- * @param string $button  The original button.
- * @param array  $form  The form the button sits in (unused).
- *
- * @return string $button The cleaned up button
- */
-function form_next_button( $button, $form ) {
-	return str_replace( 'gform_next_button button', 'nhsuk-button', $button );
-}
+add_filter( 'gform_get_form_filter', function ( $form_string, $form ) {
+	//Style the submit button
+	$form_string = str_replace( "gform_button", "nhsuk-button", $form_string );
+	return $form_string;
+}, 10, 2 );
