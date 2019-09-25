@@ -8,15 +8,6 @@
  */
 
 /**
- * Put a more modern, remote hosted version of jQuery into our theme
- */
-function nightingale_include_custom_jquery() {
-	wp_register_script( 'jquerynew', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true ); // Re-Register correct version of jQuery, remote loaded through Google CDN.
-	wp_enqueue_script( 'jquerynew', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '3.4.1', true ); // Queue it up.
-}
-
-add_action( 'wp_enqueue_scripts', 'nightingale_include_custom_jquery' );
-/**
  * Load in the loadcss javascript file to header inline.
  */
 function nightingale_load_css() {
@@ -69,7 +60,7 @@ add_filter( 'style_loader_tag', 'nightingale_loadcss_files', 9999, 3 );
  */
 function nightingale_defer_parsing_js( $url ) {
 	// Add the files to exclude from defer. Add jquery.js by default.
-	$exclude_files = array( 'jquery.min.js', 'loadcss' );
+	$exclude_files = array( 'jquery', 'loadcss' );
 	// Bypass JS defer for logged in users.
 	if ( ! is_user_logged_in() ) {
 		if ( false === strpos( $url, '.js' ) ) {
