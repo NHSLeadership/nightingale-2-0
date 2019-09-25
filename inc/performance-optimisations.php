@@ -60,7 +60,7 @@ add_filter( 'style_loader_tag', 'nightingale_loadcss_files', 9999, 3 );
  */
 function nightingale_defer_parsing_js( $url ) {
 	// Add the files to exclude from defer. Add jquery.js by default.
-	$exclude_files = array( 'jquery.min.js', 'loadcss' );
+	$exclude_files = array( 'jquery', 'loadcss' );
 	// Bypass JS defer for logged in users.
 	if ( ! is_user_logged_in() ) {
 		if ( false === strpos( $url, '.js' ) ) {
