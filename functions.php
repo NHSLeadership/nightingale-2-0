@@ -407,7 +407,9 @@ require get_template_directory() . '/inc/breadcrumbs.php';
 /**
  * Gravity Forms style over-ride.
  */
-require get_template_directory() . '/inc/gravity-forms.php';
+if ( !is_admin() ) {
+	require get_template_directory() . '/inc/gravity-forms.php';
+}
 
 /**
  * Retina Ready Image code.
