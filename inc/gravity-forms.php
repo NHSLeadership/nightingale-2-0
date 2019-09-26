@@ -93,7 +93,7 @@ function nightingale_clean_gf_inputs( $input, $field, $value, $lead_id, $form_id
 					$choices .= '<tr class="nhsuk-radios nhsuk-radios--inline"><td>'.$selection['label'].'</td>';
 					$j = 1;
 					foreach ($field->choices as $options) {
-						if ($selection['isSelected'] == '1') {
+						if ($options['isSelected'] == '1') {
 							$extra = ' checked';
 						} else {
 							$extra = '';

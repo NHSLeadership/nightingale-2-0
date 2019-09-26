@@ -3,13 +3,13 @@
     background: $color_nhsuk-white;
     color: $color_nhsuk-black;
 
+    a.nhsuk-header__transactional-service-name--link {
+      color: $color_nhsuk-blue;
+    }
+
     .nhsuk_header__logo {
       padding: 0 0 10px 0;
 
-    }
-
-    .nhsuk-header__link {
-      height: 0;
     }
 
     .nhsuk-header__menu {
@@ -23,14 +23,17 @@
         border: 0px;
       }
     }
+
     input[type="text"] {
       border-radius: 4px 0 0 4px;
       border-right: none;
     }
+
     .nhsuk-search__submit {
       border: 1px solid #ccc;
       border-left: none;
     }
+
     .nhsuk-header__search-toggle {
       background-color: $color_nhsuk-grey-5;
       border-color: $color_nhsuk-blue;
@@ -51,4 +54,7 @@
       }
     }
   }
+}
+.nhsuk-header__menu-toggle {
+  margin-right: 0;
 }
