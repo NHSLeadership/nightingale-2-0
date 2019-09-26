@@ -1,21 +1,22 @@
 <?php
 /**
  * Customised Gravity Forms output markup
- * @date July 17 2019
- * @version 0.1
+ * @date September 26 2019
+ * @version 1.0
  * @author Tony Blacker
  * @organisation NHS Leadership Academy
  * @copyright OGL v3
  */
-add_filter( 'gform_field_content', 'nightingale_2_0_clean_gf_inputs', 10, 5);
-function nightingale_2_0_clean_gf_inputs( $input, $field, $value, $lead_id, $form_id )
+add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 10, 5);
+function nightingale_clean_gf_inputs( $input, $field, $value, $lead_id, $form_id )
 {
-	/*
+/*
 	echo '<pre>';
 	echo print_r($field);
 	echo '</pre>';
 	echo '<hr />';
-	*/
+*/
+
 	if ($field->validation_message != '') {
 		$errorflag = 1;
 		$grouperror = ' nhsuk-form-group--error';
@@ -36,7 +37,7 @@ function nightingale_2_0_clean_gf_inputs( $input, $field, $value, $lead_id, $for
 	}
 	$fieldset .= '</legend>';
 	if (!empty($field->description)) {
-		$newinput = '<span class="nhsuk-hint">
+		$fieldset .= '<span class="nhsuk-hint">
                                         ' . $field->description . '
                                       </span>';
 	}
@@ -109,13 +110,13 @@ function nightingale_2_0_clean_gf_inputs( $input, $field, $value, $lead_id, $for
 			$choices .= '<textarea rows="5" class="nhsuk-textarea" id="label_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '"></textarea>';
 			break;
 		case 'number':
-			$choices .= '<input class="nhsuk-input nhsuk-input--width-10" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="number" placeholder="'.$field->placeholder.'" value="'.$field->defaultValue.'">';
+			$choices .= '<input class="nhsuk-input nhsuk-input--width-10" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="number" placeholder="'.$field->placeholder.'" value="'.$value.'">';
 			break;
 		case 'email':
-			$choices .= '<input class="nhsuk-input nhsuk-input--width-20" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="email" placeholder="'.$field->placeholder.'" value="'.$field->defaultValue.'">';
+			$choices .= '<input class="nhsuk-input nhsuk-input--width-20" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="email" placeholder="'.$field->placeholder.'" value="'.$value.'">';
 			break;
 		case 'text':
-			$choices .= '<input class="nhsuk-input" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="text" placeholder="'.$field->placeholder.'" value="'.$field->defaultValue.'">';
+			$choices .= '<input class="nhsuk-input" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="text" placeholder="'.$field->placeholder.'" value="'.$value.'">';
 			break;
 		case 'select':
 			$choices .= '<select class="nhsuk-select" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '">';
