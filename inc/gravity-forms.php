@@ -42,6 +42,10 @@ function nightingale_clean_gf_inputs( $input, $field, $value, $lead_id, $form_id
                                       </span>';
 	}
 	$ender = '';
+	$extra = '';
+	if ($field->gwreadonly_enable > 0) {
+		$extra .= ' readonly';
+	}
 	$wrapper = '';
 	$choices = ''; // initialise all the strings
 	switch ($field->type) { // available values: radio, poll, survey, email, number, multiselect, text, textarea, checkbox, select
@@ -107,16 +111,16 @@ function nightingale_clean_gf_inputs( $input, $field, $value, $lead_id, $form_id
 			$choices .= '</table>';
 			break;
 		case 'textarea' : // text field
-			$choices .= '<textarea rows="5" class="nhsuk-textarea" id="label_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '"></textarea>';
+			$choices .= '<textarea rows="5" class="nhsuk-textarea" id="label_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" ' . $extra .'></textarea>';
 			break;
 		case 'number':
-			$choices .= '<input class="nhsuk-input nhsuk-input--width-10" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="number" placeholder="'.$field->placeholder.'" value="'.$value.'">';
+			$choices .= '<input class="nhsuk-input nhsuk-input--width-10" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="number" placeholder="'.$field->placeholder.'" value="'.$value.'" ' . $extra .'>';
 			break;
 		case 'email':
-			$choices .= '<input class="nhsuk-input nhsuk-input--width-20" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="email" placeholder="'.$field->placeholder.'" value="'.$value.'">';
+			$choices .= '<input class="nhsuk-input nhsuk-input--width-20" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="email" placeholder="'.$field->placeholder.'" value="'.$value.'" ' . $extra .'>';
 			break;
 		case 'text':
-			$choices .= '<input class="nhsuk-input" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="text" placeholder="'.$field->placeholder.'" value="'.$value.'">';
+			$choices .= '<input class="nhsuk-input" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '" type="text" placeholder="'.$field->placeholder.'" value="'.$value.'" ' . $extra .'>';
 			break;
 		case 'select':
 			$choices .= '<select class="nhsuk-select" id="input_' . $form_id . '_' . $field->id . '" name="input_' . $field->id . '">';

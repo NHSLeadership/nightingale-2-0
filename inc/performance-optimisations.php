@@ -17,6 +17,7 @@ function nightingale_load_css() {
 }
 
 add_action( 'wp_head', 'nightingale_load_css', 1 );
+add_action( 'wp_login', 'nightingale_load_css', 1 );
 
 /**
  * Load in the instantpage javascript file to header inline.
