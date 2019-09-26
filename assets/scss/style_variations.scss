@@ -174,4 +174,11 @@
       display: none;
     }
   }
+  .gform_wrapper {
+    li.gfield fieldset {
+      .nhsuk-textarea {
+        width: 100%;
+      }
+    }
+  }
 }

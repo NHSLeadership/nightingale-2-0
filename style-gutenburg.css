@@ -10612,6 +10612,10 @@ section {
   display: none;
 }
 
+.gform_body .gform_wrapper li.gfield fieldset .nhsuk-textarea {
+  width: 100%;
+}
+
 .is-style-panel-with-label h3 {
   width: fit-content;
   height: 10px;
