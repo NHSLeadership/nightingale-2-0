@@ -11362,3 +11362,7 @@ b {
 .gform_body ul.gform_fields .gform_hidden {
   display: none;
 }
+
+.gform_body .gform_wrapper li.gfield fieldset .nhsuk-textarea {
+  width: 100%;
+}
