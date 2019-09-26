@@ -11177,12 +11177,12 @@ b {
   color: #212b32;
 }
 
-.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk_header__logo {
-  padding: 0 0 10px 0;
+.nhsuk-header--transactional .nhsuk-header__inverted a.nhsuk-header__transactional-service-name--link {
+  color: #005eb8;
 }
 
-.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__link {
-  height: 0;
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk_header__logo {
+  padding: 0 0 10px 0;
 }
 
 .nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__menu .nhsuk-header__menu-toggle {
@@ -11223,6 +11223,10 @@ b {
 
 .nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
   fill: #ffffff;
+}
+
+.nhsuk-header__menu-toggle {
+  margin-right: 0;
 }
 
 /*

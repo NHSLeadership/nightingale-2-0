@@ -72,6 +72,57 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 	/*
+	 * -----------------------------------------------------------
+	 * SHOW / HIDE Search
+	 * -----------------------------------------------------------
+	 */
+	$wp_customize->add_setting(
+		'show_search',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+	$wp_customize->add_control(
+		'show_search',
+		array(
+			'label'   => esc_html__( 'Show Search Box?', 'nightingale' ),
+			'section' => 'section_header',
+			'type'    => 'radio',
+			'choices' => array(
+				'yes'   => esc_html__( 'Yes', 'nightingale' ),
+				'no' => esc_html__( 'No', 'nightingale' ),
+			),
+		)
+	);
+
+	/*
+	 * -----------------------------------------------------------
+	 * SHOW / HIDE Site Name
+	 * -----------------------------------------------------------
+	 */
+	$wp_customize->add_setting(
+		'show_sitename',
+		array(
+			'default'           => 'yes',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+	$wp_customize->add_control(
+		'show_sitename',
+		array(
+			'label'   => esc_html__( 'Show site Name as text?', 'nightingale' ),
+			'description' => esc_html__( 'you may wish to hide this if your organisational logo includes your organisation name. Your site name is edited / created in the "Site Identity" section of the theme customiser', 'nightingale' ),
+			'section' => 'section_header',
+			'type'    => 'radio',
+			'choices' => array(
+				'yes'   => esc_html__( 'Yes', 'nightingale' ),
+				'no' => esc_html__( 'No', 'nightingale' ),
+			),
+		)
+	);
+
+	/*
 	 * ------------------------------------------------------------
 	 * SECTION: Emergency Alert Field
 	 * ------------------------------------------------------------
@@ -185,6 +236,9 @@ function nightingale_customize_register( $wp_customize ) {
 			),
 		)
 	);
+
+	$wp_customize->remove_section( 'colors' );
+	$wp_customize->remove_section( 'header_image' );
 
 	/*
 	 * ------------------------------------------------------------
