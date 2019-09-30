@@ -46,8 +46,9 @@ function nightingale_loadcss_files( $html, $handle, $href ) {
 	$dom = new DOMDocument();
 	$dom->loadHTML( $html );
 	$a = $dom->getElementById( $handle . '-css' );
-
-	return "<script>loadCSS('" . $a->getAttribute( 'href' ) . "',0,'" . $a->getAttribute( 'media' ) . "');</script>\n";
+	if ( !empty( $a ) ) {
+		return "<script>loadCSS('" . $a->getAttribute( 'href' ) . "',0,'" . $a->getAttribute( 'media' ) . "');</script>\n";
+	}
 }
 
 add_filter( 'style_loader_tag', 'nightingale_loadcss_files', 9999, 3 );
