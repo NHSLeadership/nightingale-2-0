@@ -18,9 +18,7 @@
 	if ( has_custom_logo() ) {
 		?>
 		<div class="nhsuk-header__logo">
-			<a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
-				<?php the_custom_logo(); ?>
-			</a>
+			<?php the_custom_logo(); ?>
 		</div>
 	<?php if ( get_theme_mod( 'show_sitename' ) === 'yes' ) { ?>
 			<div class="nhsuk-header__transactional-service-name">
