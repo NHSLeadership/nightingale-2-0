@@ -28,7 +28,8 @@ function nightingale_load_instantpage() {
 
 }
 
-add_action( 'login_head', 'nightingale_load_instantpage', 99 );
+add_action( 'wp_head', 'nightingale_load_instantpage', 99 );
+add_action( 'wp_login', 'nightingale_load_instantpage', 99 );
 
 /**
  * Run all css includes through loadcss function.
@@ -46,8 +47,9 @@ function nightingale_loadcss_files( $html, $handle, $href ) {
 	$dom = new DOMDocument();
 	$dom->loadHTML( $html );
 	$a = $dom->getElementById( $handle . '-css' );
-
-	return "<script>loadCSS('" . $a->getAttribute( 'href' ) . "',0,'" . $a->getAttribute( 'media' ) . "');</script>\n";
+	if ( !empty( $a ) ) {
+		return "<script>loadCSS('" . $a->getAttribute( 'href' ) . "',0,'" . $a->getAttribute( 'media' ) . "');</script>\n";
+	}
 }
 
 add_filter( 'style_loader_tag', 'nightingale_loadcss_files', 9999, 3 );
