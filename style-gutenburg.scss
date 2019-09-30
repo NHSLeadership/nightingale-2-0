@@ -55,160 +55,19 @@ ul {
   }
 }
 
-.acf-block-component {
-  a {
-    pointer-events: none;
-    cursor: default;
-    // this has been added on purpose to prevent links in blocks being clickable - its really annoying when editing to accidentally click a link and be taken off the edit screen!
-  }
-}
 .wp-block{
   max-width: 800px;
 }
 .wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
   max-width: 1228px;
 }
-.block-editor-block-list__block {
-  font-family: $nhsuk-font, $nhsuk-font-fallback;
-  font-size: 16px;
-
-  .nhsuk-care-card__heading{
-    span {
-      font-size: 24px;
-      color: $color_nhsuk-white;
-    }
-  }
-}
 // start importing the theme specific settings
 
 @import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
 @import 'assets/scss/nhs-colours'; // nhs colour pallette
-@import 'assets/scss/nhsl-blocks'; // specific elements for nhsl-blocks plugin
 .editor-post-title__input {
   font-family: $nhsuk-font, $nhsuk-font-fallback;;
   @extend h1;
 }
-//promo panel blockquote address button
-.nhsuk-promo {
-  background: #ffffff;
-  border: 1px solid transparent;
-  box-shadow: 0 4px 0 0 #d8dde0;
-  .nhsuk-promo__content {
-    .editor-url-input__button {
-      width: 100%;
-      text-align: center;
-    }
-    .editor-url-input__button:before {
-      content: "Add link for this promo box";
-    }
-    [data-type="core/image"] ~ .block-list-appender {
-      display: none;
-    }
-  }
-}
-
-.nhsuk-list--cross {
-  .editor-rich-text {
-    padding-left: 34px;
-  }
-}
-
-.nhsuk-button {
-  /*
-  move the url field outside of the button
-   */
-  .editor-url-input__button {
-    position: absolute;
-    right: -50px;
-    top: 0;
-  }
-}
-
-.wp-block-nhsblocks-panel1 {
-  /* remove ability to add extra blocks inside panels, but leave ability to remove and move current inner blocks */
-  .editor-default-block-appender, .editor-block-list__insertion-point {
-    display: none;
-  }
-}
 
 @import 'assets/scss/style_variations';//gutenberg blocks style variations
-.is-style-panel-with-label {
-  h3 {
-    width: fit-content;
-    height: 10px;
-  }
-}
-.editor-styles-wrapper h3.nhsuk-care-card__heading {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* admin styles widget tweaks */
-.block-editor-block-styles__item-preview {
-  .editor-styles-wrapper {
-    font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
-  }
-  .wp-block-nhsblocks-nhsbutton {
-    padding: 5px;
-    font-size: 0.7rem;
-  }
-  .is-style-expander {
-    .nhsuk-details__summary {
-      padding: 0;
-    }
-  }
-  .nhsuk-inset-text {
-    margin-top: 0;
-  }
-}
-
-.nhsuk-grid-column-full {
-  .block-editor-inner-blocks {
-    width: 100%;
-  }
-}
-/* Panel Group editor tweak */
-.nhsuk-promo-group .block-editor-inner-blocks {
-  width: 100%;
-  float: left;
-}
-h3.nhsuk-do-dont-list__label {
-  .rich-text {
-    color: #ffffff;
-  }
-}
-.wp-block-nhsblocks-dashpanel {
-  .nhsuk-panel-with-label__label {
-    z-index: 2;
-    top: 0;
-    margin: 0 -20px;
-    top: 50%;
-    max-width: 90%;
-    .rich-text {
-      font-size: 1.1rem;
-      color: #fff;
-    }
-  }
-}
-div[data-type="nhsblocks/heroblock"] {
-  max-width: 100%;
-  div[data-type="nhsblocks/heroinner"] ~ div {
-    display: none;
-  }
-  .editor-inserter {
-    position: relative;
-    top: -100px;
-    background: white;
-    left: -400px;
-  }
-  editor-inserter:nth-of-type(2) {
-    display: none;
-  }
-  .nhsuk-hero--image {
-    .nhsuk-hero__overlay {
-      position: relative;
-      top: 270px;
-      margin-bottom: 100px;
-      background: none;
-    }
-  }
-}

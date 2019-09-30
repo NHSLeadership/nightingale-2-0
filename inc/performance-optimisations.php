@@ -28,7 +28,8 @@ function nightingale_load_instantpage() {
 
 }
 
-add_action( 'login_head', 'nightingale_load_instantpage', 99 );
+add_action( 'wp_head', 'nightingale_load_instantpage', 99 );
+add_action( 'wp_login', 'nightingale_load_instantpage', 99 );
 
 /**
  * Run all css includes through loadcss function.

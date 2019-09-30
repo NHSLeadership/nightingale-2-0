@@ -47,15 +47,3 @@ flush();
 flush();
 get_footer();
 ?>
-<script>
-    const heroBlock = document.querySelector('.wp-block-nhsblocks-heroblock');
-    if ( heroBlock.matches('.wp-block-nhsblocks-heroblock') === true ) {
-        const mainContent = document.querySelector( '#maincontent' );
-        const wholeDoc = document.querySelector( 'body' );
-        const breadCrumb = document.querySelector( '.nhsuk-breadcrumb' );
-        mainContent.prepend( heroBlock );
-        wholeDoc.removeChild( breadCrumb );
-        mainContent.style.paddingTop = "0";
-        heroBlock.style.marginBottom = "70px";
-    }
-</script>
