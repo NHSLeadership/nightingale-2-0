@@ -16,4 +16,4 @@ function nightingale_critical_styles() {
 	</style>";
 }
 
-add_action( 'wp_head', 'nightingale_critical_styles', 100 );
+add_action( 'wp_head', 'nightingale_critical_styles', 1 );
