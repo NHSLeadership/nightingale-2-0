@@ -115,6 +115,11 @@ function nightingale_setup() {
 			'sidebar-1' => array(
 				'Nightingale_Subpages_Widget',
 			),
+			'404-error' => array(
+				'WP_Widget_Archives',
+				'WP_Widget_Tag_Cloud',
+				'WP_Widget_Recent_Posts',
+			)
 		),
 		'posts'      => array(
 			'home',
@@ -207,6 +212,17 @@ function nightingale_widgets_init() {
 			'description'   => esc_html__( 'Widgets to show in the footer zone.', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => '404 Page',
+			'id'            => '404-error',
+			'description'   => esc_html__( 'Content for your 404 error page goes here.', 'nightingale' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>'
 		)
 	);
 }
