@@ -27,30 +27,15 @@ get_header();
 		<main id="maincontent" class="nhsuk-main-wrapper">
 			<div class="nhsuk-grid-row">
 				<div class="nhsuk-grid-column-full">
-					<?php
-					$raw_search = isset( $_SERVER['REQUEST_URI'] );
-
-					$replacement = str_replace( '-', ' ', $raw_search );
-
-					if ( $replacement ) {
-						$query = $replacement;
-					}
-
-					?>
-
 					<section class="error-404 not-found">
-
 						<div class="page-content">
-							<?php get_search_form();
+							<?php get_search_form( );
 							dynamic_sidebar( '404-error' ); ?>
 						</div><!-- .page-content -->
 					</section><!-- .error-404 -->
-
-
 				</div>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php
 get_footer();
