@@ -42,7 +42,7 @@ get_header();
 
 						<div class="page-content">
 							<?php get_search_form();
-							dynamic_sidebar( '404' ); ?>
+							dynamic_sidebar( '404-error' ); ?>
 						</div><!-- .page-content -->
 					</section><!-- .error-404 -->
 

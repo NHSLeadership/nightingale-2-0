@@ -5,7 +5,7 @@ Tested up to: 5.2
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-Version: 2.0.1
+Version: 2.0.3
 
 == Description ==
 A responsive and accessible theme for NHS organisations based on the NHSUK Frontend Library.
@@ -19,12 +19,20 @@ Yes, it is open source code and can be used anywhere. However, you may not use t
 Yes, either through the themes support pages on WordPress, or via our GitHub project https://github.com/NHSLeadership/nightingale
 = Can I get involved?
 Yes - please do! Whether you work in the NHS or would just liek to contribute, we are happy to involve the wider community in this work and will consider any pull requests or code snippets you are happy to contribute.
-
+= How do I customise my 404 page?
+All content on the 404 error page is widgetised. Navigate to admin > appearance > widgets and add your chosen widgets and content to the `404 page` widget.
 == Changelog
+
+= 2.0.3 =
+Reworked 404 page. All content for 404 output can now be determined via widgetised area (404 widget)
+
+= 2.0.2 =
+Header region reworked. There are now Customiser options for disabling search box and site title as well as inversion
+
+= 2.0.1 =
+Add in nhsblocks plugin to TGM plugin install routine
 
 = 2.0.0 =
 Initial work on theme, standardised and tested for accessibility and optimised for performance.
 
-= 2.0.1 =
-Add in nhsblocks plugin to TGM plugin install routine
 
