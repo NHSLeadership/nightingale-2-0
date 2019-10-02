@@ -10133,6 +10133,10 @@ section {
   display: -ms-flex;
 }
 
+.edit-post-visual-editor .nhsuk-header__search-form {
+  height: 0;
+}
+
 .wp-block {
   max-width: 800px;
 }

@@ -122,6 +122,65 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 	/*
+ * -----------------------------------------------------------
+ * LOGO Generation
+ * -----------------------------------------------------------
+ */
+	$wp_customize->add_setting(
+		'logo_type',
+		array(
+			'default'           => 'transaction',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+	$wp_customize->add_control(
+		'logo_type',
+		array(
+			'label'   => esc_html__( 'Site identifier', 'nightingale' ),
+			'description' => esc_html__( 'You can create your own site identity. This only takes effect if you have not uploaded a site logo. The options are transactional (NHS logo, your org name to the right) or organisational (NHS logo, your org name underneath and a department or qualifier under that). Both are accepted NHS design patterns.', 'nightingale' ),
+			'section' => 'section_header',
+			'type'    => 'radio',
+			'choices' => array(
+				'transaction'   => esc_html__( 'Transactional', 'nightingale' ),
+				'organisation' => esc_html__( 'Organisational', 'nightingale' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'logo_title',
+		array(
+			'default'           => bloginfo( 'name' ),
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+	$wp_customize->add_control(
+		'logo_title',
+		array(
+			'label'   => esc_html__( 'Title to show in generated logo', 'nightingale' ),
+			'section' => 'section_header',
+			'type'    => 'text',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'logo_qualifier',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+	$wp_customize->add_control(
+		'logo_qualifier',
+		array(
+			'label'         => esc_html__( 'Qualifier to show in generated logo', 'nightingale' ),
+			'description'   => esc_html__('this will only show in transactional logos and is either your department or local qualifier', 'nightingale'),
+			'section'       => 'section_header',
+			'type'          => 'text',
+		)
+	);
+
+	/*
 	 * ------------------------------------------------------------
 	 * SECTION: Emergency Alert Field
 	 * ------------------------------------------------------------
