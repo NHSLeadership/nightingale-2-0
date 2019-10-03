@@ -22,7 +22,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="nhsuk-list-panel comments-area">
 
 	<?php
 	// You can start editing here -- including this comment!
@@ -50,16 +50,17 @@ if ( post_password_required() ) {
 
 		<?php the_comments_navigation(); ?>
 
-		<ol class="comment-list">
-			<?php
+		<ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label comment-list">
+			<?php /*
 			wp_list_comments(
 				array(
-					'style'      => 'ol',
+					'style'      => 'ul',
 					'short_ping' => true,
 				)
-			);
+			);*/
 			?>
-		</ol><!-- .comment-list -->
+			<?php wp_list_comments( 'type=comment&callback=nightingale_comment_display' ); ?>
+		</ul><!-- .comment-list -->
 
 		<?php
 		the_comments_navigation();
