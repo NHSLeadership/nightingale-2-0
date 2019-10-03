@@ -31,7 +31,14 @@
       }
     }
   }
+  .nhsuk-header__search-wrap input[type="text"] {
+    border: 1px solid $color_nhsuk-white;
+    border-radius: 3px 0px 0px 3px;
+  }
   .nhsuk-header__inverted {
+    .nhsuk-header__search-wrap input[type="text"] {
+      border: 1px solid $nhsuk-border-color;
+    }
     .nhsuk-header__logo {
       a.nhsuk-header__link {
         .nhsuk-header__transactional-service-name, .nhsuk-header__organisational-service-name {
@@ -82,6 +89,7 @@
       border-color: $color_nhsuk-blue;
       box-shadow: none;
       color: $color_nhsuk-blue;
+      right: 20px;
 
       .nhsuk-icon__search {
         fill: $color_nhsuk-blue;
@@ -97,7 +105,16 @@
       }
     }
   }
-}
-.nhsuk-header__menu-toggle {
-  margin-right: 0;
+  .nhsuk-header__menu-toggle {
+    margin-right: -4px;
+    margin-top: 50px;
+  }
+  @media (min-width: 40.0625em) {
+    margin-top: 0;
+  }
+  @media (max-width: 40.0525em) {
+    .autocomplete__input {
+      height: 52px;
+    }
+  }
 }
