@@ -11079,9 +11079,51 @@ b {
   color: #ffffff;
 }
 
+.nhsuk-header--transactional .nhsuk-header__logo {
+  height: auto;
+}
+
+.nhsuk-header--transactional .nhsuk-header__logo a.nhsuk-header__link {
+  height: auto;
+  width: auto;
+  text-decoration: none;
+}
+
+.nhsuk-header--transactional .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__transactional-service-name {
+  width: max-content;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 20px 10px 20px 100px;
+  position: absolute;
+  top: 30px;
+}
+
+.nhsuk-header--transactional .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__organisational-service-name {
+  width: max-content;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0 10px 0 0;
+}
+
+.nhsuk-header--transactional .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__organisational-qualifier {
+  color: #ffffff;
+  width: max-content;
+  padding: 0;
+}
+
 .nhsuk-header--transactional .nhsuk-header__inverted {
   background: #ffffff;
   color: #212b32;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__transactional-service-name, .nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__organisational-service-name {
+  color: #212b32;
+}
+
+.nhsuk-header--transactional .nhsuk-header__inverted .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__organisational-qualifier {
+  color: #0072ce;
 }
 
 .nhsuk-header--transactional .nhsuk-header__inverted a.nhsuk-header__transactional-service-name--link {
