@@ -1,6 +1,6 @@
 <?php
 /**
- * Nightingale 2.0 Theme Customizer
+ * Nightingale Theme Customizer
  *
  * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
@@ -150,7 +150,7 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'logo_title',
 		array(
-			'default'           => bloginfo( 'name' ),
+			'default'           => '',
 			'sanitize_callback' => 'esc_attr',
 		)
 	);
