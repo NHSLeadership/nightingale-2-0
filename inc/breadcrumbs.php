@@ -14,70 +14,112 @@
 /**
  *  Create the breadcrumb
  */
-function nightingale_breadcrumb() {
-
-	// Check current page is NOT the home page.
-	if ( ! is_front_page() ) {
-		?>
-		<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-			<div class="nhsuk-width-container">
-				<ol class="nhsuk-breadcrumb__list">
-
-					<!-- Start breadcrumb with link to home page -->
-					<li class="nhsuk-breadcrumb__item"><a href="\" class="nhsuk-breadcrumb__link">Home</a></li>
-
-					<!-- Check if the current page is a category, an archive or a single page. If so link to category or archive -->
-					<?php
-					if ( is_category() ) {
-						echo '<li class="nhsuk-breadcrumb__item"><a href="';
-						$perma_cat = get_post_meta( get_the_ID(), '_category_permalink', true );
-						if ( null !== $perma_cat ) {
-							$cat_id   = $perma_cat['category'];
-							$category = get_category( $cat_id );
-						} else {
-							$categories = get_the_category();
-							$category   = $categories[0];
-						}
-						$category_link = get_category_link( $category );
-						$category_name = $category->name;
-						echo esc_url( $category_link ) . '" class="nhsuk-breadcrumb__link">' . esc_html( $category_name ) . '</a></li>';
-					}
-
-					// If this is a child page, add links to its ancestors.
-					if ( is_page() && get_post_field( 'post_parent' ) ) {
-						$parents = get_post_ancestors( get_the_id() );
-						foreach ( array_reverse( $parents ) as $parent ) {
-							echo '<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href =' . esc_url( get_permalink( $parent ) ) . '>' . esc_html( get_the_title( $parent ) ) . '</a></li>';
-						}
-					}
-
-					// If this is search results page, show search term.
-					if ( is_search() ) {
-						echo '<li class="nhsuk-breadcrumb__item">Search Results</li>';
-						echo '<li class="nhsuk-breadcrumb__item">' . esc_html( get_search_query() ) . '</li>';
-					} elseif ( is_archive() ) {
-						echo '<li class="nhsuk-breadcrumb__item">' . esc_html( get_the_archive_title() ) . '</li>';
-					} else {
-						$post_type = get_post_type();
-						if ( ( $post_type ) && 'page' !== $post_type ) {
-							$type = get_post_type_object( $post_type );
-							echo '<li class="nhsuk-breadcrumb__item">';
-							echo $type->has_archive ? '<a class="nhsuk-breadcrumb__link" href =' . esc_url( get_post_type_archive_link( $post_type ) ) . '>' : '';
-							echo esc_html( $type->label );
-							echo $type->has_archive ? '</a>' : '';
-							echo '</li>';
-						}
-						?>
-						<!-- Display title current post/page as last item in breadcrumb -->
-						<li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li>
-						<?php
-					}
-					?>
-				</ol>
-			</div>
-		</nav>
-		<?php
+function nightingale_category_parents( $id, $link = false, $separator = '', $nicename = false, $visited = array(), $iscrumb = false ) {
+	$chain  = '';
+	$parent = get_term( $id, 'category' );
+	if ( is_wp_error( $parent ) ) {
+		return $parent;
 	}
+	if ( $nicename ) {
+		$name = $parent->slug;
+	} else {
+		$name = $parent->name;
+	}
+	if ( $parent->parent && ( $parent->parent != $parent->term_id ) && ! in_array( $parent->parent, $visited ) ) {
+		$visited[] = $parent->parent;
+		$chain     .= get_category_parents( $parent->parent, $link, $separator, $nicename, $visited, $iscrumb );
+	}
+	if ( $iscrumb ) {
+		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '"><span itemprop="name">' . $name . '</span></a></li>' . $separator;
+	} elseif ( $link && ! $iscrumb ) {
+		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '"><span itemprop=""name">' . $name . '</span></a>' . $separator . '</li>';
+	} else {
+		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem"><span itemprop="name">'.$name . $separator . '</span></li>';
+	}
+
+	return $chain;
+}
+
+function nightingale_breadcrumb() {
+	global $wp_query;
+	if (!is_home()) {
+	    ?>
+        <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+            <div class="nhsuk-width-container">
+                <ol class="nhsuk-breadcrumb__list" typeof="BreadcrumbList" vocab="http://schema.org/"><?php
+                    // Adding the Home Page  ?>
+                    <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="<?php echo esc_url( home_url() ); ?>"> <span itemprop="name">Home</span></a>
+                    </li><?php
+                    if ( ! is_front_page() ) {
+                        // Check for categories, archives, search page, single posts, pages, the 404 page, and attachments
+                        if ( is_category() ) {
+                            $cat_obj   = $wp_query->get_queried_object();
+                            $thisCat   = get_category( $cat_obj->term_id );
+                            $parentCat = get_category( $thisCat->parent );
+                            if ( $thisCat->parent != 0 ) {
+                                $cat_parents = nightingale_category_parents( $parentCat, true, '', false, array(), true );
+                            }
+                            if ( $thisCat->parent != 0 && ! is_wp_error( $cat_parents ) ) {
+                                echo $cat_parents;
+                            }
+                            echo '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . get_category_link( $thisCat ) . '"><span itemprop="name">' . single_cat_title( '', false ) . '</span></a></li>';
+                        } elseif ( is_archive() && ! is_category() ) { ?>
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+                                itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( 'Archives', 'text-domain' ); ?></span></li><?php
+                        } elseif ( is_search() ) { ?>
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+                                itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( 'Search Results', 'text-domain' ); ?></span></li><?php
+                        } elseif ( is_404() ) { ?>
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+                                itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( '404 Not Found', 'text-domain' ); ?></span></li><?php
+                        } elseif ( is_singular( 'post' ) ) {
+                            $category    = get_the_category();
+                            $category_id = get_cat_ID( $category[0]->cat_name );
+                            $cat_parents = nightingale_category_parents( $category_id, true, '', false, array(), true );
+                            if ( ! is_wp_error( $cat_parents ) ) {
+                                echo $cat_parents;
+                            }
+                        } elseif ( is_singular( 'attachment' ) ) { ?>
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+                                itemtype="http://schema.org/ListItem"><span itemprop="name">
+                            <?php
+                            the_title(); ?></span>
+                            </li><?php
+                        } elseif ( is_page() ) {
+                            $post = $wp_query->get_queried_object();
+                            if ( $post->post_parent == 0 ) {
+                            } else {
+                                $title     = the_title( '', '', false );
+                                $ancestors = array_reverse( get_post_ancestors( $post->ID ) );
+                                array_push( $ancestors, $post->ID );
+                                foreach ( $ancestors as $ancestor ) {
+                                    if ( $ancestor != end( $ancestors ) ) { ?>
+                                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+                                            itemtype="http://schema.org/ListItem">
+                                        <a itemprop="item" href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
+                                            <span itemprop="name"><?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
+                                        </a>
+                                        </li><?php
+                                    } else { ?>
+                                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+                                            itemtype="http://schema.org/ListItem"><span itemprop="name">
+                                            <?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
+                                        </li><?php
+                                    }
+                                }
+                            }
+                        } ?>
+                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
+                            itemtype="http://schema.org/ListItem"><span itemprop="name"><?php echo esc_html( the_title() ); ?></span></li> <?
+                    } ?>
+                </ol>
+            </div>
+        </nav><?php
+    }
 }
 
 
