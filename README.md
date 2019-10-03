@@ -65,7 +65,7 @@
  - [x] Emergency alert
  - [x] Feedback Banner
  - [x] Forms elements
- - [ ] Add Gravity Forms compatibility
+ - [x] Add Gravity Forms compatibility
  - [x] Add theme update routine [possible route here](https://wpmayor
  .com/how-to-integrate-wordpress-plugin-update-notifications-into-your-commercial-plugin/)
  - [x] Composer build (including auto load NHSL Blocks plugin)

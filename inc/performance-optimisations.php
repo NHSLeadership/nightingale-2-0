@@ -41,14 +41,16 @@ add_action( 'wp_login', 'nightingale_load_instantpage', 99 );
  * @return string
  */
 function nightingale_loadcss_files( $html, $handle, $href ) {
-	if ( is_admin() ) {
-		return $html;
-	}
-	$dom = new DOMDocument();
-	$dom->loadHTML( $html );
-	$a = $dom->getElementById( $handle . '-css' );
-	if ( !empty( $a ) ) {
-		return "<script>loadCSS('" . $a->getAttribute( 'href' ) . "',0,'" . $a->getAttribute( 'media' ) . "');</script>\n";
+	if ( $html ) {
+		if ( is_admin() ) {
+			return $html;
+		}
+		$dom = new DOMDocument();
+		$dom->loadHTML( $html );
+		$a = $dom->getElementById( $handle . '-css' );
+		if ( ! empty( $a ) ) {
+			return "<script>loadCSS('" . $a->getAttribute( 'href' ) . "',0,'" . $a->getAttribute( 'media' ) . "');</script>\n";
+		}
 	}
 }
 
