@@ -1,0 +1,94 @@
+/*
+// variations to styling required for WordPress comments
+// @author Tony Blacker, NHS Leadership Academy
+// @version 1.0 3rd October 2019
+*/
+.nhsuk-list-panel {
+  margin-bottom: 1rem;
+  .comment-list {
+    margin-bottom: 1rem;
+    .nhsuk-list-panel__item {
+      border-bottom: 1px solid #d8dde0;
+      display: block;
+      padding: 12px 16px;
+      .comment-body {
+        .vcard {
+          float: right;
+          .fn {
+            font-style: normal;
+          }
+          img {
+            display: none;
+          }
+        }
+        .comment-meta {
+          a {
+            text-decoration: none;
+            @extend .nhsuk-body-s;
+          }
+        }
+
+      }
+    }
+  }
+  .comment-respond {
+    @extend .nhsuk-form-group;
+    label {
+      @extend .nhsuk-label;
+    }
+    input[type="text"] {
+      @extend .nhsuk-input;
+    }
+    textarea {
+      height: 200px;
+    }
+    input[type="submit"] {
+      @extend .nhsuk-button;
+      float: right;
+    }
+    .comment-form-cookies-consent {
+      @extend .nhsuk-checkboxes__item;
+      input[type="checkbox"] {
+        @extend .nhsuk-checkboxes__input;
+
+        &~label {
+          @extend .nhsuk-checkboxes__label
+        }
+      }
+    }
+  }
+}
+.article-footer {
+  .cat-links {
+    float: right;
+    @extend .nhsuk-body-s;
+
+  }
+  .tags-links {
+    float: left;
+    @extend .nhsuk-body-s;
+
+  }
+}
+.navigation {
+  .nhsuk-pagination {
+    clear: both;
+    width: 100%;
+    ul.nhsuk-pagination__list {
+      margin-left: 0;
+      li.nhsuk-pagination-item--previous {
+        float: left;
+        a {
+          @extend .nhsuk-pagination__link;
+        }
+      }
+
+      li.nhsuk-pagination-item--next {
+        float: right;
+        a {
+          @extend .nhsuk-pagination__link;
+        }
+      }
+    }
+  }
+}

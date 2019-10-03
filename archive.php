@@ -39,7 +39,7 @@ get_header();
 
 				endwhile;
 
-				nightingale_pagination();
+				nightingale_archive_pagination();
 
 				else :
 
