@@ -30,14 +30,11 @@ function nightingale_category_parents( $id, $link = false, $separator = '', $nic
 		$chain     .= get_category_parents( $parent->parent, $link, $separator, $nicename, $visited, $iscrumb );
 	}
 	if ( $iscrumb ) {
-		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '"><span itemprop="name">' . $name . '</span></a></li>' . $separator;
+		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '"><span itemprop="name">' . $name . '</span></a></li>' . $separator;
 	} elseif ( $link && ! $iscrumb ) {
-		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '"><span itemprop=""name">' . $name . '</span></a>' . $separator . '</li>';
+		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '"><span itemprop=""name">' . $name . '</span></a>' . $separator . '</li>';
 	} else {
-		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><span itemprop="name">'.$name . $separator . '</span></li>';
+		$chain .= '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">'.$name . $separator . '</span></li>';
 	}
 
 	return $chain;
@@ -65,17 +62,13 @@ function nightingale_breadcrumb() {
                             if ( $thisCat->parent != 0 && ! is_wp_error( $cat_parents ) ) {
                                 echo $cat_parents;
                             }
-                            echo '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-      itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . get_category_link( $thisCat ) . '"><span itemprop="name">' . single_cat_title( '', false ) . '</span></a></li>';
+                            echo '<li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="' . get_category_link( $thisCat ) . '"><span itemprop="name">' . single_cat_title( '', false ) . '</span></a></li>';
                         } elseif ( is_archive() && ! is_category() ) { ?>
-                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-                                itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( 'Archives', 'text-domain' ); ?></span></li><?php
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( 'Archives', 'text-domain' ); ?></span></li><?php
                         } elseif ( is_search() ) { ?>
-                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-                                itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( 'Search Results', 'text-domain' ); ?></span></li><?php
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( 'Search Results', 'text-domain' ); ?></span></li><?php
                         } elseif ( is_404() ) { ?>
-                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-                                itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( '404 Not Found', 'text-domain' ); ?></span></li><?php
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><?php _e( '404 Not Found', 'text-domain' ); ?></span></li><?php
                         } elseif ( is_singular( 'post' ) ) {
                             $category    = get_the_category();
                             $category_id = get_cat_ID( $category[0]->cat_name );
@@ -84,8 +77,7 @@ function nightingale_breadcrumb() {
                                 echo $cat_parents;
                             }
                         } elseif ( is_singular( 'attachment' ) ) { ?>
-                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-                                itemtype="http://schema.org/ListItem"><span itemprop="name">
+                            <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">
                             <?php
                             the_title(); ?></span>
                             </li><?php
@@ -98,28 +90,23 @@ function nightingale_breadcrumb() {
                                 array_push( $ancestors, $post->ID );
                                 foreach ( $ancestors as $ancestor ) {
                                     if ( $ancestor != end( $ancestors ) ) { ?>
-                                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-                                            itemtype="http://schema.org/ListItem">
+                                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                                         <a itemprop="item" href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
                                             <span itemprop="name"><?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
                                         </a>
                                         </li><?php
                                     } else { ?>
-                                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-                                            itemtype="http://schema.org/ListItem"><span itemprop="name">
+                                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">
                                             <?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
                                         </li><?php
                                     }
                                 }
                             }
                         } ?>
-                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope
-                            itemtype="http://schema.org/ListItem"><span itemprop="name"><?php echo esc_html( the_title() ); ?></span></li> <?
+                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><?php echo esc_html( the_title() ); ?></span></li> <?
                     } ?>
                 </ol>
             </div>
         </nav><?php
     }
 }
-
-
