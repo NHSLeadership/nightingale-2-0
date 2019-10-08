@@ -46,8 +46,7 @@ function nightingale_breadcrumb() {
 	    ?>
         <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
             <div class="nhsuk-width-container">
-                <ol class="nhsuk-breadcrumb__list" typeof="BreadcrumbList" vocab="http://schema.org/"><?php
-                    // Adding the Home Page  ?>
+                <ol class="nhsuk-breadcrumb__list" typeof="BreadcrumbList" vocab="http://schema.org/">
                     <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="<?php echo esc_url( home_url() ); ?>"> <span itemprop="name">Home</span></a>
                     </li><?php
                     if ( ! is_front_page() ) {
@@ -103,7 +102,7 @@ function nightingale_breadcrumb() {
                                 }
                             }
                         } ?>
-                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><?php echo esc_html( the_title() ); ?></span></li> <?
+                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><?php echo esc_html( the_title() ); ?></span></li> <?php
                     } ?>
                 </ol>
             </div>
