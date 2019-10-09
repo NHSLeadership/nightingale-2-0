@@ -12,7 +12,7 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
+	<header class="entry-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'nightingale' ); ?></h1>
 	</header><!-- .page-header -->
 
