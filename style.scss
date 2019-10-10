@@ -24,14 +24,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
 // Core (required)
 @import 'node_modules/nhsuk-frontend/packages/core/all';
-
 // start importing the theme specific settings
-
-@import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
-@import 'assets/scss/nhs-colours'; // nhs colour pallette
-@import 'assets/scss/sidebar-widgets.scss'; // sidebar elements and subpages navigation
-@import 'assets/scss/header'; // header styles
-@import 'assets/scss/style_variations';//gutenberg blocks style variations
-@import 'assets/scss/comments-and-meta';//gutenberg blocks style variations
-@import 'assets/scss/learndash';//gutenberg blocks style variations
+@import 'assets/scss/generic-overrides';
+// generic over-rides to remove default wordpress styling issues
+@import 'assets/scss/nhs-colours';
+// nhs colour pallette
+@import 'assets/scss/sidebar-widgets.scss';
+// sidebar elements and subpages navigation
+@import 'assets/scss/header';
+// header styles
+@import 'assets/scss/style_variations';
+//gutenberg blocks style variations
+@import 'assets/scss/comments-and-meta';
+// LearnDash plugin styling to match NHSUK design patterns
+@import 'assets/scss/learndash-styling';
 

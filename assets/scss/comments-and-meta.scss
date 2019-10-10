@@ -24,7 +24,12 @@
         .comment-meta {
           a {
             text-decoration: none;
+            color: $color_nhsuk-black;
             @extend .nhsuk-body-s;
+            &:hover {
+              background: none;
+              border: none;
+            }
           }
         }
 

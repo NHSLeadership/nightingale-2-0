@@ -1,0 +1,153 @@
+.learndash-wrapper {
+  .ld-primary-color {
+    color: $color_nhsuk-blue;
+  }
+
+  .ld-icon.ld-primary-background {
+    background: $color_nhsuk-blue;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $color_nhsuk-black !important;
+    text-decoration: none;
+  }
+
+  .ld-button, input[type=submit], .ld-item-list-actions .ld-expand-button, .ld-logout, .ld-login {
+    @extend .nhsuk-button;
+  }
+
+  input[type=submit].learndash_mark_complete_button {
+    padding-right: 50px;
+  }
+
+  .ld-item-list-actions .ld-expand-button, .ld-logout {
+    @extend .nhsuk-button--secondary;
+  }
+
+  .sfwd-mark-complete::after {
+    top: 33%;
+  }
+
+  .ld-breadcrumbs {
+    .ld-status.ld-status-progress {
+      background: $color_nhsuk-blue;
+      border-radius: 4px;
+      color: $color_nhsuk-white;
+      font-size: 0.75rem;
+    }
+
+    .ld-status.ld-status-complete {
+      background: $color_nhsuk-green;
+      border-radius: 4px;
+      color: $color_nhsuk-white;
+      font-size: 0.75rem;
+    }
+  }
+
+  .ld-content-actions {
+    .ld-content-action {
+      .ld-button:first-of-type {
+        @extend .nhsuk-button--reverse;
+      }
+    }
+
+    a.ld-primary-color {
+      @extend .nhsuk-button;
+      @extend .nhsuk-button--secondary;
+      flex: initial;
+      -webkit-box-flex: initial;
+      -ms-flex: initial;
+    }
+  }
+
+  .ld-table-list {
+    @extend .nhsuk-care-card;
+
+    .ld-primary-color-hover:hover {
+      margin: 0 -20px;
+      padding: 20px 20px;
+
+      &:hover {
+        background: #ffcd60;
+      }
+    }
+
+    .ld-table-list-header {
+      @extend .nhsuk-care-card__heading-container;
+
+      .ld-table-list-title {
+        @extend .nhsuk-care-card__heading;
+      }
+    }
+
+    .ld-table-list-items {
+      background: $color_nhsuk-white;
+    }
+  }
+
+  .ld-item-list {
+    .ld-item-list-item {
+      .ld-item-list-item-preview {
+
+        a.ld-item-name:hover {
+          background: transparent !important;
+        }
+
+        &:hover {
+          background: transparent;
+          border: 3px solid #ffcd60;
+          margin: -3px;
+        }
+      }
+    }
+  }
+
+  .ld-progress {
+    margin: 1em 0 0;
+  }
+
+  .ld-breadcrumbs {
+    @extend .nhsuk-breadcrumb;
+
+    .ld-breadcrumbs-segments {
+      @extend .nhsuk-breadcrumb__list;
+      white-space: unset;
+
+      span {
+        @extend .nhsuk-breadcrumb__item;
+
+        a {
+          font-weight: 400;
+          color: $color_nhsuk-black;
+          padding: 10px;
+        }
+
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+
+
+  .ld-login-modal {
+    .ld-login-modal-form {
+      .ld-modal-heading {
+        color: $color_nhsuk-blue;
+      }
+
+      .login-username, .login-password {
+        &::before {
+          top: 2em;
+        }
+      }
+    }
+
+    input[type=submit] {
+      @extend .nhsuk-button;
+      margin-top: 1rem;
+    }
+  }
+}
