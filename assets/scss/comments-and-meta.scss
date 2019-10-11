@@ -7,9 +7,11 @@
   margin-bottom: 1rem;
   .comment-list {
     margin-bottom: 1rem;
+    background-color: #f0f4f5;
     .nhsuk-list-panel__item {
       display: block;
       padding: 1.5rem;
+      background-color: #f0f4f5;
       .children {
         margin-left: 0;
         margin-right: 0;
@@ -30,7 +32,7 @@
           width: 70%;
           position: relative;
           word-wrap: break-word;
-          background-color: $color_nhsuk-light-grey;
+          background-color: $color_nhsuk-white;
           &:after {
             content: '';
             position: absolute;

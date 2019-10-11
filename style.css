@@ -11551,11 +11551,13 @@ b {
 
 .nhsuk-list-panel .comment-list {
   margin-bottom: 1rem;
+  background-color: #f0f4f5;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item, .nhsuk-list-panel .comment-list #secondary section ul li, #secondary section ul .nhsuk-list-panel .comment-list li {
   display: block;
   padding: 1.5rem;
+  background-color: #f0f4f5;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .children, .nhsuk-list-panel .comment-list #secondary section ul li .children, #secondary section ul .nhsuk-list-panel .comment-list li .children {
@@ -11582,7 +11584,7 @@ b {
   width: 70%;
   position: relative;
   word-wrap: break-word;
-  background-color: #e8edee;
+  background-color: #ffffff;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment_body_comment:after, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment_body_comment:after, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment_body_comment:after {
