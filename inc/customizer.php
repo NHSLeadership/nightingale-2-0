@@ -395,6 +395,37 @@ function nightingale_customize_register( $wp_customize ) {
 		)
 	);
 
+	/*
+ * ------------------------------------------------------------
+ * SECTION: GA Tracking
+ * ------------------------------------------------------------
+ */
+	$wp_customize->add_section(
+		'section_google',
+		array(
+			'title'       => esc_html__( 'Google Tracking', 'nightingale' ),
+			'description' => esc_attr__( 'Do you wish to add Google Analytics Tracking?', 'nightingale' ),
+			'priority'    => 70,
+		)
+	);
+
+	$wp_customize->add_setting(
+		'google-utm',
+		array(
+			'default'           => 'GA-',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+	$wp_customize->add_control(
+		'google-utm',
+		array(
+			'label'         => esc_html__( 'Google Analytics Tracking ID', 'nightingale' ),
+			'description'   => esc_html__( 'Enter your Google tracking ID (everything after UA-)', 'nightingale' ),
+			'section'       => 'section_google',
+			'type'          => 'text',
+		)
+	);
+
 }
 
 add_action( 'customize_register', 'nightingale_customize_register' );
