@@ -31,7 +31,7 @@
                             <image src="https://assets.nhs.uk/images/nhs-logo.png" xlink:href=""></image>
                         </svg>
             <?php if ( get_theme_mod( 'show_sitename' ) === 'yes' ) { ?>
-                    <div class="nhsuk-header__<? echo get_theme_mod( 'logo_type' ); ?>al-service-name">
+                    <div class="nhsuk-header__<?php echo get_theme_mod( 'logo_type' ); ?>al-service-name">
                         <?php echo get_theme_mod( 'logo_title' ); ?>
                     </div>
                     <?php
