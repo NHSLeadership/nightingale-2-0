@@ -10180,6 +10180,22 @@ section {
   color: #005eb8;
 }
 
+.error-404 .nhsuk-header__search-toggle, .error-404 .nhsuk-search__close {
+  display: none;
+}
+
+.error-404 .nhsuk-header__search-wrap {
+  display: inline-block;
+  width: 267px;
+  border: 2px solid #005eb8;
+  border-radius: 4px;
+}
+
+.error-404 .nhsuk-header__search-wrap input[type="text"] {
+  border-radius: 2px 0 0 2px;
+  border-right: 2px solid #005eb8;
+}
+
 .has-white-color {
   color: #ffffff;
 }
