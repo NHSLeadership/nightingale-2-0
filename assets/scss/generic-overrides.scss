@@ -66,3 +66,18 @@
 .is-style-outline .wp-block-button__link {
   color: $color_nhsuk-blue;
 }
+.error-404 {
+  .nhsuk-header__search-toggle, .nhsuk-search__close {
+    display: none;
+  }
+  .nhsuk-header__search-wrap {
+    display: inline-block;
+    width: 267px;
+    border: 2px solid $color_nhsuk-blue;
+    border-radius: 4px;
+    input[type="text"] {
+      border-radius: 2px 0 0 2px;
+      border-right: 2px solid #005eb8;
+    }
+  }
+}

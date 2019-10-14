@@ -1,6 +1,13 @@
 .nhsuk-header--transactional {
   .nhsuk-header__logo {
+    position: relative;
+    top: -8px;
     height: auto;
+    padding: 20px 0 10px;
+    .nhsuk-logo {
+      position: relative;
+      top: 8px;
+    }
     a.nhsuk-header__link {
       height: auto;
       width: auto;
@@ -11,13 +18,11 @@
         color: $color_nhsuk-white;
         font-size: 1.25rem;
         font-weight: 700;
-        padding: 20px 10px 20px 100px;
-        position: absolute;
-        top: 30px;
+        display: contents;
       }
 
       .nhsuk-header__organisational-service-name {
-        width: max-content;
+        width: auto;
         color: $color_nhsuk-white;
         font-size: 1.25rem;
         font-weight: 700;
@@ -26,7 +31,7 @@
 
       .nhsuk-header__organisational-qualifier {
         color: $color_nhsuk-white;
-        width: max-content;
+        width: auto;
         padding: 0;
       }
     }
@@ -89,7 +94,6 @@
       border-color: $color_nhsuk-blue;
       box-shadow: none;
       color: $color_nhsuk-blue;
-      right: 20px;
 
       .nhsuk-icon__search {
         fill: $color_nhsuk-blue;
@@ -107,7 +111,6 @@
   }
   .nhsuk-header__menu-toggle {
     margin-right: -4px;
-    margin-top: 50px;
   }
   @media (min-width: 40.0625em) {
     margin-top: 0;
@@ -116,5 +119,23 @@
     .autocomplete__input {
       height: 52px;
     }
+    .nhsuk-header__content {
+      float: right ;
+    }
+    .nhsuk-header__menu {
+      float: right;
+      margin-left: 0;
+    }
+    .nhsuk-header__search {
+      margin-right: 16px;
+      float: right;
+    }
+    .nhsuk-header__logo {
+      padding: 20px 16px 0;
+    }
+    .nhsuk-header__search-toggle {
+      position: relative;
+    }
+
   }
 }
