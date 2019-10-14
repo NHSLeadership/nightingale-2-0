@@ -43,11 +43,12 @@ function nightingale_category_parents( $id, $link = false, $separator = '', $nic
 function nightingale_breadcrumb() {
 	global $wp_query;
 	if (!is_home()) {
+	    $back_one_level = array( esc_url( home_url() ), __( 'Home', 'nightingale' ));
 	    ?>
         <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
             <div class="nhsuk-width-container">
                 <ol class="nhsuk-breadcrumb__list" typeof="BreadcrumbList" vocab="http://schema.org/">
-                    <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="<?php echo esc_url( home_url() ); ?>"> <span itemprop="name">Home</span></a>
+                    <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="<?php echo esc_url( home_url() ); ?>"> <span itemprop="name"><?php echo __( 'Home', 'nightingale' ); ?></span></a>
                     </li><?php
                     if ( ! is_front_page() ) {
                         // Check for categories, archives, search page, single posts, pages, the 404 page, and attachments
@@ -75,6 +76,7 @@ function nightingale_breadcrumb() {
                             if ( ! is_wp_error( $cat_parents ) ) {
                                 echo $cat_parents;
                             }
+
                         } elseif ( is_singular( 'attachment' ) ) { ?>
                             <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">
                             <?php
@@ -94,17 +96,25 @@ function nightingale_breadcrumb() {
                                             <span itemprop="name"><?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
                                         </a>
                                         </li><?php
-                                    } else { ?>
-                                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">
-                                            <?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
-                                        </li><?php
+                                        $back_one_level = array( esc_url( get_permalink( $ancestor ) ), strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) );
                                     }
                                 }
+		                        $parent         = $post->post_parent;
+		                        $back_one_level = array( get_permalink( $parent ), get_the_title( $parent ) );
+
                             }
                         } ?>
-                        <li class="nhsuk-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name"><?php echo esc_html( the_title() ); ?></span></li> <?php
-                    } ?>
+                        <li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li> <?php
+                    }
+
+
+                    ?>
                 </ol>
+                <p class="nhsuk-breadcrumb__back">
+                    <a class="nhsuk-breadcrumb__backlink" href="<?php echo $back_one_level[0]; ?>">
+                        <?php echo __('Back to ', 'nightingale') . $back_one_level[1]; ?>
+                    </a>
+                </p>
             </div>
         </nav><?php
     }
