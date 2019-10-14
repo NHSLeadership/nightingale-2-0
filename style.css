@@ -1861,7 +1861,7 @@ p,
   color: inherit;
 }
 
-.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -1871,7 +1871,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -1879,14 +1879,14 @@ p,
 }
 
 @media print {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
     margin-bottom: 24px;
   }
 }
@@ -2016,15 +2016,15 @@ p + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h2,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h2,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h2,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h2,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
 .article-footer .cat-links + h2,
 .article-footer .tags-links + h2,
 .nhsuk-body-s + .nhsuk-heading-l,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-l,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-l,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-l,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 .article-footer .cat-links + .nhsuk-heading-l,
 .article-footer .tags-links + .nhsuk-heading-l,
 .nhsuk-list + h2,
@@ -2042,15 +2042,15 @@ ol + .nhsuk-heading-l {
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h2,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h2,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h2,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h2,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
   .article-footer .cat-links + h2,
   .article-footer .tags-links + h2,
   .nhsuk-body-s + .nhsuk-heading-l,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-l,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-l,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-l,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   .article-footer .cat-links + .nhsuk-heading-l,
   .article-footer .tags-links + .nhsuk-heading-l,
   .nhsuk-list + h2,
@@ -2068,35 +2068,35 @@ p + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
 address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h3,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h3,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h3,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
 .article-footer .tags-links + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-m,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-m,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-m,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 .article-footer .cat-links + .nhsuk-heading-m,
 .article-footer .tags-links + .nhsuk-heading-m,
 .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-.nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+.nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
 .article-footer .nightingale-latest-news .nhsuk-panel .cat-links + a,
 .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
 .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
 .nightingale-latest-news .sticky .nhsuk-body-s + a,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-.nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+.nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
 .article-footer .nightingale-latest-news .sticky .cat-links + a,
 .nightingale-latest-news .sticky .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .sticky .tags-links + a,
@@ -2120,15 +2120,15 @@ p + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h4,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h4,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h4,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h4,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h4,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
 .article-footer .cat-links + h4,
 .article-footer .tags-links + h4,
 .nhsuk-body-s + .nhsuk-heading-s,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-s,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-s,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-s,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 .article-footer .cat-links + .nhsuk-heading-s,
 .article-footer .tags-links + .nhsuk-heading-s,
 .nhsuk-list + h4,
@@ -2146,35 +2146,35 @@ ol + .nhsuk-heading-s {
   .nhsuk-body-m + .nhsuk-heading-m,
   address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h3,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h3,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h3,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
   .article-footer .tags-links + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-m,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-m,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-m,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   .article-footer .cat-links + .nhsuk-heading-m,
   .article-footer .tags-links + .nhsuk-heading-m,
   .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-  .nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+  .nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
   .article-footer .nightingale-latest-news .nhsuk-panel .cat-links + a,
   .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
   .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
   .nightingale-latest-news .sticky .nhsuk-body-s + a,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-  .nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+  .nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
   .article-footer .nightingale-latest-news .sticky .cat-links + a,
   .nightingale-latest-news .sticky .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .sticky .tags-links + a,
@@ -2198,15 +2198,15 @@ ol + .nhsuk-heading-s {
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h4,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h4,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h4,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h4,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h4,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
   .article-footer .cat-links + h4,
   .article-footer .tags-links + h4,
   .nhsuk-body-s + .nhsuk-heading-s,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-s,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-s,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-s,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   .article-footer .cat-links + .nhsuk-heading-s,
   .article-footer .tags-links + .nhsuk-heading-s,
   .nhsuk-list + h4,
@@ -10324,7 +10324,7 @@ p,
   color: inherit;
 }
 
-.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -10334,7 +10334,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -10342,14 +10342,14 @@ p,
 }
 
 @media print {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
     margin-bottom: 24px;
   }
 }
@@ -10479,15 +10479,15 @@ p + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h2,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h2,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h2,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h2,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
 .article-footer .cat-links + h2,
 .article-footer .tags-links + h2,
 .nhsuk-body-s + .nhsuk-heading-l,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-l,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-l,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-l,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 .article-footer .cat-links + .nhsuk-heading-l,
 .article-footer .tags-links + .nhsuk-heading-l,
 .nhsuk-list + h2,
@@ -10505,15 +10505,15 @@ ol + .nhsuk-heading-l {
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h2,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h2,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h2,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h2,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
   .article-footer .cat-links + h2,
   .article-footer .tags-links + h2,
   .nhsuk-body-s + .nhsuk-heading-l,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-l,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-l,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-l,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   .article-footer .cat-links + .nhsuk-heading-l,
   .article-footer .tags-links + .nhsuk-heading-l,
   .nhsuk-list + h2,
@@ -10531,35 +10531,35 @@ p + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
 address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h3,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h3,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h3,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
 .article-footer .tags-links + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-m,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-m,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-m,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 .article-footer .cat-links + .nhsuk-heading-m,
 .article-footer .tags-links + .nhsuk-heading-m,
 .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-.nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+.nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+.nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
 .article-footer .nightingale-latest-news .nhsuk-panel .cat-links + a,
 .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
 .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
 .nightingale-latest-news .sticky .nhsuk-body-s + a,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-.nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+.nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+.nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
 .article-footer .nightingale-latest-news .sticky .cat-links + a,
 .nightingale-latest-news .sticky .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .sticky .tags-links + a,
@@ -10583,15 +10583,15 @@ p + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h4,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h4,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h4,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h4,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h4,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
 .article-footer .cat-links + h4,
 .article-footer .tags-links + h4,
 .nhsuk-body-s + .nhsuk-heading-s,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-s,
-.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-s,
-#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-s,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+.nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+#secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 .article-footer .cat-links + .nhsuk-heading-s,
 .article-footer .tags-links + .nhsuk-heading-s,
 .nhsuk-list + h4,
@@ -10609,35 +10609,35 @@ ol + .nhsuk-heading-s {
   .nhsuk-body-m + .nhsuk-heading-m,
   address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h3,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h3,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h3,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
   .article-footer .tags-links + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-m,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-m,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-m,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   .article-footer .cat-links + .nhsuk-heading-m,
   .article-footer .tags-links + .nhsuk-heading-m,
   .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
-  .nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+  .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
+  .nightingale-latest-news .nhsuk-panel #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
   .article-footer .nightingale-latest-news .nhsuk-panel .cat-links + a,
   .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
   .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
   .nightingale-latest-news .sticky .nhsuk-body-s + a,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + a,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + a,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta .nightingale-latest-news .sticky a + a,
-  .nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + a,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+  .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + a,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
+  .nightingale-latest-news .sticky #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + a,
   .article-footer .nightingale-latest-news .sticky .cat-links + a,
   .nightingale-latest-news .sticky .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .sticky .tags-links + a,
@@ -10661,15 +10661,15 @@ ol + .nhsuk-heading-s {
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + h4,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + h4,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + h4,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h4,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h4,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
   .article-footer .cat-links + h4,
   .article-footer .tags-links + h4,
   .nhsuk-body-s + .nhsuk-heading-s,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a + .nhsuk-heading-s,
-  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a + .nhsuk-heading-s,
-  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a + .nhsuk-heading-s,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+  .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
+  #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   .article-footer .cat-links + .nhsuk-heading-s,
   .article-footer .tags-links + .nhsuk-heading-s,
   .nhsuk-list + h4,
@@ -11551,34 +11551,156 @@ b {
 
 .nhsuk-list-panel .comment-list {
   margin-bottom: 1rem;
+  background-color: #f0f4f5;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item, .nhsuk-list-panel .comment-list #secondary section ul li, #secondary section ul .nhsuk-list-panel .comment-list li {
-  border-bottom: 1px solid #d8dde0;
   display: block;
-  padding: 12px 16px;
+  padding: 1.5rem;
+  background-color: #f0f4f5;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .children, .nhsuk-list-panel .comment-list #secondary section ul li .children, #secondary section ul .nhsuk-list-panel .comment-list li .children {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .children .comment, .nhsuk-list-panel .comment-list #secondary section ul li .children .comment, #secondary section ul .nhsuk-list-panel .comment-list li .children .comment {
+  padding-right: 0;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body {
+  display: flex;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment_body_comment, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment_body_comment, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment_body_comment {
+  display: block;
+  text-align: left;
+  border-radius: 3px;
+  order: 3;
+  line-height: 1.5rem;
+  padding: 18px 40px 18px 22px;
+  width: 70%;
+  position: relative;
+  word-wrap: break-word;
+  background-color: #ffffff;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment_body_comment:after, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment_body_comment:after, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment_body_comment:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #f3f3f3;
+  left: -8px;
+  top: 18px;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard {
-  float: right;
+  order: 1;
+  width: 17%;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn {
   font-style: normal;
 }
 
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard img, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard img, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard img {
-  display: none;
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard cite, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard cite, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard cite {
+  display: block;
+  text-decoration: none;
+  color: #656c71;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0 3px 0;
 }
 
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a {
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a {
   text-decoration: none;
   color: #212b32;
 }
 
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-meta a:hover, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-meta a:hover, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-meta a:hover {
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a:hover, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a:hover, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a:hover {
   background: none;
   border: none;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-avatar, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-avatar, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-avatar {
+  order: 2;
+  padding: 10px 18px 0 3px;
+  width: 8%;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-avatar img, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-avatar img, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-avatar img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: block;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply {
+  width: 10%;
+  order: 4;
+  text-align: right;
+  font-size: 0.75rem;
+  padding: 5px;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply svg, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply svg, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: auto;
+  fill: #005eb8;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply .comment-edit, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply .comment-edit, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply .comment-edit {
+  width: 15px;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply .comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply .comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply .comment-reply-link {
+  display: inline-block;
+}
+
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply .comment-edit-link, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply .comment-edit-link, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply .comment-edit-link {
+  display: inline-block;
+  position: relative;
+  left: -95px;
+}
+
+@media (max-width: 800px) {
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body {
+    flex-wrap: wrap;
+  }
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment_body_comment, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment_body_comment, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment_body_comment {
+    width: 100%;
+    order: 1;
+  }
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment_body_comment:after, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment_body_comment:after, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment_body_comment:after {
+    width: 12px;
+    height: 12px;
+    top: initial;
+    left: 28px;
+    bottom: -6px;
+  }
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-avatar, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-avatar, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-avatar {
+    order: 2;
+    width: 20%;
+  }
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard {
+    order: 3;
+    width: 60%;
+  }
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply {
+    width: 20%;
+  }
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply .comment-edit-link, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply .comment-edit-link, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply .comment-edit-link {
+    left: 0;
+  }
 }
 
 .nhsuk-list-panel .comment-respond textarea {
