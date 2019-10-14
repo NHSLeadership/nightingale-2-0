@@ -158,10 +158,9 @@ function nightingale_comment_display($comment, $args, $depth) {
 	} ?>
 
     <div class="comment_body_comment"><?php comment_text(); ?></div>
-    <div class="comment-avatar"><?php if ( $args['avatar_size'] != 0 ) {
-		echo get_avatar( $comment, $args['avatar_size'] );
-	}
-        ?></div>
+    <div class="comment-avatar">
+	    <?php echo ($args['avatar_size'] != 0) ? get_avatar( $comment,$args['avatar_size']) : ''?>
+    </div>
     <div class="comment-author vcard"><?php
 
 	printf( __( '<cite class="fn">%s</cite>' ), get_comment_author_link() ); ?>
