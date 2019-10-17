@@ -38,9 +38,16 @@
  - If you have developed improvements, please consider giving back to the Open Source community by submitting them as
   pull requests to this repository
   
-  
+## Developing this theme's styling output
+##### if you are developing this theme locally, any style changes you make will need to be reflected in the output
+To accomplish this, you will need to take the following steps:
+ - Install npm locally `npm run install`
+ - Compile the css from all the downstream libraries and local files `npm run build`
+ - Compress the css output `npm run compress`
+ - Regenerate the critical css `npm run critical`
+   
 ## Please note
- - XML/RPC will be disabled on activation of the theme. If you have a specific need to re-enable XML-RPC you may do so at the bottom of `functions.php`.
+ - XML/RPC will be disabled on activation of the theme. If you have a specific need to re-enable XML-RPC you may do so at line 37 of `inc/template-functions.php`.
   
 ## Progress
  - [x] Load in the NHS Frontend library
