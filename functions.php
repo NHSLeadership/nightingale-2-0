@@ -163,11 +163,6 @@ function nightingale_setup() {
 	remove_theme_support( 'custom-background' );
 	unregister_widget( 'WP_Widget_Search' ); // taking out search widget as included in header by default.
 
-	/**
-	 * Disable XML RPC by default
-	 */
-	add_filter( 'xmlrpc_enabled', '__return_false' );
-
 }
 
 add_action( 'after_setup_theme', 'nightingale_setup' );
