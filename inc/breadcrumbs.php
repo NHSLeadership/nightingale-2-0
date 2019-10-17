@@ -43,6 +43,8 @@ function nightingale_category_parents( $id, $link = false, $separator = '', $nic
 function nightingale_breadcrumb() {
 	global $wp_query;
 	if (!is_home()) {
+
+		if ( ! is_front_page() ) {
 	    $back_one_level = array( esc_url( home_url() ), __( 'Home', 'nightingale' ));
 	    ?>
         <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
@@ -53,73 +55,75 @@ function nightingale_breadcrumb() {
                             <?php echo __( 'Home', 'nightingale' ); ?>
                         </a>
                     </li><?php
-                    if ( ! is_front_page() ) {
-                        // Check for categories, archives, search page, single posts, pages, the 404 page, and attachments
-                        if ( is_category() ) {
-                            $cat_obj   = $wp_query->get_queried_object();
-                            $thisCat   = get_category( $cat_obj->term_id );
-                            $parentCat = get_category( $thisCat->parent );
-                            if ( $thisCat->parent != 0 ) {
-                                $cat_parents = nightingale_category_parents( $parentCat, true, '', false, array(), true );
-                            }
-                            if ( $thisCat->parent != 0 && ! is_wp_error( $cat_parents ) ) {
-                                echo $cat_parents;
-                            }
-                            echo '<li class="nhsuk-breadcrumb__item"><a  href="' . get_category_link( $thisCat ) . '">' . single_cat_title( '', false ) . '</a></li>';
-                        } elseif ( is_archive() && ! is_category() ) { ?>
+	                    // Check for categories, archives, search page, single posts, pages, the 404 page, and attachments
+	                    if ( is_category() ) {
+		                    $cat_obj   = $wp_query->get_queried_object();
+		                    $thisCat   = get_category( $cat_obj->term_id );
+		                    $parentCat = get_category( $thisCat->parent );
+		                    if ( $thisCat->parent != 0 ) {
+			                    $cat_parents = nightingale_category_parents( $parentCat, true, '', false, array(), true );
+		                    }
+		                    if ( $thisCat->parent != 0 && ! is_wp_error( $cat_parents ) ) {
+			                    echo $cat_parents;
+		                    }
+		                    echo '<li class="nhsuk-breadcrumb__item"><a  href="' . get_category_link( $thisCat ) . '">' . single_cat_title( '', false ) . '</a></li>';
+	                    } elseif ( is_archive() && ! is_category() ) { ?>
                             <li class="nhsuk-breadcrumb__item"><?php _e( 'Archives', 'text-domain' ); ?><?php
-                        } elseif ( is_search() ) { ?>
+	                    } elseif ( is_search() ) { ?>
                             <li class="nhsuk-breadcrumb__item"><?php _e( 'Search Results', 'text-domain' ); ?></li><?php
-                        } elseif ( is_404() ) { ?>
+	                    } elseif ( is_404() ) { ?>
                             <li class="nhsuk-breadcrumb__item"><?php _e( '404 Not Found', 'text-domain' ); ?></li><?php
-                        } elseif ( is_singular( 'post' ) ) {
-                            $category    = get_the_category();
-                            $category_id = get_cat_ID( $category[0]->cat_name );
-                            $cat_parents = nightingale_category_parents( $category_id, true, '', false, array(), true );
-                            if ( ! is_wp_error( $cat_parents ) ) {
-                                echo $cat_parents;
-                            }
+	                    } elseif ( is_singular( 'post' ) ) {
+		                    $category    = get_the_category();
+		                    $category_id = get_cat_ID( $category[0]->cat_name );
+		                    $cat_parents = nightingale_category_parents( $category_id, true, '', false, array(), true );
+		                    if ( ! is_wp_error( $cat_parents ) ) {
+			                    echo $cat_parents;
+		                    }
 
-                        } elseif ( is_singular( 'attachment' ) ) { ?>
-                            <li class="nhsuk-breadcrumb__item" >
-                            <?php
-                            the_title(); ?>
+	                    } elseif ( is_singular( 'attachment' ) ) { ?>
+                            <li class="nhsuk-breadcrumb__item">
+		                    <?php
+		                    the_title(); ?>
                             </li><?php
-                        } elseif ( is_page() ) {
-                            $post = $wp_query->get_queried_object();
-                            if ( $post->post_parent == 0 ) {
-                            } else {
-                                $title     = the_title( '', '', false );
-                                $ancestors = array_reverse( get_post_ancestors( $post->ID ) );
-                                array_push( $ancestors, $post->ID );
+	                    } elseif ( is_page() ) {
+		                    $post = $wp_query->get_queried_object();
+		                    if ( $post->post_parent == 0 ) {
+		                    } else {
+			                    $title     = the_title( '', '', false );
+			                    $ancestors = array_reverse( get_post_ancestors( $post->ID ) );
+			                    array_push( $ancestors, $post->ID );
 
-                                foreach ( $ancestors as $ancestor ) {
-                                    if ( $ancestor != end( $ancestors ) ) { ?>
+			                    foreach ( $ancestors as $ancestor ) {
+				                    if ( $ancestor != end( $ancestors ) ) { ?>
                                         <li class="nhsuk-breadcrumb__item">
                                         <a href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
-                                            <?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
+						                    <?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
                                         </a>
                                         </li><?php
-                                        $back_one_level = array( esc_url( get_permalink( $ancestor ) ), strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) );
-                                    }
-                                }
-		                        $parent         = $post->post_parent;
-		                        $back_one_level = array( get_permalink( $parent ), get_the_title( $parent ) );
+					                    $back_one_level = array(
+						                    esc_url( get_permalink( $ancestor ) ),
+						                    strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) )
+					                    );
+				                    }
+			                    }
+			                    $parent         = $post->post_parent;
+			                    $back_one_level = array( get_permalink( $parent ), get_the_title( $parent ) );
 
-                            }
-                        } ?>
+		                    }
+	                    } ?>
                         <li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li> <?php
+
+
+	                    ?>
+                        </ol>
+                        <p class="nhsuk-breadcrumb__back">
+                            <a class="nhsuk-breadcrumb__backlink" href="<?php echo $back_one_level[0]; ?>">
+			                    <?php echo __( 'Back to ', 'nightingale' ) . $back_one_level[1]; ?>
+                            </a>
+                        </p>
+                        </div>
+                        </nav><?php
                     }
-
-
-                    ?>
-                </ol>
-                <p class="nhsuk-breadcrumb__back">
-                    <a class="nhsuk-breadcrumb__backlink" href="<?php echo $back_one_level[0]; ?>">
-                        <?php echo __('Back to ', 'nightingale') . $back_one_level[1]; ?>
-                    </a>
-                </p>
-            </div>
-        </nav><?php
     }
 }
