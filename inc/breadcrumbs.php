@@ -93,14 +93,15 @@ function nightingale_breadcrumb() {
 			                    $title     = the_title( '', '', false );
 			                    $ancestors = array_reverse( get_post_ancestors( $post->ID ) );
 			                    array_push( $ancestors, $post->ID );
-
+			                    $home_page = get_option( 'page_on_front' );
 			                    foreach ( $ancestors as $ancestor ) {
-				                    if ( $ancestor != end( $ancestors ) ) { ?>
-                                        <li class="nhsuk-breadcrumb__item">
-                                        <a href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
-						                    <?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
-                                        </a>
-                                        </li><?php
+				                    if ( ( $ancestor != end( $ancestors ) ) && ( ( $home_page != $ancestor ) ) ) {
+					                        ?>
+                                            <li class="nhsuk-breadcrumb__item">
+                                            <a href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
+						                        <?php echo strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ); ?></span>
+                                            </a>
+                                            </li><?php
 					                    $back_one_level = array(
 						                    esc_url( get_permalink( $ancestor ) ),
 						                    strip_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) )
