@@ -41,7 +41,6 @@ test.html
 # NPM Generated Files
 node_modules/
 nhsblocks/node_modules/
-style.min.css
 style-gutenburg.min.css
 .sass-cache/
 
