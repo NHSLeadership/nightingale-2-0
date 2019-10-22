@@ -3271,7 +3271,7 @@ b {
  * 3. Use a pseudo element to expand the click target area to include the
  *    button's shadow as well, in case users try to click it.
  */
-.nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+.nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -3299,7 +3299,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -3307,50 +3307,50 @@ b {
 }
 
 @media print {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus {
+.nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus {
   box-shadow: 0 0 0 4px #ffb81C;
   outline: 4px solid transparent;
   outline-offset: 4px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit {
     margin-bottom: 36px;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit {
     padding: 8px 16px;
   }
 }
 
-.nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover {
+.nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, #login #loginform #wp-submit:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover {
   color: #ffffff;
   text-decoration: none;
 }
 
-.nhsuk-button::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner, .wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner {
+.nhsuk-button::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner, .wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner, #login #loginform #wp-submit::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-.nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, .nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus {
+.nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus {
   background-color: #00662f;
 }
 
-.nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active {
+.nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active {
   box-shadow: none;
   top: 4px;
 }
 
-.nhsuk-button::before, .wp-block-button__link::before, .wp-block-file__button::before, .wp-block-file a.wp-block-file__button::before, .wp-block-file a.wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:focus::before, .wp-block-file a.wp-block-file__button:hover::before, .wp-block-file a.wp-block-file__button:visited::before {
+.nhsuk-button::before, .wp-block-button__link::before, .wp-block-file__button::before, .wp-block-file a.wp-block-file__button::before, .wp-block-file a.wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:focus::before, .wp-block-file a.wp-block-file__button:hover::before, .wp-block-file a.wp-block-file__button:visited::before, #login #loginform #wp-submit::before {
   background: transparent;
   bottom: -6px;
   content: '';
@@ -3361,7 +3361,7 @@ b {
   top: -2px;
 }
 
-.nhsuk-button:active::before, .wp-block-button__link:active::before, .wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:active::before {
+.nhsuk-button:active::before, .wp-block-button__link:active::before, .wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:active::before, #login #loginform #wp-submit:active::before {
   top: -6px;
 }
 
@@ -3412,10 +3412,12 @@ b {
 .wp-block-button__link[disabled="disabled"],
 .wp-block-file__button[disabled="disabled"],
 .wp-block-file a.wp-block-file__button[disabled="disabled"],
+#login #loginform #wp-submit[disabled="disabled"],
 .nhsuk-button[disabled],
 .wp-block-button__link[disabled],
 .wp-block-file__button[disabled],
-.wp-block-file a.wp-block-file__button[disabled] {
+.wp-block-file a.wp-block-file__button[disabled],
+#login #loginform #wp-submit[disabled] {
   background-color: #007f3b;
   opacity: 0.5;
   pointer-events: none;
@@ -3426,10 +3428,12 @@ b {
 .wp-block-button__link[disabled="disabled"]:hover,
 .wp-block-file__button[disabled="disabled"]:hover,
 .wp-block-file a.wp-block-file__button[disabled="disabled"]:hover,
+#login #loginform #wp-submit[disabled="disabled"]:hover,
 .nhsuk-button[disabled]:hover,
 .wp-block-button__link[disabled]:hover,
 .wp-block-file__button[disabled]:hover,
-.wp-block-file a.wp-block-file__button[disabled]:hover {
+.wp-block-file a.wp-block-file__button[disabled]:hover,
+#login #loginform #wp-submit[disabled]:hover {
   background-color: #007f3b;
   cursor: default;
 }
@@ -3439,10 +3443,12 @@ b {
 .wp-block-button__link[disabled="disabled"]:focus,
 .wp-block-file__button[disabled="disabled"]:focus,
 .wp-block-file a.wp-block-file__button[disabled="disabled"]:focus,
+#login #loginform #wp-submit[disabled="disabled"]:focus,
 .nhsuk-button[disabled]:focus,
 .wp-block-button__link[disabled]:focus,
 .wp-block-file__button[disabled]:focus,
-.wp-block-file a.wp-block-file__button[disabled]:focus {
+.wp-block-file a.wp-block-file__button[disabled]:focus,
+#login #loginform #wp-submit[disabled]:focus {
   background-color: #007f3b;
   outline: none;
 }
@@ -3452,10 +3458,12 @@ b {
 .wp-block-button__link[disabled="disabled"]:active,
 .wp-block-file__button[disabled="disabled"]:active,
 .wp-block-file a.wp-block-file__button[disabled="disabled"]:active,
+#login #loginform #wp-submit[disabled="disabled"]:active,
 .nhsuk-button[disabled]:active,
 .wp-block-button__link[disabled]:active,
 .wp-block-file__button[disabled]:active,
-.wp-block-file a.wp-block-file__button[disabled]:active {
+.wp-block-file a.wp-block-file__button[disabled]:active,
+#login #loginform #wp-submit[disabled]:active {
   box-shadow: 0 4px 0 #003317;
   top: 0;
 }
@@ -6417,7 +6425,7 @@ b {
   }
 }
 
-.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
+.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, #login #loginform label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
   margin-bottom: 8px;
 }
 
@@ -6524,7 +6532,7 @@ b {
  *    as background-color and color need to always be set together, color should
  *    not be set either.
  */
-.nhsuk-input {
+.nhsuk-input, #login #loginform .user-login, #login #loginform .user_pass {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -6546,7 +6554,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-input {
+  .nhsuk-input, #login #loginform .user-login, #login #loginform .user_pass {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -6554,25 +6562,27 @@ b {
 }
 
 @media print {
-  .nhsuk-input {
+  .nhsuk-input, #login #loginform .user-login, #login #loginform .user_pass {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-input:focus {
+.nhsuk-input:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus {
   box-shadow: 0 0 0 4px #ffb81C;
   outline: 4px solid transparent;
   outline-offset: 4px;
 }
 
-.nhsuk-input::-webkit-outer-spin-button,
-.nhsuk-input::-webkit-inner-spin-button {
+.nhsuk-input::-webkit-outer-spin-button, #login #loginform .user-login::-webkit-outer-spin-button, #login #loginform .user_pass::-webkit-outer-spin-button,
+.nhsuk-input::-webkit-inner-spin-button,
+#login #loginform .user-login::-webkit-inner-spin-button,
+#login #loginform .user_pass::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.nhsuk-input[type="number"] {
+.nhsuk-input[type="number"], #login #loginform .user-login[type="number"], #login #loginform .user_pass[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -6656,7 +6666,7 @@ b {
 /* ==========================================================================
    COMPONENTS/ #LABEL
    ========================================================================== */
-.nhsuk-label {
+.nhsuk-label, #login #loginform label {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -6666,7 +6676,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-label {
+  .nhsuk-label, #login #loginform label {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -6674,7 +6684,7 @@ b {
 }
 
 @media print {
-  .nhsuk-label {
+  .nhsuk-label, #login #loginform label {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -10113,7 +10123,7 @@ section {
   }
 }
 
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:active, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:focus, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:focus, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:hover, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:visited, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:visited, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
+.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:active, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:focus, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:focus, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:hover, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link:visited, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:link:visited, .edit-post-visual-editor #login #loginform #wp-submit:link, #login #loginform .edit-post-visual-editor #wp-submit:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:visited, .edit-post-visual-editor #login #loginform #wp-submit:visited, #login #loginform .edit-post-visual-editor #wp-submit:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:active, .edit-post-visual-editor #login #loginform #wp-submit:active, #login #loginform .edit-post-visual-editor #wp-submit:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover, .wp-block-file .edit-post-visual-editor a.wp-block-file__button:hover, .edit-post-visual-editor #login #loginform #wp-submit:hover, #login #loginform .edit-post-visual-editor #wp-submit:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
   color: #ffffff;
   text-decoration: none;
 }
@@ -10403,4 +10413,19 @@ section {
 
 .gform_body .gform_wrapper li.gfield fieldset .nhsuk-textarea {
   width: 100%;
+}
+
+/* login form customisation */
+#login {
+  padding-top: 0 !important;
+  width: 90%;
+}
+
+#login #loginform {
+  margin-top: 0;
+  box-shadow: none;
+}
+
+#login #loginform #wp-submit {
+  height: auto;
 }

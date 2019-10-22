@@ -402,6 +402,11 @@ require get_template_directory() . '/inc/custom-gutenberg.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Login Screen
+ */
+require get_template_directory() . '/inc/login.php';
+
+/**
  * Pagination
  */
 require get_template_directory() . '/inc/pagination.php';
