@@ -438,6 +438,11 @@ require get_template_directory() . '/inc/performance-optimisations.php';
  */
 require get_template_directory() . '/inc/critical-style.php';
 
+/**
+ * Add a pill next to comment author name showing their user role.
+ */
+require get_template_directory() . '/inc/comment_author_role.php';
+
 add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3 );
 
 /**
