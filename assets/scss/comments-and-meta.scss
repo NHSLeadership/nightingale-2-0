@@ -50,6 +50,27 @@
           width: 17%;
           .fn {
             font-style: normal;
+            .comment-author-label {
+              border-radius: 4px;
+              border: 2px solid;
+              color: $color_nhsuk-blue;
+              border-color: $color_nhsuk-blue;
+              background: $color_nhsuk-white;
+              font-size: .75rem;
+              text-transform: uppercase;
+              font-weight: 700;
+              letter-spacing: .5px;
+              text-align: center;
+              padding: 5px 12px;
+              &.comment-author-label-administrator {
+                color: $color_nhsuk-red;
+                border-color: $color_nhsuk-red;
+              }
+              &.comment-author-label-participant {
+                color: $color_nhsuk-green;
+                border-color: $color_nhsuk-green;
+              }
+            }
           }
           cite {
             display: block;
@@ -58,7 +79,6 @@
             font-weight: bold;
             text-overflow: ellipsis;
             overflow: hidden;
-            white-space: nowrap;
             padding: 10px 0 3px 0;
           }
           .comment-meta {

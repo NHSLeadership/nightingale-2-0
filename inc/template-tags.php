@@ -163,7 +163,7 @@ function nightingale_comment_display($comment, $args, $depth) {
     </div>
     <div class="comment-author vcard"><?php
 
-	printf( __( '<cite class="fn">%s</cite>' ), get_comment_author_link() ); ?>
+	printf( __( '<cite class="fn">%s</cite>' ), get_comment_author_link() );	?>
 
     <div class="comment-meta commentmetadata">
         <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>"><?php
