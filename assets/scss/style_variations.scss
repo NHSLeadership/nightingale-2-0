@@ -80,3 +80,24 @@
     }
   }
 }
+/* login form customisation */
+#login {
+  padding-top: 0 !important;
+  width: 90%;
+  #loginform {
+    margin-top: 0;
+    box-shadow: none;
+    #wp-submit {
+      @extend .nhsuk-button;
+      height: auto;
+    }
+
+    .user-login, .user_pass {
+      @extend .nhsuk-input;
+    }
+
+    label {
+      @extend .nhsuk-label;
+    }
+  }
+}

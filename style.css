@@ -4000,7 +4000,7 @@ b {
  * 3. Use a pseudo element to expand the click target area to include the
  *    button's shadow as well, in case users try to click it.
  */
-.nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-login-modal input[type=submit] {
+.nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit] {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -4028,7 +4028,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-login-modal input[type=submit] {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit] {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -4036,50 +4036,50 @@ b {
 }
 
 @media print {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-login-modal input[type=submit] {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit] {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus {
+.nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus {
   box-shadow: 0 0 0 4px #ffb81C;
   outline: 4px solid transparent;
   outline-offset: 4px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-login-modal input[type=submit] {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit] {
     margin-bottom: 36px;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-login-modal input[type=submit] {
+  .nhsuk-button, .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-respond input[type="submit"], .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit] {
     padding: 8px 16px;
   }
 }
 
-.nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, .nhsuk-list-panel .comment-respond input:link[type="submit"], .learndash-wrapper .ld-button:link, .learndash-wrapper input:link[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:link, .learndash-wrapper .ld-logout:link, .learndash-wrapper .ld-login:link, .learndash-wrapper .ld-content-actions a.ld-primary-color:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, .nhsuk-list-panel .comment-respond input:visited[type="submit"], .learndash-wrapper .ld-button:visited, .learndash-wrapper input:visited[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:visited, .learndash-wrapper .ld-logout:visited, .learndash-wrapper .ld-login:visited, .learndash-wrapper .ld-content-actions a.ld-primary-color:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover {
+.nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, #login #loginform #wp-submit:link, .nhsuk-list-panel .comment-respond input:link[type="submit"], .learndash-wrapper .ld-button:link, .learndash-wrapper input:link[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:link, .learndash-wrapper .ld-logout:link, .learndash-wrapper .ld-login:link, .learndash-wrapper .ld-content-actions a.ld-primary-color:link, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:link, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit:visited, .nhsuk-list-panel .comment-respond input:visited[type="submit"], .learndash-wrapper .ld-button:visited, .learndash-wrapper input:visited[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:visited, .learndash-wrapper .ld-logout:visited, .learndash-wrapper .ld-login:visited, .learndash-wrapper .ld-content-actions a.ld-primary-color:visited, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover {
   color: #ffffff;
   text-decoration: none;
 }
 
-.nhsuk-button::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner, .wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner, .nhsuk-list-panel .comment-respond input[type="submit"]::-moz-focus-inner, .learndash-wrapper .ld-button::-moz-focus-inner, .learndash-wrapper input[type=submit]::-moz-focus-inner, .learndash-wrapper .ld-item-list-actions .ld-expand-button::-moz-focus-inner, .learndash-wrapper .ld-logout::-moz-focus-inner, .learndash-wrapper .ld-login::-moz-focus-inner, .learndash-wrapper .ld-content-actions a.ld-primary-color::-moz-focus-inner, .learndash-wrapper .ld-login-modal input[type=submit]::-moz-focus-inner {
+.nhsuk-button::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner, .wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner, #login #loginform #wp-submit::-moz-focus-inner, .nhsuk-list-panel .comment-respond input[type="submit"]::-moz-focus-inner, .learndash-wrapper .ld-button::-moz-focus-inner, .learndash-wrapper input[type=submit]::-moz-focus-inner, .learndash-wrapper .ld-item-list-actions .ld-expand-button::-moz-focus-inner, .learndash-wrapper .ld-logout::-moz-focus-inner, .learndash-wrapper .ld-login::-moz-focus-inner, .learndash-wrapper .ld-content-actions a.ld-primary-color::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::-moz-focus-inner, .learndash-wrapper .ld-login-modal input[type=submit]::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-.nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus {
+.nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .nhsuk-button:focus, .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus {
   background-color: #00662f;
 }
 
-.nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active {
+.nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active {
   box-shadow: none;
   top: 4px;
 }
 
-.nhsuk-button::before, .wp-block-button__link::before, .wp-block-file__button::before, .wp-block-file a.wp-block-file__button::before, .wp-block-file a.wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:focus::before, .wp-block-file a.wp-block-file__button:hover::before, .wp-block-file a.wp-block-file__button:visited::before, .nhsuk-list-panel .comment-respond input[type="submit"]::before, .learndash-wrapper .ld-button::before, .learndash-wrapper input[type=submit]::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button::before, .learndash-wrapper .ld-logout::before, .learndash-wrapper .ld-login::before, .learndash-wrapper .ld-content-actions a.ld-primary-color::before, .learndash-wrapper .ld-login-modal input[type=submit]::before {
+.nhsuk-button::before, .wp-block-button__link::before, .wp-block-file__button::before, .wp-block-file a.wp-block-file__button::before, .wp-block-file a.wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:focus::before, .wp-block-file a.wp-block-file__button:hover::before, .wp-block-file a.wp-block-file__button:visited::before, #login #loginform #wp-submit::before, .nhsuk-list-panel .comment-respond input[type="submit"]::before, .learndash-wrapper .ld-button::before, .learndash-wrapper input[type=submit]::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button::before, .learndash-wrapper .ld-logout::before, .learndash-wrapper .ld-login::before, .learndash-wrapper .ld-content-actions a.ld-primary-color::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::before, .learndash-wrapper .ld-login-modal input[type=submit]::before {
   background: transparent;
   bottom: -6px;
   content: '';
@@ -4090,7 +4090,7 @@ b {
   top: -2px;
 }
 
-.nhsuk-button:active::before, .wp-block-button__link:active::before, .wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:active::before, .nhsuk-list-panel .comment-respond input[type="submit"]:active::before, .learndash-wrapper .ld-button:active::before, .learndash-wrapper input[type=submit]:active::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button:active::before, .learndash-wrapper .ld-logout:active::before, .learndash-wrapper .ld-login:active::before, .learndash-wrapper .ld-content-actions a.ld-primary-color:active::before {
+.nhsuk-button:active::before, .wp-block-button__link:active::before, .wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:active::before, #login #loginform #wp-submit:active::before, .nhsuk-list-panel .comment-respond input[type="submit"]:active::before, .learndash-wrapper .ld-button:active::before, .learndash-wrapper input[type=submit]:active::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button:active::before, .learndash-wrapper .ld-logout:active::before, .learndash-wrapper .ld-login:active::before, .learndash-wrapper .ld-content-actions a.ld-primary-color:active::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active::before {
   top: -6px;
 }
 
@@ -4110,26 +4110,26 @@ b {
   background-color: #425563;
 }
 
-.nhsuk-button--reverse, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:first-of-type {
+.nhsuk-button--reverse, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt {
   background-color: #ffffff;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
 }
 
-.nhsuk-button--reverse:hover, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:hover:first-of-type, .nhsuk-button--reverse:focus, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:focus:first-of-type {
+.nhsuk-button--reverse:hover, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:hover:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .nhsuk-button--reverse:focus, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:focus:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus {
   background-color: #f2f2f2;
   color: #212b32;
 }
 
-.nhsuk-button--reverse:link, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:link:first-of-type {
+.nhsuk-button--reverse:link, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:link:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:link {
   color: #212b32;
 }
 
-.nhsuk-button--reverse.nhsuk-button--disabled, .learndash-wrapper .ld-content-actions .ld-content-action .nhsuk-button--disabled.ld-button:first-of-type {
+.nhsuk-button--reverse.nhsuk-button--disabled, .learndash-wrapper .ld-content-actions .ld-content-action .nhsuk-button--disabled.ld-button:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .nhsuk-button--disabled.ld-search-prompt {
   background-color: #ffffff;
 }
 
-.nhsuk-button--reverse.nhsuk-button--disabled:focus, .learndash-wrapper .ld-content-actions .ld-content-action .nhsuk-button--disabled.ld-button:focus:first-of-type {
+.nhsuk-button--reverse.nhsuk-button--disabled:focus, .learndash-wrapper .ld-content-actions .ld-content-action .nhsuk-button--disabled.ld-button:focus:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .nhsuk-button--disabled.ld-search-prompt:focus {
   background-color: #ffffff;
 }
 
@@ -4141,6 +4141,7 @@ b {
 .wp-block-button__link[disabled="disabled"],
 .wp-block-file__button[disabled="disabled"],
 .wp-block-file a.wp-block-file__button[disabled="disabled"],
+#login #loginform #wp-submit[disabled="disabled"],
 .nhsuk-list-panel .comment-respond input[disabled="disabled"][type="submit"],
 .learndash-wrapper .ld-button[disabled="disabled"],
 .learndash-wrapper input[disabled="disabled"][type=submit],
@@ -4148,17 +4149,22 @@ b {
 .learndash-wrapper .ld-logout[disabled="disabled"],
 .learndash-wrapper .ld-login[disabled="disabled"],
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"],
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"],
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled="disabled"],
 .nhsuk-button[disabled],
 .wp-block-button__link[disabled],
 .wp-block-file__button[disabled],
 .wp-block-file a.wp-block-file__button[disabled],
+#login #loginform #wp-submit[disabled],
 .nhsuk-list-panel .comment-respond input[disabled][type="submit"],
 .learndash-wrapper .ld-button[disabled],
 .learndash-wrapper input[disabled][type=submit],
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled],
 .learndash-wrapper .ld-logout[disabled],
 .learndash-wrapper .ld-login[disabled],
-.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled] {
+.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled],
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled],
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled] {
   background-color: #007f3b;
   opacity: 0.5;
   pointer-events: none;
@@ -4169,6 +4175,7 @@ b {
 .wp-block-button__link[disabled="disabled"]:hover,
 .wp-block-file__button[disabled="disabled"]:hover,
 .wp-block-file a.wp-block-file__button[disabled="disabled"]:hover,
+#login #loginform #wp-submit[disabled="disabled"]:hover,
 .nhsuk-list-panel .comment-respond input[disabled="disabled"]:hover[type="submit"],
 .learndash-wrapper .ld-button[disabled="disabled"]:hover,
 .learndash-wrapper input[disabled="disabled"]:hover[type=submit],
@@ -4176,17 +4183,22 @@ b {
 .learndash-wrapper .ld-logout[disabled="disabled"]:hover,
 .learndash-wrapper .ld-login[disabled="disabled"]:hover,
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:hover,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:hover,
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled="disabled"]:hover,
 .nhsuk-button[disabled]:hover,
 .wp-block-button__link[disabled]:hover,
 .wp-block-file__button[disabled]:hover,
 .wp-block-file a.wp-block-file__button[disabled]:hover,
+#login #loginform #wp-submit[disabled]:hover,
 .nhsuk-list-panel .comment-respond input[disabled]:hover[type="submit"],
 .learndash-wrapper .ld-button[disabled]:hover,
 .learndash-wrapper input[disabled]:hover[type=submit],
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:hover,
 .learndash-wrapper .ld-logout[disabled]:hover,
 .learndash-wrapper .ld-login[disabled]:hover,
-.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:hover {
+.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:hover,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled]:hover,
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled]:hover {
   background-color: #007f3b;
   cursor: default;
 }
@@ -4196,6 +4208,7 @@ b {
 .wp-block-button__link[disabled="disabled"]:focus,
 .wp-block-file__button[disabled="disabled"]:focus,
 .wp-block-file a.wp-block-file__button[disabled="disabled"]:focus,
+#login #loginform #wp-submit[disabled="disabled"]:focus,
 .nhsuk-list-panel .comment-respond input[disabled="disabled"]:focus[type="submit"],
 .learndash-wrapper .ld-button[disabled="disabled"]:focus,
 .learndash-wrapper input[disabled="disabled"]:focus[type=submit],
@@ -4203,17 +4216,22 @@ b {
 .learndash-wrapper .ld-logout[disabled="disabled"]:focus,
 .learndash-wrapper .ld-login[disabled="disabled"]:focus,
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:focus,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:focus,
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled="disabled"]:focus,
 .nhsuk-button[disabled]:focus,
 .wp-block-button__link[disabled]:focus,
 .wp-block-file__button[disabled]:focus,
 .wp-block-file a.wp-block-file__button[disabled]:focus,
+#login #loginform #wp-submit[disabled]:focus,
 .nhsuk-list-panel .comment-respond input[disabled]:focus[type="submit"],
 .learndash-wrapper .ld-button[disabled]:focus,
 .learndash-wrapper input[disabled]:focus[type=submit],
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:focus,
 .learndash-wrapper .ld-logout[disabled]:focus,
 .learndash-wrapper .ld-login[disabled]:focus,
-.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:focus {
+.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:focus,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled]:focus,
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled]:focus {
   background-color: #007f3b;
   outline: none;
 }
@@ -4223,6 +4241,7 @@ b {
 .wp-block-button__link[disabled="disabled"]:active,
 .wp-block-file__button[disabled="disabled"]:active,
 .wp-block-file a.wp-block-file__button[disabled="disabled"]:active,
+#login #loginform #wp-submit[disabled="disabled"]:active,
 .nhsuk-list-panel .comment-respond input[disabled="disabled"]:active[type="submit"],
 .learndash-wrapper .ld-button[disabled="disabled"]:active,
 .learndash-wrapper input[disabled="disabled"]:active[type=submit],
@@ -4230,17 +4249,22 @@ b {
 .learndash-wrapper .ld-logout[disabled="disabled"]:active,
 .learndash-wrapper .ld-login[disabled="disabled"]:active,
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:active,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:active,
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled="disabled"]:active,
 .nhsuk-button[disabled]:active,
 .wp-block-button__link[disabled]:active,
 .wp-block-file__button[disabled]:active,
 .wp-block-file a.wp-block-file__button[disabled]:active,
+#login #loginform #wp-submit[disabled]:active,
 .nhsuk-list-panel .comment-respond input[disabled]:active[type="submit"],
 .learndash-wrapper .ld-button[disabled]:active,
 .learndash-wrapper input[disabled]:active[type=submit],
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:active,
 .learndash-wrapper .ld-logout[disabled]:active,
 .learndash-wrapper .ld-login[disabled]:active,
-.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:active {
+.learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:active,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled]:active,
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled]:active {
   box-shadow: 0 4px 0 #003317;
   top: 0;
 }
@@ -4280,29 +4304,33 @@ b {
   top: 0;
 }
 
-.nhsuk-button--reverse[disabled="disabled"], .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:first-of-type,
+.nhsuk-button--reverse[disabled="disabled"], .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"],
 .nhsuk-button--reverse[disabled],
-.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:first-of-type {
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:first-of-type,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled] {
   background-color: #ffffff;
   opacity: 0.5;
 }
 
-.nhsuk-button--reverse[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:hover:first-of-type,
+.nhsuk-button--reverse[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:hover:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:hover,
 .nhsuk-button--reverse[disabled]:hover,
-.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:hover:first-of-type {
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:hover:first-of-type,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled]:hover {
   background-color: #ffffff;
   cursor: default;
 }
 
-.nhsuk-button--reverse[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:focus:first-of-type,
+.nhsuk-button--reverse[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:focus:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:focus,
 .nhsuk-button--reverse[disabled]:focus,
-.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:focus:first-of-type {
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:focus:first-of-type,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled]:focus {
   outline: none;
 }
 
-.nhsuk-button--reverse[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:active:first-of-type,
+.nhsuk-button--reverse[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:active:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:active,
 .nhsuk-button--reverse[disabled]:active,
-.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:active:first-of-type {
+.learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled]:active:first-of-type,
+.learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled]:active {
   box-shadow: 0 4px 0 #212b32;
   top: 0;
 }
@@ -7224,7 +7252,7 @@ b {
   }
 }
 
-.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .nhsuk-list-panel .comment-respond label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
+.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, #login #loginform label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .nhsuk-list-panel .comment-respond label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
   margin-bottom: 8px;
 }
 
@@ -7346,7 +7374,7 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
-textarea, .nhsuk-list-panel .comment-respond input[type="text"] {
+textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"] {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -7383,7 +7411,7 @@ textarea, .nhsuk-list-panel .comment-respond input[type="text"] {
   input[type="datetime"],
   input[type="datetime-local"],
   input[type="color"],
-  textarea, .nhsuk-list-panel .comment-respond input[type="text"] {
+  textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"] {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -7406,7 +7434,7 @@ textarea, .nhsuk-list-panel .comment-respond input[type="text"] {
   input[type="datetime"],
   input[type="datetime-local"],
   input[type="color"],
-  textarea, .nhsuk-list-panel .comment-respond input[type="text"] {
+  textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"] {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -7427,7 +7455,7 @@ input:focus[type="time"],
 input:focus[type="datetime"],
 input:focus[type="datetime-local"],
 input:focus[type="color"],
-textarea:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"] {
+textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"] {
   box-shadow: 0 0 0 4px #ffb81C;
   outline: 4px solid transparent;
   outline-offset: 4px;
@@ -7448,7 +7476,7 @@ input[type="time"]::-webkit-outer-spin-button,
 input[type="datetime"]::-webkit-outer-spin-button,
 input[type="datetime-local"]::-webkit-outer-spin-button,
 input[type="color"]::-webkit-outer-spin-button,
-textarea::-webkit-outer-spin-button, .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-outer-spin-button,
+textarea::-webkit-outer-spin-button, #login #loginform .user-login::-webkit-outer-spin-button, #login #loginform .user_pass::-webkit-outer-spin-button, .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-outer-spin-button,
 .nhsuk-input::-webkit-inner-spin-button,
 input[type="text"]::-webkit-inner-spin-button,
 input[type="email"]::-webkit-inner-spin-button,
@@ -7466,6 +7494,8 @@ input[type="datetime"]::-webkit-inner-spin-button,
 input[type="datetime-local"]::-webkit-inner-spin-button,
 input[type="color"]::-webkit-inner-spin-button,
 textarea::-webkit-inner-spin-button,
+#login #loginform .user-login::-webkit-inner-spin-button,
+#login #loginform .user_pass::-webkit-inner-spin-button,
 .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -7473,7 +7503,7 @@ textarea::-webkit-inner-spin-button,
 
 .nhsuk-input[type="number"],
 input[type="number"],
-textarea[type="number"], .nhsuk-list-panel .comment-respond input[type="number"][type="text"] {
+textarea[type="number"], #login #loginform .user-login[type="number"], #login #loginform .user_pass[type="number"], .nhsuk-list-panel .comment-respond input[type="number"][type="text"] {
   -moz-appearance: textfield;
 }
 
@@ -7557,7 +7587,7 @@ textarea[type="number"], .nhsuk-list-panel .comment-respond input[type="number"]
 /* ==========================================================================
    COMPONENTS/ #LABEL
    ========================================================================== */
-.nhsuk-label, .nhsuk-list-panel .comment-respond label {
+.nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -7567,7 +7597,7 @@ textarea[type="number"], .nhsuk-list-panel .comment-respond input[type="number"]
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-label, .nhsuk-list-panel .comment-respond label {
+  .nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -7575,7 +7605,7 @@ textarea[type="number"], .nhsuk-list-panel .comment-respond input[type="number"]
 }
 
 @media print {
-  .nhsuk-label, .nhsuk-list-panel .comment-respond label {
+  .nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -11146,7 +11176,7 @@ b {
   margin-bottom: 5px;
 }
 
-.nhsuk-button--reverse:visited, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:visited:first-of-type {
+.nhsuk-button--reverse:visited, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:visited:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:visited {
   color: #212b32;
 }
 
@@ -11577,6 +11607,21 @@ b {
   width: 100%;
 }
 
+/* login form customisation */
+#login {
+  padding-top: 0 !important;
+  width: 90%;
+}
+
+#login #loginform {
+  margin-top: 0;
+  box-shadow: none;
+}
+
+#login #loginform #wp-submit {
+  height: auto;
+}
+
 /*
 // variations to styling required for WordPress comments
 // @author Tony Blacker, NHS Leadership Academy
@@ -11777,7 +11822,7 @@ b {
   color: #005eb8;
 }
 
-.learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+.learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button {
   background: #005eb8;
 }
 
@@ -11798,18 +11843,47 @@ b {
   top: 33%;
 }
 
-.learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress {
-  background: #005eb8;
+.learndash-wrapper .ld-status {
   border-radius: 4px;
-  color: #ffffff;
+  border: 2px solid;
+  background: #ffffff;
+  color: #212b32;
+}
+
+.learndash-wrapper .ld-status.ld-status-waiting {
+  border-color: #da291c;
+}
+
+.learndash-wrapper .ld-status.ld-status-progress {
+  background: #ffffff;
+  color: #005eb8;
+  border-color: #005eb8;
+  font-size: 0.75rem;
+}
+
+.learndash-wrapper .ld-status.ld-status-complete {
+  background: #ffffff;
+  color: #007f3b;
+  border-color: #007f3b;
+  font-size: 0.75rem;
+}
+
+.learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress {
+  background: #ffffff;
+  color: #005eb8;
+  border-color: #005eb8;
   font-size: 0.75rem;
 }
 
 .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete {
-  background: #007f3b;
-  border-radius: 4px;
-  color: #ffffff;
+  background: #ffffff;
+  color: #007f3b;
+  border-color: #007f3b;
   font-size: 0.75rem;
+}
+
+.learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting {
+  border-color: #da291c;
 }
 
 .learndash-wrapper .ld-content-actions a.ld-primary-color {
@@ -11819,7 +11893,7 @@ b {
 }
 
 .learndash-wrapper .ld-content-actions a.ld-primary-color:hover {
-  color: #ffeb3b;
+  color: #ffeb3b !important;
 }
 
 .learndash-wrapper .ld-table-list .ld-primary-color-hover:hover {
@@ -11833,6 +11907,43 @@ b {
 
 .learndash-wrapper .ld-table-list .ld-table-list-items {
   background: #ffffff;
+}
+
+.learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
+  content: '';
+}
+
+.learndash-wrapper .ld-item-list .ld-item-search .ld-closer:after {
+  content: "x";
+  margin-left: .25em;
+  border-radius: 50%;
+  border: 2px solid #768692;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  padding: 0px 4px;
+  color: #768692;
+  line-height: 0.9rem;
+}
+
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper {
+  background: #ffffff;
+  border: 2px solid #425563;
+}
+
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper:before {
+  width: 0;
+  height: 0;
+  border-left: 20px solid #f0f4f5;
+  border-right: 20px solid #f0f4f5;
+  border-bottom: 15px solid #425563;
+  transform: rotate(0);
+  right: 260px;
+  top: -17px;
+}
+
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name {
+  top: -30px;
 }
 
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview a.ld-item-name:hover {
@@ -11863,6 +11974,11 @@ b {
   content: '';
 }
 
+.learndash-wrapper .ld-modal {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
 .learndash-wrapper .ld-login-modal .ld-login-modal-form .ld-modal-heading {
   color: #005eb8;
 }
@@ -11873,4 +11989,8 @@ b {
 
 .learndash-wrapper .ld-login-modal input[type=submit] {
   margin-top: 1rem;
+}
+
+.single-sfwd-lessons nav.nhsuk-breadcrumb, .single-sfwd-lessons .learndash-wrapper nav.ld-breadcrumbs, .learndash-wrapper .single-sfwd-lessons nav.ld-breadcrumbs, .single-sfwd-topic nav.nhsuk-breadcrumb, .single-sfwd-topic .learndash-wrapper nav.ld-breadcrumbs, .learndash-wrapper .single-sfwd-topic nav.ld-breadcrumbs {
+  display: none;
 }
