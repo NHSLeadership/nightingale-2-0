@@ -11419,7 +11419,7 @@ b {
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
-  display: contents;
+  display: inline-flex;
 }
 
 .nhsuk-header--transactional .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__organisational-service-name {
