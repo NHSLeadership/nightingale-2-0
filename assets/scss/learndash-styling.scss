@@ -240,6 +240,72 @@
       margin-top: 1rem;
     }
   }
+  /*
+  Change the learndash green to the NHS green
+   */
+  #btn-join.ld-button-transparent.ld-status-complete,
+  .btn-join.ld-button-transparent.ld-status-complete,
+  .ld-button.ld-button-transparent.ld-status-complete,
+  #learndash_mark_complete_button.ld-button-transparent.ld-status-complete,
+  .learndash_mark_complete_button.ld-button-transparent.ld-status-complete,
+  .ld-item-list .ld-item-search .ld-item-search-fields .ld-item-search-submit .ld-button.ld-button-transparent.ld-status-complete,
+  .ld-item-list .ld-item-list-item .ld-item-details .ld-certificate-link,
+  .ld-progress .ld-progress-heading .ld-progress-stats .ld-progress-percentage,
+  .ld-progress .ld-progress-bar .ld-progress-bar-percentage,
+  .ld-score.score-high,
+  .ld-expand-button.ld-button-transparent.ld-status-complete,
+  .ld-status-icon.ld-quiz-complete,
+  .ld-item-icon.ld-quiz-complete,
+  .wpProQuiz_content .wpProQuiz_button.ld-button-transparent.ld-status-complete,
+  .wpProQuiz_content .wpProQuiz_button2.ld-button-transparent.ld-status-complete,
+  .wpProQuiz_content a#quiz_continue_link.ld-button-transparent.ld-status-complete,
+  .wpProQuiz_content form[name=uploadEssay] input[type=submit].ld-button-transparent.ld-status-complete,
+  #wpProQuiz_overlay_close.ld-button-transparent.ld-status-complete,
+  .ld-alert-success,
+  .ld-focus .ld-focus-header #sfwd-mark-complete:after,
+  .ld-focus .ld-focus-header .sfwd-mark-complete:after,
+  .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
+  .ld-focus .ld-focus-header #sfwd-mark-complete .learndash_mark_complete_button,
+  .ld-focus .ld-focus-header .sfwd-mark-complete #learndash_mark_complete_button,
+  .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
+  .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button.ld-status-complete,
+  .ld-focus .ld-focus-header #sfwd-mark-complete .learndash_mark_complete_button.ld-status-complete,
+  .ld-focus .ld-focus-header .sfwd-mark-complete #learndash_mark_complete_button.ld-status-complete,
+  .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button.ld-status-complete,
+  .ld-focus-comments .form-submit #submit.ld-button-transparent.ld-status-complete,
+  .ld-focus-comment .ld-comment-reply a.comment-reply-link.ld-button-transparent.ld-status-complete {
+    color: $color_nhsuk-green !important;
+  }
+  #learndash_mark_complete_button,
+  .learndash_mark_complete_button,
+  .ld-status-complete,
+  .ld-certificate-icon,
+  #quiz_continue_link,
+  #quiz_continue_link:hover,
+  .course_progress .sending_progress_bar,
+  .wpProQuiz_content a#quiz_continue_link,
+  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect label,
+  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect .wpProQuiz_sortable,
+  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortCriterion,
+  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortText,
+  .wpProQuiz_content .wpProQuiz_time_limit .wpProQuiz_progress,
+  .ld-breadcrumbs .ld-status.ld-status-complete,
+  .ld-alert-success .ld-alert-icon,
+  .ld-alert-success .ld-button,
+  .ld-course-status .ld-status.ld-status-complete {
+    background-color: $color_nhsuk-green !important;
+  }
+
+  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortCriterion,
+  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortText,
+  .ld-alert-success {
+    border-color: $color_nhsuk-green !important;
+  }
+  .ld-status-in-progress,
+  .ld-course-navigation .ld-status-icon.ld-status-in-progress {
+    border-left-color: $color_nhsuk-green !important;
+    border-top-color: $color_nhsuk-green !important;
+  }
 }
 
 .single-sfwd-lessons, .single-sfwd-topic {
