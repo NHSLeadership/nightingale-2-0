@@ -11415,6 +11415,7 @@ b {
 
 .nhsuk-header--transactional .nhsuk-header__logo a.nhsuk-header__link .nhsuk-header__transactional-service-name {
   width: max-content;
+  float: none;
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
