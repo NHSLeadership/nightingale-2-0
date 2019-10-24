@@ -11913,6 +11913,7 @@ b {
 
 .learndash-wrapper .ld-table-list .ld-table-list-items {
   background: #ffffff;
+  font-size: 1rem;
 }
 
 .learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
@@ -12031,9 +12032,6 @@ b {
   color: #007f3b !important;
 }
 
-.learndash-wrapper #learndash_mark_complete_button,
-.learndash-wrapper .learndash_mark_complete_button,
-.learndash-wrapper .ld-status-complete,
 .learndash-wrapper .ld-certificate-icon,
 .learndash-wrapper #quiz_continue_link,
 .learndash-wrapper #quiz_continue_link:hover,
@@ -12044,7 +12042,6 @@ b {
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortCriterion,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortText,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_time_limit .wpProQuiz_progress,
-.learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete,
 .learndash-wrapper .ld-alert-success .ld-alert-icon,
 .learndash-wrapper .ld-alert-success .ld-button,
 .learndash-wrapper .ld-course-status .ld-status.ld-status-complete {

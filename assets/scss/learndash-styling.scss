@@ -121,6 +121,7 @@
 
     .ld-table-list-items {
       background: $color_nhsuk-white;
+      font-size: 1rem;
     }
   }
 
@@ -276,9 +277,6 @@
   .ld-focus-comment .ld-comment-reply a.comment-reply-link.ld-button-transparent.ld-status-complete {
     color: $color_nhsuk-green !important;
   }
-  #learndash_mark_complete_button,
-  .learndash_mark_complete_button,
-  .ld-status-complete,
   .ld-certificate-icon,
   #quiz_continue_link,
   #quiz_continue_link:hover,
@@ -289,7 +287,6 @@
   .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortCriterion,
   .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortText,
   .wpProQuiz_content .wpProQuiz_time_limit .wpProQuiz_progress,
-  .ld-breadcrumbs .ld-status.ld-status-complete,
   .ld-alert-success .ld-alert-icon,
   .ld-alert-success .ld-button,
   .ld-course-status .ld-status.ld-status-complete {
