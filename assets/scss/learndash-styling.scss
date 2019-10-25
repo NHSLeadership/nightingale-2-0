@@ -200,10 +200,12 @@
 
     .ld-breadcrumbs-segments {
       @extend .nhsuk-breadcrumb__list;
-      white-space: unset;
+      white-space: nowrap;
+      overflow: hidden;
 
       span {
         @extend .nhsuk-breadcrumb__item;
+        display: inline;
 
         a {
           font-weight: 400;
