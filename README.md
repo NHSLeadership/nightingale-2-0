@@ -20,6 +20,7 @@
    - Enable the subpages widget in the sidebar. Configuration works best if you select *use parent page as title*, *show subpages*, and *enable ul for subpages*
    - Create a top menu assigned to the Main Menu region and add your default homepage. You can add extra pages later. N.B. the top menu will only show top level links, it does not display any dropdowns for sub pages (hence the need for the subpages widget in sidebar)
    - Create a footer menu assigned to the Footer Links region and add at least one link. Again this is static links only, it has no dropdown functionality
+ - Userguide for theme customiser and options is available at https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
  
 ## Optional Settings
  - `Cookie Notice plugin` - This adds a cookie notice banner to your site. You can modify the text that displays, and
@@ -47,7 +48,17 @@ To accomplish this, you will need to take the following steps:
  - Regenerate the critical css `npm run critical`
    
 ## Please note
- - XML/RPC will be disabled on activation of the theme. If you have a specific need to re-enable XML-RPC you may do so at line 37 of `inc/template-functions.php`.
+ - XML/RPC is still enabled - this is a WordPress default, but will trigger National Cyber Security Centre monitoring alerts. To disable XML-RPC you can add:
+```add_filter('xmlrpc_enabled', '__return_false');```
+To your themes functions.php file, or if your hosting permits you can disable/block it at server level.
+
+## Compatability with plugins / WordPress extensions
+This theme has been extended to style the following plugins automatically:
+ - [x] Gravity Forms
+ - [x] Most Gravity Perks extensions (please let us know if you are using a GP extension that is not correctly styled)
+ - [x] LearnDash - please use the latest version of LD and use the LD30 theme with no primary, secondary or tertiary colours defined
+ - [x] Download Monitor
+ - [x] The Events Calendar
   
 ## Progress
  - [x] Load in the NHS Frontend library

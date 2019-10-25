@@ -32,14 +32,6 @@ function nightingale_body_classes( $classes ) {
 
 add_filter( 'body_class', 'nightingale_body_classes' );
 
-
-/**
- * Disable XML-RPC by default - as this theme is designed for public sector websites in the UK and the
- * National Cyber Security Centre still advises against this setting, the theme disables it by default.
- * If you wish to re-enable it, comment out the below line.
- */
-add_filter('xmlrpc_enabled', '__return_false');
-
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
