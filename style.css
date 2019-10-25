@@ -11694,8 +11694,8 @@ b {
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label {
   border-radius: 4px;
   border: 2px solid;
-  color: #005eb8;
-  border-color: #005eb8;
+  color: #425563;
+  border-color: #425563;
   background: #ffffff;
   font-size: .75rem;
   text-transform: uppercase;
@@ -11707,10 +11707,10 @@ b {
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator {
   color: #da291c;
-  border-color: #da291c;
+  border-color: #005eb8;
 }
 
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-participant, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label.comment-author-label-participant, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label.comment-author-label-participant {
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator {
   color: #007f3b;
   border-color: #007f3b;
 }
@@ -11992,7 +11992,12 @@ b {
 }
 
 .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments {
-  white-space: unset;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span {
+  display: inline;
 }
 
 .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span a {
