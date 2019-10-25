@@ -9,30 +9,47 @@
     margin-bottom: 1rem;
     background-color: #f0f4f5;
     .nhsuk-list-panel__item {
+      padding: 1.5rem 0;
       display: block;
-      padding: 1.5rem;
       background-color: #f0f4f5;
+      #respond {
+        margin-top: 1.5rem;
+        position: relative;
+
+        #commentform {
+          display: flow-root;
+        }
+        #cancel-comment-reply-link {
+          @extend .nhsuk-button;
+          @extend .nhsuk-button--reverse;
+          float: right;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
       .children {
         margin-left: 0;
         margin-right: 0;
-        padding-left: 0;
+        padding-left: 1.5rem;
         .comment {
           padding-right: 0;
         }
       }
       .comment-body {
         display: flex;
+        flex-wrap: wrap;
         .comment_body_comment {
           display: block;
           text-align: left;
           border-radius: 3px;
-          order: 3;
           line-height: 1.5rem;
           padding: 18px 40px 18px 22px;
-          width: 70%;
           position: relative;
           word-wrap: break-word;
           background-color: $color_nhsuk-white;
+          width: 100%;
+          order: 1;
           &:after {
             content: '';
             position: absolute;
@@ -41,13 +58,14 @@
             border-radius: 50%;
             background-color: #ffffff;
             border: 2px solid #f3f3f3;
-            left: -8px;
-            top: 18px;
+            top: initial;
+            left: 28px;
+            bottom: -6px;
           }
         }
         .vcard {
-          order: 1;
-          width: 17%;
+          order: 3;
+          width: 60%;
           .fn {
             font-style: normal;
             .comment-author-label {
@@ -63,7 +81,7 @@
               text-align: center;
               padding: 5px 12px;
               &.comment-author-label-administrator {
-                color: $color_nhsuk-red;
+                color: $color_nhsuk-blue;
                 border-color: $color_nhsuk-blue;
               }
               &.comment-author-label-facilitator {
@@ -97,16 +115,16 @@
         .comment-avatar {
           order: 2;
           padding: 10px 18px 0 3px;
-          width: 8%;
+          width: 20%;
           img {
-            height: 32px;
-            width: 32px;
+            height: 40px;
+            width: 40px;
             border-radius: 50%;
             display: block;
           }
         }
         .reply {
-          width: 10%;
+          width: 20%;
           order: 4;
           text-align: right;
           font-size: 0.75rem;
@@ -128,47 +146,13 @@
           .comment-edit-link {
             display: inline-block;
             position: relative;
-            left: -95px;
+            left: 0px;
           }
         }
 
 
       }
     }
-  }
-  @media (max-width: 800px) {
-      .comment-list {
-        .nhsuk-list-panel__item {
-          .comment-body {
-            flex-wrap: wrap;
-            .comment_body_comment {
-              width: 100%;
-              order: 1;
-              &:after {
-                width: 12px;
-                height: 12px;
-                top: initial;
-                left: 28px;
-                bottom: -6px;
-              }
-            }
-            .comment-avatar {
-              order: 2;
-              width: 20%;
-            }
-            .vcard {
-              order: 3;
-              width: 60%
-            }
-            .reply {
-              width: 20%;
-              .comment-edit-link {
-                left: 0;
-              }
-            }
-          }
-        }
-      }
   }
 
   .comment-respond {
@@ -193,6 +177,23 @@
 
         &~label {
           @extend .nhsuk-checkboxes__label
+        }
+      }
+    }
+    .logged-in-as {
+      float: right;
+      a {
+        font-size: 0.75rem;
+        text-decoration: none;
+        &:nth-of-type(2) {
+          margin-left: 10px;
+          border-radius: 4px;
+          border: 2px solid;
+          background: #fff;
+          color: #005eb8;
+          border-color: #005eb8;
+          padding: 5px;
+          text-transform: uppercase;
         }
       }
     }
