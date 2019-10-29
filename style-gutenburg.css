@@ -10206,6 +10206,52 @@ section {
   border-right: 2px solid #005eb8;
 }
 
+.nhsuk-pill-standard, .nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-pill-success, .nhsuk-pill-warn, #primary footer .edit-link {
+  border-radius: 4px;
+  border: 2px solid;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px 12px;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 11px;
+  line-height: 1.1;
+  white-space: nowrap;
+  display: inline-block;
+  border-color: #425563;
+  color: #425563;
+}
+
+.nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links {
+  border-color: #005eb8;
+  color: #005eb8;
+}
+
+.nhsuk-pill-success {
+  border-color: #007f3b;
+  color: #007f3b;
+}
+
+.nhsuk-pill-warn {
+  border-color: #da291c;
+  color: #da291c;
+}
+
+#primary footer .edit-link {
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+#primary footer .edit-link a {
+  color: #425563;
+}
+
+#primary footer .tags-links a, #primary footer .cat-links a {
+  text-transform: none;
+}
+
 .has-white-color {
   color: #ffffff;
 }

@@ -69,24 +69,12 @@
           .fn {
             font-style: normal;
             .comment-author-label {
-              border-radius: 4px;
-              border: 2px solid;
-              color: $color_nhsuk-dark-grey;
-              border-color: $color_nhsuk-dark-grey;
-              background: $color_nhsuk-white;
-              font-size: .75rem;
-              text-transform: uppercase;
-              font-weight: 700;
-              letter-spacing: .5px;
-              text-align: center;
-              padding: 5px 12px;
+              @extend .nhsuk-pill-standard;
               &.comment-author-label-administrator {
-                color: $color_nhsuk-blue;
-                border-color: $color_nhsuk-blue;
+                @extend .nhsuk-pill-notice;
               }
               &.comment-author-label-facilitator {
-                color: $color_nhsuk-green;
-                border-color: $color_nhsuk-green;
+                @extend .nhsuk-pill-success;
               }
             }
           }
