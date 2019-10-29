@@ -180,7 +180,7 @@
     margin: 1em 0 0;
   }
 
-  .ld-breadcrumbs {
+  ld-breadcrumbs {
     @extend .nhsuk-breadcrumb;
 
     .ld-breadcrumbs-segments {
@@ -241,6 +241,7 @@
     .wpProQuiz_TipButton {
       @extend .nhsuk-button--reverse;
     }
+
   }
   /*
   Change the learndash green to the NHS green
@@ -306,8 +307,20 @@
   }
 }
 
-.single-sfwd-lessons, .single-sfwd-topic {
-  nav.nhsuk-breadcrumb {
-    display: none;
+
+.nhsuk-breadcrumb {
+  .sfwd-breadcrumbs {
+    @extend .nhsuk-breadcrumb__list;
+    span {
+      @extend .nhsuk-breadcrumb__item;
+      &.sep {
+        display: none;
+      }
+      a {
+        span {
+          padding-right: 0;
+        }
+      }
+    }
   }
 }
