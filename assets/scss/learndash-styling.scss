@@ -117,11 +117,13 @@
         @extend .nhsuk-button--reverse;
       }
     }
+
     .ld-item-search {
       .ld-closer {
         &:before {
           content: '';
         }
+
         &:after {
           content: "x";
           margin-left: .25em;
@@ -135,9 +137,11 @@
           line-height: 0.9rem;
         }
       }
+
       .ld-item-search-wrapper {
         background: $color_nhsuk-white;
         border: 2px solid $color_nhsuk-dark-grey;
+
         &:before {
           width: 0;
           height: 0;
@@ -148,11 +152,13 @@
           right: 260px;
           top: -17px;
         }
+
         .ld-item-search-fields {
           .ld-item-search-name {
             top: -30px;
           }
         }
+
         .ld-item-search-submit {
           .ld-button {
             @extend .nhsuk-button;
@@ -160,6 +166,7 @@
         }
       }
     }
+
     .ld-item-list-item {
       .ld-item-list-item-preview {
 
@@ -228,6 +235,7 @@
       margin-top: 1rem;
     }
   }
+
   /*
   Style wpProQuiz
    */
@@ -235,14 +243,17 @@
     .wpProQuiz_button {
       @extend .nhsuk-button;
     }
+
     .wpProQuiz_QuestionButton {
       @extend .nhsuk-button--secondary;
     }
+
     .wpProQuiz_TipButton {
       @extend .nhsuk-button--reverse;
     }
 
   }
+
   /*
   Change the learndash green to the NHS green
    */
@@ -279,6 +290,7 @@
   .ld-focus-comment .ld-comment-reply a.comment-reply-link.ld-button-transparent.ld-status-complete {
     color: $color_nhsuk-green !important;
   }
+
   .ld-certificate-icon,
   #quiz_continue_link,
   #quiz_continue_link:hover,
@@ -300,6 +312,7 @@
   .ld-alert-success {
     border-color: $color_nhsuk-green !important;
   }
+
   .ld-status-in-progress,
   .ld-course-navigation .ld-status-icon.ld-status-in-progress {
     border-left-color: $color_nhsuk-green !important;
@@ -311,16 +324,71 @@
 .nhsuk-breadcrumb {
   .sfwd-breadcrumbs {
     @extend .nhsuk-breadcrumb__list;
+
     span {
       @extend .nhsuk-breadcrumb__item;
+
       &.sep {
         display: none;
       }
+
       a {
         span {
           padding-right: 0;
         }
       }
     }
+  }
+}
+
+.ld-course-list-items {
+  @extend .nhsuk-panel-group;
+
+  .ld_course_grid {
+    @extend .nhsuk-panel-group__item;
+
+    article {
+      @extend .nhsuk-panel-group;
+
+      .ld_course_grid_button {
+        text-align: center;
+
+        .btn, .btn-primary {
+          @extend .nhsuk-button;
+          text-align: center;
+        }
+      }
+    }
+
+    .thumbnail.course {
+      .ld_course_grid_price {
+        background: $color_nhsuk-grey-4;
+
+        &:before {
+          border-top: 4px solid $color_nhsuk-dark-grey;
+          border-right: 4px solid $color_nhsuk-dark-grey;
+        }
+
+        &.ribbon-enrolled {
+          background: $color_nhsuk-blue;
+
+          &:before {
+            border-top: 4px solid $color_nhsuk-dark-blue;
+            border-right: 4px solid $color_nhsuk-dark-blue;
+          }
+        }
+
+        &.free {
+          background: $color_nhsuk-green;
+
+          &:before {
+            border-top: 4px solid $color_nhsuk-dark-green;
+            border-right: 4px solid $color_nhsuk-dark-green;
+          }
+        }
+
+      }
+    }
+
   }
 }
