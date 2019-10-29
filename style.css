@@ -4097,16 +4097,16 @@ b {
 /**
  * Button variations
  */
-.nhsuk-button--secondary, .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton {
+.nhsuk-button--secondary, .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
   background-color: #425563;
   box-shadow: 0 4px 0 #232e35;
 }
 
-.nhsuk-button--secondary:hover, .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton:hover, .nhsuk-button--secondary:focus, .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton:focus {
+.nhsuk-button--secondary:hover, .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover, .nhsuk-button--secondary:focus, .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus {
   background-color: #384854;
 }
 
-.nhsuk-button--secondary.nhsuk-button--disabled, .learndash-wrapper .ld-item-list-actions .nhsuk-button--disabled.ld-expand-button, .learndash-wrapper .nhsuk-button--disabled.ld-logout, .learndash-wrapper .ld-content-actions a.nhsuk-button--disabled.ld-primary-color, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.wpProQuiz_QuestionButton {
+.nhsuk-button--secondary.nhsuk-button--disabled, .learndash-wrapper .ld-item-list-actions .nhsuk-button--disabled.ld-expand-button, .learndash-wrapper .nhsuk-button--disabled.ld-logout, .learndash-wrapper .ld-content-actions a.nhsuk-button--disabled.ld-primary-color, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.wpProQuiz_QuestionButton, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.btn-primary {
   background-color: #425563;
 }
 
@@ -4317,41 +4317,49 @@ b {
   top: 0;
 }
 
-.nhsuk-button--secondary[disabled="disabled"], .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"], .learndash-wrapper .ld-logout[disabled="disabled"], .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"],
+.nhsuk-button--secondary[disabled="disabled"], .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"], .learndash-wrapper .ld-logout[disabled="disabled"], .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"],
 .nhsuk-button--secondary[disabled],
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled],
 .learndash-wrapper .ld-logout[disabled],
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled],
-.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled] {
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled],
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled],
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled] {
   background-color: #425563;
   opacity: 0.5;
 }
 
-.nhsuk-button--secondary[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:hover, .learndash-wrapper .ld-logout[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:hover,
+.nhsuk-button--secondary[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:hover, .learndash-wrapper .ld-logout[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:hover,
 .nhsuk-button--secondary[disabled]:hover,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:hover,
 .learndash-wrapper .ld-logout[disabled]:hover,
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:hover,
-.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled]:hover {
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled]:hover,
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:hover,
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:hover {
   background-color: #425563;
   cursor: default;
 }
 
-.nhsuk-button--secondary[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:focus, .learndash-wrapper .ld-logout[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:focus,
+.nhsuk-button--secondary[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:focus, .learndash-wrapper .ld-logout[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:focus,
 .nhsuk-button--secondary[disabled]:focus,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:focus,
 .learndash-wrapper .ld-logout[disabled]:focus,
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:focus,
-.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled]:focus {
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled]:focus,
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:focus,
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:focus {
   outline: none;
 }
 
-.nhsuk-button--secondary[disabled="disabled"]:active, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:active, .learndash-wrapper .ld-logout[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:active,
+.nhsuk-button--secondary[disabled="disabled"]:active, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:active, .learndash-wrapper .ld-logout[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:active,
 .nhsuk-button--secondary[disabled]:active,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:active,
 .learndash-wrapper .ld-logout[disabled]:active,
 .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled]:active,
-.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled]:active {
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled]:active,
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:active,
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:active {
   box-shadow: 0 4px 0 #232e35;
   top: 0;
 }
@@ -11812,13 +11820,19 @@ b {
   background-color: #ffffff;
   border: 2px solid #f3f3f3;
   top: initial;
-  left: 28px;
+  left: 20px;
   bottom: -6px;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard {
   order: 3;
-  width: 60%;
+  width: 70%;
+}
+
+@media screen and (max-width: 37.5em) {
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard {
+    width: 50%;
+  }
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn {
@@ -11848,7 +11862,8 @@ b {
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-avatar, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-avatar, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-avatar {
   order: 2;
   padding: 10px 18px 0 3px;
-  width: 20%;
+  width: 10%;
+  min-width: 58px;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .comment-avatar img, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .comment-avatar img, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .comment-avatar img {
@@ -11866,6 +11881,12 @@ b {
   padding: 5px;
 }
 
+@media screen and (max-width: 37.5em) {
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply {
+    width: 30%;
+  }
+}
+
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply svg, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply svg, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply svg {
   width: 30px;
   height: 30px;
@@ -11874,8 +11895,16 @@ b {
   fill: #005eb8;
 }
 
+@media screen and (max-width: 37.5em) {
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply svg, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply svg, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply .comment-edit, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply .comment-edit, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply .comment-edit {
   width: 15px;
+  margin-left: 10px;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .reply .comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .reply .comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .reply .comment-reply-link {
@@ -11886,6 +11915,7 @@ b {
   display: inline-block;
   position: relative;
   left: 0px;
+  margin-left: 10px;
 }
 
 .nhsuk-list-panel .comment-respond textarea {
@@ -12160,12 +12190,31 @@ b {
   padding-right: 0;
 }
 
+.ld-course-list-items .ld_course_grid article {
+  position: relative;
+  padding-bottom: 120px;
+}
+
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button {
   text-align: center;
+  position: absolute;
+  bottom: 30px;
+  width: 85%;
 }
 
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
   text-align: center;
+}
+
+.ld-course-list-items .ld_course_grid article .learndash-widget {
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+}
+
+.ld-course-list-items .ld_course_grid .thumbnail.course {
+  position: relative;
+  padding-bottom: 120px;
 }
 
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
