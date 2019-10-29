@@ -3858,7 +3858,7 @@ b {
  * 6. Remove spacing between back icon and label.
  * 7. Custom padding for the chevron separator icon.
  */
-.nhsuk-breadcrumb, .learndash-wrapper .ld-breadcrumbs {
+.nhsuk-breadcrumb, .learndash-wrapper ld-breadcrumbs {
   background-color: #ffffff;
   padding-bottom: 12px;
   /* [1] */
@@ -3867,12 +3867,12 @@ b {
 }
 
 @media print {
-  .nhsuk-breadcrumb, .learndash-wrapper .ld-breadcrumbs {
+  .nhsuk-breadcrumb, .learndash-wrapper ld-breadcrumbs {
     display: none;
   }
 }
 
-.nhsuk-breadcrumb .nhsuk-icon__chevron-right, .learndash-wrapper .ld-breadcrumbs .nhsuk-icon__chevron-right {
+.nhsuk-breadcrumb .nhsuk-icon__chevron-right, .learndash-wrapper ld-breadcrumbs .nhsuk-icon__chevron-right {
   fill: #aeb7bd;
   height: 18px;
   position: relative;
@@ -3881,12 +3881,12 @@ b {
 }
 
 @media (min-width: 61.875em) {
-  .nhsuk-breadcrumb .nhsuk-icon__chevron-right, .learndash-wrapper .ld-breadcrumbs .nhsuk-icon__chevron-right {
+  .nhsuk-breadcrumb .nhsuk-icon__chevron-right, .learndash-wrapper ld-breadcrumbs .nhsuk-icon__chevron-right {
     margin: 0 3px 0 5px;
   }
 }
 
-.nhsuk-breadcrumb .nhsuk-icon__chevron-left, .learndash-wrapper .ld-breadcrumbs .nhsuk-icon__chevron-left {
+.nhsuk-breadcrumb .nhsuk-icon__chevron-left, .learndash-wrapper ld-breadcrumbs .nhsuk-icon__chevron-left {
   float: left;
   height: 24px;
   left: -8px;
@@ -3894,20 +3894,20 @@ b {
   width: 24px;
 }
 
-.nhsuk-breadcrumb__list, .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments {
+.nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .nhsuk-breadcrumb .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-breadcrumb__list, .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments {
+  .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .nhsuk-breadcrumb .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs {
     display: none;
     /* [3] */
   }
 }
 
-.nhsuk-breadcrumb__item, .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span {
+.nhsuk-breadcrumb__item, .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span, .nhsuk-breadcrumb .sfwd-breadcrumbs span, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs span {
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
@@ -3923,7 +3923,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-breadcrumb__item, .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span {
+  .nhsuk-breadcrumb__item, .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span, .nhsuk-breadcrumb .sfwd-breadcrumbs span, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs span {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -3931,17 +3931,17 @@ b {
 }
 
 @media print {
-  .nhsuk-breadcrumb__item, .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span {
+  .nhsuk-breadcrumb__item, .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span, .nhsuk-breadcrumb .sfwd-breadcrumbs span, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs span {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
-.nhsuk-breadcrumb__item:first-child, .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span:first-child {
+.nhsuk-breadcrumb__item:first-child, .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span:first-child, .nhsuk-breadcrumb .sfwd-breadcrumbs span:first-child, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs span:first-child {
   padding-left: 0;
 }
 
-.nhsuk-breadcrumb__item:last-child, .learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span:last-child {
+.nhsuk-breadcrumb__item:last-child, .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span:last-child, .nhsuk-breadcrumb .sfwd-breadcrumbs span:last-child, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs span:last-child {
   background: none;
 }
 
@@ -12038,22 +12038,22 @@ b {
   margin: 1em 0 0;
 }
 
-.learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments {
+.learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments {
   white-space: nowrap;
   overflow: hidden;
 }
 
-.learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span {
+.learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span {
   display: inline;
 }
 
-.learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span a {
+.learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span a {
   font-weight: 400;
   color: #212b32;
   padding: 10px;
 }
 
-.learndash-wrapper .ld-breadcrumbs .ld-breadcrumbs-segments span:after {
+.learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments span:after {
   content: '';
 }
 
@@ -12136,6 +12136,10 @@ b {
   border-top-color: #007f3b !important;
 }
 
-.single-sfwd-lessons nav.nhsuk-breadcrumb, .single-sfwd-lessons .learndash-wrapper nav.ld-breadcrumbs, .learndash-wrapper .single-sfwd-lessons nav.ld-breadcrumbs, .single-sfwd-topic nav.nhsuk-breadcrumb, .single-sfwd-topic .learndash-wrapper nav.ld-breadcrumbs, .learndash-wrapper .single-sfwd-topic nav.ld-breadcrumbs {
+.nhsuk-breadcrumb .sfwd-breadcrumbs span.sep, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs span.sep {
   display: none;
+}
+
+.nhsuk-breadcrumb .sfwd-breadcrumbs span a span, .learndash-wrapper ld-breadcrumbs .sfwd-breadcrumbs span a span {
+  padding-right: 0;
 }
