@@ -3,7 +3,7 @@
     color: $color_nhsuk-blue;
   }
 
-  .ld-icon.ld-primary-background, .ld-expand-button, .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+  .ld-icon.ld-primary-background, .ld-expand-button, .ld-expand-button.ld-button-alternate .ld-icon {
     background: $color_nhsuk-blue;
   }
 
@@ -33,48 +33,33 @@
   }
 
   .ld-status {
-    border-radius: 4px;
-    border: 2px solid;
-    background: $color_nhsuk-white;
-    color: $color_nhsuk-black;
+    @extend .nhsuk-pill-standard;
 
     &.ld-status-waiting {
       border-color: $color_nhsuk-red;
     }
 
     &.ld-status-progress {
-      background: $color_nhsuk-white;
-      color: $color_nhsuk-blue;
-      border-color: $color_nhsuk-blue;
-      font-size: 0.75rem;
+      @extend .nhsuk-pill-notice;
     }
 
     &.ld-status-complete {
-      background: $color_nhsuk-white;
-      color: $color_nhsuk-green;
-      border-color: $color_nhsuk-green;
-      font-size: 0.75rem;
+      @extend .nhsuk-pill-success;
     }
   }
 
   .ld-breadcrumbs, .ld-course-status, .ld-item-details {
     .ld-status {
       &.ld-status-progress {
-        background: $color_nhsuk-white;
-        color: $color_nhsuk-blue;
-        border-color: $color_nhsuk-blue;
-        font-size: 0.75rem;
+        @extend .nhsuk-pill-notice;
       }
 
       &.ld-status-complete {
-        background: $color_nhsuk-white;
-        color: $color_nhsuk-green;
-        border-color: $color_nhsuk-green;
-        font-size: 0.75rem;
+        @extend .nhsuk-pill-success;
       }
 
       &.ld-status-waiting {
-        border-color: $color_nhsuk-red;
+        @extend .nhsuk-pill-warn;
       }
     }
   }
@@ -241,6 +226,20 @@
     input[type=submit] {
       @extend .nhsuk-button;
       margin-top: 1rem;
+    }
+  }
+  /*
+  Style wpProQuiz
+   */
+  .wpProQuiz_content {
+    .wpProQuiz_button {
+      @extend .nhsuk-button;
+    }
+    .wpProQuiz_QuestionButton {
+      @extend .nhsuk-button--secondary;
+    }
+    .wpProQuiz_TipButton {
+      @extend .nhsuk-button--reverse;
     }
   }
   /*

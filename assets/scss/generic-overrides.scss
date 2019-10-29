@@ -81,3 +81,56 @@
     }
   }
 }
+.nhsuk-pill-standard {
+  border-radius: 4px;
+  border: 2px solid;
+  background-color: $color_nhsuk-white;
+  text-align: center;
+  padding: 5px 12px;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 11px;
+  line-height: 1.1;
+  white-space: nowrap;
+  display: inline-block;
+  border-color: $color_nhsuk-grey-1;
+  color: $color_nhsuk-grey-1;
+}
+.nhsuk-pill-notice {
+  @extend .nhsuk-pill-standard;
+  border-color: $color_nhsuk-blue;
+  color: $color_nhsuk-blue;
+}
+.nhsuk-pill-success {
+  @extend .nhsuk-pill-standard;
+  border-color: $color_nhsuk-green;
+  color: $color_nhsuk-green;
+}
+
+.nhsuk-pill-warn {
+  @extend .nhsuk-pill-standard;
+  border-color: $color_nhsuk-red;
+  color: $color_nhsuk-red;
+}
+#primary {
+  footer {
+    .edit-link {
+        @extend .nhsuk-pill-standard;
+        text-decoration: none;
+        margin-left: 50px;
+      a {
+        color: $color_nhsuk-grey-1;
+      }
+    }
+
+    .tags-links, .cat-links {
+      @extend .nhsuk-pill-notice;
+
+      a {
+        text-transform: none;
+      }
+    }
+  }
+}
