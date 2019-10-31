@@ -251,7 +251,12 @@
     .wpProQuiz_TipButton {
       @extend .nhsuk-button--reverse;
     }
-
+    .wpProQuiz_questionInput, input[type="text"] {
+      @extend .nhsuk-input;
+    }
+    input[type="textarea"] {
+      @extend .nhsuk-textarea;
+    }
   }
 
   /*
@@ -404,5 +409,13 @@
       }
     }
 
+  }
+}
+
+.single-sfwd-courses {
+  article.sfwd-courses {
+    img.wp-post-image {
+      display: none;
+    }
   }
 }
