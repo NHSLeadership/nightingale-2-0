@@ -7450,7 +7450,7 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
-textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionInput, .learndash-wrapper .wpProQuiz_content input[type="text"] {
+textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"], .learndash-wrapper .wpProQuiz_content input[type="text"] {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -7487,7 +7487,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
   input[type="datetime"],
   input[type="datetime-local"],
   input[type="color"],
-  textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionInput, .learndash-wrapper .wpProQuiz_content input[type="text"] {
+  textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"], .learndash-wrapper .wpProQuiz_content input[type="text"] {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -7510,7 +7510,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
   input[type="datetime"],
   input[type="datetime-local"],
   input[type="color"],
-  textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionInput, .learndash-wrapper .wpProQuiz_content input[type="text"] {
+  textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"], .learndash-wrapper .wpProQuiz_content input[type="text"] {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -7531,7 +7531,7 @@ input:focus[type="time"],
 input:focus[type="datetime"],
 input:focus[type="datetime-local"],
 input:focus[type="color"],
-textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionInput:focus, .learndash-wrapper .wpProQuiz_content input:focus[type="text"] {
+textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"], .learndash-wrapper .wpProQuiz_content input:focus[type="text"] {
   box-shadow: 0 0 0 4px #ffb81C;
   outline: 4px solid transparent;
   outline-offset: 4px;
@@ -7552,7 +7552,7 @@ input[type="time"]::-webkit-outer-spin-button,
 input[type="datetime"]::-webkit-outer-spin-button,
 input[type="datetime-local"]::-webkit-outer-spin-button,
 input[type="color"]::-webkit-outer-spin-button,
-textarea::-webkit-outer-spin-button, #login #loginform .user-login::-webkit-outer-spin-button, #login #loginform .user_pass::-webkit-outer-spin-button, .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-outer-spin-button, .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionInput::-webkit-outer-spin-button, .learndash-wrapper .wpProQuiz_content input[type="text"]::-webkit-outer-spin-button,
+textarea::-webkit-outer-spin-button, #login #loginform .user-login::-webkit-outer-spin-button, #login #loginform .user_pass::-webkit-outer-spin-button, .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-outer-spin-button, .learndash-wrapper .wpProQuiz_content input[type="text"]::-webkit-outer-spin-button,
 .nhsuk-input::-webkit-inner-spin-button,
 input[type="text"]::-webkit-inner-spin-button,
 input[type="email"]::-webkit-inner-spin-button,
@@ -7573,7 +7573,6 @@ textarea::-webkit-inner-spin-button,
 #login #loginform .user-login::-webkit-inner-spin-button,
 #login #loginform .user_pass::-webkit-inner-spin-button,
 .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-inner-spin-button,
-.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionInput::-webkit-inner-spin-button,
 .learndash-wrapper .wpProQuiz_content input[type="text"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -7581,7 +7580,7 @@ textarea::-webkit-inner-spin-button,
 
 .nhsuk-input[type="number"],
 input[type="number"],
-textarea[type="number"], #login #loginform .user-login[type="number"], #login #loginform .user_pass[type="number"], .nhsuk-list-panel .comment-respond input[type="number"][type="text"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionInput[type="number"], .learndash-wrapper .wpProQuiz_content input[type="number"][type="text"] {
+textarea[type="number"], #login #loginform .user-login[type="number"], #login #loginform .user_pass[type="number"], .nhsuk-list-panel .comment-respond input[type="number"][type="text"], .learndash-wrapper .wpProQuiz_content input[type="number"][type="text"] {
   -moz-appearance: textfield;
 }
 
