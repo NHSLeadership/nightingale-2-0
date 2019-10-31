@@ -10159,6 +10159,11 @@ section {
   margin-right: 0;
 }
 
+.nhsuk-textarea {
+  min-height: 10rem;
+  width: 100%;
+}
+
 .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
   border-radius: 4px;
   background: #007f3b;
