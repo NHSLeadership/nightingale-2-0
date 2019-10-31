@@ -12126,6 +12126,36 @@ b {
   margin-top: 1rem;
 }
 
+.learndash-wrapper .wpProQuiz_content input[type="text"] {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #212b32;
+}
+
+.learndash-wrapper .wpProQuiz_content input[type="textarea"] {
+  min-height: 10rem;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #212b32;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList .wpProQuiz_questionListItem .wpProQuiz_cloze {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #212b32;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList .wpProQuiz_questionListItem .nhsuk-radios__item:last-of-type {
+  margin-bottom: 8px;
+}
+
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList .wpProQuiz_questionListItem label {
+  border: 0;
+  padding: 0;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
 .learndash-wrapper #btn-join.ld-button-transparent.ld-status-complete,
 .learndash-wrapper .btn-join.ld-button-transparent.ld-status-complete,
 .learndash-wrapper .ld-button.ld-button-transparent.ld-status-complete,

@@ -424,6 +424,12 @@ if ( !is_admin() ) {
 }
 
 /**
+ * LearnDash style over-ride.
+ */
+if ( !is_admin() ) {
+	require get_template_directory() . '/inc/learndash.php';
+}
+/**
  * Retina Ready Image code.
  */
 require get_template_directory() . '/inc/retina-images.php';
