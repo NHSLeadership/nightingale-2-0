@@ -251,7 +251,7 @@
     .wpProQuiz_TipButton {
       @extend .nhsuk-button--reverse;
     }
-    .wpProQuiz_questionInput, input[type="text"] {
+    input[type="text"] {
       @extend .nhsuk-input;
     }
     input[type="textarea"] {
