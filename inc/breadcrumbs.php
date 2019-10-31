@@ -41,7 +41,7 @@ function nightingale_category_parents( $id, $link = false, $separator = '', $nic
 }
 
 function nightingale_uncanny_breadcrumb_check() {
-	if ( is_plugin_active( 'uncanny-learndash-toolkit/uncanny-learndash-toolkit.php' ) ) {if(in_array('uncanny-learndash-toolkit/uncanny-learndash-toolkit.php', apply_filters('active_plugins', get_option('active_plugins')))){
+	if(in_array('uncanny-learndash-toolkit/uncanny-learndash-toolkit.php', apply_filters('active_plugins', get_option('active_plugins')))){
 	    $uo_active_classes = get_option( 'uncanny_toolkit_active_classes', 0 );
 	    if ( 0 !== $uo_active_classes ) {
 		    if ( ! key_exists( 'uncanny_learndash_toolkit\Breadcrumbs', $uo_active_classes ) ) {
