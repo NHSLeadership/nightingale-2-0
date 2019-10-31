@@ -257,7 +257,7 @@
       border-radius: 4px;
       border: 1px solid $color_nhsuk-black;
     }
-    input[type="textarea"] {
+    textarea {
       @extend .nhsuk-textarea;
       min-height: 10rem;
       background: $color_nhsuk-white;

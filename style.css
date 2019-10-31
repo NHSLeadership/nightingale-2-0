@@ -9342,7 +9342,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /* ==========================================================================
    COMPONENTS/ #TEXTAREA
    ========================================================================== */
-.nhsuk-textarea, .learndash-wrapper .wpProQuiz_content input[type="textarea"] {
+.nhsuk-textarea, .learndash-wrapper .wpProQuiz_content textarea {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -9360,7 +9360,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content input[type="textarea"] {
+  .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content textarea {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9368,20 +9368,20 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content input[type="textarea"] {
+  .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content textarea {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-textarea:focus, .learndash-wrapper .wpProQuiz_content input:focus[type="textarea"] {
+.nhsuk-textarea:focus, .learndash-wrapper .wpProQuiz_content textarea:focus {
   box-shadow: 0 0 0 4px #ffb81C;
   outline: 4px solid transparent;
   outline-offset: 4px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content input[type="textarea"] {
+  .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content textarea {
     margin-bottom: 40px;
   }
 }
@@ -11243,7 +11243,7 @@ b {
   margin-right: 0;
 }
 
-.nhsuk-textarea, .learndash-wrapper .wpProQuiz_content input[type="textarea"] {
+.nhsuk-textarea, .learndash-wrapper .wpProQuiz_content textarea {
   min-height: 10rem;
   width: 100%;
 }
@@ -11726,7 +11726,7 @@ b {
   padding-left: 20px;
 }
 
-.gform_body ul.gform_fields .nhsuk-textarea, .gform_body ul.gform_fields .learndash-wrapper .wpProQuiz_content input[type="textarea"], .learndash-wrapper .wpProQuiz_content .gform_body ul.gform_fields input[type="textarea"] {
+.gform_body ul.gform_fields .nhsuk-textarea, .gform_body ul.gform_fields .learndash-wrapper .wpProQuiz_content textarea, .learndash-wrapper .wpProQuiz_content .gform_body ul.gform_fields textarea {
   min-height: 200px;
 }
 
@@ -11734,7 +11734,7 @@ b {
   display: none;
 }
 
-.gform_body .gform_wrapper li.gfield fieldset .nhsuk-textarea, .gform_body .gform_wrapper li.gfield fieldset .learndash-wrapper .wpProQuiz_content input[type="textarea"], .learndash-wrapper .wpProQuiz_content .gform_body .gform_wrapper li.gfield fieldset input[type="textarea"] {
+.gform_body .gform_wrapper li.gfield fieldset .nhsuk-textarea, .gform_body .gform_wrapper li.gfield fieldset .learndash-wrapper .wpProQuiz_content textarea, .learndash-wrapper .wpProQuiz_content .gform_body .gform_wrapper li.gfield fieldset textarea {
   width: 100%;
 }
 
@@ -12132,7 +12132,7 @@ b {
   border: 1px solid #212b32;
 }
 
-.learndash-wrapper .wpProQuiz_content input[type="textarea"] {
+.learndash-wrapper .wpProQuiz_content textarea {
   min-height: 10rem;
   background: #ffffff;
   border-radius: 4px;
