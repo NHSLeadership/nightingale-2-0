@@ -43,43 +43,6 @@
   clear: both;
 }
 
-//Gravity forms gumpfh
-.gform_heading {
-  .gform_description {
-    font-size: 1rem;
-    font-weight: 700;
-  }
-}
-.gform_body {
-  padding-top: 30px;
-
-  ul.gform_fields {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-
-    .nhsuk-required-message {
-      font-weight: bold;
-      font-style: italic;
-      padding-left: 20px;
-    }
-
-    .nhsuk-textarea {
-      min-height: 200px;
-    }
-
-    .gform_hidden {
-      display: none;
-    }
-  }
-  .gform_wrapper {
-    li.gfield fieldset {
-      .nhsuk-textarea {
-        width: 100%;
-      }
-    }
-  }
-}
 /* login form customisation */
 #login {
   padding-top: 0 !important;

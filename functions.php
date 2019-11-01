@@ -419,15 +419,19 @@ require get_template_directory() . '/inc/breadcrumbs.php';
 /**
  * Gravity Forms style over-ride.
  */
-if ( !is_admin() ) {
-	require get_template_directory() . '/inc/gravity-forms.php';
+if(in_array('gravityforms/gravityforms.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+	if ( ! is_admin() ) {
+		require get_template_directory() . '/inc/gravity-forms.php';
+	}
 }
 
 /**
  * LearnDash style over-ride.
  */
-if ( !is_admin() ) {
-	require get_template_directory() . '/inc/learndash.php';
+if(in_array('sfwd-lms/sfwd-lms.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+	if ( ! is_admin() ) {
+		require get_template_directory() . '/inc/learndash.php';
+	}
 }
 /**
  * Retina Ready Image code.

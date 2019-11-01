@@ -10435,39 +10435,6 @@ section {
   clear: both;
 }
 
-.gform_heading .gform_description {
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.gform_body {
-  padding-top: 30px;
-}
-
-.gform_body ul.gform_fields {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-.gform_body ul.gform_fields .nhsuk-required-message {
-  font-weight: bold;
-  font-style: italic;
-  padding-left: 20px;
-}
-
-.gform_body ul.gform_fields .nhsuk-textarea {
-  min-height: 200px;
-}
-
-.gform_body ul.gform_fields .gform_hidden {
-  display: none;
-}
-
-.gform_body .gform_wrapper li.gfield fieldset .nhsuk-textarea {
-  width: 100%;
-}
-
 /* login form customisation */
 #login {
   padding-top: 0 !important;

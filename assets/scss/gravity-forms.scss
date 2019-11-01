@@ -1,0 +1,109 @@
+
+//Gravity forms gumpfh
+.gform_heading {
+  .gform_description {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+.gform_body {
+  padding-top: 30px;
+  .address_city, .address_state {
+    width: 50%;
+    float: left;
+  }
+  .address_city {
+    padding-right: 10px;
+  }
+  .address_state {
+    padding-left: 10px;
+  }
+  ul.gform_fields {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .nhsuk-required-message {
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 20px;
+  }
+
+  .nhsuk-textarea {
+    min-height: 200px;
+  }
+
+  .gform_hidden {
+    display: none;
+  }
+
+  .gform_wrapper {
+
+    .gfield_error {
+      .nhsuk-select {
+        @extend .nhsuk-select--error;
+      }
+    }
+    li.gfield fieldset {
+      .nhsuk-textarea {
+        width: 100%;
+      }
+    }
+
+  }
+  .gform_next_button {
+    @extend .nhsuk-button;
+    @extend .nhsuk-button--reverse;
+  }
+  ul.ui-sortable {
+    list-style-type: none;
+  }
+  .gsurvey-rating:not(:checked) > label {
+    width: 40px;
+    height: 40px;
+    background-size: 35px 35px;
+    font-size: 40px !important;
+  }
+  .gsurvey-rating > input:checked ~ label {
+    background-size: 35px 35px;
+    font-size: 40px !important;
+  }
+  .gsurvey-rating:not(:checked) > label:hover, .gsurvey-rating:not(:checked) > label:hover ~ label {
+    background-size: 35px 35px;
+  }
+  .gsurvey-rating:after {
+    clear: both;
+  }
+  .ginput_container_name, .clear-multi {
+    display: flex;
+    span, .ginput_container {
+      padding: 10px;
+    }
+  }
+  table.gsurvey-likert {
+    background: $color_nhsuk-white;
+    .gsurvey-likert-row-label, .gsurvey-likert-choice-label {
+      font-size: 1rem;
+      padding: 10px;
+      background: $color_nhsuk-blue;
+      color: $color_nhsuk-white;
+    }
+    td.gsurvey-likert-choice, td.gsurvey-likert-choice.gsurvey-likert-selected {
+      background-color: $color_nhsuk-white;
+      background-size: 35px 35px;
+    }
+    tr:nth-child(odd) .gsurvey-likert-row-label {
+      background: $color_nhsuk-dark-blue;
+    }
+  }
+  .nhsuk-form-group--error {
+    table.gsurvey-likert {
+      border: 3px solid $color_nhsuk-red;
+    }
+  }
+}
+#ui-datepicker-div {
+  border: 2px solid $color_nhsuk-blue;
+  border-radius: 4px;
+  background: $color_nhsuk-white;
+}
