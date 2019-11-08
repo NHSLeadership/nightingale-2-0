@@ -319,11 +319,15 @@
   .ld-focus-comments .form-submit #submit.ld-button-transparent.ld-status-complete,
   .ld-focus-comment .ld-comment-reply a.comment-reply-link.ld-button-transparent.ld-status-complete {
     color: $color_nhsuk-green !important;
+    background: $color_nhsuk-white;
+    .ld-button {
+      max-width: unset;
+
+    }
   }
 
   .ld-certificate-icon,
   #quiz_continue_link,
-  #quiz_continue_link:hover,
   .course_progress .sending_progress_bar,
   .wpProQuiz_content a#quiz_continue_link,
   .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect label,
@@ -335,6 +339,13 @@
   .ld-alert-success .ld-button,
   .ld-course-status .ld-status.ld-status-complete {
     background-color: $color_nhsuk-green !important;
+    color: $color_nhsuk-white;
+    max-width: unset;
+    &:hover {
+      color: $color_nhsuk-green !important;
+      background-color: $color_nhsuk-white !important;
+      border: 2px solid $color_nhsuk-green !important;
+    }
   }
 
   .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortCriterion,

@@ -54,8 +54,6 @@ flush();
 	</div>
 </footer>
 <!--
-unique string for tracking usage, this does nothing except allow us an
-insight as to how many people are using this theme from a footprint search.
  -- FzwfoYNPKdzf5LLgTGsAAz6xb8lqM8ObevYAW5CV9mBAbpDtfV057ndBJWDFrT7P --
 -->
 <?php
