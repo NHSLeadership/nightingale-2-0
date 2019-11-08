@@ -43,32 +43,11 @@ function nightingale_customize_register( $wp_customize ) {
 		array(
 			'title'       => esc_html__( 'Header', 'nightingale' ),
 			'description' => esc_attr__( 'Choose a Header Style', 'nightingale' ),
-			'priority'    => 1,
+			'priority'    => 10,
 		)
 	);
 
-	/*
-	 * Header Styles
-	 */
-	$wp_customize->add_setting(
-		'header_styles',
-		array(
-			'default'           => 'normal',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'header_styles',
-		array(
-			'label'   => esc_html__( 'Header Styles', 'nightingale' ),
-			'section' => 'section_header',
-			'type'    => 'radio',
-			'choices' => array(
-				'normal'   => esc_html__( 'Standard (Solid Blue)', 'nightingale' ),
-				'inverted' => esc_html__( 'Non Standard (White Logo Bar)', 'nightingale' ),
-			),
-		)
-	);
+
 
 	/*
 	 * -----------------------------------------------------------
@@ -112,7 +91,7 @@ function nightingale_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'Show site Name as text?', 'nightingale' ),
 			'description' => esc_html__( 'you may wish to hide this if your organisational logo includes your organisation name. Your site name is edited / created in the "Site Identity" section of the theme customiser', 'nightingale' ),
-			'section' => 'section_header',
+			'section' => 'title_tagline',
 			'type'    => 'radio',
 			'choices' => array(
 				'yes'   => esc_html__( 'Yes', 'nightingale' ),
@@ -141,7 +120,7 @@ function nightingale_customize_register( $wp_customize ) {
 			'section' => 'section_header',
 			'type'    => 'radio',
 			'choices' => array(
-				'transaction'   => esc_html__( 'Transactional', 'nightingale' ),
+				'transactional'   => esc_html__( 'Transactional', 'nightingale' ),
 				'organisation' => esc_html__( 'Organisational', 'nightingale' ),
 			),
 		)
@@ -179,6 +158,29 @@ function nightingale_customize_register( $wp_customize ) {
 			'type'          => 'text',
 		)
 	);
+	/*
+	 * Header Styles
+	 */
+	$wp_customize->add_setting(
+		'header_styles',
+		array(
+			'default'           => 'normal',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+
+	$wp_customize->add_control(
+		'header_styles',
+		array(
+			'label'   => esc_html__( 'Header Styles', 'nightingale' ),
+			'section' => 'section_header',
+			'type'    => 'radio',
+			'choices' => array(
+				'normal'   => esc_html__( 'Standard (Solid Blue)', 'nightingale' ),
+				'inverted' => esc_html__( 'Non Standard (White Logo Bar)', 'nightingale' ),
+			),
+		)
+	);
 
 	/*
 	 * ------------------------------------------------------------
@@ -190,7 +192,7 @@ function nightingale_customize_register( $wp_customize ) {
 		array(
 			'title'       => esc_html__( 'Emergency Alert', 'nightingale' ),
 			'description' => esc_attr__( 'Adds a site wide alert to the top of your site. Use sparingly!', 'nightingale' ),
-			'priority'    => 1,
+			'priority'    => 75,
 		)
 	);
 
@@ -308,7 +310,7 @@ function nightingale_customize_register( $wp_customize ) {
 		array(
 			'title'       => esc_html__( 'Feedback Alert', 'nightingale' ),
 			'description' => esc_attr__( 'Adds a site wide feedback alert. Use sparingly!', 'nightingale' ),
-			'priority'    => 1,
+			'priority'    => 80,
 		)
 	);
 
@@ -469,3 +471,37 @@ function nightingale_customize_preview_js() {
 }
 
 add_action( 'customize_preview_init', 'nightingale_customize_preview_js' );
+
+function nightingale_header_customiser_dependency_check() {
+	?>
+	<script>
+		;(function () {
+            /**
+             * Run function only when customizer changes
+             */
+            wp.customize.bind('ready', function () {
+                wp.customize.control('logo_type', function (control) {
+                    control.setting.bind(function (value) {
+                        switch (value) {
+                            /**
+                             * Transactional types
+                             */
+	                        case 'transactional':
+	                            wp.customize.control('loqo_qualifier').deactivate();
+	                            break;
+                            /**
+                             *  Organisational types
+                             */
+	                        case 'organisation':
+                                wp.customize.control('loqo_qualifier').activate();
+                                break;
+
+                        }
+                    })
+                })
+            })
+		})();
+	</script>
+<?php
+}
+add_action( 'customize_controls_enqueue_scripts', 'nightingale_header_customiser_dependency_check', 10, 1 );

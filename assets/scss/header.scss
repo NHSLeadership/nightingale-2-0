@@ -1,72 +1,25 @@
-.nhsuk-header--transactional {
-  .nhsuk-header__logo {
-    position: relative;
-    top: -8px;
-    height: auto;
-    padding: 20px 0 10px;
-    .nhsuk-logo {
-      position: relative;
-      top: 8px;
-    }
-    a.nhsuk-header__link {
-      height: auto;
-      width: auto;
-      text-decoration: none;
-
-      .nhsuk-header__transactional-service-name {
-        width: max-content;
-        float: none;
-        color: $color_nhsuk-white;
-        font-size: 1.25rem;
-        font-weight: 700;
-        display: inline-flex;
-      }
-
-      .nhsuk-header__organisational-service-name {
-        width: auto;
-        color: $color_nhsuk-white;
-        font-size: 1.25rem;
-        font-weight: 700;
-        padding: 0 10px 0 0;
-      }
-
-      .nhsuk-header__organisational-qualifier {
-        color: $color_nhsuk-white;
-        width: auto;
-        padding: 0;
-      }
-    }
+.nhsuk-header {
+  .nhsuk-header__navigation {
+    max-width: 100%;
   }
+
   .nhsuk-header__search-wrap input[type="text"] {
-    border: 1px solid $color_nhsuk-white;
     border-radius: 3px 0px 0px 3px;
+
+    &:focus {
+
+    }
   }
-  .nhsuk-header__inverted {
+
+  &.nhsuk-header__white {
     .nhsuk-header__search-wrap input[type="text"] {
       border: 1px solid $nhsuk-border-color;
     }
-    .nhsuk-header__logo {
-      a.nhsuk-header__link {
-        .nhsuk-header__transactional-service-name, .nhsuk-header__organisational-service-name {
-          color: $color-nhsuk-black;
-        }
-
-        .nhsuk-header__organisational-qualifier {
-          color: $color-nhsuk-bright-blue;
-        }
-      }
-    }
-    background: $color_nhsuk-white;
-    color: $color_nhsuk-black;
 
     a.nhsuk-header__transactional-service-name--link {
       color: $color_nhsuk-blue;
     }
 
-    .nhsuk_header__logo {
-      padding: 0 0 10px 0;
-
-    }
 
     .nhsuk-header__menu {
       .nhsuk-header__menu-toggle {
@@ -110,32 +63,17 @@
       }
     }
   }
+
   .nhsuk-header__menu-toggle {
     margin-right: -4px;
   }
+
   @media (min-width: 40.0625em) {
     margin-top: 0;
   }
   @media (max-width: 40.0525em) {
     .autocomplete__input {
       height: 52px;
-    }
-    .nhsuk-header__content {
-      float: right ;
-    }
-    .nhsuk-header__menu {
-      float: right;
-      margin-left: 0;
-    }
-    .nhsuk-header__search {
-      margin-right: 16px;
-      float: right;
-    }
-    .nhsuk-header__logo {
-      padding: 20px 16px 0;
-    }
-    .nhsuk-header__search-toggle {
-      position: relative;
     }
 
   }
