@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- So that mobile will display zoomed in -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- enable media queries for windows phone 8 -->
+	<meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+	<!--[if gte mso 9]><xml>
+	 <o:OfficeDocumentSettings>
+	  <o:AllowPNG/>
+	  <o:PixelsPerInch>96</o:PixelsPerInch>
+	 </o:OfficeDocumentSettings>
+	</xml><![endif]-->
+	<style>
+		body{
+				background-color:###background###;
+				margin:0;
+				padding:10px;
+		}
+
+		.header,
+		.title,
+		.subtitle,
+		.footer-text {
+				font-family: Helvetica, Arial, sans-serif;
+		}
+
+		.container-padding {
+				padding-left: 24px;
+				padding-right: 24px;
+		}
+
+		.headerwrapper {
+			background: ###headerbackground###;
+		}
+		.header {
+				font-size:        ###headerfontsize###px;
+				font-weight:      ###headerbold###;
+				font-style:       ###headeritalic###;
+				color:            ###headercolor###;
+				background:       inherit;
+				font-family:      ###headerfont###;
+				text-align:       ###headeralign###!important;
+				padding:          ###headerpaddingtop###px ###headerpaddingright###px ###headerpaddingbottom###px ###headerpaddingleft###px;
+				line-height: 1.2;
+				text-decoration: none;
+		}
+
+		.header a {
+				font-size:        ###headerfontsize###px;
+				font-weight:      ###headerbold###;
+				font-style:       ###headeritalic###;
+				color:            ###headercolor###;
+				font-family:      ###headerfont###;
+				text-decoration: none;
+		}
+
+		.header-image{
+				height:auto;
+				vertical-align: top;
+				border:none;
+		}
+
+
+		.full-width-header-image{
+				width: 100%;
+				display: block;
+		}
+
+		.footer-text,
+		.footerwrapper,
+		.footer-text th,
+		.footer-text td,
+		.footer-text li {
+				font-size: 12px;
+				line-height: 16px;
+				color: #aaaaaa;
+				background: ###footerbackground###;
+		}
+		.footerwrapper {
+			border-top: 4px solid ###headerbackground###;
+		}
+
+		.footer-text a,
+		.footer-text th a,
+		.footer-text td a,
+		.footer-text li a {
+				color: #aaaaaa;
+		}
+
+		.footerlink{
+				font-size: 11px;
+				text-transform: uppercase;
+				text-decoration: underline;
+		}
+
+		.container {
+				width: 600px;
+				max-width: 600px;
+		}
+
+		.content {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				background-color: ###contentbackground###;
+		}
+
+		code {
+				background-color: #eee;
+				padding: 0 4px;
+				font-family: Courier, monospace;
+				font-size: 12px;
+		}
+
+		hr {
+				border: 0;
+				border-bottom: 1px solid #cccccc;
+		}
+
+		.hr {
+				height: 1px;
+				border-bottom: 1px solid #cccccc;
+		}
+
+		h1 {
+				font-size:        ###headlinefontsize###px;
+				font-weight:      ###headlinebold###;
+				font-style:       ###headlineitalic###;
+				color:            ###headlinecolor###;
+				font-family:      ###headlinefont###;
+				text-align:       ###headlinealign###;
+		}
+
+		h2,h3,h4 {
+				font-size:        ###subheadlinefontsize###px;
+				font-weight:      ###subheadlinebold###;
+				font-style:       ###subheadlineitalic###;
+				color:            ###subheadlinecolor###;
+				font-family:      ###subheadlinefont###;
+				text-align:       ###subheadlinealign###;
+		}
+
+		.subtitle {
+				font-size: 16px;
+				font-weight: 600;
+				color: #2469A0;
+		}
+		.subtitle span {
+				font-weight: 400;
+				color: #999999;
+		}
+
+		.body-text,
+		.body-text td,
+		.body-text th,
+		.body-text li {
+				font-family:      ###textfont###;
+				font-size:        ###textfontsize###px;
+				color:            ###textcolor###;
+				font-weight:      ###textbold###;
+				font-style:       ###textitalic###;
+				line-height:      1.5;
+		}
+
+		.body-text,
+		.body-text td,
+		.body-text th{
+				text-align:       ###textalign###;
+		}
+
+		a{
+				color:            ###linkcolor###;
+				font-weight:      ###linkbold###;
+				font-style:       ###linkitalic###;
+				text-decoration:  ###linkunderline###;
+		}
+
+		.body-text .content-twocol td,
+		.body-text .content-twocol h1,
+		.body-text .content-twocol h2,
+		.body-text .content-twocol h3,
+		.body-text .content-twocol h4{
+				text-align: left;
+				vertical-align: top;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		table {
+			border-spacing: 0;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		.ExternalClass {
+			width: 100%;
+		}
+
+		.ExternalClass,
+		.ExternalClass p,
+		.ExternalClass span,
+		.ExternalClass font,
+		.ExternalClass td,
+		.ExternalClass div {
+			line-height: 100%;
+		}
+
+		.ReadMsgBody {
+			width: 100%;
+			background-color: ###background###;
+		}
+
+		table {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+		a.footerlink{
+			font-size: 12px;
+			text-decoration: none;
+		}
+
+		.yshortcuts a {
+			border-bottom: none !important;
+		}
+
+		/**** ADD CSS HERE ****/
+
+		@media screen and (max-width: 599px) {
+			table[class="force-row"],
+			table[class="container"] {
+				width: 100% !important;
+				max-width: 100% !important;
+			}
+		}
+		@media screen and (max-width: 400px) {
+			td[class*="container-padding"] {
+				padding-left: 12px !important;
+				padding-right: 12px !important;
+			}
+
+			.header-image{
+				max-width: 100% !important;
+			}
+
+			table[class*="content-twocol"]{
+				float: none;
+			}
+
+			table[class*="content-twocol"],
+			table[class*="content-twocol"] p,
+			table[class*="content-twocol"] h1,
+			table[class*="content-twocol"] h2,
+			table[class*="content-twocol"] h3,
+			table[class*="content-twocol"] h4{
+				text-align: ###textalign###!important;
+			}
+		}
+
+		/**** ADD MOBILE CSS HERE ****/
+
+		.ios-footer a {
+			color: #aaaaaa !important;
+			text-decoration: underline;
+		}
+
+
+	</style>
+</head>
+<body>
+	<span style="display:none; visibility:hidden; font-size: 1px !important;">###pre-header###</span>
+<!-- 100% background wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" class="###plugin-class###">
+	<tr>
+		<td align="center" valign="top" >
+
+			<br>
+			<!--header-table-->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="headerwrapper">
+				<tr>
+					<td>
+						<table class="container" border="0" cellspacing="0" cellpadding="0" style="width:100%; max-width:600px!important;" align="center">
+							<tr>
+								<td class="container-padding header" align="###headeralign###">
+									###headertext###
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!--/header-table-->
+			<table id="holder" class="container" border="0" cellspacing="0" cellpadding="0" style="width:100%; max-width:600px!important;" align="center">
+				<tr>
+					<td align="center">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+
+									<!--[if (gte mso 9)|(IE)]>
+										<table id="outlookholder" class="container" width="600" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
+									<![endif]-->
+
+										<!--content-table-->
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="content" align="">
+													<div class="body-text">
+														{#mailcontent#}
+													</div>
+												</td>
+											</tr>
+										</table>
+										<!--/content-table-->
+
+									<!--[if (gte mso 9)|(IE)]>
+										</td></tr></table>
+									<![endif]-->
+
+					            </td>
+					        </tr>
+					    </table>
+
+					</td>
+				</tr>
+			</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="footerwrapper">
+				<tr>
+					<td>
+						<table class="container" border="0" cellspacing="0" cellpadding="0" style="width:100%; max-width:600px!important;" align="center">
+							<!--footer-table-->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="container-padding footer-text" align="left">
+										###footer###
+										<br>
+									</td>
+								</tr>
+							</table>
+							<!--/footer-table-->
+						</table>
+					</td>
+				</tr>
+			</table>
+
+						</td>
+	</tr>
+</table><!--/100% background wrapper-->
+
+</body>
+</html>
