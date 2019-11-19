@@ -6,7 +6,7 @@
  *
  * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 2.0.3 5th September 2019
+ * @version 2.0.5 19th November 2019
  */
 
 /**
@@ -119,7 +119,7 @@ function nightingale_setup() {
 				'WP_Widget_Archives',
 				'WP_Widget_Tag_Cloud',
 				'WP_Widget_Recent_Posts',
-			)
+			),
 		),
 		'posts'      => array(
 			'home',
@@ -217,7 +217,7 @@ function nightingale_widgets_init() {
 			'before_widget' => '<div id="%1$s" class="%2$s nhsuk-panel-with-label">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="nhsuk-panel-with-label__label">',
-			'after_title'   => '</h3>'
+			'after_title'   => '</h3>',
 		)
 	);
 }
@@ -364,7 +364,7 @@ function nightingale_admin_notice_demo_data() {
 			</svg>';
 		echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
 		printf(
-		/* translators: 1: theme name. */
+			/* translators: 1: theme name. */
 			esc_html__(
 				'Thank you for installing %1$s',
 				'nightingale'
@@ -419,7 +419,7 @@ require get_template_directory() . '/inc/breadcrumbs.php';
 /**
  * Gravity Forms style over-ride.
  */
-if(in_array('gravityforms/gravityforms.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+if ( in_array( 'gravityforms/gravityforms.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ), true ) ) {
 	if ( ! is_admin() ) {
 		require get_template_directory() . '/inc/gravity-forms.php';
 	}
@@ -428,7 +428,7 @@ if(in_array('gravityforms/gravityforms.php', apply_filters('active_plugins', get
 /**
  * LearnDash style over-ride.
  */
-if(in_array('sfwd-lms/sfwd-lms.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+if ( in_array( 'sfwd-lms/sfwd-lms.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ), true ) ) {
 	if ( ! is_admin() ) {
 		require get_template_directory() . '/inc/learndash.php';
 	}
@@ -451,7 +451,7 @@ require get_template_directory() . '/inc/critical-style.php';
 /**
  * Add a pill next to comment author name showing their user role.
  */
-require get_template_directory() . '/inc/comment_author_role.php';
+require get_template_directory() . '/inc/class-comment-author-role-label.php';
 
 add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3 );
 
@@ -470,19 +470,20 @@ function nightingale_latest_posts_block_filter( $block_content, $block ) {
 	}
 	$output = '<div class="nhsuk-grid-row nightingale-latest-news"><div class="nhsuk-panel-group">';
 	$dom    = new DOMDocument();
+	libxml_use_internal_errors( true );
 	$dom->loadHTML( $block_content );
 	$lis = $dom->getElementsByTagName( 'li' );
 	foreach ( $lis as $li ) {
-		$output   .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
+		$output  .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
 		$titles   = $li->getElementsByTagName( 'a' );
 		$title    = $titles->item( 0 )->nodeValue;
 		$link     = $titles->item( 0 )->getAttribute( 'href' );
 		$contents = $li->getElementsByTagName( 'div' );
 		$excerpt  = $contents->item( 0 )->nodeValue;
-		$output   .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
-		$output   .= '<p>' . substr( $excerpt, 0, - 13 ) . '</p>';
-		$output   .= nightingale_read_more_posts( $title, $link );
-		$output   .= '</div></div>';
+		$output  .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
+		$output  .= '<p>' . substr( $excerpt, 0, - 13 ) . '</p>';
+		$output  .= nightingale_read_more_posts( $title, $link );
+		$output  .= '</div></div>';
 	}
 	$output .= '</div></div>';
 

@@ -114,7 +114,7 @@ remove_action( 'wp_head', 'wp_print_styles', 8 );
 add_action( 'wp_head', 'wp_print_styles', 10 );
 
 /**
- * Disable the emoji's
+ * Disable the emoji's.
  */
 function nightingale_disable_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -125,7 +125,7 @@ function nightingale_disable_emojis() {
 	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
 	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 
-	// Remove from TinyMCE
+	// Remove from TinyMCE.
 	add_filter( 'tiny_mce_plugins', 'nightingale_disable_emojis_tinymce' );
 }
 
@@ -133,6 +133,10 @@ add_action( 'init', 'nightingale_disable_emojis' );
 
 /**
  * Filter out the tinymce emoji plugin.
+ *
+ * @param array $plugins any plugins using emojis.
+ *
+ * @return array.
  */
 function nightingale_disable_emojis_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {

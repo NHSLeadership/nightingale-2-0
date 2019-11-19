@@ -10,6 +10,7 @@
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */
+
 flush();
 ?>
 </div>
@@ -23,7 +24,7 @@ flush();
 				<div id="nhsuk-footer-widgets" class="nhsuk-footer__widgets widget-area" role="complementary">
 					<?php dynamic_sidebar( 'footer-region' ); ?>
 				</div>
-			<?php
+				<?php
 			endif;
 			$menu_locations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).
 			// This returns an array of menu locations ([LOCATION_NAME] = MENU_ID).
@@ -54,7 +55,7 @@ flush();
 	</div>
 </footer>
 <!--
- -- FzwfoYNPKdzf5LLgTGsAAz6xb8lqM8ObevYAW5CV9mBAbpDtfV057ndBJWDFrT7P --
+-- FzwfoYNPKdzf5LLgTGsAAz6xb8lqM8ObevYAW5CV9mBAbpDtfV057ndBJWDFrT7P --
 -->
 <?php
 if ( get_theme_mod( 'feedback_on' ) === 'yes' ) {

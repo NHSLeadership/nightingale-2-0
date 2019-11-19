@@ -1,4 +1,4 @@
-# Nightingale 2.0
+# Nightingale 2.0.5
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 
 :exclamation: This is a Release Candidate version. Do not use on production sites. `Feedback is positively encouraged,
@@ -59,36 +59,40 @@ This theme has been extended to style the following plugins automatically:
  - [x] LearnDash - please use the latest version of LD and use the LD30 theme with no primary, secondary or tertiary colours defined
  - [x] Download Monitor
  - [x] The Events Calendar
+ - [x] WP HTML Email
   
 ## Progress
  - [x] Load in the NHS Frontend library
  - [x] Style header, amend markup to match expected output
- - [x] Provide zone for WordPress controlled menu
+ - [x] Provide zone for WordPress controlled menu (Customizer)
  - [x] Provide alternative header for NHS Organisations with white logo including title
- - [x] Add Hero banner (via NHSL Blocks plugin)
+ - [x] Add Hero banner (via NHSBlocks plugin)
  - [x] Style sidebar to match contents list styling
  - [x] Pagination styling
  - [x] Footer styling and WordPress menu inclusion
  - [x] Re-style core images output
  - [x] Re-style core buttons output
- - [x] Provide multiple button styles (via NHSL-Blocks plugin)
+ - [x] Provide multiple button styles (via NHSBlocks plugin)
  - [x] Style tables
  - [x] Restrict Editor colour palettes to NHS Brand guideline colours
  - [x] Search results page layout
  - [x] Template layout code
  - [x] Typographic classes
- - [x] Custom Gutenburg Blocks (via NHSL-Blocks plugin)
- - [x] Native Gutenberg blocks (phase 2 to replace NHSL_Blocks quickfix)
+ - [x] Custom Gutenburg Blocks (via NHSBlocks plugin)
+ - [x] Native Gutenberg blocks (phase 2 to replace NHSBlocks quickfix)
  - [x] Breadcrumb trail styling and addition
  - [x] Emergency alert
  - [x] Feedback Banner
  - [x] Forms elements
  - [x] Add Gravity Forms compatibility
- - [x] Add theme update routine [possible route here](https://wpmayor
- .com/how-to-integrate-wordpress-plugin-update-notifications-into-your-commercial-plugin/)
+ - [x] Add LearnDash compatibility
+ - [x] Add WP HTML Emails compatibility
+ - [x] Add The Events Calendar compatability
+ - [x] Add theme update routine
  - [x] Composer build (including auto load NHSL Blocks plugin)
  - [x] Dependancy hint to suggest or force plugin dependancy load (for non-composer install)
  - [x] Widgetize footer region
+ - [x] Widgetize 404 page
  - [x] Alternative navigation aid to Tabs
  - [x] Device checks (mobile, tablet, TV etc)
  - [x] Print layout / styling

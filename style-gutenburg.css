@@ -10639,7 +10639,8 @@ section {
 
 #primary footer .edit-link {
   text-decoration: none;
-  margin-left: 50px;
+  margin-left: 10px;
+  top: -6px;
 }
 
 #primary footer .edit-link a {
