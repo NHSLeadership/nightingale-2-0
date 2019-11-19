@@ -3,7 +3,7 @@
  *
  *  Custom changes to Gutenberg editor to make it more NHS Friendly
  *
- *  @package Nightingale
+ * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version 1.1 21st August 2019
  */

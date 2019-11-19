@@ -6,10 +6,13 @@ Author: Tony Blacker, NHS Leadership Academy
 Author URI: https://github.com/tblacker7
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Copyright: National Health Service, 2019
 Text Domain: nightingale
+Requires at least: 5.0
+Requires PHP: 5.2.4
 Tags: right-sidebar, accessibility-ready, custom-menu, full-width-template, theme-options, education, news
 Description: NHS Digital frontend framework WordPress theme
-Version: 2.0.1
+Version: 2.0.3
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -11734,7 +11737,8 @@ b {
 
 #primary footer .edit-link {
   text-decoration: none;
-  margin-left: 50px;
+  margin-left: 10px;
+  top: -6px;
 }
 
 #primary footer .edit-link a {

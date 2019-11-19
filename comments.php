@@ -21,7 +21,6 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-
 <div id="comments" class="nhsuk-list-panel comments-area">
 
 	<?php
@@ -30,23 +29,17 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-				printf(
-					/* translators: 1: title. */
-					esc_html__( 'Comments', 'nightingale' ),'' 	);
+			printf(
+				/* translators: 1: title. */
+				esc_html__( 'Comments', 'nightingale' ),
+				''
+			);
 			?>
 		</h2><!-- .comments-title -->
 
 		<?php the_comments_navigation(); ?>
 
 		<ul class="nhsuk-list-panel__list comment-list">
-			<?php /*
-			wp_list_comments(
-				array(
-					'style'      => 'ul',
-					'short_ping' => true,
-				)
-			);*/
-			?>
 			<?php wp_list_comments( 'type=comment&callback=nightingale_comment_display' ); ?>
 		</ul><!-- .comment-list -->
 

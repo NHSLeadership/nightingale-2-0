@@ -17,8 +17,10 @@ get_header();
 				<div class="nhsuk-grid-column-full">
 					<section class="error-404 not-found">
 						<div class="page-content">
-							<?php get_search_form( );
-							dynamic_sidebar( '404-error' ); ?>
+							<?php
+							get_search_form();
+							dynamic_sidebar( '404-error' );
+							?>
 						</div><!-- .page-content -->
 					</section><!-- .error-404 -->
 				</div>

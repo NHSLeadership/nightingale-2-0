@@ -13,8 +13,8 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function nightingale_customize_register( $wp_customize ) {
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
@@ -48,7 +48,6 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 
-
 	/*
 	 * -----------------------------------------------------------
 	 * SHOW / HIDE Search
@@ -68,8 +67,8 @@ function nightingale_customize_register( $wp_customize ) {
 			'section' => 'section_header',
 			'type'    => 'radio',
 			'choices' => array(
-				'yes'   => esc_html__( 'Yes', 'nightingale' ),
-				'no' => esc_html__( 'No', 'nightingale' ),
+				'yes' => esc_html__( 'Yes', 'nightingale' ),
+				'no'  => esc_html__( 'No', 'nightingale' ),
 			),
 		)
 	);
@@ -89,22 +88,22 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'show_sitename',
 		array(
-			'label'   => esc_html__( 'Show site Name as text?', 'nightingale' ),
+			'label'       => esc_html__( 'Show site Name as text?', 'nightingale' ),
 			'description' => esc_html__( 'you may wish to hide this if your organisational logo includes your organisation name. Your site name is edited / created in the "Site Identity" section of the theme customiser', 'nightingale' ),
-			'section' => 'title_tagline',
-			'type'    => 'radio',
-			'choices' => array(
-				'yes'   => esc_html__( 'Yes', 'nightingale' ),
-				'no' => esc_html__( 'No', 'nightingale' ),
+			'section'     => 'title_tagline',
+			'type'        => 'radio',
+			'choices'     => array(
+				'yes' => esc_html__( 'Yes', 'nightingale' ),
+				'no'  => esc_html__( 'No', 'nightingale' ),
 			),
 		)
 	);
 
 	/*
- * -----------------------------------------------------------
- * LOGO Generation
- * -----------------------------------------------------------
- */
+	 * -----------------------------------------------------------
+	 * LOGO Generation
+	 * -----------------------------------------------------------
+	 */
 	$wp_customize->add_setting(
 		'logo_type',
 		array(
@@ -115,13 +114,13 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'logo_type',
 		array(
-			'label'   => esc_html__( 'Site identifier', 'nightingale' ),
+			'label'       => esc_html__( 'Site identifier', 'nightingale' ),
 			'description' => esc_html__( 'You can create your own site identity. This only takes effect if you have not uploaded a site logo. The options are transactional (NHS logo, your org name to the right) or organisational (NHS logo, your org name underneath and a department or qualifier under that). Both are accepted NHS design patterns.', 'nightingale' ),
-			'section' => 'section_header',
-			'type'    => 'radio',
-			'choices' => array(
-				'transactional'   => esc_html__( 'Transactional', 'nightingale' ),
-				'organisation' => esc_html__( 'Organisational', 'nightingale' ),
+			'section'     => 'section_header',
+			'type'        => 'radio',
+			'choices'     => array(
+				'transactional' => esc_html__( 'Transactional', 'nightingale' ),
+				'organisation'  => esc_html__( 'Organisational', 'nightingale' ),
 			),
 		)
 	);
@@ -152,12 +151,13 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'logo_qualifier',
 		array(
-			'label'         => esc_html__( 'Qualifier to show in generated logo', 'nightingale' ),
-			'description'   => esc_html__('this will only show in transactional logos and is either your department or local qualifier', 'nightingale'),
-			'section'       => 'section_header',
-			'type'          => 'text',
+			'label'       => esc_html__( 'Qualifier to show in generated logo', 'nightingale' ),
+			'description' => esc_html__( 'this will only show in transactional logos and is either your department or local qualifier', 'nightingale' ),
+			'section'     => 'section_header',
+			'type'        => 'text',
 		)
 	);
+
 	/*
 	 * Header Styles
 	 */
@@ -398,10 +398,10 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 	/*
- * ------------------------------------------------------------
- * SECTION: GA Tracking
- * ------------------------------------------------------------
- */
+	 * ------------------------------------------------------------
+	 * SECTION: GA Tracking
+	 * ------------------------------------------------------------
+	 */
 	$wp_customize->add_section(
 		'section_google',
 		array(
@@ -421,10 +421,10 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'google-utm',
 		array(
-			'label'         => esc_html__( 'Google Analytics Tracking ID', 'nightingale' ),
-			'description'   => esc_html__( 'Enter your Google tracking ID (everything after UA-)', 'nightingale' ),
-			'section'       => 'section_google',
-			'type'          => 'text',
+			'label'       => esc_html__( 'Google Analytics Tracking ID', 'nightingale' ),
+			'description' => esc_html__( 'Enter your Google tracking ID (everything after UA-)', 'nightingale' ),
+			'section'     => 'section_google',
+			'type'        => 'text',
 		)
 	);
 
@@ -472,36 +472,40 @@ function nightingale_customize_preview_js() {
 
 add_action( 'customize_preview_init', 'nightingale_customize_preview_js' );
 
+/**
+ * Check to see which kind of header should be rendered.
+ */
 function nightingale_header_customiser_dependency_check() {
 	?>
 	<script>
 		;(function () {
-            /**
-             * Run function only when customizer changes
-             */
-            wp.customize.bind('ready', function () {
-                wp.customize.control('logo_type', function (control) {
-                    control.setting.bind(function (value) {
-                        switch (value) {
-                            /**
-                             * Transactional types
-                             */
-	                        case 'transactional':
-	                            wp.customize.control('loqo_qualifier').deactivate();
-	                            break;
-                            /**
-                             *  Organisational types
-                             */
-	                        case 'organisation':
-                                wp.customize.control('loqo_qualifier').activate();
-                                break;
+			/**
+			 * Run function only when customizer changes
+			 */
+			wp.customize.bind('ready', function () {
+				wp.customize.control('logo_type', function (control) {
+					control.setting.bind(function (value) {
+						switch (value) {
+							/**
+							 * Transactional types
+							 */
+							case 'transactional':
+								wp.customize.control('loqo_qualifier').deactivate();
+								break;
+							/**
+							 *  Organisational types
+							 */
+							case 'organisation':
+								wp.customize.control('loqo_qualifier').activate();
+								break;
 
-                        }
-                    })
-                })
-            })
+						}
+					})
+				})
+			})
 		})();
 	</script>
-<?php
+	<?php
 }
+
 add_action( 'customize_controls_enqueue_scripts', 'nightingale_header_customiser_dependency_check', 10, 1 );
