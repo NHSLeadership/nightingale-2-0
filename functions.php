@@ -417,9 +417,15 @@ require get_template_directory() . '/inc/pagination.php';
 require get_template_directory() . '/inc/breadcrumbs.php';
 
 /**
+ * Create an array of active plugins.
+ */
+
+$active_plugins = apply_filters( 'active_plugins', get_option( 'active_plugins' ) );
+
+/**
  * Gravity Forms style over-ride.
  */
-if ( in_array( 'gravityforms/gravityforms.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ), true ) ) {
+if ( in_array( 'gravityforms/gravityforms.php', $active_plugins, true ) ) {
 	if ( ! is_admin() ) {
 		require get_template_directory() . '/inc/gravity-forms.php';
 	}
@@ -428,7 +434,7 @@ if ( in_array( 'gravityforms/gravityforms.php', apply_filters( 'active_plugins',
 /**
  * LearnDash style over-ride.
  */
-if ( in_array( 'sfwd-lms/sfwd-lms.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ), true ) ) {
+if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
 	if ( ! is_admin() ) {
 		require get_template_directory() . '/inc/learndash.php';
 	}

@@ -11667,6 +11667,10 @@ b {
   color: #212b32;
 }
 
+.autocomplete__menu--visible {
+  display: none;
+}
+
 .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination-item--previous, .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination-item--next {
   width: 30%;
 }
@@ -11710,7 +11714,7 @@ b {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .5px;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   line-height: 1.1;
   white-space: nowrap;
   display: inline-block;
@@ -11904,58 +11908,18 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   background-color: #ffb81C;
 }
 
-#secondary section {
-  background: #ffffff;
-  margin-top: 32px;
-}
-
-#secondary .widget_subpages > ul > li {
-  border-bottom: 1px solid #d8dde0;
-}
-
-#secondary .widget_subpages > ul > li > ul > li, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li {
-  padding: 0;
-  margin: 0;
-  border-bottom: none;
-}
-
-#secondary .widget_subpages > ul > li > ul > li:last-of-type, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li:last-of-type {
-  margin-bottom: 20px;
-}
-
-#secondary .widget_subpages > ul > li > ul > li > a {
-  border-left: 2px solid #005eb8;
-  padding: 0 0 0 10px;
-  margin: 10px 0 0 10px;
-}
-
-#secondary .widget_subpages > ul > li > ul > li > ul > li > a {
-  padding: 0 0 0 10px;
-  margin: 10px 0 0 20px;
-  border-bottom: none;
-}
-
-#secondary .widget_subpages > ul > li > ul > li > ul > li > a:before {
-  content: "-  ";
-  color: #e8edee;
-}
-
-#secondary .widget_subpages ul li a {
-  border-bottom: none;
-  padding: 5px 10px;
-}
-
-#secondary .widget_subpages ul li.widget_subpages__active > a {
-  background: #005eb8;
-  color: #ffffff;
-}
-
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
 
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 3px 0px 0px 3px;
+}
+
+.nhsuk-header .nhsuk-u-visually-hidden {
+  color: #212b32;
+  background: #ffffff;
+  padding: 10px;
 }
 
 .nhsuk-header.nhsuk-header__white .nhsuk-header__search-wrap input[type="text"] {
@@ -12071,6 +12035,154 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 #login #loginform #wp-submit {
   height: auto;
+}
+
+.nhsuk-promo-group__item {
+  margin-bottom: 36px;
+}
+
+.nhsuk-panel-with-label, #secondary section {
+  width: 100%;
+}
+
+.nhsuk-panel-with-label .nhsuk-panel-with-label__label a, #secondary section .nhsuk-panel-with-label__label a, #secondary section h2.widget-title a, .nhsuk-panel-with-label .nhsuk-panel-with-label__label a:visited, #secondary section .nhsuk-panel-with-label__label a:visited, #secondary section h2.widget-title a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nhsuk-panel-with-label .entry-footer span, #secondary section .entry-footer span {
+  padding: 0 10px;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item, .nhsuk-dashboard .ld-course-list-items .ld_course_grid, .ld-course-list-items .nhsuk-dashboard .ld_course_grid {
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper {
+  background: inherit;
+  box-shadow: none;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section {
+  background: inherit;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  position: relative;
+  padding-top: 33.33%;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-panel-with-label__label, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-panel-with-label__label, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-panel-with-label__label, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-panel-with-label__label, #secondary section .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h2.widget-title, #secondary section .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h2.widget-title, #secondary section .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h2.widget-title, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section h2.widget-title, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section h2.widget-title, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section h2.widget-title, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section h2.widget-title, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section h2.widget-title, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section h2.widget-title {
+  z-index: 2;
+  top: 0;
+  margin: 0 -20px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  max-width: 90%;
+  font-size: 1.1rem;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-dashboard__image, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-dashboard__image, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-dashboard__image, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-dashboard__image {
+  width: 100%;
+  height: 100%;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-promo__img, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-promo__img, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-promo__img, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-promo__img {
+  position: relative;
+  top: -16px;
+  z-index: 1;
+}
+
+.nhsuk-dashboard .nhsuk-grid-column-full-width {
+  max-height: 300px;
+}
+
+.nhsuk-dashboard .nhsuk-grid-column-one-half {
+  max-height: 250px;
+}
+
+.nhsuk-dashboard .nhsuk-grid-column-one-third, .nhsuk-dashboard .nhsuk-grid-column-two-thirds {
+  max-height: 200px;
+}
+
+.nhsuk-promo img.nhsuk-promo__img {
+  padding: 10px;
+}
+
+.nhsuk-inset-text--rev, .is-style-quote-reverse {
+  background: #005eb8;
+  border: 10px solid #005eb8;
+  box-shadow: inset 12px 0px 0px 0px #ffffff;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #ffffff;
+  width: 100%;
+}
+
+#secondary section {
+  background: #ffffff;
+  margin-top: 32px;
+}
+
+#secondary section#widget_search {
+  height: 4.5rem;
+}
+
+#secondary section#widget_search .nhsuk-header__search-wrap {
+  padding-top: 15px;
+}
+
+#secondary section#widget_search .nhsuk-header__search-wrap .nhsuk-search__input {
+  width: 81%;
+}
+
+#secondary section#widget_search .nhsuk-header__search-wrap .nhsuk-search__submit {
+  border: 2px solid #212b32;
+  border-left: none;
+}
+
+#secondary .widget_subpages > ul > li {
+  border-bottom: 1px solid #d8dde0;
+}
+
+#secondary .widget_subpages > ul > li > ul > li, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+}
+
+#secondary .widget_subpages > ul > li > ul > li:last-of-type, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li:last-of-type {
+  margin-bottom: 20px;
+}
+
+#secondary .widget_subpages > ul > li > ul > li > a {
+  border-left: 2px solid #005eb8;
+  padding: 0 0 0 10px;
+  margin: 10px 0 0 10px;
+}
+
+#secondary .widget_subpages > ul > li > ul > li > ul > li > a {
+  padding: 0 0 0 10px;
+  margin: 10px 0 0 20px;
+  border-bottom: none;
+}
+
+#secondary .widget_subpages > ul > li > ul > li > ul > li > a:before {
+  content: "-  ";
+  color: #e8edee;
+}
+
+#secondary .widget_subpages ul li a {
+  border-bottom: none;
+  padding: 5px 10px;
+}
+
+#secondary .widget_subpages ul li.widget_subpages__active > a {
+  background: #005eb8;
+  color: #ffffff;
 }
 
 /*

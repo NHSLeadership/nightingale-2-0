@@ -27,10 +27,10 @@ get_header();
 					'link_after'       => '',
 					'next_or_number'   => 'number',
 					'separator'        => ' ',
-					'nextpagelink'     => __( 'Next page', 'nightingale'),
+					'nextpagelink'     => __( 'Next page', 'nightingale' ),
 					'previouspagelink' => __( 'Previous page', 'nightingale' ),
 					'pagelink'         => '%',
-					'echo'             => 1
+					'echo'             => 1,
 				);
 
 				wp_link_pages( $defaults );
