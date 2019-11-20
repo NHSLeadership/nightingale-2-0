@@ -44,6 +44,10 @@
   color: #212b32;
 }
 
+// disabling search suggest. I really dont like doing this, but the nhsuk frontend library uses a paid service for indexing and the search suggest leverages this feed rather than a website specific one.
+.autocomplete__menu--visible {
+  display: none;
+}
 
 //pagination modification
 .nhsuk-pagination {
@@ -103,7 +107,7 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .5px;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   line-height: 1.1;
   white-space: nowrap;
   display: inline-block;

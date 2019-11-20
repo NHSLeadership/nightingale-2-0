@@ -12,7 +12,7 @@ Requires at least: 5.0
 Requires PHP: 5.2.4
 Tags: right-sidebar, accessibility-ready, custom-menu, full-width-template, theme-options, education, news
 Description: NHS Digital frontend framework WordPress theme
-Version: 2.0.3
+Version: 2.0.5
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -32,12 +32,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // generic over-rides to remove default wordpress styling issues
 @import 'assets/scss/nhs-colours';
 // nhs colour pallette
-@import 'assets/scss/sidebar-widgets.scss';
-// sidebar elements and subpages navigation
 @import 'assets/scss/header';
 // header styles
 @import 'assets/scss/style_variations';
 //gutenberg blocks style variations
+@import 'assets/scss/nhsblocks.scss';
+// block elements
+@import 'assets/scss/sidebar-widgets.scss';
+// sidebar elements and subpages navigation
 @import 'assets/scss/comments-and-meta';
 // Gravity Forms plugin styling to match NHSUK design patterns
 @import 'assets/scss/gravity-forms';

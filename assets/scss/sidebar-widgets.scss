@@ -29,6 +29,19 @@
         }
       }
     }
+    &#widget_search {
+      height: 4.5rem;
+      .nhsuk-header__search-wrap {
+        padding-top: 15px;
+        .nhsuk-search__input {
+          width: 81%;
+        }
+        .nhsuk-search__submit {
+          border: 2px solid $color_nhsuk-black;
+          border-left: none;
+        }
+      }
+    }
   }
   //subpages nav alteration
   .widget_subpages>ul>li {

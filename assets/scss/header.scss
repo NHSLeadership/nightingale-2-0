@@ -10,7 +10,11 @@
 
     }
   }
-
+  .nhsuk-u-visually-hidden {
+    color: $color_nhsuk-black;
+    background: $color_nhsuk-white;
+    padding: 10px;
+  }
   &.nhsuk-header__white {
     .nhsuk-header__search-wrap input[type="text"] {
       border: 1px solid $nhsuk-border-color;

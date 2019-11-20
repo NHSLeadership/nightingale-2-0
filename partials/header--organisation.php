@@ -20,7 +20,7 @@
 			<?php the_custom_logo(); ?>
 			<?php if ( get_theme_mod( 'show_sitename' ) === 'yes' ) { ?>
 				<div class="fdgfhnhsuk-header__transactional-service-name">
-					<a class="nhsuk-header__transactional-service-name--link" href="/"><?php bloginfo( 'name' ); ?></a>
+					<a class="nhsuk-header__transactional-service-name--link" href="<?php echo get_home_url(); ?>"><?php bloginfo( 'name' ); ?></a>
 				</div>
 				<?php
 			}

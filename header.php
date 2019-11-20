@@ -66,7 +66,7 @@ if ( has_nav_menu( 'main-menu' ) ) { // Check to see if a Main Menu has been cre
 
 					foreach ( $header_nav as $nav_item ) {
 
-						echo '<li class="nhsuk-header__navigation-item"><a class="nhsuk-header__navigation-link" href="' . esc_url( $nav_item->url ) . '" title="' . esc_html( $nav_item->title ) . '">' . esc_html( $nav_item->title ) . '</a></li>';
+						echo '<li class="nhsuk-header__navigation-item"><a class="nhsuk-header__navigation-link" href="' . esc_url( $nav_item->url ) . '">' . esc_html( $nav_item->title ) . '</a></li>';
 
 					}
 

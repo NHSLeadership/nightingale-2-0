@@ -39,7 +39,7 @@ flush();
 
 						foreach ( $menu_item as $nav_item ) {
 
-							echo '<li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="' . esc_url( $nav_item->url ) . '" title="' . esc_html( $nav_item->title ) . '">' . esc_html( $nav_item->title ) . '</a></li>';
+							echo '<li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="' . esc_url( $nav_item->url ) . '">' . esc_html( $nav_item->title ) . '</a></li>';
 
 						}
 
