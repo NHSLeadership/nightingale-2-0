@@ -1,7 +1,9 @@
 # Nightingale 2.0.5
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 
-:exclamation: This is a Release Candidate version. Do not use on production sites. `Feedback is positively encouraged,
+:exclamation: ~~This is a Release Candidate version. Do not use on production sites.~~ This is now ready for public 
+scrutiny :). 
+`Feedback is positively encouraged,
  please see how to get involved below`
 
 ## Dependencies
@@ -96,7 +98,7 @@ This theme has been extended to style the following plugins automatically:
  - [x] Alternative navigation aid to Tabs
  - [x] Device checks (mobile, tablet, TV etc)
  - [x] Print layout / styling
- - [ ] Accessibility audit
+ - [x] Accessibility audit
  
  ## Licence
  
