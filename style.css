@@ -12,7 +12,7 @@ Requires at least: 5.0
 Requires PHP: 5.2.4
 Tags: right-sidebar, accessibility-ready, custom-menu, full-width-template, theme-options, education, news
 Description: NHS Digital frontend framework WordPress theme
-Version: 2.0.3
+Version: 2.0.5
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -11984,6 +11984,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   .nhsuk-header .autocomplete__input {
     height: 52px;
   }
+}
+
+.nhsuk-header__container {
+  padding-bottom: 20px;
 }
 
 /*
