@@ -44,6 +44,7 @@ flush();
 						}
 
 						?>
+                        <div style="height: 10px; width: 100%;"></div>
 					</ul>
 					<?php
 				} //end if footer menu exists
