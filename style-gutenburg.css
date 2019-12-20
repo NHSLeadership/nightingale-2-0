@@ -10659,6 +10659,13 @@ section {
   box-shadow: inset 0 0 0 4px #ffeb3b;
 }
 
+#cookie-notice {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .has-white-color {
   color: #ffffff;
 }
