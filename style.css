@@ -11965,6 +11965,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border-radius: 3px 0px 0px 3px;
 }
 
+.nhsuk-header .autocomplete-container {
+  float: left;
+}
+
 .nhsuk-header .nhsuk-u-visually-hidden {
   color: #212b32;
   background: #ffffff;
