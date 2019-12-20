@@ -10618,7 +10618,6 @@ section {
   letter-spacing: .5px;
   font-size: 0.75rem;
   line-height: 1.1;
-  white-space: nowrap;
   display: inline-block;
   position: relative;
   top: -4px;
@@ -10664,6 +10663,49 @@ section {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+#secondary section.widget_search {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#secondary .nhsuk-header__search-wrap {
+  padding: 20px 0;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-search__input {
+  border: 1px solid #d8dde0;
+  border-radius: 3px 0px 0px 3px;
+  float: left;
+  max-width: 80%;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
+  border: 1px solid #ccc;
+  border-left: none;
+  float: left;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
+  background-color: #f0f4f5;
+  border-color: #005eb8;
+  box-shadow: none;
+  color: #005eb8;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
+  fill: #005eb8;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+  fill: #ffffff;
 }
 
 .has-white-color {

@@ -87,13 +87,15 @@ function delete_retina_support_images( $attachment_id ) {
 	$meta       = wp_get_attachment_metadata( $attachment_id );
 	$upload_dir = wp_upload_dir();
 	$path       = pathinfo( $meta['file'] );
-	foreach ( $meta as $key => $value ) {
-		if ( 'sizes' === $key ) {
-			foreach ( $value as $sizes => $size ) {
-				$original_filename = $upload_dir['basedir'] . '/' . $path['dirname'] . '/' . $size['file'];
-				$retina_filename   = substr_replace( $original_filename, '@2x.', strrpos( $original_filename, '.' ), strlen( '.' ) );
-				if ( file_exists( $retina_filename ) ) {
-					unlink( $retina_filename );
+	if ( !empty( $meta ) ) {
+		foreach ( $meta as $key => $value ) {
+			if ( 'sizes' === $key ) {
+				foreach ( $value as $sizes => $size ) {
+					$original_filename = $upload_dir['basedir'] . '/' . $path['dirname'] . '/' . $size['file'];
+					$retina_filename   = substr_replace( $original_filename, '@2x.', strrpos( $original_filename, '.' ), strlen( '.' ) );
+					if ( file_exists( $retina_filename ) ) {
+						unlink( $retina_filename );
+					}
 				}
 			}
 		}

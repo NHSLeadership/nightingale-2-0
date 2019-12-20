@@ -1,15 +1,13 @@
 # Nightingale 2.0.5
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 
-:exclamation: ~~This is a Release Candidate version. Do not use on production sites.~~ This is now ready for public 
-scrutiny :). 
+:exclamation: This is a production ready release, with the caveat that any issues should be reported as an issue on 
+this repo for quick action. 
 `Feedback is positively encouraged,
  please see how to get involved below`
 
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
- - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will auto install on theme activation and is a 
- requirement. This extends the native Gutenberg WP functionality to include latest developments.
  - *optional* For any editing of the theme (in particular the css files) we strongly advise you to use the NPM 
  installation route detailed in `Optional Settings` below.
  
@@ -28,12 +26,12 @@ scrutiny :).
  - `Cookie Notice plugin` - This adds a cookie notice banner to your site. You can modify the text that displays, and
   this gives your users an easy to use way of opting out of cookies. This, however, is an implied consent approach to
    cookies. If you wish to have an informed consent route to cookie adoption, you will need an alternative solution.
- - If you wish to edit the styles and/or blocks, You will need to either be able to run `node` either 
-    locally or on your server for the Sass SCSS files to be generated. In the nightingale folder, after installing 
-    node using `npm install`, run `npm run build` to compile your css. In the nightingale/nhsblocks folder, after 
-    running `npm  install`, you can generate the ES6 required to recompile your Gutenberg blocks using `npm run build`
-    - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node` if you 
-   install using the optional commands above
+ - This theme will suggest you pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via 
+    `node` if you install using the optional commands above
+ - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will be prompted as a suggested install on theme 
+     activation and is a requirement for the NHS Blocks plugin. This extends the native Gutenberg WP functionality to 
+     include latest developments.
+     
       
 ## Feedback / Improvement / Development
  - If you see any issues, faults or have suggestions for improvements, please add them as issues to our Git 
@@ -48,6 +46,7 @@ To accomplish this, you will need to take the following steps:
  - Compile the css from all the downstream libraries and local files `npm run build`
  - Compress the css output `npm run compress`
  - Regenerate the critical css `npm run critical`
+ ##### Alternatively, if you only wish to modify minimal css for a single site, you can use the Custom CSS section within the theme customiser section.
    
 ## Please note
  - XML/RPC is still enabled - this is a WordPress default, but will trigger National Cyber Security Centre monitoring alerts. To disable XML-RPC you can add:

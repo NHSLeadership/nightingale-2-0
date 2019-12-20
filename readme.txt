@@ -25,6 +25,9 @@ community in this work and will consider any pull requests or code snippets you 
 All content on the 404 error page is widgetised. Navigate to admin > appearance > widgets and add your chosen widgets and content to the `404 page` widget.
 
 == Changelog
+= 2.0.6 =
+Optimised critical path css to remove load flicker. Amended Screenshot to follow WP best practices. Updated readme.md instructions for github repo.
+
 = 2.0.5 =
 Updated nhsuk-frontend upstream library. Added compatability to WP 5.3. Refactored breadcrumb and header areas to allow for organisational and transactional header styles.
 

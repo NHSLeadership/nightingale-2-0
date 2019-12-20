@@ -12,7 +12,7 @@ Requires at least: 5.0
 Requires PHP: 5.2.4
 Tags: right-sidebar, accessibility-ready, custom-menu, full-width-template, theme-options, education, news
 Description: NHS Digital frontend framework WordPress theme
-Version: 2.0.5
+Version: 2.0.6
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -11716,7 +11716,6 @@ b {
   letter-spacing: .5px;
   font-size: 0.75rem;
   line-height: 1.1;
-  white-space: nowrap;
   display: inline-block;
   position: relative;
   top: -4px;
@@ -11777,6 +11776,49 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+#secondary section.widget_search {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#secondary .nhsuk-header__search-wrap {
+  padding: 20px 0;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-search__input {
+  border: 1px solid #d8dde0;
+  border-radius: 3px 0px 0px 3px;
+  float: left;
+  max-width: 80%;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
+  border: 1px solid #ccc;
+  border-left: none;
+  float: left;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
+  background-color: #f0f4f5;
+  border-color: #005eb8;
+  box-shadow: none;
+  color: #005eb8;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
+  fill: #005eb8;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+  fill: #ffffff;
 }
 
 .has-white-color {
