@@ -1,5 +1,6 @@
 # Nightingale 2.0.5
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
+:exclamation: Updates to 2.0.7 will make the header region revert to standard wordpress values. If updating your theme, please pay particular attention to the site identity and header regions of the theme customiser before making your site live.
 
 :exclamation: This is a production ready release, with the caveat that any issues should be reported as an issue on 
 this repo for quick action. 
