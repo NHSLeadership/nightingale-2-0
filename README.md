@@ -1,4 +1,4 @@
-# Nightingale 2.0.5
+# Nightingale 2.0.7
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 :exclamation: Updates to 2.0.7 will make the header region revert to standard wordpress values. If updating your theme, please pay particular attention to the site identity and header regions of the theme customiser before making your site live.
 
@@ -16,6 +16,7 @@ this repo for quick action.
  - Add to your WordPress files, in the `wp-content/themes` folder
  - Activate the theme
    - You will be prompted to install the Gutenberg plugin. Please do so and activate it. 
+   - You will be prompted to install the NHS Blocks plugin. Please do so and activate it.
    - You will be advised to install Cookie Notice plugin (see `Optional Settings` section below)
  - To populate the site with basic elements, we suggest the following:
    - Enable the subpages widget in the sidebar. Configuration works best if you select *use parent page as title*, *show subpages*, and *enable ul for subpages*
@@ -68,7 +69,6 @@ This theme has been extended to style the following plugins automatically:
  - [x] Style header, amend markup to match expected output
  - [x] Provide zone for WordPress controlled menu (Customizer)
  - [x] Provide alternative header for NHS Organisations with white logo including title
- - [x] Add Hero banner (via NHSBlocks plugin)
  - [x] Style sidebar to match contents list styling
  - [x] Pagination styling
  - [x] Footer styling and WordPress menu inclusion
@@ -80,11 +80,7 @@ This theme has been extended to style the following plugins automatically:
  - [x] Search results page layout
  - [x] Template layout code
  - [x] Typographic classes
- - [x] Custom Gutenburg Blocks (via NHSBlocks plugin)
- - [x] Native Gutenberg blocks (phase 2 to replace NHSBlocks quickfix)
  - [x] Breadcrumb trail styling and addition
- - [x] Emergency alert
- - [x] Feedback Banner
  - [x] Forms elements
  - [x] Add Gravity Forms compatibility
  - [x] Add LearnDash compatibility
@@ -99,6 +95,14 @@ This theme has been extended to style the following plugins automatically:
  - [x] Device checks (mobile, tablet, TV etc)
  - [x] Print layout / styling
  - [x] Accessibility audit
+ 
+ Deprecated / Removed
+ 
+ - [x] Emergency alert - Deprecated
+ - [x] Feedback Banner - Removed (plugin functionality rather than presentation)
+ - [x] Custom Gutenburg Blocks (moved to NHSBlocks plugin)
+ - [x] Native Gutenberg blocks (moved to NHSBlocks)
+ - [x] Add Hero banner (moved to NHSBlocks plugin)
  
  ## Licence
  
