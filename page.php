@@ -20,7 +20,7 @@ flush();
 ?>
 
 <div id="primary" class=" nhsuk-grid-row">
-	<div class="nhsuk-grid-column-two-thirds">
+	<div class="nhsuk-grid-column-two-thirds page">
 		<?php
 		while ( have_posts() ) :
 			the_post();

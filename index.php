@@ -18,7 +18,7 @@ get_header();
 ?>
 
 	<div id="primary" class=" nhsuk-grid-row">
-		<div class="nhsuk-grid-column-two-thirds">
+		<div class="nhsuk-grid-column-two-thirds index">
 
 			<?php
 			if ( have_posts() ) :
@@ -26,7 +26,7 @@ get_header();
 				if ( is_home() && ! is_front_page() ) :
 					?>
 					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+						<h1 class="nhsuk-heading-xl"><?php single_post_title(); ?></h1>
 					</header>
 					<?php
 				endif;
@@ -50,7 +50,7 @@ get_header();
 
 					get_template_part( 'template-parts/content', 'none' );
 
-			endif;
+				endif;
 				?>
 		</div>
 		<div class="nhsuk-grid__item nhsuk-grid-column-one-third">

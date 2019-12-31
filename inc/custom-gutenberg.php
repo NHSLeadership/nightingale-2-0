@@ -16,18 +16,4 @@ function nightingale_gutenberg_editor_styles() {
 
 add_action( 'enqueue_block_editor_assets', 'nightingale_gutenberg_editor_styles', 100 );
 
-/**
- * Gutenberg scripts and styles
- */
-function nightingale_gutenberg_scripts() {
 
-	wp_enqueue_script(
-		'nightingale-editor',
-		get_stylesheet_directory_uri() . '/assets/js/editor.js',
-		array( 'wp-blocks', 'wp-dom' ),
-		filemtime( get_stylesheet_directory() . '/assets/js/editor.js' ),
-		true
-	);
-}
-
-add_action( 'enqueue_block_editor_assets', 'nightingale_gutenberg_scripts' );

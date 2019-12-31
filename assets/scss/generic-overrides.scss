@@ -12,6 +12,8 @@
 .nhsuk-image {
   img {
     @extend .nhsuk-image__img;
+    width: unset;
+    max-width: 100%;
   }
 
   figcaption {
@@ -79,24 +81,6 @@
   color: $color_nhsuk-blue;
 }
 
-.error-404 {
-  .nhsuk-header__search-toggle, .nhsuk-search__close {
-    display: none;
-  }
-
-  .nhsuk-header__search-wrap {
-    display: inline-block;
-    width: 267px;
-    border: 2px solid $color_nhsuk-blue;
-    border-radius: 4px;
-
-    input[type="text"] {
-      border-radius: 2px 0 0 2px;
-      border-right: 2px solid #005eb8;
-    }
-  }
-}
-
 .nhsuk-pill-standard {
   border-radius: 4px;
   border: 2px solid;
@@ -139,8 +123,7 @@
     .edit-link {
       @extend .nhsuk-pill-standard;
       text-decoration: none;
-      margin-left: 10px;
-      top: -6px;
+      margin-left: 20px;
 
       a {
         color: $color_nhsuk-grey-1;
@@ -215,4 +198,65 @@
       }
     }
   }
+}
+
+#primary {
+  .page-content {
+    .nhsuk-header__search-toggle, .nhsuk-search__close {
+      display: none;
+    }
+
+
+    .nhsuk-header__search-wrap {
+      padding: 10px 20px;
+      display: inline-block;
+      width: 80%;
+      border: 2px solid $color_nhsuk-blue;
+      border-radius: 4px;
+
+      .nhsuk-search__input {
+        border: 1px solid #d8dde0;
+        border-radius: 3px 0px 0px 3px;
+        float: left;
+        max-width: 80%;
+
+        &:focus {
+
+        }
+      }
+
+      .nhsuk-search__submit {
+        border: 1px solid #ccc;
+        border-left: none;
+        float: left;
+      }
+
+      .nhsuk-header__search-toggle {
+        background-color: $color_nhsuk-grey-5;
+        border-color: $color_nhsuk-blue;
+        box-shadow: none;
+        color: $color_nhsuk-blue;
+
+        .nhsuk-icon__search {
+          fill: $color_nhsuk-blue;
+        }
+      }
+
+      .nhsuk-header__search-toggle.is_active {
+        background-color: $color_nhsuk-blue;
+        color: $color_nhsuk-white;
+
+        .nhsuk-icon__search {
+          fill: $color_nhsuk-white;
+        }
+      }
+    }
+  }
+}
+.nhsuk-content__clearfix {
+  clear: both;
+  margin-top: 1.5rem;
+}
+.nhsuk-readmore {
+  float: right;
 }

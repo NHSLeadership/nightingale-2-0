@@ -1,18 +1,18 @@
 @charset "UTF-8";
-/*********************************************************************************************
+/*
 Theme Name: Nightingale
-Theme URI: http://wpdemo.leadershipacademy.nhs.uk/
+Text Domain: nightingale
+Version: 2.0.7
+Requires at least: 5.0
+Requires PHP: 5.2.4
+Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from news sites to primary care trusts to arms length bodies to community practices.
+Tags: education, right-sidebar, accessibility-ready, custom-menu, footer-widgets, threaded-comments, theme-options
 Author: Tony Blacker, NHS Leadership Academy
 Author URI: https://github.com/tblacker7
+Theme URI: http://wpdemo.leadershipacademy.nhs.uk/
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Copyright: National Health Service, 2019
-Text Domain: nightingale
-Requires at least: 5.0
-Requires PHP: 5.2.4
-Tags: right-sidebar, accessibility-ready, custom-menu, full-width-template, theme-options, education, news
-Description: NHS Digital frontend framework WordPress theme
-Version: 2.0.6
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -21,7 +21,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-**********************************************************************************************/
+*/
+
 @import 'layouts/default';
 // @todo clean this up, its a hangover from underscores that we could do with getting rid of
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
@@ -35,8 +36,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/header';
 // header styles
 @import 'assets/scss/style_variations';
-//gutenberg blocks style variations
-@import 'assets/scss/nhsblocks.scss';
 // block elements
 @import 'assets/scss/sidebar-widgets.scss';
 // sidebar elements and subpages navigation
@@ -45,4 +44,5 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/gravity-forms';
 // LearnDash plugin styling to match NHSUK design patterns
 @import 'assets/scss/learndash-styling';
-
+// Print output styling
+@import 'assets/scss/print';

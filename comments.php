@@ -25,22 +25,38 @@ if ( post_password_required() ) {
 
 	<?php
 	// You can start editing here -- including this comment!
-	if ( have_comments() ) :
+	if ( $comments ) :
+		$comments_number = absint( get_comments_number() );
 		?>
 		<h2 class="comments-title">
 			<?php
-			printf(
-				/* translators: 1: title. */
-				esc_html__( 'Comments', 'nightingale' ),
-				''
-			);
+			if ( ! have_comments() ) {
+				_e( 'Leave a comment', 'nightingale' );
+			} elseif ( '1' === $comments_number ) {
+				/* translators: %s: post title */
+				printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'nightingale' ), esc_html( get_the_title() ) );
+			} else {
+				echo sprintf(
+					/* translators: 1: number of comments, 2: post title */
+					_nx(
+						'%1$s reply on &ldquo;%2$s&rdquo;',
+						'%1$s replies on &ldquo;%2$s&rdquo;',
+						$comments_number,
+						'comments title',
+						'nightingale'
+					),
+					number_format_i18n( $comments_number ),
+					esc_html( get_the_title() )
+				);
+			}
+
 			?>
 		</h2><!-- .comments-title -->
 
 		<?php the_comments_navigation(); ?>
 
 		<ul class="nhsuk-list-panel__list comment-list">
-			<?php wp_list_comments( 'type=comment&callback=nightingale_comment_display' ); ?>
+			<?php wp_list_comments( 'type=all&callback=nightingale_comment_display' ); ?>
 		</ul><!-- .comment-list -->
 
 		<?php

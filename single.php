@@ -12,8 +12,8 @@
 get_header();
 ?>
 
-	<div id="primary" class=" nhsuk-grid-row 123">
-		<div class="nhsuk-grid-column-full">
+	<div id="primary" class=" nhsuk-grid-row">
+		<div class="nhsuk-grid-column-full single">
 
 			<?php
 			while ( have_posts() ) :

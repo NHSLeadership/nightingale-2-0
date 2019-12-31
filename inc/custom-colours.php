@@ -8,11 +8,11 @@
  */
 
 // -- Disable Custom Colors
-add_action( 'after_setup_theme', 'prefix_register_colors' );
+add_action( 'after_setup_theme', 'nightingale_prefix_register_colors' );
 /**
  * Make an array of colours we want to show.
  */
-function prefix_register_colors() {
+function nightingale_prefix_register_colors() {
 
 	add_theme_support( 'disable-custom-colors' );
 	add_theme_support(
@@ -115,7 +115,7 @@ function prefix_register_colors() {
 /**
  * Get the colors formatted for use with Iris, Automattic's color picker.
  */
-function output_the_colors() {
+function nightingale_output_the_colors() {
 
 	// get the colors.
 	$color_palette = current( (array) get_theme_support( 'editor-color-palette' ) );
@@ -142,7 +142,7 @@ function output_the_colors() {
 /**
  * Get the colors formatted for use with TinyMCE.
  */
-function output_tinymce_colors() {
+function nightingale_output_tinymce_colors() {
 
 	// get the colors.
 	$color_palette = current( (array) get_theme_support( 'editor-color-palette' ) );
@@ -179,7 +179,7 @@ function output_tinymce_colors() {
  */
 function nightingale_mce4_options( $init ) {
 
-	$custom_colours = output_tinymce_colors();
+	$custom_colours = nightingale_output_tinymce_colors();
 
 	// build colour grid default+custom colors.
 	$init['textcolor_map'] = '[' . $custom_colours . ']';

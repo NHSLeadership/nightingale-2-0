@@ -1,18 +1,18 @@
 @charset "UTF-8";
-/*********************************************************************************************
+/*
 Theme Name: Nightingale
-Theme URI: http://wpdemo.leadershipacademy.nhs.uk/
+Text Domain: nightingale
+Version: 2.0.7
+Requires at least: 5.0
+Requires PHP: 5.2.4
+Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from news sites to primary care trusts to arms length bodies to community practices.
+Tags: education, right-sidebar, accessibility-ready, custom-menu, footer-widgets, threaded-comments, theme-options
 Author: Tony Blacker, NHS Leadership Academy
 Author URI: https://github.com/tblacker7
+Theme URI: http://wpdemo.leadershipacademy.nhs.uk/
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Copyright: National Health Service, 2019
-Text Domain: nightingale
-Requires at least: 5.0
-Requires PHP: 5.2.4
-Tags: right-sidebar, accessibility-ready, custom-menu, full-width-template, theme-options, education, news
-Description: NHS Digital frontend framework WordPress theme
-Version: 2.0.6
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -21,7 +21,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-**********************************************************************************************/
+*/
 /*--------------------------------------------------------------
   # Normalize
   --------------------------------------------------------------*/
@@ -1893,7 +1893,7 @@ p,
   color: inherit;
 }
 
-.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -1903,7 +1903,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -1911,14 +1911,14 @@ p,
 }
 
 @media print {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
     margin-bottom: 24px;
   }
 }
@@ -2055,12 +2055,14 @@ address + .nhsuk-heading-l,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
 .article-footer .cat-links + h2,
 .article-footer .tags-links + h2,
+.article-footer .comments-link + h2,
 .nhsuk-body-s + .nhsuk-heading-l,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 .article-footer .cat-links + .nhsuk-heading-l,
 .article-footer .tags-links + .nhsuk-heading-l,
+.article-footer .comments-link + .nhsuk-heading-l,
 .nhsuk-list + h2,
 ul + h2,
 ol + h2,
@@ -2081,12 +2083,14 @@ ol + .nhsuk-heading-l {
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
   .article-footer .cat-links + h2,
   .article-footer .tags-links + h2,
+  .article-footer .comments-link + h2,
   .nhsuk-body-s + .nhsuk-heading-l,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   .article-footer .cat-links + .nhsuk-heading-l,
   .article-footer .tags-links + .nhsuk-heading-l,
+  .article-footer .comments-link + .nhsuk-heading-l,
   .nhsuk-list + h2,
   ul + h2,
   ol + h2,
@@ -2107,12 +2111,14 @@ address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nighti
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
 .article-footer .tags-links + h3,
+.article-footer .comments-link + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 .article-footer .cat-links + .nhsuk-heading-m,
 .article-footer .tags-links + .nhsuk-heading-m,
+.article-footer .comments-link + .nhsuk-heading-m,
 .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
 .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -2124,6 +2130,8 @@ address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nighti
 .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
 .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
+.article-footer .nightingale-latest-news .nhsuk-panel .comments-link + a,
+.nightingale-latest-news .nhsuk-panel .article-footer .comments-link + a,
 .nightingale-latest-news .sticky .nhsuk-body-s + a,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
 .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -2135,6 +2143,8 @@ address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nighti
 .nightingale-latest-news .sticky .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .sticky .tags-links + a,
 .nightingale-latest-news .sticky .article-footer .tags-links + a,
+.article-footer .nightingale-latest-news .sticky .comments-link + a,
+.nightingale-latest-news .sticky .article-footer .comments-link + a,
 .nhsuk-list + h3,
 ul + h3,
 ol + h3,
@@ -2159,12 +2169,14 @@ address + .nhsuk-heading-s,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
 .article-footer .cat-links + h4,
 .article-footer .tags-links + h4,
+.article-footer .comments-link + h4,
 .nhsuk-body-s + .nhsuk-heading-s,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 .article-footer .cat-links + .nhsuk-heading-s,
 .article-footer .tags-links + .nhsuk-heading-s,
+.article-footer .comments-link + .nhsuk-heading-s,
 .nhsuk-list + h4,
 ul + h4,
 ol + h4,
@@ -2185,12 +2197,14 @@ ol + .nhsuk-heading-s {
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
   .article-footer .tags-links + h3,
+  .article-footer .comments-link + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   .article-footer .cat-links + .nhsuk-heading-m,
   .article-footer .tags-links + .nhsuk-heading-m,
+  .article-footer .comments-link + .nhsuk-heading-m,
   .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
   .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -2202,6 +2216,8 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
   .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
+  .article-footer .nightingale-latest-news .nhsuk-panel .comments-link + a,
+  .nightingale-latest-news .nhsuk-panel .article-footer .comments-link + a,
   .nightingale-latest-news .sticky .nhsuk-body-s + a,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
   .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -2213,6 +2229,8 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .sticky .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .sticky .tags-links + a,
   .nightingale-latest-news .sticky .article-footer .tags-links + a,
+  .article-footer .nightingale-latest-news .sticky .comments-link + a,
+  .nightingale-latest-news .sticky .article-footer .comments-link + a,
   .nhsuk-list + h3,
   ul + h3,
   ol + h3,
@@ -2237,12 +2255,14 @@ ol + .nhsuk-heading-s {
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
   .article-footer .cat-links + h4,
   .article-footer .tags-links + h4,
+  .article-footer .comments-link + h4,
   .nhsuk-body-s + .nhsuk-heading-s,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   .article-footer .cat-links + .nhsuk-heading-s,
   .article-footer .tags-links + .nhsuk-heading-s,
+  .article-footer .comments-link + .nhsuk-heading-s,
   .nhsuk-list + h4,
   ul + h4,
   ol + h4,
@@ -6680,19 +6700,19 @@ b {
   fill: #212b32;
 }
 
-.nhsuk-header__navigation-list {
+.nhsuk-header__navigation-list, .nhsuk-header .nhsuk-header__navigation ul {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-.nhsuk-header__navigation-item {
+.nhsuk-header__navigation-item, .nhsuk-header .nhsuk-header__navigation ul li {
   border-top: 1px solid #f0f4f5;
   margin-bottom: 0;
   position: relative;
 }
 
-.nhsuk-header__navigation-link {
+.nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
@@ -6706,7 +6726,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-header__navigation-link {
+  .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -6714,13 +6734,13 @@ b {
 }
 
 @media print {
-  .nhsuk-header__navigation-link {
+  .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
-.nhsuk-header__navigation-link .nhsuk-icon__chevron-right {
+.nhsuk-header__navigation-link .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a .nhsuk-icon__chevron-right {
   fill: #aeb7bd;
   position: absolute;
   right: 4px;
@@ -6728,23 +6748,23 @@ b {
 }
 
 @media (min-width: 61.875em) {
-  .nhsuk-header__navigation-link:visited {
+  .nhsuk-header__navigation-link:visited, .nhsuk-header .nhsuk-header__navigation ul li a:visited {
     color: #ffffff;
   }
 }
 
-.nhsuk-header__navigation-link:hover {
+.nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover {
   background-color: #003d78;
   box-shadow: none;
   color: #ffffff;
   text-decoration: underline;
 }
 
-.nhsuk-header__navigation-link:hover .nhsuk-icon__chevron-right {
+.nhsuk-header__navigation-link:hover .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a:hover .nhsuk-icon__chevron-right {
   fill: #005eb8;
 }
 
-.nhsuk-header__navigation-link:active, .nhsuk-header__navigation-link:focus {
+.nhsuk-header__navigation-link:active, .nhsuk-header .nhsuk-header__navigation ul li a:active, .nhsuk-header__navigation-link:focus, .nhsuk-header .nhsuk-header__navigation ul li a:focus {
   background-color: #ffeb3b;
   border-bottom: 4px solid #212b32;
   box-shadow: none;
@@ -6754,12 +6774,12 @@ b {
   text-decoration: none;
 }
 
-.nhsuk-header__navigation-link:active:hover, .nhsuk-header__navigation-link:focus:hover {
+.nhsuk-header__navigation-link:active:hover, .nhsuk-header .nhsuk-header__navigation ul li a:active:hover, .nhsuk-header__navigation-link:focus:hover, .nhsuk-header .nhsuk-header__navigation ul li a:focus:hover {
   background-color: #ffeb3b;
   color: #212b32;
 }
 
-.nhsuk-header__navigation-link:active:visited, .nhsuk-header__navigation-link:focus:visited {
+.nhsuk-header__navigation-link:active:visited, .nhsuk-header .nhsuk-header__navigation ul li a:active:visited, .nhsuk-header__navigation-link:focus:visited, .nhsuk-header .nhsuk-header__navigation ul li a:focus:visited {
   background-color: #ffeb3b;
   color: #212b32;
 }
@@ -6783,7 +6803,7 @@ b {
     margin: 0 auto;
     max-width: 960px;
   }
-  .nhsuk-header__navigation-list {
+  .nhsuk-header__navigation-list, .nhsuk-header .nhsuk-header__navigation ul {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     display: -ms-flexbox;
     /* [14] */
@@ -6795,23 +6815,23 @@ b {
   .nhsuk-header__navigation-list--small {
     justify-content: flex-start;
   }
-  .nhsuk-header__navigation-item {
+  .nhsuk-header__navigation-item, .nhsuk-header .nhsuk-header__navigation ul li {
     border-top: 0;
     margin: 0;
     text-align: center;
   }
-  .nhsuk-header__navigation-item .nhsuk-icon__chevron-right {
+  .nhsuk-header__navigation-item .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li .nhsuk-icon__chevron-right {
     display: none;
   }
-  .nhsuk-header__navigation-link {
+  .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
     color: #ffffff;
     line-height: normal;
   }
-  .nhsuk-header__navigation-link:active {
+  .nhsuk-header__navigation-link:active, .nhsuk-header .nhsuk-header__navigation ul li a:active {
     background-color: #002f5c;
     color: #f0f4f5;
   }
-  .nhsuk-header__navigation-link:hover, .nhsuk-header__navigation-link:active, .nhsuk-header__navigation-link.is-active {
+  .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header__navigation-link:active, .nhsuk-header .nhsuk-header__navigation ul li a:active, .nhsuk-header__navigation-link.is-active, .nhsuk-header .nhsuk-header__navigation ul li a.is-active {
     background-color: #004b93;
   }
 }
@@ -6852,20 +6872,22 @@ b {
 .ie8 .nhsuk-header__search-toggle,
 .ie8 .nhsuk-search__close,
 .ie8 .nhsuk-header__navigation-title,
-.ie8 .nhsuk-header__navigation-link .nhsuk-icon__chevron-right {
+.ie8 .nhsuk-header__navigation-link .nhsuk-icon__chevron-right,
+.ie8 .nhsuk-header .nhsuk-header__navigation ul li a .nhsuk-icon__chevron-right,
+.nhsuk-header .nhsuk-header__navigation ul li .ie8 a .nhsuk-icon__chevron-right {
   display: none;
 }
 
-.ie8 .nhsuk-header__navigation-list {
+.ie8 .nhsuk-header__navigation-list, .ie8 .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header__navigation .ie8 ul {
   display: table;
 }
 
-.ie8 .nhsuk-header__navigation-item {
+.ie8 .nhsuk-header__navigation-item, .ie8 .nhsuk-header .nhsuk-header__navigation ul li, .nhsuk-header .nhsuk-header__navigation ul .ie8 li {
   display: table-cell;
   /* [15] */
 }
 
-.ie8 .nhsuk-header__navigation-item a:hover {
+.ie8 .nhsuk-header__navigation-item a:hover, .ie8 .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header .nhsuk-header__navigation ul .ie8 li a:hover {
   color: #005eb8;
 }
 
@@ -6885,10 +6907,10 @@ b {
 }
 
 @media (min-width: 61.875em) {
-  .ie9 .nhsuk-header__navigation-list {
+  .ie9 .nhsuk-header__navigation-list, .ie9 .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header__navigation .ie9 ul {
     display: table;
   }
-  .ie9 .nhsuk-header__navigation-item {
+  .ie9 .nhsuk-header__navigation-item, .ie9 .nhsuk-header .nhsuk-header__navigation ul li, .nhsuk-header .nhsuk-header__navigation ul .ie9 li {
     display: table-cell;
   }
 }
@@ -7345,7 +7367,7 @@ b {
   color: #212b32;
 }
 
-.nhsuk-header--white .nhsuk-header__navigation-list {
+.nhsuk-header--white .nhsuk-header__navigation-list, .nhsuk-header--white .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header__navigation .nhsuk-header--white ul {
   border-top: 0;
 }
 
@@ -7369,27 +7391,27 @@ b {
   background-color: #ffffff;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-list {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-list, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul {
   border-top: 1px solid #d8dde0;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a {
   color: #005eb8;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:visited {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:visited, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:visited, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:visited {
   color: #005eb8;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:hover, .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:active, .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link.is-active {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:hover, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:hover, .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:active, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:active, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:active, .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link.is-active, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a.is-active, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a.is-active {
   background-color: transparent;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:focus, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:focus {
   color: #212b32;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus:hover {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus:hover, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:focus:hover, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:focus:hover {
   background: #ffeb3b;
 }
 
@@ -10828,7 +10850,7 @@ p,
   color: inherit;
 }
 
-.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+.nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -10838,7 +10860,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -10846,14 +10868,14 @@ p,
 }
 
 @media print {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links {
+  .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
     margin-bottom: 24px;
   }
 }
@@ -10990,12 +11012,14 @@ address + .nhsuk-heading-l,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
 .article-footer .cat-links + h2,
 .article-footer .tags-links + h2,
+.article-footer .comments-link + h2,
 .nhsuk-body-s + .nhsuk-heading-l,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
 .article-footer .cat-links + .nhsuk-heading-l,
 .article-footer .tags-links + .nhsuk-heading-l,
+.article-footer .comments-link + .nhsuk-heading-l,
 .nhsuk-list + h2,
 ul + h2,
 ol + h2,
@@ -11016,12 +11040,14 @@ ol + .nhsuk-heading-l {
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h2,
   .article-footer .cat-links + h2,
   .article-footer .tags-links + h2,
+  .article-footer .comments-link + h2,
   .nhsuk-body-s + .nhsuk-heading-l,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-l,
   .article-footer .cat-links + .nhsuk-heading-l,
   .article-footer .tags-links + .nhsuk-heading-l,
+  .article-footer .comments-link + .nhsuk-heading-l,
   .nhsuk-list + h2,
   ul + h2,
   ol + h2,
@@ -11042,12 +11068,14 @@ address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nighti
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
 .article-footer .tags-links + h3,
+.article-footer .comments-link + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
 .article-footer .cat-links + .nhsuk-heading-m,
 .article-footer .tags-links + .nhsuk-heading-m,
+.article-footer .comments-link + .nhsuk-heading-m,
 .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
 .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -11059,6 +11087,8 @@ address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nighti
 .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
 .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
+.article-footer .nightingale-latest-news .nhsuk-panel .comments-link + a,
+.nightingale-latest-news .nhsuk-panel .article-footer .comments-link + a,
 .nightingale-latest-news .sticky .nhsuk-body-s + a,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
 .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -11070,6 +11100,8 @@ address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nighti
 .nightingale-latest-news .sticky .article-footer .cat-links + a,
 .article-footer .nightingale-latest-news .sticky .tags-links + a,
 .nightingale-latest-news .sticky .article-footer .tags-links + a,
+.article-footer .nightingale-latest-news .sticky .comments-link + a,
+.nightingale-latest-news .sticky .article-footer .comments-link + a,
 .nhsuk-list + h3,
 ul + h3,
 ol + h3,
@@ -11094,12 +11126,14 @@ address + .nhsuk-heading-s,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
 .article-footer .cat-links + h4,
 .article-footer .tags-links + h4,
+.article-footer .comments-link + h4,
 .nhsuk-body-s + .nhsuk-heading-s,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
 .article-footer .cat-links + .nhsuk-heading-s,
 .article-footer .tags-links + .nhsuk-heading-s,
+.article-footer .comments-link + .nhsuk-heading-s,
 .nhsuk-list + h4,
 ul + h4,
 ol + h4,
@@ -11120,12 +11154,14 @@ ol + .nhsuk-heading-s {
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
   .article-footer .tags-links + h3,
+  .article-footer .comments-link + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-m,
   .article-footer .cat-links + .nhsuk-heading-m,
   .article-footer .tags-links + .nhsuk-heading-m,
+  .article-footer .comments-link + .nhsuk-heading-m,
   .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .nhsuk-panel a + a,
   .nightingale-latest-news .nhsuk-panel .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -11137,6 +11173,8 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .nhsuk-panel .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .nhsuk-panel .tags-links + a,
   .nightingale-latest-news .nhsuk-panel .article-footer .tags-links + a,
+  .article-footer .nightingale-latest-news .nhsuk-panel .comments-link + a,
+  .nightingale-latest-news .nhsuk-panel .article-footer .comments-link + a,
   .nightingale-latest-news .sticky .nhsuk-body-s + a,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .nightingale-latest-news .sticky a + a,
   .nightingale-latest-news .sticky .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + a,
@@ -11148,6 +11186,8 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .sticky .article-footer .cat-links + a,
   .article-footer .nightingale-latest-news .sticky .tags-links + a,
   .nightingale-latest-news .sticky .article-footer .tags-links + a,
+  .article-footer .nightingale-latest-news .sticky .comments-link + a,
+  .nightingale-latest-news .sticky .article-footer .comments-link + a,
   .nhsuk-list + h3,
   ul + h3,
   ol + h3,
@@ -11172,12 +11212,14 @@ ol + .nhsuk-heading-s {
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + h4,
   .article-footer .cat-links + h4,
   .article-footer .tags-links + h4,
+  .article-footer .comments-link + h4,
   .nhsuk-body-s + .nhsuk-heading-s,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a + .nhsuk-heading-s,
   .article-footer .cat-links + .nhsuk-heading-s,
   .article-footer .tags-links + .nhsuk-heading-s,
+  .article-footer .comments-link + .nhsuk-heading-s,
   .nhsuk-list + h4,
   ul + h4,
   ol + h4,
@@ -11648,6 +11690,11 @@ b {
   margin-right: 0;
 }
 
+.nhsuk-image img {
+  width: unset;
+  max-width: 100%;
+}
+
 .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content textarea {
   min-height: 10rem;
   width: 100%;
@@ -11688,23 +11735,7 @@ b {
   color: #005eb8;
 }
 
-.error-404 .nhsuk-header__search-toggle, .error-404 .nhsuk-search__close {
-  display: none;
-}
-
-.error-404 .nhsuk-header__search-wrap {
-  display: inline-block;
-  width: 267px;
-  border: 2px solid #005eb8;
-  border-radius: 4px;
-}
-
-.error-404 .nhsuk-header__search-wrap input[type="text"] {
-  border-radius: 2px 0 0 2px;
-  border-right: 2px solid #005eb8;
-}
-
-.nhsuk-pill-standard, .nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .nhsuk-pill-success, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .nhsuk-pill-warn, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, #primary footer .edit-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label, .learndash-wrapper .ld-status {
+.nhsuk-pill-standard, .nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .nhsuk-pill-success, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .article-footer .comments-link, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .nhsuk-pill-warn, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, #primary footer .edit-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label, .learndash-wrapper .ld-status {
   border-radius: 4px;
   border: 2px solid;
   background-color: #ffffff;
@@ -11728,7 +11759,7 @@ b {
   color: #005eb8;
 }
 
-.nhsuk-pill-success, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete {
+.nhsuk-pill-success, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .article-footer .comments-link, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete {
   border-color: #007f3b;
   color: #007f3b;
 }
@@ -11740,8 +11771,7 @@ b {
 
 #primary footer .edit-link {
   text-decoration: none;
-  margin-left: 10px;
-  top: -6px;
+  margin-left: 20px;
 }
 
 #primary footer .edit-link a {
@@ -11821,12 +11851,74 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   fill: #ffffff;
 }
 
+#primary .page-content .nhsuk-header__search-toggle, #primary .page-content .nhsuk-search__close {
+  display: none;
+}
+
+#primary .page-content .nhsuk-header__search-wrap {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 80%;
+  border: 2px solid #005eb8;
+  border-radius: 4px;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+  border: 1px solid #d8dde0;
+  border-radius: 3px 0px 0px 3px;
+  float: left;
+  max-width: 80%;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+  border: 1px solid #ccc;
+  border-left: none;
+  float: left;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
+  background-color: #f0f4f5;
+  border-color: #005eb8;
+  box-shadow: none;
+  color: #005eb8;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
+  fill: #005eb8;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+  fill: #ffffff;
+}
+
+.nhsuk-content__clearfix {
+  clear: both;
+  margin-top: 1.5rem;
+}
+
+.nhsuk-readmore {
+  float: right;
+}
+
 .has-white-color {
   color: #ffffff;
 }
 
 .has-white-background-color {
   background-color: #ffffff;
+}
+
+.has-nhs-blue-color {
+  color: #005eb8;
+}
+
+.has-nhs-blue-background-color {
+  background-color: #005eb8;
 }
 
 .has-nhs-dark-blue-color {
@@ -11961,6 +12053,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   max-width: 100%;
 }
 
+.nhsuk-header .nhsuk-header__navigation ul {
+  overflow: hidden;
+}
+
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 3px 0px 0px 3px;
 }
@@ -11975,51 +12071,56 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 10px;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-header__search-wrap input[type="text"] {
+.nhsuk-header a.nhsuk-header__transactional-service-name--link {
+  font-weight: 700;
+}
+
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type="text"] {
   border: 1px solid #d8dde0;
 }
 
-.nhsuk-header.nhsuk-header__white a.nhsuk-header__transactional-service-name--link {
+.nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #005eb8;
+  font-weight: 700;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-header__menu .nhsuk-header__menu-toggle {
+.nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border: 2px solid #005eb8;
   color: #005eb8;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-header__menu .nhsuk-header__menu-toggle.is-active {
+.nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle.is-active {
   color: #ffffff;
   border: 0px;
 }
 
-.nhsuk-header.nhsuk-header__white input[type="text"] {
+.nhsuk-header.nhsuk-header--white input[type="text"] {
   border-radius: 4px 0 0 4px;
   border-right: none;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-search__submit {
+.nhsuk-header.nhsuk-header--white .nhsuk-search__submit {
   border: 1px solid #ccc;
   border-left: none;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-header__search-toggle {
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   background-color: #f0f4f5;
   border-color: #005eb8;
   box-shadow: none;
   color: #005eb8;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-header__search-toggle .nhsuk-icon__search {
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #005eb8;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-header__search-toggle.is_active {
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #005eb8;
   color: #ffffff;
 }
 
-.nhsuk-header.nhsuk-header__white .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
   fill: #ffffff;
 }
 
@@ -12095,91 +12196,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   height: auto;
 }
 
-.nhsuk-promo-group__item {
-  margin-bottom: 36px;
-}
-
-.nhsuk-panel-with-label, #secondary section {
-  width: 100%;
-}
-
-.nhsuk-panel-with-label .nhsuk-panel-with-label__label a, #secondary section .nhsuk-panel-with-label__label a, #secondary section h2.widget-title a, .nhsuk-panel-with-label .nhsuk-panel-with-label__label a:visited, #secondary section .nhsuk-panel-with-label__label a:visited, #secondary section h2.widget-title a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.nhsuk-panel-with-label .entry-footer span, #secondary section .entry-footer span {
-  padding: 0 10px;
-}
-
-.nhsuk-dashboard .nhsuk-panel-group__item, .nhsuk-dashboard .ld-course-list-items .ld_course_grid, .ld-course-list-items .nhsuk-dashboard .ld_course_grid {
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper {
-  background: inherit;
-  box-shadow: none;
-}
-
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section {
-  background: inherit;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  position: relative;
-  padding-top: 33.33%;
-}
-
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-panel-with-label__label, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-panel-with-label__label, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-panel-with-label__label, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-panel-with-label__label, #secondary section .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h2.widget-title, #secondary section .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h2.widget-title, #secondary section .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label h2.widget-title, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section h2.widget-title, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section h2.widget-title, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section h2.widget-title, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section h2.widget-title, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section h2.widget-title, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section h2.widget-title {
-  z-index: 2;
-  top: 0;
-  margin: 0 -20px;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  max-width: 90%;
-  font-size: 1.1rem;
-}
-
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-dashboard__image, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-dashboard__image, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-dashboard__image, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-dashboard__image {
-  width: 100%;
-  height: 100%;
-}
-
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper #secondary section .nhsuk-promo__img, #secondary .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper section .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-promo__img, #secondary .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper #secondary section .nhsuk-promo__img, #secondary .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper section .nhsuk-promo__img {
-  position: relative;
-  top: -16px;
-  z-index: 1;
-}
-
-.nhsuk-dashboard .nhsuk-grid-column-full-width {
-  max-height: 300px;
-}
-
-.nhsuk-dashboard .nhsuk-grid-column-one-half {
-  max-height: 250px;
-}
-
-.nhsuk-dashboard .nhsuk-grid-column-one-third, .nhsuk-dashboard .nhsuk-grid-column-two-thirds {
-  max-height: 200px;
-}
-
-.nhsuk-promo img.nhsuk-promo__img {
-  padding: 10px;
-}
-
-.nhsuk-inset-text--rev, .is-style-quote-reverse {
-  background: #005eb8;
-  border: 10px solid #005eb8;
-  box-shadow: inset 12px 0px 0px 0px #ffffff;
-  box-sizing: border-box;
-  padding-left: 30px;
-  margin: 1rem 0;
-  color: #ffffff;
-  width: 100%;
-}
-
 #secondary section {
   background: #ffffff;
   margin-top: 32px;
@@ -12202,43 +12218,62 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border-left: none;
 }
 
-#secondary .widget_subpages > ul > li {
+#secondary section #wp-calendar caption {
+  position: relative;
+  top: 10px;
+  clip: unset;
+  clip-path: unset;
+  height: auto;
+  width: auto;
+  background: #005eb8;
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+#secondary section #wp-calendar td, #secondary section #wp-calendar th {
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 1rem;
+}
+
+#secondary section ul > li {
   border-bottom: 1px solid #d8dde0;
 }
 
-#secondary .widget_subpages > ul > li > ul > li, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li {
+#secondary section ul > li > ul > li, #secondary section ul > li > ul > li > ul > li {
   padding: 0;
   margin: 0;
   border-bottom: none;
 }
 
-#secondary .widget_subpages > ul > li > ul > li:last-of-type, #secondary #secondary .widget_subpages > ul > li > ul > li > ul > li:last-of-type {
+#secondary section ul > li > ul > li:last-of-type, #secondary section ul > li > ul > li > ul > li:last-of-type {
   margin-bottom: 20px;
 }
 
-#secondary .widget_subpages > ul > li > ul > li > a {
+#secondary section ul > li > ul > li > a {
   border-left: 2px solid #005eb8;
   padding: 0 0 0 10px;
   margin: 10px 0 0 10px;
 }
 
-#secondary .widget_subpages > ul > li > ul > li > ul > li > a {
+#secondary section ul > li > ul > li > ul > li > a {
   padding: 0 0 0 10px;
   margin: 10px 0 0 20px;
   border-bottom: none;
 }
 
-#secondary .widget_subpages > ul > li > ul > li > ul > li > a:before {
+#secondary section ul > li > ul > li > ul > li > a:before {
   content: "-  ";
   color: #e8edee;
 }
 
-#secondary .widget_subpages ul li a {
+#secondary section ul li a {
   border-bottom: none;
   padding: 5px 10px;
 }
 
-#secondary .widget_subpages ul li.widget_subpages__active > a {
+#secondary section ul li.widget_subpages__active > a {
   background: #005eb8;
   color: #ffffff;
 }
@@ -12448,6 +12483,19 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .article-footer .tags-links {
   float: left;
+  margin-right: 20px;
+}
+
+.article-footer .comments-link {
+  float: left;
+}
+
+.article-footer .comments-link a {
+  color: #007f3b;
+}
+
+.article-footer .comments-link a:visited {
+  color: #007f3b;
 }
 
 .navigation .nhsuk-pagination {
@@ -12933,4 +12981,28 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .single-sfwd-courses article.sfwd-courses img.wp-post-image {
   display: none;
+}
+
+/*
+// Print styling tweaks
+// @author Tony Blacker, NHS Leadership Academy
+// @version 1.0 30th December 2019
+*/
+@media print {
+  #secondary, #respond, #cookie-notice {
+    display: none;
+  }
+  a {
+    font-size: 1rem;
+  }
+  a:after {
+    color: #212b32;
+    content: " <br />(Link: " attr(href) ")";
+    /* [1] */
+    font-size: 0.75rem;
+    /* [2] */
+  }
+  .edit-link, .reply, .cat-links, .tags-links, .article-footer {
+    display: none !important;
+  }
 }

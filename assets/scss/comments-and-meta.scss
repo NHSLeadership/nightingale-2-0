@@ -208,8 +208,20 @@
   }
   .tags-links {
     float: left;
+    margin-right: 20px;
     @extend .nhsuk-body-s;
 
+  }
+  .comments-link {
+    float: left;
+    @extend .nhsuk-body-s;
+    @extend .nhsuk-pill-success;
+    a {
+      color: $color_nhsuk-green;
+      &:visited {
+        color: $color_nhsuk-green;
+      }
+    }
   }
 }
 .navigation {

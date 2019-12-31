@@ -12,7 +12,7 @@
 get_header();
 ?>
 	<div id="primary" class=" nhsuk-grid-row">
-		<div class="nhsuk-grid-column-full">
+		<div class="nhsuk-grid-column-two-thirds archive">
 
 			<?php
 			if ( have_posts() ) :
@@ -48,6 +48,11 @@ get_header();
 				endif;
 				?>
 
+		</div>
+		<div class="nhsuk-grid__item nhsuk-grid-column-one-third">
+			<?php
+			get_sidebar();
+			?>
 		</div>
 
 	</div><!-- #primary -->
