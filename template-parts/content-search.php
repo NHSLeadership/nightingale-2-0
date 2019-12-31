@@ -33,6 +33,7 @@
 				<div class="entry-summary">
 					<?php the_excerpt(); ?>
 				</div><!-- .entry-summary -->
+				<div class="nhsuk-content__clearfix"></div>
 				<footer class="entry-footer">
 					<?php nightingale_entry_footer(); ?>
 				</footer><!-- .entry-footer -->

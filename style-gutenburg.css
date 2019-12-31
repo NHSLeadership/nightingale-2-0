@@ -10550,6 +10550,11 @@ section {
   margin-right: 0;
 }
 
+.nhsuk-image img {
+  width: unset;
+  max-width: 100%;
+}
+
 .nhsuk-textarea {
   min-height: 10rem;
   width: 100%;
@@ -10590,22 +10595,6 @@ section {
   color: #005eb8;
 }
 
-.error-404 .nhsuk-header__search-toggle, .error-404 .nhsuk-search__close {
-  display: none;
-}
-
-.error-404 .nhsuk-header__search-wrap {
-  display: inline-block;
-  width: 267px;
-  border: 2px solid #005eb8;
-  border-radius: 4px;
-}
-
-.error-404 .nhsuk-header__search-wrap input[type="text"] {
-  border-radius: 2px 0 0 2px;
-  border-right: 2px solid #005eb8;
-}
-
 .nhsuk-pill-standard, .nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-pill-success, .nhsuk-pill-warn, #primary footer .edit-link {
   border-radius: 4px;
   border: 2px solid;
@@ -10642,8 +10631,7 @@ section {
 
 #primary footer .edit-link {
   text-decoration: none;
-  margin-left: 10px;
-  top: -6px;
+  margin-left: 20px;
 }
 
 #primary footer .edit-link a {
@@ -10708,12 +10696,74 @@ section {
   fill: #ffffff;
 }
 
+#primary .page-content .nhsuk-header__search-toggle, #primary .page-content .nhsuk-search__close {
+  display: none;
+}
+
+#primary .page-content .nhsuk-header__search-wrap {
+  padding: 10px 20px;
+  display: inline-block;
+  width: 80%;
+  border: 2px solid #005eb8;
+  border-radius: 4px;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+  border: 1px solid #d8dde0;
+  border-radius: 3px 0px 0px 3px;
+  float: left;
+  max-width: 80%;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+  border: 1px solid #ccc;
+  border-left: none;
+  float: left;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
+  background-color: #f0f4f5;
+  border-color: #005eb8;
+  box-shadow: none;
+  color: #005eb8;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
+  fill: #005eb8;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+  fill: #ffffff;
+}
+
+.nhsuk-content__clearfix {
+  clear: both;
+  margin-top: 1.5rem;
+}
+
+.nhsuk-readmore {
+  float: right;
+}
+
 .has-white-color {
   color: #ffffff;
 }
 
 .has-white-background-color {
   background-color: #ffffff;
+}
+
+.has-nhs-blue-color {
+  color: #005eb8;
+}
+
+.has-nhs-blue-background-color {
+  background-color: #005eb8;
 }
 
 .has-nhs-dark-blue-color {

@@ -29,7 +29,7 @@ function nightingale_get_prev_next() {
 	echo '<div class="navigation">
 	<nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
   <ul class="nhsuk-list nhsuk-pagination__list">';
-	echo nightingale_the_post_navigation();
+	echo nightingale_the_post_navigation(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	echo '</ul></nav></div>';
 }
 

@@ -33,6 +33,7 @@ function nightingale_customize_register( $wp_customize ) {
 		);
 	}
 
+
 	/*
 	 * ------------------------------------------------------------
 	 * SECTION: Header
@@ -42,7 +43,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'section_header',
 		array(
 			'title'       => esc_html__( 'Header', 'nightingale' ),
-			'description' => esc_attr__( 'Choose a Header Style', 'nightingale' ),
+			'description' => esc_attr__( 'Customise your header display', 'nightingale' ),
 			'priority'    => 10,
 		)
 	);
@@ -63,98 +64,14 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'show_search',
 		array(
-			'label'   => esc_html__( 'Show Search Box?', 'nightingale' ),
-			'section' => 'section_header',
-			'type'    => 'radio',
-			'choices' => array(
-				'yes' => esc_html__( 'Yes', 'nightingale' ),
-				'no'  => esc_html__( 'No', 'nightingale' ),
-			),
-		)
-	);
-
-	/*
-	 * -----------------------------------------------------------
-	 * SHOW / HIDE Site Name
-	 * -----------------------------------------------------------
-	 */
-	$wp_customize->add_setting(
-		'show_sitename',
-		array(
-			'default'           => 'yes',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'show_sitename',
-		array(
-			'label'       => esc_html__( 'Show site Name as text?', 'nightingale' ),
-			'description' => esc_html__( 'you may wish to hide this if your organisational logo includes your organisation name. Your site name is edited / created in the "Site Identity" section of the theme customiser', 'nightingale' ),
-			'section'     => 'title_tagline',
+			'label'       => esc_html__( 'Show Search Box?', 'nightingale' ),
+			'description' => esc_html__( 'Would you like to show a search box in the top right of your site?', 'nightingale' ),
+			'section'     => 'section_header',
 			'type'        => 'radio',
 			'choices'     => array(
 				'yes' => esc_html__( 'Yes', 'nightingale' ),
 				'no'  => esc_html__( 'No', 'nightingale' ),
 			),
-		)
-	);
-
-	/*
-	 * -----------------------------------------------------------
-	 * LOGO Generation
-	 * -----------------------------------------------------------
-	 */
-	$wp_customize->add_setting(
-		'logo_type',
-		array(
-			'default'           => 'transaction',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'logo_type',
-		array(
-			'label'       => esc_html__( 'Site identifier', 'nightingale' ),
-			'description' => esc_html__( 'You can create your own site identity. This only takes effect if you have not uploaded a site logo. The options are transactional (NHS logo, your org name to the right) or organisational (NHS logo, your org name underneath and a department or qualifier under that). Both are accepted NHS design patterns.', 'nightingale' ),
-			'section'     => 'section_header',
-			'type'        => 'radio',
-			'choices'     => array(
-				'transactional' => esc_html__( 'Transactional', 'nightingale' ),
-				'organisation'  => esc_html__( 'Organisational', 'nightingale' ),
-			),
-		)
-	);
-
-	$wp_customize->add_setting(
-		'logo_title',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'logo_title',
-		array(
-			'label'   => esc_html__( 'Title to show in generated logo', 'nightingale' ),
-			'section' => 'section_header',
-			'type'    => 'text',
-		)
-	);
-
-	$wp_customize->add_setting(
-		'logo_qualifier',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'logo_qualifier',
-		array(
-			'label'       => esc_html__( 'Qualifier to show in generated logo', 'nightingale' ),
-			'description' => esc_html__( 'this will only show in transactional logos and is either your department or local qualifier', 'nightingale' ),
-			'section'     => 'section_header',
-			'type'        => 'text',
 		)
 	);
 
@@ -172,261 +89,68 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'header_styles',
 		array(
-			'label'   => esc_html__( 'Header Styles', 'nightingale' ),
-			'section' => 'section_header',
-			'type'    => 'radio',
-			'choices' => array(
-				'normal'   => esc_html__( 'Standard (Solid Blue)', 'nightingale' ),
-				'inverted' => esc_html__( 'Non Standard (White Logo Bar)', 'nightingale' ),
+			'label'       => esc_html__( 'Header Colour', 'nightingale' ),
+			'description' => esc_html__( 'What background would you like for your header region?', 'nightingale' ),
+			'section'     => 'section_header',
+			'type'        => 'radio',
+			'choices'     => array(
+				'normal'   => esc_html__( 'Solid Blue', 'nightingale' ),
+				'inverted' => esc_html__( 'White Logo Bar', 'nightingale' ),
 			),
 		)
 	);
 
 	/*
-	 * ------------------------------------------------------------
-	 * SECTION: Emergency Alert Field
-	 * ------------------------------------------------------------
-	 */
-	$wp_customize->add_section(
-		'section_emergency',
-		array(
-			'title'       => esc_html__( 'Emergency Alert', 'nightingale' ),
-			'description' => esc_attr__( 'Adds a site wide alert to the top of your site. Use sparingly!', 'nightingale' ),
-			'priority'    => 75,
-		)
-	);
-
-	/*
-	 * Emergency Options
+	 * Show NHS Logo?
 	 */
 	$wp_customize->add_setting(
-		'emergency_on',
+		'nhs_logo',
 		array(
-			'default'           => 'no',
+			'default'           => 'yes',
 			'sanitize_callback' => 'esc_attr',
 		)
 	);
+
 	$wp_customize->add_control(
-		'emergency_on',
+		'nhs_logo',
 		array(
-			'label'   => esc_html__( 'Show an emergency alert?', 'nightingale' ),
-			'section' => 'section_emergency',
-			'type'    => 'radio',
-			'choices' => array(
-				'no'  => esc_html__( 'No', 'nightingale' ),
+			'label'       => esc_html__( 'Do you wish to use the NHS logo?', 'nightingale' ),
+			'description' => esc_html__( 'this setting is ignored if you have uploaded a custom logo above. Please note the NHS logo is a trademark and should only be used by organisations that have permission to use it as part of their branding.', 'nightingale' ),
+			'section'     => 'title_tagline',
+			'type'        => 'radio',
+			'choices'     => array(
 				'yes' => esc_html__( 'Yes', 'nightingale' ),
-			),
-		)
-	);
-	$wp_customize->add_setting(
-		'emergency_heading',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'emergency_heading',
-		array(
-			'label'   => esc_html__( 'Emergency Alert Title', 'nightingale' ),
-			'section' => 'section_emergency',
-			'type'    => 'text',
-		)
-	);
-	$wp_customize->add_setting(
-		'emergency_content',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'emergency_content',
-		array(
-			'label'   => esc_html__( 'Emergency Alert Content', 'nightingale' ),
-			'section' => 'section_emergency',
-			'type'    => 'textarea',
-		)
-	);
-	$wp_customize->add_setting(
-		'emergency_link',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'emergency_link',
-		array(
-			'label'   => esc_html__( 'Emergency Alert Link (url) to Further Info', 'nightingale' ),
-			'section' => 'section_emergency',
-			'type'    => 'url',
-		)
-	);
-	$wp_customize->add_setting(
-		'emergency_link_title',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'emergency_link_title',
-		array(
-			'label'   => esc_html__( 'Emergency Alert Text to Link', 'nightingale' ),
-			'section' => 'section_emergency',
-			'type'    => 'text',
-		)
-	);
-	$wp_customize->add_setting(
-		'emergency_date',
-		array(
-			'default'           => false,
-			'sanitize_callback' => 'nightingale_sanitize_date',
-		)
-	);
-	$wp_customize->add_control(
-		'emergency_date',
-		array(
-			'label'       => esc_html__( 'Date Last Updated', 'nightingale' ),
-			'section'     => 'section_emergency',
-			'type'        => 'date',
-			'input_attrs' => array(
-				'placeholder' => __( 'mm/dd/yyyy', 'nightingale' ),
-			),
-		)
-	);
-
-	$wp_customize->remove_section( 'colors' );
-	$wp_customize->remove_section( 'header_image' );
-
-	/*
-	 * ------------------------------------------------------------
-	 * SECTION: Feedback Banner Fields
-	 * ------------------------------------------------------------
-	 */
-	$wp_customize->add_section(
-		'section_feedback',
-		array(
-			'title'       => esc_html__( 'Feedback Alert', 'nightingale' ),
-			'description' => esc_attr__( 'Adds a site wide feedback alert. Use sparingly!', 'nightingale' ),
-			'priority'    => 80,
-		)
-	);
-
-	/*
-	 * Feedback Options
-	 */
-	$wp_customize->add_setting(
-		'feedback_on',
-		array(
-			'default'           => 'no',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'feedback_on',
-		array(
-			'label'   => esc_html__( 'Show a feedback banner?', 'nightingale' ),
-			'section' => 'section_feedback',
-			'type'    => 'radio',
-			'choices' => array(
 				'no'  => esc_html__( 'No', 'nightingale' ),
-				'yes' => esc_html__( 'Yes', 'nightingale' ),
 			),
-		)
-	);
-	$wp_customize->add_setting(
-		'feedback_banner_heading',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'feedback_banner_heading',
-		array(
-			'label'   => esc_html__( 'Feedback Title', 'nightingale' ),
-			'section' => 'section_feedback',
-			'type'    => 'text',
-		)
-	);
-	$wp_customize->add_setting(
-		'feedback_banner_content',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'feedback_banner_content',
-		array(
-			'label'   => esc_html__( 'Feedback Message', 'nightingale' ),
-			'section' => 'section_feedback',
-			'type'    => 'textarea',
-		)
-	);
-	$wp_customize->add_setting(
-		'feedback_banner_link',
-		array(
-			'default'           => 'https://',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'feedback_banner_link',
-		array(
-			'label'   => esc_html__( 'Feedback Link (url) to Feedback form', 'nightingale' ),
-			'section' => 'section_feedback',
-			'type'    => 'url',
-		)
-	);
-	$wp_customize->add_setting(
-		'feedback_banner_link_title',
-		array(
-			'default'           => '',
-			'sanitize_callback' => 'esc_attr',
-		)
-	);
-	$wp_customize->add_control(
-		'feedback_banner_link_title',
-		array(
-			'label'   => esc_html__( 'Feedback Text to Link', 'nightingale' ),
-			'section' => 'section_feedback',
-			'type'    => 'text',
 		)
 	);
 
 	/*
-	 * ------------------------------------------------------------
-	 * SECTION: GA Tracking
-	 * ------------------------------------------------------------
+	 * -----------------------------------------------------------
+	 * LOGO Generation
+	 * -----------------------------------------------------------
 	 */
-	$wp_customize->add_section(
-		'section_google',
-		array(
-			'title'       => esc_html__( 'Google Tracking', 'nightingale' ),
-			'description' => esc_attr__( 'Do you wish to add Google Analytics Tracking?', 'nightingale' ),
-			'priority'    => 70,
-		)
-	);
-
 	$wp_customize->add_setting(
-		'google-utm',
+		'logo_type',
 		array(
-			'default'           => 'GA-',
+			'default'           => 'transactional',
 			'sanitize_callback' => 'esc_attr',
 		)
 	);
 	$wp_customize->add_control(
-		'google-utm',
+		'logo_type',
 		array(
-			'label'       => esc_html__( 'Google Analytics Tracking ID', 'nightingale' ),
-			'description' => esc_html__( 'Enter your Google tracking ID (everything after UA-)', 'nightingale' ),
-			'section'     => 'section_google',
-			'type'        => 'text',
+			'label'       => esc_html__( 'Logo Builder', 'nightingale' ),
+			'description' => esc_html__( 'You can create your own site logo. It is strongly recommened to use the NHS logo if you are able to. This only takes effect if you have not uploaded a site logo. Both options are accepted NHS design patterns.', 'nightingale' ),
+			'section'     => 'title_tagline',
+			'type'        => 'radio',
+			'choices'     => array(
+				'transactional' => esc_html__( 'Inline (shows just site name to the right of logo)', 'nightingale' ),
+				'organisation'  => esc_html__( 'Block (shows both site name and tagline beneath logo)', 'nightingale' ),
+			),
 		)
 	);
+
 
 }
 
