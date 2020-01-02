@@ -1,6 +1,16 @@
 .nhsuk-header {
   .nhsuk-header__navigation {
     max-width: 100%;
+    ul {
+      @extend .nhsuk-header__navigation-list;
+      overflow: hidden;
+      li {
+        @extend .nhsuk-header__navigation-item;
+        a {
+          @extend .nhsuk-header__navigation-link;
+        }
+      }
+    }
   }
 
   .nhsuk-header__search-wrap input[type="text"] {
@@ -10,18 +20,25 @@
 
     }
   }
+  .autocomplete-container {
+    float: left;
+  }
   .nhsuk-u-visually-hidden {
     color: $color_nhsuk-black;
     background: $color_nhsuk-white;
     padding: 10px;
   }
-  &.nhsuk-header__white {
+  a.nhsuk-header__transactional-service-name--link {
+    font-weight: 700;
+  }
+  &.nhsuk-header--white {
     .nhsuk-header__search-wrap input[type="text"] {
       border: 1px solid $nhsuk-border-color;
     }
 
     a.nhsuk-header__transactional-service-name--link {
       color: $color_nhsuk-blue;
+      font-weight: 700;
     }
 
 

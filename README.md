@@ -1,15 +1,14 @@
-# Nightingale 2.0.5
+# Nightingale 2.0.7
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
+:exclamation: Updates to 2.0.7 will make the header region revert to standard wordpress values. If updating your theme, please pay particular attention to the site identity and header regions of the theme customiser before making your site live.
 
-:exclamation: ~~This is a Release Candidate version. Do not use on production sites.~~ This is now ready for public 
-scrutiny :). 
+:exclamation: This is a production ready release, with the caveat that any issues should be reported as an issue on 
+this repo for quick action. 
 `Feedback is positively encouraged,
  please see how to get involved below`
 
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
- - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will auto install on theme activation and is a 
- requirement. This extends the native Gutenberg WP functionality to include latest developments.
  - *optional* For any editing of the theme (in particular the css files) we strongly advise you to use the NPM 
  installation route detailed in `Optional Settings` below.
  
@@ -17,6 +16,7 @@ scrutiny :).
  - Add to your WordPress files, in the `wp-content/themes` folder
  - Activate the theme
    - You will be prompted to install the Gutenberg plugin. Please do so and activate it. 
+   - You will be prompted to install the NHS Blocks plugin. Please do so and activate it.
    - You will be advised to install Cookie Notice plugin (see `Optional Settings` section below)
  - To populate the site with basic elements, we suggest the following:
    - Enable the subpages widget in the sidebar. Configuration works best if you select *use parent page as title*, *show subpages*, and *enable ul for subpages*
@@ -28,12 +28,12 @@ scrutiny :).
  - `Cookie Notice plugin` - This adds a cookie notice banner to your site. You can modify the text that displays, and
   this gives your users an easy to use way of opting out of cookies. This, however, is an implied consent approach to
    cookies. If you wish to have an informed consent route to cookie adoption, you will need an alternative solution.
- - If you wish to edit the styles and/or blocks, You will need to either be able to run `node` either 
-    locally or on your server for the Sass SCSS files to be generated. In the nightingale folder, after installing 
-    node using `npm install`, run `npm run build` to compile your css. In the nightingale/nhsblocks folder, after 
-    running `npm  install`, you can generate the ES6 required to recompile your Gutenberg blocks using `npm run build`
-    - This theme will pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via `node` if you 
-   install using the optional commands above
+ - This theme will suggest you pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via 
+    `node` if you install using the optional commands above
+ - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will be prompted as a suggested install on theme 
+     activation and is a requirement for the NHS Blocks plugin. This extends the native Gutenberg WP functionality to 
+     include latest developments.
+     
       
 ## Feedback / Improvement / Development
  - If you see any issues, faults or have suggestions for improvements, please add them as issues to our Git 
@@ -48,6 +48,7 @@ To accomplish this, you will need to take the following steps:
  - Compile the css from all the downstream libraries and local files `npm run build`
  - Compress the css output `npm run compress`
  - Regenerate the critical css `npm run critical`
+ ##### Alternatively, if you only wish to modify minimal css for a single site, you can use the Custom CSS section within the theme customiser section.
    
 ## Please note
  - XML/RPC is still enabled - this is a WordPress default, but will trigger National Cyber Security Centre monitoring alerts. To disable XML-RPC you can add:
@@ -68,7 +69,6 @@ This theme has been extended to style the following plugins automatically:
  - [x] Style header, amend markup to match expected output
  - [x] Provide zone for WordPress controlled menu (Customizer)
  - [x] Provide alternative header for NHS Organisations with white logo including title
- - [x] Add Hero banner (via NHSBlocks plugin)
  - [x] Style sidebar to match contents list styling
  - [x] Pagination styling
  - [x] Footer styling and WordPress menu inclusion
@@ -80,11 +80,7 @@ This theme has been extended to style the following plugins automatically:
  - [x] Search results page layout
  - [x] Template layout code
  - [x] Typographic classes
- - [x] Custom Gutenburg Blocks (via NHSBlocks plugin)
- - [x] Native Gutenberg blocks (phase 2 to replace NHSBlocks quickfix)
  - [x] Breadcrumb trail styling and addition
- - [x] Emergency alert
- - [x] Feedback Banner
  - [x] Forms elements
  - [x] Add Gravity Forms compatibility
  - [x] Add LearnDash compatibility
@@ -99,6 +95,14 @@ This theme has been extended to style the following plugins automatically:
  - [x] Device checks (mobile, tablet, TV etc)
  - [x] Print layout / styling
  - [x] Accessibility audit
+ 
+ Deprecated / Removed
+ 
+ - [x] Emergency alert - Deprecated
+ - [x] Feedback Banner - Removed (plugin functionality rather than presentation)
+ - [x] Custom Gutenburg Blocks (moved to NHSBlocks plugin)
+ - [x] Native Gutenberg blocks (moved to NHSBlocks)
+ - [x] Add Hero banner (moved to NHSBlocks plugin)
  
  ## Licence
  

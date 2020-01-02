@@ -23,6 +23,7 @@
 
 		?>
 	</div><!-- .entry-content -->
+	<div class="nhsuk-content__clearfix"></div>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

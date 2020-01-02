@@ -50,4 +50,5 @@
 		endif;
 		?>
 	</div><!-- .page-content -->
+	<div class="nhsuk-content__clearfix"></div>
 </section><!-- .no-results -->

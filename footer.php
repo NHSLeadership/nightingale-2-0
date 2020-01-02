@@ -44,6 +44,7 @@ flush();
 						}
 
 						?>
+						<div style="height: 10px; width: 100%;"></div>
 					</ul>
 					<?php
 				} //end if footer menu exists
@@ -57,11 +58,6 @@ flush();
 <!--
 -- FzwfoYNPKdzf5LLgTGsAAz6xb8lqM8ObevYAW5CV9mBAbpDtfV057ndBJWDFrT7P --
 -->
-<?php
-if ( get_theme_mod( 'feedback_on' ) === 'yes' ) {
-	get_template_part( 'partials/feedback-banner' );
-}
-?>
 <?php wp_footer(); ?>
 </body>
 </html>

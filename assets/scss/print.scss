@@ -1,0 +1,24 @@
+/*
+// Print styling tweaks
+// @author Tony Blacker, NHS Leadership Academy
+// @version 1.0 30th December 2019
+*/
+@media print {
+  #secondary, #respond, #cookie-notice { // hide sidebar, cookie notice, admin bar and comments form from printed output
+    display: none;
+  }
+  a {
+    font-size: 1rem;
+  }
+  a:after {
+    color: #212b32;
+    content: " <br />(Link: " attr(href) ")";
+    /* [1] */
+    font-size: 0.75rem;
+    /* [2] */
+  }
+  // hide all edit and reply links as really not necessary on printed output
+  .edit-link, .reply, .cat-links, .tags-links, .article-footer {
+    display: none !important;
+  }
+}

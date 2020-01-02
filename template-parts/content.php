@@ -23,11 +23,16 @@
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="nhsuk-review-date">
-				<p class="nhsuk-body-s">
-					<?php
-					nightingale_posted_by();
-					nightingale_posted_on();
-					?>
+				<?php
+				nightingale_posted_by();
+				nightingale_posted_on();
+				$readmorelink  = esc_url( get_permalink() );
+				$readmoretitle = esc_html( get_the_title() );
+				if ( strlen( $readmoretitle ) < 1 ) {
+					$readmoretitle = esc_html__( 'this post', 'nightingale' );
+					echo '<div class="nhsuk-readmore">' . nightingale_read_more_posts( $readmoretitle, $readmorelink ) . '</div>';
+				}
+				?>
 				</p>
 			</div><!-- .article-meta -->
 		<?php endif; ?>
@@ -55,9 +60,10 @@
 
 		?>
 	</article><!-- .article-content -->
+	<div class="nhsuk-content__clearfix"></div>
 
 	<footer class="article-footer">
 
-				<?php nightingale_entry_footer(); ?>
+		<?php nightingale_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

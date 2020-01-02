@@ -113,12 +113,13 @@ function nightingale_setup() {
 		'widgets'    => array(
 			// Place pre-defined widget in the sidebar area.
 			'sidebar-1' => array(
-				'Nightingale_Subpages_Widget',
+				'search',
+				'subpages-widget',
 			),
 			'404-error' => array(
-				'WP_Widget_Archives',
-				'WP_Widget_Tag_Cloud',
-				'WP_Widget_Recent_Posts',
+				'archives',
+				'tag_cloud',
+				'recent_posts',
 			),
 		),
 		'posts'      => array(
@@ -161,7 +162,6 @@ function nightingale_setup() {
 
 	remove_theme_support( 'custom-header' );
 	remove_theme_support( 'custom-background' );
-	unregister_widget( 'WP_Widget_Search' ); // taking out search widget as included in header by default.
 
 }
 
@@ -193,7 +193,7 @@ function nightingale_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar', 'nightingale' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Elements to show in the sidebar. each widget will show as a panel.', 'nightingale' ),
+			'description'   => esc_html__( 'Elements to show in the sidebar. each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -204,7 +204,7 @@ function nightingale_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Footer Region', 'nightingale' ),
 			'id'            => 'footer-region',
-			'description'   => esc_html__( 'Widgets to show in the footer zone.', 'nightingale' ),
+			'description'   => esc_html__( 'Widgets to show in the footer zone. By default the footer will have a copyright notice and the footer menu (if configured) only.', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 		)
@@ -318,9 +318,9 @@ function nightingale_register_required_plugins() {
 		// Menu slug.
 		'has_notices'  => true,
 		// Show admin notices or not.
-		'dismissable'  => false,
+		'dismissable'  => true,
 		// If false, a user cannot dismiss the nag message.
-		'dismiss_msg'  => 'We recommend you install these plugin to add the full NHS Frontend library range of components to your wordpress editor. ',
+		'dismiss_msg'  => '',
 
 		//
 		// If 'dismissable' is false, this message will be output at top of nag.
@@ -332,50 +332,6 @@ function nightingale_register_required_plugins() {
 	);
 
 	tgmpa( $plugins, $config );
-}
-
-add_action( 'admin_notices', 'nightingale_admin_notice_demo_data' );
-/**
- * Function to add in nag notice and welcome message on theme activation.
- */
-function nightingale_admin_notice_demo_data() {
-
-	// Hide bizberg admin message.
-	if ( ! empty( $_GET['status'] ) && 'nightingale_hide_msg' === $_GET['status'] ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-		update_option( 'nightingale_hide_msg', true );
-	}
-
-	$status = get_option( 'nightingale_hide_msg' );
-	if ( true === $status ) {
-		return;
-	}
-
-	if ( ! is_plugin_active( 'gutenberg/gutenberg.php' ) ) {
-		$my_theme   = wp_get_theme();
-		$theme_name = $my_theme->get( 'Name' );
-		echo '<div id="message" class="notice-info settings-error notice is-dismissible"><p>';
-		echo '<svg class="nhsuk-logo nhsuk-logo--white" style="width: 80px; height: 32px;"
-				 xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
-				<path fill="#fff" d="M0 0h40v16H0z"></path>
-				<path fill="#fff" d="M0 0h40v16H0z"></path>
-				<path fill="#005eb8"
-					  d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
-				<image src="https://assets.nhs.uk/images/nhs-logo.png" xlink:href=""></image>
-			</svg>';
-		echo '<strong style="font-size: 20px; padding-bottom: 10px; display: block;">';
-		printf(
-			/* translators: 1: theme name. */
-			esc_html__(
-				'Thank you for installing %1$s',
-				'nightingale'
-			),
-			esc_html( $theme_name )
-		);
-		echo '</strong>';
-		echo '<p>' . esc_html__( 'This will give your website a professional NHS themed template, with all NHS Frontend components available to you. The theme is developed and maintained by the digital team at NHS Leadership Academy, and is intended for use solely on sites within the NHS in the UK', 'nightingale' ) . '</p>';
-		echo '<p><b>' . esc_html__( 'Install all recommended plugins below to get started.', 'nightingale' ) . '</b></p>';
-		echo '</p></div>';
-	}
 }
 
 /**
@@ -424,6 +380,9 @@ $active_plugins = apply_filters( 'active_plugins', get_option( 'active_plugins' 
 
 /**
  * Gravity Forms style over-ride.
+ * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a theme file for
+ * the Gravity Forms plugin so any content generated by Gravity Forms fits in to this theme.
+ * The check around the require is to see if the plugin is active on this install
  */
 if ( in_array( 'gravityforms/gravityforms.php', $active_plugins, true ) ) {
 	if ( ! is_admin() ) {
@@ -433,16 +392,15 @@ if ( in_array( 'gravityforms/gravityforms.php', $active_plugins, true ) ) {
 
 /**
  * LearnDash style over-ride.
+ * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a theme file for
+ * the LearnDash plugin so any content generated by LearnDash fits in to this theme.
+ * The check around the require is to see if the plugin is active on this install
  */
 if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
 	if ( ! is_admin() ) {
 		require get_template_directory() . '/inc/learndash.php';
 	}
 }
-/**
- * Retina Ready Image code.
- */
-require get_template_directory() . '/inc/retina-images.php';
 
 /**
  * Performance Boosters - should be loaded as last element of functions file.

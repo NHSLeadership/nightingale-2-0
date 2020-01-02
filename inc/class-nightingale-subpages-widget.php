@@ -227,22 +227,22 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 
 		<p>
 			<input class="checkbox" type="checkbox" value="1" <?php checked( $instance['title_from_parent'], 1 ); ?> id="title_from_parent" name="<?php echo esc_attr( $this->get_field_name( 'title_from_parent' ) ); ?>" />
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title_from_parent' ) ); ?>"><?php	echo __( 'Use top level page as section title.', 'nightingale' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title_from_parent' ) ); ?>"><?php	echo esc_html( __( 'Use top level page as section title.', 'nightingale' ) ); ?></label>
 		</p>
 
 		<p>
 			<input class="checkbox" type="checkbox" value="1" <?php checked( $instance['title_link'], 1 ); ?> id="title_link" name="<?php echo esc_attr( $this->get_field_name( 'title_link' ) ); ?>" />
-			<label for="title_link"><?php echo __( 'Make title a link', 'nightingale' ) . __( '<br /> <b>(only if "use top level page" is checked)</b>', 'nightingale' ); ?></label>
+			<label for="title_link"><?php echo esc_html( __( 'Make title a link', 'nightingale' ) ) . esc_html( __( ' (only if "use top level page" is checked)', 'nightingale' ) ); ?></label>
 		</p>
 
 		<p>
 			<input class="checkbox" type="checkbox" value="1" <?php checked( $instance['deep_subpages'], 1 ); ?> id="deep_subpages" name="<?php echo esc_attr( $this->get_field_name( 'deep_subpages' ) ); ?>"/>
-			<label for="deep_subpages"><?php echo __( 'Include the current pages subpages', 'nightingale' ); ?></label>
+			<label for="deep_subpages"><?php echo esc_html( __( 'Include the current pages subpages', 'nightingale' ) ); ?></label>
 		</p>
 
 		<p>
 			<input class="checkbox" type="checkbox" value="1" <?php checked( $instance['nest_subpages'], 1 ); ?> id="nest_subpages" name="<?php echo esc_attr( $this->get_field_name( 'nest_subpages' ) ); ?>"/>
-			<label for="nest_subpages"><?php echo __( 'Nest sub-page <i>inside parent</i> ', 'nightingale' ) . __( "<br /><b>(only if 'Include the current pages subpages is checked)</b>", 'nightingale' ); ?></label>
+			<label for="nest_subpages"><?php echo esc_html( __( 'Nest sub-page inside parent ', 'nightingale' ) ) . esc_html( __( "(only if 'Include the current pages subpages' is checked)", 'nightingale' ) ); ?></label>
 		</p>
 
 		<?php
