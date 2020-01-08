@@ -41,7 +41,7 @@
 			</a>
 		</div>
 		<div class="nhsuk-header__transactional-service-name">
-			<a class="nhsuk-header__transactional-service-name--link" href="/"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
+			<a class="nhsuk-header__transactional-service-name--link" href="<?php echo esc_url_raw( get_home_url() ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
 		</div>
 		<?php
 	} else {
