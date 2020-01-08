@@ -31,7 +31,7 @@
 	} else if ( 'yes' === $nhs_logo ) {
 		?>
 		<div class="nhsuk-header__logo">
-			<a class="nhsuk-header__link" href="/" aria-label="<?php bloginfo( 'name' ); ?> homepage">
+			<a class="nhsuk-header__link" href="<?php echo esc_url_raw( get_home_url() ); ?>" aria-label="<?php bloginfo( 'name' ); ?> homepage">
 				<svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
 					<path class="nhsuk-logo__background" d="M0 0h40v16H0z"></path>
 					<path class="nhsuk-logo__text"
@@ -46,7 +46,7 @@
 	} else {
 		?>
 		<div class="nhsuk-header__logo">
-			<a class="nhsuk-header__link" href="/" aria-label="<?php bloginfo( 'name' ); ?> homepage">
+			<a class="nhsuk-header__link" href="<?php echo esc_url_raw( get_home_url() ); ?>" aria-label="<?php bloginfo( 'name' ); ?> homepage">
 				<span class="nhsuk-organisation-name"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></span>
 				<span class="nhsuk-organisation-descriptor"><?php echo esc_html( get_bloginfo( 'description' ) ); ?></span>
 			</a>
