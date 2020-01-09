@@ -353,7 +353,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Frutiger W01,Arial,Sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -483,7 +483,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  @extent .nhsuk-button;
+  @extend .nhsuk-button;
 }
 
 

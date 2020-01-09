@@ -161,6 +161,10 @@
   .nhsuk-header__search-wrap {
     padding: 20px 0;
 
+    .autocomplete-container {
+      float: left;
+    }
+
     .nhsuk-search__input {
       border: 1px solid #d8dde0;
       border-radius: 3px 0px 0px 3px;
@@ -198,6 +202,10 @@
       }
     }
   }
+}
+
+.nhsuk-search__submit {
+  box-shadow: none;
 }
 
 #primary {
@@ -253,10 +261,12 @@
     }
   }
 }
+
 .nhsuk-content__clearfix {
   clear: both;
   margin-top: 1.5rem;
 }
+
 .nhsuk-readmore {
   float: right;
 }

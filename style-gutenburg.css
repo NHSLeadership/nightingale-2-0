@@ -10663,6 +10663,10 @@ section {
   padding: 20px 0;
 }
 
+#secondary .nhsuk-header__search-wrap .autocomplete-container {
+  float: left;
+}
+
 #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
   border: 1px solid #d8dde0;
   border-radius: 3px 0px 0px 3px;
@@ -10694,6 +10698,10 @@ section {
 
 #secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
   fill: #ffffff;
+}
+
+.nhsuk-search__submit {
+  box-shadow: none;
 }
 
 #primary .page-content .nhsuk-header__search-toggle, #primary .page-content .nhsuk-search__close {
