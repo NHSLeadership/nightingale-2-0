@@ -23,6 +23,20 @@ font-size: 2em;
 margin: .67em 0
 }
 
+hr {
+box-sizing: content-box;
+height: 0;
+overflow: visible
+}
+
+strong {
+font-weight: bolder
+}
+
+img {
+border-style: none
+}
+
 ::-webkit-file-upload-button {
 -webkit-appearance: button;
 font: inherit
@@ -30,7 +44,7 @@ font: inherit
 
 body {
 color: #404040;
-font-family: sans-serif;
+font-family: Frutiger W01, Arial, Sans-serif;
 font-size: 16px;
 font-size: 1rem;
 line-height: 1.5
@@ -46,6 +60,18 @@ margin-bottom: 1.5em
 
 body {
 background: #fff
+}
+
+hr {
+background-color: #ccc;
+border: 0;
+height: 1px;
+margin-bottom: 1.5em
+}
+
+img {
+height: auto;
+max-width: 100%
 }
 
 .screen-reader-text {
@@ -255,6 +281,27 @@ padding-top: 32px
 }
 }
 
+.nhsuk-footer__list {
+padding-bottom: 16px;
+list-style-type: none;
+margin: 0;
+padding-left: 0
+}
+
+@media (min-width:40.0625em) {
+.nhsuk-footer__list {
+padding-bottom: 24px
+}
+}
+
+@media (min-width:48.0625em) {
+.nhsuk-footer__list {
+float: left;
+padding-bottom: 0;
+width: 75%
+}
+}
+
 .nhsuk-footer__list-item {
 font-weight: 400;
 font-size: 14px;
@@ -292,6 +339,48 @@ column-gap: 24px
 }
 .nhsuk-footer__list--three-columns li {
 float: none
+}
+}
+
+@media (max-width:40.0525em) {
+.autocomplete__input {
+-ms-flex-positive: 2;
+-webkit-appearance: listbox;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 0;
+border: 1px solid #aeb7bd;
+border-right: 0;
+border-top-left-radius: 4px;
+border-top-right-radius: 0;
+flex-grow: 2;
+font-size: inherit;
+height: 52px;
+margin: 0;
+outline: none;
+padding: 0 16px;
+width: 100%
+}
+}
+
+@media (min-width:40.0625em) {
+.autocomplete__input {
+-webkit-appearance: listbox;
+border: 1px solid #fff;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 0;
+border-right: 0;
+border-top-left-radius: 4px;
+border-top-right-radius: 0;
+font-size: 16px;
+height: 40px;
+padding: 0 12px;
+width: 200px
+}
+}
+
+@media (min-width:48.0625em) {
+.autocomplete__input {
+width: 235px
 }
 }
 
@@ -576,18 +665,21 @@ padding: 16px;
 position: relative
 }
 
+.nhsuk-header .nhsuk-header__navigation ul,
 .nhsuk-header__navigation-list {
 list-style: none;
 margin: 0;
 padding-left: 0
 }
 
+.nhsuk-header .nhsuk-header__navigation ul li,
 .nhsuk-header__navigation-item {
 border-top: 1px solid #f0f4f5;
 margin-bottom: 0;
 position: relative
 }
 
+.nhsuk-header .nhsuk-header__navigation ul li a,
 .nhsuk-header__navigation-link {
 font-weight: 400;
 font-size: 14px;
@@ -602,6 +694,7 @@ text-decoration: none
 }
 
 @media (min-width:40.0625em) {
+.nhsuk-header .nhsuk-header__navigation ul li a,
 .nhsuk-header__navigation-link {
 font-size: 16px;
 font-size: 1rem;
@@ -620,6 +713,7 @@ display: block;
 margin: 0 auto;
 max-width: 960px
 }
+.nhsuk-header .nhsuk-header__navigation ul,
 .nhsuk-header__navigation-list {
 border-top: 1px solid hsla(0, 0%, 100%, .2);
 display: -ms-flexbox;
@@ -628,11 +722,13 @@ justify-content: space-between;
 padding: 0;
 width: 100%
 }
+.nhsuk-header .nhsuk-header__navigation ul li,
 .nhsuk-header__navigation-item {
 border-top: 0;
 margin: 0;
 text-align: center
 }
+.nhsuk-header .nhsuk-header__navigation ul li a,
 .nhsuk-header__navigation-link {
 color: #fff;
 line-height: normal
@@ -744,6 +840,41 @@ line-height: 18px
 font-size: 10px;
 line-height: 13px
 }
+}
+
+.nhsuk-header--white {
+background-color: #fff
+}
+
+.nhsuk-header--white .nhsuk-search__submit {
+background-color: #005eb8
+}
+
+.nhsuk-header--white .nhsuk-search__submit .nhsuk-icon__search {
+fill: #fff
+}
+
+.nhsuk-header--white .autocomplete__input {
+border: 1px solid #aeb7bd;
+border-right: 0
+}
+
+@media (max-width:40.0525em) {
+.nhsuk-header--white .nhsuk-header__search-form {
+padding-top: 0
+}
+}
+
+.nhsuk-header--white .nhsuk-organisation-name {
+color: #000
+}
+
+.nhsuk-header--white .nhsuk-organisation-descriptor {
+color: #005eb8
+}
+
+.nhsuk-header--white .nhsuk-header__transactional-service-name--link {
+color: #212b32
 }
 
 .nhsuk-panel {
@@ -886,6 +1017,27 @@ fill: #005eb8
 fill: #007f3b
 }
 
+hr {
+border: 0;
+margin: 0
+}
+
+hr {
+margin-top: 32px;
+margin-bottom: 32px
+}
+
+@media (min-width:40.0625em) {
+hr {
+margin-top: 40px;
+margin-bottom: 40px
+}
+}
+
+hr {
+border-bottom: 1px solid #d8dde0
+}
+
 h1 {
 font-size: 32px;
 font-size: 2rem;
@@ -937,6 +1089,10 @@ p {
 color: inherit
 }
 
+strong {
+font-weight: 600
+}
+
 .nhsuk-u-visually-hidden {
 -webkit-clip-path: inset(50%);
 border: 0;
@@ -968,6 +1124,31 @@ bottom: 0;
 width: 100%
 }
 
+.nhsuk-search__submit {
+box-shadow: none
+}
+
+.nhsuk-header .nhsuk-header__navigation ul {
+overflow: hidden
+}
+
+.nhsuk-header .nhsuk-header__search-wrap input[type=text] {
+border-radius: 3px 0 0 3px
+}
+
+.nhsuk-header .autocomplete-container {
+float: left
+}
+
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=text] {
+border: 1px solid #d8dde0
+}
+
+.nhsuk-header.nhsuk-header--white input[type=text] {
+border-radius: 4px 0 0 4px;
+border-right: none
+}
+
 @media (min-width:40.0625em) {
 .nhsuk-header {
 margin-top: 0
@@ -979,13 +1160,12 @@ padding-bottom: 20px;
 min-height: 80px
 }
 
-.nhsuk-grid-column-full {
-clear: both
+.nhsuk-header__search-wrap input[type=text] {
+border: 1px solid #ccc
 }
 
-#secondary section,
-.nhsuk-panel-with-label {
-width: 100%
+.nhsuk-grid-column-full {
+clear: both
 }
 
 #secondary section {
