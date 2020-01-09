@@ -21,9 +21,16 @@ flush();
 	<div class="nhsuk-footer" id="nhsuk-footer">
 		<div class="nhsuk-width-container">
 			<?php if ( is_active_sidebar( 'footer-region' ) ) : ?>
-				<div id="nhsuk-footer-widgets" class="nhsuk-footer__widgets widget-area" role="complementary">
+				<div id="nhsuk-footer-widgets"  style='display:inline-block; width:50%;' class="nhsuk-footer__widgets widget-area" role="complementary">
 					<?php dynamic_sidebar( 'footer-region' ); ?>
 				</div>
+			
+				<div id="nhsuk-footer-widgets" style='display:inline-block; width:50%;'  class="nhsuk-footer__widgets widget-area" role="complementary">
+					<?php dynamic_sidebar( 'footer-region-right' ); ?>
+				</div>
+
+
+
 				<?php
 			endif;
 			$menu_locations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).

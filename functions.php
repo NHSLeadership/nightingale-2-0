@@ -202,9 +202,19 @@ function nightingale_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Footer Region', 'nightingale' ),
+			'name'          => esc_html__( 'Footer Region - Left', 'nightingale' ),
 			'id'            => 'footer-region',
 			'description'   => esc_html__( 'Widgets to show in the footer zone. By default the footer will have a copyright notice and the footer menu (if configured) only.', 'nightingale' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Region - Right', 'nightingale' ),
+			'id'            => 'footer-region-right',
+			'description'   => esc_html__( '', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 		)
