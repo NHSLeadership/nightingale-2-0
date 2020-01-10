@@ -11926,6 +11926,12 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   box-shadow: none;
 }
 
+@media (min-width: 40.0625em) {
+  .nhsuk-search__submit {
+    padding-top: 6px;
+  }
+}
+
 #primary .page-content .nhsuk-header__search-toggle, #primary .page-content .nhsuk-search__close {
   display: none;
 }
@@ -12140,6 +12146,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   float: left;
 }
 
+.nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
+  border: none;
+}
+
 .nhsuk-header .nhsuk-u-visually-hidden {
   color: #212b32;
   background: #ffffff;
@@ -12172,11 +12182,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 .nhsuk-header.nhsuk-header--white input[type="text"] {
   border-radius: 4px 0 0 4px;
   border-right: none;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-search__submit {
-  border: 1px solid #ccc;
-  border-left: none;
 }
 
 .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {

@@ -10704,6 +10704,12 @@ section {
   box-shadow: none;
 }
 
+@media (min-width: 40.0625em) {
+  .nhsuk-search__submit {
+    padding-top: 6px;
+  }
+}
+
 #primary .page-content .nhsuk-header__search-toggle, #primary .page-content .nhsuk-search__close {
   display: none;
 }
