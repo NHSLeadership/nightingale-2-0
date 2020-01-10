@@ -207,6 +207,11 @@
 .nhsuk-search__submit {
   box-shadow: none;
 }
+@media (min-width: 40.0625em) {
+  .nhsuk-search__submit {
+    padding-top: 6px;
+  }
+}
 
 #primary {
   .page-content {
