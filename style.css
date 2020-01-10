@@ -12220,6 +12220,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   min-height: 80px;
 }
 
+.nhsuk-header--transactional .nhsuk-header__search {
+  height: 1rem;
+}
+
 /*
 // variations to styling required for gutenberg native blocks
 // @author Tony Blacker, NHS Leadership Academy
