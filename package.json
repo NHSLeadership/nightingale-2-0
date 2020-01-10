@@ -1,5 +1,9 @@
 {
-  "name": "bevan",
+  "name": "nightingale",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NHSLeadership/nightingale-2-0.git"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
