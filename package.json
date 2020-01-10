@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "postcss-cli": "^7.0.0"
+    "postcss-cli": "^7.1.0"
   }
 }
