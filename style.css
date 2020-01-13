@@ -11802,7 +11802,7 @@ b {
   color: #005eb8;
 }
 
-.nhsuk-pill-standard, .nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .nhsuk-pill-success, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .article-footer .comments-link, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .nhsuk-pill-warn, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, #primary footer .edit-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label, .learndash-wrapper .ld-status {
+.nhsuk-pill-standard, .nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .pagination_split_post .post-page-numbers, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .nhsuk-pill-success, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .article-footer .comments-link, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .nhsuk-pill-warn, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, #primary footer .edit-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label, .learndash-wrapper .ld-status {
   border-radius: 4px;
   border: 2px solid;
   background-color: #ffffff;
@@ -11821,7 +11821,7 @@ b {
   color: #4c6272;
 }
 
-.nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress {
+.nhsuk-pill-notice, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .pagination_split_post .post-page-numbers, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress {
   border-color: #005eb8;
   color: #005eb8;
 }
@@ -11843,10 +11843,6 @@ b {
 
 #primary footer .edit-link a {
   color: #4c6272;
-}
-
-#primary footer .tags-links a, #primary footer .cat-links a {
-  text-transform: none;
 }
 
 #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, input:focus[type="text"],
@@ -12597,6 +12593,19 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next {
   float: right;
+}
+
+.pagination_split_post .post-page-numbers:first-of-type {
+  margin-right: 5px;
+}
+
+.pagination_split_post .post-page-numbers:last-of-type {
+  margin-left: 5px;
+}
+
+.pagination_split_post .current {
+  background: #005eb8;
+  color: #ffffff;
 }
 
 .gform_heading .gform_description {

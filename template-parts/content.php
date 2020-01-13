@@ -57,7 +57,20 @@
 			)
 		);
 
+		$defaults = array(
+			'before'           => '<p>' . __( 'Pages:', 'nightingale' ),
+			'after'            => '</p>',
+			'link_before'      => '',
+			'link_after'       => '',
+			'next_or_number'   => 'number',
+			'separator'        => ' ',
+			'nextpagelink'     => __( 'Next page', 'nightingale' ),
+			'previouspagelink' => __( 'Previous page', 'nightingale' ),
+			'pagelink'         => '%',
+			'echo'             => 1,
+		);
 
+		wp_link_pages( $defaults );
 		?>
 	</article><!-- .article-content -->
 	<div class="nhsuk-content__clearfix"></div>

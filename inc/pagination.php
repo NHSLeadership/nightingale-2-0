@@ -88,3 +88,25 @@ function nightingale_the_post_navigation( $args = array() ) {
 
 	return $navigation;
 }
+
+/**
+ * Filter wp_link_pages to do both next and number for post broken into multiple pages.
+ */
+
+add_filter('wp_link_pages_args', 'nightingale_link_pages_args_prevnext_add');
+/**
+ * Add prev and next links to a numbered link list
+ */
+function nightingale_link_pages_args_prevnext_add($args) {
+	global $page, $numpages;
+	$args['before'] .= '<nav class="pagination_split_post">'; // Put the pagenav links into their own region.
+	$args['after'] .= '</nav>'; // End pagenav links.
+	if($page-1) # there is a previous page
+		$args['before'] .= _wp_link_page($page-1)
+		                   . $args['link_before']. $args['previouspagelink'] . $args['link_after'] . '</a>';
+	if ($page<$numpages) # there is a next page
+		$args['after'] = _wp_link_page($page+1)
+		                 . $args['link_before'] . $args['nextpagelink'] . $args['link_after'] . '</a>'
+		                 . $args['after'];
+	return $args;
+}
