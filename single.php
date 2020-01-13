@@ -20,20 +20,6 @@ get_header();
 				the_post();
 
 				get_template_part( 'template-parts/content', get_post_type() );
-				$defaults = array(
-					'before'           => '<p>' . __( 'Pages:', 'nightingale' ),
-					'after'            => '</p>',
-					'link_before'      => '',
-					'link_after'       => '',
-					'next_or_number'   => 'number',
-					'separator'        => ' ',
-					'nextpagelink'     => __( 'Next page', 'nightingale' ),
-					'previouspagelink' => __( 'Previous page', 'nightingale' ),
-					'pagelink'         => '%',
-					'echo'             => 1,
-				);
-
-				wp_link_pages( $defaults );
 				nightingale_get_prev_next();
 
 				// If comments are open or we have at least one comment, load up the comment template.

@@ -132,10 +132,6 @@
 
     .tags-links, .cat-links {
       @extend .nhsuk-pill-notice;
-
-      a {
-        text-transform: none;
-      }
     }
   }
 }

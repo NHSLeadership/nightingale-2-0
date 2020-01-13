@@ -246,3 +246,18 @@
     }
   }
 }
+.pagination_split_post {
+  .post-page-numbers {
+    @extend .nhsuk-pill-notice;
+    &:first-of-type {
+      margin-right: 5px;
+    }
+    &:last-of-type {
+      margin-left: 5px;
+    }
+  }
+  .current {
+    background: #005eb8;
+    color: #ffffff;
+  }
+}
