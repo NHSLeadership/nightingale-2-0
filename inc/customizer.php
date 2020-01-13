@@ -151,6 +151,42 @@ function nightingale_customize_register( $wp_customize ) {
 		)
 	);
 
+	/*
+	 * -----------------------------------------------------------
+	 * Colour chooser
+	 * -----------------------------------------------------------
+	 */
+	$wp_customize->add_setting(
+		'theme_colour',
+		array(
+			'default'           => 'nhs_blue',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+	$wp_customize->add_control(
+		'theme_colour',
+		array(
+			'label'       => esc_html__( 'Theme Colour', 'nightingale' ),
+			'description' => esc_html__( 'If you wish to change the default colour of the theme, this is where you do it. Please note, this will disable the inline critical-css and may have a slight performance impact on your visible loadtimes. It may also affect the accessability of your site.', 'nightingale' ),
+			'section'     => 'title_tagline',
+			'type'        => 'select',
+			'choices'     => array(
+				'nhs_blue' => esc_html__( 'Standard NHS Blue (Default)', 'nightingale' ),
+				'003087'   => esc_html__( 'Dark Blue', 'nightingale' ),
+				'0072ce'   => esc_html__( 'Bright Blue', 'nightingale' ),
+				'768692'   => esc_html__( 'Mid Grey', 'nightingale' ),
+				'425563'   => esc_html__( 'Dark Grey', 'nightingale' ),
+				'231f20'   => esc_html__( 'Black', 'nightingale' ),
+				'330072'   => esc_html__( 'Purple', 'nightingale' ),
+				'ae2573'   => esc_html__( 'Pink', 'nightingale' ),
+				'704c9c'   => esc_html__( 'Light Purple', 'nightingale' ),
+				'da291c'   => esc_html__( 'Emergency Services Red', 'nightingale' ),
+				'006747'   => esc_html__( 'Dark Green', 'nightingale' ),
+				'78be20'   => esc_html__( 'Light Green', 'nightingale' ),
+				'00a499'   => esc_html__( 'Aqua Green', 'nightingale' ),
+			),
+		)
+	);
 
 }
 
@@ -201,34 +237,34 @@ add_action( 'customize_preview_init', 'nightingale_customize_preview_js' );
  */
 function nightingale_header_customiser_dependency_check() {
 	?>
-	<script>
-		;(function () {
-			/**
-			 * Run function only when customizer changes
-			 */
-			wp.customize.bind('ready', function () {
-				wp.customize.control('logo_type', function (control) {
-					control.setting.bind(function (value) {
-						switch (value) {
-							/**
-							 * Transactional types
-							 */
-							case 'transactional':
-								wp.customize.control('loqo_qualifier').deactivate();
-								break;
-							/**
-							 *  Organisational types
-							 */
-							case 'organisation':
-								wp.customize.control('loqo_qualifier').activate();
-								break;
+    <script>
+        ;(function () {
+            /**
+             * Run function only when customizer changes
+             */
+            wp.customize.bind('ready', function () {
+                wp.customize.control('logo_type', function (control) {
+                    control.setting.bind(function (value) {
+                        switch (value) {
+                            /**
+                             * Transactional types
+                             */
+                            case 'transactional':
+                                wp.customize.control('loqo_qualifier').deactivate();
+                                break;
+                            /**
+                             *  Organisational types
+                             */
+                            case 'organisation':
+                                wp.customize.control('loqo_qualifier').activate();
+                                break;
 
-						}
-					})
-				})
-			})
-		})();
-	</script>
+                        }
+                    })
+                })
+            })
+        })();
+    </script>
 	<?php
 }
 
