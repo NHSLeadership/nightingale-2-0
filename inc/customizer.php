@@ -101,6 +101,50 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 	/*
+	 * Show Organisation Name?
+	 */
+	$wp_customize->add_setting(
+		'org_name_checkbox',
+		array(
+			'default'           => 'no',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
+
+	$wp_customize->add_control(
+		'org_name_checkbox',
+		array(
+			'label'       => esc_html__( 'Do you wish to add an organisation name to the logo?', 'nightingale' ),
+			'description' => esc_html__( 'This is used if your oganisation name should be different from the site title', 'nightingale' ),
+			'section'     => 'title_tagline',
+			'type'        => 'radio',
+			'choices'     => array(
+				'yes' => esc_html__( 'Yes', 'nightingale' ),
+				'no'  => esc_html__( 'No', 'nightingale' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'org_name_field',
+		array(
+			'sanitize_callback' => 'esc_html',
+		)
+	);
+
+	$wp_customize->add_control(
+		'org_name_field',
+		array(
+			'label'       => esc_html__( 'Enter Organisation name', 'nightingale' ),
+			'section'     => 'title_tagline',
+			'type'        => 'text',
+			'active_callback' => function() use ( $wp_customize ) {
+		        return 'yes' === $wp_customize->get_setting( 'org_name_checkbox' )->value();
+		    },
+		)
+	);
+
+	/*
 	 * Show NHS Logo?
 	 */
 	$wp_customize->add_setting(
@@ -227,7 +271,7 @@ function nightingale_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function nightingale_customize_preview_js() {
-	wp_enqueue_script( 'nightingale-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+	wp_enqueue_script( 'nightingale-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'jquery', 'customize-preview' ), '20151215', true );
 }
 
 add_action( 'customize_preview_init', 'nightingale_customize_preview_js' );
