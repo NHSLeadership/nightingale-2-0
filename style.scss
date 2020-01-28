@@ -33,6 +33,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // generic over-rides to remove default wordpress styling issues
 @import 'assets/scss/nhs-colours';
 // nhs colour pallette
+@import 'assets/scss/color-mixer';
+// nhs colour pallette
 @import 'assets/scss/header';
 // header styles
 @import 'assets/scss/style_variations';
