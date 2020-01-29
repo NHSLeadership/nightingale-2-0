@@ -15,21 +15,34 @@
  */
 
 get_header();
+
+$sidebar = nightingale_show_sidebar();
+
 ?>
 
 	<div id="primary" class=" nhsuk-grid-row">
-		<div class="nhsuk-grid-column-two-thirds index">
+
+		<?php
+
+		if ( is_home() && ! is_front_page() ) :
+			?>
+		<header>
+			<h1 class="nhsuk-heading-xl"><?php single_post_title(); ?></h1>
+		</header>
+		<?php
+		endif;
+			?>
+
+		<div class="<?php if( $sidebar ): echo 'nhsuk-grid-column-two-thirds'; endif; ?> index">
 
 			<?php
-			if ( have_posts() ) :
+			if ( have_posts() ) : ?>
 
-				if ( is_home() && ! is_front_page() ) :
-					?>
-					<header>
-						<h1 class="nhsuk-heading-xl"><?php single_post_title(); ?></h1>
-					</header>
-					<?php
-				endif;
+				
+
+					<div class="nhsuk-grid-row nhsuk-promo-group">
+
+				<?php
 
 				/* Start the Loop */
 				while ( have_posts() ) :
@@ -44,20 +57,24 @@ get_header();
 
 				endwhile;
 
-				the_posts_navigation();
+				?>
+				
+				</div><!-- #nhsuk-panel-group nhsuk-grid-column-full -->
+					
+				<?php
+
+				nightingale_archive_pagination();
 
 				else :
 
 					get_template_part( 'template-parts/content', 'none' );
 
 				endif;
+
 				?>
+
 		</div>
-		<div class="nhsuk-grid__item nhsuk-grid-column-one-third">
-			<?php
-			get_sidebar();
-			?>
-		</div>
+		<?php get_sidebar('blog'); ?>
 
 	</div><!-- #primary -->
 
