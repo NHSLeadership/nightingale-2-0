@@ -64,3 +64,22 @@
     }
   }
 }
+
+/* Extra Blog Styles */
+
+.nhsuk-promo img.nhsuk-promo__img {
+    padding: 0px;
+}
+
+.nhsuk-grid-column-two-thirds.archive,
+.nhsuk-grid-column-two-thirds.index{
+  padding: 0 16px 0 0;
+}
+
+aside#secondary > section{
+  margin-top: 0;
+}
+
+.nhsuk-icon__arrow-right-circle{
+  vertical-align: middle;
+}

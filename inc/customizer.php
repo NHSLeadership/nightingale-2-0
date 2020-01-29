@@ -236,6 +236,101 @@ function nightingale_customize_register( $wp_customize ) {
 
 add_action( 'customize_register', 'nightingale_customize_register' );
 
+function nightingale_add_blog_settings( $wp_customize ) {
+
+	$wp_customize->add_section( 'blog_panel',
+		array(
+			'title'				=> esc_html__( 'Blog Settings', 'nightingale' ),
+			'description'		=> esc_html__( 'Extra settings for the Blog page', 'nightingale' ),
+			'capability'		=> 'edit_theme_options',
+			'theme-supports'	=> '',
+			'priority'			=> '150',
+		)
+	);
+
+
+	$wp_customize->add_setting(
+		// $id
+		'blog_sidebar',
+		// $args
+		array(
+			'default'			=> 'true',
+			'type'				=> 'theme_mod',
+			'capability'		=> 'edit_theme_options',
+			'sanitize_callback'	=> 'esc_attr'
+		)
+	);
+
+	$wp_customize->add_control(
+		// $id
+		'blog_sidebar',
+		// $args
+		array(
+			'settings'		=> 'blog_sidebar',
+			'section'		=> 'blog_panel',
+			'type'			=> 'radio',
+			'label'			=>  esc_html__( 'Display Sidebar', 'nightingale' ),
+			'description'	=>  esc_html__( 'Choose whether or not to display the sidebar on the blog page', 'nightingale' ),
+			'choices'		=> array(
+				'true' => esc_html__( 'Sidebar', 'nightingale' ),
+				'false' => esc_html__( 'No Sidebar', 'nightingale' )
+			)
+		)
+	);
+
+	$wp_customize->add_setting(
+		// $id
+		'blog_fallback',
+		// $args
+		array(
+			'default'			=> '',
+			'type'				=> 'theme_mod',
+			'capability'		=> 'edit_theme_options',
+			'sanitize_callback'	=> 'nightingale_sanitize_image'
+		)
+	);
+
+	$wp_customize->add_control(
+		new WP_Customize_Media_Control( 			
+			$wp_customize,
+			'blog_fallback',
+			array(
+				'settings'		=> 'blog_fallback',
+				'mime_type'     => 'image',
+				'section'		=> 'blog_panel',
+				'label'			=> esc_html__( 'Blog Fallback Image', 'nightingale' ),
+				'description'	=> esc_html__( 'Select a fallback image if the blog post does not have a featured image. Leave blank if no fallback wanted', 'nightingale' )
+			)
+		)
+	);
+}
+
+add_action( 'customize_register', 'nightingale_add_blog_settings' );
+
+/**
+ * Image sanitization callback 
+ *
+ * Checks the image's file extension and mime type against a whitelist. If they're allowed,
+ * send back the filename, otherwise, return the setting default.
+ *
+ * @param string               $image   Image ID.
+ * @param WP_Customize_Setting $setting Setting instance.
+ * @return int of the image ID.
+ */
+
+
+
+function nightingale_sanitize_image( $image, $setting ) {
+
+	$image = intval( $image );
+
+	// Check if is a number
+    $file = is_numeric( $image );
+
+	// If $file is a number, return the number.
+    return ( $file ? $image : $setting->default );
+}
+
 /**
  * Clean the date output up.
  *
