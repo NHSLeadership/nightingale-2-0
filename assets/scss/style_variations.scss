@@ -94,9 +94,18 @@ aside#secondary > section{
 }
 
 .nhsuk-pagination-numbers{
-  position: absolute;
-  width: 100%;
+
+  clear: both;  
   text-align: center;
+  border-top: 1px solid $color_nhsuk-grey-3;
+  padding-top: 10px;
+
+  @media (min-width: 768px) {
+    border: none;    
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+  } 
 
   a,
   span{

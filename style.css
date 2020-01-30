@@ -961,7 +961,7 @@ td {
   td {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -1387,7 +1387,7 @@ caption {
   .nhsuk-list, ul, ol {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -1542,7 +1542,7 @@ h1,
   .nhsuk-heading-xl {
     font-size: 48px;
     font-size: 3rem;
-    line-height: 1.166666667;
+    line-height: 1.16667;
   }
 }
 
@@ -1565,7 +1565,7 @@ h2,
 .nhsuk-heading-l {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.333333333;
+  line-height: 1.33333;
   display: block;
   font-weight: 600;
   margin-top: 0;
@@ -1612,7 +1612,7 @@ h3,
   .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -1635,7 +1635,7 @@ h4,
 .nhsuk-heading-s {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.555555556;
+  line-height: 1.55556;
   display: block;
   font-weight: 600;
   margin-top: 0;
@@ -1647,7 +1647,7 @@ h4,
   .nhsuk-heading-s {
     font-size: 22px;
     font-size: 1.375rem;
-    line-height: 1.454545455;
+    line-height: 1.45455;
   }
 }
 
@@ -1682,7 +1682,7 @@ h5,
   .nhsuk-heading-xs {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -1717,7 +1717,7 @@ h6,
   .nhsuk-heading-xxs {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -1741,7 +1741,7 @@ h6,
   font-weight: 400;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.333333333;
+  line-height: 1.33333;
   color: #4c6272;
   display: block;
   margin-bottom: 4px;
@@ -1776,7 +1776,7 @@ h6,
   .nhsuk-caption-l {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -1800,7 +1800,7 @@ h6,
   .nhsuk-caption-m {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -1830,7 +1830,7 @@ h6,
   .nhsuk-body-l {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -1862,7 +1862,7 @@ p,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -1889,7 +1889,7 @@ p,
 .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   display: block;
   margin-top: 0;
   margin-bottom: 16px;
@@ -1939,7 +1939,7 @@ address {
   .nhsuk-lede-text {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -1969,7 +1969,7 @@ address {
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -1993,7 +1993,7 @@ address {
   .nhsuk-lede-text--small {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -2312,12 +2312,12 @@ b {
 
 .nhsuk-u-one-third {
   float: left;
-  width: 33.333333333% !important;
+  width: 33.33333% !important;
 }
 
 .nhsuk-u-two-thirds {
   float: left;
-  width: 66.666666667% !important;
+  width: 66.66667% !important;
 }
 
 .nhsuk-u-one-quarter {
@@ -2359,7 +2359,7 @@ b {
 @media (min-width: 40.0625em) {
   .nhsuk-u-one-third-tablet {
     float: left;
-    width: 33.333333333% !important;
+    width: 33.33333% !important;
   }
 }
 
@@ -2370,7 +2370,7 @@ b {
 @media (min-width: 40.0625em) {
   .nhsuk-u-two-thirds-tablet {
     float: left;
-    width: 66.666666667% !important;
+    width: 66.66667% !important;
   }
 }
 
@@ -3440,7 +3440,7 @@ b {
 .nhsuk-u-font-size-64 {
   font-size: 48px !important;
   font-size: 3rem !important;
-  line-height: 1.166666667 !important;
+  line-height: 1.16667 !important;
 }
 
 @media (min-width: 40.0625em) {
@@ -3468,7 +3468,7 @@ b {
   .nhsuk-u-font-size-48 {
     font-size: 48px !important;
     font-size: 3rem !important;
-    line-height: 1.166666667 !important;
+    line-height: 1.16667 !important;
   }
 }
 
@@ -3482,7 +3482,7 @@ b {
 .nhsuk-u-font-size-32 {
   font-size: 24px !important;
   font-size: 1.5rem !important;
-  line-height: 1.333333333 !important;
+  line-height: 1.33333 !important;
 }
 
 @media (min-width: 40.0625em) {
@@ -3510,7 +3510,7 @@ b {
   .nhsuk-u-font-size-24 {
     font-size: 24px !important;
     font-size: 1.5rem !important;
-    line-height: 1.333333333 !important;
+    line-height: 1.33333 !important;
   }
 }
 
@@ -3524,14 +3524,14 @@ b {
 .nhsuk-u-font-size-22 {
   font-size: 18px !important;
   font-size: 1.125rem !important;
-  line-height: 1.555555556 !important;
+  line-height: 1.55556 !important;
 }
 
 @media (min-width: 40.0625em) {
   .nhsuk-u-font-size-22 {
     font-size: 22px !important;
     font-size: 1.375rem !important;
-    line-height: 1.454545455 !important;
+    line-height: 1.45455 !important;
   }
 }
 
@@ -3552,7 +3552,7 @@ b {
   .nhsuk-u-font-size-19 {
     font-size: 19px !important;
     font-size: 1.1875rem !important;
-    line-height: 1.473684211 !important;
+    line-height: 1.47368 !important;
   }
 }
 
@@ -3566,7 +3566,7 @@ b {
 .nhsuk-u-font-size-16 {
   font-size: 14px !important;
   font-size: 0.875rem !important;
-  line-height: 1.714285714 !important;
+  line-height: 1.71429 !important;
 }
 
 @media (min-width: 40.0625em) {
@@ -3587,14 +3587,14 @@ b {
 .nhsuk-u-font-size-14 {
   font-size: 12px !important;
   font-size: 0.75rem !important;
-  line-height: 1.666666667 !important;
+  line-height: 1.66667 !important;
 }
 
 @media (min-width: 40.0625em) {
   .nhsuk-u-font-size-14 {
     font-size: 14px !important;
     font-size: 0.875rem !important;
-    line-height: 1.714285714 !important;
+    line-height: 1.71429 !important;
   }
 }
 
@@ -3743,7 +3743,7 @@ b {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.555555556;
+  line-height: 1.55556;
   display: inline-block;
   /* [1] */
   font-weight: 600;
@@ -3759,7 +3759,7 @@ b {
   .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
     font-size: 22px;
     font-size: 1.375rem;
-    line-height: 1.454545455;
+    line-height: 1.45455;
   }
 }
 
@@ -3848,7 +3848,7 @@ b {
 .nhsuk-back-link__link {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   display: inline-block;
   padding-left: 16px;
   /* 1 */
@@ -3964,7 +3964,7 @@ b {
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   /* [4] */
   background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__chevron-right' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' height='18' width='18' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cpath d='M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z'%3E%3C/path%3E%3C/svg%3E") right -1px top 4px no-repeat;
   display: inline-block;
@@ -4002,7 +4002,7 @@ b {
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   /* [4] */
   background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__chevron-left' xmlns='http://www.w3.org/2000/svg' fill='%23005eb8' height='24' width='24' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cpath d='M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z'%3E%3C/path%3E%3C/svg%3E") -8px center no-repeat;
   margin: 0;
@@ -4090,7 +4090,7 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond #cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -4689,7 +4689,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-care-card__heading, .learndash-wrapper .ld-table-list .ld-table-list-header .ld-table-list-title {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -4833,7 +4833,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-checkboxes__item, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -5092,7 +5092,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-details {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -5404,7 +5404,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-do-dont-list__label {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -5460,7 +5460,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-error-message {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -5521,7 +5521,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-error-summary__title {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -5549,7 +5549,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-error-summary__body {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -5641,7 +5641,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-fieldset__legend {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -5665,7 +5665,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-fieldset__legend--xl {
     font-size: 48px;
     font-size: 3rem;
-    line-height: 1.166666667;
+    line-height: 1.16667;
   }
 }
 
@@ -5680,7 +5680,7 @@ input[disabled]:active[type="submit"],
   font-weight: 600;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.333333333;
+  line-height: 1.33333;
   margin-bottom: 16px;
 }
 
@@ -5711,7 +5711,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-fieldset__legend--m {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -5734,7 +5734,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-fieldset__legend--s {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -5811,7 +5811,7 @@ input[disabled]:active[type="submit"],
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
 }
 
 @media (min-width: 40.0625em) {
@@ -5852,7 +5852,7 @@ input[disabled]:active[type="submit"],
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   color: #4c6272;
   margin-bottom: 0;
 }
@@ -6783,7 +6783,7 @@ input[disabled]:active[type="submit"],
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
   color: #005eb8;
@@ -7042,7 +7042,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-header__transactional-service-name--link {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -7126,7 +7126,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-header__service-name {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -7744,7 +7744,7 @@ input[disabled]:active[type="submit"],
   .nhsuk-hint {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -7833,7 +7833,7 @@ input[disabled]:active[type="submit"],
 .nhsuk-image__caption, .nhsuk-image figcaption, .gallery-caption {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   padding: 16px;
 }
 
@@ -7917,7 +7917,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
   textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-list-panel .comment-respond input[type="text"], .learndash-wrapper .wpProQuiz_content input[type="text"] {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -8106,7 +8106,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -8132,7 +8132,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-label--xl {
     font-size: 48px;
     font-size: 3rem;
-    line-height: 1.166666667;
+    line-height: 1.16667;
   }
 }
 
@@ -8152,7 +8152,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 .nhsuk-label--l {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.333333333;
+  line-height: 1.33333;
   display: block;
   font-weight: 600;
   margin-top: 0;
@@ -8194,7 +8194,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-label--m {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -8225,7 +8225,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-label--s {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -8293,7 +8293,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 .nhsuk-list-panel__label {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.333333333;
+  line-height: 1.33333;
   background-color: #005eb8;
   color: #ffffff;
   display: inline-block;
@@ -8425,7 +8425,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-back-to-top__link {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -8561,7 +8561,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 .nhsuk-nav-a-z__link--disabled {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.555555556;
+  line-height: 1.55556;
   display: block;
   min-width: 34px;
   /* [5] */
@@ -8575,7 +8575,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-nav-a-z__link--disabled {
     font-size: 22px;
     font-size: 1.375rem;
-    line-height: 1.454545455;
+    line-height: 1.45455;
   }
 }
 
@@ -8738,7 +8738,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-pagination__title {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -8759,7 +8759,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 .nhsuk-pagination__page {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   display: block;
   text-decoration: underline;
 }
@@ -8891,7 +8891,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-panel-with-label__label, #secondary section h2.widget-title {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -9074,7 +9074,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-promo__heading {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -9122,7 +9122,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-promo--small .nhsuk-promo__heading {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -9136,7 +9136,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 .nhsuk-promo--small .nhsuk-promo__description {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
 }
 
 @media (min-width: 40.0625em) {
@@ -9220,7 +9220,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-radios__item {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -9364,7 +9364,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-radios__divider {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -9430,7 +9430,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-select {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -9513,7 +9513,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-summary-list {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -9736,7 +9736,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-table__heading-tab {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -9824,7 +9824,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-textarea, .learndash-wrapper .wpProQuiz_content textarea {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -9915,7 +9915,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   .nhsuk-warning-callout__label {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -10163,7 +10163,7 @@ td {
   td {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -10418,7 +10418,7 @@ caption {
   .nhsuk-list, ul, ol {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -10573,7 +10573,7 @@ h1,
   .nhsuk-heading-xl {
     font-size: 48px;
     font-size: 3rem;
-    line-height: 1.166666667;
+    line-height: 1.16667;
   }
 }
 
@@ -10596,7 +10596,7 @@ h2,
 .nhsuk-heading-l {
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.333333333;
+  line-height: 1.33333;
   display: block;
   font-weight: 600;
   margin-top: 0;
@@ -10643,7 +10643,7 @@ h3,
   .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -10666,7 +10666,7 @@ h4,
 .nhsuk-heading-s {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.555555556;
+  line-height: 1.55556;
   display: block;
   font-weight: 600;
   margin-top: 0;
@@ -10678,7 +10678,7 @@ h4,
   .nhsuk-heading-s {
     font-size: 22px;
     font-size: 1.375rem;
-    line-height: 1.454545455;
+    line-height: 1.45455;
   }
 }
 
@@ -10713,7 +10713,7 @@ h5,
   .nhsuk-heading-xs {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -10748,7 +10748,7 @@ h6,
   .nhsuk-heading-xxs {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -10772,7 +10772,7 @@ h6,
   font-weight: 400;
   font-size: 24px;
   font-size: 1.5rem;
-  line-height: 1.333333333;
+  line-height: 1.33333;
   color: #4c6272;
   display: block;
   margin-bottom: 4px;
@@ -10807,7 +10807,7 @@ h6,
   .nhsuk-caption-l {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -10831,7 +10831,7 @@ h6,
   .nhsuk-caption-m {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -10861,7 +10861,7 @@ h6,
   .nhsuk-body-l {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -10893,7 +10893,7 @@ p,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -10920,7 +10920,7 @@ p,
 .nhsuk-body-s, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a, .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a, #secondary section ul .nhsuk-list-panel .comment-list li .comment-body .vcard .comment-meta a, .article-footer .cat-links, .article-footer .tags-links, .article-footer .comments-link {
   font-size: 14px;
   font-size: 0.875rem;
-  line-height: 1.714285714;
+  line-height: 1.71429;
   display: block;
   margin-top: 0;
   margin-bottom: 16px;
@@ -10970,7 +10970,7 @@ address {
   .nhsuk-lede-text {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -11000,7 +11000,7 @@ address {
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
-    line-height: 1.333333333;
+    line-height: 1.33333;
   }
 }
 
@@ -11024,7 +11024,7 @@ address {
   .nhsuk-lede-text--small {
     font-size: 19px;
     font-size: 1.1875rem;
-    line-height: 1.473684211;
+    line-height: 1.47368;
   }
 }
 
@@ -11343,12 +11343,12 @@ b {
 
 .nhsuk-u-one-third {
   float: left;
-  width: 33.333333333% !important;
+  width: 33.33333% !important;
 }
 
 .nhsuk-u-two-thirds {
   float: left;
-  width: 66.666666667% !important;
+  width: 66.66667% !important;
 }
 
 .nhsuk-u-one-quarter {
@@ -11390,7 +11390,7 @@ b {
 @media (min-width: 40.0625em) {
   .nhsuk-u-one-third-tablet {
     float: left;
-    width: 33.333333333% !important;
+    width: 33.33333% !important;
   }
 }
 
@@ -11401,7 +11401,7 @@ b {
 @media (min-width: 40.0625em) {
   .nhsuk-u-two-thirds-tablet {
     float: left;
-    width: 66.666666667% !important;
+    width: 66.66667% !important;
   }
 }
 
@@ -11471,7 +11471,7 @@ b {
 .nhsuk-u-font-size-64 {
   font-size: 48px !important;
   font-size: 3rem !important;
-  line-height: 1.166666667 !important;
+  line-height: 1.16667 !important;
 }
 
 @media (min-width: 40.0625em) {
@@ -11499,7 +11499,7 @@ b {
   .nhsuk-u-font-size-48 {
     font-size: 48px !important;
     font-size: 3rem !important;
-    line-height: 1.166666667 !important;
+    line-height: 1.16667 !important;
   }
 }
 
@@ -11513,7 +11513,7 @@ b {
 .nhsuk-u-font-size-32 {
   font-size: 24px !important;
   font-size: 1.5rem !important;
-  line-height: 1.333333333 !important;
+  line-height: 1.33333 !important;
 }
 
 @media (min-width: 40.0625em) {
@@ -11541,7 +11541,7 @@ b {
   .nhsuk-u-font-size-24 {
     font-size: 24px !important;
     font-size: 1.5rem !important;
-    line-height: 1.333333333 !important;
+    line-height: 1.33333 !important;
   }
 }
 
@@ -11555,14 +11555,14 @@ b {
 .nhsuk-u-font-size-22 {
   font-size: 18px !important;
   font-size: 1.125rem !important;
-  line-height: 1.555555556 !important;
+  line-height: 1.55556 !important;
 }
 
 @media (min-width: 40.0625em) {
   .nhsuk-u-font-size-22 {
     font-size: 22px !important;
     font-size: 1.375rem !important;
-    line-height: 1.454545455 !important;
+    line-height: 1.45455 !important;
   }
 }
 
@@ -11583,7 +11583,7 @@ b {
   .nhsuk-u-font-size-19 {
     font-size: 19px !important;
     font-size: 1.1875rem !important;
-    line-height: 1.473684211 !important;
+    line-height: 1.47368 !important;
   }
 }
 
@@ -11597,7 +11597,7 @@ b {
 .nhsuk-u-font-size-16 {
   font-size: 14px !important;
   font-size: 0.875rem !important;
-  line-height: 1.714285714 !important;
+  line-height: 1.71429 !important;
 }
 
 @media (min-width: 40.0625em) {
@@ -11618,14 +11618,14 @@ b {
 .nhsuk-u-font-size-14 {
   font-size: 12px !important;
   font-size: 0.75rem !important;
-  line-height: 1.666666667 !important;
+  line-height: 1.66667 !important;
 }
 
 @media (min-width: 40.0625em) {
   .nhsuk-u-font-size-14 {
     font-size: 14px !important;
     font-size: 0.875rem !important;
-    line-height: 1.714285714 !important;
+    line-height: 1.71429 !important;
   }
 }
 
@@ -12305,9 +12305,19 @@ aside#secondary > section {
 }
 
 .nhsuk-pagination-numbers {
-  position: absolute;
-  width: 100%;
+  clear: both;
   text-align: center;
+  border-top: 1px solid #aeb7bd;
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .nhsuk-pagination-numbers {
+    border: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+  }
 }
 
 .nhsuk-pagination-numbers a,

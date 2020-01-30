@@ -33,46 +33,39 @@ function nightingale_archive_pagination() {
 		)
 	);
 
-	$pagination = '<div class="navigation"><nav class="nhsuk-pagination" role="navigation" aria-label="Pagination"><ul class="nhsuk-list nhsuk-pagination__list">';
+	if( $paginate ){
 
-	$count = count( $paginate ) -1;
+		$pagination = '<div class="navigation"><nav class="nhsuk-pagination" role="navigation" aria-label="Pagination"><ul class="nhsuk-list nhsuk-pagination__list">';
 
-	foreach ( $paginate as $key => $element ) {
+		$count = count( $paginate ) -1;
 
-		if( 0 === $key ){
+		$first_item = array_slice( $paginate, 0, 1 )[0];
+		$last_item = array_slice( $paginate, $count, 1 )[0];
 
-			// First element in the navigation, output depends on whether there is a previous link in array
+		if( false !== strpos( $last_item, 'class="next page-numbers"' ) ){
 
-			if ( false  !==  strpos( $element, 'class="prev page-numbers"' ) ){
+			$pagination .= "<li class='nhsuk-pagination-item--next'>{$last_item}</li>";
+			array_pop( $paginate );
+		}
 
-				$pagination .= "<li class='nhsuk-pagination-item--previous'>{$element}</li><li class='nhsuk-pagination-numbers'><li class='nhsuk-pagination-numbers'>";
+		if ( false  !==  strpos( $first_item, 'class="prev page-numbers"' ) ){
 
-			}else{
-				$pagination .= "<li class='nhsuk-pagination-numbers'>{$element}";	
-			}			
-
-		}elseif ( $count === $key ) {
-
-			// Last element in the navigation, output depends on whether there is a Next link in array	
-
-			if( strpos( $element, 'class="next page-numbers"' ) !== false ){
-
-				$pagination .= "<li class='nhsuk-pagination-item--next'>{$element}</li></li>";
-
-			}else{
-				$pagination .= "{$element}</li>";
-			}
-
-		}else{
-
-			$pagination .= $element;
+			$pagination .= "<li class='nhsuk-pagination-item--previous'>{$first_item}</li>";
+			array_shift( $paginate );
 
 		}
+
+		$pagination .= "<li class='nhsuk-pagination-numbers'>";
+
+			foreach ( $paginate as $element ) {
+
+				$pagination .= $element;
+			}
+
+		$pagination .= "</li></ul></nav></div>";
+
+		echo $pagination;
 	}
-
-	$pagination .= '</ul></nav></div>';
-
-	echo $pagination;
 }
 
 /**
