@@ -83,3 +83,30 @@ aside#secondary > section{
 .nhsuk-icon__arrow-right-circle{
   vertical-align: middle;
 }
+
+.navigation{
+  position: relative;
+}
+.nhsuk-pagination-item--previous,
+.nhsuk-pagination-item--next{
+  position: relative;
+  z-index: 5;
+}
+
+.nhsuk-pagination-numbers{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+  a,
+  span{
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+}
+
+.clear{
+  @include clearfix();
+}

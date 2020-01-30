@@ -20,7 +20,7 @@ $sidebar = nightingale_show_sidebar();
 
 ?>
 
-	<div id="primary" class=" nhsuk-grid-row">
+	<div id="primary" class="clear">
 
 		<?php
 
