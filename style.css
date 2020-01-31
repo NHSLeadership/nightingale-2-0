@@ -377,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-p {
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description {
   margin-bottom: 1.5em;
 }
 
@@ -1055,12 +1055,12 @@ caption {
 /* ==========================================================================
    OBJECTS / #GRID
    ========================================================================== */
-.nhsuk-grid-row {
+.nhsuk-grid-row, .tribe-common .nhsuk-promo-group.nhsuk-grid-row {
   margin-left: -16px;
   margin-right: -16px;
 }
 
-.nhsuk-grid-row:after {
+.nhsuk-grid-row:after, .tribe-common .nhsuk-promo-group.nhsuk-grid-row:after {
   clear: both;
   content: '';
   display: block;
@@ -1078,13 +1078,13 @@ caption {
   }
 }
 
-.nhsuk-grid-column-one-third {
+.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-third {
+  .nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
     float: left;
     width: 33.3333%;
   }
@@ -1847,7 +1847,7 @@ h6,
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
@@ -1858,7 +1858,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -1867,7 +1867,7 @@ p,
 }
 
 @media print {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
@@ -1875,13 +1875,13 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m {
   color: inherit;
 }
@@ -1956,7 +1956,7 @@ address {
   }
 }
 
-.nhsuk-lede-text p,
+.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
 .nhsuk-lede-text ul {
   font-weight: 400;
   font-size: 20px;
@@ -1965,7 +1965,7 @@ address {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
@@ -1974,7 +1974,7 @@ address {
 }
 
 @media print {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
@@ -2038,8 +2038,9 @@ h1 + .nhsuk-lede-text--small {
   }
 }
 
-p + h2, .nhsuk-body-m + h2, address + h2,
+p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
 p + .nhsuk-heading-l,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
@@ -2066,8 +2067,9 @@ ol + .nhsuk-heading-l {
 }
 
 @media (min-width: 40.0625em) {
-  p + h2, .nhsuk-body-m + h2, address + h2,
+  p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
   p + .nhsuk-heading-l,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
@@ -2094,10 +2096,11 @@ ol + .nhsuk-heading-l {
   }
 }
 
-p + h3, .nhsuk-body-m + h3, address + h3,
+p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
@@ -2151,9 +2154,11 @@ ol + .nhsuk-heading-m,
 .nightingale-latest-news .sticky ul + a,
 .nightingale-latest-news .sticky ol + a,
 p + h4,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
 .nhsuk-body-m + h4,
 address + h4,
 p + .nhsuk-heading-s,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
@@ -2180,10 +2185,11 @@ ol + .nhsuk-heading-s {
 }
 
 @media (min-width: 40.0625em) {
-  p + h3, .nhsuk-body-m + h3, address + h3,
+  p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
@@ -2237,9 +2243,11 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .sticky ul + a,
   .nightingale-latest-news .sticky ol + a,
   p + h4,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
   .nhsuk-body-m + h4,
   address + h4,
   p + .nhsuk-heading-s,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
@@ -5187,7 +5195,7 @@ input[disabled]:active[type="submit"],
   margin-bottom: 0;
 }
 
-.nhsuk-details__text p {
+.nhsuk-details__text p, .nhsuk-details__text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-details__text p.nhsuk-promo__description {
   margin-bottom: 24px;
   margin-top: 0;
 }
@@ -5560,13 +5568,13 @@ input[disabled]:active[type="submit"],
   }
 }
 
-.nhsuk-error-summary__body p {
+.nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-error-summary__body p.nhsuk-promo__description {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-error-summary__body p {
+  .nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-error-summary__body p.nhsuk-promo__description {
     margin-bottom: 24px;
   }
 }
@@ -9013,7 +9021,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   color: #005eb8;
 }
 
-.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:hover .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:hover h2.nhsuk-promo__heading {
   color: #7C2855;
 }
 
@@ -9022,7 +9030,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   box-shadow: 0 4px 0 0 #d8dde0;
 }
 
-.nhsuk-promo__link-wrapper:focus .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:focus .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:focus .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:focus h2.nhsuk-promo__heading {
   background-color: #ffeb3b;
   box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
   color: #212b32;
@@ -9038,12 +9046,12 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   /* [7] */
 }
 
-.nhsuk-promo__link-wrapper:active .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:active .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:active h2.nhsuk-promo__heading {
   background: none;
   box-shadow: none;
 }
 
-.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:hover .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:hover h2.nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:active h2.nhsuk-promo__heading {
   text-decoration: none;
 }
 
@@ -9060,7 +9068,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-promo__heading {
+.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
   font-weight: 600;
   font-size: 20px;
   font-size: 1.25rem;
@@ -9071,7 +9079,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo__heading {
+  .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -9079,26 +9087,26 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-promo__heading {
+  .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-promo__content {
+.nhsuk-promo__content, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
   padding: 24px;
 }
 
-.nhsuk-promo__content > *:first-child {
+.nhsuk-promo__content > *:first-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-promo__content > *:last-child {
+.nhsuk-promo__content > *:last-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo__content {
+  .nhsuk-promo__content, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
     padding: 32px;
   }
 }
@@ -9112,14 +9120,14 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /**
  * Promo small reduces the size of the text heading and description.
  */
-.nhsuk-promo--small .nhsuk-promo__heading {
+.nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo--small .nhsuk-promo__heading {
+  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9127,7 +9135,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-promo--small .nhsuk-promo__heading {
+  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -9173,26 +9181,26 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-promo-group__item {
+.nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
   display: flex;
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-promo-group__item {
+  .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
     flex: 0 0 100%;
   }
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-promo-group__item {
+  .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
     margin-bottom: 28px;
   }
-  .nhsuk-promo-group__item:last-child {
+  .nhsuk-promo-group__item:last-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third:last-child {
     margin-bottom: 0;
   }
 }
 
-.nhsuk-promo-group__item .nhsuk-promo {
+.nhsuk-promo-group__item .nhsuk-promo, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third .nhsuk-promo {
   margin-bottom: 0;
 }
 
@@ -9614,7 +9622,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-summary-list__value > p {
+.nhsuk-summary-list__value > p, .tribe-common .nhsuk-promo-group .nhsuk-summary-list__value > p.nhsuk-promo__description {
   margin-bottom: 8px;
 }
 
@@ -10878,7 +10886,7 @@ h6,
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
@@ -10889,7 +10897,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -10898,7 +10906,7 @@ p,
 }
 
 @media print {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
@@ -10906,13 +10914,13 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m {
   color: inherit;
 }
@@ -10987,7 +10995,7 @@ address {
   }
 }
 
-.nhsuk-lede-text p,
+.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
 .nhsuk-lede-text ul {
   font-weight: 400;
   font-size: 20px;
@@ -10996,7 +11004,7 @@ address {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
@@ -11005,7 +11013,7 @@ address {
 }
 
 @media print {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
@@ -11069,8 +11077,9 @@ h1 + .nhsuk-lede-text--small {
   }
 }
 
-p + h2, .nhsuk-body-m + h2, address + h2,
+p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
 p + .nhsuk-heading-l,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
@@ -11097,8 +11106,9 @@ ol + .nhsuk-heading-l {
 }
 
 @media (min-width: 40.0625em) {
-  p + h2, .nhsuk-body-m + h2, address + h2,
+  p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
   p + .nhsuk-heading-l,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
@@ -11125,10 +11135,11 @@ ol + .nhsuk-heading-l {
   }
 }
 
-p + h3, .nhsuk-body-m + h3, address + h3,
+p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
 .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
@@ -11182,9 +11193,11 @@ ol + .nhsuk-heading-m,
 .nightingale-latest-news .sticky ul + a,
 .nightingale-latest-news .sticky ol + a,
 p + h4,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
 .nhsuk-body-m + h4,
 address + h4,
 p + .nhsuk-heading-s,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
@@ -11211,10 +11224,11 @@ ol + .nhsuk-heading-s {
 }
 
 @media (min-width: 40.0625em) {
-  p + h3, .nhsuk-body-m + h3, address + h3,
+  p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
   .nhsuk-list-panel .comment-list #secondary section ul li .comment-body .vcard .comment-meta a + h3,
@@ -11268,9 +11282,11 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .sticky ul + a,
   .nightingale-latest-news .sticky ol + a,
   p + h4,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
   .nhsuk-body-m + h4,
   address + h4,
   p + .nhsuk-heading-s,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
@@ -12292,6 +12308,43 @@ aside#secondary > section {
 
 .nhsuk-icon__arrow-right-circle {
   vertical-align: middle;
+}
+
+/* Events Calendar Styles */
+.tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+  margin-bottom: 36px;
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input {
+  padding: 12px;
+  margin-right: 10px;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group {
+  margin-right: 10px;
+}
+
+.nhsuk-promo__content .tribe-events-calendar-list__event-datetime, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .tribe-events-calendar-list__event-datetime {
+  float: left;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.nhsuk-promo__content .tribe-events-calendar-list__event-datetime span.tribe-event-date-end {
+  display: block;
+}
+
+.event-date-time:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.event-date-time .nhsuk-icon {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }
 
 #secondary section {

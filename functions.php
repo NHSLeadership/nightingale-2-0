@@ -373,6 +373,13 @@ require get_template_directory() . '/inc/pagination.php';
 require get_template_directory() . '/inc/breadcrumbs.php';
 
 /**
+ * Events Calendar.
+ */
+require get_template_directory() . '/inc/events-calendar.php';
+
+
+
+/**
  * Create an array of active plugins.
  */
 
