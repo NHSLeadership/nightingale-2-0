@@ -43,3 +43,22 @@ function nightingale_modify_link_class( $link ){
 }
 
 add_filter('tribe_events_get_event_link', 'nightingale_modify_link_class', 10 );
+
+
+function nightingale_events_template_location(){
+	return 'tribe/events/';
+}
+
+
+function nightingale_add_meta_content_events(){	
+
+	if ( ! is_post_type_archive( 'tribe_events' ) ) return;
+
+	$location = nightingale_events_template_location() . 'v2/';
+
+	get_template_part( $location . 'events-meta' );
+
+}
+
+
+add_action('nightingale_before_archive_content', 'nightingale_add_meta_content_events');
