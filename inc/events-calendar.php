@@ -21,22 +21,25 @@ add_filter( 'tribe_events_event_schedule_details_formatting', 'tribe_remove_end_
  * @return string
  */
 
-function tribe_additional_template_locations( string $file, string $template ) { 
+function tribe_additional_template_locations( $file, $template ) { 
 
-// Put them in the order of priority (first location gets loaded before second location if first exists) 
 
-$new_locations = [
-		'my_plugin'   => trailingslashit( plugin_dir_path( __FILE__ ) ) . 'tribe-events',
-];
+return trailingslashit( get_theme_root() ) . 'nightingale-2-0/inc/tribe/' . $template;
+
  
-foreach ( $new_locations as $location ) {
-  $new_file = trailingslashit( $location ) . $template;
-    if ( file_exists( $new_file ) ) {
-      return $new_file;
-    }
-  }
- 
-  return $file;
 }
  
-// add_filter( 'tribe_events_template', 'tribe_additional_template_locations', 10, 2 );
+// add_filter( 'tribe_events_template', 'tribe_additional_template_locations', 80, 2 );
+
+function nightingale_modify_link_class( $link ){
+
+	$modified_link = str_replace(
+		'">', // string to search for
+		'" class="nhsuk-pagination__link">', // what to replace it with
+		$link // the string to search through
+	);
+
+	return $modified_link;
+}
+
+add_filter('tribe_events_get_event_link', 'nightingale_modify_link_class', 10 );

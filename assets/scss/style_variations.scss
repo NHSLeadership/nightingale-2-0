@@ -121,6 +121,25 @@ aside#secondary > section{
     @extend .nhsuk-promo__heading;
   }
 
+  .event-meta{
+    margin-bottom: 15px;
+  }
+
+
+
+}
+
+.tribe-events-c-top-bar .tribe-topbar-prefix{
+  margin-right: 10px;
+}
+
+button.tribe-events-c-top-bar__datepicker-button{
+    background-color: $nhsuk-link-color;
+    padding: 5px 8px;
+
+    &:active{
+      background-color: $nhsuk-link-color;
+    }
 }
 
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input{
@@ -134,22 +153,43 @@ aside#secondary > section{
 
 .nhsuk-promo__content .tribe-events-calendar-list__event-datetime{
   float: left;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   display: block;
   span.tribe-event-date-end{
     display: block;
   }
 }
 
+
+
+.tribe-events-address,
+.tribe-events-calendar-list__event-datetime{
+  font-size: 16px;
+}
+
 .event-date-time{
   @include clearfix();
 }
 
-.event-date-time .nhsuk-icon{
+.event-date-time .nhsuk-icon,
+.venue-address .nhsuk-icon{
   float: left;
   width: 18px;
   height: 18px;
   margin-right: 10px;
-  // margin-bottom: 20px;
+}
+
+.tribe-events .tribe-events-c-events-bar__search-filters-container{
+
+  @media screen and (min-width: 832px) {
+
+    background-color: transparent;
+
+    .tribe-events-c-search__input{
+      background-color: transparent;
+    }
+    
+  }
+  
 }
 

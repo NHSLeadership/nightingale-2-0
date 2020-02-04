@@ -132,7 +132,15 @@ function nightingale_breadcrumb() {
 								echo $cat_parents;
 							}
 							echo '<li class="nhsuk-breadcrumb__item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';
-						} elseif ( is_archive() && ! is_category() ) {
+						} elseif( is_post_type_archive( 'tribe_events' ) ){
+							?>
+							<li class="nhsuk-breadcrumb__item">
+							<?php
+							_e( 'Events', 'nightingale' );
+							?>
+							</li>
+							<?php
+						}elseif ( is_archive() && ! is_category() ) {
 							?>
 							<li class="nhsuk-breadcrumb__item">
 							<?php
@@ -198,8 +206,13 @@ function nightingale_breadcrumb() {
 
 							}
 						}
+						if( ! ( is_archive() || is_category() || is_post_type_archive() ) ){
+		
 						?>
+
 						<li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li>
+
+						<?php  }  ?>
 					</ol>
 					<p class="nhsuk-breadcrumb__back">
 						<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">
