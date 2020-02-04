@@ -81,21 +81,21 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$errorflag  = 0;
 		$grouperror = '';
 	}
-	$fieldset = '<div class="nhsuk-form-group' . $grouperror . '"><fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                                      <legend class="nhsuk-fieldset__legend">
-                                        ' . $field->label . '';
-	if ( $field->isRequired ) {
-		$fieldset .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
+	$label = '<div class="nhsuk-form-group' . $grouperror . '">' .
+			 '<label class="nhsuk-label" for="">' . $field->label;
+
+	if ( '' !== $field->isRequired ) {
+		$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
 	}
 	if ( 1 === $errorflag ) {
-		$fieldset .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
+		$label .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
 	}
-	$fieldset .= '</legend>';
-	/*if ( ! empty( $field->description ) ) {
-		$fieldset .= '<span class="nhsuk-hint">
+	$label .= '</label></div>';
+	if ( ! empty( $field->description ) ) {
+		$label .= '<span class="nhsuk-hint">
                                         ' . $field->description . '
                                       </span>';
-	}*/
+	}
 	$ender = '';
 	$extra = '';
 	if ( $field->gwreadonly_enable > 0 ) {
@@ -141,10 +141,15 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 
 		// Selects.
 		case 'select':
+			// Replace li with field group
+			$field_content = str_replace( "ginput_container ginput_container_select", "ginput_container ginput_container_select nhsuk-dropdown", $field_content );
+			if ( $field->type == 'number' ) {
+				$field_content = preg_replace("#<input(.*?)class='#", "<input$1class='c-form-input ", $field_content);
+			}
 			if ( 1 === $errorflag ) {
-				$field_content = str_replace( 'gfield_select', 'nhsuk-select nhsuk-select--error', $field_content );
+				$field_content = str_replace( 'gfield_select', 'gfield_select nhsuk-select nhsuk-select--error', $field_content );
 			} else {
-				$field_content = str_replace( 'gfield_select', 'nhsuk-select', $field_content );
+				$field_content = str_replace( 'gfield_select', 'gfield_select  c-form-dropdown__select  c-form-input nhsuk-select', $field_content );
 			}
 			break;
 
@@ -282,9 +287,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 	}
 	$field_content = preg_replace( "#<label class='gfield_label(.*?)>(.*?)</label>#i", ' ', $field_content );
 
-
-	$ender     .= '</fieldset></div>';
-	$collection = $fieldset . $wrapper . $field_content . $ender;
+	$collection = $label . $wrapper . $field_content . $ender;
 
 	return $collection;
 };
