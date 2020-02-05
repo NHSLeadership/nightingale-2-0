@@ -115,6 +115,29 @@ function nightingale__wp_head_ob_end() {
 
 // end remove "type" from script and style tags.
 
+
+/**
+ * Adds Correct Class to excerpt paragraph tag
+ * @param string $excerpt the_expert html
+ */
+
+function nightingale_add_class_to_excerpt( $excerpt ) {
+    return str_replace('<p>', '<p class="nhsuk-promo__description">', $excerpt);
+}
+
+add_filter( "the_excerpt", "nightingale_add_class_to_excerpt" );
+
+/**
+ * Shortens the excerpt to 20 char
+ * @param int $length length to shorten content to
+ */
+
+function nightingale_shorten_excerpt( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
+
+
 /**
  * Customise the read more link
  */
@@ -122,14 +145,16 @@ function nightingale_read_more() {
 	$post_id = get_the_ID();
 
 	return '<div class="nhsuk-action-link">
-  <a class="nhsuk-action-link__link" href="' . get_permalink() . '"><svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+  <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
 	  <path d="M0 0h24v24H0z" fill="none"></path>
 	  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-	</svg><span class="nhsuk-action-link__text">read more</span><span class="nhsuk-u-visually-hidden"> about ' . get_the_title() . '</span></a></div>';
+	</svg><span class="nhsuk-action-link__text">read more</span><span class="nhsuk-u-visually-hidden"> about ' . get_the_title() . '</span></div>';
 }
 
 
 add_filter( 'excerpt_more', 'nightingale_read_more', 10, 1 );
+
+
 
 /**
  * Customise the read more link.
@@ -147,4 +172,12 @@ function nightingale_read_more_posts( $title, $link ) {
 	  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
 	</svg><span class="nhsuk-action-link__text">read more</span><span class="nhsuk-u-visually-hidden"> about ' . $title . '</span></a></div>';
 
+}
+
+/**
+ * Whether show sidebar returns true or false
+ */
+
+function nightingale_show_sidebar(){
+	return ( 'true' === get_theme_mod('blog_sidebar') );
 }
