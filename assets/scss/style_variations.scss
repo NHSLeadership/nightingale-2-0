@@ -110,6 +110,7 @@ aside#secondary > section{
   div.nhsuk-promo__content{
 
     @extend .nhsuk-promo__content;
+    color: $color_nhsuk-dark-grey;
 
   }
 
@@ -123,13 +124,31 @@ aside#secondary > section{
 
 }
 
+.tribe-events .tribe-events-c-top-bar__datepicker{
+  display: inherit;
+  align-items: center;
+
+  span{
+    line-height: 1.5;
+    padding-right: 10px;
+  }
+}
+
 .tribe-events-c-top-bar .tribe-topbar-prefix{
   margin-right: 10px;
 }
 
+
 button.tribe-events-c-top-bar__datepicker-button{
     background-color: $nhsuk-link-color;
     padding: 5px 8px;
+    font-size: 15px;
+
+    svg{
+      fill: $color_nhsuk-white;
+      width: 20px;
+      height: 20px;
+    }
 
     &:active{
       background-color: $nhsuk-link-color;
@@ -156,11 +175,16 @@ button.tribe-events-c-top-bar__datepicker-button{
 .tribe-common .nhsuk-promo-group .event-meta,
 .event-meta{
   margin-bottom: 15px;
+
+  .single-tribe_events &{
+    margin-bottom: 30px;
+  }
 }
 
 .tribe-events-address,
 .tribe-events-calendar-list__event-datetime{
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 .event-date-time{
@@ -168,7 +192,8 @@ button.tribe-events-c-top-bar__datepicker-button{
 }
 
 .event-date-time,
-.venue-address {
+.venue-address,
+.events-cost {
   
   font-size: 16px;
 
@@ -197,13 +222,20 @@ button.tribe-events-c-top-bar__datepicker-button{
 .tribe-events-gcal,
 .tribe-events-ical{
   @extend .nhsuk-button;
-  margin-right: 5px;
+  margin: 0 15px 10px 0;
   background-color: $nhsuk-link-color;
   padding: 5px 8px;
   font-size: 13px;
+  &:last-child{
+    margin-right: 0;
+  }
 }
 
 .single-tribe_events .tribe-events-single-event-description{
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
+.nowrap {
+  white-space: nowrap;
+}

@@ -18,12 +18,8 @@
 ?>
 <a
 	href="<?php echo esc_url( $today_url ); ?>"
-	class="tribe-common-c-btn-border tribe-events-c-top-bar__today-button tribe-common-a11y-hidden"
+	class="tribe-common-c-btn-border tribe-events-c-top-bar__today-button tribe-common-a11y-hidden nhsuk-button"
 	data-js="tribe-events-view-link"
 >
-	<?php esc_html_e( 'Events from today', 'the-events-calendar' ); ?>
+	<?php esc_html_e( 'Show all events', 'the-events-calendar' ); ?>
 </a>
-
-<span class="tribe-topbar-prefix">
-<?php echo esc_html_e( 'Show events from:', 'nightingale' ); ?>
-</span>

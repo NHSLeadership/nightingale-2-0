@@ -12347,6 +12347,20 @@ aside#secondary > section {
   margin-bottom: 36px;
 }
 
+.tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
+  color: #425563;
+}
+
+.tribe-events .tribe-events-c-top-bar__datepicker {
+  display: inherit;
+  align-items: center;
+}
+
+.tribe-events .tribe-events-c-top-bar__datepicker span {
+  line-height: 1.5;
+  padding-right: 10px;
+}
+
 .tribe-events-c-top-bar .tribe-topbar-prefix {
   margin-right: 10px;
 }
@@ -12354,6 +12368,13 @@ aside#secondary > section {
 button.tribe-events-c-top-bar__datepicker-button {
   background-color: #005eb8;
   padding: 5px 8px;
+  font-size: 15px;
+}
+
+button.tribe-events-c-top-bar__datepicker-button svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
 }
 
 button.tribe-events-c-top-bar__datepicker-button:active {
@@ -12383,9 +12404,15 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   margin-bottom: 15px;
 }
 
+.single-tribe_events .tribe-common .nhsuk-promo-group .event-meta, .single-tribe_events
+.event-meta {
+  margin-bottom: 30px;
+}
+
 .tribe-events-address,
 .tribe-events-calendar-list__event-datetime {
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 .event-date-time:after {
@@ -12395,12 +12422,14 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 }
 
 .event-date-time,
-.venue-address {
+.venue-address,
+.events-cost {
   font-size: 16px;
 }
 
 .event-date-time .nhsuk-icon,
-.venue-address .nhsuk-icon {
+.venue-address .nhsuk-icon,
+.events-cost .nhsuk-icon {
   float: left;
   width: 18px;
   height: 18px;
@@ -12418,14 +12447,24 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 
 .tribe-events-gcal,
 .tribe-events-ical {
-  margin-right: 5px;
+  margin: 0 15px 10px 0;
   background-color: #005eb8;
   padding: 5px 8px;
   font-size: 13px;
 }
 
+.tribe-events-gcal:last-child,
+.tribe-events-ical:last-child {
+  margin-right: 0;
+}
+
 .single-tribe_events .tribe-events-single-event-description {
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 #secondary section {

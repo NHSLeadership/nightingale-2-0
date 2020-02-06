@@ -53,6 +53,4 @@ if ( empty( $disable_event_search ) ) {
 		</div>
 	<?php endif; ?>
 
-	<?php // $this->template( 'components/events-bar/views' ); ?>
-
 </div>

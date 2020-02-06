@@ -89,11 +89,11 @@ $event_id = get_the_ID();
 						echo sprintf(
 							'<div class="event-date-time">%4$s
 							<time class="tribe-events-calendar-list__event-datetime" datetime="%5$s"> 
-							%1$s %2$s - %3$s</time>
+							%1$s <span class="nowrap">%2$s - %3$s</span></time>
 							</div>',
-							$start_date,
-							$start_time,
-							$end,
+							esc_html( $start_date ),
+							esc_html( $start_time ),
+							esc_html( $end ),
 							$icons['calendar'],
 							esc_attr( $event_date_attr )
 						);
@@ -104,24 +104,18 @@ $event_id = get_the_ID();
 			    		echo sprintf(
 			    			'<div class="venue-address">%5$s
 			    			<address class="tribe-events-address"> 
-			    			%1$s.  %2$s %3$s %4$s 
+			    			%1$s.  %2$s <span class="nowrap">%3$s %4$s</span> 
 			    			</address></div>',
-							tribe_get_venue(),
-							tribe_get_address(),
-							tribe_get_city(),
-							tribe_get_zip(),
+							esc_html( tribe_get_venue() ),
+							esc_html( tribe_get_address() ),
+							esc_html( tribe_get_city() ),
+							esc_html( tribe_get_zip() ),
 							$icons['marker']
 						);
 					}
 
-						?>
-					<?php 
-
-					
-
-					?>
-					<?php if ( tribe_get_cost() ) : ?>
-						<p class="tribe-events-cost">Price: <?php echo tribe_get_cost( null, true ) ?></p>
+					if ( tribe_get_cost() ) : ?>
+						<div class="events-cost"><?php echo $icons['wallet']; ?> <span><?php echo tribe_get_cost( null, true ) ?></span></div>
 					<?php endif; ?>
 
 					
@@ -139,6 +133,7 @@ $event_id = get_the_ID();
 			<?php the_content(); ?>
 		</div>
 
+		<?php do_action( 'tribe_events_single_event_before_the_meta' ); ?>
 		
 
 		<?php
@@ -203,8 +198,7 @@ $event_id = get_the_ID();
 
 		?>
 
-
-
+		<?php do_action( 'tribe_events_single_event_after_the_meta' ) ?>
 
 	</div>
 
