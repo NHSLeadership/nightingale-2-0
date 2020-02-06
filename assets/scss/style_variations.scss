@@ -231,11 +231,59 @@ button.tribe-events-c-top-bar__datepicker-button{
   }
 }
 
-.single-tribe_events .tribe-events-single-event-description{
-  margin-top: 50px;
-  margin-bottom: 50px;
+.single-tribe_events {
+
+  .tribe-events-single-event-description{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .nhsuk-promo__img{
+    margin-bottom: 20px;
+  }
 }
 
 .nowrap {
   white-space: nowrap;
 }
+
+/* Events Tickets Styles */
+
+
+.tribe-tickets-rsvp{
+
+  @extend .nhsuk-do-dont-list;
+
+  h2.tribe-events-tickets-title{
+
+    @extend .nhsuk-do-dont-list__label;
+
+  }
+
+  .tribe-events-tickets{
+    background-color: transparent;
+  }
+
+  select{
+    @extend .nhsuk-select;
+  }
+
+  .tribe-events-tickets input[type=text],
+  .tribe-events-tickets input[type=email], 
+  .tribe-events-tickets select{
+
+    width: 100%;
+
+  }
+
+  .tribe-button.tribe-button--rsvp{
+
+    background-color: $nhsuk-link-color;
+    font-size: 15px;
+
+  }
+
+}
+
+
+

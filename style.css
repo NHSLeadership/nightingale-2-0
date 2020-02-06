@@ -5383,7 +5383,7 @@ input[disabled]:active[type="submit"],
  * 1. Uses @mixin panel-with-label from tools/_mixins.
  * 2. Uses @mixin heading-label from tools/_mixins.
  */
-.nhsuk-do-dont-list {
+.nhsuk-do-dont-list, .tribe-tickets-rsvp {
   margin-bottom: 40px;
   margin-top: 40px;
   padding: 24px;
@@ -5393,40 +5393,40 @@ input[disabled]:active[type="submit"],
   /* [1] */
 }
 
-.nhsuk-do-dont-list > *:first-child {
+.nhsuk-do-dont-list > *:first-child, .tribe-tickets-rsvp > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-do-dont-list > *:last-child {
+.nhsuk-do-dont-list > *:last-child, .tribe-tickets-rsvp > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     margin-bottom: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     margin-top: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     padding: 32px;
   }
 }
 
 @media print {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     border: 1px solid #212b32;
     page-break-inside: avoid;
   }
 }
 
-.nhsuk-do-dont-list__label {
+.nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -5441,7 +5441,7 @@ input[disabled]:active[type="submit"],
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -5449,14 +5449,14 @@ input[disabled]:active[type="submit"],
 }
 
 @media print {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     margin-left: -24px;
     margin-right: 0;
     padding: 8px 24px;
@@ -5465,7 +5465,7 @@ input[disabled]:active[type="submit"],
 }
 
 @media print {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     background: none;
     color: #212b32;
     top: 0;
@@ -5473,11 +5473,11 @@ input[disabled]:active[type="submit"],
 }
 
 @media print {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     color: #212b32;
     fill: #212b32;
   }
-  .nhsuk-do-dont-list__label:active, .nhsuk-do-dont-list__label:focus, .nhsuk-do-dont-list__label:visited {
+  .nhsuk-do-dont-list__label:active, .tribe-tickets-rsvp h2.tribe-events-tickets-title:active, .nhsuk-do-dont-list__label:focus, .tribe-tickets-rsvp h2.tribe-events-tickets-title:focus, .nhsuk-do-dont-list__label:visited, .tribe-tickets-rsvp h2.tribe-events-tickets-title:visited {
     color: #212b32;
   }
 }
@@ -9454,7 +9454,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /* ==========================================================================
    COMPONENTS/ #SELECT
    ========================================================================== */
-.nhsuk-select {
+.nhsuk-select, .tribe-tickets-rsvp select {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -9467,7 +9467,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-select {
+  .nhsuk-select, .tribe-tickets-rsvp select {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9475,13 +9475,13 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-select {
+  .nhsuk-select, .tribe-tickets-rsvp select {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-select:focus {
+.nhsuk-select:focus, .tribe-tickets-rsvp select:focus {
   border: 4px solid #212b32;
   box-shadow: 0 0 0 4px #ffeb3b;
   outline: 4px solid transparent;
@@ -9489,14 +9489,16 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   outline-offset: 4px;
 }
 
-.nhsuk-select option:active,
+.nhsuk-select option:active, .tribe-tickets-rsvp select option:active,
 .nhsuk-select option:checked,
-.nhsuk-select:focus::-ms-value {
+.tribe-tickets-rsvp select option:checked,
+.nhsuk-select:focus::-ms-value,
+.tribe-tickets-rsvp select:focus::-ms-value {
   background-color: #005eb8;
   color: #ffffff;
 }
 
-.nhsuk-select--error, .gform_body .gform_wrapper .gfield_error .nhsuk-select {
+.nhsuk-select--error, .gform_body .gform_wrapper .gfield_error .nhsuk-select, .gform_body .gform_wrapper .gfield_error .tribe-tickets-rsvp select, .tribe-tickets-rsvp .gform_body .gform_wrapper .gfield_error select {
   border: 4px solid #d5281b;
 }
 
@@ -12463,8 +12465,28 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   margin-bottom: 50px;
 }
 
+.single-tribe_events .nhsuk-promo__img {
+  margin-bottom: 20px;
+}
+
 .nowrap {
   white-space: nowrap;
+}
+
+/* Events Tickets Styles */
+.tribe-tickets-rsvp .tribe-events-tickets {
+  background-color: transparent;
+}
+
+.tribe-tickets-rsvp .tribe-events-tickets input[type=text],
+.tribe-tickets-rsvp .tribe-events-tickets input[type=email],
+.tribe-tickets-rsvp .tribe-events-tickets select {
+  width: 100%;
+}
+
+.tribe-tickets-rsvp .tribe-button.tribe-button--rsvp {
+  background-color: #005eb8;
+  font-size: 15px;
 }
 
 #secondary section {

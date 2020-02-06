@@ -89,7 +89,7 @@ $event_id = get_the_ID();
 						echo sprintf(
 							'<div class="event-date-time">%4$s
 							<time class="tribe-events-calendar-list__event-datetime" datetime="%5$s"> 
-							%1$s <span class="nowrap">%2$s - %3$s</span></time>
+							%1$s %2$s - <span class="nowrap">%3$s</span></time>
 							</div>',
 							esc_html( $start_date ),
 							esc_html( $start_time ),
