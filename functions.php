@@ -373,6 +373,11 @@ require get_template_directory() . '/inc/pagination.php';
 require get_template_directory() . '/inc/breadcrumbs.php';
 
 /**
+ * Google Tag Manager.
+ */
+require get_template_directory() . '/inc/google-tag-manager.php';
+
+/**
  * Create an array of active plugins.
  */
 
