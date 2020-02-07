@@ -35,7 +35,7 @@ add_filter(
 		$form_string = str_replace( '/h3>', '/h2>', $form_string );
 
 		// Replace field description divs with <small> elements.
-		$form_string = preg_replace( "#<div class='gfield_description'>(.*?)</div>#", "<span class='nhsuk-hint'>$1</span>", $form_string );
+		$form_string = preg_replace( "#<div class='gfield_description'(.*?)</div>#", "<span class='nhsuk-hint'$1</span>", $form_string );
 
 		// Replace field instruction divs with <small> elements.
 		$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
@@ -84,18 +84,18 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 	$fieldset = '<div class="nhsuk-form-group' . $grouperror . '"><fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
                                       <legend class="nhsuk-fieldset__legend">
                                         ' . $field->label . '';
-	if ( '' !== $field->isRequired ) {
+	if ( $field->isRequired ) {
 		$fieldset .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
 	}
 	if ( 1 === $errorflag ) {
 		$fieldset .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
 	}
 	$fieldset .= '</legend>';
-	if ( ! empty( $field->description ) ) {
+	/*if ( ! empty( $field->description ) ) {
 		$fieldset .= '<span class="nhsuk-hint">
                                         ' . $field->description . '
                                       </span>';
-	}
+	}*/
 	$ender = '';
 	$extra = '';
 	if ( $field->gwreadonly_enable > 0 ) {
@@ -188,6 +188,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 
 		// Radio buttons.
 		case 'radio':
+		case 'quiz':
 			$field_content = str_replace( 'ginput_container_radio', 'nhsuk-radios', $field_content );
 			$field_content = str_replace( "<li class='", "<div class='nhsuk-radios__item ", $field_content );
 			$field_content = str_replace( '</li', '</div', $field_content );
