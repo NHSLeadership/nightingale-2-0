@@ -372,16 +372,13 @@ require get_template_directory() . '/inc/pagination.php';
  */
 require get_template_directory() . '/inc/breadcrumbs.php';
 
-/**
- * Google Tag Manager.
- */
-require get_template_directory() . '/inc/google-tag-manager.php';
 
 /**
  * Create an array of active plugins.
  */
 
 $active_plugins = apply_filters( 'active_plugins', get_option( 'active_plugins' ) );
+
 
 /**
  * Gravity Forms style over-ride.
@@ -404,6 +401,18 @@ if ( in_array( 'gravityforms/gravityforms.php', $active_plugins, true ) ) {
 if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
 	if ( ! is_admin() ) {
 		require get_template_directory() . '/inc/learndash.php';
+	}
+}
+
+/**
+ * Google Tag Manager.
+ * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a file for
+ * the Google Tag Manager to fit it into the theme.
+ */
+
+if ( in_array( 'duracelltomi-google-tag-manager/duracelltomi-google-tag-manager-for-wordpress.php', $active_plugins, true ) ) {
+	if ( ! is_admin() ) {
+		require get_template_directory() . '/inc/google-tag-manager.php';
 	}
 }
 
