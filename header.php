@@ -69,8 +69,17 @@ get_template_part( 'partials/topnav' );
 ?>
 </header>
 <?php echo nightingale_breadcrumb(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+
+<?php 
+
+$page_color = get_post_meta( get_the_id(), 'page-color', true );
+
+$extra_styles = $page_color ? 'page-style--' . $page_color : '';
+
+?>
+
 <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
-	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding" id="maincontent">
+	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding <?php echo $extra_styles; ?>" id="maincontent">
 		<div id="contentinner" class="nhsuk-width-container">
 			<?php flush(); ?>
 

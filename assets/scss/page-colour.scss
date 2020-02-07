@@ -1,0 +1,246 @@
+#secondary section h2.widget-title, 
+.nhsuk-panel-with-label__label, 
+#secondary section #wp-calendar caption,
+.nhsuk-do-dont-list__label,
+.nhsuk-care-card .nhsuk-care-card__heading-container,
+.nhsuk-hero--image-description .nhsuk-hero-content {
+
+	.page-style--standard-nhs-blue-default &{
+		background-color: $color_nhsuk-blue;
+		background: $color_nhsuk-blue;
+	}
+
+	.page-style--dark-blue &{
+		background-color: $color_nhsuk_dark-blue;
+		background: $color_nhsuk_dark-blue;
+	}
+
+	.page-style--bright-blue &{
+		background-color: $color_nhsuk-bright-blue;
+		background: $color_nhsuk-bright-blue;
+	}
+
+	.page-style--mid-grey &{
+		background-color: $color_nhsuk-mid-grey;
+		background: $color_nhsuk-mid-grey;
+	}
+
+	.page-style--dark-grey &{
+		background-color: $color-nhsuk-dark-grey;
+		background: $color-nhsuk-dark-grey;
+	}
+
+	.page-style--black &{
+		background-color: $color_nhsuk-black;
+		background: $color_nhsuk-black;
+	}
+
+	.page-style--purple &{
+		background-color: $color-nhsuk-purple;
+		background: $color-nhsuk-purple;
+	}
+
+	.page-style--pink &{
+		background-color: $color_nhsuk-pink;
+		background: $color_nhsuk-pink;
+	}
+
+	.page-style--light-purple &{
+		background-color: $color_nhsuk-light-purple;
+		background: $color_nhsuk-light-purple;
+	}
+
+	.page-style--emergency-services-red &{
+		background-color: $color_nhsuk-red;
+		background: $color_nhsuk-red;
+	}
+
+	.page-style--dark-green &{
+		background-color: $color_nhsuk-dark-green;
+		background: $color_nhsuk-dark-green;
+	}
+
+	.page-style--light-green &{
+		background-color: $color_nhsuk-light-green;
+		background: $color_nhsuk-light-green;
+	}
+	
+	.page-style--aqua-green &{
+		background-color: $color_nhsuk-aqua-green;
+		background: $color_nhsuk-aqua-green;
+	}
+
+}
+
+a,
+.nhsuk-details__summary {
+
+	.page-style--standard-nhs-blue-default &{
+		color: $color_nhsuk-blue;
+	}
+
+	.page-style--dark-blue &{
+		color: $color_nhsuk_dark-blue;
+	}
+
+	.page-style--bright-blue &{
+		color: $color_nhsuk-bright-blue;
+	}
+
+	.page-style--mid-grey &{
+		color: $color_nhsuk-mid-grey;
+	}
+
+	.page-style--dark-grey &{
+		color: $color-nhsuk-dark-grey;
+	}
+
+	.page-style--black &{
+		color: $color_nhsuk-black;
+	}
+
+	.page-style--purple &{
+		color: $color-nhsuk-purple;
+	}
+
+	.page-style--pink &{
+		color: $color_nhsuk-pink;
+	}
+
+	.page-style--light-purple &{
+		color: $color_nhsuk-light-purple;
+	}
+
+	.page-style--emergency-services-red &{
+		color: $color_nhsuk-red;
+	}
+
+	.page-style--dark-green &{
+		color: $color_nhsuk-dark-green;
+	}
+
+	.page-style--light-green &{
+		color: $color_nhsuk-light-green;
+	}
+	
+	.page-style--aqua-green &{
+		color: $color_nhsuk-aqua-green;
+	}
+}
+
+
+.nhsuk-inset-text,
+.nhsuk-care-card__arrow:before,
+.nhsuk-care-card__arrow:after,
+.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before, 
+.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after{
+	.page-style--standard-nhs-blue-default &{
+		border-color: $color_nhsuk-blue;
+	}
+
+	.page-style--dark-blue &{
+		border-color: $color_nhsuk_dark-blue;
+	}
+
+	.page-style--bright-blue &{
+		border-color: $color_nhsuk-bright-blue;
+	}
+
+	.page-style--mid-grey &{
+		border-color: $color_nhsuk-mid-grey;
+	}
+
+	.page-style--dark-grey &{
+		border-color: $color-nhsuk-dark-grey;
+	}
+
+	.page-style--black &{
+		border-color: $color_nhsuk-black;
+	}
+
+	.page-style--purple &{
+		border-color: $color-nhsuk-purple;
+	}
+
+	.page-style--pink &{
+		border-color: $color_nhsuk-pink;
+	}
+
+	.page-style--light-purple &{
+		border-color: $color_nhsuk-light-purple;
+	}
+
+	.page-style--emergency-services-red &{
+		border-color: $color_nhsuk-red;
+	}
+
+	.page-style--dark-green &{
+		border-color: $color_nhsuk-dark-green;
+	}
+
+	.page-style--light-green &{
+		border-color: $color_nhsuk-light-green;
+	}
+	
+	.page-style--aqua-green &{
+		border-color: $color_nhsuk-aqua-green;
+	}
+}
+
+.nhsuk-icon__search{
+
+	.page-style--standard-nhs-blue-default &{
+		fill: $color_nhsuk-blue;
+	}
+
+	.page-style--dark-blue &{
+		fill: $color_nhsuk_dark-blue;
+	}
+
+	.page-style--bright-blue &{
+		fill: $color_nhsuk-bright-blue;
+	}
+
+	.page-style--mid-grey &{
+		fill: $color-nhsuk-dark-grey;
+	}
+
+	.page-style--dark-grey &{
+		fill: $color_nhsuk-dark-grey;
+	}
+
+	.page-style--black &{
+		fill: $color_nhsuk-black;
+	}
+
+	.page-style--purple &{
+		fill: $color-nhsuk-purple;
+	}
+
+	.page-style--pink &{
+		fill: $color_nhsuk-pink;
+	}
+
+	.page-style--light-purple &{
+		fill: $color_nhsuk-light-purple;
+	}
+
+	.page-style--emergency-services-red &{
+		fill: $color_nhsuk-red;
+	}
+
+	.page-style--dark-green &{
+		fill: $color_nhsuk-dark-green;
+	}
+
+	.page-style--light-green &{
+		fill: $color_nhsuk-light-green;
+	}
+	
+	.page-style--aqua-green &{
+		fill: $color_nhsuk-aqua-green;
+	}
+}
+
+
+
