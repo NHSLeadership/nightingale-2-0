@@ -35,7 +35,7 @@ flush();
 	</div>
 	<div class="nhsuk-grid__item nhsuk-grid-column-one-third">
 		<?php
-		get_sidebar();
+		get_sidebar('page');
 		?>
 	</div>
 
