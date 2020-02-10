@@ -12750,69 +12750,99 @@ aside#secondary > section {
   background: #00A499;
 }
 
-.page-style--standard-nhs-blue-default a, .page-style--standard-nhs-blue-default
-.nhsuk-details__summary {
+.page-style--standard-nhs-blue-default .nhsuk-details__summary, .page-style--standard-nhs-blue-default
+.nhsuk-details__summary-text, .page-style--standard-nhs-blue-default
+.nhsuk-promo__heading, .page-style--standard-nhs-blue-default
+a {
   color: #005eb8;
 }
 
-.page-style--dark-blue a, .page-style--dark-blue
-.nhsuk-details__summary {
+.page-style--dark-blue .nhsuk-details__summary, .page-style--dark-blue
+.nhsuk-details__summary-text, .page-style--dark-blue
+.nhsuk-promo__heading, .page-style--dark-blue
+a {
   color: #003087;
 }
 
-.page-style--bright-blue a, .page-style--bright-blue
-.nhsuk-details__summary {
+.page-style--bright-blue .nhsuk-details__summary, .page-style--bright-blue
+.nhsuk-details__summary-text, .page-style--bright-blue
+.nhsuk-promo__heading, .page-style--bright-blue
+a {
   color: #0072ce;
 }
 
-.page-style--mid-grey a, .page-style--mid-grey
-.nhsuk-details__summary {
+.page-style--mid-grey .nhsuk-details__summary, .page-style--mid-grey
+.nhsuk-details__summary-text, .page-style--mid-grey
+.nhsuk-promo__heading, .page-style--mid-grey
+a {
   color: #768692;
 }
 
-.page-style--dark-grey a, .page-style--dark-grey
-.nhsuk-details__summary {
+.page-style--dark-grey .nhsuk-details__summary, .page-style--dark-grey
+.nhsuk-details__summary-text, .page-style--dark-grey
+.nhsuk-promo__heading, .page-style--dark-grey
+a {
   color: #425563;
 }
 
-.page-style--black a, .page-style--black
-.nhsuk-details__summary {
+.page-style--black .nhsuk-details__summary, .page-style--black
+.nhsuk-details__summary-text, .page-style--black
+.nhsuk-promo__heading, .page-style--black
+a {
   color: #212b32;
 }
 
-.page-style--purple a, .page-style--purple
-.nhsuk-details__summary {
+.page-style--purple .nhsuk-details__summary, .page-style--purple
+.nhsuk-details__summary-text, .page-style--purple
+.nhsuk-promo__heading, .page-style--purple
+a {
   color: #330072;
 }
 
-.page-style--pink a, .page-style--pink
-.nhsuk-details__summary {
+.page-style--pink .nhsuk-details__summary, .page-style--pink
+.nhsuk-details__summary-text, .page-style--pink
+.nhsuk-promo__heading, .page-style--pink
+a {
   color: #ae2573;
 }
 
-.page-style--light-purple a, .page-style--light-purple
-.nhsuk-details__summary {
+.page-style--light-purple .nhsuk-details__summary, .page-style--light-purple
+.nhsuk-details__summary-text, .page-style--light-purple
+.nhsuk-promo__heading, .page-style--light-purple
+a {
   color: #704c9c;
 }
 
-.page-style--emergency-services-red a, .page-style--emergency-services-red
-.nhsuk-details__summary {
+.page-style--emergency-services-red .nhsuk-details__summary, .page-style--emergency-services-red
+.nhsuk-details__summary-text, .page-style--emergency-services-red
+.nhsuk-promo__heading, .page-style--emergency-services-red
+a {
   color: #d5281b;
 }
 
-.page-style--dark-green a, .page-style--dark-green
-.nhsuk-details__summary {
+.page-style--dark-green .nhsuk-details__summary, .page-style--dark-green
+.nhsuk-details__summary-text, .page-style--dark-green
+.nhsuk-promo__heading, .page-style--dark-green
+a {
   color: #006747;
 }
 
-.page-style--light-green a, .page-style--light-green
-.nhsuk-details__summary {
+.page-style--light-green .nhsuk-details__summary, .page-style--light-green
+.nhsuk-details__summary-text, .page-style--light-green
+.nhsuk-promo__heading, .page-style--light-green
+a {
   color: #78be20;
 }
 
-.page-style--aqua-green a, .page-style--aqua-green
-.nhsuk-details__summary {
+.page-style--aqua-green .nhsuk-details__summary, .page-style--aqua-green
+.nhsuk-details__summary-text, .page-style--aqua-green
+.nhsuk-promo__heading, .page-style--aqua-green
+a {
   color: #00A499;
+}
+
+a.nhsuk-button, a.wp-block-button__link, a.wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform a#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, .gform_body a.gform_next_button, .learndash-wrapper a.ld-button, .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper a.ld-logout, .learndash-wrapper a.ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary {
+  color: #ffffff;
 }
 
 .page-style--standard-nhs-blue-default .nhsuk-inset-text, .page-style--standard-nhs-blue-default

@@ -14,30 +14,27 @@
 */
 
 
-
-
-
-function vt_add_page_sidebar_metabox() {
+function nightingale_colourpicker_metabox() {
     add_meta_box(
-        'vt-page-color-metabox',
-        __( 'Sidebar Content Block', 'vt' ),
-        'vt_render_page_sidebar_metabox',
+        'nightingale-page-color-metabox',
+        __( 'Colour Picker', 'nightingale' ),
+        'nightingale_render_colourpicker',
         'page',
         'side',
         'core'
     );
 }
-add_action( 'add_meta_boxes', 'vt_add_page_sidebar_metabox' );
+add_action( 'add_meta_boxes', 'nightingale_colourpicker_metabox' );
 
 
 
-function vt_render_page_sidebar_metabox( $post ) {
+function nightingale_render_colourpicker( $post ) {
  
     // generate a nonce field
     wp_nonce_field( basename( __FILE__ ), 'nightingale-colour-picker-nonce' );
  
     // get previously saved meta values (if any)
-    $sidebar = get_post_meta( $post->ID, 'page-color', true );
+    $sidebar = esc_attr( get_post_meta( $post->ID, 'page-color', true ) );
 
     $theme_colours = get_theme_colours();
 
@@ -48,9 +45,9 @@ function vt_render_page_sidebar_metabox( $post ) {
         <select id="color-picker" name="color-picker" class="widefat">
         	<?php foreach ( $theme_colours as $name => $colour ):?>
 
-        		<?php $select = $sidebar === sanitize_title( $colour ) ? 'selected' : ''; ?>
+        		<?php $select = $sidebar === esc_attr( sanitize_title( $colour ) ) ? 'selected' : ''; ?>
 				
-				<option value="<?php echo sanitize_title( $colour ); ?>" <?php echo $select; ?> ><?php echo $colour; ?></option>
+				<option value="<?php echo esc_attr( sanitize_title( $colour ) ); ?>" <?php echo $select; ?> ><?php echo esc_attr( $colour ); ?></option>
 
         	<?php endforeach; ?>
 		</select>
@@ -60,8 +57,8 @@ function vt_render_page_sidebar_metabox( $post ) {
 
 
 
-function vt_save_page_sidebar( $post_id ) {
-	// checking if the post being saved is an 'event',
+function nightingale_save_colourpicker( $post_id ) {
+	// checking if the post being saved is a 'page',
     // if not, then return
     if ( 'page' != $_POST['post_type'] ) {
         return;
@@ -81,4 +78,4 @@ function vt_save_page_sidebar( $post_id ) {
 
 
 }
-add_action( 'save_post', 'vt_save_page_sidebar' );
+add_action( 'save_post', 'nightingale_save_colourpicker' );

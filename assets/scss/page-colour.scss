@@ -72,8 +72,10 @@
 
 }
 
-a,
-.nhsuk-details__summary {
+.nhsuk-details__summary,
+.nhsuk-details__summary-text,
+.nhsuk-promo__heading,
+a, {
 
 	.page-style--standard-nhs-blue-default &{
 		color: $color_nhsuk-blue;
@@ -126,6 +128,10 @@ a,
 	.page-style--aqua-green &{
 		color: $color_nhsuk-aqua-green;
 	}
+}
+
+a.nhsuk-button{
+	color: $color_nhsuk-white;
 }
 
 
