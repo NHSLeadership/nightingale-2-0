@@ -28,7 +28,8 @@ function nightingale_custom_colour_theme() {
 			color: #<?php echo $theme_colour; ?>
 		}
 
-		.nhsuk-footer {
+		.nhsuk-footer,
+		#secondary section {
 			border-top-color: #<?php echo $theme_colour; ?>
 		}
 	</style>

@@ -194,9 +194,9 @@ function nightingale_widgets_init() {
 			'name'          => esc_html__( 'Sidebar', 'nightingale' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Elements to show in the sidebar. each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'before_widget' => '<section id="%1$s" class="nhsuk-related-nav %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
+			'before_title'  => '<h2 class="nhsuk-related-nav__heading">',
 			'after_title'   => '</h2>',
 		)
 	);
@@ -205,9 +205,9 @@ function nightingale_widgets_init() {
 			'name'          => esc_html__( 'Page Sidebar', 'nightingale' ),
 			'id'            => 'sidebar-2',
 			'description'   => esc_html__( 'Elements to show in the page sidebar. each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'before_widget' => '<section id="%1$s" class="nhsuk-related-nav %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
+			'before_title'  => '<h2 class="nhsuk-related-nav__heading">',
 			'after_title'   => '</h2>',
 		)
 	);
@@ -225,9 +225,9 @@ function nightingale_widgets_init() {
 			'name'          => '404 Page',
 			'id'            => '404-error',
 			'description'   => esc_html__( 'Content for your 404 error page goes here.', 'nightingale' ),
-			'before_widget' => '<div id="%1$s" class="%2$s nhsuk-panel-with-label">',
+			'before_widget' => '<div id="%1$s" class="%2$s nhsuk-related-nav">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="nhsuk-panel-with-label__label">',
+			'before_title'  => '<h3 class="nhsuk-related-nav__heading">',
 			'after_title'   => '</h3>',
 		)
 	);
