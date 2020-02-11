@@ -60,7 +60,9 @@ function nightingale_render_colourpicker( $post ) {
 function nightingale_save_colourpicker( $post_id ) {
 	// checking if the post being saved is a 'page',
     // if not, then return
-    if ( 'page' != $_POST['post_type'] ) {
+    global $pagenow;
+
+    if ( $pagenow != 'post.php' && $pagenow != 'post-new.php' ){
         return;
     }
 
