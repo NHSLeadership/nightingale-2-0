@@ -139,7 +139,8 @@ a.nhsuk-button{
 .nhsuk-care-card__arrow:before,
 .nhsuk-care-card__arrow:after,
 .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before, 
-.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after{
+.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#secondary section{
 	.page-style--standard-nhs-blue-default &{
 		border-color: $color_nhsuk-blue;
 	}
