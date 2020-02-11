@@ -224,6 +224,8 @@ function nightingale_widgets_init() {
 
 add_action( 'widgets_init', 'nightingale_widgets_init' );
 
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -410,12 +412,9 @@ if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
  * The check around the require is to see if the plugin is active on this install
  */
 if ( in_array( 'the-events-calendar/the-events-calendar.php', $active_plugins, true ) ) {
-	if ( ! is_admin() ) {
-		require get_template_directory() . '/inc/events-calendar.php';
-	}
+
+	require get_template_directory() . '/inc/events-calendar.php';
 }
-
-
 
 /**
  * Performance Boosters - should be loaded as last element of functions file.

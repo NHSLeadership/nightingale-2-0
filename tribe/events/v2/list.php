@@ -24,6 +24,8 @@ $header_classes = [ 'tribe-events-header' ];
 if ( empty( $disable_event_search ) ) {
 	$header_classes[] = 'tribe-events-header--has-event-search';
 }
+
+$sidebar = nightingale_show_sidebar();
 ?>
 <div
 	<?php tribe_classes( $container_classes ); ?>
@@ -54,22 +56,39 @@ if ( empty( $disable_event_search ) ) {
 
 		<?php $this->template( 'components/filter-bar' ); ?>
 
-		<div class="nhsuk-grid-row nhsuk-promo-group">
+		<div class="nhsuk-grid-row">
 
-			<?php foreach ( $events as $event ) : ?>
-				<?php $this->setup_postdata( $event ); ?>
+			<div class="<?php if( $sidebar ): echo 'nhsuk-grid-column-two-thirds'; endif; ?>">
 
-				<?php // $this->template( 'list/month-separator', [ 'event' => $event ] ); ?>
+				<div class="nhsuk-grid-row nhsuk-promo-group">
 
-				<?php set_query_var( 'event', $event ); ?>
+					<?php foreach ( $events as $event ) : ?>
+						<?php $this->setup_postdata( $event ); ?>
 
-				<?php get_template_part( 'template-parts/content', 'post' ); ?>
+						<?php // $this->template( 'list/month-separator', [ 'event' => $event ] ); ?>
 
-			<?php endforeach; ?>
+						<?php set_query_var( 'event', $event ); ?>
+
+						<?php get_template_part( 'template-parts/content', 'post' ); ?>
+
+					<?php endforeach; ?>
+
+				</div>			
+
+			</div>
+
+			<?php 
+			if( $sidebar ):
+
+			get_template_part('tribe/events/sidebar-events'); 
+
+			endif;?>
 
 		</div>
 
 		<?php $this->template( 'list/nav' ); ?>
+
+		
 
 		<?php // $this->template( 'components/ical-link' ); ?>
 

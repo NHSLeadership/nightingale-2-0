@@ -88,6 +88,20 @@ aside#secondary > section{
 /* Events Calendar Styles */
 
 
+.tribe-common {
+
+  div.nhsuk-grid-column-one-third{
+    @extend .nhsuk-grid-column-one-third;
+  }
+
+  div.nhsuk-grid-column-two-thirds{
+    @extend .nhsuk-grid-column-two-thirds;
+    padding-left: 0;
+  }
+}
+
+
+
 .tribe-common .nhsuk-promo-group{
 
   &.nhsuk-grid-row{
@@ -105,6 +119,12 @@ aside#secondary > section{
     }
     margin-bottom: 36px;
 
+  }
+
+  div.nhsuk-grid-column-one-half{
+    @extend .nhsuk-grid-column-one-half;
+
+    margin-bottom: 36px;
   }
 
   div.nhsuk-promo__content{
@@ -281,6 +301,18 @@ button.tribe-events-c-top-bar__datepicker-button{
     background-color: $nhsuk-link-color;
     font-size: 15px;
 
+  }
+
+}
+
+/* Events Widgets */
+
+.widget-area ol.tribe-list-widget{
+
+  list-style: none;
+
+  .tribe-clearfix:before{
+    display: none;
   }
 
 }

@@ -1,5 +1,28 @@
 <?php
 
+/**
+ * Add Sidebar to events section
+ *
+ */
+
+
+function nightingale_widgets_events() {
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Events Sidebar', 'nightingale' ),
+			'id'            => 'events-side',
+			'description'   => esc_html__( 'Elements to show in the page sidebar. each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
+			'before_widget' => '<section id="%1$s" class="nhsuk-related-nav %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="nhsuk-related-nav__heading">',
+			'after_title'   => '</h2>',
+		)
+	);
+}
+
+add_action( 'widgets_init', 'nightingale_widgets_events', 10 );
+
+
 
 /**
  * Remove end time of event on event archive page
@@ -159,6 +182,10 @@ function use_list_view_for_categories( $query ) {
 	header( 'Location: ' . tribe_get_listview_link( $term->term_id ) );
 	exit();
 }
+
+
+
+
 
 // Use list view for category requests by hooking into pre_get_posts for event queries
 // add_action( 'tribe_events_pre_get_posts', 'use_list_view_for_categories' );

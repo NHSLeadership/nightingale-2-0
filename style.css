@@ -1078,37 +1078,37 @@ caption {
   }
 }
 
-.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+  .nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
     float: left;
     width: 33.3333%;
   }
 }
 
-.nhsuk-grid-column-one-half {
+.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-half {
+  .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
     float: left;
     width: 50%;
   }
 }
 
-.nhsuk-grid-column-two-thirds {
+.nhsuk-grid-column-two-thirds, .tribe-common div.nhsuk-grid-column-two-thirds {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-two-thirds {
+  .nhsuk-grid-column-two-thirds, .tribe-common div.nhsuk-grid-column-two-thirds {
     float: left;
     width: 66.6666%;
   }
@@ -12331,8 +12331,9 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 0px;
 }
 
-.nhsuk-grid-column-two-thirds.archive,
-.nhsuk-grid-column-two-thirds.index {
+.nhsuk-grid-column-two-thirds.archive, .tribe-common div.archive.nhsuk-grid-column-two-thirds,
+.nhsuk-grid-column-two-thirds.index,
+.tribe-common div.index.nhsuk-grid-column-two-thirds {
   padding: 0 16px 0 0;
 }
 
@@ -12345,7 +12346,15 @@ aside#secondary > section {
 }
 
 /* Events Calendar Styles */
+.tribe-common div.nhsuk-grid-column-two-thirds {
+  padding-left: 0;
+}
+
 .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+  margin-bottom: 36px;
+}
+
+.tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
   margin-bottom: 36px;
 }
 
@@ -12487,6 +12496,15 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 .tribe-tickets-rsvp .tribe-button.tribe-button--rsvp {
   background-color: #005eb8;
   font-size: 15px;
+}
+
+/* Events Widgets */
+.widget-area ol.tribe-list-widget {
+  list-style: none;
+}
+
+.widget-area ol.tribe-list-widget .tribe-clearfix:before {
+  display: none;
 }
 
 #secondary section {
