@@ -213,7 +213,8 @@ button.tribe-events-c-top-bar__datepicker-button{
 
 .event-date-time,
 .venue-address,
-.events-cost {
+.events-cost,
+.event-categories {
   
   font-size: 16px;
 
@@ -222,6 +223,30 @@ button.tribe-events-c-top-bar__datepicker-button{
     width: 18px;
     height: 18px;
     margin-right: 10px;
+  }
+}
+
+.event-categories{
+
+  @include clearfix();
+
+  ul{
+    position: relative;
+    top: -2px;    
+  }
+
+  li{
+    display: inline-block;
+    font-size: 16px;
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+.tribe-events-header__top-bar{
+  .events-dropdown{
+    font-size: 16px;
+    padding-right: 10px;
   }
 }
 

@@ -12434,17 +12434,42 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 
 .event-date-time,
 .venue-address,
-.events-cost {
+.events-cost,
+.event-categories {
   font-size: 16px;
 }
 
 .event-date-time .nhsuk-icon,
 .venue-address .nhsuk-icon,
-.events-cost .nhsuk-icon {
+.events-cost .nhsuk-icon,
+.event-categories .nhsuk-icon {
   float: left;
   width: 18px;
   height: 18px;
   margin-right: 10px;
+}
+
+.event-categories:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.event-categories ul {
+  position: relative;
+  top: -2px;
+}
+
+.event-categories li {
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  margin-right: 5px;
+}
+
+.tribe-events-header__top-bar .events-dropdown {
+  font-size: 16px;
+  padding-right: 5px;
 }
 
 @media screen and (min-width: 832px) {

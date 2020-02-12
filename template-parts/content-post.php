@@ -47,6 +47,8 @@ $sidebar = ( 'true' === get_theme_mod('blog_sidebar') );
 	      <?php do_action('nightingale_before_archive_content'); ?>
       
 	      <?php the_excerpt(); ?>
+
+	      <?php do_action('nightingale_after_archive_content'); ?>
 	      
 	    </div>
 	  </a>

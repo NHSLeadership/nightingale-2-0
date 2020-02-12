@@ -34,19 +34,19 @@ $base_url = esc_url_raw( trailingslashit( get_home_url() . '/' .  tribe_get_opti
 
 	<?php $this->template( 'components/top-bar/actions' ); ?>
 
-	<label class="nhsuk-label" for="select-1">
-	    Events Category 
+	<label class="nhsuk-label events-dropdown" for="select-1">
+	    <?php echo esc_html__('Events Categories', 'nightingale' );?>
 	</label>
 
 	<select name="select-1" id="select-1" class="nhsuk-select">
-		<option value="<?php echo $base_url; ?>">All Events</option>
+		<option value="<?php echo $base_url; ?>"><?php echo esc_html__('All Events', 'nightingale' );?></option>
 
 		<?php foreach ( $event_terms as $term ): 
 
 			$selected = $current_tax === $term->slug ? 'selected' : '';
 		?>
 
-			<option class="level-0" value="<?php echo $base_url . 'category/' . $term->slug . '/'; ?>" <?php echo $selected; ?> >
+			<option value="<?php echo $base_url . 'category/' . $term->slug . '/'; ?>" <?php echo $selected; ?> >
 				<?php echo $term->name; ?>					
 			</option>
 
