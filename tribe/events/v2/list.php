@@ -47,7 +47,7 @@ $sidebar = nightingale_show_sidebar();
 		<header <?php tribe_classes( $header_classes ); ?>>
 			<?php $this->template( 'components/messages' ); ?>
 
-			<?php $this->template( 'components/breadcrumbs' ); ?>
+			<?php // $this->template( 'components/breadcrumbs' ); ?>
 
 			<?php $this->template( 'components/events-bar' ); ?>
 
@@ -64,8 +64,6 @@ $sidebar = nightingale_show_sidebar();
 
 					<?php foreach ( $events as $event ) : ?>
 						<?php $this->setup_postdata( $event ); ?>
-
-						<?php // $this->template( 'list/month-separator', [ 'event' => $event ] ); ?>
 
 						<?php set_query_var( 'event', $event ); ?>
 

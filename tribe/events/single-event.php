@@ -33,18 +33,7 @@ $event_id = get_the_ID();
 
 	<?php
 
-	/*
-	 * Start end end times for the event.
-	 */
-
-	$time_format = get_option( 'time_format', Tribe__Date_Utils::TIMEFORMAT ); // get time format
-	$event_date_attr =tribe_get_start_date( null, false, Tribe__Date_Utils::DBDATEFORMAT );
-	$start_date = tribe_get_start_date( null, false, 'l d  F' ); // start date in correct format
-	$start_time = tribe_get_start_date( null, false, $time_format ); // start time in time format
-	$end_date = tribe_get_end_date( null, false, 'l d  F' ); // end date in correct format
-	$end_time = tribe_get_end_date( null, false, $time_format ); // end time in time format
-	$end = $end_date === $start_date ? $end_time : $end_date . ' ' . $end_time; // if start and end date are the same, just show the time
-
+	$event_times = nightingale_start_end_event( 'l d  F' );
 	$icons = nightingale_events_icons();
 
 	?>
@@ -85,17 +74,18 @@ $event_id = get_the_ID();
 
 		    		<?php
 
-		    		if( $start_date ){
+		    		if( $event_times ){
 						echo sprintf(
 							'<div class="event-date-time">%4$s
 							<time class="tribe-events-calendar-list__event-datetime" datetime="%5$s"> 
-							%1$s %2$s - <span class="nowrap">%3$s</span></time>
+							%1$s %2$s %6$s <span class="nowrap">%3$s</span></time>
 							</div>',
-							esc_html( $start_date ),
-							esc_html( $start_time ),
-							esc_html( $end ),
+							esc_html( $event_times['start-date'] ),
+							esc_html( $event_times['start-time'] ),
+							esc_html( $event_times['end'] ),
 							$icons['calendar'],
-							esc_attr( $event_date_attr )
+							esc_attr( $event_date_attr ),
+							$event_times['end'] ? ' - ' : ''
 						);
 					}
 

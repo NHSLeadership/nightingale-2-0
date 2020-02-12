@@ -158,6 +158,52 @@ function nightingale_events_icons(){
 
 
 
+function nightingale_start_end_event( $date_format ){
+
+
+	$all_day = get_post_meta( get_the_id(), '_EventAllDay', true );
+
+	$time_format = get_option( 'time_format', Tribe__Date_Utils::TIMEFORMAT ); // get time format
+	$event_date_attr = tribe_get_start_date( null, false, Tribe__Date_Utils::DBDATEFORMAT );
+	$start_date = tribe_get_start_date( null, false, $date_format ); // start date in correct format
+
+	$start_time = ! $all_day ? tribe_get_start_date( null, false, $time_format ) : ''; // start time in time format
+	$end_date = tribe_get_end_date( null, false, $date_format ); // end date in correct format
+	$end_time = ! $all_day ? tribe_get_end_date( null, false, $time_format ) : ''; // end time in time format
+	$end = $end_date === $start_date ? $end_time : $end_date . ' ' . $end_time; // if start and end date are the same, just show the time
+
+	return array(
+		'start-date' => $start_date,
+		'start-time' => $start_time,
+		'end-date'   => $end_date,
+		'end-time'   => $end_time,
+		'end'        => $end,
+		'all_day'    => $all_day
+	);
+}
+
+
+/**
+ * Enqueue scripts and styles.
+ */
+
+function nightingale_events_scripts() {
+
+	if( is_post_type_archive( 'tribe_events' ) ){
+
+		$event_js = '/js/events-category.js';
+
+		wp_enqueue_script( 'nightingale-events-cat', get_template_directory_uri() . $event_js, array('jquery'), filemtime( get_template_directory() . $event_js ), true );
+	}
+	
+}
+
+add_action( 'wp_enqueue_scripts', 'nightingale_events_scripts' );
+
+
+
+
+
 /**
  * Redirect event category requests to list view.
  *
@@ -165,7 +211,7 @@ function nightingale_events_icons(){
  */
 function use_list_view_for_categories( $query ) {
 	// Disregard anything except a main archive query
-	if ( is_admin() || ! $query->is_main_query() || ! is_archive() ) return;
+	if ( is_admin() || $query->is_main_query() || ! is_archive() ) return;
 
 	// We only want to catch *event* category requests being issued
 	// against something other than list view
