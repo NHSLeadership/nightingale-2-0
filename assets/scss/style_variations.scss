@@ -244,10 +244,19 @@ button.tribe-events-c-top-bar__datepicker-button{
 }
 
 .tribe-events-header__top-bar{
-  .events-dropdown{
+  .events-dropdown{    
     font-size: 16px;
     padding-right: 10px;
+    margin-top: 8px;
+
+    @media screen and (min-width: 832px) {
+      margin-top: 0px;
+    }
   }
+}
+
+.tribe-events .tribe-events-header{
+  align-items: flex-end;
 }
 
 .tribe-events .tribe-events-c-events-bar__search-filters-container{

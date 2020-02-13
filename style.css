@@ -12469,7 +12469,18 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 
 .tribe-events-header__top-bar .events-dropdown {
   font-size: 16px;
-  padding-right: 5px;
+  padding-right: 10px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 832px) {
+  .tribe-events-header__top-bar .events-dropdown {
+    margin-top: 0px;
+  }
+}
+
+.tribe-events .tribe-events-header {
+  align-items: flex-end;
 }
 
 @media screen and (min-width: 832px) {
