@@ -41,7 +41,7 @@ function nightingale_render_colourpicker( $post ) {
 
     ?>
 
-		<label for="color-picker"><?php _e( 'Choose colour for the page', 'nightingale' ); ?></label>
+		<label for="color-picker"><?php _e( 'Choose colour for the page. (Refresh the page for changes to take effect.)', 'nightingale' ); ?></label>
         <select id="color-picker" name="color-picker" class="widefat">
         	<?php foreach ( $theme_colours as $name => $colour ):?>
 
@@ -81,3 +81,39 @@ function nightingale_save_colourpicker( $post_id ) {
 
 }
 add_action( 'save_post', 'nightingale_save_colourpicker' );
+
+
+add_filter( 'admin_body_class', 'nightingale_admin_body_class' );
+
+/**
+ * Adds one or more classes to the body tag in the dashboard.
+ *
+ * @link https://wordpress.stackexchange.com/a/154951/17187
+ * @param  String $classes Current body classes.
+ * @return String          Altered body classes.
+ */
+function nightingale_admin_body_class( $classes ) {
+
+    global $pagenow;
+
+    if ( $pagenow != 'post.php' && $pagenow != 'post-new.php' ){
+        return;
+    }
+
+    $page_color = get_post_meta( get_the_id(), 'page-color', true );
+
+    if( $page_color ){
+
+        $extra_styles = $page_color ? 'page-style--' . $page_color : '';
+        return "$classes $extra_styles";
+
+    }else{
+        return "$classes $extra_styles";
+    }
+
+}
+
+
+
+
+
