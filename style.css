@@ -12226,10 +12226,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   min-height: 80px;
 }
 
-.nhsuk-header--transactional .nhsuk-header__search {
-  height: 1rem;
-}
-
 .nhsuk-header--transactional .nhsuk-header__link {
   width: auto;
   display: inline-block;
@@ -12242,7 +12238,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 .nhsuk-header--organisation .nhsuk-header__logo .nhsuk-header__link:hover {
-  box-shadow: 0 0 0 4px #ffcd60;
+  box-shadow: 0 0 0 4px #ffb81C;
 }
 
 /*
