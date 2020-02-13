@@ -191,7 +191,8 @@ function nightingale_start_end_event( $date_format ){
 		'end-date'   => $end_date,
 		'end-time'   => $end_time,
 		'end'        => $end,
-		'all_day'    => $all_day
+		'all_day'    => $all_day,
+		'event_date_attr' => $event_date_attr,
 	);
 }
 

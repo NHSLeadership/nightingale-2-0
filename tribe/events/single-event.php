@@ -84,7 +84,7 @@ $event_id = get_the_ID();
 							esc_html( $event_times['start-time'] ),
 							esc_html( $event_times['end'] ),
 							$icons['calendar'],
-							esc_attr( $event_date_attr ),
+							esc_attr( $event_times['event_date_attr'] ),
 							$event_times['end'] ? ' - ' : ''
 						);
 					}

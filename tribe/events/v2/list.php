@@ -47,8 +47,6 @@ $sidebar = nightingale_show_sidebar();
 		<header <?php tribe_classes( $header_classes ); ?>>
 			<?php $this->template( 'components/messages' ); ?>
 
-			<?php // $this->template( 'components/breadcrumbs' ); ?>
-
 			<?php $this->template( 'components/events-bar' ); ?>
 
 			<?php $this->template( 'list/top-bar' ); ?>
@@ -85,10 +83,6 @@ $sidebar = nightingale_show_sidebar();
 		</div>
 
 		<?php $this->template( 'list/nav' ); ?>
-
-		
-
-		<?php // $this->template( 'components/ical-link' ); ?>
 
 		<?php $this->template( 'components/after' ); ?>
 
