@@ -5,6 +5,8 @@
 
   border-top: 2px solid #005eb8;
   margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
     h2 {
       font-size: 20px;
@@ -13,7 +15,7 @@
       margin-bottom: 16px;
       padding-top: 16px;
 
-      a{
+      a {
         text-decoration: none;
       }
 
@@ -32,12 +34,12 @@
       }
     }
 
-    ul {
+    ul, ol {
       list-style: none;
       margin-bottom: 16px;
       padding-left: 0;
 
-      li {
+      li, h4 {
 
         font-size: 14px;
         font-size: .875rem;
@@ -52,6 +54,7 @@
 
         a {
           @extend .nhsuk-list-panel__link;
+          padding: 0;
         }
       }
     }
@@ -149,6 +152,3 @@
       }
   }
 }
-
-
-
