@@ -12316,6 +12316,46 @@ aside#secondary > section {
   vertical-align: middle;
 }
 
+.navigation {
+  position: relative;
+}
+
+.nhsuk-pagination-item--previous,
+.nhsuk-pagination-item--next {
+  position: relative;
+  z-index: 5;
+}
+
+.nhsuk-pagination-numbers {
+  clear: both;
+  text-align: center;
+  border-top: 1px solid #aeb7bd;
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .nhsuk-pagination-numbers {
+    border: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+.nhsuk-pagination-numbers a,
+.nhsuk-pagination-numbers span {
+  display: inline-block;
+  padding: 0px 5px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.clear:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
 #secondary section {
   background: #ffffff;
   margin-top: 32px;

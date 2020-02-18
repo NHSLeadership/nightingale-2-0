@@ -14,7 +14,7 @@ get_header();
 $sidebar = nightingale_show_sidebar();
 
 ?>
-	<div id="primary" class=" nhsuk-grid-row">
+	<div id="primary">
 		<header class="page-header">
 			<?php
 			the_archive_title( '<h1 class="page-title">', '</h1>' );
