@@ -12278,10 +12278,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   min-height: 80px;
 }
 
-.nhsuk-header--transactional .nhsuk-header__search {
-  height: 1rem;
-}
-
 .nhsuk-header--transactional .nhsuk-header__link {
   width: auto;
   display: inline-block;
