@@ -33,6 +33,9 @@ this repo for quick action.
  - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will be prompted as a suggested install on theme 
      activation and is a requirement for the NHS Blocks plugin. This extends the native Gutenberg WP functionality to 
      include latest developments.
+- [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) - This is an easy way to install the Google Tag Manager code
+  on your site. Once installed and activated go to Settings -> Google Tag Manager and enter your Google Tag Manager ID in the box. Under 'Container code placement'
+  choose 'Custom (needs tweak in your template)'. You don't need to add anything else to the theme as this code has been added for you.
      
       
 ## Feedback / Improvement / Development

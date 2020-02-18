@@ -9,7 +9,6 @@
  * @version 2.0 January 2020
  */
 
-
 if( is_single() ):
 	// if is single show existing template
 	get_template_part('template-parts/content');
@@ -44,8 +43,12 @@ $sidebar = ( 'true' === get_theme_mod('blog_sidebar') );
 	    
 	    <div class="nhsuk-promo__content">
 	      <?php the_title('<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
-	      
-	        <?php the_excerpt(); ?>
+
+	      <?php do_action('nightingale_before_archive_content'); ?>
+      
+	      <?php the_excerpt(); ?>
+
+	      <?php do_action('nightingale_after_archive_content'); ?>
 	      
 	    </div>
 	  </a>
