@@ -3142,6 +3142,7 @@ b {
 }
 
 .nhsuk-back-link__link:hover {
+  color: #7C2855;
   text-decoration: underline;
 }
 
@@ -3254,6 +3255,14 @@ b {
   background: none;
 }
 
+.nhsuk-breadcrumb__link:visited {
+  color: #005eb8;
+}
+
+.nhsuk-breadcrumb__link:visited:hover {
+  color: #7C2855;
+}
+
 .nhsuk-breadcrumb__back {
   font-weight: 400;
   font-size: 14px;
@@ -3291,6 +3300,14 @@ b {
   left: -8px;
   /* [6] */
   position: relative;
+}
+
+.nhsuk-breadcrumb__backlink:visited {
+  color: #005eb8;
+}
+
+.nhsuk-breadcrumb__backlink:visited:hover {
+  color: #7C2855;
 }
 
 /**
@@ -3384,6 +3401,10 @@ b {
   outline: 4px solid transparent;
 }
 
+.nhsuk-button:focus:visited, .wp-block-button__link:focus:visited, .wp-block-file__button:focus:visited, .wp-block-file a.wp-block-file__button:focus:visited, #login #loginform #wp-submit:focus:visited {
+  color: #ffffff;
+}
+
 .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active {
   background: #00401e;
   box-shadow: none;
@@ -3463,6 +3484,10 @@ b {
 
 .nhsuk-button--reverse:link {
   color: #212b32;
+}
+
+.nhsuk-button--reverse:link:active {
+  color: #ffffff;
 }
 
 .nhsuk-button--reverse.nhsuk-button--disabled {
@@ -3606,6 +3631,7 @@ b {
  * 4. 'Random number' for the heading triangle positioning.
  * 5. 'Random number' used for spacing to compensate for the triangle.
  * 6. Needed to enable the triangle to show correctly in high contrast mode.
+ * 7. Prevent additional padding on headings
  */
 .nhsuk-care-card {
   margin-bottom: 40px;
@@ -3685,6 +3711,8 @@ b {
   font-size: 1.25rem;
   line-height: 1.4;
   margin: 0;
+  padding-top: 0;
+  /* [7] */
 }
 
 @media (min-width: 40.0625em) {
@@ -4232,12 +4260,13 @@ b {
   color: #212b32;
   outline: 4px solid transparent;
   text-decoration: none;
-  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  background-size: 32px 32px;
 }
 
 .nhsuk-expander .nhsuk-details__summary-text {
   background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
-  background-size: 32px;
+  background-size: 32px 32px;
   color: #005eb8;
   cursor: pointer;
   display: inline-block;
@@ -4280,8 +4309,9 @@ b {
 }
 
 .nhsuk-expander[open] .nhsuk-details__summary:focus .nhsuk-details__summary-text {
-  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
   /* [3] */
+  background-size: 32px 32px;
 }
 
 .nhsuk-expander[open] .nhsuk-details__summary:focus:hover .nhsuk-details__summary-text {
@@ -4291,7 +4321,7 @@ b {
 .nhsuk-expander[open] .nhsuk-details__summary-text {
   background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
   /* [3] */
-  background-size: 32px;
+  background-size: 32px 32px;
 }
 
 .nhsuk-expander-group {
@@ -4928,6 +4958,7 @@ b {
  * 15. IE 9 alternative for flexbox
  * 16. Use non variable colour to follow NHS England guidelines on logo colour
  * 17. On print stylesheets remove the header link
+ * 18. Remove random top margin in Safari
  */
 /* ==========================================================================
    COMPONENTS / #HEADER / #AUTOCOMPLETE
@@ -5653,6 +5684,13 @@ b {
 @media (max-width: 40.0525em) {
   .nhsuk-header__menu-toggle {
     right: 48px;
+  }
+}
+
+@media (min-width: 40.0625em) and (max-width: 61.865em) {
+  .nhsuk-header__menu-toggle {
+    margin-top: 0;
+    /* [18] */
   }
 }
 
@@ -7624,6 +7662,10 @@ b {
 
 .nhsuk-pagination__link:visited:hover .nhsuk-icon {
   fill: #7C2855;
+}
+
+.nhsuk-pagination__link:visited:focus .nhsuk-icon {
+  fill: #212b32;
 }
 
 .nhsuk-pagination__title {
@@ -10749,6 +10791,11 @@ section {
 
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
   fill: #ffffff;
+}
+
+#primary .widget-title a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .nhsuk-content__clearfix {
