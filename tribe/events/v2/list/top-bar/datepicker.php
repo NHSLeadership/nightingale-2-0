@@ -49,7 +49,7 @@ $icons = nightingale_events_icons();
 			data-js="tribe-events-top-bar-datepicker-button"
 			type="button"
 		>
-		
+
 			<time
 				datetime="<?php echo esc_attr( $selected_start_datetime ); ?>"
 				class="tribe-events-c-top-bar__datepicker-time"
@@ -85,16 +85,16 @@ $icons = nightingale_events_icons();
 				</time>
 			<?php endif; ?>
 
-			<?php echo $icons['calendar']; ?>
-		
-		</button>	
-		
+			<?php echo esc_html( $icons['calendar'] ); ?>
+
+		</button>
+
 
 		<label
 			class="tribe-events-c-top-bar__datepicker-label tribe-common-a11y-visual-hide"
 			for="tribe-events-top-bar-date"
 		>
-			<?php esc_html_e( 'Select date.', 'the-events-calendar' ); ?>
+			<?php esc_html_e( 'Select date.', 'nightingale' ); ?>
 		</label>
 		<input
 			type="text"

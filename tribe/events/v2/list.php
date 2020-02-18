@@ -38,7 +38,7 @@ $sidebar = nightingale_show_sidebar();
 	<?php endforeach; ?>
 >
 
-		<?php $this->template( 'components/loader', [ 'text' => __( 'Loading...', 'the-events-calendar' ) ] ); ?>
+		<?php $this->template( 'components/loader', [ 'text' => __( 'Loading...', 'nightingale' ) ] ); ?>
 
 		<?php $this->template( 'components/data' ); ?>
 
@@ -69,14 +69,14 @@ $sidebar = nightingale_show_sidebar();
 
 					<?php endforeach; ?>
 
-				</div>			
+				</div>
 
 			</div>
 
-			<?php 
+			<?php
 			if( $sidebar ):
 
-			get_template_part('tribe/events/sidebar-events'); 
+			get_template_part('tribe/events/sidebar-events');
 
 			endif;?>
 

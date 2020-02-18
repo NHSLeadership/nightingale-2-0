@@ -39,19 +39,19 @@ $base_url = esc_url_raw( trailingslashit( get_home_url() . '/' .  tribe_get_opti
 	</label>
 
 	<select name="select-1" id="select-1" class="nhsuk-select">
-		<option value="<?php echo $base_url; ?>"><?php echo esc_html__('All events', 'nightingale' );?></option>
+		<option value="<?php echo esc_attr( $base_url ); ?>"><?php echo esc_html__('All events', 'nightingale' );?></option>
 
-		<?php foreach ( $event_terms as $term ): 
+		<?php foreach ( $event_terms as $tribeterm ):
 
-			$selected = $current_tax === $term->slug ? 'selected' : '';
+			$selected = $current_tax === $tribeterm->slug ? 'selected' : '';
 		?>
 
-			<option value="<?php echo $base_url . 'category/' . $term->slug . '/'; ?>" <?php echo $selected; ?> >
-				<?php echo $term->name; ?>					
+			<option value="<?php echo esc_attr( $base_url . 'category/' . $tribeterm->slug . '/' ); ?>" <?php echo esc_attr( $selected ); ?> >
+				<?php echo esc_html( $tribeterm->name ); ?>
 			</option>
 
 		<?php endforeach; ?>
-		
+
 	</select>
 
 </div>
