@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Meta Box for choosing the page colour on a page
+ *
+ * @package Nightingale-2-0
+ * @copyright NHS Leadership Academy, Very Twisty
+ * @version 1.1 21st August 2019
+ */
+
 // Tutorial found here:
 // https://code.tutsplus.com/tutorials/creating-upcoming-events-plugin-in-wordpress-custom-post-type-and-the-dashboard--wp-35404
 
@@ -36,7 +44,7 @@ function nightingale_render_colourpicker( $post ) {
     // get previously saved meta values (if any)
     $sidebar = esc_attr( get_post_meta( $post->ID, 'page-color', true ) );
 
-    $theme_colours = get_theme_colours();
+    $theme_colours = nightingale_get_theme_colours();
 
 
     ?>

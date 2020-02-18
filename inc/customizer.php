@@ -214,7 +214,7 @@ function nightingale_customize_register( $wp_customize ) {
 			'description' => esc_html__( 'If you wish to change the default colour of the theme, this is where you do it. Please note, this will disable the inline critical-css and may have a slight performance impact on your visible loadtimes. It may also affect the accessability of your site.', 'nightingale' ),
 			'section'     => 'title_tagline',
 			'type'        => 'select',
-			'choices'     => get_theme_colours()
+			'choices'     => nightingale_get_theme_colours()
 		)
 	);
 

@@ -9,3 +9,50 @@
     background-color: $colour;
   }
 }
+
+@each $name, $colour in $page-colours {
+
+	.page-style--#{$name}{
+
+		#secondary section h2.widget-title, 
+		.nhsuk-panel-with-label__label, 
+		#secondary section #wp-calendar caption,
+		.nhsuk-do-dont-list__label,
+		.nhsuk-care-card .nhsuk-care-card__heading-container,
+		.nhsuk-hero--image-description .nhsuk-hero-content {
+
+			background-color: $colour;
+			background: $colour;
+			color: $color_nhsuk-white;
+
+		}
+
+		.nhsuk-details__summary,
+		.nhsuk-details__summary-text,
+		.nhsuk-promo__heading,
+		a{
+			color: $colour;
+		}
+
+		a.nhsuk-button{
+			color: $color_nhsuk-white;
+		}
+		a.nhsuk-button.is-style-reverse{
+			color: $color_nhsuk-black;
+		}
+
+		.nhsuk-inset-text,
+		.nhsuk-care-card__arrow:before,
+		.nhsuk-care-card__arrow:after,
+		.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before, 
+		.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+		#secondary section{
+			border-color: $colour;
+		}
+
+		.nhsuk-icon__search{
+			fill: $colour;
+		}
+	}
+
+}
