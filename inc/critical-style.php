@@ -20,17 +20,17 @@ function nightingale_custom_colour_theme() {
 	?>
 	<style type="text/css">
 		.nhsuk-header, .nhsuk-header--white .nhsuk-search__submit, .nhsuk-header__navigation, #secondary section h2.widget-title, .nhsuk-panel-with-label__label, #secondary section #wp-calendar caption {
-			background-color: #<?php echo $theme_colour; ?>;
-			background: #<?php echo $theme_colour; ?>;
+			background-color: #<?php echo esc_attr( $theme_colour ); ?>;
+			background: #<?php echo esc_attr( $theme_colour ); ?>;
 		}
 
 		a {
-			color: #<?php echo $theme_colour; ?>
+			color: #<?php echo esc_attr( $theme_colour ); ?>
 		}
 
 		.nhsuk-footer,
 		#secondary section {
-			border-top-color: #<?php echo $theme_colour; ?>
+			border-top-color: #<?php echo esc_attr( $theme_colour ); ?>
 		}
 	</style>
 	<?php

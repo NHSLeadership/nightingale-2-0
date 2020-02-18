@@ -178,7 +178,7 @@ function nightingale_comment_display( $comment, $args, $depth ) {
 	<div class="comment-author vcard">
 		<?php
 		/* translators: s: link to author */
-		printf( __( '<cite class="fn">%s</cite>', 'nightingale' ), get_comment_author_link() );
+		printf( __( '<cite class="fn">%s</cite>', 'nightingale' ), get_comment_author_link() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		?>
 		<div class="comment-meta commentmetadata">
 			<?php

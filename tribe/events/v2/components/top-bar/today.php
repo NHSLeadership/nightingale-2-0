@@ -21,5 +21,5 @@
 	class="tribe-common-c-btn-border tribe-events-c-top-bar__today-button tribe-common-a11y-hidden nhsuk-button"
 	data-js="tribe-events-view-link"
 >
-	<?php esc_html_e( 'Show all events', 'the-events-calendar' ); ?>
+	<?php  esc_html_e( 'Show all events', 'nightingale' ); ?>
 </a>

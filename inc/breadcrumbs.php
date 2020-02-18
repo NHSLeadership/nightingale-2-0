@@ -129,14 +129,14 @@ function nightingale_breadcrumb() {
 								$cat_parents = nightingale_category_parents( $parent_cat, true, '', false, array(), true );
 							}
 							if ( 0 !== $this_cat->parent && ! is_wp_error( $cat_parents ) ) {
-								echo $cat_parents;
+								echo $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							}
 							echo '<li class="nhsuk-breadcrumb__item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';
 						} elseif( is_post_type_archive( 'tribe_events' ) ){
 							?>
 							<li class="nhsuk-breadcrumb__item">
 							<?php
-							echo tribe_get_event_label_plural();
+							echo esc_html( tribe_get_event_label_plural() );
 							?>
 							</li>
 							<?php
@@ -144,7 +144,7 @@ function nightingale_breadcrumb() {
 							?>
 							<li class="nhsuk-breadcrumb__item">
 							<?php
-							_e( 'Archives', 'nightingale' );
+							esc_html_e( 'Archives', 'nightingale' );
 							?>
 							</li>
 							<?php
@@ -152,7 +152,7 @@ function nightingale_breadcrumb() {
 							?>
 							<li class="nhsuk-breadcrumb__item">
 							<?php
-							_e( 'Search Results', 'nightingale' );
+							esc_html_e( 'Search Results', 'nightingale' );
 							?>
 							</li>
 							<?php
@@ -160,7 +160,7 @@ function nightingale_breadcrumb() {
 							?>
 							<li class="nhsuk-breadcrumb__item">
 							<?php
-							_e( '404 Not Found', 'nightingale' );
+							esc_html_e( '404 Not Found', 'nightingale' );
 							?>
 							</li>
 							<?php
@@ -169,7 +169,7 @@ function nightingale_breadcrumb() {
 							$category_id = get_cat_ID( $category[0]->cat_name );
 							$cat_parents = nightingale_category_parents( $category_id, true, '', false, array(), true );
 							if ( ! is_wp_error( $cat_parents ) ) {
-								echo $cat_parents;
+								echo $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							}
 						} elseif ( is_singular( 'attachment' ) ) {
 							?>
@@ -183,7 +183,7 @@ function nightingale_breadcrumb() {
 							?>
 							<li class="nhsuk-breadcrumb__item">
 								<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" >
-									<?php echo tribe_get_event_label_plural(); ?>
+									<?php echo esc_html( tribe_get_event_label_plural() ); ?>
 								</a>
 							</li>
 							<?php
@@ -215,7 +215,7 @@ function nightingale_breadcrumb() {
 							}
 						}
 						if( ! ( is_archive() || is_category() || is_post_type_archive() ) ){
-		
+
 						?>
 
 						<li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li>
@@ -224,7 +224,7 @@ function nightingale_breadcrumb() {
 					</ol>
 					<p class="nhsuk-breadcrumb__back">
 						<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">
-							<?php echo __( 'Back to ', 'nightingale' ) . $back_one_level[1]; ?>
+							<?php echo esc_html_e( 'Back to ', 'nightingale' ) . esc_html( $back_one_level[1] ); ?>
 						</a>
 					</p>
 				<?php } // end of LearnDash / Uncanny Toolkit conditional ?>

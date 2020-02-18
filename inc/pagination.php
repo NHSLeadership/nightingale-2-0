@@ -64,7 +64,7 @@ function nightingale_archive_pagination() {
 
 		$pagination .= "</li></ul></nav></div>";
 
-		echo $pagination;
+		echo $pagination; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
 

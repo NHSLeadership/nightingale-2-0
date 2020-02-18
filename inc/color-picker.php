@@ -37,10 +37,10 @@ add_action( 'add_meta_boxes', 'nightingale_colourpicker_metabox' );
 
 
 function nightingale_render_colourpicker( $post ) {
- 
+
     // generate a nonce field
     wp_nonce_field( basename( __FILE__ ), 'nightingale-colour-picker-nonce' );
- 
+
     // get previously saved meta values (if any)
     $sidebar = esc_attr( get_post_meta( $post->ID, 'page-color', true ) );
 
@@ -49,17 +49,17 @@ function nightingale_render_colourpicker( $post ) {
 
     ?>
 
-		<label for="color-picker"><?php _e( 'Choose colour for the page. (Refresh the page for changes to take effect.)', 'nightingale' ); ?></label>
+		<label for="color-picker"><?php _esc_html_e( 'Choose colour for the page. (Refresh the page for changes to take effect.)', 'nightingale' ); ?></label>
         <select id="color-picker" name="color-picker" class="widefat">
         	<?php foreach ( $theme_colours as $name => $colour ):?>
 
         		<?php $select = $sidebar === esc_attr( sanitize_title( $colour ) ) ? 'selected' : ''; ?>
-				
-				<option value="<?php echo esc_attr( sanitize_title( $colour ) ); ?>" <?php echo $select; ?> ><?php echo esc_attr( $colour ); ?></option>
+
+				<option value="<?php echo esc_attr( sanitize_title( $colour ) ); ?>" <?php echo esc_attr( $select ); ?> ><?php echo esc_attr( $colour ); ?></option>
 
         	<?php endforeach; ?>
 		</select>
-<?php 
+<?php
 
 }
 
@@ -76,14 +76,20 @@ function nightingale_save_colourpicker( $post_id ) {
 
     $is_autosave = wp_is_post_autosave( $post_id );
 	$is_revision = wp_is_post_revision( $post_id );
-	$is_valid_nonce = ( isset( $_POST['nightingale-colour-picker-nonce'] ) && ( wp_verify_nonce( $_POST['nightingale-colour-picker-nonce'], basename( __FILE__ ) ) ) ) ? true : false;
+	if ( isset( $_POST['nightingale-colour-picker-nonce'] ) ) {
+		$nightingale_colour_picker_nonce = sanitize_text_field( wp_unslash( $_POST['nightingale-colour-picker-nonce'] ) );
+	} else {
+		$nightingale_colour_picker_nonce = '';
+    }
+	$is_valid_nonce = ( isset( $_POST['nightingale-colour-picker-nonce'] ) && ( wp_verify_nonce( $nightingale_colour_picker_nonce, basename( __FILE__ ) ) ) ) ? true : false;
 
 	if ( $is_autosave || $is_revision || ! $is_valid_nonce ) {
 	    return;
 	}
 
     if ( isset( $_POST['color-picker'] ) ) {
-        update_post_meta( $post_id, 'page-color', esc_attr( $_POST['color-picker'] ) );
+        $colorpicker = sanitize_text_field( wp_unslash( $_POST['color-picker'] ) );
+        update_post_meta( $post_id, 'page-color', esc_attr( wp_unslash( $colorpicker ) ) );
     }
 
 

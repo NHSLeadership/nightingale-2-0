@@ -8,6 +8,7 @@
         @extend .nhsuk-header__navigation-item;
         a {
           @extend .nhsuk-header__navigation-link;
+          height: 100%;
         }
       }
     }
@@ -38,6 +39,11 @@
       background-color: transparent;
     }
   }
+  .nhsuk-search__input {
+    border-radius: 4px 0 0 4px;
+    border: 0px;
+    width: 15rem;
+  }
   &.nhsuk-header--white {
     .nhsuk-header__search-wrap input[type="text"] {
       border: 1px solid $nhsuk-border-color;
@@ -61,8 +67,9 @@
       }
     }
 
-    input[type="text"] {
+    .nhsuk-search__input {
       border-radius: 4px 0 0 4px;
+      border: 1px solid $color_nhsuk-light-grey;
       border-right: none;
     }
 

@@ -21,7 +21,7 @@ get_header();
 								<h3 class="nhsuk-panel-with-label__label"><?php echo esc_html__( 'Oops', 'nightingale' ); ?></h3>
 								<div class="paneltext">
 									<p><?php echo esc_html__( 'Sorry, this page can\'t be found at the moment, please use the search facility below, or alternatively return home', 'nightingale' ); ?></p>
-									<a class="wp-block-nhsblocks-nhsbutton alignright nhsuk-button" href="<?php echo get_home_url(); ?>"><?php echo esc_html__( 'Home Page', 'nightingale' ); ?></a>
+									<a class="wp-block-nhsblocks-nhsbutton alignright nhsuk-button" href="<?php echo esc_attr( get_home_url() ); ?>"><?php echo esc_html__( 'Home Page', 'nightingale' ); ?></a>
 									<?php
 									get_search_form();
 									?>

@@ -30,7 +30,7 @@
 				$readmoretitle = esc_html( get_the_title() );
 				if ( strlen( $readmoretitle ) < 1 ) {
 					$readmoretitle = esc_html__( 'this post', 'nightingale' );
-					echo '<div class="nhsuk-readmore">' . nightingale_read_more_posts( $readmoretitle, $readmorelink ) . '</div>';
+					echo '<div class="nhsuk-readmore">' . nightingale_read_more_posts( $readmoretitle, $readmorelink ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 				?>
 				</p>

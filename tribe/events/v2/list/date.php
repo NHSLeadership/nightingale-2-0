@@ -24,16 +24,16 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
 	<?php if ( $event->featured ) : ?>
 		<em
 			class="tribe-events-calendar-list__event-datetime-featured-icon tribe-common-svgicon tribe-common-svgicon--featured"
-			aria-label="<?php esc_attr_e( 'Featured', 'the-events-calendar' ); ?>"
-			title="<?php esc_attr_e( 'Featured', 'the-events-calendar' ); ?>"
+			aria-label="<?php esc_attr_e( 'Featured', 'nightingale' ); ?>"
+			title="<?php esc_attr_e( 'Featured', 'nightingale' ); ?>"
 		>
 		</em>
 		<span class="tribe-events-calendar-list__event-datetime-featured-text tribe-common-a11y-visual-hide">
-			<?php esc_html_e( 'Featured', 'the-events-calendar' ); ?>
+			<?php esc_html_e( 'Featured', 'nightingale' ); ?>
 		</span>
 	<?php endif; ?>
 	<time class="tribe-events-calendar-list__event-datetime" datetime="<?php echo esc_attr( $event_date_attr ); ?>">
-		<?php echo $event->schedule_details->value(); ?>
+		<?php echo esc_html( $event->schedule_details->value() ); ?>
 	</time>
 	<?php $this->template( 'list/event/date/meta', [ 'event' => $event ] ); ?>
 </div>

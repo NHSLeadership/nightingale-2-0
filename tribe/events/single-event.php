@@ -25,7 +25,9 @@ $event_id = get_the_ID();
 <div id="tribe-events-content" class="tribe-events-single">
 
 	<p class="tribe-events-back">
-		<a href="<?php echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html_x( 'All %s', '%s Events plural label', 'the-events-calendar' ), $events_label_plural ); ?></a>
+		<a href="<?php
+		/* translators: %s: events. */
+        echo esc_url( tribe_get_events_link() ); ?>"> <?php printf( '&laquo; ' . esc_html_x( 'All %s', '%s Events plural label', 'nightingale' ), esc_html( $events_label_plural ) ); ?></a>
 	</p>
 
 	<!-- Notices -->
@@ -46,7 +48,7 @@ $event_id = get_the_ID();
 
 		<div class= "nhsuk-grid-row">
 			<div class="nhsuk-grid-column-one-half">
-				<?php 
+				<?php
 
 				    if( has_post_thumbnail() ):
 
@@ -58,9 +60,9 @@ $event_id = get_the_ID();
 
 				    	if( $fallback ){
 				    		echo wp_get_attachment_image( $fallback, 'large', false, ['class' => 'nhsuk-promo__img'] );
-				    	}	    	
+				    	}
 
-				    endif; 
+				    endif;
 
 				?>
 
@@ -83,9 +85,9 @@ $event_id = get_the_ID();
 							esc_html( $event_times['start-date'] ),
 							esc_html( $event_times['start-time'] ),
 							esc_html( $event_times['end'] ),
-							$icons['calendar'],
+							$icons['calendar'], // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							esc_attr( $event_times['event_date_attr'] ),
-							$event_times['end'] ? ' - ' : ''
+							esc_html( $event_times['end'] ? ' - ' : '')
 						);
 					}
 
@@ -100,15 +102,18 @@ $event_id = get_the_ID();
 							esc_html( tribe_get_address() ),
 							esc_html( tribe_get_city() ),
 							esc_html( tribe_get_zip() ),
-							$icons['marker']
+							$icons['marker'] // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 						);
 					}
 
 					if ( tribe_get_cost() ) : ?>
-						<div class="events-cost"><?php echo $icons['wallet']; ?> <span><?php echo tribe_get_cost( null, true ) ?></span></div>
+						<div class="events-cost">
+                            <?php echo $icons['wallet']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+                            <span><?php echo esc_html( tribe_get_cost( null, true ) ) ?></span>
+                        </div>
 					<?php endif; ?>
 
-					
+
 
 				</div>
 
@@ -124,7 +129,7 @@ $event_id = get_the_ID();
 		</div>
 
 		<?php do_action( 'tribe_events_single_event_before_the_meta' ); ?>
-		
+
 
 		<?php
 
@@ -135,36 +140,36 @@ $event_id = get_the_ID();
 
 		if ( $organizer_ids ) { ?>
 
-			
+
 
 		<h3><?php esc_html_e('Questions about this event?', 'nightingale'); ?></h3>
 
 		<p>Organiser<?php if($multiple): echo 's'; endif; ?>:
 
 		<?php foreach ( $organizer_ids as $organizer ):
-			echo tribe_get_organizer_link( $organizer );
+			echo tribe_get_organizer_link( $organizer ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			if( $multiple ): echo ', '; endif;
 		endforeach; ?>
-		</p>	
+		</p>
 
-		<?php 
+		<?php
 
 		if( $email ):
 
 			echo sprintf(
-				__( '<p><stong>Email:</stong> <a href="mailto:%1$s?subject=%2$s">%1$s</a></p>', 'nightingale' ),
-				$email,
-				get_the_title()
+			/* translators: %1: email. */
+			/* translators: %2: email subject. */
+				__( '<p><stong>Email:</stong> <a href="mailto:%1$s?subject=%2$s">%1$s</a></p>', 'nightingale' ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				esc_html( $email ),
+				get_the_title() // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			);
 
 		endif;
 
 		if( $phone ):
 
-			echo sprintf(
-				__( '<p>Phone: %s</p>', 'nightingale' ),
-				$phone 
-			);
+			/* translators: %s: Phone number. */
+			echo sprintf( esc_html ( __( '<p>Phone: %s</p>', 'nightingale' ) ),	esc_html( $phone ) );
 
 		endif;
 
@@ -172,7 +177,7 @@ $event_id = get_the_ID();
 
 
 		$map_exists = tribe_embed_google_map();
-		$map = tribe_get_embedded_map( get_the_id(), '100%', '400px', false );
+		$tribemap = tribe_get_embedded_map( get_the_id(), '100%', '400px', false );
 
 		if( $map_exists ):
 
@@ -180,9 +185,9 @@ $event_id = get_the_ID();
 
 			<hr />
 
-			<?php 
+			<?php
 
-			echo $map; 
+			echo $tribemap; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		endif;
 

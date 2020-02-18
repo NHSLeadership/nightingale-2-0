@@ -11856,6 +11856,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   box-shadow: inset 0 0 0 4px #ffeb3b;
 }
 
+.nhsuk-search__input {
+  width: 15rem;
+}
+
 #cookie-notice {
   position: fixed;
   left: 0;
@@ -12783,6 +12787,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   overflow: hidden;
 }
 
+.nhsuk-header .nhsuk-header__navigation ul li a {
+  height: 100%;
+}
+
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 3px 0px 0px 3px;
 }
@@ -12810,6 +12818,12 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   background-color: transparent;
 }
 
+.nhsuk-header .nhsuk-search__input {
+  border-radius: 4px 0 0 4px;
+  border: 0px;
+  width: 15rem;
+}
+
 .nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type="text"] {
   border: 1px solid #d8dde0;
 }
@@ -12829,8 +12843,9 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border: 0px;
 }
 
-.nhsuk-header.nhsuk-header--white input[type="text"] {
+.nhsuk-header.nhsuk-header--white .nhsuk-search__input {
   border-radius: 4px 0 0 4px;
+  border: 1px solid #e8edee;
   border-right: none;
 }
 
