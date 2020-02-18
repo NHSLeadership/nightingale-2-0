@@ -33,6 +33,10 @@
   }
   a.nhsuk-header__transactional-service-name--link {
     font-weight: 700;
+    &:hover{
+      text-decoration: none;
+      background-color: transparent;
+    }
   }
   &.nhsuk-header--white {
     .nhsuk-header__search-wrap input[type="text"] {
@@ -101,8 +105,27 @@
   padding-bottom: 20px;
   min-height: 80px;
 }
+
 .nhsuk-header--transactional {
   .nhsuk-header__search {
     height: 1rem;
+  }
+  .nhsuk-header__link{
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+    height: auto;
+  }
+}
+
+.nhsuk-header__link:hover .nhsuk-logo{
+  box-shadow: none;
+}
+
+.nhsuk-header--organisation .nhsuk-header__logo{
+  .nhsuk-header__link:hover{
+
+    box-shadow: 0 0 0 4px $color_nhsuk-warm-yellow;
+
   }
 }

@@ -8,6 +8,9 @@ $color_nhsuk-pink: #ae2573;
 $color_nhsuk-light-purple: #704c9c;
 $color_nhsuk-light-green: #78be20;
 $color_nhsuk-dark-green: #006747;
+
+/* colour variable to be used with color-mixer.scss */
+
 $colours: (
         'white'         : $color_nhsuk-white,
         'nhs-blue' : $color_nhsuk-blue,
@@ -28,13 +31,21 @@ $colours: (
         'nhs-yellow'    : $color_nhsuk-yellow,
         'nhs-warm-yellow': $color_nhsuk-warm-yellow,
 );
-@each $name, $colour in $colours {
 
-  .has-#{$name}-color {
-    color: $colour;
-  }
+/* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
 
-  .has-#{$name}-background-color {
-    background-color: $colour;
-  }
-}
+$page-colours: (
+        'standard-nhs-blue-default' : $color_nhsuk-blue,
+        'dark-blue'                 : $color_nhsuk_dark-blue,
+        'bright-blue'               : $color_nhsuk-bright-blue,
+        'mid-grey'                  : $color_nhsuk-mid-grey,
+        'dark-grey'                 : $color-nhsuk-dark-grey,
+        'black'                     : $color_nhsuk-black,
+        'purple'                    : $color-nhsuk-purple,
+        'pink'                      : $color_nhsuk-pink,
+        'light-purple'              : $color_nhsuk-light-purple,
+        'emergency-services-red'    : $color_nhsuk-red,
+        'dark-green'                : $color_nhsuk-dark-green,
+        'light-green'               : $color_nhsuk-light-green,
+        'aqua-green'                : $color_nhsuk-aqua-green,
+);

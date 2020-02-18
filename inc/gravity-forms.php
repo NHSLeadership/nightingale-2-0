@@ -20,10 +20,13 @@ add_filter(
 		// Style error messages.
 		// Message at top of form.
 		$form_string = str_replace( 'validation_error', 'c-form-input is-error validation_error', $form_string );
+
 		// Fields with CSS class = "gfield_error".
 		$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
+
 		// Fields contained in <li> elements that have CSS class = "gfield_error".
 		$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );
+
 		// Error messages below fields.
 		$form_string = str_replace( 'validation_message', 'c-form-error validation_message', $form_string );
 
@@ -35,7 +38,7 @@ add_filter(
 		$form_string = str_replace( '/h3>', '/h2>', $form_string );
 
 		// Replace field description divs with <small> elements.
-		$form_string = preg_replace( "#<div class='gfield_description'>(.*?)</div>#", "<span class='nhsuk-hint'>$1</span>", $form_string );
+		$form_string = preg_replace( "#<div class='gfield_description'(.*?)</div>#", "<span class='nhsuk-hint'$1</span>", $form_string );
 
 		// Replace field instruction divs with <small> elements.
 		$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
@@ -46,10 +49,11 @@ add_filter(
 		// Replace main <label> elements with <strong>s.
 		$form_string = preg_replace( "#<label class='gfield_label'(.*?)>(.*?)</label>#", '', $form_string );
 
-
 		// Remove <ul>s around elements.
 		$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );
 
+		// Add nhsuk-form-group to form <li> elements.
+		$form_string = preg_replace( "#<li(.*?)field_(.*?)class='(.*?)#m", "<li$1field_$2class='nhsuk-form-group $3", $form_string);
 
 		// Style the submit button.
 		$form_string = str_replace( 'gform_button', 'nhsuk-button gform_button', $form_string );
@@ -81,18 +85,17 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$errorflag  = 0;
 		$grouperror = '';
 	}
-	$fieldset = '<div class="nhsuk-form-group' . $grouperror . '"><fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                                      <legend class="nhsuk-fieldset__legend">
-                                        ' . $field->label . '';
+	$label = '<label class="nhsuk-label" for="">' . $field->label;
+
 	if ( '' !== $field->isRequired ) {
-		$fieldset .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
+		$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
 	}
 	if ( 1 === $errorflag ) {
-		$fieldset .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
+		$label .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
 	}
-	$fieldset .= '</legend>';
+	$label .= '</label>';
 	if ( ! empty( $field->description ) ) {
-		$fieldset .= '<span class="nhsuk-hint">
+		$label .= '<span class="nhsuk-hint">
                                         ' . $field->description . '
                                       </span>';
 	}
@@ -141,10 +144,15 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 
 		// Selects.
 		case 'select':
+			// Replace li with field group
+			$field_content = str_replace( "ginput_container ginput_container_select", "ginput_container ginput_container_select nhsuk-dropdown", $field_content );
+			if ( $field->type == 'number' ) {
+				$field_content = preg_replace("#<input(.*?)class='#", "<input$1class='c-form-input ", $field_content);
+			}
 			if ( 1 === $errorflag ) {
-				$field_content = str_replace( 'gfield_select', 'nhsuk-select nhsuk-select--error', $field_content );
+				$field_content = str_replace( 'gfield_select', 'gfield_select nhsuk-select nhsuk-select--error', $field_content );
 			} else {
-				$field_content = str_replace( 'gfield_select', 'nhsuk-select', $field_content );
+				$field_content = str_replace( 'gfield_select', 'gfield_select nhsuk-select', $field_content );
 			}
 			break;
 
@@ -188,6 +196,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 
 		// Radio buttons.
 		case 'radio':
+		case 'quiz':
 			$field_content = str_replace( 'ginput_container_radio', 'nhsuk-radios', $field_content );
 			$field_content = str_replace( "<li class='", "<div class='nhsuk-radios__item ", $field_content );
 			$field_content = str_replace( '</li', '</div', $field_content );
@@ -281,9 +290,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 	}
 	$field_content = preg_replace( "#<label class='gfield_label(.*?)>(.*?)</label>#i", ' ', $field_content );
 
-
-	$ender     .= '</fieldset></div>';
-	$collection = $fieldset . $wrapper . $field_content . $ender;
+	$collection = $label . $wrapper . $field_content . $ender;
 
 	return $collection;
 };
