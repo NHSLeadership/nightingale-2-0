@@ -34,12 +34,12 @@ add_action( 'widgets_init', 'nightingale_widgets_events', 10 );
  * @return array
  */
 
-function tribe_remove_end_time_single( $formatting_details ) {
+function nightingale_remove_end_time_single( $formatting_details ) {
 	$formatting_details['show_end_time'] = 0;
 
 	return $formatting_details;
 }
-add_filter( 'tribe_events_event_schedule_details_formatting', 'tribe_remove_end_time_single', 10, 2);
+add_filter( 'tribe_events_event_schedule_details_formatting', 'nightingale_remove_end_time_single', 10, 2);
 
 
 
@@ -68,7 +68,7 @@ function nightingale_events_template_location(){
  * @return string
  */
 
-function tribe_additional_template_locations( $file, $template ) {
+function nightingale_additional_template_locations( $file, $template ) {
 
 	// this only works for old template files, not the new ones for now
 
@@ -92,7 +92,7 @@ function tribe_additional_template_locations( $file, $template ) {
 
 }
  
-add_filter( 'tribe_events_template', 'tribe_additional_template_locations', 10, 2 );
+add_filter( 'tribe_events_template', 'nightingale_additional_template_locations', 10, 2 );
 
 
 
