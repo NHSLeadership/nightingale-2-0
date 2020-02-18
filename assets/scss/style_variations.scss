@@ -83,3 +83,39 @@ aside#secondary > section{
 .nhsuk-icon__arrow-right-circle{
   vertical-align: middle;
 }
+
+.navigation{
+  position: relative;
+}
+.nhsuk-pagination-item--previous,
+.nhsuk-pagination-item--next{
+  position: relative;
+  z-index: 5;
+}
+
+.nhsuk-pagination-numbers{
+
+  clear: both;  
+  text-align: center;
+  border-top: 1px solid $color_nhsuk-grey-3;
+  padding-top: 10px;
+
+  @media (min-width: 768px) {
+    border: none;    
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+  } 
+
+  a,
+  span{
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+}
+
+.clear{
+  @include clearfix();
+}

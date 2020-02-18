@@ -122,7 +122,8 @@ penthouse({
         '.nhsuk-header__search-wrap input[type=text]',
         '.nhsuk-header .nhsuk-header__search-wrap input[type=text]',
         '.nhsuk-header.nhsuk-header--white input[type=text]',
-        '.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=text]'
+        '.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=text]',
+        '#primary.clear'
     ]
 })
     .then(criticalCss => {

@@ -377,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-p {
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description {
   margin-bottom: 1.5em;
 }
 
@@ -1055,12 +1055,12 @@ caption {
 /* ==========================================================================
    OBJECTS / #GRID
    ========================================================================== */
-.nhsuk-grid-row {
+.nhsuk-grid-row, .tribe-common .nhsuk-promo-group.nhsuk-grid-row {
   margin-left: -16px;
   margin-right: -16px;
 }
 
-.nhsuk-grid-row:after {
+.nhsuk-grid-row:after, .tribe-common .nhsuk-promo-group.nhsuk-grid-row:after {
   clear: both;
   content: '';
   display: block;
@@ -1078,37 +1078,37 @@ caption {
   }
 }
 
-.nhsuk-grid-column-one-third {
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-third {
+  .nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
     float: left;
     width: 33.3333%;
   }
 }
 
-.nhsuk-grid-column-one-half {
+.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-half {
+  .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
     float: left;
     width: 50%;
   }
 }
 
-.nhsuk-grid-column-two-thirds {
+.nhsuk-grid-column-two-thirds, .tribe-common div.nhsuk-grid-column-two-thirds {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-two-thirds {
+  .nhsuk-grid-column-two-thirds, .tribe-common div.nhsuk-grid-column-two-thirds {
     float: left;
     width: 66.6666%;
   }
@@ -1847,7 +1847,7 @@ h6,
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
@@ -1858,7 +1858,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -1867,7 +1867,7 @@ p,
 }
 
 @media print {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
@@ -1875,13 +1875,13 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m {
   color: inherit;
 }
@@ -1956,7 +1956,7 @@ address {
   }
 }
 
-.nhsuk-lede-text p,
+.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
 .nhsuk-lede-text ul {
   font-weight: 400;
   font-size: 20px;
@@ -1965,7 +1965,7 @@ address {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
@@ -1974,7 +1974,7 @@ address {
 }
 
 @media print {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
@@ -2038,8 +2038,9 @@ h1 + .nhsuk-lede-text--small {
   }
 }
 
-p + h2, .nhsuk-body-m + h2, address + h2,
+p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
 p + .nhsuk-heading-l,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
@@ -2062,8 +2063,9 @@ ol + .nhsuk-heading-l {
 }
 
 @media (min-width: 40.0625em) {
-  p + h2, .nhsuk-body-m + h2, address + h2,
+  p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
   p + .nhsuk-heading-l,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
@@ -2086,10 +2088,11 @@ ol + .nhsuk-heading-l {
   }
 }
 
-p + h3, .nhsuk-body-m + h3, address + h3,
+p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
@@ -2131,9 +2134,11 @@ ol + .nhsuk-heading-m,
 .nightingale-latest-news .sticky ul + a,
 .nightingale-latest-news .sticky ol + a,
 p + h4,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
 .nhsuk-body-m + h4,
 address + h4,
 p + .nhsuk-heading-s,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
@@ -2156,10 +2161,11 @@ ol + .nhsuk-heading-s {
 }
 
 @media (min-width: 40.0625em) {
-  p + h3, .nhsuk-body-m + h3, address + h3,
+  p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
@@ -2201,9 +2207,11 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .sticky ul + a,
   .nightingale-latest-news .sticky ol + a,
   p + h4,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
   .nhsuk-body-m + h4,
   address + h4,
   p + .nhsuk-heading-s,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
@@ -4047,7 +4055,8 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
+  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary,
+.tribe-events-ical {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -4058,7 +4067,9 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
+
+  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, 
+.tribe-events-ical {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -4068,7 +4079,10 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
+
+  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary,
+ .tribe-events-ical {
+
     margin-bottom: 36px;
   }
 }
@@ -4077,7 +4091,8 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
+  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_body .gform_next_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary,
+.tribe-events-ical {
     padding: 8px 16px;
   }
 }
@@ -4094,7 +4109,8 @@ input:active[type="reset"],
 input:active[type="submit"], .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .gform_body .gform_next_button:active, .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active, .nhsuk-button:hover, button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
-input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_body .gform_next_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover {
+input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_body .gform_next_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover,
+.tribe-events-ical:hover {
   color: #ffffff;
   text-decoration: none;
 }
@@ -4102,7 +4118,9 @@ input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button
 .nhsuk-button::-moz-focus-inner, button::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner, .wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner, #login #loginform #wp-submit::-moz-focus-inner, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::-moz-focus-inner, .nhsuk-list-panel .comment-respond input[type="submit"]::-moz-focus-inner, .gform_body .gform_next_button::-moz-focus-inner, .learndash-wrapper .ld-button::-moz-focus-inner, .learndash-wrapper input[type=submit]::-moz-focus-inner, .learndash-wrapper .ld-item-list-actions .ld-expand-button::-moz-focus-inner, .learndash-wrapper .ld-logout::-moz-focus-inner, .learndash-wrapper .ld-login::-moz-focus-inner, .learndash-wrapper .ld-content-actions a.ld-primary-color::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::-moz-focus-inner, .learndash-wrapper .ld-login-modal input[type=submit]::-moz-focus-inner, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::-moz-focus-inner {
+
+input[type="submit"]::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner, .wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner, #login #loginform #wp-submit::-moz-focus-inner, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::-moz-focus-inner, .nhsuk-list-panel .comment-respond input[type="submit"]::-moz-focus-inner, .gform_body .gform_next_button::-moz-focus-inner, .learndash-wrapper .ld-button::-moz-focus-inner, .learndash-wrapper input[type=submit]::-moz-focus-inner, .learndash-wrapper .ld-item-list-actions .ld-expand-button::-moz-focus-inner, .learndash-wrapper .ld-logout::-moz-focus-inner, .learndash-wrapper .ld-login::-moz-focus-inner, .learndash-wrapper .ld-content-actions a.ld-primary-color::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::-moz-focus-inner, .learndash-wrapper .ld-login-modal input[type=submit]::-moz-focus-inner, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::-moz-focus-inner,
+.tribe-events-ical::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -4110,14 +4128,17 @@ input[type="submit"]::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner
 .nhsuk-button:hover, button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
-input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_body .gform_next_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover {
+input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_body .gform_next_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover,
+.tribe-events-ical:hover {
+
   background-color: #00662f;
 }
 
 .nhsuk-button:focus, button:focus,
 input:focus[type="button"],
 input:focus[type="reset"],
-input:focus[type="submit"], .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .gform_body .gform_next_button:focus, .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus {
+input:focus[type="submit"], .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .gform_body .gform_next_button:focus, .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, 
+.tribe-events-ical:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
@@ -4127,7 +4148,8 @@ input:focus[type="submit"], .wp-block-button__link:focus, .wp-block-file__button
 .nhsuk-button:active, button:active,
 input:active[type="button"],
 input:active[type="reset"],
-input:active[type="submit"], .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .gform_body .gform_next_button:active, .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active {
+input:active[type="submit"], .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .gform_body .gform_next_button:active, .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active,
+.tribe-events-ical:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
@@ -4137,7 +4159,8 @@ input:active[type="submit"], .wp-block-button__link:active, .wp-block-file__butt
 .nhsuk-button::before, button::before,
 input[type="button"]::before,
 input[type="reset"]::before,
-input[type="submit"]::before, .wp-block-button__link::before, .wp-block-file__button::before, .wp-block-file a.wp-block-file__button::before, .wp-block-file a.wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:focus::before, .wp-block-file a.wp-block-file__button:hover::before, .wp-block-file a.wp-block-file__button:visited::before, #login #loginform #wp-submit::before, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::before, .nhsuk-list-panel .comment-respond input[type="submit"]::before, .gform_body .gform_next_button::before, .learndash-wrapper .ld-button::before, .learndash-wrapper input[type=submit]::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button::before, .learndash-wrapper .ld-logout::before, .learndash-wrapper .ld-login::before, .learndash-wrapper .ld-content-actions a.ld-primary-color::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::before, .learndash-wrapper .ld-login-modal input[type=submit]::before, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::before {
+input[type="submit"]::before, .wp-block-button__link::before, .wp-block-file__button::before, .wp-block-file a.wp-block-file__button::before, .wp-block-file a.wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:focus::before, .wp-block-file a.wp-block-file__button:hover::before, .wp-block-file a.wp-block-file__button:visited::before, #login #loginform #wp-submit::before, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::before, .nhsuk-list-panel .comment-respond input[type="submit"]::before, .gform_body .gform_next_button::before, .learndash-wrapper .ld-button::before, .learndash-wrapper input[type=submit]::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button::before, .learndash-wrapper .ld-logout::before, .learndash-wrapper .ld-login::before, .learndash-wrapper .ld-content-actions a.ld-primary-color::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::before, .learndash-wrapper .ld-login-modal input[type=submit]::before, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::before,
+.tribe-events-ical::before {
   background: transparent;
   bottom: -6px;
   content: '';
@@ -4151,7 +4174,9 @@ input[type="submit"]::before, .wp-block-button__link::before, .wp-block-file__bu
 .nhsuk-button:active::before, button:active::before,
 input[type="button"]:active::before,
 input[type="reset"]:active::before,
+
 input[type="submit"]:active::before, .wp-block-button__link:active::before, .wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:active::before, #login #loginform #wp-submit:active::before, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active::before, .nhsuk-list-panel .comment-respond input[type="submit"]:active::before, .gform_body .gform_next_button:active::before, .learndash-wrapper .ld-button:active::before, .learndash-wrapper input[type=submit]:active::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button:active::before, .learndash-wrapper .ld-logout:active::before, .learndash-wrapper .ld-login:active::before, .learndash-wrapper .ld-content-actions a.ld-primary-color:active::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active::before, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active::before {
+
   top: -6px;
 }
 
@@ -4249,6 +4274,8 @@ input[disabled="disabled"][type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"],
+.tribe-events-gcal[disabled="disabled"],
+.tribe-events-ical[disabled="disabled"],
 .nhsuk-button[disabled],
 button[disabled],
 input[disabled][type="button"],
@@ -4271,7 +4298,9 @@ input[disabled][type="submit"],
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled],
-.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled] {
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled],
+.tribe-events-gcal[disabled],
+.tribe-events-ical[disabled] {
   background-color: #007f3b;
   opacity: 0.5;
   pointer-events: none;
@@ -4300,6 +4329,8 @@ input[disabled="disabled"]:hover[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:hover,
+.tribe-events-gcal[disabled="disabled"]:hover,
+.tribe-events-ical[disabled="disabled"]:hover,
 .nhsuk-button[disabled]:hover,
 button[disabled]:hover,
 input[disabled]:hover[type="button"],
@@ -4321,7 +4352,9 @@ input[disabled]:hover[type="submit"],
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled]:hover,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:hover,
-.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:hover {
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:hover,
+.tribe-events-gcal[disabled]:hover,
+.tribe-events-ical[disabled]:hover {
   background-color: #007f3b;
   cursor: default;
 }
@@ -4349,6 +4382,8 @@ input[disabled="disabled"]:focus[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:focus,
+.tribe-events-gcal[disabled="disabled"]:focus,
+.tribe-events-ical[disabled="disabled"]:focus,
 .nhsuk-button[disabled]:focus,
 button[disabled]:focus,
 input[disabled]:focus[type="button"],
@@ -4370,7 +4405,9 @@ input[disabled]:focus[type="submit"],
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled]:focus,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:focus,
-.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:focus {
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:focus,
+.tribe-events-gcal[disabled]:focus,
+.tribe-events-ical[disabled]:focus {
   background-color: #007f3b;
   outline: none;
 }
@@ -4398,6 +4435,8 @@ input[disabled="disabled"]:active[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:active,
+.tribe-events-gcal[disabled="disabled"]:active,
+.tribe-events-ical[disabled="disabled"]:active,
 .nhsuk-button[disabled]:active,
 button[disabled]:active,
 input[disabled]:active[type="button"],
@@ -4419,7 +4458,9 @@ input[disabled]:active[type="submit"],
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button[disabled]:active,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:active,
-.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:active {
+.ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:active,
+.tribe-events-gcal[disabled]:active,
+.tribe-events-ical[disabled]:active {
   box-shadow: 0 4px 0 #00401e;
   top: 0;
 }
@@ -4520,7 +4561,8 @@ input[disabled]:active[type="submit"],
 .ie8 .nhsuk-button:focus, .ie8 button:focus,
 .ie8 input:focus[type="button"],
 .ie8 input:focus[type="reset"],
-.ie8 input:focus[type="submit"], .ie8 .wp-block-button__link:focus, .ie8 .wp-block-file__button:focus, .ie8 .wp-block-file a.wp-block-file__button:focus, .wp-block-file .ie8 a.wp-block-file__button:focus, .ie8 #login #loginform #wp-submit:focus, #login #loginform .ie8 #wp-submit:focus, .ie8 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .ie8 #cancel-comment-reply-link:focus, .ie8 .gform_body .gform_next_button:focus, .gform_body .ie8 .gform_next_button:focus, .ie8 .learndash-wrapper .ld-button:focus, .learndash-wrapper .ie8 .ld-button:focus, .ie8 .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ie8 input:focus[type=submit], .ie8 .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-item-list-actions .ie8 .ld-expand-button:focus, .ie8 .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ie8 .ld-logout:focus, .ie8 .learndash-wrapper .ld-login:focus, .learndash-wrapper .ie8 .ld-login:focus, .ie8 .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-content-actions .ie8 a.ld-primary-color:focus, .ie8 .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ie8 .ld-search-prompt:focus, .ie8 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ie8 .ld-button:focus, .ie8 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .learndash-wrapper .wpProQuiz_content .ie8 .wpProQuiz_button:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn-primary:focus {
+.ie8 input:focus[type="submit"], .ie8 .wp-block-button__link:focus, .ie8 .wp-block-file__button:focus, .ie8 .wp-block-file a.wp-block-file__button:focus, .wp-block-file .ie8 a.wp-block-file__button:focus, .ie8 #login #loginform #wp-submit:focus, #login #loginform .ie8 #wp-submit:focus, .ie8 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .ie8 #cancel-comment-reply-link:focus, .ie8 .nhsuk-list-panel .comment-list #secondary section ul li #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-list #secondary section ul li #respond .ie8 #cancel-comment-reply-link:focus, .ie8 #secondary section ul .nhsuk-list-panel .comment-list li #respond #cancel-comment-reply-link:focus, #secondary section ul .nhsuk-list-panel .comment-list li #respond .ie8 #cancel-comment-reply-link:focus, .ie8 .gform_body .gform_next_button:focus, .gform_body .ie8 .gform_next_button:focus, .ie8 .learndash-wrapper .ld-button:focus, .learndash-wrapper .ie8 .ld-button:focus, .ie8 .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ie8 input:focus[type=submit], .ie8 .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-item-list-actions .ie8 .ld-expand-button:focus, .ie8 .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ie8 .ld-logout:focus, .ie8 .learndash-wrapper .ld-login:focus, .learndash-wrapper .ie8 .ld-login:focus, .ie8 .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-content-actions .ie8 a.ld-primary-color:focus, .ie8 .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ie8 .ld-search-prompt:focus, .ie8 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ie8 .ld-button:focus, .ie8 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .learndash-wrapper .wpProQuiz_content .ie8 .wpProQuiz_button:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn-primary:focus, .ie8 .tribe-events-gcal:focus,
+.ie8 .tribe-events-ical:focus {
   outline: 1px dotted #212b32;
 }
 
@@ -5123,7 +5165,7 @@ input[disabled]:active[type="submit"],
   margin-bottom: 0;
 }
 
-.nhsuk-details__text p {
+.nhsuk-details__text p, .nhsuk-details__text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-details__text p.nhsuk-promo__description {
   margin-bottom: 24px;
   margin-top: 0;
 }
@@ -5279,7 +5321,7 @@ input[disabled]:active[type="submit"],
  * 1. Uses @mixin panel-with-label from tools/_mixins.
  * 2. Uses @mixin heading-label from tools/_mixins.
  */
-.nhsuk-do-dont-list {
+.nhsuk-do-dont-list, .tribe-tickets-rsvp {
   margin-bottom: 40px;
   margin-top: 40px;
   padding: 24px;
@@ -5289,40 +5331,40 @@ input[disabled]:active[type="submit"],
   /* [1] */
 }
 
-.nhsuk-do-dont-list > *:first-child {
+.nhsuk-do-dont-list > *:first-child, .tribe-tickets-rsvp > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-do-dont-list > *:last-child {
+.nhsuk-do-dont-list > *:last-child, .tribe-tickets-rsvp > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     margin-bottom: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     margin-top: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     padding: 32px;
   }
 }
 
 @media print {
-  .nhsuk-do-dont-list {
+  .nhsuk-do-dont-list, .tribe-tickets-rsvp {
     border: 1px solid #212b32;
     page-break-inside: avoid;
   }
 }
 
-.nhsuk-do-dont-list__label {
+.nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -5337,7 +5379,7 @@ input[disabled]:active[type="submit"],
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -5345,14 +5387,14 @@ input[disabled]:active[type="submit"],
 }
 
 @media print {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     margin-left: -24px;
     margin-right: 0;
     padding: 8px 24px;
@@ -5361,7 +5403,7 @@ input[disabled]:active[type="submit"],
 }
 
 @media print {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     background: none;
     color: #212b32;
     top: 0;
@@ -5369,11 +5411,11 @@ input[disabled]:active[type="submit"],
 }
 
 @media print {
-  .nhsuk-do-dont-list__label {
+  .nhsuk-do-dont-list__label, .tribe-tickets-rsvp h2.tribe-events-tickets-title {
     color: #212b32;
     fill: #212b32;
   }
-  .nhsuk-do-dont-list__label:active, .nhsuk-do-dont-list__label:focus, .nhsuk-do-dont-list__label:visited {
+  .nhsuk-do-dont-list__label:active, .tribe-tickets-rsvp h2.tribe-events-tickets-title:active, .nhsuk-do-dont-list__label:focus, .tribe-tickets-rsvp h2.tribe-events-tickets-title:focus, .nhsuk-do-dont-list__label:visited, .tribe-tickets-rsvp h2.tribe-events-tickets-title:visited {
     color: #212b32;
   }
 }
@@ -5496,13 +5538,13 @@ input[disabled]:active[type="submit"],
   }
 }
 
-.nhsuk-error-summary__body p {
+.nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-error-summary__body p.nhsuk-promo__description {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-error-summary__body p {
+  .nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-error-summary__body p.nhsuk-promo__description {
     margin-bottom: 24px;
   }
 }
@@ -8949,7 +8991,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   color: #005eb8;
 }
 
-.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:hover .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:hover h2.nhsuk-promo__heading {
   color: #7C2855;
 }
 
@@ -8958,7 +9000,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   box-shadow: 0 4px 0 0 #d8dde0;
 }
 
-.nhsuk-promo__link-wrapper:focus .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:focus .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:focus .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:focus h2.nhsuk-promo__heading {
   background-color: #ffeb3b;
   box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
   color: #212b32;
@@ -8974,12 +9016,12 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   /* [7] */
 }
 
-.nhsuk-promo__link-wrapper:active .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:active .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:active h2.nhsuk-promo__heading {
   background: none;
   box-shadow: none;
 }
 
-.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:hover .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:hover h2.nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:active h2.nhsuk-promo__heading {
   text-decoration: none;
 }
 
@@ -8996,7 +9038,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-promo__heading {
+.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
   font-weight: 600;
   font-size: 20px;
   font-size: 1.25rem;
@@ -9007,7 +9049,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo__heading {
+  .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -9015,26 +9057,26 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-promo__heading {
+  .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-promo__content {
+.nhsuk-promo__content, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
   padding: 24px;
 }
 
-.nhsuk-promo__content > *:first-child {
+.nhsuk-promo__content > *:first-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-promo__content > *:last-child {
+.nhsuk-promo__content > *:last-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo__content {
+  .nhsuk-promo__content, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
     padding: 32px;
   }
 }
@@ -9048,14 +9090,14 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /**
  * Promo small reduces the size of the text heading and description.
  */
-.nhsuk-promo--small .nhsuk-promo__heading {
+.nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo--small .nhsuk-promo__heading {
+  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9063,7 +9105,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-promo--small .nhsuk-promo__heading {
+  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -9109,26 +9151,26 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-promo-group__item {
+.nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
   display: flex;
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-promo-group__item {
+  .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
     flex: 0 0 100%;
   }
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-promo-group__item {
+  .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
     margin-bottom: 28px;
   }
-  .nhsuk-promo-group__item:last-child {
+  .nhsuk-promo-group__item:last-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third:last-child {
     margin-bottom: 0;
   }
 }
 
-.nhsuk-promo-group__item .nhsuk-promo {
+.nhsuk-promo-group__item .nhsuk-promo, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third .nhsuk-promo {
   margin-bottom: 0;
 }
 
@@ -9350,7 +9392,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /* ==========================================================================
    COMPONENTS/ #SELECT
    ========================================================================== */
-.nhsuk-select {
+.nhsuk-select, .tribe-tickets-rsvp select {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -9363,7 +9405,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-select {
+  .nhsuk-select, .tribe-tickets-rsvp select {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9371,13 +9413,13 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-select {
+  .nhsuk-select, .tribe-tickets-rsvp select {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-select:focus {
+.nhsuk-select:focus, .tribe-tickets-rsvp select:focus {
   border: 4px solid #212b32;
   box-shadow: 0 0 0 4px #ffeb3b;
   outline: 4px solid transparent;
@@ -9385,14 +9427,16 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   outline-offset: 4px;
 }
 
-.nhsuk-select option:active,
+.nhsuk-select option:active, .tribe-tickets-rsvp select option:active,
 .nhsuk-select option:checked,
-.nhsuk-select:focus::-ms-value {
+.tribe-tickets-rsvp select option:checked,
+.nhsuk-select:focus::-ms-value,
+.tribe-tickets-rsvp select:focus::-ms-value {
   background-color: #005eb8;
   color: #ffffff;
 }
 
-.nhsuk-select--error, .gform_body .gform_wrapper .gfield_error .nhsuk-select {
+.nhsuk-select--error, .gform_body .gform_wrapper .gfield_error .nhsuk-select, .gform_body .gform_wrapper .gfield_error .tribe-tickets-rsvp select, .tribe-tickets-rsvp .gform_body .gform_wrapper .gfield_error select {
   border: 4px solid #d5281b;
 }
 
@@ -9550,7 +9594,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-summary-list__value > p {
+.nhsuk-summary-list__value > p, .tribe-common .nhsuk-promo-group .nhsuk-summary-list__value > p.nhsuk-promo__description {
   margin-bottom: 8px;
 }
 
@@ -10814,7 +10858,7 @@ h6,
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
@@ -10825,7 +10869,7 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -10834,7 +10878,7 @@ p,
 }
 
 @media print {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
@@ -10842,13 +10886,13 @@ p,
 }
 
 @media (min-width: 40.0625em) {
-  p,
+  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
   .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
 
-p,
+p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 .nhsuk-body-m {
   color: inherit;
 }
@@ -10923,7 +10967,7 @@ address {
   }
 }
 
-.nhsuk-lede-text p,
+.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
 .nhsuk-lede-text ul {
   font-weight: 400;
   font-size: 20px;
@@ -10932,7 +10976,7 @@ address {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
@@ -10941,7 +10985,7 @@ address {
 }
 
 @media print {
-  .nhsuk-lede-text p,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
   .nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
@@ -11005,8 +11049,9 @@ h1 + .nhsuk-lede-text--small {
   }
 }
 
-p + h2, .nhsuk-body-m + h2, address + h2,
+p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
 p + .nhsuk-heading-l,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
@@ -11029,8 +11074,9 @@ ol + .nhsuk-heading-l {
 }
 
 @media (min-width: 40.0625em) {
-  p + h2, .nhsuk-body-m + h2, address + h2,
+  p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
   p + .nhsuk-heading-l,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
@@ -11053,10 +11099,11 @@ ol + .nhsuk-heading-l {
   }
 }
 
-p + h3, .nhsuk-body-m + h3, address + h3,
+p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
 .nhsuk-body-s + h3,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
@@ -11098,9 +11145,11 @@ ol + .nhsuk-heading-m,
 .nightingale-latest-news .sticky ul + a,
 .nightingale-latest-news .sticky ol + a,
 p + h4,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
 .nhsuk-body-m + h4,
 address + h4,
 p + .nhsuk-heading-s,
+.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
@@ -11123,10 +11172,11 @@ ol + .nhsuk-heading-s {
 }
 
 @media (min-width: 40.0625em) {
-  p + h3, .nhsuk-body-m + h3, address + h3,
+  p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a,
   .nhsuk-body-s + h3,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
@@ -11168,9 +11218,11 @@ ol + .nhsuk-heading-s {
   .nightingale-latest-news .sticky ul + a,
   .nightingale-latest-news .sticky ol + a,
   p + h4,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
   .nhsuk-body-m + h4,
   address + h4,
   p + .nhsuk-heading-s,
+  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
@@ -11883,6 +11935,8 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   float: right;
 }
 
+/* colour variable to be used with color-mixer.scss */
+/* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
 .has-white-color {
   color: #ffffff;
 }
@@ -12027,6 +12081,682 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   background-color: #ffb81C;
 }
 
+.page-style--standard-nhs-blue-default #secondary section h2.widget-title,
+.page-style--standard-nhs-blue-default .nhsuk-panel-with-label__label,
+.page-style--standard-nhs-blue-default #secondary section h2.widget-title,
+#secondary section .page-style--standard-nhs-blue-default h2.widget-title,
+.page-style--standard-nhs-blue-default #secondary section #wp-calendar caption,
+.page-style--standard-nhs-blue-default .nhsuk-do-dont-list__label,
+.page-style--standard-nhs-blue-default .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--standard-nhs-blue-default h2.tribe-events-tickets-title,
+.page-style--standard-nhs-blue-default .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--standard-nhs-blue-default .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--standard-nhs-blue-default .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--standard-nhs-blue-default .nhsuk-care-card .ld-table-list-header,
+.page-style--standard-nhs-blue-default .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--standard-nhs-blue-default .ld-table-list .ld-table-list-header,
+.page-style--standard-nhs-blue-default .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #005eb8;
+  background: #005eb8;
+  color: #ffffff;
+}
+
+.page-style--standard-nhs-blue-default .nhsuk-details__summary,
+.page-style--standard-nhs-blue-default .nhsuk-details__summary-text,
+.page-style--standard-nhs-blue-default .nhsuk-promo__heading,
+.page-style--standard-nhs-blue-default .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--standard-nhs-blue-default h2.nhsuk-promo__heading,
+.page-style--standard-nhs-blue-default a {
+  color: #005eb8;
+}
+
+.page-style--standard-nhs-blue-default a.nhsuk-button, .page-style--standard-nhs-blue-default a.wp-block-button__link, .page-style--standard-nhs-blue-default a.wp-block-file__button, .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:active, .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:focus, .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:hover, .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:visited, .page-style--standard-nhs-blue-default #login #loginform a#wp-submit, #login #loginform .page-style--standard-nhs-blue-default a#wp-submit, .page-style--standard-nhs-blue-default .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--standard-nhs-blue-default a#cancel-comment-reply-link, .page-style--standard-nhs-blue-default .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--standard-nhs-blue-default a#cancel-comment-reply-link, .page-style--standard-nhs-blue-default #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--standard-nhs-blue-default a#cancel-comment-reply-link, .page-style--standard-nhs-blue-default .gform_body a.gform_next_button, .gform_body .page-style--standard-nhs-blue-default a.gform_next_button, .page-style--standard-nhs-blue-default .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--standard-nhs-blue-default a.ld-button, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--standard-nhs-blue-default a.ld-expand-button, .page-style--standard-nhs-blue-default .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--standard-nhs-blue-default a.ld-logout, .page-style--standard-nhs-blue-default .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--standard-nhs-blue-default a.ld-login, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--standard-nhs-blue-default a.ld-primary-color, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--standard-nhs-blue-default a.ld-search-prompt, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--standard-nhs-blue-default a.ld-button, .page-style--standard-nhs-blue-default .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--standard-nhs-blue-default a.wpProQuiz_button, .page-style--standard-nhs-blue-default .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--standard-nhs-blue-default a.btn, .page-style--standard-nhs-blue-default .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--standard-nhs-blue-default a.btn-primary, .page-style--standard-nhs-blue-default a.tribe-events-gcal,
+.page-style--standard-nhs-blue-default a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--standard-nhs-blue-default a.nhsuk-button.is-style-reverse, .page-style--standard-nhs-blue-default a.is-style-reverse.wp-block-button__link, .page-style--standard-nhs-blue-default a.is-style-reverse.wp-block-file__button, .page-style--standard-nhs-blue-default #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--standard-nhs-blue-default a.is-style-reverse#wp-submit, .page-style--standard-nhs-blue-default .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--standard-nhs-blue-default a.is-style-reverse#cancel-comment-reply-link, .page-style--standard-nhs-blue-default .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--standard-nhs-blue-default a.is-style-reverse#cancel-comment-reply-link, .page-style--standard-nhs-blue-default #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--standard-nhs-blue-default a.is-style-reverse#cancel-comment-reply-link, .page-style--standard-nhs-blue-default .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--standard-nhs-blue-default a.is-style-reverse.gform_next_button, .page-style--standard-nhs-blue-default .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--standard-nhs-blue-default a.is-style-reverse.ld-button, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--standard-nhs-blue-default a.is-style-reverse.ld-expand-button, .page-style--standard-nhs-blue-default .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--standard-nhs-blue-default a.is-style-reverse.ld-logout, .page-style--standard-nhs-blue-default .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--standard-nhs-blue-default a.is-style-reverse.ld-login, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--standard-nhs-blue-default a.is-style-reverse.ld-primary-color, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--standard-nhs-blue-default a.is-style-reverse.ld-search-prompt, .page-style--standard-nhs-blue-default .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--standard-nhs-blue-default a.is-style-reverse.ld-button, .page-style--standard-nhs-blue-default .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--standard-nhs-blue-default a.is-style-reverse.wpProQuiz_button, .page-style--standard-nhs-blue-default .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--standard-nhs-blue-default a.is-style-reverse.btn, .page-style--standard-nhs-blue-default .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--standard-nhs-blue-default a.is-style-reverse.btn-primary, .page-style--standard-nhs-blue-default a.is-style-reverse.tribe-events-gcal,
+.page-style--standard-nhs-blue-default a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--standard-nhs-blue-default .nhsuk-inset-text,
+.page-style--standard-nhs-blue-default .nhsuk-care-card__arrow:before,
+.page-style--standard-nhs-blue-default .nhsuk-care-card__arrow:after,
+.page-style--standard-nhs-blue-default .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--standard-nhs-blue-default .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--standard-nhs-blue-default #secondary section {
+  border-color: #005eb8;
+}
+
+.page-style--standard-nhs-blue-default .nhsuk-icon__search {
+  fill: #005eb8;
+}
+
+.page-style--dark-blue #secondary section h2.widget-title,
+.page-style--dark-blue .nhsuk-panel-with-label__label,
+.page-style--dark-blue #secondary section h2.widget-title,
+#secondary section .page-style--dark-blue h2.widget-title,
+.page-style--dark-blue #secondary section #wp-calendar caption,
+.page-style--dark-blue .nhsuk-do-dont-list__label,
+.page-style--dark-blue .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--dark-blue h2.tribe-events-tickets-title,
+.page-style--dark-blue .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--dark-blue .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--dark-blue .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--dark-blue .nhsuk-care-card .ld-table-list-header,
+.page-style--dark-blue .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--dark-blue .ld-table-list .ld-table-list-header,
+.page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #003087;
+  background: #003087;
+  color: #ffffff;
+}
+
+.page-style--dark-blue .nhsuk-details__summary,
+.page-style--dark-blue .nhsuk-details__summary-text,
+.page-style--dark-blue .nhsuk-promo__heading,
+.page-style--dark-blue .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--dark-blue h2.nhsuk-promo__heading,
+.page-style--dark-blue a {
+  color: #003087;
+}
+
+.page-style--dark-blue a.nhsuk-button, .page-style--dark-blue a.wp-block-button__link, .page-style--dark-blue a.wp-block-file__button, .page-style--dark-blue .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--dark-blue a.wp-block-file__button:active, .page-style--dark-blue .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--dark-blue a.wp-block-file__button:focus, .page-style--dark-blue .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--dark-blue a.wp-block-file__button:hover, .page-style--dark-blue .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--dark-blue a.wp-block-file__button:visited, .page-style--dark-blue #login #loginform a#wp-submit, #login #loginform .page-style--dark-blue a#wp-submit, .page-style--dark-blue .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--dark-blue a#cancel-comment-reply-link, .page-style--dark-blue .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--dark-blue a#cancel-comment-reply-link, .page-style--dark-blue #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--dark-blue a#cancel-comment-reply-link, .page-style--dark-blue .gform_body a.gform_next_button, .gform_body .page-style--dark-blue a.gform_next_button, .page-style--dark-blue .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--dark-blue a.ld-button, .page-style--dark-blue .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--dark-blue a.ld-expand-button, .page-style--dark-blue .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--dark-blue a.ld-logout, .page-style--dark-blue .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--dark-blue a.ld-login, .page-style--dark-blue .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--dark-blue a.ld-primary-color, .page-style--dark-blue .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--dark-blue a.ld-search-prompt, .page-style--dark-blue .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--dark-blue a.ld-button, .page-style--dark-blue .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--dark-blue a.wpProQuiz_button, .page-style--dark-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-blue a.btn, .page-style--dark-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-blue a.btn-primary, .page-style--dark-blue a.tribe-events-gcal,
+.page-style--dark-blue a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--dark-blue a.nhsuk-button.is-style-reverse, .page-style--dark-blue a.is-style-reverse.wp-block-button__link, .page-style--dark-blue a.is-style-reverse.wp-block-file__button, .page-style--dark-blue #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--dark-blue a.is-style-reverse#wp-submit, .page-style--dark-blue .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--dark-blue a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-blue .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--dark-blue a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-blue #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--dark-blue a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-blue .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--dark-blue a.is-style-reverse.gform_next_button, .page-style--dark-blue .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--dark-blue a.is-style-reverse.ld-button, .page-style--dark-blue .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--dark-blue a.is-style-reverse.ld-expand-button, .page-style--dark-blue .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--dark-blue a.is-style-reverse.ld-logout, .page-style--dark-blue .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--dark-blue a.is-style-reverse.ld-login, .page-style--dark-blue .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--dark-blue a.is-style-reverse.ld-primary-color, .page-style--dark-blue .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--dark-blue a.is-style-reverse.ld-search-prompt, .page-style--dark-blue .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--dark-blue a.is-style-reverse.ld-button, .page-style--dark-blue .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--dark-blue a.is-style-reverse.wpProQuiz_button, .page-style--dark-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-blue a.is-style-reverse.btn, .page-style--dark-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-blue a.is-style-reverse.btn-primary, .page-style--dark-blue a.is-style-reverse.tribe-events-gcal,
+.page-style--dark-blue a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--dark-blue .nhsuk-inset-text,
+.page-style--dark-blue .nhsuk-care-card__arrow:before,
+.page-style--dark-blue .nhsuk-care-card__arrow:after,
+.page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--dark-blue #secondary section {
+  border-color: #003087;
+}
+
+.page-style--dark-blue .nhsuk-icon__search {
+  fill: #003087;
+}
+
+.page-style--bright-blue #secondary section h2.widget-title,
+.page-style--bright-blue .nhsuk-panel-with-label__label,
+.page-style--bright-blue #secondary section h2.widget-title,
+#secondary section .page-style--bright-blue h2.widget-title,
+.page-style--bright-blue #secondary section #wp-calendar caption,
+.page-style--bright-blue .nhsuk-do-dont-list__label,
+.page-style--bright-blue .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--bright-blue h2.tribe-events-tickets-title,
+.page-style--bright-blue .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--bright-blue .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--bright-blue .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--bright-blue .nhsuk-care-card .ld-table-list-header,
+.page-style--bright-blue .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--bright-blue .ld-table-list .ld-table-list-header,
+.page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #0072ce;
+  background: #0072ce;
+  color: #ffffff;
+}
+
+.page-style--bright-blue .nhsuk-details__summary,
+.page-style--bright-blue .nhsuk-details__summary-text,
+.page-style--bright-blue .nhsuk-promo__heading,
+.page-style--bright-blue .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--bright-blue h2.nhsuk-promo__heading,
+.page-style--bright-blue a {
+  color: #0072ce;
+}
+
+.page-style--bright-blue a.nhsuk-button, .page-style--bright-blue a.wp-block-button__link, .page-style--bright-blue a.wp-block-file__button, .page-style--bright-blue .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--bright-blue a.wp-block-file__button:active, .page-style--bright-blue .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--bright-blue a.wp-block-file__button:focus, .page-style--bright-blue .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--bright-blue a.wp-block-file__button:hover, .page-style--bright-blue .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--bright-blue a.wp-block-file__button:visited, .page-style--bright-blue #login #loginform a#wp-submit, #login #loginform .page-style--bright-blue a#wp-submit, .page-style--bright-blue .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--bright-blue a#cancel-comment-reply-link, .page-style--bright-blue .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--bright-blue a#cancel-comment-reply-link, .page-style--bright-blue #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--bright-blue a#cancel-comment-reply-link, .page-style--bright-blue .gform_body a.gform_next_button, .gform_body .page-style--bright-blue a.gform_next_button, .page-style--bright-blue .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--bright-blue a.ld-button, .page-style--bright-blue .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--bright-blue a.ld-expand-button, .page-style--bright-blue .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--bright-blue a.ld-logout, .page-style--bright-blue .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--bright-blue a.ld-login, .page-style--bright-blue .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--bright-blue a.ld-primary-color, .page-style--bright-blue .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--bright-blue a.ld-search-prompt, .page-style--bright-blue .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--bright-blue a.ld-button, .page-style--bright-blue .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--bright-blue a.wpProQuiz_button, .page-style--bright-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--bright-blue a.btn, .page-style--bright-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--bright-blue a.btn-primary, .page-style--bright-blue a.tribe-events-gcal,
+.page-style--bright-blue a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--bright-blue a.nhsuk-button.is-style-reverse, .page-style--bright-blue a.is-style-reverse.wp-block-button__link, .page-style--bright-blue a.is-style-reverse.wp-block-file__button, .page-style--bright-blue #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--bright-blue a.is-style-reverse#wp-submit, .page-style--bright-blue .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--bright-blue a.is-style-reverse#cancel-comment-reply-link, .page-style--bright-blue .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--bright-blue a.is-style-reverse#cancel-comment-reply-link, .page-style--bright-blue #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--bright-blue a.is-style-reverse#cancel-comment-reply-link, .page-style--bright-blue .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--bright-blue a.is-style-reverse.gform_next_button, .page-style--bright-blue .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--bright-blue a.is-style-reverse.ld-button, .page-style--bright-blue .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--bright-blue a.is-style-reverse.ld-expand-button, .page-style--bright-blue .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--bright-blue a.is-style-reverse.ld-logout, .page-style--bright-blue .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--bright-blue a.is-style-reverse.ld-login, .page-style--bright-blue .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--bright-blue a.is-style-reverse.ld-primary-color, .page-style--bright-blue .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--bright-blue a.is-style-reverse.ld-search-prompt, .page-style--bright-blue .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--bright-blue a.is-style-reverse.ld-button, .page-style--bright-blue .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--bright-blue a.is-style-reverse.wpProQuiz_button, .page-style--bright-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--bright-blue a.is-style-reverse.btn, .page-style--bright-blue .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--bright-blue a.is-style-reverse.btn-primary, .page-style--bright-blue a.is-style-reverse.tribe-events-gcal,
+.page-style--bright-blue a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--bright-blue .nhsuk-inset-text,
+.page-style--bright-blue .nhsuk-care-card__arrow:before,
+.page-style--bright-blue .nhsuk-care-card__arrow:after,
+.page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--bright-blue #secondary section {
+  border-color: #0072ce;
+}
+
+.page-style--bright-blue .nhsuk-icon__search {
+  fill: #0072ce;
+}
+
+.page-style--mid-grey #secondary section h2.widget-title,
+.page-style--mid-grey .nhsuk-panel-with-label__label,
+.page-style--mid-grey #secondary section h2.widget-title,
+#secondary section .page-style--mid-grey h2.widget-title,
+.page-style--mid-grey #secondary section #wp-calendar caption,
+.page-style--mid-grey .nhsuk-do-dont-list__label,
+.page-style--mid-grey .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--mid-grey h2.tribe-events-tickets-title,
+.page-style--mid-grey .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--mid-grey .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--mid-grey .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--mid-grey .nhsuk-care-card .ld-table-list-header,
+.page-style--mid-grey .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--mid-grey .ld-table-list .ld-table-list-header,
+.page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #768692;
+  background: #768692;
+  color: #ffffff;
+}
+
+.page-style--mid-grey .nhsuk-details__summary,
+.page-style--mid-grey .nhsuk-details__summary-text,
+.page-style--mid-grey .nhsuk-promo__heading,
+.page-style--mid-grey .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--mid-grey h2.nhsuk-promo__heading,
+.page-style--mid-grey a {
+  color: #768692;
+}
+
+.page-style--mid-grey a.nhsuk-button, .page-style--mid-grey a.wp-block-button__link, .page-style--mid-grey a.wp-block-file__button, .page-style--mid-grey .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--mid-grey a.wp-block-file__button:active, .page-style--mid-grey .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--mid-grey a.wp-block-file__button:focus, .page-style--mid-grey .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--mid-grey a.wp-block-file__button:hover, .page-style--mid-grey .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--mid-grey a.wp-block-file__button:visited, .page-style--mid-grey #login #loginform a#wp-submit, #login #loginform .page-style--mid-grey a#wp-submit, .page-style--mid-grey .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--mid-grey a#cancel-comment-reply-link, .page-style--mid-grey .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--mid-grey a#cancel-comment-reply-link, .page-style--mid-grey #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--mid-grey a#cancel-comment-reply-link, .page-style--mid-grey .gform_body a.gform_next_button, .gform_body .page-style--mid-grey a.gform_next_button, .page-style--mid-grey .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--mid-grey a.ld-button, .page-style--mid-grey .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--mid-grey a.ld-expand-button, .page-style--mid-grey .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--mid-grey a.ld-logout, .page-style--mid-grey .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--mid-grey a.ld-login, .page-style--mid-grey .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--mid-grey a.ld-primary-color, .page-style--mid-grey .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--mid-grey a.ld-search-prompt, .page-style--mid-grey .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--mid-grey a.ld-button, .page-style--mid-grey .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--mid-grey a.wpProQuiz_button, .page-style--mid-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--mid-grey a.btn, .page-style--mid-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--mid-grey a.btn-primary, .page-style--mid-grey a.tribe-events-gcal,
+.page-style--mid-grey a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--mid-grey a.nhsuk-button.is-style-reverse, .page-style--mid-grey a.is-style-reverse.wp-block-button__link, .page-style--mid-grey a.is-style-reverse.wp-block-file__button, .page-style--mid-grey #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--mid-grey a.is-style-reverse#wp-submit, .page-style--mid-grey .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--mid-grey a.is-style-reverse#cancel-comment-reply-link, .page-style--mid-grey .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--mid-grey a.is-style-reverse#cancel-comment-reply-link, .page-style--mid-grey #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--mid-grey a.is-style-reverse#cancel-comment-reply-link, .page-style--mid-grey .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--mid-grey a.is-style-reverse.gform_next_button, .page-style--mid-grey .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--mid-grey a.is-style-reverse.ld-button, .page-style--mid-grey .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--mid-grey a.is-style-reverse.ld-expand-button, .page-style--mid-grey .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--mid-grey a.is-style-reverse.ld-logout, .page-style--mid-grey .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--mid-grey a.is-style-reverse.ld-login, .page-style--mid-grey .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--mid-grey a.is-style-reverse.ld-primary-color, .page-style--mid-grey .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--mid-grey a.is-style-reverse.ld-search-prompt, .page-style--mid-grey .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--mid-grey a.is-style-reverse.ld-button, .page-style--mid-grey .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--mid-grey a.is-style-reverse.wpProQuiz_button, .page-style--mid-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--mid-grey a.is-style-reverse.btn, .page-style--mid-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--mid-grey a.is-style-reverse.btn-primary, .page-style--mid-grey a.is-style-reverse.tribe-events-gcal,
+.page-style--mid-grey a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--mid-grey .nhsuk-inset-text,
+.page-style--mid-grey .nhsuk-care-card__arrow:before,
+.page-style--mid-grey .nhsuk-care-card__arrow:after,
+.page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--mid-grey #secondary section {
+  border-color: #768692;
+}
+
+.page-style--mid-grey .nhsuk-icon__search {
+  fill: #768692;
+}
+
+.page-style--dark-grey #secondary section h2.widget-title,
+.page-style--dark-grey .nhsuk-panel-with-label__label,
+.page-style--dark-grey #secondary section h2.widget-title,
+#secondary section .page-style--dark-grey h2.widget-title,
+.page-style--dark-grey #secondary section #wp-calendar caption,
+.page-style--dark-grey .nhsuk-do-dont-list__label,
+.page-style--dark-grey .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--dark-grey h2.tribe-events-tickets-title,
+.page-style--dark-grey .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--dark-grey .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--dark-grey .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--dark-grey .nhsuk-care-card .ld-table-list-header,
+.page-style--dark-grey .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--dark-grey .ld-table-list .ld-table-list-header,
+.page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #425563;
+  background: #425563;
+  color: #ffffff;
+}
+
+.page-style--dark-grey .nhsuk-details__summary,
+.page-style--dark-grey .nhsuk-details__summary-text,
+.page-style--dark-grey .nhsuk-promo__heading,
+.page-style--dark-grey .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--dark-grey h2.nhsuk-promo__heading,
+.page-style--dark-grey a {
+  color: #425563;
+}
+
+.page-style--dark-grey a.nhsuk-button, .page-style--dark-grey a.wp-block-button__link, .page-style--dark-grey a.wp-block-file__button, .page-style--dark-grey .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--dark-grey a.wp-block-file__button:active, .page-style--dark-grey .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--dark-grey a.wp-block-file__button:focus, .page-style--dark-grey .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--dark-grey a.wp-block-file__button:hover, .page-style--dark-grey .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--dark-grey a.wp-block-file__button:visited, .page-style--dark-grey #login #loginform a#wp-submit, #login #loginform .page-style--dark-grey a#wp-submit, .page-style--dark-grey .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--dark-grey a#cancel-comment-reply-link, .page-style--dark-grey .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--dark-grey a#cancel-comment-reply-link, .page-style--dark-grey #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--dark-grey a#cancel-comment-reply-link, .page-style--dark-grey .gform_body a.gform_next_button, .gform_body .page-style--dark-grey a.gform_next_button, .page-style--dark-grey .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--dark-grey a.ld-button, .page-style--dark-grey .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--dark-grey a.ld-expand-button, .page-style--dark-grey .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--dark-grey a.ld-logout, .page-style--dark-grey .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--dark-grey a.ld-login, .page-style--dark-grey .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--dark-grey a.ld-primary-color, .page-style--dark-grey .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--dark-grey a.ld-search-prompt, .page-style--dark-grey .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--dark-grey a.ld-button, .page-style--dark-grey .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--dark-grey a.wpProQuiz_button, .page-style--dark-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-grey a.btn, .page-style--dark-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-grey a.btn-primary, .page-style--dark-grey a.tribe-events-gcal,
+.page-style--dark-grey a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--dark-grey a.nhsuk-button.is-style-reverse, .page-style--dark-grey a.is-style-reverse.wp-block-button__link, .page-style--dark-grey a.is-style-reverse.wp-block-file__button, .page-style--dark-grey #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--dark-grey a.is-style-reverse#wp-submit, .page-style--dark-grey .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--dark-grey a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-grey .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--dark-grey a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-grey #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--dark-grey a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-grey .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--dark-grey a.is-style-reverse.gform_next_button, .page-style--dark-grey .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--dark-grey a.is-style-reverse.ld-button, .page-style--dark-grey .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--dark-grey a.is-style-reverse.ld-expand-button, .page-style--dark-grey .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--dark-grey a.is-style-reverse.ld-logout, .page-style--dark-grey .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--dark-grey a.is-style-reverse.ld-login, .page-style--dark-grey .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--dark-grey a.is-style-reverse.ld-primary-color, .page-style--dark-grey .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--dark-grey a.is-style-reverse.ld-search-prompt, .page-style--dark-grey .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--dark-grey a.is-style-reverse.ld-button, .page-style--dark-grey .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--dark-grey a.is-style-reverse.wpProQuiz_button, .page-style--dark-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-grey a.is-style-reverse.btn, .page-style--dark-grey .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-grey a.is-style-reverse.btn-primary, .page-style--dark-grey a.is-style-reverse.tribe-events-gcal,
+.page-style--dark-grey a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--dark-grey .nhsuk-inset-text,
+.page-style--dark-grey .nhsuk-care-card__arrow:before,
+.page-style--dark-grey .nhsuk-care-card__arrow:after,
+.page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--dark-grey #secondary section {
+  border-color: #425563;
+}
+
+.page-style--dark-grey .nhsuk-icon__search {
+  fill: #425563;
+}
+
+.page-style--black #secondary section h2.widget-title,
+.page-style--black .nhsuk-panel-with-label__label,
+.page-style--black #secondary section h2.widget-title,
+#secondary section .page-style--black h2.widget-title,
+.page-style--black #secondary section #wp-calendar caption,
+.page-style--black .nhsuk-do-dont-list__label,
+.page-style--black .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--black h2.tribe-events-tickets-title,
+.page-style--black .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--black .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--black .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--black .nhsuk-care-card .ld-table-list-header,
+.page-style--black .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--black .ld-table-list .ld-table-list-header,
+.page-style--black .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #212b32;
+  background: #212b32;
+  color: #ffffff;
+}
+
+.page-style--black .nhsuk-details__summary,
+.page-style--black .nhsuk-details__summary-text,
+.page-style--black .nhsuk-promo__heading,
+.page-style--black .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--black h2.nhsuk-promo__heading,
+.page-style--black a {
+  color: #212b32;
+}
+
+.page-style--black a.nhsuk-button, .page-style--black a.wp-block-button__link, .page-style--black a.wp-block-file__button, .page-style--black .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--black a.wp-block-file__button:active, .page-style--black .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--black a.wp-block-file__button:focus, .page-style--black .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--black a.wp-block-file__button:hover, .page-style--black .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--black a.wp-block-file__button:visited, .page-style--black #login #loginform a#wp-submit, #login #loginform .page-style--black a#wp-submit, .page-style--black .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--black a#cancel-comment-reply-link, .page-style--black .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--black a#cancel-comment-reply-link, .page-style--black #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--black a#cancel-comment-reply-link, .page-style--black .gform_body a.gform_next_button, .gform_body .page-style--black a.gform_next_button, .page-style--black .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--black a.ld-button, .page-style--black .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--black a.ld-expand-button, .page-style--black .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--black a.ld-logout, .page-style--black .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--black a.ld-login, .page-style--black .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--black a.ld-primary-color, .page-style--black .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--black a.ld-search-prompt, .page-style--black .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--black a.ld-button, .page-style--black .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--black a.wpProQuiz_button, .page-style--black .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--black a.btn, .page-style--black .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--black a.btn-primary, .page-style--black a.tribe-events-gcal,
+.page-style--black a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--black a.nhsuk-button.is-style-reverse, .page-style--black a.is-style-reverse.wp-block-button__link, .page-style--black a.is-style-reverse.wp-block-file__button, .page-style--black #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--black a.is-style-reverse#wp-submit, .page-style--black .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--black a.is-style-reverse#cancel-comment-reply-link, .page-style--black .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--black a.is-style-reverse#cancel-comment-reply-link, .page-style--black #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--black a.is-style-reverse#cancel-comment-reply-link, .page-style--black .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--black a.is-style-reverse.gform_next_button, .page-style--black .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--black a.is-style-reverse.ld-button, .page-style--black .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--black a.is-style-reverse.ld-expand-button, .page-style--black .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--black a.is-style-reverse.ld-logout, .page-style--black .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--black a.is-style-reverse.ld-login, .page-style--black .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--black a.is-style-reverse.ld-primary-color, .page-style--black .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--black a.is-style-reverse.ld-search-prompt, .page-style--black .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--black a.is-style-reverse.ld-button, .page-style--black .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--black a.is-style-reverse.wpProQuiz_button, .page-style--black .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--black a.is-style-reverse.btn, .page-style--black .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--black a.is-style-reverse.btn-primary, .page-style--black a.is-style-reverse.tribe-events-gcal,
+.page-style--black a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--black .nhsuk-inset-text,
+.page-style--black .nhsuk-care-card__arrow:before,
+.page-style--black .nhsuk-care-card__arrow:after,
+.page-style--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--black #secondary section {
+  border-color: #212b32;
+}
+
+.page-style--black .nhsuk-icon__search {
+  fill: #212b32;
+}
+
+.page-style--purple #secondary section h2.widget-title,
+.page-style--purple .nhsuk-panel-with-label__label,
+.page-style--purple #secondary section h2.widget-title,
+#secondary section .page-style--purple h2.widget-title,
+.page-style--purple #secondary section #wp-calendar caption,
+.page-style--purple .nhsuk-do-dont-list__label,
+.page-style--purple .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--purple h2.tribe-events-tickets-title,
+.page-style--purple .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--purple .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--purple .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--purple .nhsuk-care-card .ld-table-list-header,
+.page-style--purple .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--purple .ld-table-list .ld-table-list-header,
+.page-style--purple .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #330072;
+  background: #330072;
+  color: #ffffff;
+}
+
+.page-style--purple .nhsuk-details__summary,
+.page-style--purple .nhsuk-details__summary-text,
+.page-style--purple .nhsuk-promo__heading,
+.page-style--purple .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--purple h2.nhsuk-promo__heading,
+.page-style--purple a {
+  color: #330072;
+}
+
+.page-style--purple a.nhsuk-button, .page-style--purple a.wp-block-button__link, .page-style--purple a.wp-block-file__button, .page-style--purple .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--purple a.wp-block-file__button:active, .page-style--purple .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--purple a.wp-block-file__button:focus, .page-style--purple .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--purple a.wp-block-file__button:hover, .page-style--purple .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--purple a.wp-block-file__button:visited, .page-style--purple #login #loginform a#wp-submit, #login #loginform .page-style--purple a#wp-submit, .page-style--purple .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--purple a#cancel-comment-reply-link, .page-style--purple .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--purple a#cancel-comment-reply-link, .page-style--purple #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--purple a#cancel-comment-reply-link, .page-style--purple .gform_body a.gform_next_button, .gform_body .page-style--purple a.gform_next_button, .page-style--purple .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--purple a.ld-button, .page-style--purple .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--purple a.ld-expand-button, .page-style--purple .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--purple a.ld-logout, .page-style--purple .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--purple a.ld-login, .page-style--purple .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--purple a.ld-primary-color, .page-style--purple .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--purple a.ld-search-prompt, .page-style--purple .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--purple a.ld-button, .page-style--purple .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--purple a.wpProQuiz_button, .page-style--purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--purple a.btn, .page-style--purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--purple a.btn-primary, .page-style--purple a.tribe-events-gcal,
+.page-style--purple a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--purple a.nhsuk-button.is-style-reverse, .page-style--purple a.is-style-reverse.wp-block-button__link, .page-style--purple a.is-style-reverse.wp-block-file__button, .page-style--purple #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--purple a.is-style-reverse#wp-submit, .page-style--purple .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--purple a.is-style-reverse#cancel-comment-reply-link, .page-style--purple .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--purple a.is-style-reverse#cancel-comment-reply-link, .page-style--purple #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--purple a.is-style-reverse#cancel-comment-reply-link, .page-style--purple .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--purple a.is-style-reverse.gform_next_button, .page-style--purple .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--purple a.is-style-reverse.ld-button, .page-style--purple .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--purple a.is-style-reverse.ld-expand-button, .page-style--purple .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--purple a.is-style-reverse.ld-logout, .page-style--purple .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--purple a.is-style-reverse.ld-login, .page-style--purple .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--purple a.is-style-reverse.ld-primary-color, .page-style--purple .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--purple a.is-style-reverse.ld-search-prompt, .page-style--purple .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--purple a.is-style-reverse.ld-button, .page-style--purple .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--purple a.is-style-reverse.wpProQuiz_button, .page-style--purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--purple a.is-style-reverse.btn, .page-style--purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--purple a.is-style-reverse.btn-primary, .page-style--purple a.is-style-reverse.tribe-events-gcal,
+.page-style--purple a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--purple .nhsuk-inset-text,
+.page-style--purple .nhsuk-care-card__arrow:before,
+.page-style--purple .nhsuk-care-card__arrow:after,
+.page-style--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--purple #secondary section {
+  border-color: #330072;
+}
+
+.page-style--purple .nhsuk-icon__search {
+  fill: #330072;
+}
+
+.page-style--pink #secondary section h2.widget-title,
+.page-style--pink .nhsuk-panel-with-label__label,
+.page-style--pink #secondary section h2.widget-title,
+#secondary section .page-style--pink h2.widget-title,
+.page-style--pink #secondary section #wp-calendar caption,
+.page-style--pink .nhsuk-do-dont-list__label,
+.page-style--pink .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--pink h2.tribe-events-tickets-title,
+.page-style--pink .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--pink .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--pink .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--pink .nhsuk-care-card .ld-table-list-header,
+.page-style--pink .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--pink .ld-table-list .ld-table-list-header,
+.page-style--pink .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #ae2573;
+  background: #ae2573;
+  color: #ffffff;
+}
+
+.page-style--pink .nhsuk-details__summary,
+.page-style--pink .nhsuk-details__summary-text,
+.page-style--pink .nhsuk-promo__heading,
+.page-style--pink .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--pink h2.nhsuk-promo__heading,
+.page-style--pink a {
+  color: #ae2573;
+}
+
+.page-style--pink a.nhsuk-button, .page-style--pink a.wp-block-button__link, .page-style--pink a.wp-block-file__button, .page-style--pink .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--pink a.wp-block-file__button:active, .page-style--pink .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--pink a.wp-block-file__button:focus, .page-style--pink .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--pink a.wp-block-file__button:hover, .page-style--pink .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--pink a.wp-block-file__button:visited, .page-style--pink #login #loginform a#wp-submit, #login #loginform .page-style--pink a#wp-submit, .page-style--pink .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--pink a#cancel-comment-reply-link, .page-style--pink .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--pink a#cancel-comment-reply-link, .page-style--pink #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--pink a#cancel-comment-reply-link, .page-style--pink .gform_body a.gform_next_button, .gform_body .page-style--pink a.gform_next_button, .page-style--pink .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--pink a.ld-button, .page-style--pink .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--pink a.ld-expand-button, .page-style--pink .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--pink a.ld-logout, .page-style--pink .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--pink a.ld-login, .page-style--pink .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--pink a.ld-primary-color, .page-style--pink .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--pink a.ld-search-prompt, .page-style--pink .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--pink a.ld-button, .page-style--pink .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--pink a.wpProQuiz_button, .page-style--pink .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--pink a.btn, .page-style--pink .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--pink a.btn-primary, .page-style--pink a.tribe-events-gcal,
+.page-style--pink a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--pink a.nhsuk-button.is-style-reverse, .page-style--pink a.is-style-reverse.wp-block-button__link, .page-style--pink a.is-style-reverse.wp-block-file__button, .page-style--pink #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--pink a.is-style-reverse#wp-submit, .page-style--pink .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--pink a.is-style-reverse#cancel-comment-reply-link, .page-style--pink .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--pink a.is-style-reverse#cancel-comment-reply-link, .page-style--pink #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--pink a.is-style-reverse#cancel-comment-reply-link, .page-style--pink .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--pink a.is-style-reverse.gform_next_button, .page-style--pink .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--pink a.is-style-reverse.ld-button, .page-style--pink .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--pink a.is-style-reverse.ld-expand-button, .page-style--pink .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--pink a.is-style-reverse.ld-logout, .page-style--pink .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--pink a.is-style-reverse.ld-login, .page-style--pink .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--pink a.is-style-reverse.ld-primary-color, .page-style--pink .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--pink a.is-style-reverse.ld-search-prompt, .page-style--pink .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--pink a.is-style-reverse.ld-button, .page-style--pink .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--pink a.is-style-reverse.wpProQuiz_button, .page-style--pink .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--pink a.is-style-reverse.btn, .page-style--pink .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--pink a.is-style-reverse.btn-primary, .page-style--pink a.is-style-reverse.tribe-events-gcal,
+.page-style--pink a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--pink .nhsuk-inset-text,
+.page-style--pink .nhsuk-care-card__arrow:before,
+.page-style--pink .nhsuk-care-card__arrow:after,
+.page-style--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--pink #secondary section {
+  border-color: #ae2573;
+}
+
+.page-style--pink .nhsuk-icon__search {
+  fill: #ae2573;
+}
+
+.page-style--light-purple #secondary section h2.widget-title,
+.page-style--light-purple .nhsuk-panel-with-label__label,
+.page-style--light-purple #secondary section h2.widget-title,
+#secondary section .page-style--light-purple h2.widget-title,
+.page-style--light-purple #secondary section #wp-calendar caption,
+.page-style--light-purple .nhsuk-do-dont-list__label,
+.page-style--light-purple .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--light-purple h2.tribe-events-tickets-title,
+.page-style--light-purple .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--light-purple .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--light-purple .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--light-purple .nhsuk-care-card .ld-table-list-header,
+.page-style--light-purple .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--light-purple .ld-table-list .ld-table-list-header,
+.page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #704c9c;
+  background: #704c9c;
+  color: #ffffff;
+}
+
+.page-style--light-purple .nhsuk-details__summary,
+.page-style--light-purple .nhsuk-details__summary-text,
+.page-style--light-purple .nhsuk-promo__heading,
+.page-style--light-purple .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--light-purple h2.nhsuk-promo__heading,
+.page-style--light-purple a {
+  color: #704c9c;
+}
+
+.page-style--light-purple a.nhsuk-button, .page-style--light-purple a.wp-block-button__link, .page-style--light-purple a.wp-block-file__button, .page-style--light-purple .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--light-purple a.wp-block-file__button:active, .page-style--light-purple .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--light-purple a.wp-block-file__button:focus, .page-style--light-purple .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--light-purple a.wp-block-file__button:hover, .page-style--light-purple .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--light-purple a.wp-block-file__button:visited, .page-style--light-purple #login #loginform a#wp-submit, #login #loginform .page-style--light-purple a#wp-submit, .page-style--light-purple .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--light-purple a#cancel-comment-reply-link, .page-style--light-purple .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--light-purple a#cancel-comment-reply-link, .page-style--light-purple #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--light-purple a#cancel-comment-reply-link, .page-style--light-purple .gform_body a.gform_next_button, .gform_body .page-style--light-purple a.gform_next_button, .page-style--light-purple .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--light-purple a.ld-button, .page-style--light-purple .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--light-purple a.ld-expand-button, .page-style--light-purple .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--light-purple a.ld-logout, .page-style--light-purple .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--light-purple a.ld-login, .page-style--light-purple .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--light-purple a.ld-primary-color, .page-style--light-purple .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--light-purple a.ld-search-prompt, .page-style--light-purple .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--light-purple a.ld-button, .page-style--light-purple .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--light-purple a.wpProQuiz_button, .page-style--light-purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-purple a.btn, .page-style--light-purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-purple a.btn-primary, .page-style--light-purple a.tribe-events-gcal,
+.page-style--light-purple a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--light-purple a.nhsuk-button.is-style-reverse, .page-style--light-purple a.is-style-reverse.wp-block-button__link, .page-style--light-purple a.is-style-reverse.wp-block-file__button, .page-style--light-purple #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--light-purple a.is-style-reverse#wp-submit, .page-style--light-purple .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--light-purple a.is-style-reverse#cancel-comment-reply-link, .page-style--light-purple .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--light-purple a.is-style-reverse#cancel-comment-reply-link, .page-style--light-purple #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--light-purple a.is-style-reverse#cancel-comment-reply-link, .page-style--light-purple .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--light-purple a.is-style-reverse.gform_next_button, .page-style--light-purple .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--light-purple a.is-style-reverse.ld-button, .page-style--light-purple .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--light-purple a.is-style-reverse.ld-expand-button, .page-style--light-purple .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--light-purple a.is-style-reverse.ld-logout, .page-style--light-purple .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--light-purple a.is-style-reverse.ld-login, .page-style--light-purple .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--light-purple a.is-style-reverse.ld-primary-color, .page-style--light-purple .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--light-purple a.is-style-reverse.ld-search-prompt, .page-style--light-purple .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--light-purple a.is-style-reverse.ld-button, .page-style--light-purple .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--light-purple a.is-style-reverse.wpProQuiz_button, .page-style--light-purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-purple a.is-style-reverse.btn, .page-style--light-purple .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-purple a.is-style-reverse.btn-primary, .page-style--light-purple a.is-style-reverse.tribe-events-gcal,
+.page-style--light-purple a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--light-purple .nhsuk-inset-text,
+.page-style--light-purple .nhsuk-care-card__arrow:before,
+.page-style--light-purple .nhsuk-care-card__arrow:after,
+.page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--light-purple #secondary section {
+  border-color: #704c9c;
+}
+
+.page-style--light-purple .nhsuk-icon__search {
+  fill: #704c9c;
+}
+
+.page-style--emergency-services-red #secondary section h2.widget-title,
+.page-style--emergency-services-red .nhsuk-panel-with-label__label,
+.page-style--emergency-services-red #secondary section h2.widget-title,
+#secondary section .page-style--emergency-services-red h2.widget-title,
+.page-style--emergency-services-red #secondary section #wp-calendar caption,
+.page-style--emergency-services-red .nhsuk-do-dont-list__label,
+.page-style--emergency-services-red .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--emergency-services-red h2.tribe-events-tickets-title,
+.page-style--emergency-services-red .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--emergency-services-red .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--emergency-services-red .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--emergency-services-red .nhsuk-care-card .ld-table-list-header,
+.page-style--emergency-services-red .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--emergency-services-red .ld-table-list .ld-table-list-header,
+.page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #d5281b;
+  background: #d5281b;
+  color: #ffffff;
+}
+
+.page-style--emergency-services-red .nhsuk-details__summary,
+.page-style--emergency-services-red .nhsuk-details__summary-text,
+.page-style--emergency-services-red .nhsuk-promo__heading,
+.page-style--emergency-services-red .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--emergency-services-red h2.nhsuk-promo__heading,
+.page-style--emergency-services-red a {
+  color: #d5281b;
+}
+
+.page-style--emergency-services-red a.nhsuk-button, .page-style--emergency-services-red a.wp-block-button__link, .page-style--emergency-services-red a.wp-block-file__button, .page-style--emergency-services-red .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--emergency-services-red a.wp-block-file__button:active, .page-style--emergency-services-red .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--emergency-services-red a.wp-block-file__button:focus, .page-style--emergency-services-red .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--emergency-services-red a.wp-block-file__button:hover, .page-style--emergency-services-red .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--emergency-services-red a.wp-block-file__button:visited, .page-style--emergency-services-red #login #loginform a#wp-submit, #login #loginform .page-style--emergency-services-red a#wp-submit, .page-style--emergency-services-red .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--emergency-services-red a#cancel-comment-reply-link, .page-style--emergency-services-red .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--emergency-services-red a#cancel-comment-reply-link, .page-style--emergency-services-red #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--emergency-services-red a#cancel-comment-reply-link, .page-style--emergency-services-red .gform_body a.gform_next_button, .gform_body .page-style--emergency-services-red a.gform_next_button, .page-style--emergency-services-red .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--emergency-services-red a.ld-button, .page-style--emergency-services-red .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--emergency-services-red a.ld-expand-button, .page-style--emergency-services-red .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--emergency-services-red a.ld-logout, .page-style--emergency-services-red .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--emergency-services-red a.ld-login, .page-style--emergency-services-red .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--emergency-services-red a.ld-primary-color, .page-style--emergency-services-red .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--emergency-services-red a.ld-search-prompt, .page-style--emergency-services-red .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--emergency-services-red a.ld-button, .page-style--emergency-services-red .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--emergency-services-red a.wpProQuiz_button, .page-style--emergency-services-red .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--emergency-services-red a.btn, .page-style--emergency-services-red .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--emergency-services-red a.btn-primary, .page-style--emergency-services-red a.tribe-events-gcal,
+.page-style--emergency-services-red a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--emergency-services-red a.nhsuk-button.is-style-reverse, .page-style--emergency-services-red a.is-style-reverse.wp-block-button__link, .page-style--emergency-services-red a.is-style-reverse.wp-block-file__button, .page-style--emergency-services-red #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--emergency-services-red a.is-style-reverse#wp-submit, .page-style--emergency-services-red .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--emergency-services-red a.is-style-reverse#cancel-comment-reply-link, .page-style--emergency-services-red .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--emergency-services-red a.is-style-reverse#cancel-comment-reply-link, .page-style--emergency-services-red #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--emergency-services-red a.is-style-reverse#cancel-comment-reply-link, .page-style--emergency-services-red .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--emergency-services-red a.is-style-reverse.gform_next_button, .page-style--emergency-services-red .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--emergency-services-red a.is-style-reverse.ld-button, .page-style--emergency-services-red .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--emergency-services-red a.is-style-reverse.ld-expand-button, .page-style--emergency-services-red .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--emergency-services-red a.is-style-reverse.ld-logout, .page-style--emergency-services-red .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--emergency-services-red a.is-style-reverse.ld-login, .page-style--emergency-services-red .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--emergency-services-red a.is-style-reverse.ld-primary-color, .page-style--emergency-services-red .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--emergency-services-red a.is-style-reverse.ld-search-prompt, .page-style--emergency-services-red .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--emergency-services-red a.is-style-reverse.ld-button, .page-style--emergency-services-red .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--emergency-services-red a.is-style-reverse.wpProQuiz_button, .page-style--emergency-services-red .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--emergency-services-red a.is-style-reverse.btn, .page-style--emergency-services-red .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--emergency-services-red a.is-style-reverse.btn-primary, .page-style--emergency-services-red a.is-style-reverse.tribe-events-gcal,
+.page-style--emergency-services-red a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--emergency-services-red .nhsuk-inset-text,
+.page-style--emergency-services-red .nhsuk-care-card__arrow:before,
+.page-style--emergency-services-red .nhsuk-care-card__arrow:after,
+.page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--emergency-services-red #secondary section {
+  border-color: #d5281b;
+}
+
+.page-style--emergency-services-red .nhsuk-icon__search {
+  fill: #d5281b;
+}
+
+.page-style--dark-green #secondary section h2.widget-title,
+.page-style--dark-green .nhsuk-panel-with-label__label,
+.page-style--dark-green #secondary section h2.widget-title,
+#secondary section .page-style--dark-green h2.widget-title,
+.page-style--dark-green #secondary section #wp-calendar caption,
+.page-style--dark-green .nhsuk-do-dont-list__label,
+.page-style--dark-green .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--dark-green h2.tribe-events-tickets-title,
+.page-style--dark-green .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--dark-green .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--dark-green .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--dark-green .nhsuk-care-card .ld-table-list-header,
+.page-style--dark-green .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--dark-green .ld-table-list .ld-table-list-header,
+.page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #006747;
+  background: #006747;
+  color: #ffffff;
+}
+
+.page-style--dark-green .nhsuk-details__summary,
+.page-style--dark-green .nhsuk-details__summary-text,
+.page-style--dark-green .nhsuk-promo__heading,
+.page-style--dark-green .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--dark-green h2.nhsuk-promo__heading,
+.page-style--dark-green a {
+  color: #006747;
+}
+
+.page-style--dark-green a.nhsuk-button, .page-style--dark-green a.wp-block-button__link, .page-style--dark-green a.wp-block-file__button, .page-style--dark-green .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--dark-green a.wp-block-file__button:active, .page-style--dark-green .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--dark-green a.wp-block-file__button:focus, .page-style--dark-green .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--dark-green a.wp-block-file__button:hover, .page-style--dark-green .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--dark-green a.wp-block-file__button:visited, .page-style--dark-green #login #loginform a#wp-submit, #login #loginform .page-style--dark-green a#wp-submit, .page-style--dark-green .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--dark-green a#cancel-comment-reply-link, .page-style--dark-green .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--dark-green a#cancel-comment-reply-link, .page-style--dark-green #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--dark-green a#cancel-comment-reply-link, .page-style--dark-green .gform_body a.gform_next_button, .gform_body .page-style--dark-green a.gform_next_button, .page-style--dark-green .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--dark-green a.ld-button, .page-style--dark-green .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--dark-green a.ld-expand-button, .page-style--dark-green .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--dark-green a.ld-logout, .page-style--dark-green .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--dark-green a.ld-login, .page-style--dark-green .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--dark-green a.ld-primary-color, .page-style--dark-green .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--dark-green a.ld-search-prompt, .page-style--dark-green .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--dark-green a.ld-button, .page-style--dark-green .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--dark-green a.wpProQuiz_button, .page-style--dark-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-green a.btn, .page-style--dark-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-green a.btn-primary, .page-style--dark-green a.tribe-events-gcal,
+.page-style--dark-green a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--dark-green a.nhsuk-button.is-style-reverse, .page-style--dark-green a.is-style-reverse.wp-block-button__link, .page-style--dark-green a.is-style-reverse.wp-block-file__button, .page-style--dark-green #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--dark-green a.is-style-reverse#wp-submit, .page-style--dark-green .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--dark-green a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-green .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--dark-green a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-green #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--dark-green a.is-style-reverse#cancel-comment-reply-link, .page-style--dark-green .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--dark-green a.is-style-reverse.gform_next_button, .page-style--dark-green .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--dark-green a.is-style-reverse.ld-button, .page-style--dark-green .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--dark-green a.is-style-reverse.ld-expand-button, .page-style--dark-green .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--dark-green a.is-style-reverse.ld-logout, .page-style--dark-green .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--dark-green a.is-style-reverse.ld-login, .page-style--dark-green .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--dark-green a.is-style-reverse.ld-primary-color, .page-style--dark-green .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--dark-green a.is-style-reverse.ld-search-prompt, .page-style--dark-green .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--dark-green a.is-style-reverse.ld-button, .page-style--dark-green .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--dark-green a.is-style-reverse.wpProQuiz_button, .page-style--dark-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-green a.is-style-reverse.btn, .page-style--dark-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--dark-green a.is-style-reverse.btn-primary, .page-style--dark-green a.is-style-reverse.tribe-events-gcal,
+.page-style--dark-green a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--dark-green .nhsuk-inset-text,
+.page-style--dark-green .nhsuk-care-card__arrow:before,
+.page-style--dark-green .nhsuk-care-card__arrow:after,
+.page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--dark-green #secondary section {
+  border-color: #006747;
+}
+
+.page-style--dark-green .nhsuk-icon__search {
+  fill: #006747;
+}
+
+.page-style--light-green #secondary section h2.widget-title,
+.page-style--light-green .nhsuk-panel-with-label__label,
+.page-style--light-green #secondary section h2.widget-title,
+#secondary section .page-style--light-green h2.widget-title,
+.page-style--light-green #secondary section #wp-calendar caption,
+.page-style--light-green .nhsuk-do-dont-list__label,
+.page-style--light-green .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--light-green h2.tribe-events-tickets-title,
+.page-style--light-green .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--light-green .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--light-green .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--light-green .nhsuk-care-card .ld-table-list-header,
+.page-style--light-green .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--light-green .ld-table-list .ld-table-list-header,
+.page-style--light-green .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #78be20;
+  background: #78be20;
+  color: #ffffff;
+}
+
+.page-style--light-green .nhsuk-details__summary,
+.page-style--light-green .nhsuk-details__summary-text,
+.page-style--light-green .nhsuk-promo__heading,
+.page-style--light-green .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--light-green h2.nhsuk-promo__heading,
+.page-style--light-green a {
+  color: #78be20;
+}
+
+.page-style--light-green a.nhsuk-button, .page-style--light-green a.wp-block-button__link, .page-style--light-green a.wp-block-file__button, .page-style--light-green .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--light-green a.wp-block-file__button:active, .page-style--light-green .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--light-green a.wp-block-file__button:focus, .page-style--light-green .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--light-green a.wp-block-file__button:hover, .page-style--light-green .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--light-green a.wp-block-file__button:visited, .page-style--light-green #login #loginform a#wp-submit, #login #loginform .page-style--light-green a#wp-submit, .page-style--light-green .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--light-green a#cancel-comment-reply-link, .page-style--light-green .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--light-green a#cancel-comment-reply-link, .page-style--light-green #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--light-green a#cancel-comment-reply-link, .page-style--light-green .gform_body a.gform_next_button, .gform_body .page-style--light-green a.gform_next_button, .page-style--light-green .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--light-green a.ld-button, .page-style--light-green .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--light-green a.ld-expand-button, .page-style--light-green .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--light-green a.ld-logout, .page-style--light-green .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--light-green a.ld-login, .page-style--light-green .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--light-green a.ld-primary-color, .page-style--light-green .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--light-green a.ld-search-prompt, .page-style--light-green .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--light-green a.ld-button, .page-style--light-green .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--light-green a.wpProQuiz_button, .page-style--light-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-green a.btn, .page-style--light-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-green a.btn-primary, .page-style--light-green a.tribe-events-gcal,
+.page-style--light-green a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--light-green a.nhsuk-button.is-style-reverse, .page-style--light-green a.is-style-reverse.wp-block-button__link, .page-style--light-green a.is-style-reverse.wp-block-file__button, .page-style--light-green #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--light-green a.is-style-reverse#wp-submit, .page-style--light-green .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--light-green a.is-style-reverse#cancel-comment-reply-link, .page-style--light-green .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--light-green a.is-style-reverse#cancel-comment-reply-link, .page-style--light-green #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--light-green a.is-style-reverse#cancel-comment-reply-link, .page-style--light-green .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--light-green a.is-style-reverse.gform_next_button, .page-style--light-green .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--light-green a.is-style-reverse.ld-button, .page-style--light-green .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--light-green a.is-style-reverse.ld-expand-button, .page-style--light-green .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--light-green a.is-style-reverse.ld-logout, .page-style--light-green .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--light-green a.is-style-reverse.ld-login, .page-style--light-green .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--light-green a.is-style-reverse.ld-primary-color, .page-style--light-green .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--light-green a.is-style-reverse.ld-search-prompt, .page-style--light-green .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--light-green a.is-style-reverse.ld-button, .page-style--light-green .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--light-green a.is-style-reverse.wpProQuiz_button, .page-style--light-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-green a.is-style-reverse.btn, .page-style--light-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--light-green a.is-style-reverse.btn-primary, .page-style--light-green a.is-style-reverse.tribe-events-gcal,
+.page-style--light-green a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--light-green .nhsuk-inset-text,
+.page-style--light-green .nhsuk-care-card__arrow:before,
+.page-style--light-green .nhsuk-care-card__arrow:after,
+.page-style--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--light-green #secondary section {
+  border-color: #78be20;
+}
+
+.page-style--light-green .nhsuk-icon__search {
+  fill: #78be20;
+}
+
+.page-style--aqua-green #secondary section h2.widget-title,
+.page-style--aqua-green .nhsuk-panel-with-label__label,
+.page-style--aqua-green #secondary section h2.widget-title,
+#secondary section .page-style--aqua-green h2.widget-title,
+.page-style--aqua-green #secondary section #wp-calendar caption,
+.page-style--aqua-green .nhsuk-do-dont-list__label,
+.page-style--aqua-green .tribe-tickets-rsvp h2.tribe-events-tickets-title,
+.tribe-tickets-rsvp .page-style--aqua-green h2.tribe-events-tickets-title,
+.page-style--aqua-green .nhsuk-care-card .nhsuk-care-card__heading-container,
+.page-style--aqua-green .learndash-wrapper .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .page-style--aqua-green .ld-table-list .nhsuk-care-card__heading-container,
+.learndash-wrapper .ld-table-list .page-style--aqua-green .nhsuk-care-card .ld-table-list-header,
+.page-style--aqua-green .learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .page-style--aqua-green .ld-table-list .ld-table-list-header,
+.page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #00A499;
+  background: #00A499;
+  color: #ffffff;
+}
+
+.page-style--aqua-green .nhsuk-details__summary,
+.page-style--aqua-green .nhsuk-details__summary-text,
+.page-style--aqua-green .nhsuk-promo__heading,
+.page-style--aqua-green .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
+.tribe-common .nhsuk-promo-group .page-style--aqua-green h2.nhsuk-promo__heading,
+.page-style--aqua-green a {
+  color: #00A499;
+}
+
+.page-style--aqua-green a.nhsuk-button, .page-style--aqua-green a.wp-block-button__link, .page-style--aqua-green a.wp-block-file__button, .page-style--aqua-green .wp-block-file a.wp-block-file__button:active, .wp-block-file .page-style--aqua-green a.wp-block-file__button:active, .page-style--aqua-green .wp-block-file a.wp-block-file__button:focus, .wp-block-file .page-style--aqua-green a.wp-block-file__button:focus, .page-style--aqua-green .wp-block-file a.wp-block-file__button:hover, .wp-block-file .page-style--aqua-green a.wp-block-file__button:hover, .page-style--aqua-green .wp-block-file a.wp-block-file__button:visited, .wp-block-file .page-style--aqua-green a.wp-block-file__button:visited, .page-style--aqua-green #login #loginform a#wp-submit, #login #loginform .page-style--aqua-green a#wp-submit, .page-style--aqua-green .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--aqua-green a#cancel-comment-reply-link, .page-style--aqua-green .nhsuk-list-panel .comment-list #secondary section ul li #respond a#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--aqua-green a#cancel-comment-reply-link, .page-style--aqua-green #secondary section ul .nhsuk-list-panel .comment-list li #respond a#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--aqua-green a#cancel-comment-reply-link, .page-style--aqua-green .gform_body a.gform_next_button, .gform_body .page-style--aqua-green a.gform_next_button, .page-style--aqua-green .learndash-wrapper a.ld-button, .learndash-wrapper .page-style--aqua-green a.ld-button, .page-style--aqua-green .learndash-wrapper .ld-item-list-actions a.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--aqua-green a.ld-expand-button, .page-style--aqua-green .learndash-wrapper a.ld-logout, .learndash-wrapper .page-style--aqua-green a.ld-logout, .page-style--aqua-green .learndash-wrapper a.ld-login, .learndash-wrapper .page-style--aqua-green a.ld-login, .page-style--aqua-green .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--aqua-green a.ld-primary-color, .page-style--aqua-green .learndash-wrapper .ld-item-list .ld-section-heading a.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--aqua-green a.ld-search-prompt, .page-style--aqua-green .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--aqua-green a.ld-button, .page-style--aqua-green .learndash-wrapper .wpProQuiz_content a.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--aqua-green a.wpProQuiz_button, .page-style--aqua-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--aqua-green a.btn, .page-style--aqua-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--aqua-green a.btn-primary, .page-style--aqua-green a.tribe-events-gcal,
+.page-style--aqua-green a.tribe-events-ical {
+  color: #ffffff;
+}
+
+.page-style--aqua-green a.nhsuk-button.is-style-reverse, .page-style--aqua-green a.is-style-reverse.wp-block-button__link, .page-style--aqua-green a.is-style-reverse.wp-block-file__button, .page-style--aqua-green #login #loginform a.is-style-reverse#wp-submit, #login #loginform .page-style--aqua-green a.is-style-reverse#wp-submit, .page-style--aqua-green .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .page-style--aqua-green a.is-style-reverse#cancel-comment-reply-link, .page-style--aqua-green .nhsuk-list-panel .comment-list #secondary section ul li #respond a.is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-list #secondary section ul li #respond .page-style--aqua-green a.is-style-reverse#cancel-comment-reply-link, .page-style--aqua-green #secondary section ul .nhsuk-list-panel .comment-list li #respond a.is-style-reverse#cancel-comment-reply-link, #secondary section ul .nhsuk-list-panel .comment-list li #respond .page-style--aqua-green a.is-style-reverse#cancel-comment-reply-link, .page-style--aqua-green .gform_body a.is-style-reverse.gform_next_button, .gform_body .page-style--aqua-green a.is-style-reverse.gform_next_button, .page-style--aqua-green .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .page-style--aqua-green a.is-style-reverse.ld-button, .page-style--aqua-green .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper .ld-item-list-actions .page-style--aqua-green a.is-style-reverse.ld-expand-button, .page-style--aqua-green .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper .page-style--aqua-green a.is-style-reverse.ld-logout, .page-style--aqua-green .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .page-style--aqua-green a.is-style-reverse.ld-login, .page-style--aqua-green .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-content-actions .page-style--aqua-green a.is-style-reverse.ld-primary-color, .page-style--aqua-green .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-section-heading .page-style--aqua-green a.is-style-reverse.ld-search-prompt, .page-style--aqua-green .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .page-style--aqua-green a.is-style-reverse.ld-button, .page-style--aqua-green .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .learndash-wrapper .wpProQuiz_content .page-style--aqua-green a.is-style-reverse.wpProQuiz_button, .page-style--aqua-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--aqua-green a.is-style-reverse.btn, .page-style--aqua-green .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .page-style--aqua-green a.is-style-reverse.btn-primary, .page-style--aqua-green a.is-style-reverse.tribe-events-gcal,
+.page-style--aqua-green a.is-style-reverse.tribe-events-ical {
+  color: #212b32;
+}
+
+.page-style--aqua-green .nhsuk-inset-text,
+.page-style--aqua-green .nhsuk-care-card__arrow:before,
+.page-style--aqua-green .nhsuk-care-card__arrow:after,
+.page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-style--aqua-green #secondary section {
+  border-color: #00A499;
+}
+
+.page-style--aqua-green .nhsuk-icon__search {
+  fill: #00A499;
+}
+
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
@@ -12127,8 +12857,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   min-height: 80px;
 }
 
-.nhsuk-header--transactional .nhsuk-header__search {
-  height: 1rem;
+@media (min-width: 40.0625em) {
+  .nhsuk-header--transactional .nhsuk-header__search {
+    height: 1rem;
+  }
 }
 
 .nhsuk-header--transactional .nhsuk-header__link {
@@ -12202,8 +12934,9 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 0px;
 }
 
-.nhsuk-grid-column-two-thirds.archive,
-.nhsuk-grid-column-two-thirds.index {
+.nhsuk-grid-column-two-thirds.archive, .tribe-common div.archive.nhsuk-grid-column-two-thirds,
+.nhsuk-grid-column-two-thirds.index,
+.tribe-common div.index.nhsuk-grid-column-two-thirds {
   padding: 0 16px 0 0;
 }
 
@@ -12213,6 +12946,46 @@ aside#secondary > section {
 
 .nhsuk-icon__arrow-right-circle {
   vertical-align: middle;
+}
+
+.navigation {
+  position: relative;
+}
+
+.nhsuk-pagination-item--previous,
+.nhsuk-pagination-item--next {
+  position: relative;
+  z-index: 5;
+}
+
+.nhsuk-pagination-numbers {
+  clear: both;
+  text-align: center;
+  border-top: 1px solid #aeb7bd;
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .nhsuk-pagination-numbers {
+    border: none;
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+.nhsuk-pagination-numbers a,
+.nhsuk-pagination-numbers span {
+  display: inline-block;
+  padding: 0px 5px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.clear:after {
+  clear: both;
+  content: '';
+  display: block;
 }
 
 #secondary section {
@@ -13049,6 +13822,204 @@ aside#secondary > section {
 }
 
 .single-sfwd-courses article.sfwd-courses img.wp-post-image {
+  display: none;
+}
+
+/* Events Calendar Styles */
+.tribe-common div.nhsuk-grid-column-two-thirds {
+  padding-left: 0;
+}
+
+.tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+  margin-bottom: 36px;
+}
+
+.tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
+  margin-bottom: 36px;
+}
+
+.tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
+  color: #425563;
+}
+
+.tribe-events .tribe-events-c-top-bar__datepicker {
+  display: inherit;
+  align-items: center;
+}
+
+.tribe-events .tribe-events-c-top-bar__datepicker span {
+  line-height: 1.5;
+  padding-right: 10px;
+}
+
+.tribe-events-c-top-bar .tribe-topbar-prefix {
+  margin-right: 10px;
+}
+
+button.tribe-events-c-top-bar__datepicker-button {
+  background-color: #005eb8;
+  padding: 5px 8px;
+  font-size: 15px;
+}
+
+button.tribe-events-c-top-bar__datepicker-button svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+button.tribe-events-c-top-bar__datepicker-button:active {
+  background-color: #005eb8;
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input {
+  padding: 12px;
+  margin-right: 10px;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group {
+  margin-right: 10px;
+}
+
+.nhsuk-promo__content .tribe-events-calendar-list__event-datetime, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .tribe-events-calendar-list__event-datetime {
+  float: left;
+  display: block;
+}
+
+.nhsuk-promo__content .tribe-events-calendar-list__event-datetime span.tribe-event-date-end {
+  display: block;
+}
+
+.tribe-common .nhsuk-promo-group .event-meta,
+.event-meta {
+  margin-bottom: 15px;
+}
+
+.single-tribe_events .tribe-common .nhsuk-promo-group .event-meta, .single-tribe_events
+.event-meta {
+  margin-bottom: 30px;
+}
+
+.tribe-events-address,
+.tribe-events-calendar-list__event-datetime {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.event-date-time:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.event-date-time,
+.venue-address,
+.events-cost,
+.event-categories {
+  font-size: 16px;
+}
+
+.event-date-time .nhsuk-icon,
+.venue-address .nhsuk-icon,
+.events-cost .nhsuk-icon,
+.event-categories .nhsuk-icon {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.event-categories:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.event-categories ul {
+  position: relative;
+  top: -2px;
+}
+
+.event-categories li {
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  margin-right: 5px;
+}
+
+.tribe-events-header__top-bar .events-dropdown {
+  font-size: 16px;
+  padding-right: 10px;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 832px) {
+  .tribe-events-header__top-bar .events-dropdown {
+    margin-top: 0px;
+  }
+}
+
+.tribe-events .tribe-events-header {
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 832px) {
+  .tribe-events .tribe-events-c-events-bar__search-filters-container {
+    background-color: transparent;
+  }
+  .tribe-events .tribe-events-c-events-bar__search-filters-container .tribe-events-c-search__input {
+    background-color: transparent;
+  }
+}
+
+.tribe-events-gcal,
+.tribe-events-ical {
+  margin: 0 15px 10px 0;
+  background-color: #005eb8;
+  padding: 5px 8px;
+  font-size: 13px;
+}
+
+.tribe-events-gcal:last-child,
+.tribe-events-ical:last-child {
+  margin-right: 0;
+}
+
+.single-tribe_events .tribe-events-single-event-description {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.single-tribe_events .nhsuk-promo__img {
+  margin-bottom: 20px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Events Tickets Styles */
+.tribe-tickets-rsvp .tribe-events-tickets {
+  background-color: transparent;
+}
+
+.tribe-tickets-rsvp .tribe-events-tickets input[type=text],
+.tribe-tickets-rsvp .tribe-events-tickets input[type=email],
+.tribe-tickets-rsvp .tribe-events-tickets select {
+  width: 100%;
+}
+
+.tribe-tickets-rsvp .tribe-button.tribe-button--rsvp {
+  background-color: #005eb8;
+  font-size: 15px;
+}
+
+/* Events Widgets */
+.widget-area ol.tribe-list-widget {
+  list-style: none;
+}
+
+.widget-area ol.tribe-list-widget .tribe-clearfix:before {
   display: none;
 }
 
