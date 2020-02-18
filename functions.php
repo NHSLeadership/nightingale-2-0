@@ -346,6 +346,7 @@ function nightingale_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 
+
 /**
  * Custom template tags for this theme.
  */
@@ -384,6 +385,11 @@ require get_template_directory() . '/inc/pagination.php';
  */
 require get_template_directory() . '/inc/breadcrumbs.php';
 
+
+/**
+ * Color Picker.
+ */
+require get_template_directory() . '/inc/color-picker.php';
 
 /**
  * Create an array of active plugins.
