@@ -1,0 +1,265 @@
+/* Events Calendar Styles */
+
+
+.tribe-common {
+
+  div.nhsuk-grid-column-one-third{
+    @extend .nhsuk-grid-column-one-third;
+  }
+
+  div.nhsuk-grid-column-two-thirds{
+    @extend .nhsuk-grid-column-two-thirds;
+    padding-left: 0;
+  }
+}
+
+
+
+.tribe-common .nhsuk-promo-group{
+
+  &.nhsuk-grid-row{
+
+    @extend .nhsuk-grid-row;
+    
+  }
+
+  div.nhsuk-grid-column-one-third{
+
+    @extend .nhsuk-grid-column-one-third;
+
+    &.nhsuk-promo-group__item{
+      @extend .nhsuk-promo-group__item;
+    }
+    margin-bottom: 36px;
+
+  }
+
+  div.nhsuk-grid-column-one-half{
+    @extend .nhsuk-grid-column-one-half;
+
+    margin-bottom: 36px;
+  }
+
+  div.nhsuk-promo__content{
+
+    @extend .nhsuk-promo__content;
+    color: $color_nhsuk-dark-grey;
+
+  }
+
+  p.nhsuk-promo__description{
+    @extend p;
+  }
+
+  h2.nhsuk-promo__heading{
+    @extend .nhsuk-promo__heading;
+  }
+
+}
+
+.tribe-events .tribe-events-c-top-bar__datepicker{
+  display: inherit;
+  align-items: center;
+
+  span{
+    line-height: 1.5;
+    padding-right: 10px;
+  }
+}
+
+.tribe-events-c-top-bar .tribe-topbar-prefix{
+  margin-right: 10px;
+}
+
+
+button.tribe-events-c-top-bar__datepicker-button{
+    background-color: $nhsuk-link-color;
+    padding: 5px 8px;
+    font-size: 15px;
+
+    svg{
+      fill: $color_nhsuk-white;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:active{
+      background-color: $nhsuk-link-color;
+    }
+}
+
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input{
+  padding: 12px;
+  margin-right: 10px;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group{
+  margin-right: 10px;
+}
+
+.nhsuk-promo__content .tribe-events-calendar-list__event-datetime{
+  float: left;
+  display: block;
+  span.tribe-event-date-end{
+    display: block;
+  }
+}
+
+.tribe-common .nhsuk-promo-group .event-meta,
+.event-meta{
+  margin-bottom: 15px;
+
+  .single-tribe_events &{
+    margin-bottom: 30px;
+  }
+}
+
+.tribe-events-address,
+.tribe-events-calendar-list__event-datetime{
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.event-date-time{
+  @include clearfix();
+}
+
+.event-date-time,
+.venue-address,
+.events-cost,
+.event-categories {
+  
+  font-size: 16px;
+
+  .nhsuk-icon{
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+}
+
+.event-categories{
+
+  @include clearfix();
+
+  ul{
+    position: relative;
+    top: -2px;    
+  }
+
+  li{
+    display: inline-block;
+    font-size: 16px;
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+.tribe-events-header__top-bar{
+  .events-dropdown{    
+    font-size: 16px;
+    padding-right: 10px;
+    margin-top: 8px;
+
+    @media screen and (min-width: 832px) {
+      margin-top: 0px;
+    }
+  }
+}
+
+.tribe-events .tribe-events-header{
+  align-items: flex-end;
+}
+
+.tribe-events .tribe-events-c-events-bar__search-filters-container{
+
+  @media screen and (min-width: 832px) {
+
+    background-color: transparent;
+
+    .tribe-events-c-search__input{
+      background-color: transparent;
+    }
+    
+  }
+  
+}
+
+.tribe-events-gcal,
+.tribe-events-ical{
+  @extend .nhsuk-button;
+  margin: 0 15px 10px 0;
+  background-color: $nhsuk-link-color;
+  padding: 5px 8px;
+  font-size: 13px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.single-tribe_events {
+
+  .tribe-events-single-event-description{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .nhsuk-promo__img{
+    margin-bottom: 20px;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Events Tickets Styles */
+
+
+.tribe-tickets-rsvp{
+
+  @extend .nhsuk-do-dont-list;
+
+  h2.tribe-events-tickets-title{
+
+    @extend .nhsuk-do-dont-list__label;
+
+  }
+
+  .tribe-events-tickets{
+    background-color: transparent;
+  }
+
+  select{
+    @extend .nhsuk-select;
+  }
+
+  .tribe-events-tickets input[type=text],
+  .tribe-events-tickets input[type=email], 
+  .tribe-events-tickets select{
+
+    width: 100%;
+
+  }
+
+  .tribe-button.tribe-button--rsvp{
+
+    background-color: $nhsuk-link-color;
+    font-size: 15px;
+
+  }
+
+}
+
+/* Events Widgets */
+
+.widget-area ol.tribe-list-widget{
+
+  list-style: none;
+
+  .tribe-clearfix:before{
+    display: none;
+  }
+
+}

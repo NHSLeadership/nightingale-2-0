@@ -132,7 +132,15 @@ function nightingale_breadcrumb() {
 								echo $cat_parents;
 							}
 							echo '<li class="nhsuk-breadcrumb__item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';
-						} elseif ( is_archive() && ! is_category() ) {
+						} elseif( is_post_type_archive( 'tribe_events' ) ){
+							?>
+							<li class="nhsuk-breadcrumb__item">
+							<?php
+							echo tribe_get_event_label_plural();
+							?>
+							</li>
+							<?php
+						}elseif ( is_archive() && ! is_category() ) {
 							?>
 							<li class="nhsuk-breadcrumb__item">
 							<?php
@@ -171,7 +179,15 @@ function nightingale_breadcrumb() {
 							?>
 							</li>
 							<?php
-						} elseif ( is_page() ) {
+						} elseif ( is_singular( 'tribe_events' ) ) {
+							?>
+							<li class="nhsuk-breadcrumb__item">
+								<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" >
+									<?php echo tribe_get_event_label_plural(); ?>
+								</a>
+							</li>
+							<?php
+						}elseif ( is_page() ) {
 							$post = $wp_query->get_queried_object();
 							if ( 0 !== $post->post_parent ) {
 								$title     = the_title( '', '', false );
@@ -198,8 +214,13 @@ function nightingale_breadcrumb() {
 
 							}
 						}
+						if( ! ( is_archive() || is_category() || is_post_type_archive() ) ){
+		
 						?>
+
 						<li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li>
+
+						<?php  }  ?>
 					</ol>
 					<p class="nhsuk-breadcrumb__back">
 						<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">

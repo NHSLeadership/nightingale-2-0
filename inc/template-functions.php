@@ -142,6 +142,9 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
  * Customise the read more link
  */
 function nightingale_read_more() {
+
+	return '';
+	
 	$post_id = get_the_ID();
 
 	return '<div class="nhsuk-action-link">
