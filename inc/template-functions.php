@@ -118,23 +118,24 @@ function nightingale__wp_head_ob_end() {
 
 /**
  * Adds Correct Class to excerpt paragraph tag
- * @param string $excerpt the_expert html
+ *
+ * @param string $excerpt the_expert html.
  */
-
 function nightingale_add_class_to_excerpt( $excerpt ) {
-    return str_replace('<p>', '<p class="nhsuk-promo__description">', $excerpt);
+	return str_replace( '<p>', '<p class="nhsuk-promo__description">', $excerpt );
 }
 
-add_filter( "the_excerpt", "nightingale_add_class_to_excerpt" );
+add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt' );
 
 /**
  * Shortens the excerpt to 20 char
- * @param int $length length to shorten content to
+ *
+ * @param int $length length to shorten content to.
  */
-
 function nightingale_shorten_excerpt( $length ) {
-    return 20;
+	return 20;
 }
+
 add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
 
 
@@ -143,8 +144,6 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
  */
 function nightingale_read_more() {
 
-	return '';
-	
 	$post_id = get_the_ID();
 
 	return '<div class="nhsuk-action-link">
@@ -156,7 +155,6 @@ function nightingale_read_more() {
 
 
 add_filter( 'excerpt_more', 'nightingale_read_more', 10, 1 );
-
 
 
 /**
@@ -180,7 +178,6 @@ function nightingale_read_more_posts( $title, $link ) {
 /**
  * Whether show sidebar returns true or false
  */
-
-function nightingale_show_sidebar(){
-	return ( 'true' === get_theme_mod('blog_sidebar') );
+function nightingale_show_sidebar() {
+	return ( 'true' === get_theme_mod( 'blog_sidebar' ) );
 }

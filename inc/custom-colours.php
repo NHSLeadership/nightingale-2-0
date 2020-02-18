@@ -7,8 +7,10 @@
  * @version 1.1 21st August 2019
  */
 
-
-function nightingale_get_theme_colours(){
+/**
+ * Setup the colours for our theme.
+ */
+function nightingale_get_theme_colours() {
 	return array(
 		'nhs_blue' => esc_html__( 'Standard NHS Blue (Default)', 'nightingale' ),
 		'003087'   => esc_html__( 'Dark Blue', 'nightingale' ),

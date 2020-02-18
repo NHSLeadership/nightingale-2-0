@@ -25,7 +25,7 @@
 	?>
 </head>
 <body <?php body_class( 'js-enabled' ); ?>>
-<?php do_action('nightingale_after_body'); ?>
+<?php do_action( 'nightingale_after_body' ); ?>
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nightingale' ); ?></a>
 <?php
 
@@ -43,26 +43,26 @@ echo '<header class="nhsuk-header nhsuk-header--' . esc_html( $header_layout . $
 	<?php
 	get_template_part( 'partials/logo' );
 	?>
-    <div class="nhsuk-header__content" id="content-header">
+	<div class="nhsuk-header__content" id="content-header">
 
-        <div class="nhsuk-header__menu">
-            <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
-                    aria-label="Open menu">Menu
-            </button>
-        </div>
+		<div class="nhsuk-header__menu">
+			<button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
+					aria-label="Open menu">Menu
+			</button>
+		</div>
 
 		<?php
 		$header_search = get_theme_mod( 'show_search', 'yes' );
 		if ( 'yes' === $header_search ) {
 			?>
-            <div class="nhsuk-header__search">
+			<div class="nhsuk-header__search">
 				<?php get_search_form(); ?>
-            </div>
+			</div>
 			<?php
 		}
 		?>
 
-    </div>
+	</div>
 
 </div>
 <?php

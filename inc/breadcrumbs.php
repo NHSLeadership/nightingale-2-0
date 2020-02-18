@@ -85,150 +85,150 @@ function nightingale_breadcrumb() {
 			$back_one_level = array( esc_url( home_url() ), __( 'Home', 'nightingale' ) );
 			?>
 			<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-			<div class="nhsuk-width-container">
-				<?php
-				if ( true === nightingale_uncanny_breadcrumb_check() ) {
-					echo esc_html( uo_breadcrumbs() );
-					?>
-
-					<p class="nhsuk-breadcrumb__back">
-						<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">
-							<?php echo esc_html( __( 'Back to ', 'nightingale' ) ) . esc_url( $back_one_level[1] ); ?>
-						</a>
-					</p>
-					<style>
-						.ld-breadcrumbs {
-							position: relative;
-						}
-
-						.ld-breadcrumbs-segments {
-							display: none !important;
-						}
-
-						.ld-status {
-							position: absolute;
-							right: 0;
-						}
-					</style>
+				<div class="nhsuk-width-container">
 					<?php
-				} else {
-					?>
-					<ol class="nhsuk-breadcrumb__list">
-						<li class="nhsuk-breadcrumb__item">
-							<a href="<?php echo esc_url( home_url() ); ?>">
-								<?php echo esc_html( __( 'Home', 'nightingale' ) ); ?>
+					if ( true === nightingale_uncanny_breadcrumb_check() ) {
+						echo esc_html( uo_breadcrumbs() );
+						?>
+
+						<p class="nhsuk-breadcrumb__back">
+							<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">
+								<?php echo esc_html( __( 'Back to ', 'nightingale' ) ) . esc_url( $back_one_level[1] ); ?>
 							</a>
-						</li>
+						</p>
+						<style>
+							.ld-breadcrumbs {
+								position: relative;
+							}
+
+							.ld-breadcrumbs-segments {
+								display: none !important;
+							}
+
+							.ld-status {
+								position: absolute;
+								right: 0;
+							}
+						</style>
 						<?php
-						// Check for categories, archives, search page, single posts, pages, the 404 page, and attachments.
-						if ( is_category() ) {
-							$cat_obj    = $wp_query->get_queried_object();
-							$this_cat   = get_category( $cat_obj->term_id );
-							$parent_cat = get_category( $this_cat->parent );
-							if ( 0 !== $this_cat->parent ) {
-								$cat_parents = nightingale_category_parents( $parent_cat, true, '', false, array(), true );
-							}
-							if ( 0 !== $this_cat->parent && ! is_wp_error( $cat_parents ) ) {
-								echo $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-							}
-							echo '<li class="nhsuk-breadcrumb__item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';
-						} elseif( is_post_type_archive( 'tribe_events' ) ){
-							?>
+					} else {
+						?>
+						<ol class="nhsuk-breadcrumb__list">
 							<li class="nhsuk-breadcrumb__item">
-							<?php
-							echo esc_html( tribe_get_event_label_plural() );
-							?>
-							</li>
-							<?php
-						}elseif ( is_archive() && ! is_category() ) {
-							?>
-							<li class="nhsuk-breadcrumb__item">
-							<?php
-							esc_html_e( 'Archives', 'nightingale' );
-							?>
-							</li>
-							<?php
-						} elseif ( is_search() ) {
-							?>
-							<li class="nhsuk-breadcrumb__item">
-							<?php
-							esc_html_e( 'Search Results', 'nightingale' );
-							?>
-							</li>
-							<?php
-						} elseif ( is_404() ) {
-							?>
-							<li class="nhsuk-breadcrumb__item">
-							<?php
-							esc_html_e( '404 Not Found', 'nightingale' );
-							?>
-							</li>
-							<?php
-						} elseif ( is_singular( 'post' ) ) {
-							$category    = get_the_category();
-							$category_id = get_cat_ID( $category[0]->cat_name );
-							$cat_parents = nightingale_category_parents( $category_id, true, '', false, array(), true );
-							if ( ! is_wp_error( $cat_parents ) ) {
-								echo $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-							}
-						} elseif ( is_singular( 'attachment' ) ) {
-							?>
-							<li class="nhsuk-breadcrumb__item">
-							<?php
-							the_title();
-							?>
-							</li>
-							<?php
-						} elseif ( is_singular( 'tribe_events' ) ) {
-							?>
-							<li class="nhsuk-breadcrumb__item">
-								<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" >
-									<?php echo esc_html( tribe_get_event_label_plural() ); ?>
+								<a href="<?php echo esc_url( home_url() ); ?>">
+									<?php echo esc_html( __( 'Home', 'nightingale' ) ); ?>
 								</a>
 							</li>
 							<?php
-						}elseif ( is_page() ) {
-							$post = $wp_query->get_queried_object();
-							if ( 0 !== $post->post_parent ) {
-								$title     = the_title( '', '', false );
-								$ancestors = array_reverse( get_post_ancestors( $post->ID ) );
-								array_push( $ancestors, $post->ID );
-								$home_page = get_option( 'page_on_front' );
-								foreach ( $ancestors as $ancestor ) {
-									if ( ( end( $ancestors ) !== $ancestor ) && ( ( $home_page !== $ancestor ) ) ) {
-										?>
-										<li class="nhsuk-breadcrumb__item">
-										<a href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
-											<?php echo esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ); ?></span>
-										</a>
-										</li>
-										<?php
-										$back_one_level = array(
-											esc_url( get_permalink( $ancestor ) ),
-											wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ),
-										);
-									}
+							// Check for categories, archives, search page, single posts, pages, the 404 page, and attachments.
+							if ( is_category() ) {
+								$cat_obj    = $wp_query->get_queried_object();
+								$this_cat   = get_category( $cat_obj->term_id );
+								$parent_cat = get_category( $this_cat->parent );
+								if ( 0 !== $this_cat->parent ) {
+									$cat_parents = nightingale_category_parents( $parent_cat, true, '', false, array(), true );
 								}
-								$parent         = $post->post_parent;
-								$back_one_level = array( get_permalink( $parent ), get_the_title( $parent ) );
+								if ( 0 !== $this_cat->parent && ! is_wp_error( $cat_parents ) ) {
+									echo $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+								}
+								echo '<li class="nhsuk-breadcrumb__item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';
+							} elseif ( is_post_type_archive( 'tribe_events' ) ) {
+								?>
+								<li class="nhsuk-breadcrumb__item">
+									<?php
+									echo esc_html( tribe_get_event_label_plural() );
+									?>
+								</li>
+								<?php
+							} elseif ( is_archive() && ! is_category() ) {
+								?>
+								<li class="nhsuk-breadcrumb__item">
+									<?php
+									esc_html_e( 'Archives', 'nightingale' );
+									?>
+								</li>
+								<?php
+							} elseif ( is_search() ) {
+								?>
+								<li class="nhsuk-breadcrumb__item">
+									<?php
+									esc_html_e( 'Search Results', 'nightingale' );
+									?>
+								</li>
+								<?php
+							} elseif ( is_404() ) {
+								?>
+								<li class="nhsuk-breadcrumb__item">
+									<?php
+									esc_html_e( '404 Not Found', 'nightingale' );
+									?>
+								</li>
+								<?php
+							} elseif ( is_singular( 'post' ) ) {
+								$category    = get_the_category();
+								$category_id = get_cat_ID( $category[0]->cat_name );
+								$cat_parents = nightingale_category_parents( $category_id, true, '', false, array(), true );
+								if ( ! is_wp_error( $cat_parents ) ) {
+									echo $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+								}
+							} elseif ( is_singular( 'attachment' ) ) {
+								?>
+								<li class="nhsuk-breadcrumb__item">
+									<?php
+									the_title();
+									?>
+								</li>
+								<?php
+							} elseif ( is_singular( 'tribe_events' ) ) {
+								?>
+								<li class="nhsuk-breadcrumb__item">
+									<a href="<?php echo esc_url( tribe_get_events_link() ); ?>">
+										<?php echo esc_html( tribe_get_event_label_plural() ); ?>
+									</a>
+								</li>
+								<?php
+							} elseif ( is_page() ) {
+								$post = $wp_query->get_queried_object();
+								if ( 0 !== $post->post_parent ) {
+									$title     = the_title( '', '', false );
+									$ancestors = array_reverse( get_post_ancestors( $post->ID ) );
+									array_push( $ancestors, $post->ID );
+									$home_page = get_option( 'page_on_front' );
+									foreach ( $ancestors as $ancestor ) {
+										if ( ( end( $ancestors ) !== $ancestor ) && ( ( $home_page !== $ancestor ) ) ) {
+											?>
+											<li class="nhsuk-breadcrumb__item">
+												<a href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
+													<?php echo esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ); ?></span>
+												</a>
+											</li>
+											<?php
+											$back_one_level = array(
+												esc_url( get_permalink( $ancestor ) ),
+												wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ),
+											);
+										}
+									}
+									$parent         = $post->post_parent;
+									$back_one_level = array( get_permalink( $parent ), get_the_title( $parent ) );
 
+								}
 							}
-						}
-						if( ! ( is_archive() || is_category() || is_post_type_archive() ) ){
+							if ( ! ( is_archive() || is_category() || is_post_type_archive() ) ) {
 
-						?>
+								?>
 
-						<li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li>
+								<li class="nhsuk-breadcrumb__item"><?php echo esc_html( the_title() ); ?></li>
 
-						<?php  }  ?>
-					</ol>
-					<p class="nhsuk-breadcrumb__back">
-						<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">
-							<?php echo esc_html_e( 'Back to ', 'nightingale' ) . esc_html( $back_one_level[1] ); ?>
-						</a>
-					</p>
-				<?php } // end of LearnDash / Uncanny Toolkit conditional ?>
-			</div>
+							<?php } ?>
+						</ol>
+						<p class="nhsuk-breadcrumb__back">
+							<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">
+								<?php echo esc_html_e( 'Back to ', 'nightingale' ) . esc_html( $back_one_level[1] ); ?>
+							</a>
+						</p>
+					<?php } // end of LearnDash / Uncanny Toolkit conditional ?>
+				</div>
 			</nav>
 			<?php
 		}

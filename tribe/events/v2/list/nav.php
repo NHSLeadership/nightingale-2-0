@@ -13,11 +13,12 @@
  * @var string $next_url The URL to the next page, if any, or an empty string.
  * @var string $today_url The URL to the today page, if any, or an empty string.
  *
- * @version 4.9.10
- *
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2020
  */
-?>
 
+?>
 <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
 	<ul class="nhsuk-list nhsuk-pagination__list">
 		<?php

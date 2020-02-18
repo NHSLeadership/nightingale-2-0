@@ -38,15 +38,15 @@ if ( post_password_required() ) {
 			} else {
 				echo sprintf(
 					esc_html(
-					/* translators: 1: number of comments, 2: post title */
-					    _nx(
-                            '%1$s reply on &ldquo;%2$s&rdquo;',
-                            '%1$s replies on &ldquo;%2$s&rdquo;',
-                            $comments_number,
-                            'comments title',
-                            'nightingale'
-					    )
-                    ),
+						/* translators: 1: number of comments, 2: post title */
+						_nx(
+							'%1$s reply on &ldquo;%2$s&rdquo;',
+							'%1$s replies on &ldquo;%2$s&rdquo;',
+							$comments_number,
+							'comments title',
+							'nightingale'
+						)
+					),
 					esc_html( number_format_i18n( $comments_number ) ),
 					esc_html( get_the_title() )
 				);
