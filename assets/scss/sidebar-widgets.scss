@@ -3,12 +3,28 @@
 #secondary {
   section {
 
-    @extend .nhsuk-panel-with-label;
-    background: $color_nhsuk-white;
-    margin-top: 32px;
+  border-top: 2px solid #005eb8;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    h2.widget-title {
-      @extend .nhsuk-panel-with-label__label;
+    h2 {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      padding-top: 16px;
+
+      a {
+        text-decoration: none;
+      }
+
+      @media (min-width: 40.0625em){
+        font-size: 24px;
+        font-size: 1.5rem;
+        line-height: 1.2;
+      }    
+
     }
 
     div {
@@ -18,14 +34,27 @@
       }
     }
 
-    ul {
-      @extend .nhsuk-list-panel__list;
+    ul, ol {
+      list-style: none;
+      margin-bottom: 16px;
+      padding-left: 0;
 
-      li {
-        @extend .nhsuk-list-panel__item;
+      li, h4 {
+
+        font-size: 14px;
+        font-size: .875rem;
+        line-height: 1.71429;
+        margin-bottom: 8px;
+
+        @media (min-width: 40.0625em){
+          font-size: 16px;
+          font-size: 1rem;
+          line-height: 1.5;
+        }
 
         a {
           @extend .nhsuk-list-panel__link;
+          padding: 0;
         }
       }
     }
@@ -109,7 +138,7 @@
           a {
 
             border-bottom: none;
-            padding: 5px 10px;
+            padding: 0;
           }
         }
 
@@ -123,4 +152,3 @@
       }
   }
 }
-

@@ -9,7 +9,7 @@
  * @version 1.1 21st August 2019
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-2' ) ) {
 	return;
 }
 
@@ -19,6 +19,6 @@ if( ! nightingale_show_sidebar() ){
 ?>
 <div class="nhsuk-grid__item nhsuk-grid-column-one-third">
 	<aside id="secondary" class="widget-area nhsuk-width-container">
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		<?php dynamic_sidebar( 'sidebar-2' ); ?>
 	</aside><!-- #secondary -->
 </div>

@@ -261,6 +261,12 @@
       }
     }
   }
+  .widget-title{
+    a{
+      color: $color_nhsuk-white;
+      text-decoration: none;
+    }
+  }
 }
 
 .nhsuk-content__clearfix {
