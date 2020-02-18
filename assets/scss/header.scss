@@ -107,6 +107,12 @@
 }
 
 .nhsuk-header--transactional {
+  .nhsuk-header__search {
+    @media (min-width: 40.0625em) {
+      height: 1rem;
+    }
+  }
+
   .nhsuk-header__link{
     width: auto;
     display: inline-block;
