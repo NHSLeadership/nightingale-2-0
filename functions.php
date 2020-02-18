@@ -193,7 +193,7 @@ function nightingale_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar', 'nightingale' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Elements to show in the sidebar. each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
+			'description'   => esc_html__( 'Elements to show in the sidebar. Each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="nhsuk-related-nav %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="nhsuk-related-nav__heading">',
@@ -202,9 +202,9 @@ function nightingale_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Page Sidebar', 'nightingale' ),
+			'name'          => esc_html__( 'Post Sidebar', 'nightingale' ),
 			'id'            => 'sidebar-2',
-			'description'   => esc_html__( 'Elements to show in the page sidebar. each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
+			'description'   => esc_html__( 'Elements to show in the post sidebar. Each widget will show as a panel. If empty you will have a blank right hand panel.', 'nightingale' ),
 			'before_widget' => '<section id="%1$s" class="nhsuk-related-nav %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="nhsuk-related-nav__heading">',
