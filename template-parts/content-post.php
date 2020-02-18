@@ -9,50 +9,59 @@
  * @version 2.0 January 2020
  */
 
-if( is_single() ):
-	// if is single show existing template
-	get_template_part('template-parts/content');
+if ( is_single() ) :
+	// if is single show existing template.
+	get_template_part( 'template-parts/content' );
 
-else:
+else :
 
-$sidebar = ( 'true' === get_theme_mod('blog_sidebar') );
+	$sidebar = ( 'true' === get_theme_mod( 'blog_sidebar' ) );
 
-?>
+	?>
 
-<div class="<?php if( $sidebar ): echo 'nhsuk-grid-column-one-half'; else: echo 'nhsuk-grid-column-one-third'; endif; ?> nhsuk-promo-group__item">
-	<div class="nhsuk-promo">
-	  <a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
-	    
-	    <?php 
+	<div class="
+	<?php
+	if ( $sidebar ) :
+		echo 'nhsuk-grid-column-one-half ';
+	else :
+		echo 'nhsuk-grid-column-one-third ';
+	endif;
+	?>
+	nhsuk-promo-group__item">
+		<div class="nhsuk-promo">
+			<a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
 
-	    if( has_post_thumbnail() ):
+				<?php
 
-	    	the_post_thumbnail( 'thumbnail', ['class' => 'nhsuk-promo__img'] );
+				if ( has_post_thumbnail() ) :
 
-	    else:
+					the_post_thumbnail( 'thumbnail', [ 'class' => 'nhsuk-promo__img' ] );
 
-	    	$fallback = get_theme_mod('blog_fallback');
+				else :
 
-	    	if( $fallback ){
-	    		echo wp_get_attachment_image( $fallback, 'thumbnail', false, ['class' => 'nhsuk-promo__img'] );
-	    	}	    	
+					$fallback = get_theme_mod( 'blog_fallback' );
 
-	    endif; 
+					if ( $fallback ) {
+						echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-promo__img' ] );
+					}
 
-	    ?>
-	    
-	    <div class="nhsuk-promo__content">
-	      <?php the_title('<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
+				endif;
 
-	      <?php do_action('nightingale_before_archive_content'); ?>
-      
-	      <?php the_excerpt(); ?>
+				?>
 
-	      <?php do_action('nightingale_after_archive_content'); ?>
-	      
-	    </div>
-	  </a>
+				<div class="nhsuk-promo__content">
+					<?php the_title( '<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
+
+					<?php do_action( 'nightingale_before_archive_content' ); ?>
+
+					<?php the_excerpt(); ?>
+
+					<?php do_action( 'nightingale_after_archive_content' ); ?>
+
+				</div>
+			</a>
+		</div>
 	</div>
-</div>
 
 <?php endif; ?>
+

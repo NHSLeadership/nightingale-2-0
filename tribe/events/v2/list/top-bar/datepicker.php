@@ -7,9 +7,9 @@
  *
  * See more documentation about our views templating system.
  *
- * @link    {INSERT_ARTCILE_LINK_HERE}
- *
- * @version 5.0.0
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2020
  *
  * @var bool   $is_now                     Whether the date selected in the datepicker is "now" or not.
  * @var bool   $show_now                   Whether to show the "Now" label as range start or not.
@@ -26,7 +26,6 @@
  * @var bool   $show_datepicker_submit     Boolean on whether to show the datepicker submit button.
  */
 
-
 $icons = nightingale_events_icons();
 
 ?>
@@ -42,7 +41,7 @@ $icons = nightingale_events_icons();
 
 	<div class="tribe-events-c-top-bar__datepicker">
 
-		<span> <?php echo esc_html__('Show events from', 'nightingale' )?></span>
+		<span> <?php echo esc_html__( 'Show events from', 'nightingale' ); ?></span>
 
 		<button
 			class="tribe-common-h3 tribe-common-h--alt tribe-events-c-top-bar__datepicker-button"

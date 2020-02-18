@@ -7,14 +7,15 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
- *
- * @version 4.9.9
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2020
  *
  * @var WP_Post $event The event post object with properties added by the `tribe_get_event` function.
  *
  * @see tribe_get_event() For the format of the event object.
  */
+
 use Tribe__Date_Utils as Dates;
 
 $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );

@@ -7,19 +7,24 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
- *
  * @var string $today_url The URL to the today page.
  *
- * @version 4.9.13
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2020
  */
-
 
 ?>
 <a
-	href="<?php echo esc_url( $today_url ); ?>"
-	class="tribe-common-c-btn-border tribe-events-c-top-bar__today-button tribe-common-a11y-hidden nhsuk-button"
-	data-js="tribe-events-view-link"
+		href="
+	<?php
+		echo esc_url( $today_url );
+	?>
+"
+		class="tribe-common-c-btn-border tribe-events-c-top-bar__today-button tribe-common-a11y-hidden nhsuk-button"
+		data-js="tribe-events-view-link"
 >
-	<?php  esc_html_e( 'Show all events', 'nightingale' ); ?>
+	<?php
+	esc_html_e( 'Show all events', 'nightingale' );
+	?>
 </a>

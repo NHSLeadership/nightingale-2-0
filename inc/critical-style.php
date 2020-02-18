@@ -15,6 +15,10 @@ function nightingale_critical_styles() {
 	get_template_part( 'partials/criticalcss' );
 	echo '</style>';
 }
+
+/**
+ * Add Custom Colour panel to the theme.
+ */
 function nightingale_custom_colour_theme() {
 	$theme_colour = get_theme_mod( 'theme_colour', 'nhs_blue' );
 	?>

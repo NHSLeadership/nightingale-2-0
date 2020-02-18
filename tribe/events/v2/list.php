@@ -3,13 +3,10 @@
  * View: List View
  *
  * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/list.php
  *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
- *
- * @version 5.0.0
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2020
  *
  * @var array    $events               The array containing the events.
  * @var string   $rest_url             The REST URL.
@@ -34,7 +31,7 @@ $sidebar = nightingale_show_sidebar();
 	data-view-rest-url="<?php echo esc_url( $rest_url ); ?>"
 	data-view-manage-url="<?php echo esc_attr( $should_manage_url ); ?>"
 	<?php foreach ( $container_data as $key => $value ) : ?>
-		data-view-<?php echo esc_attr( $key ) ?>="<?php echo esc_attr( $value ) ?>"
+		data-view-<?php echo esc_attr( $key ); ?>="<?php echo esc_attr( $value ); ?>"
 	<?php endforeach; ?>
 >
 
@@ -56,7 +53,13 @@ $sidebar = nightingale_show_sidebar();
 
 		<div class="nhsuk-grid-row">
 
-			<div class="<?php if( $sidebar ): echo 'nhsuk-grid-column-two-thirds'; endif; ?>">
+			<div class="
+			<?php
+			if ( $sidebar ) :
+				echo 'nhsuk-grid-column-two-thirds';
+			endif;
+			?>
+				">
 
 				<div class="nhsuk-grid-row nhsuk-promo-group">
 
@@ -74,11 +77,10 @@ $sidebar = nightingale_show_sidebar();
 			</div>
 
 			<?php
-			if( $sidebar ):
-
-			get_template_part('tribe/events/sidebar-events');
-
-			endif;?>
+			if ( $sidebar ) :
+				get_template_part( 'tribe/events/sidebar-events' );
+			endif;
+			?>
 
 		</div>
 

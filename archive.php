@@ -22,29 +22,34 @@ $sidebar = nightingale_show_sidebar();
 			?>
 		</header><!-- .page-header -->
 
-		<div class="<?php if( $sidebar ): echo 'nhsuk-grid-column-two-thirds'; endif; ?> archive">
+		<div class="
+		<?php
+		if ( $sidebar ) :
+			echo 'nhsuk-grid-column-two-thirds';
+		endif;
+		?>
+		archive">
 
 			<?php
 			if ( have_posts() ) :
 				?>
 
-				
-
 				<div class="nhsuk-grid-row nhsuk-promo-group">
 
-				<?php
-				/* Start the Loop */
-				while ( have_posts() ) :
-					the_post();
+					<?php
+					/* Start the Loop */
+					while ( have_posts() ) :
+						the_post();
 
-					/*
-					 * Include the Post-Type-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_type() );
+						/*
+						 * Include the Post-Type-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+						 */
+						get_template_part( 'template-parts/content', get_post_type() );
 
-				endwhile; ?>
+					endwhile;
+					?>
 
 				</div>
 
@@ -52,19 +57,18 @@ $sidebar = nightingale_show_sidebar();
 
 				nightingale_archive_pagination();
 
-				else:
+				else :
 
 					get_template_part( 'template-parts/content', 'none' );
 
 				endif;
 				?>
 
-				
 
 		</div>
-			
-		<?php get_sidebar('blog'); ?>
-			
+
+		<?php get_sidebar( 'blog' ); ?>
+
 	</div><!-- #primary -->
 
 <?php

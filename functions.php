@@ -445,7 +445,8 @@ if ( in_array( 'the-events-calendar/the-events-calendar.php', $active_plugins, t
 	require get_template_directory() . '/inc/events-calendar.php';
 }
 
- /* Google Tag Manager.
+/*
+ * Google Tag Manager.
  * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a file for
  * the Google Tag Manager to fit it into the theme.
  */
