@@ -54,7 +54,7 @@ function nightingale_render_colourpicker( $post ) {
 
 	?>
 
-	<label for="color-picker"><?php _esc_html_e( 'Choose colour for the page. (Refresh the page for changes to take effect.)', 'nightingale' ); ?></label>
+	<label for="color-picker"><?php esc_html_e( 'Choose colour for the page. (Refresh the page for changes to take effect.)', 'nightingale' ); ?></label>
 	<select id="color-picker" name="color-picker" class="widefat">
 		<?php foreach ( $theme_colours as $name => $colour ) : ?>
 
