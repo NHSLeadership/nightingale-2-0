@@ -1,0 +1,120 @@
+#primary {
+  .gallery, .wp-block-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	.gallery-item {
+	  margin: 0 16px 16px 0;
+	  display: flex;
+	  flex-grow: 1;
+	  flex-direction: column;
+	  justify-content: center;
+	  position: relative;
+	  margin-right: 16px;
+	  img {
+		width: 100%;
+	  }
+	  figcaption {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		max-height: 100%;
+		overflow: auto;
+		padding: 40px 10px 9px;
+		color: #fff;
+		text-align: center;
+		font-size: 13px;
+		background: linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,transparent);
+	  }
+	}
+	@media (min-width: 600px) {
+	  &.alignleft {
+		margin-right : calc(2 * 1rem);
+	  }
+	  &.alignright {
+		margin-left : calc(2 * 1rem);
+	  }
+	  &.gallery-columns-1, &.columns-1 {
+		.gallery-item, .wp-block-gallery-item {
+		  width        : 100%;
+		  margin-right : 0;
+		}
+	  }
+	  &.gallery-columns-2, &.columns-2 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 16px) / 2);
+
+		  &:nth-of-type(2n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	  &.gallery-columns-3, &.columns-3 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 32px) / 3);
+
+		  &:nth-of-type(3n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	  &.gallery-columns-4, &.columns-4 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 48px) / 4);
+
+		  &:nth-of-type(4n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	  &.gallery-columns-5, &.columns-5 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 64px) / 5);
+
+		  &:nth-of-type(5n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	  &.gallery-columns-6, &.columns-6 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 80px) / 6);
+
+		  &:nth-of-type(6n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	  &.gallery-columns-7, &.columns-7 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 96px) / 7);
+
+		  &:nth-of-type(7n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	  &.gallery-columns-8, &.columns-8 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 112px) / 8);
+
+		  &:nth-of-type(8n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	  &.gallery-columns-9, &.columns-9 {
+		.gallery-item, .wp-block-gallery-item {
+		  width : calc((100% - 132px) / 9);
+
+		  &:nth-of-type(9n) {
+			margin-right : 0;
+		  }
+		}
+	  }
+	}
+  }
+}
