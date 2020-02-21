@@ -185,10 +185,12 @@ function nightingale_show_sidebar() {
 /**
  * Determine if page should have sidebar on left or right, and return additional class if required.
  */
-function nightingale_sidebar_location() {
+function nightingale_sidebar_location( $sidebar ) {
 	$sidebar_location = get_theme_mod( 'sidebar_location', 'right' );
 	if ( 'right' !== $sidebar_location ) {
-		$sidefloat = ' contentright';
+		if ( is_active_sidebar( $sidebar) ) {
+			$sidefloat = ' contentright';
+		}
 	}
 	return $sidefloat;
 }

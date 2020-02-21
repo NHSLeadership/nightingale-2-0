@@ -17,7 +17,7 @@ get_header();
 		<?php
 		if ( nightingale_show_sidebar() ) :
 			echo 'nhsuk-grid-column-two-thirds ';
-			echo nightingale_sidebar_location();
+			echo nightingale_sidebar_location( 'sidebar-2' );
 		endif;
 		?>
 		single">
