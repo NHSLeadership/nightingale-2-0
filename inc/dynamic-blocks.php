@@ -71,11 +71,6 @@ function nightingale_block_renderer( string $name, array $attributes, string $co
 	set_query_var( $name . '/content', $content );
 	set_query_var( $name . '/class', 'wp-block-' . $template_name );
 
-	// get template file directory
-	// $template_file = plugin_dir_path( __FILE__ ) . "/templates/{$template_name}.php";
-
-	var_dump($attributes);
-
 	// Load the template part in an output buffer:
 	ob_start();
 	get_template_part( "template-parts/{$template_name}" );
