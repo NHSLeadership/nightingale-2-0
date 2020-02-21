@@ -472,7 +472,10 @@ require get_template_directory() . '/inc/critical-style.php';
  */
 require get_template_directory() . '/inc/class-comment-author-role-label.php';
 
-add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3 );
+
+require get_template_directory() . '/inc/dynamic-blocks.php';
+
+// add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3 );
 
 /**
  * Amend the markup in the latest news block to bring in to NHSUK styling.
