@@ -212,12 +212,49 @@ function nightingale_customize_register( $wp_customize ) {
 		array(
 			'label'       => esc_html__( 'Theme Colour', 'nightingale' ),
 			'description' => esc_html__( 'If you wish to change the default colour of the theme, this is where you do it. Please note, this will disable the inline critical-css and may have a slight performance impact on your visible loadtimes. It may also affect the accessability of your site.', 'nightingale' ),
-			'section'     => 'title_tagline',
+			'section'     => 'colors',
 			'type'        => 'select',
 			'choices'     => nightingale_get_theme_colours(),
 		)
 	);
+	/*
+	 * ------------------------------------------------------------
+	 * SECTION: Layout
+	 * ------------------------------------------------------------
+	 */
+	$wp_customize->add_section(
+		'section_layout',
+		array(
+			'title'       => esc_html__( 'Layout', 'nightingale' ),
+			'description' => esc_attr__( 'Customise your site layout', 'nightingale' ),
+			'priority'    => 30,
+		)
+	);
+	/*
+	 * Show Sidebar left or right?
+	 */
+	$wp_customize->add_setting(
+		'sidebar_location',
+		array(
+			'default'           => 'right',
+			'sanitize_callback' => 'esc_attr',
+		)
+	);
 
+	$wp_customize->add_control(
+		'sidebar_location',
+		array(
+			'label'       => esc_html__( 'Where would you like the sidebar to appear?', 'nightingale' ),
+			'description' => esc_html__( 'Standard layout puts the sidebar to the right. You can change this here. WARNING: if your sidebar is empty, but you have sidebar set to left, your content will be floating a third of the way across the page, which could look weird!', 'nightingale' ),
+			'section'     => 'section_layout',
+			'priority'    => '100',
+			'type'        => 'radio',
+			'choices'     => array(
+				'right' => esc_html__( 'Right', 'nightingale' ),
+				'left'  => esc_html__( 'Left', 'nightingale' ),
+			),
+		)
+	);
 }
 
 add_action( 'customize_register', 'nightingale_customize_register' );

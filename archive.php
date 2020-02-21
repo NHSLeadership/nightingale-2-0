@@ -14,7 +14,7 @@ get_header();
 $sidebar = nightingale_show_sidebar();
 
 ?>
-	<div id="primary">
+	<div id="primary" class=" nhsuk-grid-row">
 		<header class="page-header">
 			<?php
 			the_archive_title( '<h1 class="page-title">', '</h1>' );
@@ -25,7 +25,8 @@ $sidebar = nightingale_show_sidebar();
 		<div class="
 		<?php
 		if ( $sidebar ) :
-			echo 'nhsuk-grid-column-two-thirds';
+			echo 'nhsuk-grid-column-two-thirds ';
+			echo nightingale_sidebar_location();
 		endif;
 		?>
 		archive">
@@ -67,8 +68,11 @@ $sidebar = nightingale_show_sidebar();
 
 		</div>
 
-		<?php get_sidebar( 'blog' ); ?>
-
+		<?php
+		if ( $sidebar ) :
+			get_sidebar( 'blog' );
+		endif;
+		?>
 	</div><!-- #primary -->
 
 <?php

@@ -37,6 +37,7 @@ $sidebar = nightingale_show_sidebar();
 		<?php
 		if ( $sidebar ) :
 			echo 'nhsuk-grid-column-two-thirds ';
+			echo nightingale_sidebar_location();
 		endif;
 		?>
 		index">
@@ -79,7 +80,11 @@ $sidebar = nightingale_show_sidebar();
 				?>
 
 		</div>
-		<?php get_sidebar( 'blog' ); ?>
+		<?php
+		if ( $sidebar ) :
+			get_sidebar( 'blog' );
+		endif;
+		?>
 
 	</div><!-- #primary -->
 
