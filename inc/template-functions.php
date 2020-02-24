@@ -181,3 +181,16 @@ function nightingale_read_more_posts( $title, $link ) {
 function nightingale_show_sidebar() {
 	return ( 'true' === get_theme_mod( 'blog_sidebar' ) );
 }
+
+/**
+ * Determine if page should have sidebar on left or right, and return additional class if required.
+ */
+function nightingale_sidebar_location( $sidebar ) {
+	$sidebar_location = get_theme_mod( 'sidebar_location', 'right' );
+	if ( 'right' !== $sidebar_location ) {
+		if ( is_active_sidebar( $sidebar) ) {
+			$sidefloat = ' contentright';
+		}
+	}
+	return $sidefloat;
+}

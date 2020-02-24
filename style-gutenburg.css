@@ -10827,6 +10827,15 @@ section {
 // @author Tony Blacker, NHS Leadership Academy
 // @version 1.1 12th October 2019
 */
+.nhsuk-grid-column-two-thirds.contentright, .nhsuk-grid-column-two-thirds.contentright.archive, .nhsuk-grid-column-two-thirds.contentright.index {
+  float: right;
+  padding: 0 0 0 16px;
+}
+
+.nhsuk-grid-column-two-thirds.contentright + .nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.archive + .nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.index + .nhsuk-grid-column-one-third {
+  padding-left: 0;
+}
+
 .nhsuk-grid-column-full > :first-child {
   padding-left: 0px !important;
 }

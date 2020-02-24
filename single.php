@@ -13,7 +13,14 @@ get_header();
 ?>
 
 	<div id="primary" class=" nhsuk-grid-row">
-		<div class="nhsuk-grid-column-full single">
+        <div class="
+		<?php
+		if ( nightingale_show_sidebar() ) :
+			echo 'nhsuk-grid-column-two-thirds ';
+			echo nightingale_sidebar_location( 'sidebar-2' );
+		endif;
+		?>
+		single">
 
 			<?php
 			while ( have_posts() ) :
@@ -31,9 +38,13 @@ get_header();
 			?>
 
 		</div>
+		<?php
+		if ( nightingale_show_sidebar() ) :
+			get_sidebar( 'blog' );
+		endif;
+		?>
 
 	</div><!-- #primary -->
 
 <?php
-get_sidebar( 'sidebar-2' );
 get_footer();
