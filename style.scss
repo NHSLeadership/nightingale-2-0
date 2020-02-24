@@ -42,11 +42,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/sidebar-widgets.scss';
 // sidebar elements and subpages navigation
 @import 'assets/scss/comments-and-meta';
+// Print output styling
+@import 'assets/scss/print';
+// over-ride for gallery styling to bring into NHSUK style
+@import 'assets/scss/gallery';
 // Gravity Forms plugin styling to match NHSUK design patterns
 @import 'assets/scss/gravity-forms';
 // LearnDash plugin styling to match NHSUK design patterns
 @import 'assets/scss/learndash-styling';
 // Events Calendar plugin styling to match NHSUK design patterns
 @import 'assets/scss/events-calendar-styling';
-// Print output styling
-@import 'assets/scss/print';

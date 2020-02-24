@@ -10671,6 +10671,11 @@ section {
   color: #d5281b;
 }
 
+#primary h1, #primary .editor-post-title__input, #primary p, #primary .nhsuk-pagination__page {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
 #primary footer .edit-link {
   text-decoration: none;
   margin-left: 20px;

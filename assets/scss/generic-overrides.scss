@@ -119,6 +119,11 @@
 }
 
 #primary {
+  h1, p, .nhsuk-pagination__page {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
+
   footer {
     .edit-link {
       @extend .nhsuk-pill-standard;
