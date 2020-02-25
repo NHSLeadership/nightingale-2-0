@@ -472,42 +472,10 @@ require get_template_directory() . '/inc/critical-style.php';
  */
 require get_template_directory() . '/inc/class-comment-author-role-label.php';
 
+/**
+ * Hijack core/posts block and force own output
+ */
 
 require get_template_directory() . '/inc/dynamic-blocks.php';
 
-// add_filter( 'render_block', 'nightingale_latest_posts_block_filter', 10, 3 );
 
-/**
- * Amend the markup in the latest news block to bring in to NHSUK styling.
- *
- * @param string $block_content - the generated html from core block.
- * @param string $block - the name of the block.
- *
- * @return string $output - the amended html markup.
- */
-function nightingale_latest_posts_block_filter( $block_content, $block ) {
-
-	if ( 'core/latest-posts' !== $block['blockName'] ) {
-		return $block_content;
-	}
-	$output = '<div class="nhsuk-grid-row nightingale-latest-news"><div class="nhsuk-panel-group">';
-	$dom    = new DOMDocument();
-	libxml_use_internal_errors( true );
-	$dom->loadHTML( $block_content );
-	$lis = $dom->getElementsByTagName( 'li' );
-	foreach ( $lis as $li ) {
-		$output  .= '<div class="nhsuk-grid-column-one-third nhsuk-panel-group__item"><div class="nhsuk-panel">';
-		$titles   = $li->getElementsByTagName( 'a' );
-		$title    = $titles->item( 0 )->nodeValue;
-		$link     = $titles->item( 0 )->getAttribute( 'href' );
-		$contents = $li->getElementsByTagName( 'div' );
-		$excerpt  = $contents->item( 0 )->nodeValue;
-		$output  .= '<h3><a href="' . $link . '"> ' . $title . '</a></h3>';
-		$output  .= '<p>' . substr( $excerpt, 0, - 13 ) . '</p>';
-		$output  .= nightingale_read_more_posts( $title, $link );
-		$output  .= '</div></div>';
-	}
-	$output .= '</div></div>';
-
-	return $output;
-}

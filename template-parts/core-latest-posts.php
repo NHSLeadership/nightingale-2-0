@@ -2,9 +2,11 @@
 
 $namespace = 'core/latest-posts/';
 
+
 $postsToShow = get_query_var( $namespace . 'postsToShow' ) ? get_query_var( $namespace . 'postsToShow' ) : 5;
 $categories = get_query_var( $namespace . 'categories' );
 $order = get_query_var( $namespace . 'order' ) ? get_query_var( $namespace . 'order' ) : 'desc';
+$orderby = get_query_var( $namespace . 'orderBy' ) ? get_query_var( $namespace . 'orderBy' ) : 'date';
 
 
 $displayPostContent = get_query_var( $namespace . 'displayPostContent' );
@@ -16,13 +18,14 @@ $displayPostContentRadio = get_query_var( $namespace . 'displayPostContentRadio'
 $args = array(
 		'posts_per_page'   => $postsToShow,
 		'post_status'      => 'publish',
-		'order'            => $attributes['order'],
-		'orderby'          => $order,
+		'order'            => $order,
+		'orderby'          => $orderby,
+		'ignore_sticky_posts' => 1,
 		'suppress_filters' => false,
 	);
 
 if ( isset( $categories ) ) {
-	$args['category'] = $categories;
+	$args['cat'] = $categories;
 }
 
 $sidebar = nightingale_show_sidebar();
