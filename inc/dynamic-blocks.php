@@ -1,7 +1,7 @@
 <?php
 
 
-add_filter( 'render_block', 'vt_filter_blocks', 10, 2 );
+add_filter( 'render_block', 'nightingale_filter_blocks', 10, 2 );
 
 
 function nightingale_filter_blocks( $block_content, $block ) {
@@ -14,7 +14,7 @@ function nightingale_filter_blocks( $block_content, $block ) {
 		return $block_content;
 	}
 
-	return vt_block_renderer( $block['blockName'],  $block['attrs'] );
+	return nightingale_block_renderer( $block['blockName'],  $block['attrs'] );
 
 }
 
