@@ -84,7 +84,7 @@ $icons = nightingale_events_icons();
 				</time>
 			<?php endif; ?>
 
-			<?php echo esc_html( $icons['calendar'] ); ?>
+			<?php echo $icons['calendar']; ?>
 
 		</button>
 
