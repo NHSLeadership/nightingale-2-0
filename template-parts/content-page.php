@@ -22,6 +22,8 @@
 		the_content();
 
 		?>
+
+		<?php do_action('page-after-content'); ?>
 	</div><!-- .entry-content -->
 	<div class="nhsuk-content__clearfix"></div>
 

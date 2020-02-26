@@ -404,6 +404,11 @@ require get_template_directory() . '/inc/breadcrumbs.php';
 require get_template_directory() . '/inc/color-picker.php';
 
 /**
+ * Color Picker.
+ */
+require get_template_directory() . '/inc/last-reviewed.php';
+
+/**
  * Create an array of active plugins.
  */
 
