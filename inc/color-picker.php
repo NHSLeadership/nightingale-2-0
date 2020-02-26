@@ -133,7 +133,7 @@ function nightingale_admin_body_class( $classes ) {
 		return "$classes $extra_styles";
 
 	} else {
-		return "$classes $extra_styles";
+		return "$classes";
 	}
 
 }
