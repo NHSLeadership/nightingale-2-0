@@ -296,7 +296,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 };
 
 // Extend expiration of save and continue links from 30 days to 1 year.
-add_filter( 'gform_incomplete_submissions_expiration_days', 'gwp_days', 10, 1 );
+add_filter( 'gform_incomplete_submissions_expiration_days', 'nightingale_gwp_days', 10, 1 );
 
 /**
  * Set an expiry for partially completed Gravity Forms
@@ -305,7 +305,7 @@ add_filter( 'gform_incomplete_submissions_expiration_days', 'gwp_days', 10, 1 );
  *
  * @return int $expiration_days how long before we kill off a partial entry.
  */
-function gwp_days( $expiration_days ) {
+function nightingale_gwp_days( $expiration_days ) {
 	$expiration_days = 365;
 
 	return $expiration_days;
