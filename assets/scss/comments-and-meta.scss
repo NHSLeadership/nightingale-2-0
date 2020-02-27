@@ -7,11 +7,11 @@
   margin-bottom: 1rem;
   .comment-list {
     margin-bottom: 1rem;
-    background-color: #f0f4f5;
+    background-color: $color-nhsuk-light-grey;
     .nhsuk-list-panel__item {
       padding: 1.5rem 0;
       display: block;
-      background-color: #f0f4f5;
+      background-color: $color-nhsuk-light-grey;
       #respond {
         margin-top: 1.5rem;
         position: relative;
@@ -56,8 +56,8 @@
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            background-color: #ffffff;
-            border: 2px solid #f3f3f3;
+            background-color: $color_nhsuk-white;
+            border: 2px solid $color_nhsuk-light-grey;
             top: initial;
             left: 20px;
             bottom: -6px;
@@ -84,7 +84,7 @@
           cite {
             display: block;
             text-decoration: none;
-            color: #656c71;
+            color: $color_nhsuk-dark-grey;
             font-weight: bold;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -190,9 +190,9 @@
           margin-left: 10px;
           border-radius: 4px;
           border: 2px solid;
-          background: #fff;
-          color: #005eb8;
-          border-color: #005eb8;
+          background: $color_nhsuk-white;
+          color: $color_nhsuk-blue;
+          border-color: $color_nhsuk-blue;
           padding: 5px;
           text-transform: uppercase;
         }
@@ -257,7 +257,7 @@
     }
   }
   .current {
-    background: #005eb8;
-    color: #ffffff;
+    background: $color_nhsuk-blue;
+    color: $color_nhsuk-white;
   }
 }

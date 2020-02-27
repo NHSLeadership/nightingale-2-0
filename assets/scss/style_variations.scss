@@ -21,7 +21,7 @@
 
 .nhsuk-header__search-wrap {
   input[type="text"] {
-    border: 1px solid #cccccc;
+    border: 1px solid $color_nhsuk-light-grey;
   }
 }
 
@@ -78,9 +78,9 @@
 }
 
 .nhsuk-promo__link-wrapper:hover {
-    background-color: #fff;
-    box-shadow: 0 0 0 4px #ffb81c;
-    color: #005eb8;
+    background-color: $color_nhsuk-white;
+    box-shadow: 0 0 0 4px $nhsuk-link-hover-color;
+    color: $color_nhsuk-blue;
 }
 
 .nhsuk-grid-column-two-thirds.archive,

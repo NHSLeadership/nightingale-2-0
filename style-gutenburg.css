@@ -10630,7 +10630,7 @@ section {
 }
 
 .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination__link:hover {
-  box-shadow: 0 0 0 16px #ffcd60 inset;
+  box-shadow: 0 0 0 4px #ffb81C inset;
 }
 
 .is-style-outline .wp-block-button__link {
@@ -10715,14 +10715,14 @@ section {
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 1px solid #d8dde0;
+  border: 1px solid #f0f4f5;
   border-radius: 3px 0px 0px 3px;
   float: left;
   max-width: 80%;
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 1px solid #ccc;
+  border: 1px solid #f0f4f5;
   border-left: none;
   float: left;
 }
@@ -10770,14 +10770,14 @@ section {
 }
 
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 1px solid #d8dde0;
+  border: 1px solid #f0f4f5;
   border-radius: 3px 0px 0px 3px;
   float: left;
   max-width: 80%;
 }
 
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 1px solid #ccc;
+  border: 1px solid #f0f4f5;
   border-left: none;
   float: left;
 }
@@ -10845,7 +10845,7 @@ section {
 }
 
 .nhsuk-header__search-wrap input[type="text"] {
-  border: 1px solid #cccccc;
+  border: 1px solid #e8edee;
 }
 
 /* Latest Posts skinning */
@@ -10885,6 +10885,12 @@ section {
 /* Extra Blog Styles */
 .nhsuk-promo img.nhsuk-promo__img {
   padding: 0px;
+}
+
+.nhsuk-promo__link-wrapper:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px #7C2855;
+  color: #005eb8;
 }
 
 .nhsuk-grid-column-two-thirds.archive,

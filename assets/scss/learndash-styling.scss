@@ -79,7 +79,7 @@
       -ms-flex: initial;
 
       &:hover {
-        color: $color_nhsuk-yellow !important;
+        color: $nhsuk-link-hover-color !important;
       }
     }
   }
@@ -89,10 +89,10 @@
 
     .ld-primary-color-hover:hover {
       margin: 0 -20px;
-      padding: 20px 20px;
+      padding: 20px;
 
       &:hover {
-        background: #ffcd60;
+        background: $color_nhsuk-warm-yellow;
       }
     }
 
@@ -145,8 +145,8 @@
         &:before {
           width: 0;
           height: 0;
-          border-left: 20px solid #f0f4f5;
-          border-right: 20px solid #f0f4f5;
+          border-left: 20px solid $color_nhsuk-light-grey;
+          border-right: 20px solid $color_nhsuk-light-grey;
           border-bottom: 15px solid $color_nhsuk-dark-grey;
           transform: rotate(0);
           right: 260px;
@@ -176,7 +176,7 @@
 
         &:hover {
           background: transparent;
-          border: 3px solid #ffcd60;
+          border: 3px solid $color_nhsuk-warm-yellow;
           margin: -3px;
         }
       }

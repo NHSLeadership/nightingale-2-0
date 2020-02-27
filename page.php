@@ -20,7 +20,7 @@ flush();
 ?>
 
 <div id="primary" class=" nhsuk-grid-row">
-	<div class="nhsuk-grid-column-two-thirds page <?php echo nightingale_sidebar_location( 'sidebar-1' ); ?>">
+	<div class="nhsuk-grid-column-two-thirds page <?php echo nightingale_sidebar_location( 'sidebar-1' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>">
 		<?php
 		while ( have_posts() ) :
 			the_post();

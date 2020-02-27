@@ -13,11 +13,11 @@ get_header();
 ?>
 
 	<div id="primary" class=" nhsuk-grid-row">
-        <div class="
+		<div class="
 		<?php
 		if ( nightingale_show_sidebar() ) :
 			echo 'nhsuk-grid-column-two-thirds ';
-			echo nightingale_sidebar_location( 'sidebar-2' );
+			echo nightingale_sidebar_location( 'sidebar-2' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		endif;
 		?>
 		single">

@@ -23,7 +23,7 @@
 
 		?>
 
-		<?php do_action('page-after-content'); ?>
+		<?php do_action( 'page_after_content' ); ?>
 	</div><!-- .entry-content -->
 	<div class="nhsuk-content__clearfix"></div>
 
