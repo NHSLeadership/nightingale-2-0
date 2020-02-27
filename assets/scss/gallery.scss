@@ -6,6 +6,9 @@
 	padding: 0;
 	margin: 0;
 
+	&.alignleft {
+	  display: flex;
+	}
 	.gallery-item {
 	  margin: 0 16px 16px 0;
 	  display: flex;
@@ -24,7 +27,7 @@
 		max-height: 100%;
 		overflow: auto;
 		padding: 40px 10px 9px;
-		color: #fff;
+		color: $color_nhsuk-white;
 		text-align: center;
 		font-size: 13px;
 		background: linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,transparent);

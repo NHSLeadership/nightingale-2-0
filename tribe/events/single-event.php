@@ -224,7 +224,7 @@ $event_id = get_the_ID();
 
 
 	<!-- Event footer -->
-	<?php require_once plugin_dir_path( __FILE__ ) . 'single-event/footer.php'; ?>
+	<?php require_once plugin_dir_path( __FILE__ ) . 'single-event/footer.php'; // phpcs:ignore WPThemeReview.CoreFunctionality.FileInclude.FileIncludeFound ?>
 	<!-- #tribe-events-footer -->
 
 </div><!-- #tribe-events-content -->

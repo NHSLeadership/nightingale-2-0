@@ -1,10 +1,10 @@
 <?php
 /**
- * Meta Box for choosing the page colour on a page
+ * Meta Box for adding a review date to a page
  *
- * @package Nightingale-2-0
+ * @package   Nightingale-2-0
  * @copyright NHS Leadership Academy, Very Twisty
- * @version Feburary 2020
+ * @version   Feburary 2020
  */
 
 // Tutorial found here:
@@ -21,7 +21,7 @@
 */
 
 /**
- * Create the colour picker in a metabox.
+ * Create the last reviewed option in a metabox.
  */
 function nightingale_lastreviewed_metabox() {
 	add_meta_box(
@@ -37,7 +37,7 @@ function nightingale_lastreviewed_metabox() {
 add_action( 'add_meta_boxes', 'nightingale_lastreviewed_metabox' );
 
 /**
- * Render the colour picker.
+ * Render the last reviewed.
  *
  * @param array $post the post variables.
  */
@@ -49,14 +49,25 @@ function nightingale_render_lastreviewed( $post ) {
 	// get previously saved meta values (if any).
 	$sidebar = esc_attr( get_post_meta( $post->ID, 'last-reviewed', true ) );
 
-	$checked = $sidebar === 'on' ? true : false;
-
+	$checked = 'on' === $sidebar ? true : false;
 	?>
 
 	<p><?php esc_html_e( 'Toggle last reviewed', 'nightingale' ); ?></p>
-	<input type="radio" id="review-on" name="lastReviwed" value="on" <?php if( $checked ): echo 'checked'; endif; ?> >
+	<input type="radio" id="review-on" name="lastReviwed" value="on"
+		<?php
+		if ( $checked ) :
+			echo 'checked';
+		endif;
+		?>
+	>
 	<label for="review-on">On</label><br>
-	<input type="radio" id="review-off" name="lastReviwed" value="" <?php if( ! $checked ): echo 'checked'; endif; ?> >
+	<input type="radio" id="review-off" name="lastReviwed" value=""
+		<?php
+		if ( ! $checked ) :
+			echo 'checked';
+		endif;
+		?>
+	>
 	<label for="review-off">Off</label><br>
 
 	<?php
@@ -99,31 +110,26 @@ function nightingale_save_lastreviewed( $post_id ) {
 
 add_action( 'save_post', 'nightingale_save_lastreviewed' );
 
+add_action( 'page_after_content', 'nightingale_page_last_reviewed' );
 
-
-
-
-
-
-add_action('page-after-content', 'page_last_reviewed' );
-
-function page_last_reviewed(){
-
+/**
+ * Displays the last reviewed date on the post.
+ */
+function nightingale_page_last_reviewed() {
 	$display = get_post_meta( get_the_id(), 'last-reviewed', true );
 
-	if( $display !== 'on' ){
+	if ( 'on' !== $display ) {
 		return;
 	}
 
-	$updated_date = get_the_modified_time('j F, Y'); 
-?>
+	$updated_date = get_the_modified_time( 'j F, Y' );
+	?>
 
 	<div class="nhsuk-review-date">
-	  <p class="nhsuk-body-s">
-	    Page last reviewed: <?php echo $updated_date; ?>
-	  </p>
+		<p class="nhsuk-body-s">
+			Page last reviewed: <?php echo esc_html( $updated_date ); ?>
+		</p>
 	</div>
-	
-<?php }
 
-
+	<?php
+}

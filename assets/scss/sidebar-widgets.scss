@@ -3,7 +3,7 @@
 #secondary {
   section {
 
-  border-top: 2px solid #005eb8;
+  border-top: 2px solid $color_nhsuk-blue;
   margin-bottom: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -23,7 +23,7 @@
         font-size: 24px;
         font-size: 1.5rem;
         line-height: 1.2;
-      }    
+      }
 
     }
 
@@ -84,8 +84,8 @@
         clip-path: unset;
         height: auto;
         width: auto;
-        background: #005eb8;
-        color: #ffffff;
+        background: $color_nhsuk-blue;
+        color: $color_nhsuk-white;
         font-size: 1.25rem;
         text-transform: uppercase;
       }
@@ -99,7 +99,7 @@
 
     //subpages nav alteration
      ul > li {
-      border-bottom: 1px solid #d8dde0;
+      border-bottom: 1px solid $color_nhsuk-grey-3;
 
     }
 

@@ -43,7 +43,7 @@
 
 //when button is a link, something goes wonky
 .nhsuk-button--reverse:visited {
-  color: #212b32;
+  color: $color_nhsuk-black;
 }
 
 // disabling search suggest. I really dont like doing this, but the nhsuk frontend library uses a paid service for indexing and the search suggest leverages this feed rather than a website specific one.
@@ -64,7 +64,7 @@
     }
 
     .nhsuk-pagination__link:hover {
-      box-shadow: 0 0 0 16px #ffcd60 inset;
+      box-shadow: 0 0 0 4px $color_nhsuk-warm-yellow inset;
     }
   }
 }
@@ -169,7 +169,7 @@
     }
 
     .nhsuk-search__input {
-      border: 1px solid #d8dde0;
+      border: 1px solid $color_nhsuk-grey-5;
       border-radius: 3px 0px 0px 3px;
       float: left;
       max-width: 80%;
@@ -180,7 +180,7 @@
     }
 
     .nhsuk-search__submit {
-      border: 1px solid #ccc;
+      border: 1px solid $color_nhsuk-grey-5;
       border-left: none;
       float: left;
     }
@@ -231,7 +231,7 @@
       border-radius: 4px;
 
       .nhsuk-search__input {
-        border: 1px solid #d8dde0;
+        border: 1px solid $color_nhsuk-grey-5;
         border-radius: 3px 0px 0px 3px;
         float: left;
         max-width: 80%;
@@ -242,7 +242,7 @@
       }
 
       .nhsuk-search__submit {
-        border: 1px solid #ccc;
+        border: 1px solid $color_nhsuk-grey-5;
         border-left: none;
         float: left;
       }

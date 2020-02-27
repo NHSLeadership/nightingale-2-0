@@ -87,7 +87,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 	}
 	$label = '<label class="nhsuk-label" for="">' . $field->label;
 
-	if ( '' !== $field->isRequired ) {
+	if ( '' !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
 	}
 	if ( 1 === $errorflag ) {

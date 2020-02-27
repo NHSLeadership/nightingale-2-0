@@ -217,6 +217,7 @@ function nightingale_customize_register( $wp_customize ) {
 			'choices'     => nightingale_get_theme_colours(),
 		)
 	);
+
 	/*
 	 * ------------------------------------------------------------
 	 * SECTION: Layout
@@ -230,6 +231,7 @@ function nightingale_customize_register( $wp_customize ) {
 			'priority'    => 30,
 		)
 	);
+
 	/*
 	 * Show Sidebar left or right?
 	 */
