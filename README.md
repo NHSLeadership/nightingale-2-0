@@ -1,4 +1,4 @@
-# Nightingale 2.0.7
+# Nightingale 2.0.8
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 :exclamation: Updates to 2.0.7 will make the header region revert to standard wordpress values. If updating your theme, please pay particular attention to the site identity and header regions of the theme customiser before making your site live.
 
@@ -66,6 +66,7 @@ This theme has been extended to style the following plugins automatically:
  - [x] Download Monitor
  - [x] The Events Calendar
  - [x] WP HTML Email
+ - [x] Google Tag Manager
   
 ## Progress
  - [x] Load in the NHS Frontend library
