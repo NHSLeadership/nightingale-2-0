@@ -11782,6 +11782,11 @@ b {
   color: #d5281b;
 }
 
+#primary h1, #primary p, #primary .nhsuk-pagination__page {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
 #primary footer .edit-link {
   text-decoration: none;
   margin-left: 20px;
@@ -12870,6 +12875,15 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 // @author Tony Blacker, NHS Leadership Academy
 // @version 1.1 12th October 2019
 */
+.nhsuk-grid-column-two-thirds.contentright, .tribe-common div.contentright.nhsuk-grid-column-two-thirds, .nhsuk-grid-column-two-thirds.contentright.archive, .nhsuk-grid-column-two-thirds.contentright.index {
+  float: right;
+  padding: 0 0 0 16px;
+}
+
+.nhsuk-grid-column-two-thirds.contentright + .nhsuk-grid-column-one-third, .tribe-common div.contentright.nhsuk-grid-column-two-thirds + .nhsuk-grid-column-one-third, .tribe-common .nhsuk-grid-column-two-thirds.contentright + div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group .nhsuk-grid-column-two-thirds.contentright + div.nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.archive + .nhsuk-grid-column-one-third, .tribe-common div.contentright.archive.nhsuk-grid-column-two-thirds + .nhsuk-grid-column-one-third, .tribe-common .nhsuk-grid-column-two-thirds.contentright.archive + div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group .nhsuk-grid-column-two-thirds.contentright.archive + div.nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.index + .nhsuk-grid-column-one-third, .tribe-common div.contentright.index.nhsuk-grid-column-two-thirds + .nhsuk-grid-column-one-third, .tribe-common .nhsuk-grid-column-two-thirds.contentright.index + div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group .nhsuk-grid-column-two-thirds.contentright.index + div.nhsuk-grid-column-one-third {
+  padding-left: 0;
+}
+
 .nhsuk-grid-column-full > :first-child {
   padding-left: 0px !important;
 }
@@ -13358,6 +13372,126 @@ aside#secondary > section {
 .pagination_split_post .current {
   background: #005eb8;
   color: #ffffff;
+}
+
+/*
+// Print styling tweaks
+// @author Tony Blacker, NHS Leadership Academy
+// @version 1.0 30th December 2019
+*/
+@media print {
+  #secondary, #respond, #cookie-notice {
+    display: none;
+  }
+  a {
+    font-size: 1rem;
+  }
+  a:after {
+    color: #212b32;
+    content: " <br />(Link: " attr(href) ")";
+    /* [1] */
+    font-size: 0.75rem;
+    /* [2] */
+  }
+  .edit-link, .reply, .cat-links, .tags-links, .article-footer {
+    display: none !important;
+  }
+}
+
+#primary .gallery, #primary .wp-block-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#primary .gallery .gallery-item, #primary .wp-block-gallery .gallery-item {
+  margin: 0 16px 16px 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-right: 16px;
+}
+
+#primary .gallery .gallery-item img, #primary .wp-block-gallery .gallery-item img {
+  width: 100%;
+}
+
+#primary .gallery .gallery-item figcaption, #primary .wp-block-gallery .gallery-item figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 40px 10px 9px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) 70%, transparent);
+}
+
+@media (min-width: 600px) {
+  #primary .gallery.alignleft, #primary .wp-block-gallery.alignleft {
+    margin-right: calc(2 * 1rem);
+  }
+  #primary .gallery.alignright, #primary .wp-block-gallery.alignright {
+    margin-left: calc(2 * 1rem);
+  }
+  #primary .gallery.gallery-columns-1 .gallery-item, #primary .gallery.gallery-columns-1 .wp-block-gallery-item, #primary .gallery.columns-1 .gallery-item, #primary .gallery.columns-1 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-1 .gallery-item, #primary .wp-block-gallery.gallery-columns-1 .wp-block-gallery-item, #primary .wp-block-gallery.columns-1 .gallery-item, #primary .wp-block-gallery.columns-1 .wp-block-gallery-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-2 .gallery-item, #primary .gallery.gallery-columns-2 .wp-block-gallery-item, #primary .gallery.columns-2 .gallery-item, #primary .gallery.columns-2 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-2 .gallery-item, #primary .wp-block-gallery.gallery-columns-2 .wp-block-gallery-item, #primary .wp-block-gallery.columns-2 .gallery-item, #primary .wp-block-gallery.columns-2 .wp-block-gallery-item {
+    width: calc((100% - 16px) / 2);
+  }
+  #primary .gallery.gallery-columns-2 .gallery-item:nth-of-type(2n), #primary .gallery.gallery-columns-2 .wp-block-gallery-item:nth-of-type(2n), #primary .gallery.columns-2 .gallery-item:nth-of-type(2n), #primary .gallery.columns-2 .wp-block-gallery-item:nth-of-type(2n), #primary .wp-block-gallery.gallery-columns-2 .gallery-item:nth-of-type(2n), #primary .wp-block-gallery.gallery-columns-2 .wp-block-gallery-item:nth-of-type(2n), #primary .wp-block-gallery.columns-2 .gallery-item:nth-of-type(2n), #primary .wp-block-gallery.columns-2 .wp-block-gallery-item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-3 .gallery-item, #primary .gallery.gallery-columns-3 .wp-block-gallery-item, #primary .gallery.columns-3 .gallery-item, #primary .gallery.columns-3 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-3 .gallery-item, #primary .wp-block-gallery.gallery-columns-3 .wp-block-gallery-item, #primary .wp-block-gallery.columns-3 .gallery-item, #primary .wp-block-gallery.columns-3 .wp-block-gallery-item {
+    width: calc((100% - 32px) / 3);
+  }
+  #primary .gallery.gallery-columns-3 .gallery-item:nth-of-type(3n), #primary .gallery.gallery-columns-3 .wp-block-gallery-item:nth-of-type(3n), #primary .gallery.columns-3 .gallery-item:nth-of-type(3n), #primary .gallery.columns-3 .wp-block-gallery-item:nth-of-type(3n), #primary .wp-block-gallery.gallery-columns-3 .gallery-item:nth-of-type(3n), #primary .wp-block-gallery.gallery-columns-3 .wp-block-gallery-item:nth-of-type(3n), #primary .wp-block-gallery.columns-3 .gallery-item:nth-of-type(3n), #primary .wp-block-gallery.columns-3 .wp-block-gallery-item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-4 .gallery-item, #primary .gallery.gallery-columns-4 .wp-block-gallery-item, #primary .gallery.columns-4 .gallery-item, #primary .gallery.columns-4 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-4 .gallery-item, #primary .wp-block-gallery.gallery-columns-4 .wp-block-gallery-item, #primary .wp-block-gallery.columns-4 .gallery-item, #primary .wp-block-gallery.columns-4 .wp-block-gallery-item {
+    width: calc((100% - 48px) / 4);
+  }
+  #primary .gallery.gallery-columns-4 .gallery-item:nth-of-type(4n), #primary .gallery.gallery-columns-4 .wp-block-gallery-item:nth-of-type(4n), #primary .gallery.columns-4 .gallery-item:nth-of-type(4n), #primary .gallery.columns-4 .wp-block-gallery-item:nth-of-type(4n), #primary .wp-block-gallery.gallery-columns-4 .gallery-item:nth-of-type(4n), #primary .wp-block-gallery.gallery-columns-4 .wp-block-gallery-item:nth-of-type(4n), #primary .wp-block-gallery.columns-4 .gallery-item:nth-of-type(4n), #primary .wp-block-gallery.columns-4 .wp-block-gallery-item:nth-of-type(4n) {
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-5 .gallery-item, #primary .gallery.gallery-columns-5 .wp-block-gallery-item, #primary .gallery.columns-5 .gallery-item, #primary .gallery.columns-5 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-5 .gallery-item, #primary .wp-block-gallery.gallery-columns-5 .wp-block-gallery-item, #primary .wp-block-gallery.columns-5 .gallery-item, #primary .wp-block-gallery.columns-5 .wp-block-gallery-item {
+    width: calc((100% - 64px) / 5);
+  }
+  #primary .gallery.gallery-columns-5 .gallery-item:nth-of-type(5n), #primary .gallery.gallery-columns-5 .wp-block-gallery-item:nth-of-type(5n), #primary .gallery.columns-5 .gallery-item:nth-of-type(5n), #primary .gallery.columns-5 .wp-block-gallery-item:nth-of-type(5n), #primary .wp-block-gallery.gallery-columns-5 .gallery-item:nth-of-type(5n), #primary .wp-block-gallery.gallery-columns-5 .wp-block-gallery-item:nth-of-type(5n), #primary .wp-block-gallery.columns-5 .gallery-item:nth-of-type(5n), #primary .wp-block-gallery.columns-5 .wp-block-gallery-item:nth-of-type(5n) {
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-6 .gallery-item, #primary .gallery.gallery-columns-6 .wp-block-gallery-item, #primary .gallery.columns-6 .gallery-item, #primary .gallery.columns-6 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-6 .gallery-item, #primary .wp-block-gallery.gallery-columns-6 .wp-block-gallery-item, #primary .wp-block-gallery.columns-6 .gallery-item, #primary .wp-block-gallery.columns-6 .wp-block-gallery-item {
+    width: calc((100% - 80px) / 6);
+  }
+  #primary .gallery.gallery-columns-6 .gallery-item:nth-of-type(6n), #primary .gallery.gallery-columns-6 .wp-block-gallery-item:nth-of-type(6n), #primary .gallery.columns-6 .gallery-item:nth-of-type(6n), #primary .gallery.columns-6 .wp-block-gallery-item:nth-of-type(6n), #primary .wp-block-gallery.gallery-columns-6 .gallery-item:nth-of-type(6n), #primary .wp-block-gallery.gallery-columns-6 .wp-block-gallery-item:nth-of-type(6n), #primary .wp-block-gallery.columns-6 .gallery-item:nth-of-type(6n), #primary .wp-block-gallery.columns-6 .wp-block-gallery-item:nth-of-type(6n) {
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-7 .gallery-item, #primary .gallery.gallery-columns-7 .wp-block-gallery-item, #primary .gallery.columns-7 .gallery-item, #primary .gallery.columns-7 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-7 .gallery-item, #primary .wp-block-gallery.gallery-columns-7 .wp-block-gallery-item, #primary .wp-block-gallery.columns-7 .gallery-item, #primary .wp-block-gallery.columns-7 .wp-block-gallery-item {
+    width: calc((100% - 96px) / 7);
+  }
+  #primary .gallery.gallery-columns-7 .gallery-item:nth-of-type(7n), #primary .gallery.gallery-columns-7 .wp-block-gallery-item:nth-of-type(7n), #primary .gallery.columns-7 .gallery-item:nth-of-type(7n), #primary .gallery.columns-7 .wp-block-gallery-item:nth-of-type(7n), #primary .wp-block-gallery.gallery-columns-7 .gallery-item:nth-of-type(7n), #primary .wp-block-gallery.gallery-columns-7 .wp-block-gallery-item:nth-of-type(7n), #primary .wp-block-gallery.columns-7 .gallery-item:nth-of-type(7n), #primary .wp-block-gallery.columns-7 .wp-block-gallery-item:nth-of-type(7n) {
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-8 .gallery-item, #primary .gallery.gallery-columns-8 .wp-block-gallery-item, #primary .gallery.columns-8 .gallery-item, #primary .gallery.columns-8 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-8 .gallery-item, #primary .wp-block-gallery.gallery-columns-8 .wp-block-gallery-item, #primary .wp-block-gallery.columns-8 .gallery-item, #primary .wp-block-gallery.columns-8 .wp-block-gallery-item {
+    width: calc((100% - 112px) / 8);
+  }
+  #primary .gallery.gallery-columns-8 .gallery-item:nth-of-type(8n), #primary .gallery.gallery-columns-8 .wp-block-gallery-item:nth-of-type(8n), #primary .gallery.columns-8 .gallery-item:nth-of-type(8n), #primary .gallery.columns-8 .wp-block-gallery-item:nth-of-type(8n), #primary .wp-block-gallery.gallery-columns-8 .gallery-item:nth-of-type(8n), #primary .wp-block-gallery.gallery-columns-8 .wp-block-gallery-item:nth-of-type(8n), #primary .wp-block-gallery.columns-8 .gallery-item:nth-of-type(8n), #primary .wp-block-gallery.columns-8 .wp-block-gallery-item:nth-of-type(8n) {
+    margin-right: 0;
+  }
+  #primary .gallery.gallery-columns-9 .gallery-item, #primary .gallery.gallery-columns-9 .wp-block-gallery-item, #primary .gallery.columns-9 .gallery-item, #primary .gallery.columns-9 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-9 .gallery-item, #primary .wp-block-gallery.gallery-columns-9 .wp-block-gallery-item, #primary .wp-block-gallery.columns-9 .gallery-item, #primary .wp-block-gallery.columns-9 .wp-block-gallery-item {
+    width: calc((100% - 132px) / 9);
+  }
+  #primary .gallery.gallery-columns-9 .gallery-item:nth-of-type(9n), #primary .gallery.gallery-columns-9 .wp-block-gallery-item:nth-of-type(9n), #primary .gallery.columns-9 .gallery-item:nth-of-type(9n), #primary .gallery.columns-9 .wp-block-gallery-item:nth-of-type(9n), #primary .wp-block-gallery.gallery-columns-9 .gallery-item:nth-of-type(9n), #primary .wp-block-gallery.gallery-columns-9 .wp-block-gallery-item:nth-of-type(9n), #primary .wp-block-gallery.columns-9 .gallery-item:nth-of-type(9n), #primary .wp-block-gallery.columns-9 .wp-block-gallery-item:nth-of-type(9n) {
+    margin-right: 0;
+  }
 }
 
 .gform_heading .gform_description {
@@ -14024,28 +14158,4 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 
 .widget-area ol.tribe-list-widget .tribe-clearfix:before {
   display: none;
-}
-
-/*
-// Print styling tweaks
-// @author Tony Blacker, NHS Leadership Academy
-// @version 1.0 30th December 2019
-*/
-@media print {
-  #secondary, #respond, #cookie-notice {
-    display: none;
-  }
-  a {
-    font-size: 1rem;
-  }
-  a:after {
-    color: #212b32;
-    content: " <br />(Link: " attr(href) ")";
-    /* [1] */
-    font-size: 0.75rem;
-    /* [2] */
-  }
-  .edit-link, .reply, .cat-links, .tags-links, .article-footer {
-    display: none !important;
-  }
 }
