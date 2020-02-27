@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.0.7
-Stable tag: 2.0.7
+Version: 2.0.8
+Stable tag: 2.0.8
 
 
 == Description ==
@@ -33,6 +33,28 @@ community in this work and will consider any pull requests or code snippets you 
 All content on the 404 error page is widgetised. Navigate to admin > appearance > widgets and add your chosen widgets and content to the `404 page` widget.
 
 == Changelog
+
+= 2.0.8 =
+Additional customiser options and refined display output:
+ * Header Links modified to point to default home page rather than /
+ * Search form and default fonts modified to be more consistent with NHSUK design pattern
+ * Logo cleaned up to ensure correct display on both blue and white background
+ * Improved ease of using child themes
+ * Improved layout for pages with pagebreaks in them
+ * Added organisation name to customiser - allowing browser title to differ from logo title
+ * archive pages restyled to match www.nhs.uk layout patterns
+ * Page Navigation overhauled
+ * Keyboard and voice navigation improvements
+ * Added plugin compatibility to The Events Calendar
+ * Added plugin compatibility with Google Tag Manager (GTM) plugin
+ * Added page specific colour selector
+ * Added distinct sidebar for blog sections
+ * Sidebar widgets restyled for cleaner look and feel
+ * Sidebar can be moved to either left or right, or disabled.
+ * NHSUK frontend library updated to 3.0.3
+ * Gallery styling improved and bought in to line with NHSUK look and feel
+ * SCSS reworked to always take colours from upstream library, easier maintainability.
+
 = 2.0.7 =
  * Updated bundled resources license documentation
  * Made TGM Plugin Activation notices dismissable

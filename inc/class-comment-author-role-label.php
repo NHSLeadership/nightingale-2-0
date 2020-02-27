@@ -16,8 +16,8 @@ if ( ! class_exists( 'Comment_Author_Role_Label' ) ) :
 		 * Comment_Author_Role_Label constructor.
 		 */
 		public function __construct() {
-			add_filter( 'get_comment_author', array( $this, 'get_comment_author_role' ), 10, 3 );
-			add_filter( 'get_comment_author_link', array( $this, 'comment_author_role' ) );
+			add_filter( 'get_comment_author', array( $this, 'nightingale_get_comment_author_role' ), 10, 3 );
+			add_filter( 'get_comment_author_link', array( $this, 'nightingale_comment_author_role' ) );
 		}
 
 		/**
@@ -29,7 +29,7 @@ if ( ! class_exists( 'Comment_Author_Role_Label' ) ) :
 		 *
 		 * @return mixed
 		 */
-		public function get_comment_author_role( $author, $comment_id, $comment ) {
+		public function nightingale_get_comment_author_role( $author, $comment_id, $comment ) {
 			$authoremail = get_comment_author_email( $comment );
 			if ( email_exists( $authoremail ) ) {
 				$commet_user_role        = get_user_by( 'email', $authoremail );
@@ -49,7 +49,7 @@ if ( ! class_exists( 'Comment_Author_Role_Label' ) ) :
 		 *
 		 * @return string $author
 		 */
-		public function comment_author_role( $author ) {
+		public function nightingale_comment_author_role( $author ) {
 			return $author .= $this->comment_user_role;
 		}
 	}
