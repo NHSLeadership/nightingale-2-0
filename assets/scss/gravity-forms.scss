@@ -74,10 +74,19 @@
   .gsurvey-rating:after {
     clear: both;
   }
+
   .ginput_container_name, .clear-multi {
     display: flex;
     span, .ginput_container {
-      padding: 10px;
+      padding: 0.5rem 1rem 0.5rem 0;
+      &.name-prefix, &.name-first, &.name-middle, &.name-last, &.name_suffix {
+        display: flex;
+        label {
+          padding: 0 1rem 0 0.5rem;
+          font-size: 1.25rem;
+          color: $color_nhsuk-dark-grey;
+        }
+      }
     }
   }
   table.gsurvey-likert {

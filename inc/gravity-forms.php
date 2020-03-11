@@ -87,9 +87,10 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 	}
 	$label = '<label class="nhsuk-label" for="">' . $field->label;
 
-	if ( '' !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+	if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
 	}
+
 	if ( 1 === $errorflag ) {
 		$label .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
 	}
@@ -236,15 +237,15 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		// Name inputs.
 		case 'name':
 			$field_content = str_replace( "class='name_prefix", "style='flex: 1; float: left;' class='name_prefix", $field_content );
-			$field_content = str_replace( "aria-label='Name prefix'", "aria-label='Name prefix' class='nhsuk-select", $field_content );
+			$field_content = str_replace( "aria-label='Name prefix'", "aria-label='Name prefix' class='nhsuk-select'", $field_content );
 			$field_content = str_replace( "class='name_first'", "class='name-first' style='flex: 2; float: left;'", $field_content );
-			$field_content = str_replace( "aria-label='First name'", "aria-label='First name' class='nhsuk-input nhsuk-input--width-10", $field_content );
+			$field_content = str_replace( "aria-label='First name'", "aria-label='First name' class='nhsuk-input nhsuk-input--width-10'", $field_content );
 			$field_content = str_replace( "class='name_middle'", "class='name-middle' style='flex: 3; float: left;'", $field_content );
-			$field_content = str_replace( "aria-label='Middle name'", "aria-label='Middle name' class='nhsuk-input nhsuk-input--width-10", $field_content );
+			$field_content = str_replace( "aria-label='Middle name'", "aria-label='Middle name' class='nhsuk-input nhsuk-input--width-10'", $field_content );
 			$field_content = str_replace( "class='name_last'", "class='name-last' style='flex: 4; float: left;'", $field_content );
-			$field_content = str_replace( "aria-label='Last name'", "aria-label='Last name' class='nhsuk-input nhsuk-input--width-10", $field_content );
+			$field_content = str_replace( "aria-label='Last name'", "aria-label='Last name' class='nhsuk-input nhsuk-input--width-10'", $field_content );
 			$field_content = str_replace( "class='name_suffix", "style='flex: 5; float: left;' class='name-suffix", $field_content );
-			$field_content = str_replace( "aria-label='Name suffix'", "aria-label='Name suffix' class='nhsuk-input nhsuk-input--width-2", $field_content );
+			$field_content = str_replace( "aria-label='Name suffix'", "aria-label='Name suffix' class='nhsuk-input nhsuk-input--width-2'", $field_content );
 			$field_content = preg_replace( '#<div(.*?)ginput_container_name(.*?)>(.*?)</div>#i', "<div $1nhsuk-form-group_name$2>$3</div><div style='clear: both;'></div>", $field_content );
 			if ( 1 === $errorflag ) {
 				$field_content = str_replace( 'nhsuk-input', 'nhsuk-input nhsuk-input--error', $field_content );
@@ -252,13 +253,13 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			break;
 		case 'time':
 			if ( 1 === $errorflag ) {
-				$field_content = preg_replace( "#<input(.*?)type='number'#", "<input$1type='number' class='nhsuk-input nhsuk-input--width-2 nhsuk-input--error ", $field_content );
+				$field_content = preg_replace( "#<input(.*?)type='number'#", "<input$1type='number' class='nhsuk-input nhsuk-input--width-2 nhsuk-input--error' ", $field_content );
 			} else {
-				$field_content = preg_replace( "#<input(.*?)type='number'#", "<input$1type='number' class='nhsuk-input nhsuk-input--width-2 ", $field_content );
+				$field_content = preg_replace( "#<input(.*?)type='number'#", "<input$1type='number' class='nhsuk-input nhsuk-input--width-2' ", $field_content );
 			}
-			$field_content = str_replace( "class='gfield_time_hour", "style='flex: 1; float: left;' class='gfield_time_hour", $field_content );
-			$field_content = str_replace( "class='gfield_time_minute", "style='flex: 2; float: left;' class='gfield_time_minute", $field_content );
-			$field_content = str_replace( "class='gfield_time_ampm", "style='flex: 3; float: left;' class='gfield_time_ampm", $field_content );
+			$field_content = str_replace( "class='gfield_time_hour", "style='flex: 1; float: left;' class='gfield_time_hour'", $field_content );
+			$field_content = str_replace( "class='gfield_time_minute", "style='flex: 2; float: left;' class='gfield_time_minute'", $field_content );
+			$field_content = str_replace( "class='gfield_time_ampm", "style='flex: 3; float: left;' class='gfield_time_ampm'", $field_content );
 			if ( 1 === $errorflag ) {
 				$field_content = str_replace( '<select', "<select class='nhsuk-select nhsuk-select--error'", $field_content );
 			} else {

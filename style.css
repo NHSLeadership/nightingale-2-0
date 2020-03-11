@@ -13619,7 +13619,17 @@ aside#secondary > section {
 }
 
 .gform_body .ginput_container_name span, .gform_body .ginput_container_name .ginput_container, .gform_body .clear-multi span, .gform_body .clear-multi .ginput_container {
-  padding: 10px;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.gform_body .ginput_container_name span.name-prefix, .gform_body .ginput_container_name span.name-first, .gform_body .ginput_container_name span.name-middle, .gform_body .ginput_container_name span.name-last, .gform_body .ginput_container_name span.name_suffix, .gform_body .ginput_container_name .ginput_container.name-prefix, .gform_body .ginput_container_name .ginput_container.name-first, .gform_body .ginput_container_name .ginput_container.name-middle, .gform_body .ginput_container_name .ginput_container.name-last, .gform_body .ginput_container_name .ginput_container.name_suffix, .gform_body .clear-multi span.name-prefix, .gform_body .clear-multi span.name-first, .gform_body .clear-multi span.name-middle, .gform_body .clear-multi span.name-last, .gform_body .clear-multi span.name_suffix, .gform_body .clear-multi .ginput_container.name-prefix, .gform_body .clear-multi .ginput_container.name-first, .gform_body .clear-multi .ginput_container.name-middle, .gform_body .clear-multi .ginput_container.name-last, .gform_body .clear-multi .ginput_container.name_suffix {
+  display: flex;
+}
+
+.gform_body .ginput_container_name span.name-prefix label, .gform_body .ginput_container_name span.name-first label, .gform_body .ginput_container_name span.name-middle label, .gform_body .ginput_container_name span.name-last label, .gform_body .ginput_container_name span.name_suffix label, .gform_body .ginput_container_name .ginput_container.name-prefix label, .gform_body .ginput_container_name .ginput_container.name-first label, .gform_body .ginput_container_name .ginput_container.name-middle label, .gform_body .ginput_container_name .ginput_container.name-last label, .gform_body .ginput_container_name .ginput_container.name_suffix label, .gform_body .clear-multi span.name-prefix label, .gform_body .clear-multi span.name-first label, .gform_body .clear-multi span.name-middle label, .gform_body .clear-multi span.name-last label, .gform_body .clear-multi span.name_suffix label, .gform_body .clear-multi .ginput_container.name-prefix label, .gform_body .clear-multi .ginput_container.name-first label, .gform_body .clear-multi .ginput_container.name-middle label, .gform_body .clear-multi .ginput_container.name-last label, .gform_body .clear-multi .ginput_container.name_suffix label {
+  padding: 0 1rem 0 0.5rem;
+  font-size: 1.25rem;
+  color: #425563;
 }
 
 .gform_body table.gsurvey-likert {
