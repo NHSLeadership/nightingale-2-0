@@ -4,16 +4,16 @@
 // @version 1.0 3rd October 2019
 */
 .nhsuk-list-panel {
-  margin-bottom: 1rem;
+  margin-bottom: nhsuk-spacing(3);
   .comment-list {
-    margin-bottom: 1rem;
-    background-color: $color-nhsuk-light-grey;
+    margin-bottom: nhsuk-spacing(3);
+    background-color: $color-nhsuk-grey-5;
     .nhsuk-list-panel__item {
-      padding: 1.5rem 0;
+      padding: nhsuk-spacing(3) 0;
       display: block;
-      background-color: $color-nhsuk-light-grey;
+      background-color: $color-nhsuk-grey-5;
       #respond {
-        margin-top: 1.5rem;
+        margin-top: nhsuk-spacing(3);
         position: relative;
 
         #commentform {
@@ -31,7 +31,7 @@
       .children {
         margin-left: 0;
         margin-right: 0;
-        padding-left: 1.5rem;
+        padding-left: nhsuk-spacing(3);
         .comment {
           padding-right: 0;
         }
@@ -42,9 +42,9 @@
         .comment_body_comment {
           display: block;
           text-align: left;
-          border-radius: 3px;
+          border-radius: $nhsuk-border-radius;
           line-height: 1.5rem;
-          padding: 18px 40px 18px 22px;
+          padding: nhsuk-spacing(3) nhsuk-spacing(5) nhsuk-spacing(3) nhsuk-spacing(4);
           position: relative;
           word-wrap: break-word;
           background-color: $color_nhsuk-white;
@@ -57,7 +57,7 @@
             height: 15px;
             border-radius: 50%;
             background-color: $color_nhsuk-white;
-            border: 2px solid $color_nhsuk-light-grey;
+            border: $nhsuk-border-width-form-element solid $color_nhsuk-light-grey;
             top: initial;
             left: 20px;
             bottom: -6px;
@@ -85,10 +85,10 @@
             display: block;
             text-decoration: none;
             color: $color_nhsuk-dark-grey;
-            font-weight: bold;
+            font-weight: $nhsuk-font-bold;
             text-overflow: ellipsis;
             overflow: hidden;
-            padding: 10px 0 3px 0;
+            padding: nhsuk-spacing(2) 0 nhsuk-spacing(1) 0;
           }
           .comment-meta {
             a {
@@ -105,7 +105,7 @@
 
         .comment-avatar {
           order: 2;
-          padding: 10px 18px 0 3px;
+          padding: nhsuk-spacing(2) nhsuk-spacing(3) 0 nhsuk-spacing(2);
           width: 10%;
           min-width: 58px;
           img {
@@ -120,7 +120,7 @@
           order: 4;
           text-align: right;
           font-size: 0.75rem;
-          padding: 5px;
+          padding: nhsuk-spacing(1);
           @media screen and (max-width: 37.5em) {
             width: 30%;
           }
@@ -137,7 +137,7 @@
           }
           .comment-edit {
             width: 15px;
-            margin-left: 10px;
+            margin-left: nhsuk-spacing(2);
           }
           .comment-reply-link {
             display: inline-block;
@@ -147,7 +147,7 @@
             display: inline-block;
             position: relative;
             left: 0px;
-            margin-left: 10px;
+            margin-left: nhsuk-spacing(2);
           }
         }
 
@@ -187,13 +187,13 @@
         font-size: 0.75rem;
         text-decoration: none;
         &:nth-of-type(2) {
-          margin-left: 10px;
-          border-radius: 4px;
-          border: 2px solid;
+          margin-left: nhsuk-spacing(2);
+          border-radius: $nhsuk-border-radius;
+          border: $nhsuk-border-width-form-element solid;
           background: $color_nhsuk-white;
           color: $color_nhsuk-blue;
           border-color: $color_nhsuk-blue;
-          padding: 5px;
+          padding: nhsuk-spacing(1);
           text-transform: uppercase;
         }
       }
@@ -208,7 +208,7 @@
   }
   .tags-links {
     float: left;
-    margin-right: 20px;
+    margin-right: nhsuk-spacing(3);
     @extend .nhsuk-body-s;
 
   }
@@ -250,10 +250,10 @@
   .post-page-numbers {
     @extend .nhsuk-pill-notice;
     &:first-of-type {
-      margin-right: 5px;
+      margin-right: nhsuk-spacing(1);
     }
     &:last-of-type {
-      margin-left: 5px;
+      margin-left: nhsuk-spacing(1);
     }
   }
   .current {

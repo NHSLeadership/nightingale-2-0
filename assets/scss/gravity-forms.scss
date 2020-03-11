@@ -3,20 +3,20 @@
 .gform_heading {
   .gform_description {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: $nhsuk-font-bold;
   }
 }
 .gform_body {
-  padding-top: 30px;
+  padding-top: nhsuk-spacing(5);
   .address_city, .address_state {
     width: 50%;
     float: left;
   }
   .address_city {
-    padding-right: 10px;
+    padding-right: nhsuk-spacing(2);
   }
   .address_state {
-    padding-left: 10px;
+    padding-left: nhsuk-spacing(2);
   }
   ul.gform_fields {
     list-style: none;
@@ -24,9 +24,9 @@
     padding-left: 0;
   }
   .nhsuk-required-message {
-    font-weight: bold;
+    font-weight: $nhsuk-font-bold;
     font-style: italic;
-    padding-left: 20px;
+    padding-left: nhsuk-spacing(4);
   }
 
   .nhsuk-textarea {
@@ -62,11 +62,11 @@
     width: 40px;
     height: 40px;
     background-size: 35px 35px;
-    font-size: 40px !important;
+    font-size: 1.5rem !important;
   }
   .gsurvey-rating > input:checked ~ label {
     background-size: 35px 35px;
-    font-size: 40px !important;
+    font-size: 1.5rem !important;
   }
   .gsurvey-rating:not(:checked) > label:hover, .gsurvey-rating:not(:checked) > label:hover ~ label {
     background-size: 35px 35px;
@@ -78,11 +78,11 @@
   .ginput_container_name, .clear-multi {
     display: flex;
     span, .ginput_container {
-      padding: 0.5rem 1rem 0.5rem 0;
+      padding: nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(2) 0;
       &.name-prefix, &.name-first, &.name-middle, &.name-last, &.name_suffix {
         display: flex;
         label {
-          padding: 0 1rem 0 0.5rem;
+          padding: 0 nhsuk-spacing(3) 0 nhsuk-spacing(2);
           font-size: 1.25rem;
           color: $color_nhsuk-dark-grey;
         }
@@ -93,7 +93,7 @@
     background: $color_nhsuk-white;
     .gsurvey-likert-row-label, .gsurvey-likert-choice-label {
       font-size: 1rem;
-      padding: 10px;
+      padding: nhsuk-spacing(2);
       background: $color_nhsuk-blue;
       color: $color_nhsuk-white;
     }
@@ -107,12 +107,12 @@
   }
   .nhsuk-form-group--error {
     table.gsurvey-likert {
-      border: 3px solid $color_nhsuk-red;
+      border: $nhsuk-border-width-form-element solid $color_nhsuk-red;
     }
   }
 }
 #ui-datepicker-div {
-  border: 2px solid $color_nhsuk-blue;
-  border-radius: 4px;
+  border: $nhsuk-border-width-form-element solid $color_nhsuk-blue;
+  border-radius: $nhsuk-border-radius;
   background: $color_nhsuk-white;
 }

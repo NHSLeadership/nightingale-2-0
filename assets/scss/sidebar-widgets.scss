@@ -4,23 +4,21 @@
   section {
 
   border-top: 2px solid $color_nhsuk-blue;
-  margin-bottom: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: nhsuk-spacing(5);
+  padding-top: nhsuk-spacing(3);
+  padding-bottom: nhsuk-spacing(3);
 
     h2 {
-      font-size: 20px;
       font-size: 1.25rem;
       line-height: 1.2;
-      margin-bottom: 16px;
-      padding-top: 16px;
+      margin-bottom: nhsuk-spacing(3);
+      padding-top: nhsuk-spacing(3);
 
       a {
         text-decoration: none;
       }
 
       @media (min-width: 40.0625em){
-        font-size: 24px;
         font-size: 1.5rem;
         line-height: 1.2;
       }
@@ -36,18 +34,16 @@
 
     ul, ol {
       list-style: none;
-      margin-bottom: 16px;
+      margin-bottom: nhsuk-spacing(3);
       padding-left: 0;
 
       li, h4 {
 
-        font-size: 14px;
         font-size: .875rem;
         line-height: 1.71429;
-        margin-bottom: 8px;
+        margin-bottom: nhsuk-spacing(2);
 
         @media (min-width: 40.0625em){
-          font-size: 16px;
           font-size: 1rem;
           line-height: 1.5;
         }
@@ -63,14 +59,14 @@
       height: 4.5rem;
 
       .nhsuk-header__search-wrap {
-        padding-top: 15px;
+        padding-top: nhsuk-spacing(3);
 
         .nhsuk-search__input {
           width: 81%;
         }
 
         .nhsuk-search__submit {
-          border: 2px solid $color_nhsuk-black;
+          border: $nhsuk-border-width-form-element solid $color_nhsuk-black;
           border-left: none;
         }
       }
@@ -79,7 +75,7 @@
     #wp-calendar {
       caption {
         position: relative;
-        top: 10px;
+        top: nhsuk-spacing(2);
         clip: unset;
         clip-path: unset;
         height: auto;
@@ -91,8 +87,8 @@
       }
 
       td, th {
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: nhsuk-spacing(1);
+        padding-right: nhsuk-spacing(1);
         font-size: 1rem;
       }
     }
@@ -110,20 +106,20 @@
     }
 
     ul > li > ul > li:last-of-type,  ul > li > ul > li > ul > li:last-of-type {
-      margin-bottom: 20px;
+      margin-bottom: nhsuk-spacing(3);
     }
 
     ul > li > ul > li > a {
       border-left: 2px solid $color_nhsuk-blue;
 
-      padding: 0 0 0 10px;
-      margin: 10px 0 0 10px;
+      padding: 0 0 0 nhsuk-spacing(2);
+      margin: nhsuk-spacing(2) 0 0 nhsuk-spacing(2);
     }
 
     ul > li > ul > li > ul > li > a {
 
       padding: 0 0 0 10px;
-      margin: 10px 0 0 20px;
+      margin: nhsuk-spacing(2) 0 0 nhsuk-spacing(3);
       border-bottom: none;
 
       &:before {
