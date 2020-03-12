@@ -47,7 +47,7 @@ this repo for quick action.
 ## Developing this theme's styling output
 ##### if you are developing this theme locally, any style changes you make will need to be reflected in the output
 To accomplish this, you will need to take the following steps:
- - Install npm locally `npm run install`
+ - Install npm locally `npm install`
  - Compile the css from all the downstream libraries and local files `npm run build`
  - Compress the css output `npm run compress`
  - Regenerate the critical css `npm run critical`
