@@ -210,5 +210,14 @@ function nightingale_events_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'nightingale_events_scripts' );
 
+add_action( 'wp_enqueue_scripts', function() {
 
+    //this is based on using the "skeleton styles" option
+    $styles = [
+        'tribe-common-full-style'
+    ];
+
+    wp_deregister_style( $styles );
+
+}, 99);
 
