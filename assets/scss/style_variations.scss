@@ -5,23 +5,23 @@
 */
 .nhsuk-grid-column-two-thirds.contentright, .nhsuk-grid-column-two-thirds.contentright.archive, .nhsuk-grid-column-two-thirds.contentright.index {
   float: right;
-  padding: 0 0 0 16px;
+  padding: 0 0 0 nhsuk-spacing(3);
   &+.nhsuk-grid-column-one-third {
     padding-left: 0;
   }
 }
 .nhsuk-grid-column-full > :first-child {
-  padding-left: 0px !important;
+  padding-left: 0 !important;
 }
 
 .nhsuk-grid-column-full > :last-child {
-  padding-right: 0px !important;
+  padding-right: 0 !important;
 }
 
 
 .nhsuk-header__search-wrap {
   input[type="text"] {
-    border: 1px solid $color_nhsuk-light-grey;
+    border: $nhsuk-border-width-form-element solid $color_nhsuk-light-grey;
   }
 }
 
@@ -29,7 +29,7 @@
 /* Latest Posts skinning */
 .nightingale-latest-news {
   .nhsuk-panel {
-    margin-bottom: 20px;
+    margin-bottom: nhsuk-spacing(3);
     a {
       @extend .nhsuk-heading-m;
       text-decoration: none;
@@ -38,7 +38,7 @@
     .wp-block-latest-posts__post-excerpt {
       a:last-of-type {
         @extend .nhsuk-action-link__link;
-        margin-top: 30px;
+        margin-top: nhsuk-spacing(5);
         margin-bottom: 0;
         width: 100%;
       }
@@ -74,18 +74,18 @@
 /* Extra Blog Styles */
 
 .nhsuk-promo img.nhsuk-promo__img {
-    padding: 0px;
+    padding: 0;
 }
 
 .nhsuk-promo__link-wrapper:hover {
     background-color: $color_nhsuk-white;
-    box-shadow: 0 0 0 4px $nhsuk-link-hover-color;
+    box-shadow: 0 0 0 nhsuk-spacing(1) $nhsuk-link-hover-color;
     color: $color_nhsuk-blue;
 }
 
 .nhsuk-grid-column-two-thirds.archive,
 .nhsuk-grid-column-two-thirds.index{
-  padding: 0 16px 0 0;
+  padding: 0 nhsuk-spacing(3) 0 0;
 }
 
 aside#secondary > section{
@@ -110,7 +110,7 @@ aside#secondary > section{
   clear: both;
   text-align: center;
   border-top: 1px solid $color_nhsuk-grey-3;
-  padding-top: 10px;
+  padding-top: nhsuk-spacing(2);
 
   @media (min-width: 768px) {
     border: none;
@@ -122,8 +122,8 @@ aside#secondary > section{
   a,
   span{
     display: inline-block;
-    padding: 0px 5px;
-    margin: 0 5px;
+    padding: 0px nhsuk-spacing(1);
+    margin: 0 nhsuk-spacing(1);
     text-decoration: none;
   }
 }

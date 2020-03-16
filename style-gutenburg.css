@@ -10608,8 +10608,8 @@ section {
   font-size: #ffffff;
   padding: 1px 8px;
   position: relative;
-  top: -5px;
-  margin-bottom: 5px;
+  top: -nhsuk-spacing(1);
+  margin-bottom: 4px;
 }
 
 .nhsuk-button--reverse:visited {
@@ -10642,16 +10642,16 @@ section {
   border: 2px solid;
   background-color: #ffffff;
   text-align: center;
-  padding: 5px 12px;
+  padding: 4px 16px;
   width: fit-content;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: .5px;
   font-size: 0.75rem;
   line-height: 1.1;
   display: inline-block;
   position: relative;
-  top: -4px;
+  top: -nhsuk-spacing(1);
   border-color: #4c6272;
   color: #4c6272;
 }
@@ -10678,7 +10678,7 @@ section {
 
 #primary footer .edit-link {
   text-decoration: none;
-  margin-left: 20px;
+  /*margin-left: nhsuk-spacing(4);*/
 }
 
 #primary footer .edit-link a {
@@ -10707,7 +10707,7 @@ section {
 }
 
 #secondary .nhsuk-header__search-wrap {
-  padding: 20px 0;
+  padding: 24px 0;
 }
 
 #secondary .nhsuk-header__search-wrap .autocomplete-container {
@@ -10715,14 +10715,14 @@ section {
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 1px solid #f0f4f5;
-  border-radius: 3px 0px 0px 3px;
+  border: 2px solid #f0f4f5;
+  border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 1px solid #f0f4f5;
+  border: 2px solid #f0f4f5;
   border-left: none;
   float: left;
 }
@@ -10762,7 +10762,7 @@ section {
 }
 
 #primary .page-content .nhsuk-header__search-wrap {
-  padding: 10px 20px;
+  padding: 8px 24px;
   display: inline-block;
   width: 80%;
   border: 2px solid #005eb8;
@@ -10770,14 +10770,14 @@ section {
 }
 
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 1px solid #f0f4f5;
-  border-radius: 3px 0px 0px 3px;
+  border: 2px solid #f0f4f5;
+  border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
 }
 
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 1px solid #f0f4f5;
+  border: 2px solid #f0f4f5;
   border-left: none;
   float: left;
 }
@@ -10837,20 +10837,20 @@ section {
 }
 
 .nhsuk-grid-column-full > :first-child {
-  padding-left: 0px !important;
+  padding-left: 0 !important;
 }
 
 .nhsuk-grid-column-full > :last-child {
-  padding-right: 0px !important;
+  padding-right: 0 !important;
 }
 
 .nhsuk-header__search-wrap input[type="text"] {
-  border: 1px solid #e8edee;
+  border: 2px solid #e8edee;
 }
 
 /* Latest Posts skinning */
 .nightingale-latest-news .nhsuk-panel, .nightingale-latest-news .sticky {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a {
@@ -10858,7 +10858,7 @@ section {
 }
 
 .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
-  margin-top: 30px;
+  margin-top: 32px;
   margin-bottom: 0;
   width: 100%;
 }
@@ -10884,7 +10884,7 @@ section {
 
 /* Extra Blog Styles */
 .nhsuk-promo img.nhsuk-promo__img {
-  padding: 0px;
+  padding: 0;
 }
 
 .nhsuk-promo__link-wrapper:hover {
@@ -10920,7 +10920,7 @@ aside#secondary > section {
   clear: both;
   text-align: center;
   border-top: 1px solid #aeb7bd;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 @media (min-width: 768px) {
@@ -10935,8 +10935,8 @@ aside#secondary > section {
 .nhsuk-pagination-numbers a,
 .nhsuk-pagination-numbers span {
   display: inline-block;
-  padding: 0px 5px;
-  margin: 0 5px;
+  padding: 0px 4px;
+  margin: 0 4px;
   text-decoration: none;
 }
 
