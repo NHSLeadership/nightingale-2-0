@@ -11,27 +11,31 @@
 $event_cats = get_the_terms( get_the_id(), 'tribe_events_cat' );
 $icons      = nightingale_events_icons();
 
-$length = count( $event_cats );
+$length = $event_cats ? count( $event_cats ): null;
 
 ?>
 
-<div class="event-categories">
+<?php if( $event_cats ): ?>
+
+	<div class="event-categories">
 
 	<?php echo $icons['tag']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 
-	<ul>
-		<?php foreach ( $event_cats as $key => $tribecat ) : ?>
+		<ul>
+			<?php foreach ( $event_cats as $key => $tribecat ) : ?>
 
-			<li>
-				<?php
-				echo esc_html( $tribecat->name );
-				if ( $length - 1 !== $key ) :
-					echo ', ';
-				endif;
-				?>
-			</li>
+				<li>
+					<?php
+					echo esc_html( $tribecat->name );
+					if ( $length - 1 !== $key ) :
+						echo ', ';
+					endif;
+					?>
+				</li>
 
-		<?php endforeach; ?>
-	</ul>
+			<?php endforeach; ?>
+		</ul>
 
-</div>
+	</div>
+
+<?php endif; ?>

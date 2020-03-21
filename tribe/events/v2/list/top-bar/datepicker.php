@@ -29,15 +29,15 @@
 $icons = nightingale_events_icons();
 
 ?>
-<?php if ( $show_datepicker_submit ) : ?>
+
 	<form
 		class="tribe-events-c-top-bar__datepicker-form"
 		method="get"
 		data-js="tribe-events-view-form"
 	>
-		<?php wp_nonce_field( 'wp_rest', 'tribe-events-views[_wpnonce]' ); ?>
-		<input type="hidden" name="tribe-events-views[url]" value="<?php echo esc_url( $this->get( 'url' ) ); ?>" />
-<?php endif; ?>
+	<?php wp_nonce_field( 'wp_rest', 'tribe-events-views[_wpnonce]' ); ?>
+	<input type="hidden" name="tribe-events-views[url]" value="<?php echo esc_url( $this->get( 'url' ) ); ?>" />
+
 
 	<div class="tribe-events-c-top-bar__datepicker">
 
@@ -109,7 +109,5 @@ $icons = nightingale_events_icons();
 		<div class="tribe-events-c-top-bar__datepicker-container" data-js="tribe-events-top-bar-datepicker-container"></div>
 	</div>
 
-<?php if ( $show_datepicker_submit ) : ?>
-		<?php $this->template( 'components/top-bar/datepicker/submit' ); ?>
 	</form>
-<?php endif; ?>
+
