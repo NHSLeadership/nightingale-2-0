@@ -47,7 +47,7 @@ function nightingale_render_lastreviewed( $post ) {
 	wp_nonce_field( basename( __FILE__ ), 'nightingale-last-reviewed-nonce' );
 
 	// get previously saved meta values (if any).
-	$sidebar = esc_attr( get_post_meta( $post->ID, 'last-reviewed', true ) );
+	$sidebar = get_post_meta( $post->ID, 'last-reviewed', true );
 
 	$checked = 'on' === $sidebar ? true : false;
 	?>
@@ -60,7 +60,7 @@ function nightingale_render_lastreviewed( $post ) {
 		endif;
 		?>
 	>
-	<label for="review-on">On</label><br>
+	<label for="review-on"><?php esc_html_e( 'On', 'nightingale' ); ?></label><br>
 	<input type="radio" id="review-off" name="lastReviwed" value=""
 		<?php
 		if ( ! $checked ) :
@@ -68,7 +68,7 @@ function nightingale_render_lastreviewed( $post ) {
 		endif;
 		?>
 	>
-	<label for="review-off">Off</label><br>
+	<label for="review-off"><?php esc_html_e( 'Off', 'nightingale' ); ?></label><br>
 
 	<?php
 
@@ -103,7 +103,7 @@ function nightingale_save_lastreviewed( $post_id ) {
 
 	if ( isset( $_POST['lastReviwed'] ) ) {
 		$last_reviewed = sanitize_text_field( wp_unslash( $_POST['lastReviwed'] ) );
-		update_post_meta( $post_id, 'last-reviewed', esc_attr( wp_unslash( $last_reviewed ) ) );
+		update_post_meta( $post_id, 'last-reviewed', wp_unslash( $last_reviewed ) );
 	}
 
 }
@@ -127,7 +127,7 @@ function nightingale_page_last_reviewed() {
 
 	<div class="nhsuk-review-date">
 		<p class="nhsuk-body-s">
-			Page last reviewed: <?php echo esc_html( $updated_date ); ?>
+			<?php esc_html_e( 'Page last reviewed', 'nightingale' ); ?>: <?php echo esc_html( $updated_date ); ?>
 		</p>
 	</div>
 

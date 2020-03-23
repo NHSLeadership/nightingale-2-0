@@ -58,7 +58,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'show_search',
 		array(
 			'default'           => 'yes',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 	$wp_customize->add_control(
@@ -82,7 +82,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'header_styles',
 		array(
 			'default'           => 'normal',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 
@@ -107,7 +107,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'org_name_checkbox',
 		array(
 			'default'           => 'no',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 
@@ -128,7 +128,7 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'org_name_field',
 		array(
-			'sanitize_callback' => 'esc_html',
+			'sanitize_callback' => 'nightingale_sanitize_nohtml',
 		)
 	);
 
@@ -151,7 +151,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'nhs_logo',
 		array(
 			'default'           => 'yes',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 
@@ -178,7 +178,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'logo_type',
 		array(
 			'default'           => 'transactional',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 	$wp_customize->add_control(
@@ -204,7 +204,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'theme_colour',
 		array(
 			'default'           => 'nhs_blue',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 	$wp_customize->add_control(
@@ -239,7 +239,7 @@ function nightingale_customize_register( $wp_customize ) {
 		'sidebar_location',
 		array(
 			'default'           => 'right',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 
@@ -288,7 +288,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			'default'           => 'true',
 			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_attr',
+			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);
 
@@ -338,27 +338,6 @@ function nightingale_add_blog_settings( $wp_customize ) {
 
 add_action( 'customize_register', 'nightingale_add_blog_settings' );
 
-/**
- * Image sanitization callback
- *
- * Checks the image's file extension and mime type against a whitelist. If they're allowed,
- * send back the filename, otherwise, return the setting default.
- *
- * @param string               $image Image ID.
- * @param WP_Customize_Setting $setting Setting instance.
- *
- * @return int of the image ID.
- */
-function nightingale_sanitize_image( $image, $setting ) {
-
-	$image = intval( $image );
-
-	// Check if is a number.
-	$file = is_numeric( $image );
-
-	// If $file is a number, return the number.
-	return ( $file ? $image : $setting->default );
-}
 
 /**
  * Clean the date output up.

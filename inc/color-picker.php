@@ -2,9 +2,9 @@
 /**
  * Meta Box for choosing the page colour on a page
  *
- * @package Nightingale-2-0
+ * @package   Nightingale-2-0
  * @copyright NHS Leadership Academy, Very Twisty
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 // Tutorial found here:
@@ -54,16 +54,16 @@ function nightingale_render_colourpicker( $post ) {
 
 	?>
 
-	<label for="color-picker"><?php esc_html_e( 'Choose colour for the page. (Refresh the page for changes to take effect.)', 'nightingale' ); ?></label>
-	<select id="color-picker" name="color-picker" class="widefat">
+    <label for="color-picker"><?php esc_html_e( 'Choose colour for the page. (Refresh the page for changes to take effect.)', 'nightingale' ); ?></label>
+    <select id="color-picker" name="color-picker" class="widefat">
 		<?php foreach ( $theme_colours as $name => $colour ) : ?>
 
 			<?php $select = esc_attr( sanitize_title( $colour ) ) === $sidebar ? 'selected' : ''; ?>
 
-			<option value="<?php echo esc_attr( sanitize_title( $colour ) ); ?>" <?php echo esc_attr( $select ); ?> ><?php echo esc_attr( $colour ); ?></option>
+            <option value="<?php echo esc_attr( sanitize_title( $colour ) ); ?>" <?php echo esc_attr( $select ); ?> ><?php echo esc_attr( $colour ); ?></option>
 
 		<?php endforeach; ?>
-	</select>
+    </select>
 	<?php
 
 }
@@ -84,19 +84,19 @@ function nightingale_save_colourpicker( $post_id ) {
 
 	$is_autosave = wp_is_post_autosave( $post_id );
 	$is_revision = wp_is_post_revision( $post_id );
-	if ( isset( $_POST['nightingale-colour-picker-nonce'] ) ) {
-		$nightingale_colour_picker_nonce = sanitize_text_field( wp_unslash( $_POST['nightingale-colour-picker-nonce'] ) );
+	if ( isset( $_POST[ 'nightingale-colour-picker-nonce' ] ) ) {
+		$nightingale_colour_picker_nonce = sanitize_text_field( wp_unslash( $_POST[ 'nightingale-colour-picker-nonce' ] ) );
 	} else {
 		$nightingale_colour_picker_nonce = '';
 	}
-	$is_valid_nonce = ( isset( $_POST['nightingale-colour-picker-nonce'] ) && ( wp_verify_nonce( $nightingale_colour_picker_nonce, basename( __FILE__ ) ) ) ) ? true : false;
+	$is_valid_nonce = ( isset( $_POST[ 'nightingale-colour-picker-nonce' ] ) && ( wp_verify_nonce( $nightingale_colour_picker_nonce, basename( __FILE__ ) ) ) ) ? true : false;
 
 	if ( $is_autosave || $is_revision || ! $is_valid_nonce ) {
 		return;
 	}
 
-	if ( isset( $_POST['color-picker'] ) ) {
-		$colorpicker = sanitize_text_field( wp_unslash( $_POST['color-picker'] ) );
+	if ( isset( $_POST[ 'color-picker' ] ) ) {
+		$colorpicker = sanitize_text_field( $_POST[ 'color-picker' ] );
 		update_post_meta( $post_id, 'page-color', esc_attr( wp_unslash( $colorpicker ) ) );
 	}
 
@@ -112,7 +112,7 @@ add_filter( 'admin_body_class', 'nightingale_admin_body_class' );
  *
  * @link https://wordpress.stackexchange.com/a/154951/17187
  *
- * @param  String $classes Current body classes.
+ * @param String $classes Current body classes.
  *
  * @return String          Altered body classes.
  */
@@ -124,7 +124,7 @@ function nightingale_admin_body_class( $classes ) {
 		return;
 	}
 
-	$page_color = get_post_meta( get_the_id(), 'page-color', true );
+	$page_color = esc_attr( get_post_meta( get_the_id(), 'page-color', true ) );
 
 	if ( $page_color ) {
 
