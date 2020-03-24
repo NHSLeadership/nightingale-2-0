@@ -12,4 +12,4 @@
  */
 
 ?>
-<p class="nhsuk-footer__copyright">&copy; Copyright, <?php bloginfo( 'name' ); ?> <?php echo esc_attr( date( 'Y' ) ); ?></p>
+<p class="nhsuk-footer__copyright"><?php echo esc_html__( '&copy; Copyright', 'nightingale' ); ?>, <?php bloginfo( 'name' ); ?> <?php echo esc_html( date_i18n( __( 'Y', 'nightingale' ) ) ); ?></p>

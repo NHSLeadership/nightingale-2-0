@@ -95,11 +95,11 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$label .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
 	}
 	$label .= '</label>';
-	if ( ! empty( $field->description ) ) {
+	/*if ( ! empty( $field->description ) ) {
 		$label .= '<span class="nhsuk-hint">
                                         ' . $field->description . '
                                       </span>';
-	}
+	}*/
 	$ender = '';
 	$extra = '';
 	if ( $field->gwreadonly_enable > 0 ) {

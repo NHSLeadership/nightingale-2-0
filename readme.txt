@@ -32,6 +32,15 @@ community in this work and will consider any pull requests or code snippets you 
 = How do I customise my 404 page? =
 All content on the 404 error page is widgetised. Navigate to admin > appearance > widgets and add your chosen widgets and content to the `404 page` widget.
 
+= How does the menu system work? =
+The top level navigation has NO dropdowns or expander functionality. This is by design. This means your header menu is
+one level only. To show further levels, we recommend using the right (or left) hand column and adding a menu widget. You
+ can either use your own custom menu, or the subpages widget included with the theme.
+
+ = Whats the subpages widget =
+ The subpages widget shows pages  in the current navigation tree. When you add the widget, you can configure how this
+ behaves and whether the top level page is linked etc.
+
 == Changelog
 
 = 2.0.8 =
@@ -135,9 +144,16 @@ Additional customiser options and refined display output:
 
  * Screenshot - Copyright 2019 NHS Leadership Academy. License GNU GPL v3.
 
- * assets/cross.svg, assets/pixel_trans.svg, assets/pixel_trans_mini.png, assets/tick.svg - Copyright 2019 NHS Digital.
- License MIT
+ * assets/cross.svg, assets/pixel_trans.svg, assets/pixel_trans_mini.png, assets/tick.svg, nhsuk-frontend css library -
+ Copyright 2019 NHS Digital. License MIT
 
+ * node-sass library, https://github.com/sass/node-sass Copyright 2013-2016 Andrew Nesbitt, MIT License
+
+ * nunjucks library, https://mozilla.github.io/nunjucks/ Copyright 2012-2015 James Long. BSD 2-Clause Simplified License
+
+ * penthouse library, https://github.com/pocketjoso/penthouse Copyright 2014 Jonas Ohlsson, MIT License
+
+ * scss library, https://openbase.io/js/scss Copyright 2010 Brian Mavity. MIT License
 
 
 

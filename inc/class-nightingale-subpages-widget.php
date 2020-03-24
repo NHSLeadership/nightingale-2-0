@@ -194,7 +194,7 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 		$instance = $old_instance;
 
 		/* Strip tags (if needed) and update the widget settings. */
-		$instance['title']             = esc_attr( $new_instance['title'] );
+		$instance['title']             = sanitize_text_field( $new_instance['title'] );
 		$instance['title_from_parent'] = (int) $new_instance['title_from_parent'];
 		$instance['title_link']        = (int) $new_instance['title_link'];
 		$instance['deep_subpages']     = (int) $new_instance['deep_subpages'];

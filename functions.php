@@ -15,6 +15,13 @@
  */
 require get_template_directory() . '/inc/class-nightingale-subpages-widget.php';
 
+
+/**
+ * Add in customizer sanitizer functions
+ */
+require get_template_directory() . '/inc/sanitization_callbacks.php';
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -23,13 +30,6 @@ require get_template_directory() . '/inc/class-nightingale-subpages-widget.php';
  * as indicating support for post thumbnails.
  */
 function nightingale_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on Nightingale 2.0, use a find and replace
-	 * to change 'nightingale' to the name of your theme in all the template files.
-	 */
-	load_theme_textdomain( 'nightingale', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -283,11 +283,6 @@ function nightingale_register_required_plugins() {
 			// If false, the plugin is only 'recommended' instead of required.
 			'version'            => '6.3.0',
 			// E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-			'force_activation'   => true,
-			// If true, plugin is activated upon theme activation and cannot be
-			// deactivated until theme switch.
-			'force_deactivation' => false,
-			// If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 			'external_url'       => '',
 			// If set, overrides default API URL and points to an external URL.
 			'is_callable'        => '',
@@ -300,8 +295,6 @@ function nightingale_register_required_plugins() {
 			'source'             => '',
 			'required'           => false,
 			'version'            => '1.0.1',
-			'force_activation'   => true,
-			'force_deactivation' => false,
 			'external_url'       => '',
 			'is_callable'        => '',
 		),
@@ -312,8 +305,6 @@ function nightingale_register_required_plugins() {
 			'source'             => '',
 			'required'           => false,
 			'version'            => '1.2.46',
-			'force_activation'   => false,
-			'force_deactivation' => false,
 			'external_url'       => '',
 			'is_callable'        => '',
 		),
@@ -324,8 +315,6 @@ function nightingale_register_required_plugins() {
 			'source'             => '',
 			'required'           => false,
 			'version'            => '1.11.2',
-			'force_activation'   => false,
-			'force_deactivation' => false,
 			'external_url'       => '',
 			'is_callable'        => '',
 		),
@@ -349,7 +338,7 @@ function nightingale_register_required_plugins() {
 
 		//
 		// If 'dismissable' is false, this message will be output at top of nag.
-		'is_automatic' => true,
+		'is_automatic' => false,
 		// Automatically activate plugins after installation or not.
 		'message'      => '',
 		// Message to output right before the plugins table.

@@ -51,7 +51,7 @@ if ( ! function_exists( 'nightingale_get_header_style' ) ) {
 	 */
 	function nightingale_get_header_style() {
 
-		$themeoptions_header_style = esc_attr( get_theme_mod( 'theme-header-style', 'default' ) );
+		$themeoptions_header_style = get_theme_mod( 'theme-header-style', 'default' );
 
 		if ( 'default' === $themeoptions_header_style ) {
 			$default_position = 'page-header-default';
@@ -133,6 +133,7 @@ add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt' );
  * @param int $length length to shorten content to.
  */
 function nightingale_shorten_excerpt( $length ) {
+	if ( is_admin() ) return $length;
 	return 20;
 }
 
@@ -143,8 +144,7 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
  * Customise the read more link
  */
 function nightingale_read_more() {
-
-
+	if ( is_admin() ) return $more;
 	return null;
 }
 
@@ -166,7 +166,7 @@ function nightingale_read_more_posts( $title, $link ) {
   <a class="nhsuk-action-link__link" href="' . $link . '"><svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
 	  <path d="M0 0h24v24H0z" fill="none"></path>
 	  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-	</svg><span class="nhsuk-action-link__text">read more</span><span class="nhsuk-u-visually-hidden"> about ' . $title . '</span></a></div>';
+	</svg><span class="nhsuk-action-link__text">' . esc_html_e( 'read more', 'nightingale' ) . '</span><span class="nhsuk-u-visually-hidden"> about ' . $title . '</span></a></div>';
 
 }
 

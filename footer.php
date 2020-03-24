@@ -34,9 +34,6 @@ flush();
 		</div>
 	</div>
 </footer>
-<!--
--- FzwfoYNPKdzf5LLgTGsAAz6xb8lqM8ObevYAW5CV9mBAbpDtfV057ndBJWDFrT7P --
--->
 <?php wp_footer(); ?>
 </body>
 </html>

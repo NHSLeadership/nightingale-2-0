@@ -14044,7 +14044,7 @@ aside#secondary > section {
 }
 
 .tribe-events .tribe-events-c-top-bar__datepicker {
-  display: inherit;
+  display: flex;
   align-items: center;
 }
 
@@ -14193,6 +14193,10 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 
 .single-tribe_events .nhsuk-promo__img {
   margin-bottom: 20px;
+}
+
+.single-tribe_events .tribe-events-single-event-title {
+  margin-bottom: 48px;
 }
 
 .nowrap {
