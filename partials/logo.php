@@ -11,7 +11,7 @@
  * @version 1.0 13th January 2020
  */
 
-$nhs_logo          = get_theme_mod( 'nhs_logo', 'yes' );
+$nhs_logo          = get_theme_mod( 'nhs_logo', 'no' );
 $header_layout     = get_theme_mod( 'logo_type', 'transactional' );
 $org_name_checkbox = get_theme_mod( 'org_name_checkbox', 'no' );
 $org_name_field    = get_theme_mod( 'org_name_field' );

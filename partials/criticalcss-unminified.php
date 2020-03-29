@@ -651,6 +651,12 @@ right: 48px
 }
 }
 
+@media (min-width:40.0625em) and (max-width:61.865em) {
+.nhsuk-header__menu-toggle {
+margin-top: 0
+}
+}
+
 .nhsuk-header__navigation {
 background-color: #fff;
 clear: both;
@@ -894,7 +900,6 @@ padding: 32px
 }
 }
 
-#secondary section,
 .nhsuk-panel-with-label {
 margin-bottom: 40px;
 margin-top: 40px;
@@ -905,7 +910,6 @@ padding-top: 0!important
 }
 
 @media (min-width:40.0625em) {
-#secondary section,
 .nhsuk-panel-with-label {
 margin-bottom: 48px;
 margin-top: 48px;
@@ -967,24 +971,6 @@ box-sizing: border-box
 -moz-box-sizing: inherit;
 -webkit-box-sizing: inherit;
 box-sizing: inherit
-}
-
-@font-face {
-font-family: Frutiger W01;
-font-display: swap;
-font-style: normal;
-font-weight: 400;
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot#iefix);
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot#iefix) format("eot"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2) format("woff2"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff) format("woff"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf) format("truetype"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115) format("svg")
-}
-
-@font-face {
-font-family: Frutiger W01;
-font-display: swap;
-font-style: normal;
-font-weight: 600;
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot#iefix);
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot#iefix) format("eot"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2) format("woff2"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff) format("woff"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf) format("truetype"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca) format("svg")
 }
 
 html {
@@ -1117,6 +1103,10 @@ margin-left: 0;
 margin-right: 0
 }
 
+.nhsuk-search__input {
+width: 15rem
+}
+
 #cookie-notice {
 position: fixed;
 left: 0;
@@ -1128,25 +1118,34 @@ width: 100%
 box-shadow: none
 }
 
+@media (min-width:40.0625em) {
+.nhsuk-search__submit {
+padding-top: 6px
+}
+}
+
 .nhsuk-header .nhsuk-header__navigation ul {
 overflow: hidden
 }
 
+.nhsuk-header .nhsuk-header__navigation ul li a {
+height: 100%
+}
+
 .nhsuk-header .nhsuk-header__search-wrap input[type=text] {
-border-radius: 3px 0 0 3px
+border-radius: 4px 0 0 4px
 }
 
 .nhsuk-header .autocomplete-container {
 float: left
 }
 
-.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=text] {
-border: 1px solid #d8dde0
+.nhsuk-header .nhsuk-header__search-wrap input[type=text] {
+border: none
 }
 
-.nhsuk-header.nhsuk-header--white input[type=text] {
-border-radius: 4px 0 0 4px;
-border-right: none
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=text] {
+border: 2px solid #d8dde0
 }
 
 @media (min-width:40.0625em) {
@@ -1156,19 +1155,32 @@ margin-top: 0
 }
 
 .nhsuk-header__container {
-padding-bottom: 20px;
+padding-bottom: 16px;
 min-height: 80px
 }
 
+.nhsuk-header--transactional .nhsuk-header__link {
+width: auto;
+display: inline-block;
+text-decoration: none;
+height: auto
+}
+
 .nhsuk-header__search-wrap input[type=text] {
-border: 1px solid #ccc
+border: 2px solid #e8edee
 }
 
 .nhsuk-grid-column-full {
 clear: both
 }
 
+.nhsuk-icon__arrow-right-circle {
+vertical-align: middle
+}
+
 #secondary section {
-background: #fff;
-margin-top: 32px
+border-top: 2px solid #005eb8;
+margin-bottom: 32px;
+padding-top: 16px;
+padding-bottom: 16px
 }

@@ -150,7 +150,7 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'nhs_logo',
 		array(
-			'default'           => 'yes',
+			'default'           => 'no',
 			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);

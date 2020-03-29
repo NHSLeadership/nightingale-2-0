@@ -1,13 +1,12 @@
 === Nightingale 2.0 ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.2
+Tested up to: 5.3.2
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.0.8
-Stable tag: 2.0.8
+Version: 2.1.0
+Stable tag: 2.1.0
 
 
 == Description ==
@@ -37,11 +36,26 @@ The top level navigation has NO dropdowns or expander functionality. This is by 
 one level only. To show further levels, we recommend using the right (or left) hand column and adding a menu widget. You
  can either use your own custom menu, or the subpages widget included with the theme.
 
- = Whats the subpages widget =
+ = What is the subpages widget =
  The subpages widget shows pages  in the current navigation tree. When you add the widget, you can configure how this
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+= 2.1.0 =
+Removed for theme review compliance:
+ * Performance optimisations and code standard changes. These have been removed as are considered plugin options. These
+ will be added to a companion plugin at a later date.
+ * All references to assets.nhs.uk - the font that was originally bundled (Frutiger) is only licensed for use on nhs.uk
+   domains. If you are able to use Frutiger, you will need to add the relevant css to your customiser css section. For a
+   WordPress release it was not appropriate to include it bundled.
+ * All dev files. These are now in our github repo version only. The WP theme version is only the files required topower
+  the theme. If you would like to be involved in developing the theme you are more than welcome, but please download the
+   full repo from github to get the full upline files (such as node_files)
+
+Added in better translation options by ensuring all strings are translatable.
+
+Added better sanitising routines for customiser scripts.
 
 = 2.0.8 =
 Additional customiser options and refined display output:

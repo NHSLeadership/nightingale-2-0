@@ -6,7 +6,7 @@
  *
  * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 2.0.5 19th November 2019
+ * @version 2.1.0 19th November 2019
  */
 
 /**
@@ -373,11 +373,6 @@ require get_template_directory() . '/inc/custom-gutenberg.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Login Screen
- */
-require get_template_directory() . '/inc/login.php';
-
-/**
  * Pagination
  */
 require get_template_directory() . '/inc/pagination.php';
@@ -450,11 +445,6 @@ if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) {
 		require get_template_directory() . '/inc/google-tag-manager.php';
 	}
 }
-
-/**
- * Performance Boosters - should be loaded as last element of functions file.
- */
-require get_template_directory() . '/inc/performance-optimisations.php';
 
 /**
  * Shove the critical path css directly into the header.
