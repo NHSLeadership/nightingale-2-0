@@ -5,8 +5,9 @@ Tested up to: 5.3.2
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-Version: 2.1.0
-Stable tag: 2.1.0
+Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
+Version: 2.1.1
+Stable tag: 2.1.1
 
 
 == Description ==
@@ -161,13 +162,6 @@ Additional customiser options and refined display output:
  * assets/cross.svg, assets/pixel_trans.svg, assets/pixel_trans_mini.png, assets/tick.svg, nhsuk-frontend css library -
  Copyright 2019 NHS Digital. License MIT
 
- * node-sass library, https://github.com/sass/node-sass Copyright 2013-2016 Andrew Nesbitt, MIT License
-
- * nunjucks library, https://mozilla.github.io/nunjucks/ Copyright 2012-2015 James Long. BSD 2-Clause Simplified License
-
- * penthouse library, https://github.com/pocketjoso/penthouse Copyright 2014 Jonas Ohlsson, MIT License
-
- * scss library, https://openbase.io/js/scss Copyright 2010 Brian Mavity. MIT License
 
 
 
