@@ -54,7 +54,7 @@ Removed for theme review compliance:
    full repo from github to get the full upline files (such as node_files)
 
 Added in better translation options by ensuring all strings are translatable.
-
+Fixed search button operation on mobile.
 Added better sanitising routines for customiser scripts.
 
 = 2.0.8 =
