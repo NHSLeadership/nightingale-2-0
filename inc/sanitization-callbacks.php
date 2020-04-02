@@ -20,7 +20,7 @@
  */
 function nightingale_sanitize_checkbox( $checked ) {
 	// Boolean check.
-	return ( ( isset( $checked ) && true == $checked ) ? true : false );
+	return ( ( isset( $checked ) && true === $checked ) ? true : false );
 }
 
 /**
@@ -56,7 +56,7 @@ function nightingale_sanitize_css( $css ) {
  * @see absint() https://developer.wordpress.org/reference/functions/absint/
  * @see get_post_status() https://developer.wordpress.org/reference/functions/get_post_status/
  *
- * @param int                  $page    Page ID.
+ * @param int                  $page_id    Page ID.
  * @param WP_Customize_Setting $setting Setting instance.
  * @return int|string Page ID if the page is published; otherwise, the setting default.
  */
@@ -65,7 +65,7 @@ function nightingale_sanitize_dropdown_pages( $page_id, $setting ) {
 	$page_id = absint( $page_id );
 
 	// If $page_id is an ID of a published page, return it; otherwise, return the default.
-	return ( 'publish' == get_post_status( $page_id ) ? $page_id : $setting->default );
+	return ( 'publish' === get_post_status( $page_id ) ? $page_id : $setting->default );
 }
 
 /**
@@ -153,7 +153,6 @@ function nightingale_sanitize_html( $html ) {
  * @return string The image filename if the extension is allowed; otherwise, the setting default.
  */
 function nightingale_sanitize_image( $image, $setting ) {
-
 	/*
 	 * Array of valid image file types.
 	 *
@@ -165,7 +164,7 @@ function nightingale_sanitize_image( $image, $setting ) {
 		'png'          => 'image/png',
 		'bmp'          => 'image/bmp',
 		'tif|tiff'     => 'image/tiff',
-		'ico'          => 'image/x-icon'
+		'ico'          => 'image/x-icon',
 	);
 
 	// Return an array with file extension and mime_type.
@@ -218,7 +217,7 @@ function nightingale_sanitize_number_absint( $number, $setting ) {
 	// Ensure $number is an absolute integer (whole number, zero or greater).
 	$number = absint( $number );
 
-	// If the input is an absolute integer, return it; otherwise, return the default
+	// If the input is an absolute integer, return it; otherwise, return the default.
 	return ( $number ? $number : $setting->default );
 }
 
@@ -255,7 +254,7 @@ function nightingale_sanitize_number_range( $number, $setting ) {
 	// Get step.
 	$step = ( isset( $atts['step'] ) ? $atts['step'] : 1 );
 
-	// If the number is within the valid range, return it; otherwise, return the default
+	// If the number is within the valid range, return it; otherwise, return the default.
 	return ( $min <= $number && $number <= $max && is_int( $number / $step ) ? $number : $setting->default );
 }
 

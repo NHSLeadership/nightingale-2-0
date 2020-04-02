@@ -14,9 +14,9 @@
 <html <?php language_attributes(); ?>>
 <head>
 
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php
 	wp_head();
 	flush();
@@ -24,7 +24,10 @@
 </head>
 <body <?php body_class( 'js-enabled' ); ?>>
 <?php
-if ( ! function_exists( 'wp_body_open' ) ){
+if ( ! function_exists( 'wp_body_open' ) ) {
+	/**
+	 * Open the body tag, pull in any hooked triggers.
+	 **/
 	function wp_body_open() {
 		do_action( 'wp_body_open' );
 	}
@@ -48,26 +51,26 @@ echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $
 	<?php
 	get_template_part( 'partials/logo' );
 	?>
-    <div class="nhsuk-header__content" id="content-header">
+	<div class="nhsuk-header__content" id="content-header">
 
-        <div class="nhsuk-header__menu">
-            <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
-                    aria-label="Open menu">Menu
-            </button>
-        </div>
+		<div class="nhsuk-header__menu">
+			<button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
+					aria-label="Open menu">Menu
+			</button>
+		</div>
 
 		<?php
 		$header_search = get_theme_mod( 'show_search', 'yes' );
 		if ( 'yes' === $header_search ) {
 			?>
-            <div class="nhsuk-header__search">
+			<div class="nhsuk-header__search">
 				<?php get_search_form(); ?>
-            </div>
+			</div>
 			<?php
 		}
 		?>
 
-    </div>
+	</div>
 
 </div>
 <?php
@@ -85,7 +88,7 @@ $extra_styles = $page_color ? 'page-style--' . $page_color : '';
 ?>
 
 <div id="content" class="nhsuk-width-container nhsuk-width-container--full">
-    <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding <?php echo esc_attr( $extra_styles ); ?>" id="maincontent">
-        <div id="contentinner" class="nhsuk-width-container">
+	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding <?php echo esc_attr( $extra_styles ); ?>" id="maincontent">
+		<div id="contentinner" class="nhsuk-width-container">
 			<?php flush(); ?>
 

@@ -81,7 +81,9 @@ add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt' );
  * @param int $length length to shorten content to.
  */
 function nightingale_shorten_excerpt( $length ) {
-	if ( is_admin() ) return $length;
+	if ( is_admin() ) {
+		return $length;
+	}
 	return 20;
 }
 
@@ -92,7 +94,9 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
  * Customise the read more link
  */
 function nightingale_read_more() {
-	if ( is_admin() ) return $more;
+	if ( is_admin() ) {
+		return $more;
+	}
 	return null;
 }
 
