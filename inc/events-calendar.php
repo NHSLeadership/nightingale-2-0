@@ -2,11 +2,10 @@
 /**
  * Nightingale 2.0 rendering of The Events Calendar plugin output.
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package Nightingale
+ * @link      https://developer.wordpress.org/themes/basics/theme-functions/
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.0 18th February 2020
+ * @version   1.0 18th February 2020
  */
 
 /**
@@ -39,7 +38,7 @@ add_action( 'widgets_init', 'nightingale_widgets_events', 10 );
  * @return array
  */
 function nightingale_remove_end_time_single( $formatting_details ) {
-	$formatting_details['show_end_time'] = 0;
+	$formatting_details[ show_end_time ] = 0;
 
 	return $formatting_details;
 }
@@ -59,10 +58,9 @@ function nightingale_events_template_location() {
  * The Events Calendar and related plugins: Add your own location for template file loading.
  *
  * @link https://gist.github.com/b76421f2490a8b8995493f203e11b331
+ * @see  \Tribe__Events__Templates::getTemplateHierarchy()
  *
- * @see \Tribe__Events__Templates::getTemplateHierarchy()
- *
- * @param string $file The full file path trying to be loaded.
+ * @param string $file     The full file path trying to be loaded.
  * @param string $template The template name, such as.
  *
  * @return string
@@ -210,14 +208,17 @@ function nightingale_events_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'nightingale_events_scripts' );
 
-add_action( 'wp_enqueue_scripts', function() {
+add_action(
+	'wp_enqueue_scripts',
+	function () {
 
-    //this is based on using the "skeleton styles" option
-    $styles = [
-        'tribe-common-full-style'
-    ];
+		// This is based on using the "skeleton styles" option.
+		$styles = [
+			'tribe-common-full-style',
+		];
 
-    wp_deregister_style( $styles );
+		wp_deregister_style( $styles );
 
-}, 99);
-
+	},
+	99
+);

@@ -2,12 +2,12 @@
 /**
  * Customised Gravity Forms output markup
  *
- * @date September 26 2019
- * @version 1.0
- * @author Tony Blacker
+ * @date         September 26 2019
+ * @version      1.0
+ * @author       Tony Blacker
  * @organisation NHS Leadership Academy
- * @copyright OGL v3
- * @package Nightingale Theme
+ * @copyright    OGL v3
+ * @package      Nightingale Theme
  */
 
 add_filter(
@@ -69,11 +69,10 @@ add_filter(
 add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 10, 2 );
 
 /**
- *
  * Clean Gravity Forms inputs out
  *
  * @param string $field_content the rendered output of a GF generated object.
- * @param array  $field the initialised value of the field as created by GF.
+ * @param array  $field         the initialised value of the field as created by GF.
  *
  * @return string
  */
@@ -95,13 +94,8 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$label .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
 	}
 	$label .= '</label>';
-	/*if ( ! empty( $field->description ) ) {
-		$label .= '<span class="nhsuk-hint">
-                                        ' . $field->description . '
-                                      </span>';
-	}*/
-	$ender = '';
-	$extra = '';
+	$ender  = '';
+	$extra  = '';
 	if ( $field->gwreadonly_enable > 0 ) {
 		$extra .= ' readonly';
 	}
@@ -317,6 +311,7 @@ add_filter(
 	function ( $form_string, $form ) {
 		// Style the submit button.
 		$form_string = str_replace( 'gform_button', 'gform_button nhsuk-button', $form_string );
+
 		return $form_string;
 	},
 	10,

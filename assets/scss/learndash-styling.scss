@@ -79,7 +79,7 @@
       -ms-flex: initial;
 
       &:hover {
-        color: $nhsuk-link-hover-color !important;
+        color: $color_nhsuk-white !important;
       }
     }
   }
@@ -87,12 +87,12 @@
   .ld-table-list {
     @extend .nhsuk-care-card;
 
-    .ld-primary-color-hover:hover {
-      margin: 0 -nhsuk-spacing(3);
-      padding: nhsuk-spacing(3);
+    .ld-primary-color-hover {
 
       &:hover {
-        background: $color_nhsuk-warm-yellow;
+        background: $nhsuk-focus-color;
+        margin: 0 -20px;
+        padding: 20px;
       }
     }
 
@@ -176,7 +176,7 @@
 
         &:hover {
           background: transparent;
-          border: $nhsuk-border-width-form-element solid $color_nhsuk-warm-yellow;
+          border: $nhsuk-border-width-form-element solid $nhsuk-focus-color;
           margin: -nhsuk-spacing(1);
         }
       }
@@ -453,5 +453,11 @@
     img.wp-post-image {
       display: none;
     }
+  }
+}
+#ld_course_categorydropdown {
+  padding-bottom: nhsuk-spacing(4);
+  #ld_course_categorydropdown_select {
+    height: 40px;
   }
 }

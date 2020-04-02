@@ -11,11 +11,11 @@
 $event_cats = get_the_terms( get_the_id(), 'tribe_events_cat' );
 $icons      = nightingale_events_icons();
 
-$length = $event_cats ? count( $event_cats ): null;
+$length = $event_cats ? count( $event_cats ) : null;
 
 ?>
 
-<?php if( $event_cats ): ?>
+<?php if ( $event_cats ) : ?>
 
 	<div class="event-categories">
 

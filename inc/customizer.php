@@ -114,8 +114,8 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_control(
 		'org_name_checkbox',
 		array(
-			'label'       => esc_html__( 'Do you wish to add an organisation name to the logo?', 'nightingale' ),
-			'description' => esc_html__( 'This is used if your oganisation name should be different from the site title', 'nightingale' ),
+			'label'       => esc_html__( 'Do you wish to add an organisation name to the logo and copyright?', 'nightingale' ),
+			'description' => esc_html__( 'This is used if your oganisation name should be different from the site title. It is also picked up for the copyright statement in your footer', 'nightingale' ),
 			'section'     => 'title_tagline',
 			'type'        => 'radio',
 			'choices'     => array(
@@ -150,7 +150,7 @@ function nightingale_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'nhs_logo',
 		array(
-			'default'           => 'yes',
+			'default'           => 'no',
 			'sanitize_callback' => 'nightingale_sanitize_select',
 		)
 	);

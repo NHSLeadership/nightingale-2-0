@@ -16,12 +16,12 @@ if ( ! empty( get_search_query() ) ) {
 if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
 	$GLOBALS['nightingale_search_form_counter'] = 1;
 	$searchid                                   = '';
-	$toggle_search                              = 'id="toggle-search"';
-	$wrap_search                                = 'id="wrap-search"';
-	$search_form                                = 'id="search"';
+	$toggle_search                              = 'id=toggle-search';
+	$wrap_search                                = 'id=wrap-search';
+	$search_form                                = 'id=search';
 	$search_field                               = 'search-field';
-	$autocomplete                               = 'id="autocomplete-container"';
-	$close_search                               = 'id="close-search"';
+	$autocomplete                               = 'id=autocomplete-container';
+	$close_search                               = 'id=close-search';
 } else {
 	$GLOBALS['nightingale_search_form_counter'] ++;
 	$searchid      = $GLOBALS['nightingale_search_form_counter'];
@@ -29,7 +29,7 @@ if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
 	$wrap_search   = '';
 	$autocomplete  = '';
 	$close_search  = '';
-	$search_form   = 'id="search' . $searchid . '"';
+	$search_form   = 'id=search' . $searchid . '';
 	$search_field  = 'search-field' . $searchid;
 }
 

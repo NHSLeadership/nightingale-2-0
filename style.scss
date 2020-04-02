@@ -2,17 +2,17 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.0.8
+Version: 2.1.2
 Requires at least: 5.0
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from news sites to primary care trusts to arms length bodies to community practices.
 Tags: education, right-sidebar, accessibility-ready, custom-menu, footer-widgets, threaded-comments, theme-options
 Author: Tony Blacker, NHS Leadership Academy
-Author URI: https://github.com/tblacker7
-Theme URI: http://wpdemo.leadershipacademy.nhs.uk/
+Author URI: https://www.leadershipacademy.nhs.uk
+Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Copyright: National Health Service, 2019
+Copyright: National Health Service, 2019 - 2020
 
 This theme, like WordPress, is licensed under the GPL.
 It is based on the excellent work of Underscores (https://underscores.me/, (C) 2012-2017 Automattic, Inc) and the NHS Frontend Library from NHS Digital.
@@ -27,7 +27,47 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // @todo clean this up, its a hangover from underscores that we could do with getting rid of
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
 // Core (required)
-@import 'node_modules/nhsuk-frontend/packages/core/all';
+//@import 'node_modules/nhsuk-frontend/packages/core/all'; removed the "all" and replaced with individual components below to ensure the font is not called in.
+
+// Settings
+@import 'node_modules/nhsuk-frontend/packages/core/settings/all';
+
+// Tools
+@import 'node_modules/nhsuk-frontend/packages/core/tools/all';
+
+// Generic
+@import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
+//@import 'node_modules/nhsuk-frontend/packages/core/generic/font-face'; // removed to take Frutiger out
+@import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
+
+// Elements
+@import 'node_modules/nhsuk-frontend/packages/core/elements/forms';
+@import 'node_modules/nhsuk-frontend/packages/core/elements/links';
+@import 'node_modules/nhsuk-frontend/packages/core/elements/page';
+@import 'node_modules/nhsuk-frontend/packages/core/elements/table';
+
+// Objects
+@import 'node_modules/nhsuk-frontend/packages/core/objects/form-group';
+@import 'node_modules/nhsuk-frontend/packages/core/objects/grid';
+@import 'node_modules/nhsuk-frontend/packages/core/objects/main-wrapper';
+@import 'node_modules/nhsuk-frontend/packages/core/objects/width-container';
+
+// Styles
+@import 'node_modules/nhsuk-frontend/packages/core/styles/icons';
+@import 'node_modules/nhsuk-frontend/packages/core/styles/lists';
+@import 'node_modules/nhsuk-frontend/packages/core/styles/section-break';
+@import 'node_modules/nhsuk-frontend/packages/core/styles/typography';
+
+// Utilities
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/clearfix';
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/grid-widths';
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/link-nowrap';
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/reading-width';
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/spacing';
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/typography';
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/visually-hidden';
+@import 'node_modules/nhsuk-frontend/packages/core/utilities/widths';
+
 // start importing the theme specific settings
 @import 'assets/scss/nhs-colours';
 // nhs colour pallette

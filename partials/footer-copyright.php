@@ -11,5 +11,14 @@
  * @version 1.0 13th January 2020
  */
 
+$organisation_name = get_theme_mod( 'org_name_field', '' );
+
+if ( '' !== $organisation_name ) {
+	$copyright_text = $organisation_name;
+} else {
+	$copyright_text = bloginfo( 'name' );
+}
 ?>
-<p class="nhsuk-footer__copyright"><?php echo esc_html__( '&copy; Copyright', 'nightingale' ); ?>, <?php bloginfo( 'name' ); ?> <?php echo esc_html( date_i18n( __( 'Y', 'nightingale' ) ) ); ?></p>
+<p class="nhsuk-footer__copyright">
+	<?php echo esc_html__( '&copy; Copyright', 'nightingale' ); ?>, <?php echo esc_html( $copyright_text ); ?> <?php echo esc_html( date_i18n( __( 'Y', 'nightingale' ) ) ); ?>
+</p>

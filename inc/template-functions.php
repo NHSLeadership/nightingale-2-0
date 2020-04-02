@@ -63,58 +63,6 @@ if ( ! function_exists( 'nightingale_get_header_style' ) ) {
 	}
 }
 
-// remove "type" from script and style tags - not needed for html 5 validation.
-add_filter( 'script_loader_tag', 'nightingale__remove_type', 10, 3 );
-add_filter( 'style_loader_tag', 'nightingale__remove_type', 10, 3 );  // Ignore the $media argument to allow for a common function.
-
-/**
- * Clean Header Output for W3C compliance
- *
- * @param string $markup The original text.
- * @param string $handle What are we looking for.
- * @param string $href What is the link to it.
- *
- * @return mixed
- */
-function nightingale__remove_type( $markup, $handle, $href ) {
-
-	// Remove the 'type' attribute.
-	$markup = str_replace( " type='text/javascript'", '', $markup );
-	$markup = str_replace( " type='text/css'", '', $markup );
-
-	return $markup;
-}
-
-// Store and process wp_head output to operate on inline scripts and styles.
-add_action( 'wp_head', 'nightingale__wp_head_ob_start', 0 );
-
-/**
- * Start outputting the Head
- */
-function nightingale__wp_head_ob_start() {
-	ob_start();
-}
-
-add_action( 'wp_head', 'nightingale__wp_head_ob_end', 10000 );
-
-/**
- * Clean up the head output HTML to be W3C compliant.
- */
-function nightingale__wp_head_ob_end() {
-	$wp_head_markup = ob_get_contents();
-	ob_end_clean();
-
-	// Remove the 'type' attribute. Note the use of single and double quotes.
-	$wp_head_markup = str_replace( " type='text/javascript'", '', $wp_head_markup );
-	$wp_head_markup = str_replace( ' type="text/javascript"', '', $wp_head_markup );
-	$wp_head_markup = str_replace( ' type="text/css"', '', $wp_head_markup );
-	$wp_head_markup = str_replace( " type='text/css'", '', $wp_head_markup );
-	echo $wp_head_markup; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
-}
-
-// end remove "type" from script and style tags.
-
 
 /**
  * Adds Correct Class to excerpt paragraph tag
@@ -133,7 +81,9 @@ add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt' );
  * @param int $length length to shorten content to.
  */
 function nightingale_shorten_excerpt( $length ) {
-	if ( is_admin() ) return $length;
+	if ( is_admin() ) {
+		return $length;
+	}
 	return 20;
 }
 
@@ -144,7 +94,9 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
  * Customise the read more link
  */
 function nightingale_read_more() {
-	if ( is_admin() ) return $more;
+	if ( is_admin() ) {
+		return $more;
+	}
 	return null;
 }
 

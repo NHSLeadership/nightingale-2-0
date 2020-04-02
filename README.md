@@ -1,5 +1,10 @@
-# Nightingale 2.0.8
+# Nightingale 2.1.1
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
+:exclamation: 2.1.0 - For WP theme review compliance, certain elements have been modified in this release
+. Performance tweaks, the NHS logo being displayed by default and the Frutiger font have all been removed. Please be
+ aware of this before updating, and recognise you may need to modify your customiser settings after upgrade to keep
+  your site looking the same
+  
 :exclamation: Updates to 2.0.7 will make the header region revert to standard wordpress values. If updating your theme, please pay particular attention to the site identity and header regions of the theme customiser before making your site live.
 
 :exclamation: This is a production ready release, with the caveat that any issues should be reported as an issue on 
