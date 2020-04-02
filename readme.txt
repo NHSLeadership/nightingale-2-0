@@ -1,13 +1,13 @@
 === Nightingale 2.0 ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.3.2
+Tested up to: 5.4
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.1.1
-Stable tag: 2.1.1
+Version: 2.1.2
+Stable tag: 2.1.2
 
 
 == Description ==
@@ -42,6 +42,14 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+= 2.1.2 =
+ * Removed margin 0 on full width - this was causing text to crash the frame in mobile view.
+ * Corrected some minor styling issues with learndash css
+ * Corrected hover color from warm-yellow to focus-color for consistency
+ * Added filter to copyright to pick up organisation name if defined.
+ * Updated theme to reflect compatability with wp 5.4
+
+= 2.1.1 =
 
 = 2.1.0 =
 Removed for theme review compliance:
@@ -161,7 +169,3 @@ Additional customiser options and refined display output:
 
  * assets/cross.svg, assets/pixel_trans.svg, assets/pixel_trans_mini.png, assets/tick.svg, nhsuk-frontend css library -
  Copyright 2019 NHS Digital. License MIT
-
-
-
-

@@ -1,5 +1,4 @@
 .nhsuk-width-container--full {
-  margin: 0;
   max-width: none;
 }
 
@@ -64,7 +63,7 @@
     }
 
     .nhsuk-pagination__link:hover {
-      box-shadow: 0 0 0 nhsuk-spacing(1) $color_nhsuk-warm-yellow inset;
+      box-shadow: 0 0 0 nhsuk-spacing(1) $nhsuk-focus-color inset;
     }
   }
 }

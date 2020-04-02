@@ -12508,7 +12508,6 @@ b {
 }
 
 .nhsuk-width-container--full {
-  margin: 0;
   max-width: none;
 }
 
@@ -12555,7 +12554,7 @@ b {
 }
 
 .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination__link:hover, .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a:hover, .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a:hover {
-  box-shadow: 0 0 0 4px #ffb81C inset;
+  box-shadow: 0 0 0 4px #ffeb3b inset;
 }
 
 .is-style-outline .wp-block-button__link {
@@ -13675,16 +13674,13 @@ aside#secondary > section {
 }
 
 .learndash-wrapper .ld-content-actions a.ld-primary-color:hover {
-  color: #7C2855 !important;
+  color: #ffffff !important;
 }
 
 .learndash-wrapper .ld-table-list .ld-primary-color-hover:hover {
-  margin: 0 -nhsuk-spacing(3);
-  padding: 16px;
-}
-
-.learndash-wrapper .ld-table-list .ld-primary-color-hover:hover:hover {
-  background: #ffb81C;
+  background: #ffeb3b;
+  margin: 0 -20px;
+  padding: 20px;
 }
 
 .learndash-wrapper .ld-table-list .ld-table-list-items {
@@ -13735,7 +13731,7 @@ aside#secondary > section {
 
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
   background: transparent;
-  border: 2px solid #ffb81C;
+  border: 2px solid #ffeb3b;
   margin: -nhsuk-spacing(1);
 }
 
@@ -13988,6 +13984,14 @@ aside#secondary > section {
 
 .single-sfwd-courses article.sfwd-courses img.wp-post-image {
   display: none;
+}
+
+#ld_course_categorydropdown {
+  padding-bottom: 24px;
+}
+
+#ld_course_categorydropdown #ld_course_categorydropdown_select {
+  height: 40px;
 }
 
 /* Events Calendar Styles */

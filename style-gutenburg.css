@@ -10547,7 +10547,6 @@ section {
 }
 
 .nhsuk-width-container--full {
-  margin: 0;
   max-width: none;
 }
 
@@ -10594,7 +10593,7 @@ section {
 }
 
 .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination__link:hover {
-  box-shadow: 0 0 0 4px #ffb81C inset;
+  box-shadow: 0 0 0 4px #ffeb3b inset;
 }
 
 .is-style-outline .wp-block-button__link {
