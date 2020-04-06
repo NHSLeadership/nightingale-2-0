@@ -93,7 +93,7 @@ function nightingale_breadcrumb() {
 
 						<p class="nhsuk-breadcrumb__back">
 							<a class="nhsuk-breadcrumb__backlink" href="<?php echo esc_url( $back_one_level[0] ); ?>">
-								<?php echo esc_html( __( 'Back to ', 'nightingale' ) ) . esc_url( $back_one_level[1] ); ?>
+								<?php echo esc_html( __( 'Back to ', 'nightingale' ) ) . esc_html( $back_one_level[1] ); ?>
 							</a>
 						</p>
 						<style>
