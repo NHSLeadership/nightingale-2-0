@@ -136,6 +136,7 @@ function nightingale_show_sidebar() {
  */
 function nightingale_sidebar_location( $sidebar ) {
 	$sidebar_location = get_theme_mod( 'sidebar_location', 'right' );
+	$sidefloat = 'contentleft';
 	if ( 'right' !== $sidebar_location ) {
 		if ( is_active_sidebar( $sidebar ) ) {
 			$sidefloat = ' contentright';
