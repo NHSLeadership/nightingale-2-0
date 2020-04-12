@@ -94,9 +94,6 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
  * Customise the read more link
  */
 function nightingale_read_more() {
-	if ( is_admin() ) {
-		return $more;
-	}
 	return null;
 }
 

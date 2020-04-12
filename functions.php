@@ -28,7 +28,7 @@ require get_template_directory() . '/inc/sanitization-callbacks.php';
  * as indicating support for post thumbnails.
  */
 function nightingale_setup() {
-
+	load_textdomain( 'nightingale' );
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
