@@ -2,9 +2,9 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Nightingale
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 /**
@@ -84,6 +84,7 @@ function nightingale_shorten_excerpt( $length ) {
 	if ( is_admin() ) {
 		return $length;
 	}
+
 	return 20;
 }
 
@@ -105,9 +106,8 @@ add_filter( 'excerpt_more', 'nightingale_read_more', 10, 1 );
  * Customise the read more link.
  *
  * @param string $title The title for the link (used in visually hidden area for screen readers to better describe the link).
- * @param string $link The href of the resource being linked to.
- *
- * return string output html.
+ * @param string $link  The href of the resource being linked to.
+ *                      return string output html.
  */
 function nightingale_read_more_posts( $title, $link ) {
 
@@ -133,11 +133,12 @@ function nightingale_show_sidebar() {
  */
 function nightingale_sidebar_location( $sidebar ) {
 	$sidebar_location = get_theme_mod( 'sidebar_location', 'right' );
-	$sidefloat = 'contentleft';
+	$sidefloat        = 'contentleft';
 	if ( 'right' !== $sidebar_location ) {
 		if ( is_active_sidebar( $sidebar ) ) {
 			$sidefloat = ' contentright';
 		}
 	}
+
 	return $sidefloat;
 }

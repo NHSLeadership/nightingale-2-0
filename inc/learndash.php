@@ -2,12 +2,12 @@
 /**
  * Customised Learndash output markup
  *
- * @date October 31st 2019
- * @version 1.0
- * @author Tony Blacker
+ * @date         October 31st 2019
+ * @version      1.0
+ * @author       Tony Blacker
  * @organisation NHS Leadership Academy
- * @copyright OGL v3
- * @package Nightingale Theme
+ * @copyright    OGL v3
+ * @package      Nightingale Theme
  */
 
 add_filter(
@@ -19,8 +19,8 @@ add_filter(
 		// search for whitespace and trim it down for later searches.
 		$find[]    = '/\s\s+/';
 		$replace[] = ' ';
-		// sort out styling page titles
-		$find[] = '#<header><h1>([^"]+)</h1></header>#';
+		// sort out styling page titles.
+		$find[]    = '#<header><h1>([^"]+)</h1></header>#';
 		$replace[] = '<header class="entry-header"><h1 class="entry-title">$1</h1></header>';
 		// sort out radio styling.
 		$find[]    = '#<label> <input class="wpProQuiz_questionInput" type="radio" name="([^"]+)" value="([^"]+)">([^<]+)<\/label>#';
