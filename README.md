@@ -15,7 +15,31 @@ this repo for quick action.
 ### Frutiger Font ###
 The Frutiger font is specified for use on NHS web properties, but is only licensed for sites ending .nhs.uk - if your
  site is both an NHS property and is on the correct domain, you can add this back in by making your own child theme
-  and adding in the relevant font declarations to a .scss file.
+  and adding in the below font declarations to a .scss file.
+  ```@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix');
+  src: url('https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix') format('eot'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2') format('woff2'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff') format('woff'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf') format('truetype'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115') format('svg');
+}
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix');
+  src: url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix') format('eot'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2') format('woff2'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff') format('woff'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf') format('truetype'),
+       url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca') format('svg');
+}```
   
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
