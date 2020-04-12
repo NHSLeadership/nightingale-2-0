@@ -39,7 +39,8 @@ The Frutiger font is specified for use on NHS web properties, but is only licens
        url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff') format('woff'),
        url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf') format('truetype'),
        url('https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca') format('svg');
-}```
+}
+```
   
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
