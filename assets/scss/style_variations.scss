@@ -6,18 +6,11 @@
 .nhsuk-grid-column-two-thirds.contentright, .nhsuk-grid-column-two-thirds.contentright.archive, .nhsuk-grid-column-two-thirds.contentright.index {
   float: right;
   padding: 0 0 0 nhsuk-spacing(3);
-  &+.nhsuk-grid-column-one-third {
-    padding-left: 0;
-  }
-}
-.nhsuk-grid-column-full > :first-child {
-  padding-left: 0 !important;
 }
 
-.nhsuk-grid-column-full > :last-child {
-  padding-right: 0 !important;
+.nhsuk-grid-column-full{
+  padding: 0;
 }
-
 
 .nhsuk-header__search-wrap {
   input[type="text"] {
