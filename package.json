@@ -19,9 +19,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nhsuk-frontend": "^3.0.3",
+    "nhsuk-frontend": "^3.0.4",
     "node-sass": "^4.13.1",
-    "nunjucks": "^3.2.0",
+    "nunjucks": "^3.2.1",
     "penthouse": "^2.2.2",
     "scss": "^0.2.4"
   },

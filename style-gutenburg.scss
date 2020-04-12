@@ -71,6 +71,21 @@ ul {
   font-family: $nhsuk-font, $nhsuk-font-fallback;;
   @extend h1;
 }
-
+.components-panel__header.edit-post-sidebar-header {
+  ul {
+    margin-bottom: 0px;
+    padding-left: 0;
+    li {
+      padding-left: 5px;
+      margin-top: 5px;
+      .components-button.edit-post-sidebar__panel-tab {
+        border: 1px solid $color_nhsuk-white;
+        &.is-active {
+          background: $color_nhsuk-white;
+        }
+      }
+    }
+  }
+}
 @import 'assets/scss/style_variations';//gutenberg blocks style variations
 @import 'assets/scss/color-mixer';//gutenberg page style overrides
