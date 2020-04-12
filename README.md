@@ -1,4 +1,4 @@
-# Nightingale 2.1.1
+# Nightingale 2.1.3
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 :exclamation: 2.1.0 - For WP theme review compliance, certain elements have been modified in this release
 . Performance tweaks, the NHS logo being displayed by default and the Frutiger font have all been removed. Please be
@@ -11,7 +11,12 @@
 this repo for quick action. 
 `Feedback is positively encouraged,
  please see how to get involved below`
-
+ 
+### Frutiger Font ###
+The Frutiger font is specified for use on NHS web properties, but is only licensed for sites ending .nhs.uk - if your
+ site is both an NHS property and is on the correct domain, you can add this back in by making your own child theme
+  and adding in the relevant font declarations to a .scss file.
+  
 ## Dependencies
  - This theme requires an active WordPress install of *version 5 or higher*
  - *optional* For any editing of the theme (in particular the css files) we strongly advise you to use the NPM 
@@ -115,4 +120,5 @@ This theme has been extended to style the following plugins automatically:
  
  ## Licence
  
- The codebase is released under the[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html), unless stated otherwise. The upstream NHS Frontend Library is released under the MIT license, for details please see [NHSUK Frontend](https://github.com/nhsuk/nhsuk-frontend). The documentation is © Crown copyright and available under the terms of the Open Government License 3.0. Please see the [National Archives](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/) website for more information on the Open Government Licensing Framework.
+ The codebase is released under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html
+ ), unless stated otherwise. The upstream NHS Frontend Library is released under the MIT license, for details please see [NHSUK Frontend](https://github.com/nhsuk/nhsuk-frontend). The documentation is © Crown copyright and available under the terms of the Open Government License 3.0. Please see the [National Archives](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/) website for more information on the Open Government Licensing Framework.

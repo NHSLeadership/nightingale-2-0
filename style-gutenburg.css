@@ -20,6 +20,24 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix");
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
+}
+
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix");
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
+}
+
 /* ==========================================================================
    GENERIC / #IE
    ========================================================================== */
@@ -3237,6 +3255,10 @@ b {
   background: none;
 }
 
+.nhsuk-breadcrumb__link:focus:hover {
+  color: #212b32;
+}
+
 .nhsuk-breadcrumb__link:visited {
   color: #005eb8;
 }
@@ -3384,6 +3406,10 @@ b {
 }
 
 .nhsuk-button:focus:visited, .wp-block-button__link:focus:visited, .wp-block-file__button:focus:visited, .wp-block-file a.wp-block-file__button:focus:visited, #login #loginform #wp-submit:focus:visited {
+  color: #212b32;
+}
+
+.nhsuk-button:focus:visited:active, .wp-block-button__link:focus:visited:active, .wp-block-file__button:focus:visited:active, #login #loginform #wp-submit:focus:visited:active {
   color: #ffffff;
 }
 
@@ -6073,6 +6099,10 @@ b {
 
 .nhsuk-header__transactional-service-name--link:focus {
   text-decoration: none;
+}
+
+.nhsuk-header__transactional-service-name--link:focus:hover {
+  color: #212b32;
 }
 
 .nhsuk-header--transactional .nhsuk-header__link {
@@ -10785,6 +10815,24 @@ section {
   font-family: Frutiger W01, Arial, Sans-serif;
 }
 
+.components-panel__header.edit-post-sidebar-header ul {
+  margin-bottom: 0px;
+  padding-left: 0;
+}
+
+.components-panel__header.edit-post-sidebar-header ul li {
+  padding-left: 5px;
+  margin-top: 5px;
+}
+
+.components-panel__header.edit-post-sidebar-header ul li .components-button.edit-post-sidebar__panel-tab {
+  border: 1px solid #ffffff;
+}
+
+.components-panel__header.edit-post-sidebar-header ul li .components-button.edit-post-sidebar__panel-tab.is-active {
+  background: #ffffff;
+}
+
 /*
 // variations to styling required for gutenberg native blocks
 // @author Tony Blacker, NHS Leadership Academy
@@ -10795,16 +10843,8 @@ section {
   padding: 0 0 0 16px;
 }
 
-.nhsuk-grid-column-two-thirds.contentright + .nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.archive + .nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.index + .nhsuk-grid-column-one-third {
-  padding-left: 0;
-}
-
-.nhsuk-grid-column-full > :first-child {
-  padding-left: 0 !important;
-}
-
-.nhsuk-grid-column-full > :last-child {
-  padding-right: 0 !important;
+.nhsuk-grid-column-full {
+  padding: 0;
 }
 
 .nhsuk-header__search-wrap input[type="text"] {

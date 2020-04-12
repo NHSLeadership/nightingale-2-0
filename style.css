@@ -2,11 +2,11 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.1.2
+Version: 2.1.3
 Requires at least: 5.0
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from news sites to primary care trusts to arms length bodies to community practices.
-Tags: education, right-sidebar, accessibility-ready, custom-menu, footer-widgets, threaded-comments, theme-options
+Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
 Author: Tony Blacker, NHS Leadership Academy
 Author URI: https://www.leadershipacademy.nhs.uk
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
@@ -762,6 +762,24 @@ html {
   -moz-box-sizing: inherit;
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix");
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
+}
+
+@font-face {
+  font-family: 'Frutiger W01';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix");
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
 }
 
 /* ==========================================================================
@@ -3949,6 +3967,10 @@ b {
   background: none;
 }
 
+.nhsuk-breadcrumb__link:focus:hover {
+  color: #212b32;
+}
+
 .nhsuk-breadcrumb__link:visited {
   color: #005eb8;
 }
@@ -4148,6 +4170,14 @@ input:focus:visited[type="button"],
 input:focus:visited[type="reset"],
 input:focus:visited[type="submit"], .wp-block-button__link:focus:visited, .wp-block-file__button:focus:visited, .wp-block-file a.wp-block-file__button:focus:visited, #login #loginform #wp-submit:focus:visited, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus:visited, .gform_body .gform_next_button:focus:visited, .gform_body .gform_previous_button:focus:visited, .learndash-wrapper .ld-button:focus:visited, .learndash-wrapper input:focus:visited[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus:visited, .learndash-wrapper .ld-logout:focus:visited, .learndash-wrapper .ld-login:focus:visited, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus:visited, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus:visited, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus:visited, .tribe-events-gcal:focus:visited,
 .tribe-events-ical:focus:visited {
+  color: #212b32;
+}
+
+.nhsuk-button:focus:visited:active, button:focus:visited:active,
+input:focus:visited:active[type="button"],
+input:focus:visited:active[type="reset"],
+input:focus:visited:active[type="submit"], .wp-block-button__link:focus:visited:active, .wp-block-file__button:focus:visited:active, #login #loginform #wp-submit:focus:visited:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus:visited:active, .gform_body .gform_next_button:focus:visited:active, .gform_body .gform_previous_button:focus:visited:active, .learndash-wrapper .ld-button:focus:visited:active, .learndash-wrapper input:focus:visited:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus:visited:active, .learndash-wrapper .ld-logout:focus:visited:active, .learndash-wrapper .ld-login:focus:visited:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus:visited:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus:visited:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus:visited:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus:visited:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus:visited:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus:visited:active, .tribe-events-gcal:focus:visited:active,
+.tribe-events-ical:focus:visited:active {
   color: #ffffff;
 }
 
@@ -7067,6 +7097,10 @@ input[disabled]:active[type="submit"],
 
 .nhsuk-header__transactional-service-name--link:focus {
   text-decoration: none;
+}
+
+.nhsuk-header__transactional-service-name--link:focus:hover {
+  color: #212b32;
 }
 
 .nhsuk-header--transactional .nhsuk-header__link {
@@ -12897,16 +12931,8 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 0 0 0 16px;
 }
 
-.nhsuk-grid-column-two-thirds.contentright + .nhsuk-grid-column-one-third, .tribe-common div.contentright.nhsuk-grid-column-two-thirds + .nhsuk-grid-column-one-third, .tribe-common .nhsuk-grid-column-two-thirds.contentright + div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group .nhsuk-grid-column-two-thirds.contentright + div.nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.archive + .nhsuk-grid-column-one-third, .tribe-common div.contentright.archive.nhsuk-grid-column-two-thirds + .nhsuk-grid-column-one-third, .tribe-common .nhsuk-grid-column-two-thirds.contentright.archive + div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group .nhsuk-grid-column-two-thirds.contentright.archive + div.nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds.contentright.index + .nhsuk-grid-column-one-third, .tribe-common div.contentright.index.nhsuk-grid-column-two-thirds + .nhsuk-grid-column-one-third, .tribe-common .nhsuk-grid-column-two-thirds.contentright.index + div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group .nhsuk-grid-column-two-thirds.contentright.index + div.nhsuk-grid-column-one-third {
-  padding-left: 0;
-}
-
-.nhsuk-grid-column-full > :first-child {
-  padding-left: 0 !important;
-}
-
-.nhsuk-grid-column-full > :last-child {
-  padding-right: 0 !important;
+.nhsuk-grid-column-full {
+  padding: 0;
 }
 
 .nhsuk-header__search-wrap input[type="text"] {

@@ -42,6 +42,15 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+= 2.1.3 =
+ * Readmore function in template-functions.php now returns null. 99% certain this is now deprecated and can be removed,
+ but for safety left in with a zero return.
+ * Padding on grid boxes amended
+ * nhsuk.js de-minified for easier inspection of what is included / being called
+ * NHS Frontend library upgraded to 3.0.3
+ * Internationalisation added back in (in potential)
+ * wp_open_body function added to header.php for better alignment with other wp functionality
+
 = 2.1.2 =
  * Removed margin 0 on full width - this was causing text to crash the frame in mobile view.
  * Corrected some minor styling issues with learndash css
