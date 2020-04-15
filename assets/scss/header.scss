@@ -21,6 +21,12 @@
 
     }
   }
+  .nhsuk-header__search-toggle,
+  .nhsuk-search__close,
+  .nhsuk-header__navigation-close,
+  .nhsuk-header__menu-toggle{
+    box-shadow: none;
+  }
   .autocomplete-container {
     float: left;
   }
