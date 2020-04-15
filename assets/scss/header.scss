@@ -16,16 +16,23 @@
 
   .nhsuk-header__search-wrap input[type="text"] {
     border-radius: $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
-
+    padding: 0 12px;
     &:focus {
 
     }
+  }
+  .nhsuk-header__search-toggle,
+  .nhsuk-search__close,
+  .nhsuk-header__navigation-close,
+  .nhsuk-header__menu-toggle{
+    box-shadow: none;
   }
   .autocomplete-container {
     float: left;
   }
   .nhsuk-header__search-wrap input[type="text"] {
     border: none;
+    padding: 0 12px;
   }
   .nhsuk-u-visually-hidden {
     color: $color_nhsuk-black;
