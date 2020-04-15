@@ -283,3 +283,20 @@
 .nhsuk-readmore {
   float: right;
 }
+
+.error404 #primary .page-content{
+  .nhsuk-header__search-wrap{
+    padding: 5px;
+    width: 100%;
+
+    .nhsuk-search__input{
+      float: none;
+      max-width: 100%;
+    }
+  }
+  .nhsuk-header__search-form{
+    display: block;
+    padding: 0;
+  }
+
+}
