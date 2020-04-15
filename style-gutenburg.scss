@@ -68,7 +68,7 @@ ul {
 @import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
 @import 'assets/scss/nhs-colours'; // nhs colour pallette
 .editor-post-title__input {
-  font-family: $nhsuk-font, $nhsuk-font-fallback;;
+  font-family: $nhsuk-font, $nhsuk-font-fallback;
   @extend h1;
 }
 .components-panel__header.edit-post-sidebar-header {
