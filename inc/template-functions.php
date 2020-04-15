@@ -90,18 +90,6 @@ function nightingale_shorten_excerpt( $length ) {
 
 add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
 
-
-/**
- * Customise the read more link
- */
-function nightingale_read_more() {
-	return null;
-}
-
-
-add_filter( 'excerpt_more', 'nightingale_read_more', 10, 1 );
-
-
 /**
  * Customise the read more link.
  *
