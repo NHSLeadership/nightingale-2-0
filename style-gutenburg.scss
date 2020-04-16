@@ -7,14 +7,14 @@ ul {
   list-style: none;
 }
 
-// Tools
-@import 'node_modules/nhsuk-frontend/packages/core/tools/all';
-// Generic
-@import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
-@import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
 
 .edit-post-visual-editor { // target only the editor itself
 
+  // Tools
+  @import 'node_modules/nhsuk-frontend/packages/core/tools/all';
+  // Generic
+  @import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
+  @import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
   // Elements
   @import 'node_modules/nhsuk-frontend/packages/core/elements/forms';
   @import 'node_modules/nhsuk-frontend/packages/core/elements/links';
@@ -55,21 +55,24 @@ ul {
   .nhsuk-header__search-form {
     height: 0;
   }
-}
 
-.wp-block{
-  max-width: 800px;
-}
-.wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
-  max-width: 1228px;
-}
-// start importing the theme specific settings
+  .wp-block{
+    max-width: 800px;
+  }
+  .wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
+    max-width: 1228px;
+  }
+  // start importing the theme specific settings
 
-@import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
-@import 'assets/scss/nhs-colours'; // nhs colour pallette
-.editor-post-title__input {
-  font-family: $nhsuk-font, $nhsuk-font-fallback;
-  @extend h1;
+  @import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
+  @import 'assets/scss/nhs-colours'; // nhs colour pallette
+  .editor-post-title__input {
+    font-family: $nhsuk-font, $nhsuk-font-fallback;
+    @extend h1;
+  }
+
+  @import 'assets/scss/style_variations';//gutenberg blocks style variations
+  @import 'assets/scss/color-mixer';//gutenberg page style overrides
 }
 .components-panel__header.edit-post-sidebar-header {
   ul {
@@ -87,5 +90,3 @@ ul {
     }
   }
 }
-@import 'assets/scss/style_variations';//gutenberg blocks style variations
-@import 'assets/scss/color-mixer';//gutenberg page style overrides
