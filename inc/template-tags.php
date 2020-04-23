@@ -121,7 +121,7 @@ if ( ! function_exists( 'nightingale_post_thumbnail' ) ) :
 			?>
 
             <fig class="nhsuk-image">
-				<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'nhsuk-image__img' ) ); ?>
+				<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'nhsuk-image__img alignright' ) ); ?>
             </fig><!-- .post-thumbnail -->
 
 		<?php else : ?>

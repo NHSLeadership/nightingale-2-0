@@ -257,6 +257,32 @@ function nightingale_customize_register( $wp_customize ) {
 			),
 		)
 	);
+
+	/*
+	 * Display Featured image on post / page?
+	 */
+	$wp_customize->add_setting(
+		'featured_img_display',
+		array(
+			'default'           => 'true',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		'featured_img_display',
+		array(
+			'label'       => esc_html__( 'Display Featured Image on posts / pages single view', 'nightingale' ),
+			'description' => esc_html__( 'Featured images are really useful for search results and listing pages. Sometimes its handy to have them for this, but you don\'t want the image to show on the individual page. If thats the case, turn them off here.', 'nightingale' ),
+			'section'     => 'section_layout',
+			'priority'    => '100',
+			'type'        => 'radio',
+			'choices'     => array(
+				'true' => esc_html__( 'Yes', 'nightingale' ),
+				'false'  => esc_html__( 'No', 'nightingale' ),
+			),
+		)
+	);
 }
 
 add_action( 'customize_register', 'nightingale_customize_register' );

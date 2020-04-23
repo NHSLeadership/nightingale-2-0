@@ -17,7 +17,7 @@ get_header();
 
 	<div id="primary" class="clear">
 		<header>
-			<h1 class="nhsuk-heading-xl"><?php printf( esc_html__( 'Search Results for: %s', nightingale ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="nhsuk-heading-xl"><?php printf( esc_html__( 'Search Results for: %s', 'nightingale' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		</header>
 		<div class="index">
 			<?php
