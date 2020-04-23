@@ -12659,7 +12659,7 @@ input:focus[type="datetime"],
 input:focus[type="datetime-local"],
 input:focus[type="color"],
 textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"], .learndash-wrapper .wpProQuiz_content input:focus[type="text"], .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text], input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
-  box-shadow: inset 0 0 0 4px #ffeb3b;
+  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
 .nhsuk-search__input {
@@ -12789,6 +12789,21 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   float: right;
 }
 
+.error404 #primary .page-content .nhsuk-header__search-wrap {
+  padding: 5px;
+  width: 100%;
+}
+
+.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+  float: none;
+  max-width: 100%;
+}
+
+.error404 #primary .page-content .nhsuk-header__search-form {
+  display: block;
+  padding: 0;
+}
+
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
@@ -12803,6 +12818,14 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 4px 0px 0px 4px;
+  padding: 0 12px;
+}
+
+.nhsuk-header .nhsuk-header__search-toggle,
+.nhsuk-header .nhsuk-search__close,
+.nhsuk-header .nhsuk-header__navigation-close,
+.nhsuk-header .nhsuk-header__menu-toggle {
+  box-shadow: none;
 }
 
 .nhsuk-header .autocomplete-container {
@@ -12811,6 +12834,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border: none;
+  padding: 0 12px;
 }
 
 .nhsuk-header .nhsuk-u-visually-hidden {
@@ -13751,6 +13775,10 @@ aside#secondary > section {
   top: -nhsuk-spacing(5);
 }
 
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
+  border: 2px solid transparent;
+}
+
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview a.ld-item-name:hover {
   background: transparent !important;
 }
@@ -13758,7 +13786,6 @@ aside#secondary > section {
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
   background: transparent;
   border: 2px solid #ffeb3b;
-  margin: -nhsuk-spacing(1);
 }
 
 .learndash-wrapper .ld-progress {
@@ -13900,6 +13927,10 @@ aside#secondary > section {
   max-width: unset;
 }
 
+.learndash-wrapper .ld-progress-bar-percentage.ld-secondary-background {
+  background-color: #007f3b !important;
+}
+
 .learndash-wrapper .ld-certificate-icon,
 .learndash-wrapper #quiz_continue_link,
 .learndash-wrapper .course_progress .sending_progress_bar,
@@ -13982,7 +14013,7 @@ aside#secondary > section {
 }
 
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
-  background: #d8dde0;
+  background: #007f3b;
 }
 
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
