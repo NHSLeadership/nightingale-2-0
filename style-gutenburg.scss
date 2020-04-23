@@ -1,46 +1,10 @@
-@import 'node_modules/nhsuk-frontend/packages/nhsuk';
-@import 'node_modules/nhsuk-frontend/packages/core/settings/all';
-// Styles
-@import 'node_modules/nhsuk-frontend/packages/core/styles/icons';
-
-ul {
-  list-style: none;
-}
-
-
 .edit-post-visual-editor { // target only the editor itself
+  //@import 'node_modules/nhsuk-frontend/packages/nhsuk';
 
-  // Tools
-  @import 'node_modules/nhsuk-frontend/packages/core/tools/all';
-  // Generic
-  @import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
-  @import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
-  // Elements
-  @import 'node_modules/nhsuk-frontend/packages/core/elements/forms';
-  @import 'node_modules/nhsuk-frontend/packages/core/elements/links';
-  /*@import 'node_modules/nhsuk-frontend/packages/core/elements/page';*/
-  @import 'node_modules/nhsuk-frontend/packages/core/elements/table';
-
-  // Objects
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/form-group';
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/grid';
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/main-wrapper';
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/width-container';
-
-
-  @import 'node_modules/nhsuk-frontend/packages/core/styles/lists';
-  @import 'node_modules/nhsuk-frontend/packages/core/styles/section-break';
-  @import 'node_modules/nhsuk-frontend/packages/core/styles/typography';
-
-  // Utilities
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/clearfix';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/grid-widths';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/link-nowrap';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/reading-width';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/spacing';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/typography';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/visually-hidden';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/widths';
+  @import 'assets/scss/nhsuk-replacement';
+  ul {
+    list-style: none;
+  }
   background-color: $color_nhsuk-grey-5;
   .nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover {
     color: #ffffff;
@@ -73,20 +37,4 @@ ul {
 
   @import 'assets/scss/style_variations';//gutenberg blocks style variations
   @import 'assets/scss/color-mixer';//gutenberg page style overrides
-}
-.components-panel__header.edit-post-sidebar-header {
-  ul {
-    margin-bottom: 0px;
-    padding-left: 0;
-    li {
-      padding-left: 5px;
-      margin-top: 5px;
-      .components-button.edit-post-sidebar__panel-tab {
-        border: 1px solid $color_nhsuk-white;
-        &.is-active {
-          background: $color_nhsuk-white;
-        }
-      }
-    }
-  }
 }
