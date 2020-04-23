@@ -38,7 +38,13 @@
 		<?php endif; ?>
 	</header><!-- .article-header -->
 
-	<?php nightingale_post_thumbnail(); ?>
+	<?php
+
+	$featured_img_display = get_theme_mod( 'featured_img_display', 'true' );
+	if ( 'true' === $featured_img_display ) {
+		nightingale_post_thumbnail();
+	}
+	?>
 
 	<article>
 		<?php

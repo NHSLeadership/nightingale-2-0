@@ -1,12 +1,11 @@
 <?php
 /**
  * Custom template tags for this theme
- *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Nightingale
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 if ( ! function_exists( 'nightingale_posted_on' ) ) :
@@ -14,21 +13,23 @@ if ( ! function_exists( 'nightingale_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
 	function nightingale_posted_on() {
-		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+		$date_enabled = get_theme_mod( 'blog_date_display', 'true' );
+		if ( 'true' === $date_enabled ) {
+			$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+			if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+				$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+			}
+
+			$time_string = sprintf(
+				$time_string,
+				esc_attr( get_the_date( DATE_W3C ) ),
+				esc_html( get_the_date() ),
+				esc_attr( get_the_modified_date( DATE_W3C ) ),
+				esc_html( get_the_modified_date() )
+			);
+
+			echo '<span class="nhsuk-u-visually-hidden">Posted on: </span>' . $time_string . ' '; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
-
-		$time_string = sprintf(
-			$time_string,
-			esc_attr( get_the_date( DATE_W3C ) ),
-			esc_html( get_the_date() ),
-			esc_attr( get_the_modified_date( DATE_W3C ) ),
-			esc_html( get_the_modified_date() )
-		);
-
-		echo '<span class="nhsuk-u-visually-hidden">Posted on: </span>' . $time_string . ' '; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
 	}
 endif;
 
@@ -37,10 +38,11 @@ if ( ! function_exists( 'nightingale_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function nightingale_posted_by() {
-
-		echo '<span class="nhsuk-u-visually-hidden">Posted by: </span><a class="url fn n" 
+		$author_enabled = get_theme_mod( 'blog_author_display', 'true' );
+		if ( 'true' === $author_enabled ) {
+			echo '<span class="nhsuk-u-visually-hidden">Posted by: </span><a class="url fn n" 
  href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a>&nbsp;-&nbsp;'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
+		}
 	}
 endif;
 
@@ -107,7 +109,6 @@ endif;
 if ( ! function_exists( 'nightingale_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
-	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
@@ -120,7 +121,7 @@ if ( ! function_exists( 'nightingale_post_thumbnail' ) ) :
 			?>
 
 			<fig class="nhsuk-image">
-				<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'nhsuk-image__img' ) ); ?>
+				<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'nhsuk-image__img alignright' ) ); ?>
 			</fig><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -148,8 +149,8 @@ endif;
  * Display Comments.
  *
  * @param integer $comment Comment ID.
- * @param array   $args the variables to alter the comment with.
- * @param integer $depth the depth of the comment reply.
+ * @param array   $args    the variables to alter the comment with.
+ * @param integer $depth   the depth of the comment reply.
  */
 function nightingale_comment_display( $comment, $args, $depth ) {
 	if ( 'div' === $args['style'] ) {
@@ -160,7 +161,7 @@ function nightingale_comment_display( $comment, $args, $depth ) {
 		$add_below = 'div-comment';
 	}
 	?>
-	<<?php echo esc_html( $tag ); ?> <?php echo comment_class( 'nhsuk-list-panel__item' ); ?> id="comment-<?php echo esc_html( comment_ID() ); ?>">
+	<<?php echo esc_html( $tag ); ?><?php echo comment_class( 'nhsuk-list-panel__item' ); ?> id="comment-<?php echo esc_html( comment_ID() ); ?>">
 	<?php
 	if ( 'div' !== $args['style'] ) {
 		?>
