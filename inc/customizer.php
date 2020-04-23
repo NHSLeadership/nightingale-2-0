@@ -310,6 +310,64 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
+	// $id
+		'blog_author_display',
+		// $args
+		array(
+			'default'           => 'true',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+	// $id
+		'blog_author_display',
+		// $args
+		array(
+			'settings'    => 'blog_author_display',
+			'section'     => 'blog_panel',
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Show Author Name on Blog Posts?', 'nightingale' ),
+			'description' => esc_html__( 'Choose whether or not to display the authors name (and link) on the blog page', 'nightingale' ),
+			'choices'     => array(
+				'true'  => esc_html__( 'Show author', 'nightingale' ),
+				'false' => esc_html__( 'Dont show author', 'nightingale' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+	// $id
+		'blog_date_display',
+		// $args
+		array(
+			'default'           => 'true',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+	// $id
+		'blog_date_display',
+		// $args
+		array(
+			'settings'    => 'blog_date_display',
+			'section'     => 'blog_panel',
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Show Post Date on Blog Posts?', 'nightingale' ),
+			'description' => esc_html__( 'Choose whether or not to display the date a post was made on the blog page', 'nightingale' ),
+			'choices'     => array(
+				'true'  => esc_html__( 'Show date', 'nightingale' ),
+				'false' => esc_html__( 'Dont show date', 'nightingale' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
 		// $id
 		'blog_fallback',
 		// $args
