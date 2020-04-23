@@ -17,7 +17,12 @@ get_header();
 
 	<div id="primary" class="clear">
 		<header>
-			<h1 class="nhsuk-heading-xl"><?php printf( esc_html__( 'Search Results for: %s', 'nightingale' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="nhsuk-heading-xl">
+				<?php
+				/* translators: %s: search term */
+				printf( esc_html__( 'Search Results for: %s', 'nightingale' ), '<span>' . get_search_query() . '</span>' );
+				?>
+			</h1>
 		</header>
 		<div class="index">
 			<?php
@@ -51,16 +56,16 @@ get_header();
 								</a>
 							</div>
 						</div>
-					<?php
+						<?php
 					endwhile;
 					?>
 				</div><!-- #nhsuk-panel-group nhsuk-grid-column-full -->
 				<?php
 				nightingale_archive_pagination();
-			else :
-				get_template_part( 'template-parts/content', 'none' );
+				else :
+					get_template_part( 'template-parts/content', 'none' );
 			endif;
-			?>
+				?>
 		</div>
 	</div><!-- #primary -->
 <?php

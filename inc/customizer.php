@@ -2,9 +2,9 @@
 /**
  * Nightingale Theme Customizer
  *
- * @package Nightingale
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 /**
@@ -278,8 +278,8 @@ function nightingale_customize_register( $wp_customize ) {
 			'priority'    => '100',
 			'type'        => 'radio',
 			'choices'     => array(
-				'true' => esc_html__( 'Yes', 'nightingale' ),
-				'false'  => esc_html__( 'No', 'nightingale' ),
+				'true'  => esc_html__( 'Yes', 'nightingale' ),
+				'false' => esc_html__( 'No', 'nightingale' ),
 			),
 		)
 	);
@@ -336,7 +336,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_author_display',
 		// $args
 		array(
@@ -348,7 +348,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-	// $id
+		// $id
 		'blog_author_display',
 		// $args
 		array(
@@ -365,7 +365,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_date_display',
 		// $args
 		array(
@@ -377,7 +377,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-	// $id
+		// $id
 		'blog_date_display',
 		// $args
 		array(

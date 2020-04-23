@@ -73,7 +73,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 			comments_popup_link(
 				sprintf(
 					wp_kses(
-					/* translators: %s: post title */
+						/* translators: %s: post title */
 						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'nightingale' ),
 						array(
 							'span' => array(
@@ -90,7 +90,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 		edit_post_link(
 			sprintf(
 				wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
+					/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Edit <p class="screen-reader-text">%s</p>', 'nightingale' ),
 					array(
 						'span' => array(
@@ -120,13 +120,13 @@ if ( ! function_exists( 'nightingale_post_thumbnail' ) ) :
 		if ( is_singular() ) :
 			?>
 
-            <fig class="nhsuk-image">
+			<fig class="nhsuk-image">
 				<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'nhsuk-image__img alignright' ) ); ?>
-            </fig><!-- .post-thumbnail -->
+			</fig><!-- .post-thumbnail -->
 
 		<?php else : ?>
 
-            <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 				the_post_thumbnail(
 					'post-thumbnail',
@@ -139,8 +139,8 @@ if ( ! function_exists( 'nightingale_post_thumbnail' ) ) :
 					)
 				);
 				?>
-            </a>
-		<?php
+			</a>
+			<?php
 		endif; // End is_singular().
 	}
 endif;
@@ -153,7 +153,7 @@ endif;
  * @param integer $depth   the depth of the comment reply.
  */
 function nightingale_comment_display( $comment, $args, $depth ) {
-	if ( 'div' === $args[ 'style' ] ) {
+	if ( 'div' === $args['style'] ) {
 		$tag       = 'div';
 		$add_below = 'comment';
 	} else {
@@ -161,27 +161,27 @@ function nightingale_comment_display( $comment, $args, $depth ) {
 		$add_below = 'div-comment';
 	}
 	?>
-    <<?php echo esc_html( $tag ); ?><?php echo comment_class( 'nhsuk-list-panel__item' ); ?> id="comment-<?php echo esc_html( comment_ID() ); ?>">
+	<<?php echo esc_html( $tag ); ?><?php echo comment_class( 'nhsuk-list-panel__item' ); ?> id="comment-<?php echo esc_html( comment_ID() ); ?>">
 	<?php
-	if ( 'div' !== $args[ 'style' ] ) {
+	if ( 'div' !== $args['style'] ) {
 		?>
-        <div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+		<div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
 		<?php
 	}
 	?>
 
-    <div class="comment_body_comment"><?php comment_text(); ?></div>
-    <div class="comment-avatar">
+	<div class="comment_body_comment"><?php comment_text(); ?></div>
+	<div class="comment-avatar">
 		<?php
-		echo ( 0 !== $args[ 'avatar_size' ] ) ? get_avatar( $comment, $args[ 'avatar_size' ] ) : '';
+		echo ( 0 !== $args['avatar_size'] ) ? get_avatar( $comment, $args['avatar_size'] ) : '';
 		?>
-    </div>
-    <div class="comment-author vcard">
+	</div>
+	<div class="comment-author vcard">
 		<?php
 		/* translators: s: link to author */
 		printf( __( '<cite class="fn">%s</cite>', 'nightingale' ), get_comment_author_link() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		?>
-        <div class="comment-meta commentmetadata">
+		<div class="comment-meta commentmetadata">
 			<?php
 			echo '<a href="' . esc_attr( get_comment_link( $comment->comment_ID ) ) . '">';
 			/* translators: 1: date, 2: time */
@@ -190,9 +190,9 @@ function nightingale_comment_display( $comment, $args, $depth ) {
 				esc_html( get_comment_date() )
 			);
 			?>
-            </a>
-        </div>
-    </div>
+			</a>
+		</div>
+	</div>
 	<?php
 	if ( '0' === $comment->comment_approved ) {
 		echo '<em class="comment-awaiting-moderation">' . esc_html( _e( 'Your comment is awaiting moderation.', 'nightingale' ) ) . '</em><br/>';
@@ -205,13 +205,13 @@ function nightingale_comment_display( $comment, $args, $depth ) {
 			array(
 				'add_below' => $add_below,
 				'depth'     => $depth,
-				'max_depth' => $args[ 'max_depth' ],
+				'max_depth' => $args['max_depth'],
 			)
 		)
 	);
 	edit_comment_link( nightingale_edit_icon(), '  ', '' );
 	echo '</div>';
-	if ( 'div' !== $args[ 'style' ] ) :
+	if ( 'div' !== $args['style'] ) :
 		echo '</div>';
 	endif;
 }
