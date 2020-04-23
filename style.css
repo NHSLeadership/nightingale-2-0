@@ -11022,10 +11022,16 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   width: 100%;
 }
 
+.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+  float: none;
+  max-width: 100%;
+}
+
 .error404 #primary .page-content .nhsuk-header__search-form {
   display: block;
   padding: 0;
 }
+
 
 .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
   float: left;
@@ -12008,6 +12014,10 @@ aside#secondary > section {
   top: -nhsuk-spacing(5);
 }
 
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
+  border: 2px solid transparent;
+}
+
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview a.ld-item-name:hover {
   background: transparent !important;
 }
@@ -12015,7 +12025,6 @@ aside#secondary > section {
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
   background: transparent;
   border: 2px solid #ffeb3b;
-  margin: -nhsuk-spacing(1);
 }
 
 .learndash-wrapper .ld-progress {
@@ -12157,6 +12166,10 @@ aside#secondary > section {
   max-width: unset;
 }
 
+.learndash-wrapper .ld-progress-bar-percentage.ld-secondary-background {
+  background-color: #007f3b !important;
+}
+
 .learndash-wrapper .ld-certificate-icon,
 .learndash-wrapper #quiz_continue_link,
 .learndash-wrapper .course_progress .sending_progress_bar,
@@ -12239,7 +12252,7 @@ aside#secondary > section {
 }
 
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
-  background: #d8dde0;
+  background: #007f3b;
 }
 
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
