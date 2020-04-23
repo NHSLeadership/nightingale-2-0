@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.1.2
-Stable tag: 2.1.2
+Version: 2.1.4
+Stable tag: 2.1.4
 
 
 == Description ==
@@ -42,6 +42,12 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+= 2.1.4 =
+ * nhsuk frontend called in using new nhsuk-replacement.scss (previously there were duplicate calls to a file making the
+  output css contain duplicates and also bypassing my removal of the frutiger font loading)
+ * textdomain corrected
+ * readmore function completely removed along with any references to it.
+
 = 2.1.3 =
  * Readmore function in template-functions.php now returns null. 99% certain this is now deprecated and can be removed,
  but for safety left in with a zero return.
