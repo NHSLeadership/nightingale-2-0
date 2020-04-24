@@ -218,6 +218,23 @@
   }
 }
 
+@media (max-width : 40.0525em) {
+  .nhsuk-header__search-wrap.js-show {
+	position   : absolute;
+	right      : 0;
+	top        : 46px;
+	background : #ffffff;
+	z-index    : 9999;
+	width      : 100vw;
+
+	#autocomplete-container {
+	  input[type=text] {
+		border : 1px solid $color_nhsuk-grey-1;
+	  }
+	}
+  }
+}
+
 #primary {
   .page-content {
 	.nhsuk-header__search-toggle, .nhsuk-search__close {

@@ -8979,6 +8979,20 @@
   }
 }
 
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-header__search-wrap.js-show {
+    position: absolute;
+    right: 0;
+    top: 46px;
+    background: #ffffff;
+    z-index: 9999;
+    width: 100vw;
+  }
+  .edit-post-visual-editor .nhsuk-header__search-wrap.js-show #autocomplete-container input[type=text] {
+    border: 1px solid #4c6272;
+  }
+}
+
 .edit-post-visual-editor #primary .page-content .nhsuk-header__search-toggle, .edit-post-visual-editor #primary .page-content .nhsuk-search__close {
   display: none;
 }
@@ -9170,6 +9184,1196 @@
   display: block;
 }
 
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--nhs-blue #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--nhs-blue #secondary section #wp-calendar caption {
+  background-color: #005eb8;
+  background: #005eb8;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue a {
+  color: #005eb8;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #005eb8;
+  background: #005eb8;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-footer,
+.edit-post-visual-editor .page-colour--nhs-blue #secondary section {
+  border-top-color: #005eb8;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header__search-toggle:active {
+    background-color: #005eb8;
+    background: #005eb8;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--nhs-blue .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--nhs-blue #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #005eb8;
+  background: #005eb8;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--nhs-blue a {
+  color: #005eb8;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue a.nhsuk-button, .edit-post-visual-editor .page-colour--nhs-blue a.wp-block-button__link, .edit-post-visual-editor .page-colour--nhs-blue a.wp-block-file__button, .edit-post-visual-editor .page-colour--nhs-blue .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--nhs-blue a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--nhs-blue .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--nhs-blue a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--nhs-blue .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--nhs-blue a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--nhs-blue .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--nhs-blue a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--nhs-blue #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--nhs-blue a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--nhs-blue a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--nhs-blue a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--nhs-blue #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--nhs-blue a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--nhs-blue #secondary section {
+  border-color: #005eb8;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--nhs-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--nhs-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--nhs-blue .nhsuk-pagination__link .nhsuk-icon {
+  fill: #005eb8;
+}
+
+.edit-post-visual-editor .page-colour--nhs-blue #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #005eb8;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-header, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--dark-blue #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--dark-blue #secondary section #wp-calendar caption {
+  background-color: #003087;
+  background: #003087;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue a {
+  color: #003087;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #003087;
+  background: #003087;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-footer,
+.edit-post-visual-editor .page-colour--dark-blue #secondary section {
+  border-top-color: #003087;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header__search-toggle:active {
+    background-color: #003087;
+    background: #003087;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--dark-blue .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--dark-blue #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--dark-blue #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #003087;
+  background: #003087;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--dark-blue a {
+  color: #003087;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue a.nhsuk-button, .edit-post-visual-editor .page-colour--dark-blue a.wp-block-button__link, .edit-post-visual-editor .page-colour--dark-blue a.wp-block-file__button, .edit-post-visual-editor .page-colour--dark-blue .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--dark-blue a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--dark-blue .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--dark-blue a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--dark-blue .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--dark-blue a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--dark-blue .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--dark-blue a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--dark-blue #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--dark-blue a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--dark-blue a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--dark-blue a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--dark-blue #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--dark-blue a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--dark-blue #secondary section {
+  border-color: #003087;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--dark-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--dark-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--dark-blue .nhsuk-pagination__link .nhsuk-icon {
+  fill: #003087;
+}
+
+.edit-post-visual-editor .page-colour--dark-blue #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #003087;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-header, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--bright-blue #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--bright-blue #secondary section #wp-calendar caption {
+  background-color: #0072ce;
+  background: #0072ce;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue a {
+  color: #0072ce;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #0072ce;
+  background: #0072ce;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-footer,
+.edit-post-visual-editor .page-colour--bright-blue #secondary section {
+  border-top-color: #0072ce;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header__search-toggle:active {
+    background-color: #0072ce;
+    background: #0072ce;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--bright-blue .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--bright-blue #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--bright-blue #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #0072ce;
+  background: #0072ce;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--bright-blue a {
+  color: #0072ce;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue a.nhsuk-button, .edit-post-visual-editor .page-colour--bright-blue a.wp-block-button__link, .edit-post-visual-editor .page-colour--bright-blue a.wp-block-file__button, .edit-post-visual-editor .page-colour--bright-blue .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--bright-blue a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--bright-blue .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--bright-blue a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--bright-blue .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--bright-blue a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--bright-blue .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--bright-blue a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--bright-blue #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--bright-blue a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--bright-blue a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--bright-blue a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--bright-blue #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--bright-blue a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--bright-blue #secondary section {
+  border-color: #0072ce;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--bright-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--bright-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--bright-blue .nhsuk-pagination__link .nhsuk-icon {
+  fill: #0072ce;
+}
+
+.edit-post-visual-editor .page-colour--bright-blue #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #0072ce;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-header, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--mid-grey #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--mid-grey #secondary section #wp-calendar caption {
+  background-color: #768692;
+  background: #768692;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey a {
+  color: #768692;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #768692;
+  background: #768692;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-footer,
+.edit-post-visual-editor .page-colour--mid-grey #secondary section {
+  border-top-color: #768692;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header__search-toggle:active {
+    background-color: #768692;
+    background: #768692;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--mid-grey .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--mid-grey #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--mid-grey #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #768692;
+  background: #768692;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--mid-grey a {
+  color: #768692;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey a.nhsuk-button, .edit-post-visual-editor .page-colour--mid-grey a.wp-block-button__link, .edit-post-visual-editor .page-colour--mid-grey a.wp-block-file__button, .edit-post-visual-editor .page-colour--mid-grey .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--mid-grey a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--mid-grey .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--mid-grey a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--mid-grey .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--mid-grey a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--mid-grey .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--mid-grey a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--mid-grey #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--mid-grey a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--mid-grey a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--mid-grey a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--mid-grey #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--mid-grey a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--mid-grey #secondary section {
+  border-color: #768692;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--mid-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--mid-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--mid-grey .nhsuk-pagination__link .nhsuk-icon {
+  fill: #768692;
+}
+
+.edit-post-visual-editor .page-colour--mid-grey #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #768692;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-header, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--dark-grey #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--dark-grey #secondary section #wp-calendar caption {
+  background-color: #425563;
+  background: #425563;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey a {
+  color: #425563;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #425563;
+  background: #425563;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-footer,
+.edit-post-visual-editor .page-colour--dark-grey #secondary section {
+  border-top-color: #425563;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header__search-toggle:active {
+    background-color: #425563;
+    background: #425563;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--dark-grey .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--dark-grey #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--dark-grey #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #425563;
+  background: #425563;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--dark-grey a {
+  color: #425563;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey a.nhsuk-button, .edit-post-visual-editor .page-colour--dark-grey a.wp-block-button__link, .edit-post-visual-editor .page-colour--dark-grey a.wp-block-file__button, .edit-post-visual-editor .page-colour--dark-grey .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--dark-grey a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--dark-grey .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--dark-grey a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--dark-grey .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--dark-grey a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--dark-grey .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--dark-grey a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--dark-grey #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--dark-grey a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--dark-grey a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--dark-grey a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--dark-grey #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--dark-grey a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--dark-grey #secondary section {
+  border-color: #425563;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--dark-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--dark-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--dark-grey .nhsuk-pagination__link .nhsuk-icon {
+  fill: #425563;
+}
+
+.edit-post-visual-editor .page-colour--dark-grey #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #425563;
+}
+
+.edit-post-visual-editor .page-colour--black .nhsuk-header, .edit-post-visual-editor .page-colour--black .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--black .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--black #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--black .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--black #secondary section #wp-calendar caption {
+  background-color: #212b32;
+  background: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--black a {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--black .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--black .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #212b32;
+  background: #212b32;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--black .nhsuk-footer,
+.edit-post-visual-editor .page-colour--black #secondary section {
+  border-top-color: #212b32;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--black .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--black .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--black .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--black .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--black .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--black .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--black .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--black .nhsuk-header__search-toggle:active {
+    background-color: #212b32;
+    background: #212b32;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--black .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--black #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--black .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--black #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--black .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--black .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--black .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #212b32;
+  background: #212b32;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--black .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--black .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--black .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--black a {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--black a.nhsuk-button, .edit-post-visual-editor .page-colour--black a.wp-block-button__link, .edit-post-visual-editor .page-colour--black a.wp-block-file__button, .edit-post-visual-editor .page-colour--black .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--black a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--black .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--black a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--black .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--black a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--black .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--black a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--black #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--black a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--black a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--black a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--black a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--black #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--black a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--black .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--black .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--black .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--black #secondary section {
+  border-color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--black .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--black .nhsuk-pagination__link .nhsuk-icon {
+  fill: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--black #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #212b32;
+}
+
+.edit-post-visual-editor .page-colour--purple .nhsuk-header, .edit-post-visual-editor .page-colour--purple .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--purple .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--purple #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--purple .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--purple #secondary section #wp-calendar caption {
+  background-color: #330072;
+  background: #330072;
+}
+
+.edit-post-visual-editor .page-colour--purple a {
+  color: #330072;
+}
+
+.edit-post-visual-editor .page-colour--purple .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #330072;
+  background: #330072;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--purple .nhsuk-footer,
+.edit-post-visual-editor .page-colour--purple #secondary section {
+  border-top-color: #330072;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--purple .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--purple .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--purple .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--purple .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--purple .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--purple .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--purple .nhsuk-header__search-toggle:active {
+    background-color: #330072;
+    background: #330072;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--purple .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--purple #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--purple .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--purple #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--purple .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--purple .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--purple .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #330072;
+  background: #330072;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--purple .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--purple .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--purple .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--purple a {
+  color: #330072;
+}
+
+.edit-post-visual-editor .page-colour--purple a.nhsuk-button, .edit-post-visual-editor .page-colour--purple a.wp-block-button__link, .edit-post-visual-editor .page-colour--purple a.wp-block-file__button, .edit-post-visual-editor .page-colour--purple .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--purple a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--purple .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--purple a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--purple .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--purple a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--purple .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--purple a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--purple #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--purple a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--purple a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--purple a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--purple a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--purple #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--purple a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--purple .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--purple .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--purple .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--purple #secondary section {
+  border-color: #330072;
+}
+
+.edit-post-visual-editor .page-colour--purple .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--purple .nhsuk-pagination__link .nhsuk-icon {
+  fill: #330072;
+}
+
+.edit-post-visual-editor .page-colour--purple #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #330072;
+}
+
+.edit-post-visual-editor .page-colour--pink .nhsuk-header, .edit-post-visual-editor .page-colour--pink .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--pink .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--pink #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--pink .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--pink #secondary section #wp-calendar caption {
+  background-color: #ae2573;
+  background: #ae2573;
+}
+
+.edit-post-visual-editor .page-colour--pink a {
+  color: #ae2573;
+}
+
+.edit-post-visual-editor .page-colour--pink .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #ae2573;
+  background: #ae2573;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--pink .nhsuk-footer,
+.edit-post-visual-editor .page-colour--pink #secondary section {
+  border-top-color: #ae2573;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--pink .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--pink .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--pink .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--pink .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--pink .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--pink .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--pink .nhsuk-header__search-toggle:active {
+    background-color: #ae2573;
+    background: #ae2573;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--pink .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--pink #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--pink .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--pink #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--pink .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--pink .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--pink .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #ae2573;
+  background: #ae2573;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--pink .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--pink .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--pink .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--pink a {
+  color: #ae2573;
+}
+
+.edit-post-visual-editor .page-colour--pink a.nhsuk-button, .edit-post-visual-editor .page-colour--pink a.wp-block-button__link, .edit-post-visual-editor .page-colour--pink a.wp-block-file__button, .edit-post-visual-editor .page-colour--pink .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--pink a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--pink .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--pink a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--pink .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--pink a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--pink .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--pink a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--pink #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--pink a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--pink a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--pink a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--pink a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--pink #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--pink a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--pink .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--pink .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--pink .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--pink #secondary section {
+  border-color: #ae2573;
+}
+
+.edit-post-visual-editor .page-colour--pink .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--pink .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--pink .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--pink .nhsuk-pagination__link .nhsuk-icon {
+  fill: #ae2573;
+}
+
+.edit-post-visual-editor .page-colour--pink #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #ae2573;
+}
+
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-header, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--light-purple #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--light-purple .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--light-purple #secondary section #wp-calendar caption {
+  background-color: #704c9c;
+  background: #704c9c;
+}
+
+.edit-post-visual-editor .page-colour--light-purple a {
+  color: #704c9c;
+}
+
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #704c9c;
+  background: #704c9c;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-footer,
+.edit-post-visual-editor .page-colour--light-purple #secondary section {
+  border-top-color: #704c9c;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--light-purple .nhsuk-header__search-toggle:active {
+    background-color: #704c9c;
+    background: #704c9c;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--light-purple .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--light-purple #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--light-purple #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #704c9c;
+  background: #704c9c;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--light-purple a {
+  color: #704c9c;
+}
+
+.edit-post-visual-editor .page-colour--light-purple a.nhsuk-button, .edit-post-visual-editor .page-colour--light-purple a.wp-block-button__link, .edit-post-visual-editor .page-colour--light-purple a.wp-block-file__button, .edit-post-visual-editor .page-colour--light-purple .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--light-purple a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--light-purple .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--light-purple a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--light-purple .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--light-purple a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--light-purple .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--light-purple a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--light-purple #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--light-purple a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--light-purple a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--light-purple a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--light-purple a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--light-purple #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--light-purple a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--light-purple #secondary section {
+  border-color: #704c9c;
+}
+
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--light-purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--light-purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--light-purple .nhsuk-pagination__link .nhsuk-icon {
+  fill: #704c9c;
+}
+
+.edit-post-visual-editor .page-colour--light-purple #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #704c9c;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--emergency-services-red #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--emergency-services-red #secondary section #wp-calendar caption {
+  background-color: #d5281b;
+  background: #d5281b;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red a {
+  color: #d5281b;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #d5281b;
+  background: #d5281b;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-footer,
+.edit-post-visual-editor .page-colour--emergency-services-red #secondary section {
+  border-top-color: #d5281b;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header__search-toggle:active {
+    background-color: #d5281b;
+    background: #d5281b;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--emergency-services-red #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #d5281b;
+  background: #d5281b;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--emergency-services-red a {
+  color: #d5281b;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red a.nhsuk-button, .edit-post-visual-editor .page-colour--emergency-services-red a.wp-block-button__link, .edit-post-visual-editor .page-colour--emergency-services-red a.wp-block-file__button, .edit-post-visual-editor .page-colour--emergency-services-red .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--emergency-services-red a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--emergency-services-red .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--emergency-services-red a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--emergency-services-red .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--emergency-services-red a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--emergency-services-red .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--emergency-services-red a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--emergency-services-red #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--emergency-services-red a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--emergency-services-red a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--emergency-services-red a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--emergency-services-red #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--emergency-services-red a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--emergency-services-red #secondary section {
+  border-color: #d5281b;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--emergency-services-red .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--emergency-services-red .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--emergency-services-red .nhsuk-pagination__link .nhsuk-icon {
+  fill: #d5281b;
+}
+
+.edit-post-visual-editor .page-colour--emergency-services-red #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #d5281b;
+}
+
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-header, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--dark-green #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--dark-green .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--dark-green #secondary section #wp-calendar caption {
+  background-color: #006747;
+  background: #006747;
+}
+
+.edit-post-visual-editor .page-colour--dark-green a {
+  color: #006747;
+}
+
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #006747;
+  background: #006747;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-footer,
+.edit-post-visual-editor .page-colour--dark-green #secondary section {
+  border-top-color: #006747;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--dark-green .nhsuk-header__search-toggle:active {
+    background-color: #006747;
+    background: #006747;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--dark-green .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--dark-green #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--dark-green #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #006747;
+  background: #006747;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--dark-green a {
+  color: #006747;
+}
+
+.edit-post-visual-editor .page-colour--dark-green a.nhsuk-button, .edit-post-visual-editor .page-colour--dark-green a.wp-block-button__link, .edit-post-visual-editor .page-colour--dark-green a.wp-block-file__button, .edit-post-visual-editor .page-colour--dark-green .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--dark-green a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--dark-green .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--dark-green a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--dark-green .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--dark-green a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--dark-green .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--dark-green a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--dark-green #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--dark-green a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--dark-green a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--dark-green a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--dark-green a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--dark-green #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--dark-green a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--dark-green #secondary section {
+  border-color: #006747;
+}
+
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--dark-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--dark-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--dark-green .nhsuk-pagination__link .nhsuk-icon {
+  fill: #006747;
+}
+
+.edit-post-visual-editor .page-colour--dark-green #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #006747;
+}
+
+.edit-post-visual-editor .page-colour--light-green .nhsuk-header, .edit-post-visual-editor .page-colour--light-green .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--light-green .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--light-green #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--light-green .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--light-green #secondary section #wp-calendar caption {
+  background-color: #78be20;
+  background: #78be20;
+}
+
+.edit-post-visual-editor .page-colour--light-green a {
+  color: #78be20;
+}
+
+.edit-post-visual-editor .page-colour--light-green .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #78be20;
+  background: #78be20;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--light-green .nhsuk-footer,
+.edit-post-visual-editor .page-colour--light-green #secondary section {
+  border-top-color: #78be20;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--light-green .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--light-green .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--light-green .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--light-green .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--light-green .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--light-green .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--light-green .nhsuk-header__search-toggle:active {
+    background-color: #78be20;
+    background: #78be20;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--light-green .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--light-green #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--light-green #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #78be20;
+  background: #78be20;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--light-green .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--light-green a {
+  color: #78be20;
+}
+
+.edit-post-visual-editor .page-colour--light-green a.nhsuk-button, .edit-post-visual-editor .page-colour--light-green a.wp-block-button__link, .edit-post-visual-editor .page-colour--light-green a.wp-block-file__button, .edit-post-visual-editor .page-colour--light-green .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--light-green a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--light-green .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--light-green a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--light-green .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--light-green a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--light-green .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--light-green a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--light-green #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--light-green a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--light-green a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--light-green a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--light-green a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--light-green #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--light-green a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--light-green .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--light-green #secondary section {
+  border-color: #78be20;
+}
+
+.edit-post-visual-editor .page-colour--light-green .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--light-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--light-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--light-green .nhsuk-pagination__link .nhsuk-icon {
+  fill: #78be20;
+}
+
+.edit-post-visual-editor .page-colour--light-green #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #78be20;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-header, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--aqua-green #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--aqua-green #secondary section #wp-calendar caption {
+  background-color: #00A499;
+  background: #00A499;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green a {
+  color: #00A499;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #00A499;
+  background: #00A499;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-footer,
+.edit-post-visual-editor .page-colour--aqua-green #secondary section {
+  border-top-color: #00A499;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header__search-toggle:active {
+    background-color: #00A499;
+    background: #00A499;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--aqua-green .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--aqua-green #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--aqua-green #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #00A499;
+  background: #00A499;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--aqua-green a {
+  color: #00A499;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green a.nhsuk-button, .edit-post-visual-editor .page-colour--aqua-green a.wp-block-button__link, .edit-post-visual-editor .page-colour--aqua-green a.wp-block-file__button, .edit-post-visual-editor .page-colour--aqua-green .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--aqua-green a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--aqua-green .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--aqua-green a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--aqua-green .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--aqua-green a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--aqua-green .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--aqua-green a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--aqua-green #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--aqua-green a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--aqua-green a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--aqua-green a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--aqua-green #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--aqua-green a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--aqua-green #secondary section {
+  border-color: #00A499;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--aqua-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--aqua-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--aqua-green .nhsuk-pagination__link .nhsuk-icon {
+  fill: #00A499;
+}
+
+.edit-post-visual-editor .page-colour--aqua-green #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #00A499;
+}
+
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-header, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header--white .nhsuk-search__submit, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__navigation, .edit-post-visual-editor .page-colour--gds-black #secondary section h2.widget-title, .edit-post-visual-editor .page-colour--gds-black .nhsuk-panel-with-label__label, .edit-post-visual-editor .page-colour--gds-black #secondary section #wp-calendar caption {
+  background-color: #0b0c0c;
+  background: #0b0c0c;
+}
+
+.edit-post-visual-editor .page-colour--gds-black a {
+  color: #0b0c0c;
+}
+
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-header__navigation-link:hover, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #0b0c0c;
+  background: #0b0c0c;
+  filter: brightness(85%);
+}
+
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-footer,
+.edit-post-visual-editor .page-colour--gds-black #secondary section {
+  border-top-color: #0b0c0c;
+}
+
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__navigation {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation ul li a, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__navigation-link {
+    color: #0b0c0c;
+  }
+  .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__menu-toggle:focus, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__menu-toggle.is-active, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__menu-toggle:active, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:hover, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:focus, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__search-toggle.is-active, .edit-post-visual-editor .page-colour--gds-black .nhsuk-header__search-toggle:active {
+    background-color: #0b0c0c;
+    background: #0b0c0c;
+    filter: brightness(85%);
+    color: #ffffff;
+  }
+  .edit-post-visual-editor .page-colour--gds-black .nhsuk-header .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
+
+.edit-post-visual-editor .page-colour--gds-black #secondary section h2.widget-title,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-colour--gds-black #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #0b0c0c;
+  background: #0b0c0c;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-details__summary,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-promo__heading,
+.edit-post-visual-editor .page-colour--gds-black a {
+  color: #0b0c0c;
+}
+
+.edit-post-visual-editor .page-colour--gds-black a.nhsuk-button, .edit-post-visual-editor .page-colour--gds-black a.wp-block-button__link, .edit-post-visual-editor .page-colour--gds-black a.wp-block-file__button, .edit-post-visual-editor .page-colour--gds-black .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-colour--gds-black a.wp-block-file__button:active, .edit-post-visual-editor .page-colour--gds-black .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-colour--gds-black a.wp-block-file__button:focus, .edit-post-visual-editor .page-colour--gds-black .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-colour--gds-black a.wp-block-file__button:hover, .edit-post-visual-editor .page-colour--gds-black .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-colour--gds-black a.wp-block-file__button:visited, .edit-post-visual-editor .page-colour--gds-black #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--gds-black a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-colour--gds-black a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-colour--gds-black a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-colour--gds-black a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-colour--gds-black #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-colour--gds-black a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-inset-text,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-colour--gds-black #secondary section {
+  border-color: #0b0c0c;
+}
+
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-icon__search,
+.edit-post-visual-editor .page-colour--gds-black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--gds-black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
+.edit-post-visual-editor .page-colour--gds-black .nhsuk-pagination__link .nhsuk-icon {
+  fill: #0b0c0c;
+}
+
+.edit-post-visual-editor .page-colour--gds-black #secondary section ul > li > ul > li > a {
+  border-left: 2px solid #0b0c0c;
+}
+
 .edit-post-visual-editor .has-white-color {
   color: #ffffff;
 }
@@ -9314,42 +10518,50 @@
   background-color: #ffb81C;
 }
 
-.edit-post-visual-editor .page-style--standard-nhs-blue-default #secondary section h2.widget-title,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-panel-with-label__label,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default #secondary section #wp-calendar caption,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-do-dont-list__label,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-care-card .nhsuk-care-card__heading-container,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-hero--image-description .nhsuk-hero-content {
+.edit-post-visual-editor .has-gds-black-color {
+  color: "#0b0c0c";
+}
+
+.edit-post-visual-editor .has-gds-black-background-color {
+  background-color: "#0b0c0c";
+}
+
+.edit-post-visual-editor .page-style--nhs-blue #secondary section h2.widget-title,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-style--nhs-blue #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content {
   background-color: #005eb8;
   background: #005eb8;
   color: #ffffff;
 }
 
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-details__summary,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-details__summary-text,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-promo__heading,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default a {
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-details__summary,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-promo__heading,
+.edit-post-visual-editor .page-style--nhs-blue a {
   color: #005eb8;
 }
 
-.edit-post-visual-editor .page-style--standard-nhs-blue-default a.nhsuk-button, .edit-post-visual-editor .page-style--standard-nhs-blue-default a.wp-block-button__link, .edit-post-visual-editor .page-style--standard-nhs-blue-default a.wp-block-file__button, .edit-post-visual-editor .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:active, .edit-post-visual-editor .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:focus, .edit-post-visual-editor .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:hover, .edit-post-visual-editor .page-style--standard-nhs-blue-default .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-style--standard-nhs-blue-default a.wp-block-file__button:visited, .edit-post-visual-editor .page-style--standard-nhs-blue-default #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-style--standard-nhs-blue-default a#wp-submit {
+.edit-post-visual-editor .page-style--nhs-blue a.nhsuk-button, .edit-post-visual-editor .page-style--nhs-blue a.wp-block-button__link, .edit-post-visual-editor .page-style--nhs-blue a.wp-block-file__button, .edit-post-visual-editor .page-style--nhs-blue .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-style--nhs-blue a.wp-block-file__button:active, .edit-post-visual-editor .page-style--nhs-blue .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-style--nhs-blue a.wp-block-file__button:focus, .edit-post-visual-editor .page-style--nhs-blue .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-style--nhs-blue a.wp-block-file__button:hover, .edit-post-visual-editor .page-style--nhs-blue .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-style--nhs-blue a.wp-block-file__button:visited, .edit-post-visual-editor .page-style--nhs-blue #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-style--nhs-blue a#wp-submit {
   color: #ffffff;
 }
 
-.edit-post-visual-editor .page-style--standard-nhs-blue-default a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-style--standard-nhs-blue-default a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-style--standard-nhs-blue-default a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-style--standard-nhs-blue-default #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-style--standard-nhs-blue-default a.is-style-reverse#wp-submit {
+.edit-post-visual-editor .page-style--nhs-blue a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-style--nhs-blue a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-style--nhs-blue a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-style--nhs-blue #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-style--nhs-blue a.is-style-reverse#wp-submit {
   color: #212b32;
 }
 
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-inset-text,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-care-card__arrow:before,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-care-card__arrow:after,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
-.edit-post-visual-editor .page-style--standard-nhs-blue-default #secondary section {
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-inset-text,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-style--nhs-blue #secondary section {
   border-color: #005eb8;
 }
 
-.edit-post-visual-editor .page-style--standard-nhs-blue-default .nhsuk-icon__search {
+.edit-post-visual-editor .page-style--nhs-blue .nhsuk-icon__search {
   fill: #005eb8;
 }
 
@@ -9819,4 +11031,43 @@
 
 .edit-post-visual-editor .page-style--aqua-green .nhsuk-icon__search {
   fill: #00A499;
+}
+
+.edit-post-visual-editor .page-style--gds-black #secondary section h2.widget-title,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-panel-with-label__label,
+.edit-post-visual-editor .page-style--gds-black #secondary section #wp-calendar caption,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-do-dont-list__label,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-care-card .nhsuk-care-card__heading-container,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero-content {
+  background-color: #0b0c0c;
+  background: #0b0c0c;
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-style--gds-black .nhsuk-details__summary,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-details__summary-text,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-promo__heading,
+.edit-post-visual-editor .page-style--gds-black a {
+  color: #0b0c0c;
+}
+
+.edit-post-visual-editor .page-style--gds-black a.nhsuk-button, .edit-post-visual-editor .page-style--gds-black a.wp-block-button__link, .edit-post-visual-editor .page-style--gds-black a.wp-block-file__button, .edit-post-visual-editor .page-style--gds-black .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .wp-block-file .page-style--gds-black a.wp-block-file__button:active, .edit-post-visual-editor .page-style--gds-black .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor .wp-block-file .page-style--gds-black a.wp-block-file__button:focus, .edit-post-visual-editor .page-style--gds-black .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file .page-style--gds-black a.wp-block-file__button:hover, .edit-post-visual-editor .page-style--gds-black .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file .page-style--gds-black a.wp-block-file__button:visited, .edit-post-visual-editor .page-style--gds-black #login #loginform a#wp-submit, .edit-post-visual-editor #login #loginform .page-style--gds-black a#wp-submit {
+  color: #ffffff;
+}
+
+.edit-post-visual-editor .page-style--gds-black a.nhsuk-button.is-style-reverse, .edit-post-visual-editor .page-style--gds-black a.is-style-reverse.wp-block-button__link, .edit-post-visual-editor .page-style--gds-black a.is-style-reverse.wp-block-file__button, .edit-post-visual-editor .page-style--gds-black #login #loginform a.is-style-reverse#wp-submit, .edit-post-visual-editor #login #loginform .page-style--gds-black a.is-style-reverse#wp-submit {
+  color: #212b32;
+}
+
+.edit-post-visual-editor .page-style--gds-black .nhsuk-inset-text,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-care-card__arrow:before,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-care-card__arrow:after,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
+.edit-post-visual-editor .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.edit-post-visual-editor .page-style--gds-black #secondary section {
+  border-color: #0b0c0c;
+}
+
+.edit-post-visual-editor .page-style--gds-black .nhsuk-icon__search {
+  fill: #0b0c0c;
 }

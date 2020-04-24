@@ -30,8 +30,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // start importing the theme specific settings
 @import 'assets/scss/nhs-colours';
 // nhs colour pallette
-@import 'assets/scss/color-mixer';
-// nhs colour pallette
 @import 'assets/scss/generic-overrides';
 // generic over-rides to remove default wordpress styling issues
 @import 'assets/scss/header';
@@ -57,3 +55,5 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/emergency_alert';
 // Events Calendar plugin styling to match NHSUK design patterns
 @import 'assets/scss/feedback_banner';
+// nhs colour pallette
+@import 'assets/scss/color-mixer';

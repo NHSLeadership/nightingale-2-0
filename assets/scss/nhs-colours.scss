@@ -8,6 +8,7 @@ $color_nhsuk-pink: #ae2573;
 $color_nhsuk-light-purple: #704c9c;
 $color_nhsuk-light-green: #78be20;
 $color_nhsuk-dark-green: #006747;
+$color_gds_black: #0b0c0c;
 
 /* colour variable to be used with color-mixer.scss */
 
@@ -30,12 +31,13 @@ $colours: (
         'emergency-red' : $color_nhsuk-red,
         'nhs-yellow'    : $color_nhsuk-yellow,
         'nhs-warm-yellow': $color_nhsuk-warm-yellow,
+		'gds-black': '#0b0c0c',
 );
 
 /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
 
 $page-colours: (
-        'standard-nhs-blue-default' : $color_nhsuk-blue,
+        'nhs-blue' : $color_nhsuk-blue,
         'dark-blue'                 : $color_nhsuk_dark-blue,
         'bright-blue'               : $color_nhsuk-bright-blue,
         'mid-grey'                  : $color_nhsuk-mid-grey,
@@ -48,4 +50,5 @@ $page-colours: (
         'dark-green'                : $color_nhsuk-dark-green,
         'light-green'               : $color_nhsuk-light-green,
         'aqua-green'                : $color_nhsuk-aqua-green,
+		'gds-black'					: $color_gds_black,
 );
