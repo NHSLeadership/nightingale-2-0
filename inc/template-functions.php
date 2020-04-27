@@ -70,10 +70,13 @@ if ( ! function_exists( 'nightingale_get_header_style' ) ) {
  * @param string $excerpt the_expert html.
  */
 function nightingale_add_class_to_excerpt( $excerpt ) {
+	if ( is_admin() ) {
+		return $excerpt;
+	}
 	return str_replace( '<p>', '<p class="nhsuk-promo__description">', $excerpt );
 }
 
-add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt' );
+add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt', 10 );
 
 /**
  * Shortens the excerpt to 20 char
@@ -88,7 +91,7 @@ function nightingale_shorten_excerpt( $length ) {
 	return 20;
 }
 
-add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
+add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 10 );
 
 /**
  * Customise the read more link.
