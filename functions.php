@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.1.5 23rd April 2020
+ * @version   2.1.6 27th April 2020
  */
 
 /**
@@ -66,6 +66,8 @@ function nightingale_setup() {
 			'comment-list',
 			'gallery',
 			'caption',
+			'script',
+			'style',
 		)
 	);
 
@@ -237,7 +239,8 @@ add_action( 'widgets_init', 'nightingale_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nightingale_scripts() {
-	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), '20191012' );
+	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), '20202704' );
+	wp_enqueue_style( 'nightingale-page-colours', get_template_directory_uri() . '/page-colours.min.css', array(), '20202704' );
 
 	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', '', '20190828', true );
 
@@ -409,7 +412,9 @@ if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
  * The check around the require is to see if the plugin is active on this install
  */
 if ( in_array( 'the-events-calendar/the-events-calendar.php', $active_plugins, true ) ) {
-	require get_template_directory() . '/inc/events-calendar.php';
+	if ( ! is_admin() ) {
+		require get_template_directory() . '/inc/events-calendar.php';
+	}
 }
 
 /*
@@ -437,7 +442,6 @@ require get_template_directory() . '/inc/class-comment-author-role-label.php';
 /**
  * Hijack core/posts block and force own output
  */
-
-require get_template_directory() . '/inc/dynamic-blocks.php';
-
-
+if ( !is_admin() ) {
+	require get_template_directory() . '/inc/dynamic-blocks.php';
+}

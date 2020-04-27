@@ -70,10 +70,13 @@ if ( ! function_exists( 'nightingale_get_header_style' ) ) {
  * @param string $excerpt the_expert html.
  */
 function nightingale_add_class_to_excerpt( $excerpt ) {
+	if ( is_admin() ) {
+		return $excerpt;
+	}
 	return str_replace( '<p>', '<p class="nhsuk-promo__description">', $excerpt );
 }
 
-add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt' );
+add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt', 10 );
 
 /**
  * Shortens the excerpt to 20 char
@@ -88,7 +91,7 @@ function nightingale_shorten_excerpt( $length ) {
 	return 20;
 }
 
-add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 20 );
+add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 10 );
 
 /**
  * Customise the read more link.
@@ -130,3 +133,33 @@ function nightingale_sidebar_location( $sidebar ) {
 
 	return $sidefloat;
 }
+
+/**
+ * Get the custom colour name to return into the body class if required
+ */
+function nightingale_custom_page_colour( $classes ) {
+	$colour = get_theme_mod( 'theme_colour', 'nhs_blue' );
+	if ( 'nhs_blue' != $colour ) {
+		$colour_array      = array(
+			'005eb8' => 'nhs-blue',
+			'003087' => 'dark-blue',
+			'0072ce' => 'bright-blue',
+			'768692' => 'mid-grey',
+			'425563' => 'dark-grey',
+			'231f20' => 'black',
+			'330072' => 'purple',
+			'ae2573' => 'pink',
+			'704c9c' => 'light-purple',
+			'da291c' => 'emergency-services-red',
+			'006747' => 'dark-green',
+			'78be20' => 'light-green',
+			'00a499' => 'aqua-green',
+			'0b0c0c' => 'gds-black',
+		);
+		$theme_colour_name = 'page-colour--' . $colour_array[ $colour ];
+		$classes[] = $theme_colour_name;
+	}
+	return $classes;
+}
+
+add_filter( 'body_class', 'nightingale_custom_page_colour' );

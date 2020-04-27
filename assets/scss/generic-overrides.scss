@@ -141,7 +141,7 @@
 }
 
 #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text], input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
-  box-shadow : 0 0 0 nhsuk-spacing(1) $color_nhsuk-yellow;
+  box-shadow : inset 0 0 0 nhsuk-spacing(1) $color_nhsuk-yellow;
 }
 
 .nhsuk-search__input {
@@ -215,6 +215,23 @@
 @media (min-width : 40.0625em) {
   .nhsuk-search__submit {
 	padding-top : 6px;
+  }
+}
+
+@media (max-width : 40.0525em) {
+  .nhsuk-header__search-wrap.js-show {
+	position   : absolute;
+	right      : 0;
+	top        : 46px;
+	background : $color_nhsuk-white;
+	z-index    : 9999;
+	width      : 100vw;
+
+	#autocomplete-container {
+	  input[type=text] {
+		border : 1px solid $color_nhsuk-grey-5;
+	  }
+	}
   }
 }
 

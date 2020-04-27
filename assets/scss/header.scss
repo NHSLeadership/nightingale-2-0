@@ -57,6 +57,7 @@
   }
   a.nhsuk-header__transactional-service-name--link {
     font-weight: $nhsuk-font-bold;
+    color: $color_nhsuk-white;
     &:hover{
       text-decoration: none;
       background-color: transparent;
@@ -130,6 +131,21 @@
     }
 
   }
+  p.nhsuk-header__navigation-title, .nhsuk-header__menu-toggle:focus, .nhsuk-header__menu-toggle:hover, .nhsuk-header__menu-toggle.is-active, .nhsuk-header__menu-toggle:active, .nhsuk-header__search-toggle:hover, .nhsuk-header__search-toggle:focus, .nhsuk-header__search-toggle.is-active, .nhsuk-header__search-toggle:active {
+    background-color : inherit;
+    background       : inherit;
+    filter           : brightness(85%);
+    color            : $color_nhsuk-white;
+  }
+  @media (max-width : 769px) { // desktop breakpoint and below
+    .nhsuk-header__navigation, .nhsuk-header__navigation ul li a, .nhsuk-header__navigation-link {
+      color : $color_nhsuk-black;
+      background: $color_nhsuk-white;
+    }
+    .nhsuk-icon__search, .nhsuk-icon__close, .nhsuk-header__search-toggle:focus .nhsuk-icon {
+      fill: $color_nhsuk-white;
+    }
+  }
 }
 .nhsuk-header__container {
   padding-bottom: nhsuk-spacing(3);
@@ -155,10 +171,3 @@
   box-shadow: none;
 }
 
-.nhsuk-header--organisation .nhsuk-header__logo{
-  .nhsuk-header__link:hover{
-
-    box-shadow: 0 0 0 4px $nhsuk-link-hover-color;
-
-  }
-}
