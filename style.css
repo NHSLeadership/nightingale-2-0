@@ -10237,6 +10237,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   color: #005eb8;
 }
 
+
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #005eb8;
 }
@@ -10455,10 +10456,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header__link:hover .nhsuk-logo {
   box-shadow: none;
-}
-
-.nhsuk-header--organisation .nhsuk-header__logo .nhsuk-header__link:hover {
-  box-shadow: 0 0 0 4px #7C2855;
 }
 
 /*
