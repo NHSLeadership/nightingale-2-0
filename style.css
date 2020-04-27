@@ -10285,6 +10285,22 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   margin-top: 16px;
 }
 
+@media (max-width: 40.0525em) {
+  .error404 #primary .page-content .nhsuk-header__search-wrap {
+    border: 0;
+    padding: 0;
+  }
+  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+    float: left;
+    max-width: 73%;
+    margin: 0;
+    height: 50px;
+  }
+  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+    margin-top: 0;
+  }
+}
+
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
