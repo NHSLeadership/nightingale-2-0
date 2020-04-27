@@ -1,89 +1,10 @@
-@each $name, $colour in $page-colours {
+@each $name, $colour in $colours {
 
-  .page-colour--#{$name}, #content .page-style--#{$name} {
-
-	.nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-search__submit:hover {
-	  background-color : $colour;
-	  background       : $colour;
-	  filter           : brightness(85%);
-	}
-
-	.nhsuk-footer,
-	#secondary section {
-	  border-top-color : $colour;
-	}
-
-
-	.nhsuk-header,
-	.nhsuk-header--white .nhsuk-search__submit,
-	.nhsuk-header__navigation,
-	#secondary section h2.widget-title,
-	.nhsuk-panel-with-label__label,
-	#secondary section #wp-calendar caption,
-	#secondary section h2.widget-title,
-	.nhsuk-panel-with-label__label,
-	#secondary section #wp-calendar caption,
-	.nhsuk-do-dont-list__label,
-	.nhsuk-care-card .nhsuk-care-card__heading-container,
-	.nhsuk-hero--image-description .nhsuk-hero-content,
-	.nhsuk-panel-with-label__label,
-	.nhsuk-panel.is-style-panel-with-label h3,
-	.nhsuk-panel.is-style-panel-with-label h3 .rich-text {
-
-	  background-color : $colour;
-	  background       : $colour;
-	  color            : $color_nhsuk-white;
-
-	}
-
-	  .nhsuk-details__summary,
-	  .nhsuk-details__summary-text,
-	  .nhsuk-promo__heading,
-	  a {
-		color : $colour;
-	  }
-	a.nhsuk-button {
-	  color: $color_nhsuk-white;
-	}
-	a.nhsuk-button--reverse {
-	  color: $color_nhsuk-black;
-	}
-
-	  .nhsuk-inset-text,
-	  .nhsuk-care-card__arrow:before,
-	  .nhsuk-care-card__arrow:after,
-	  .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
-	  .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
-	  #secondary section {
-		border-color : $colour;
-	  }
-
-	  .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
-	  .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
-	  .nhsuk-pagination__link .nhsuk-icon {
-		fill : $colour;
-	  }
-	@media (min-width : 40.0625em) {
-	  .nhsuk-icon__search {
-		fill: $colour;
-	  }
-	}
-
-
-	  #secondary section ul > li > ul > li > a {
-		border-left : 2px solid $colour;
-	  }
-	}
-
+  .has-#{$name}-color {
+	color : $colour;
   }
 
-  @each $name, $colour in $colours {
-
-	.has-#{$name}-color {
-	  color : $colour;
-	}
-
-	.has-#{$name}-background-color {
-	  background-color : $colour;
-	}
+  .has-#{$name}-background-color {
+	background-color : $colour;
   }
+}

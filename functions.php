@@ -237,7 +237,8 @@ add_action( 'widgets_init', 'nightingale_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nightingale_scripts() {
-	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), '20191012' );
+	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), '20202704' );
+	wp_enqueue_style( 'nightingale-page-colours', get_template_directory_uri() . '/page-colours.min.css', array(), '20202704' );
 
 	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', '', '20190828', true );
 
