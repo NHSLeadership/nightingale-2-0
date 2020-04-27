@@ -12,7 +12,8 @@
  */
 function nightingale_get_theme_colours() {
 	return array(
-		'nhs_blue' => esc_html__( 'Standard NHS Blue (Default)', 'nightingale' ),
+		''         => esc_html__( 'Inherit site wide colour settings', 'nightingale' ),
+		'005eb8' => esc_html__( 'NHS Blue', 'nightingale' ),
 		'003087'   => esc_html__( 'Dark Blue', 'nightingale' ),
 		'0072ce'   => esc_html__( 'Bright Blue', 'nightingale' ),
 		'768692'   => esc_html__( 'Mid Grey', 'nightingale' ),
@@ -25,6 +26,7 @@ function nightingale_get_theme_colours() {
 		'006747'   => esc_html__( 'Dark Green', 'nightingale' ),
 		'78be20'   => esc_html__( 'Light Green', 'nightingale' ),
 		'00a499'   => esc_html__( 'Aqua Green', 'nightingale' ),
+		'0b0c0c'   => esc_html__( 'GDS Black', 'nightingale' ),
 	);
 }
 
