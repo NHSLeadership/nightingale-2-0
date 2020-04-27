@@ -66,6 +66,8 @@ function nightingale_setup() {
 			'comment-list',
 			'gallery',
 			'caption',
+			'script',
+			'style',
 		)
 	);
 
@@ -409,7 +411,9 @@ if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
  * The check around the require is to see if the plugin is active on this install
  */
 if ( in_array( 'the-events-calendar/the-events-calendar.php', $active_plugins, true ) ) {
-	require get_template_directory() . '/inc/events-calendar.php';
+	if ( ! is_admin() ) {
+		require get_template_directory() . '/inc/events-calendar.php';
+	}
 }
 
 /*
@@ -437,7 +441,6 @@ require get_template_directory() . '/inc/class-comment-author-role-label.php';
 /**
  * Hijack core/posts block and force own output
  */
-
-require get_template_directory() . '/inc/dynamic-blocks.php';
-
-
+if ( !is_admin() ) {
+	require get_template_directory() . '/inc/dynamic-blocks.php';
+}
