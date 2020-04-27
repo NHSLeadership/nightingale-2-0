@@ -17,9 +17,7 @@
   .nhsuk-header__search-wrap input[type="text"] {
     border-radius: $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
     padding: 0 12px;
-    &:focus {
 
-    }
   }
   .nhsuk-header__content {
     display: flex;
@@ -146,6 +144,31 @@
       fill: $color_nhsuk-white;
     }
   }
+  &.nhsuk-header--transactional {
+    .nhsuk-header__logo {
+      padding: 10px;
+    }
+    .nhsuk-header__transactional-service-name {
+      padding: 10px 10px 22px 10px;
+    }
+    .nhsuk-header__logo:focus, .nhsuk-header__logo:active, .nhsuk-header__logo:hover {
+      background: $color_nhsuk-yellow;
+      &+.nhsuk-header__transactional-service-name {
+        background: $color_nhsuk-yellow;
+
+        a {
+          color: $color_nhsuk-black;
+        }
+      }
+    }
+    .nhsuk-header__transactional-service-name:focus, .nhsuk-header__transactional-service-name:active, .nhsuk-header__transactional-service-name:hover {
+      background: $color_nhsuk-yellow;
+
+      a {
+        color: $color_nhsuk-black;
+      }
+    }
+  }
 }
 .nhsuk-header__container {
   padding-bottom: nhsuk-spacing(3);
@@ -166,8 +189,3 @@
     height: auto;
   }
 }
-
-.nhsuk-header__link:hover .nhsuk-logo{
-  box-shadow: none;
-}
-

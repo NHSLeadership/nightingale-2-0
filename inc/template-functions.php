@@ -73,6 +73,7 @@ function nightingale_add_class_to_excerpt( $excerpt ) {
 	if ( is_admin() ) {
 		return $excerpt;
 	}
+
 	return str_replace( '<p>', '<p class="nhsuk-promo__description">', $excerpt );
 }
 
@@ -136,10 +137,12 @@ function nightingale_sidebar_location( $sidebar ) {
 
 /**
  * Get the custom colour name to return into the body class if required
+ *
+ * @param array $classes the pre-existing classes for a WordPress page.
  */
 function nightingale_custom_page_colour( $classes ) {
 	$colour = get_theme_mod( 'theme_colour', 'nhs_blue' );
-	if ( 'nhs_blue' != $colour ) {
+	if ( 'nhs_blue' !== $colour ) {
 		$colour_array      = array(
 			'005eb8' => 'nhs-blue',
 			'003087' => 'dark-blue',
@@ -157,8 +160,9 @@ function nightingale_custom_page_colour( $classes ) {
 			'0b0c0c' => 'gds-black',
 		);
 		$theme_colour_name = 'page-colour--' . $colour_array[ $colour ];
-		$classes[] = $theme_colour_name;
+		$classes[]         = $theme_colour_name;
 	}
+
 	return $classes;
 }
 

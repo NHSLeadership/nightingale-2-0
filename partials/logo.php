@@ -27,7 +27,7 @@ if ( has_custom_logo() ) {
 	<div class="nhsuk-header__logo">
 		<?php the_custom_logo(); ?>
 		<?php if ( get_theme_mod( 'show_sitename' ) === 'yes' ) { ?>
-			<div class="fdgfhnhsuk-header__transactional-service-name">
+			<div class="nhsuk-header__transactional-service-name">
 				<a class="nhsuk-header__transactional-service-name--link" href="<?php echo esc_url_raw( get_home_url() ); ?>"><?php echo esc_html( $logo_line_1 ); ?></a>
 			</div>
 			<?php
