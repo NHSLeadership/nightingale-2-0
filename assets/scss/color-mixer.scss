@@ -23,8 +23,8 @@
 
 	@media (max-width : 40.0525em) {
 	  .nhsuk-header__navigation {
-		background       : #ffffff;
-		background-color : #ffffff;
+		background       : $color_nhsuk-white;
+		background-color : $color_nhsuk-white;
 	  }
 	  .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header__navigation-link {
 		color : #0b0c0c;
@@ -33,10 +33,10 @@
 		background-color : $colour;
 		background       : $colour;
 		filter           : brightness(85%);
-		color            : #ffffff;
+		color            : $color_nhsuk-white;
 	  }
 	  .nhsuk-header .nhsuk-icon__search {
-		fill: #ffffff;
+		fill: $color_nhsuk-white;
 	  }
 	}
 	#secondary section h2.widget-title,

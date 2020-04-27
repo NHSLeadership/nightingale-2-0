@@ -223,13 +223,13 @@
 	position   : absolute;
 	right      : 0;
 	top        : 46px;
-	background : #ffffff;
+	background : $color_nhsuk-white;
 	z-index    : 9999;
 	width      : 100vw;
 
 	#autocomplete-container {
 	  input[type=text] {
-		border : 1px solid $color_nhsuk-grey-1;
+		border : 1px solid $color_nhsuk-grey-5;
 	  }
 	}
   }

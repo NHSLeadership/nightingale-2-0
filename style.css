@@ -10174,7 +10174,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
     width: 100vw;
   }
   .nhsuk-header__search-wrap.js-show #autocomplete-container input[type=text] {
-    border: 1px solid #4c6272;
+    border: 1px solid #f0f4f5;
   }
 }
 
