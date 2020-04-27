@@ -337,6 +337,7 @@
  */
   /* Selected state */
   /* Disabled state */
+  /* Divider variant */
   /*
  * Conditional
  *
@@ -4255,6 +4256,32 @@
 
 .edit-post-visual-editor .nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label {
   opacity: .5;
+}
+
+.edit-post-visual-editor .nhsuk-checkboxes__divider {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212b32;
+  margin-bottom: 8px;
+  text-align: center;
+  width: 40px;
+}
+
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-checkboxes__divider {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+
+@media print {
+  .edit-post-visual-editor .nhsuk-checkboxes__divider {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
 }
 
 .edit-post-visual-editor .nhsuk-checkboxes__conditional {
@@ -8908,7 +8935,7 @@
 }
 
 .edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text], .edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search], .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text], .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
-  box-shadow: 0 0 0 4px #ffeb3b;
+  box-shadow: inset 0 0 0 4px #ffeb3b;
 }
 
 .edit-post-visual-editor .nhsuk-search__input {
