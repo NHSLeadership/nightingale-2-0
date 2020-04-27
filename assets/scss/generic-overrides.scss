@@ -309,5 +309,25 @@
 	.nhsuk-search__submit {
 	  margin-top : 16px;
 	}
+
+
+  }
+
+  @media (max-width : 40.0525em) {
+	.nhsuk-header__search-wrap {
+	  border  : 0;
+	  padding : 0;
+
+	  .nhsuk-search__input {
+		float     : left;
+		max-width : 73%;
+		margin    : 0;
+		height    : 50px;
+	  }
+
+	  .nhsuk-search__submit {
+		margin-top : 0;
+	  }
+	}
   }
 }

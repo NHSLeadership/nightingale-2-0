@@ -4955,6 +4955,33 @@ input[disabled]:active[type="submit"],
   opacity: .5;
 }
 
+/* Divider variant */
+.nhsuk-checkboxes__divider {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212b32;
+  margin-bottom: 8px;
+  text-align: center;
+  width: 40px;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-checkboxes__divider {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+
+@media print {
+  .nhsuk-checkboxes__divider {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
 /*
  * Conditional
  *
@@ -11035,6 +11062,22 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
   margin-top: 16px;
+}
+
+@media (max-width: 40.0525em) {
+  .error404 #primary .page-content .nhsuk-header__search-wrap {
+    border: 0;
+    padding: 0;
+  }
+  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+    float: left;
+    max-width: 73%;
+    margin: 0;
+    height: 50px;
+  }
+  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+    margin-top: 0;
+  }
 }
 
 .nhsuk-header .nhsuk-header__navigation {
