@@ -2,9 +2,9 @@
 /**
  * Load critical path css at top of page inline, allowing lazy load of other css. Alternatively load in custom colour definition.
  *
- * @package Nightingale
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 13th January 2020
+ * @version   1.1 13th January 2020
  */
 
 /**
@@ -18,8 +18,6 @@ function nightingale_critical_styles() {
 
 
 $theme_colour = get_theme_mod( 'theme_colour', 'nhs_blue' );
-if ( 'nhs_blue' === $theme_colour ) { // Default NHS Blue - load up the critical CSS inline, Boom.
+if ( 'nhs_blue' === $theme_colour || '' === $theme_colour ) { // Default NHS Blue - load up the critical CSS inline, Boom.
 	add_action( 'wp_head', 'nightingale_critical_styles', 1 );
-} else { // lets put some inline css into the header to take control of the main colour.
-	//add_action( 'wp_head', 'nightingale_custom_colour_theme', 99 );
 }

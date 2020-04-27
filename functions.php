@@ -442,6 +442,6 @@ require get_template_directory() . '/inc/class-comment-author-role-label.php';
 /**
  * Hijack core/posts block and force own output
  */
-if ( !is_admin() ) {
+if ( ! is_admin() ) {
 	require get_template_directory() . '/inc/dynamic-blocks.php';
 }
