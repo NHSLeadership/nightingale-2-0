@@ -1,0 +1,35 @@
+section.nhsuk-section:nth-of-type(odd){
+    background: $color_nhsuk-grey-5;
+}
+section.nhsuk-section:nth-of-type(even),
+[data-type="nhsblocks/stripesblock"]:nth-of-type(even) {
+    background: $color_nhsuk-white;
+}
+
+.page-template-full-width-page section.nhsuk-section{
+	margin: 0 calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+}
+
+section.nhsuk-section,
+[data-type="nhsblocks/stripesblock"] .is-block-content{
+
+	padding: 64px 20px;
+	@include clearfix();
+}
+
+.nhsuk-striped-blocks{
+
+	border: 1px dotted $color_nhsuk-grey-1;
+
+	[data-type="nhsblocks/stripeblock"]{
+
+		&:nth-of-type(odd) {
+	    	background: $color_nhsuk-grey-5;
+	    }
+	    &:nth-of-type(even) {
+		    background: $color_nhsuk-white;
+		}
+	}
+}

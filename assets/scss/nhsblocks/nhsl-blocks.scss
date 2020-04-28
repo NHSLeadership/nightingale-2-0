@@ -1,0 +1,219 @@
+.nhsuk-promo-group__item {
+  margin-bottom: 36px;
+}
+
+.nhsuk-panel-with-label {
+  width: 100%;
+
+  .nhsuk-panel-with-label__label {
+    a, a:visited {
+      color: $color_nhsuk-white;
+    }
+  }
+
+  .entry-footer {
+    span {
+      padding: 0 10px;
+    }
+  }
+}
+
+//Dashboard group extended from panel group
+.nhsuk-dashboard {
+  .nhsuk-panel-group__item {
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    .nhsuk-promo__link-wrapper {
+      background: inherit;
+      box-shadow: none;
+      width: 100%;
+
+
+    }
+    .nhsuk-panel-with-label {
+      background: inherit;
+      margin: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      background-size: cover;
+      position: relative;
+      padding: 33.33% 0;
+      height: 100%;
+
+      .nhsuk-panel-with-label__label {
+        z-index: 2;
+        top: 0;
+        margin: 0 -20px;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        max-width: 90%;
+        font-size: 1.1rem;
+      }
+
+      .nhsuk-dashboard__image {
+        width: 100%;
+        height: 100%;
+      }
+      .nhsuk-promo__img {
+        position: relative;
+        top: -16px;
+        z-index: 1;
+      }
+
+    }
+  }
+
+  .nhsuk-grid-column-full-width {
+    max-height: 300px;
+  }
+
+  .nhsuk-grid-column-one-half {
+    max-height: 250px;
+  }
+
+  .nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds {
+    max-height: 200px;
+  }
+
+}
+// promo box tweak
+.wp-block-nhsblocks-promo1 {
+  .nhsuk-image{
+    width: 100%;
+  }
+  img.nhsuk-promo__img {
+    // padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .nhsuk-promo__content{
+      padding: 0;
+    }
+
+    .nhsuk-promo__description,
+    .nhsuk-promo__heading{
+      padding: 0 32px;
+    }
+}
+
+//reversed quote tweak
+.nhsuk-inset-text--rev, .is-style-quote-reverse {
+  background: $color_nhsuk-blue;
+  border: 10px solid $color_nhsuk-blue;
+  box-shadow: inset 12px 0px 0px 0px $color_nhsuk-white;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: $color_nhsuk-white;
+  width: 100%;
+}
+
+.nhsuk-promo .nhsuk-promo__content{
+  .nhsuk-image{
+    width: 100%;
+  }
+}
+
+// Image Block alternate style
+
+.is-style-nhsuk-image{
+  @extend .nhsuk-image;
+
+  figcaption{
+    margin: 0;
+  }
+}
+
+figure.is-style-nhsuk-table-responsive{
+
+  @extend .nhsuk-table-responsive;
+
+  thead, tr, th, td {
+    border: 0;
+  }
+
+  table {
+    margin-bottom: 40px;
+    border-spacing: 0;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  thead th {
+    border-bottom: 2px solid $color_nhsuk-grey-4;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  th,
+  td {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 8px 16px 8px 0;
+    border-bottom: 1px solid $color_nhsuk-grey-4;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
+
+  figcaption {
+    -webkit-clip-path: inset(50%);
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+    .wp-admin &{
+      width: auto;
+      clip: auto;
+      height: auto;
+      position: relative;
+      clip-path: unset;
+    }
+  }
+
+  @media (min-width: 40.0625em) {
+
+    table {
+      margin-bottom: 48px;
+    }
+
+    th,
+    td {
+      font-size: 19px;
+      font-size: 1.1875rem;
+      line-height: 1.47368;
+      padding-bottom: 16px;
+      padding-right: 24px;
+      padding-top: 16px;
+    }
+  }
+
+  @media print {
+    table {
+      page-break-inside: avoid;
+    }
+
+    th,
+    td {
+      font-size: 14pt;
+      line-height: 1.15;
+    }
+  }
+}

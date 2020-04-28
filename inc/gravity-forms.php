@@ -19,7 +19,7 @@ add_filter(
 
 		// Style error messages.
 		// Message at top of form.
-		$form_string = str_replace( 'validation_error', 'c-form-input is-error validation_error', $form_string );
+		$form_string = str_replace( 'validation_error', 'nhsuk-error-message is-error', $form_string );
 
 		// Fields with CSS class = "gfield_error".
 		$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
@@ -28,7 +28,7 @@ add_filter(
 		$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );
 
 		// Error messages below fields.
-		$form_string = str_replace( 'validation_message', 'c-form-error validation_message', $form_string );
+		$form_string = str_replace( 'validation_message', 'nhsuk-u-visually-hidden validation_message', $form_string );
 
 		// Style <ul>.
 		$form_string = str_replace( "class='gform_fields", "class='c-form-list gform_fields", $form_string );
@@ -87,7 +87,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$errorflag  = 0;
 		$grouperror = '';
 	}
-	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type )&& ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		$label = '<label class="nhsuk-label">' . $field->label;
 
 		if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
