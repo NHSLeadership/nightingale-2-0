@@ -11,7 +11,7 @@
  * Line up the admin editor css
  */
 function nightingale_gutenberg_editor_styles() {
-	wp_enqueue_style( 'nhsl-gut-editor-styles', get_template_directory_uri() . '/style-gutenburg.css', false, '1', 'all' );
+	wp_enqueue_style( 'nhsl-gut-editor-styles', get_template_directory_uri() . '/style-gutenburg.css', false, '1.1.7', 'all' );
 }
 
 add_action( 'enqueue_block_editor_assets', 'nightingale_gutenberg_editor_styles', 100 );

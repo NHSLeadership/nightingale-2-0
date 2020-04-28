@@ -1,0 +1,139 @@
+/*
+// variations to styling required for gutenberg native blocks
+// @author Tony Blacker, NHS Leadership Academy
+// @version 1.0 22nd July 2019
+*/
+/* button extension*/
+.nhsuk-button.is-style-secondary { /* secondary button style*/
+  @extend .nhsuk-button--secondary;
+}
+
+.nhsuk-button.is-style-reverse { /* reverse button style*/
+  @extend .nhsuk-button--reverse;
+}
+
+/* reveal extension*/
+.nhsuk-details.is-style-expander { /* expander reveal style*/
+  @extend .nhsuk-expander;
+}
+
+/*care card extension*/
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent { /* urgent infocard*/
+  @extend .nhsuk-care-card--urgent;
+}
+
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate { /* urgent infocard*/
+  @extend .nhsuk-care-card--immediate;
+}
+
+.wp-block-nhsblocks-card1.is-style-warning-callout.nhsuk-care-card,
+.nhsuk-care-card.nhsuk-care-card--type.is-style-warning-callout { /* Warning Callout */
+
+  background-color: $color_nhsuk-pale-yellow;
+
+  .nhsuk-care-card__heading-container{
+    background-color: $color_nhsuk-yellow;
+    display: inline-block;
+    top: -16px;
+    margin-bottom: 8px;
+    padding: 8px 32px;
+    position: relative;
+
+    h3{
+      background-color: $color_nhsuk-yellow;
+      color: $color_nhsuk-black !important;
+    }
+    .nhsuk-care-card__heading span{
+      color: $color_nhsuk-black;
+    }
+  }
+
+  .nhsuk-care-card__arrow,
+  .nhsuk-care-card__arrow{
+    display: none;
+  }
+
+  .nhsuk-care-card__content{
+    background-color: $color_nhsuk-pale-yellow;
+    padding-top: 0;
+  }
+}
+
+.nhsuk-care-card__heading-container {
+  h3 {
+    color: $color_nhsuk-white !important;
+    margin: 0 !important;
+  }
+}
+/*panel extension*/
+.nhsuk-panel.is-style-panel-grey {
+  @extend .nhsuk-panel--grey;
+}
+
+.nhsuk-panel.is-style-panel-with-label {
+  @extend .nhsuk-panel-with-label;
+
+  h3, h3 .rich-text {
+    @extend .nhsuk-panel-with-label__label;
+  }
+}
+
+/* promo extension */
+.nhsuk-promo.is-style-promo-small {
+  @extend .nhsuk-promo--small;
+}
+
+/*do and dont list extension*/
+.nhsuk-do-dont-list {
+
+  svg.nhsuk-icon {
+    width: 35px;
+    height: 34px;
+  }
+
+}
+
+/* Inset text inverted link amendment */
+.nhsuk-inset-text is-style-quote-reverse {
+  .nhsuk-inset-text__quote {
+    a {
+      color: $color_nhsuk-white;
+      font-weight: 700;
+    }
+  }
+}
+
+.wp-block-nhsblocks-panel1 {
+  .paneltext {
+    display: flow-root;
+  }
+}
+
+// fix for ever diminishing panels
+.wp-block-nhsblock-rowgroup {
+  .nhsuk-panel-group {
+    padding: 0;
+  }
+}
+
+
+.nhsuk-hero__overlay {
+  margin-bottom: 50px;
+}
+
+.nhsuk-header__search-wrap {
+  input[type="text"] {
+    border: 1px solid $color_nhsuk-grey-3;
+  }
+}
+
+/* Hero fix so it works on all templates */
+.wp-block-nhsblocks-heroblock {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}

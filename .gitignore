@@ -43,6 +43,7 @@ node_modules/
 nhsblocks/node_modules/
 style-gutenburg.min.css
 .sass-cache/
+nightingale.zip
 
 # Docker stuff
 ssh-key

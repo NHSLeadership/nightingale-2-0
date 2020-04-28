@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.1.6
+Version: 2.1.7
 Requires at least: 5.0
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from news sites to primary care trusts to arms length bodies to community practices.
@@ -55,5 +55,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/emergency_alert';
 // Events Calendar plugin styling to match NHSUK design patterns
 @import 'assets/scss/feedback_banner';
+
+@import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
+@import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
+@import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
 // nhs colour pallette
 @import 'assets/scss/color-mixer';

@@ -124,3 +124,7 @@ aside#secondary > section{
 .clear{
   @include clearfix();
 }
+.nhsuk-readmore {
+  text-align: right;
+  padding-bottom: nhsuk-spacing(3);
+}

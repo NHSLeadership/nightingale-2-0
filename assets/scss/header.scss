@@ -182,22 +182,24 @@
 	}
 
 	.nhsuk-header__logo:focus, .nhsuk-header__logo:active, .nhsuk-header__logo:hover {
-	  background : $color_nhsuk-yellow;
+	  background : inherit;
 
 	  & + .nhsuk-header__transactional-service-name {
-		background : $color_nhsuk-yellow;
+		background : inherit;
 
 		a {
-		  color : $color_nhsuk-black;
+		  color : $color_nhsuk-white;
+		  text-decoration: underline;
 		}
 	  }
 	}
 
 	.nhsuk-header__transactional-service-name:focus, .nhsuk-header__transactional-service-name:active, .nhsuk-header__transactional-service-name:hover {
-	  background : $color_nhsuk-yellow;
+	  background : inherit;
 
 	  a {
-		color : $color_nhsuk-black;
+		color : $color_nhsuk-white;
+		text-decoration: underline;
 	  }
 	}
   }
