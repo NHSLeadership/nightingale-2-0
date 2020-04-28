@@ -14,8 +14,8 @@ add_filter(
 	'gform_get_form_filter',
 	function ( $form_string, $form ) {
 
-		// Replace form description span with <small> elements.
-		$form_string = preg_replace( "#<span class='gform_description'>(.*?)</span>#", '<small>$1</small>', $form_string );
+		// Replace form description span with <nhsuk-hint> elements.
+		$form_string = preg_replace( "#<span class='gform_description'>(.*?)</span>#", '<span class="nhsuk-hint">$1</span>', $form_string );
 
 		// Style error messages.
 		// Message at top of form.
@@ -58,6 +58,9 @@ add_filter(
 		// Style the submit button.
 		$form_string = str_replace( 'gform_button', 'nhsuk-button gform_button', $form_string );
 
+		// Style the save and continue functionality.
+		$form_string = preg_replace( "#<a (.*?)class='gform_save_link' (.*?)</a>#", "<a $1 class='nhsuk-button nhsuk-button--secondary gform_save_link' $2</a>", $form_string );
+
 		return $form_string;
 	},
 	10,
@@ -84,18 +87,21 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$errorflag  = 0;
 		$grouperror = '';
 	}
-	$label = '<label class="nhsuk-label" for="">' . $field->label;
+	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+		$label = '<label class="nhsuk-label">' . $field->label;
 
-	if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
-		$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
-	}
+		if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+			$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
+		}
 
-	if ( 1 === $errorflag ) {
-		$label .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
+		if ( 1 === $errorflag ) {
+			$label .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
+		}
+		$label .= '<br/>';
+		$label .= '</label>';
 	}
-	$label .= '</label>';
-	$ender  = '';
-	$extra  = '';
+	$ender = '';
+	$extra = '';
 	if ( $field->gwreadonly_enable > 0 ) {
 		$extra .= ' readonly';
 	}
@@ -183,7 +189,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			// Replace <li> elements with suitably-styled <label>s.
 			$field_content = str_replace( "<li class='", "<div class='nhsuk-checkboxes__item ", $field_content );
 			$field_content = str_replace( '</li', '</div', $field_content );
-			$field_content = preg_replace( "#<label for='choice(.*?)>(.*?)</label>#i", "<label class='nhsuk-label nhsuk-checkboxes__label'>$2</label>", $field_content );
+			$field_content = preg_replace( '#<label for(.*?)>(.*?)</label>#i', "<label for$1 class='nhsuk-label nhsuk-checkboxes__label'>$2</label>", $field_content );
 
 			// Style <input>s.
 			$field_content = str_replace( "type='checkbox'", "type='checkbox' class='nhsuk-checkboxes__input'", $field_content );
@@ -195,7 +201,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			$field_content = str_replace( 'ginput_container_radio', 'nhsuk-radios', $field_content );
 			$field_content = str_replace( "<li class='", "<div class='nhsuk-radios__item ", $field_content );
 			$field_content = str_replace( '</li', '</div', $field_content );
-			$field_content = preg_replace( "#<label for='choice(.*?)>(.*?)</label>#i", "<label class='nhsuk-label nhsuk-radios__label'>$2</label>", $field_content );
+			$field_content = preg_replace( '#<label for(.*?)>(.*?)</label>#i', "<label class='nhsuk-label nhsuk-radios__label' for$1>$2</label>", $field_content );
 			// Style <input>s.
 			$field_content = str_replace( "type='radio'", "type='radio' class='nhsuk-radios__input'", $field_content );
 			break;
