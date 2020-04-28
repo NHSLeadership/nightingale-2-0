@@ -109,6 +109,15 @@ $page-colours             : (
 	#secondary section ul > li > ul > li > a {
 	  border-left : 2px solid $colour;
 	}
+	.gform_wrapper {
+	  .gf_progressbar_wrapper {
+		.gf_progressbar {
+		  .gf_progressbar_percentage {
+			background-color : $colour;
+		  }
+		}
+	  }
+	}
   }
 
 }
