@@ -87,7 +87,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$errorflag  = 0;
 		$grouperror = '';
 	}
-	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type )&& ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		$label = '<label class="nhsuk-label">' . $field->label;
 
 		if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
@@ -268,9 +268,9 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			break;
 		case 'address':
 			if ( 1 === $errorflag ) {
-				$field_content = str_replace( "type='text'", "type='text' value='' class='nhsuk-input nhsuk-input--error' ", $field_content );
+				$field_content = str_replace( "type='text'", "type='text' class='nhsuk-input nhsuk-input--error' ", $field_content );
 			} else {
-				$field_content = str_replace( "type='text'", "type='text' value='' class='nhsuk-input' ", $field_content );
+				$field_content = str_replace( "type='text'", "type='text' class='nhsuk-input' ", $field_content );
 			}
 			if ( 1 === $errorflag ) {
 				$field_content = str_replace( '<select', "<select class='nhsuk-select nhsuk-select--error'", $field_content );
