@@ -9655,8 +9655,11 @@
     z-index: 9999;
     width: 100vw;
   }
+  .edit-post-visual-editor .nhsuk-header__search-wrap.js-show .nhsuk-header__search-form, .block-editor-block-styles .nhsuk-header__search-wrap.js-show .nhsuk-header__search-form {
+    padding: 0 24px;
+  }
   .edit-post-visual-editor .nhsuk-header__search-wrap.js-show #autocomplete-container input[type=text], .block-editor-block-styles .nhsuk-header__search-wrap.js-show #autocomplete-container input[type=text] {
-    border: 1px solid #f0f4f5;
+    border: 1px solid #aeb7bd;
   }
 }
 
