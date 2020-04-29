@@ -7,6 +7,7 @@
   }
 }
 .gform_wrapper {
+  margin-top: 0 !important;
   .gf_progressbar_wrapper {
     .gf_progressbar {
       border-radius    : $nhsuk-border-radius;
@@ -34,7 +35,6 @@
     }
   }
   .gform_body {
-    padding-top: nhsuk-spacing(5);
     .address_city, .address_state {
       width: 50%;
       float: left;
@@ -140,6 +140,9 @@
         border: $nhsuk-border-width-form-element solid $color_nhsuk-red;
       }
     }
+  }
+  .gform_page_footer {
+    padding-top: nhsuk-spacing(5) !important;
   }
   #ui-datepicker-div {
     border: $nhsuk-border-width-form-element solid $color_nhsuk-blue;
