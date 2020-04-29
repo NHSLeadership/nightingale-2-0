@@ -10525,38 +10525,38 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   float: right;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-wrap {
+.error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
   padding: 5px;
   width: 100%;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-form {
+.error404 #primary .page-content .nhsuk-header__search-form, .search-no-results #primary .page-content .nhsuk-header__search-form {
   display: block;
   padding: 0;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
   float: left;
   max-width: 80%;
   margin: 16px 0 0 5%;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
   margin-top: 16px;
 }
 
 @media (max-width: 40.0525em) {
-  .error404 #primary .page-content .nhsuk-header__search-wrap {
+  .error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
     border: 0;
     padding: 0;
   }
-  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
     float: left;
     max-width: 73%;
     margin: 0;
     height: 50px;
   }
-  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
     margin-top: 0;
   }
 }

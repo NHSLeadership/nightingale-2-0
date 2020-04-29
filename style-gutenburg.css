@@ -9722,38 +9722,38 @@
   float: right;
 }
 
-.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap {
+.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-wrap {
   padding: 5px;
   width: 100%;
 }
 
-.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-form, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-form {
+.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-form, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-form, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-form, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-form {
   display: block;
   padding: 0;
 }
 
-.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
   float: left;
   max-width: 80%;
   margin: 16px 0 0 5%;
 }
 
-.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
   margin-top: 16px;
 }
 
 @media (max-width: 40.0525em) {
-  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap {
+  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-wrap {
     border: 0;
     padding: 0;
   }
-  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
     float: left;
     max-width: 73%;
     margin: 0;
     height: 50px;
   }
-  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
     margin-top: 0;
   }
 }

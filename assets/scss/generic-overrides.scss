@@ -303,7 +303,7 @@
   float : right;
 }
 
-.error404 #primary .page-content {
+.error404 #primary .page-content, .search-no-results #primary .page-content {
   .nhsuk-header__search-wrap {
 	padding : 5px;
 	width   : 100%;
@@ -346,3 +346,4 @@
 	}
   }
 }
+
