@@ -223,10 +223,12 @@
 	background : $color_nhsuk-white;
 	z-index    : 9999;
 	width      : 100vw;
-
+	.nhsuk-header__search-form {
+	  padding: 0 nhsuk-spacing(4);
+	}
 	#autocomplete-container {
 	  input[type=text] {
-		border : 1px solid $color_nhsuk-grey-5;
+		border : 1px solid $color_nhsuk-grey-3;
 	  }
 	}
   }
