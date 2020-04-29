@@ -11409,6 +11409,10 @@ aside#secondary > section {
   font-weight: 600;
 }
 
+.gform_wrapper {
+  margin-top: 0 !important;
+}
+
 .gform_wrapper .gf_progressbar_wrapper .gf_progressbar {
   border-radius: 4px;
   background-color: #ffffff;
@@ -11432,10 +11436,6 @@ aside#secondary > section {
 
 .gform_wrapper .gf_progressbar_wrapper .gf_progressbar:after {
   border-radius: 4px;
-}
-
-.gform_wrapper .gform_body {
-  padding-top: 32px;
 }
 
 .gform_wrapper .gform_body .address_city, .gform_wrapper .gform_body .address_state {
@@ -11539,6 +11539,10 @@ aside#secondary > section {
 
 .gform_wrapper .gform_body .nhsuk-form-group--error table.gsurvey-likert {
   border: 2px solid #d5281b;
+}
+
+.gform_wrapper .gform_page_footer {
+  padding-top: 32px !important;
 }
 
 .gform_wrapper #ui-datepicker-div {
