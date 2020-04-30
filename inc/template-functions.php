@@ -104,6 +104,9 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 10 );
  * @param string $more the default more string.
  */
 function nightingale_excerpt_more( $more ) {
+	if ( is_admin() ) {
+		return $more;
+	}
 	global $post;
 	$link  = '';
 	$title = get_the_title( $post->ID );

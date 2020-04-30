@@ -9,7 +9,7 @@
  *
  * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.0 29th December 2019
+ * @version 1.1 30th April 2020
  */
 
 ?>
@@ -1154,6 +1154,12 @@ margin-top: 0
 }
 }
 
+@media (max-width:769px) {
+.nhsuk-header .nhsuk-header__navigation ul li a {
+color: #005eb8
+}
+}
+
 .nhsuk-header__container {
 padding-bottom: 16px;
 min-height: 80px
@@ -1162,8 +1168,7 @@ min-height: 80px
 .nhsuk-header--transactional .nhsuk-header__link {
 width: auto;
 display: inline-block;
-text-decoration: none;
-height: auto
+text-decoration: none
 }
 
 .nhsuk-grid-column-full {
@@ -1187,4 +1192,16 @@ border-top: 2px solid #005eb8;
 margin-bottom: 32px;
 padding-top: 16px;
 padding-bottom: 16px
+}
+
+.nhsuk-panel-with-label {
+width: 100%
+}
+
+.nhsuk-hero__overlay {
+margin-bottom: 50px
+}
+
+.nhsuk-header__search-wrap input[type=text] {
+border: 1px solid #aeb7bd
 }
