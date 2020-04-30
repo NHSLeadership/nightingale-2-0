@@ -220,8 +220,9 @@ Additional customiser options and refined display output:
 
 == Upgrade Notice ==
 
-= 2.0.7 =
- * Please upgrade to 2.0.7 for reasons
+= 2.1.7.1 =
+ * Please upgrade to 2.1.7.1 as previous release had incorrect style.min.css included, and this release also fixes white
+  header variant when a different base colour is selected
 
  == Copyright ==
 
