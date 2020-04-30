@@ -119,10 +119,9 @@ $page-colours             : (
 	  .nhsuk-header__navigation {
 		background: $colour;
 	  }
-	  .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-search__submit:hover {
-		background-color : $colour;
-		background       : $colour;
-		filter           : brightness(85%);
+	  .nhsuk-header__navigation-link:hover, .nhsuk-header__navigation ul li a:hover, .nhsuk-search__submit:hover {
+		background-color : darken($colour, 15%);
+		background       : darken($colour, 15%);
 	  }
 	  .nhsuk-header__menu-toggle:focus, .nhsuk-header__menu-toggle:hover, .nhsuk-header__menu-toggle.is-active, .nhsuk-header__menu-toggle:active, .nhsuk-header__search-toggle:hover, .nhsuk-header__search-toggle:focus, .nhsuk-header__search-toggle.is-active, .nhsuk-header__search-toggle:active {
 		background-color : darken($colour, 15%);
