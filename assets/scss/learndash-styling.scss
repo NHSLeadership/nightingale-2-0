@@ -169,6 +169,7 @@
 
     .ld-item-list-item {
       .ld-item-list-item-preview {
+        border: 2px solid transparent;
 
         a.ld-item-name:hover {
           background: transparent !important;
@@ -177,7 +178,6 @@
         &:hover {
           background: transparent;
           border: $nhsuk-border-width-form-element solid $nhsuk-focus-color;
-          margin: -nhsuk-spacing(1);
         }
       }
     }
@@ -326,6 +326,11 @@
     }
   }
 
+  .ld-progress-bar-percentage {
+    &.ld-secondary-background {
+      background-color: $color_nhsuk-green !important;
+    }
+  }
   .ld-certificate-icon,
   #quiz_continue_link,
   .course_progress .sending_progress_bar,
@@ -417,7 +422,7 @@
       position: relative;
       padding-bottom: 120px;
       .ld_course_grid_price {
-        background: $color_nhsuk-grey-4;
+        background: $color_nhsuk-green;
 
         &:before {
           border-top: 4px solid $color_nhsuk-dark-grey;

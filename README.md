@@ -1,4 +1,6 @@
-# Nightingale 2.1.3
+# Nightingale 2.1.7
+<img src="https://img.shields.io/badge/nightingale-v2.1.7-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend"><img src="https://img.shields.io/badge/nhsuk--frontend-v3.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
+
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 :exclamation: 2.1.0 - For WP theme review compliance, certain elements have been modified in this release
 . Performance tweaks, the NHS logo being displayed by default and the Frutiger font have all been removed. Please be

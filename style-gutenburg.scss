@@ -1,46 +1,10 @@
-@import 'node_modules/nhsuk-frontend/packages/nhsuk';
-@import 'node_modules/nhsuk-frontend/packages/core/settings/all';
-// Styles
-@import 'node_modules/nhsuk-frontend/packages/core/styles/icons';
+.edit-post-visual-editor, .block-editor-block-styles { // target only the editor itself
+  //@import 'node_modules/nhsuk-frontend/packages/nhsuk';
 
-ul {
-  list-style: none;
-}
-
-// Tools
-@import 'node_modules/nhsuk-frontend/packages/core/tools/all';
-// Generic
-@import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
-@import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
-
-.edit-post-visual-editor { // target only the editor itself
-
-  // Elements
-  @import 'node_modules/nhsuk-frontend/packages/core/elements/forms';
-  @import 'node_modules/nhsuk-frontend/packages/core/elements/links';
-  /*@import 'node_modules/nhsuk-frontend/packages/core/elements/page';*/
-  @import 'node_modules/nhsuk-frontend/packages/core/elements/table';
-
-  // Objects
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/form-group';
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/grid';
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/main-wrapper';
-  @import 'node_modules/nhsuk-frontend/packages/core/objects/width-container';
-
-
-  @import 'node_modules/nhsuk-frontend/packages/core/styles/lists';
-  @import 'node_modules/nhsuk-frontend/packages/core/styles/section-break';
-  @import 'node_modules/nhsuk-frontend/packages/core/styles/typography';
-
-  // Utilities
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/clearfix';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/grid-widths';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/link-nowrap';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/reading-width';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/spacing';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/typography';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/visually-hidden';
-  @import 'node_modules/nhsuk-frontend/packages/core/utilities/widths';
+  @import 'assets/scss/nhsuk-replacement';
+  ul {
+    list-style: none;
+  }
   background-color: $color_nhsuk-grey-5;
   .nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover {
     color: #ffffff;
@@ -55,37 +19,332 @@ ul {
   .nhsuk-header__search-form {
     height: 0;
   }
-}
+  // start importing the theme specific settings
 
-.wp-block{
-  max-width: 800px;
-}
-.wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
-  max-width: 1228px;
-}
-// start importing the theme specific settings
+  @import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
+  @import 'assets/scss/nhs-colours'; // nhs colour pallette
+  .editor-post-title__input {
+    font-family: $nhsuk-font, $nhsuk-font-fallback;
+    @extend h1;
+  }
+  .wp-block {
+    max-width : 983px;
+  }
 
-@import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
-@import 'assets/scss/nhs-colours'; // nhs colour pallette
-.editor-post-title__input {
-  font-family: $nhsuk-font, $nhsuk-font-fallback;
-  @extend h1;
-}
-.components-panel__header.edit-post-sidebar-header {
-  ul {
-    margin-bottom: 0px;
-    padding-left: 0;
+  .wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
+    max-width : 1228px;
+  }
+
+  .block-editor-block-list__block {
+    font-family : $nhsuk-font, $nhsuk-font-fallback;
+    font-size   : 16px;
+
+
+  }
+  @import 'assets/scss/style_variations';// style variations
+  @import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
+  @import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
+
+  //promo panel blockquote address button
+  .nhsuk-promo {
+    background : $color_nhsuk-white;
+    border     : 1px solid transparent;
+    box-shadow : 0 4px 0 0 $color_nhsuk-grey-4;
+
+    .nhsuk-promo__content {
+      .editor-url-input__button {
+        width      : 100%;
+        text-align : center;
+      }
+
+      .editor-url-input__button:before {
+        content : "Add link for this promo box";
+      }
+
+      [data-type="core/image"] ~ .block-list-appender {
+        display : none;
+      }
+    }
+  }
+
+  .nhsuk-list--cross {
+    .editor-rich-text {
+      padding-left : 34px;
+    }
+  }
+
+  .nhsuk-button {
+    &:before {
+      position : relative !important;
+    }
+  }
+
+  .wp-block-nhsblocks-panel1 {
+    /* remove ability to add extra blocks inside panels, but leave ability to remove and move current inner blocks */
+    .editor-default-block-appender, .editor-block-list__insertion-point {
+      display : none;
+    }
+  }
+
+  @import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
+  .is-style-panel-with-label {
+    h3 {
+      width  : fit-content;
+      height : 10px;
+    }
+  }
+
+  .editor-styles-wrapper h3.nhsuk-care-card__heading {
+    margin-top    : 0;
+    margin-bottom : 0;
+  }
+
+  /* admin styles widget tweaks */
+  .block-editor-block-styles__item-preview {
+    .editor-styles-wrapper {
+      font-family : Frutiger W01, Helvetica, Arial, Sans-serif;
+    }
+
+    .wp-block-nhsblocks-nhsbutton {
+      padding   : 5px;
+      font-size : 0.7rem;
+    }
+
+    .is-style-expander {
+      .nhsuk-details__summary {
+        padding : 0;
+      }
+    }
+
+    .nhsuk-inset-text {
+      margin-top : 0;
+    }
+  }
+
+  .nhsuk-grid-column-full {
+    .block-editor-inner-blocks {
+      width : 100%;
+    }
+  }
+
+  /* Panel Group editor tweak */
+  .nhsuk-promo-group .block-editor-inner-blocks {
+    width : 100%;
+    float : left;
+  }
+
+  .nhsuk-do-dont-list {
+    h3.nhsuk-do-dont-list__label {
+      .rich-text {
+        color : $color_nhsuk-white;
+      }
+    }
+
     li {
-      padding-left: 5px;
-      margin-top: 5px;
-      .components-button.edit-post-sidebar__panel-tab {
-        border: 1px solid $color_nhsuk-white;
-        &.is-active {
-          background: $color_nhsuk-white;
+      span {
+        div.rich-text {
+          padding-left : 40px;
         }
       }
     }
   }
+
+
+  .wp-block-nhsblocks-dashpanel {
+    .nhsuk-panel-with-label {
+      padding-bottom : 40%;
+    }
+
+    .nhsuk-panel-with-label__label {
+      z-index   : 2;
+      top       : 0;
+      margin    : 0 -20px;
+      top       : 50%;
+      max-width : 90%;
+
+      .rich-text {
+        font-size : 1.1rem;
+        color     : $color_nhsuk-white;
+      }
+    }
+  }
+
+  div[data-type="nhsblocks/heroblock"] {
+    max-width : 100%;
+
+    div[data-type="nhsblocks/heroinner"] ~ div {
+      display : none;
+    }
+
+    .editor-inserter {
+      position   : relative;
+      top        : -100px;
+      background : white;
+      left       : -400px;
+    }
+
+    editor-inserter:nth-of-type(2) {
+      display : none;
+    }
+
+    .nhsuk-hero--image {
+      .nhsuk-hero__overlay {
+        position      : relative;
+        top           : 270px;
+        margin-bottom : 100px;
+        background    : none;
+      }
+    }
+  }
+
+  /*
+  Learn dash admin panel mitigation
+   */
+  #sfwd-header {
+    .ld-global-header {
+      position : inherit;
+
+      h1 {
+        font-size          : 1.5rem;
+        margin-block-start : 0.5rem;
+        margin-block-end   : 0.5rem;
+        margin-bottom      : 0.5rem;
+        line-height        : 1.6rem;
+      }
+    }
+  }
+
+  .ld-tabs-ready .ld-tab-buttons a.button, .ld-tabs-ready .ld-tab-buttons button.button {
+    margin-top : 0;
+  }
+
+  .ld-header-has-tabs {
+    .edit-post-layout {
+      .edit-post-sidebar {
+        top : 225px;
+      }
+
+      .edit-post-header {
+        top     : 170px;
+        padding : 0 7px;
+      }
+    }
+  }
+
+  /* end LearnDash mitigation routine */
+
+  /*
+  Grouped Items blocks admin styles
+  */
+
+  .block-editor-block-list__layout {
+
+    [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row {
+
+      border : 1px dashed $color_nhsuk-bright-blue;
+
+      &:before {
+        content          : 'Grouped Items';
+        background-color : $color_nhsuk-bright-blue;
+        color            : $color_nhsuk-white;
+        position         : absolute;
+        top              : 0;
+        left             : 0;
+        font-size        : 12px;
+        padding          : 2px 5px;
+      }
+
+      .block-editor-block-list__layout {
+
+        & > div {
+          clear : both;
+        }
+
+        [data-type="nhsblocks/onethird"],
+        [data-type="nhsblocks/onehalf"],
+        [data-type="nhsblocks/twothirds"],
+        [data-type="nhsblocks/onequarter"],
+        [data-type="nhsblocks/threequarters"] {
+          padding : 0;
+          border  : 1px dashed $color_nhsuk-black;
+          clear   : none;
+
+          &.has-child-selected {
+            border   : 3px solid $color_nhsuk-warm-yellow;
+            position : relative;
+            z-index  : 5;
+          }
+        }
+
+      }
+
+      %innerBlocks {
+        float : none;
+        width : 100%;
+      }
+
+      [data-type="nhsblocks/onethird"] {
+        @extend .nhsuk-grid-column-one-third;
+
+        .nhsuk-grid-column-one-third {
+          @extend %innerBlocks;
+        }
+
+      }
+
+      [data-type="nhsblocks/onehalf"] {
+        @extend .nhsuk-grid-column-one-half;
+
+        .nhsuk-grid-column-one-half {
+          @extend %innerBlocks;
+        }
+
+      }
+
+      [data-type="nhsblocks/twothirds"] {
+        @extend .nhsuk-grid-column-two-thirds;
+
+        .nhsuk-grid-column-two-thirds {
+          @extend %innerBlocks;
+        }
+
+      }
+
+      [data-type="nhsblocks/onequarter"] {
+        @extend .nhsuk-grid-column-one-quarter;
+
+        .nhsuk-grid-column-one-quarter {
+          @extend %innerBlocks;
+        }
+
+      }
+
+      [data-type="nhsblocks/threequarters"] {
+        @extend .nhsuk-grid-column-three-quarters;
+
+        .nhsuk-grid-column-three-quarters {
+          @extend %innerBlocks;
+        }
+      }
+    }
+
+  }
+
+  /* make the table cells more obvious when editing */
+  .is-selected {
+    figure.is-style-nhsuk-table-responsive {
+      thead, tr, th, td {
+        border    : 1px dashed $color_nhsuk-grey-3;
+        min-width : 2rem;
+      }
+    }
+  }
+
+
+  /* clearfix after grouped items to sort out some display wirdiness */
+  .block-editor-inner-blocks {
+    @include clearfix();
+  }
+
+  @import 'assets/scss/color-mixer';//gutenberg page style overrides
 }
-@import 'assets/scss/style_variations';//gutenberg blocks style variations
-@import 'assets/scss/color-mixer';//gutenberg page style overrides

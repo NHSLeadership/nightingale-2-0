@@ -9,7 +9,7 @@
  *
  * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.0 29th December 2019
+ * @version 1.1 30th April 2020
  */
 
 ?>
@@ -87,22 +87,35 @@ width: 1px;
 word-wrap: normal!important
 }
 
-@font-face {
-font-family: Frutiger W01;
-font-display: swap;
-font-style: normal;
-font-weight: 400;
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot#iefix);
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot#iefix) format("eot"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2) format("woff2"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff) format("woff"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf) format("truetype"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115) format("svg")
+html {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box
 }
 
-@font-face {
-font-family: Frutiger W01;
-font-display: swap;
-font-style: normal;
-font-weight: 600;
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot#iefix);
-src: url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot#iefix) format("eot"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2) format("woff2"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff) format("woff"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf) format("truetype"), url(https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca) format("svg")
+*,
+:after,
+:before {
+-moz-box-sizing: inherit;
+-webkit-box-sizing: inherit;
+box-sizing: inherit
+}
+
+html {
+background-color: #d8dde0;
+font-family: Frutiger W01, Arial, Sans-serif;
+overflow-y: scroll
+}
+
+body {
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+background-color: #f0f4f5;
+color: #212b32;
+font-size: 16px;
+line-height: 1.5;
+margin: 0;
+min-height: 100%
 }
 
 .nhsuk-grid-row {
@@ -180,6 +193,109 @@ margin: 0 32px
 .nhsuk-width-container {
 margin: 0 auto
 }
+}
+
+.nhsuk-icon {
+height: 34px;
+width: 34px
+}
+
+.nhsuk-icon__search {
+fill: #005eb8
+}
+
+.nhsuk-icon__arrow-right-circle {
+fill: #007f3b
+}
+
+hr {
+border: 0;
+margin: 0
+}
+
+hr {
+margin-top: 32px;
+margin-bottom: 32px
+}
+
+@media (min-width:40.0625em) {
+hr {
+margin-top: 40px;
+margin-bottom: 40px
+}
+}
+
+hr {
+border-bottom: 1px solid #d8dde0
+}
+
+h1 {
+font-size: 32px;
+font-size: 2rem;
+line-height: 1.25;
+display: block;
+font-weight: 600;
+margin-top: 0;
+margin-bottom: 40px
+}
+
+@media (min-width:40.0625em) {
+h1 {
+font-size: 48px;
+font-size: 3rem;
+line-height: 1.16667
+}
+}
+
+@media (min-width:40.0625em) {
+h1 {
+margin-bottom: 48px
+}
+}
+
+p {
+font-size: 16px;
+font-size: 1rem;
+line-height: 1.5;
+display: block;
+margin-top: 0;
+margin-bottom: 16px
+}
+
+@media (min-width:40.0625em) {
+p {
+font-size: 19px;
+font-size: 1.1875rem;
+line-height: 1.47368
+}
+}
+
+@media (min-width:40.0625em) {
+p {
+margin-bottom: 24px
+}
+}
+
+p {
+color: inherit
+}
+
+strong {
+font-weight: 600
+}
+
+.nhsuk-u-visually-hidden {
+-webkit-clip-path: inset(50%);
+border: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+height: 1px;
+margin: 0;
+overflow: hidden;
+padding: 0;
+position: absolute;
+white-space: nowrap;
+width: 1px
 }
 
 .nhsuk-action-link {
@@ -977,140 +1093,6 @@ margin-bottom: 24px
 }
 }
 
-html {
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box
-}
-
-*,
-:after,
-:before {
--moz-box-sizing: inherit;
--webkit-box-sizing: inherit;
-box-sizing: inherit
-}
-
-html {
-background-color: #d8dde0;
-font-family: Frutiger W01, Arial, Sans-serif;
-overflow-y: scroll
-}
-
-body {
--moz-osx-font-smoothing: grayscale;
--webkit-font-smoothing: antialiased;
-background-color: #f0f4f5;
-color: #212b32;
-font-size: 16px;
-line-height: 1.5;
-margin: 0;
-min-height: 100%
-}
-
-.nhsuk-icon {
-height: 34px;
-width: 34px
-}
-
-.nhsuk-icon__search {
-fill: #005eb8
-}
-
-.nhsuk-icon__arrow-right-circle {
-fill: #007f3b
-}
-
-hr {
-border: 0;
-margin: 0
-}
-
-hr {
-margin-top: 32px;
-margin-bottom: 32px
-}
-
-@media (min-width:40.0625em) {
-hr {
-margin-top: 40px;
-margin-bottom: 40px
-}
-}
-
-hr {
-border-bottom: 1px solid #d8dde0
-}
-
-h1 {
-font-size: 32px;
-font-size: 2rem;
-line-height: 1.25;
-display: block;
-font-weight: 600;
-margin-top: 0;
-margin-bottom: 40px
-}
-
-@media (min-width:40.0625em) {
-h1 {
-font-size: 48px;
-font-size: 3rem;
-line-height: 1.16667
-}
-}
-
-@media (min-width:40.0625em) {
-h1 {
-margin-bottom: 48px
-}
-}
-
-p {
-font-size: 16px;
-font-size: 1rem;
-line-height: 1.5;
-display: block;
-margin-top: 0;
-margin-bottom: 16px
-}
-
-@media (min-width:40.0625em) {
-p {
-font-size: 19px;
-font-size: 1.1875rem;
-line-height: 1.47368
-}
-}
-
-@media (min-width:40.0625em) {
-p {
-margin-bottom: 24px
-}
-}
-
-p {
-color: inherit
-}
-
-strong {
-font-weight: 600
-}
-
-.nhsuk-u-visually-hidden {
--webkit-clip-path: inset(50%);
-border: 0;
-clip: rect(0 0 0 0);
-clip-path: inset(50%);
-height: 1px;
-margin: 0;
-overflow: hidden;
-padding: 0;
-position: absolute;
-white-space: nowrap;
-width: 1px
-}
-
 .nhsuk-width-container--full {
 max-width: none
 }
@@ -1158,7 +1140,8 @@ float: left
 }
 
 .nhsuk-header .nhsuk-header__search-wrap input[type=text] {
-border: none
+border: none;
+padding: 0 12px
 }
 
 .nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=text] {
@@ -1171,6 +1154,12 @@ margin-top: 0
 }
 }
 
+@media (max-width:769px) {
+.nhsuk-header .nhsuk-header__navigation ul li a {
+color: #005eb8
+}
+}
+
 .nhsuk-header__container {
 padding-bottom: 16px;
 min-height: 80px
@@ -1179,8 +1168,7 @@ min-height: 80px
 .nhsuk-header--transactional .nhsuk-header__link {
 width: auto;
 display: inline-block;
-text-decoration: none;
-height: auto
+text-decoration: none
 }
 
 .nhsuk-grid-column-full {
@@ -1204,4 +1192,16 @@ border-top: 2px solid #005eb8;
 margin-bottom: 32px;
 padding-top: 16px;
 padding-bottom: 16px
+}
+
+.nhsuk-panel-with-label {
+width: 100%
+}
+
+.nhsuk-hero__overlay {
+margin-bottom: 50px
+}
+
+.nhsuk-header__search-wrap input[type=text] {
+border: 1px solid #aeb7bd
 }

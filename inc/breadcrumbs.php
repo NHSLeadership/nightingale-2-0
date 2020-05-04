@@ -214,7 +214,7 @@ function nightingale_breadcrumb() {
 
 								}
 							}
-							if ( ! ( is_archive() || is_category() || is_post_type_archive() ) ) {
+							if ( ! ( is_archive() || is_category() || is_post_type_archive() || is_search() || is_404() ) ) {
 
 								?>
 

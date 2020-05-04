@@ -2,9 +2,9 @@
 /**
  * Nightingale Theme Customizer
  *
- * @package Nightingale
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 /**
@@ -257,6 +257,32 @@ function nightingale_customize_register( $wp_customize ) {
 			),
 		)
 	);
+
+	/*
+	 * Display Featured image on post / page?
+	 */
+	$wp_customize->add_setting(
+		'featured_img_display',
+		array(
+			'default'           => 'true',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		'featured_img_display',
+		array(
+			'label'       => esc_html__( 'Display Featured Image on posts / pages single view', 'nightingale' ),
+			'description' => esc_html__( 'Featured images are really useful for search results and listing pages. Sometimes its handy to have them for this, but you don\'t want the image to show on the individual page. If thats the case, turn them off here.', 'nightingale' ),
+			'section'     => 'section_layout',
+			'priority'    => '100',
+			'type'        => 'radio',
+			'choices'     => array(
+				'true'  => esc_html__( 'Yes', 'nightingale' ),
+				'false' => esc_html__( 'No', 'nightingale' ),
+			),
+		)
+	);
 }
 
 add_action( 'customize_register', 'nightingale_customize_register' );
@@ -305,6 +331,64 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			'choices'     => array(
 				'true'  => esc_html__( 'Sidebar', 'nightingale' ),
 				'false' => esc_html__( 'No Sidebar', 'nightingale' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		// $id
+		'blog_author_display',
+		// $args
+		array(
+			'default'           => 'true',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		// $id
+		'blog_author_display',
+		// $args
+		array(
+			'settings'    => 'blog_author_display',
+			'section'     => 'blog_panel',
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Show Author Name on Blog Posts?', 'nightingale' ),
+			'description' => esc_html__( 'Choose whether or not to display the authors name (and link) on the blog page', 'nightingale' ),
+			'choices'     => array(
+				'true'  => esc_html__( 'Show author', 'nightingale' ),
+				'false' => esc_html__( 'Dont show author', 'nightingale' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
+		// $id
+		'blog_date_display',
+		// $args
+		array(
+			'default'           => 'true',
+			'type'              => 'theme_mod',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		// $id
+		'blog_date_display',
+		// $args
+		array(
+			'settings'    => 'blog_date_display',
+			'section'     => 'blog_panel',
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Show Post Date on Blog Posts?', 'nightingale' ),
+			'description' => esc_html__( 'Choose whether or not to display the date a post was made on the blog page', 'nightingale' ),
+			'choices'     => array(
+				'true'  => esc_html__( 'Show date', 'nightingale' ),
+				'false' => esc_html__( 'Dont show date', 'nightingale' ),
 			),
 		)
 	);
@@ -378,41 +462,3 @@ function nightingale_customize_preview_js() {
 }
 
 add_action( 'customize_preview_init', 'nightingale_customize_preview_js' );
-
-/**
- * Check to see which kind of header should be rendered.
- */
-function nightingale_header_customiser_dependency_check() {
-	?>
-	<script>
-		;(function () {
-			/**
-			 * Run function only when customizer changes
-			 */
-			wp.customize.bind('ready', function () {
-				wp.customize.control('logo_type', function (control) {
-					control.setting.bind(function (value) {
-						switch (value) {
-							/**
-							 * Transactional types
-							 */
-							case 'transactional':
-								wp.customize.control('loqo_qualifier').deactivate();
-								break;
-							/**
-							 *  Organisational types
-							 */
-							case 'organisation':
-								wp.customize.control('loqo_qualifier').activate();
-								break;
-
-						}
-					})
-				})
-			})
-		})();
-	</script>
-	<?php
-}
-
-add_action( 'customize_controls_enqueue_scripts', 'nightingale_header_customiser_dependency_check', 10, 1 );

@@ -2,10 +2,10 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.1.3
+Version: 2.1.7.1
 Requires at least: 5.0
 Requires PHP: 5.2.4
-Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from news sites to primary care trusts to arms length bodies to community practices.
+Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
 Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
 Author: Tony Blacker, NHS Leadership Academy
 Author URI: https://www.leadershipacademy.nhs.uk
@@ -23,55 +23,12 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import 'layouts/default';
-// @todo clean this up, its a hangover from underscores that we could do with getting rid of
-@import 'node_modules/nhsuk-frontend/packages/nhsuk';
-// Core (required)
-//@import 'node_modules/nhsuk-frontend/packages/core/all'; removed the "all" and replaced with individual components below to ensure the font is not called in.
+@import 'assets/scss/default';
+@import 'assets/scss/nhsuk-replacement';
 
-// Settings
-@import 'node_modules/nhsuk-frontend/packages/core/settings/all';
-
-// Tools
-@import 'node_modules/nhsuk-frontend/packages/core/tools/all';
-
-// Generic
-@import 'node_modules/nhsuk-frontend/packages/core/generic/box-sizing';
-//@import 'node_modules/nhsuk-frontend/packages/core/generic/font-face'; // removed to take Frutiger out
-@import 'node_modules/nhsuk-frontend/packages/core/generic/ie';
-
-// Elements
-@import 'node_modules/nhsuk-frontend/packages/core/elements/forms';
-@import 'node_modules/nhsuk-frontend/packages/core/elements/links';
-@import 'node_modules/nhsuk-frontend/packages/core/elements/page';
-@import 'node_modules/nhsuk-frontend/packages/core/elements/table';
-
-// Objects
-@import 'node_modules/nhsuk-frontend/packages/core/objects/form-group';
-@import 'node_modules/nhsuk-frontend/packages/core/objects/grid';
-@import 'node_modules/nhsuk-frontend/packages/core/objects/main-wrapper';
-@import 'node_modules/nhsuk-frontend/packages/core/objects/width-container';
-
-// Styles
-@import 'node_modules/nhsuk-frontend/packages/core/styles/icons';
-@import 'node_modules/nhsuk-frontend/packages/core/styles/lists';
-@import 'node_modules/nhsuk-frontend/packages/core/styles/section-break';
-@import 'node_modules/nhsuk-frontend/packages/core/styles/typography';
-
-// Utilities
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/clearfix';
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/grid-widths';
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/link-nowrap';
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/reading-width';
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/spacing';
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/typography';
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/visually-hidden';
-@import 'node_modules/nhsuk-frontend/packages/core/utilities/widths';
 
 // start importing the theme specific settings
 @import 'assets/scss/nhs-colours';
-// nhs colour pallette
-@import 'assets/scss/color-mixer';
 // nhs colour pallette
 @import 'assets/scss/generic-overrides';
 // generic over-rides to remove default wordpress styling issues
@@ -98,3 +55,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/emergency_alert';
 // Events Calendar plugin styling to match NHSUK design patterns
 @import 'assets/scss/feedback_banner';
+
+@import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
+@import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
+@import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
+// nhs colour pallette
+@import 'assets/scss/color-mixer';

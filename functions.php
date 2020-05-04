@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.1.0 19th November 2019
+ * @version   2.1.7.1 30th April 2020
  */
 
 /**
@@ -66,6 +66,8 @@ function nightingale_setup() {
 			'comment-list',
 			'gallery',
 			'caption',
+			'script',
+			'style',
 		)
 	);
 
@@ -237,7 +239,8 @@ add_action( 'widgets_init', 'nightingale_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nightingale_scripts() {
-	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), '20191012' );
+	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), '20202704' );
+	wp_enqueue_style( 'nightingale-page-colours', get_template_directory_uri() . '/page-colours.min.css', array(), '20202704' );
 
 	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', '', '20190828', true );
 
@@ -270,19 +273,12 @@ function nightingale_register_required_plugins() {
 		// Load in Gutenberg plugin directly from WP repo.
 		array(
 			'name'         => 'Gutenberg',
-			// The plugin name.
 			'slug'         => 'gutenberg',
-			// The plugin slug (typically the folder name).
 			'source'       => '',
-			// The plugin source.
 			'required'     => false,
-			// If false, the plugin is only 'recommended' instead of required.
-			'version'      => '6.3.0',
-			// E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
+			'version'      => '6.9.1',
 			'external_url' => '',
-			// If set, overrides default API URL and points to an external URL.
 			'is_callable'  => '',
-			// If set, this callable will be be checked for availability to determine if a plugin is active.
 		),
 		// Load in NHSBlocks plugin directly from WP repo.
 		array(
@@ -290,17 +286,7 @@ function nightingale_register_required_plugins() {
 			'slug'         => 'nhsblocks',
 			'source'       => '',
 			'required'     => false,
-			'version'      => '1.0.1',
-			'external_url' => '',
-			'is_callable'  => '',
-		),
-		// Optional activate Cookie Notice plugin.
-		array(
-			'name'         => 'Cookie Notice for GDPR',
-			'slug'         => 'cookie-notice',
-			'source'       => '',
-			'required'     => false,
-			'version'      => '1.2.46',
+			'version'      => '1.1.5',
 			'external_url' => '',
 			'is_callable'  => '',
 		),
@@ -426,7 +412,9 @@ if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
  * The check around the require is to see if the plugin is active on this install
  */
 if ( in_array( 'the-events-calendar/the-events-calendar.php', $active_plugins, true ) ) {
-	require get_template_directory() . '/inc/events-calendar.php';
+	if ( ! is_admin() ) {
+		require get_template_directory() . '/inc/events-calendar.php';
+	}
 }
 
 /*
@@ -454,7 +442,6 @@ require get_template_directory() . '/inc/class-comment-author-role-label.php';
 /**
  * Hijack core/posts block and force own output
  */
-
-require get_template_directory() . '/inc/dynamic-blocks.php';
-
-
+if ( ! is_admin() ) {
+	require get_template_directory() . '/inc/dynamic-blocks.php';
+}

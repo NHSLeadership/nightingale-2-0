@@ -1,13 +1,13 @@
 === Nightingale 2.0 ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.4
+Tested up to: 5.4.1
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.1.2
-Stable tag: 2.1.2
+Version: 2.1.7.1
+Stable tag: 2.1.7.1
 
 
 == Description ==
@@ -23,7 +23,7 @@ Yes, the only restriction being that you need to have WordPress running first :)
 Yes, it is open source code and can be used anywhere. However, you may not use the NHS logo or pass your site off as an NHS organisation if you are not.
 
 = Do you offer support? =
-Yes, either through the themes support pages on WordPress, or via our GitHub project https://github.com/NHSLeadership/nightingale
+Yes, either through the themes support pages on WordPress, or via our GitHub project https://github.com/NHSLeadership/nightingale-2-0/
 
 = Can I get involved? =
 Yes - please do! Whether you work in the NHS or would just like to contribute, we are happy to involve the wider
@@ -42,6 +42,76 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+= 2.1.7.1 =
+Maintenance release
+ * style.min.css updated (error on previous upload had min out of step with the uncompressed css)
+ * Gravity form error duplication removed (when a required field is not complete for example, an error message was
+ showing twice.)
+ * White header option on different colours improved
+ * Language modified on white header option in customiser
+ * suppressed readmore action in admin
+ * Header styling bought into closer alignment to nhs.uk
+
+= 2.1.7 =
+Public release
+ * Removed horrid yellow background on logo hover
+ * removed duplicated error messages in gravity forms
+ * added styling for blocks (blocks plugin has a conditional to avoid duplication)
+ * Added excerpt abilities for pages
+ * added readmore link to search and archive results
+ * removed zip file from git repo
+ * bumped versions on gutenberg-style to ensure latest version pulled in
+ * corrected copyright conditional (was echoing $organisation name outside of element)
+
+= 2.1.6 =
+
+Gravity Forms changes:
+ * Duplicated titles for radios, checkboxes, sections and html blocks all removed.
+ * Radios are now selectable by clicking text
+ * Keyboard navigation fixed
+ * Button styling corrected (prev/next were inverted colours)
+ * Progress bar bought into nhsuk styling
+ * Address fields corrected (values were being lost when navigating to / from)
+ * Form description changed from small class to nhsuk-hint to make more readable
+
+Colour switcher changes:
+ * colour switching styles removed into their own page-colours.scss file
+ * Page specific colours brought into same routine
+ * inline style removed, all styles now loaded in standalone css
+ * colours apply to all inner blocks, menus and content automatically
+ * colours applied top gravity elements where relevant
+
+Header element changes:
+ * transactional title drops to below logo on ipad / mobile view to prevent clashes with menu button
+ * menu button and menu expander (on mobile) corrected so positions where it should when search disabled
+ * Search opens in correct way on mobile view and is actually usable now.
+ * Menu on mobile has white background for readability
+ * Menu hover on desktop view is darker shade of selected colour.
+
+Other changes:
+ * excerpts corrected in admin view
+ * 404 search form corrected on mobile view
+ * LearnDash tweaks to improve display and consistency
+ * breadcrumbs tidied up on search pages and 404 page
+ * nhsuk-frontend updated to 3.1.0
+
+= 2.1.5 =
+ * admin panel experience massively improved (please ensure you also update nhsblocks plugin - see above to get maximum
+ benefit)
+ * Added filters to enable post author, post date and post thumbnail to be suppressed on individual post pages
+ * learndash styling improvements
+ * menu button floating issues resolved in mobile view
+ * Frutiger font stubborn remnants removed.
+ * Search and input boxes styling bought into alignment with nhsuk styling principles
+ * Weird shadow removed from header buttons
+ * Search results page now shows in nice panels and looks a lot more akin to the rest of the site display
+= 2.1.4 =
+ * nhsuk frontend called in using new nhsuk-replacement.scss (previously there were duplicate calls to a file making the
+  output css contain duplicates and also bypassing my removal of the frutiger font loading)
+ * textdomain corrected
+ * readmore function completely removed along with any references to it.
+
 = 2.1.3 =
  * Readmore function in template-functions.php now returns null. 99% certain this is now deprecated and can be removed,
  but for safety left in with a zero return.
@@ -150,8 +220,9 @@ Additional customiser options and refined display output:
 
 == Upgrade Notice ==
 
-= 2.0.7 =
- * Please upgrade to 2.0.7 for reasons
+= 2.1.7.1 =
+ * Please upgrade to 2.1.7.1 as previous release had incorrect style.min.css included, and this release also fixes white
+  header variant when a different base colour is selected
 
  == Copyright ==
 

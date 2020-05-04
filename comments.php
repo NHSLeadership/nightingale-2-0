@@ -73,7 +73,11 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	// Customized strings for the comment form.
+	$commentform_args = [
+		'title_reply' => __( 'Leave a Comment', 'nightingale' ),
+	];
+	comment_form( $commentform_args );
 	?>
 
 </div><!-- #comments -->
