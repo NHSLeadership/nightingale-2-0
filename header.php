@@ -53,16 +53,17 @@ echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $
 	get_template_part( 'partials/logo' );
 	?>
 	<div class="nhsuk-header__content" id="content-header">
-
-		<div class="nhsuk-header__menu">
+	<?php
+		$header_search = get_theme_mod('show_search', 'yes' );
+		?>
+		<div class="nhsuk-header__menu <?php if ( $header_search === 'no' ) echo "nhsuk-header__menu--only"; ?>" >
 			<button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
 					aria-label="Open menu">Menu
 			</button>
 		</div>
 
 		<?php
-		$header_search = get_theme_mod( 'show_search', 'yes' );
-		if ( 'yes' === $header_search ) {
+		if ( $header_search === 'yes' ) {
 			?>
 			<div class="nhsuk-header__search">
 				<?php get_search_form(); ?>
