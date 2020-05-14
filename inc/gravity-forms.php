@@ -87,8 +87,9 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$errorflag  = 0;
 		$grouperror = '';
 	}
+	$label = '';
 	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
-		$label = '<label class="nhsuk-label">' . $field->label;
+		$label =. '<label class="nhsuk-label">' . $field->label;
 
 		if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 			$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
