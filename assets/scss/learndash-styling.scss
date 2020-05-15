@@ -422,7 +422,7 @@
       position: relative;
       padding-bottom: 120px;
       .ld_course_grid_price {
-        background: $color_nhsuk-green;
+        background: $color_nhsuk-green !important;
 
         &:before {
           border-top: 4px solid $color_nhsuk-dark-grey;
