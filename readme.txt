@@ -43,6 +43,12 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+= 2.1.7.2 =
+Maintenance release
+ * Modified hover actions on header to ensure consistency with nhsuk library
+ * Tweaked LearnDash completion flag styling
+ * Repaired Gravity Forms inc file to set vars correctly
+
 = 2.1.7.1 =
 Maintenance release
  * style.min.css updated (error on previous upload had min out of step with the uncompressed css)
