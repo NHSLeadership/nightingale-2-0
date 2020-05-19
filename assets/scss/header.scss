@@ -63,13 +63,16 @@
 	padding    : nhsuk-spacing(2);
   }
 
-  a.nhsuk-header__transactional-service-name--link {
-	font-weight : $nhsuk-font-bold;
-	color       : $color_nhsuk-white;
+  .nhsuk-header__transactional-service-name {
+	a.nhsuk-header__transactional-service-name--link {
+	  font-weight : $nhsuk-font-bold;
+	  color       : $color_nhsuk-white;
 
-	&:hover {
-	  text-decoration  : none;
-	  background-color : transparent;
+	  &:hover {
+		text-decoration  : none;
+		background-color : transparent;
+		color            : $color_nhsuk-white;
+	  }
 	}
   }
 
@@ -173,17 +176,17 @@
 	  fill : $color_nhsuk-white;
 	}
 	.nhsuk-header__container {
-      position: relative;
-      min-height: 110px;
-      .nhsuk-header__logo {
-        position: relative;
-        top: -10px;
-        &+.nhsuk-header__transactional-service-name {
-          position : absolute;
-          top      : 50px;
-        }
-      }
-    }
+	  position: relative;
+	  min-height: 110px;
+	  .nhsuk-header__logo {
+		position: relative;
+		top: -10px;
+		&+.nhsuk-header__transactional-service-name {
+		  position : absolute;
+		  top      : 50px;
+		}
+	  }
+	}
   }
 
   &.nhsuk-header--transactional {
@@ -205,8 +208,7 @@
 		background : inherit;
 
 		a {
-		  color : inherit;
-		  text-decoration: underline;
+		  color : $color_nhsuk-white;
 		}
 	  }
 	}
@@ -215,8 +217,26 @@
 	  background : inherit;
 
 	  a {
-		color : inherit;
-		text-decoration: underline;
+		color : $color_nhsuk-white;
+		text-decoration: none;
+	  }
+	}
+	&.nhsuk-header--white {
+	  .nhsuk-header__logo:focus, .nhsuk-header__logo:active, .nhsuk-header__logo:hover {
+
+		&+.nhsuk-header__transactional-service-name {
+
+		  a {
+			color : inherit;
+		  }
+		}
+	  }
+	  .nhsuk-header__transactional-service-name:focus, .nhsuk-header__transactional-service-name:active, .nhsuk-header__transactional-service-name:hover {
+		background : inherit;
+
+		a {
+		  color           : inherit;
+		}
 	  }
 	}
   }
