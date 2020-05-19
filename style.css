@@ -10618,14 +10618,15 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 8px;
 }
 
-.nhsuk-header a.nhsuk-header__transactional-service-name--link {
+.nhsuk-header .nhsuk-header__transactional-service-name a.nhsuk-header__transactional-service-name--link {
   font-weight: 600;
   color: #ffffff;
 }
 
-.nhsuk-header a.nhsuk-header__transactional-service-name--link:hover {
+.nhsuk-header .nhsuk-header__transactional-service-name a.nhsuk-header__transactional-service-name--link:hover {
   text-decoration: none;
   background-color: transparent;
+  color: #ffffff;
 }
 
 .nhsuk-header .nhsuk-search__input {
@@ -10752,8 +10753,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:focus + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:active + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:hover + .nhsuk-header__transactional-service-name a {
-  color: inherit;
-  text-decoration: underline;
+  color: #ffffff;
 }
 
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:focus, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:active, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:hover {
@@ -10761,8 +10761,20 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:focus a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:active a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:hover a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__logo:focus + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__logo:active + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__logo:hover + .nhsuk-header__transactional-service-name a {
   color: inherit;
-  text-decoration: underline;
+}
+
+.nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:focus, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:active, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:hover {
+  background: inherit;
+}
+
+.nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:focus a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:active a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:hover a {
+  color: inherit;
 }
 
 .nhsuk-header__container {
