@@ -12482,6 +12482,36 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   width: 100%;
 }
 
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning, .nhsuk-inset-text.is-style-quote-warning {
+  border-left-color: #ffeb3b;
+}
+
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning-reverse, .nhsuk-inset-text.is-style-quote-warning-reverse {
+  background: #ffeb3b;
+  border: 10px solid #ffeb3b;
+  box-shadow: inset 12px 0px 0px 0px #212b32;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #212b32;
+  width: 100%;
+}
+
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert, .is-style-quote-alert.nhsuk-inset-text {
+  border-left-color: #d5281b;
+}
+
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert-reverse, .is-style-quote-alert-reverse.nhsuk-inset-text {
+  background: #d5281b;
+  border: 10px solid #d5281b;
+  box-shadow: inset 12px 0px 0px 0px #ffffff;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #ffffff;
+  width: 100%;
+}
+
 .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
 }
@@ -12682,7 +12712,7 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
 }
 
 /* Inset text inverted link amendment */
-.nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a {
+.nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a {
   color: #ffffff;
   font-weight: 700;
 }

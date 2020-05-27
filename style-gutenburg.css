@@ -9998,6 +9998,36 @@
   width: 100%;
 }
 
+.edit-post-visual-editor #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning, .edit-post-visual-editor .nhsuk-inset-text.is-style-quote-warning, .block-editor-block-styles #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning, .block-editor-block-styles .nhsuk-inset-text.is-style-quote-warning {
+  border-left-color: #ffeb3b;
+}
+
+.edit-post-visual-editor #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning-reverse, .edit-post-visual-editor .nhsuk-inset-text.is-style-quote-warning-reverse, .block-editor-block-styles #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning-reverse, .block-editor-block-styles .nhsuk-inset-text.is-style-quote-warning-reverse {
+  background: #ffeb3b;
+  border: 10px solid #ffeb3b;
+  box-shadow: inset 12px 0px 0px 0px #212b32;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #212b32;
+  width: 100%;
+}
+
+.edit-post-visual-editor #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert, .edit-post-visual-editor .is-style-quote-alert.nhsuk-inset-text, .block-editor-block-styles #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert, .block-editor-block-styles .is-style-quote-alert.nhsuk-inset-text {
+  border-left-color: #d5281b;
+}
+
+.edit-post-visual-editor #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert-reverse, .edit-post-visual-editor .is-style-quote-alert-reverse.nhsuk-inset-text, .block-editor-block-styles #content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert-reverse, .block-editor-block-styles .is-style-quote-alert-reverse.nhsuk-inset-text {
+  background: #d5281b;
+  border: 10px solid #d5281b;
+  box-shadow: inset 12px 0px 0px 0px #ffffff;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #ffffff;
+  width: 100%;
+}
+
 .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
 }
@@ -10248,7 +10278,7 @@
   height: 34px;
 }
 
-.edit-post-visual-editor .nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a, .block-editor-block-styles .nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a {
+.edit-post-visual-editor .nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a, .block-editor-block-styles .nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a {
   color: #ffffff;
   font-weight: 700;
 }

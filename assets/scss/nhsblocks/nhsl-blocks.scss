@@ -110,6 +110,33 @@
   color: $color_nhsuk-white;
   width: 100%;
 }
+//warning and alert inset text
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning, .nhsuk-inset-text.is-style-quote-warning {
+  border-left-color: $color_nhsuk-yellow;
+}
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning-reverse, .nhsuk-inset-text.is-style-quote-warning-reverse {
+  background: $color_nhsuk-yellow;
+  border: 10px solid $color_nhsuk-yellow;
+  box-shadow: inset 12px 0px 0px 0px $color_nhsuk-black;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: $color_nhsuk-black;
+  width: 100%;
+}
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert, .is-style-quote-alert.nhsuk-inset-text {
+  border-left-color: $color_nhsuk-red;
+}
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert-reverse, .is-style-quote-alert-reverse.nhsuk-inset-text {
+  background: $color_nhsuk-red;
+  border: 10px solid $color_nhsuk-red;
+  box-shadow: inset 12px 0px 0px 0px $color_nhsuk-white;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: $color_nhsuk-white;
+  width: 100%;
+}
 
 .nhsuk-promo .nhsuk-promo__content{
   .nhsuk-image{
