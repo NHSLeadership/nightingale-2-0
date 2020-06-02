@@ -45,8 +45,9 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 = 2.1.7.3
 Maintenance release
- * Updated styling for nhsblocks plugin to match update
+ * Updated styling for nhsblocks plugin to match update to nhsblocks 1.1.6
  * Removed requirement for Gutenberg plugin.
+ *
 
 
 = 2.1.7.2 =

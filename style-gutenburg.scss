@@ -1,4 +1,4 @@
-.edit-post-visual-editor, .block-editor-block-styles { // target only the editor itself
+.edit-post-visual-editor, .block-editor-block-styles, .block-editor-inserter__menu-help-panel { // target only the editor itself
   //@import 'node_modules/nhsuk-frontend/packages/nhsuk';
 
   @import 'assets/scss/nhsuk-replacement';
