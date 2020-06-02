@@ -6,6 +6,42 @@
     font-weight: $nhsuk-font-bold;
   }
 }
+.tingle-modal-box {
+  .ginput_container_checkbox {
+    @extend .nhsuk-checkboxes !optional;
+    .gfield_checkbox {
+      li {
+        @extend .nhsuk-checkboxes__item;
+        label {
+          @extend .nhsuk-label;
+          @extend .nhsuk-checkboxes__label;
+          padding-left: 50px;
+        }
+        input {
+          @extend .nhsuk-checkboxes__input;
+        }
+      }
+    }
+  }
+  .ginput_container_radio {
+    @extend .nhsuk-radios !optional;
+    .gfield_radio {
+      li {
+        @extend .nhsuk-radios__item;
+
+        input {
+          @extend .nhsuk-radios__input;
+        }
+
+        label {
+          @extend .nhsuk-label;
+          @extend .nhsuk-radios__label;
+          padding-left : 50px;
+        }
+      }
+    }
+  }
+}
 .gform_wrapper {
   margin-top: 0 !important;
   .gf_progressbar_wrapper {

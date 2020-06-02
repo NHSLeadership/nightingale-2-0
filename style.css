@@ -5080,7 +5080,7 @@ input.is-style-reverse[disabled]:active[type="submit"],
  * 1. remove 300ms pause on mobile.
  * 2. Fix bug in IE11 caused by transform rotate (-45deg).
  */
-.nhsuk-checkboxes__item, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent {
+.nhsuk-checkboxes__item, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -5094,7 +5094,7 @@ input.is-style-reverse[disabled]:active[type="submit"],
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-checkboxes__item, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent {
+  .nhsuk-checkboxes__item, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -5102,19 +5102,20 @@ input.is-style-reverse[disabled]:active[type="submit"],
 }
 
 @media print {
-  .nhsuk-checkboxes__item, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent {
+  .nhsuk-checkboxes__item, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-checkboxes__item:last-child, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent:last-child,
+.nhsuk-checkboxes__item:last-child, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent:last-child, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li:last-child,
 .nhsuk-checkboxes__item:last-of-type,
-.nhsuk-list-panel .comment-respond .comment-form-cookies-consent:last-of-type {
+.nhsuk-list-panel .comment-respond .comment-form-cookies-consent:last-of-type,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li:last-of-type {
   margin-bottom: 0;
 }
 
-.nhsuk-checkboxes__input, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] {
+.nhsuk-checkboxes__input, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"], .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input {
   cursor: pointer;
   height: 40px;
   left: 0;
@@ -5126,7 +5127,7 @@ input.is-style-reverse[disabled]:active[type="submit"],
   z-index: 1;
 }
 
-.nhsuk-checkboxes__label, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ label {
+.nhsuk-checkboxes__label, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
   -ms-touch-action: manipulation;
   /* 1 */
   cursor: pointer;
@@ -5142,7 +5143,7 @@ input.is-style-reverse[disabled]:active[type="submit"],
   padding-right: 12px;
 }
 
-.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input + label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + label::before {
+.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input + label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ input + label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] ~ input + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input + label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + label::before {
   background: #ffffff;
   border: 2px solid #4c6272;
   box-sizing: border-box;
@@ -5154,7 +5155,7 @@ input.is-style-reverse[disabled]:active[type="submit"],
   width: 40px;
 }
 
-.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input + label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + label::after {
+.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input + label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ input + label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] ~ input + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input + label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + label::after {
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   background: transparent;
@@ -5179,7 +5180,7 @@ input.is-style-reverse[disabled]:active[type="submit"],
  *    We set a transparent outline that is shown instead.
  *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
  */
-.nhsuk-checkboxes__input:focus + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:focus[type="checkbox"] + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input:focus + label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:focus[type="checkbox"] + label::before {
+.nhsuk-checkboxes__input:focus + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:focus[type="checkbox"] + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + .nhsuk-checkboxes__label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input:focus + label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:focus[type="checkbox"] + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ input:focus + label::before, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] ~ input:focus + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:focus + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + label::before {
   border: 4px solid #212b32;
   box-shadow: 0 0 0 4px #ffeb3b;
   outline: 4px solid transparent;
@@ -5188,24 +5189,34 @@ input.is-style-reverse[disabled]:active[type="submit"],
 }
 
 /* Selected state */
-.nhsuk-checkboxes__input:checked + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:checked[type="checkbox"] + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input:checked + label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:checked[type="checkbox"] + label::after {
+.nhsuk-checkboxes__input:checked + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:checked[type="checkbox"] + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + .nhsuk-checkboxes__label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input:checked + label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:checked[type="checkbox"] + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ input:checked + label::after, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] ~ input:checked + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:checked + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + label::after {
   opacity: 1;
 }
 
 /* Disabled state */
-.nhsuk-checkboxes__input:disabled, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"],
+.nhsuk-checkboxes__input:disabled, .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"], .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled,
 .nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label,
 .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"] + .nhsuk-checkboxes__label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + .nhsuk-checkboxes__label,
 .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input:disabled + label,
-.nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"] + label {
+.nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"] + label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ input:disabled + label,
+.nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] ~ input:disabled + label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:disabled + label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + label {
   cursor: default;
 }
 
 
 .nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label,
 .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"] + .nhsuk-checkboxes__label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + .nhsuk-checkboxes__label,
 .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ .nhsuk-checkboxes__input:disabled + label,
-.nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"] + label {
+.nhsuk-list-panel .comment-respond .comment-form-cookies-consent input:disabled[type="checkbox"] + label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-list-panel .comment-respond .comment-form-cookies-consent input[type="checkbox"] ~ input:disabled + label,
+.nhsuk-list-panel .comment-respond .comment-form-cookies-consent .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input[type="checkbox"] ~ input:disabled + label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:disabled + label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + label {
   opacity: .5;
 }
 
@@ -8060,7 +8071,7 @@ input.is-style-reverse[disabled]:active[type="submit"],
   }
 }
 
-.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, #login #loginform label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .nhsuk-list-panel .comment-respond label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
+.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, #login #loginform label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .nhsuk-list-panel .comment-respond label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .tingle-modal-box .ginput_container_radio .gfield_radio li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
   margin-bottom: 8px;
 }
 
@@ -8398,7 +8409,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /* ==========================================================================
    COMPONENTS/ #LABEL
    ========================================================================== */
-.nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label {
+.nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -8408,7 +8419,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label {
+  .nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -8416,7 +8427,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label {
+  .nhsuk-label, #login #loginform label, .nhsuk-list-panel .comment-respond label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -9512,7 +9523,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
  * 1. remove 300ms pause on mobile.
  * 2. Fix bug in IE11 caused by transform rotate (-45deg).
  */
-.nhsuk-radios__item {
+.nhsuk-radios__item, .tingle-modal-box .ginput_container_radio .gfield_radio li {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -9526,7 +9537,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-radios__item {
+  .nhsuk-radios__item, .tingle-modal-box .ginput_container_radio .gfield_radio li {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9534,18 +9545,19 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-radios__item {
+  .nhsuk-radios__item, .tingle-modal-box .ginput_container_radio .gfield_radio li {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-radios__item:last-child,
-.nhsuk-radios__item:last-of-type {
+.nhsuk-radios__item:last-child, .tingle-modal-box .ginput_container_radio .gfield_radio li:last-child,
+.nhsuk-radios__item:last-of-type,
+.tingle-modal-box .ginput_container_radio .gfield_radio li:last-of-type {
   margin-bottom: 0;
 }
 
-.nhsuk-radios__input {
+.nhsuk-radios__input, .tingle-modal-box .ginput_container_radio .gfield_radio li input {
   cursor: pointer;
   height: 40px;
   left: 0;
@@ -9557,7 +9569,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   z-index: 1;
 }
 
-.nhsuk-radios__label {
+.nhsuk-radios__label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
   -ms-touch-action: manipulation;
   /* 1 */
   cursor: pointer;
@@ -9574,7 +9586,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   padding-right: 12px;
 }
 
-.nhsuk-radios__input + .nhsuk-radios__label::before {
+.nhsuk-radios__input + .nhsuk-radios__label::before, .tingle-modal-box .ginput_container_radio .gfield_radio li input + .nhsuk-radios__label::before, .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input + label::before, .tingle-modal-box .ginput_container_radio .gfield_radio li input + label::before {
   background: #ffffff;
   border: 2px solid #4c6272;
   border-radius: 50%;
@@ -9587,7 +9599,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   width: 40px;
 }
 
-.nhsuk-radios__input + .nhsuk-radios__label::after {
+.nhsuk-radios__input + .nhsuk-radios__label::after, .tingle-modal-box .ginput_container_radio .gfield_radio li input + .nhsuk-radios__label::after, .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input + label::after, .tingle-modal-box .ginput_container_radio .gfield_radio li input + label::after {
   background: #4c6272;
   border: 10px solid #212b32;
   border-radius: 50%;
@@ -9607,7 +9619,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
  *    We set a transparent outline that is shown instead.
  *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
  */
-.nhsuk-radios__input:focus + .nhsuk-radios__label::before {
+.nhsuk-radios__input:focus + .nhsuk-radios__label::before, .tingle-modal-box .ginput_container_radio .gfield_radio li input:focus + .nhsuk-radios__label::before, .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input:focus + label::before, .tingle-modal-box .ginput_container_radio .gfield_radio li input:focus + label::before {
   border: 4px solid #212b32;
   box-shadow: 0 0 0 4px #ffeb3b;
   outline: 4px solid transparent;
@@ -9616,17 +9628,24 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 /* Selected state */
-.nhsuk-radios__input:checked + .nhsuk-radios__label::after {
+.nhsuk-radios__input:checked + .nhsuk-radios__label::after, .tingle-modal-box .ginput_container_radio .gfield_radio li input:checked + .nhsuk-radios__label::after, .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input:checked + label::after, .tingle-modal-box .ginput_container_radio .gfield_radio li input:checked + label::after {
   opacity: 1;
 }
 
 /* Disabled state */
-.nhsuk-radios__input:disabled,
-.nhsuk-radios__input:disabled + .nhsuk-radios__label {
+.nhsuk-radios__input:disabled, .tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled,
+.nhsuk-radios__input:disabled + .nhsuk-radios__label,
+.tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled + .nhsuk-radios__label,
+.tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input:disabled + label,
+.tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled + label {
   cursor: default;
 }
 
-.nhsuk-radios__input:disabled + .nhsuk-radios__label {
+
+.nhsuk-radios__input:disabled + .nhsuk-radios__label,
+.tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled + .nhsuk-radios__label,
+.tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input:disabled + label,
+.tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled + label {
   opacity: .5;
 }
 
@@ -9641,7 +9660,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
     content: '';
     display: block;
   }
-  .nhsuk-radios--inline .nhsuk-radios__item {
+  .nhsuk-radios--inline .nhsuk-radios__item, .nhsuk-radios--inline .tingle-modal-box .ginput_container_radio .gfield_radio li, .tingle-modal-box .ginput_container_radio .gfield_radio .nhsuk-radios--inline li {
     clear: none;
     float: left;
     margin-right: 24px;
@@ -9652,7 +9671,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   /* 1 */
 }
 
-.nhsuk-radios--inline.nhsuk-radios--conditional .nhsuk-radios__item {
+.nhsuk-radios--inline.nhsuk-radios--conditional .nhsuk-radios__item, .nhsuk-radios--inline.nhsuk-radios--conditional .tingle-modal-box .ginput_container_radio .gfield_radio li, .tingle-modal-box .ginput_container_radio .gfield_radio .nhsuk-radios--inline.nhsuk-radios--conditional li {
   float: none;
   margin-right: 0;
 }
@@ -11421,6 +11440,14 @@ aside#secondary > section {
   font-weight: 600;
 }
 
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
+  padding-left: 50px;
+}
+
+.tingle-modal-box .ginput_container_radio .gfield_radio li label {
+  padding-left: 50px;
+}
+
 .gform_wrapper {
   margin-top: 0 !important;
 }
@@ -11731,7 +11758,7 @@ aside#secondary > section {
   border: 2px solid #212b32;
 }
 
-.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList .wpProQuiz_questionListItem .nhsuk-radios__item:last-of-type {
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList .wpProQuiz_questionListItem .nhsuk-radios__item:last-of-type, .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList .wpProQuiz_questionListItem .tingle-modal-box .ginput_container_radio .gfield_radio li:last-of-type, .tingle-modal-box .ginput_container_radio .gfield_radio .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionList .wpProQuiz_questionListItem li:last-of-type {
   margin-bottom: 8px;
 }
 
@@ -12482,6 +12509,36 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   width: 100%;
 }
 
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning, .nhsuk-inset-text.is-style-quote-warning {
+  border-left-color: #ffeb3b;
+}
+
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning-reverse, .nhsuk-inset-text.is-style-quote-warning-reverse {
+  background: #ffeb3b;
+  border: 10px solid #ffeb3b;
+  box-shadow: inset 12px 0px 0px 0px #212b32;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #212b32;
+  width: 100%;
+}
+
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert, .is-style-quote-alert.nhsuk-inset-text {
+  border-left-color: #d5281b;
+}
+
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert-reverse, .is-style-quote-alert-reverse.nhsuk-inset-text {
+  background: #d5281b;
+  border: 10px solid #d5281b;
+  box-shadow: inset 12px 0px 0px 0px #ffffff;
+  box-sizing: border-box;
+  padding-left: 30px;
+  margin: 1rem 0;
+  color: #ffffff;
+  width: 100%;
+}
+
 .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
 }
@@ -12682,7 +12739,7 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
 }
 
 /* Inset text inverted link amendment */
-.nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a {
+.nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a {
   color: #ffffff;
   font-weight: 700;
 }

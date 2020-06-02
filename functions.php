@@ -1,11 +1,11 @@
 <?php
 /**
- * Nightingale 2.0 functions and definitions
+ * Nightingale  functions and definitions
  *
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.1.7.2 19th May 2020
+ * @version   2.1.7.3 29th May 2020
  */
 
 /**
@@ -256,7 +256,7 @@ function nightingale_scripts() {
 add_action( 'wp_enqueue_scripts', 'nightingale_scripts' );
 
 /**
- * Force download of dependancy plugins
+ * Encourage download of dependancy plugins
  */
 require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
 
@@ -270,16 +270,6 @@ function nightingale_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-		// Load in Gutenberg plugin directly from WP repo.
-		array(
-			'name'         => 'Gutenberg',
-			'slug'         => 'gutenberg',
-			'source'       => '',
-			'required'     => false,
-			'version'      => '6.9.1',
-			'external_url' => '',
-			'is_callable'  => '',
-		),
 		// Load in NHSBlocks plugin directly from WP repo.
 		array(
 			'name'         => 'NHS Blocks',
@@ -287,16 +277,6 @@ function nightingale_register_required_plugins() {
 			'source'       => '',
 			'required'     => false,
 			'version'      => '1.1.5',
-			'external_url' => '',
-			'is_callable'  => '',
-		),
-		// Optional Google Tag Manager Plugin.
-		array(
-			'name'         => 'Google Tag Manager for WordPress',
-			'slug'         => 'duracelltomi-google-tag-manager',
-			'source'       => '',
-			'required'     => false,
-			'version'      => '1.11.2',
 			'external_url' => '',
 			'is_callable'  => '',
 		),

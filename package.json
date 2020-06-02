@@ -20,13 +20,13 @@
   "license": "ISC",
   "dependencies": {
     "nhsuk-frontend": "^3.1.0",
-    "node-sass": "^4.14.0",
+    "node-sass": "^4.14.1",
     "nunjucks": "^3.2.1",
-    "penthouse": "^2.2.3",
+    "penthouse": "^2.2.4",
     "scss": "^0.2.4"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.0"
+    "postcss-cli": "^7.1.1"
   }
 }
