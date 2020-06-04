@@ -10580,6 +10580,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
 }
 
+.interim-login header, .interim-login footer {
+  display: none;
+}
+
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
