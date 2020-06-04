@@ -13550,6 +13550,10 @@
   }
 }
 
+.edit-post-visual-editor .interim-login header, .edit-post-visual-editor .interim-login footer, .block-editor-block-styles .interim-login header, .block-editor-block-styles .interim-login footer, .block-editor-inserter__menu-help-panel .interim-login header, .block-editor-inserter__menu-help-panel .interim-login footer {
+  display: none;
+}
+
 .edit-post-visual-editor .editor-post-title__input, .block-editor-block-styles .editor-post-title__input, .block-editor-inserter__menu-help-panel .editor-post-title__input {
   font-family: Frutiger W01, Arial, Sans-serif;
 }
