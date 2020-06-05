@@ -64,6 +64,9 @@ penthouse({
         '.nhsuk-header__navigation',
         '.nhsuk-header__navigation-title',
         '.nhsuk-header__navigation-list',
+        '.nhsuk-header__navigation-list .menu-item',
+        '.nhsuk-header__navigation-list .menu-item a',
+        '.nhsuk-header .nhsuk-header__navigation ul li .nhsuk-icon__chevron-right',
         '.nhsuk-header__navigation-item',
         '.nhsuk-header__navigation-link',
         '.nhsuk-header .nhsuk-header__navigation ul',
@@ -123,7 +126,8 @@ penthouse({
         '.nhsuk-header .nhsuk-header__search-wrap input[type=text]',
         '.nhsuk-header.nhsuk-header--white input[type=text]',
         '.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=text]',
-        '#primary.clear'
+        '#primary.clear',
+        '.nhsuk-global-alert'
     ]
 })
     .then(criticalCss => {
