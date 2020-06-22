@@ -19,23 +19,8 @@
 
   .nhsuk-header__search-wrap input[type="text"] {
 	border-radius : $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
-	padding       : 0 12px;
-
   }
 
-  .nhsuk-header__content {
-	display         : flex;
-	justify-content : flex-end;
-  }
-
-  .nhsuk-header__search {
-	margin-left : 10px;
-
-	&-toggle {
-	  position : relative;
-	  padding  : 6px 8px 0;
-	}
-  }
 
   .nhsuk-header__search-toggle,
   .nhsuk-search__close,
@@ -44,24 +29,7 @@
 	box-shadow : none;
   }
 
-  .nhsuk-header__menu-toggle {
-	right : unset;
-  }
 
-  .autocomplete-container {
-	float : left;
-  }
-
-  .nhsuk-header__search-wrap input[type="text"] {
-	border  : none;
-	padding : 0 12px;
-  }
-
-  .nhsuk-u-visually-hidden {
-	color      : $color_nhsuk-black;
-	background : $color_nhsuk-white;
-	padding    : nhsuk-spacing(2);
-  }
 
   .nhsuk-header__transactional-service-name {
 	a.nhsuk-header__transactional-service-name--link {
@@ -108,7 +76,6 @@
 	.nhsuk-header__search-toggle {
 	  background-color : $color_nhsuk-grey-5;
 	  border-color     : $color_nhsuk-blue;
-	  box-shadow       : none;
 	  color            : $color_nhsuk-blue;
 
 	  .nhsuk-icon__search {
@@ -135,7 +102,7 @@
   }
   @media (max-width : 40.0525em) {
 	.autocomplete__input {
-	  height : 52px;
+	  height : 56px;
 	}
 
   }
