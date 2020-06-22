@@ -171,8 +171,7 @@ img {
 button,
 input,
 optgroup,
-select,
-textarea {
+select {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
@@ -181,16 +180,6 @@ textarea {
   /* 1 */
   margin: 0;
   /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
 }
 
 /**
@@ -366,11 +355,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
   font-family: Frutiger W01,Arial,Sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10421,10 +10406,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 24px 0;
 }
 
-#secondary .nhsuk-header__search-wrap .autocomplete-container {
-  float: left;
-}
-
 #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
   border: 2px solid #f0f4f5;
   border-radius: 4px 0px 0px 4px;
@@ -10436,12 +10417,12 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border: 2px solid #f0f4f5;
   border-left: none;
   float: left;
+  box-shadow: 0 !important;
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
   background-color: #f0f4f5;
   border-color: #005eb8;
-  box-shadow: none;
   color: #005eb8;
 }
 
@@ -10458,30 +10439,9 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   fill: #ffffff;
 }
 
-.nhsuk-search__submit {
-  box-shadow: none;
-}
-
 @media (min-width: 40.0625em) {
   .nhsuk-search__submit {
     padding-top: 6px;
-  }
-}
-
-@media (max-width: 40.0525em) {
-  .nhsuk-header__search-wrap.js-show {
-    position: absolute;
-    right: 0;
-    top: 46px;
-    background: #ffffff;
-    z-index: 9999;
-    width: 100vw;
-  }
-  .nhsuk-header__search-wrap.js-show .nhsuk-header__search-form {
-    padding: 0 24px;
-  }
-  .nhsuk-header__search-wrap.js-show #autocomplete-container input[type=text] {
-    border: 1px solid #aeb7bd;
   }
 }
 
@@ -10513,7 +10473,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
   background-color: #f0f4f5;
   border-color: #005eb8;
-  box-shadow: none;
   color: #005eb8;
 }
 
@@ -10602,21 +10561,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 4px 0px 0px 4px;
-  padding: 0 12px;
-}
-
-.nhsuk-header .nhsuk-header__content {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nhsuk-header .nhsuk-header__search {
-  margin-left: 10px;
-}
-
-.nhsuk-header .nhsuk-header__search-toggle {
-  position: relative;
-  padding: 6px 8px 0;
 }
 
 .nhsuk-header .nhsuk-header__search-toggle,
@@ -10624,25 +10568,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 .nhsuk-header .nhsuk-header__navigation-close,
 .nhsuk-header .nhsuk-header__menu-toggle {
   box-shadow: none;
-}
-
-.nhsuk-header .nhsuk-header__menu-toggle {
-  right: unset;
-}
-
-.nhsuk-header .autocomplete-container {
-  float: left;
-}
-
-.nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
-  border: none;
-  padding: 0 12px;
-}
-
-.nhsuk-header .nhsuk-u-visually-hidden {
-  color: #212b32;
-  background: #ffffff;
-  padding: 8px;
 }
 
 .nhsuk-header .nhsuk-header__transactional-service-name a.nhsuk-header__transactional-service-name--link {
@@ -10684,7 +10609,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   background-color: #f0f4f5;
   border-color: #005eb8;
-  box-shadow: none;
   color: #005eb8;
 }
 
@@ -10713,7 +10637,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 @media (max-width: 40.0525em) {
   .nhsuk-header .autocomplete__input {
-    height: 52px;
+    height: 56px;
   }
 }
 

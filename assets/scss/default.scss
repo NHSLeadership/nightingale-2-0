@@ -155,22 +155,11 @@ img {
 button,
 input,
 optgroup,
-select,
-textarea {
+select {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input { /* 1 */
-  overflow: visible;
 }
 
 /**
@@ -352,11 +341,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
   font-family: Frutiger W01,Arial,Sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
