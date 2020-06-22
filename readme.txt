@@ -1,13 +1,13 @@
 === Nightingale 2.0 ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.4.1
+Tested up to: 5.4.2
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.1.7.3
-Stable tag: 2.1.7.3
+Version: 2.1.8
+Stable tag: 2.1.8
 
 
 == Description ==
@@ -43,11 +43,20 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
-= 2.1.7.3
+= 2.1.8
 Maintenance release
  * Updated styling for nhsblocks plugin to match update to nhsblocks 1.1.6
- * Removed requirement for Gutenberg plugin.
- *
+ * Removed requirement for Gutenberg plugin. Unless you have other plugins requiring Gutenberg as a plugin, we very
+ strongly recommend you remove the Gutenberg plugin from your installation as it is no longer required.
+ * Updated penthouse npm library
+ * Fixed header flex styling
+ * fixed search popup in smaller screen displays to match nhsuk functionality
+ * Added in recommendation to use nightingale-companion plugin (adds performance, seo and accessibility functionality
+ that is not suitable for theme packages but adds real benefit to website usage). Version 1.0.2 recommended
+ * Minor tweak to criticalcss to minimise screen flicker
+ * Improvements to a11y functionality
+ * Added screen reader capability to care cards
+
 
 
 = 2.1.7.2 =
