@@ -288,7 +288,7 @@ function nightingale_register_required_plugins() {
 			'version'      => '1.0.2',
 			'external_url' => '',
 			'is_callable'  => '',
-		)
+		),
 	);
 
 	/*

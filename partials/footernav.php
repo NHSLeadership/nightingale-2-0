@@ -30,7 +30,7 @@ if ( has_nav_menu( 'footer-menu' ) ) { // Check to see if there is a footer menu
 
 			?>
 		</ul>
-        <div style="height: 10px; width: 100%;"></div>
+		<div style="height: 10px; width: 100%;"></div>
 		<?php
 	} //end if footer menu exists
 } // end check to see if menu is assigned.

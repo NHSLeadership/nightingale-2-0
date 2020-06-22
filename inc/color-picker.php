@@ -60,7 +60,7 @@ function nightingale_render_colourpicker( $post ) {
 
 			<?php $select = esc_attr( sanitize_title( $colour ) ) === $sidebar ? 'selected' : ''; ?>
 
-			<option value="<?php echo esc_attr( sanitize_title( $colour ) ); ?>" <?php echo esc_attr( $select ); ?> ><?php echo esc_attr( $colour ); ?></option>
+			<option value="<?php echo esc_attr( sanitize_title( $colour ) ); ?>" <?php echo esc_html( $select ); ?> ><?php echo esc_html( $colour ); ?></option>
 
 		<?php endforeach; ?>
 	</select>
