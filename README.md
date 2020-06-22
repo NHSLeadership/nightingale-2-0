@@ -1,9 +1,15 @@
-# Nightingale 2.1.7
-<img src="https://img.shields.io/badge/nightingale-v2.1.7-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend"><img src="https://img.shields.io/badge/nhsuk--frontend-v3.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
+# Nightingale 2.1.8
+<img src="https://img.shields.io/badge/nightingale-v2.1.8-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend
+"><img src="https://img.shields.io/badge/nhsuk--frontend-v3.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
 
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
-:exclamation: 2.1.0 - For WP theme review compliance, certain elements have been modified in this release
-. Performance tweaks, the NHS logo being displayed by default and the Frutiger font have all been removed. Please be
+
+:exclamation: 2.1.8 - This release removes the requirement for Gutenberg as a standalone plugin, and we strongly
+ advise that unless you need the Gutenberg plugin for other functionality you remove the plugin. The NHSBlocks plugin
+  no longer requires Gutenberg, instead using the core version included with WordPress, which in turn improves the
+   stability of the whole ecosystem.
+   
+:exclamation: 2.1.0 - For WP theme review compliance, certain elements have been modified in this release. Performance tweaks, the NHS logo being displayed by default and the Frutiger font have all been removed. Please be
  aware of this before updating, and recognise you may need to modify your customiser settings after upgrade to keep
   your site looking the same
   
@@ -52,9 +58,12 @@ The Frutiger font is specified for use on NHS web properties, but is only licens
 ## Installation
  - Add to your WordPress files, in the `wp-content/themes` folder
  - Activate the theme
-   - You will be prompted to install the Gutenberg plugin. Please do so and activate it. 
-   - You will be prompted to install the NHS Blocks plugin. Please do so and activate it.
-   - You will be advised to install Cookie Notice plugin (see `Optional Settings` section below)
+   - ~~You will be prompted to install the Gutenberg plugin. Please do so and activate it~~. 
+   - You will be prompted to install the NHS Blocks plugin. Please do so and activate it. This adds pre-configured
+    components to your page/post editing pages to keep within the NHSUK design framework.
+   - You will be prompted to install the Nightingale Companion plugin. Please do so and activate it. This adds
+    important performance and functionality improvements.
+   - ~~You will be advised to install Cookie Notice plugin (see `Optional Settings` section below)~~
  - To populate the site with basic elements, we suggest the following:
    - Enable the subpages widget in the sidebar. Configuration works best if you select *use parent page as title*, *show subpages*, and *enable ul for subpages*
    - Create a top menu assigned to the Main Menu region and add your default homepage. You can add extra pages later. N.B. the top menu will only show top level links, it does not display any dropdowns for sub pages (hence the need for the subpages widget in sidebar)
@@ -62,14 +71,8 @@ The Frutiger font is specified for use on NHS web properties, but is only licens
  - Userguide for theme customiser and options is available at https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
  
 ## Optional Settings
- - `Cookie Notice plugin` - This adds a cookie notice banner to your site. You can modify the text that displays, and
-  this gives your users an easy to use way of opting out of cookies. This, however, is an implied consent approach to
-   cookies. If you wish to have an informed consent route to cookie adoption, you will need an alternative solution.
  - This theme will suggest you pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via 
-    `node` if you install using the optional commands above
- - [Gutenberg](https://en-gb.wordpress.org/plugins/gutenberg/) - this will be prompted as a suggested install on theme 
-     activation and is a requirement for the NHS Blocks plugin. This extends the native Gutenberg WP functionality to 
-     include latest developments.
+    `node` if you install using the optional commands above for local development of the theme itself.
 - [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) - This is an easy way to install the Google Tag Manager code
   on your site. Once installed and activated go to Settings -> Google Tag Manager and enter your Google Tag Manager ID in the box. Under 'Container code placement'
   choose 'Custom (needs tweak in your template)'. You don't need to add anything else to the theme as this code has been added for you.
@@ -88,7 +91,8 @@ To accomplish this, you will need to take the following steps:
  - Compile the css from all the downstream libraries and local files `npm run build`
  - Compress the css output `npm run compress`
  - Regenerate the critical css `npm run critical`
- ##### Alternatively, if you only wish to modify minimal css for a single site, you can use the Custom CSS section within the theme customiser section.
+
+Alternatively, if you only wish to modify minimal css for a single site, you can use the Custom CSS section within the theme customiser section.
    
 ## Please note
  - XML/RPC is still enabled - this is a WordPress default, but will trigger National Cyber Security Centre monitoring alerts. To disable XML-RPC you can add:
@@ -139,11 +143,12 @@ This theme has been extended to style the following plugins automatically:
  
  Deprecated / Removed
  
- - [x] Emergency alert - Deprecated
+ - [x] Emergency alert - (moved to Nightingale-Companion plugin)
  - [x] Feedback Banner - Removed (plugin functionality rather than presentation)
  - [x] Custom Gutenburg Blocks (moved to NHSBlocks plugin)
  - [x] Native Gutenberg blocks (moved to NHSBlocks)
  - [x] Add Hero banner (moved to NHSBlocks plugin)
+ - [x] Performance Improvements (moved to Nightingale-Companion plugin)
  
  ## Licence
  
