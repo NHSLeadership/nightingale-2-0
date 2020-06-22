@@ -1,6 +1,9 @@
 .edit-post-visual-editor, .block-editor-block-styles, .block-editor-inserter__menu-help-panel { // target only the editor itself
   //@import 'node_modules/nhsuk-frontend/packages/nhsuk';
-
+  [data-type="nhsblocks/stripesblock"] {
+    margin-left: 16px;
+    max-width: 100%;
+  }
   @import 'assets/scss/nhsuk-replacement';
   ul {
     list-style: none;
