@@ -347,6 +347,14 @@
   }
 }
 
+// fix middle of three blocks so it is the same width as outside blocks.
+.nhsuk-grid-row {
+  .nhsuk-panel-group {
+	.nhsuk-grid-column-one-third:nth-of-type(3n+1) {
+	  padding : 0 8px;
+	}
+  }
+}
 .interim-login {
   header, footer {
 	display: none;
