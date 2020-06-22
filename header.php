@@ -14,7 +14,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -55,10 +55,15 @@ echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $
 	?>
 	<div class="nhsuk-header__content" id="content-header">
 
-        <?php
-			$header_search = get_theme_mod('show_search', 'yes' );
+		<?php
+		$header_search = get_theme_mod( 'show_search', 'yes' );
+		if ( 'no' === $header_search ) {
+			$headersearchextra = 'nhsuk-header__menu--only';
+		} else {
+			$headersearchextra = '';
+		}
 		?>
-        <div class="nhsuk-header__menu <?php if ( 'no' === $header_search ) echo "nhsuk-header__menu--only"; ?>" >
+		<div class="nhsuk-header__menu <?php echo esc_attr( $headersearchextra ); ?>">
 			<button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation"
 					aria-label="Open menu">Menu
 			</button>
