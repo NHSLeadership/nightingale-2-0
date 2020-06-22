@@ -221,7 +221,7 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $defaults ); ?>
 
 		<p>
-			<label for="title"><?php esc_attr_e( 'Title:', 'nightingale' ); ?></label>
+			<label for="title"><?php esc_html_e( 'Title:', 'nightingale' ); ?></label>
 			<input class="widefat" type="text" id="title" <?php echo 'name="' . esc_attr( $this->get_field_name( 'title' ) ) . '" value="' . esc_attr( $instance['title'] ) . '"'; ?> />
 		</p>
 
