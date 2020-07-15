@@ -349,5 +349,14 @@
     @include clearfix();
   }
 
+  // Download Monitor plugin styling to match NHSUK design patterns
+  .dlmPreviewButton {
+    padding: 0;
+    min-height: 50px;
+    border: 2px dashed $color-nhsuk-dark-grey;
+    iframe {
+      min-height: 50px;
+    }
+  }
   @import 'assets/scss/color-mixer';//gutenberg page style overrides
 }
