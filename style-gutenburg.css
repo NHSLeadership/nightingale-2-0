@@ -13401,6 +13401,7 @@
 .edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles #secondary .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-inserter__menu-help-panel #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
   border: 2px solid #f0f4f5;
   border-left: none;
+  box-shadow: 0;
   float: left;
   box-shadow: 0 !important;
 }

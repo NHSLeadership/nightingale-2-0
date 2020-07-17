@@ -10417,6 +10417,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
   border: 2px solid #f0f4f5;
   border-left: none;
+  box-shadow: 0;
   float: left;
   box-shadow: 0 !important;
 }
@@ -10567,7 +10568,8 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 .nhsuk-header .nhsuk-header__search-toggle,
 .nhsuk-header .nhsuk-search__close,
 .nhsuk-header .nhsuk-header__navigation-close,
-.nhsuk-header .nhsuk-header__menu-toggle {
+.nhsuk-header .nhsuk-header__menu-toggle,
+.nhsuk-header .nhsuk-search__submit {
   box-shadow: none;
 }
 
