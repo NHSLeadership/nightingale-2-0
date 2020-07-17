@@ -1,9 +1,6 @@
 .edit-post-visual-editor, .block-editor-block-styles, .block-editor-inserter__menu-help-panel { // target only the editor itself
   //@import 'node_modules/nhsuk-frontend/packages/nhsuk';
-  [data-type="nhsblocks/stripesblock"] {
-    margin-left: 16px;
-    max-width: 100%;
-  }
+
   @import 'assets/scss/nhsuk-replacement';
   ul {
     list-style: none;
@@ -47,7 +44,16 @@
   @import 'assets/scss/style_variations';// style variations
   @import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
   @import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
-
+  [data-type="nhsblocks/stripesblock"] {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 36px !important;
+    margin-right: 36px !important;
+    [data-type="nhsblocks/stripeblock"] {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
   //promo panel blockquote address button
   .nhsuk-promo {
     background : $color_nhsuk-white;

@@ -83,6 +83,12 @@
   @extend .nhsuk-promo--small;
 }
 
+.nhsuk-promo {
+  figure {
+    margin: 0;
+  }
+}
+
 /*do and dont list extension*/
 .nhsuk-do-dont-list {
 
@@ -119,6 +125,9 @@
 
 .nhsuk-hero__overlay {
   margin-bottom: 50px;
+  .nhsuk-grid-column-two-thirds {
+    padding: 0;
+  }
 }
 
 .nhsuk-header__search-wrap {
