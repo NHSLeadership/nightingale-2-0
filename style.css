@@ -10417,6 +10417,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
   border: 2px solid #f0f4f5;
   border-left: none;
+  box-shadow: 0;
   float: left;
   box-shadow: 0 !important;
 }
@@ -10567,7 +10568,8 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 .nhsuk-header .nhsuk-header__search-toggle,
 .nhsuk-header .nhsuk-search__close,
 .nhsuk-header .nhsuk-header__navigation-close,
-.nhsuk-header .nhsuk-header__menu-toggle {
+.nhsuk-header .nhsuk-header__menu-toggle,
+.nhsuk-header .nhsuk-search__submit {
   box-shadow: none;
 }
 
@@ -12665,6 +12667,10 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
 
 /*panel extension*/
 /* promo extension */
+.nhsuk-promo figure {
+  margin: 0;
+}
+
 /*do and dont list extension*/
 .nhsuk-do-dont-list svg.nhsuk-icon, .tribe-tickets-rsvp svg.nhsuk-icon {
   width: 35px;
@@ -12687,6 +12693,10 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
 
 .nhsuk-hero__overlay {
   margin-bottom: 50px;
+}
+
+.nhsuk-hero__overlay .nhsuk-grid-column-two-thirds, .nhsuk-hero__overlay .tribe-common div.nhsuk-grid-column-two-thirds, .tribe-common .nhsuk-hero__overlay div.nhsuk-grid-column-two-thirds {
+  padding: 0;
 }
 
 .nhsuk-header__search-wrap input[type="text"] {
