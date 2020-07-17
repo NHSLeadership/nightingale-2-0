@@ -12421,6 +12421,20 @@ ul.download-versions {
   }
 }
 
+@media (min-width: 48.0625em) {
+  #nhsuk-footer ul.nhsuk-footer__list {
+    width: 100%;
+  }
+  #nhsuk-footer ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
+    width: 33%;
+  }
+  #nhsuk-footer .nhsuk-footer__copyright {
+    width: 100%;
+    color: #212b32;
+    margin-top: 16px;
+  }
+}
+
 .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
   margin-bottom: 36px;
 }
