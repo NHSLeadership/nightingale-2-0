@@ -34,6 +34,7 @@ penthouse({
         '.nhsuk-header__logo .nhsuk-logo__background',
         '.nhsuk-header__logo .nhsuk-logo__text',
         '.nhsuk-logo',
+        '.nhsuk-header--white .nhsuk-logo',
         '.nhsuk-header__logo .nhsuk-logo',
         '.nhsuk-header--organisation .nhsuk-header__logo .nhsuk-logo',
         '.nhsuk-header--transactional .nhsuk-header__logo .nhsuk-logo',
