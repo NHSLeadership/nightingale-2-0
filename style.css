@@ -12665,6 +12665,10 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
 
 /*panel extension*/
 /* promo extension */
+.nhsuk-promo figure {
+  margin: 0;
+}
+
 /*do and dont list extension*/
 .nhsuk-do-dont-list svg.nhsuk-icon, .tribe-tickets-rsvp svg.nhsuk-icon {
   width: 35px;
@@ -12687,6 +12691,10 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
 
 .nhsuk-hero__overlay {
   margin-bottom: 50px;
+}
+
+.nhsuk-hero__overlay .nhsuk-grid-column-two-thirds, .nhsuk-hero__overlay .tribe-common div.nhsuk-grid-column-two-thirds, .tribe-common .nhsuk-hero__overlay div.nhsuk-grid-column-two-thirds {
+  padding: 0;
 }
 
 .nhsuk-header__search-wrap input[type="text"] {
