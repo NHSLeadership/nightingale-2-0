@@ -16,13 +16,18 @@
 
 get_header();
 ?>
-
 <div id="primary" class=" nhsuk-grid-row">
 	<div class="nhsuk-grid-column-full full-width">
-
-		<?php get_template_part('template-parts/sitemap'); ?>
-
-	</div>
+		<section class="error-404 not-found">
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header>
+			<div class="page-content">
+				<?php get_template_part('template-parts/sitemap'); ?>
+			</div>
+			<div class="nhsuk-content__clearfix"></div> 
+		</section>
+	</div> 
 </div><!-- #primary -->
 
 <?php
