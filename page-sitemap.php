@@ -7,8 +7,11 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Nightingale
- * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @copyright NHS Leadership Academy
+ * @license https://www.gnu.org/licenses/gpl-3.0.en.html
+ * @author Chris Witham <chris.witham@leadershipacademy.nhs.uk>
+ * @since 2.2.0
+ * @uses template-parts/sitemap
  */
 
 get_header();
