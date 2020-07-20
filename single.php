@@ -12,7 +12,7 @@
 get_header();
 ?>
 
-	<div id="primary" class=" nhsuk-grid-row">
+	<div id="primary" class=" nhsuk-grid-row nhsuk-width-restrict">
 		<div class="
 		<?php
 		if ( nightingale_show_sidebar() ) :

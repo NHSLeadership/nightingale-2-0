@@ -366,3 +366,4 @@
   }
   @import 'assets/scss/color-mixer';//gutenberg page style overrides
 }
+.block-editor-page #sfwd-header {   position: unset !important; } // hacky mchackface workaround to stop learndash getting in the way of the publish button

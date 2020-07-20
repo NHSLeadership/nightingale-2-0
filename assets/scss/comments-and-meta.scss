@@ -167,6 +167,9 @@
     textarea {
       height: 200px;
     }
+    .form-submit {
+     margin-bottom: 48px;
+    }
     input[type="submit"] {
       @extend .nhsuk-button;
       float: right;
