@@ -10399,6 +10399,11 @@ input.is-style-reverse:visited[type="submit"], .is-style-reverse.wp-block-button
   color: #d5281b;
 }
 
+#primary {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #primary h1, #primary p, #primary .nhsuk-pagination__page {
   -ms-word-wrap: break-word;
   word-wrap: break-word;

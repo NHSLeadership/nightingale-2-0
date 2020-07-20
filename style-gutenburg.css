@@ -13352,6 +13352,11 @@
   color: #d5281b;
 }
 
+.edit-post-visual-editor #primary, .block-editor-block-styles #primary, .block-editor-inserter__menu-help-panel #primary {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .edit-post-visual-editor #primary h1, .edit-post-visual-editor #primary .editor-post-title__input, .edit-post-visual-editor #primary p, .edit-post-visual-editor #primary .nhsuk-pagination__page, .block-editor-block-styles #primary h1, .block-editor-block-styles #primary .editor-post-title__input, .block-editor-block-styles #primary p, .block-editor-block-styles #primary .nhsuk-pagination__page, .block-editor-inserter__menu-help-panel #primary h1, .block-editor-inserter__menu-help-panel #primary .editor-post-title__input, .block-editor-inserter__menu-help-panel #primary p, .block-editor-inserter__menu-help-panel #primary .nhsuk-pagination__page {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
