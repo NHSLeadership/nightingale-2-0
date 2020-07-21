@@ -123,6 +123,10 @@
 	word-wrap     : break-word;
   }
 
+  .nhsuk-search__submit {
+	float: left;
+	margin-top: nhsuk-spacing(3);
+  }
   footer {
 	.edit-link {
 	  @extend .nhsuk-pill-standard;
@@ -146,10 +150,6 @@
 
 .nhsuk-search__input {
   width : 15rem;
-}
-.nhsuk-search__submit {
-  float: left;
-  margin-top: nhsuk-spacing(3);
 }
 
 #cookie-notice {
@@ -211,6 +211,7 @@
 @media (min-width : 40.0625em) {
   .nhsuk-search__submit {
 	padding-top : 6px;
+	margin-top: 0;
   }
 }
 

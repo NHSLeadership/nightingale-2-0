@@ -10460,6 +10460,11 @@ input.is-style-reverse:visited[type="submit"], #content a.is-style-reverse.wp-bl
   word-wrap: break-word;
 }
 
+#primary .nhsuk-search__submit {
+  float: left;
+  margin-top: 16px;
+}
+
 #primary footer .edit-link {
   text-decoration: none;
   /*margin-left: nhsuk-spacing(4);*/
@@ -10490,11 +10495,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-search__input {
   width: 15rem;
-}
-
-.nhsuk-search__submit {
-  float: left;
-  margin-top: 16px;
 }
 
 #cookie-notice {
@@ -10551,6 +10551,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 @media (min-width: 40.0625em) {
   .nhsuk-search__submit {
     padding-top: 6px;
+    margin-top: 0;
   }
 }
 
