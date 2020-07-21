@@ -16,7 +16,7 @@
 
 get_header();
 ?>
-<div id="primary" class=" nhsuk-grid-row">
+<div id="primary" class=" nhsuk-grid-row nhsuk-width-restrict">
 
 	<div class="nhsuk-grid-column-full full-width">
 		<section class="error-404 not-found">
