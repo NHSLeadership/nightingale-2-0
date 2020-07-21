@@ -4043,8 +4043,9 @@ b {
 .nhsuk-button, button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, .tribe-events-gcal,
-.tribe-events-ical, .download-button {
+input[type="submit"], #content a.wp-block-button__link, #content .wp-block-file__button, #content .wp-block-file a.wp-block-file__button, #content .wp-block-file a.wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, #tribe-events-content a.tribe-events-gcal,
+#tribe-events-content a.tribe-events-ical,
+#tribe-events-content a.tribe-events-button, .download-button {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -4075,8 +4076,9 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, .tribe-events-gcal,
-  .tribe-events-ical, .download-button {
+  input[type="submit"], #content a.wp-block-button__link, #content .wp-block-file__button, #content .wp-block-file a.wp-block-file__button, #content .wp-block-file a.wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, #tribe-events-content a.tribe-events-gcal,
+  #tribe-events-content a.tribe-events-ical,
+  #tribe-events-content a.tribe-events-button, .download-button {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -4087,8 +4089,9 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, .tribe-events-gcal,
-  .tribe-events-ical, .download-button {
+  input[type="submit"], #content a.wp-block-button__link, #content .wp-block-file__button, #content .wp-block-file a.wp-block-file__button, #content .wp-block-file a.wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, #tribe-events-content a.tribe-events-gcal,
+  #tribe-events-content a.tribe-events-ical,
+  #tribe-events-content a.tribe-events-button, .download-button {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -4098,8 +4101,9 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, .tribe-events-gcal,
-  .tribe-events-ical, .download-button {
+  input[type="submit"], #content a.wp-block-button__link, #content .wp-block-file__button, #content .wp-block-file a.wp-block-file__button, #content .wp-block-file a.wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, #tribe-events-content a.tribe-events-gcal,
+  #tribe-events-content a.tribe-events-ical,
+  #tribe-events-content a.tribe-events-button, .download-button {
     margin-bottom: 36px;
   }
 }
@@ -4108,8 +4112,9 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
   .nhsuk-button, button,
   input[type="button"],
   input[type="reset"],
-  input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, .tribe-events-gcal,
-  .tribe-events-ical, .download-button {
+  input[type="submit"], #content a.wp-block-button__link, #content .wp-block-file__button, #content .wp-block-file a.wp-block-file__button, #content .wp-block-file a.wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input[type="submit"], .gform_wrapper .gform_body .gform_next_button, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-button, .learndash-wrapper input[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-login, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button, .learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .wpProQuiz_content .wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, #tribe-events-content a.tribe-events-gcal,
+  #tribe-events-content a.tribe-events-ical,
+  #tribe-events-content a.tribe-events-button, .download-button {
     padding: 8px 16px;
   }
 }
@@ -4117,20 +4122,24 @@ input[type="submit"], .wp-block-button__link, .wp-block-file__button, .wp-block-
 .nhsuk-button:link, button:link,
 input:link[type="button"],
 input:link[type="reset"],
-input:link[type="submit"], .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, #login #loginform #wp-submit:link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:link, .nhsuk-list-panel .comment-respond input:link[type="submit"], .gform_wrapper .gform_body .gform_next_button:link, .gform_wrapper .gform_body .gform_previous_button:link, .learndash-wrapper .ld-button:link, .learndash-wrapper input:link[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:link, .learndash-wrapper .ld-logout:link, .learndash-wrapper .ld-login:link, .learndash-wrapper .ld-content-actions a.ld-primary-color:link, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:link, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:link, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:link, .tribe-events-gcal:link,
-.tribe-events-ical:link, .download-button:link, .nhsuk-button:visited, button:visited,
+input:link[type="submit"], #content a.wp-block-button__link:link, #content .wp-block-file__button:link, #content .wp-block-file a.wp-block-file__button:link, #login #loginform #wp-submit:link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:link, .nhsuk-list-panel .comment-respond input:link[type="submit"], .gform_wrapper .gform_body .gform_next_button:link, .gform_wrapper .gform_body .gform_previous_button:link, .learndash-wrapper .ld-button:link, .learndash-wrapper input:link[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:link, .learndash-wrapper .ld-logout:link, .learndash-wrapper .ld-login:link, .learndash-wrapper .ld-content-actions a.ld-primary-color:link, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:link, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:link, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:link, #tribe-events-content a.tribe-events-gcal:link,
+#tribe-events-content a.tribe-events-ical:link,
+#tribe-events-content a.tribe-events-button:link, .download-button:link, .nhsuk-button:visited, button:visited,
 input:visited[type="button"],
 input:visited[type="reset"],
-input:visited[type="submit"], .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit:visited, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:visited, .nhsuk-list-panel .comment-respond input:visited[type="submit"], .gform_wrapper .gform_body .gform_next_button:visited, .gform_wrapper .gform_body .gform_previous_button:visited, .learndash-wrapper .ld-button:visited, .learndash-wrapper input:visited[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:visited, .learndash-wrapper .ld-logout:visited, .learndash-wrapper .ld-login:visited, .learndash-wrapper .ld-content-actions a.ld-primary-color:visited, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:visited, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:visited, .tribe-events-gcal:visited,
-.tribe-events-ical:visited, .download-button:visited, .nhsuk-button:active, button:active,
+input:visited[type="submit"], #content a.wp-block-button__link:visited, #content .wp-block-file__button:visited, #content .wp-block-file a.wp-block-file__button:visited, #login #loginform #wp-submit:visited, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:visited, .nhsuk-list-panel .comment-respond input:visited[type="submit"], .gform_wrapper .gform_body .gform_next_button:visited, .gform_wrapper .gform_body .gform_previous_button:visited, .learndash-wrapper .ld-button:visited, .learndash-wrapper input:visited[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:visited, .learndash-wrapper .ld-logout:visited, .learndash-wrapper .ld-login:visited, .learndash-wrapper .ld-content-actions a.ld-primary-color:visited, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:visited, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:visited, #tribe-events-content a.tribe-events-gcal:visited,
+#tribe-events-content a.tribe-events-ical:visited,
+#tribe-events-content a.tribe-events-button:visited, .download-button:visited, .nhsuk-button:active, button:active,
 input:active[type="button"],
 input:active[type="reset"],
-input:active[type="submit"], .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .gform_wrapper .gform_body .gform_next_button:active, .gform_wrapper .gform_body .gform_previous_button:active, .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active, .tribe-events-gcal:active,
-.tribe-events-ical:active, .download-button:active, .nhsuk-button:hover, button:hover,
+input:active[type="submit"], #content a.wp-block-button__link:active, #content .wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .gform_wrapper .gform_body .gform_next_button:active, .gform_wrapper .gform_body .gform_previous_button:active, .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active, #tribe-events-content a.tribe-events-gcal:active,
+#tribe-events-content a.tribe-events-ical:active,
+#tribe-events-content a.tribe-events-button:active, .download-button:active, .nhsuk-button:hover, button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
-input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_wrapper .gform_body .gform_next_button:hover, .gform_wrapper .gform_body .gform_previous_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover, .tribe-events-gcal:hover,
-.tribe-events-ical:hover, .download-button:hover {
+input:hover[type="submit"], #content a.wp-block-button__link:hover, #content .wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_wrapper .gform_body .gform_next_button:hover, .gform_wrapper .gform_body .gform_previous_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover, #tribe-events-content a.tribe-events-gcal:hover,
+#tribe-events-content a.tribe-events-ical:hover,
+#tribe-events-content a.tribe-events-button:hover, .download-button:hover {
   color: #ffffff;
   text-decoration: none;
 }
@@ -4138,8 +4147,9 @@ input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button
 .nhsuk-button::-moz-focus-inner, button::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner, .wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button::-moz-focus-inner, .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner, #login #loginform #wp-submit::-moz-focus-inner, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::-moz-focus-inner, .nhsuk-list-panel .comment-respond input[type="submit"]::-moz-focus-inner, .gform_wrapper .gform_body .gform_next_button::-moz-focus-inner, .gform_wrapper .gform_body .gform_previous_button::-moz-focus-inner, .learndash-wrapper .ld-button::-moz-focus-inner, .learndash-wrapper input[type=submit]::-moz-focus-inner, .learndash-wrapper .ld-item-list-actions .ld-expand-button::-moz-focus-inner, .learndash-wrapper .ld-logout::-moz-focus-inner, .learndash-wrapper .ld-login::-moz-focus-inner, .learndash-wrapper .ld-content-actions a.ld-primary-color::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::-moz-focus-inner, .learndash-wrapper .ld-login-modal input[type=submit]::-moz-focus-inner, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::-moz-focus-inner, .tribe-events-gcal::-moz-focus-inner,
-.tribe-events-ical::-moz-focus-inner, .download-button::-moz-focus-inner {
+input[type="submit"]::-moz-focus-inner, #content a.wp-block-button__link::-moz-focus-inner, #content .wp-block-file__button::-moz-focus-inner, #content .wp-block-file a.wp-block-file__button::-moz-focus-inner, #content .wp-block-file a.wp-block-file__button:active::-moz-focus-inner, #content .wp-block-file a.wp-block-file__button:focus::-moz-focus-inner, #content .wp-block-file a.wp-block-file__button:hover::-moz-focus-inner, #content .wp-block-file a.wp-block-file__button:visited::-moz-focus-inner, #login #loginform #wp-submit::-moz-focus-inner, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::-moz-focus-inner, .nhsuk-list-panel .comment-respond input[type="submit"]::-moz-focus-inner, .gform_wrapper .gform_body .gform_next_button::-moz-focus-inner, .gform_wrapper .gform_body .gform_previous_button::-moz-focus-inner, .learndash-wrapper .ld-button::-moz-focus-inner, .learndash-wrapper input[type=submit]::-moz-focus-inner, .learndash-wrapper .ld-item-list-actions .ld-expand-button::-moz-focus-inner, .learndash-wrapper .ld-logout::-moz-focus-inner, .learndash-wrapper .ld-login::-moz-focus-inner, .learndash-wrapper .ld-content-actions a.ld-primary-color::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::-moz-focus-inner, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::-moz-focus-inner, .learndash-wrapper .ld-login-modal input[type=submit]::-moz-focus-inner, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::-moz-focus-inner, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::-moz-focus-inner, #tribe-events-content a.tribe-events-gcal::-moz-focus-inner,
+#tribe-events-content a.tribe-events-ical::-moz-focus-inner,
+#tribe-events-content a.tribe-events-button::-moz-focus-inner, .download-button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -4147,16 +4157,18 @@ input[type="submit"]::-moz-focus-inner, .wp-block-button__link::-moz-focus-inner
 .nhsuk-button:hover, button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
-input:hover[type="submit"], .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_wrapper .gform_body .gform_next_button:hover, .gform_wrapper .gform_body .gform_previous_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover, .tribe-events-gcal:hover,
-.tribe-events-ical:hover, .download-button:hover {
+input:hover[type="submit"], #content a.wp-block-button__link:hover, #content .wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:hover, #login #loginform #wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .nhsuk-list-panel .comment-respond input:hover[type="submit"], .gform_wrapper .gform_body .gform_next_button:hover, .gform_wrapper .gform_body .gform_previous_button:hover, .learndash-wrapper .ld-button:hover, .learndash-wrapper input:hover[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-login:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover, #tribe-events-content a.tribe-events-gcal:hover,
+#tribe-events-content a.tribe-events-ical:hover,
+#tribe-events-content a.tribe-events-button:hover, .download-button:hover {
   background-color: #00662f;
 }
 
 .nhsuk-button:focus, button:focus,
 input:focus[type="button"],
 input:focus[type="reset"],
-input:focus[type="submit"], .wp-block-button__link:focus, .wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .gform_wrapper .gform_body .gform_next_button:focus, .gform_wrapper .gform_body .gform_previous_button:focus, .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, .tribe-events-gcal:focus,
-.tribe-events-ical:focus, .download-button:focus {
+input:focus[type="submit"], #content a.wp-block-button__link:focus, #content .wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:focus, #login #loginform #wp-submit:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-respond input:focus[type="submit"], .gform_wrapper .gform_body .gform_next_button:focus, .gform_wrapper .gform_body .gform_previous_button:focus, .learndash-wrapper .ld-button:focus, .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-login:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, #tribe-events-content a.tribe-events-gcal:focus,
+#tribe-events-content a.tribe-events-ical:focus,
+#tribe-events-content a.tribe-events-button:focus, .download-button:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
@@ -4166,24 +4178,27 @@ input:focus[type="submit"], .wp-block-button__link:focus, .wp-block-file__button
 .nhsuk-button:focus:visited, button:focus:visited,
 input:focus:visited[type="button"],
 input:focus:visited[type="reset"],
-input:focus:visited[type="submit"], .wp-block-button__link:focus:visited, .wp-block-file__button:focus:visited, .wp-block-file a.wp-block-file__button:focus:visited, #login #loginform #wp-submit:focus:visited, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus:visited, .gform_wrapper .gform_body .gform_next_button:focus:visited, .gform_wrapper .gform_body .gform_previous_button:focus:visited, .learndash-wrapper .ld-button:focus:visited, .learndash-wrapper input:focus:visited[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus:visited, .learndash-wrapper .ld-logout:focus:visited, .learndash-wrapper .ld-login:focus:visited, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus:visited, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus:visited, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus:visited, .tribe-events-gcal:focus:visited,
-.tribe-events-ical:focus:visited, .download-button:focus:visited {
+input:focus:visited[type="submit"], #content a.wp-block-button__link:focus:visited, #content .wp-block-file__button:focus:visited, #content .wp-block-file a.wp-block-file__button:focus:visited, #login #loginform #wp-submit:focus:visited, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus:visited, .gform_wrapper .gform_body .gform_next_button:focus:visited, .gform_wrapper .gform_body .gform_previous_button:focus:visited, .learndash-wrapper .ld-button:focus:visited, .learndash-wrapper input:focus:visited[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus:visited, .learndash-wrapper .ld-logout:focus:visited, .learndash-wrapper .ld-login:focus:visited, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus:visited, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus:visited, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus:visited, #tribe-events-content a.tribe-events-gcal:focus:visited,
+#tribe-events-content a.tribe-events-ical:focus:visited,
+#tribe-events-content a.tribe-events-button:focus:visited, .download-button:focus:visited {
   color: #212b32;
 }
 
 .nhsuk-button:focus:visited:active, button:focus:visited:active,
 input:focus:visited:active[type="button"],
 input:focus:visited:active[type="reset"],
-input:focus:visited:active[type="submit"], .wp-block-button__link:focus:visited:active, .wp-block-file__button:focus:visited:active, #login #loginform #wp-submit:focus:visited:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus:visited:active, .gform_wrapper .gform_body .gform_next_button:focus:visited:active, .gform_wrapper .gform_body .gform_previous_button:focus:visited:active, .learndash-wrapper .ld-button:focus:visited:active, .learndash-wrapper input:focus:visited:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus:visited:active, .learndash-wrapper .ld-logout:focus:visited:active, .learndash-wrapper .ld-login:focus:visited:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus:visited:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus:visited:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus:visited:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus:visited:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus:visited:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus:visited:active, .tribe-events-gcal:focus:visited:active,
-.tribe-events-ical:focus:visited:active, .download-button:focus:visited:active {
+input:focus:visited:active[type="submit"], #content a.wp-block-button__link:focus:visited:active, #content .wp-block-file__button:focus:visited:active, #login #loginform #wp-submit:focus:visited:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus:visited:active, .gform_wrapper .gform_body .gform_next_button:focus:visited:active, .gform_wrapper .gform_body .gform_previous_button:focus:visited:active, .learndash-wrapper .ld-button:focus:visited:active, .learndash-wrapper input:focus:visited:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus:visited:active, .learndash-wrapper .ld-logout:focus:visited:active, .learndash-wrapper .ld-login:focus:visited:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus:visited:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus:visited:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus:visited:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus:visited:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus:visited:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus:visited:active, #tribe-events-content a.tribe-events-gcal:focus:visited:active,
+#tribe-events-content a.tribe-events-ical:focus:visited:active,
+#tribe-events-content a.tribe-events-button:focus:visited:active, .download-button:focus:visited:active {
   color: #ffffff;
 }
 
 .nhsuk-button:active, button:active,
 input:active[type="button"],
 input:active[type="reset"],
-input:active[type="submit"], .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .gform_wrapper .gform_body .gform_next_button:active, .gform_wrapper .gform_body .gform_previous_button:active, .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active, .tribe-events-gcal:active,
-.tribe-events-ical:active, .download-button:active {
+input:active[type="submit"], #content a.wp-block-button__link:active, #content .wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:active, #login #loginform #wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .nhsuk-list-panel .comment-respond input:active[type="submit"], .gform_wrapper .gform_body .gform_next_button:active, .gform_wrapper .gform_body .gform_previous_button:active, .learndash-wrapper .ld-button:active, .learndash-wrapper input:active[type=submit], .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-login:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active, #tribe-events-content a.tribe-events-gcal:active,
+#tribe-events-content a.tribe-events-ical:active,
+#tribe-events-content a.tribe-events-button:active, .download-button:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
@@ -4193,8 +4208,9 @@ input:active[type="submit"], .wp-block-button__link:active, .wp-block-file__butt
 .nhsuk-button::before, button::before,
 input[type="button"]::before,
 input[type="reset"]::before,
-input[type="submit"]::before, .wp-block-button__link::before, .wp-block-file__button::before, .wp-block-file a.wp-block-file__button::before, .wp-block-file a.wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:focus::before, .wp-block-file a.wp-block-file__button:hover::before, .wp-block-file a.wp-block-file__button:visited::before, #login #loginform #wp-submit::before, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::before, .nhsuk-list-panel .comment-respond input[type="submit"]::before, .gform_wrapper .gform_body .gform_next_button::before, .gform_wrapper .gform_body .gform_previous_button::before, .learndash-wrapper .ld-button::before, .learndash-wrapper input[type=submit]::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button::before, .learndash-wrapper .ld-logout::before, .learndash-wrapper .ld-login::before, .learndash-wrapper .ld-content-actions a.ld-primary-color::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::before, .learndash-wrapper .ld-login-modal input[type=submit]::before, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::before, .tribe-events-gcal::before,
-.tribe-events-ical::before, .download-button::before {
+input[type="submit"]::before, #content a.wp-block-button__link::before, #content .wp-block-file__button::before, #content .wp-block-file a.wp-block-file__button::before, #content .wp-block-file a.wp-block-file__button:active::before, #content .wp-block-file a.wp-block-file__button:focus::before, #content .wp-block-file a.wp-block-file__button:hover::before, #content .wp-block-file a.wp-block-file__button:visited::before, #login #loginform #wp-submit::before, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link::before, .nhsuk-list-panel .comment-respond input[type="submit"]::before, .gform_wrapper .gform_body .gform_next_button::before, .gform_wrapper .gform_body .gform_previous_button::before, .learndash-wrapper .ld-button::before, .learndash-wrapper input[type=submit]::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button::before, .learndash-wrapper .ld-logout::before, .learndash-wrapper .ld-login::before, .learndash-wrapper .ld-content-actions a.ld-primary-color::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button::before, .learndash-wrapper .ld-login-modal input[type=submit]::before, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary::before, #tribe-events-content a.tribe-events-gcal::before,
+#tribe-events-content a.tribe-events-ical::before,
+#tribe-events-content a.tribe-events-button::before, .download-button::before {
   background: transparent;
   bottom: -6px;
   content: '';
@@ -4208,8 +4224,9 @@ input[type="submit"]::before, .wp-block-button__link::before, .wp-block-file__bu
 .nhsuk-button:active::before, button:active::before,
 input[type="button"]:active::before,
 input[type="reset"]:active::before,
-input[type="submit"]:active::before, .wp-block-button__link:active::before, .wp-block-file__button:active::before, .wp-block-file a.wp-block-file__button:active::before, #login #loginform #wp-submit:active::before, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active::before, .nhsuk-list-panel .comment-respond input[type="submit"]:active::before, .gform_wrapper .gform_body .gform_next_button:active::before, .gform_wrapper .gform_body .gform_previous_button:active::before, .learndash-wrapper .ld-button:active::before, .learndash-wrapper input[type=submit]:active::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button:active::before, .learndash-wrapper .ld-logout:active::before, .learndash-wrapper .ld-login:active::before, .learndash-wrapper .ld-content-actions a.ld-primary-color:active::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active::before, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active::before, .tribe-events-gcal:active::before,
-.tribe-events-ical:active::before, .download-button:active::before {
+input[type="submit"]:active::before, #content a.wp-block-button__link:active::before, #content .wp-block-file__button:active::before, #content .wp-block-file a.wp-block-file__button:active::before, #login #loginform #wp-submit:active::before, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active::before, .nhsuk-list-panel .comment-respond input[type="submit"]:active::before, .gform_wrapper .gform_body .gform_next_button:active::before, .gform_wrapper .gform_body .gform_previous_button:active::before, .learndash-wrapper .ld-button:active::before, .learndash-wrapper input[type=submit]:active::before, .learndash-wrapper .ld-item-list-actions .ld-expand-button:active::before, .learndash-wrapper .ld-logout:active::before, .learndash-wrapper .ld-login:active::before, .learndash-wrapper .ld-content-actions a.ld-primary-color:active::before, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active::before, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:active::before, .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:active::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active::before, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active::before, #tribe-events-content a.tribe-events-gcal:active::before,
+#tribe-events-content a.tribe-events-ical:active::before,
+#tribe-events-content a.tribe-events-button:active::before, .download-button:active::before {
   top: -6px;
 }
 
@@ -4219,8 +4236,9 @@ input[type="submit"]:active::before, .wp-block-button__link:active::before, .wp-
 .nhsuk-button--secondary, .learndash-wrapper .ld-item-list-actions .ld-expand-button, .learndash-wrapper .ld-logout, .learndash-wrapper .ld-content-actions a.ld-primary-color, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary, .nhsuk-button.is-style-secondary, button.is-style-secondary,
 input.is-style-secondary[type="button"],
 input.is-style-secondary[type="reset"],
-input.is-style-secondary[type="submit"], .is-style-secondary.wp-block-button__link, .is-style-secondary.wp-block-file__button, .wp-block-file a.is-style-secondary.wp-block-file__button, #login #loginform .is-style-secondary#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input.is-style-secondary[type="submit"], .gform_wrapper .gform_body .is-style-secondary.gform_next_button, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button, .learndash-wrapper .is-style-secondary.ld-button, .learndash-wrapper input.is-style-secondary[type=submit], .learndash-wrapper .is-style-secondary.ld-login, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button, .is-style-secondary.tribe-events-gcal,
-.is-style-secondary.tribe-events-ical, .is-style-secondary.download-button {
+input.is-style-secondary[type="submit"], #content a.is-style-secondary.wp-block-button__link, #content .is-style-secondary.wp-block-file__button, #content .wp-block-file a.is-style-secondary.wp-block-file__button, #login #loginform .is-style-secondary#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input.is-style-secondary[type="submit"], .gform_wrapper .gform_body .is-style-secondary.gform_next_button, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button, .learndash-wrapper .is-style-secondary.ld-button, .learndash-wrapper input.is-style-secondary[type=submit], .learndash-wrapper .is-style-secondary.ld-login, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button, #tribe-events-content a.is-style-secondary.tribe-events-gcal,
+#tribe-events-content a.is-style-secondary.tribe-events-ical,
+#tribe-events-content a.is-style-secondary.tribe-events-button, .is-style-secondary.download-button {
   background-color: #4c6272;
   box-shadow: 0 4px 0 #263139;
 }
@@ -4228,16 +4246,18 @@ input.is-style-secondary[type="submit"], .is-style-secondary.wp-block-button__li
 .nhsuk-button--secondary:hover, .learndash-wrapper .ld-item-list-actions .ld-expand-button:hover, .learndash-wrapper .ld-logout:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:hover, .nhsuk-button.is-style-secondary:hover, button.is-style-secondary:hover,
 input.is-style-secondary:hover[type="button"],
 input.is-style-secondary:hover[type="reset"],
-input.is-style-secondary:hover[type="submit"], .is-style-secondary.wp-block-button__link:hover, .is-style-secondary.wp-block-file__button:hover, .wp-block-file a.is-style-secondary.wp-block-file__button:hover, #login #loginform .is-style-secondary#wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link:hover, .gform_wrapper .gform_body .is-style-secondary.gform_next_button:hover, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button:hover, .learndash-wrapper .is-style-secondary.ld-button:hover, .learndash-wrapper input.is-style-secondary:hover[type=submit], .learndash-wrapper .is-style-secondary.ld-login:hover, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button:hover, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button:hover, .is-style-secondary.tribe-events-gcal:hover,
-.is-style-secondary.tribe-events-ical:hover, .is-style-secondary.download-button:hover {
+input.is-style-secondary:hover[type="submit"], #content a.is-style-secondary.wp-block-button__link:hover, #content .is-style-secondary.wp-block-file__button:hover, #content .wp-block-file a.is-style-secondary.wp-block-file__button:hover, #login #loginform .is-style-secondary#wp-submit:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link:hover, .gform_wrapper .gform_body .is-style-secondary.gform_next_button:hover, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button:hover, .learndash-wrapper .is-style-secondary.ld-button:hover, .learndash-wrapper input.is-style-secondary:hover[type=submit], .learndash-wrapper .is-style-secondary.ld-login:hover, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button:hover, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button:hover, #tribe-events-content a.is-style-secondary.tribe-events-gcal:hover,
+#tribe-events-content a.is-style-secondary.tribe-events-ical:hover,
+#tribe-events-content a.is-style-secondary.tribe-events-button:hover, .is-style-secondary.download-button:hover {
   background-color: #384853;
 }
 
 .nhsuk-button--secondary:focus, .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, .nhsuk-button.is-style-secondary:focus, button.is-style-secondary:focus,
 input.is-style-secondary:focus[type="button"],
 input.is-style-secondary:focus[type="reset"],
-input.is-style-secondary:focus[type="submit"], .is-style-secondary.wp-block-button__link:focus, .is-style-secondary.wp-block-file__button:focus, .wp-block-file a.is-style-secondary.wp-block-file__button:focus, #login #loginform .is-style-secondary#wp-submit:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link:focus, .gform_wrapper .gform_body .is-style-secondary.gform_next_button:focus, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button:focus, .learndash-wrapper .is-style-secondary.ld-button:focus, .learndash-wrapper input.is-style-secondary:focus[type=submit], .learndash-wrapper .is-style-secondary.ld-login:focus, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button:focus, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button:focus, .is-style-secondary.tribe-events-gcal:focus,
-.is-style-secondary.tribe-events-ical:focus, .is-style-secondary.download-button:focus {
+input.is-style-secondary:focus[type="submit"], #content a.is-style-secondary.wp-block-button__link:focus, #content .is-style-secondary.wp-block-file__button:focus, #content .wp-block-file a.is-style-secondary.wp-block-file__button:focus, #login #loginform .is-style-secondary#wp-submit:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link:focus, .gform_wrapper .gform_body .is-style-secondary.gform_next_button:focus, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button:focus, .learndash-wrapper .is-style-secondary.ld-button:focus, .learndash-wrapper input.is-style-secondary:focus[type=submit], .learndash-wrapper .is-style-secondary.ld-login:focus, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button:focus, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button:focus, #tribe-events-content a.is-style-secondary.tribe-events-gcal:focus,
+#tribe-events-content a.is-style-secondary.tribe-events-ical:focus,
+#tribe-events-content a.is-style-secondary.tribe-events-button:focus, .is-style-secondary.download-button:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
@@ -4247,8 +4267,9 @@ input.is-style-secondary:focus[type="submit"], .is-style-secondary.wp-block-butt
 .nhsuk-button--secondary:active, .learndash-wrapper .ld-item-list-actions .ld-expand-button:active, .learndash-wrapper .ld-logout:active, .learndash-wrapper .ld-content-actions a.ld-primary-color:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:active, .nhsuk-button.is-style-secondary:active, button.is-style-secondary:active,
 input.is-style-secondary:active[type="button"],
 input.is-style-secondary:active[type="reset"],
-input.is-style-secondary:active[type="submit"], .is-style-secondary.wp-block-button__link:active, .is-style-secondary.wp-block-file__button:active, .wp-block-file a.is-style-secondary.wp-block-file__button:active, #login #loginform .is-style-secondary#wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link:active, .gform_wrapper .gform_body .is-style-secondary.gform_next_button:active, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button:active, .learndash-wrapper .is-style-secondary.ld-button:active, .learndash-wrapper input.is-style-secondary:active[type=submit], .learndash-wrapper .is-style-secondary.ld-login:active, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button:active, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button:active, .is-style-secondary.tribe-events-gcal:active,
-.is-style-secondary.tribe-events-ical:active, .is-style-secondary.download-button:active {
+input.is-style-secondary:active[type="submit"], #content a.is-style-secondary.wp-block-button__link:active, #content .is-style-secondary.wp-block-file__button:active, #content .wp-block-file a.is-style-secondary.wp-block-file__button:active, #login #loginform .is-style-secondary#wp-submit:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link:active, .gform_wrapper .gform_body .is-style-secondary.gform_next_button:active, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button:active, .learndash-wrapper .is-style-secondary.ld-button:active, .learndash-wrapper input.is-style-secondary:active[type=submit], .learndash-wrapper .is-style-secondary.ld-login:active, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button:active, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button:active, #tribe-events-content a.is-style-secondary.tribe-events-gcal:active,
+#tribe-events-content a.is-style-secondary.tribe-events-ical:active,
+#tribe-events-content a.is-style-secondary.tribe-events-button:active, .is-style-secondary.download-button:active {
   background: #263139;
   box-shadow: none;
   color: #ffffff;
@@ -4258,16 +4279,18 @@ input.is-style-secondary:active[type="submit"], .is-style-secondary.wp-block-but
 .nhsuk-button--secondary.nhsuk-button--disabled, .learndash-wrapper .ld-item-list-actions .nhsuk-button--disabled.ld-expand-button, .learndash-wrapper .nhsuk-button--disabled.ld-logout, .learndash-wrapper .ld-content-actions a.nhsuk-button--disabled.ld-primary-color, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.wpProQuiz_QuestionButton, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.btn-primary, .nhsuk-button--disabled.nhsuk-button.is-style-secondary, button.nhsuk-button--disabled.is-style-secondary,
 input.nhsuk-button--disabled.is-style-secondary[type="button"],
 input.nhsuk-button--disabled.is-style-secondary[type="reset"],
-input.nhsuk-button--disabled.is-style-secondary[type="submit"], .nhsuk-button--disabled.is-style-secondary.wp-block-button__link, .nhsuk-button--disabled.is-style-secondary.wp-block-file__button, .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:active, .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:focus, .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:hover, .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:visited, #login #loginform .nhsuk-button--disabled.is-style-secondary#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button--disabled.is-style-secondary#cancel-comment-reply-link, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-secondary.gform_next_button, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-secondary.gform_previous_button, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-button, .learndash-wrapper input.nhsuk-button--disabled.is-style-secondary[type=submit], .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-login, .learndash-wrapper .ld-item-list .ld-section-heading .nhsuk-button--disabled.is-style-secondary.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .nhsuk-button--disabled.is-style-secondary.ld-button, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.is-style-secondary.wpProQuiz_button, .nhsuk-button--disabled.is-style-secondary.tribe-events-gcal,
-.nhsuk-button--disabled.is-style-secondary.tribe-events-ical, .nhsuk-button--disabled.is-style-secondary.download-button {
+input.nhsuk-button--disabled.is-style-secondary[type="submit"], #content a.nhsuk-button--disabled.is-style-secondary.wp-block-button__link, #content .nhsuk-button--disabled.is-style-secondary.wp-block-file__button, #content .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:active, #content .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:focus, #content .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:hover, #content .wp-block-file a.nhsuk-button--disabled.is-style-secondary.wp-block-file__button:visited, #login #loginform .nhsuk-button--disabled.is-style-secondary#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button--disabled.is-style-secondary#cancel-comment-reply-link, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-secondary.gform_next_button, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-secondary.gform_previous_button, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-button, .learndash-wrapper input.nhsuk-button--disabled.is-style-secondary[type=submit], .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-login, .learndash-wrapper .ld-item-list .ld-section-heading .nhsuk-button--disabled.is-style-secondary.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .nhsuk-button--disabled.is-style-secondary.ld-button, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.is-style-secondary.wpProQuiz_button, #tribe-events-content a.nhsuk-button--disabled.is-style-secondary.tribe-events-gcal,
+#tribe-events-content a.nhsuk-button--disabled.is-style-secondary.tribe-events-ical,
+#tribe-events-content a.nhsuk-button--disabled.is-style-secondary.tribe-events-button, .nhsuk-button--disabled.is-style-secondary.download-button {
   background-color: #4c6272;
 }
 
 .nhsuk-button--reverse, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link, .gform_wrapper .gform_body .gform_previous_button, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton, .nhsuk-button.is-style-reverse, button.is-style-reverse,
 input.is-style-reverse[type="button"],
 input.is-style-reverse[type="reset"],
-input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, .is-style-reverse.wp-block-file__button, .wp-block-file a.is-style-reverse.wp-block-file__button, #login #loginform .is-style-reverse#wp-submit, .nhsuk-list-panel .comment-respond input.is-style-reverse[type="submit"], .gform_wrapper .gform_body .is-style-reverse.gform_next_button, .learndash-wrapper .is-style-reverse.ld-button, .learndash-wrapper input.is-style-reverse[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button, .learndash-wrapper .is-style-reverse.ld-logout, .learndash-wrapper .is-style-reverse.ld-login, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary, .is-style-reverse.tribe-events-gcal,
-.is-style-reverse.tribe-events-ical, .is-style-reverse.download-button {
+input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-button__link, #content .is-style-reverse.wp-block-file__button, #content .wp-block-file a.is-style-reverse.wp-block-file__button, #login #loginform .is-style-reverse#wp-submit, .nhsuk-list-panel .comment-respond input.is-style-reverse[type="submit"], .gform_wrapper .gform_body .is-style-reverse.gform_next_button, .learndash-wrapper .is-style-reverse.ld-button, .learndash-wrapper input.is-style-reverse[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button, .learndash-wrapper .is-style-reverse.ld-logout, .learndash-wrapper .is-style-reverse.ld-login, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary, #tribe-events-content a.is-style-reverse.tribe-events-gcal,
+#tribe-events-content a.is-style-reverse.tribe-events-ical,
+#tribe-events-content a.is-style-reverse.tribe-events-button, .is-style-reverse.download-button {
   background-color: #ffffff;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
@@ -4276,8 +4299,9 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
 .nhsuk-button--reverse:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:hover, .gform_wrapper .gform_body .gform_previous_button:hover, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:hover:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton:hover, .nhsuk-button.is-style-reverse:hover, button.is-style-reverse:hover,
 input.is-style-reverse:hover[type="button"],
 input.is-style-reverse:hover[type="reset"],
-input.is-style-reverse:hover[type="submit"], .is-style-reverse.wp-block-button__link:hover, .is-style-reverse.wp-block-file__button:hover, .wp-block-file a.is-style-reverse.wp-block-file__button:hover, #login #loginform .is-style-reverse#wp-submit:hover, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:hover, .learndash-wrapper .is-style-reverse.ld-button:hover, .learndash-wrapper input.is-style-reverse:hover[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:hover, .learndash-wrapper .is-style-reverse.ld-logout:hover, .learndash-wrapper .is-style-reverse.ld-login:hover, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:hover, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:hover, .is-style-reverse.tribe-events-gcal:hover,
-.is-style-reverse.tribe-events-ical:hover, .is-style-reverse.download-button:hover {
+input.is-style-reverse:hover[type="submit"], #content a.is-style-reverse.wp-block-button__link:hover, #content .is-style-reverse.wp-block-file__button:hover, #content .wp-block-file a.is-style-reverse.wp-block-file__button:hover, #login #loginform .is-style-reverse#wp-submit:hover, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:hover, .learndash-wrapper .is-style-reverse.ld-button:hover, .learndash-wrapper input.is-style-reverse:hover[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:hover, .learndash-wrapper .is-style-reverse.ld-logout:hover, .learndash-wrapper .is-style-reverse.ld-login:hover, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:hover, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:hover, #tribe-events-content a.is-style-reverse.tribe-events-gcal:hover,
+#tribe-events-content a.is-style-reverse.tribe-events-ical:hover,
+#tribe-events-content a.is-style-reverse.tribe-events-button:hover, .is-style-reverse.download-button:hover {
   background-color: #f2f2f2;
   color: #212b32;
 }
@@ -4285,8 +4309,9 @@ input.is-style-reverse:hover[type="submit"], .is-style-reverse.wp-block-button__
 .nhsuk-button--reverse:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .gform_wrapper .gform_body .gform_previous_button:focus, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:focus:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton:focus, .nhsuk-button.is-style-reverse:focus, button.is-style-reverse:focus,
 input.is-style-reverse:focus[type="button"],
 input.is-style-reverse:focus[type="reset"],
-input.is-style-reverse:focus[type="submit"], .is-style-reverse.wp-block-button__link:focus, .is-style-reverse.wp-block-file__button:focus, .wp-block-file a.is-style-reverse.wp-block-file__button:focus, #login #loginform .is-style-reverse#wp-submit:focus, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:focus, .learndash-wrapper .is-style-reverse.ld-button:focus, .learndash-wrapper input.is-style-reverse:focus[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:focus, .learndash-wrapper .is-style-reverse.ld-logout:focus, .learndash-wrapper .is-style-reverse.ld-login:focus, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:focus, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:focus, .is-style-reverse.tribe-events-gcal:focus,
-.is-style-reverse.tribe-events-ical:focus, .is-style-reverse.download-button:focus {
+input.is-style-reverse:focus[type="submit"], #content a.is-style-reverse.wp-block-button__link:focus, #content .is-style-reverse.wp-block-file__button:focus, #content .wp-block-file a.is-style-reverse.wp-block-file__button:focus, #login #loginform .is-style-reverse#wp-submit:focus, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:focus, .learndash-wrapper .is-style-reverse.ld-button:focus, .learndash-wrapper input.is-style-reverse:focus[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:focus, .learndash-wrapper .is-style-reverse.ld-logout:focus, .learndash-wrapper .is-style-reverse.ld-login:focus, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:focus, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:focus, #tribe-events-content a.is-style-reverse.tribe-events-gcal:focus,
+#tribe-events-content a.is-style-reverse.tribe-events-ical:focus,
+#tribe-events-content a.is-style-reverse.tribe-events-button:focus, .is-style-reverse.download-button:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
@@ -4296,8 +4321,9 @@ input.is-style-reverse:focus[type="submit"], .is-style-reverse.wp-block-button__
 .nhsuk-button--reverse:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:active, .gform_wrapper .gform_body .gform_previous_button:active, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:active:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton:active, .nhsuk-button.is-style-reverse:active, button.is-style-reverse:active,
 input.is-style-reverse:active[type="button"],
 input.is-style-reverse:active[type="reset"],
-input.is-style-reverse:active[type="submit"], .is-style-reverse.wp-block-button__link:active, .is-style-reverse.wp-block-file__button:active, .wp-block-file a.is-style-reverse.wp-block-file__button:active, #login #loginform .is-style-reverse#wp-submit:active, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:active, .learndash-wrapper .is-style-reverse.ld-button:active, .learndash-wrapper input.is-style-reverse:active[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:active, .learndash-wrapper .is-style-reverse.ld-logout:active, .learndash-wrapper .is-style-reverse.ld-login:active, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:active, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:active, .is-style-reverse.tribe-events-gcal:active,
-.is-style-reverse.tribe-events-ical:active, .is-style-reverse.download-button:active {
+input.is-style-reverse:active[type="submit"], #content a.is-style-reverse.wp-block-button__link:active, #content .is-style-reverse.wp-block-file__button:active, #content .wp-block-file a.is-style-reverse.wp-block-file__button:active, #login #loginform .is-style-reverse#wp-submit:active, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:active, .learndash-wrapper .is-style-reverse.ld-button:active, .learndash-wrapper input.is-style-reverse:active[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:active, .learndash-wrapper .is-style-reverse.ld-logout:active, .learndash-wrapper .is-style-reverse.ld-login:active, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:active, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:active, #tribe-events-content a.is-style-reverse.tribe-events-gcal:active,
+#tribe-events-content a.is-style-reverse.tribe-events-ical:active,
+#tribe-events-content a.is-style-reverse.tribe-events-button:active, .is-style-reverse.download-button:active {
   background: #212b32;
   box-shadow: none;
   color: #ffffff;
@@ -4307,32 +4333,36 @@ input.is-style-reverse:active[type="submit"], .is-style-reverse.wp-block-button_
 .nhsuk-button--reverse:link, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:link, .gform_wrapper .gform_body .gform_previous_button:link, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:link:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:link, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton:link, .nhsuk-button.is-style-reverse:link, button.is-style-reverse:link,
 input.is-style-reverse:link[type="button"],
 input.is-style-reverse:link[type="reset"],
-input.is-style-reverse:link[type="submit"], .is-style-reverse.wp-block-button__link:link, .is-style-reverse.wp-block-file__button:link, .wp-block-file a.is-style-reverse.wp-block-file__button:link:active, .wp-block-file a.is-style-reverse.wp-block-file__button:link:focus, .wp-block-file a.is-style-reverse.wp-block-file__button:link:hover, .wp-block-file a.is-style-reverse.wp-block-file__button:link:visited, #login #loginform .is-style-reverse#wp-submit:link, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:link, .learndash-wrapper .is-style-reverse.ld-button:link, .learndash-wrapper input.is-style-reverse:link[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:link, .learndash-wrapper .is-style-reverse.ld-logout:link, .learndash-wrapper .is-style-reverse.ld-login:link, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:link, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:link, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:link, .is-style-reverse.tribe-events-gcal:link,
-.is-style-reverse.tribe-events-ical:link, .is-style-reverse.download-button:link {
+input.is-style-reverse:link[type="submit"], #content a.is-style-reverse.wp-block-button__link:link, #content .is-style-reverse.wp-block-file__button:link, #content .wp-block-file a.is-style-reverse.wp-block-file__button:link:active, #content .wp-block-file a.is-style-reverse.wp-block-file__button:link:focus, #content .wp-block-file a.is-style-reverse.wp-block-file__button:link:hover, #content .wp-block-file a.is-style-reverse.wp-block-file__button:link:visited, #login #loginform .is-style-reverse#wp-submit:link, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:link, .learndash-wrapper .is-style-reverse.ld-button:link, .learndash-wrapper input.is-style-reverse:link[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:link, .learndash-wrapper .is-style-reverse.ld-logout:link, .learndash-wrapper .is-style-reverse.ld-login:link, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:link, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:link, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:link, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:link, #tribe-events-content a.is-style-reverse.tribe-events-gcal:link,
+#tribe-events-content a.is-style-reverse.tribe-events-ical:link,
+#tribe-events-content a.is-style-reverse.tribe-events-button:link, .is-style-reverse.download-button:link {
   color: #212b32;
 }
 
 .nhsuk-button--reverse:link:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:link:active, .gform_wrapper .gform_body .gform_previous_button:link:active, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:link:active:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:link:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton:link:active, .nhsuk-button.is-style-reverse:link:active, button.is-style-reverse:link:active,
 input.is-style-reverse:link:active[type="button"],
 input.is-style-reverse:link:active[type="reset"],
-input.is-style-reverse:link:active[type="submit"], .is-style-reverse.wp-block-button__link:link:active, .is-style-reverse.wp-block-file__button:link:active, #login #loginform .is-style-reverse#wp-submit:link:active, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:link:active, .learndash-wrapper .is-style-reverse.ld-button:link:active, .learndash-wrapper input.is-style-reverse:link:active[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:link:active, .learndash-wrapper .is-style-reverse.ld-logout:link:active, .learndash-wrapper .is-style-reverse.ld-login:link:active, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:link:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:link:active, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:link:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:link:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:link:active, .is-style-reverse.tribe-events-gcal:link:active,
-.is-style-reverse.tribe-events-ical:link:active, .is-style-reverse.download-button:link:active {
+input.is-style-reverse:link:active[type="submit"], #content a.is-style-reverse.wp-block-button__link:link:active, #content .is-style-reverse.wp-block-file__button:link:active, #login #loginform .is-style-reverse#wp-submit:link:active, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:link:active, .learndash-wrapper .is-style-reverse.ld-button:link:active, .learndash-wrapper input.is-style-reverse:link:active[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:link:active, .learndash-wrapper .is-style-reverse.ld-logout:link:active, .learndash-wrapper .is-style-reverse.ld-login:link:active, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:link:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:link:active, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:link:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:link:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:link:active, #tribe-events-content a.is-style-reverse.tribe-events-gcal:link:active,
+#tribe-events-content a.is-style-reverse.tribe-events-ical:link:active,
+#tribe-events-content a.is-style-reverse.tribe-events-button:link:active, .is-style-reverse.download-button:link:active {
   color: #ffffff;
 }
 
 .nhsuk-button--reverse.nhsuk-button--disabled, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button--disabled#cancel-comment-reply-link, .gform_wrapper .gform_body .nhsuk-button--disabled.gform_previous_button, .learndash-wrapper .ld-content-actions .ld-content-action .nhsuk-button--disabled.ld-button:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .nhsuk-button--disabled.ld-search-prompt, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.wpProQuiz_TipButton, .nhsuk-button--disabled.nhsuk-button.is-style-reverse, button.nhsuk-button--disabled.is-style-reverse,
 input.nhsuk-button--disabled.is-style-reverse[type="button"],
 input.nhsuk-button--disabled.is-style-reverse[type="reset"],
-input.nhsuk-button--disabled.is-style-reverse[type="submit"], .nhsuk-button--disabled.is-style-reverse.wp-block-button__link, .nhsuk-button--disabled.is-style-reverse.wp-block-file__button, .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:active, .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:focus, .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:hover, .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:visited, #login #loginform .nhsuk-button--disabled.is-style-reverse#wp-submit, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-reverse.gform_next_button, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-button, .learndash-wrapper input.nhsuk-button--disabled.is-style-reverse[type=submit], .learndash-wrapper .ld-item-list-actions .nhsuk-button--disabled.is-style-reverse.ld-expand-button, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-logout, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-login, .learndash-wrapper .ld-content-actions a.nhsuk-button--disabled.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .nhsuk-button--disabled.is-style-reverse.ld-button, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.is-style-reverse.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn-primary, .nhsuk-button--disabled.is-style-reverse.tribe-events-gcal,
-.nhsuk-button--disabled.is-style-reverse.tribe-events-ical, .nhsuk-button--disabled.is-style-reverse.download-button {
+input.nhsuk-button--disabled.is-style-reverse[type="submit"], #content a.nhsuk-button--disabled.is-style-reverse.wp-block-button__link, #content .nhsuk-button--disabled.is-style-reverse.wp-block-file__button, #content .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:active, #content .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:focus, #content .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:hover, #content .wp-block-file a.nhsuk-button--disabled.is-style-reverse.wp-block-file__button:visited, #login #loginform .nhsuk-button--disabled.is-style-reverse#wp-submit, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-reverse.gform_next_button, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-button, .learndash-wrapper input.nhsuk-button--disabled.is-style-reverse[type=submit], .learndash-wrapper .ld-item-list-actions .nhsuk-button--disabled.is-style-reverse.ld-expand-button, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-logout, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-login, .learndash-wrapper .ld-content-actions a.nhsuk-button--disabled.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .nhsuk-button--disabled.is-style-reverse.ld-button, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.is-style-reverse.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn-primary, #tribe-events-content a.nhsuk-button--disabled.is-style-reverse.tribe-events-gcal,
+#tribe-events-content a.nhsuk-button--disabled.is-style-reverse.tribe-events-ical,
+#tribe-events-content a.nhsuk-button--disabled.is-style-reverse.tribe-events-button, .nhsuk-button--disabled.is-style-reverse.download-button {
   background-color: #ffffff;
 }
 
 .nhsuk-button--reverse.nhsuk-button--disabled:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button--disabled#cancel-comment-reply-link:focus, .gform_wrapper .gform_body .nhsuk-button--disabled.gform_previous_button:focus, .learndash-wrapper .ld-content-actions .ld-content-action .nhsuk-button--disabled.ld-button:focus:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .nhsuk-button--disabled.ld-search-prompt:focus, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.wpProQuiz_TipButton:focus, .nhsuk-button--disabled.nhsuk-button.is-style-reverse:focus, button.nhsuk-button--disabled.is-style-reverse:focus,
 input.nhsuk-button--disabled.is-style-reverse:focus[type="button"],
 input.nhsuk-button--disabled.is-style-reverse:focus[type="reset"],
-input.nhsuk-button--disabled.is-style-reverse:focus[type="submit"], .nhsuk-button--disabled.is-style-reverse.wp-block-button__link:focus, .nhsuk-button--disabled.is-style-reverse.wp-block-file__button:focus, #login #loginform .nhsuk-button--disabled.is-style-reverse#wp-submit:focus, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-reverse.gform_next_button:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-button:focus, .learndash-wrapper input.nhsuk-button--disabled.is-style-reverse:focus[type=submit], .learndash-wrapper .ld-item-list-actions .nhsuk-button--disabled.is-style-reverse.ld-expand-button:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-logout:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-login:focus, .learndash-wrapper .ld-content-actions a.nhsuk-button--disabled.is-style-reverse.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .nhsuk-button--disabled.is-style-reverse.ld-button:focus, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.is-style-reverse.wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn-primary:focus, .nhsuk-button--disabled.is-style-reverse.tribe-events-gcal:focus,
-.nhsuk-button--disabled.is-style-reverse.tribe-events-ical:focus, .nhsuk-button--disabled.is-style-reverse.download-button:focus {
+input.nhsuk-button--disabled.is-style-reverse:focus[type="submit"], #content a.nhsuk-button--disabled.is-style-reverse.wp-block-button__link:focus, #content .nhsuk-button--disabled.is-style-reverse.wp-block-file__button:focus, #login #loginform .nhsuk-button--disabled.is-style-reverse#wp-submit:focus, .gform_wrapper .gform_body .nhsuk-button--disabled.is-style-reverse.gform_next_button:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-button:focus, .learndash-wrapper input.nhsuk-button--disabled.is-style-reverse:focus[type=submit], .learndash-wrapper .ld-item-list-actions .nhsuk-button--disabled.is-style-reverse.ld-expand-button:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-logout:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-login:focus, .learndash-wrapper .ld-content-actions a.nhsuk-button--disabled.is-style-reverse.ld-primary-color:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .nhsuk-button--disabled.is-style-reverse.ld-button:focus, .learndash-wrapper .wpProQuiz_content .nhsuk-button--disabled.is-style-reverse.wpProQuiz_button:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .nhsuk-button--disabled.is-style-reverse.btn-primary:focus, #tribe-events-content a.nhsuk-button--disabled.is-style-reverse.tribe-events-gcal:focus,
+#tribe-events-content a.nhsuk-button--disabled.is-style-reverse.tribe-events-ical:focus,
+#tribe-events-content a.nhsuk-button--disabled.is-style-reverse.tribe-events-button:focus, .nhsuk-button--disabled.is-style-reverse.download-button:focus {
   background-color: #ffffff;
 }
 
@@ -4345,9 +4375,9 @@ button[disabled="disabled"],
 input[disabled="disabled"][type="button"],
 input[disabled="disabled"][type="reset"],
 input[disabled="disabled"][type="submit"],
-.wp-block-button__link[disabled="disabled"],
-.wp-block-file__button[disabled="disabled"],
-.wp-block-file a.wp-block-file__button[disabled="disabled"],
+#content a.wp-block-button__link[disabled="disabled"],
+#content .wp-block-file__button[disabled="disabled"],
+#content .wp-block-file a.wp-block-file__button[disabled="disabled"],
 #login #loginform #wp-submit[disabled="disabled"],
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"],
 .nhsuk-list-panel .comment-respond input[disabled="disabled"][type="submit"],
@@ -4364,17 +4394,18 @@ input[disabled="disabled"][type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"],
-.tribe-events-gcal[disabled="disabled"],
-.tribe-events-ical[disabled="disabled"],
+#tribe-events-content a.tribe-events-gcal[disabled="disabled"],
+#tribe-events-content a.tribe-events-ical[disabled="disabled"],
+#tribe-events-content a.tribe-events-button[disabled="disabled"],
 .download-button[disabled="disabled"],
 .nhsuk-button[disabled],
 button[disabled],
 input[disabled][type="button"],
 input[disabled][type="reset"],
 input[disabled][type="submit"],
-.wp-block-button__link[disabled],
-.wp-block-file__button[disabled],
-.wp-block-file a.wp-block-file__button[disabled],
+#content a.wp-block-button__link[disabled],
+#content .wp-block-file__button[disabled],
+#content .wp-block-file a.wp-block-file__button[disabled],
 #login #loginform #wp-submit[disabled],
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled],
 .nhsuk-list-panel .comment-respond input[disabled][type="submit"],
@@ -4391,8 +4422,9 @@ input[disabled][type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled],
-.tribe-events-gcal[disabled],
-.tribe-events-ical[disabled],
+#tribe-events-content a.tribe-events-gcal[disabled],
+#tribe-events-content a.tribe-events-ical[disabled],
+#tribe-events-content a.tribe-events-button[disabled],
 .download-button[disabled] {
   background-color: #007f3b;
   opacity: 0.5;
@@ -4405,9 +4437,9 @@ button[disabled="disabled"]:hover,
 input[disabled="disabled"]:hover[type="button"],
 input[disabled="disabled"]:hover[type="reset"],
 input[disabled="disabled"]:hover[type="submit"],
-.wp-block-button__link[disabled="disabled"]:hover,
-.wp-block-file__button[disabled="disabled"]:hover,
-.wp-block-file a.wp-block-file__button[disabled="disabled"]:hover,
+#content a.wp-block-button__link[disabled="disabled"]:hover,
+#content .wp-block-file__button[disabled="disabled"]:hover,
+#content .wp-block-file a.wp-block-file__button[disabled="disabled"]:hover,
 #login #loginform #wp-submit[disabled="disabled"]:hover,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"]:hover,
 .gform_wrapper .gform_body .gform_next_button[disabled="disabled"]:hover,
@@ -4423,17 +4455,18 @@ input[disabled="disabled"]:hover[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:hover,
-.tribe-events-gcal[disabled="disabled"]:hover,
-.tribe-events-ical[disabled="disabled"]:hover,
+#tribe-events-content a.tribe-events-gcal[disabled="disabled"]:hover,
+#tribe-events-content a.tribe-events-ical[disabled="disabled"]:hover,
+#tribe-events-content a.tribe-events-button[disabled="disabled"]:hover,
 .download-button[disabled="disabled"]:hover,
 .nhsuk-button[disabled]:hover,
 button[disabled]:hover,
 input[disabled]:hover[type="button"],
 input[disabled]:hover[type="reset"],
 input[disabled]:hover[type="submit"],
-.wp-block-button__link[disabled]:hover,
-.wp-block-file__button[disabled]:hover,
-.wp-block-file a.wp-block-file__button[disabled]:hover,
+#content a.wp-block-button__link[disabled]:hover,
+#content .wp-block-file__button[disabled]:hover,
+#content .wp-block-file a.wp-block-file__button[disabled]:hover,
 #login #loginform #wp-submit[disabled]:hover,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled]:hover,
 .gform_wrapper .gform_body .gform_next_button[disabled]:hover,
@@ -4449,8 +4482,9 @@ input[disabled]:hover[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:hover,
-.tribe-events-gcal[disabled]:hover,
-.tribe-events-ical[disabled]:hover,
+#tribe-events-content a.tribe-events-gcal[disabled]:hover,
+#tribe-events-content a.tribe-events-ical[disabled]:hover,
+#tribe-events-content a.tribe-events-button[disabled]:hover,
 .download-button[disabled]:hover {
   background-color: #007f3b;
   cursor: default;
@@ -4462,9 +4496,9 @@ button[disabled="disabled"]:focus,
 input[disabled="disabled"]:focus[type="button"],
 input[disabled="disabled"]:focus[type="reset"],
 input[disabled="disabled"]:focus[type="submit"],
-.wp-block-button__link[disabled="disabled"]:focus,
-.wp-block-file__button[disabled="disabled"]:focus,
-.wp-block-file a.wp-block-file__button[disabled="disabled"]:focus,
+#content a.wp-block-button__link[disabled="disabled"]:focus,
+#content .wp-block-file__button[disabled="disabled"]:focus,
+#content .wp-block-file a.wp-block-file__button[disabled="disabled"]:focus,
 #login #loginform #wp-submit[disabled="disabled"]:focus,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"]:focus,
 .gform_wrapper .gform_body .gform_next_button[disabled="disabled"]:focus,
@@ -4480,17 +4514,18 @@ input[disabled="disabled"]:focus[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:focus,
-.tribe-events-gcal[disabled="disabled"]:focus,
-.tribe-events-ical[disabled="disabled"]:focus,
+#tribe-events-content a.tribe-events-gcal[disabled="disabled"]:focus,
+#tribe-events-content a.tribe-events-ical[disabled="disabled"]:focus,
+#tribe-events-content a.tribe-events-button[disabled="disabled"]:focus,
 .download-button[disabled="disabled"]:focus,
 .nhsuk-button[disabled]:focus,
 button[disabled]:focus,
 input[disabled]:focus[type="button"],
 input[disabled]:focus[type="reset"],
 input[disabled]:focus[type="submit"],
-.wp-block-button__link[disabled]:focus,
-.wp-block-file__button[disabled]:focus,
-.wp-block-file a.wp-block-file__button[disabled]:focus,
+#content a.wp-block-button__link[disabled]:focus,
+#content .wp-block-file__button[disabled]:focus,
+#content .wp-block-file a.wp-block-file__button[disabled]:focus,
 #login #loginform #wp-submit[disabled]:focus,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled]:focus,
 .gform_wrapper .gform_body .gform_next_button[disabled]:focus,
@@ -4506,8 +4541,9 @@ input[disabled]:focus[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:focus,
-.tribe-events-gcal[disabled]:focus,
-.tribe-events-ical[disabled]:focus,
+#tribe-events-content a.tribe-events-gcal[disabled]:focus,
+#tribe-events-content a.tribe-events-ical[disabled]:focus,
+#tribe-events-content a.tribe-events-button[disabled]:focus,
 .download-button[disabled]:focus {
   background-color: #007f3b;
   outline: none;
@@ -4519,9 +4555,9 @@ button[disabled="disabled"]:active,
 input[disabled="disabled"]:active[type="button"],
 input[disabled="disabled"]:active[type="reset"],
 input[disabled="disabled"]:active[type="submit"],
-.wp-block-button__link[disabled="disabled"]:active,
-.wp-block-file__button[disabled="disabled"]:active,
-.wp-block-file a.wp-block-file__button[disabled="disabled"]:active,
+#content a.wp-block-button__link[disabled="disabled"]:active,
+#content .wp-block-file__button[disabled="disabled"]:active,
+#content .wp-block-file a.wp-block-file__button[disabled="disabled"]:active,
 #login #loginform #wp-submit[disabled="disabled"]:active,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"]:active,
 .gform_wrapper .gform_body .gform_next_button[disabled="disabled"]:active,
@@ -4537,17 +4573,18 @@ input[disabled="disabled"]:active[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled="disabled"]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:active,
-.tribe-events-gcal[disabled="disabled"]:active,
-.tribe-events-ical[disabled="disabled"]:active,
+#tribe-events-content a.tribe-events-gcal[disabled="disabled"]:active,
+#tribe-events-content a.tribe-events-ical[disabled="disabled"]:active,
+#tribe-events-content a.tribe-events-button[disabled="disabled"]:active,
 .download-button[disabled="disabled"]:active,
 .nhsuk-button[disabled]:active,
 button[disabled]:active,
 input[disabled]:active[type="button"],
 input[disabled]:active[type="reset"],
 input[disabled]:active[type="submit"],
-.wp-block-button__link[disabled]:active,
-.wp-block-file__button[disabled]:active,
-.wp-block-file a.wp-block-file__button[disabled]:active,
+#content a.wp-block-button__link[disabled]:active,
+#content .wp-block-file__button[disabled]:active,
+#content .wp-block-file a.wp-block-file__button[disabled]:active,
 #login #loginform #wp-submit[disabled]:active,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled]:active,
 .gform_wrapper .gform_body .gform_next_button[disabled]:active,
@@ -4563,8 +4600,9 @@ input[disabled]:active[type="submit"],
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button[disabled]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled]:active,
-.tribe-events-gcal[disabled]:active,
-.tribe-events-ical[disabled]:active,
+#tribe-events-content a.tribe-events-gcal[disabled]:active,
+#tribe-events-content a.tribe-events-ical[disabled]:active,
+#tribe-events-content a.tribe-events-button[disabled]:active,
 .download-button[disabled]:active {
   box-shadow: 0 4px 0 #00401e;
   top: 0;
@@ -4573,8 +4611,9 @@ input[disabled]:active[type="submit"],
 .nhsuk-button--secondary[disabled="disabled"], .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"], .learndash-wrapper .ld-logout[disabled="disabled"], .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"], .nhsuk-button.is-style-secondary[disabled="disabled"], button.is-style-secondary[disabled="disabled"],
 input.is-style-secondary[disabled="disabled"][type="button"],
 input.is-style-secondary[disabled="disabled"][type="reset"],
-input.is-style-secondary[disabled="disabled"][type="submit"], .is-style-secondary.wp-block-button__link[disabled="disabled"], .is-style-secondary.wp-block-file__button[disabled="disabled"], .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:active, .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:focus, .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:hover, .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:visited, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"], .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"], .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"], .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"], .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"], .learndash-wrapper input.is-style-secondary[disabled="disabled"][type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"], .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"], .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"], .is-style-secondary.tribe-events-gcal[disabled="disabled"],
-.is-style-secondary.tribe-events-ical[disabled="disabled"], .is-style-secondary.download-button[disabled="disabled"],
+input.is-style-secondary[disabled="disabled"][type="submit"], #content a.is-style-secondary.wp-block-button__link[disabled="disabled"], #content .is-style-secondary.wp-block-file__button[disabled="disabled"], #content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:active, #content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:focus, #content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:hover, #content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled="disabled"]:visited, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"], .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"], .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"], .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"], .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"], .learndash-wrapper input.is-style-secondary[disabled="disabled"][type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"], .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"], .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"], #tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled="disabled"],
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled="disabled"],
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled="disabled"], .is-style-secondary.download-button[disabled="disabled"],
 .nhsuk-button--secondary[disabled],
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled],
 .learndash-wrapper .ld-logout[disabled],
@@ -4587,12 +4626,12 @@ button.is-style-secondary[disabled],
 input.is-style-secondary[disabled][type="button"],
 input.is-style-secondary[disabled][type="reset"],
 input.is-style-secondary[disabled][type="submit"],
-.is-style-secondary.wp-block-button__link[disabled],
-.is-style-secondary.wp-block-file__button[disabled],
-.wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:active,
-.wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:focus,
-.wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:hover,
-.wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:visited,
+#content a.is-style-secondary.wp-block-button__link[disabled],
+#content .is-style-secondary.wp-block-file__button[disabled],
+#content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:active,
+#content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:focus,
+#content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:hover,
+#content .wp-block-file a.is-style-secondary.wp-block-file__button[disabled]:visited,
 #login #loginform .is-style-secondary#wp-submit[disabled],
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled],
 .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled],
@@ -4603,8 +4642,9 @@ input.is-style-secondary[disabled][type="submit"],
 .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled],
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled],
 .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled],
-.is-style-secondary.tribe-events-gcal[disabled],
-.is-style-secondary.tribe-events-ical[disabled],
+#tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled],
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled],
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled],
 .is-style-secondary.download-button[disabled] {
   background-color: #4c6272;
   opacity: 0.5;
@@ -4613,8 +4653,9 @@ input.is-style-secondary[disabled][type="submit"],
 .nhsuk-button--secondary[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:hover, .learndash-wrapper .ld-logout[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:hover, .nhsuk-button.is-style-secondary[disabled="disabled"]:hover, button.is-style-secondary[disabled="disabled"]:hover,
 input.is-style-secondary[disabled="disabled"]:hover[type="button"],
 input.is-style-secondary[disabled="disabled"]:hover[type="reset"],
-input.is-style-secondary[disabled="disabled"]:hover[type="submit"], .is-style-secondary.wp-block-button__link[disabled="disabled"]:hover, .is-style-secondary.wp-block-file__button[disabled="disabled"]:hover, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"]:hover, .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"]:hover, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"]:hover, .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"]:hover, .learndash-wrapper input.is-style-secondary[disabled="disabled"]:hover[type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"]:hover, .is-style-secondary.tribe-events-gcal[disabled="disabled"]:hover,
-.is-style-secondary.tribe-events-ical[disabled="disabled"]:hover, .is-style-secondary.download-button[disabled="disabled"]:hover,
+input.is-style-secondary[disabled="disabled"]:hover[type="submit"], #content a.is-style-secondary.wp-block-button__link[disabled="disabled"]:hover, #content .is-style-secondary.wp-block-file__button[disabled="disabled"]:hover, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"]:hover, .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"]:hover, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"]:hover, .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"]:hover, .learndash-wrapper input.is-style-secondary[disabled="disabled"]:hover[type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"]:hover, #tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled="disabled"]:hover,
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled="disabled"]:hover,
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled="disabled"]:hover, .is-style-secondary.download-button[disabled="disabled"]:hover,
 .nhsuk-button--secondary[disabled]:hover,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:hover,
 .learndash-wrapper .ld-logout[disabled]:hover,
@@ -4627,8 +4668,8 @@ button.is-style-secondary[disabled]:hover,
 input.is-style-secondary[disabled]:hover[type="button"],
 input.is-style-secondary[disabled]:hover[type="reset"],
 input.is-style-secondary[disabled]:hover[type="submit"],
-.is-style-secondary.wp-block-button__link[disabled]:hover,
-.is-style-secondary.wp-block-file__button[disabled]:hover,
+#content a.is-style-secondary.wp-block-button__link[disabled]:hover,
+#content .is-style-secondary.wp-block-file__button[disabled]:hover,
 #login #loginform .is-style-secondary#wp-submit[disabled]:hover,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled]:hover,
 .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled]:hover,
@@ -4639,8 +4680,9 @@ input.is-style-secondary[disabled]:hover[type="submit"],
 .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled]:hover,
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled]:hover,
 .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled]:hover,
-.is-style-secondary.tribe-events-gcal[disabled]:hover,
-.is-style-secondary.tribe-events-ical[disabled]:hover,
+#tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled]:hover,
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled]:hover,
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled]:hover,
 .is-style-secondary.download-button[disabled]:hover {
   background-color: #4c6272;
   cursor: default;
@@ -4649,8 +4691,9 @@ input.is-style-secondary[disabled]:hover[type="submit"],
 .nhsuk-button--secondary[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:focus, .learndash-wrapper .ld-logout[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:focus, .nhsuk-button.is-style-secondary[disabled="disabled"]:focus, button.is-style-secondary[disabled="disabled"]:focus,
 input.is-style-secondary[disabled="disabled"]:focus[type="button"],
 input.is-style-secondary[disabled="disabled"]:focus[type="reset"],
-input.is-style-secondary[disabled="disabled"]:focus[type="submit"], .is-style-secondary.wp-block-button__link[disabled="disabled"]:focus, .is-style-secondary.wp-block-file__button[disabled="disabled"]:focus, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"]:focus, .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"]:focus, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"]:focus, .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"]:focus, .learndash-wrapper input.is-style-secondary[disabled="disabled"]:focus[type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"]:focus, .is-style-secondary.tribe-events-gcal[disabled="disabled"]:focus,
-.is-style-secondary.tribe-events-ical[disabled="disabled"]:focus, .is-style-secondary.download-button[disabled="disabled"]:focus,
+input.is-style-secondary[disabled="disabled"]:focus[type="submit"], #content a.is-style-secondary.wp-block-button__link[disabled="disabled"]:focus, #content .is-style-secondary.wp-block-file__button[disabled="disabled"]:focus, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"]:focus, .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"]:focus, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"]:focus, .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"]:focus, .learndash-wrapper input.is-style-secondary[disabled="disabled"]:focus[type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"]:focus, #tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled="disabled"]:focus,
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled="disabled"]:focus,
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled="disabled"]:focus, .is-style-secondary.download-button[disabled="disabled"]:focus,
 .nhsuk-button--secondary[disabled]:focus,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:focus,
 .learndash-wrapper .ld-logout[disabled]:focus,
@@ -4663,8 +4706,8 @@ button.is-style-secondary[disabled]:focus,
 input.is-style-secondary[disabled]:focus[type="button"],
 input.is-style-secondary[disabled]:focus[type="reset"],
 input.is-style-secondary[disabled]:focus[type="submit"],
-.is-style-secondary.wp-block-button__link[disabled]:focus,
-.is-style-secondary.wp-block-file__button[disabled]:focus,
+#content a.is-style-secondary.wp-block-button__link[disabled]:focus,
+#content .is-style-secondary.wp-block-file__button[disabled]:focus,
 #login #loginform .is-style-secondary#wp-submit[disabled]:focus,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled]:focus,
 .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled]:focus,
@@ -4675,8 +4718,9 @@ input.is-style-secondary[disabled]:focus[type="submit"],
 .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled]:focus,
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled]:focus,
 .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled]:focus,
-.is-style-secondary.tribe-events-gcal[disabled]:focus,
-.is-style-secondary.tribe-events-ical[disabled]:focus,
+#tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled]:focus,
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled]:focus,
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled]:focus,
 .is-style-secondary.download-button[disabled]:focus {
   outline: none;
 }
@@ -4684,8 +4728,9 @@ input.is-style-secondary[disabled]:focus[type="submit"],
 .nhsuk-button--secondary[disabled="disabled"]:active, .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled="disabled"]:active, .learndash-wrapper .ld-logout[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions a.ld-primary-color[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_QuestionButton[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary[disabled="disabled"]:active, .nhsuk-button.is-style-secondary[disabled="disabled"]:active, button.is-style-secondary[disabled="disabled"]:active,
 input.is-style-secondary[disabled="disabled"]:active[type="button"],
 input.is-style-secondary[disabled="disabled"]:active[type="reset"],
-input.is-style-secondary[disabled="disabled"]:active[type="submit"], .is-style-secondary.wp-block-button__link[disabled="disabled"]:active, .is-style-secondary.wp-block-file__button[disabled="disabled"]:active, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"]:active, .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"]:active, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"]:active, .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"]:active, .learndash-wrapper input.is-style-secondary[disabled="disabled"]:active[type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"]:active, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"]:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"]:active, .is-style-secondary.tribe-events-gcal[disabled="disabled"]:active,
-.is-style-secondary.tribe-events-ical[disabled="disabled"]:active, .is-style-secondary.download-button[disabled="disabled"]:active,
+input.is-style-secondary[disabled="disabled"]:active[type="submit"], #content a.is-style-secondary.wp-block-button__link[disabled="disabled"]:active, #content .is-style-secondary.wp-block-file__button[disabled="disabled"]:active, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled="disabled"]:active, .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled="disabled"]:active, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button[disabled="disabled"]:active, .learndash-wrapper .is-style-secondary.ld-button[disabled="disabled"]:active, .learndash-wrapper input.is-style-secondary[disabled="disabled"]:active[type=submit], .learndash-wrapper .is-style-secondary.ld-login[disabled="disabled"]:active, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled="disabled"]:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled="disabled"]:active, #tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled="disabled"]:active,
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled="disabled"]:active,
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled="disabled"]:active, .is-style-secondary.download-button[disabled="disabled"]:active,
 .nhsuk-button--secondary[disabled]:active,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:active,
 .learndash-wrapper .ld-logout[disabled]:active,
@@ -4698,8 +4743,8 @@ button.is-style-secondary[disabled]:active,
 input.is-style-secondary[disabled]:active[type="button"],
 input.is-style-secondary[disabled]:active[type="reset"],
 input.is-style-secondary[disabled]:active[type="submit"],
-.is-style-secondary.wp-block-button__link[disabled]:active,
-.is-style-secondary.wp-block-file__button[disabled]:active,
+#content a.is-style-secondary.wp-block-button__link[disabled]:active,
+#content .is-style-secondary.wp-block-file__button[disabled]:active,
 #login #loginform .is-style-secondary#wp-submit[disabled]:active,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link[disabled]:active,
 .gform_wrapper .gform_body .is-style-secondary.gform_next_button[disabled]:active,
@@ -4710,8 +4755,9 @@ input.is-style-secondary[disabled]:active[type="submit"],
 .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt[disabled]:active,
 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button[disabled]:active,
 .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button[disabled]:active,
-.is-style-secondary.tribe-events-gcal[disabled]:active,
-.is-style-secondary.tribe-events-ical[disabled]:active,
+#tribe-events-content a.is-style-secondary.tribe-events-gcal[disabled]:active,
+#tribe-events-content a.is-style-secondary.tribe-events-ical[disabled]:active,
+#tribe-events-content a.is-style-secondary.tribe-events-button[disabled]:active,
 .is-style-secondary.download-button[disabled]:active {
   box-shadow: 0 4px 0 #263139;
   top: 0;
@@ -4720,8 +4766,9 @@ input.is-style-secondary[disabled]:active[type="submit"],
 .nhsuk-button--reverse[disabled="disabled"], .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"], .gform_wrapper .gform_body .gform_previous_button[disabled="disabled"], .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton[disabled="disabled"], .nhsuk-button.is-style-reverse[disabled="disabled"], button.is-style-reverse[disabled="disabled"],
 input.is-style-reverse[disabled="disabled"][type="button"],
 input.is-style-reverse[disabled="disabled"][type="reset"],
-input.is-style-reverse[disabled="disabled"][type="submit"], .is-style-reverse.wp-block-button__link[disabled="disabled"], .is-style-reverse.wp-block-file__button[disabled="disabled"], .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:active, .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:focus, .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:hover, .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:visited, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"], .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"], .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"], .learndash-wrapper input.is-style-reverse[disabled="disabled"][type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"], .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"], .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"], .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"], .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"], .is-style-reverse.tribe-events-gcal[disabled="disabled"],
-.is-style-reverse.tribe-events-ical[disabled="disabled"], .is-style-reverse.download-button[disabled="disabled"],
+input.is-style-reverse[disabled="disabled"][type="submit"], #content a.is-style-reverse.wp-block-button__link[disabled="disabled"], #content .is-style-reverse.wp-block-file__button[disabled="disabled"], #content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:active, #content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:focus, #content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:hover, #content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled="disabled"]:visited, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"], .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"], .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"], .learndash-wrapper input.is-style-reverse[disabled="disabled"][type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"], .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"], .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"], .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"], .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"], .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"], .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"], #tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled="disabled"],
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled="disabled"],
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled="disabled"], .is-style-reverse.download-button[disabled="disabled"],
 .nhsuk-button--reverse[disabled],
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled],
 .gform_wrapper .gform_body .gform_previous_button[disabled],
@@ -4733,12 +4780,12 @@ button.is-style-reverse[disabled],
 input.is-style-reverse[disabled][type="button"],
 input.is-style-reverse[disabled][type="reset"],
 input.is-style-reverse[disabled][type="submit"],
-.is-style-reverse.wp-block-button__link[disabled],
-.is-style-reverse.wp-block-file__button[disabled],
-.wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:active,
-.wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:focus,
-.wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:hover,
-.wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:visited,
+#content a.is-style-reverse.wp-block-button__link[disabled],
+#content .is-style-reverse.wp-block-file__button[disabled],
+#content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:active,
+#content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:focus,
+#content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:hover,
+#content .wp-block-file a.is-style-reverse.wp-block-file__button[disabled]:visited,
 #login #loginform .is-style-reverse#wp-submit[disabled],
 .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled],
 .learndash-wrapper .is-style-reverse.ld-button[disabled],
@@ -4751,8 +4798,9 @@ input.is-style-reverse[disabled][type="submit"],
 .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled],
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled],
-.is-style-reverse.tribe-events-gcal[disabled],
-.is-style-reverse.tribe-events-ical[disabled],
+#tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled],
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled],
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled],
 .is-style-reverse.download-button[disabled] {
   background-color: #ffffff;
   opacity: 0.5;
@@ -4761,8 +4809,9 @@ input.is-style-reverse[disabled][type="submit"],
 .nhsuk-button--reverse[disabled="disabled"]:hover, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"]:hover, .gform_wrapper .gform_body .gform_previous_button[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:hover:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton[disabled="disabled"]:hover, .nhsuk-button.is-style-reverse[disabled="disabled"]:hover, button.is-style-reverse[disabled="disabled"]:hover,
 input.is-style-reverse[disabled="disabled"]:hover[type="button"],
 input.is-style-reverse[disabled="disabled"]:hover[type="reset"],
-input.is-style-reverse[disabled="disabled"]:hover[type="submit"], .is-style-reverse.wp-block-button__link[disabled="disabled"]:hover, .is-style-reverse.wp-block-file__button[disabled="disabled"]:hover, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:hover, .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"]:hover, .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"]:hover, .learndash-wrapper input.is-style-reverse[disabled="disabled"]:hover[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"]:hover, .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"]:hover, .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"]:hover, .is-style-reverse.tribe-events-gcal[disabled="disabled"]:hover,
-.is-style-reverse.tribe-events-ical[disabled="disabled"]:hover, .is-style-reverse.download-button[disabled="disabled"]:hover,
+input.is-style-reverse[disabled="disabled"]:hover[type="submit"], #content a.is-style-reverse.wp-block-button__link[disabled="disabled"]:hover, #content .is-style-reverse.wp-block-file__button[disabled="disabled"]:hover, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:hover, .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"]:hover, .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"]:hover, .learndash-wrapper input.is-style-reverse[disabled="disabled"]:hover[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"]:hover, .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"]:hover, .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"]:hover, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"]:hover, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"]:hover, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"]:hover, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"]:hover, #tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled="disabled"]:hover,
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled="disabled"]:hover,
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled="disabled"]:hover, .is-style-reverse.download-button[disabled="disabled"]:hover,
 .nhsuk-button--reverse[disabled]:hover,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled]:hover,
 .gform_wrapper .gform_body .gform_previous_button[disabled]:hover,
@@ -4774,8 +4823,8 @@ button.is-style-reverse[disabled]:hover,
 input.is-style-reverse[disabled]:hover[type="button"],
 input.is-style-reverse[disabled]:hover[type="reset"],
 input.is-style-reverse[disabled]:hover[type="submit"],
-.is-style-reverse.wp-block-button__link[disabled]:hover,
-.is-style-reverse.wp-block-file__button[disabled]:hover,
+#content a.is-style-reverse.wp-block-button__link[disabled]:hover,
+#content .is-style-reverse.wp-block-file__button[disabled]:hover,
 #login #loginform .is-style-reverse#wp-submit[disabled]:hover,
 .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled]:hover,
 .learndash-wrapper .is-style-reverse.ld-button[disabled]:hover,
@@ -4788,8 +4837,9 @@ input.is-style-reverse[disabled]:hover[type="submit"],
 .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled]:hover,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled]:hover,
-.is-style-reverse.tribe-events-gcal[disabled]:hover,
-.is-style-reverse.tribe-events-ical[disabled]:hover,
+#tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled]:hover,
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled]:hover,
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled]:hover,
 .is-style-reverse.download-button[disabled]:hover {
   background-color: #ffffff;
   cursor: default;
@@ -4798,8 +4848,9 @@ input.is-style-reverse[disabled]:hover[type="submit"],
 .nhsuk-button--reverse[disabled="disabled"]:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"]:focus, .gform_wrapper .gform_body .gform_previous_button[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:focus:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton[disabled="disabled"]:focus, .nhsuk-button.is-style-reverse[disabled="disabled"]:focus, button.is-style-reverse[disabled="disabled"]:focus,
 input.is-style-reverse[disabled="disabled"]:focus[type="button"],
 input.is-style-reverse[disabled="disabled"]:focus[type="reset"],
-input.is-style-reverse[disabled="disabled"]:focus[type="submit"], .is-style-reverse.wp-block-button__link[disabled="disabled"]:focus, .is-style-reverse.wp-block-file__button[disabled="disabled"]:focus, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:focus, .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"]:focus, .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"]:focus, .learndash-wrapper input.is-style-reverse[disabled="disabled"]:focus[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"]:focus, .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"]:focus, .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"]:focus, .is-style-reverse.tribe-events-gcal[disabled="disabled"]:focus,
-.is-style-reverse.tribe-events-ical[disabled="disabled"]:focus, .is-style-reverse.download-button[disabled="disabled"]:focus,
+input.is-style-reverse[disabled="disabled"]:focus[type="submit"], #content a.is-style-reverse.wp-block-button__link[disabled="disabled"]:focus, #content .is-style-reverse.wp-block-file__button[disabled="disabled"]:focus, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:focus, .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"]:focus, .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"]:focus, .learndash-wrapper input.is-style-reverse[disabled="disabled"]:focus[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"]:focus, .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"]:focus, .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"]:focus, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"]:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"]:focus, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"]:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"]:focus, #tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled="disabled"]:focus,
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled="disabled"]:focus,
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled="disabled"]:focus, .is-style-reverse.download-button[disabled="disabled"]:focus,
 .nhsuk-button--reverse[disabled]:focus,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled]:focus,
 .gform_wrapper .gform_body .gform_previous_button[disabled]:focus,
@@ -4811,8 +4862,8 @@ button.is-style-reverse[disabled]:focus,
 input.is-style-reverse[disabled]:focus[type="button"],
 input.is-style-reverse[disabled]:focus[type="reset"],
 input.is-style-reverse[disabled]:focus[type="submit"],
-.is-style-reverse.wp-block-button__link[disabled]:focus,
-.is-style-reverse.wp-block-file__button[disabled]:focus,
+#content a.is-style-reverse.wp-block-button__link[disabled]:focus,
+#content .is-style-reverse.wp-block-file__button[disabled]:focus,
 #login #loginform .is-style-reverse#wp-submit[disabled]:focus,
 .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled]:focus,
 .learndash-wrapper .is-style-reverse.ld-button[disabled]:focus,
@@ -4825,8 +4876,9 @@ input.is-style-reverse[disabled]:focus[type="submit"],
 .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled]:focus,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled]:focus,
-.is-style-reverse.tribe-events-gcal[disabled]:focus,
-.is-style-reverse.tribe-events-ical[disabled]:focus,
+#tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled]:focus,
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled]:focus,
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled]:focus,
 .is-style-reverse.download-button[disabled]:focus {
   outline: none;
 }
@@ -4834,8 +4886,9 @@ input.is-style-reverse[disabled]:focus[type="submit"],
 .nhsuk-button--reverse[disabled="disabled"]:active, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled="disabled"]:active, .gform_wrapper .gform_body .gform_previous_button[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button[disabled="disabled"]:active:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton[disabled="disabled"]:active, .nhsuk-button.is-style-reverse[disabled="disabled"]:active, button.is-style-reverse[disabled="disabled"]:active,
 input.is-style-reverse[disabled="disabled"]:active[type="button"],
 input.is-style-reverse[disabled="disabled"]:active[type="reset"],
-input.is-style-reverse[disabled="disabled"]:active[type="submit"], .is-style-reverse.wp-block-button__link[disabled="disabled"]:active, .is-style-reverse.wp-block-file__button[disabled="disabled"]:active, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:active, .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"]:active, .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"]:active, .learndash-wrapper input.is-style-reverse[disabled="disabled"]:active[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"]:active, .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"]:active, .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"]:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"]:active, .is-style-reverse.tribe-events-gcal[disabled="disabled"]:active,
-.is-style-reverse.tribe-events-ical[disabled="disabled"]:active, .is-style-reverse.download-button[disabled="disabled"]:active,
+input.is-style-reverse[disabled="disabled"]:active[type="submit"], #content a.is-style-reverse.wp-block-button__link[disabled="disabled"]:active, #content .is-style-reverse.wp-block-file__button[disabled="disabled"]:active, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:active, .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled="disabled"]:active, .learndash-wrapper .is-style-reverse.ld-button[disabled="disabled"]:active, .learndash-wrapper input.is-style-reverse[disabled="disabled"]:active[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button[disabled="disabled"]:active, .learndash-wrapper .is-style-reverse.ld-logout[disabled="disabled"]:active, .learndash-wrapper .is-style-reverse.ld-login[disabled="disabled"]:active, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color[disabled="disabled"]:active, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button[disabled="disabled"]:active, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled="disabled"]:active, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled="disabled"]:active, #tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled="disabled"]:active,
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled="disabled"]:active,
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled="disabled"]:active, .is-style-reverse.download-button[disabled="disabled"]:active,
 .nhsuk-button--reverse[disabled]:active,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link[disabled]:active,
 .gform_wrapper .gform_body .gform_previous_button[disabled]:active,
@@ -4847,8 +4900,8 @@ button.is-style-reverse[disabled]:active,
 input.is-style-reverse[disabled]:active[type="button"],
 input.is-style-reverse[disabled]:active[type="reset"],
 input.is-style-reverse[disabled]:active[type="submit"],
-.is-style-reverse.wp-block-button__link[disabled]:active,
-.is-style-reverse.wp-block-file__button[disabled]:active,
+#content a.is-style-reverse.wp-block-button__link[disabled]:active,
+#content .is-style-reverse.wp-block-file__button[disabled]:active,
 #login #loginform .is-style-reverse#wp-submit[disabled]:active,
 .gform_wrapper .gform_body .is-style-reverse.gform_next_button[disabled]:active,
 .learndash-wrapper .is-style-reverse.ld-button[disabled]:active,
@@ -4861,8 +4914,9 @@ input.is-style-reverse[disabled]:active[type="submit"],
 .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button[disabled]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn[disabled]:active,
 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary[disabled]:active,
-.is-style-reverse.tribe-events-gcal[disabled]:active,
-.is-style-reverse.tribe-events-ical[disabled]:active,
+#tribe-events-content a.is-style-reverse.tribe-events-gcal[disabled]:active,
+#tribe-events-content a.is-style-reverse.tribe-events-ical[disabled]:active,
+#tribe-events-content a.is-style-reverse.tribe-events-button[disabled]:active,
 .is-style-reverse.download-button[disabled]:active {
   box-shadow: 0 4px 0 #212b32;
   top: 0;
@@ -4874,8 +4928,9 @@ input.is-style-reverse[disabled]:active[type="submit"],
 .ie8 .nhsuk-button:focus, .ie8 button:focus,
 .ie8 input:focus[type="button"],
 .ie8 input:focus[type="reset"],
-.ie8 input:focus[type="submit"], .ie8 .wp-block-button__link:focus, .ie8 .wp-block-file__button:focus, .ie8 .wp-block-file a.wp-block-file__button:focus, .wp-block-file .ie8 a.wp-block-file__button:focus, .ie8 #login #loginform #wp-submit:focus, #login #loginform .ie8 #wp-submit:focus, .ie8 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .ie8 #cancel-comment-reply-link:focus, .ie8 .gform_wrapper .gform_body .gform_next_button:focus, .gform_wrapper .gform_body .ie8 .gform_next_button:focus, .ie8 .gform_wrapper .gform_body .gform_previous_button:focus, .gform_wrapper .gform_body .ie8 .gform_previous_button:focus, .ie8 .learndash-wrapper .ld-button:focus, .learndash-wrapper .ie8 .ld-button:focus, .ie8 .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ie8 input:focus[type=submit], .ie8 .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-item-list-actions .ie8 .ld-expand-button:focus, .ie8 .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ie8 .ld-logout:focus, .ie8 .learndash-wrapper .ld-login:focus, .learndash-wrapper .ie8 .ld-login:focus, .ie8 .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-content-actions .ie8 a.ld-primary-color:focus, .ie8 .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ie8 .ld-search-prompt:focus, .ie8 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ie8 .ld-button:focus, .ie8 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .learndash-wrapper .wpProQuiz_content .ie8 .wpProQuiz_button:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn-primary:focus, .ie8 .tribe-events-gcal:focus,
-.ie8 .tribe-events-ical:focus, .ie8 .download-button:focus {
+.ie8 input:focus[type="submit"], .ie8 #content a.wp-block-button__link:focus, #content .ie8 a.wp-block-button__link:focus, .ie8 #content .wp-block-file__button:focus, #content .ie8 .wp-block-file__button:focus, .ie8 #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file .ie8 a.wp-block-file__button:focus, .ie8 #login #loginform #wp-submit:focus, #login #loginform .ie8 #wp-submit:focus, .ie8 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:focus, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .ie8 #cancel-comment-reply-link:focus, .ie8 .gform_wrapper .gform_body .gform_next_button:focus, .gform_wrapper .gform_body .ie8 .gform_next_button:focus, .ie8 .gform_wrapper .gform_body .gform_previous_button:focus, .gform_wrapper .gform_body .ie8 .gform_previous_button:focus, .ie8 .learndash-wrapper .ld-button:focus, .learndash-wrapper .ie8 .ld-button:focus, .ie8 .learndash-wrapper input:focus[type=submit], .learndash-wrapper .ie8 input:focus[type=submit], .ie8 .learndash-wrapper .ld-item-list-actions .ld-expand-button:focus, .learndash-wrapper .ld-item-list-actions .ie8 .ld-expand-button:focus, .ie8 .learndash-wrapper .ld-logout:focus, .learndash-wrapper .ie8 .ld-logout:focus, .ie8 .learndash-wrapper .ld-login:focus, .learndash-wrapper .ie8 .ld-login:focus, .ie8 .learndash-wrapper .ld-content-actions a.ld-primary-color:focus, .learndash-wrapper .ld-content-actions .ie8 a.ld-primary-color:focus, .ie8 .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:focus, .learndash-wrapper .ld-item-list .ld-section-heading .ie8 .ld-search-prompt:focus, .ie8 .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ld-button:focus, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .ie8 .ld-button:focus, .ie8 .learndash-wrapper .wpProQuiz_content .wpProQuiz_button:focus, .learndash-wrapper .wpProQuiz_content .ie8 .wpProQuiz_button:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn:focus, .ie8 .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary:focus, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .ie8 .btn-primary:focus, .ie8 #tribe-events-content a.tribe-events-gcal:focus, #tribe-events-content .ie8 a.tribe-events-gcal:focus,
+.ie8 #tribe-events-content a.tribe-events-ical:focus, #tribe-events-content .ie8 a.tribe-events-ical:focus,
+.ie8 #tribe-events-content a.tribe-events-button:focus, #tribe-events-content .ie8 a.tribe-events-button:focus, .ie8 .download-button:focus {
   outline: 1px dotted #212b32;
 }
 
@@ -10326,21 +10381,22 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   width: 100%;
 }
 
-.wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+#content a.wp-block-button__link, #content .wp-block-file__button, #content .wp-block-file a.wp-block-file__button, #content .wp-block-file a.wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:visited {
   border-radius: 4px;
   background: #007f3b;
-  font-size: #ffffff;
-  padding: 1px 8px;
+  /*padding       : 1px nhsuk-spacing(2);*/
   position: relative;
-  top: -nhsuk-spacing(1);
-  margin-bottom: 4px;
+  top: -nhsuk-spacing(2);
+  margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .nhsuk-button--reverse:visited, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link:visited, .gform_wrapper .gform_body .gform_previous_button:visited, .learndash-wrapper .ld-content-actions .ld-content-action .ld-button:visited:first-of-type, .learndash-wrapper .ld-item-list .ld-section-heading .ld-search-prompt:visited, .learndash-wrapper .wpProQuiz_content .wpProQuiz_TipButton:visited, .nhsuk-button.is-style-reverse:visited, button.is-style-reverse:visited,
 input.is-style-reverse:visited[type="button"],
 input.is-style-reverse:visited[type="reset"],
-input.is-style-reverse:visited[type="submit"], .is-style-reverse.wp-block-button__link:visited, .is-style-reverse.wp-block-file__button:visited, .wp-block-file a.is-style-reverse.wp-block-file__button:visited, #login #loginform .is-style-reverse#wp-submit:visited, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:visited, .learndash-wrapper .is-style-reverse.ld-button:visited, .learndash-wrapper input.is-style-reverse:visited[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:visited, .learndash-wrapper .is-style-reverse.ld-logout:visited, .learndash-wrapper .is-style-reverse.ld-login:visited, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:visited, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:visited, .is-style-reverse.tribe-events-gcal:visited,
-.is-style-reverse.tribe-events-ical:visited, .is-style-reverse.download-button:visited {
+input.is-style-reverse:visited[type="submit"], #content a.is-style-reverse.wp-block-button__link:visited, #content .is-style-reverse.wp-block-file__button:visited, #content .wp-block-file a.is-style-reverse.wp-block-file__button:visited, #login #loginform .is-style-reverse#wp-submit:visited, .gform_wrapper .gform_body .is-style-reverse.gform_next_button:visited, .learndash-wrapper .is-style-reverse.ld-button:visited, .learndash-wrapper input.is-style-reverse:visited[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button:visited, .learndash-wrapper .is-style-reverse.ld-logout:visited, .learndash-wrapper .is-style-reverse.ld-login:visited, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color:visited, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button:visited, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn:visited, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary:visited, #tribe-events-content a.is-style-reverse.tribe-events-gcal:visited,
+#tribe-events-content a.is-style-reverse.tribe-events-ical:visited,
+#tribe-events-content a.is-style-reverse.tribe-events-button:visited, .is-style-reverse.download-button:visited {
   color: #212b32;
 }
 
@@ -10399,11 +10455,6 @@ input.is-style-reverse:visited[type="submit"], .is-style-reverse.wp-block-button
   color: #d5281b;
 }
 
-#primary {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 #primary h1, #primary p, #primary .nhsuk-pagination__page {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -10459,16 +10510,16 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 2px solid #f0f4f5;
+  border: 2px solid #aeb7bd;
   border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 2px solid #f0f4f5;
+  border: 2px solid #aeb7bd;
   border-left: none;
-  box-shadow: 0;
+  /*box-shadow: 0;*/
   float: left;
   box-shadow: 0 !important;
 }
@@ -10515,12 +10566,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
-}
-
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 2px solid #f0f4f5;
-  border-left: none;
-  float: left;
 }
 
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
@@ -10572,10 +10617,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   margin: 16px 0 0 5%;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
-  margin-top: 16px;
-}
-
 @media (max-width: 40.0525em) {
   .error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
     border: 0;
@@ -10587,9 +10628,11 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
     margin: 0;
     height: 50px;
   }
-  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
-    margin-top: 0;
-  }
+}
+
+.nhsuk-grid-row.nhsuk-width-restrict, .tribe-common .nhsuk-width-restrict.nhsuk-promo-group.nhsuk-grid-row {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .nhsuk-grid-row .ld-course-list-items .nhsuk-grid-column-one-third:nth-of-type(3n+1), .ld-course-list-items .ld_course_grid .nhsuk-grid-row article .nhsuk-grid-column-one-third:nth-of-type(3n+1) {
@@ -10619,8 +10662,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 .nhsuk-header .nhsuk-header__search-toggle,
 .nhsuk-header .nhsuk-search__close,
 .nhsuk-header .nhsuk-header__navigation-close,
-.nhsuk-header .nhsuk-header__menu-toggle,
-.nhsuk-header .nhsuk-search__submit {
+.nhsuk-header .nhsuk-header__menu-toggle {
   box-shadow: none;
 }
 
@@ -10805,9 +10847,17 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 // @author Tony Blacker, NHS Leadership Academy
 // @version 1.1 12th October 2019
 */
-.nhsuk-grid-column-two-thirds.contentright, .tribe-common div.contentright.nhsuk-grid-column-two-thirds, .nhsuk-grid-column-two-thirds.contentright.archive, .nhsuk-grid-column-two-thirds.contentright.index {
+.nhsuk-search__submit {
+  box-shadow: none;
+}
+
+.nhsuk-grid-column-two-thirds.contentright, .tribe-common div.contentright.nhsuk-grid-column-two-thirds {
   float: right;
-  padding: 0 0 0 16px;
+  padding: 0 16px 0 16px;
+}
+
+.nhsuk-grid-column-two-thirds.contentleft, .tribe-common div.contentleft.nhsuk-grid-column-two-thirds {
+  padding: 0 16px 0 16px;
 }
 
 .nhsuk-grid-column-full {
@@ -10815,7 +10865,11 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 .nhsuk-header__search-wrap input[type="text"] {
-  border: 2px solid #e8edee;
+  border: 2px solid #aeb7bd;
+}
+
+.nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb .nhsuk-width-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb .nhsuk-width-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .sfwd-breadcrumbs {
+  margin: 0 16px;
 }
 
 /* Latest Posts skinning */
@@ -10980,11 +11034,6 @@ aside#secondary > section {
 
 #secondary section#widget_search .nhsuk-header__search-wrap .nhsuk-search__input {
   width: 81%;
-}
-
-#secondary section#widget_search .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 2px solid #212b32;
-  border-left: none;
 }
 
 #secondary section #wp-calendar caption {
@@ -11222,6 +11271,10 @@ aside#secondary > section {
   height: 200px;
 }
 
+.nhsuk-list-panel .comment-respond .form-submit {
+  margin-bottom: 48px;
+}
+
 .nhsuk-list-panel .comment-respond input[type="submit"] {
   float: right;
 }
@@ -11303,7 +11356,7 @@ aside#secondary > section {
 // @version 1.0 30th December 2019
 */
 @media print {
-  #secondary, #respond, #cookie-notice {
+  #secondary, #respond, #cookie-notice, .socialfloating {
     display: none;
   }
   a {
@@ -11954,11 +12007,11 @@ aside#secondary > section {
 }
 
 .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
@@ -11972,23 +12025,23 @@ aside#secondary > section {
 
 .tribe-events .tribe-events-c-top-bar__datepicker span {
   line-height: 1.5;
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .tribe-events-c-top-bar .tribe-topbar-prefix {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 button.tribe-events-c-top-bar__datepicker-button {
   background-color: #005eb8;
-  padding: 5px 8px;
-  font-size: 15px;
+  padding: 4px 8px;
+  font-size: 16px;
 }
 
 button.tribe-events-c-top-bar__datepicker-button svg {
   fill: #ffffff;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 button.tribe-events-c-top-bar__datepicker-button:active {
@@ -11996,12 +12049,12 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 }
 
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input {
-  padding: 12px;
-  margin-right: 10px;
+  padding: 16px;
+  margin-right: 8px;
 }
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .nhsuk-promo__content .tribe-events-calendar-list__event-datetime, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .tribe-events-calendar-list__event-datetime {
@@ -12015,12 +12068,12 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 
 .tribe-common .nhsuk-promo-group .event-meta,
 .event-meta {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .single-tribe_events .tribe-common .nhsuk-promo-group .event-meta, .single-tribe_events
 .event-meta {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .tribe-events-address,
@@ -12047,9 +12100,9 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 .events-cost .nhsuk-icon,
 .event-categories .nhsuk-icon {
   float: left;
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
 .event-categories:after {
@@ -12067,12 +12120,12 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   display: inline-block;
   font-size: 16px;
   float: left;
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .tribe-events-header__top-bar .events-dropdown {
   font-size: 16px;
-  padding-right: 10px;
+  padding-right: 8px;
   margin-top: 8px;
 }
 
@@ -12095,30 +12148,32 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   }
 }
 
-.tribe-events-gcal,
-.tribe-events-ical {
-  margin: 0 15px 10px 0;
-  background-color: #005eb8;
-  padding: 5px 8px;
-  font-size: 13px;
+#tribe-events-content a.tribe-events-gcal,
+#tribe-events-content a.tribe-events-ical,
+#tribe-events-content a.tribe-events-button {
+  margin: 0 16px 8px 0;
+  background-color: #007f3b;
+  color: #ffffff;
+  font-size: 16px;
 }
 
-.tribe-events-gcal:last-child,
-.tribe-events-ical:last-child {
+#tribe-events-content a.tribe-events-gcal:last-child,
+#tribe-events-content a.tribe-events-ical:last-child,
+#tribe-events-content a.tribe-events-button:last-child {
   margin-right: 0;
 }
 
 .single-tribe_events .tribe-events-single-event-description {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .single-tribe_events .nhsuk-promo__img {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .single-tribe_events .tribe-events-single-event-title {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .nowrap {
@@ -12138,7 +12193,7 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 
 .tribe-tickets-rsvp .tribe-button.tribe-button--rsvp {
   background-color: #005eb8;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* Events Widgets */
@@ -12521,10 +12576,6 @@ ul.download-versions {
   height: auto;
 }
 
-.wp-block-nhsblocks-promo1 .nhsuk-promo__content, .wp-block-nhsblocks-promo1 .tribe-common .nhsuk-promo-group div.nhsuk-promo__content, .tribe-common .nhsuk-promo-group .wp-block-nhsblocks-promo1 div.nhsuk-promo__content {
-  padding: 0;
-}
-
 .wp-block-nhsblocks-promo1 .nhsuk-promo__description,
 .wp-block-nhsblocks-promo1 .nhsuk-promo__heading,
 .wp-block-nhsblocks-promo1 .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
@@ -12673,16 +12724,18 @@ figure.is-style-nhsuk-table-responsive figcaption {
 .nhsuk-button.is-style-secondary, button.is-style-secondary,
 input.is-style-secondary[type="button"],
 input.is-style-secondary[type="reset"],
-input.is-style-secondary[type="submit"], .is-style-secondary.wp-block-button__link, .is-style-secondary.wp-block-file__button, .wp-block-file a.is-style-secondary.wp-block-file__button, #login #loginform .is-style-secondary#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input.is-style-secondary[type="submit"], .gform_wrapper .gform_body .is-style-secondary.gform_next_button, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button, .learndash-wrapper .is-style-secondary.ld-button, .learndash-wrapper input.is-style-secondary[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-secondary.ld-expand-button, .learndash-wrapper .is-style-secondary.ld-logout, .learndash-wrapper .is-style-secondary.ld-login, .learndash-wrapper .ld-content-actions a.is-style-secondary.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-secondary.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-secondary.btn-primary, .is-style-secondary.tribe-events-gcal,
-.is-style-secondary.tribe-events-ical, .is-style-secondary.download-button {
+input.is-style-secondary[type="submit"], #content a.is-style-secondary.wp-block-button__link, #content .is-style-secondary.wp-block-file__button, #content .wp-block-file a.is-style-secondary.wp-block-file__button, #login #loginform .is-style-secondary#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-secondary#cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input.is-style-secondary[type="submit"], .gform_wrapper .gform_body .is-style-secondary.gform_next_button, .gform_wrapper .gform_body .is-style-secondary.gform_previous_button, .learndash-wrapper .is-style-secondary.ld-button, .learndash-wrapper input.is-style-secondary[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-secondary.ld-expand-button, .learndash-wrapper .is-style-secondary.ld-logout, .learndash-wrapper .is-style-secondary.ld-login, .learndash-wrapper .ld-content-actions a.is-style-secondary.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-secondary.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-secondary.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-secondary.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-secondary.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-secondary.btn-primary, #tribe-events-content a.is-style-secondary.tribe-events-gcal,
+#tribe-events-content a.is-style-secondary.tribe-events-ical,
+#tribe-events-content a.is-style-secondary.tribe-events-button, .is-style-secondary.download-button {
   /* secondary button style*/
 }
 
 .nhsuk-button.is-style-reverse, button.is-style-reverse,
 input.is-style-reverse[type="button"],
 input.is-style-reverse[type="reset"],
-input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, .is-style-reverse.wp-block-file__button, .wp-block-file a.is-style-reverse.wp-block-file__button, #login #loginform .is-style-reverse#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input.is-style-reverse[type="submit"], .gform_wrapper .gform_body .is-style-reverse.gform_next_button, .gform_wrapper .gform_body .is-style-reverse.gform_previous_button, .learndash-wrapper .is-style-reverse.ld-button, .learndash-wrapper input.is-style-reverse[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button, .learndash-wrapper .is-style-reverse.ld-logout, .learndash-wrapper .is-style-reverse.ld-login, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary, .is-style-reverse.tribe-events-gcal,
-.is-style-reverse.tribe-events-ical, .is-style-reverse.download-button {
+input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-button__link, #content .is-style-reverse.wp-block-file__button, #content .wp-block-file a.is-style-reverse.wp-block-file__button, #login #loginform .is-style-reverse#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .is-style-reverse#cancel-comment-reply-link, .nhsuk-list-panel .comment-respond input.is-style-reverse[type="submit"], .gform_wrapper .gform_body .is-style-reverse.gform_next_button, .gform_wrapper .gform_body .is-style-reverse.gform_previous_button, .learndash-wrapper .is-style-reverse.ld-button, .learndash-wrapper input.is-style-reverse[type=submit], .learndash-wrapper .ld-item-list-actions .is-style-reverse.ld-expand-button, .learndash-wrapper .is-style-reverse.ld-logout, .learndash-wrapper .is-style-reverse.ld-login, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading .is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit .is-style-reverse.ld-button, .learndash-wrapper .wpProQuiz_content .is-style-reverse.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button .is-style-reverse.btn-primary, #tribe-events-content a.is-style-reverse.tribe-events-gcal,
+#tribe-events-content a.is-style-reverse.tribe-events-ical,
+#tribe-events-content a.is-style-reverse.tribe-events-button, .is-style-reverse.download-button {
   /* reverse button style*/
 }
 
@@ -12794,6 +12847,11 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
   margin-bottom: 50px;
 }
 
+.nhsuk-hero__overlay .nhsuk-width-container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .nhsuk-hero__overlay .nhsuk-grid-column-two-thirds, .nhsuk-hero__overlay .tribe-common div.nhsuk-grid-column-two-thirds, .tribe-common .nhsuk-hero__overlay div.nhsuk-grid-column-two-thirds {
   padding: 0;
 }
@@ -12807,7 +12865,7 @@ input.is-style-reverse[type="submit"], .is-style-reverse.wp-block-button__link, 
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  max-width: 100vw;
+  max-width: 100%;
   position: relative;
   right: 50%;
   width: 100vw;

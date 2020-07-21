@@ -4,7 +4,7 @@
 // @version 1.0 30th December 2019
 */
 @media print {
-  #secondary, #respond, #cookie-notice { // hide sidebar, cookie notice, admin bar and comments form from printed output
+  #secondary, #respond, #cookie-notice, .socialfloating { // hide sidebar, cookie notice, admin bar and comments form from printed output
     display: none;
   }
   a {

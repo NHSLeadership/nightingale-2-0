@@ -27,18 +27,18 @@
 
 //end image extending
 //style default button as secondary button
-
-.wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
-  @extend .nhsuk-button;
-  border-radius : $nhsuk-border-radius;
-  background    : $nhsuk-button-color;
-  font-size     : $nhsuk-button-text-color;
-  padding       : 1px nhsuk-spacing(2);
-  position      : relative;
-  top           : -nhsuk-spacing(1);
-  margin-bottom : nhsuk-spacing(1);
+#content {
+  a.wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+	@extend .nhsuk-button;
+	border-radius : $nhsuk-border-radius;
+	background    : $nhsuk-button-color;
+	/*padding       : 1px nhsuk-spacing(2);*/
+	position      : relative;
+	top           : -nhsuk-spacing(2);
+	margin-bottom : nhsuk-spacing(3);
+	color         : $nhsuk-button-text-color;
+  }
 }
-
 
 //when button is a link, something goes wonky
 .nhsuk-button--reverse:visited {
@@ -118,8 +118,6 @@
 }
 
 #primary {
-  margin-left: 0;
-  margin-right: 0;
   h1, p, .nhsuk-pagination__page {
 	-ms-word-wrap : break-word;
 	word-wrap     : break-word;
@@ -169,7 +167,7 @@
 
 
 	.nhsuk-search__input {
-	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
+	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 	  border-radius : $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
 	  float         : left;
 	  max-width     : 80%;
@@ -177,11 +175,11 @@
 	}
 
 	.nhsuk-search__submit {
-	  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
+	  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 	  border-left : none;
-	  box-shadow: 0;
+	  /*box-shadow: 0;*/
 	  float       : left;
-	  box-shadow: 0 !important;
+	  box-shadow  : 0 !important;
 	}
 
 	.nhsuk-header__search-toggle {
@@ -234,11 +232,6 @@
 
 	  }
 
-	  .nhsuk-search__submit {
-		border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
-		border-left : none;
-		float       : left;
-	  }
 
 	  .nhsuk-header__search-toggle {
 		background-color : $color_nhsuk-grey-5;
@@ -296,10 +289,6 @@
 	  margin    : 16px 0 0 5%;
 	}
 
-	.nhsuk-search__submit {
-	  margin-top : 16px;
-	}
-
 
   }
 
@@ -315,24 +304,28 @@
 		height    : 50px;
 	  }
 
-	  .nhsuk-search__submit {
-		margin-top : 0;
-	  }
+
 	}
   }
 }
 
 // fix middle of three blocks so it is the same width as outside blocks.
 .nhsuk-grid-row {
+  &.nhsuk-width-restrict {
+	margin-left  : nhsuk-spacing(3);
+	margin-right : nhsuk-spacing(3);
+  }
+
   .nhsuk-panel-group {
 	.nhsuk-grid-column-one-third:nth-of-type(3n+1) {
 	  padding : 0 8px;
 	}
   }
 }
+
 .interim-login {
   header, footer {
-	display: none;
+	display : none;
   }
 }
 
