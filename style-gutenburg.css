@@ -13908,10 +13908,6 @@
   height: auto;
 }
 
-.edit-post-visual-editor .wp-block-nhsblocks-promo1 .nhsuk-promo__content, .block-editor-block-styles .wp-block-nhsblocks-promo1 .nhsuk-promo__content, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-promo1 .nhsuk-promo__content {
-  padding: 0;
-}
-
 .edit-post-visual-editor .wp-block-nhsblocks-promo1 .nhsuk-promo__description,
 .edit-post-visual-editor .wp-block-nhsblocks-promo1 .nhsuk-promo__heading, .block-editor-block-styles .wp-block-nhsblocks-promo1 .nhsuk-promo__description,
 .block-editor-block-styles .wp-block-nhsblocks-promo1 .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-promo1 .nhsuk-promo__description,

@@ -20,7 +20,7 @@
   &.nhsuk-grid-row{
 
     @extend .nhsuk-grid-row;
-    
+
   }
 
   div.nhsuk-grid-column-one-third{
@@ -30,14 +30,14 @@
     &.nhsuk-promo-group__item{
       @extend .nhsuk-promo-group__item;
     }
-    margin-bottom: 36px;
+    margin-bottom: nhsuk-spacing(4);
 
   }
 
   div.nhsuk-grid-column-one-half{
     @extend .nhsuk-grid-column-one-half;
 
-    margin-bottom: 36px;
+    margin-bottom: nhsuk-spacing(4);
   }
 
   div.nhsuk-promo__content{
@@ -63,24 +63,24 @@
 
   span{
     line-height: 1.5;
-    padding-right: 10px;
+    padding-right: nhsuk-spacing(2);
   }
 }
 
 .tribe-events-c-top-bar .tribe-topbar-prefix{
-  margin-right: 10px;
+  margin-right: nhsuk-spacing(2);
 }
 
 
 button.tribe-events-c-top-bar__datepicker-button{
     background-color: $nhsuk-link-color;
-    padding: 5px 8px;
-    font-size: 15px;
+    padding: nhsuk-spacing(1) nhsuk-spacing(2);
+    font-size: $nhsuk-base-font-size;
 
     svg{
       fill: $color_nhsuk-white;
-      width: 20px;
-      height: 20px;
+      width: nhsuk-spacing(3);
+      height: nhsuk-spacing(3);
     }
 
     &:active{
@@ -89,12 +89,12 @@ button.tribe-events-c-top-bar__datepicker-button{
 }
 
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input{
-  padding: 12px;
-  margin-right: 10px;
+  padding: nhsuk-spacing(3);
+  margin-right: nhsuk-spacing(2);
 }
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-search__input-group{
-  margin-right: 10px;
+  margin-right: nhsuk-spacing(2);
 }
 
 .nhsuk-promo__content .tribe-events-calendar-list__event-datetime{
@@ -107,16 +107,16 @@ button.tribe-events-c-top-bar__datepicker-button{
 
 .tribe-common .nhsuk-promo-group .event-meta,
 .event-meta{
-  margin-bottom: 15px;
+  margin-bottom: nhsuk-spacing(3);
 
   .single-tribe_events &{
-    margin-bottom: 30px;
+    margin-bottom: nhsuk-spacing(4);
   }
 }
 
 .tribe-events-address,
 .tribe-events-calendar-list__event-datetime{
-  font-size: 16px;
+  font-size: $nhsuk-base-font-size;
   margin-bottom: 0;
 }
 
@@ -128,14 +128,14 @@ button.tribe-events-c-top-bar__datepicker-button{
 .venue-address,
 .events-cost,
 .event-categories {
-  
-  font-size: 16px;
+
+  font-size: $nhsuk-base-font-size;
 
   .nhsuk-icon{
     float: left;
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
+    width: nhsuk-spacing(3);
+    height: nhsuk-spacing(3);
+    margin-right: nhsuk-spacing(2);
   }
 }
 
@@ -145,22 +145,22 @@ button.tribe-events-c-top-bar__datepicker-button{
 
   ul{
     position: relative;
-    top: -2px;    
+    top: -2px;
   }
 
   li{
     display: inline-block;
-    font-size: 16px;
+    font-size: $nhsuk-base-font-size;
     float: left;
-    margin-right: 5px;
+    margin-right: nhsuk-spacing(1);
   }
 }
 
 .tribe-events-header__top-bar{
-  .events-dropdown{    
-    font-size: 16px;
-    padding-right: 10px;
-    margin-top: 8px;
+  .events-dropdown{
+    font-size: $nhsuk-base-font-size;
+    padding-right: nhsuk-spacing(2);
+    margin-top: nhsuk-spacing(2);
 
     @media screen and (min-width: 832px) {
       margin-top: 0px;
@@ -181,36 +181,40 @@ button.tribe-events-c-top-bar__datepicker-button{
     .tribe-events-c-search__input{
       background-color: transparent;
     }
-    
+
   }
-  
+
 }
 
-.tribe-events-gcal,
-.tribe-events-ical{
-  @extend .nhsuk-button;
-  margin: 0 15px 10px 0;
-  background-color: $nhsuk-link-color;
-  padding: 5px 8px;
-  font-size: 13px;
-  &:last-child{
-    margin-right: 0;
+#tribe-events-content {
+  a.tribe-events-gcal,
+  a.tribe-events-ical,
+  a.tribe-events-button {
+    @extend .nhsuk-button;
+    margin           : 0 nhsuk-spacing(3) nhsuk-spacing(2) 0;
+    background-color : $nhsuk-button-color;
+    color            : $nhsuk-button-text-color;
+    font-size        : $nhsuk-base-font-size;
+
+    &:last-child {
+      margin-right : 0;
+    }
   }
 }
 
 .single-tribe_events {
 
   .tribe-events-single-event-description{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: nhsuk-spacing(5);
+    margin-bottom: nhsuk-spacing(5);
   }
 
   .nhsuk-promo__img{
-    margin-bottom: 20px;
+    margin-bottom: nhsuk-spacing(3);
   }
 
   .tribe-events-single-event-title{
-    margin-bottom: 48px;
+    margin-bottom: nhsuk-spacing(5);
   }
 }
 
@@ -240,7 +244,7 @@ button.tribe-events-c-top-bar__datepicker-button{
   }
 
   .tribe-events-tickets input[type=text],
-  .tribe-events-tickets input[type=email], 
+  .tribe-events-tickets input[type=email],
   .tribe-events-tickets select{
 
     width: 100%;
@@ -250,7 +254,7 @@ button.tribe-events-c-top-bar__datepicker-button{
   .tribe-button.tribe-button--rsvp{
 
     background-color: $nhsuk-link-color;
-    font-size: 15px;
+    font-size: $nhsuk-base-font-size;
 
   }
 
