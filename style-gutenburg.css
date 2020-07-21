@@ -13518,6 +13518,11 @@
   width: 15rem;
 }
 
+.edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
+  float: left;
+  margin-top: 16px;
+}
+
 .edit-post-visual-editor #cookie-notice, .block-editor-block-styles #cookie-notice, .block-editor-inserter__menu-help-panel #cookie-notice {
   position: fixed;
   left: 0;

@@ -10492,6 +10492,11 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   width: 15rem;
 }
 
+.nhsuk-search__submit {
+  float: left;
+  margin-top: 16px;
+}
+
 #cookie-notice {
   position: fixed;
   left: 0;

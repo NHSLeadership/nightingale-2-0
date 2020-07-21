@@ -147,6 +147,10 @@
 .nhsuk-search__input {
   width : 15rem;
 }
+.nhsuk-search__submit {
+  float: left;
+  margin-top: nhsuk-spacing(3);
+}
 
 #cookie-notice {
   position : fixed;
