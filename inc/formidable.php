@@ -9,7 +9,12 @@
  * @copyright    OGL v3
  * @package      Nightingale Theme
  */
-add_action( 'wp_head', function () { ?>
+add_action( 'wp_head', function () { 
+global $post;
+    if ( has_shortcode( $post->post_content, 'formidable') ) {
+       
+   
+?>
 	<style>
 	
 		.frm_opt_container > div{
@@ -31,11 +36,11 @@ add_action( 'wp_head', function () { ?>
 	}
 	
 	</style>
-	<?php } );
+	<?php } } );
 	
-	add_action( 'wp_head', function () { ?>
-	
-	
+	add_action( 'wp_head', function () { 
+	 if ( has_shortcode( $post->post_content, 'formidable') ) {
+	?>
 		<script type="text/javascript">
 	  jQuery(document).ready(function($){
 		$(".frm_fields_container label input").each(function(){
@@ -64,5 +69,5 @@ add_action( 'wp_head', function () { ?>
 	
 	
 	</script>
-	<?php } );
+	<?php } } );
 	
