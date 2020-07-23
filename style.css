@@ -10524,7 +10524,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
   border: 2px solid #aeb7bd;
   border-left: none;
-  /*box-shadow: 0;*/
+  margin-top: 0;
   float: left;
   box-shadow: 0 !important;
 }
@@ -12291,6 +12291,7 @@ ul.download-versions {
 
 .nhsuk-global-alert__content {
   position: relative;
+  margin: 0 16px;
 }
 
 .nhsuk-global-alert__content > *:first-child {
