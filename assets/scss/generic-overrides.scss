@@ -124,9 +124,10 @@
   }
 
   .nhsuk-search__submit {
-	float: left;
-	margin-top: nhsuk-spacing(3);
+	float      : left;
+	margin-top : nhsuk-spacing(3);
   }
+
   footer {
 	.edit-link {
 	  @extend .nhsuk-pill-standard;
@@ -181,7 +182,7 @@
 	.nhsuk-search__submit {
 	  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 	  border-left : none;
-	  /*box-shadow: 0;*/
+	  margin-top  : 0;
 	  float       : left;
 	  box-shadow  : 0 !important;
 	}
@@ -211,7 +212,7 @@
 @media (min-width : 40.0625em) {
   .nhsuk-search__submit {
 	padding-top : 6px;
-	margin-top: 0;
+	margin-top  : 0;
   }
 }
 
