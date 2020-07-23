@@ -16,12 +16,17 @@
 
 get_header();
 ?>
-
-<div id="primary" class=" nhsuk-grid-row">
+<div id="primary" class=" nhsuk-grid-row nhsuk-width-restrict">
 	<div class="nhsuk-grid-column-full full-width">
-
-		<?php get_template_part('template-parts/sitemap'); ?>
-
+		<section class="sitemap">
+			<header class="entry-header">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</header>
+			<div class="page-content">
+				<?php get_template_part('template-parts/sitemap'); ?>
+			</div>
+			<div class="nhsuk-content__clearfix"></div>
+		</section>
 	</div>
 </div><!-- #primary -->
 

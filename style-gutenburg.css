@@ -13501,6 +13501,11 @@
   word-wrap: break-word;
 }
 
+.edit-post-visual-editor #primary .nhsuk-search__submit, .block-editor-block-styles #primary .nhsuk-search__submit, .block-editor-inserter__menu-help-panel #primary .nhsuk-search__submit {
+  float: left;
+  margin-top: 16px;
+}
+
 .edit-post-visual-editor #primary footer .edit-link, .block-editor-block-styles #primary footer .edit-link, .block-editor-inserter__menu-help-panel #primary footer .edit-link {
   text-decoration: none;
   /*margin-left: nhsuk-spacing(4);*/
@@ -13516,11 +13521,6 @@
 
 .edit-post-visual-editor .nhsuk-search__input, .block-editor-block-styles .nhsuk-search__input, .block-editor-inserter__menu-help-panel .nhsuk-search__input {
   width: 15rem;
-}
-
-.edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
-  float: left;
-  margin-top: 16px;
 }
 
 .edit-post-visual-editor #cookie-notice, .block-editor-block-styles #cookie-notice, .block-editor-inserter__menu-help-panel #cookie-notice {
@@ -13577,6 +13577,7 @@
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
     padding-top: 6px;
+    margin-top: 0;
   }
 }
 
