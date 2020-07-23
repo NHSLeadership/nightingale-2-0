@@ -11,7 +11,7 @@
  */
 add_action( 'wp_head', function () { 
 global $post;
-    if ( has_shortcode( $post->post_content, 'formidable') ) {
+    if ( has_shortcode( $post->post_content, 'formidable') ||  has_block( 'formidable-simple-form', $post ) ) {
        
    
 ?>
@@ -39,7 +39,8 @@ global $post;
 	<?php } } );
 	
 	add_action( 'wp_head', function () { 
-	 if ( has_shortcode( $post->post_content, 'formidable') ) {
+		global $post;
+	 if ( has_shortcode( $post->post_content, 'formidable') ||  has_block( 'formidable-simple-form', $post ) {
 	?>
 		<script type="text/javascript">
 	  jQuery(document).ready(function($){
