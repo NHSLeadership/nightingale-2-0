@@ -1,5 +1,5 @@
-# Nightingale 2.1.8
-<img src="https://img.shields.io/badge/nightingale-v2.1.8-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend
+# Nightingale 2.2.0
+<img src="https://img.shields.io/badge/nightingale-v2.2.0-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend
 "><img src="https://img.shields.io/badge/nhsuk--frontend-v3.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
 
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
@@ -73,10 +73,7 @@ The Frutiger font is specified for use on NHS web properties, but is only licens
 ## Optional Settings
  - This theme will suggest you pull in the [NHS.UK Frontend Library](https://github.com/nhsuk/nhsuk-frontend) via 
     `node` if you install using the optional commands above for local development of the theme itself.
-- [Google Tag Manager](https://wordpress.org/plugins/duracelltomi-google-tag-manager/) - This is an easy way to install the Google Tag Manager code
-  on your site. Once installed and activated go to Settings -> Google Tag Manager and enter your Google Tag Manager ID in the box. Under 'Container code placement'
-  choose 'Custom (needs tweak in your template)'. You don't need to add anything else to the theme as this code has been added for you.
-     
+    
       
 ## Feedback / Improvement / Development
  - If you see any issues, faults or have suggestions for improvements, please add them as issues to our Git 
@@ -103,11 +100,11 @@ To your themes functions.php file, or if your hosting permits you can disable/bl
 This theme has been extended to style the following plugins automatically:
  - [x] Gravity Forms
  - [x] Most Gravity Perks extensions (please let us know if you are using a GP extension that is not correctly styled)
+ - [x] Formidable Forms
  - [x] LearnDash - please use the latest version of LD and use the LD30 theme with no primary, secondary or tertiary colours defined
  - [x] Download Monitor
  - [x] The Events Calendar
  - [x] WP HTML Email
- - [x] Google Tag Manager
   
 ## Progress
  - [x] Load in the NHS Frontend library
