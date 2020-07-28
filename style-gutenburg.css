@@ -13519,7 +13519,7 @@
   box-shadow: inset 0 0 0 4px #ffeb3b;
 }
 
-.edit-post-visual-editor .nhsuk-search__input, .block-editor-block-styles .nhsuk-search__input, .block-editor-inserter__menu-help-panel .nhsuk-search__input {
+.edit-post-visual-editor .nhsuk-search__input#search-field, .block-editor-block-styles .nhsuk-search__input#search-field, .block-editor-inserter__menu-help-panel .nhsuk-search__input#search-field {
   width: 15rem;
 }
 
@@ -13663,8 +13663,9 @@
 }
 
 .edit-post-visual-editor .nhsuk-grid-row.nhsuk-width-restrict, .block-editor-block-styles .nhsuk-grid-row.nhsuk-width-restrict, .block-editor-inserter__menu-help-panel .nhsuk-grid-row.nhsuk-width-restrict {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  background: #f0f4f5;
 }
 
 .edit-post-visual-editor .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .edit-post-visual-editor .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .edit-post-visual-editor .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-block-styles .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-block-styles .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-inserter__menu-help-panel .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-inserter__menu-help-panel .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"] {
@@ -13715,7 +13716,7 @@
 }
 
 .edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-block-styles .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-inserter__menu-help-panel .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list {
-  margin: 0 16px;
+  margin: 0 16px 0 0;
 }
 
 .edit-post-visual-editor .nightingale-latest-news .nhsuk-panel, .edit-post-visual-editor .nightingale-latest-news .sticky, .edit-post-visual-editor .nightingale-latest-news .block-editor-block-styles .sticky, .block-editor-block-styles .edit-post-visual-editor .nightingale-latest-news .sticky, .edit-post-visual-editor .nightingale-latest-news .block-editor-inserter__menu-help-panel .sticky, .block-editor-inserter__menu-help-panel .edit-post-visual-editor .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .nhsuk-panel, .block-editor-block-styles .nightingale-latest-news .edit-post-visual-editor .sticky, .edit-post-visual-editor .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .block-editor-inserter__menu-help-panel .sticky, .block-editor-inserter__menu-help-panel .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .nhsuk-panel, .block-editor-inserter__menu-help-panel .nightingale-latest-news .edit-post-visual-editor .sticky, .edit-post-visual-editor .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .block-editor-block-styles .sticky, .block-editor-block-styles .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky {
@@ -14281,6 +14282,10 @@
   position: relative;
   right: 50%;
   width: 100vw;
+}
+
+.edit-post-visual-editor .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-block-styles .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner {
+  margin-left: -8px;
 }
 
 .edit-post-visual-editor .is-style-panel-with-label h3, .block-editor-block-styles .is-style-panel-with-label h3, .block-editor-inserter__menu-help-panel .is-style-panel-with-label h3 {
