@@ -48,39 +48,41 @@ add_action(
 	}
 );
 
-add_action( 'wp_head', function () {
-	global $post;
-	if ( has_shortcode( $post->post_content, 'formidable' ) || has_block( 'formidable-simple-form', $post ){
-	?>
-		<script type="text/javascript">
-			jQuery(document).ready(function ($) {
-				$(".frm_fields_container label input").each(function () {
-					var label = $(this).parent();
-					var ele = $(this).detach();
-					label.before(ele);
+add_action(
+	'wp_head',
+	function () {
+		global $post;
+		if ( has_shortcode( $post->post_content, 'formidable' ) || has_block( 'formidable-simple-form', $post ) ) {
+			?>
+			<script type="text/javascript">
+				jQuery(document).ready(function ($) {
+					$(".frm_fields_container label input").each(function () {
+						var label = $(this).parent();
+						var ele = $(this).detach();
+						label.before(ele);
+					})
+
+					$(".frm_primary_label").addClass("nhsuk-label");
+
+					$(".frm_radio, .frm_scale").each(function () {
+						$(this).addClass("nhsuk-radios__item");
+						$(this).find("input").addClass("nhsuk-radios__input");
+						$(this).find("label").addClass("nhsuk-label nhsuk-radios__label");
+					})
+
+					$(".frm_checkbox").each(function () {
+						$(this).addClass("nhsuk-checkboxes__item");
+						$(this).find("input").addClass("nhsuk-checkboxes__input");
+						$(this).find("label").addClass("nhsuk-label nhsuk-checkboxes__label");
+					})
+
+
+					$(".frm_form_field select").addClass("nhsuk-select")
 				})
 
-				$(".frm_primary_label").addClass("nhsuk-label");
 
-				$(".frm_radio, .frm_scale").each(function () {
-					$(this).addClass("nhsuk-radios__item");
-					$(this).find("input").addClass("nhsuk-radios__input");
-					$(this).find("label").addClass("nhsuk-label nhsuk-radios__label");
-				})
-
-				$(".frm_checkbox").each(function () {
-					$(this).addClass("nhsuk-checkboxes__item");
-					$(this).find("input").addClass("nhsuk-checkboxes__input");
-					$(this).find("label").addClass("nhsuk-label nhsuk-checkboxes__label");
-				})
-
-
-				$(".frm_form_field select").addClass("nhsuk-select")
-			})
-
-
-		</script>
-		<?php
-}
-}
+			</script>
+			<?php
+		}
+	}
 );
