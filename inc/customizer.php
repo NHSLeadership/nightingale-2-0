@@ -169,6 +169,7 @@ function nightingale_customize_register( $wp_customize ) {
 		)
 	);
 
+
 	/*
 	 * -----------------------------------------------------------
 	 * LOGO Generation
@@ -419,15 +420,6 @@ function nightingale_add_blog_settings( $wp_customize ) {
 		)
 	);
 
-	//set default siteicon/favicon
-	$wp_customize->add_setting(
-		// $id
-		'site_icon',
-		// $args
-		array(
-			'default'           => get_bloginfo('template_url') . '/assets/favicon.png',
-		)
-	);
 
 }
 
