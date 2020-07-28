@@ -1,17 +1,15 @@
 <?php
 /**
  * Template Name: Sitemap Page
- *
  * The template for displaying a HTML sitemap for the website.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Nightingale
+ * @link      https://codex.wordpress.org/Template_Hierarchy
+ * @package   Nightingale
  * @copyright NHS Leadership Academy
- * @license https://www.gnu.org/licenses/gpl-3.0.en.html
- * @author Chris Witham <chris.witham@leadershipacademy.nhs.uk>
- * @since 2.2.0
- * @uses template-parts/sitemap
+ * @license   https://www.gnu.org/licenses/gpl-3.0.en.html
+ * @author    Chris Witham <chris.witham@leadershipacademy.nhs.uk>
+ * @since     2.2.0
+ * @uses      template-parts/sitemap
  */
 
 get_header();
@@ -23,7 +21,7 @@ get_header();
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</header>
 			<div class="page-content">
-				<?php get_template_part('template-parts/sitemap'); ?>
+				<?php get_template_part( 'template-parts/sitemap' ); ?>
 			</div>
 			<div class="nhsuk-content__clearfix"></div>
 		</section>
