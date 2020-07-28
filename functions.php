@@ -241,11 +241,7 @@ add_action( 'widgets_init', 'nightingale_widgets_init' );
 function nightingale_scripts() {
 	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), '20202704' );
 	wp_enqueue_style( 'nightingale-page-colours', get_template_directory_uri() . '/page-colours.min.css', array(), '20202704' );
-
-	/*wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', '', '20190828', true );
-*/
 	wp_enqueue_script( 'nightingale-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', '', '20190828', true );
-
 	wp_enqueue_script( 'nightingale-nhs-library', get_template_directory_uri() . '/js/nhsuk.min.js', '', '20190828', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
