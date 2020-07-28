@@ -14281,7 +14281,7 @@
   max-width: 100%;
   position: relative;
   right: 50%;
-  width: 100vw;
+  width: 100%;
 }
 
 .edit-post-visual-editor .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-block-styles .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner {

@@ -12884,7 +12884,7 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   max-width: 100%;
   position: relative;
   right: 50%;
-  width: 100vw;
+  width: 100%;
 }
 
 .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner {
