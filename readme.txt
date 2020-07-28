@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.1.8
-Stable tag: 2.1.8
+Version: 2.2.0
+Stable tag: 2.2.0
 
 
 == Description ==
@@ -43,6 +43,19 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+= 2.2.0
+Feature release:
+ * Added default styling to Download Monitor buttons
+ * Added html sitemap functionality
+ * Corrected alignments on nhsblock components
+ * removed search submit button drop shadow, corrected form alignment on search box
+ * Corrected layout ordering in footer region
+ * updated 404 page to include sitemap content for improved UI
+ * Cleaned up SCSS and reduced size of output css
+ * Added compatability with formidable forms plugin
+ * removed horizontal scroll when hero was in use on page
+
+
 = 2.1.8
 Maintenance release
  * Updated styling for nhsblocks plugin to match update to nhsblocks 1.1.6
@@ -56,8 +69,6 @@ Maintenance release
  * Minor tweak to criticalcss to minimise screen flicker
  * Improvements to a11y functionality
  * Added screen reader capability to care cards
-
-
 
 = 2.1.7.2 =
 Maintenance release
