@@ -169,6 +169,7 @@ function nightingale_customize_register( $wp_customize ) {
 		)
 	);
 
+
 	/*
 	 * -----------------------------------------------------------
 	 * LOGO Generation
@@ -418,6 +419,8 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			)
 		)
 	);
+
+
 }
 
 add_action( 'customize_register', 'nightingale_add_blog_settings' );

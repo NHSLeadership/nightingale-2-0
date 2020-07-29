@@ -83,6 +83,12 @@
   @extend .nhsuk-promo--small;
 }
 
+.nhsuk-promo {
+  figure {
+    margin: 0;
+  }
+}
+
 /*do and dont list extension*/
 .nhsuk-do-dont-list {
 
@@ -110,15 +116,25 @@
 }
 
 // fix for ever diminishing panels
-.wp-block-nhsblock-rowgroup {
+.wp-block-nhsblocks-rowgroup {
   .nhsuk-panel-group {
     padding: 0;
+    .nhsuk-promo {
+      display: flex;
+    }
   }
 }
 
 
 .nhsuk-hero__overlay {
   margin-bottom: 50px;
+  .nhsuk-width-container {
+    padding-left: nhsuk-spacing(4);
+    padding-right: nhsuk-spacing(4);
+  }
+  .nhsuk-grid-column-two-thirds {
+    padding: 0;
+  }
 }
 
 .nhsuk-header__search-wrap {
@@ -132,8 +148,11 @@
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  max-width: 100vw;
+  max-width: 100%;
   position: relative;
   right: 50%;
-  width: 100vw;
+  width: 100%;
+  .wp-block-nhsblocks-heroinner {
+    margin-left: -8px;
+  }
 }

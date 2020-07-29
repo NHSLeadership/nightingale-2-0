@@ -3,9 +3,18 @@
 // @author Tony Blacker, NHS Leadership Academy
 // @version 1.1 12th October 2019
 */
-.nhsuk-grid-column-two-thirds.contentright, .nhsuk-grid-column-two-thirds.contentright.archive, .nhsuk-grid-column-two-thirds.contentright.index {
+
+.nhsuk-search__submit {
+  box-shadow: none;
+}
+
+
+.nhsuk-grid-column-two-thirds.contentright {
   float: right;
-  padding: 0 0 0 nhsuk-spacing(3);
+  padding: 0 nhsuk-spacing(3) 0 nhsuk-spacing(3);
+}
+.nhsuk-grid-column-two-thirds.contentleft {
+  padding: 0 nhsuk-spacing(3) 0 nhsuk-spacing(3);
 }
 
 .nhsuk-grid-column-full{
@@ -14,10 +23,16 @@
 
 .nhsuk-header__search-wrap {
   input[type="text"] {
-    border: $nhsuk-border-width-form-element solid $color_nhsuk-light-grey;
+    border: $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
   }
 }
-
+.nhsuk-breadcrumb {
+  .nhsuk-width-container {
+    .nhsuk-breadcrumb__list {
+      margin: 0 nhsuk-spacing(3) 0 0;
+    };
+  }
+}
 
 /* Latest Posts skinning */
 .nightingale-latest-news {
@@ -127,4 +142,10 @@ aside#secondary > section{
 .nhsuk-readmore {
   text-align: right;
   padding-bottom: nhsuk-spacing(3);
+}
+
+@media (max-width: 48.0525em) {
+  #socialfloating {
+    display: none;
+  }
 }

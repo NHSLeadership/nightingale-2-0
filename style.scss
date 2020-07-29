@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.1.8
+Version: 2.2.0
 Requires at least: 5.0
 Tested up to: 5.4.2
 Requires PHP: 5.2.4
@@ -51,12 +51,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 // Events Calendar plugin styling to match NHSUK design patterns
 @import 'assets/scss/events-calendar-styling';
-
+// Download Monitor plugin styling to match NHSUK design patterns
+@import 'assets/scss/download-monitor';
 // Events Calendar plugin styling to match NHSUK design patterns
 @import 'assets/scss/emergency_alert';
 // Events Calendar plugin styling to match NHSUK design patterns
 @import 'assets/scss/feedback_banner';
-
+@import 'assets/scss/footer';
 @import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
 @import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
 @import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe

@@ -1,0 +1,18 @@
+@media (min-width: 48.0625em) {
+  #nhsuk-footer {
+	ul.nhsuk-footer__list {
+	  width : 100%;
+
+	  &.nhsuk-footer__list--three-columns {
+		li.nhsuk-footer__list-item {
+		  width : 33%;
+		}
+	  }
+	}
+	.nhsuk-footer__copyright {
+	  width: 100%;
+	  color: $color_nhsuk-black;
+	  margin-top: nhsuk-spacing(3);
+	}
+  }
+}

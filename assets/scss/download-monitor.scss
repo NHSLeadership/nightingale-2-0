@@ -1,0 +1,32 @@
+.download-button {
+  @extend .nhsuk-button;
+  background-image: none;
+  text-shadow: none;
+  &:hover {
+    background-image: none;
+  }
+}
+.download-box {
+  text-align: unset;
+  @extend .nhsuk-panel;
+  img {
+    display: none !important;
+  }
+  .download-count {
+    @extend .nhsuk-pill-standard;
+    position: absolute;
+    right: 0;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+ul.download-versions {
+  @extend .nhsuk-list;
+  @extend .nhsuk-list--bullet;
+  list-style-type: square;
+}
+.download-link {
+  font-size: $nhsuk-base-font-size;
+}

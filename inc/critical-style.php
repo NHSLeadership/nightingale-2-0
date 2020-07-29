@@ -18,6 +18,6 @@ function nightingale_critical_styles() {
 
 
 $theme_colour = get_theme_mod( 'theme_colour', 'nhs_blue' );
-if ( 'nhs_blue' === $theme_colour || '' === $theme_colour ) { // Default NHS Blue - load up the critical CSS inline, Boom.
+if ( '005eb8' === $theme_colour || 'nhs_blue' === $theme_colour || '' === $theme_colour ) { // Default NHS Blue - load up the critical CSS inline, Boom.
 	add_action( 'wp_head', 'nightingale_critical_styles', 1 );
 }

@@ -146,7 +146,7 @@
   fill: #005eb8;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation-link {
     color: #005eb8;
   }
@@ -304,7 +304,7 @@
   fill: #003087;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation-link {
     color: #003087;
   }
@@ -462,7 +462,7 @@
   fill: #0072ce;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation-link {
     color: #0072ce;
   }
@@ -620,7 +620,7 @@
   fill: #768692;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation-link {
     color: #768692;
   }
@@ -778,7 +778,7 @@
   fill: #425563;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation-link {
     color: #425563;
   }
@@ -936,7 +936,7 @@
   fill: #000000;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--black .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--black .nhsuk-header .nhsuk-header__navigation-link {
     color: #000000;
   }
@@ -1094,7 +1094,7 @@
   fill: #330072;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--purple .nhsuk-header .nhsuk-header__navigation-link {
     color: #330072;
   }
@@ -1252,7 +1252,7 @@
   fill: #ae2573;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--pink .nhsuk-header .nhsuk-header__navigation-link {
     color: #ae2573;
   }
@@ -1410,7 +1410,7 @@
   fill: #704c9c;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation-link {
     color: #704c9c;
   }
@@ -1568,7 +1568,7 @@
   fill: #d5281b;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation-link {
     color: #d5281b;
   }
@@ -1726,7 +1726,7 @@
   fill: #006747;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation-link {
     color: #006747;
   }
@@ -1884,7 +1884,7 @@
   fill: #78be20;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--light-green .nhsuk-header .nhsuk-header__navigation-link {
     color: #78be20;
   }
@@ -2042,7 +2042,7 @@
   fill: #00a499;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation-link {
     color: #00a499;
   }
@@ -2200,7 +2200,7 @@
   fill: #0b0c0c;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 989px) {
   .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation-link {
     color: #0b0c0c;
   }
