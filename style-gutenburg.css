@@ -13833,7 +13833,7 @@
   padding-bottom: 16px;
 }
 
-@media (max-width: 40.0525em) {
+@media (max-width: 48.0525em) {
   .edit-post-visual-editor #socialfloating, .block-editor-block-styles #socialfloating, .block-editor-inserter__menu-help-panel #socialfloating {
     display: none;
   }

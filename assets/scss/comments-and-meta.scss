@@ -4,263 +4,310 @@
 // @version 1.0 3rd October 2019
 */
 .nhsuk-list-panel {
-  margin-bottom: nhsuk-spacing(3);
+  margin-bottom : nhsuk-spacing(3);
+
   .comment-list {
-    margin-bottom: nhsuk-spacing(3);
-    background-color: $color-nhsuk-grey-5;
-    .nhsuk-list-panel__item {
-      padding: nhsuk-spacing(3) 0;
-      display: block;
-      background-color: $color-nhsuk-grey-5;
-      #respond {
-        margin-top: nhsuk-spacing(3);
-        position: relative;
+	margin-bottom    : nhsuk-spacing(3);
+	background-color : $color-nhsuk-grey-5;
 
-        #commentform {
-          display: flow-root;
-        }
-        #cancel-comment-reply-link {
-          @extend .nhsuk-button;
-          @extend .nhsuk-button--reverse;
-          float: right;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-        }
-      }
-      .children {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: nhsuk-spacing(3);
-        .comment {
-          padding-right: 0;
-        }
-      }
-      .comment-body {
-        display: flex;
-        flex-wrap: wrap;
-        .comment_body_comment {
-          display: block;
-          text-align: left;
-          border-radius: $nhsuk-border-radius;
-          line-height: 1.5rem;
-          padding: nhsuk-spacing(3) nhsuk-spacing(5) nhsuk-spacing(3) nhsuk-spacing(4);
-          position: relative;
-          word-wrap: break-word;
-          background-color: $color_nhsuk-white;
-          width: 100%;
-          order: 1;
-          &:after {
-            content: '';
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            background-color: $color_nhsuk-white;
-            border: $nhsuk-border-width-form-element solid $color_nhsuk-light-grey;
-            top: initial;
-            left: 20px;
-            bottom: -6px;
-          }
-        }
-        .vcard {
-          order: 3;
-          width: 70%;
-          @media screen and (max-width: 37.5em) {
-            width: 50%;
-          }
-          .fn {
-            font-style: normal;
-            .comment-author-label {
-              @extend .nhsuk-pill-standard;
-              &.comment-author-label-administrator {
-                @extend .nhsuk-pill-notice;
-              }
-              &.comment-author-label-facilitator {
-                @extend .nhsuk-pill-success;
-              }
-            }
-          }
-          cite {
-            display: block;
-            text-decoration: none;
-            color: $color_nhsuk-dark-grey;
-            font-weight: $nhsuk-font-bold;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            padding: nhsuk-spacing(2) 0 nhsuk-spacing(1) 0;
-          }
-          .comment-meta {
-            a {
-              text-decoration: none;
-              color: $color_nhsuk-black;
-              @extend .nhsuk-body-s;
-              &:hover {
-                background: none;
-                border: none;
-              }
-            }
-          }
-        }
+	.nhsuk-list-panel__item {
+	  padding          : nhsuk-spacing(3) 0;
+	  display          : block;
+	  background-color : $color-nhsuk-grey-5;
 
-        .comment-avatar {
-          order: 2;
-          padding: nhsuk-spacing(2) nhsuk-spacing(3) 0 nhsuk-spacing(2);
-          width: 10%;
-          min-width: 58px;
-          img {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            display: block;
-          }
-        }
-        .reply {
-          width: 20%;
-          order: 4;
-          text-align: right;
-          font-size: 0.75rem;
-          padding: nhsuk-spacing(1);
-          @media screen and (max-width: 37.5em) {
-            width: 30%;
-          }
-          svg {
-            width: 30px;
-            height: 30px;
-            @media screen and (max-width: 37.5em) {
-              width: 20px;
-              height: 20px;
-            }
-            display: block;
-            margin: auto;
-            fill: $color_nhsuk-blue;
-          }
-          .comment-edit {
-            width: 15px;
-            margin-left: nhsuk-spacing(2);
-          }
-          .comment-reply-link {
-            display: inline-block;
+	  #respond {
+		margin-top : nhsuk-spacing(3);
+		position   : relative;
 
-          }
-          .comment-edit-link {
-            display: inline-block;
-            position: relative;
-            left: 0px;
-            margin-left: nhsuk-spacing(2);
-          }
-        }
+		#commentform {
+		  display : flow-root;
+		}
+
+		#cancel-comment-reply-link {
+		  @extend .nhsuk-button;
+		  @extend .nhsuk-button--reverse;
+		  float    : right;
+		  position : absolute;
+		  bottom   : 0;
+		  left     : 0;
+		}
+	  }
+
+	  .children {
+		margin-left  : 0;
+		margin-right : 0;
+		padding-left : nhsuk-spacing(3);
+
+		.comment {
+		  padding-right : 0;
+		}
+	  }
+
+	  .comment-body {
+		display   : flex;
+		flex-wrap : wrap;
+
+		.comment_body_comment {
+		  display          : block;
+		  text-align       : left;
+		  border-radius    : $nhsuk-border-radius;
+		  line-height      : 1.5rem;
+		  padding          : nhsuk-spacing(3) nhsuk-spacing(5) nhsuk-spacing(3) nhsuk-spacing(4);
+		  position         : relative;
+		  word-wrap        : break-word;
+		  background-color : $color_nhsuk-white;
+		  width            : 100%;
+		  order            : 1;
+
+		  &:after {
+			content          : '';
+			position         : absolute;
+			width            : 15px;
+			height           : 15px;
+			border-radius    : 50%;
+			background-color : $color_nhsuk-white;
+			border           : $nhsuk-border-width-form-element solid $color_nhsuk-light-grey;
+			top              : initial;
+			left             : 20px;
+			bottom           : -6px;
+		  }
+		}
+
+		.vcard {
+		  order : 3;
+		  width : 70%;
+		  @media screen and (max-width : 37.5em) {
+			width : 50%;
+		  }
+
+		  .fn {
+			font-style : normal;
+
+			.comment-author-label {
+			  @extend .nhsuk-pill-standard;
+
+			  &.comment-author-label-administrator {
+				@extend .nhsuk-pill-notice;
+			  }
+
+			  &.comment-author-label-facilitator {
+				@extend .nhsuk-pill-success;
+			  }
+			}
+		  }
+
+		  cite {
+			display         : block;
+			text-decoration : none;
+			color           : $color_nhsuk-dark-grey;
+			font-weight     : $nhsuk-font-bold;
+			text-overflow   : ellipsis;
+			overflow        : hidden;
+			padding         : nhsuk-spacing(2) 0 nhsuk-spacing(1) 0;
+		  }
+
+		  .comment-meta {
+			a {
+			  text-decoration : none;
+			  color           : $color_nhsuk-black;
+			  @extend .nhsuk-body-s;
+
+			  &:hover {
+				background : none;
+				border     : none;
+			  }
+			}
+		  }
+		}
+
+		.comment-avatar {
+		  order     : 2;
+		  padding   : nhsuk-spacing(2) nhsuk-spacing(3) 0 nhsuk-spacing(2);
+		  width     : 10%;
+		  min-width : 58px;
+
+		  img {
+			height        : 40px;
+			width         : 40px;
+			border-radius : 50%;
+			display       : block;
+		  }
+		}
+
+		.reply {
+		  width      : 20%;
+		  order      : 4;
+		  text-align : right;
+		  font-size  : 0.75rem;
+		  padding    : nhsuk-spacing(1);
+		  @media screen and (max-width : 37.5em) {
+			width : 30%;
+		  }
+
+		  svg {
+			width   : 30px;
+			height  : 30px;
+			@media screen and (max-width : 37.5em) {
+			  width  : 20px;
+			  height : 20px;
+			}
+			display : block;
+			margin  : auto;
+			fill    : $color_nhsuk-blue;
+		  }
+
+		  .comment-edit {
+			width       : 15px;
+			margin-left : nhsuk-spacing(2);
+		  }
+
+		  .comment-reply-link {
+			display : inline-block;
+
+		  }
+
+		  .comment-edit-link {
+			display     : inline-block;
+			position    : relative;
+			left        : 0px;
+			margin-left : nhsuk-spacing(2);
+		  }
+		}
 
 
-      }
-    }
+	  }
+	}
   }
 
   .comment-respond {
-    @extend .nhsuk-form-group;
-    label {
-      @extend .nhsuk-label;
-    }
-    input[type="text"] {
-      @extend .nhsuk-input;
-    }
-    textarea {
-      height: 200px;
-    }
-    .form-submit {
-     margin-bottom: 48px;
-    }
-    input[type="submit"] {
-      @extend .nhsuk-button;
-      float: right;
-    }
-    .comment-form-cookies-consent {
-      @extend .nhsuk-checkboxes__item;
-      input[type="checkbox"] {
-        @extend .nhsuk-checkboxes__input;
+	@extend .nhsuk-form-group;
 
-        &~label {
-          @extend .nhsuk-checkboxes__label
-        }
-      }
-    }
-    .logged-in-as {
-      float: right;
-      a {
-        font-size: 0.75rem;
-        text-decoration: none;
-        &:nth-of-type(2) {
-          margin-left: nhsuk-spacing(2);
-          border-radius: $nhsuk-border-radius;
-          border: $nhsuk-border-width-form-element solid;
-          background: $color_nhsuk-white;
-          color: $color_nhsuk-blue;
-          border-color: $color_nhsuk-blue;
-          padding: nhsuk-spacing(1);
-          text-transform: uppercase;
-        }
-      }
-    }
+	label {
+	  @extend .nhsuk-label;
+	}
+
+	input[type="text"] {
+	  @extend .nhsuk-input;
+	}
+
+	textarea {
+	  height : 200px;
+	}
+
+	.form-submit {
+	  margin-bottom : 48px;
+	}
+
+	input[type="submit"] {
+	  @extend .nhsuk-button;
+	  float : right;
+	}
+
+	.comment-form-cookies-consent {
+	  @extend .nhsuk-checkboxes__item;
+
+	  input[type="checkbox"] {
+		@extend .nhsuk-checkboxes__input;
+
+		& ~ label {
+		  @extend .nhsuk-checkboxes__label
+		}
+	  }
+	}
+
+	.logged-in-as {
+	  float : right;
+
+	  a {
+		font-size       : 0.75rem;
+		text-decoration : none;
+
+		&:nth-of-type(2) {
+		  margin-left    : nhsuk-spacing(2);
+		  border-radius  : $nhsuk-border-radius;
+		  border         : $nhsuk-border-width-form-element solid;
+		  background     : $color_nhsuk-white;
+		  color          : $color_nhsuk-blue;
+		  border-color   : $color_nhsuk-blue;
+		  padding        : nhsuk-spacing(1);
+		  text-transform : uppercase;
+		}
+	  }
+	}
   }
 }
+
 .article-footer {
   .cat-links {
-    float: right;
-    @extend .nhsuk-body-s;
+	float : right;
+	@extend .nhsuk-body-s;
 
   }
+
   .tags-links {
-    float: left;
-    margin-right: nhsuk-spacing(3);
-    @extend .nhsuk-body-s;
+	float        : left;
+	margin-right : nhsuk-spacing(3);
+	@extend .nhsuk-body-s;
 
   }
+
   .comments-link {
-    float: left;
-    @extend .nhsuk-body-s;
-    @extend .nhsuk-pill-success;
-    a {
-      color: $color_nhsuk-green;
-      &:visited {
-        color: $color_nhsuk-green;
-      }
-    }
+	float : left;
+	@extend .nhsuk-body-s;
+	@extend .nhsuk-pill-success;
+
+	a {
+	  color : $color_nhsuk-green;
+
+	  &:visited {
+		color : $color_nhsuk-green;
+	  }
+	}
   }
 }
+
 .navigation {
   .nhsuk-pagination {
-    clear: both;
-    width: 100%;
-    ul.nhsuk-pagination__list {
-      margin-left: 0;
-      li.nhsuk-pagination-item--previous {
-        float: left;
-        a {
-          @extend .nhsuk-pagination__link;
-        }
-      }
+	clear : both;
+	width : 100%;
 
-      li.nhsuk-pagination-item--next {
-        float: right;
-        a {
-          @extend .nhsuk-pagination__link;
-        }
-      }
-    }
+	ul.nhsuk-pagination__list {
+	  margin-left : 0;
+
+	  li.nhsuk-pagination-item--previous {
+		float : left;
+
+		a {
+		  @extend .nhsuk-pagination__link;
+		}
+	  }
+
+	  li.nhsuk-pagination-item--next {
+		float : right;
+
+		a {
+		  @extend .nhsuk-pagination__link;
+		}
+	  }
+	}
   }
 }
+
 .pagination_split_post {
   .post-page-numbers {
-    @extend .nhsuk-pill-notice;
-    &:first-of-type {
-      margin-right: nhsuk-spacing(1);
-    }
-    &:last-of-type {
-      margin-left: nhsuk-spacing(1);
-    }
+	@extend .nhsuk-pill-notice;
+
+	&:first-of-type {
+	  margin-right : nhsuk-spacing(1);
+	}
+
+	&:last-of-type {
+	  margin-left : nhsuk-spacing(1);
+	}
   }
+
   .current {
-    background: $color_nhsuk-blue;
-    color: $color_nhsuk-white;
+	background : $color_nhsuk-blue;
+	color      : $color_nhsuk-white;
   }
 }

@@ -10991,7 +10991,7 @@ aside#secondary > section {
   padding-bottom: 16px;
 }
 
-@media (max-width: 40.0525em) {
+@media (max-width: 48.0525em) {
   #socialfloating {
     display: none;
   }
@@ -12315,32 +12315,6 @@ ul.download-versions {
 
 .nhsuk-global-alert__content > *:last-child {
   margin-bottom: 0;
-}
-
-.nhsuk-global-alert__message h2, .nhsuk-global-alert__message h3 {
-  font-size: 24px;
-  line-height: 1.33333;
-  margin: 0;
-}
-
-.nhsuk-global-alert__message p, .nhsuk-global-alert__message .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-global-alert__message p.nhsuk-promo__description {
-  margin-top: 8px;
-  font-size: 16px;
-  line-height: 1.5;
-  display: block;
-  margin-bottom: 0;
-}
-
-@media (min-width: 40.0625em) {
-  .nhsuk-global-alert__message p, .nhsuk-global-alert__message .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-global-alert__message p.nhsuk-promo__description {
-    margin-top: 8px;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .nhsuk-global-alert__message p, .nhsuk-global-alert__message .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-global-alert__message p.nhsuk-promo__description {
-    font-size: 19px;
-  }
 }
 
 /* ==========================================================================

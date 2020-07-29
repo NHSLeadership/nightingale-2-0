@@ -47,23 +47,3 @@
   position : relative;
   margin   : 0 nhsuk-spacing(3);
 }
-
-.nhsuk-global-alert__message {
-  h2, h3 {
-	font-size   : 24px;
-	line-height : 1.33333;
-	margin      : 0;
-  }
-
-  p {
-	@include nhsuk-responsive-margin(2, 'top');
-	font-size     : 16px;
-	line-height   : 1.5;
-	display       : block;
-	margin-bottom : 0;
-
-	@media (min-width : 40.0625em) {
-	  font-size : 19px;
-	}
-  }
-}
