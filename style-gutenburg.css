@@ -13834,6 +13834,12 @@
   padding-bottom: 16px;
 }
 
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor #socialfloating, .block-editor-block-styles #socialfloating, .block-editor-inserter__menu-help-panel #socialfloating {
+    display: none;
+  }
+}
+
 .edit-post-visual-editor .nhsuk-promo-group__item, .block-editor-block-styles .nhsuk-promo-group__item, .block-editor-inserter__menu-help-panel .nhsuk-promo-group__item {
   margin-bottom: 36px;
 }
@@ -13963,8 +13969,16 @@
   width: 100%;
 }
 
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content {
+  padding: 0 0 16px 0;
+}
+
 .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+}
+
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description {
+  padding: 16px 32px 0 32px;
 }
 
 .edit-post-visual-editor .is-style-nhsuk-image figcaption, .block-editor-block-styles .is-style-nhsuk-image figcaption, .block-editor-inserter__menu-help-panel .is-style-nhsuk-image figcaption {
@@ -14253,8 +14267,12 @@
   display: flow-root;
 }
 
-.edit-post-visual-editor .wp-block-nhsblock-rowgroup .nhsuk-panel-group, .block-editor-block-styles .wp-block-nhsblock-rowgroup .nhsuk-panel-group, .block-editor-inserter__menu-help-panel .wp-block-nhsblock-rowgroup .nhsuk-panel-group {
+.edit-post-visual-editor .wp-block-nhsblocks-rowgroup .nhsuk-panel-group, .block-editor-block-styles .wp-block-nhsblocks-rowgroup .nhsuk-panel-group, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-rowgroup .nhsuk-panel-group {
   padding: 0;
+}
+
+.edit-post-visual-editor .wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo, .block-editor-block-styles .wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo {
+  display: flex;
 }
 
 .edit-post-visual-editor .nhsuk-hero__overlay, .block-editor-block-styles .nhsuk-hero__overlay, .block-editor-inserter__menu-help-panel .nhsuk-hero__overlay {

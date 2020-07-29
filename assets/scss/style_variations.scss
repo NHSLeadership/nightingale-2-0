@@ -143,3 +143,9 @@ aside#secondary > section{
   text-align: right;
   padding-bottom: nhsuk-spacing(3);
 }
+
+@media (max-width: 40.0525em) {
+  #socialfloating {
+    display: none;
+  }
+}

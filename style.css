@@ -10991,6 +10991,12 @@ aside#secondary > section {
   padding-bottom: 16px;
 }
 
+@media (max-width: 40.0525em) {
+  #socialfloating {
+    display: none;
+  }
+}
+
 #secondary section {
   border-top: 2px solid #005eb8;
   margin-bottom: 32px;
@@ -12640,8 +12646,16 @@ ul.download-versions {
   width: 100%;
 }
 
+.nhsuk-promo .nhsuk-promo__content, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content {
+  padding: 0 0 16px 0;
+}
+
 .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+}
+
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description {
+  padding: 16px 32px 0 32px;
 }
 
 .is-style-nhsuk-image figcaption {
@@ -12855,8 +12869,12 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   display: flow-root;
 }
 
-.wp-block-nhsblock-rowgroup .nhsuk-panel-group, .wp-block-nhsblock-rowgroup .ld-course-list-items, .wp-block-nhsblock-rowgroup .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .wp-block-nhsblock-rowgroup article {
+.wp-block-nhsblocks-rowgroup .nhsuk-panel-group, .wp-block-nhsblocks-rowgroup .ld-course-list-items, .wp-block-nhsblocks-rowgroup .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .wp-block-nhsblocks-rowgroup article {
   padding: 0;
+}
+
+.wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo, .wp-block-nhsblocks-rowgroup .ld-course-list-items .nhsuk-promo, .ld-course-list-items .ld_course_grid .wp-block-nhsblocks-rowgroup article .nhsuk-promo {
+  display: flex;
 }
 
 .nhsuk-hero__overlay {
