@@ -142,7 +142,10 @@
     width: 100%;
   }
   .nhsuk-promo__heading, .nhsuk-promo__description {
-    padding: nhsuk-spacing(3) nhsuk-spacing(5) 0 nhsuk-spacing(5);
+    padding: nhsuk-spacing(4);
+  }
+  .nhsuk-readmore {
+    padding: 0 nhsuk-spacing(5) nhsuk-spacing(2) 0;
   }
 }
 

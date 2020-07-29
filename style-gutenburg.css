@@ -13430,7 +13430,6 @@
 .edit-post-visual-editor #content a.wp-block-button__link, .edit-post-visual-editor #content .wp-block-file__button, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:visited, .block-editor-block-styles #content a.wp-block-button__link, .block-editor-block-styles #content .wp-block-file__button, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:active, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:focus, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:hover, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:visited, .block-editor-inserter__menu-help-panel #content a.wp-block-button__link, .block-editor-inserter__menu-help-panel #content .wp-block-file__button, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:active, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:focus, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:hover, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:visited {
   border-radius: 4px;
   background: #007f3b;
-  /*padding       : 1px nhsuk-spacing(2);*/
   position: relative;
   top: -nhsuk-spacing(2);
   margin-bottom: 16px;
@@ -13978,7 +13977,11 @@
 }
 
 .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description {
-  padding: 16px 32px 0 32px;
+  padding: 24px;
+}
+
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore {
+  padding: 0 32px 8px 0;
 }
 
 .edit-post-visual-editor .is-style-nhsuk-image figcaption, .block-editor-block-styles .is-style-nhsuk-image figcaption, .block-editor-inserter__menu-help-panel .is-style-nhsuk-image figcaption {

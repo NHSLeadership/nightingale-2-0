@@ -10384,7 +10384,6 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 #content a.wp-block-button__link, #content .wp-block-file__button, #content .wp-block-file a.wp-block-file__button, #content .wp-block-file a.wp-block-file__button:active, #content .wp-block-file a.wp-block-file__button:focus, #content .wp-block-file a.wp-block-file__button:hover, #content .wp-block-file a.wp-block-file__button:visited {
   border-radius: 4px;
   background: #007f3b;
-  /*padding       : 1px nhsuk-spacing(2);*/
   position: relative;
   top: -nhsuk-spacing(2);
   margin-bottom: 16px;
@@ -10662,12 +10661,13 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   height: 100%;
 }
 
-.nhsuk-header .nhsuk-header__navigation ul li:first-of-type a {
-  padding-left: 0;
-}
-
-.nhsuk-header .nhsuk-header__navigation ul li:last-of-type a {
-  padding-right: 0;
+@media (min-width: 48.0625em) {
+  .nhsuk-header .nhsuk-header__navigation ul li:first-of-type a {
+    padding-left: 0;
+  }
+  .nhsuk-header .nhsuk-header__navigation ul li:last-of-type a {
+    padding-right: 0;
+  }
 }
 
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
@@ -12655,7 +12655,11 @@ ul.download-versions {
 }
 
 .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description {
-  padding: 16px 32px 0 32px;
+  padding: 24px;
+}
+
+.nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-readmore, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-readmore {
+  padding: 0 32px 8px 0;
 }
 
 .is-style-nhsuk-image figcaption {
