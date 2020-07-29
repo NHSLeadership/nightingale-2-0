@@ -149,7 +149,7 @@
   box-shadow : inset 0 0 0 nhsuk-spacing(1) $color_nhsuk-yellow;
 }
 
-.nhsuk-search__input {
+.nhsuk-search__input#search-field {
   width : 15rem;
 }
 
@@ -318,8 +318,9 @@
 // fix middle of three blocks so it is the same width as outside blocks.
 .nhsuk-grid-row {
   &.nhsuk-width-restrict {
-	margin-left  : nhsuk-spacing(3);
-	margin-right : nhsuk-spacing(3);
+	margin-left  : 0;
+	margin-right : 0;
+	background   : $color_nhsuk-grey-5;
   }
 
   .nhsuk-panel-group {

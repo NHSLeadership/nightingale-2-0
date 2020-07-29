@@ -10493,7 +10493,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   box-shadow: inset 0 0 0 4px #ffeb3b;
 }
 
-.nhsuk-search__input {
+.nhsuk-search__input#search-field {
   width: 15rem;
 }
 
@@ -10637,8 +10637,9 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 .nhsuk-grid-row.nhsuk-width-restrict, .tribe-common .nhsuk-width-restrict.nhsuk-promo-group.nhsuk-grid-row {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  background: #f0f4f5;
 }
 
 .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .nhsuk-grid-row .ld-course-list-items .nhsuk-grid-column-one-third:nth-of-type(3n+1), .ld-course-list-items .ld_course_grid .nhsuk-grid-row article .nhsuk-grid-column-one-third:nth-of-type(3n+1) {
@@ -10659,6 +10660,14 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header .nhsuk-header__navigation ul li a {
   height: 100%;
+}
+
+.nhsuk-header .nhsuk-header__navigation ul li:first-of-type a {
+  padding-left: 0;
+}
+
+.nhsuk-header .nhsuk-header__navigation ul li:last-of-type a {
+  padding-right: 0;
 }
 
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
@@ -10875,7 +10884,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb .nhsuk-width-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb .nhsuk-width-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .sfwd-breadcrumbs {
-  margin: 0 16px;
+  margin: 0 16px 0 0;
 }
 
 /* Latest Posts skinning */
@@ -10980,6 +10989,12 @@ aside#secondary > section {
 .nhsuk-readmore {
   text-align: right;
   padding-bottom: 16px;
+}
+
+@media (max-width: 40.0525em) {
+  #socialfloating {
+    display: none;
+  }
 }
 
 #secondary section {
@@ -12631,8 +12646,16 @@ ul.download-versions {
   width: 100%;
 }
 
+.nhsuk-promo .nhsuk-promo__content, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content {
+  padding: 0 0 16px 0;
+}
+
 .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+}
+
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description {
+  padding: 16px 32px 0 32px;
 }
 
 .is-style-nhsuk-image figcaption {
@@ -12846,8 +12869,12 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   display: flow-root;
 }
 
-.wp-block-nhsblock-rowgroup .nhsuk-panel-group, .wp-block-nhsblock-rowgroup .ld-course-list-items, .wp-block-nhsblock-rowgroup .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .wp-block-nhsblock-rowgroup article {
+.wp-block-nhsblocks-rowgroup .nhsuk-panel-group, .wp-block-nhsblocks-rowgroup .ld-course-list-items, .wp-block-nhsblocks-rowgroup .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .wp-block-nhsblocks-rowgroup article {
   padding: 0;
+}
+
+.wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo, .wp-block-nhsblocks-rowgroup .ld-course-list-items .nhsuk-promo, .ld-course-list-items .ld_course_grid .wp-block-nhsblocks-rowgroup article .nhsuk-promo {
+  display: flex;
 }
 
 .nhsuk-hero__overlay {
@@ -12875,7 +12902,11 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   max-width: 100%;
   position: relative;
   right: 50%;
-  width: 100vw;
+  width: 100%;
+}
+
+.wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner {
+  margin-left: -8px;
 }
 
 section.nhsuk-section:nth-of-type(odd) {

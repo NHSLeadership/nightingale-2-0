@@ -29,7 +29,7 @@
 .nhsuk-breadcrumb {
   .nhsuk-width-container {
     .nhsuk-breadcrumb__list {
-      margin: 0 nhsuk-spacing(3);
+      margin: 0 nhsuk-spacing(3) 0 0;
     };
   }
 }
@@ -142,4 +142,10 @@ aside#secondary > section{
 .nhsuk-readmore {
   text-align: right;
   padding-bottom: nhsuk-spacing(3);
+}
+
+@media (max-width: 40.0525em) {
+  #socialfloating {
+    display: none;
+  }
 }
