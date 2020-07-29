@@ -13505,6 +13505,12 @@
   margin-top: 16px;
 }
 
+@media (max-width: 48.025em) {
+  .edit-post-visual-editor #primary .nhsuk-search__submit, .block-editor-block-styles #primary .nhsuk-search__submit, .block-editor-inserter__menu-help-panel #primary .nhsuk-search__submit {
+    margin-top: 0;
+  }
+}
+
 .edit-post-visual-editor #primary footer .edit-link, .block-editor-block-styles #primary footer .edit-link, .block-editor-inserter__menu-help-panel #primary footer .edit-link {
   text-decoration: none;
   /*margin-left: nhsuk-spacing(4);*/

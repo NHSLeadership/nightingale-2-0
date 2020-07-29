@@ -10464,6 +10464,12 @@ input.is-style-reverse:visited[type="submit"], #content a.is-style-reverse.wp-bl
   margin-top: 16px;
 }
 
+@media (max-width: 48.025em) {
+  #primary .nhsuk-search__submit {
+    margin-top: 0;
+  }
+}
+
 #primary footer .edit-link {
   text-decoration: none;
   /*margin-left: nhsuk-spacing(4);*/

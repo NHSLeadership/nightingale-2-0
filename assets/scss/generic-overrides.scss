@@ -127,6 +127,12 @@
 	margin-top : nhsuk-spacing(3);
   }
 
+  @media(max-width : 48.025em) {
+	.nhsuk-search__submit {
+	  margin-top : 0;
+	}
+  }
+
   footer {
 	.edit-link {
 	  @extend .nhsuk-pill-standard;
