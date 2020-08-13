@@ -66,6 +66,9 @@ global $post;
 	  
 		  
 		  $(".frm_form_field select").addClass("nhsuk-select")
+
+		  $("fieldset").addClass("nhsuk-fieldset");
+
 	  })
 	
 	
