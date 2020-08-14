@@ -11646,6 +11646,11 @@ aside#secondary > section {
   border: 2px solid #d5281b;
 }
 
+.gform_wrapper .gform_body .gform_delete {
+  float: left;
+  height: 28px;
+}
+
 .gform_wrapper .gform_page_footer {
   padding-top: 32px !important;
 }

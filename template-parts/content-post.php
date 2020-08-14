@@ -35,7 +35,7 @@ else :
 
 				if ( has_post_thumbnail() ) :
 
-					the_post_thumbnail( 'thumbnail', [ 'class' => 'nhsuk-promo__img' ] );
+					the_post_thumbnail( 'default', [ 'class' => 'nhsuk-promo__img' ] );
 
 				else :
 

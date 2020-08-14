@@ -77,6 +77,7 @@ $sidebar = nightingale_show_sidebar();
 					get_template_part( 'template-parts/content', 'none' );
 
 			endif;
+			wp_reset_postdata();
 				?>
 
 		</div>
