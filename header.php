@@ -19,6 +19,7 @@
 	<meta name="theme" content="NHS-nightingale-2.2.0">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php
+    wp_enqueue_script( 'jquery' );
 	wp_head();
 	flush();
 	?>

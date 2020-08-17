@@ -41,7 +41,7 @@
 	if ( has_post_thumbnail() ) {
 		$featured_img_display = get_theme_mod( 'featured_img_display', 'true' );
 		if ( 'true' === $featured_img_display ) {
-			//nightingale_post_thumbnail();
+			the_post_thumbnail();
 		}
 	}
 	?>
