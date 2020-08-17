@@ -12695,8 +12695,10 @@ figure.is-style-nhsuk-table-responsive figcaption {
 }
 
 @media (min-width: 40.0625em) {
-  figure.is-style-nhsuk-table-responsive table {
-    margin-bottom: 48px;
+  figure.is-style-nhsuk-table-responsive {
+    /*table {
+      margin-bottom: 48px;
+    }*/
   }
   figure.is-style-nhsuk-table-responsive th,
   figure.is-style-nhsuk-table-responsive td {
@@ -12718,6 +12720,10 @@ figure.is-style-nhsuk-table-responsive figcaption {
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+
+.nhsuk-table-responsive table, figure.is-style-nhsuk-table-responsive table, .is-style-nhsuk-table-responsive table, table {
+  margin: 0;
 }
 
 /*

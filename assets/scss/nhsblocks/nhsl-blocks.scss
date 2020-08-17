@@ -222,9 +222,9 @@ figure.is-style-nhsuk-table-responsive{
 
   @media (min-width: 40.0625em) {
 
-    table {
+    /*table {
       margin-bottom: 48px;
-    }
+    }*/
 
     th,
     td {
@@ -248,4 +248,7 @@ figure.is-style-nhsuk-table-responsive{
       line-height: 1.15;
     }
   }
+}
+.nhsuk-table-responsive table, .is-style-nhsuk-table-responsive table, table {
+  margin: 0;
 }

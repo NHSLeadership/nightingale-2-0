@@ -14056,8 +14056,10 @@
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor figure.is-style-nhsuk-table-responsive table, .block-editor-block-styles figure.is-style-nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel figure.is-style-nhsuk-table-responsive table {
-    margin-bottom: 48px;
+  .edit-post-visual-editor figure.is-style-nhsuk-table-responsive, .block-editor-block-styles figure.is-style-nhsuk-table-responsive, .block-editor-inserter__menu-help-panel figure.is-style-nhsuk-table-responsive {
+    /*table {
+      margin-bottom: 48px;
+    }*/
   }
   .edit-post-visual-editor figure.is-style-nhsuk-table-responsive th,
   .edit-post-visual-editor figure.is-style-nhsuk-table-responsive td, .block-editor-block-styles figure.is-style-nhsuk-table-responsive th,
@@ -14083,6 +14085,10 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+
+.edit-post-visual-editor .nhsuk-table-responsive table, .edit-post-visual-editor figure.is-style-nhsuk-table-responsive table, .edit-post-visual-editor .is-style-nhsuk-table-responsive table, .edit-post-visual-editor table, .block-editor-block-styles .nhsuk-table-responsive table, .block-editor-block-styles figure.is-style-nhsuk-table-responsive table, .block-editor-block-styles .is-style-nhsuk-table-responsive table, .block-editor-block-styles table, .block-editor-inserter__menu-help-panel .nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel figure.is-style-nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel .is-style-nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel table {
+  margin: 0;
 }
 
 .edit-post-visual-editor section.nhsuk-section:nth-of-type(odd), .block-editor-block-styles section.nhsuk-section:nth-of-type(odd), .block-editor-inserter__menu-help-panel section.nhsuk-section:nth-of-type(odd) {
