@@ -13430,7 +13430,6 @@
 .edit-post-visual-editor #content a.wp-block-button__link, .edit-post-visual-editor #content .wp-block-file__button, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:focus, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:hover, .edit-post-visual-editor #content .wp-block-file a.wp-block-file__button:visited, .block-editor-block-styles #content a.wp-block-button__link, .block-editor-block-styles #content .wp-block-file__button, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:active, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:focus, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:hover, .block-editor-block-styles #content .wp-block-file a.wp-block-file__button:visited, .block-editor-inserter__menu-help-panel #content a.wp-block-button__link, .block-editor-inserter__menu-help-panel #content .wp-block-file__button, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:active, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:focus, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:hover, .block-editor-inserter__menu-help-panel #content .wp-block-file a.wp-block-file__button:visited {
   border-radius: 4px;
   background: #007f3b;
-  /*padding       : 1px nhsuk-spacing(2);*/
   position: relative;
   top: -nhsuk-spacing(2);
   margin-bottom: 16px;
@@ -13501,6 +13500,17 @@
   word-wrap: break-word;
 }
 
+.edit-post-visual-editor #primary .nhsuk-search__submit, .block-editor-block-styles #primary .nhsuk-search__submit, .block-editor-inserter__menu-help-panel #primary .nhsuk-search__submit {
+  float: left;
+  margin-top: 16px;
+}
+
+@media (max-width: 48.025em) {
+  .edit-post-visual-editor #primary .nhsuk-search__submit, .block-editor-block-styles #primary .nhsuk-search__submit, .block-editor-inserter__menu-help-panel #primary .nhsuk-search__submit {
+    margin-top: 0;
+  }
+}
+
 .edit-post-visual-editor #primary footer .edit-link, .block-editor-block-styles #primary footer .edit-link, .block-editor-inserter__menu-help-panel #primary footer .edit-link {
   text-decoration: none;
   /*margin-left: nhsuk-spacing(4);*/
@@ -13514,13 +13524,8 @@
   box-shadow: inset 0 0 0 4px #ffeb3b;
 }
 
-.edit-post-visual-editor .nhsuk-search__input, .block-editor-block-styles .nhsuk-search__input, .block-editor-inserter__menu-help-panel .nhsuk-search__input {
+.edit-post-visual-editor .nhsuk-search__input#search-field, .block-editor-block-styles .nhsuk-search__input#search-field, .block-editor-inserter__menu-help-panel .nhsuk-search__input#search-field {
   width: 15rem;
-}
-
-.edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
-  float: left;
-  margin-top: 16px;
 }
 
 .edit-post-visual-editor #cookie-notice, .block-editor-block-styles #cookie-notice, .block-editor-inserter__menu-help-panel #cookie-notice {
@@ -13550,7 +13555,7 @@
 .edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles #secondary .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-inserter__menu-help-panel #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
   border: 2px solid #aeb7bd;
   border-left: none;
-  /*box-shadow: 0;*/
+  margin-top: 0;
   float: left;
   box-shadow: 0 !important;
 }
@@ -13577,6 +13582,7 @@
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
     padding-top: 6px;
+    margin-top: 0;
   }
 }
 
@@ -13662,8 +13668,9 @@
 }
 
 .edit-post-visual-editor .nhsuk-grid-row.nhsuk-width-restrict, .block-editor-block-styles .nhsuk-grid-row.nhsuk-width-restrict, .block-editor-inserter__menu-help-panel .nhsuk-grid-row.nhsuk-width-restrict {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 0;
+  margin-right: 0;
+  background: #f0f4f5;
 }
 
 .edit-post-visual-editor .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .edit-post-visual-editor .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .edit-post-visual-editor .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-block-styles .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-block-styles .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .nhsuk-grid-row .nhsuk-panel-group .nhsuk-grid-column-one-third:nth-of-type(3n+1), .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-inserter__menu-help-panel .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .block-editor-inserter__menu-help-panel .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .nhsuk-panel-group :nth-of-type(3n+1)[data-type="nhsblocks/onethird"] {
@@ -13714,7 +13721,7 @@
 }
 
 .edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-block-styles .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-inserter__menu-help-panel .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list {
-  margin: 0 16px;
+  margin: 0 16px 0 0;
 }
 
 .edit-post-visual-editor .nightingale-latest-news .nhsuk-panel, .edit-post-visual-editor .nightingale-latest-news .sticky, .edit-post-visual-editor .nightingale-latest-news .block-editor-block-styles .sticky, .block-editor-block-styles .edit-post-visual-editor .nightingale-latest-news .sticky, .edit-post-visual-editor .nightingale-latest-news .block-editor-inserter__menu-help-panel .sticky, .block-editor-inserter__menu-help-panel .edit-post-visual-editor .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .nhsuk-panel, .block-editor-block-styles .nightingale-latest-news .edit-post-visual-editor .sticky, .edit-post-visual-editor .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .block-editor-inserter__menu-help-panel .sticky, .block-editor-inserter__menu-help-panel .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .nhsuk-panel, .block-editor-inserter__menu-help-panel .nightingale-latest-news .edit-post-visual-editor .sticky, .edit-post-visual-editor .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .block-editor-block-styles .sticky, .block-editor-block-styles .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky {
@@ -13830,6 +13837,12 @@
 .edit-post-visual-editor .nhsuk-readmore, .block-editor-block-styles .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-readmore {
   text-align: right;
   padding-bottom: 16px;
+}
+
+@media (max-width: 48.0525em) {
+  .edit-post-visual-editor #socialfloating, .block-editor-block-styles #socialfloating, .block-editor-inserter__menu-help-panel #socialfloating {
+    display: none;
+  }
 }
 
 .edit-post-visual-editor .nhsuk-promo-group__item, .block-editor-block-styles .nhsuk-promo-group__item, .block-editor-inserter__menu-help-panel .nhsuk-promo-group__item {
@@ -13961,8 +13974,20 @@
   width: 100%;
 }
 
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content {
+  padding: 0 0 16px 0;
+}
+
 .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+}
+
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description {
+  padding: 24px;
+}
+
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore {
+  padding: 0 32px 8px 0;
 }
 
 .edit-post-visual-editor .is-style-nhsuk-image figcaption, .block-editor-block-styles .is-style-nhsuk-image figcaption, .block-editor-inserter__menu-help-panel .is-style-nhsuk-image figcaption {
@@ -14251,8 +14276,12 @@
   display: flow-root;
 }
 
-.edit-post-visual-editor .wp-block-nhsblock-rowgroup .nhsuk-panel-group, .block-editor-block-styles .wp-block-nhsblock-rowgroup .nhsuk-panel-group, .block-editor-inserter__menu-help-panel .wp-block-nhsblock-rowgroup .nhsuk-panel-group {
+.edit-post-visual-editor .wp-block-nhsblocks-rowgroup .nhsuk-panel-group, .block-editor-block-styles .wp-block-nhsblocks-rowgroup .nhsuk-panel-group, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-rowgroup .nhsuk-panel-group {
   padding: 0;
+}
+
+.edit-post-visual-editor .wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo, .block-editor-block-styles .wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-rowgroup .nhsuk-panel-group .nhsuk-promo {
+  display: flex;
 }
 
 .edit-post-visual-editor .nhsuk-hero__overlay, .block-editor-block-styles .nhsuk-hero__overlay, .block-editor-inserter__menu-help-panel .nhsuk-hero__overlay {
@@ -14279,7 +14308,11 @@
   max-width: 100%;
   position: relative;
   right: 50%;
-  width: 100vw;
+  width: 100%;
+}
+
+.edit-post-visual-editor .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-block-styles .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner {
+  margin-left: -8px;
 }
 
 .edit-post-visual-editor .is-style-panel-with-label h3, .block-editor-block-styles .is-style-panel-with-label h3, .block-editor-inserter__menu-help-panel .is-style-panel-with-label h3 {

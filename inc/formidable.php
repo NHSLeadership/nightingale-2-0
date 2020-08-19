@@ -9,37 +9,50 @@
  * @copyright    OGL v3
  * @package      Nightingale Theme
  */
-add_action( 'wp_head', function () { 
-global $post;
-    if ( has_shortcode( $post->post_content, 'formidable') ||  has_block( 'formidable-simple-form', $post ) ) {
-       
-   
-?>
-	<style>
-	
-		.frm_opt_container > div{
-	  margin-bottom: 12px !important;
-	}	
-	.frm_form_field select{
-	  margin-bottom: 9px !important;
-	}
-	.frm_form_field input{
-	  margin-bottom: 9px !important;
-	}
-	.frm_error{
-	  color: #d5281b;
-	  font-weight: bold;
-	  margin-bottom: 20px;
-	}
-	.frm_form_field {
-	  margin-top: 25px;
-	}
-	
-	</style>
-	<?php } } );
-	
-	add_action( 'wp_head', function () { 
+
+add_action(
+	'wp_head',
+	function () {
 		global $post;
+		if ( has_shortcode( $post->post_content, 'formidable' ) || has_block( 'formidable-simple-form', $post ) ) {
+
+
+			?>
+			<style>
+
+				.frm_opt_container > div {
+					margin-bottom : 12px !important;
+				}
+
+				.frm_form_field select {
+					margin-bottom : 9px !important;
+				}
+
+				.frm_form_field input {
+					margin-bottom : 9px !important;
+				}
+
+				.frm_error {
+					color         : #d5281b;
+					font-weight   : bold;
+					margin-bottom : 20px;
+				}
+
+				.frm_form_field {
+					margin-top : 25px;
+				}
+
+			</style>
+			<?php
+		}
+	}
+);
+
+add_action(
+	'wp_head',
+	function () {
+		global $post;
+
 	 if ( has_shortcode( $post->post_content, 'formidable') ||  has_block( 'formidable-simple-form', $post ) {
 	?>
 		<script type="text/javascript">
@@ -73,5 +86,7 @@ global $post;
 	
 	
 	</script>
-	<?php } } );
+	<?php } 
+       } 
+      );
 	

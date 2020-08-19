@@ -32,7 +32,6 @@
 	@extend .nhsuk-button;
 	border-radius : $nhsuk-border-radius;
 	background    : $nhsuk-button-color;
-	/*padding       : 1px nhsuk-spacing(2);*/
 	position      : relative;
 	top           : -nhsuk-spacing(2);
 	margin-bottom : nhsuk-spacing(3);
@@ -123,6 +122,17 @@
 	word-wrap     : break-word;
   }
 
+  .nhsuk-search__submit {
+	float      : left;
+	margin-top : nhsuk-spacing(3);
+  }
+
+  @media(max-width : 48.025em) {
+	.nhsuk-search__submit {
+	  margin-top : 0;
+	}
+  }
+
   footer {
 	.edit-link {
 	  @extend .nhsuk-pill-standard;
@@ -144,12 +154,8 @@
   box-shadow : inset 0 0 0 nhsuk-spacing(1) $color_nhsuk-yellow;
 }
 
-.nhsuk-search__input {
+.nhsuk-search__input#search-field {
   width : 15rem;
-}
-.nhsuk-search__submit {
-  float: left;
-  margin-top: nhsuk-spacing(3);
 }
 
 #cookie-notice {
@@ -181,7 +187,7 @@
 	.nhsuk-search__submit {
 	  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 	  border-left : none;
-	  /*box-shadow: 0;*/
+	  margin-top  : 0;
 	  float       : left;
 	  box-shadow  : 0 !important;
 	}
@@ -211,6 +217,7 @@
 @media (min-width : 40.0625em) {
   .nhsuk-search__submit {
 	padding-top : 6px;
+	margin-top  : 0;
   }
 }
 
@@ -316,8 +323,9 @@
 // fix middle of three blocks so it is the same width as outside blocks.
 .nhsuk-grid-row {
   &.nhsuk-width-restrict {
-	margin-left  : nhsuk-spacing(3);
-	margin-right : nhsuk-spacing(3);
+	margin-left  : 0;
+	margin-right : 0;
+	background   : $color_nhsuk-grey-5;
   }
 
   .nhsuk-panel-group {

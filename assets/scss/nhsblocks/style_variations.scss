@@ -116,9 +116,12 @@
 }
 
 // fix for ever diminishing panels
-.wp-block-nhsblock-rowgroup {
+.wp-block-nhsblocks-rowgroup {
   .nhsuk-panel-group {
     padding: 0;
+    .nhsuk-promo {
+      display: flex;
+    }
   }
 }
 
@@ -148,5 +151,8 @@
   max-width: 100%;
   position: relative;
   right: 50%;
-  width: 100vw;
+  width: 100%;
+  .wp-block-nhsblocks-heroinner {
+    margin-left: -8px;
+  }
 }

@@ -8,34 +8,34 @@
  */
 
 @mixin nhsuk-link-style-inverted {
-  color: $nhsuk-link-color;
+  color : $nhsuk-link-color;
 
   &:focus {
-	background-color: $color_shade_nhsuk-blue-35;
-	box-shadow: 0 0 0 4px $color_shade_nhsuk-blue-35;
-	color: $color_nhsuk-white;
-	outline: $nhsuk-focus-width solid transparent;
-	outline-offset: $nhsuk-focus-width;
+	background-color : $color_shade_nhsuk-blue-35;
+	box-shadow       : 0 0 0 4px $color_shade_nhsuk-blue-35;
+	color            : $color_nhsuk-white;
+	outline          : $nhsuk-focus-width solid transparent;
+	outline-offset   : $nhsuk-focus-width;
   }
 
   &:hover {
-	background-color: $color_nhsuk-blue;
-	box-shadow: 0 0 0 4px $color_nhsuk-blue;
-	color: $color_nhsuk-white;
+	background-color : $color_nhsuk-blue;
+	box-shadow       : 0 0 0 4px $color_nhsuk-blue;
+	color            : $color_nhsuk-white;
   }
 
   &:active {
-	background-color: $color_shade_nhsuk-blue-50;
-	box-shadow: 0 0 0 4px $color_shade_nhsuk-blue-35;
-	color: $color_nhsuk-white;
+	background-color : $color_shade_nhsuk-blue-50;
+	box-shadow       : 0 0 0 4px $color_shade_nhsuk-blue-35;
+	color            : $color_nhsuk-white;
   }
 }
 
 .nhsuk-global-alert {
   @include print-hide();
-  background-color: $color_nhsuk-yellow;
-  padding-bottom: nhsuk-spacing(4);
-  padding-top: nhsuk-spacing(4);
+  background-color : $color_nhsuk-yellow;
+  padding-bottom   : nhsuk-spacing(4);
+  padding-top      : nhsuk-spacing(4);
 
   a {
 	@include nhsuk-link-style-inverted; /* [1] */
@@ -44,25 +44,6 @@
 
 .nhsuk-global-alert__content {
   @include top-and-bottom;
-  position: relative;
-}
-
-.nhsuk-global-alert__message {
-  h2, h3 {
-	font-size: 24px;
-	line-height: 1.33333;
-	margin: 0;
-  }
-
-  p {
-	@include nhsuk-responsive-margin(2, 'top');
-	font-size: 16px;
-	line-height: 1.5;
-	display: block;
-	margin-bottom: 0;
-
-	@media (min-width: 40.0625em) {
-	  font-size: 19px;
-	}
-  }
+  position : relative;
+  margin   : 0 nhsuk-spacing(3);
 }
