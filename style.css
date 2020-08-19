@@ -11661,6 +11661,14 @@ aside#secondary > section {
   color: #005eb8;
 }
 
+.learndash-wrapper a.ld-login-text.ld-login-button:hover {
+  color: #ffffff !important;
+}
+
+.learndash-wrapper #ld-user-register {
+  color: #005eb8 !important;
+}
+
 .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
   background: #005eb8;
 }
@@ -11697,7 +11705,7 @@ aside#secondary > section {
 }
 
 .learndash-wrapper .ld-table-list .ld-primary-color-hover:hover {
-  background: #ffeb3b;
+  background: #ffeb3b !important;
   margin: 0 -20px;
   padding: 20px;
 }
@@ -11705,6 +11713,10 @@ aside#secondary > section {
 .learndash-wrapper .ld-table-list .ld-table-list-items {
   background: #ffffff;
   font-size: 1rem;
+}
+
+.learndash-wrapper .ld-tab-content, .learndash-wrapper .ld-table-list {
+  margin: 0 16px;
 }
 
 .learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
@@ -11789,12 +11801,18 @@ aside#secondary > section {
   color: #005eb8;
 }
 
-.learndash-wrapper .ld-login-modal .ld-login-modal-form .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-form .login-password::before {
-  top: 16px;
+.learndash-wrapper .ld-login-modal .ld-login-modal-form #loginform .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-form #loginform .login-password::before {
+  top: 38px;
 }
 
 .learndash-wrapper .ld-login-modal input[type=submit] {
   margin-top: 8px;
+}
+
+.learndash-wrapper .ld-login-modal .ld-button.ld-button-reverse.ld-js-register-account {
+  color: #212b32;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #00401e;
 }
 
 .learndash-wrapper .wpProQuiz_content input[type="text"] {
@@ -12018,6 +12036,10 @@ aside#secondary > section {
 
 #ld_course_categorydropdown #ld_course_categorydropdown_select {
   height: 40px;
+}
+
+#ld_course_categorydropdown label {
+  padding-right: 10px;
 }
 
 /* Events Calendar Styles */
