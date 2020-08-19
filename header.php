@@ -97,8 +97,7 @@ $extra_styles = $page_color ? 'page-style--' . $page_color : '';
 
 ?>
 
-<div id="content" class="nhsuk-width-container nhsuk-width-container--full">
+<div id="content" class="nhsuk-width-container">
 	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding <?php echo esc_attr( $extra_styles ); ?>" id="maincontent">
-		<div id="contentinner" class="nhsuk-width-container">
-			<?php flush(); ?>
+		<?php flush(); ?>
 

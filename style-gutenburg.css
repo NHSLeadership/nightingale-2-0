@@ -13408,10 +13408,6 @@
   height: 0;
 }
 
-.edit-post-visual-editor .nhsuk-width-container--full, .block-editor-block-styles .nhsuk-width-container--full, .block-editor-inserter__menu-help-panel .nhsuk-width-container--full {
-  max-width: none;
-}
-
 .edit-post-visual-editor .nhsuk-panel-group, .block-editor-block-styles .nhsuk-panel-group, .block-editor-inserter__menu-help-panel .nhsuk-panel-group {
   margin-left: 0;
   margin-right: 0;

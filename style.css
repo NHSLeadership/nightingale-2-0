@@ -10362,10 +10362,6 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 
 /* colour variable to be used with color-mixer.scss */
 /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
-.nhsuk-width-container--full {
-  max-width: none;
-}
-
 .nhsuk-panel-group, .ld-course-list-items, .ld-course-list-items .ld_course_grid article {
   margin-left: 0;
   margin-right: 0;
@@ -10665,15 +10661,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header .nhsuk-header__navigation ul li a {
   height: 100%;
-}
-
-@media (min-width: 48.0625em) {
-  .nhsuk-header .nhsuk-header__navigation ul li:first-of-type a {
-    padding-left: 0;
-  }
-  .nhsuk-header .nhsuk-header__navigation ul li:last-of-type a {
-    padding-right: 0;
-  }
 }
 
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {

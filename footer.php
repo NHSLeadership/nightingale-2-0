@@ -13,7 +13,7 @@
 
 flush();
 ?>
-</div>
+
 </main>
 </div>
 
