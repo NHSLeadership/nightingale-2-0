@@ -1,13 +1,13 @@
 === Nightingale 2.0 ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.4.2
+Tested up to: 5.5
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.2.0
-Stable tag: 2.2.0
+Version: 2.2.1
+Stable tag: 2.2.1
 
 
 == Description ==
@@ -43,7 +43,12 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
-= 2.2.0
+= 2.2.1 =
+Maintenance release:
+ * amended slightly to work with WordPress 5.5
+ * minor css tweaks for better NHSUK styling
+
+= 2.2.0 =
 Feature release:
  * Added default styling to Download Monitor buttons
  * Added html sitemap functionality
