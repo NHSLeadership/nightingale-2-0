@@ -43,6 +43,10 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+= 2.2.1
+Minor bugfix:
+Learndash content editing was broken. This fixes it :)
+
 = 2.2.0
 Feature release:
  * Added default styling to Download Monitor buttons

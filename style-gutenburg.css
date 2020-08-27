@@ -14659,7 +14659,3 @@
 .edit-post-visual-editor .has-gds-black-background-color, .block-editor-block-styles .has-gds-black-background-color, .block-editor-inserter__menu-help-panel .has-gds-black-background-color {
   background-color: "#0b0c0c";
 }
-
-.block-editor-page #sfwd-header {
-  position: unset !important;
-}
