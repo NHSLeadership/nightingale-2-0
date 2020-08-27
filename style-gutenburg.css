@@ -13717,7 +13717,7 @@
 }
 
 .edit-post-visual-editor .nhsuk-header__search-wrap input[type="text"], .block-editor-block-styles .nhsuk-header__search-wrap input[type="text"], .block-editor-inserter__menu-help-panel .nhsuk-header__search-wrap input[type="text"] {
-  border: 2px solid #aeb7bd;
+  border: none;
 }
 
 .edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-block-styles .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-inserter__menu-help-panel .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list {
