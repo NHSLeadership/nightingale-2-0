@@ -10667,15 +10667,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   height: 100%;
 }
 
-@media (min-width: 48.0625em) {
-  .nhsuk-header .nhsuk-header__navigation ul li:first-of-type a {
-    padding-left: 0;
-  }
-  .nhsuk-header .nhsuk-header__navigation ul li:last-of-type a {
-    padding-right: 0;
-  }
-}
-
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 4px 0px 0px 4px;
 }
@@ -10883,6 +10874,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-grid-column-full {
   padding: 0;
+}
+
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
+  display: flex;
 }
 
 .nhsuk-header__search-wrap input[type="text"] {
@@ -12632,10 +12627,15 @@ ul.download-versions {
 
 .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+  padding: 0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description {
-  padding: 24px;
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading {
+  padding: 8px 16px;
+}
+
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content p, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-promo__description {
+  padding: 8px;
 }
 
 .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-readmore, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-readmore {
