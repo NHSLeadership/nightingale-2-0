@@ -250,3 +250,13 @@ function nightingale_comment_reply_text( $link ) {
 }
 
 add_filter( 'comment_reply_link', 'nightingale_comment_reply_text' );
+
+function nightingale_remove_image_size_attributes( $html ) {
+	return preg_replace( '/(width|height)="\d*"/', '', $html );
+}
+
+// Remove image size attributes from post thumbnails
+add_filter( 'post_thumbnail_html', 'nightingale_remove_image_size_attributes' );
+
+// Remove image size attributes from images added to a WordPress post
+add_filter( 'image_send_to_editor', 'nightingale_remove_image_size_attributes' );

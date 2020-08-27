@@ -176,6 +176,10 @@
         border: $nhsuk-border-width-form-element solid $color_nhsuk-red;
       }
     }
+    .gform_delete {
+      float: left;
+      height: 28px;
+    }
   }
   .gform_page_footer {
     padding-top: nhsuk-spacing(5) !important;

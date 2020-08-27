@@ -16,6 +16,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+	<?php do_action('nightingale_before_single_content'); ?>
 
 	<div class="entry-content">
 		<?php
@@ -26,6 +27,8 @@
 		<?php do_action( 'page_after_content' ); ?>
 	</div><!-- .entry-content -->
 	<div class="nhsuk-content__clearfix"></div>
+
+	<?php do_action('nightingale_after_single_content'); ?>
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

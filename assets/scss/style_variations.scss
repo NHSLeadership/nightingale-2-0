@@ -20,6 +20,9 @@
 .nhsuk-grid-column-full{
   padding: 0;
 }
+.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
+  display: flex;
+}
 
 .nhsuk-header__search-wrap {
   input[type="text"] {

@@ -2,9 +2,9 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.2.0
+Version: 2.2.1
 Requires at least: 5.0
-Tested up to: 5.4.2
+Tested up to: 5.5
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
 Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
@@ -10362,10 +10362,6 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 
 /* colour variable to be used with color-mixer.scss */
 /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
-.nhsuk-width-container--full {
-  max-width: none;
-}
-
 .nhsuk-panel-group, .ld-course-list-items, .ld-course-list-items .ld_course_grid article {
   margin-left: 0;
   margin-right: 0;
@@ -10667,15 +10663,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   height: 100%;
 }
 
-@media (min-width: 48.0625em) {
-  .nhsuk-header .nhsuk-header__navigation ul li:first-of-type a {
-    padding-left: 0;
-  }
-  .nhsuk-header .nhsuk-header__navigation ul li:last-of-type a {
-    padding-right: 0;
-  }
-}
-
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 4px 0px 0px 4px;
 }
@@ -10883,6 +10870,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-grid-column-full {
   padding: 0;
+}
+
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
+  display: flex;
 }
 
 .nhsuk-header__search-wrap input[type="text"] {
@@ -11646,6 +11637,11 @@ aside#secondary > section {
   border: 2px solid #d5281b;
 }
 
+.gform_wrapper .gform_body .gform_delete {
+  float: left;
+  height: 28px;
+}
+
 .gform_wrapper .gform_page_footer {
   padding-top: 32px !important;
 }
@@ -11667,6 +11663,14 @@ aside#secondary > section {
 
 .learndash-wrapper .ld-primary-color {
   color: #005eb8;
+}
+
+.learndash-wrapper a.ld-login-text.ld-login-button:hover {
+  color: #ffffff !important;
+}
+
+.learndash-wrapper #ld-user-register {
+  color: #005eb8 !important;
 }
 
 .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
@@ -11705,7 +11709,7 @@ aside#secondary > section {
 }
 
 .learndash-wrapper .ld-table-list .ld-primary-color-hover:hover {
-  background: #ffeb3b;
+  background: #ffeb3b !important;
   margin: 0 -20px;
   padding: 20px;
 }
@@ -11713,6 +11717,10 @@ aside#secondary > section {
 .learndash-wrapper .ld-table-list .ld-table-list-items {
   background: #ffffff;
   font-size: 1rem;
+}
+
+.learndash-wrapper .ld-tab-content, .learndash-wrapper .ld-table-list {
+  margin: 0 16px;
 }
 
 .learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
@@ -11797,12 +11805,18 @@ aside#secondary > section {
   color: #005eb8;
 }
 
-.learndash-wrapper .ld-login-modal .ld-login-modal-form .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-form .login-password::before {
-  top: 16px;
+.learndash-wrapper .ld-login-modal .ld-login-modal-form #loginform .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-form #loginform .login-password::before {
+  top: 38px;
 }
 
 .learndash-wrapper .ld-login-modal input[type=submit] {
   margin-top: 8px;
+}
+
+.learndash-wrapper .ld-login-modal .ld-button.ld-button-reverse.ld-js-register-account {
+  color: #212b32;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #00401e;
 }
 
 .learndash-wrapper .wpProQuiz_content input[type="text"] {
@@ -12026,6 +12040,10 @@ aside#secondary > section {
 
 #ld_course_categorydropdown #ld_course_categorydropdown_select {
   height: 40px;
+}
+
+#ld_course_categorydropdown label {
+  padding-right: 10px;
 }
 
 /* Events Calendar Styles */
@@ -12483,20 +12501,6 @@ ul.download-versions {
   }
 }
 
-@media (min-width: 48.0625em) {
-  #nhsuk-footer ul.nhsuk-footer__list {
-    width: 100%;
-  }
-  #nhsuk-footer ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
-    width: 33%;
-  }
-  #nhsuk-footer .nhsuk-footer__copyright {
-    width: 100%;
-    color: #212b32;
-    margin-top: 16px;
-  }
-}
-
 .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
   margin-bottom: 36px;
 }
@@ -12632,10 +12636,15 @@ ul.download-versions {
 
 .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+  padding: 0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description {
-  padding: 24px;
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading {
+  padding: 8px 16px;
+}
+
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content p, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-promo__description {
+  padding: 8px;
 }
 
 .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-readmore, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-readmore {
@@ -12704,8 +12713,10 @@ figure.is-style-nhsuk-table-responsive figcaption {
 }
 
 @media (min-width: 40.0625em) {
-  figure.is-style-nhsuk-table-responsive table {
-    margin-bottom: 48px;
+  figure.is-style-nhsuk-table-responsive {
+    /*table {
+      margin-bottom: 48px;
+    }*/
   }
   figure.is-style-nhsuk-table-responsive th,
   figure.is-style-nhsuk-table-responsive td {
@@ -12727,6 +12738,10 @@ figure.is-style-nhsuk-table-responsive figcaption {
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+
+.nhsuk-table-responsive table, figure.is-style-nhsuk-table-responsive table, .is-style-nhsuk-table-responsive table, table {
+  margin: 0;
 }
 
 /*

@@ -98,7 +98,6 @@ penthouse({
         '.nhsuk-action-link__text',
         '.nhsuk-main-wrapper',
         '.nhsuk-width-container',
-        '.nhsuk-width-container--full',
         '.screen-reader-text',
         '.nhsuk-u-visually-hidden',
         '.nhsuk-footer',
