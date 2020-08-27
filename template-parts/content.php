@@ -2,17 +2,16 @@
 /**
  * Template part for displaying posts
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Nightingale
+ * @link      https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+    <header class="entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="nhsuk-heading-xl">', '</h1>' );
@@ -22,7 +21,7 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="nhsuk-review-date">
+            <div class="nhsuk-review-date">
 				<?php
 				nightingale_posted_by();
 				nightingale_posted_on();
@@ -33,25 +32,28 @@
 					echo '<div class="nhsuk-readmore">' . nightingale_read_more_posts( $readmoretitle, $readmorelink ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 				?>
-				</p>
-			</div><!-- .article-meta -->
+                </p>
+            </div><!-- .article-meta -->
 		<?php endif; ?>
-	</header><!-- .article-header -->
+    </header><!-- .article-header -->
 
 	<?php
-
-	$featured_img_display = get_theme_mod( 'featured_img_display', 'true' );
-	if ( 'true' === $featured_img_display ) {
-		nightingale_post_thumbnail();
+	if ( has_post_thumbnail() ) {
+		$featured_img_display = get_theme_mod( 'featured_img_display', 'true' );
+		if ( 'true' === $featured_img_display ) {
+			the_post_thumbnail();
+		}
 	}
 	?>
 
-	<article>
+	<?php do_action('nightingale_before_single_content'); ?>
+
+    <article>
 		<?php
 		the_content(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+				/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nightingale' ),
 					array(
 						'span' => array(
@@ -78,11 +80,13 @@
 
 		wp_link_pages( $defaults );
 		?>
-	</article><!-- .article-content -->
-	<div class="nhsuk-content__clearfix"></div>
+    </article><!-- .article-content -->
+    <div class="nhsuk-content__clearfix"></div>
 
-	<footer class="article-footer">
+    <?php do_action('nightingale_after_single_content'); ?>
+
+    <footer class="article-footer">
 
 		<?php nightingale_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+    </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
