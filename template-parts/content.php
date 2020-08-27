@@ -46,6 +46,8 @@
 	}
 	?>
 
+	<?php do_action('nightingale_before_single_content'); ?>
+
     <article>
 		<?php
 		the_content(
@@ -80,6 +82,8 @@
 		?>
     </article><!-- .article-content -->
     <div class="nhsuk-content__clearfix"></div>
+
+    <?php do_action('nightingale_after_single_content'); ?>
 
     <footer class="article-footer">
 
