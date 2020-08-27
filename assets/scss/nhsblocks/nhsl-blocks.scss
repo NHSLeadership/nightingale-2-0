@@ -141,9 +141,13 @@
   padding: 0 0 nhsuk-spacing(3) 0;
   .nhsuk-image{
     width: 100%;
+    padding: 0;
   }
-  .nhsuk-promo__heading, .nhsuk-promo__description {
-    padding: nhsuk-spacing(4);
+  .nhsuk-promo__heading {
+    padding: nhsuk-spacing(2) nhsuk-spacing(3);
+  }
+  .nhsuk-promo__description, p {
+    padding: nhsuk-spacing(2);
   }
   .nhsuk-readmore {
     padding: 0 nhsuk-spacing(5) nhsuk-spacing(2) 0;
