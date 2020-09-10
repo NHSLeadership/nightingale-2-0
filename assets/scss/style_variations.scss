@@ -149,3 +149,25 @@ aside#secondary > section{
     display: none;
   }
 }
+
+// social embed floating fix
+@media (min-width: 799px) {
+  figure.wp-block-embed.wp-block-embed {
+    &.alignright {
+      margin : 0 0 0 nhsuk-spacing(3);
+      width  : 33%;
+    }
+
+    &.alignleft {
+      margin : 0 nhsuk-spacing(3) 0 0;
+      width  : 33%;
+    }
+  }
+}
+@media (max-width: 799px) {
+  figure.wp-block-embed.wp-block-embed {
+    &.alignright, &.alignleft {
+      display: contents;
+    }
+  }
+}
