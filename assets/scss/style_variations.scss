@@ -139,6 +139,25 @@ aside#secondary > section{
   }
 }
 
+.nhsuk-postslisting {
+  .nhsuk-promo {
+    .nhsuk-promo__content {
+      .nhsuk_post_author, .nhsuk_post_date {
+        padding : 0 nhsuk-spacing(4);
+      }
+
+      .nhsuk-promo__description, p {
+        padding : nhsuk-spacing(3) nhsuk-spacing(4);
+        margin-bottom: nhsuk-spacing(5);
+      }
+      .nhsuk-readmore {
+        position: absolute;
+        bottom: nhsuk-spacing(3);
+        right: 0;
+      }
+    }
+  }
+}
 .clear{
   @include clearfix();
 }

@@ -2,11 +2,10 @@
 /**
  * Template part for displaying posts
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Nightingale
+ * @link      https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 2.0 January 2020
+ * @version   2.0 January 2020
  */
 
 if ( is_single() ) :
@@ -16,52 +15,84 @@ if ( is_single() ) :
 else :
 
 	$sidebar = ( 'true' === get_theme_mod( 'blog_sidebar' ) );
-
 	?>
 
-	<div class="
+    <div class="
 	<?php
-	if ( $sidebar ) :
-		echo 'nhsuk-grid-column-one-half ';
-	else :
-		echo 'nhsuk-grid-column-one-third ';
-	endif;
+	if ( 'latest-posts' == $parentTemplatePart ) {
+		if ( 'grid' == $postLayout ) {
+			if ( '4' == $columns ) {
+				echo 'nhsuk-grid-column-one-quarter ';
+			} elseif ( '2' == $columns ) {
+				echo 'nhsuk-grid-column-one-half ';
+			} else {
+				echo 'nhsuk-grid-column-one-third ';
+			}
+		} else { // single rows layout
+			echo 'nhsuk-grid-column-full ';
+		}
+	} else {
+		if ( $sidebar ) :
+			echo 'nhsuk-grid-column-one-half ';
+		else :
+			echo 'nhsuk-grid-column-one-third ';
+		endif;
+	}
 	?>
-	nhsuk-promo-group__item">
-		<div class="nhsuk-promo">
-			<a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
+	nhsuk-promo-group__item nhsuk-postslisting">
+        <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
 
 				<?php
+				if ( ( 'latest-posts' !== $parentTemplatePart ) || ( ( 'latest-posts' == $parentTemplatePart ) && ( 0 !== $displayFeaturedImage ) ) ) {
+					if ( has_post_thumbnail() ) :
 
-				if ( has_post_thumbnail() ) :
+						the_post_thumbnail( 'default', [ 'class' => 'nhsuk-promo__img' ] );
 
-					the_post_thumbnail( 'default', [ 'class' => 'nhsuk-promo__img' ] );
+					else :
 
-				else :
+						$fallback = get_theme_mod( 'blog_fallback' );
 
-					$fallback = get_theme_mod( 'blog_fallback' );
+						if ( $fallback ) {
+							echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-promo__img' ] );
+						}
 
-					if ( $fallback ) {
-						echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-promo__img' ] );
-					}
-
-				endif;
-
+					endif;
+				}
 				?>
 
-				<div class="nhsuk-promo__content">
+                <div class="nhsuk-promo__content">
 					<?php the_title( '<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
 
-					<?php do_action( 'nightingale_before_archive_content' ); ?>
+					<?php
+					if ( ( 'latest-posts' == $parentTemplatePart ) && ( 0 !== $displayAuthor ) ) {
+						echo '<span class="wp-block-latest-posts__post-author nhsuk_post_author">' . get_the_author() . '</span>';
+					}
+					if ( ( 'latest-posts' == $parentTemplatePart ) && ( 0 !== $displayPostDate ) ) {
+						echo '<span class="wp-block-latest-posts__post-date nhsuk_post_date">' . get_the_date() . '</span>';
+					}
 
-					<?php the_excerpt(); ?>
+					do_action( 'nightingale_before_archive_content' );
+					if ( ( 'latest-posts' !== $parentTemplatePart ) || ( ( 'latest-posts' == $parentTemplatePart ) && ( 0 !== $displayPostContent ) ) ) {
+						if ( 'excerpt' == $displayFullPost ) {
+							add_filter(
+								'excerpt_length',
+								function ( $length ) use ( $excerptLength ) {
+									return $excerptLength;
+								},
+								10 );
+							the_excerpt();
+						} else {
+							the_content();
+						}
+					}
+					?>
 
 					<?php do_action( 'nightingale_after_archive_content' ); ?>
 
-				</div>
-			</a>
-		</div>
-	</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
-<?php endif; ?>
-
+<?php endif;
