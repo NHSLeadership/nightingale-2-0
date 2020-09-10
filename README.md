@@ -149,3 +149,11 @@ This theme has been extended to style the following plugins automatically:
  
  The codebase is released under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html
  ), unless stated otherwise. The upstream NHS Frontend Library is released under the MIT license, for details please see [NHSUK Frontend](https://github.com/nhsuk/nhsuk-frontend). The documentation is © Crown copyright and available under the terms of the Open Government License 3.0. Please see the [National Archives](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/) website for more information on the Open Government Licensing Framework.
+
+
+## Todo
+
+ - The latest posts block has been rewritten to allow all Gutenberg options to carry through to the front end output
+ , except if you select grid view and more than 4 columns (currently you can select up to 6) then the output reverts
+  to 3 columns [theme default]. This will be a setting that can be overridden in future but is not currently
+   available - see https://github.com/WordPress/gutenberg/issues/20588

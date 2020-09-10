@@ -10979,6 +10979,21 @@ aside#secondary > section {
   text-decoration: none;
 }
 
+.nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_author, .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_date {
+  padding: 0 24px;
+}
+
+.nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content p {
+  padding: 16px 24px;
+  margin-bottom: 32px;
+}
+
+.nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore {
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+}
+
 .clear:after {
   clear: both;
   content: '';

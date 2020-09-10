@@ -10,13 +10,24 @@
 
 $namespace = 'core/latest-posts/';
 
-
-$posts_to_show = get_query_var( $namespace . 'postsToShow' ) ? get_query_var( $namespace . 'postsToShow' ) : 5; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
-$categories    = get_query_var( $namespace . 'categories' );
-
+/*
+Set up all the arguments that can be defined in the blocks management for latest posts
+so we can then pass them down to the display elements correctly
+*/
+$parentTemplatePart = 'latest-posts';
+$postsToShow          = get_query_var( $namespace . 'postsToShow' ) ? get_query_var( $namespace . 'postsToShow' ) : 5; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+$categories           = get_query_var( $namespace . 'categories' );
+$displayPostContent   = get_query_var( $namespace . 'displayPostContent' ) ? get_query_var( $namespace . 'displayPostContent' ) : 0; // Default to not show post content.
+$excerptLength        = get_query_var( $namespace . 'excerptLength' ) ? get_query_var( $namespace . 'excerptLength' ) : 20; // Default excerpt length of 20 words.
+$displayFullPost      = get_query_var( $namespace . 'displayPostContentRadio' ) ? get_query_var( $namespace . 'displayPostContentRadio' ) : 'excerpt'; // Default to show excerpt not full post.
+$displayAuthor        = get_query_var( $namespace . 'displayAuthor' ) ? get_query_var( $namespace . 'displayAuthor' ) : 0; // Default to not show author.
+$displayPostDate      = get_query_var( $namespace . 'displayPostDate' ) ? get_query_var( $namespace . 'displayPostDate' ) : 0; // Default to not show post date.
+$displayFeaturedImage = get_query_var( $namespace . 'displayFeaturedImage' ) ? get_query_var( $namespace . 'displayFeaturedImage' ) : 0; // Default to not show Featured Image.
+$postLayout           = get_query_var( $namespace . 'postLayout' ) ? get_query_var( $namespace . 'postLayout' ) : 'row'; // Default to show as rows.
+$columns              = get_query_var( $namespace . 'columns' ) ? get_query_var( $namespace . 'columns' ) : 3; // Default to 3 column display.
 
 $args = array(
-	'posts_per_page'      => $posts_to_show,
+	'posts_per_page'      => $postsToShow,
 	'post_status'         => 'publish',
 	'order'               => get_query_var( $namespace . 'order' ) ? get_query_var( $namespace . 'order' ) : 'desc',
 	'orderby'             => get_query_var( $namespace . 'orderBy' ) ? get_query_var( $namespace . 'orderBy' ) : 'date',
@@ -25,8 +36,13 @@ $args = array(
 );
 
 if ( isset( $categories ) ) {
-	$args['cat'] = $categories;
+	$catsout = array();
+	foreach ( $categories as $cat ) {
+		$catsout[] = $cat[ 'id' ];
+	}
+	$args[ 'cat' ] = $catsout;
 }
+
 
 $sidebar = nightingale_show_sidebar();
 
@@ -34,26 +50,26 @@ $the_query = new WP_Query( $args );
 
 // The Loop.
 if ( $the_query->have_posts() ) : ?>
-
-
-	<div class="nhsuk-grid-row nhsuk-promo-group">
+    <div class="nhsuk-grid-row nhsuk-promo-group">
 
 		<?php
 		while ( $the_query->have_posts() ) :
 			$the_query->the_post();
 			?>
 
-			<?php get_template_part( 'template-parts/content', 'post' ); ?>
+			<?php
+			//get_template_part( 'template-parts/content', 'post' );
+			// use include and locate_template functions to be able to pass variables of the block down into the content.
+			include( locate_template( 'template-parts/content-post.php', false, false ) );
+			?>
 
 		<?php endwhile; ?>
 
-	</div>
+    </div>
 
-	<?php
+<?php
 
 endif;
 
 /* Restore original Post Data */
 wp_reset_postdata();
-
-?>
