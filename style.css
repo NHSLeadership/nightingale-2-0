@@ -11011,6 +11011,24 @@ aside#secondary > section {
   }
 }
 
+@media (min-width: 48.0525em) {
+  figure.wp-block-embed.wp-block-embed.alignright {
+    margin: 0 0 0 16px;
+    width: 33%;
+  }
+  figure.wp-block-embed.wp-block-embed.alignleft {
+    margin: 0 16px 0 0;
+    width: 33%;
+  }
+}
+
+@media (max-width: 48.0525em) {
+  figure.wp-block-embed.wp-block-embed.alignright, figure.wp-block-embed.wp-block-embed.alignleft {
+    display: contents;
+    margin-bottom: 24px;
+  }
+}
+
 #secondary section {
   border-top: 2px solid #005eb8;
   margin-bottom: 32px;
