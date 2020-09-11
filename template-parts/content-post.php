@@ -73,18 +73,22 @@ else :
 					}
 
 					do_action( 'nightingale_before_archive_content' );
-					if ( ( 'latest-posts' !== $parentTemplatePart ) || ( ( 'latest-posts' == $parentTemplatePart ) && ( 0 !== $displayPostContent ) ) ) {
-						if ( 'excerpt' == $displayFullPost ) {
-							add_filter(
-								'excerpt_length',
-								function ( $length ) use ( $excerptLength ) {
-									return $excerptLength;
-								},
-								10 );
-							the_excerpt();
-						} else {
-							the_content();
+					if ( 'latest-posts' == $parentTemplatePart ) { // this is the latest posts display with options.
+						if ( 0 !== $displayPostContent ) { // only do something if we actually selected to display content.
+							if ( 'excerpt' == $displayFullPost ) { // if we chose to display the excerpt, use the latest blocks excerpt length selection.
+								add_filter(
+									'excerpt_length',
+									function ( $length ) use ( $excerptLength ) {
+										return $excerptLength;
+									},
+									10 );
+								the_excerpt();
+							} else { // otherwise, if we chose to display FULL content, then do so.
+								the_content();
+							}
 						}
+					} else { // everything that isn't the latest posts block behaves as normal.
+						the_excerpt();
 					}
 					?>
 

@@ -35,7 +35,7 @@ $args = array(
 	'suppress_filters'    => false,
 );
 
-if ( isset( $categories ) ) {
+if ( ( isset( $categories ) ) && ( !empty( $categories ) ) ) {
 	$catsout = array();
 	foreach ( $categories as $cat ) {
 		$catsout[] = $cat[ 'id' ];

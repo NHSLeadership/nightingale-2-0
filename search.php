@@ -15,28 +15,28 @@
 get_header();
 ?>
 
-	<div id="primary" class="clear">
-		<header>
-			<h1 class="nhsuk-heading-xl">
+    <div id="primary" class="clear">
+        <header>
+            <h1 class="nhsuk-heading-xl">
 				<?php
 				/* translators: %s: search term */
 				printf( esc_html__( 'Search Results for: %s', 'nightingale' ), '<span>' . get_search_query() . '</span>' );
 				?>
-			</h1>
-		</header>
-		<div class="index">
+            </h1>
+        </header>
+        <div class="index">
 			<?php
 			if ( have_posts() ) :
 				?>
-				<div class="nhsuk-grid-row nhsuk-promo-group">
+                <div class="nhsuk-grid-row nhsuk-promo-group">
 					<?php
 					/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
 						?>
-						<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-							<div class="nhsuk-promo">
-								<a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
+                        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item nhsuk-postslisting">
+                            <div class="nhsuk-promo">
+                                <a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
 									<?php
 									if ( has_post_thumbnail() ) :
 										the_post_thumbnail( 'thumbnail', [ 'class' => 'nhsuk-promo__img' ] );
@@ -47,26 +47,34 @@ get_header();
 										}
 									endif;
 									?>
-									<div class="nhsuk-promo__content">
+                                    <div class="nhsuk-promo__content">
 										<?php the_title( '<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
 										<?php do_action( 'nightingale_before_archive_content' ); ?>
-										<?php the_excerpt(); ?>
+                                        <p class="nhsuk-promo__description">
+											<?php
+											//the_excerpt();
+											$excerpt = get_the_excerpt();
+											$keys    = explode( " ", $s );
+											$excerpt = preg_replace( '/(' . implode( '|', $keys ) . ')/iu', '<span class="search-terms">\0</span>', $excerpt );
+											echo $excerpt;
+											?>
+										</p>
 										<?php do_action( 'nightingale_after_archive_content' ); ?>
-									</div>
-								</a>
-							</div>
-						</div>
-						<?php
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+					<?php
 					endwhile;
 					?>
-				</div><!-- #nhsuk-panel-group nhsuk-grid-column-full -->
+                </div><!-- #nhsuk-panel-group nhsuk-grid-column-full -->
 				<?php
 				nightingale_archive_pagination();
-				else :
-					get_template_part( 'template-parts/content', 'none' );
+			else :
+				get_template_part( 'template-parts/content', 'none' );
 			endif;
-				?>
-		</div>
-	</div><!-- #primary -->
+			?>
+        </div>
+    </div><!-- #primary -->
 <?php
 get_footer();

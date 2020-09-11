@@ -10979,6 +10979,10 @@ aside#secondary > section {
   text-decoration: none;
 }
 
+.nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading {
+  width: 100%;
+}
+
 .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_author, .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_date {
   padding: 0 24px;
 }
@@ -11025,8 +11029,12 @@ aside#secondary > section {
 @media (max-width: 48.0525em) {
   figure.wp-block-embed.wp-block-embed.alignright, figure.wp-block-embed.wp-block-embed.alignleft {
     display: contents;
-    margin-bottom: 24px;
   }
+}
+
+span.search-terms {
+  font-weight: bold;
+  background: #ffb81C;
 }
 
 #secondary section {
