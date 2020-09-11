@@ -142,6 +142,9 @@ aside#secondary > section{
 .nhsuk-postslisting {
   .nhsuk-promo {
     .nhsuk-promo__content {
+      .nhsuk-promo__heading {
+        width: 100%;
+      }
       .nhsuk_post_author, .nhsuk_post_date {
         padding : 0 nhsuk-spacing(4);
       }
@@ -192,4 +195,10 @@ aside#secondary > section{
       display: contents;
     }
   }
+}
+
+// highlight search terms on results page
+span.search-terms {
+  font-weight: bold;
+  background: $color_nhsuk-warm-yellow;
 }
