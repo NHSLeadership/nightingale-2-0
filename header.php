@@ -48,7 +48,7 @@ if ( 'normal' !== $header_colour ) {
 } else {
 	$header_colour_text = '';
 }
-echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $header_colour_text ) . '" role="banner">';
+echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $header_colour_text ) . '">';
 ?>
 <div class="nhsuk-width-container nhsuk-header__container">
 	<?php

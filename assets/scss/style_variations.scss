@@ -6,6 +6,13 @@
 
 .nhsuk-search__submit {
   box-shadow: none;
+  color: #005eb8;
+}
+.nhsuk-header__search-form {
+  .nhsuk-u-visually-hidden {
+    background: #ffffff;
+    color: #000000;
+  }
 }
 
 
