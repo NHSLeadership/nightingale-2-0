@@ -170,6 +170,9 @@
       tr:nth-child(odd) .gsurvey-likert-row-label {
         background: $color_nhsuk-dark-blue;
       }
+      td.gsurvey-likert-choice {
+        height: 50px;
+      }
     }
     .nhsuk-form-group--error {
       table.gsurvey-likert {
@@ -188,5 +191,24 @@
     border: $nhsuk-border-width-form-element solid $color_nhsuk-blue;
     border-radius: $nhsuk-border-radius;
     background: $color_nhsuk-white;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .gform_wrapper {
+    .gform_body {
+      table.gsurvey-likert {
+        td.gsurvey-likert-choice {
+          display: inline-block;
+          border-top: 0;
+          border-right: 0;
+        }
+        td {
+          input {
+            position: relative;
+          }
+        }
+      }
+    }
   }
 }
