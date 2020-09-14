@@ -13834,20 +13834,29 @@
   text-decoration: none;
 }
 
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading {
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading {
   width: 100%;
 }
 
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_author, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_date, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_author, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_date, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_author, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk_post_date {
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date {
   padding: 0 24px;
 }
 
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content p, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content p {
-  padding: 16px 24px;
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
+  padding: 16px;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common {
+  padding: 0 16px;
+  margin-bottom: 0;
+  color: #003087;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
   margin-bottom: 32px;
 }
 
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore {
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore {
   position: absolute;
   bottom: 16px;
   right: 0;
