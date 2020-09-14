@@ -13697,6 +13697,12 @@
 
 .edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
   box-shadow: none;
+  color: #005eb8;
+}
+
+.edit-post-visual-editor .nhsuk-header__search-form .nhsuk-u-visually-hidden, .block-editor-block-styles .nhsuk-header__search-form .nhsuk-u-visually-hidden, .block-editor-inserter__menu-help-panel .nhsuk-header__search-form .nhsuk-u-visually-hidden {
+  background: #ffffff;
+  color: #000000;
 }
 
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .nhsuk-grid-column-two-thirds.contentright, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .nhsuk-grid-column-two-thirds.contentright, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .contentright[data-type="nhsblocks/twothirds"] {

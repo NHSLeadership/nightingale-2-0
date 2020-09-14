@@ -27,7 +27,6 @@ if ( has_nav_menu( 'footer-menu' ) ) { // Check to see if there is a footer menu
 			}
 			// below div is a horrible hacky workaround to stop safari from jumping links all over the show on hover. As and when upstream library gets fixed, this div can come out.
 			?>
-            <div style="height: 10px; width: 100%;"></div>
         </ul>
 
 		<?php

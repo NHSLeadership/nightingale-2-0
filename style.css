@@ -10859,6 +10859,12 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 */
 .nhsuk-search__submit {
   box-shadow: none;
+  color: #005eb8;
+}
+
+.nhsuk-header__search-form .nhsuk-u-visually-hidden {
+  background: #ffffff;
+  color: #000000;
 }
 
 .nhsuk-grid-column-two-thirds.contentright, .tribe-common div.contentright.nhsuk-grid-column-two-thirds {
