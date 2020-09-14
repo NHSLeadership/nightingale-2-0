@@ -222,3 +222,5 @@ add_action(
 	},
 	99
 );
+
+add_filter( 'tribe_template_pre_html:events/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip', '__return_false' );

@@ -364,6 +364,10 @@ require get_template_directory() . '/inc/last-reviewed.php';
  */
 
 $active_plugins = apply_filters( 'active_plugins', get_option( 'active_plugins' ) );
+$network_plugins = apply_filters('active_plugins', get_site_option('active_sitewide_plugins'));
+foreach ( $network_plugins as $key => $value ) {
+	$active_plugins[] = $key;
+}
 
 
 /**
