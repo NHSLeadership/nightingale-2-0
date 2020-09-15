@@ -35,7 +35,7 @@ $icons = nightingale_events_icons();
 		method="get"
 		data-js="tribe-events-view-form"
 	>
-	<?php wp_nonce_field( 'wp_rest', 'tribe-events-views[_wpnonce]' ); ?>
+	<?php wp_nonce_field( 'wp_rest', 'tribe-events-views_datepicker[_wpnonce]' ); ?>
 	<input type="hidden" name="tribe-events-views[url]" value="<?php echo esc_url( $this->get( 'url' ) ); ?>" />
 
 

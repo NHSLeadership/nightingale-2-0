@@ -46,24 +46,13 @@
 	}
 	?>
 
-	<?php do_action('nightingale_before_single_content'); ?>
+	<?php do_action( 'nightingale_before_single_content' ); ?>
 
     <article>
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nightingale' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				get_the_title()
-			)
-		);
+		if ( function_exists( 'nightingale_clean_bad_content' ) ) {
+			nightingale_clean_bad_content( true );
+		}
 
 		$defaults = array(
 			'before'           => '<p>' . __( 'Pages:', 'nightingale' ),
@@ -83,7 +72,7 @@
     </article><!-- .article-content -->
     <div class="nhsuk-content__clearfix"></div>
 
-    <?php do_action('nightingale_after_single_content'); ?>
+	<?php do_action( 'nightingale_after_single_content' ); ?>
 
     <footer class="article-footer">
 

@@ -50,7 +50,7 @@
     margin-bottom: nhsuk-spacing(3);
     a {
       @extend .nhsuk-heading-m;
-      text-decoration: none;
+      //text-decoration: none;
     }
 
     .wp-block-latest-posts__post-excerpt {
@@ -142,7 +142,7 @@ aside#secondary > section{
     display: inline-block;
     padding: 0px nhsuk-spacing(1);
     margin: 0 nhsuk-spacing(1);
-    text-decoration: none;
+    //text-decoration: none;
   }
 }
 
