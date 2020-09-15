@@ -11633,20 +11633,30 @@ span.search-terms {
   list-style-type: none;
 }
 
+.gform_wrapper .gform_body .gsurvey-rating {
+  direction: rtl;
+}
+
 .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label {
   width: 40px;
   height: 40px;
   background-size: 35px 35px;
-  font-size: 1.5rem !important;
+  font-size: 0 !important;
+  float: none;
+  display: inline-block;
+  position: relative;
+}
+
+.gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover, .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label .gsurvey-rating:not(:checked) > label:hover ~ label {
+  background-size: 35px 35px;
 }
 
 .gform_wrapper .gform_body .gsurvey-rating > input:checked ~ label {
   background-size: 35px 35px;
-  font-size: 1.5rem !important;
-}
-
-.gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover, .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover ~ label {
-  background-size: 35px 35px;
+  font-size: 0 !important;
+  float: none;
+  display: inline-block;
+  position: relative;
 }
 
 .gform_wrapper .gform_body .gsurvey-rating:after {
