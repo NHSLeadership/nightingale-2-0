@@ -11633,20 +11633,30 @@ span.search-terms {
   list-style-type: none;
 }
 
+.gform_wrapper .gform_body .gsurvey-rating {
+  direction: rtl;
+}
+
 .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label {
   width: 40px;
   height: 40px;
   background-size: 35px 35px;
-  font-size: 1.5rem !important;
+  font-size: 0 !important;
+  float: none;
+  display: inline-block;
+  position: relative;
+}
+
+.gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover, .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label .gsurvey-rating:not(:checked) > label:hover ~ label {
+  background-size: 35px 35px;
 }
 
 .gform_wrapper .gform_body .gsurvey-rating > input:checked ~ label {
   background-size: 35px 35px;
-  font-size: 1.5rem !important;
-}
-
-.gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover, .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover ~ label {
-  background-size: 35px 35px;
+  font-size: 0 !important;
+  float: none;
+  display: inline-block;
+  position: relative;
 }
 
 .gform_wrapper .gform_body .gsurvey-rating:after {
@@ -11691,6 +11701,10 @@ span.search-terms {
   background: #003087;
 }
 
+.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
+  height: 50px;
+}
+
 .gform_wrapper .gform_body .nhsuk-form-group--error table.gsurvey-likert {
   border: 2px solid #d5281b;
 }
@@ -11708,6 +11722,17 @@ span.search-terms {
   border: 2px solid #005eb8;
   border-radius: 4px;
   background: #ffffff;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
+    display: inline-block;
+    border-top: 0;
+    border-right: 0;
+  }
+  .gform_wrapper .gform_body table.gsurvey-likert td input {
+    position: relative;
+  }
 }
 
 .learndash-wrapper {

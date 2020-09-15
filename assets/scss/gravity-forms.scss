@@ -124,21 +124,33 @@
     ul.ui-sortable {
       list-style-type: none;
     }
-    .gsurvey-rating:not(:checked) > label {
-      width: 40px;
-      height: 40px;
-      background-size: 35px 35px;
-      font-size: 1.5rem !important;
-    }
-    .gsurvey-rating > input:checked ~ label {
-      background-size: 35px 35px;
-      font-size: 1.5rem !important;
-    }
-    .gsurvey-rating:not(:checked) > label:hover, .gsurvey-rating:not(:checked) > label:hover ~ label {
-      background-size: 35px 35px;
-    }
-    .gsurvey-rating:after {
-      clear: both;
+    .gsurvey-rating {
+      direction: rtl;
+      &:not(:checked) > label {
+        width           : 40px;
+        height          : 40px;
+        background-size : 35px 35px;
+        font-size       : 0 !important;
+        float: none;
+        display: inline-block;
+        position: relative;
+
+        &:hover, .gsurvey-rating:not(:checked) > label:hover ~ label {
+          background-size : 35px 35px;
+        }
+      }
+
+      > input:checked ~ label {
+        background-size : 35px 35px;
+        font-size       : 0 !important;
+        float: none;
+        display: inline-block;
+        position: relative;
+      }
+
+      &:after {
+        clear : both;
+      }
     }
 
     .ginput_container_name, .clear-multi {
@@ -170,6 +182,9 @@
       tr:nth-child(odd) .gsurvey-likert-row-label {
         background: $color_nhsuk-dark-blue;
       }
+      td.gsurvey-likert-choice {
+        height: 50px;
+      }
     }
     .nhsuk-form-group--error {
       table.gsurvey-likert {
@@ -188,5 +203,24 @@
     border: $nhsuk-border-width-form-element solid $color_nhsuk-blue;
     border-radius: $nhsuk-border-radius;
     background: $color_nhsuk-white;
+  }
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .gform_wrapper {
+    .gform_body {
+      table.gsurvey-likert {
+        td.gsurvey-likert-choice {
+          display: inline-block;
+          border-top: 0;
+          border-right: 0;
+        }
+        td {
+          input {
+            position: relative;
+          }
+        }
+      }
+    }
   }
 }
