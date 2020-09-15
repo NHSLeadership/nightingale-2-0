@@ -199,7 +199,7 @@ function nightingale_breadcrumb() {
 											?>
 											<li class="nhsuk-breadcrumb__item">
 												<a href="<?php echo esc_url( get_permalink( $ancestor ) ); ?>">
-													<?php echo esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ); ?></span>
+													<?php echo esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ); ?>
 												</a>
 											</li>
 											<?php

@@ -46,8 +46,8 @@ add_filter(
 		// Indicate mandatory fields with "Required" rather than "*".
 		$form_string = str_replace( "<span class='gfield_required'>*</span>", "&nbsp;&nbsp;<span class='gfield_required nhsuk-pill-standard nhsuk-pill-warn'>Required</span>", $form_string );
 
-		// Replace main <label> elements with <strong>s.
-		$form_string = preg_replace( "#<label class='gfield_label'(.*?)>(.*?)</label>#", '', $form_string );
+		// Replace main gfield_label elements with nhsuk-label.
+		$form_string = preg_replace( "#gfield_label#s", 'nhsuk-label', $form_string );
 
 		// Remove <ul>s around elements.
 		$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );
@@ -89,7 +89,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 	}
 	$label = '';
 	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
-		$label .= '<label class="nhsuk-label">' . $field->label;
+		//$label .= '<label class="nhsuk-label">' . $field->label;
 
 		if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 			$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';

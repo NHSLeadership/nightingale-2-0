@@ -35,7 +35,7 @@ $event_times     = nightingale_start_end_event( 'D j M' );
 	?>
 
 	<?php if ( tribe_get_venue( $tribeid ) ) : ?>
-		<dd class="venue-address">
+		<div class="venue-address">
 			<?php echo $icons['marker']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			<address class="tribe-events-address">
 				<?php tribe_get_full_address(); ?>
@@ -46,6 +46,6 @@ $event_times     = nightingale_start_end_event( 'D j M' );
 				endif;
 				?>
 			</address>
-		</dd>
+		</div>
 	<?php endif; ?>
 </div>

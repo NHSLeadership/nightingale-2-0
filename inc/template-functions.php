@@ -194,3 +194,22 @@ function nightingale_custom_page_colour( $classes ) {
 }
 
 add_filter( 'body_class', 'nightingale_custom_page_colour' );
+
+
+/**
+ * Function to sanitise content and remove empty elements that cause a11y and w3c validation errors.
+ *
+ * @param bool $bPrint Boolean argument specifying whether or not to print the function output
+ *
+ * @return mixed|string|string[]|void|null Return the sanitised output, or original output if flag set to false.
+ */
+function nightingale_clean_bad_content($bPrint = false) {
+
+	global $post;
+	$nightingalePostContent  = $post->post_content;
+	$nightingaleRemoveFilter = array("~<p[^>]*>\s?</p>~", "~<a[^>]*>\s?</a>~", "~<h[^>]*>\s?</h[^>]>~", "~<font[^>]*>~", "~<\/font>~", "~style\=\"[^\"]*\"~", "~<span[^>]*>\s?</span>~");
+	$nightingalePostContent  = preg_replace($nightingaleRemoveFilter, '', $nightingalePostContent);
+	$nightingalePostContent  = apply_filters('the_content', $nightingalePostContent);
+	if ($bPrint == false) return $nightingalePostContent;
+	else echo $nightingalePostContent;
+}
