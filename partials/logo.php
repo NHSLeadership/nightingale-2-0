@@ -35,7 +35,7 @@ if ( has_custom_logo() ) {
 			</div>
 			<?php
 		} else {
-			 the_custom_logo();
+			the_custom_logo();
 		}
 		?>
 	</div>

@@ -7,7 +7,7 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 5.0.0
  *
@@ -15,6 +15,7 @@
  *
  * @see tribe_get_event() For the format of the event object.
  */
+
 $classes = tribe_get_post_class( [ 'tribe-events-calendar-month-mobile-events__mobile-event' ], $event->ID );
 $classes['tribe-events-calendar-month-mobile-events__mobile-event--featured'] = $event->featured;
 ?>

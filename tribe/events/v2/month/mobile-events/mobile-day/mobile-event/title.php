@@ -7,7 +7,7 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 5.0.0
  *
@@ -21,8 +21,8 @@ $classes = [ 'tribe-events-calendar-month-mobile-events__mobile-event-title', 't
 ?>
 <h3 <?php tribe_classes( $classes ); ?>>
 	<a
-		href="<?php echo esc_url( $event->permalink ) ?>"
-		title="<?php echo esc_attr( $event->title ) ?>"
+		href="<?php echo esc_url( $event->permalink ); ?>"
+		title="<?php echo esc_attr( $event->title ); ?>"
 		rel="bookmark"
 		class="tribe-events-calendar-month-mobile-events__mobile-event-title-link tribe-common-anchor"
 	>

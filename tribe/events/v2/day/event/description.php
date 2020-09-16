@@ -2,12 +2,7 @@
 /**
  * View: Day Single Event Description
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/day/event/description.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 5.0.0
  *
@@ -21,5 +16,5 @@ if ( empty( (string) $event->excerpt ) ) {
 }
 ?>
 <div class="tribe-events-calendar-day__event-description tribe-common-b2 tribe-common-a11y-hidden">
-	<?php echo (string) $event->excerpt; ?>
+	<?php echo esc_html( (string) $event->excerpt ); ?>
 </div>

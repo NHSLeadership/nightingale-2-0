@@ -2,12 +2,7 @@
 /**
  * View: Day View Type separator
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/day/type-separator.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 4.9.11
  */
@@ -24,9 +19,9 @@ if ( ! $should_have_type_separator ) {
 $separator_text = '';
 
 if ( 'all_day' === $event->timeslot ) {
-	$separator_text = __( 'All Day', 'the-events-calendar' );
+	$separator_text = __( 'All Day', 'nightingale' );
 } elseif ( 'multiday' === $event->timeslot ) {
-	$separator_text = __( 'Ongoing', 'the-events-calendar' );
+	$separator_text = __( 'Ongoing', 'nightingale' );
 }
 ?>
 <div class="tribe-events-calendar-day__type-separator">

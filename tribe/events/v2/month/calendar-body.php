@@ -7,13 +7,14 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 4.9.8
  *
  * @var array $days An array containing the data for each day on the calendar grid, divided by day.
  *                  Shape `[ <Y-m-d> => [ ...<day_data> ] ]`.
  */
+
 ?>
 
 <div class="tribe-events-calendar-month__body" role="rowgroup">
@@ -24,7 +25,15 @@
 
 			<?php foreach ( $week as $day_date => $day ) : ?>
 
-				<?php $this->template( 'month/calendar-body/day', [ 'day_date' => $day_date, 'day' => $day ] ); ?>
+				<?php
+				$this->template(
+					'month/calendar-body/day',
+					[
+						'day_date' => $day_date,
+						'day'      => $day,
+					]
+				);
+				?>
 
 			<?php endforeach; ?>
 

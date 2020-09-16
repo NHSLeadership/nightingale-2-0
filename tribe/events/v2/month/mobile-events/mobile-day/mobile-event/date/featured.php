@@ -7,7 +7,7 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 5.1.1
  *
@@ -24,10 +24,10 @@ if ( empty( $event->featured ) ) {
 ?>
 <em
 	class="tribe-events-calendar-month-mobile-events__mobile-event-datetime-featured-icon tribe-common-svgicon tribe-common-svgicon--featured"
-	aria-label="<?php esc_attr_e( 'Featured', 'the-events-calendar' ); ?>"
-	title="<?php esc_attr_e( 'Featured', 'the-events-calendar' ); ?>"
+	aria-label="<?php esc_attr_e( 'Featured', 'nightingale' ); ?>"
+	title="<?php esc_attr_e( 'Featured', 'nightingale' ); ?>"
 >
 </em>
 <span class="tribe-events-calendar-month-mobile-events__mobile-event-datetime-featured-text">
-	<?php esc_html_e( 'Featured', 'the-events-calendar' ); ?>
+	<?php esc_html_e( 'Featured', 'nightingale' ); ?>
 </span>

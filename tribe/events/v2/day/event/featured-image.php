@@ -2,12 +2,7 @@
 /**
  * View: Day View - Single Event Featured Image
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/day/event/featured-image.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 5.0.0
  *

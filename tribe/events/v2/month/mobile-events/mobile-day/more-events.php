@@ -7,7 +7,7 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 4.9.11
  *
@@ -30,7 +30,8 @@ if ( empty( $more_events ) || empty( $more_url ) ) {
 		<?php
 		echo esc_html(
 			sprintf(
-				_n( '+ %d More', '+ %d More', $more_events, 'the-events-calendar' ),
+				/* translators: %d: Name of current category */
+				_n( '+ %d More', '+ %d More', $more_events, 'nightingale' ),
 				$more_events
 			)
 		);

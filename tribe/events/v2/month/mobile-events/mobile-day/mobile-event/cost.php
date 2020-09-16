@@ -7,7 +7,7 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @since 4.9.9
  *
@@ -28,6 +28,6 @@ if ( empty( $event->cost ) ) {
 ?>
 <div class="tribe-events-c-small-cta tribe-common-b3 tribe-events-calendar-month-mobile-events__mobile-event-cost">
 	<span class="tribe-events-c-small-cta__price">
-		<?php echo esc_html( $event->cost ) ?>
+		<?php echo esc_html( $event->cost ); ?>
 	</span>
 </div>

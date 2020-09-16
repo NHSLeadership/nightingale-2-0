@@ -2,12 +2,7 @@
 /**
  * View: Month View - Single Multiday Event Hidden Title
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/month/calendar-body/day/multiday-events/multiday-event/hidden/link/title.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @since 5.1.1
  *
@@ -20,5 +15,5 @@
 
 ?>
 <h3 class="tribe-events-calendar-month__multiday-event-hidden-title tribe-common-h8">
-	<?php echo $event->title; // phpcs:ignore  ?>
+	<?php echo esc_html( $event->title ); ?>
 </h3>

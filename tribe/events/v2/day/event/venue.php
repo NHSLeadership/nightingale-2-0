@@ -2,12 +2,7 @@
 /**
  * View: Day Single Event Venue
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/day/event/venue.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 4.9.11
  *
@@ -20,7 +15,7 @@ if ( ! $event->venues->count() ) {
 	return;
 }
 
-$separator            = esc_html_x( ', ', 'Address separator', 'the-events-calendar' );
+$separator            = esc_html_x( ', ', 'Address separator', 'nightingale' );
 $venue                = $event->venues[0];
 $append_after_address = array_filter( array_map( 'trim', [ $venue->city, $venue->state_province, $venue->state, $venue->province ] ) );
 $address              = $venue->address . ( $venue->address && $append_after_address ? $separator : '' );
