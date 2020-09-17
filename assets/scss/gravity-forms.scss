@@ -224,3 +224,22 @@
     }
   }
 }
+@media only screen and (max-device-width: 799px) {
+  .gform_wrapper {
+    .gform_body {
+      .ginput_container {
+        .gsurvey-rating {
+          &:not(:checked)>label {
+              background-size: 28px 28px;
+              width: 30px;
+              height: 30px;
+
+          }
+          &>input>checked~label {
+            background-size: 28px 28px;
+          }
+        }
+      }
+    }
+  }
+}
