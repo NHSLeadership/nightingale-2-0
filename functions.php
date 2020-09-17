@@ -406,8 +406,27 @@ if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
 	if ( ! is_admin() ) {
 		require get_template_directory() . '/inc/learndash.php';
 	}
+
+	add_action('admin_head', 'nightingale_learndash_admin_fix');
+
 }
 
+/**
+ * Add custom styling to admin header for learndash pages so you can actually use the links. Dont ask.
+ */
+function nightingale_learndash_admin_fix() {
+	echo '<!-- Tony woz here --><style type="text/css">
+			    #swfd-header {
+					position: fixed !important;
+					height: 120px;
+				}
+				@media (min-width: 600px)
+					.ld-header-has-tabs .edit-post-layout, .ld-header-has-tabs .edit-post-layout.has-fixed-toolbar {
+						padding-top: 120px;
+					}
+				}
+  </style>';
+}
 /**
  * Events Calendar style over-ride.
  * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a theme file for
