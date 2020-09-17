@@ -16,5 +16,5 @@ if ( empty( (string) $event->excerpt ) ) {
 }
 ?>
 <div class="tribe-events-calendar-day__event-description tribe-common-b2 tribe-common-a11y-hidden">
-	<?php echo esc_html( (string) $event->excerpt ); ?>
+	<?php echo wp_kses_post( (string) $event->excerpt ); ?>
 </div>

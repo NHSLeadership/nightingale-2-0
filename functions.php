@@ -365,7 +365,7 @@ require get_template_directory() . '/inc/last-reviewed.php';
 
 $active_plugins  = apply_filters( 'active_plugins', get_option( 'active_plugins' ) );
 $network_plugins = apply_filters( 'active_plugins', get_site_option( 'active_sitewide_plugins' ) );
-if ( !empty( $network_plugins ) ) { // add network plugins to array if array isn't empty.
+if ( ! empty( $network_plugins ) ) { // add network plugins to array if network array isn't empty.
 	foreach ( $network_plugins as $key => $value ) {
 		$active_plugins[] = $key;
 	}
@@ -409,7 +409,7 @@ if ( in_array( 'sfwd-lms/sfwd-lms.php', $active_plugins, true ) ) {
 		require get_template_directory() . '/inc/learndash.php';
 	}
 
-	add_action('admin_head', 'nightingale_learndash_admin_fix');
+	add_action( 'admin_head', 'nightingale_learndash_admin_fix' );
 
 }
 

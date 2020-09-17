@@ -22,7 +22,7 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
 <div class="tribe-events-calendar-day__event-datetime-wrapper tribe-common-b2">
 	<?php $this->template( 'day/event/date/featured' ); ?>
 	<time class="tribe-events-calendar-day__event-datetime" datetime="<?php echo esc_attr( $event_date_attr ); ?>">
-		<?php echo esc_html( $event->schedule_details->value() ); ?>
+		<?php echo wp_kses_post( $event->schedule_details->value() ); ?>
 	</time>
 	<?php $this->template( 'day/event/date/meta', [ 'event' => $event ] ); ?>
 </div>
