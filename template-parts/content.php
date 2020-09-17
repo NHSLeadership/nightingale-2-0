@@ -11,7 +11,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header">
+	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="nhsuk-heading-xl">', '</h1>' );
@@ -21,7 +21,7 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-            <div class="nhsuk-review-date">
+			<div class="nhsuk-review-date">
 				<?php
 				nightingale_posted_by();
 				nightingale_posted_on();
@@ -32,10 +32,10 @@
 					echo '<div class="nhsuk-readmore">' . nightingale_read_more_posts( $readmoretitle, $readmorelink ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 				?>
-                </p>
-            </div><!-- .article-meta -->
+				</p>
+			</div><!-- .article-meta -->
 		<?php endif; ?>
-    </header><!-- .article-header -->
+	</header><!-- .article-header -->
 
 	<?php
 	if ( has_post_thumbnail() ) {
@@ -48,7 +48,7 @@
 
 	<?php do_action( 'nightingale_before_single_content' ); ?>
 
-    <article>
+	<article>
 		<?php
 		if ( function_exists( 'nightingale_clean_bad_content' ) ) {
 			nightingale_clean_bad_content( true );
@@ -69,13 +69,13 @@
 
 		wp_link_pages( $defaults );
 		?>
-    </article><!-- .article-content -->
-    <div class="nhsuk-content__clearfix"></div>
+	</article><!-- .article-content -->
+	<div class="nhsuk-content__clearfix"></div>
 
 	<?php do_action( 'nightingale_after_single_content' ); ?>
 
-    <footer class="article-footer">
+	<footer class="article-footer">
 
 		<?php nightingale_entry_footer(); ?>
-    </footer><!-- .entry-footer -->
+	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

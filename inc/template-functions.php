@@ -110,8 +110,10 @@ function nightingale_excerpt_more( $more ) {
 	global $post;
 	$link  = '';
 	$title = get_the_title( $post->ID );
+
 	return nightingale_read_more_posts( $title, $link );
 }
+
 add_filter( 'excerpt_more', 'nightingale_excerpt_more' );
 /**
  * Customise the read more link.
@@ -134,6 +136,7 @@ function nightingale_read_more_posts( $title, $link ) {
 		$readmorelink .= '</a>';
 	}
 	$readmorelink .= '</div>';
+
 	return $readmorelink;
 
 }
@@ -199,17 +202,20 @@ add_filter( 'body_class', 'nightingale_custom_page_colour' );
 /**
  * Function to sanitise content and remove empty elements that cause a11y and w3c validation errors.
  *
- * @param bool $bPrint Boolean argument specifying whether or not to print the function output
+ * @param bool $b_print Boolean argument specifying whether or not to print the function output.
  *
  * @return mixed|string|string[]|void|null Return the sanitised output, or original output if flag set to false.
  */
-function nightingale_clean_bad_content($bPrint = false) {
+function nightingale_clean_bad_content( $b_print = false ) {
 
 	global $post;
-	$nightingalePostContent  = $post->post_content;
-	$nightingaleRemoveFilter = array("~<p[^>]*>\s?</p>~", "~<a[^>]*>\s?</a>~", "~<h[^>]*>\s?</h[^>]>~", "~<font[^>]*>~", "~<\/font>~", "~style\=\"[^\"]*\"~", "~<span[^>]*>\s?</span>~");
-	$nightingalePostContent  = preg_replace($nightingaleRemoveFilter, '', $nightingalePostContent);
-	$nightingalePostContent  = apply_filters('the_content', $nightingalePostContent);
-	if ($bPrint == false) return $nightingalePostContent;
-	else echo $nightingalePostContent;
+	$nightingale_post_content  = $post->post_content;
+	$nightingale_remove_filter = array( '~<p[^>]*>\s?</p>~', '~<a[^>]*>\s?</a>~', '~<h[^>]*>\s?</h[^>]>~', '~<font[^>]*>~', '~<\/font>~', '~style\=\"[^\"]*\"~', '~<span[^>]*>\s?</span>~' );
+	$nightingale_post_content  = preg_replace( $nightingale_remove_filter, '', $nightingale_post_content );
+	$nightingale_post_content  = apply_filters( 'the_content', $nightingale_post_content );
+	if ( false === $b_print ) {
+		return $nightingale_post_content;
+	} else {
+		echo $nightingale_post_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
 }

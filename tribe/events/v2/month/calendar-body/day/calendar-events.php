@@ -2,12 +2,7 @@
 /**
  * View: Month View - Calendar Events
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/month/calendar-body/day/calendar-events.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 4.9.8
  *
@@ -18,7 +13,7 @@
  */
 
 // Bail if there are no events for day.
-if ( empty ( $day_events ) ) {
+if ( empty( $day_events ) ) {
 	return;
 }
 ?>
@@ -28,4 +23,5 @@ if ( empty ( $day_events ) ) {
 
 	<?php $this->template( 'month/calendar-body/day/calendar-events/calendar-event', [ 'event' => $event ] ); ?>
 
-<?php endforeach; ?>
+	<?php
+endforeach;

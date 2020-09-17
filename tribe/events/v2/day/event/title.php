@@ -2,12 +2,7 @@
 /**
  * View: Day View - Single Event Title
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/day/event/title.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 5.0.0
  *
@@ -15,6 +10,7 @@
  *
  * @see tribe_get_event() For the format of the event object.
  */
+
 ?>
 <h3 class="tribe-events-calendar-day__event-title tribe-common-h6 tribe-common-h4--min-medium">
 	<a

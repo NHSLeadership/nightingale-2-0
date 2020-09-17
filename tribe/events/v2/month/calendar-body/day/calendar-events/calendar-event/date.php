@@ -2,12 +2,7 @@
 /**
  * View: Month View - Calendar Event Date
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/month/calendar-body/day/calendar-events/calendar-event/date.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @since 4.9.13
  * @since 5.1.1 Move icons into separate templates.
@@ -30,7 +25,7 @@ $display_end_date = $event->dates->start_display->format( 'H:i' ) !== $event->da
 	</time>
 	<?php if ( $display_end_date ) : ?>
 		<span class="tribe-events-calendar-month__calendar-event-datetime-separator"><?php echo esc_html( $date_formats->time_range_separator ); ?></span>
-		<time datetime="<?php echo esc_attr($event->dates->end_display->format( 'H:i' ) ); ?>">
+		<time datetime="<?php echo esc_attr( $event->dates->end_display->format( 'H:i' ) ); ?>">
 			<?php echo esc_html( $event->dates->end_display->format( $time_format ) ); ?>
 		</time>
 	<?php endif; ?>

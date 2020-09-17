@@ -7,7 +7,7 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @since 4.9.10
  * @since 5.1.1 Move icons into separate templates.
@@ -18,20 +18,21 @@
  *
  * @version 5.1.1
  */
+
 use Tribe__Date_Utils as Dates;
 
-$time_format = tribe_get_time_format();
+$time_format     = tribe_get_time_format();
 $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
 ?>
 <div class="tribe-events-calendar-month-mobile-events__mobile-event-datetime tribe-common-b2">
 	<?php $this->template( 'month/mobile-events/mobile-day/mobile-event/date/featured' ); ?>
 	<?php if ( $event->all_day ) : ?>
-		<time datetime="<?php echo esc_attr( $event->dates->start->format( Dates::DBDATEFORMAT ) ) ?>">
-			<?php esc_html_e( 'All day', 'the-events-calendar' ); ?>
+		<time datetime="<?php echo esc_attr( $event->dates->start->format( Dates::DBDATEFORMAT ) ); ?>">
+			<?php esc_html_e( 'All day', 'nightingale' ); ?>
 		</time>
 	<?php else : ?>
 		<time datetime="<?php echo esc_attr( $event_date_attr ); ?>">
-			<?php echo $event->schedule_details->value(); ?>
+			<?php echo esc_html( $event->schedule_details->value() ); ?>
 		</time>
 	<?php endif; ?>
 	<?php $this->template( 'month/mobile-events/mobile-day/mobile-event/date/meta', [ 'event' => $event ] ); ?>

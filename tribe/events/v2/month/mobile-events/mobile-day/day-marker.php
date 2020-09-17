@@ -7,7 +7,7 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @since 4.9.4
  * @since 5.1.5 Utilize\Tribe\Utils\Date_I18n_Immutable's format_i18n method for date display.
@@ -15,8 +15,8 @@
  * @version 5.1.5
  *
  * @var string $day_date Date for this marker, following `Y-m-d` format.
- *
  */
+
 use Tribe__Date_Utils as Dates;
 
 if ( ! isset( $day_date ) ) {

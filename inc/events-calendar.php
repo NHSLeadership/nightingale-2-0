@@ -147,7 +147,6 @@ function nightingale_events_icons() {
  */
 function nightingale_start_end_event( $date_format ) {
 
-
 	$all_day = get_post_meta( get_the_id(), '_EventAllDay', true );
 
 	$time_format     = get_option( 'time_format', Tribe__Date_Utils::TIMEFORMAT ); // get time format.

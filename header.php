@@ -19,7 +19,7 @@
 	<meta name="theme" content="NHS-nightingale-2.2.0">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php
-    wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'jquery' );
 	wp_head();
 	flush();
 	?>
@@ -99,6 +99,6 @@ $extra_styles = $page_color ? 'page-style--' . $page_color : '';
 
 <div id="content" class="nhsuk-width-container-full">
 	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding <?php echo esc_attr( $extra_styles ); ?>" id="maincontent">
-        <div id="contentinner" class="nhsuk-width-container">
-		<?php flush(); ?>
-
+		<div id="contentinner" class="nhsuk-width-container">
+		<?php
+		flush();

@@ -2,12 +2,7 @@
 /**
  * View: Month View - More Events
  *
- * Override this template in your own theme by creating a file at:
- * [your-theme]/tribe/events/v2/month/calendar-body/day/more-events.php
- *
- * See more documentation about our views templating system.
- *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 4.9.8
  *
@@ -25,17 +20,18 @@ if ( empty( $more_events ) || empty( $more_url ) ) {
 
 <div class="tribe-events-calendar-month__more-events">
 	<a
-		href="<?php echo esc_url( $more_url ); ?>"
-		class="tribe-events-calendar-month__more-events-link tribe-common-h8 tribe-common-h--alt tribe-common-anchor-thin"
-		data-js="tribe-events-view-link"
+			href="<?php echo esc_url( $more_url ); ?>"
+			class="tribe-events-calendar-month__more-events-link tribe-common-h8 tribe-common-h--alt tribe-common-anchor-thin"
+			data-js="tribe-events-view-link"
 	>
 		<?php
-		 echo esc_html(
-			 sprintf(
-				 _n( '+ %d More', '+ %d More', $more_events, 'the-events-calendar' ),
-				 $more_events
-			 )
-		 )
+		echo esc_html(
+			sprintf(
+				/* translators: %d: Name of current month */
+				_n( '+ %d More', '+ %d More', $more_events, 'nightingale' ),
+				$more_events
+			)
+		)
 		?>
 	</a>
 </div>

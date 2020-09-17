@@ -7,13 +7,14 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @version 5.0.1
  *
  * @var string $prev_url The URL to the previous page, if any, or an empty string.
  * @var string $next_url The URL to the next page, if any, or an empty string.
  */
+
 ?>
 <div class="navigation">
 <nav class="tribe-events-c-top-bar__nav tribe-common-a11y-hidden nhsuk-pagination">

@@ -7,14 +7,14 @@
  *
  * See more documentation about our views templating system.
  *
- * @link {INSERT_ARTCILE_LINK_HERE}
+ * @package nightingale
  *
  * @var string $link The URL to the previous page, if any, or an empty string.
  * @var string $label The label for the previous link.
  *
  * @version 5.0.1
- *
  */
+
 ?>
 <li class="tribe-events-c-nav__list-item tribe-events-c-nav__list-item--prev">
 	<a
@@ -22,9 +22,36 @@
 		rel="prev"
 		class="tribe-events-c-nav__prev tribe-common-b2"
 		data-js="tribe-events-view-link"
-		aria-label="<?php echo esc_attr( sprintf( __( 'Previous month, %1$s', 'the-events-calendar' ), $label ) ); ?>"
-		title="<?php echo esc_attr( sprintf( __( 'Previous month, %1$s', 'the-events-calendar' ), $label ) ); ?>"
-	>
+		aria-label="
+		<?php
+		echo esc_attr(
+			sprintf(
+				/* translators: %s: Name of previous month */
+				__(
+					'Previous month,
+					%1$s',
+					'nightingale'
+				),
+				$label
+			)
+		);
+		?>
+		"
+		title="
+		<?php
+		echo esc_attr(
+			sprintf(
+				/* translators: %s: Name of previous month */
+				__(
+					'Previous month,
+					%1$s',
+					'nightingale'
+				),
+				$label
+			)
+		);
+		?>
+		">
 		<?php echo esc_html( $label ); ?>
 	</a>
 </li>
