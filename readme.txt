@@ -1,13 +1,13 @@
 === Nightingale 2.0 ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.4.2
+Tested up to: 5.5
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.2.0
-Stable tag: 2.2.0
+Version: 2.2.2
+Stable tag: 2.2.2
 
 
 == Description ==
@@ -43,11 +43,23 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
-= 2.2.1
-Minor bugfix:
-Learndash content editing was broken. This fixes it :)
+= 2.2.2 =
+Maintenance release:
+ * Hero banner alignment fixes - on full screen and on mobile view
+ * Latest posts block rewritten to take note of editor settings (column count, hide/show author, date, featured image etc, category selection, sort order)
+ * corrected embedded media when left or right alignment is chosen to prevent other content from crashing the component
+ * latest post and content post - cleaned logic in code and tidied display
+ * Multiple code tweaks to improve accessibility. This release resolves items picked up on automated a11y scan, a full detailed manual audit is being prepared for the next release
+ * Improved layout and display of month and day view on the events calendar content.
+ * Gravity forms survey - star rating and likert rating display corrected to display correctly on all size screens.
+ * Gravity forms labels a11y improved
 
-= 2.2.0
+= 2.2.1 =
+Maintenance release:
+ * amended slightly to work with WordPress 5.5
+ * minor css tweaks for better NHSUK styling
+
+= 2.2.0 =
 Feature release:
  * Added default styling to Download Monitor buttons
  * Added html sitemap functionality

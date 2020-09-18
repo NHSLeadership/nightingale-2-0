@@ -2,7 +2,12 @@
   .ld-primary-color {
     color: $color_nhsuk-blue;
   }
-
+  a.ld-login-text.ld-login-button:hover {
+    color: $color_nhsuk-white !important;
+  }
+  #ld-user-register {
+    color: $color_nhsuk-blue !important;
+  }
   .ld-icon.ld-primary-background, .ld-expand-button, .ld-expand-button.ld-button-alternate .ld-icon {
     background: $color_nhsuk-blue;
   }
@@ -90,7 +95,7 @@
     .ld-primary-color-hover {
 
       &:hover {
-        background: $nhsuk-focus-color;
+        background: $nhsuk-focus-color !important;
         margin: 0 -20px;
         padding: 20px;
       }
@@ -108,6 +113,9 @@
       background: $color_nhsuk-white;
       font-size: 1rem;
     }
+  }
+  .ld-tab-content, .ld-table-list {
+    margin: 0 16px;
   }
 
   .ld-item-list {
@@ -223,16 +231,24 @@
         color: $color_nhsuk-blue;
       }
 
-      .login-username, .login-password {
-        &::before {
-          top: nhsuk-spacing(3);
+      #loginform {
+        .login-username, .login-password {
+          &::before {
+            top : 38px;
+          }
         }
       }
+
     }
 
     input[type=submit] {
       @extend .nhsuk-button;
       margin-top: nhsuk-spacing(2);
+    }
+    .ld-button.ld-button-reverse.ld-js-register-account {
+      color: #212b32;
+      border-radius: 4px;
+      box-shadow: 0 4px 0 #00401e;
     }
   }
 
@@ -464,5 +480,8 @@
   padding-bottom: nhsuk-spacing(4);
   #ld_course_categorydropdown_select {
     height: 40px;
+  }
+  label {
+    padding-right: 10px;
   }
 }

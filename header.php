@@ -16,10 +16,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme" content="NHS-nightingale-2.2.0">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php
+	wp_enqueue_script( 'jquery' );
 	wp_head();
 	flush();
 	?>
@@ -48,7 +48,7 @@ if ( 'normal' !== $header_colour ) {
 } else {
 	$header_colour_text = '';
 }
-echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $header_colour_text ) . '" role="banner">';
+echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $header_colour_text ) . '">';
 ?>
 <div class="nhsuk-width-container nhsuk-header__container">
 	<?php
@@ -97,8 +97,8 @@ $extra_styles = $page_color ? 'page-style--' . $page_color : '';
 
 ?>
 
-<div id="content" class="nhsuk-width-container nhsuk-width-container--full">
+<div id="content" class="nhsuk-width-container-full">
 	<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding <?php echo esc_attr( $extra_styles ); ?>" id="maincontent">
 		<div id="contentinner" class="nhsuk-width-container">
-			<?php flush(); ?>
-
+		<?php
+		flush();

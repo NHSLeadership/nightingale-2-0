@@ -33,7 +33,6 @@ function nightingale_customize_register( $wp_customize ) {
 		);
 	}
 
-
 	/*
 	 * ------------------------------------------------------------
 	 * SECTION: Header
@@ -47,7 +46,6 @@ function nightingale_customize_register( $wp_customize ) {
 			'priority'    => 10,
 		)
 	);
-
 
 	/*
 	 * -----------------------------------------------------------
@@ -168,7 +166,6 @@ function nightingale_customize_register( $wp_customize ) {
 			),
 		)
 	);
-
 
 	/*
 	 * -----------------------------------------------------------
@@ -306,7 +303,6 @@ function nightingale_add_blog_settings( $wp_customize ) {
 		)
 	);
 
-
 	$wp_customize->add_setting(
 		// $id
 		'blog_sidebar',
@@ -419,8 +415,6 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			)
 		)
 	);
-
-
 }
 
 add_action( 'customize_register', 'nightingale_add_blog_settings' );

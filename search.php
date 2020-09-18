@@ -34,7 +34,7 @@ get_header();
 					while ( have_posts() ) :
 						the_post();
 						?>
-						<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+						<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item nhsuk-postslisting">
 							<div class="nhsuk-promo">
 								<a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
 									<?php
@@ -50,7 +50,14 @@ get_header();
 									<div class="nhsuk-promo__content">
 										<?php the_title( '<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
 										<?php do_action( 'nightingale_before_archive_content' ); ?>
-										<?php the_excerpt(); ?>
+										<p class="nhsuk-promo__description">
+											<?php
+											$excerpt = get_the_excerpt();
+											$keys    = explode( ' ', $s );
+											$excerpt = preg_replace( '/(' . implode( '|', $keys ) . ')/iu', '<span class="search-terms">\0</span>', $excerpt );
+											echo $excerpt; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+											?>
+										</p>
 										<?php do_action( 'nightingale_after_archive_content' ); ?>
 									</div>
 								</a>

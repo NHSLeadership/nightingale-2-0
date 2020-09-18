@@ -55,8 +55,8 @@ $event_id = get_the_ID();
 
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 
-			<div class="nhsuk-grid-row">
-				<div class="nhsuk-grid-column-one-half">
+			<div class="nhsuk-grid-column-full">
+				<div class="alignright">
 					<?php
 
 					if ( has_post_thumbnail() ) :
@@ -77,7 +77,7 @@ $event_id = get_the_ID();
 
 
 				</div>
-				<div class="nhsuk-grid-column-one-half">
+				<div class="">
 					<?php the_title( '<h1 class="tribe-events-single-event-title">', '</h1>' ); ?>
 
 
@@ -131,7 +131,6 @@ $event_id = get_the_ID();
 					<?php do_action( 'tribe_events_single_event_after_the_content' ); ?>
 
 				</div>
-			</div>
 
 			<!-- Event content -->
 			<?php do_action( 'tribe_events_single_event_before_the_content' ); ?>

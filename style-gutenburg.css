@@ -13408,10 +13408,6 @@
   height: 0;
 }
 
-.edit-post-visual-editor .nhsuk-width-container--full, .block-editor-block-styles .nhsuk-width-container--full, .block-editor-inserter__menu-help-panel .nhsuk-width-container--full {
-  max-width: none;
-}
-
 .edit-post-visual-editor .nhsuk-panel-group, .block-editor-block-styles .nhsuk-panel-group, .block-editor-inserter__menu-help-panel .nhsuk-panel-group {
   margin-left: 0;
   margin-right: 0;
@@ -13701,6 +13697,12 @@
 
 .edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
   box-shadow: none;
+  color: #005eb8;
+}
+
+.edit-post-visual-editor .nhsuk-header__search-form .nhsuk-u-visually-hidden, .block-editor-block-styles .nhsuk-header__search-form .nhsuk-u-visually-hidden, .block-editor-inserter__menu-help-panel .nhsuk-header__search-form .nhsuk-u-visually-hidden {
+  background: #ffffff;
+  color: #000000;
 }
 
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .nhsuk-grid-column-two-thirds.contentright, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .nhsuk-grid-column-two-thirds.contentright, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .contentright[data-type="nhsblocks/twothirds"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .contentright[data-type="nhsblocks/twothirds"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .contentright[data-type="nhsblocks/twothirds"] {
@@ -13716,8 +13718,12 @@
   padding: 0;
 }
 
+.edit-post-visual-editor .nhsuk-grid-column-one-third, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor [data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor [data-type="nhsblocks/onethird"], .edit-post-visual-editor .nhsuk-grid-column-one-half, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onehalf"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor [data-type="nhsblocks/onehalf"], .edit-post-visual-editor .nhsuk-grid-column-one-quarter, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onequarter"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor [data-type="nhsblocks/onequarter"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor [data-type="nhsblocks/onequarter"], .block-editor-block-styles .nhsuk-grid-column-one-third, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles [data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles [data-type="nhsblocks/onethird"], .block-editor-block-styles .nhsuk-grid-column-one-half, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles [data-type="nhsblocks/onehalf"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles [data-type="nhsblocks/onehalf"], .block-editor-block-styles .nhsuk-grid-column-one-quarter, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles [data-type="nhsblocks/onequarter"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onequarter"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles [data-type="nhsblocks/onequarter"], .block-editor-inserter__menu-help-panel .nhsuk-grid-column-one-third, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel [data-type="nhsblocks/onethird"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel [data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onethird"], .block-editor-inserter__menu-help-panel .nhsuk-grid-column-one-half, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel [data-type="nhsblocks/onehalf"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .nhsuk-grid-column-one-quarter, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel [data-type="nhsblocks/onequarter"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel [data-type="nhsblocks/onequarter"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onequarter"] {
+  display: flex;
+}
+
 .edit-post-visual-editor .nhsuk-header__search-wrap input[type="text"], .block-editor-block-styles .nhsuk-header__search-wrap input[type="text"], .block-editor-inserter__menu-help-panel .nhsuk-header__search-wrap input[type="text"] {
-  border: 2px solid #aeb7bd;
+  border: none;
 }
 
 .edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-block-styles .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .block-editor-inserter__menu-help-panel .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list {
@@ -13726,10 +13732,6 @@
 
 .edit-post-visual-editor .nightingale-latest-news .nhsuk-panel, .edit-post-visual-editor .nightingale-latest-news .sticky, .edit-post-visual-editor .nightingale-latest-news .block-editor-block-styles .sticky, .block-editor-block-styles .edit-post-visual-editor .nightingale-latest-news .sticky, .edit-post-visual-editor .nightingale-latest-news .block-editor-inserter__menu-help-panel .sticky, .block-editor-inserter__menu-help-panel .edit-post-visual-editor .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .nhsuk-panel, .block-editor-block-styles .nightingale-latest-news .edit-post-visual-editor .sticky, .edit-post-visual-editor .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-block-styles .nightingale-latest-news .block-editor-inserter__menu-help-panel .sticky, .block-editor-inserter__menu-help-panel .block-editor-block-styles .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .nhsuk-panel, .block-editor-inserter__menu-help-panel .nightingale-latest-news .edit-post-visual-editor .sticky, .edit-post-visual-editor .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .block-editor-block-styles .sticky, .block-editor-block-styles .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky, .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky {
   margin-bottom: 16px;
-}
-
-.edit-post-visual-editor .nightingale-latest-news .nhsuk-panel a, .edit-post-visual-editor .nightingale-latest-news .sticky a, .block-editor-block-styles .nightingale-latest-news .nhsuk-panel a, .block-editor-block-styles .nightingale-latest-news .sticky a, .block-editor-inserter__menu-help-panel .nightingale-latest-news .nhsuk-panel a, .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky a {
-  text-decoration: none;
 }
 
 .edit-post-visual-editor .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .edit-post-visual-editor .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type, .block-editor-block-styles .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .block-editor-block-styles .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type, .block-editor-inserter__menu-help-panel .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .block-editor-inserter__menu-help-panel .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type {
@@ -13825,7 +13827,38 @@
   display: inline-block;
   padding: 0px 4px;
   margin: 0 4px;
-  text-decoration: none;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading {
+  width: 100%;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date {
+  padding: 0 24px;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
+  padding: 16px;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories {
+  padding: 0 16px;
+  margin-bottom: 0;
+  color: #003087;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories {
+  margin-bottom: 48px;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
+  margin-bottom: 32px;
+}
+
+.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore {
+  position: absolute;
+  bottom: 16px;
+  right: 0;
 }
 
 .edit-post-visual-editor .clear:after, .block-editor-block-styles .clear:after, .block-editor-inserter__menu-help-panel .clear:after {
@@ -13843,6 +13876,28 @@
   .edit-post-visual-editor #socialfloating, .block-editor-block-styles #socialfloating, .block-editor-inserter__menu-help-panel #socialfloating {
     display: none;
   }
+}
+
+@media (min-width: 48.0525em) {
+  .edit-post-visual-editor figure.wp-block-embed.wp-block-embed.alignright, .block-editor-block-styles figure.wp-block-embed.wp-block-embed.alignright, .block-editor-inserter__menu-help-panel figure.wp-block-embed.wp-block-embed.alignright {
+    margin: 0 0 0 16px;
+    width: 33%;
+  }
+  .edit-post-visual-editor figure.wp-block-embed.wp-block-embed.alignleft, .block-editor-block-styles figure.wp-block-embed.wp-block-embed.alignleft, .block-editor-inserter__menu-help-panel figure.wp-block-embed.wp-block-embed.alignleft {
+    margin: 0 16px 0 0;
+    width: 33%;
+  }
+}
+
+@media (max-width: 48.0525em) {
+  .edit-post-visual-editor figure.wp-block-embed.wp-block-embed.alignright, .edit-post-visual-editor figure.wp-block-embed.wp-block-embed.alignleft, .block-editor-block-styles figure.wp-block-embed.wp-block-embed.alignright, .block-editor-block-styles figure.wp-block-embed.wp-block-embed.alignleft, .block-editor-inserter__menu-help-panel figure.wp-block-embed.wp-block-embed.alignright, .block-editor-inserter__menu-help-panel figure.wp-block-embed.wp-block-embed.alignleft {
+    display: contents;
+  }
+}
+
+.edit-post-visual-editor span.search-terms, .block-editor-block-styles span.search-terms, .block-editor-inserter__menu-help-panel span.search-terms {
+  font-weight: bold;
+  background: #ffb81C;
 }
 
 .edit-post-visual-editor .nhsuk-promo-group__item, .block-editor-block-styles .nhsuk-promo-group__item, .block-editor-inserter__menu-help-panel .nhsuk-promo-group__item {
@@ -13980,10 +14035,15 @@
 
 .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+  padding: 0;
 }
 
-.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description {
-  padding: 24px;
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading {
+  padding: 8px 16px;
+}
+
+.edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content p, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content p {
+  padding: 8px;
 }
 
 .edit-post-visual-editor .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-block-styles .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore {
@@ -14056,8 +14116,10 @@
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor figure.is-style-nhsuk-table-responsive table, .block-editor-block-styles figure.is-style-nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel figure.is-style-nhsuk-table-responsive table {
-    margin-bottom: 48px;
+  .edit-post-visual-editor figure.is-style-nhsuk-table-responsive, .block-editor-block-styles figure.is-style-nhsuk-table-responsive, .block-editor-inserter__menu-help-panel figure.is-style-nhsuk-table-responsive {
+    /*table {
+      margin-bottom: 48px;
+    }*/
   }
   .edit-post-visual-editor figure.is-style-nhsuk-table-responsive th,
   .edit-post-visual-editor figure.is-style-nhsuk-table-responsive td, .block-editor-block-styles figure.is-style-nhsuk-table-responsive th,
@@ -14083,6 +14145,10 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+
+.edit-post-visual-editor .nhsuk-table-responsive table, .edit-post-visual-editor figure.is-style-nhsuk-table-responsive table, .edit-post-visual-editor .is-style-nhsuk-table-responsive table, .edit-post-visual-editor table, .block-editor-block-styles .nhsuk-table-responsive table, .block-editor-block-styles figure.is-style-nhsuk-table-responsive table, .block-editor-block-styles .is-style-nhsuk-table-responsive table, .block-editor-block-styles table, .block-editor-inserter__menu-help-panel .nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel figure.is-style-nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel .is-style-nhsuk-table-responsive table, .block-editor-inserter__menu-help-panel table {
+  margin: 0;
 }
 
 .edit-post-visual-editor section.nhsuk-section:nth-of-type(odd), .block-editor-block-styles section.nhsuk-section:nth-of-type(odd), .block-editor-inserter__menu-help-panel section.nhsuk-section:nth-of-type(odd) {
@@ -14128,6 +14194,70 @@
 
 .edit-post-visual-editor .nhsuk-striped-blocks [data-type="nhsblocks/stripeblock"]:nth-of-type(even), .block-editor-block-styles .nhsuk-striped-blocks [data-type="nhsblocks/stripeblock"]:nth-of-type(even), .block-editor-inserter__menu-help-panel .nhsuk-striped-blocks [data-type="nhsblocks/stripeblock"]:nth-of-type(even) {
   background: #ffffff;
+}
+
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onehalf"], .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"],
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-third,
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onethird"],
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onequarter"],
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/twothirds"],
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters,
+.edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/threequarters"],
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .edit-post-visual-editor .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"], .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"], .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onehalf"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-third,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onethird"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onequarter"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/twothirds"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"],
+.block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/threequarters"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-block-styles .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"], .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"], .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onehalf"], .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onehalf"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-third,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onethird"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onethird"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/onequarter"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/onequarter"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/twothirds"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/twothirds"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters,
+.edit-post-visual-editor .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"],
+.block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"],
+.block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/threequarters"],
+.block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"] {
+  display: online-block;
 }
 
 .edit-post-visual-editor [data-type="nhsblocks/stripesblock"], .block-editor-block-styles [data-type="nhsblocks/stripesblock"], .block-editor-inserter__menu-help-panel [data-type="nhsblocks/stripesblock"] {

@@ -2,9 +2,9 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.2.1
+Version: 2.2.2
 Requires at least: 5.0
-Tested up to: 5.4.2
+Tested up to: 5.5.1
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
 Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
@@ -47,6 +47,7 @@ html {
  */
 body {
   margin: 0;
+  word-break: break-word;
 }
 
 /**
@@ -10362,10 +10363,6 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 
 /* colour variable to be used with color-mixer.scss */
 /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
-.nhsuk-width-container--full {
-  max-width: none;
-}
-
 .nhsuk-panel-group, .ld-course-list-items, .ld-course-list-items .ld_course_grid article {
   margin-left: 0;
   margin-right: 0;
@@ -10667,17 +10664,9 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   height: 100%;
 }
 
-@media (min-width: 48.0625em) {
-  .nhsuk-header .nhsuk-header__navigation ul li:first-of-type a {
-    padding-left: 0;
-  }
-  .nhsuk-header .nhsuk-header__navigation ul li:last-of-type a {
-    padding-right: 0;
-  }
-}
-
 .nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
   border-radius: 4px 0px 0px 4px;
+  border: none;
 }
 
 .nhsuk-header .nhsuk-header__search-toggle,
@@ -10870,6 +10859,12 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 */
 .nhsuk-search__submit {
   box-shadow: none;
+  color: #005eb8;
+}
+
+.nhsuk-header__search-form .nhsuk-u-visually-hidden {
+  background: #ffffff;
+  color: #000000;
 }
 
 .nhsuk-grid-column-two-thirds.contentright, .tribe-common div.contentright.nhsuk-grid-column-two-thirds {
@@ -10885,8 +10880,12 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 0;
 }
 
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
+  display: flex;
+}
+
 .nhsuk-header__search-wrap input[type="text"] {
-  border: 2px solid #aeb7bd;
+  border: none;
 }
 
 .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb .nhsuk-width-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb .nhsuk-width-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .sfwd-breadcrumbs {
@@ -10896,10 +10895,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 /* Latest Posts skinning */
 .nightingale-latest-news .nhsuk-panel, .nightingale-latest-news .sticky, .nightingale-latest-news .download-box {
   margin-bottom: 16px;
-}
-
-.nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a {
-  text-decoration: none;
 }
 
 .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .sticky .wp-block-latest-posts__post-excerpt a:last-of-type, .nightingale-latest-news .download-box .wp-block-latest-posts__post-excerpt a:last-of-type {
@@ -10983,7 +10978,38 @@ aside#secondary > section {
   display: inline-block;
   padding: 0px 4px;
   margin: 0 4px;
-  text-decoration: none;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading {
+  width: 100%;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date {
+  padding: 0 24px;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
+  padding: 16px;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories {
+  padding: 0 16px;
+  margin-bottom: 0;
+  color: #003087;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories {
+  margin-bottom: 48px;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
+  margin-bottom: 32px;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore {
+  position: absolute;
+  bottom: 16px;
+  right: 0;
 }
 
 .clear:after {
@@ -11001,6 +11027,28 @@ aside#secondary > section {
   #socialfloating {
     display: none;
   }
+}
+
+@media (min-width: 48.0525em) {
+  figure.wp-block-embed.wp-block-embed.alignright {
+    margin: 0 0 0 16px;
+    width: 33%;
+  }
+  figure.wp-block-embed.wp-block-embed.alignleft {
+    margin: 0 16px 0 0;
+    width: 33%;
+  }
+}
+
+@media (max-width: 48.0525em) {
+  figure.wp-block-embed.wp-block-embed.alignright, figure.wp-block-embed.wp-block-embed.alignleft {
+    display: contents;
+  }
+}
+
+span.search-terms {
+  font-weight: bold;
+  background: #ffb81C;
 }
 
 #secondary section {
@@ -11226,7 +11274,6 @@ aside#secondary > section {
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a {
-  text-decoration: none;
   color: #212b32;
 }
 
@@ -11312,7 +11359,6 @@ aside#secondary > section {
 
 .nhsuk-list-panel .comment-respond .logged-in-as a {
   font-size: 0.75rem;
-  text-decoration: none;
 }
 
 .nhsuk-list-panel .comment-respond .logged-in-as a:nth-of-type(2) {
@@ -11584,20 +11630,30 @@ aside#secondary > section {
   list-style-type: none;
 }
 
+.gform_wrapper .gform_body .gsurvey-rating {
+  direction: rtl;
+}
+
 .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label {
   width: 40px;
   height: 40px;
   background-size: 35px 35px;
-  font-size: 1.5rem !important;
+  font-size: 0 !important;
+  float: none;
+  display: inline-block;
+  position: relative;
+}
+
+.gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover, .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label .gsurvey-rating:not(:checked) > label:hover ~ label {
+  background-size: 35px 35px;
 }
 
 .gform_wrapper .gform_body .gsurvey-rating > input:checked ~ label {
   background-size: 35px 35px;
-  font-size: 1.5rem !important;
-}
-
-.gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover, .gform_wrapper .gform_body .gsurvey-rating:not(:checked) > label:hover ~ label {
-  background-size: 35px 35px;
+  font-size: 0 !important;
+  float: none;
+  display: inline-block;
+  position: relative;
 }
 
 .gform_wrapper .gform_body .gsurvey-rating:after {
@@ -11642,8 +11698,17 @@ aside#secondary > section {
   background: #003087;
 }
 
+.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
+  height: 50px;
+}
+
 .gform_wrapper .gform_body .nhsuk-form-group--error table.gsurvey-likert {
   border: 2px solid #d5281b;
+}
+
+.gform_wrapper .gform_body .gform_delete {
+  float: left;
+  height: 28px;
 }
 
 .gform_wrapper .gform_page_footer {
@@ -11654,6 +11719,28 @@ aside#secondary > section {
   border: 2px solid #005eb8;
   border-radius: 4px;
   background: #ffffff;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
+    display: inline-block;
+    border-top: 0;
+    border-right: 0;
+  }
+  .gform_wrapper .gform_body table.gsurvey-likert td input {
+    position: relative;
+  }
+}
+
+@media only screen and (max-device-width: 799px) {
+  .gform_wrapper .gform_body .ginput_container .gsurvey-rating:not(:checked) > label {
+    background-size: 28px 28px;
+    width: 30px;
+    height: 30px;
+  }
+  .gform_wrapper .gform_body .ginput_container .gsurvey-rating > input > checked ~ label {
+    background-size: 28px 28px;
+  }
 }
 
 .learndash-wrapper {
@@ -11667,6 +11754,14 @@ aside#secondary > section {
 
 .learndash-wrapper .ld-primary-color {
   color: #005eb8;
+}
+
+.learndash-wrapper a.ld-login-text.ld-login-button:hover {
+  color: #ffffff !important;
+}
+
+.learndash-wrapper #ld-user-register {
+  color: #005eb8 !important;
 }
 
 .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
@@ -11705,7 +11800,7 @@ aside#secondary > section {
 }
 
 .learndash-wrapper .ld-table-list .ld-primary-color-hover:hover {
-  background: #ffeb3b;
+  background: #ffeb3b !important;
   margin: 0 -20px;
   padding: 20px;
 }
@@ -11713,6 +11808,10 @@ aside#secondary > section {
 .learndash-wrapper .ld-table-list .ld-table-list-items {
   background: #ffffff;
   font-size: 1rem;
+}
+
+.learndash-wrapper .ld-tab-content, .learndash-wrapper .ld-table-list {
+  margin: 0 16px;
 }
 
 .learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
@@ -11797,12 +11896,18 @@ aside#secondary > section {
   color: #005eb8;
 }
 
-.learndash-wrapper .ld-login-modal .ld-login-modal-form .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-form .login-password::before {
-  top: 16px;
+.learndash-wrapper .ld-login-modal .ld-login-modal-form #loginform .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-form #loginform .login-password::before {
+  top: 38px;
 }
 
 .learndash-wrapper .ld-login-modal input[type=submit] {
   margin-top: 8px;
+}
+
+.learndash-wrapper .ld-login-modal .ld-button.ld-button-reverse.ld-js-register-account {
+  color: #212b32;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #00401e;
 }
 
 .learndash-wrapper .wpProQuiz_content input[type="text"] {
@@ -12026,6 +12131,10 @@ aside#secondary > section {
 
 #ld_course_categorydropdown #ld_course_categorydropdown_select {
   height: 40px;
+}
+
+#ld_course_categorydropdown label {
+  padding-right: 10px;
 }
 
 /* Events Calendar Styles */
@@ -12483,20 +12592,6 @@ ul.download-versions {
   }
 }
 
-@media (min-width: 48.0625em) {
-  #nhsuk-footer ul.nhsuk-footer__list {
-    width: 100%;
-  }
-  #nhsuk-footer ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
-    width: 33%;
-  }
-  #nhsuk-footer .nhsuk-footer__copyright {
-    width: 100%;
-    color: #212b32;
-    margin-top: 16px;
-  }
-}
-
 .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
   margin-bottom: 36px;
 }
@@ -12632,10 +12727,15 @@ ul.download-versions {
 
 .nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
+  padding: 0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description {
-  padding: 24px;
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading {
+  padding: 8px 16px;
+}
+
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content p, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-promo__description {
+  padding: 8px;
 }
 
 .nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-readmore, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-readmore {
@@ -12704,8 +12804,10 @@ figure.is-style-nhsuk-table-responsive figcaption {
 }
 
 @media (min-width: 40.0625em) {
-  figure.is-style-nhsuk-table-responsive table {
-    margin-bottom: 48px;
+  figure.is-style-nhsuk-table-responsive {
+    /*table {
+      margin-bottom: 48px;
+    }*/
   }
   figure.is-style-nhsuk-table-responsive th,
   figure.is-style-nhsuk-table-responsive td {
@@ -12727,6 +12829,10 @@ figure.is-style-nhsuk-table-responsive figcaption {
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+
+.nhsuk-table-responsive table, figure.is-style-nhsuk-table-responsive table, .is-style-nhsuk-table-responsive table, table {
+  margin: 0;
 }
 
 /*
@@ -12930,6 +13036,16 @@ section.nhsuk-section:after,
 
 .nhsuk-striped-blocks [data-type="nhsblocks/stripeblock"]:nth-of-type(even) {
   background: #ffffff;
+}
+
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-half,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-third,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third,
+.tribe-common .nhsuk-promo-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-third,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters {
+  display: online-block;
 }
 
 .has-white-color {

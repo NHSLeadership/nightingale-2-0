@@ -2,6 +2,7 @@
   margin-bottom: 36px;
 }
 
+
 .nhsuk-panel-with-label {
   width: 100%;
 
@@ -140,9 +141,13 @@
   padding: 0 0 nhsuk-spacing(3) 0;
   .nhsuk-image{
     width: 100%;
+    padding: 0;
   }
-  .nhsuk-promo__heading, .nhsuk-promo__description {
-    padding: nhsuk-spacing(4);
+  .nhsuk-promo__heading {
+    padding: nhsuk-spacing(2) nhsuk-spacing(3);
+  }
+  .nhsuk-promo__description, p {
+    padding: nhsuk-spacing(2);
   }
   .nhsuk-readmore {
     padding: 0 nhsuk-spacing(5) nhsuk-spacing(2) 0;
@@ -222,9 +227,9 @@ figure.is-style-nhsuk-table-responsive{
 
   @media (min-width: 40.0625em) {
 
-    table {
+    /*table {
       margin-bottom: 48px;
-    }
+    }*/
 
     th,
     td {
@@ -248,4 +253,7 @@ figure.is-style-nhsuk-table-responsive{
       line-height: 1.15;
     }
   }
+}
+.nhsuk-table-responsive table, .is-style-nhsuk-table-responsive table, table {
+  margin: 0;
 }

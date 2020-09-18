@@ -6,6 +6,13 @@
 
 .nhsuk-search__submit {
   box-shadow: none;
+  color: #005eb8;
+}
+.nhsuk-header__search-form {
+  .nhsuk-u-visually-hidden {
+    background: #ffffff;
+    color: #000000;
+  }
 }
 
 
@@ -20,10 +27,13 @@
 .nhsuk-grid-column-full{
   padding: 0;
 }
+.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
+  display: flex;
+}
 
 .nhsuk-header__search-wrap {
   input[type="text"] {
-    border: $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
+    border: none;
   }
 }
 .nhsuk-breadcrumb {
@@ -40,7 +50,7 @@
     margin-bottom: nhsuk-spacing(3);
     a {
       @extend .nhsuk-heading-m;
-      text-decoration: none;
+      //text-decoration: none;
     }
 
     .wp-block-latest-posts__post-excerpt {
@@ -132,10 +142,46 @@ aside#secondary > section{
     display: inline-block;
     padding: 0px nhsuk-spacing(1);
     margin: 0 nhsuk-spacing(1);
-    text-decoration: none;
+    //text-decoration: none;
   }
 }
 
+.nhsuk-postslisting {
+  .nhsuk-promo {
+    a.nhsuk-promo__link-wrapper {
+      div.nhsuk-promo__content {
+        .nhsuk-promo__heading {
+          width : 100%;
+        }
+
+        .nhsuk_post_author, .nhsuk_post_date {
+          padding : 0 nhsuk-spacing(4);
+        }
+
+        .nhsuk-promo__description, p {
+          padding : nhsuk-spacing(3);
+        }
+        .event-meta, .tribe-common, .event-categories {
+          padding : 0 nhsuk-spacing(3);
+          margin-bottom: 0;
+          color : $color_nhsuk-dark-blue;
+        }
+        .nhsuk-readmore ~ .event-categories {
+          margin-bottom: nhsuk-spacing(7);
+        }
+        .nhsuk-promo__description, p {
+          margin-bottom : nhsuk-spacing(5);
+        }
+
+        .nhsuk-readmore {
+          position : absolute;
+          bottom   : nhsuk-spacing(3);
+          right    : 0;
+        }
+      }
+    }
+  }
+}
 .clear{
   @include clearfix();
 }
@@ -148,4 +194,32 @@ aside#secondary > section{
   #socialfloating {
     display: none;
   }
+}
+
+// social embed floating fix
+@media (min-width: 48.0525em) {
+  figure.wp-block-embed.wp-block-embed {
+    &.alignright {
+      margin : 0 0 0 nhsuk-spacing(3);
+      width  : 33%;
+    }
+
+    &.alignleft {
+      margin : 0 nhsuk-spacing(3) 0 0;
+      width  : 33%;
+    }
+  }
+}
+@media (max-width: 48.0525em) {
+  figure.wp-block-embed.wp-block-embed {
+    &.alignright, &.alignleft {
+      display: contents;
+    }
+  }
+}
+
+// highlight search terms on results page
+span.search-terms {
+  font-weight: bold;
+  background: $color_nhsuk-warm-yellow;
 }
