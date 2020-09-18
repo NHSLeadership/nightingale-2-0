@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.2.2
+Version: 2.2.3
 Requires at least: 5.0
 Tested up to: 5.5.1
 Requires PHP: 5.2.4
@@ -13045,7 +13045,7 @@ section.nhsuk-section:after,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters {
-  display: online-block;
+  display: inline-block;
 }
 
 .has-white-color {

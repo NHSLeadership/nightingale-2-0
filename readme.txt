@@ -42,6 +42,10 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+= 2.2.3 =
+Bugfix release:
+ * hero images were being suppressed - fixed
+ * striped content was not correctly flexing. - fixed.
 
 = 2.2.2 =
 Maintenance release:

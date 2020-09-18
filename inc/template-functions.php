@@ -210,7 +210,7 @@ function nightingale_clean_bad_content( $b_print = false ) {
 
 	global $post;
 	$nightingale_post_content  = $post->post_content;
-	$nightingale_remove_filter = array( '~<p[^>]*>\s?</p>~', '~<a[^>]*>\s?</a>~', '~<h[^>]*>\s?</h[^>]>~', '~<font[^>]*>~', '~<\/font>~', '~style\=\"[^\"]*\"~', '~<span[^>]*>\s?</span>~' );
+	$nightingale_remove_filter = array( '~<p[^>]*>\s?</p>~', '~<a[^>]*>\s?</a>~', '~<h[^>]*>\s?</h[^>]>~', '~<font[^>]*>~', '~<\/font>~', '~<span[^>]*>\s?</span>~' );
 	$nightingale_post_content  = preg_replace( $nightingale_remove_filter, '', $nightingale_post_content );
 	$nightingale_post_content  = apply_filters( 'the_content', $nightingale_post_content );
 	if ( false === $b_print ) {
