@@ -14257,7 +14257,7 @@
 .block-editor-block-styles .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"],
 .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-stripeblock.nhsuk-section .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row [data-type="nhsblocks/threequarters"],
 .block-editor-inserter__menu-help-panel .block-editor-block-list__layout [data-type="nhsblocks/rowgroup"] .nhsuk-grid-row .wp-block-nhsblocks-stripeblock.nhsuk-section [data-type="nhsblocks/threequarters"] {
-  display: online-block;
+  display: inline-block;
 }
 
 .edit-post-visual-editor [data-type="nhsblocks/stripesblock"], .block-editor-block-styles [data-type="nhsblocks/stripesblock"], .block-editor-inserter__menu-help-panel [data-type="nhsblocks/stripesblock"] {
