@@ -33,3 +33,13 @@ section.nhsuk-section,
 		}
 	}
 }
+
+.wp-block-nhsblocks-stripeblock.nhsuk-section {
+  .nhsuk-grid-column-one-half,
+  .nhsuk-grid-column-one-third,
+  .nhsuk-grid-column-one-quarter,
+  .nhsuk-grid-column-two-thirds,
+  .nhsuk-grid-column-three-quarters {
+	display: online-block;
+  }
+}

@@ -13034,6 +13034,16 @@ section.nhsuk-section:after,
   background: #ffffff;
 }
 
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-half,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-third,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third,
+.tribe-common .nhsuk-promo-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-third,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters {
+  display: online-block;
+}
+
 .has-white-color {
   color: #ffffff;
 }
