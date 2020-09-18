@@ -10992,10 +10992,14 @@ aside#secondary > section {
   padding: 16px;
 }
 
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common {
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories {
   padding: 0 16px;
   margin-bottom: 0;
   color: #003087;
+}
+
+.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories {
+  margin-bottom: 48px;
 }
 
 .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
