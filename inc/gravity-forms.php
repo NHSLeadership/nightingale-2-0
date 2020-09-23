@@ -38,7 +38,7 @@
 				// Replace main gfield_label elements with nhsuk-label.
 				$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
 				// Remove <ul>s around elements.
-				$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul >#", '$2', $form_string );
+				$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );
 				// Add nhsuk-form-group to form <li> elements.
 				$form_string = preg_replace( "#<li(.*?)field_(.*?)class='(.*?)#m", "<li$1field_$2class='nhsuk-form-group $3", $form_string );
 				// Style the submit button.
@@ -50,6 +50,7 @@
 			10,
 			2
 		);
+
 
 		// Use gform_field_content to style individual fields.
 		// See https://docs.gravityforms.com/gform_field_content.
@@ -73,6 +74,7 @@
 			}
 			$label = '';
 			if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+				$label .= '<label class="nhsuk-label">' . $field->label;
 				if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
 				}
@@ -307,18 +309,6 @@
 
 			return $expiration_days;
 		}
-
-		add_filter(
-			'gform_get_form_filter',
-			function ( $form_string, $form ) {
-				// Style the submit button.
-				$form_string = str_replace( 'gform_button', 'gform_button nhsuk-button', $form_string );
-
-				return $form_string;
-			},
-			10,
-			2
-		);
 
 		add_filter( 'gform_file_upload_markup', 'nightingale_change_upload_markup', 10, 4 );
 

@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.2.2
-Stable tag: 2.2.2
+Version: 2.2.3.1
+Stable tag: 2.2.3.1
 
 
 == Description ==
@@ -42,6 +42,15 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+= 2.2.3.1 =
+Bugfix release:
+ * fixed fatal error with formidable forms
+ * fixed fatal error in gravity forms
+ * fixed footer link display (was previously 1/3 of 1/3 width)
+ * corrected hero inner arrow display
+ * corrected hero background width
+ * added switch for featured image display to be top / right float / left float
+
 = 2.2.3 =
 Bugfix release:
  * hero images were being suppressed - fixed
