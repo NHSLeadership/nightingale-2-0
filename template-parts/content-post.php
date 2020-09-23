@@ -13,7 +13,9 @@ if ( is_single() ) :
 	get_template_part( 'template-parts/content' );
 
 else :
-
+	if ( ! isset ( $parent_template_part ) ) {
+		$parent_template_part = 'none';
+	}
 	$sidebar = ( 'true' === get_theme_mod( 'blog_sidebar' ) );
 	?>
 
@@ -74,7 +76,7 @@ else :
 
 					do_action( 'nightingale_before_archive_content' );
 					if ( 'latest-posts' === $parent_template_part ) { // this is the latest posts display with options.
-						if ( 0 !== $$display_post_content ) { // only do something if we actually selected to display content.
+						if ( 0 !== $display_post_content ) { // only do something if we actually selected to display content.
 							if ( 'excerpt' === $display_full_post ) { // if we chose to display the excerpt, use the latest blocks excerpt length selection.
 								add_filter(
 									'excerpt_length',
@@ -100,5 +102,5 @@ else :
 		</div>
 	</div>
 
-	<?php
+<?php
 endif;

@@ -13677,6 +13677,30 @@
   display: none;
 }
 
+.edit-post-visual-editor #nhsuk-footer .nhsuk-width-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, .block-editor-block-styles #nhsuk-footer .nhsuk-width-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, .block-editor-inserter__menu-help-panel #nhsuk-footer .nhsuk-width-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
+  width: auto;
+}
+
+.edit-post-visual-editor .single-post #content #maincontent #contentinner #primary .featured-top, .block-editor-block-styles .single-post #content #maincontent #contentinner #primary .featured-top, .block-editor-inserter__menu-help-panel .single-post #content #maincontent #contentinner #primary .featured-top {
+  width: 100%;
+}
+
+.edit-post-visual-editor .single-post #content #maincontent #contentinner #primary .featured-top .nhsuk-image img, .edit-post-visual-editor .single-post #content #maincontent #contentinner #primary .featured-top .is-style-nhsuk-image img, .block-editor-block-styles .single-post #content #maincontent #contentinner #primary .featured-top .nhsuk-image img, .block-editor-block-styles .single-post #content #maincontent #contentinner #primary .featured-top .is-style-nhsuk-image img, .block-editor-inserter__menu-help-panel .single-post #content #maincontent #contentinner #primary .featured-top .nhsuk-image img, .block-editor-inserter__menu-help-panel .single-post #content #maincontent #contentinner #primary .featured-top .is-style-nhsuk-image img {
+  margin-bottom: 24px;
+}
+
+.edit-post-visual-editor .single-post #content #maincontent #contentinner #primary .featured-left, .block-editor-block-styles .single-post #content #maincontent #contentinner #primary .featured-left, .block-editor-inserter__menu-help-panel .single-post #content #maincontent #contentinner #primary .featured-left {
+  float: left;
+  width: 33%;
+  margin-right: 16px;
+}
+
+.edit-post-visual-editor .single-post #content #maincontent #contentinner #primary .featured-right, .block-editor-block-styles .single-post #content #maincontent #contentinner #primary .featured-right, .block-editor-inserter__menu-help-panel .single-post #content #maincontent #contentinner #primary .featured-right {
+  float: right;
+  width: 33%;
+  margin-left: 16px;
+}
+
 .edit-post-visual-editor .editor-post-title__input, .block-editor-block-styles .editor-post-title__input, .block-editor-inserter__menu-help-panel .editor-post-title__input {
   font-family: Frutiger W01, Arial, Sans-serif;
 }
@@ -14435,10 +14459,10 @@
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  max-width: 100%;
+  max-width: 100vw;
   position: relative;
   right: 50%;
-  width: 100%;
+  width: 100vw;
 }
 
 .edit-post-visual-editor .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-block-styles .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner {

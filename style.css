@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.2.3
+Version: 2.2.3.1
 Requires at least: 5.0
 Tested up to: 5.5.1
 Requires PHP: 5.2.4
@@ -10652,6 +10652,30 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   display: none;
 }
 
+#nhsuk-footer .nhsuk-width-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
+  width: auto;
+}
+
+.single-post #content #maincontent #contentinner #primary .featured-top {
+  width: 100%;
+}
+
+.single-post #content #maincontent #contentinner #primary .featured-top .nhsuk-image img, .single-post #content #maincontent #contentinner #primary .featured-top .is-style-nhsuk-image img {
+  margin-bottom: 24px;
+}
+
+.single-post #content #maincontent #contentinner #primary .featured-left {
+  float: left;
+  width: 33%;
+  margin-right: 16px;
+}
+
+.single-post #content #maincontent #contentinner #primary .featured-right {
+  float: right;
+  width: 33%;
+  margin-left: 16px;
+}
+
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
@@ -12989,10 +13013,10 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  max-width: 100%;
+  max-width: 100vw;
   position: relative;
   right: 50%;
-  width: 100%;
+  width: 100vw;
 }
 
 .wp-block-nhsblocks-heroblock .wp-block-nhsblocks-heroinner {

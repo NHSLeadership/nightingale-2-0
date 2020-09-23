@@ -38,7 +38,7 @@
 				// Replace main gfield_label elements with nhsuk-label.
 				$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
 				// Remove <ul>s around elements.
-				$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul >#", '$2', $form_string );
+				$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );
 				// Add nhsuk-form-group to form <li> elements.
 				$form_string = preg_replace( "#<li(.*?)field_(.*?)class='(.*?)#m", "<li$1field_$2class='nhsuk-form-group $3", $form_string );
 				// Style the submit button.
