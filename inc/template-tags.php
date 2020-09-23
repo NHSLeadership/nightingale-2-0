@@ -73,7 +73,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 			comments_popup_link(
 				sprintf(
 					wp_kses(
-						/* translators: %s: post title */
+					/* translators: %s: post title */
 						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'nightingale' ),
 						array(
 							'span' => array(
@@ -90,7 +90,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
+				/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Edit <p class="screen-reader-text">%s</p>', 'nightingale' ),
 					array(
 						'span' => array(
@@ -120,8 +120,8 @@ if ( ! function_exists( 'nightingale_post_thumbnail' ) ) :
 		if ( is_singular() ) :
 			?>
 
-			<fig class="nhsuk-image">
-				<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'nhsuk-image__img alignright' ) ); ?>
+			<fig class="nhsuk-image featured">
+				<?php the_post_thumbnail( '', array( 'class' => 'nhsuk-image__img' ) ); ?>
 			</fig><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -140,7 +140,7 @@ if ( ! function_exists( 'nightingale_post_thumbnail' ) ) :
 				);
 				?>
 			</a>
-			<?php
+		<?php
 		endif; // End is_singular().
 	}
 endif;
@@ -149,8 +149,8 @@ endif;
  * Display Comments.
  *
  * @param integer $comment Comment ID.
- * @param array   $args    the variables to alter the comment with.
- * @param integer $depth   the depth of the comment reply.
+ * @param array $args the variables to alter the comment with.
+ * @param integer $depth the depth of the comment reply.
  */
 function nightingale_comment_display( $comment, $args, $depth ) {
 	if ( 'div' === $args['style'] ) {
@@ -161,7 +161,7 @@ function nightingale_comment_display( $comment, $args, $depth ) {
 		$add_below = 'div-comment';
 	}
 	?>
-	<<?php echo esc_html( $tag ); ?> <?php echo comment_class( 'nhsuk-list-panel__item' ); ?> id="comment-<?php echo esc_html( comment_ID() ); ?>">
+	<<?php echo esc_html( $tag ); ?><?php echo comment_class( 'nhsuk-list-panel__item' ); ?> id="comment-<?php echo esc_html( comment_ID() ); ?>">
 	<?php
 	if ( 'div' !== $args['style'] ) {
 		?>
