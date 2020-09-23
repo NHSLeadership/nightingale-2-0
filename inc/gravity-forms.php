@@ -51,6 +51,7 @@
 			2
 		);
 
+
 		// Use gform_field_content to style individual fields.
 		// See https://docs.gravityforms.com/gform_field_content.
 		add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 10, 2 );
@@ -73,6 +74,7 @@
 			}
 			$label = '';
 			if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+				$label .= '<label class="nhsuk-label">' . $field->label;
 				if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
 				}
@@ -307,18 +309,6 @@
 
 			return $expiration_days;
 		}
-
-		add_filter(
-			'gform_get_form_filter',
-			function ( $form_string, $form ) {
-				// Style the submit button.
-				$form_string = str_replace( 'gform_button', 'gform_button nhsuk-button', $form_string );
-
-				return $form_string;
-			},
-			10,
-			2
-		);
 
 		add_filter( 'gform_file_upload_markup', 'nightingale_change_upload_markup', 10, 4 );
 
