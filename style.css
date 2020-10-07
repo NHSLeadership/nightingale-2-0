@@ -9846,7 +9846,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /* ==========================================================================
    COMPONENTS/ #SELECT
    ========================================================================== */
-.nhsuk-select, .tribe-tickets-rsvp select {
+.nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -9859,7 +9859,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-select, .tribe-tickets-rsvp select {
+  .nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9867,13 +9867,13 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-select, .tribe-tickets-rsvp select {
+  .nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-select:focus, .tribe-tickets-rsvp select:focus {
+.nhsuk-select:focus, .gform_wrapper .gform_body .gfield_select:focus, .tribe-tickets-rsvp select:focus {
   border: 4px solid #212b32;
   box-shadow: 0 0 0 4px #ffeb3b;
   outline: 4px solid transparent;
@@ -9881,16 +9881,18 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   outline-offset: 4px;
 }
 
-.nhsuk-select option:active, .tribe-tickets-rsvp select option:active,
+.nhsuk-select option:active, .gform_wrapper .gform_body .gfield_select option:active, .tribe-tickets-rsvp select option:active,
 .nhsuk-select option:checked,
+.gform_wrapper .gform_body .gfield_select option:checked,
 .tribe-tickets-rsvp select option:checked,
 .nhsuk-select:focus::-ms-value,
+.gform_wrapper .gform_body .gfield_select:focus::-ms-value,
 .tribe-tickets-rsvp select:focus::-ms-value {
   background-color: #005eb8;
   color: #ffffff;
 }
 
-.nhsuk-select--error, .gform_wrapper .gform_body .gform_wrapper .gfield_error .nhsuk-select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .tribe-tickets-rsvp select, .tribe-tickets-rsvp .gform_wrapper .gform_body .gform_wrapper .gfield_error select {
+.nhsuk-select--error, .gform_wrapper .gform_body .gform_wrapper .gfield_error .nhsuk-select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .gfield_select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .tribe-tickets-rsvp select, .tribe-tickets-rsvp .gform_wrapper .gform_body .gform_wrapper .gfield_error select {
   border: 4px solid #d5281b;
 }
 
@@ -13029,7 +13031,7 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  max-width: 100vw;
+  max-width: 100%;
   position: relative;
   right: 50%;
   width: 100vw;
@@ -13050,7 +13052,7 @@ section.nhsuk-section:nth-of-type(even),
 
 .page-template-full-width-page section.nhsuk-section {
   margin: 0 calc(50% - 50vw);
-  max-width: 100vw;
+  max-width: 100%;
   width: 100vw;
 }
 
