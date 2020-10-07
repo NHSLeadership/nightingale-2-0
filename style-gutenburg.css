@@ -14188,7 +14188,7 @@
 
 .edit-post-visual-editor .page-template-full-width-page section.nhsuk-section, .block-editor-block-styles .page-template-full-width-page section.nhsuk-section, .block-editor-inserter__menu-help-panel .page-template-full-width-page section.nhsuk-section {
   margin: 0 calc(50% - 50vw);
-  max-width: 100vw;
+  max-width: 100%;
   width: 100vw;
 }
 
@@ -14459,7 +14459,7 @@
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  max-width: 100vw;
+  max-width: 100%;
   position: relative;
   right: 50%;
   width: 100vw;

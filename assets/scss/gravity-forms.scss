@@ -71,6 +71,9 @@
     }
   }
   .gform_body {
+    .gfield_select {
+      @extend .nhsuk-select;
+    }
     .address_city, .address_state {
       width: 50%;
       float: left;
