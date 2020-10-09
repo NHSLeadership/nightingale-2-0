@@ -189,7 +189,9 @@ button.tribe-events-c-top-bar__datepicker-button{
 #tribe-events-content {
   a.tribe-events-gcal,
   a.tribe-events-ical,
-  a.tribe-events-button {
+  a.tribe-events-button,
+  button:not(.tribe-tickets__rsvp-ar-quantity-input-number)
+  {
     @extend .nhsuk-button;
     margin           : 0 nhsuk-spacing(3) nhsuk-spacing(2) 0;
     background-color : $nhsuk-button-color;
@@ -199,9 +201,27 @@ button.tribe-events-c-top-bar__datepicker-button{
     &:last-child {
       margin-right : 0;
     }
+    &.tribe-tickets__rsvp-form-button--cancel {
+      @extend .nhsuk-button--reverse;
+    }
+    &.tribe-tickets__rsvp-ar-guest-list-item-button {
+      @extend .nhsuk-button--secondary;
+      svg {
+        filter: invert(1);
+      }
+    }
+  }
+  .tribe-tickets__rsvp-ar-quantity-input-number {
+    box-shadow: none;
   }
 }
+#rsvp-now {
+  @extend .nhsuk-grid-column-full;
 
+  .tribe-tickets__rsvp-wrapper {
+    max-width : 100%;
+  }
+}
 .single-tribe_events {
 
   .tribe-events-single-event-description{
