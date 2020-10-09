@@ -74,6 +74,15 @@
     .gfield_select {
       @extend .nhsuk-select;
     }
+    ul.gform_fields {
+      li.gfield.gfield_html {
+        dl.nhsuk-summary-list {
+          background : $color_nhsuk-white;
+          padding    : nhsuk-spacing(4);
+          padding-left: nhsuk-spacing(4);
+        }
+      }
+    }
     .address_city, .address_state {
       width: 50%;
       float: left;
@@ -245,5 +254,11 @@
         }
       }
     }
+  }
+}
+
+.gv-datatables-container {
+  .gv-field-label {
+    word-break: normal;
   }
 }
