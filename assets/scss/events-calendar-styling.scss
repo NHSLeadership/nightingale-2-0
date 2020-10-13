@@ -303,3 +303,48 @@ button.tribe-events-c-top-bar__datepicker-button {
   }
 
 }
+
+/* embedded events */
+html.js { // only hit embedded content. Wordpress doesnt make this easy to filter.
+  .tribe-events-page-template.wp-embed-responsive {
+	color      : inherit;
+	background : inherit;
+	padding    : 0;
+
+	.wp-embed {
+	  background : inherit;
+	  padding    : 0;
+	  font-size  : $nhsuk-base-font-size;
+
+	  &.nhsuk-care-card {
+		margin-top : 20px;
+
+		.nhsuk-care-card__heading a {
+		  color : $color_nhsuk-white;
+		}
+
+		.tribe-events-event-cost {
+		  position : absolute;
+		  right    : nhsuk-spacing(4);
+		  bottom   : nhsuk-spacing(4);
+
+		  span {
+			display : none;
+		  }
+
+		  a {
+			@extend .nhsuk-button;
+		  }
+		}
+
+		.tribe-events-single-event-description {
+		  margin-right : 100px;
+		}
+
+		.wp-embed-footer {
+		  display : none;
+		}
+	  }
+	}
+  }
+}
