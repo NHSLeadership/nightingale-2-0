@@ -11,6 +11,10 @@
 	@extend .nhsuk-grid-column-two-thirds;
 	padding-left : 0;
   }
+  span.nhsuk-pill-warn {
+	padding: nhsuk-spacing(1) nhsuk-spacing(3);;
+	border: 2px solid $color_nhsuk-red;
+  }
 }
 
 

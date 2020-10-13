@@ -12396,6 +12396,11 @@ span.search-terms {
   padding-left: 0;
 }
 
+.tribe-common span.nhsuk-pill-warn, .tribe-common .learndash-wrapper .ld-breadcrumbs span.ld-status.ld-status-waiting, .learndash-wrapper .ld-breadcrumbs .tribe-common span.ld-status.ld-status-waiting, .tribe-common .learndash-wrapper .ld-course-status span.ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .tribe-common span.ld-status.ld-status-waiting, .tribe-common .learndash-wrapper .ld-item-details span.ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .tribe-common span.ld-status.ld-status-waiting {
+  padding: 4px 16px;
+  border: 2px solid #d5281b;
+}
+
 .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
   margin-bottom: 24px;
 }
