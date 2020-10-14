@@ -8,7 +8,7 @@
   @extend .nhsuk-button--secondary;
 }
 
-.nhsuk-button.is-style-reverse { /* reverse button style*/
+.nhsuk-button.is-style-reverse, a.nhsuk-button.is-style-reverse { /* reverse button style*/
   @extend .nhsuk-button--reverse;
 }
 
@@ -119,9 +119,6 @@
 .wp-block-nhsblocks-rowgroup {
   .nhsuk-panel-group {
     padding: 0;
-    .nhsuk-promo {
-      display: flex;
-    }
   }
 }
 
