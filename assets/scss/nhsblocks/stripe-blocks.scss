@@ -1,37 +1,39 @@
-section.nhsuk-section:nth-of-type(odd){
-    background: $color_nhsuk-grey-5;
-}
-section.nhsuk-section:nth-of-type(even),
-[data-type="nhsblocks/stripesblock"]:nth-of-type(even) {
-    background: $color_nhsuk-white;
+section.nhsuk-section:nth-of-type(odd) {
+  background : $color_nhsuk-grey-5;
 }
 
-.page-template-full-width-page section.nhsuk-section{
-	margin: 0 calc(50% - 50vw);
-	max-width: 100%;
-	width: 100vw;
+section.nhsuk-section:nth-of-type(even),
+[data-type="nhsblocks/stripesblock"]:nth-of-type(even) {
+  background : $color_nhsuk-white;
+}
+
+.page-template-full-width-page section.nhsuk-section {
+  margin        : 0 calc(50% - 50vw);
+  width         : 100vw;
+  margin-bottom : nhsuk-spacing(5);
 }
 
 section.nhsuk-section,
-[data-type="nhsblocks/stripesblock"] .is-block-content{
+[data-type="nhsblocks/stripesblock"] .is-block-content {
 
-	padding: 64px 20px;
-	@include clearfix();
+  padding : 64px 20px;
+  @include clearfix();
 }
 
-.nhsuk-striped-blocks{
+.nhsuk-striped-blocks {
 
-	border: 1px dotted $color_nhsuk-grey-1;
+  border : 1px dotted $color_nhsuk-grey-1;
 
-	[data-type="nhsblocks/stripeblock"]{
+  [data-type="nhsblocks/stripeblock"] {
 
-		&:nth-of-type(odd) {
-	    	background: $color_nhsuk-grey-5;
-	    }
-	    &:nth-of-type(even) {
-		    background: $color_nhsuk-white;
-		}
+	&:nth-of-type(odd) {
+	  background : $color_nhsuk-grey-5;
 	}
+
+	&:nth-of-type(even) {
+	  background : $color_nhsuk-white;
+	}
+  }
 }
 
 .wp-block-nhsblocks-stripeblock.nhsuk-section {
@@ -40,6 +42,6 @@ section.nhsuk-section,
   .nhsuk-grid-column-one-quarter,
   .nhsuk-grid-column-two-thirds,
   .nhsuk-grid-column-three-quarters {
-	display: inline-block;
+	display : inline-block;
   }
 }
