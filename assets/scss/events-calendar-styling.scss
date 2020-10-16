@@ -11,6 +11,23 @@
 	@extend .nhsuk-grid-column-two-thirds;
 	padding-left : 0;
   }
+
+  .nhsuk-radios {
+	.nhsuk-radios__item {
+	  margin: nhsuk-spacing(2) 0;
+	  label {
+		padding: nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(1) nhsuk-spacing(6);
+	  }
+	}
+  }
+  .nhsuk-checkboxes {
+	.nhsuk-checkboxes__item {
+	  margin: nhsuk-spacing(2) 0;
+	  label {
+		padding: nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(1) nhsuk-spacing(8);
+	  }
+	}
+  }
 }
 
 

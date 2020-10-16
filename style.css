@@ -12388,6 +12388,22 @@ span.search-terms {
   padding-left: 0;
 }
 
+.tribe-common .nhsuk-radios .nhsuk-radios__item, .tribe-common .tingle-modal-box .ginput_container_radio .nhsuk-radios__item, .tingle-modal-box .tribe-common .ginput_container_radio .nhsuk-radios__item, .tingle-modal-box .ginput_container_radio .gfield_radio .tribe-common .nhsuk-radios li, .tribe-common .tingle-modal-box .ginput_container_radio .gfield_radio li, .tingle-modal-box .tribe-common .ginput_container_radio .gfield_radio li {
+  margin: 8px 0;
+}
+
+.tribe-common .nhsuk-radios .nhsuk-radios__item label, .tribe-common .tingle-modal-box .ginput_container_radio .nhsuk-radios__item label, .tingle-modal-box .tribe-common .ginput_container_radio .nhsuk-radios__item label, .tingle-modal-box .ginput_container_radio .gfield_radio .tribe-common .nhsuk-radios li label, .tribe-common .tingle-modal-box .ginput_container_radio .gfield_radio li label, .tingle-modal-box .tribe-common .ginput_container_radio .gfield_radio li label {
+  padding: 8px 16px 4px 40px;
+}
+
+.tribe-common .nhsuk-checkboxes .nhsuk-checkboxes__item, .tribe-common .tingle-modal-box .ginput_container_checkbox .nhsuk-checkboxes__item, .tingle-modal-box .tribe-common .ginput_container_checkbox .nhsuk-checkboxes__item, .tribe-common .nhsuk-checkboxes .nhsuk-list-panel .comment-respond .comment-form-cookies-consent, .nhsuk-list-panel .comment-respond .tribe-common .nhsuk-checkboxes .comment-form-cookies-consent, .tribe-common .tingle-modal-box .ginput_container_checkbox .nhsuk-list-panel .comment-respond .comment-form-cookies-consent, .nhsuk-list-panel .comment-respond .tribe-common .tingle-modal-box .ginput_container_checkbox .comment-form-cookies-consent, .tingle-modal-box .tribe-common .ginput_container_checkbox .nhsuk-list-panel .comment-respond .comment-form-cookies-consent, .nhsuk-list-panel .comment-respond .tingle-modal-box .tribe-common .ginput_container_checkbox .comment-form-cookies-consent, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox .tribe-common .nhsuk-checkboxes li, .tribe-common .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li, .tingle-modal-box .tribe-common .ginput_container_checkbox .gfield_checkbox li {
+  margin: 8px 0;
+}
+
+.tribe-common .nhsuk-checkboxes .nhsuk-checkboxes__item label, .tribe-common .tingle-modal-box .ginput_container_checkbox .nhsuk-checkboxes__item label, .tingle-modal-box .tribe-common .ginput_container_checkbox .nhsuk-checkboxes__item label, .tribe-common .nhsuk-checkboxes .nhsuk-list-panel .comment-respond .comment-form-cookies-consent label, .nhsuk-list-panel .comment-respond .tribe-common .nhsuk-checkboxes .comment-form-cookies-consent label, .tribe-common .tingle-modal-box .ginput_container_checkbox .nhsuk-list-panel .comment-respond .comment-form-cookies-consent label, .nhsuk-list-panel .comment-respond .tribe-common .tingle-modal-box .ginput_container_checkbox .comment-form-cookies-consent label, .tingle-modal-box .tribe-common .ginput_container_checkbox .nhsuk-list-panel .comment-respond .comment-form-cookies-consent label, .nhsuk-list-panel .comment-respond .tingle-modal-box .tribe-common .ginput_container_checkbox .comment-form-cookies-consent label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox .tribe-common .nhsuk-checkboxes li label, .tribe-common .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .tribe-common .ginput_container_checkbox .gfield_checkbox li label {
+  padding: 8px 16px 4px 56px;
+}
+
 .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
   margin-bottom: 24px;
 }
