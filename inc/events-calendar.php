@@ -38,7 +38,7 @@ add_action( 'widgets_init', 'nightingale_widgets_events', 10 );
  * @return array
  */
 function nightingale_remove_end_time_single( $formatting_details ) {
-	$formatting_details['show_end_time'] = 0;
+	$formatting_details[ 'show_end_time' ] = 0;
 
 	return $formatting_details;
 }
@@ -206,7 +206,6 @@ add_filter( 'tribe_template_pre_html:events/v2/month/calendar-body/day/calendar-
 /**
  * Add your own plugin as a template override location for The Events Calendar, Event Tickets, and related plugins. Only
  * for TEC's V2 Views and ET's addons/overrides of TEC's V2 Views. Still need the old snippet for overriding ET's files.
- *
  * Each custom array's `path` is whatever you want it to be (i.e. customizable) up until the 'v2' part of each
  * template's override path. We chose to keep it as `tribe/events` and `tribe/tickets` for simplicity.
  * So if the TEC location for a view is:
@@ -223,7 +222,6 @@ add_filter( 'tribe_template_pre_html:events/v2/month/calendar-body/day/calendar-
  * @link https://gist.github.com/cliffordp/39e68939132bd0f483e0111972165455 This snippet is only for V2 Views.
  * @link https://gist.github.com/b76421f2490a8b8995493f203e11b331 Similar functionality for pre-TEC v5.x (not V2 views) or for ET.
  * @link https://theeventscalendar.com/knowledgebase/k/custom-additional-template-locations/ Official article with all the details.
- *
  * @see  \Tribe__Template::get_template_path_list()
  *
  * @param array $folders Array of data for loading locations.
@@ -238,7 +236,7 @@ function nightingale_tribe_v2_additional_plugin_template_locations( $folders ) {
 	/*
 	 * Custom loading location for overriding The Events Calendar's templates from within this plugin.
 	 */
-	$folders['nightingale_tec'] = [
+	$folders[ 'nightingale_tec' ] = [
 		'id'       => 'nightingale_tec',
 		'priority' => 5, // TEC is 20, ET is 17, so do something earlier, like 5
 		'path'     => $nightingale_base_path . 'events', // Example: /app/public/wp-content/plugins/my-plugin/tribe/events
@@ -248,11 +246,12 @@ function nightingale_tribe_v2_additional_plugin_template_locations( $folders ) {
 	 * Custom loading location for overriding Event Tickets' addons/overrides for TEC's v2 views.
 	 * Still need to use the old/non-v2 snippet to override ET's other template files.
 	 */
-	$folders['nightingale_et'] = [
+	$folders[ 'nightingale_et' ] = [
 		'id'       => 'nightingale_et',
 		'priority' => 5, // TEC is 20, ET is 17, so do something earlier, like 5
 		'path'     => $nightingale_base_path . 'tickets', // Example: /app/public/wp-content/plugins/my-plugin/tribe/tickets
 	];
+
 	return $folders;
 }
 

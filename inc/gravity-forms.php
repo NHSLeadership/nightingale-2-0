@@ -326,3 +326,15 @@
 			return '<strong>' . esc_html( $file_info['uploaded_filename'] ) . "</strong > <img class='gform_delete' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABKUlEQVRYhe2Uuw4BQRSGPwqJW6KgU4jeA0jEC2h4Ku8hXkFJiCdYURJR0Ot0FM5kx2TZHTu7QvZPTjYzszP/d85cIFMme42AM3Az4gwM0wAIMldxSgNAmUXtf6tciJFLBXrlHZs410dltZn/9Qr8HIBZ0rC2cwDnygD+EmDvcjHbU78Dmlr7Qswn3RZAmavKdgUiNQCAPrAFWhqEqQYwBzpJAMyk76BBmOae/DNPAqAELKT/CLQN842MeUDdFiCqSjyy0yH0zCOZxwEAKANL/O2wylzpJJN6MSBW+IlsTPOwh2gi37W2SFhcgYHMKwI1bb0qULHJoACM8SthY17nec9VJV7dDqcKOnDvbodz81cHLhUIdf08gTFVwd+OZRIAHYEIMtchpkDrDvRKkk0dBvEBAAAAAElFTkSuQmCC' 
 				  onclick='gformDeleteUploadedFile({$form_id}, {$field_id }, this)' alt='Delete this file' />";
 		}
+
+
+add_filter( 'gform_field_css_class', 'nightingale_gravity_field_class', 10, 3 );
+function nightingale_gravity_field_class( $classes, $field, $form ) {
+	if ( $field->type == 'text' ) {
+		$classes .= ' nhsuk-input-10';
+		echo '<pre>';
+		echo print_r($field);
+		echo '</pre>';
+	}
+	return $classes;
+}
