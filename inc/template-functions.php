@@ -84,16 +84,6 @@ function nightingale_add_class_to_excerpt( $excerpt ) {
 add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt', 10 );
 
 /**
- * Strip embedded content out of excerpts to prevent breaking layouts
- *
- * @param string $excerpt the_excerpt html.
- */
-function nightingale_sanitise_excerpt( $excerpt ) {
-	return $excerpt;
-}
-
-add_filter( 'the_excerpt', 'nightingale_sanitise_excerpt', 10 );
-/**
  * Shortens the excerpt to 20 char
  *
  * @param int $length length to shorten content to.
