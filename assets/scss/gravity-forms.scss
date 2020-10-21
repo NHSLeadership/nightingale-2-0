@@ -97,6 +97,15 @@
       list-style: none;
       margin-left: 0;
       padding-left: 0;
+      li.gfield {
+        .ginput_preview {
+          clear: both;
+          padding: nhsuk-spacing(2) 0;
+          strong {
+            padding-left: nhsuk-spacing(3);
+          }
+        }
+      }
     }
     .nhsuk-required-message {
       font-weight: $nhsuk-font-bold;

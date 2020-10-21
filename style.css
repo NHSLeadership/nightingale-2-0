@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.2.3.1
+Version: 2.2.4
 Requires at least: 5.0
 Tested up to: 5.5.1
 Requires PHP: 5.2.4
@@ -11850,6 +11850,15 @@ span.search-terms {
   padding-left: 0;
 }
 
+.gform_wrapper .gform_body ul.gform_fields li.gfield .ginput_preview {
+  clear: both;
+  padding: 8px 0;
+}
+
+.gform_wrapper .gform_body ul.gform_fields li.gfield .ginput_preview strong {
+  padding-left: 16px;
+}
+
 .gform_wrapper .gform_body .nhsuk-required-message {
   font-weight: 600;
   font-style: italic;
@@ -12919,6 +12928,10 @@ ul.download-versions {
   width: 100%;
 }
 
+.nhsuk-care-card .nhsuk-care-card__content, .learndash-wrapper .ld-table-list .nhsuk-care-card__content {
+  overflow: auto;
+}
+
 .nhsuk-panel-with-label, .nhsuk-panel.is-style-panel-with-label, .is-style-panel-with-label.sticky, .is-style-panel-with-label.download-box {
   width: 100%;
 }
@@ -12929,6 +12942,10 @@ ul.download-versions {
 
 .nhsuk-panel-with-label .entry-footer span, .nhsuk-panel.is-style-panel-with-label .entry-footer span, .is-style-panel-with-label.sticky .entry-footer span, .is-style-panel-with-label.download-box .entry-footer span {
   padding: 0 10px;
+}
+
+.nhsuk-details .nhsuk-details__text {
+  overflow: auto;
 }
 
 .nhsuk-dashboard .nhsuk-panel-group__item, .nhsuk-dashboard .ld-course-list-items .ld_course_grid, .ld-course-list-items .nhsuk-dashboard .ld_course_grid {
@@ -12958,7 +12975,7 @@ ul.download-versions {
   top: 0;
   margin: 0 -20px;
   position: absolute;
-  top: 50%;
+  top: 66%;
   left: 10%;
   max-width: 90%;
   font-size: 1.1rem;

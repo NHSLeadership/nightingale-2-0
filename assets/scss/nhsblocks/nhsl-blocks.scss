@@ -4,6 +4,9 @@
 
 .nhsuk-care-card {
   width: 100%;
+  .nhsuk-care-card__content {
+    overflow: auto;
+  }
 }
 
 .nhsuk-panel-with-label {
@@ -19,6 +22,13 @@
     span {
       padding: 0 10px;
     }
+  }
+}
+
+// Details / expander element
+.nhsuk-details {
+  .nhsuk-details__text {
+    overflow: auto;
   }
 }
 
@@ -50,7 +60,7 @@
         top: 0;
         margin: 0 -20px;
         position: absolute;
-        top: 50%;
+        top: 66%;
         left: 10%;
         max-width: 90%;
         font-size: 1.1rem;
