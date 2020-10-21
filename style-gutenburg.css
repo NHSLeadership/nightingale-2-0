@@ -13916,6 +13916,10 @@
   width: 100%;
 }
 
+.edit-post-visual-editor .nhsuk-care-card .nhsuk-care-card__content, .block-editor-block-styles .nhsuk-care-card .nhsuk-care-card__content, .block-editor-inserter__menu-help-panel .nhsuk-care-card .nhsuk-care-card__content {
+  overflow: auto;
+}
+
 .edit-post-visual-editor .nhsuk-panel-with-label, .edit-post-visual-editor .nhsuk-panel.is-style-panel-with-label, .edit-post-visual-editor .is-style-panel-with-label.sticky, .block-editor-block-styles .nhsuk-panel-with-label, .block-editor-block-styles .nhsuk-panel.is-style-panel-with-label, .block-editor-block-styles .is-style-panel-with-label.sticky, .block-editor-inserter__menu-help-panel .nhsuk-panel-with-label, .block-editor-inserter__menu-help-panel .nhsuk-panel.is-style-panel-with-label, .block-editor-inserter__menu-help-panel .is-style-panel-with-label.sticky {
   width: 100%;
 }
@@ -13926,6 +13930,10 @@
 
 .edit-post-visual-editor .nhsuk-panel-with-label .entry-footer span, .edit-post-visual-editor .nhsuk-panel.is-style-panel-with-label .entry-footer span, .edit-post-visual-editor .is-style-panel-with-label.sticky .entry-footer span, .block-editor-block-styles .nhsuk-panel-with-label .entry-footer span, .block-editor-block-styles .nhsuk-panel.is-style-panel-with-label .entry-footer span, .block-editor-block-styles .is-style-panel-with-label.sticky .entry-footer span, .block-editor-inserter__menu-help-panel .nhsuk-panel-with-label .entry-footer span, .block-editor-inserter__menu-help-panel .nhsuk-panel.is-style-panel-with-label .entry-footer span, .block-editor-inserter__menu-help-panel .is-style-panel-with-label.sticky .entry-footer span {
   padding: 0 10px;
+}
+
+.edit-post-visual-editor .nhsuk-details .nhsuk-details__text, .block-editor-block-styles .nhsuk-details .nhsuk-details__text, .block-editor-inserter__menu-help-panel .nhsuk-details .nhsuk-details__text {
+  overflow: auto;
 }
 
 .edit-post-visual-editor .nhsuk-dashboard .nhsuk-panel-group__item, .block-editor-block-styles .nhsuk-dashboard .nhsuk-panel-group__item, .block-editor-inserter__menu-help-panel .nhsuk-dashboard .nhsuk-panel-group__item {
@@ -13955,7 +13963,7 @@
   top: 0;
   margin: 0 -20px;
   position: absolute;
-  top: 50%;
+  top: 66%;
   left: 10%;
   max-width: 90%;
   font-size: 1.1rem;
