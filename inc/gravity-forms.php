@@ -332,3 +332,64 @@
 			wp_enqueue_script( 'nightingale-gravity', get_template_directory_uri() . '/js/gravity-overrides.js', '', '20201021', true );
 		}
 		add_action( 'wp_enqueue_scripts', 'nightingale_gravity_scripts' );
+
+		/**
+		 * Gravity Wiz // Gravity Forms // Entry Count Shortcode
+		 *
+		 * Extends the [gravityforms] shortcode, providing a custom action to retrieve the total entry count and
+		 * also providing the ability to retrieve counts by entry status (i.e. 'trash', 'spam', 'unread', 'starred').
+		 *
+		 * @version	  1.0
+		 * @author    David Smith <david@gravitywiz.com>
+		 * @license   GPL-2.0+
+		 * @link      http://gravitywiz.com/...
+		 */
+		add_filter( 'gform_shortcode_entry_count', 'nightingale_gravity_entry_count_shortcode', 10, 2 );
+		function nightingale_gravity_entry_count_shortcode( $output, $atts ) {
+
+			extract( shortcode_atts( array(
+				                         'id' => false,
+				                         'status' => 'total', // accepts 'total', 'unread', 'starred', 'trash', 'spam'
+				                         'format' => false // should be 'comma', 'decimal'
+			                         ), $atts ) );
+
+			$valid_statuses = array( 'total', 'unread', 'starred', 'trash', 'spam' );
+
+			if( ! $id || ! in_array( $status, $valid_statuses ) ) {
+				if ( $status =='complete' || $status == 'partial' ) {
+					global $wpdb;
+					$lead_table_name       = GFFormsModel::get_entry_table_name();
+					$lead_detail_meta_name = GFFormsModel::get_entry_meta_table_name();
+
+					$entry_id_column = 'entry_id';
+
+					$sql            = $wpdb->prepare(
+						"SELECT
+                    (SELECT count(DISTINCT(l.id)) FROM $lead_table_name l LEFT JOIN $lead_detail_meta_name m ON l.id=m.{$entry_id_column} AND m.meta_key = 'partial_entry_percent' WHERE l.form_id=%d AND l.status='active' AND ( m.meta_value = '' OR m.meta_value IS NULL ) ) as complete,
+                    (SELECT count(DISTINCT(l.id)) FROM $lead_table_name l INNER JOIN $lead_detail_meta_name m ON l.id=m.{$entry_id_column} WHERE l.form_id=%d AND l.status='active' AND m.meta_key = 'partial_entry_percent' AND m.meta_value > 1 ) as partial
+					",
+						$id, $id
+					);
+					$results        = $wpdb->get_results( $sql, ARRAY_A );
+					$complete_count = $results[ 0 ][ 'complete' ];
+					$partial_count  = $results[ 0 ][ 'partial' ];
+					if ($status == 'complete') {
+						return $complete_count;
+					} else if ($status == 'partial') {
+						return $partial_count;
+					}
+				} else {
+					return current_user_can( 'update_core' ) ? __( 'Invalid "id" (the form ID) or "status" (i.e. "total", "trash", etc.) parameter passed.' ) : '';
+				}
+			}
+
+			$counts = GFFormsModel::get_form_counts( $id );
+			$output = rgar( $counts, $status );
+
+			if( $format ) {
+				$format = $format == 'decimal' ? '.' : ',';
+				$output = number_format( $output, 0, false, $format );
+			}
+
+			return $output;
+		}
