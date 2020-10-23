@@ -19,6 +19,8 @@
  * @var Tribe__Tickets_Plus__Meta__Field__Datetime $field.
  *
  * @see Tribe__Tickets_Plus__Meta__Field__Datetime
+ *
+ * @package Nightingale
  */
 
 $classes[] = 'nhsuk-form-group';

@@ -9,15 +9,15 @@
  * @version 4.2
  *
  * @package TribeEventsCalendar
- *
  */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
 
 ?>
 <div class="tribe-events-single-event-description tribe-events-content">
-	<?php echo tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ); ?>
+	<?php echo wp_kses_post( tribe_events_get_the_excerpt( null, wp_kses_allowed_html( 'post' ) ) ); ?>
 </div>
 <?php
 /**

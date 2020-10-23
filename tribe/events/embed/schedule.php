@@ -9,7 +9,6 @@
  * @version 4.2
  *
  * @package TribeEventsCalendar
- *
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -18,5 +17,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <div class="tribe-event-schedule-details">
-	<?php echo tribe_events_event_schedule_details() ?>
+	<?php echo wp_kses_post( tribe_events_event_schedule_details() ); ?>
 </div>

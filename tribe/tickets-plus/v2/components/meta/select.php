@@ -19,6 +19,8 @@
  * @var Tribe__Tickets_Plus__Meta__Field__Select $field
  *
  * @see Tribe__Tickets_Plus__Meta__Field__Select
+ *
+ * @package Nightingale
  */
 
 $slug    = $field->slug;
@@ -44,7 +46,7 @@ $classes[] = 'nhsuk-form-group';
 		name="<?php echo esc_attr( $field_name ); ?>"
 		<?php tribe_required( $required ); ?>
 	>
-		<option value=""><?php esc_html_e( 'Select an option', 'event-tickets' ); ?></option>
+		<option value=""><?php esc_html_e( 'Select an option', 'nightingale' ); ?></option>
 		<?php foreach ( $options as $option => $label ) : ?>
 			<option
 				<?php selected( $label, $value ); ?> value="<?php echo esc_attr( $label ); ?>"><?php echo esc_html( $label ); ?></option>

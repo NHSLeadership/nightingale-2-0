@@ -9,7 +9,6 @@
  * @version 4.2
  *
  * @package TribeEventsCalendar
- *
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -76,12 +75,13 @@ $shape = apply_filters( 'embed_thumbnail_image_shape', $shape, $thumbnail_id );
 
 if ( 'rectangular' === $shape ) : ?>
 	<div class="wp-embed-featured-image rectangular">
-		<?php echo tribe_event_featured_image( $event_id, 'large' ); ?>
+		<?php echo wp_kses_post( tribe_event_featured_image( $event_id, 'large' ) ); ?>
 	</div>
 <?php endif; ?>
 
 <?php if ( 'square' === $shape ) : ?>
 	<div class="wp-embed-featured-image square">
-		<?php echo tribe_event_featured_image( $event_id, 'large' ); ?>
+		<?php echo wp_kses_post( tribe_event_featured_image( $event_id, 'large' ) ); ?>
 	</div>
 <?php endif; ?>
+

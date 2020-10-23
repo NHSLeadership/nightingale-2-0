@@ -13,6 +13,7 @@
  * @since5.0.0
  *
  * @version5.0.0
+ * @package Nightingale
  */
 
 /**
@@ -30,7 +31,7 @@ $name = apply_filters( 'tribe_tickets_rsvp_form_full_name', '', $this );
 		class="nhsuk-label"
 		for="tribe-tickets-rsvp-name-<?php echo esc_attr( $rsvp->ID ); ?>"
 	>
-		<?php esc_html_e( 'Name', 'event-tickets' ); ?><span class="screen-reader-text"><?php esc_html_e( 'required', 'event-tickets' ); ?></span>
+		<?php esc_html_e( 'Name', 'nightingale' ); ?><span class="screen-reader-text"><?php esc_html_e( 'required', 'nightingale' ); ?></span>
 		<span class="tribe-required" aria-hidden="true" role="presentation">*</span>
 	</label>
 	<input
@@ -40,6 +41,6 @@ $name = apply_filters( 'tribe_tickets_rsvp_form_full_name', '', $this );
 		id="tribe-tickets-rsvp-name-<?php echo esc_attr( $rsvp->ID ); ?>"
 		value="<?php echo esc_attr( $name ); ?>"
 		required
-		placeholder="<?php esc_attr_e( 'Your Name', 'event-tickets' ); ?>"
+		placeholder="<?php esc_attr_e( 'Your Name', 'nightingale' ); ?>"
 	>
 </div>

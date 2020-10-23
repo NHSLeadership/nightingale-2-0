@@ -17,6 +17,8 @@
  * @var Tribe__Tickets_Plus__Meta__Field__Number $field
  *
  * @see Tribe__Tickets_Plus__Meta__Field__Number
+ *
+ * @package Nightingale
  */
 
 ?>

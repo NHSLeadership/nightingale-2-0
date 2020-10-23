@@ -38,7 +38,7 @@ add_action( 'widgets_init', 'nightingale_widgets_events', 10 );
  * @return array
  */
 function nightingale_remove_end_time_single( $formatting_details ) {
-	$formatting_details[ 'show_end_time' ] = 0;
+	$formatting_details['show_end_time'] = 0;
 
 	return $formatting_details;
 }
