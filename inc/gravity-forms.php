@@ -273,10 +273,10 @@
 				case 'html':
 					// style the submission preview screen.
 					$field_content = preg_replace( '/<table(.*?)>(.*?)<\/table>/si', '<div>$2</div>', $field_content );
-					$field_content = preg_replace( '/<table(.*?)>(.*?)<\/table>/si', '<div>$2</div>', $field_content );
-					$field_content = preg_replace( '/<tbody>(.*?)<\/tbody>/si', '<dl class="nhsuk-summary-list">$1</dl>', $field_content );
+					$field_content = preg_replace( '/<table(.*?)>(.*?)<\/table>/si', '<div><dl class="nhsuk-summary-list">$2</dl></div>', $field_content );
+					$field_content = preg_replace( '/<tbody>(.*?)<\/tbody>/i', '$1', $field_content );
 					$field_content = preg_replace( '/<tr bgcolor="\#EAF2FA"(.*?)<\/tr>/si', '<div class="nhsuk-summary-list__row"><dt class="nhsuk-summary-list__key"$1</dt>', $field_content );
-					$field_content = preg_replace( '/<tr bgcolor="\#FFFFFF"(.*?)<\/tr>/si', '<dd class="nhsuk-summary-list__value"$1</dd><dd class="nhsuk-summary-list__actions"></dd></div>', $field_content );
+					$field_content = preg_replace( '/<tr bgcolor="\#FFFFFF"(.*?)<\/tr>/si', '<dd class="nhsuk-summary-list__value"$1</dd></div>', $field_content );
 					$field_content = preg_replace( '/<td width="20">&nbsp;<\/td>/si', '', $field_content );
 
 					$field_content = preg_replace( '/<td(.*?)>(.*?)<\/td>/si', '$2', $field_content );
@@ -326,3 +326,11 @@
 			return '<strong>' . esc_html( $file_info['uploaded_filename'] ) . "</strong > <img class='gform_delete' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABKUlEQVRYhe2Uuw4BQRSGPwqJW6KgU4jeA0jEC2h4Ku8hXkFJiCdYURJR0Ot0FM5kx2TZHTu7QvZPTjYzszP/d85cIFMme42AM3Az4gwM0wAIMldxSgNAmUXtf6tciJFLBXrlHZs410dltZn/9Qr8HIBZ0rC2cwDnygD+EmDvcjHbU78Dmlr7Qswn3RZAmavKdgUiNQCAPrAFWhqEqQYwBzpJAMyk76BBmOae/DNPAqAELKT/CLQN842MeUDdFiCqSjyy0yH0zCOZxwEAKANL/O2wylzpJJN6MSBW+IlsTPOwh2gi37W2SFhcgYHMKwI1bb0qULHJoACM8SthY17nec9VJV7dDqcKOnDvbodz81cHLhUIdf08gTFVwd+OZRIAHYEIMtchpkDrDvRKkk0dBvEBAAAAAElFTkSuQmCC' 
 				  onclick='gformDeleteUploadedFile({$form_id}, {$field_id }, this)' alt='Delete this file' />";
 		}
+
+		/**
+		 * Include specific javascript to override Gravity things.
+		 */
+		function nightingale_gravity_scripts() {
+			wp_enqueue_script( 'nightingale-gravity', get_template_directory_uri() . '/js/gravity-overrides.js', '', '20201021', true );
+		}
+		add_action( 'wp_enqueue_scripts', 'nightingale_gravity_scripts' );

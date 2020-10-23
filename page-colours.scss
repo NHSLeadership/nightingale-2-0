@@ -73,7 +73,7 @@ $page-colours             : (
 	  color : $color_nhsuk-white;
 	}
 
-	a.nhsuk-button--reverse {
+	a.nhsuk-button--reverse, a.is-style-reverse {
 	  color : $color_nhsuk-black;
 	}
 

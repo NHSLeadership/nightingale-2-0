@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.2.3.1
-Stable tag: 2.2.3.1
+Version: 2.2.5
+Stable tag: 2.2.5
 
 
 == Description ==
@@ -42,6 +42,26 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+= 2.2.5 =
+Maintenance release:
+* Improved events calendar integration (embeds, listing, display etc)
+* Improved Gravity integration (confirmation screen)
+* Fix for over-flexxing
+* Fix for horizontal scroll (AGAIN!)
+
+= 2.2.4 =
+Maintenance release:
+* Vertical scroll bar fix (again)
+* Updated yarn dependancy
+* Gravity form general tidying around markup and accessibility (confirmation page, summary style, gravity view header
+rework)
+* The Events Calendar - RSVP layout improved on page
+* The Events Calendar - RSVP form including additional data bought into NHSUK styling and markup
+* The Events Calendar - when embedding single event into other content, now uses NHSUK care card styling
+* Reworked flex blox styling, particularly for latest posts, grouped content and search results.
+* Removed some unecessary / unused / legacy code
+
 = 2.2.3.1 =
 Bugfix release:
  * fixed fatal error with formidable forms

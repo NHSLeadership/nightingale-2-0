@@ -50,7 +50,7 @@
   color: #ffffff;
 }
 
-.page-colour--nhs-blue a.nhsuk-button--reverse, #content .page-style--nhs-blue a.nhsuk-button--reverse {
+.page-colour--nhs-blue a.nhsuk-button--reverse, .page-colour--nhs-blue a.is-style-reverse, #content .page-style--nhs-blue a.nhsuk-button--reverse, #content .page-style--nhs-blue a.is-style-reverse {
   color: #000000;
 }
 
@@ -208,7 +208,7 @@
   color: #ffffff;
 }
 
-.page-colour--dark-blue a.nhsuk-button--reverse, #content .page-style--dark-blue a.nhsuk-button--reverse {
+.page-colour--dark-blue a.nhsuk-button--reverse, .page-colour--dark-blue a.is-style-reverse, #content .page-style--dark-blue a.nhsuk-button--reverse, #content .page-style--dark-blue a.is-style-reverse {
   color: #000000;
 }
 
@@ -366,7 +366,7 @@
   color: #ffffff;
 }
 
-.page-colour--bright-blue a.nhsuk-button--reverse, #content .page-style--bright-blue a.nhsuk-button--reverse {
+.page-colour--bright-blue a.nhsuk-button--reverse, .page-colour--bright-blue a.is-style-reverse, #content .page-style--bright-blue a.nhsuk-button--reverse, #content .page-style--bright-blue a.is-style-reverse {
   color: #000000;
 }
 
@@ -524,7 +524,7 @@
   color: #ffffff;
 }
 
-.page-colour--mid-grey a.nhsuk-button--reverse, #content .page-style--mid-grey a.nhsuk-button--reverse {
+.page-colour--mid-grey a.nhsuk-button--reverse, .page-colour--mid-grey a.is-style-reverse, #content .page-style--mid-grey a.nhsuk-button--reverse, #content .page-style--mid-grey a.is-style-reverse {
   color: #000000;
 }
 
@@ -682,7 +682,7 @@
   color: #ffffff;
 }
 
-.page-colour--dark-grey a.nhsuk-button--reverse, #content .page-style--dark-grey a.nhsuk-button--reverse {
+.page-colour--dark-grey a.nhsuk-button--reverse, .page-colour--dark-grey a.is-style-reverse, #content .page-style--dark-grey a.nhsuk-button--reverse, #content .page-style--dark-grey a.is-style-reverse {
   color: #000000;
 }
 
@@ -840,7 +840,7 @@
   color: #ffffff;
 }
 
-.page-colour--black a.nhsuk-button--reverse, #content .page-style--black a.nhsuk-button--reverse {
+.page-colour--black a.nhsuk-button--reverse, .page-colour--black a.is-style-reverse, #content .page-style--black a.nhsuk-button--reverse, #content .page-style--black a.is-style-reverse {
   color: #000000;
 }
 
@@ -998,7 +998,7 @@
   color: #ffffff;
 }
 
-.page-colour--purple a.nhsuk-button--reverse, #content .page-style--purple a.nhsuk-button--reverse {
+.page-colour--purple a.nhsuk-button--reverse, .page-colour--purple a.is-style-reverse, #content .page-style--purple a.nhsuk-button--reverse, #content .page-style--purple a.is-style-reverse {
   color: #000000;
 }
 
@@ -1156,7 +1156,7 @@
   color: #ffffff;
 }
 
-.page-colour--pink a.nhsuk-button--reverse, #content .page-style--pink a.nhsuk-button--reverse {
+.page-colour--pink a.nhsuk-button--reverse, .page-colour--pink a.is-style-reverse, #content .page-style--pink a.nhsuk-button--reverse, #content .page-style--pink a.is-style-reverse {
   color: #000000;
 }
 
@@ -1314,7 +1314,7 @@
   color: #ffffff;
 }
 
-.page-colour--light-purple a.nhsuk-button--reverse, #content .page-style--light-purple a.nhsuk-button--reverse {
+.page-colour--light-purple a.nhsuk-button--reverse, .page-colour--light-purple a.is-style-reverse, #content .page-style--light-purple a.nhsuk-button--reverse, #content .page-style--light-purple a.is-style-reverse {
   color: #000000;
 }
 
@@ -1472,7 +1472,7 @@
   color: #ffffff;
 }
 
-.page-colour--emergency-services-red a.nhsuk-button--reverse, #content .page-style--emergency-services-red a.nhsuk-button--reverse {
+.page-colour--emergency-services-red a.nhsuk-button--reverse, .page-colour--emergency-services-red a.is-style-reverse, #content .page-style--emergency-services-red a.nhsuk-button--reverse, #content .page-style--emergency-services-red a.is-style-reverse {
   color: #000000;
 }
 
@@ -1630,7 +1630,7 @@
   color: #ffffff;
 }
 
-.page-colour--dark-green a.nhsuk-button--reverse, #content .page-style--dark-green a.nhsuk-button--reverse {
+.page-colour--dark-green a.nhsuk-button--reverse, .page-colour--dark-green a.is-style-reverse, #content .page-style--dark-green a.nhsuk-button--reverse, #content .page-style--dark-green a.is-style-reverse {
   color: #000000;
 }
 
@@ -1788,7 +1788,7 @@
   color: #ffffff;
 }
 
-.page-colour--light-green a.nhsuk-button--reverse, #content .page-style--light-green a.nhsuk-button--reverse {
+.page-colour--light-green a.nhsuk-button--reverse, .page-colour--light-green a.is-style-reverse, #content .page-style--light-green a.nhsuk-button--reverse, #content .page-style--light-green a.is-style-reverse {
   color: #000000;
 }
 
@@ -1946,7 +1946,7 @@
   color: #ffffff;
 }
 
-.page-colour--aqua-green a.nhsuk-button--reverse, #content .page-style--aqua-green a.nhsuk-button--reverse {
+.page-colour--aqua-green a.nhsuk-button--reverse, .page-colour--aqua-green a.is-style-reverse, #content .page-style--aqua-green a.nhsuk-button--reverse, #content .page-style--aqua-green a.is-style-reverse {
   color: #000000;
 }
 
@@ -2104,7 +2104,7 @@
   color: #ffffff;
 }
 
-.page-colour--gds-black a.nhsuk-button--reverse, #content .page-style--gds-black a.nhsuk-button--reverse {
+.page-colour--gds-black a.nhsuk-button--reverse, .page-colour--gds-black a.is-style-reverse, #content .page-style--gds-black a.nhsuk-button--reverse, #content .page-style--gds-black a.is-style-reverse {
   color: #000000;
 }
 

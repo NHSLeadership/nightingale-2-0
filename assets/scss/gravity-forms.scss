@@ -71,6 +71,18 @@
     }
   }
   .gform_body {
+    .gfield_select {
+      @extend .nhsuk-select;
+    }
+    ul.gform_fields {
+      li.gfield.gfield_html {
+        dl.nhsuk-summary-list {
+          background : $color_nhsuk-white;
+          padding    : nhsuk-spacing(4);
+          padding-left: nhsuk-spacing(4);
+        }
+      }
+    }
     .address_city, .address_state {
       width: 50%;
       float: left;
@@ -85,6 +97,15 @@
       list-style: none;
       margin-left: 0;
       padding-left: 0;
+      li.gfield {
+        .ginput_preview {
+          clear: both;
+          padding: nhsuk-spacing(2) 0;
+          strong {
+            padding-left: nhsuk-spacing(3);
+          }
+        }
+      }
     }
     .nhsuk-required-message {
       font-weight: $nhsuk-font-bold;
@@ -242,5 +263,11 @@
         }
       }
     }
+  }
+}
+
+.gv-datatables-container {
+  .gv-field-label {
+    word-break: normal;
   }
 }

@@ -283,7 +283,7 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_fimage_display',
 		// $args
 		array(
@@ -295,7 +295,7 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-	// $id
+		// $id
 		'blog_fimage_display',
 		// $args
 		array(
@@ -335,7 +335,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_sidebar',
 		// $args
 		array(
@@ -347,7 +347,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-	// $id
+		// $id
 		'blog_sidebar',
 		// $args
 		array(
@@ -364,7 +364,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_author_display',
 		// $args
 		array(
@@ -376,7 +376,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-	// $id
+		// $id
 		'blog_author_display',
 		// $args
 		array(
@@ -393,7 +393,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_date_display',
 		// $args
 		array(
@@ -405,7 +405,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-	// $id
+		// $id
 		'blog_date_display',
 		// $args
 		array(
@@ -422,7 +422,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_fallback',
 		// $args
 		array(
@@ -486,10 +486,16 @@ function nightingale_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function nightingale_customize_preview_js() {
-	wp_enqueue_script( 'nightingale-customizer', get_template_directory_uri() . '/js/customizer.js', array(
-		'jquery',
-		'customize-preview'
-	), '20151215', true );
+	wp_enqueue_script(
+		'nightingale-customizer',
+		get_template_directory_uri() . '/js/customizer.js',
+		array(
+			'jquery',
+			'customize-preview',
+		),
+		'20151215',
+		true
+	);
 }
 
 add_action( 'customize_preview_init', 'nightingale_customize_preview_js' );
