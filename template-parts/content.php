@@ -7,6 +7,7 @@
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version   1.1 21st August 2019
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -41,7 +42,7 @@
 		$featured_img_display = get_theme_mod( 'featured_img_display', 'true' );
 		if ( 'true' === $featured_img_display ) {
 			$blog_fimage_display = get_theme_mod( 'blog_fimage_display', 'top' );
-			echo '<span class="featured-' . $blog_fimage_display . '">';
+			echo '<span class="featured-' . wp_kses_post( $blog_fimage_display ) . '">';
 			nightingale_post_thumbnail();
 			echo '</span>';
 		}

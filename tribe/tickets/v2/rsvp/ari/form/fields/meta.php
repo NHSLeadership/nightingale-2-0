@@ -13,6 +13,8 @@
  * @since5.0.0
  *
  * @version5.0.0
+ *
+ * @package Nightingale
  */
 
 /**

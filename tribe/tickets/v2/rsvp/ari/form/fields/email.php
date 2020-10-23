@@ -13,6 +13,7 @@
  * @since5.0.0
  *
  * @version5.0.0
+ * @package Nightingale
  */
 
 /**
@@ -31,7 +32,7 @@ $email = apply_filters( 'tribe_tickets_rsvp_form_email', '', $this );
 		class="nhsuk-label"
 		for="tribe-tickets-rsvp-email-<?php echo esc_attr( $rsvp->ID ); ?>"
 	>
-		<?php esc_html_e( 'Email', 'event-tickets' ); ?><span class="screen-reader-text"><?php esc_html_e( 'required', 'event-tickets' ); ?></span>
+		<?php esc_html_e( 'Email', 'nightingale' ); ?><span class="screen-reader-text"><?php esc_html_e( 'required', 'nightingale' ); ?></span>
 		<span class="tribe-required nhsuk-pill-warn" aria-hidden="true" role="presentation">*</span>
 	</label>
 	<input
@@ -41,6 +42,6 @@ $email = apply_filters( 'tribe_tickets_rsvp_form_email', '', $this );
 		id="tribe-tickets-rsvp-email-<?php echo esc_attr( $rsvp->ID ); ?>"
 		value="<?php echo esc_attr( $email ); ?>"
 		required
-		placeholder="<?php esc_attr_e( 'your@email.com', 'event-tickets' ); ?>"
+		placeholder="<?php esc_attr_e( 'your@email.com', 'nightingale' ); ?>"
 	>
 </div>

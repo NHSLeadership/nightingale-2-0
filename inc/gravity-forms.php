@@ -327,7 +327,9 @@
 				  onclick='gformDeleteUploadedFile({$form_id}, {$field_id }, this)' alt='Delete this file' />";
 		}
 
-		// include specific javascript to override Gravity things
+		/**
+		 * Include specific javascript to override Gravity things.
+		 */
 		function nightingale_gravity_scripts() {
 			wp_enqueue_script( 'nightingale-gravity', get_template_directory_uri() . '/js/gravity-overrides.js', '', '20201021', true );
 		}

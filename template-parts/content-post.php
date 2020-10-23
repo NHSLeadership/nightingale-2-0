@@ -13,7 +13,7 @@ if ( is_single() ) :
 	get_template_part( 'template-parts/content' );
 
 else :
-	if ( ! isset ( $parent_template_part ) ) {
+	if ( ! isset( $parent_template_part ) ) {
 		$parent_template_part = 'none';
 	}
 	$sidebar = ( 'true' === get_theme_mod( 'blog_sidebar' ) );
@@ -102,5 +102,5 @@ else :
 		</div>
 	</div>
 
-<?php
+	<?php
 endif;

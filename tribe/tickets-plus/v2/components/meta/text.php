@@ -18,6 +18,8 @@
  * @var Tribe__Tickets_Plus__Meta__Field__Text $field.
  *
  * @see Tribe__Tickets_Plus__Meta__Field__Text
+ *
+ * @package Nightingale
  */
 
 $classes[] = 'nhsuk-form-group';
