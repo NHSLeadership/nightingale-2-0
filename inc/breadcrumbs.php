@@ -142,13 +142,13 @@ function nightingale_breadcrumb_trail(){
 
 	$trail = '';
 
-
+	$back_one_level = empty( $back_one_level ) ? array( esc_url( home_url() ), __( 'Home', 'nightingale' ) ) : $back_one_level;
 	if ( is_category() ) {
 
 		$cat_obj    = $wp_query->get_queried_object();
 		$this_cat   = get_category( $cat_obj->term_id );
 		$parent_cat = get_category( $this_cat->parent );
-		
+
 		if ( 0 !== $this_cat->parent ) {
 			$cat_parents = nightingale_category_parents( $parent_cat, true, '', false, array(), true );
 		}
@@ -174,7 +174,7 @@ function nightingale_breadcrumb_trail(){
 	} elseif ( is_404() ) {
 
 		$trail = '<li class="nhsuk-breadcrumb__item">' . esc_html( '404 Not Found', 'nightingale' ) . '</li>';
-	
+
 	} elseif ( is_singular( 'post' ) ) {
 
 		$category    = get_the_category();
@@ -191,14 +191,15 @@ function nightingale_breadcrumb_trail(){
 
 	} elseif ( is_singular( 'tribe_events' ) ) {
 
+		$post = $wp_query->get_queried_object();
 		$trail = '<li class="nhsuk-breadcrumb__item"><a href="' . esc_url( tribe_get_events_link() ) . '">' . esc_html( tribe_get_event_label_plural() ) . '</a></li>';
-
+		$trail .= '<li class="nhsuk-breadcrumb__item event">' . esc_html( get_the_title($post) ) . '</li>';
 	} elseif ( is_page() ) {
 
 		$post = $wp_query->get_queried_object();
 
 		if ( 0 !== $post->post_parent ) {
-			
+
 			$title     = the_title( '', '', false );
 			$ancestors = array_reverse( get_post_ancestors( $post->ID ) );
 			array_push( $ancestors, $post->ID );
@@ -209,7 +210,7 @@ function nightingale_breadcrumb_trail(){
 			foreach ( $ancestors as $ancestor ) {
 
 				if ( ( end( $ancestors ) !== $ancestor ) && ( ( $home_page !== $ancestor ) ) ) {
-				
+
 					$trail .= '<li class="nhsuk-breadcrumb__item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</span></a></li>';
 
 					$back_one_level = array(
@@ -224,15 +225,11 @@ function nightingale_breadcrumb_trail(){
 
 		}
 
-	} 
-
-	if ( ! ( is_archive() || is_category() || is_post_type_archive() || is_search() || is_404() ) ) {
-
-
-		$trail .= '<li class="nhsuk-breadcrumb__item">' . esc_html( get_the_title() ) . '</li>';
-
 	}
-	
+
+	if ( ! ( is_archive() || is_category() || is_post_type_archive() || is_search() || is_404() ||  is_singular('tribe_events') ) ) {
+		$trail .= '<li class="nhsuk-breadcrumb__item current">' . esc_html( get_the_title() ) . '</li>';
+	}
 
 	return array( apply_filters( 'nightingale_modify_breadcrumb', $trail ), $back_one_level );
 }
