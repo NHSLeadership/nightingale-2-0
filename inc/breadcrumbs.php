@@ -143,7 +143,7 @@ function nightingale_breadcrumb_trail(){
 	$back_one_level = empty( $back_one_level ) ? array( esc_url( home_url() ), __( 'Home', 'nightingale' ) ) : $back_one_level;
 	$trail = '';
 
-
+	$back_one_level = empty( $back_one_level ) ? array( esc_url( home_url() ), __( 'Home', 'nightingale' ) ) : $back_one_level;
 	if ( is_category() ) {
 
 		$cat_obj    = $wp_query->get_queried_object();
@@ -192,8 +192,9 @@ function nightingale_breadcrumb_trail(){
 
 	} elseif ( is_singular( 'tribe_events' ) ) {
 
+		$post = $wp_query->get_queried_object();
 		$trail = '<li class="nhsuk-breadcrumb__item"><a href="' . esc_url( tribe_get_events_link() ) . '">' . esc_html( tribe_get_event_label_plural() ) . '</a></li>';
-
+		$trail .= '<li class="nhsuk-breadcrumb__item event">' . esc_html( get_the_title($post) ) . '</li>';
 	} elseif ( is_page() ) {
 
 		$post = $wp_query->get_queried_object();
@@ -227,13 +228,10 @@ function nightingale_breadcrumb_trail(){
 
 	}
 
-	if ( ! ( is_archive() || is_category() || is_post_type_archive() || is_search() || is_404() ) ) {
 
-
-		$trail .= '<li class="nhsuk-breadcrumb__item">' . esc_html( get_the_title() ) . '</li>';
-
+	if ( ! ( is_archive() || is_category() || is_post_type_archive() || is_search() || is_404() ||  is_singular('tribe_events') ) ) {
+		$trail .= '<li class="nhsuk-breadcrumb__item current">' . esc_html( get_the_title() ) . '</li>';
 	}
-
 
 	return array( apply_filters( 'nightingale_modify_breadcrumb', $trail ), $back_one_level );
 }
