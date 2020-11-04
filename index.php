@@ -1,17 +1,15 @@
 <?php
 /**
  * The main template file
- *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
  * It is used to display a page when nothing more specific matches a query.
  * E.g., it puts together the home page when no home.php file exists.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Nightingale
+ * @link      https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 get_header();
@@ -77,6 +75,7 @@ $sidebar = nightingale_show_sidebar();
 					get_template_part( 'template-parts/content', 'none' );
 
 			endif;
+				wp_reset_postdata();
 				?>
 
 		</div>

@@ -93,27 +93,6 @@ add_filter( 'tribe_events_template', 'nightingale_additional_template_locations'
 
 
 /**
- * Add Classes to the link on single events pages to make them styled correctly
- *
- * @param string $link The link on single events pages.
- *
- * @return string
- */
-function nightingale_modify_link_class( $link ) {
-
-	$modified_link = str_replace(
-		'">', // string to search for.
-		'" class="nhsuk-pagination__link">', // what to replace it with.
-		$link // the string to search through.
-	);
-
-	return $modified_link;
-}
-
-add_filter( 'tribe_events_get_event_link', 'nightingale_modify_link_class', 10 );
-
-
-/**
  * Add Events Meta Data into the post archive template
  */
 function nightingale_add_meta_content_events() {
@@ -168,7 +147,6 @@ function nightingale_events_icons() {
  */
 function nightingale_start_end_event( $date_format ) {
 
-
 	$all_day = get_post_meta( get_the_id(), '_EventAllDay', true );
 
 	$time_format     = get_option( 'time_format', Tribe__Date_Utils::TIMEFORMAT ); // get time format.
@@ -222,3 +200,5 @@ add_action(
 	},
 	99
 );
+
+add_filter( 'tribe_template_pre_html:events/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip', '__return_false' );

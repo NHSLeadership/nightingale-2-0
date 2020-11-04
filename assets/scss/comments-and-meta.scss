@@ -108,7 +108,7 @@
 
 		  .comment-meta {
 			a {
-			  text-decoration : none;
+			  //text-decoration : none;
 			  color           : $color_nhsuk-black;
 			  @extend .nhsuk-body-s;
 
@@ -220,7 +220,7 @@
 
 	  a {
 		font-size       : 0.75rem;
-		text-decoration : none;
+		//text-decoration : none;
 
 		&:nth-of-type(2) {
 		  margin-left    : nhsuk-spacing(2);

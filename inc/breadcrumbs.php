@@ -154,6 +154,7 @@ function nightingale_breadcrumb_trail(){
 		}
 		if ( 0 !== $this_cat->parent && ! is_wp_error( $cat_parents ) ) {
 			$trail = $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
 		}
 
 		$trail .= '<li class="nhsuk-breadcrumb__item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';

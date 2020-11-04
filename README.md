@@ -1,19 +1,8 @@
-# Nightingale 2.2.0
-<img src="https://img.shields.io/badge/nightingale-v2.2.0-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend
-"><img src="https://img.shields.io/badge/nhsuk--frontend-v3.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
+# Nightingale 2.2.4
+<img src="https://img.shields.io/badge/nightingale-v2.2.4-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend
+"><img src="https://img.shields.io/badge/nhsuk--frontend-v3.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5.5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
 
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
-
-:exclamation: 2.1.8 - This release removes the requirement for Gutenberg as a standalone plugin, and we strongly
- advise that unless you need the Gutenberg plugin for other functionality you remove the plugin. The NHSBlocks plugin
-  no longer requires Gutenberg, instead using the core version included with WordPress, which in turn improves the
-   stability of the whole ecosystem.
-   
-:exclamation: 2.1.0 - For WP theme review compliance, certain elements have been modified in this release. Performance tweaks, the NHS logo being displayed by default and the Frutiger font have all been removed. Please be
- aware of this before updating, and recognise you may need to modify your customiser settings after upgrade to keep
-  your site looking the same
-  
-:exclamation: Updates to 2.0.7 will make the header region revert to standard wordpress values. If updating your theme, please pay particular attention to the site identity and header regions of the theme customiser before making your site live.
 
 :exclamation: This is a production ready release, with the caveat that any issues should be reported as an issue on 
 this repo for quick action. 
@@ -51,11 +40,19 @@ The Frutiger font is specified for use on NHS web properties, but is only licens
 ```
   
 ## Dependencies
- - This theme requires an active WordPress install of *version 5 or higher*
+ - This theme requires an active WordPress install of *version 5.5 or higher*
  - *optional* For any editing of the theme (in particular the css files) we strongly advise you to use the NPM 
  installation route detailed in `Optional Settings` below.
- 
-## Installation
+
+## Installation for standard use
+ - navigate to your WordPress Admin, click Appearance in the left hand menu
+ - Select "Add New" at the top of the screen
+ - in the search box, type "nightingale"
+ - Select this theme in the returned search results, click the blue Install button
+ - After a few seconds the install button will change to Installing, then to Activate. Click this
+ - Navigate to Appearance > Customise to select your configuration.
+  
+## Installation for programmers who wish to amend in detail
  - Add to your WordPress files, in the `wp-content/themes` folder
  - Activate the theme
    - ~~You will be prompted to install the Gutenberg plugin. Please do so and activate it~~. 
@@ -151,3 +148,11 @@ This theme has been extended to style the following plugins automatically:
  
  The codebase is released under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html
  ), unless stated otherwise. The upstream NHS Frontend Library is released under the MIT license, for details please see [NHSUK Frontend](https://github.com/nhsuk/nhsuk-frontend). The documentation is © Crown copyright and available under the terms of the Open Government License 3.0. Please see the [National Archives](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/) website for more information on the Open Government Licensing Framework.
+
+
+## Todo
+
+ - The latest posts block has been rewritten to allow all Gutenberg options to carry through to the front end output
+ , except if you select grid view and more than 4 columns (currently you can select up to 6) then the output reverts
+  to 3 columns [theme default]. This will be a setting that can be overridden in future but is not currently
+   available - see https://github.com/WordPress/gutenberg/issues/20588

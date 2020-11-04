@@ -21,19 +21,21 @@ $org_name_field    = get_theme_mod( 'org_name_field' );
 $logo_line_1 = 'no' === $org_name_checkbox ? get_bloginfo( 'name' ) : get_theme_mod( 'org_name_field' );
 $logo_line_2 = 'no' === $org_name_checkbox ? get_bloginfo( 'description' ) : get_bloginfo( 'name' );
 
-
+?>
+<a href="<?php echo esc_url_raw( get_home_url() ); ?>" aria-label="<?php bloginfo( 'name' ); ?> homepage">
+<?php
 if ( has_custom_logo() ) {
 	?>
 	<div class="nhsuk-header__logo">
-		
+
 		<?php if ( get_theme_mod( 'show_sitename' ) === 'yes' ) { ?>
 			<div class="nhsuk-header__transactional-service-name">
 			<?php the_custom_logo(); ?>
-				<a class="nhsuk-header__transactional-service-name--link" href="<?php echo esc_url_raw( get_home_url() ); ?>"><?php echo esc_html( $logo_line_1 ); ?></a>
+				<span class="nhsuk-header__transactional-service-name--link" ><?php echo esc_html( $logo_line_1 ); ?></span>
 			</div>
 			<?php
 		} else {
-			 the_custom_logo(); 
+			the_custom_logo();
 		}
 		?>
 	</div>
@@ -45,26 +47,26 @@ if ( has_custom_logo() ) {
 	if ( 'transactional' === $header_layout ) { // Transactional style display.
 		?>
 		<div class="nhsuk-header__logo nhsuk-header__logo--only">
-			<a class="nhsuk-header__link" href="<?php echo esc_url_raw( get_home_url() ); ?>" aria-label="<?php bloginfo( 'name' ); ?> homepage">
+			<span class="nhsuk-header__link" >
 				<?php
 				get_template_part( 'partials/nhslogo' );
 				?>
-			</a>
+			</span>
 		</div>
 		<div class="nhsuk-header__transactional-service-name">
-			<a class="nhsuk-header__transactional-service-name--link" href="<?php echo esc_url_raw( get_home_url() ); ?>"><?php echo esc_html( $logo_line_1 ); ?></a>
+			<span class="nhsuk-header__transactional-service-name--link"><?php echo esc_html( $logo_line_1 ); ?></span>
 		</div>
 		<?php
 	} else { // Organisational style display.
 		?>
 		<div class="nhsuk-header__logo">
-			<a class="nhsuk-header__link" href="<?php echo esc_url_raw( get_home_url() ); ?>" aria-label="<?php bloginfo( 'name' ); ?> homepage">
+			<span class="nhsuk-header__link" >
 				<?php
 				get_template_part( 'partials/nhslogo' );
 				?>
 				<span class="nhsuk-organisation-name"><?php echo esc_html( $logo_line_1 ); ?></span>
 				<span class="nhsuk-organisation-descriptor"><?php echo esc_html( $logo_line_2 ); ?></span>
-			</a>
+			</span>
 		</div>
 		<?php
 	}
@@ -75,10 +77,12 @@ if ( has_custom_logo() ) {
 } else {
 	?>
 	<div class="nhsuk-header__logo">
-		<a class="nhsuk-header__link" href="<?php echo esc_url_raw( get_home_url() ); ?>" aria-label="<?php bloginfo( 'name' ); ?> homepage">
+		<span class="nhsuk-header__link">
 			<span class="nhsuk-organisation-name"><?php echo esc_html( $logo_line_1 ); ?></span>
 			<span class="nhsuk-organisation-descriptor"><?php echo esc_html( $logo_line_2 ); ?></span>
-		</a>
+		</span>
 	</div>
 	<?php
 }
+?>
+</a>
