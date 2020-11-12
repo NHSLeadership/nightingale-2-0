@@ -38,33 +38,36 @@
   }
 
   .ld-status {
-    @extend .nhsuk-pill-standard;
+    @extend .nhsuk-tag;
 
     &.ld-status-waiting {
       border-color: $color_nhsuk-red;
     }
 
     &.ld-status-progress {
-      @extend .nhsuk-pill-notice;
+      @extend .nhsuk-tag;
     }
 
     &.ld-status-complete {
-      @extend .nhsuk-pill-success;
+      @extend .nhsuk-tag;
+      @extend .nhsuk-tag--green;
     }
   }
 
   .ld-breadcrumbs, .ld-course-status, .ld-item-details {
     .ld-status {
       &.ld-status-progress {
-        @extend .nhsuk-pill-notice;
+        @extend .nhsuk-tag;
       }
 
       &.ld-status-complete {
-        @extend .nhsuk-pill-success;
+        @extend .nhsuk-tag;
+        @extend .nhsuk-tag--green
       }
 
       &.ld-status-waiting {
-        @extend .nhsuk-pill-warn;
+        @extend .nhsuk-tag;
+        @extend .nhsuk-tag--yellow
       }
     }
   }

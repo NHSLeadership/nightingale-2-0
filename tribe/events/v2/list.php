@@ -61,7 +61,7 @@ $sidebar = nightingale_show_sidebar();
 			?>
 				">
 
-				<div class="nhsuk-grid-row nhsuk-promo-group">
+				<div class="nhsuk-grid-row nhsuk-card-group">
 
 					<?php foreach ( $events as $event ) : ?>
 						<?php $this->setup_postdata( $event ); ?>

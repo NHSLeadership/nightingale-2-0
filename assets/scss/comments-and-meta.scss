@@ -84,14 +84,16 @@
 			font-style : normal;
 
 			.comment-author-label {
-			  @extend .nhsuk-pill-standard;
+			  @extend .nhsuk-tag;
 
 			  &.comment-author-label-administrator {
-				@extend .nhsuk-pill-notice;
+				@extend .nhsuk-tag;
+				@extend .nhsuk-tag--aqua-green;
 			  }
 
 			  &.comment-author-label-facilitator {
-				@extend .nhsuk-pill-success;
+				@extend .nhsuk-tag;
+				@extend .nhsuk-tag--blue;
 			  }
 			}
 		  }
@@ -223,14 +225,8 @@
 		//text-decoration : none;
 
 		&:nth-of-type(2) {
-		  margin-left    : nhsuk-spacing(2);
-		  border-radius  : $nhsuk-border-radius;
-		  border         : $nhsuk-border-width-form-element solid;
-		  background     : $color_nhsuk-white;
-		  color          : $color_nhsuk-blue;
-		  border-color   : $color_nhsuk-blue;
-		  padding        : nhsuk-spacing(1);
-		  text-transform : uppercase;
+		  @extend .nhsuk-tag;
+		  @extend .nhsuk-tag--white;
 		}
 	  }
 	}
@@ -254,7 +250,8 @@
   .comments-link {
 	float : left;
 	@extend .nhsuk-body-s;
-	@extend .nhsuk-pill-success;
+	@extend .nhsuk-tag;
+	@extend .nhsuk-tag--green;
 
 	a {
 	  color : $color_nhsuk-green;
@@ -295,7 +292,7 @@
 
 .pagination_split_post {
   .post-page-numbers {
-	@extend .nhsuk-pill-notice;
+
 
 	&:first-of-type {
 	  margin-right : nhsuk-spacing(1);

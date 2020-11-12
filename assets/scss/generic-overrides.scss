@@ -62,6 +62,15 @@
 	}
   }
 }
+.pagination_split_post {
+  .post-page-numbers {
+	@extend .nhsuk-tag;
+	@extend .nhsuk-tag--grey;
+	&.current {
+	  @extend .nhsuk-tag--white;
+	}
+  }
+}
 
 .gallery-caption {
   @extend .nhsuk-image__caption;
@@ -75,42 +84,6 @@
   color : $color_nhsuk-blue;
 }
 
-.nhsuk-pill-standard {
-  border-radius    : $nhsuk-border-radius;
-  border           : $nhsuk-border-width-form-element solid;
-  background-color : $color_nhsuk-white;
-  text-align       : center;
-  padding          : nhsuk-spacing(1) nhsuk-spacing(3);
-  width            : fit-content;
-  text-transform   : uppercase;
-  font-weight      : $nhsuk-font-bold;
-  letter-spacing   : .5px;
-  font-size        : 0.75rem;
-  line-height      : 1.1;
-  display          : inline-block;
-  position         : relative;
-  top              : -nhsuk-spacing(1);
-  border-color     : $color_nhsuk-grey-1;
-  color            : $color_nhsuk-grey-1;
-}
-
-.nhsuk-pill-notice {
-  @extend .nhsuk-pill-standard;
-  border-color : $color_nhsuk-blue;
-  color        : $color_nhsuk-blue;
-}
-
-.nhsuk-pill-success {
-  @extend .nhsuk-pill-standard;
-  border-color : $color_nhsuk-green;
-  color        : $color_nhsuk-green;
-}
-
-.nhsuk-pill-warn {
-  @extend .nhsuk-pill-standard;
-  border-color : $color_nhsuk-red;
-  color        : $color_nhsuk-red;
-}
 
 #primary {
   h1, p, .nhsuk-pagination__page {
@@ -131,17 +104,20 @@
 
   footer {
 	.edit-link {
-	  @extend .nhsuk-pill-standard;
+	  @extend .nhsuk-tag;
 	  text-decoration : none;
 	  /*margin-left: nhsuk-spacing(4);*/
 
 	  a {
-		color : $color_nhsuk-grey-1;
+		color : $color_nhsuk-white;
 	  }
 	}
 
 	.tags-links, .cat-links {
-	  @extend .nhsuk-pill-notice;
+	  @extend .nhsuk-tag;
+	  a {
+		color: $color_nhsuk-white
+	  }
 	}
   }
 }

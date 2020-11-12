@@ -35,7 +35,7 @@ $sidebar = nightingale_show_sidebar();
 			if ( have_posts() ) :
 				?>
 
-				<div class="nhsuk-grid-row nhsuk-promo-group">
+				<div class="nhsuk-grid-row nhsuk-card-group">
 
 					<?php
 					/* Start the Loop */

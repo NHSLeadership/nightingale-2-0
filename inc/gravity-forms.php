@@ -34,7 +34,7 @@
 				// Replace field instruction divs with <small> elements.
 				$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
 				// Indicate mandatory fields with "Required" rather than "*".
-				$form_string = str_replace( "<span class='gfield_required'>*</span>", "&nbsp;&nbsp;<span class='gfield_required nhsuk-pill-standard nhsuk-pill-warn'>Required</span>", $form_string );
+				$form_string = str_replace( "<span class='gfield_required'>*</span>", "&nbsp;&nbsp;<span class='gfield_required nhsuk-tag nhsuk-tag--yellow'>Required</span>", $form_string );
 				// Replace main gfield_label elements with nhsuk-label.
 				$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
 				// Remove <ul>s around elements.
@@ -76,7 +76,7 @@
 			if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 				$label .= '<label class="nhsuk-label">' . $field->label;
 				if ( true === $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
-					$label .= '&nbsp;&nbsp;<span class="nhsuk-pill-warn">Required</span>';
+					$label .= '&nbsp;&nbsp;<span class="nhsuk-tag">Required</span>';
 				}
 
 				if ( 1 === $errorflag ) {

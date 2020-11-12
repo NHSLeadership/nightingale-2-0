@@ -61,14 +61,14 @@ $event_id = get_the_ID();
 
 					if ( has_post_thumbnail() ) :
 
-						the_post_thumbnail( 'large', [ 'class' => 'nhsuk-promo__img' ] );
+						the_post_thumbnail( 'large', [ 'class' => 'nhsuk-card__img' ] );
 
 					else :
 
 						$fallback = get_theme_mod( 'blog_fallback' );
 
 						if ( $fallback ) {
-							echo wp_get_attachment_image( $fallback, 'large', false, [ 'class' => 'nhsuk-promo__img' ] );
+							echo wp_get_attachment_image( $fallback, 'large', false, [ 'class' => 'nhsuk-card__img' ] );
 						}
 
 					endif;

@@ -8,7 +8,6 @@
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version   1.1 21st August 2019
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

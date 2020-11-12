@@ -13,7 +13,7 @@
     display: none !important;
   }
   .download-count {
-    @extend .nhsuk-pill-standard;
+    @extend .nhsuk-tag;
     position: absolute;
     right: 0;
   }

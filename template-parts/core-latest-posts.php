@@ -50,7 +50,7 @@ $the_query = new WP_Query( $args );
 
 // The Loop.
 if ( $the_query->have_posts() ) : ?>
-	<div class="nhsuk-grid-row nhsuk-promo-group">
+	<div class="nhsuk-grid-row nhsuk-card-group">
 
 		<?php
 		while ( $the_query->have_posts() ) :
