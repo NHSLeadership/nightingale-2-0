@@ -11886,6 +11886,11 @@ span.search-terms {
   padding-left: 0;
 }
 
+.gform_wrapper .gform_body ul.gform_fields li.gfield .ginput_container input:read-only, .gform_wrapper .gform_body ul.gform_fields li.gfield .ginput_container select:read-only {
+  background-color: inherit;
+  border: 1px solid #768692;
+}
+
 .gform_wrapper .gform_body ul.gform_fields li.gfield .ginput_preview {
   clear: both;
   padding: 8px 0;

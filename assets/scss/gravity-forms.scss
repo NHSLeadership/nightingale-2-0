@@ -98,6 +98,12 @@
       margin-left: 0;
       padding-left: 0;
       li.gfield {
+        .ginput_container {
+          input:read-only, select:read-only {
+            background-color: inherit;
+            border: 1px solid $color_nhsuk-mid-grey;
+          }
+        }
         .ginput_preview {
           clear: both;
           padding: nhsuk-spacing(2) 0;
