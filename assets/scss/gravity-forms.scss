@@ -321,7 +321,8 @@
 	margin-top: nhsuk-spacing(2);
 	.gv-approval-toggle {
 	  border: 0;
-	  margin-bottom: nhsuk-spacing(2);
+	  margin-bottom: nhsuk-spacing(3);
+	  display: block !important;
 	  &:before {
 		word-break  : initial;
 		width       : fit-content;
@@ -334,26 +335,39 @@
 	  }
 
 	  @extend .nhsuk-button;
+	  &:hover {
+		background: $color_nhsuk-light-grey;
+		&:before {
+		  color: $color_nhsuk-black;
+		  text-decoration: underline;
+		}
+	  }
 
 	  &.gv-approval-approved {
 		&:before {
-		  content : 'Approve \2713';
+		  content : '\2713 \00A0 Approve';
 		}
 
 	  }
 	  &.gv-approval-disapproved {
 		background: $color_nhsuk-red;
 		&:before {
-		  content: 'Disapprove \2715';
+		  content: '\2715 \00A0 Decline';
+		}
+		&:hover {
+		  background: $color_nhsuk-light-grey;
 		}
 	  }
 
 	  &.gv-approval-unapproved {
 		background: $color_nhsuk-warm-yellow;
 		&:before {
-		  content: 'Unset / Reset \267A';
+		  content: '\27F2 \00A0 Reset';
 		  background: inherit;
 		  color: $color_nhsuk-black;
+		}
+		&:hover {
+		  background: $color_nhsuk-light-grey;
 		}
 	  }
 	}

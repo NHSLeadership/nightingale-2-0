@@ -12061,7 +12061,8 @@ span.search-terms {
 
 .tippy-popper .tippy-content .gv-approval-toggle {
   border: 0;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  display: block !important;
 }
 
 .tippy-popper .tippy-content .gv-approval-toggle:before {
@@ -12075,8 +12076,17 @@ span.search-terms {
   color: white;
 }
 
+.tippy-popper .tippy-content .gv-approval-toggle:hover {
+  background: #e8edee;
+}
+
+.tippy-popper .tippy-content .gv-approval-toggle:hover:before {
+  color: #212b32;
+  text-decoration: underline;
+}
+
 .tippy-popper .tippy-content .gv-approval-toggle.gv-approval-approved:before {
-  content: 'Approve \2713';
+  content: '\2713 \00A0 Approve';
 }
 
 .tippy-popper .tippy-content .gv-approval-toggle.gv-approval-disapproved {
@@ -12084,7 +12094,11 @@ span.search-terms {
 }
 
 .tippy-popper .tippy-content .gv-approval-toggle.gv-approval-disapproved:before {
-  content: 'Disapprove \2715';
+  content: '\2715 \00A0 Decline';
+}
+
+.tippy-popper .tippy-content .gv-approval-toggle.gv-approval-disapproved:hover {
+  background: #e8edee;
 }
 
 .tippy-popper .tippy-content .gv-approval-toggle.gv-approval-unapproved {
@@ -12092,9 +12106,13 @@ span.search-terms {
 }
 
 .tippy-popper .tippy-content .gv-approval-toggle.gv-approval-unapproved:before {
-  content: 'Unset / Reset \267A';
+  content: '\27F2 \00A0 Reset';
   background: inherit;
   color: #212b32;
+}
+
+.tippy-popper .tippy-content .gv-approval-toggle.gv-approval-unapproved:hover {
+  background: #e8edee;
 }
 
 /*
