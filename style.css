@@ -12893,7 +12893,7 @@ ul.download-versions {
   display: inline-block;
   padding: 16px 24px;
   margin-bottom: 0;
-  font-size: 90%;
+  font-size: 16px;
 }
 
 .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
@@ -12913,7 +12913,7 @@ ul.download-versions {
 .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
   background-color: #f0f4f5;
   border: 2px solid #aeb7bd;
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0 0;
   margin-bottom: -2px !important;
   border-bottom: 2px solid #f0f4f5;
   font-weight: 600;

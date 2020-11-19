@@ -14,7 +14,7 @@
 	  display       : inline-block;
 	  padding       : nhsuk-spacing(3) nhsuk-spacing(4);
 	  margin-bottom : 0;
-	  font-size     : 90%;
+	  font-size     : $nhsuk-base-font-size;
 
 
 	  a {
@@ -36,7 +36,7 @@
 		background-color : $color_nhsuk-grey-5;
 
 		border           : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
-		border-radius    : $nhsuk-border-radius $nhsuk-border-radius 0px 0px;
+		border-radius    : $nhsuk-border-radius $nhsuk-border-radius 0 0;
 		margin-bottom    : -$nhsuk-border-width-form-element !important;
 		border-bottom    : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
 		font-weight      : $nhsuk-font-bold;
