@@ -37,7 +37,7 @@
 
 		border           : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 		border-radius    : $nhsuk-border-radius $nhsuk-border-radius 0 0;
-		margin-bottom    : -$nhsuk-border-width-form-element !important;
+		margin-bottom    : -$nhsuk-border-width-form-element;
 		border-bottom    : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
 		font-weight      : $nhsuk-font-bold;
 		color            : $nhsuk-link-color;
@@ -65,7 +65,7 @@
 	  margin-top : nhsuk-spacing(2);
 
 	  .nhsuk-bordered-tabs-item {
-		background : url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left .75rem no-repeat;
+		background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left nhsuk-px-to-rem(12px) no-repeat; // sass-lint:disable-line quotes
 		padding    : 0 0 nhsuk-spacing(2) nhsuk-spacing(5);
 		position   : relative;
 		display    : list-item;
@@ -76,7 +76,7 @@
 
 		a {
 		  display : inline-block;
-		  color   : $nhsuk-text-color !important;
+		  color   : $nhsuk-text-color;
 		}
 	  }
 	}

@@ -1,6 +1,6 @@
 <?php
 /**
- * The NHS logo for our theme
+ * The Rendering of the tabbed content layout partial
  *
  * This is the template that displays tabbed navigation for sub sections.
  *

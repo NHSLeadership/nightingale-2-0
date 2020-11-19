@@ -4,7 +4,7 @@
  *
  * @package   Nightingale-2-0
  * @copyright NHS Leadership Academy, Very Twisty
- * @version   Feburary 2020
+ * @version   1.0
  */
 
 // Tutorial found here:
@@ -80,7 +80,7 @@ function nightingale_render_tabbed_pages( $post ) {
 }
 
 /**
- * Gets the start and end dates and turns them into human readable format.
+ * Gets the value of tabbed page toggle and saves it to postmeta.
  *
  * @param int $post_id the unique post identifier.
  */

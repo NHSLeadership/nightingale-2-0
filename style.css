@@ -12914,7 +12914,7 @@ ul.download-versions {
   background-color: #f0f4f5;
   border: 2px solid #aeb7bd;
   border-radius: 4px 4px 0 0;
-  margin-bottom: -2px !important;
+  margin-bottom: -2px;
   border-bottom: 2px solid #f0f4f5;
   font-weight: 600;
   color: #005eb8;
@@ -12947,7 +12947,7 @@ ul.download-versions {
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
     display: inline-block;
-    color: #212b32 !important;
+    color: #212b32;
   }
 }
 
