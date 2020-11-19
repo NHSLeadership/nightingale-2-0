@@ -7,7 +7,6 @@
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version   1.1 21st August 2019
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

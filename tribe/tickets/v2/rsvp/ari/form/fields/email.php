@@ -33,7 +33,7 @@ $email = apply_filters( 'tribe_tickets_rsvp_form_email', '', $this );
 		for="tribe-tickets-rsvp-email-<?php echo esc_attr( $rsvp->ID ); ?>"
 	>
 		<?php esc_html_e( 'Email', 'nightingale' ); ?><span class="screen-reader-text"><?php esc_html_e( 'required', 'nightingale' ); ?></span>
-		<span class="tribe-required nhsuk-pill-warn" aria-hidden="true" role="presentation">*</span>
+		<span class="tribe-required nhsuk-tag nhsuk-tag--yellow" aria-hidden="true" role="presentation">*</span>
 	</label>
 	<input
 		type="email"

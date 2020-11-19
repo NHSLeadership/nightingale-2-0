@@ -137,9 +137,11 @@
   }
 
   /* Panel Group editor tweak */
-  .nhsuk-promo-group .block-editor-inner-blocks {
-    width : 100%;
-    float : left;
+  .nhsuk-promo-group, .nhsuk-card-group, .nhsuk-grid-row {
+    .block-editor-inner-blocks {
+      width : 100%;
+      float : left;
+    }
   }
 
   .nhsuk-do-dont-list {
@@ -365,4 +367,8 @@
     }
   }
   @import 'assets/scss/color-mixer';//gutenberg page style overrides
+  // Legacy components - added 16th November 2020
+  @import 'assets/scss/nhsblocks/legacy/panel/panel';
+  @import 'assets/scss/nhsblocks/legacy/promo/promo';
+  @import 'assets/scss/nhsblocks/legacy/legacy';
 }

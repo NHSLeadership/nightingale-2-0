@@ -78,7 +78,7 @@ function nightingale_add_class_to_excerpt( $excerpt ) {
 		return $excerpt;
 	}
 
-	return str_replace( '<p>', '<p class="nhsuk-promo__description">', $excerpt );
+	return str_replace( '<p>', '<p class="nhsuk-card__description">', $excerpt );
 }
 
 add_filter( 'the_excerpt', 'nightingale_add_class_to_excerpt', 10 );
