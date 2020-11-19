@@ -355,9 +355,14 @@ require get_template_directory() . '/inc/breadcrumbs.php';
 require get_template_directory() . '/inc/color-picker.php';
 
 /**
- * Color Picker.
+ * Last Reviewed.
  */
 require get_template_directory() . '/inc/last-reviewed.php';
+
+/**
+ * Tabbed Page layout.
+ */
+require get_template_directory() . '/inc/tabbed-pages.php';
 
 /**
  * Create an array of active plugins.

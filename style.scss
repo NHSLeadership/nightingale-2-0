@@ -53,9 +53,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/events-calendar-styling';
 // Download Monitor plugin styling to match NHSUK design patterns
 @import 'assets/scss/download-monitor';
-// Events Calendar plugin styling to match NHSUK design patterns
+// Emergency Alert design patterns.
 @import 'assets/scss/emergency_alert';
-// Events Calendar plugin styling to match NHSUK design patterns
+// Add tabbed layout design patterns.
+@import 'assets/scss/tabs';
+// Add Feedback Banner pattern
 @import 'assets/scss/feedback_banner';
 @import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
 @import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
