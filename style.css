@@ -12115,86 +12115,6 @@ span.search-terms {
   background: #e8edee;
 }
 
-/*
-.gv-approval-toggle {
-  color           : #008000 !important;
-  box-shadow      : none !important;
-  text-decoration : none !important;
-  border-bottom   : none !important
-}
-
-.gv-approval-toggle span.screen-reader-text {
-  position : absolute;
-  margin   : -1px;
-  padding  : 0;
-  height   : 1px;
-  width    : 1px;
-  overflow : hidden;
-  clip     : rect(0 0 0 0);
-  border   : 0
-}
-
-.gv-approval-toggle.gv-approval-disapproved {
-  color : #981225 !important
-}
-
-.gv-approval-toggle.gv-approval-disapproved::before {
-  content : "\f158"
-}
-
-.gv-approval-toggle.gv-approval-unapproved {
-  color : #ecaa00 !important
-}
-
-.gv-approval-toggle.gv-approval-unapproved::before {
-  content : "\f159"
-}
-
-.gv-approval-toggle.gv-approval-loading {
-  opacity : .7;
-  cursor  : wait !important
-}
-
-.gv-approval-toggle.gv-approval-loading::before {
-  background : #f0f0f0 !important
-}
-
-.gv-approval-toggle::before {
-  font-family           : "dashicons";
-  left                  : 0;
-  top                   : 0;
-  cursor                : pointer;
-  content               : "\f147";
-  width                 : 24px;
-  height                : 24px;
-  border                : 1px solid #dedede;
-  padding               : 4px;
-  -webkit-border-radius : 2px;
-  -moz-border-radius    : 2px;
-  border-radius         : 2px;
-  display               : inline;
-  font-size             : 24px;
-  -webkit-box-shadow    : inset 0 3px 5px rgba(0, 0, 0, 0);
-  -moz-box-shadow       : inset 0 3px 5px rgba(0, 0, 0, 0);
-  box-shadow            : inset 0 3px 5px rgba(0, 0, 0, 0)
-}
-
-.gv-approval-toggle.selected:link::before, .gv-approval-toggle.selected:visited::before {
-  background : #f0f0f0
-}
-
-.gv-approval-toggle.selected.popover:link::before {
-  cursor : not-allowed
-}
-
-.gv-approval-toggle:hover::before {
-  background : #eaeaea
-}
-
-.gv-approval-toggle:active::before {
-  background : #dedede
-}
-*/
 .learndash-wrapper {
   /*
   Style wpProQuiz
@@ -12955,6 +12875,80 @@ ul.download-versions {
 
 .nhsuk-global-alert__content > *:last-child {
   margin-bottom: 0;
+}
+
+.nhsuk-bordered-tabs-container {
+  padding-top: 8px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #aeb7bd;
+}
+
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs {
+  padding: 0;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item {
+  display: inline-block;
+  padding: 16px 24px;
+  margin-bottom: 0;
+  font-size: 90%;
+}
+
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
+  text-decoration: none;
+  word-break: initial;
+}
+
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a:visited {
+  text-decoration: none;
+  color: #330072;
+}
+
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a:hover {
+  text-decoration: underline;
+}
+
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
+  background-color: #f0f4f5;
+  border: 2px solid #aeb7bd;
+  border-radius: 4px 4px 0px 0px;
+  margin-bottom: -2px !important;
+  border-bottom: 2px solid #f0f4f5;
+  font-weight: 600;
+  color: #005eb8;
+}
+
+@media (max-width: 40.0525em) {
+  .nhsuk-bordered-tabs-container {
+    background: inherit;
+    border-bottom: none;
+  }
+  .nhsuk-bordered-tabs-container:before {
+    content: 'Pages in this section:';
+    font-weight: 600;
+    margin: 0 0 16px 16px;
+  }
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin-top: 8px;
+  }
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item {
+    background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left 0.75rem no-repeat;
+    padding: 0 0 8px 32px;
+    position: relative;
+    display: list-item;
+  }
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
+    border: none !important;
+  }
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
+    display: inline-block;
+    color: #212b32 !important;
+  }
 }
 
 /* ==========================================================================

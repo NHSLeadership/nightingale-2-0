@@ -1,0 +1,85 @@
+.nhsuk-bordered-tabs-container {
+  padding-top      : nhsuk-spacing(2);
+  background-color : $color_nhsuk-white;
+  border-bottom    : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
+
+
+  .nhsuk-bordered-tabs {
+	padding       : 0;
+	margin-bottom : 0;
+	display       : flex;
+
+
+	.nhsuk-bordered-tabs-item {
+	  display       : inline-block;
+	  padding       : nhsuk-spacing(3) nhsuk-spacing(4);
+	  margin-bottom : 0;
+	  font-size     : 90%;
+
+
+	  a {
+		text-decoration : none;
+		word-break      : initial;
+
+
+		&:visited {
+		  text-decoration : none;
+		  color           : $nhsuk-link-visited-color;
+		}
+
+		&:hover {
+		  text-decoration : underline;
+		}
+	  }
+
+	  &.nhsuk-bordered-tabs-item-active {
+		background-color : $color_nhsuk-grey-5;
+
+		border           : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
+		border-radius    : $nhsuk-border-radius $nhsuk-border-radius 0px 0px;
+		margin-bottom    : -$nhsuk-border-width-form-element !important;
+		border-bottom    : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
+		font-weight      : $nhsuk-font-bold;
+		color            : $nhsuk-link-color;
+	  }
+	}
+  }
+}
+
+
+@include mq($until : tablet) {
+  .nhsuk-bordered-tabs-container {
+	background    : inherit;
+	border-bottom : none;
+
+	&:before {
+	  content     : 'Pages in this section:';
+	  font-weight : $nhsuk-font-bold;
+	  margin      : 0 0 nhsuk-spacing(3) nhsuk-spacing(3);
+	}
+
+	.nhsuk-bordered-tabs {
+	  display    : block;
+	  list-style : none;
+	  padding    : 0;
+	  margin-top : nhsuk-spacing(2);
+
+	  .nhsuk-bordered-tabs-item {
+		background : url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left .75rem no-repeat;
+		padding    : 0 0 nhsuk-spacing(2) nhsuk-spacing(5);
+		position   : relative;
+		display    : list-item;
+
+		&.nhsuk-bordered-tabs-item-active {
+		  border : none !important;
+		}
+
+		a {
+		  display : inline-block;
+		  color   : $nhsuk-text-color !important;
+		}
+	  }
+	}
+  }
+}
+

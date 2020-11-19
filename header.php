@@ -86,13 +86,20 @@ echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $
 get_template_part( 'partials/topnav' );
 ?>
 </header>
-<?php echo nightingale_breadcrumb(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+<?php
+if( $page_tabbed = get_post_meta( get_the_id(), 'tabbed-page', true ) ) {
+	get_template_part( 'partials/tabs' );
+} else {
+	echo nightingale_breadcrumb(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+}
+?>
 
 <?php
 
 $page_color = get_post_meta( get_the_id(), 'page-color', true );
 
 $extra_styles = $page_color ? 'page-style--' . $page_color : '';
+
 
 ?>
 
