@@ -105,18 +105,20 @@
   footer {
 	.edit-link {
 	  @extend .nhsuk-tag;
+	  @extend .nhsuk-tag--white;
 	  text-decoration : none;
 	  /*margin-left: nhsuk-spacing(4);*/
 
 	  a {
-		color : $color_nhsuk-white;
+		color : $color_nhsuk-blue;
 	  }
 	}
 
 	.tags-links, .cat-links {
 	  @extend .nhsuk-tag;
+	  @extend .nhsuk-tag--grey;
 	  a {
-		color: $color_nhsuk-white
+		//color: $color_nhsuk-white
 	  }
 	}
   }

@@ -223,3 +223,36 @@ span.search-terms {
   font-weight: bold;
   background: $color_nhsuk-warm-yellow;
 }
+
+button {
+  margin-right: nhsuk-spacing(3);
+  margin-left: nhsuk-spacing(3);
+}
+
+// new card variations
+.nhsuk-card {
+  .nhsuk-card__description {
+    display: flow-root;
+  }
+}
+.nhsuk-card.is-style-panel-with-label {
+  @extend .nhsuk-card--feature;
+  .nhsuk-card__content {
+    @extend .nhsuk-card__content--feature;
+
+    h2 {
+      @extend .nhsuk-card__heading;
+      @extend .nhsuk-card__heading--feature;
+      @extend .nhsuk-heading-m;
+    }
+  }
+}
+.nhsuk-card.is-style-panel-grey {
+  background: inherit;
+  border: none;
+}
+.nhsuk-card {
+  figure {
+    margin: 0;
+  }
+}
