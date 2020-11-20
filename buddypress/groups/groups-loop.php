@@ -30,19 +30,20 @@ bp_nouveau_before_loop();
 
         <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
 
-            <div class="nhsuk-card nhsuk-card--clickable">
+            <div class="nhsuk-card">
+                <?php if( !bp_disable_group_cover_image_uploads() ) { ?>
+		            <?php
+		            $group_cover_image_url = bp_attachments_get_attachment( 'url', array(
+			            'object_dir' => 'groups',
+			            'item_id'    => bp_get_group_id(),
+		            ) );
+		            $default_group_cover   = get_theme_mod( 'buddyboss_group_cover_default', get_theme_file_uri( 'assets/images/svg/group-default.svg' ) );
+		            $group_cover_image_url = $group_cover_image_url ?: $default_group_cover;
+		            echo '<img src="' . $group_cover_image_url . '" class="nhsuk-card__img" />';
+		            ?>
+	            <?php } ?>
                 <div class="nhsuk-card__content">
-	                <?php if( !bp_disable_group_cover_image_uploads() ) { ?>
-		                <?php
-		                $group_cover_image_url = bp_attachments_get_attachment( 'url', array(
-			                'object_dir' => 'groups',
-			                'item_id'    => bp_get_group_id(),
-		                ) );
-		                $default_group_cover   = get_theme_mod( 'buddyboss_group_cover_default', get_theme_file_uri( 'assets/images/svg/group-default.svg' ) );
-		                $group_cover_image_url = $group_cover_image_url ?: $default_group_cover;
-		                echo '<img src="' . $group_cover_image_url . '" class="nhsuk-card__img" />';
-		                ?>
-                        <?php } ?>
+
 
                     <h2 class="nhsuk-card__heading nhsuk-heading-m">
 	                    <?php bp_group_link(); ?>

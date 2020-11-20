@@ -33,7 +33,7 @@
 
 						<div class="item-block">
 
-							<h2 class="list-title groups-title"><?php bp_group_link(); ?></h2>
+							<h2 class="list-title groups-title"><?php nightingale_bp_group_link(); ?></h2>
 
 							<p class="item-meta group-details">
 	                            <?php $inviter = bp_groups_get_invited_by(); ?>

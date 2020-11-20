@@ -64,3 +64,63 @@ if ( function_exists( 'bp_is_active' ) ) {
 } else {
 	$bp_active = 'false';
 }
+/**
+ * Group Admins Count
+ */
+if ( ! function_exists( 'nightingale_theme_bp_get_group_admins_count' ) ) {
+
+	function nightingale_theme_bp_get_group_admins_count() {
+		global $groups_template;
+		$group = $groups_template->group;
+
+		if ( ! empty( $group->admins ) ) {
+			return sizeof( $group->admins );
+		}
+	}
+}
+
+/**
+ * Output an HTML-formatted link for the current group in the loop.
+ *
+ * @since BuddyPress 2.9.0
+ *
+ * @param BP_Groups_Group|null $group Optional. Group object.
+ *                                    Default: current group in loop.
+ */
+function nightingale_bp_group_link( $group = null ) {
+	echo nightingale_bp_get_group_link( $group );
+}
+/**
+ * Return an HTML-formatted link for the current group in the loop.
+ *
+ * @since BuddyPress 2.9.0
+ *
+ * @param BP_Groups_Group|null $group Optional. Group object.
+ *                                    Default: current group in loop.
+ * @return string
+ */
+function nightingale_bp_get_group_link( $group = null ) {
+	global $groups_template;
+
+	if ( empty( $group ) ) {
+		$group =& $groups_template->group;
+	}
+
+	$link = sprintf(
+		'<a href="%s" class="bp-group-home-link %s-home-link">%s</a>',
+		esc_url( bp_get_group_permalink( $group ) ),
+		esc_attr( bp_get_group_slug( $group ) ),
+		esc_html( bp_get_group_name( $group ) )
+	);
+
+	/**
+	 * Filters the HTML-formatted link for the current group in the loop.
+	 *
+	 * @since BuddyPress 2.9.0
+	 *
+	 * @param string          $value HTML-formatted link for the
+	 *                               current group in the loop.
+	 * @param BP_Groups_Group $group The current group object.
+	 */
+	return apply_filters( 'nightingale_bp_get_group_link', $link, $group );
+}

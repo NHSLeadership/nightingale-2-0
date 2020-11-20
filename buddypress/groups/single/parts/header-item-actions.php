@@ -10,10 +10,10 @@
 
 	<?php if ( bp_current_user_can( 'groups_access_group' ) ) : ?>
 
-        <?php if ( buddyboss_theme_bp_get_group_admins_count() > 1 ) { ?>
-            <h4 class="bp-title"><?php printf( __( '%s (%s)', 'nightingale'), get_group_role_label( bp_get_current_group_id(), 'organizer_plural_label_name' ), buddyboss_theme_bp_get_group_admins_count() ); ?></h4>
+        <?php if ( nightingale_theme_bp_get_group_admins_count() > 1 ) { ?>
+            <h4 class="bp-title"><?php printf( __( '%s (%s)', 'nightingale'), get_group_role_label( bp_get_current_group_id(), 'organizer_plural_label_name' ), nightingale_theme_bp_get_group_admins_count() ); ?></h4>
 		<?php } else { ?>
-            <h4 class="bp-title"><?php printf( __( '%s (%s)', 'nightingale'), get_group_role_label( bp_get_current_group_id(), 'organizer_singular_label_name' ), buddyboss_theme_bp_get_group_admins_count() ); ?></h4>
+            <h4 class="bp-title"><?php printf( __( '%s (%s)', 'nightingale'), get_group_role_label( bp_get_current_group_id(), 'organizer_singular_label_name' ), nightingale_theme_bp_get_group_admins_count() ); ?></h4>
 		<?php } ?>
 
 		<dl class="moderators-lists">
