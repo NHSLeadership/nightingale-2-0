@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
+<filter  width="150%" height="150%" id="a" filterUnits="objectBoundingBox" y="-15.9%" x="-25%">
+	<feOffset  result="shadowOffsetOuter1" in="SourceAlpha" dy="2"></feOffset>
+	<feGaussianBlur  stdDeviation="1.5" result="shadowBlurOuter1" in="shadowOffsetOuter1"></feGaussianBlur>
+	<feComposite  operator="out" in2="SourceAlpha" result="shadowBlurOuter1" in="shadowBlurOuter1"></feComposite>
+	<feColorMatrix  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0994961504 0" in="shadowBlurOuter1"></feColorMatrix>
+</filter>
+<g>
+	<g transform="translate(3 1)">
+		<g filter="url(#a)">
+			<circle id="b_2_" cx="11" cy="11" r="11"/>
+		</g>
+		<g>
+			<circle id="b_1_" fill="#FFFFFF" cx="11" cy="11" r="11"/>
+		</g>
+		<circle fill="none" stroke="#F9BB2D" cx="11" cy="11" r="10.5"/>
+	</g>
+	<path display="none" fill="#F9BB2D" d="M11.267,16.228v0.52c0,0.167-0.138,0.32-0.321,0.32H8.913c-0.183,0-0.321-0.153-0.321-0.32
+		v-5.608c0-0.168,0.138-0.321,0.321-0.321h2.032c0.184,0,0.321,0.152,0.321,0.321v0.137l1.91-2.292V7.06
+		c0-0.627,0.642-0.993,1.237-0.734c0.826,0.504,1.436,1.742,1.436,2.781v1.207h2.232c0.732,0,1.329,0.596,1.329,1.375l-0.505,4.034
+		c0,0.734-0.597,1.345-1.345,1.345h-3.56c-0.734,0-1.437-0.184-2.018-0.504L11.267,16.228z M11.267,15.524l1.008,0.474
+		c0.504,0.275,1.101,0.428,1.727,0.428h3.56c0.397,0,0.702-0.321,0.702-0.749l0.521-4.034c0-0.382-0.321-0.688-0.702-0.688H15.53
+		c-0.169,0-0.321-0.153-0.321-0.321V9.107c0-0.825-0.505-1.849-1.07-2.2c-0.184-0.077-0.321,0-0.321,0.153v2.047
+		c0,0.076-0.031,0.137-0.077,0.198l-2.475,2.964V15.524z M9.234,16.426h1.391V11.46H9.234V16.426z"/>
+	<path fill="#F9BB2D" d="M16.737,8.081v-0.52c0-0.167,0.138-0.32,0.321-0.32h2.032c0.183,0,0.321,0.153,0.321,0.32v5.608
+		c0,0.168-0.139,0.321-0.321,0.321h-2.032c-0.184,0-0.321-0.152-0.321-0.321v-0.137l-1.91,2.292v1.925
+		c0,0.627-0.642,0.993-1.237,0.733c-0.826-0.504-1.436-1.742-1.436-2.781v-1.206H9.922c-0.732,0-1.329-0.596-1.329-1.375
+		l0.505-4.034c0-0.734,0.597-1.345,1.345-1.345h3.56c0.734,0,1.437,0.184,2.018,0.504L16.737,8.081z M16.737,8.784l-1.009-0.474
+		c-0.504-0.275-1.1-0.428-1.727-0.428h-3.56c-0.397,0-0.702,0.321-0.702,0.749L9.22,12.666c0,0.382,0.321,0.688,0.702,0.688h2.552
+		c0.169,0,0.321,0.153,0.321,0.321v1.527c0,0.826,0.505,1.85,1.07,2.201c0.184,0.076,0.321,0,0.321-0.153v-2.048
+		c0-0.076,0.031-0.137,0.077-0.197l2.475-2.965V8.784z M18.77,7.883h-1.391v4.966h1.391V7.883z"/>
+</g>
+</svg>

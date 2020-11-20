@@ -21763,6 +21763,10 @@
   border: 1px solid #aeb7bd;
 }
 
+.edit-post-visual-editor .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-header__search-wrap .nhsuk-search__submit {
+  margin-left: unset;
+}
+
 .edit-post-visual-editor .wp-block-nhsblocks-heroblock, .block-editor-block-styles .wp-block-nhsblocks-heroblock, .block-editor-inserter__menu-help-panel .wp-block-nhsblocks-heroblock {
   left: 50%;
   margin-left: -50vw;

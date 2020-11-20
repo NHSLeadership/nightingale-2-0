@@ -7283,19 +7283,19 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
-.nhsuk-header__search {
+.nhsuk-header__search, #primary .nhsuk-buddy__search {
   position: relative;
   text-align: right;
 }
 
-.nhsuk-header__search:after {
+.nhsuk-header__search:after, #primary .nhsuk-buddy__search:after {
   clear: both;
   content: '';
   display: block;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-header__search {
+  .nhsuk-header__search, #primary .nhsuk-buddy__search {
     float: left;
     margin-left: 8px;
   }
@@ -7953,7 +7953,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   padding-top: 0;
 }
 
-.ie8 .nhsuk-header__search {
+.ie8 .nhsuk-header__search, .ie8 #primary .nhsuk-buddy__search, #primary .ie8 .nhsuk-buddy__search {
   background-color: #005eb8;
   clear: both;
   padding-bottom: 12px;
@@ -10040,7 +10040,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /* ==========================================================================
    COMPONENTS/ #SELECT
    ========================================================================== */
-.nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select {
+.nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select, .buddypress-wrap .subnav-filters div select, .buddypress-wrap .subnav-filters div input[type="search"] {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -10053,7 +10053,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select {
+  .nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select, .buddypress-wrap .subnav-filters div select, .buddypress-wrap .subnav-filters div input[type="search"] {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -10061,13 +10061,13 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select {
+  .nhsuk-select, .gform_wrapper .gform_body .gfield_select, .tribe-tickets-rsvp select, .buddypress-wrap .subnav-filters div select, .buddypress-wrap .subnav-filters div input[type="search"] {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-select:focus, .gform_wrapper .gform_body .gfield_select:focus, .tribe-tickets-rsvp select:focus {
+.nhsuk-select:focus, .gform_wrapper .gform_body .gfield_select:focus, .tribe-tickets-rsvp select:focus, .buddypress-wrap .subnav-filters div select:focus, .buddypress-wrap .subnav-filters div input:focus[type="search"] {
   border: 2px solid #212b32;
   box-shadow: inset 0 0 0 2px;
   outline: 4px solid #ffeb3b;
@@ -10075,18 +10075,22 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   outline-offset: 0;
 }
 
-.nhsuk-select option:active, .gform_wrapper .gform_body .gfield_select option:active, .tribe-tickets-rsvp select option:active,
+.nhsuk-select option:active, .gform_wrapper .gform_body .gfield_select option:active, .tribe-tickets-rsvp select option:active, .buddypress-wrap .subnav-filters div select option:active, .buddypress-wrap .subnav-filters div input[type="search"] option:active,
 .nhsuk-select option:checked,
 .gform_wrapper .gform_body .gfield_select option:checked,
 .tribe-tickets-rsvp select option:checked,
+.buddypress-wrap .subnav-filters div select option:checked,
+.buddypress-wrap .subnav-filters div input[type="search"] option:checked,
 .nhsuk-select:focus::-ms-value,
 .gform_wrapper .gform_body .gfield_select:focus::-ms-value,
-.tribe-tickets-rsvp select:focus::-ms-value {
+.tribe-tickets-rsvp select:focus::-ms-value,
+.buddypress-wrap .subnav-filters div select:focus::-ms-value,
+.buddypress-wrap .subnav-filters div input[type="search"]:focus::-ms-value {
   background-color: #005eb8;
   color: #ffffff;
 }
 
-.nhsuk-select--error, .gform_wrapper .gform_body .gform_wrapper .gfield_error .nhsuk-select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .gfield_select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .tribe-tickets-rsvp select, .tribe-tickets-rsvp .gform_wrapper .gform_body .gform_wrapper .gfield_error select {
+.nhsuk-select--error, .gform_wrapper .gform_body .gform_wrapper .gfield_error .nhsuk-select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .gfield_select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .tribe-tickets-rsvp select, .tribe-tickets-rsvp .gform_wrapper .gform_body .gform_wrapper .gfield_error select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .buddypress-wrap .subnav-filters div select, .buddypress-wrap .subnav-filters div .gform_wrapper .gform_body .gform_wrapper .gfield_error select, .gform_wrapper .gform_body .gform_wrapper .gfield_error .buddypress-wrap .subnav-filters div input[type="search"], .buddypress-wrap .subnav-filters div .gform_wrapper .gform_body .gform_wrapper .gfield_error input[type="search"] {
   border: 4px solid #d5281b;
 }
 
@@ -11260,7 +11264,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-header--transactional .nhsuk-header__search {
+  .nhsuk-header--transactional .nhsuk-header__search, .nhsuk-header--transactional #primary .nhsuk-buddy__search, #primary .nhsuk-header--transactional .nhsuk-buddy__search {
     height: 1rem;
   }
 }
@@ -13658,6 +13662,10 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   border: 1px solid #aeb7bd;
 }
 
+.nhsuk-header__search-wrap .nhsuk-search__submit {
+  margin-left: unset;
+}
+
 /* Hero fix so it works on all templates */
 .wp-block-nhsblocks-heroblock {
   left: 50%;
@@ -13720,6 +13728,58 @@ section.nhsuk-section:after,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters {
   display: inline-block;
+}
+
+#primary .nhsuk-buddy__search {
+  height: 48px;
+  float: none;
+  margin-left: unset;
+  width: 100%;
+}
+
+#primary .nhsuk-buddy__search .autocomplete__wrapper {
+  display: flex;
+}
+
+#primary .nhsuk-buddy__search .autocomplete__wrapper .nhsuk-search__input {
+  border-left: 2px solid #aeb7bd;
+  border-bottom: 2px solid #aeb7bd;
+  border-top: 2px solid #aeb7bd;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+#primary .nhsuk-buddy__search .autocomplete__wrapper .nhsuk-search__submit {
+  margin-top: unset;
+  margin-left: unset;
+  float: none;
+  border-right: 2px solid #aeb7bd;
+  border-bottom: 2px solid #aeb7bd;
+  border-top: 2px solid #aeb7bd;
+  border-left: 1px solid #aeb7bd;
+}
+
+#primary .nhsuk-buddy__search .autocomplete__wrapper .nhsuk-search__submit:hover {
+  background: #003087;
+}
+
+#primary .item-avatar img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+#primary .nhsuk-card__content .item-avatar {
+  text-align: center;
+}
+
+.buddypress-wrap .subnav-filters div select, .buddypress-wrap .subnav-filters div input[type="search"] {
+  background: #ffffff;
+  padding-right: 24px;
+}
+
+.buddypress-wrap div.select-wrap span.select-arrow {
+  z-index: 99;
 }
 
 /* ==========================================================================

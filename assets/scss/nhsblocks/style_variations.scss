@@ -139,6 +139,9 @@
   input[type="text"] {
     border: 1px solid $color_nhsuk-grey-3;
   }
+  .nhsuk-search__submit {
+    margin-left: unset;
+  }
 }
 
 /* Hero fix so it works on all templates */
