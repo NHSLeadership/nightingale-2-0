@@ -23,8 +23,6 @@
 			<div class="bp-groups-filter-wrap subnav-filters filters no-ajax">
 				<?php bp_get_template_part( 'common/filters/directory-filters' ); ?>
 			</div>
-
-			<?php bp_get_template_part( 'common/filters/grid-filters' ); ?>
 		</div>
 	</div>
 

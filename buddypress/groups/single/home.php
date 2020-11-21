@@ -13,14 +13,11 @@ if ( bp_has_groups() ) :
 	while ( bp_groups() ) :
 		bp_the_group();
 	?>
+	<?php bp_nouveau_group_header_template_part(); ?>
 
 		<?php bp_nouveau_group_hook( 'before', 'home_content' ); ?>
+<h1 class="entry-header"><?php echo esc_attr( bp_get_group_name() ); ?></h1>
 
-		<div id="item-header" role="complementary" data-bp-item-id="<?php bp_group_id(); ?>" data-bp-item-component="groups" class="groups-header single-headers">
-
-			<?php bp_nouveau_group_header_template_part(); ?>
-
-		</div><!-- #item-header -->
 
 		<?php if ( ( isset($bp_nouveau_appearance['group_nav_display']) && $bp_nouveau_appearance['group_nav_display'] ) && is_active_sidebar( 'group' ) && $group_cover_width != 'default' ) { ?>
 			<div class="bb-grid bb-user-nav-display-wrap">
@@ -28,12 +25,6 @@ if ( bp_has_groups() ) :
 		<?php } ?>
 
 		<div class="bp-wrap">
-
-			<?php if ( ! bp_nouveau_is_object_nav_in_sidebar() ) : ?>
-
-				<?php bp_get_template_part( 'groups/single/parts/item-nav' ); ?>
-
-			<?php endif; ?>
 
 			<div class="bb-profile-grid bb-grid">
 				<div id="item-body" class="item-body">

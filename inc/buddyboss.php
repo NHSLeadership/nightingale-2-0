@@ -124,3 +124,49 @@ function nightingale_bp_get_group_link( $group = null ) {
 	 */
 	return apply_filters( 'nightingale_bp_get_group_link', $link, $group );
 }
+
+function nightingale_bp_group_member_section_title() {
+	echo nightingale_bp_get_group_member_section_title();
+}
+
+/**
+ * Return the group member section header while in the groups members loop.
+ *
+ * @since BuddyPress 1.0.0
+ *
+ * @return string
+ */
+function nightingale_bp_get_group_member_section_title() {
+	$last_user_group_role_title = null;
+
+	$user_id               = bp_get_group_member_id();
+	$group_id              = bp_get_current_group_id();
+	$user_group_role_title = bp_get_user_group_role_title( $user_id, $group_id );
+
+	ob_start();
+
+	if ( $last_user_group_role_title != $user_group_role_title ) {
+		$last_user_group_role_title = $user_group_role_title;
+		?>
+		<li class="item-entry item-entry-header">
+
+			<?php bp_nouveau_group_hook( 'before', 'member_section_title' ); ?>
+
+			<?php
+			if ( groups_is_user_admin( $user_id, $group_id ) ) {
+				esc_html_e( get_group_role_label( $group_id, 'organizer_plural_label_name' ), 'buddyboss' );
+			} elseif ( groups_is_user_mod( $user_id, $group_id ) ) {
+				esc_html_e( get_group_role_label( $group_id, 'moderator_plural_label_name' ), 'buddyboss' );
+			} elseif ( groups_is_user_member( $user_id, $group_id ) ) {
+				esc_html_e( get_group_role_label( $group_id, 'member_plural_label_name' ), 'buddyboss' );
+			}
+			?>
+
+			<?php bp_nouveau_group_hook( 'after', 'member_section_title' ); ?>
+
+		</li>
+		<?php
+	}
+
+	return ob_get_clean();
+}

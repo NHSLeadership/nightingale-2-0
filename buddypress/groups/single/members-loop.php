@@ -21,7 +21,6 @@ $footer_buttons_class = ( bp_is_active('friends') && bp_is_active('messages') ) 
 $is_follow_active = bp_is_active('activity') && bp_is_activity_follow_active();
 $follow_class = $is_follow_active ? 'follow-active' : '';
 ?>
-
 <?php if ( bp_group_has_members( bp_ajax_querystring( 'group_members' ) . '&type=group_role' ) ) : ?>
 
 	<?php bp_nouveau_group_hook( 'before', 'members_content' ); ?>
@@ -30,18 +29,27 @@ $follow_class = $is_follow_active ? 'follow-active' : '';
 
 	<?php bp_nouveau_group_hook( 'before', 'members_list' ); ?>
 
-	<ul id="members-list" class="<?php bp_nouveau_loop_classes(); ?>">
+	<table id="members-list" role="table" class="nhsuk-table">
+		<caption class="nhsuk-table__caption">Members of <?php echo esc_attr( bp_get_group_name() ); ?></caption>
+		<thead role="rowgroup" class="nhsuk-table__head">
+			<tr role="row">
+				<th role="columnheader" class="" scope="col">
+					Name
+				</th>
+				<th role="columnheader" class="" scope="col">
+					Actions
+				</th>
+			</tr>
+		</thead>
+		<tbody class="nhsuk-table__body">
 
 		<?php
 		while ( bp_group_members() ) :
 			bp_group_the_member();
 		?>
-
-			<?php bp_group_member_section_title() ?>
-
 			<?php
 			$member_id           = bp_get_member_user_id();
-			$show_message_button = buddyboss_theme()->buddypress_helper()->buddyboss_theme_show_private_message_button( $member_id, bp_loggedin_user_id() );
+			//$show_message_button = buddyboss_theme()->buddypress_helper()->buddyboss_theme_show_private_message_button( $member_id, bp_loggedin_user_id() );
 			//Check if members_list_item has content
 			ob_start();
 			bp_nouveau_member_hook( '', 'members_list_item' );
@@ -49,96 +57,59 @@ $follow_class = $is_follow_active ? 'follow-active' : '';
 			ob_end_clean();
 			$member_loop_has_content = empty($members_list_item_content) ? false : true;
 			?>
-			<li <?php bp_member_class( array( 'item-entry' ) ); ?> data-bp-item-id="<?php echo esc_attr( bp_get_group_member_id() ); ?>" data-bp-item-component="members">
-				<div class="list-wrap <?php echo $footer_buttons_class; ?> <?php echo $follow_class; ?> <?php echo $member_loop_has_content ? ' has_hook_content' : ''; ?>">
-
-					<div class="list-wrap-inner">
-						<div class="item-avatar">
-							<a href="<?php bp_group_member_domain(); ?>">
-								<?php bp_group_member_avatar(); ?>
-								<?php bb_user_status( bp_get_group_member_id() ); ?>
-							</a>
-						</div>
-
-						<div class="item">
-
-							<div class="item-block">
-								<h2 class="list-title member-name">
-									<?php bp_group_member_link(); ?>
-								</h2>
-
-								<p class="joined item-meta">
-									<?php bp_group_member_joined_since(); ?>
-								</p>
-							</div>
-
-							<div class="button-wrap member-button-wrap only-list-view">
-								<?php buddyboss_theme_followers_count( bp_get_group_member_id() ); ?>
-								<?php
-								if( bp_is_active('friends') ) {
-									bp_add_friend_button();
-								}
-
-								if( bp_is_active('messages') ) {
-									if ( 'yes' === $show_message_button ) {
-										bp_send_message_button( $message_button_args );
-									}
-								}
-
-								if( $is_follow_active ) {
-									bp_add_follow_button( bp_get_group_member_id(), bp_loggedin_user_id() );
-								}
-								?>
-							</div>
-
-							<?php if( $is_follow_active ) {
-								$justify_class = ( bp_get_group_member_id() == bp_loggedin_user_id() ) ? 'justify-center' : '';
-								?>
-								<div class="flex only-grid-view align-items-center follow-container <?php echo $justify_class; ?>">
-									<?php buddyboss_theme_followers_count( bp_get_group_member_id() ); ?>
-									<?php bp_add_follow_button( bp_get_group_member_id(), bp_loggedin_user_id() ); ?>
-								</div>
-							<?php } ?>
-						</div><!-- // .item -->
-
-						<?php if( bp_is_active('friends') && bp_is_active('messages') && ( bp_get_group_member_id() != bp_loggedin_user_id() ) ) { ?>
-							<div class="flex only-grid-view button-wrap member-button-wrap footer-button-wrap"><?php
-								bp_add_friend_button();
-								if ( 'yes' === $show_message_button ) {
-									bp_send_message_button( $message_button_args );
-								} ?></div>
-						<?php } ?>
-
-						<?php if( bp_is_active('friends') && ! bp_is_active('messages') ) { ?>
-							<div class="only-grid-view button-wrap member-button-wrap on-top">
-								<?php bp_add_friend_button(); ?>
-							</div>
-						<?php } ?>
-
-						<?php if( ! bp_is_active('friends') && bp_is_active('messages') ) { ?>
-							<?php  if ( 'yes' === $show_message_button ) { ?>
-								<div class="only-grid-view button-wrap member-button-wrap on-top">
-									<?php bp_send_message_button( $message_button_args ); ?>
-								</div>
-							<?php } ?>
-						<?php } ?>
+			<tr role="row" class="nhsuk-table__row">
+				<td role="cell" class="nhsuk-table__cell">
+					<div style="float:left; margin-right: 16px;" class="item-avatar">
+						<a href="<?php bp_group_member_domain(); ?>">
+							<?php bp_group_member_avatar(); ?>
+							<?php //bb_user_status( bp_get_group_member_id() ); ?>
+						</a>
 					</div>
+					<?php bp_group_member_link(); ?><br />
+					<span class="nhsuk-body-s">
+						<?php
+						$user_id               = bp_get_group_member_id();
+						$group_id              = bp_get_current_group_id();
+						if ( groups_is_user_admin( $user_id, $group_id ) ) {
+							esc_html_e( get_group_role_label( $group_id, 'organizer_singular_label_name' ), 'nightingale' );
+						} elseif ( groups_is_user_mod( $user_id, $group_id ) ) {
+							esc_html_e( get_group_role_label( $group_id, 'moderator_singular_label_name' ), 'nightingale' );
+						} elseif ( groups_is_user_member( $user_id, $group_id ) ) {
+							esc_html_e( get_group_role_label( $group_id, 'member_singular_label_name' ), 'nightingale' );
+						}
+						?>
+					</span>
+					<span class="nhsuk-body-s"><?php bp_group_member_joined_since(); ?></span>
 
-					<div class="bp-members-list-hook">
+				</td>
+				<td role="cell" class="nhsuk-table__cell">
 					<?php
-						if($member_loop_has_content){ ?>
-							<a class="more-action-button" href="#"><i class="bb-icon-menu-dots-h"></i></a>
-						<?php } ?>
-						<div class="bp-members-list-hook-inner">
-							<?php bp_nouveau_member_hook( '', 'members_list_item' ); ?>
-						</div>
-					</div>
-				</div>
-			</li>
+					if( bp_is_active('friends') ) {
+						bp_add_friend_button();
+					}
 
+					//if( bp_is_active('messages') ) {
+						//if ( 'yes' === $show_message_button ) {
+							bp_send_message_button( $message_button_args );
+						//}
+					//}
+					//if( $is_follow_active ) {
+						bp_add_follow_button( bp_get_group_member_id(), bp_loggedin_user_id() );
+					//}
+					?>
+					<?php
+					if($member_loop_has_content){ ?>
+						<a class="more-action-button" href="#"><i class="bb-icon-menu-dots-h"></i></a>
+					<?php } ?>
+					<div class="bp-members-list-hook-inner">
+						<?php bp_nouveau_member_hook( '', 'members_list_item' ); ?>
+					</div>
+				</td>
+			</tr>
 		<?php endwhile; ?>
 
-	</ul>
+		</tbody>
+	</table>
 
 	<?php bp_nouveau_group_hook( 'after', 'members_list' ); ?>
 

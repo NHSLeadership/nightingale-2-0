@@ -13,7 +13,7 @@ body.buddypress {
 			}
 		}
 
-		.nhsuk-buddy__search {
+		.nhsuk-buddy__search, .group-search {
 			@extend .nhsuk-header__search;
 			height      : nhsuk-spacing(7);
 			float       : none;
@@ -46,8 +46,28 @@ body.buddypress {
 			}
 		}
 
-		.request-membership {
+		.request-membership,
+		.friendship-button a,
+		.follow-button a,
+		#send-private-message a,
+		#aw-whats-new-submit,
+		#aw-whats-new-reset,
+		.dz-button,
+		.button
+		{
 			@extend .nhsuk-button;
+			float: left;
+			margin-right: nhsuk-spacing(3);
+		}
+		.follow-button a,
+		#aw-whats-new-reset,
+		.delete-activity {
+			@extend .nhsuk-button--secondary
+		}
+
+		#send-private-message a,
+		.fav {
+			@extend .nhsuk-button--reverse;
 		}
 
 		.membership-requested {
@@ -55,7 +75,7 @@ body.buddypress {
 			@extend .nhsuk-tag--white;
 		}
 
-		.item-avatar, #group-admins {
+		.item-avatar, #group-admins, .activity-post-avatar {
 			img {
 				border-radius: 50%;
 				height: nhsuk-spacing(6);
@@ -65,6 +85,67 @@ body.buddypress {
 		.nhsuk-card__content {
 			.item-avatar {
 				text-align: center;
+			}
+		}
+		#members-list {
+			td {
+				margin-top: nhsuk-spacing(2);
+				margin-bottom: nhsuk-spacing(2);
+			}
+			.nhsuk-body-s {
+				margin-bottom: nhsuk-spacing(2);
+			}
+		}
+		#bp-nouveau-activity-form {
+			@extend .nhsuk-form-group;
+			border: none;
+			#whats-new-textarea {
+				@extend .nhsuk-textarea;
+				background: $color_nhsuk-white;
+			}
+		}
+		#comments {
+			margin-top: nhsuk-spacing(3);
+			.div-comment {
+				clear: both;
+			}
+			.comment-body {
+				position : relative;
+				.comment_body_comment:empty {
+					display: none;
+				}
+				.item-avatar {
+					width: nhsuk-spacing(3);
+					height: nhsuk-spacing(3);
+				}
+				.activity-state {
+					position: absolute;
+					bottom: -32px;
+					right: 0;
+					.activity-state-comments  {
+						@extend .nhsuk-tag;
+						@extend .nhsuk-tag--white;
+					}
+					.activity-state-likes {
+						@extend .nhsuk-tag;
+						@extend .nhsuk-tag--grey;
+						.like-text:empty {
+							display: none;
+						}
+					}
+				}
+			}
+			.comment-author {
+				.comment-meta {
+					.avatar {
+						margin-right: nhsuk-spacing(2);
+						margin-left: nhsuk-spacing(3);
+						border-radius: 50%;
+					}
+					p{
+						margin-bottom: nhsuk-spacing(2);
+					}
+				}
 			}
 		}
 	}

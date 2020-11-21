@@ -5,14 +5,18 @@
  * @since   3.0.0
  * @version 3.0.0
  */
+
+if ( ( bp_nouveau_has_nav( array( 'object' => 'groups' ) ) ) && ( !bp_nouveau_has_nav( array( 'object' => 'directory' ) ) ) ) :
+bp_get_template_part( 'groups/single/parts/item-nav' );
+endif;
 ?>
+
+<?php if ( bp_nouveau_has_nav( array( 'object' => 'directory' ) ) ) : ?>
 <div class="nhsuk-full-width-container">
     <div class="nhsuk-bordered-tabs-container">
         <div class="nhsuk-width-container">
 
             <nav class="" role="navigation" aria-label="<?php esc_attr_e( 'Directory menu', 'nightingale' ); ?>">
-
-				<?php if ( bp_nouveau_has_nav( array( 'object' => 'directory' ) ) ) : ?>
 
                     <ul class="nhsuk-bordered-tabs">
 
@@ -40,9 +44,8 @@
 
                     </ul><!-- .component-navigation -->
 
-				<?php endif; ?>
-
             </nav><!-- .bp-navs -->
         </div>
     </div>
 </div>
+<?php endif; ?>

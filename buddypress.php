@@ -39,9 +39,6 @@ if ( ( function_exists( 'bp_is_register_page' ) && bp_is_register_page() ) || ( 
 	$class_bp_register = 'bs-bp-container';
 }
 ?>
-
-<div id="primary" class="content-area <?php echo $class_bp_register; ?>">
-	<main id="main" class="site-main">
         <?php
         if ( function_exists( 'bp_is_register_page' ) && bp_is_register_page() ) {
 				$logo_id = nightingale_buddyboss_theme_get_option( 'admin_logo_media', 'id' );
@@ -108,9 +105,6 @@ if ( ( function_exists( 'bp_is_register_page' ) && bp_is_register_page() ) || ( 
 			?>
 
 		<?php endif; ?>
-
-	</main><!-- #main -->
-</div><!-- #primary -->
 
 <?php
 if( !bp_is_group_create() && !bp_is_user_profile_edit() && !bp_is_user_change_avatar() && !bp_is_user_change_cover_image() ) {

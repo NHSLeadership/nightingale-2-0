@@ -11,22 +11,12 @@
 
 bp_nouveau_activity_hook( 'before', 'entry' ); ?>
 
-<li class="<?php bp_activity_css_class(); ?>" id="activity-<?php bp_activity_id(); ?>" data-bp-activity-id="<?php bp_activity_id(); ?>" data-bp-timestamp="<?php bp_nouveau_activity_timestamp(); ?>">
+<li class="div-comment nhsuk-list-panel__item" id="activity-<?php bp_activity_id(); ?>" data-bp-activity-id="<?php bp_activity_id(); ?>" data-bp-timestamp="<?php bp_nouveau_activity_timestamp(); ?>">
 
-	<div class="bp-activity-head">
-		<div class="activity-avatar item-avatar">
-			<a href="<?php bp_activity_user_link(); ?>"><?php bp_activity_avatar( array( 'type' => 'full' ) ); ?></a>
-		</div>
 
-		<div class="activity-header">
-			<?php bp_activity_action(); ?>
-			<p class="activity-date"><a href="<?php echo esc_url( bp_activity_get_permalink( bp_get_activity_id() ) ); ?>"><?php echo bp_core_time_since( bp_get_activity_date_recorded() ); ?></a></p>
-		</div>
-	</div>
-
-	<div class="activity-content">
+	<div class="comment-body">
 		<?php if ( bp_nouveau_activity_has_content() ) : ?>
-			<div class="activity-inner"><?php bp_nouveau_activity_content(); ?></div>
+			<div class="comment_body_comment"><?php bp_nouveau_activity_content(); ?></div>
 		<?php endif; ?>
 
 		<?php
@@ -35,6 +25,16 @@ bp_nouveau_activity_hook( 'before', 'entry' ); ?>
         }
         ?>
 	</div>
+    <div class="comment-author vcard">
+        <div class="activity-avatar item-avatar">
+            <a href="<?php bp_activity_user_link(); ?>"><?php bp_activity_avatar( array( 'type' => 'full' ) ); ?></a>
+        </div>
+
+        <div class="comment-meta commentmetadata">
+			<?php bp_activity_action('no_timestamp=true'); ?>
+            <span class="nhsuk-body-s"><a href="<?php echo esc_url( bp_activity_get_permalink( bp_get_activity_id() ) ); ?>"><?php echo bp_core_time_since( bp_get_activity_date_recorded() ); ?></a></span>
+        </div>
+    </div>
 
 	<?php bp_nouveau_activity_entry_buttons(); ?>
 
@@ -42,7 +42,7 @@ bp_nouveau_activity_hook( 'before', 'entry' ); ?>
 
 	<?php if ( bp_activity_get_comment_count() || ( is_user_logged_in() && ( bp_activity_can_comment() || bp_is_single_activity() ) ) ) : ?>
 
-		<div class="activity-comments">
+		<div class="reply">
 
 			<?php bp_activity_comments(); ?>
 
