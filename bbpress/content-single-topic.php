@@ -56,27 +56,6 @@
         			<p class="bb-topic-subscription-link-wrap"><?php $args = array('before' => '');
         			echo bbp_get_topic_subscription_link( $args ); ?></p>
                 </div>
-
-                <div class="scrubber" id="scrubber" data-key="<?php echo esc_attr( nightingale_unique_id( 'forums_scrubber_' ) ); ?>">
-                    <a href="#" class="firstpostbtn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11">
-                            <path fill="none" stroke="#C8CBCF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.44" d="M1 10l4.5-4 4.5 4M1 5l4.5-4L10 5"/>
-                        </svg>
-                        <?php _e( 'Original Post', 'nightingale' ); ?>
-                    </a>
-                    <div class="reply-timeline-container" id="reply-timeline-container">
-                        <div class="handle" id="handle">
-                            <span id="currentpost">0</span> <?php _e( 'of', 'nightingale' ); ?> <span id="totalposts">0</span> <?php _e( 'posts', 'nightingale' ); ?>
-                            <span class="desc" id="date"><?php _e( 'June 2018', 'nightingale' ); ?></span>
-                        </div>
-                    </div>
-                    <a href="#" class="lastpostbtn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11">
-                            <path fill="none" stroke="#C8CBCF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.44" d="M1 1l4.5 4L10 1M1 6l4.5 4L10 6"/>
-                        </svg>
-                        <?php _e( 'Now', 'nightingale' ); ?>
-                    </a>
-                </div>
             </div>
 		</div>
 

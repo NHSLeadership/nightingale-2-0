@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <?php if ( bbp_is_reply_edit() ) : ?>
 
 <div id="bbpress-forums">
@@ -45,7 +44,6 @@
                 <div id="bbp-template-notices">
 				    <?php do_action( 'bbp_template_notices' ); ?>
                 </div>
-
 				<div>
 
 					<?php bbp_get_template_part( 'form', 'anonymous' ); ?>
@@ -161,7 +159,7 @@
 				<?php bbp_reply_form_fields(); ?>
 
 			</fieldset>
-
+hello
 			<?php do_action( 'bbp_theme_after_reply_form' ); ?>
 
 		</form>
