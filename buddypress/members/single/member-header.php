@@ -17,7 +17,7 @@ remove_filter( 'bp_get_add_follow_button', 'buddyboss_theme_bp_get_add_follow_bu
 
 			<div id="item-header-avatar">
 				<?php if ( bp_is_my_profile() && ! bp_disable_avatar_uploads() ) { ?>
-					<a href="<?php bp_members_component_link( 'profile', 'change-avatar' ); ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Profile Photo', 'buddyboss-theme'); ?>">
+					<a href="<?php bp_members_component_link( 'profile', 'change-avatar' ); ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Profile Photo', 'nightingale'); ?>">
 						<span class="dashicons dashicons-edit"></span>
 					</a>
 				<?php } ?>
@@ -54,7 +54,7 @@ remove_filter( 'bp_get_add_follow_button', 'buddyboss_theme_bp_get_add_follow_bu
 								<?php if ( bp_nouveau_member_has_meta() ) : ?>
 									<?php bp_nouveau_member_meta(); ?>
 								<?php endif; ?>
-							</div>	
+							</div>
 						<?php endif; ?>
 
 						<?php if( function_exists( 'bp_is_activity_follow_active' ) && bp_is_active('activity') && bp_is_activity_follow_active() ) { ?>

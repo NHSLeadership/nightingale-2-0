@@ -27,7 +27,7 @@ $group_cover_image_url = $group_cover_image_url ?: $default_group_cover;
 		<div class="nhsuk-width-container">
 			<div class="nhsuk-grid-row">
 				<?php if ( bp_is_item_admin() && bp_group_use_cover_image_header() ) { ?>
-					<a href="<?php echo $group_cover_link; ?>" class="link-change-cover-image" data-balloon-pos="right" data-balloon="<?php _e('Change Cover Image', 'buddyboss-theme'); ?>">
+					<a href="<?php echo $group_cover_link; ?>" class="link-change-cover-image" data-balloon-pos="right" data-balloon="<?php _e('Change Cover Image', 'nightingale'); ?>">
 						<span class="dashicons dashicons-edit"></span>
 					</a>
 				<?php } ?>

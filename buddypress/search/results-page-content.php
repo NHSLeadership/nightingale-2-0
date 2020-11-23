@@ -24,7 +24,6 @@ $post_title = BP_Search::instance()->has_search_results() ?
 				<?php bp_search_filters();?>
 			</ul>
 		</nav>
-
 		<div class="search_results">
 			<?php bp_search_results();?>
 		</div>

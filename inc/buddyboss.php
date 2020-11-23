@@ -44,6 +44,14 @@ if ( !function_exists( 'nightingale_buddyboss_theme_get_option' ) ) {
 	}
 }
 
+/**
+ * Queue up buddyboss js include
+ */
+function nightingale_buddyboss_js() {
+    wp_enqueue_script('nightingale-buddyboss', get_template_directory_uri() . '/js/buddypress.js', '', '20201123', true );
+}
+
+add_action( 'wp_enqueue_scripts', 'nightingale_buddyboss_js' );
 ///////////////////////////////////////////////////////////////////////////////
 // Check if BuddyPress is installed
 //////////////////////////////////////////////////////////////////////////////
@@ -169,4 +177,61 @@ function nightingale_bp_get_group_member_section_title() {
 	}
 
 	return ob_get_clean();
+}
+
+if ( ! function_exists( 'nightingale_unique_id' ) ) {
+	/**
+	 * Get unique ID.
+	 *
+	 * This is a PHP implementation of Underscore's uniqueId method. A static variable
+	 * contains an integer that is incremented with each call. This number is returned
+	 * with the optional prefix. As such the returned value is not universally unique,
+	 * but it is unique across the life of the PHP process.
+	 *
+	 * @param string $prefix Prefix for the returned ID.
+	 *
+	 * @return string Unique ID.
+	 *
+	 * @staticvar int $id_counter
+	 *
+	 */
+	function nightingale_unique_id( $prefix = '' ) {
+		static $id_counter = 0;
+
+		return $prefix . (string) ++ $id_counter;
+	}
+}
+
+/**
+ * List threaded replies
+ *
+ * @since 2.4.0 bbPress (r4944)
+ */
+function nightingale_bbp_list_replies( $args = array() ) {
+
+	// Get bbPress
+	$bbp = bbpress();
+
+	// Reset the reply depth
+	$bbp->reply_query->reply_depth = 0;
+
+	// In reply loop
+	$bbp->reply_query->in_the_loop = true;
+
+	// Parse arguments
+	$r = bbp_parse_args( $args, array(
+		'walker'       => new BBP_Walker_Reply(),
+		'max_depth'    => bbp_thread_replies_depth(),
+		'style'        => 'ul',
+		'callback'     => null,
+		'end_callback' => null,
+		'page'         => 1,
+		'per_page'     => -1
+	), 'list_replies' );
+
+	// Get replies to loop through in $_replies
+	echo '<ul>' . $r['walker']->paged_walk( $bbp->reply_query->posts, $r['max_depth'], $r['page'], $r['per_page'], $r ) . '</ul>';
+
+	$bbp->max_num_pages            = $r['walker']->max_pages;
+	$bbp->reply_query->in_the_loop = false;
 }
