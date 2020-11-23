@@ -31,7 +31,7 @@
 
 		<div class="bp-feedback info">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php _e( 'This forum is marked as closed to new discussions, however your posting capabilities still allow you to do so.', 'buddyboss-theme' ); ?></p>
+			<p><?php _e( 'This forum is marked as closed to new discussions, however your posting capabilities still allow you to do so.', 'nightingale' ); ?></p>
 		</div>
 
 	<?php endif; ?>
@@ -63,8 +63,8 @@
                             ?>
                         </div>
                         <div class="new_topic_title">
-						  <label for="bbp_topic_title"><?php _e('Discussion Title', 'buddyboss-theme'); ?></label>
-						  <input required type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" placeholder="<?php _e('Discussion Title', 'buddyboss-theme'); ?>" />
+						  <label for="bbp_topic_title"><?php _e('Discussion Title', 'nightingale'); ?></label>
+						  <input required type="text" id="bbp_topic_title" value="<?php bbp_form_topic_title(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_title" maxlength="<?php bbp_title_max_length(); ?>" placeholder="<?php _e('Discussion Title', 'nightingale'); ?>" />
                         </div>
 					</div>
 
@@ -79,7 +79,7 @@
 					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
 
 						<p class="form-allowed-tags">
-							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','buddyboss-theme' ); ?></label><br />
+							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','nightingale' ); ?></label><br />
 							<code><?php bbp_allowed_tags(); ?></code>
 						</p>
 
@@ -93,7 +93,7 @@
 
 						<p class="bbp_topic_tags_wrapper">
                             <input type="hidden" value="" name="bbp_topic_tags" class="bbp_topic_tags" id="bbp_topic_tags" >
-                            <select name="bbp_topic_tags_dropdown[]" class="bbp_topic_tags_dropdown" id="bbp_topic_tags_dropdown" placeholder="<?php esc_html_e( 'Type one or more tag, comma separated', 'buddyboss-theme' ); ?>" autocomplete="off" multiple="multiple" style="width: 100%" tabindex="<?php bbp_tab_index(); ?>"></select>
+                            <select name="bbp_topic_tags_dropdown[]" class="bbp_topic_tags_dropdown" id="bbp_topic_tags_dropdown" placeholder="<?php esc_html_e( 'Type one or more tag, comma separated', 'nightingale' ); ?>" autocomplete="off" multiple="multiple" style="width: 100%" tabindex="<?php bbp_tab_index(); ?>"></select>
 						</p>
 
 						<?php do_action( 'bbp_theme_after_topic_form_tags' ); ?>
@@ -111,12 +111,12 @@
                                 <div class="flex">
         							<legend>
 										<input name="bbp_log_topic_edit" id="bbp_log_topic_edit" class="bs-styled-checkbox" type="checkbox" value="1" <?php bbp_form_topic_log_edit(); ?> tabindex="<?php bbp_tab_index(); ?>" />
-        								<label for="bbp_log_topic_edit"><?php _e( 'Keep a log of this edit:', 'buddyboss-theme' ); ?></label>
+        								<label for="bbp_log_topic_edit"><?php _e( 'Keep a log of this edit:', 'nightingale' ); ?></label>
         							</legend>
 
         							<div>
-        								<label for="bbp_topic_edit_reason"><?php printf( __( 'Optional reason for editing:', 'buddyboss-theme' ), bbp_get_current_user_name() ); ?></label>
-        								<input type="text" value="<?php bbp_form_topic_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_edit_reason" id="bbp_topic_edit_reason" placeholder="<?php _e( 'Optional reason for editing', 'buddyboss-theme' ); ?>" />
+        								<label for="bbp_topic_edit_reason"><?php printf( __( 'Optional reason for editing:', 'nightingale' ), bbp_get_current_user_name() ); ?></label>
+        								<input type="text" value="<?php bbp_form_topic_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_topic_edit_reason" id="bbp_topic_edit_reason" placeholder="<?php _e( 'Optional reason for editing', 'nightingale' ); ?>" />
         							</div>
                                 </div>
     						</fieldset>
@@ -134,10 +134,10 @@
                             <div class="bbp_topic_form_forum_wrapper">
 							<?php do_action( 'bbp_theme_before_topic_form_forum' ); ?>
 
-								<label for="bbp_forum_id"><?php _e( 'Forum:', 'buddyboss-theme' ); ?></label>
+								<label for="bbp_forum_id"><?php _e( 'Forum:', 'nightingale' ); ?></label>
 								<?php
 									bbp_dropdown( array(
-										'show_none' => __( '(No Forum)', 'buddyboss-theme' ),
+										'show_none' => __( '(No Forum)', 'nightingale' ),
 										'selected'  => bbp_get_form_topic_forum()
 									) );
 								?>
@@ -151,7 +151,7 @@
                             <div class="bbp_topic_form_type_wrapper">
 							<?php do_action( 'bbp_theme_before_topic_form_type' ); ?>
 
-							<label for="bbp_stick_topic"><?php _e( 'Type:', 'buddyboss-theme' ); ?></label>
+							<label for="bbp_stick_topic"><?php _e( 'Type:', 'nightingale' ); ?></label>
 
 							<?php bbp_form_topic_type_dropdown(); ?>
 
@@ -168,11 +168,11 @@
 
 							<?php if ( bbp_is_topic_edit() && ( bbp_get_topic_author_id() !== bbp_get_current_user_id() ) ) : ?>
 
-								<label for="bbp_topic_subscription"><?php _e( 'Notify the author of replies via email', 'buddyboss-theme' ); ?></label>
+								<label for="bbp_topic_subscription"><?php _e( 'Notify the author of replies via email', 'nightingale' ); ?></label>
 
 							<?php else : ?>
 
-								<label for="bbp_topic_subscription"><?php _e( 'Notify me of replies via email', 'buddyboss-theme' ); ?></label>
+								<label for="bbp_topic_subscription"><?php _e( 'Notify me of replies via email', 'nightingale' ); ?></label>
 
 							<?php endif; ?>
 
@@ -186,9 +186,9 @@
 
     						<?php do_action( 'bbp_theme_before_topic_form_submit_button' ); ?>
 
-                            <a href="#" id="bbp-close-btn" class="js-modal-close"><?php _e( 'Cancel', 'buddyboss-theme' ); ?></a>
+                            <a href="#" id="bbp-close-btn" class="js-modal-close"><?php _e( 'Cancel', 'nightingale' ); ?></a>
 
-    						<button type="button" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="button submit small"><?php _e( 'Post', 'buddyboss-theme' ); ?></button>
+    						<button type="button" tabindex="<?php bbp_tab_index(); ?>" id="bbp_topic_submit" name="bbp_topic_submit" class="button submit small"><?php _e( 'Post', 'nightingale' ); ?></button>
 
     						<?php do_action( 'bbp_theme_after_topic_form_submit_button' ); ?>
 
@@ -215,7 +215,7 @@
 	<div id="no-topic-<?php bbp_topic_id(); ?>" class="bbp-no-topic">
 		<div class="bp-feedback info">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php printf( __( 'The forum "%s" is closed to new discussions and replies.', 'buddyboss-theme' ), bbp_get_forum_title() ); ?></p>
+			<p><?php printf( __( 'The forum "%s" is closed to new discussions and replies.', 'nightingale' ), bbp_get_forum_title() ); ?></p>
 		</div>
 	</div>
 
@@ -224,7 +224,7 @@
 	<div id="no-topic-<?php bbp_topic_id(); ?>" class="bbp-no-topic">
 		<div class="bp-feedback info">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php is_user_logged_in() ? _e( 'You cannot create new discussions.', 'buddyboss-theme' ) : _e( 'You must be logged in to create new discussions.', 'buddyboss-theme' ); ?></p>
+			<p><?php is_user_logged_in() ? _e( 'You cannot create new discussions.', 'nightingale' ) : _e( 'You must be logged in to create new discussions.', 'nightingale' ); ?></p>
 		</div>
 	</div>
 

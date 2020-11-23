@@ -12,7 +12,7 @@
 <div id="bbpress-forums" class="bb-content-area bs-replies-wrapper">
 	<div class="bb-grid">
 
-		<div class="replies-content">
+		<div class="replies-content nhsuk-list-panel comments-area">
 			<?php bbp_breadcrumb(); ?>
 
 			<?php do_action( 'bbp_template_before_single_topic' ); ?>
@@ -41,10 +41,6 @@
 
 				<?php endif; ?>
 
-                <p class="bb-topic-reply-link-wrap mobile-only"><?php bbp_topic_reply_link(); ?></p>
-				<p class="bb-topic-subscription-link-wrap mobile-only"><?php $args = array('before' => '');
-			echo bbp_get_topic_subscription_link( $args ); ?></p>
-
 				<?php bbp_get_template_part( 'form', 'reply' ); ?>
 
 			<?php endif; ?>
@@ -61,24 +57,24 @@
         			echo bbp_get_topic_subscription_link( $args ); ?></p>
                 </div>
 
-                <div class="scrubber" id="scrubber" data-key="<?php echo esc_attr( buddyboss_unique_id( 'forums_scrubber_' ) ); ?>">
+                <div class="scrubber" id="scrubber" data-key="<?php echo esc_attr( nightingale_unique_id( 'forums_scrubber_' ) ); ?>">
                     <a href="#" class="firstpostbtn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11">
                             <path fill="none" stroke="#C8CBCF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.44" d="M1 10l4.5-4 4.5 4M1 5l4.5-4L10 5"/>
                         </svg>
-                        <?php _e( 'Original Post', 'buddyboss-theme' ); ?>
+                        <?php _e( 'Original Post', 'nightingale' ); ?>
                     </a>
                     <div class="reply-timeline-container" id="reply-timeline-container">
                         <div class="handle" id="handle">
-                            <span id="currentpost">0</span> <?php _e( 'of', 'buddyboss-theme' ); ?> <span id="totalposts">0</span> <?php _e( 'posts', 'buddyboss-theme' ); ?>
-                            <span class="desc" id="date"><?php _e( 'June 2018', 'buddyboss-theme' ); ?></span>
+                            <span id="currentpost">0</span> <?php _e( 'of', 'nightingale' ); ?> <span id="totalposts">0</span> <?php _e( 'posts', 'nightingale' ); ?>
+                            <span class="desc" id="date"><?php _e( 'June 2018', 'nightingale' ); ?></span>
                         </div>
                     </div>
                     <a href="#" class="lastpostbtn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11">
                             <path fill="none" stroke="#C8CBCF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.44" d="M1 1l4.5 4L10 1M1 6l4.5 4L10 6"/>
                         </svg>
-                        <?php _e( 'Now', 'buddyboss-theme' ); ?>
+                        <?php _e( 'Now', 'nightingale' ); ?>
                     </a>
                 </div>
             </div>

@@ -17,7 +17,7 @@ remove_filter( 'bp_get_add_follow_button', 'buddyboss_theme_bp_get_add_follow_bu
 
 		<div id="header-cover-image" class="cover-<?php echo $profile_cover_height; ?> <?php echo 'width-' . $profile_cover_width; ?>">
 			<?php if ( bp_is_my_profile() ) { ?>
-				<a href="<?php echo bp_get_members_component_link( 'profile', 'change-cover-image' ); ?>" class="link-change-cover-image" data-balloon-pos="right" data-balloon="<?php _e('Change Cover Image', 'buddyboss-theme'); ?>">
+				<a href="<?php echo bp_get_members_component_link( 'profile', 'change-cover-image' ); ?>" class="link-change-cover-image" data-balloon-pos="right" data-balloon="<?php _e('Change Cover Image', 'nightingale'); ?>">
 					<span class="dashicons dashicons-edit"></span>
 				</a>
 			<?php } ?>
@@ -29,7 +29,7 @@ remove_filter( 'bp_get_add_follow_button', 'buddyboss_theme_bp_get_add_follow_bu
 
 			<div id="item-header-avatar">
 				<?php if ( bp_is_my_profile() && ! bp_disable_avatar_uploads() ) { ?>
-					<a href="<?php bp_members_component_link( 'profile', 'change-avatar' ); ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Profile Photo', 'buddyboss-theme'); ?>">
+					<a href="<?php bp_members_component_link( 'profile', 'change-avatar' ); ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Profile Photo', 'nightingale'); ?>">
 						<span class="dashicons dashicons-edit"></span>
 					</a>
 				<?php } ?>

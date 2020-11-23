@@ -170,8 +170,8 @@ if ( isset( $exists ) && '' !== $exists ) {
 				'format' => '?paged=%#%',
 				'current' => $current_page,
 				'total' => $total_pages,
-				'prev_text'    => __('« Prev', 'buddyboss-theme'),
-				'next_text'    => __('Next »', 'buddyboss-theme'),
+				'prev_text'    => __('« Prev', 'nightingale'),
+				'next_text'    => __('Next »', 'nightingale'),
 			));
 		}
 

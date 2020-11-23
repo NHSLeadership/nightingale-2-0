@@ -25,12 +25,12 @@
 
 		<div class="bp-feedback info">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php _e( 'This discussion is marked as closed to new replies, however your posting capabilities still allow you to do so.', 'buddyboss-theme' ); ?></p>
+			<p><?php _e( 'This discussion is marked as closed to new replies, however your posting capabilities still allow you to do so.', 'nightingale' ); ?></p>
 		</div>
 
 	<?php endif; ?>
 
-	<div id="new-reply-<?php bbp_topic_id(); ?>" class="bbp-reply-form <?php if ( bbp_is_single_topic() ) { echo 'bb-modal bb-modal-box';} ?>">
+	<div id="new-reply-<?php bbp_topic_id(); ?>" class="bbp-reply-form <?php if ( bbp_is_single_topic() ) { echo 'bb-modal bb-modal-box';} ?>" <?php if ( bbp_is_single_topic() ) { echo 'style="display: none;';} ?>>
 
 		<form id="new-post" name="new-post" method="post" action="<?php bbp_is_reply_edit() ? bbp_reply_edit_url() : the_permalink(); ?>">
 
@@ -38,7 +38,7 @@
 
 			<fieldset class="bbp-form">
 				<legend>
-                    <?php _e( 'Reply to:', 'buddyboss-theme' ); ?> <span id="bbp-reply-to-user"><?php printf( '%s', bbp_get_topic_author_display_name() ); ?></span>
+                    <?php _e( 'Reply to:', 'nightingale' ); ?> <span id="bbp-reply-to-user"><?php printf( '%s', bbp_get_topic_author_display_name() ); ?></span>
                     <div id="bbp-reply-exerpt"></div>
                 </legend>
 
@@ -59,7 +59,7 @@
 					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
 
 						<p class="form-allowed-tags">
-							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','buddyboss-theme' ); ?></label><br />
+							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','nightingale' ); ?></label><br />
 							<code><?php bbp_allowed_tags(); ?></code>
 						</p>
 
@@ -73,7 +73,7 @@
 
                         <p class="bbp_topic_tags_wrapper">
                             <input type="hidden" value="" name="bbp_topic_tags" class="bbp_topic_tags" id="bbp_topic_tags" >
-                            <select name="bbp_topic_tags_dropdown[]" class="bbp_topic_tags_dropdown" id="bbp_topic_tags_dropdown" placeholder="<?php esc_html_e( 'Type one or more tag, comma separated', 'buddyboss-theme' ); ?>" autocomplete="off" multiple="multiple" style="width: 100%" tabindex="<?php bbp_tab_index(); ?>"></select>
+                            <select name="bbp_topic_tags_dropdown[]" class="bbp_topic_tags_dropdown" id="bbp_topic_tags_dropdown" placeholder="<?php esc_html_e( 'Type one or more tag, comma separated', 'nightingale' ); ?>" autocomplete="off" multiple="multiple" style="width: 100%" tabindex="<?php bbp_tab_index(); ?>"></select>
 						</p>
 
 						<?php do_action( 'bbp_theme_after_reply_form_tags' ); ?>
@@ -90,12 +90,12 @@
                                 <div class="flex">
         							<legend>
 										<input name="bbp_log_reply_edit" id="bbp_log_reply_edit" class="bs-styled-checkbox" type="checkbox" value="1" <?php bbp_form_reply_log_edit(); ?> tabindex="<?php bbp_tab_index(); ?>" />
-        								<label for="bbp_log_reply_edit"><?php _e( 'Keep a log of this edit:', 'buddyboss-theme' ); ?></label>
+        								<label for="bbp_log_reply_edit"><?php _e( 'Keep a log of this edit:', 'nightingale' ); ?></label>
         							</legend>
 
         							<div>
-        								<label for="bbp_reply_edit_reason"><?php printf( __( 'Optional reason for editing:', 'buddyboss-theme' ), bbp_get_current_user_name() ); ?></label>
-        								<input type="text" value="<?php bbp_form_reply_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_reply_edit_reason" id="bbp_reply_edit_reason" placeholder="<?php _e( 'Optional reason for editing', 'buddyboss-theme' ); ?>" />
+        								<label for="bbp_reply_edit_reason"><?php printf( __( 'Optional reason for editing:', 'nightingale' ), bbp_get_current_user_name() ); ?></label>
+        								<input type="text" value="<?php bbp_form_reply_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_reply_edit_reason" id="bbp_reply_edit_reason" placeholder="<?php _e( 'Optional reason for editing', 'nightingale' ); ?>" />
         							</div>
                                 </div>
     						</fieldset>
@@ -118,11 +118,11 @@
 
     							<?php if ( bbp_is_reply_edit() && ( bbp_get_reply_author_id() !== bbp_get_current_user_id() ) ) : ?>
 
-    								<label for="bbp_topic_subscription"><?php _e( 'Notify the author of replies via email', 'buddyboss-theme' ); ?></label>
+    								<label for="bbp_topic_subscription"><?php _e( 'Notify the author of replies via email', 'nightingale' ); ?></label>
 
     							<?php else : ?>
 
-    								<label for="bbp_topic_subscription"><?php _e( 'Notify me of replies via email', 'buddyboss-theme' ); ?></label>
+    								<label for="bbp_topic_subscription"><?php _e( 'Notify me of replies via email', 'nightingale' ); ?></label>
 
     							<?php endif; ?>
 
@@ -141,10 +141,10 @@
 
     						<?php bbp_cancel_reply_to_link(); ?>
 
-                            <a href="#" id="bbp-close-btn" class="js-modal-close"><?php _e( 'Cancel', 'buddyboss-theme' ); ?></a>
+                            <a href="#" id="bbp-close-btn" class="js-modal-close"><?php _e( 'Cancel', 'nightingale' ); ?></a>
 
     						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit small">
-								<?php _e( 'Post', 'buddyboss-theme' ); ?>
+								<?php _e( 'Post', 'nightingale' ); ?>
 								<i class="bb-icon-loader animate-spin"></i>
 							</button>
 
@@ -172,7 +172,7 @@
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
 		<div class="bp-feedback info">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php printf( __( 'The discussion &#8216;%s&#8217; is closed to new replies.', 'buddyboss-theme' ), bbp_get_topic_title() ); ?></p>
+			<p><?php printf( __( 'The discussion &#8216;%s&#8217; is closed to new replies.', 'nightingale' ), bbp_get_topic_title() ); ?></p>
 		</div>
 	</div>
 
@@ -181,7 +181,7 @@
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
 		<div class="bp-feedback info">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php printf( __( 'The forum &#8216;%s&#8217; is closed to new discussions and replies.', 'buddyboss-theme' ), bbp_get_forum_title( bbp_get_topic_forum_id() ) ); ?></p>
+			<p><?php printf( __( 'The forum &#8216;%s&#8217; is closed to new discussions and replies.', 'nightingale' ), bbp_get_forum_title( bbp_get_topic_forum_id() ) ); ?></p>
 		</div>
 	</div>
 
@@ -190,7 +190,7 @@
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
 		<div class="bp-feedback info">
 			<span class="bp-icon" aria-hidden="true"></span>
-			<p><?php is_user_logged_in() ? _e( 'You cannot reply to this discussion.', 'buddyboss-theme' ) : _e( 'Log in  to reply.', 'buddyboss-theme' ); ?></p>
+			<p><?php is_user_logged_in() ? _e( 'You cannot reply to this discussion.', 'nightingale' ) : _e( 'Log in  to reply.', 'nightingale' ); ?></p>
 		</div>
 	</div>
 

@@ -29,7 +29,7 @@
 						<?php $forum = bbp_get_forum( bbp_get_forum_id());  ?>
 						<span class="bbp-forum-post-date">
 							<?php echo bbp_get_author_link( array( 'post_id' => bbp_get_forum_id(),'type' => 'name' ) ); ?>
-							<?php printf( __( 'created %s', 'buddyboss-theme' ), bbp_get_time_since($forum->post_date) ); ?>
+							<?php printf( __( 'created %s', 'nightingale' ), bbp_get_time_since($forum->post_date) ); ?>
 						</span>
 					</span>
 				</div>

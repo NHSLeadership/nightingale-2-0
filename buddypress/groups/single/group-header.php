@@ -19,7 +19,7 @@ $group_cover_link = trailingslashit( $admin_link . 'group-cover-image' );
 		<?php if ( ! bp_disable_group_avatar_uploads() ) : ?>
 			<div id="item-header-avatar">
 				<?php if ( bp_is_item_admin() ) { ?>
-					<a href="<?php echo $group_avatar; ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Group Photo', 'buddyboss-theme'); ?>">
+					<a href="<?php echo $group_avatar; ?>" class="link-change-profile-image" data-balloon-pos="down" data-balloon="<?php _e('Change Group Photo', 'nightingale'); ?>">
 						<span class="dashicons dashicons-edit"></span>
 					</a>
 				<?php } ?>

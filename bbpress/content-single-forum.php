@@ -33,14 +33,14 @@
 	<div class="bbp-forum-buttons-wrap">
 		<?php
 		if( ( bp_is_group_single() || bbp_is_single_forum() ) && bbp_has_forums() && ! bbp_is_forum_category() ) { ?>
-			<h3 class="bb-main-forum-title"><?php _e('Main Forum', 'buddyboss-theme'); ?></h3><?php
+			<h3 class="bb-main-forum-title"><?php _e('Main Forum', 'nightingale'); ?></h3><?php
 		}
 
 		if ( ( !is_active_sidebar( 'forums' ) || bp_is_groups_component() ) && bbp_is_single_forum() && !bbp_is_forum_category() && ( bbp_current_user_can_access_create_topic_form() || bbp_current_user_can_access_anonymous_user_form() ) ) { ?>
 			<?php bbp_forum_subscription_link(); ?>
 
 			<div class="bbp_before_forum_new_post">
-				<a href="#new-post" data-modal-id="bbp-topic-form" class="button full btn-new-topic"><i class="bb-icon-edit-square"></i> <?php _e( 'New discussion', 'buddyboss-theme' ); ?></a>
+				<a href="#new-post" data-modal-id="bbp-topic-form" class="button full btn-new-topic"><i class="bb-icon-edit-square"></i> <?php _e( 'New discussion', 'nightingale' ); ?></a>
 			</div><?php
 		} ?>
 	</div>
@@ -57,7 +57,7 @@
 			<?php if( bp_is_group_single() || bbp_is_single_forum() ) { ?>
 				<div class="bp-group-single-forums">
 					<hr>
-					<h3 class="bb-sub-forum-title"><?php _e('Sub Forums', 'buddyboss-theme'); ?></h3>
+					<h3 class="bb-sub-forum-title"><?php _e('Sub Forums', 'nightingale'); ?></h3>
 			<?php } ?>
 
 			<?php bbp_get_template_part( 'loop', 'forums' ); ?>

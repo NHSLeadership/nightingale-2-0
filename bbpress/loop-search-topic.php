@@ -5,19 +5,19 @@
 			<?php echo bbp_get_topic_author_link( array( 'size' => '180' ) ); ?>
 
 			<?php if( ! bbp_is_topic_open() ) { ?>
-				<i data-balloon-pos="up" data-balloon="<?php _e('Closed', 'buddyboss-theme'); ?>" class="bb-topic-status closed"></i>
+				<i data-balloon-pos="up" data-balloon="<?php _e('Closed', 'nightingale'); ?>" class="bb-topic-status closed"></i>
 			<?php } ?>
 
 			<?php if( bbp_is_topic_super_sticky() ) { ?>
-				<i data-balloon-pos="up" data-balloon="<?php _e('Super Sticky', 'buddyboss-theme'); ?>" class="bb-topic-status super-sticky"></i>
+				<i data-balloon-pos="up" data-balloon="<?php _e('Super Sticky', 'nightingale'); ?>" class="bb-topic-status super-sticky"></i>
 			<?php } elseif( bbp_is_topic_sticky() ) { ?>
-				<i data-balloon-pos="up" data-balloon="<?php _e('Sticky', 'buddyboss-theme'); ?>" class="bb-topic-status sticky"></i>
+				<i data-balloon-pos="up" data-balloon="<?php _e('Sticky', 'nightingale'); ?>" class="bb-topic-status sticky"></i>
 			<?php } ?>
 
 			<?php if( is_user_logged_in() ) {
 				$is_subscribed = bbp_is_user_subscribed_to_topic( get_current_user_id(), bbp_get_topic_id() );
 				if( $is_subscribed ) { ?>
-					<i data-balloon-pos="up" data-balloon="<?php _e('Subscribed', 'buddyboss-theme'); ?>" class="bb-topic-status subscribed"></i><?php 
+					<i data-balloon-pos="up" data-balloon="<?php _e('Subscribed', 'nightingale'); ?>" class="bb-topic-status subscribed"></i><?php
 				}
 			} ?>
 		</div>
@@ -31,12 +31,12 @@
 				<i class="bb-icon-reply"></i>
 				<div>
 					<span class="bs-replied">
-						<span class="bbp-topic-freshness-author"><?php bbp_author_link( array( 'post_id' => bbp_get_topic_last_active_id(), 'size' => 1 ) ); ?></span> <?php _e('replied', 'buddyboss-theme'); ?> <?php bbp_topic_freshness_link(); ?>
+						<span class="bbp-topic-freshness-author"><?php bbp_author_link( array( 'post_id' => bbp_get_topic_last_active_id(), 'size' => 1 ) ); ?></span> <?php _e('replied', 'nightingale'); ?> <?php bbp_topic_freshness_link(); ?>
 					</span>
 					<span class="bs-voices-wrap">
 						<?php
 							$voice_count = bbp_get_topic_voice_count( bbp_get_topic_id() );
-							$voice_text = $voice_count > 1 ? __('Members', 'buddyboss-theme') : __('Member', 'buddyboss-theme');
+							$voice_text = $voice_count > 1 ? __('Members', 'nightingale') : __('Member', 'nightingale');
 
 							$topic_reply_count = bbp_get_topic_reply_count( bbp_get_topic_id() );
 							$topic_post_count = bbp_get_topic_post_count( bbp_get_topic_id() );
@@ -44,13 +44,13 @@
 						?>
 						<span class="bs-voices"><?php bbp_topic_voice_count(); ?> <?php echo $voice_text; ?></span>
 						<span class="bs-separator">&middot;</span>
-						<span class="bs-replies"><?php 
+						<span class="bs-replies"><?php
 							if( bbp_show_lead_topic() ) {
 								bbp_topic_reply_count();
-								$topic_reply_text = $topic_reply_count > 1 ? __('Replies', 'buddyboss-theme') : __('Reply', 'buddyboss-theme');
+								$topic_reply_text = $topic_reply_count > 1 ? __('Replies', 'nightingale') : __('Reply', 'nightingale');
 							} else {
 								bbp_topic_post_count();
-								$topic_reply_text = $topic_post_count > 1 ? __('Replies', 'buddyboss-theme') : __('Reply', 'buddyboss-theme');
+								$topic_reply_text = $topic_post_count > 1 ? __('Replies', 'nightingale') : __('Reply', 'nightingale');
 							}
 							?>
 
