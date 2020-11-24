@@ -92,9 +92,6 @@ if( $page_tabbed = get_post_meta( get_the_id(), 'tabbed-page', true ) ) {
 } else {
 	echo nightingale_breadcrumb(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
-if ( bp_is_active() ) {
-	bp_get_template_part( 'common/nav/directory-nav' );
-}
 ?>
 
 <?php
