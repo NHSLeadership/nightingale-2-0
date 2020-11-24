@@ -149,10 +149,12 @@ body.buddypress {
 		  .activity-state-likes {
 			@extend .nhsuk-tag;
 			@extend .nhsuk-tag--grey;
-
-			.like-text:empty {
-			  display : none;
-			}
+		  }
+		}
+		:not(.has-likes) {
+		  .ac-state-separator,
+		  .activity-state-likes {
+			display: none;
 		  }
 		}
 	  }
