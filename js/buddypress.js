@@ -11,5 +11,15 @@ jQuery(document).on('click', '.bs-dropdown-link.bb-reply-actions-button', functi
 
 jQuery(document).on('click', '.bbp-reply-to-link', function (e) {
   e.preventDefault();
-  jQuery('.bb-modal-box').fadeIn(500);
+  jQuery('.bb-modal-box').show(500);
 });
+jQuery(document).on('click', '.bbp-topic-reply-link', function (e) {
+  e.preventDefault();
+  jQuery('.bb-modal-box').show(500);
+});
+
+jQuery(document).on('click', '.js-modal-close', function (e) {
+  e.preventDefault();
+  jQuery('.bb-modal-box').hide(500);
+});
+

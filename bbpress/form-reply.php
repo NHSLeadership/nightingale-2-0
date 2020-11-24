@@ -34,10 +34,12 @@
 		<form id="new-post" name="new-post" method="post" action="<?php bbp_is_reply_edit() ? bbp_reply_edit_url() : the_permalink(); ?>">
 
 			<?php do_action( 'bbp_theme_before_reply_form' ); ?>
-
-			<fieldset class="bbp-form">
-				<legend>
-                    <?php _e( 'Reply to:', 'nightingale' ); ?> <span id="bbp-reply-to-user"><?php printf( '%s', bbp_get_topic_author_display_name() ); ?></span>
+            <div class="nhsuk-form-group">
+			<fieldset class="nhsuk-fieldset">
+				<legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+					<h1 class="nhsuk-fieldset__heading">
+						<?php _e( 'Reply to:', 'nightingale' ); ?> <h1 id="bbp-reply-to-user"><?php printf( '%s', bbp_get_topic_author_display_name() ); ?>
+					</h1>
                     <div id="bbp-reply-exerpt"></div>
                 </legend>
 
@@ -56,10 +58,10 @@
 
 					<?php if ( ! ( bbp_use_wp_editor() || current_user_can( 'unfiltered_html' ) ) ) : ?>
 
-						<p class="form-allowed-tags">
+						<div class="nhsuk-hint">
 							<label><?php _e( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:','nightingale' ); ?></label><br />
 							<code><?php bbp_allowed_tags(); ?></code>
-						</p>
+						</div>
 
 					<?php endif; ?>
 
@@ -70,8 +72,8 @@
 						<?php do_action( 'bbp_theme_before_reply_form_tags' ); ?>
 
                         <p class="bbp_topic_tags_wrapper">
-                            <input type="hidden" value="" name="bbp_topic_tags" class="bbp_topic_tags" id="bbp_topic_tags" >
-                            <select name="bbp_topic_tags_dropdown[]" class="bbp_topic_tags_dropdown" id="bbp_topic_tags_dropdown" placeholder="<?php esc_html_e( 'Type one or more tag, comma separated', 'nightingale' ); ?>" autocomplete="off" multiple="multiple" style="width: 100%" tabindex="<?php bbp_tab_index(); ?>"></select>
+                            <input type="hidden" value="" name="bbp_topic_tags" class="bbp_topic_tags nhsuk-input" id="bbp_topic_tags" >
+                            <select name="bbp_topic_tags_dropdown[]" class="nhsuk-select" id="bbp_topic_tags_dropdown" placeholder="<?php esc_html_e( 'Type one or more tag, comma separated', 'nightingale' ); ?>" autocomplete="off" multiple="multiple" style="width: 100%" tabindex="<?php bbp_tab_index(); ?>"></select>
 						</p>
 
 						<?php do_action( 'bbp_theme_after_reply_form_tags' ); ?>
@@ -84,18 +86,19 @@
 
     						<?php do_action( 'bbp_theme_before_reply_form_revisions' ); ?>
 
-    						<fieldset class="bbp-form">
-                                <div class="flex">
-        							<legend>
-										<input name="bbp_log_reply_edit" id="bbp_log_reply_edit" class="bs-styled-checkbox" type="checkbox" value="1" <?php bbp_form_reply_log_edit(); ?> tabindex="<?php bbp_tab_index(); ?>" />
-        								<label for="bbp_log_reply_edit"><?php _e( 'Keep a log of this edit:', 'nightingale' ); ?></label>
-        							</legend>
-
+    						<fieldset class="nhsuk-fieldset">
+	                                <div class="nhsuk-checkboxes">
+		                                <div class="nhsuk-checkboxes__item">
+			                                <input class="nhsuk-checkboxes__input" name="bbp_log_reply_edit" id="bbp_log_reply_edit" type="checkbox" value="1" <?php bbp_form_reply_log_edit(); ?> tabindex="<?php bbp_tab_index(); ?>" />
+			                                <label class="nhsuk-label nhsuk-checkboxes__label" for="bbp_log_reply_edit">
+				                                <?php _e( 'Keep a log of this edit:', 'nightingale' ); ?>
+			                                </label>
+		                                </div>
+	                                </div>
         							<div>
-        								<label for="bbp_reply_edit_reason"><?php printf( __( 'Optional reason for editing:', 'nightingale' ), bbp_get_current_user_name() ); ?></label>
-        								<input type="text" value="<?php bbp_form_reply_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_reply_edit_reason" id="bbp_reply_edit_reason" placeholder="<?php _e( 'Optional reason for editing', 'nightingale' ); ?>" />
+        								<label for="bbp_reply_edit_reason" class="nhsuk-label"><?php printf( __( 'Optional reason for editing:', 'nightingale' ), bbp_get_current_user_name() ); ?></label>
+        								<input class="nhsuk-input" type="text" value="<?php bbp_form_reply_edit_reason(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_reply_edit_reason" id="bbp_reply_edit_reason" placeholder="<?php _e( 'Optional reason for editing', 'nightingale' ); ?>" />
         							</div>
-                                </div>
     						</fieldset>
 
     						<?php do_action( 'bbp_theme_after_reply_form_revisions' ); ?>
@@ -110,20 +113,23 @@
 
     						<?php do_action( 'bbp_theme_before_reply_form_subscription' ); ?>
 
-    						<div class="bb_subscriptions_active">
+						    <div class="nhsuk-checkboxes">
 
-    							<input name="bbp_topic_subscription" id="bbp_topic_subscription" class="bs-styled-checkbox" type="checkbox" value="bbp_subscribe"<?php bbp_form_topic_subscribed(); ?> tabindex="<?php bbp_tab_index(); ?>" />
+							    <div class="nhsuk-checkboxes__item">
+								    <input name="bbp_topic_subscription" id="bbp_topic_subscription" class="nhsuk-checkboxes__input" type="checkbox" value="bbp_subscribe"<?php bbp_form_topic_subscribed(); ?> tabindex="<?php bbp_tab_index(); ?>" />
+
+
 
     							<?php if ( bbp_is_reply_edit() && ( bbp_get_reply_author_id() !== bbp_get_current_user_id() ) ) : ?>
 
-    								<label for="bbp_topic_subscription"><?php _e( 'Notify the author of replies via email', 'nightingale' ); ?></label>
+								    <label class="nhsuk-label nhsuk-checkboxes__label" for="bbp_topic_subscription"><?php _e( 'Notify the author of replies via email', 'nightingale' ); ?></label>
 
     							<?php else : ?>
 
-    								<label for="bbp_topic_subscription"><?php _e( 'Notify me of replies via email', 'nightingale' ); ?></label>
+								    <label class="nhsuk-label nhsuk-checkboxes__label" for="bbp_topic_subscription"><?php _e( 'Notify me of replies via email', 'nightingale' ); ?></label>
 
     							<?php endif; ?>
-
+							    </div>
     						</div>
 
     						<?php do_action( 'bbp_theme_after_reply_form_subscription' ); ?>
@@ -139,11 +145,10 @@
 
     						<?php bbp_cancel_reply_to_link(); ?>
 
-                            <a href="#" id="bbp-close-btn" class="js-modal-close"><?php _e( 'Cancel', 'nightingale' ); ?></a>
+                            <a href="#" id="bbp-close-btn" class="nhsuk-button nhsuk-button--secondary js-modal-close"><?php _e( 'Cancel', 'nightingale' ); ?></a>
 
     						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit small">
 								<?php _e( 'Post', 'nightingale' ); ?>
-								<i class="bb-icon-loader animate-spin"></i>
 							</button>
 
     						<?php do_action( 'bbp_theme_after_reply_form_submit_button' ); ?>
@@ -159,7 +164,7 @@
 				<?php bbp_reply_form_fields(); ?>
 
 			</fieldset>
-hello
+            </div>
 			<?php do_action( 'bbp_theme_after_reply_form' ); ?>
 
 		</form>
