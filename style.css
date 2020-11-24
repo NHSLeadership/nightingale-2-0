@@ -4244,7 +4244,7 @@ body.buddypress .buddypress-wrap #send-private-message a,
 body.buddypress .buddypress-wrap #aw-whats-new-submit,
 body.buddypress .buddypress-wrap #aw-whats-new-reset,
 body.buddypress .buddypress-wrap .dz-button,
-body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
+body.buddypress .buddypress-wrap .button, body.groups.group-invites #send_group_invite_form input[type="submit"], #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
 #bbpress-forums .bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a {
   font-weight: 400;
   font-size: 16px;
@@ -4286,7 +4286,7 @@ body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-butt
   body.buddypress .buddypress-wrap #aw-whats-new-submit,
   body.buddypress .buddypress-wrap #aw-whats-new-reset,
   body.buddypress .buddypress-wrap .dz-button,
-  body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
+  body.buddypress .buddypress-wrap .button, body.groups.group-invites #send_group_invite_form input[type="submit"], #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
   #bbpress-forums .bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -4308,7 +4308,7 @@ body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-butt
   body.buddypress .buddypress-wrap #aw-whats-new-submit,
   body.buddypress .buddypress-wrap #aw-whats-new-reset,
   body.buddypress .buddypress-wrap .dz-button,
-  body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
+  body.buddypress .buddypress-wrap .button, body.groups.group-invites #send_group_invite_form input[type="submit"], #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
   #bbpress-forums .bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a {
     font-size: 14pt;
     line-height: 1.15;
@@ -4329,7 +4329,7 @@ body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-butt
   body.buddypress .buddypress-wrap #aw-whats-new-submit,
   body.buddypress .buddypress-wrap #aw-whats-new-reset,
   body.buddypress .buddypress-wrap .dz-button,
-  body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
+  body.buddypress .buddypress-wrap .button, body.groups.group-invites #send_group_invite_form input[type="submit"], #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
   #bbpress-forums .bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a {
     margin-bottom: 36px;
   }
@@ -4349,7 +4349,7 @@ body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-butt
   body.buddypress .buddypress-wrap #aw-whats-new-submit,
   body.buddypress .buddypress-wrap #aw-whats-new-reset,
   body.buddypress .buddypress-wrap .dz-button,
-  body.buddypress .buddypress-wrap .button, #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
+  body.buddypress .buddypress-wrap .button, body.groups.group-invites #send_group_invite_form input[type="submit"], #bbpress-forums .bb-reply-actions-button, #bbpress-forums .bb-topic-reply-link-wrap,
   #bbpress-forums .bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a {
     padding: 8px 16px;
   }
@@ -4368,7 +4368,7 @@ body.buddypress .buddypress-wrap #send-private-message a:link,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:link,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:link,
 body.buddypress .buddypress-wrap .dz-button:link,
-body.buddypress .buddypress-wrap .button:link, #bbpress-forums .bb-reply-actions-button:link, #bbpress-forums .bb-topic-reply-link-wrap:link,
+body.buddypress .buddypress-wrap .button:link, body.groups.group-invites #send_group_invite_form input:link[type="submit"], #bbpress-forums .bb-reply-actions-button:link, #bbpress-forums .bb-topic-reply-link-wrap:link,
 #bbpress-forums .bb-topic-subscription-link-wrap:link, #bbpress-forums .bbp-admin-links a:link, .nhsuk-button:visited, button:visited,
 input:visited[type="button"],
 input:visited[type="reset"],
@@ -4382,7 +4382,7 @@ body.buddypress .buddypress-wrap #send-private-message a:visited,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:visited,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:visited,
 body.buddypress .buddypress-wrap .dz-button:visited,
-body.buddypress .buddypress-wrap .button:visited, #bbpress-forums .bb-reply-actions-button:visited, #bbpress-forums .bb-topic-reply-link-wrap:visited,
+body.buddypress .buddypress-wrap .button:visited, body.groups.group-invites #send_group_invite_form input:visited[type="submit"], #bbpress-forums .bb-reply-actions-button:visited, #bbpress-forums .bb-topic-reply-link-wrap:visited,
 #bbpress-forums .bb-topic-subscription-link-wrap:visited, #bbpress-forums .bbp-admin-links a:visited, .nhsuk-button:active, button:active,
 input:active[type="button"],
 input:active[type="reset"],
@@ -4396,7 +4396,7 @@ body.buddypress .buddypress-wrap #send-private-message a:active,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:active,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:active,
 body.buddypress .buddypress-wrap .dz-button:active,
-body.buddypress .buddypress-wrap .button:active, #bbpress-forums .bb-reply-actions-button:active, #bbpress-forums .bb-topic-reply-link-wrap:active,
+body.buddypress .buddypress-wrap .button:active, body.groups.group-invites #send_group_invite_form input:active[type="submit"], #bbpress-forums .bb-reply-actions-button:active, #bbpress-forums .bb-topic-reply-link-wrap:active,
 #bbpress-forums .bb-topic-subscription-link-wrap:active, #bbpress-forums .bbp-admin-links a:active, .nhsuk-button:hover, button:hover,
 input:hover[type="button"],
 input:hover[type="reset"],
@@ -4410,7 +4410,7 @@ body.buddypress .buddypress-wrap #send-private-message a:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:hover,
 body.buddypress .buddypress-wrap .dz-button:hover,
-body.buddypress .buddypress-wrap .button:hover, #bbpress-forums .bb-reply-actions-button:hover, #bbpress-forums .bb-topic-reply-link-wrap:hover,
+body.buddypress .buddypress-wrap .button:hover, body.groups.group-invites #send_group_invite_form input:hover[type="submit"], #bbpress-forums .bb-reply-actions-button:hover, #bbpress-forums .bb-topic-reply-link-wrap:hover,
 #bbpress-forums .bb-topic-subscription-link-wrap:hover, #bbpress-forums .bbp-admin-links a:hover {
   color: #ffffff;
   text-decoration: none;
@@ -4429,7 +4429,7 @@ body.buddypress .buddypress-wrap #send-private-message a::-moz-focus-inner,
 body.buddypress .buddypress-wrap #aw-whats-new-submit::-moz-focus-inner,
 body.buddypress .buddypress-wrap #aw-whats-new-reset::-moz-focus-inner,
 body.buddypress .buddypress-wrap .dz-button::-moz-focus-inner,
-body.buddypress .buddypress-wrap .button::-moz-focus-inner, #bbpress-forums .bb-reply-actions-button::-moz-focus-inner, #bbpress-forums .bb-topic-reply-link-wrap::-moz-focus-inner,
+body.buddypress .buddypress-wrap .button::-moz-focus-inner, body.groups.group-invites #send_group_invite_form input[type="submit"]::-moz-focus-inner, #bbpress-forums .bb-reply-actions-button::-moz-focus-inner, #bbpress-forums .bb-topic-reply-link-wrap::-moz-focus-inner,
 #bbpress-forums .bb-topic-subscription-link-wrap::-moz-focus-inner, #bbpress-forums .bbp-admin-links a::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -4448,7 +4448,7 @@ body.buddypress .buddypress-wrap #send-private-message a:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:hover,
 body.buddypress .buddypress-wrap .dz-button:hover,
-body.buddypress .buddypress-wrap .button:hover, #bbpress-forums .bb-reply-actions-button:hover, #bbpress-forums .bb-topic-reply-link-wrap:hover,
+body.buddypress .buddypress-wrap .button:hover, body.groups.group-invites #send_group_invite_form input:hover[type="submit"], #bbpress-forums .bb-reply-actions-button:hover, #bbpress-forums .bb-topic-reply-link-wrap:hover,
 #bbpress-forums .bb-topic-subscription-link-wrap:hover, #bbpress-forums .bbp-admin-links a:hover {
   background-color: #00662f;
 }
@@ -4466,7 +4466,7 @@ body.buddypress .buddypress-wrap #send-private-message a:focus,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:focus,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:focus,
 body.buddypress .buddypress-wrap .dz-button:focus,
-body.buddypress .buddypress-wrap .button:focus, #bbpress-forums .bb-reply-actions-button:focus, #bbpress-forums .bb-topic-reply-link-wrap:focus,
+body.buddypress .buddypress-wrap .button:focus, body.groups.group-invites #send_group_invite_form input:focus[type="submit"], #bbpress-forums .bb-reply-actions-button:focus, #bbpress-forums .bb-topic-reply-link-wrap:focus,
 #bbpress-forums .bb-topic-subscription-link-wrap:focus, #bbpress-forums .bbp-admin-links a:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
@@ -4487,7 +4487,7 @@ body.buddypress .buddypress-wrap #send-private-message a:focus:visited,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:focus:visited,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:focus:visited,
 body.buddypress .buddypress-wrap .dz-button:focus:visited,
-body.buddypress .buddypress-wrap .button:focus:visited, #bbpress-forums .bb-reply-actions-button:focus:visited, #bbpress-forums .bb-topic-reply-link-wrap:focus:visited,
+body.buddypress .buddypress-wrap .button:focus:visited, body.groups.group-invites #send_group_invite_form input:focus:visited[type="submit"], #bbpress-forums .bb-reply-actions-button:focus:visited, #bbpress-forums .bb-topic-reply-link-wrap:focus:visited,
 #bbpress-forums .bb-topic-subscription-link-wrap:focus:visited, #bbpress-forums .bbp-admin-links a:focus:visited {
   color: #212b32;
 }
@@ -4505,7 +4505,7 @@ body.buddypress .buddypress-wrap #send-private-message a:focus:visited:active,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:focus:visited:active,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:focus:visited:active,
 body.buddypress .buddypress-wrap .dz-button:focus:visited:active,
-body.buddypress .buddypress-wrap .button:focus:visited:active, #bbpress-forums .bb-reply-actions-button:focus:visited:active, #bbpress-forums .bb-topic-reply-link-wrap:focus:visited:active,
+body.buddypress .buddypress-wrap .button:focus:visited:active, body.groups.group-invites #send_group_invite_form input:focus:visited:active[type="submit"], #bbpress-forums .bb-reply-actions-button:focus:visited:active, #bbpress-forums .bb-topic-reply-link-wrap:focus:visited:active,
 #bbpress-forums .bb-topic-subscription-link-wrap:focus:visited:active, #bbpress-forums .bbp-admin-links a:focus:visited:active {
   color: #ffffff;
 }
@@ -4523,7 +4523,7 @@ body.buddypress .buddypress-wrap #send-private-message a:active,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:active,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:active,
 body.buddypress .buddypress-wrap .dz-button:active,
-body.buddypress .buddypress-wrap .button:active, #bbpress-forums .bb-reply-actions-button:active, #bbpress-forums .bb-topic-reply-link-wrap:active,
+body.buddypress .buddypress-wrap .button:active, body.groups.group-invites #send_group_invite_form input:active[type="submit"], #bbpress-forums .bb-reply-actions-button:active, #bbpress-forums .bb-topic-reply-link-wrap:active,
 #bbpress-forums .bb-topic-subscription-link-wrap:active, #bbpress-forums .bbp-admin-links a:active {
   background: #00401e;
   box-shadow: none;
@@ -4544,7 +4544,7 @@ body.buddypress .buddypress-wrap #send-private-message a::before,
 body.buddypress .buddypress-wrap #aw-whats-new-submit::before,
 body.buddypress .buddypress-wrap #aw-whats-new-reset::before,
 body.buddypress .buddypress-wrap .dz-button::before,
-body.buddypress .buddypress-wrap .button::before, #bbpress-forums .bb-reply-actions-button::before, #bbpress-forums .bb-topic-reply-link-wrap::before,
+body.buddypress .buddypress-wrap .button::before, body.groups.group-invites #send_group_invite_form input[type="submit"]::before, #bbpress-forums .bb-reply-actions-button::before, #bbpress-forums .bb-topic-reply-link-wrap::before,
 #bbpress-forums .bb-topic-subscription-link-wrap::before, #bbpress-forums .bbp-admin-links a::before {
   background: transparent;
   bottom: -6px;
@@ -4569,7 +4569,7 @@ body.buddypress .buddypress-wrap #send-private-message a:active::before,
 body.buddypress .buddypress-wrap #aw-whats-new-submit:active::before,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:active::before,
 body.buddypress .buddypress-wrap .dz-button:active::before,
-body.buddypress .buddypress-wrap .button:active::before, #bbpress-forums .bb-reply-actions-button:active::before, #bbpress-forums .bb-topic-reply-link-wrap:active::before,
+body.buddypress .buddypress-wrap .button:active::before, body.groups.group-invites #send_group_invite_form input[type="submit"]:active::before, #bbpress-forums .bb-reply-actions-button:active::before, #bbpress-forums .bb-topic-reply-link-wrap:active::before,
 #bbpress-forums .bb-topic-subscription-link-wrap:active::before, #bbpress-forums .bbp-admin-links a:active::before {
   top: -6px;
 }
@@ -4591,10 +4591,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary,
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button,
-body.buddypress .buddypress-wrap .is-style-secondary.button, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap, #bbpress-forums .bbp-admin-links a.is-style-secondary,
+body.buddypress .buddypress-wrap .is-style-secondary.button, body.groups.group-invites #send_group_invite_form input.is-style-secondary[type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap, #bbpress-forums .bbp-admin-links a.is-style-secondary,
 body.buddypress .buddypress-wrap .follow-button a,
 body.buddypress .buddypress-wrap #aw-whats-new-reset,
-body.buddypress .buddypress-wrap .delete-activity, #bbpress-forums .bb-reply-actions-button,
+body.buddypress .buddypress-wrap .delete-activity, body.groups.group-invites #send_group_invite_form input#bp_invites_reset[type="submit"], #bbpress-forums .bb-reply-actions-button,
 #bbpress-forums .bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a.bbp-topic-close-link, #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link, #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link, #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link, #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link, #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link, #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link, #bbpress-forums .bbp-admin-links a.bbp-reply-close-link {
   background-color: #4c6272;
   box-shadow: 0 4px 0 #263139;
@@ -4614,10 +4614,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary:hover,
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary:hover,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit:hover,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button:hover,
-body.buddypress .buddypress-wrap .is-style-secondary.button:hover, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap:hover, #bbpress-forums .bbp-admin-links a.is-style-secondary:hover,
+body.buddypress .buddypress-wrap .is-style-secondary.button:hover, body.groups.group-invites #send_group_invite_form input.is-style-secondary:hover[type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap:hover, #bbpress-forums .bbp-admin-links a.is-style-secondary:hover,
 body.buddypress .buddypress-wrap .follow-button a:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:hover,
-body.buddypress .buddypress-wrap .delete-activity:hover, #bbpress-forums .bb-reply-actions-button:hover,
+body.buddypress .buddypress-wrap .delete-activity:hover, body.groups.group-invites #send_group_invite_form input#bp_invites_reset:hover[type="submit"], #bbpress-forums .bb-reply-actions-button:hover,
 #bbpress-forums .bb-topic-subscription-link-wrap:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-close-link:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-close-link:hover {
   background-color: #384853;
 }
@@ -4636,10 +4636,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary:focus,
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary:focus,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit:focus,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button:focus,
-body.buddypress .buddypress-wrap .is-style-secondary.button:focus, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap:focus, #bbpress-forums .bbp-admin-links a.is-style-secondary:focus,
+body.buddypress .buddypress-wrap .is-style-secondary.button:focus, body.groups.group-invites #send_group_invite_form input.is-style-secondary:focus[type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap:focus, #bbpress-forums .bbp-admin-links a.is-style-secondary:focus,
 body.buddypress .buddypress-wrap .follow-button a:focus,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:focus,
-body.buddypress .buddypress-wrap .delete-activity:focus, #bbpress-forums .bb-reply-actions-button:focus,
+body.buddypress .buddypress-wrap .delete-activity:focus, body.groups.group-invites #send_group_invite_form input#bp_invites_reset:focus[type="submit"], #bbpress-forums .bb-reply-actions-button:focus,
 #bbpress-forums .bb-topic-subscription-link-wrap:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-close-link:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-close-link:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
@@ -4661,10 +4661,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary:active,
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary:active,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit:active,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button:active,
-body.buddypress .buddypress-wrap .is-style-secondary.button:active, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap:active, #bbpress-forums .bbp-admin-links a.is-style-secondary:active,
+body.buddypress .buddypress-wrap .is-style-secondary.button:active, body.groups.group-invites #send_group_invite_form input.is-style-secondary:active[type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap:active, #bbpress-forums .bbp-admin-links a.is-style-secondary:active,
 body.buddypress .buddypress-wrap .follow-button a:active,
 body.buddypress .buddypress-wrap #aw-whats-new-reset:active,
-body.buddypress .buddypress-wrap .delete-activity:active, #bbpress-forums .bb-reply-actions-button:active,
+body.buddypress .buddypress-wrap .delete-activity:active, body.groups.group-invites #send_group_invite_form input#bp_invites_reset:active[type="submit"], #bbpress-forums .bb-reply-actions-button:active,
 #bbpress-forums .bb-topic-subscription-link-wrap:active, #bbpress-forums .bbp-admin-links a.bbp-topic-close-link:active, #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link:active, #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link:active, #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-close-link:active {
   background: #263139;
   box-shadow: none;
@@ -4686,9 +4686,9 @@ body.buddypress .buddypress-wrap .friendship-button a.nhsuk-button--disabled.is-
 body.buddypress .buddypress-wrap #send-private-message a.nhsuk-button--disabled.is-style-secondary,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-secondary#aw-whats-new-submit,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-secondary.dz-button,
-body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-secondary.button, #bbpress-forums .nhsuk-button--disabled.is-style-secondary.bb-topic-reply-link-wrap, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.is-style-secondary, body.buddypress .buddypress-wrap .follow-button a.nhsuk-button--disabled,
+body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-secondary.button, body.groups.group-invites #send_group_invite_form input.nhsuk-button--disabled.is-style-secondary[type="submit"], #bbpress-forums .nhsuk-button--disabled.is-style-secondary.bb-topic-reply-link-wrap, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.is-style-secondary, body.buddypress .buddypress-wrap .follow-button a.nhsuk-button--disabled,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled#aw-whats-new-reset,
-body.buddypress .buddypress-wrap .nhsuk-button--disabled.delete-activity, #bbpress-forums .nhsuk-button--disabled.bb-reply-actions-button, #bbpress-forums .nhsuk-button--disabled.bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-close-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-sticky-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-sticky-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-merge-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-merge-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-spam-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-spam-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-close-link {
+body.buddypress .buddypress-wrap .nhsuk-button--disabled.delete-activity, body.groups.group-invites #send_group_invite_form input.nhsuk-button--disabled#bp_invites_reset[type="submit"], #bbpress-forums .nhsuk-button--disabled.bb-reply-actions-button, #bbpress-forums .nhsuk-button--disabled.bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-close-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-sticky-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-sticky-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-merge-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-merge-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-spam-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-spam-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-close-link {
   background-color: #4c6272;
 }
 
@@ -4707,7 +4707,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button,
-body.buddypress .buddypress-wrap .is-style-reverse.button, #bbpress-forums .is-style-reverse.bb-reply-actions-button, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap,
+body.buddypress .buddypress-wrap .is-style-reverse.button, body.groups.group-invites #send_group_invite_form input.is-style-reverse[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a.is-style-reverse, a.nhsuk-button.is-style-reverse, #content .wp-block-file a.is-style-reverse.wp-block-file__button:active, #content .wp-block-file a.is-style-reverse.wp-block-file__button:focus, #content .wp-block-file a.is-style-reverse.wp-block-file__button:hover, #content .wp-block-file a.is-style-reverse.wp-block-file__button:visited, a.is-style-reverse.download-button,
 body.buddypress .buddypress-wrap #send-private-message a,
 body.buddypress .buddypress-wrap .fav, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link {
@@ -4731,7 +4731,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse:hover,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit:hover,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset:hover,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button:hover,
-body.buddypress .buddypress-wrap .is-style-reverse.button:hover, #bbpress-forums .is-style-reverse.bb-reply-actions-button:hover, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:hover,
+body.buddypress .buddypress-wrap .is-style-reverse.button:hover, body.groups.group-invites #send_group_invite_form input.is-style-reverse:hover[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button:hover, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:hover,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap:hover, #bbpress-forums .bbp-admin-links a.is-style-reverse:hover,
 body.buddypress .buddypress-wrap #send-private-message a:hover,
 body.buddypress .buddypress-wrap .fav:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link:hover {
@@ -4754,7 +4754,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse:focus,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit:focus,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset:focus,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button:focus,
-body.buddypress .buddypress-wrap .is-style-reverse.button:focus, #bbpress-forums .is-style-reverse.bb-reply-actions-button:focus, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:focus,
+body.buddypress .buddypress-wrap .is-style-reverse.button:focus, body.groups.group-invites #send_group_invite_form input.is-style-reverse:focus[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button:focus, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:focus,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap:focus, #bbpress-forums .bbp-admin-links a.is-style-reverse:focus,
 body.buddypress .buddypress-wrap #send-private-message a:focus,
 body.buddypress .buddypress-wrap .fav:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link:focus {
@@ -4779,7 +4779,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse:active,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit:active,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset:active,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button:active,
-body.buddypress .buddypress-wrap .is-style-reverse.button:active, #bbpress-forums .is-style-reverse.bb-reply-actions-button:active, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:active,
+body.buddypress .buddypress-wrap .is-style-reverse.button:active, body.groups.group-invites #send_group_invite_form input.is-style-reverse:active[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button:active, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:active,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap:active, #bbpress-forums .bbp-admin-links a.is-style-reverse:active,
 body.buddypress .buddypress-wrap #send-private-message a:active,
 body.buddypress .buddypress-wrap .fav:active, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link:active, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link:active {
@@ -4804,7 +4804,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse:link,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit:link,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset:link,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button:link,
-body.buddypress .buddypress-wrap .is-style-reverse.button:link, #bbpress-forums .is-style-reverse.bb-reply-actions-button:link, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:link,
+body.buddypress .buddypress-wrap .is-style-reverse.button:link, body.groups.group-invites #send_group_invite_form input.is-style-reverse:link[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button:link, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:link,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap:link, #bbpress-forums .bbp-admin-links a.is-style-reverse:link,
 body.buddypress .buddypress-wrap #send-private-message a:link,
 body.buddypress .buddypress-wrap .fav:link, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link:link, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link:link, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link:link, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link:link {
@@ -4826,7 +4826,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse:link:active,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit:link:active,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset:link:active,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button:link:active,
-body.buddypress .buddypress-wrap .is-style-reverse.button:link:active, #bbpress-forums .is-style-reverse.bb-reply-actions-button:link:active, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:link:active,
+body.buddypress .buddypress-wrap .is-style-reverse.button:link:active, body.groups.group-invites #send_group_invite_form input.is-style-reverse:link:active[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button:link:active, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:link:active,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap:link:active, #bbpress-forums .bbp-admin-links a.is-style-reverse:link:active, body.buddypress .buddypress-wrap #send-private-message a:link:active,
 body.buddypress .buddypress-wrap .fav:link:active, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link:link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link:link:active, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link:link:active, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link:link:active {
   color: #ffffff;
@@ -4847,7 +4847,7 @@ body.buddypress .buddypress-wrap .follow-button a.nhsuk-button--disabled.is-styl
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse#aw-whats-new-submit,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse#aw-whats-new-reset,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse.dz-button,
-body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse.button, #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-reply-actions-button, #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-topic-reply-link-wrap,
+body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse.button, body.groups.group-invites #send_group_invite_form input.nhsuk-button--disabled.is-style-reverse[type="submit"], #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-reply-actions-button, #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-topic-reply-link-wrap,
 #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.is-style-reverse, body.buddypress .buddypress-wrap #send-private-message a.nhsuk-button--disabled,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.fav, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-trash-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-trash-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-edit-link, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-edit-link {
   background-color: #ffffff;
@@ -4868,7 +4868,7 @@ body.buddypress .buddypress-wrap .follow-button a.nhsuk-button--disabled.is-styl
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse#aw-whats-new-submit:focus,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse#aw-whats-new-reset:focus,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse.dz-button:focus,
-body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse.button:focus, #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-reply-actions-button:focus, #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-topic-reply-link-wrap:focus,
+body.buddypress .buddypress-wrap .nhsuk-button--disabled.is-style-reverse.button:focus, body.groups.group-invites #send_group_invite_form input.nhsuk-button--disabled.is-style-reverse:focus[type="submit"], #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-reply-actions-button:focus, #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-topic-reply-link-wrap:focus,
 #bbpress-forums .nhsuk-button--disabled.is-style-reverse.bb-topic-subscription-link-wrap:focus, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.is-style-reverse:focus, body.buddypress .buddypress-wrap #send-private-message a.nhsuk-button--disabled:focus,
 body.buddypress .buddypress-wrap .nhsuk-button--disabled.fav:focus, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-trash-link:focus, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-trash-link:focus, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-topic-edit-link:focus, #bbpress-forums .bbp-admin-links a.nhsuk-button--disabled.bbp-reply-edit-link:focus {
   background-color: #ffffff;
@@ -4920,6 +4920,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled="disabled"],
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"],
 body.buddypress .buddypress-wrap .dz-button[disabled="disabled"],
 body.buddypress .buddypress-wrap .button[disabled="disabled"],
+body.groups.group-invites #send_group_invite_form input[disabled="disabled"][type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled="disabled"],
 #bbpress-forums .bb-topic-reply-link-wrap[disabled="disabled"],
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"],
@@ -4966,6 +4967,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled],
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled],
 body.buddypress .buddypress-wrap .dz-button[disabled],
 body.buddypress .buddypress-wrap .button[disabled],
+body.groups.group-invites #send_group_invite_form input[disabled][type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled],
 #bbpress-forums .bb-topic-reply-link-wrap[disabled],
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled],
@@ -5017,6 +5019,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled="disabled"]:hover
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .dz-button[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .button[disabled="disabled"]:hover,
+body.groups.group-invites #send_group_invite_form input[disabled="disabled"]:hover[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:hover,
 #bbpress-forums .bb-topic-reply-link-wrap[disabled="disabled"]:hover,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"]:hover,
@@ -5062,6 +5065,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled]:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled]:hover,
 body.buddypress .buddypress-wrap .dz-button[disabled]:hover,
 body.buddypress .buddypress-wrap .button[disabled]:hover,
+body.groups.group-invites #send_group_invite_form input[disabled]:hover[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled]:hover,
 #bbpress-forums .bb-topic-reply-link-wrap[disabled]:hover,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled]:hover,
@@ -5112,6 +5116,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled="disabled"]:focus
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .dz-button[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .button[disabled="disabled"]:focus,
+body.groups.group-invites #send_group_invite_form input[disabled="disabled"]:focus[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:focus,
 #bbpress-forums .bb-topic-reply-link-wrap[disabled="disabled"]:focus,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"]:focus,
@@ -5157,6 +5162,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled]:focus,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled]:focus,
 body.buddypress .buddypress-wrap .dz-button[disabled]:focus,
 body.buddypress .buddypress-wrap .button[disabled]:focus,
+body.groups.group-invites #send_group_invite_form input[disabled]:focus[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled]:focus,
 #bbpress-forums .bb-topic-reply-link-wrap[disabled]:focus,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled]:focus,
@@ -5207,6 +5213,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled="disabled"]:activ
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .dz-button[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .button[disabled="disabled"]:active,
+body.groups.group-invites #send_group_invite_form input[disabled="disabled"]:active[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:active,
 #bbpress-forums .bb-topic-reply-link-wrap[disabled="disabled"]:active,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"]:active,
@@ -5252,6 +5259,7 @@ body.buddypress .buddypress-wrap #aw-whats-new-submit[disabled]:active,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled]:active,
 body.buddypress .buddypress-wrap .dz-button[disabled]:active,
 body.buddypress .buddypress-wrap .button[disabled]:active,
+body.groups.group-invites #send_group_invite_form input[disabled]:active[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled]:active,
 #bbpress-forums .bb-topic-reply-link-wrap[disabled]:active,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled]:active,
@@ -5274,10 +5282,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary[disable
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disabled="disabled"],
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled="disabled"],
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled="disabled"],
-body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"], #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"],
+body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"], body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled="disabled"][type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"], #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"],
 body.buddypress .buddypress-wrap .follow-button a[disabled="disabled"],
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"],
-body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"], #bbpress-forums .bb-reply-actions-button[disabled="disabled"],
+body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"], body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled="disabled"][type="submit"], #bbpress-forums .bb-reply-actions-button[disabled="disabled"],
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-reply-close-link[disabled="disabled"],
 .nhsuk-button--secondary[disabled],
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled],
@@ -5327,11 +5335,13 @@ body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disa
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled],
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled],
 body.buddypress .buddypress-wrap .is-style-secondary.button[disabled],
+body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled][type="submit"],
 #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled],
 #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled],
 body.buddypress .buddypress-wrap .follow-button a[disabled],
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled],
 body.buddypress .buddypress-wrap .delete-activity[disabled],
+body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled][type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled],
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled],
 #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled],
@@ -5360,10 +5370,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary[disable
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled="disabled"]:hover,
-body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"]:hover, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"]:hover,
+body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"]:hover, body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled="disabled"]:hover[type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .follow-button a[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"]:hover,
-body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"]:hover, #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:hover,
+body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"]:hover, body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled="disabled"]:hover[type="submit"], #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:hover,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-close-link[disabled="disabled"]:hover,
 .nhsuk-button--secondary[disabled]:hover,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:hover,
@@ -5409,11 +5419,13 @@ body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disa
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled]:hover,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled]:hover,
 body.buddypress .buddypress-wrap .is-style-secondary.button[disabled]:hover,
+body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled]:hover[type="submit"],
 #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled]:hover,
 #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled]:hover,
 body.buddypress .buddypress-wrap .follow-button a[disabled]:hover,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled]:hover,
 body.buddypress .buddypress-wrap .delete-activity[disabled]:hover,
+body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled]:hover[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled]:hover,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled]:hover,
 #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled]:hover,
@@ -5442,10 +5454,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary[disable
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled="disabled"]:focus,
-body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"]:focus, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"]:focus,
+body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"]:focus, body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled="disabled"]:focus[type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .follow-button a[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"]:focus,
-body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"]:focus, #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:focus,
+body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"]:focus, body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled="disabled"]:focus[type="submit"], #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:focus,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-close-link[disabled="disabled"]:focus,
 .nhsuk-button--secondary[disabled]:focus,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:focus,
@@ -5491,11 +5503,13 @@ body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disa
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled]:focus,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled]:focus,
 body.buddypress .buddypress-wrap .is-style-secondary.button[disabled]:focus,
+body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled]:focus[type="submit"],
 #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled]:focus,
 #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled]:focus,
 body.buddypress .buddypress-wrap .follow-button a[disabled]:focus,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled]:focus,
 body.buddypress .buddypress-wrap .delete-activity[disabled]:focus,
+body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled]:focus[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled]:focus,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled]:focus,
 #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled]:focus,
@@ -5523,10 +5537,10 @@ body.buddypress .buddypress-wrap .friendship-button a.is-style-secondary[disable
 body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled="disabled"]:active,
-body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"]:active, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"]:active,
+body.buddypress .buddypress-wrap .is-style-secondary.button[disabled="disabled"]:active, body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled="disabled"]:active[type="submit"], #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .follow-button a[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled="disabled"]:active,
-body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"]:active, #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:active,
+body.buddypress .buddypress-wrap .delete-activity[disabled="disabled"]:active, body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled="disabled"]:active[type="submit"], #bbpress-forums .bb-reply-actions-button[disabled="disabled"]:active,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-topic-sticky-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-reply-sticky-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-topic-merge-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-reply-merge-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-topic-spam-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-reply-spam-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-reply-close-link[disabled="disabled"]:active,
 .nhsuk-button--secondary[disabled]:active,
 .learndash-wrapper .ld-item-list-actions .ld-expand-button[disabled]:active,
@@ -5572,11 +5586,13 @@ body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary[disa
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit[disabled]:active,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button[disabled]:active,
 body.buddypress .buddypress-wrap .is-style-secondary.button[disabled]:active,
+body.groups.group-invites #send_group_invite_form input.is-style-secondary[disabled]:active[type="submit"],
 #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap[disabled]:active,
 #bbpress-forums .bbp-admin-links a.is-style-secondary[disabled]:active,
 body.buddypress .buddypress-wrap .follow-button a[disabled]:active,
 body.buddypress .buddypress-wrap #aw-whats-new-reset[disabled]:active,
 body.buddypress .buddypress-wrap .delete-activity[disabled]:active,
+body.groups.group-invites #send_group_invite_form input#bp_invites_reset[disabled]:active[type="submit"],
 #bbpress-forums .bb-reply-actions-button[disabled]:active,
 #bbpress-forums .bb-topic-subscription-link-wrap[disabled]:active,
 #bbpress-forums .bbp-admin-links a.bbp-topic-close-link[disabled]:active,
@@ -5606,7 +5622,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse[disabled="dis
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled="disabled"],
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled="disabled"],
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled="disabled"],
-body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"], #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"], #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"],
+body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"], body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled="disabled"][type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"], #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"],
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled="disabled"], #bbpress-forums .bbp-admin-links a.is-style-reverse[disabled="disabled"],
 body.buddypress .buddypress-wrap #send-private-message a[disabled="disabled"],
 body.buddypress .buddypress-wrap .fav[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link[disabled="disabled"], #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link[disabled="disabled"],
@@ -5656,6 +5672,7 @@ body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled]
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled],
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled],
 body.buddypress .buddypress-wrap .is-style-reverse.button[disabled],
+body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled][type="submit"],
 #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled],
 #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled],
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled],
@@ -5685,7 +5702,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse[disabled="dis
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled="disabled"]:hover,
-body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"]:hover, #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"]:hover, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"]:hover,
+body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"]:hover, body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled="disabled"]:hover[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"]:hover, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"]:hover,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.is-style-reverse[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap #send-private-message a[disabled="disabled"]:hover,
 body.buddypress .buddypress-wrap .fav[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link[disabled="disabled"]:hover, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link[disabled="disabled"]:hover,
@@ -5735,6 +5752,7 @@ body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled]
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled]:hover,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled]:hover,
 body.buddypress .buddypress-wrap .is-style-reverse.button[disabled]:hover,
+body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled]:hover[type="submit"],
 #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled]:hover,
 #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled]:hover,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled]:hover,
@@ -5764,7 +5782,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse[disabled="dis
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled="disabled"]:focus,
-body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"]:focus, #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"]:focus, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"]:focus,
+body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"]:focus, body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled="disabled"]:focus[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"]:focus, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"]:focus,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.is-style-reverse[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap #send-private-message a[disabled="disabled"]:focus,
 body.buddypress .buddypress-wrap .fav[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link[disabled="disabled"]:focus, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link[disabled="disabled"]:focus,
@@ -5814,6 +5832,7 @@ body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled]
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled]:focus,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled]:focus,
 body.buddypress .buddypress-wrap .is-style-reverse.button[disabled]:focus,
+body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled]:focus[type="submit"],
 #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled]:focus,
 #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled]:focus,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled]:focus,
@@ -5842,7 +5861,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse[disabled="dis
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled="disabled"]:active,
-body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"]:active, #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"]:active, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"]:active,
+body.buddypress .buddypress-wrap .is-style-reverse.button[disabled="disabled"]:active, body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled="disabled"]:active[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled="disabled"]:active, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled="disabled"]:active,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.is-style-reverse[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap #send-private-message a[disabled="disabled"]:active,
 body.buddypress .buddypress-wrap .fav[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link[disabled="disabled"]:active, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link[disabled="disabled"]:active,
@@ -5892,6 +5911,7 @@ body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit[disabled]
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset[disabled]:active,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button[disabled]:active,
 body.buddypress .buddypress-wrap .is-style-reverse.button[disabled]:active,
+body.groups.group-invites #send_group_invite_form input.is-style-reverse[disabled]:active[type="submit"],
 #bbpress-forums .is-style-reverse.bb-reply-actions-button[disabled]:active,
 #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap[disabled]:active,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap[disabled]:active,
@@ -5922,7 +5942,7 @@ body.buddypress .buddypress-wrap .fav[disabled]:active,
 .ie8 body.buddypress .buddypress-wrap #aw-whats-new-submit:focus, body.buddypress .buddypress-wrap .ie8 #aw-whats-new-submit:focus,
 .ie8 body.buddypress .buddypress-wrap #aw-whats-new-reset:focus, body.buddypress .buddypress-wrap .ie8 #aw-whats-new-reset:focus,
 .ie8 body.buddypress .buddypress-wrap .dz-button:focus, body.buddypress .buddypress-wrap .ie8 .dz-button:focus,
-.ie8 body.buddypress .buddypress-wrap .button:focus, body.buddypress .buddypress-wrap .ie8 .button:focus, .ie8 #bbpress-forums .bb-reply-actions-button:focus, #bbpress-forums .ie8 .bb-reply-actions-button:focus, .ie8 #bbpress-forums .bb-topic-reply-link-wrap:focus, #bbpress-forums .ie8 .bb-topic-reply-link-wrap:focus,
+.ie8 body.buddypress .buddypress-wrap .button:focus, body.buddypress .buddypress-wrap .ie8 .button:focus, .ie8 body.groups.group-invites #send_group_invite_form input:focus[type="submit"], body.groups.group-invites #send_group_invite_form .ie8 input:focus[type="submit"], .ie8 #bbpress-forums .bb-reply-actions-button:focus, #bbpress-forums .ie8 .bb-reply-actions-button:focus, .ie8 #bbpress-forums .bb-topic-reply-link-wrap:focus, #bbpress-forums .ie8 .bb-topic-reply-link-wrap:focus,
 .ie8 #bbpress-forums .bb-topic-subscription-link-wrap:focus, #bbpress-forums .ie8 .bb-topic-subscription-link-wrap:focus, .ie8 #bbpress-forums .bbp-admin-links a:focus, #bbpress-forums .bbp-admin-links .ie8 a:focus {
   outline: 1px dotted #212b32;
 }
@@ -7978,7 +7998,7 @@ body.buddypress .buddypress-wrap .fav[disabled]:active,
   fill: #212b32;
 }
 
-.nhsuk-header__search-form {
+.nhsuk-header__search-form, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search {
   height: 100%;
   overflow: visible;
 }
@@ -7991,10 +8011,10 @@ body.buddypress .buddypress-wrap .fav[disabled]:active,
     position: relative;
     z-index: 1;
   }
-  .nhsuk-header__search-wrap {
+  .nhsuk-header__search-wrap, body.buddypress .buddypress-wrap .group-invites-search {
     display: none;
   }
-  .nhsuk-header__search-wrap.js-show {
+  .nhsuk-header__search-wrap.js-show, body.buddypress .buddypress-wrap .js-show.group-invites-search {
     clear: both;
     display: -ms-flexbox;
     /* [14] */
@@ -8005,7 +8025,7 @@ body.buddypress .buddypress-wrap .fav[disabled]:active,
     padding-top: 16px;
     text-align: left;
   }
-  .nhsuk-header__search-form {
+  .nhsuk-header__search-form, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search {
     background-color: #ffffff;
     display: -ms-flexbox;
     /* [14] */
@@ -8126,7 +8146,7 @@ body.buddypress .buddypress-wrap .fav[disabled]:active,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-header__search-wrap {
+  .nhsuk-header__search-wrap, body.buddypress .buddypress-wrap .group-invites-search {
     display: block;
     line-height: 0;
   }
@@ -8626,7 +8646,7 @@ body.buddypress .buddypress-wrap .fav[disabled]:active,
   }
 }
 
-.ie9 .nhsuk-header__search-wrap .js-show {
+.ie9 .nhsuk-header__search-wrap .js-show, .ie9 body.buddypress .buddypress-wrap .group-invites-search .js-show, body.buddypress .buddypress-wrap .ie9 .group-invites-search .js-show {
   display: block;
 }
 
@@ -9064,7 +9084,7 @@ body.buddypress .buddypress-wrap .fav[disabled]:active,
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-header--white .nhsuk-header__search-form {
+  .nhsuk-header--white .nhsuk-header__search-form, .nhsuk-header--white body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header--white .nhsuk-search {
     padding-top: 0;
   }
 }
@@ -11171,7 +11191,7 @@ body.buddypress .buddypress-wrap .subnav-filters div input[type="search"]:focus:
 /* ==========================================================================
    #TAG
    ========================================================================== */
-.nhsuk-tag, .pagination_split_post .post-page-numbers, #primary footer .edit-link, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-respond .logged-in-as a:nth-of-type(2), .article-footer .comments-link, .learndash-wrapper .ld-status, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, .download-box .download-count, body.buddypress .buddypress-wrap .membership-requested, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-comments, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-likes {
+.nhsuk-tag, .pagination_split_post .post-page-numbers, #primary footer .edit-link, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-respond .logged-in-as a:nth-of-type(2), .article-footer .comments-link, .learndash-wrapper .ld-status, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, .download-box .download-count, body.buddypress .buddypress-wrap .membership-requested, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-comments, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-likes, body.groups.group-invites #send_group_invite_form .select2-container--default .select2-selection--multiple .select2-selection__choice {
   font-weight: 600;
   font-size: 14px;
   font-size: 0.875rem;
@@ -11190,7 +11210,7 @@ body.buddypress .buddypress-wrap .subnav-filters div input[type="search"]:focus:
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-tag, .pagination_split_post .post-page-numbers, #primary footer .edit-link, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-respond .logged-in-as a:nth-of-type(2), .article-footer .comments-link, .learndash-wrapper .ld-status, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, .download-box .download-count, body.buddypress .buddypress-wrap .membership-requested, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-comments, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-likes {
+  .nhsuk-tag, .pagination_split_post .post-page-numbers, #primary footer .edit-link, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-respond .logged-in-as a:nth-of-type(2), .article-footer .comments-link, .learndash-wrapper .ld-status, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, .download-box .download-count, body.buddypress .buddypress-wrap .membership-requested, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-comments, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-likes, body.groups.group-invites #send_group_invite_form .select2-container--default .select2-selection--multiple .select2-selection__choice {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1;
@@ -11198,7 +11218,7 @@ body.buddypress .buddypress-wrap .subnav-filters div input[type="search"]:focus:
 }
 
 @media print {
-  .nhsuk-tag, .pagination_split_post .post-page-numbers, #primary footer .edit-link, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-respond .logged-in-as a:nth-of-type(2), .article-footer .comments-link, .learndash-wrapper .ld-status, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, .download-box .download-count, body.buddypress .buddypress-wrap .membership-requested, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-comments, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-likes {
+  .nhsuk-tag, .pagination_split_post .post-page-numbers, #primary footer .edit-link, #primary footer .tags-links, #primary footer .cat-links, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-administrator, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .fn .comment-author-label.comment-author-label-facilitator, .nhsuk-list-panel .comment-respond .logged-in-as a:nth-of-type(2), .article-footer .comments-link, .learndash-wrapper .ld-status, .learndash-wrapper .ld-status.ld-status-progress, .learndash-wrapper .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-progress, .learndash-wrapper .ld-course-status .ld-status.ld-status-progress, .learndash-wrapper .ld-item-details .ld-status.ld-status-progress, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-complete, .learndash-wrapper .ld-course-status .ld-status.ld-status-complete, .learndash-wrapper .ld-item-details .ld-status.ld-status-complete, .learndash-wrapper .ld-breadcrumbs .ld-status.ld-status-waiting, .learndash-wrapper .ld-course-status .ld-status.ld-status-waiting, .learndash-wrapper .ld-item-details .ld-status.ld-status-waiting, .download-box .download-count, body.buddypress .buddypress-wrap .membership-requested, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-comments, body.buddypress .buddypress-wrap #comments .comment-body .activity-state .activity-state-likes, body.groups.group-invites #send_group_invite_form .select2-container--default .select2-selection--multiple .select2-selection__choice {
     font-size: 14pt;
     line-height: 1;
   }
@@ -11456,7 +11476,7 @@ body.buddypress .buddypress-wrap .follow-button a.is-style-reverse:visited,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit:visited,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset:visited,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button:visited,
-body.buddypress .buddypress-wrap .is-style-reverse.button:visited, #bbpress-forums .is-style-reverse.bb-reply-actions-button:visited, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:visited,
+body.buddypress .buddypress-wrap .is-style-reverse.button:visited, body.groups.group-invites #send_group_invite_form input.is-style-reverse:visited[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button:visited, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap:visited,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap:visited, #bbpress-forums .bbp-admin-links a.is-style-reverse:visited,
 body.buddypress .buddypress-wrap #send-private-message a:visited,
 body.buddypress .buddypress-wrap .fav:visited, #bbpress-forums .bbp-admin-links a.bbp-topic-trash-link:visited, #bbpress-forums .bbp-admin-links a.bbp-reply-trash-link:visited, #bbpress-forums .bbp-admin-links a.bbp-topic-edit-link:visited, #bbpress-forums .bbp-admin-links a.bbp-reply-edit-link:visited {
@@ -11545,18 +11565,18 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding-right: 0;
 }
 
-#secondary .nhsuk-header__search-wrap {
+#secondary .nhsuk-header__search-wrap, #secondary body.buddypress .buddypress-wrap .group-invites-search, body.buddypress .buddypress-wrap #secondary .group-invites-search {
   padding: 24px 0;
 }
 
-#secondary .nhsuk-header__search-wrap .nhsuk-search__input {
+#secondary .nhsuk-header__search-wrap .nhsuk-search__input, #secondary body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__input, body.buddypress .buddypress-wrap #secondary .group-invites-search .nhsuk-search__input {
   border: 2px solid #aeb7bd;
   border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
 }
 
-#secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
+#secondary .nhsuk-header__search-wrap .nhsuk-search__submit, #secondary body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__submit, body.buddypress .buddypress-wrap #secondary .group-invites-search .nhsuk-search__submit {
   border: 2px solid #aeb7bd;
   border-left: none;
   margin-top: 0;
@@ -11564,22 +11584,22 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   box-shadow: 0 !important;
 }
 
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle, #secondary body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle, body.buddypress .buddypress-wrap #secondary .group-invites-search .nhsuk-header__search-toggle {
   background-color: #f0f4f5;
   border-color: #005eb8;
   color: #005eb8;
 }
 
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search, #secondary body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle .nhsuk-icon__search, body.buddypress .buddypress-wrap #secondary .group-invites-search .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #005eb8;
 }
 
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active, #secondary body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle.is_active, body.buddypress .buddypress-wrap #secondary .group-invites-search .nhsuk-header__search-toggle.is_active {
   background-color: #005eb8;
   color: #ffffff;
 }
 
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search, #secondary body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle.is_active .nhsuk-icon__search, body.buddypress .buddypress-wrap #secondary .group-invites-search .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
   fill: #ffffff;
 }
 
@@ -11594,7 +11614,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   display: none;
 }
 
-#primary .page-content .nhsuk-header__search-wrap {
+#primary .page-content .nhsuk-header__search-wrap, #primary .page-content body.buddypress .buddypress-wrap .group-invites-search, body.buddypress .buddypress-wrap #primary .page-content .group-invites-search {
   padding: 8px 24px;
   display: inline-block;
   width: 80%;
@@ -11602,29 +11622,29 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border-radius: 4px;
 }
 
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__input, body.buddypress .buddypress-wrap #primary .page-content .group-invites-search .nhsuk-search__input {
   border: 2px solid #f0f4f5;
   border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
 }
 
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle, #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle, body.buddypress .buddypress-wrap #primary .page-content .group-invites-search .nhsuk-header__search-toggle {
   background-color: #f0f4f5;
   border-color: #005eb8;
   color: #005eb8;
 }
 
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search, #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle .nhsuk-icon__search, body.buddypress .buddypress-wrap #primary .page-content .group-invites-search .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #005eb8;
 }
 
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active, #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle.is_active, body.buddypress .buddypress-wrap #primary .page-content .group-invites-search .nhsuk-header__search-toggle.is_active {
   background-color: #005eb8;
   color: #ffffff;
 }
 
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search, #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-header__search-toggle.is_active .nhsuk-icon__search, body.buddypress .buddypress-wrap #primary .page-content .group-invites-search .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
   fill: #ffffff;
 }
 
@@ -11642,28 +11662,28 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   float: right;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
+.error404 #primary .page-content .nhsuk-header__search-wrap, .error404 #primary .page-content body.buddypress .buddypress-wrap .group-invites-search, body.buddypress .buddypress-wrap .error404 #primary .page-content .group-invites-search, .search-no-results #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content body.buddypress .buddypress-wrap .group-invites-search, body.buddypress .buddypress-wrap .search-no-results #primary .page-content .group-invites-search {
   padding: 5px;
   width: 100%;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-form, .search-no-results #primary .page-content .nhsuk-header__search-form {
+.error404 #primary .page-content .nhsuk-header__search-form, .error404 #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search, body.buddypress .buddypress-wrap .group-invites-search .error404 #primary .page-content .nhsuk-search, .search-no-results #primary .page-content .nhsuk-header__search-form, .search-no-results #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search, body.buddypress .buddypress-wrap .group-invites-search .search-no-results #primary .page-content .nhsuk-search {
   display: block;
   padding: 0;
 }
 
-.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .error404 #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__input, body.buddypress .buddypress-wrap .error404 #primary .page-content .group-invites-search .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__input, body.buddypress .buddypress-wrap .search-no-results #primary .page-content .group-invites-search .nhsuk-search__input {
   float: left;
   max-width: 80%;
   margin: 16px 0 0 5%;
 }
 
 @media (max-width: 40.0525em) {
-  .error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
+  .error404 #primary .page-content .nhsuk-header__search-wrap, .error404 #primary .page-content body.buddypress .buddypress-wrap .group-invites-search, body.buddypress .buddypress-wrap .error404 #primary .page-content .group-invites-search, .search-no-results #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content body.buddypress .buddypress-wrap .group-invites-search, body.buddypress .buddypress-wrap .search-no-results #primary .page-content .group-invites-search {
     border: 0;
     padding: 0;
   }
-  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .error404 #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__input, body.buddypress .buddypress-wrap .error404 #primary .page-content .group-invites-search .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__input, body.buddypress .buddypress-wrap .search-no-results #primary .page-content .group-invites-search .nhsuk-search__input {
     float: left;
     max-width: 73%;
     margin: 0;
@@ -11717,7 +11737,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   height: 100%;
 }
 
-.nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
+.nhsuk-header .nhsuk-header__search-wrap input[type="text"], .nhsuk-header body.buddypress .buddypress-wrap .group-invites-search input[type="text"], body.buddypress .buddypress-wrap .nhsuk-header .group-invites-search input[type="text"] {
   border-radius: 4px 0px 0px 4px;
   border: none;
 }
@@ -11746,7 +11766,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border-right: none;
 }
 
-.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type="text"] {
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type="text"], .nhsuk-header.nhsuk-header--white body.buddypress .buddypress-wrap .group-invites-search input[type="text"], body.buddypress .buddypress-wrap .nhsuk-header.nhsuk-header--white .group-invites-search input[type="text"] {
   border: 2px solid #d8dde0;
 }
 
@@ -11915,7 +11935,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   color: #005eb8;
 }
 
-.nhsuk-header__search-form .nhsuk-u-visually-hidden {
+.nhsuk-header__search-form .nhsuk-u-visually-hidden, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search .nhsuk-u-visually-hidden {
   background: #ffffff;
   color: #000000;
 }
@@ -11937,7 +11957,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   flex-flow: wrap;
 }
 
-.nhsuk-header__search-wrap input[type="text"] {
+.nhsuk-header__search-wrap input[type="text"], body.buddypress .buddypress-wrap .group-invites-search input[type="text"] {
   border: none;
 }
 
@@ -12174,11 +12194,11 @@ button {
   height: 4.5rem;
 }
 
-#secondary section#widget_search .nhsuk-header__search-wrap {
+#secondary section#widget_search .nhsuk-header__search-wrap, #secondary section#widget_search body.buddypress .buddypress-wrap .group-invites-search, body.buddypress .buddypress-wrap #secondary section#widget_search .group-invites-search {
   padding-top: 16px;
 }
 
-#secondary section#widget_search .nhsuk-header__search-wrap .nhsuk-search__input {
+#secondary section#widget_search .nhsuk-header__search-wrap .nhsuk-search__input, #secondary section#widget_search body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__input, body.buddypress .buddypress-wrap #secondary section#widget_search .group-invites-search .nhsuk-search__input {
   width: 81%;
 }
 
@@ -13661,28 +13681,28 @@ ul.download-versions {
   display: flex;
 }
 
-.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li {
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item {
   display: inline-block;
   padding: 16px 24px;
   margin-bottom: 0;
   font-size: 16px;
 }
 
-.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li a {
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
   text-decoration: none;
   word-break: initial;
 }
 
-.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a:visited, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li a:visited {
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a:visited {
   text-decoration: none;
   color: #330072;
 }
 
-.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a:hover, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li a:hover {
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a:hover {
   text-decoration: underline;
 }
 
-.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li.nhsuk-bordered-tabs-item-active, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li.active {
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
   background-color: #f0f4f5;
   border: 2px solid #aeb7bd;
   border-radius: 4px 4px 0 0;
@@ -13690,6 +13710,10 @@ ul.download-versions {
   border-bottom: 2px solid #f0f4f5;
   font-weight: 600;
   color: #005eb8;
+}
+
+.nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active-alt {
+  border-bottom: 8px solid #005eb8;
 }
 
 @media (max-width: 40.0525em) {
@@ -13708,16 +13732,16 @@ ul.download-versions {
     padding: 0;
     margin-top: 8px;
   }
-  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li {
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item {
     background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left 0.75rem no-repeat;
     padding: 0 0 8px 32px;
     position: relative;
     display: list-item;
   }
-  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li.nhsuk-bordered-tabs-item-active, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li.active {
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
     border: none !important;
   }
-  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a, .bp-search-results-wrapper .nhsuk-bordered-tabs-container ul.nhsuk-bordered-tabs li a {
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
     display: inline-block;
     color: #212b32;
   }
@@ -14157,7 +14181,7 @@ body.buddypress .buddypress-wrap #send-private-message a.is-style-secondary,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-submit,
 body.buddypress .buddypress-wrap .is-style-secondary#aw-whats-new-reset,
 body.buddypress .buddypress-wrap .is-style-secondary.dz-button,
-body.buddypress .buddypress-wrap .is-style-secondary.button, #bbpress-forums .is-style-secondary.bb-reply-actions-button, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap,
+body.buddypress .buddypress-wrap .is-style-secondary.button, body.groups.group-invites #send_group_invite_form input.is-style-secondary[type="submit"], #bbpress-forums .is-style-secondary.bb-reply-actions-button, #bbpress-forums .is-style-secondary.bb-topic-reply-link-wrap,
 #bbpress-forums .is-style-secondary.bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a.is-style-secondary {
   /* secondary button style*/
 }
@@ -14175,7 +14199,7 @@ body.buddypress .buddypress-wrap #send-private-message a.is-style-reverse,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-submit,
 body.buddypress .buddypress-wrap .is-style-reverse#aw-whats-new-reset,
 body.buddypress .buddypress-wrap .is-style-reverse.dz-button,
-body.buddypress .buddypress-wrap .is-style-reverse.button, #bbpress-forums .is-style-reverse.bb-reply-actions-button, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap,
+body.buddypress .buddypress-wrap .is-style-reverse.button, body.groups.group-invites #send_group_invite_form input.is-style-reverse[type="submit"], #bbpress-forums .is-style-reverse.bb-reply-actions-button, #bbpress-forums .is-style-reverse.bb-topic-reply-link-wrap,
 #bbpress-forums .is-style-reverse.bb-topic-subscription-link-wrap, #bbpress-forums .bbp-admin-links a.is-style-reverse, a.nhsuk-button.is-style-reverse, #content a.is-style-reverse.wp-block-button__link, #content a.is-style-reverse.wp-block-file__button, #content .wp-block-file a.is-style-reverse.wp-block-file__button:active, #content .wp-block-file a.is-style-reverse.wp-block-file__button:focus, #content .wp-block-file a.is-style-reverse.wp-block-file__button:hover, #content .wp-block-file a.is-style-reverse.wp-block-file__button:visited, #login #loginform a.is-style-reverse#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond a.is-style-reverse#cancel-comment-reply-link, .gform_wrapper .gform_body a.is-style-reverse.gform_button, .gform_wrapper .gform_body a.is-style-reverse.gform_next_button, .gform_wrapper .gform_body a.is-style-reverse.gform_previous_button, .tippy-popper .tippy-content a.is-style-reverse.gv-approval-toggle, .learndash-wrapper a.is-style-reverse.ld-button, .learndash-wrapper .ld-item-list-actions a.is-style-reverse.ld-expand-button, .learndash-wrapper a.is-style-reverse.ld-logout, .learndash-wrapper a.is-style-reverse.ld-login, .learndash-wrapper .ld-content-actions a.is-style-reverse.ld-primary-color, .learndash-wrapper .ld-item-list .ld-section-heading a.is-style-reverse.ld-search-prompt, .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-submit a.is-style-reverse.ld-button, .learndash-wrapper .wpProQuiz_content a.is-style-reverse.wpProQuiz_button, .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn, .ld-course-list-items .ld_course_grid article .ld_course_grid_button a.is-style-reverse.btn-primary, #tribe-events-content a.is-style-reverse.tribe-events-gcal,
 #tribe-events-content a.is-style-reverse.tribe-events-ical,
 #tribe-events-content a.is-style-reverse.tribe-events-button, html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-card .tribe-events-event-cost a.is-style-reverse, html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-embed.ld-table-list .tribe-events-event-cost a.is-style-reverse, .learndash-wrapper html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.ld-table-list .tribe-events-event-cost a.is-style-reverse, a.is-style-reverse.download-button, body.buddypress .buddypress-wrap a.is-style-reverse.request-membership,
@@ -14311,11 +14335,11 @@ body.buddypress .buddypress-wrap a.is-style-reverse.button, #bbpress-forums a.is
   padding: 0;
 }
 
-.nhsuk-header__search-wrap input[type="text"] {
+.nhsuk-header__search-wrap input[type="text"], body.buddypress .buddypress-wrap .group-invites-search input[type="text"] {
   border: 1px solid #aeb7bd;
 }
 
-.nhsuk-header__search-wrap .nhsuk-search__submit {
+.nhsuk-header__search-wrap .nhsuk-search__submit, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search__submit {
   margin-left: unset;
 }
 
@@ -14520,7 +14544,7 @@ body.buddypress .buddypress-wrap .bb-modal {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 99;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -14530,34 +14554,126 @@ body.buddypress .buddypress-wrap .bb-modal {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
+  background-color: #212b32;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
 body.buddypress .buddypress-wrap .bb-modal-box {
-  background-color: #fefefe;
-  margin: 15% auto;
+  background-color: #ffffff;
+  margin: 10vh 10vw;
   /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  padding: 16px;
+  border: 1px solid #aeb7bd;
+  border-radius: 4px;
+  width: 80vw;
   /* Could be more or less, depending on screen size */
+  max-height: 80vh;
 }
 
 body.buddypress .buddypress-wrap .close {
-  color: #aaa;
+  color: #d5281b;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 32px;
 }
 
 body.buddypress .buddypress-wrap .close:hover,
 body.buddypress .buddypress-wrap .close:focus {
-  color: black;
+  color: #212b32;
   text-decoration: none;
   cursor: pointer;
+}
+
+body.buddypress .buddypress-wrap ul.item-list li .invite-button :not(.group-remove-invite-button) span.icons:before {
+  content: "\00a0 \00a0 \00a0 \00a0";
+  font-family: Arial;
+  font-size: 32px;
+  line-height: 1px;
+}
+
+body.buddypress .buddypress-wrap ul.item-list li .invite-button span.icons:before {
+  content: "\00a0 \00a0 \00a0 \00a0";
+  font-family: Arial;
+  font-size: 32px;
+  line-height: 1px;
+}
+
+body.buddypress .buddypress-wrap ul.item-list li .invite-button span.icons {
+  background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  content: "\00a0";
+  font-size: 32px;
+  position: relative;
+}
+
+body.buddypress .buddypress-wrap ul.item-list li.selected .invite-button span.icons {
+  background-image: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__cross' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='red' aria-hidden='true'%3E%3Cpath d='M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z'%3E%3C/path%3E%3Cpath d='M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+body.buddypress .buddypress-wrap ul.item-list li .action {
+  height: 48px;
+}
+
+body.buddypress .buddypress-wrap .bp-feedback:not(.custom-homepage-info) {
+  display: inline-block;
+  width: 100%;
+}
+
+body.buddypress .buddypress-wrap .bp-feedback:not(.custom-homepage-info) .bp-icon {
+  background: #005eb8;
+}
+
+body.buddypress .buddypress-wrap .bp-search {
+  width: 100%;
+}
+
+body.buddypress .buddypress-wrap .group-invites-search {
+  width: 80%;
+  margin-left: 10%;
+}
+
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search .nhsuk-input, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="text"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="email"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="url"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="password"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="search"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="number"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="tel"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="range"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="date"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="month"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="week"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="time"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="datetime"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="datetime-local"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search input[type="color"],
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search textarea, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search #login #loginform .user-login, #login #loginform body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search .user-login, body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search #login #loginform .user_pass, #login #loginform body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search .user_pass {
+  border-left: 2px solid #aeb7bd;
+  border-bottom: 2px solid #aeb7bd;
+  border-top: 2px solid #aeb7bd;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+  float: left;
+  max-width: 80%;
+}
+
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search .nhsuk-search__submit {
+  margin-top: unset;
+  margin-left: unset;
+  float: none;
+  border-right: 2px solid #aeb7bd;
+  border-bottom: 2px solid #aeb7bd;
+  border-top: 2px solid #aeb7bd;
+  border-left: 1px solid #aeb7bd;
+  float: left;
+}
+
+body.buddypress .buddypress-wrap .group-invites-search .nhsuk-search .nhsuk-search__submit:hover {
+  background: #003087;
+}
+
+body.groups.group-invites #send_group_invite_form .select2-container--default .select2-selection--multiple .select2-selection__choice .select2-selection__choice__remove {
+  color: #d5281b;
+  margin: 0 8px 0 0;
+  padding: 0 4px;
 }
 
 #bbpress-forums {
@@ -14715,6 +14831,16 @@ body.buddypress .buddypress-wrap .close:focus {
   position: absolute;
   top: 8px;
   right: 16px;
+}
+
+#group-invites-container {
+  display: block;
+}
+
+@media (max-width: 40.0525em) {
+  .bb-groups-invites-left.bb-select-member-view {
+    background: #ffffff;
+  }
 }
 
 /* ==========================================================================
