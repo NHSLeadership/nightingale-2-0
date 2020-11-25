@@ -1,5 +1,8 @@
 body.buddypress {
-  .buddypress-wrap {
+  .count {
+	@extend .nhsuk-tag;
+  }
+  #buddypress {
 	.mobile-only {
 	  display : none;
 	}
@@ -305,7 +308,44 @@ body.buddypress {
 		  }
 		}
 	  }
+	input[type="submit"], #save {
+	  @extend .nhsuk-button;
+	  &#bp_invites_reset {
+		@extend .nhsuk-button--secondary;
+	  }
+	}
 
+	/* Manage Members Custom Styling */
+	.bp-manage-group-container {
+	  .usernames {
+		text-align : center;
+
+		.avatar {
+		  margin-right  : nhsuk-spacing(2);
+		  margin-left   : nhsuk-spacing(3);
+		  border-radius : 50%;
+		}
+	  }
+	  .button {
+		@extend .nhsuk-button;
+		@include nhsuk-typography-responsive(16);
+		padding    : nhsuk-spacing(1) nhsuk-spacing(2);
+		float      : left;
+		&.confirm {
+		  &.member-ban.confirm {
+			background-color : $color_nhsuk-red;
+		  }
+
+		  &.member-promote-to-mod {
+			@extend .nhsuk-button--reverse;
+		  }
+
+		  &.member-promote-to-admin {
+			@extend .nhsuk-button--secondary;
+		  }
+		}
+	  }
+	}
   }
 }
 
@@ -321,12 +361,6 @@ body.groups.group-invites {
 			padding: 0 nhsuk-spacing(1);
 		  }
 		}
-	  }
-	}
-	input[type="submit"] {
-	  @extend .nhsuk-button;
-	  &#bp_invites_reset {
-		@extend .nhsuk-button--secondary;
 	  }
 	}
   }
