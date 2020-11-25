@@ -17,7 +17,8 @@
 
 	<?php do_action( 'nightingale_before_single_content' ); ?>
 
-	<div class="entry-content">
+	<?php if ( ! post_password_required() ) { ?>
+<div class="entry-content">
 		<?php
 		if ( function_exists( 'nightingale_clean_bad_content' ) ) {
 			nightingale_clean_bad_content( true );
@@ -26,6 +27,18 @@
 
 		<?php do_action( 'page_after_content' ); ?>
 	</div><!-- .entry-content -->
+<?php
+    }else{
+       echo get_the_password_form($post->ID);
+    }
+?>
+	
+	
+	
+	
+	
+	
+	
 	<div class="nhsuk-content__clearfix"></div>
 
 	<?php do_action( 'nightingale_after_single_content' ); ?>
