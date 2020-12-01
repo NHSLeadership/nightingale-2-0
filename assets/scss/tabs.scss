@@ -47,36 +47,50 @@
 }
 
 
-@include mq($until : tablet) {
+@include mq($until : large-desktop) {
   .nhsuk-bordered-tabs-container {
 	background    : inherit;
 	border-bottom : none;
 
-	&:before {
-	  content     : 'Pages in this section:';
-	  font-weight : $nhsuk-font-bold;
-	  margin      : 0 0 nhsuk-spacing(3) nhsuk-spacing(3);
+	.close-menu-buddynav {
+	  display    : none;
+	  background : $color_nhsuk-white;
+	  top        : -#{nhsuk-spacing(2)};
+	  position   : absolute;
+	}
+
+	.label-navigation-buddynav {
+	  border-radius : $nhsuk-border-radius;
+	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-2;
+	  background    : $color_nhsuk-white;
+	  padding       : nhsuk-spacing(2) nhsuk-spacing(3);
 	}
 
 	.nhsuk-bordered-tabs {
-	  display    : block;
+	  display    : none;
 	  list-style : none;
 	  padding    : 0;
 	  margin-top : nhsuk-spacing(2);
 
 	  .nhsuk-bordered-tabs-item {
-		background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left nhsuk-px-to-rem(12px) no-repeat; // sass-lint:disable-line quotes
-		padding    : 0 0 nhsuk-spacing(2) nhsuk-spacing(5);
-		position   : relative;
-		display    : list-item;
-
-		&.nhsuk-bordered-tabs-item-active {
-		  border : none !important;
-		}
+		padding       : nhsuk-spacing(2) 0 nhsuk-spacing(2) nhsuk-spacing(5);
+		position      : relative;
+		display       : list-item;
+		background    : $color_nhsuk-white;
+		width         : 100%;
+		border-bottom : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
 
 		a {
 		  display : inline-block;
 		  color   : $nhsuk-text-color;
+		}
+
+		&.nhsuk-bordered-tabs-item-active {
+		  background : $color_nhsuk-blue;
+
+		  a {
+			color : $color_nhsuk-white;
+		  }
 		}
 	  }
 	}
