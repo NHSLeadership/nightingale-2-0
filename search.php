@@ -48,11 +48,11 @@ get_header();
 									endif;
 									?>
 									<div class="nhsuk-card__content">
-                                        <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                                            <a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
-                                                <?php the_title(); ?>
-                                            </a>
-                                        </h2>
+										<h2 class="nhsuk-card__heading nhsuk-heading-m">
+											<a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
+												<?php the_title(); ?>
+											</a>
+										</h2>
 										<?php do_action( 'nightingale_before_archive_content' ); ?>
 										<p class="nhsuk-card__description">
 											<?php

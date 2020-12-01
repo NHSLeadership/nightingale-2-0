@@ -34,7 +34,7 @@
 				// Replace field instruction divs with <small> elements.
 				$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
 				// Remove "required" tag NHSUK Service manual insted recommends highlighting optional fields, which is done elsewhere.
-				$form_string = str_replace( "<span class='gfield_required'>*</span>", "", $form_string );
+				$form_string = str_replace( "<span class='gfield_required'>*</span>", '', $form_string );
 				// Replace main gfield_label elements with nhsuk-label.
 				$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
 				// Remove <ul>s around elements.
@@ -74,9 +74,8 @@
 			}
 			$label = '';
 			if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
-				$label .= '<label for="input_' . $field->formId . '_' . $field->id . '" class="nhsuk-label">' . $field->label;
-				if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName
-					//.UsedPropertyNotSnakeCase
+				$label .= '<label for="input_' . $field->formId . '_' . $field->id . '" class="nhsuk-label">' . $field->label; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+				if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					$label .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
 				}
 
@@ -171,7 +170,7 @@
 
 				// Checkboxes.
 				case 'checkbox':
-					$field_content = str_replace( 'ginput_container_checkbox', 'nhsuk-checkboxes input_' . $field->formId . '_' . $field->id, $field_content );
+					$field_content = str_replace( 'ginput_container_checkbox', 'nhsuk-checkboxes input_' . $field->formId . '_' . $field->id, $field_content ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					// Replace <li> elements with suitably-styled <label>s.
 					$field_content = str_replace( "<li class='", "<div class='nhsuk-checkboxes__item ", $field_content );
 					$field_content = str_replace( '</li', '</div', $field_content );
@@ -184,7 +183,7 @@
 				// Radio buttons.
 				case 'radio':
 				case 'quiz':
-					$field_content = str_replace( 'ginput_container_radio', 'nhsuk-radios input_' . $field->formId . '_' . $field->id, $field_content );
+					$field_content = str_replace( 'ginput_container_radio', 'nhsuk-radios input_' . $field->formId . '_' . $field->id, $field_content ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					$field_content = str_replace( "<li class='", "<div class='nhsuk-radios__item ", $field_content );
 					$field_content = str_replace( '</li', '</div', $field_content );
 					$field_content = preg_replace( '#<label for(.*?)>(.*?)</label>#i', "<label class='nhsuk-label nhsuk-radios__label' for$1>$2</label>", $field_content );
@@ -199,8 +198,8 @@
 					// rank - leave alone.
 					// ratings - sorted in css.
 					$field_content = preg_replace( '/\s\s+/', '', $field_content );
-					$field_content = str_replace( 'ginput_container_radio', 'nhsuk-radios--inline input_' . $field->formId . '_' . $field->id, $field_content ); // radio.
-					$field_content = str_replace( 'ginput_container_checkbox', 'nhsuk-checkboxes input_' . $field->formId . '_' . $field->id, $field_content ); // checkbox.
+					$field_content = str_replace( 'ginput_container_radio', 'nhsuk-radios--inline input_' . $field->formId . '_' . $field->id, $field_content ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+					$field_content = str_replace( 'ginput_container_checkbox', 'nhsuk-checkboxes input_' . $field->formId . '_' . $field->id, $field_content ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					if ( 1 === $errorflag ) {
 						$field_content = str_replace( 'gfield_select', 'nhsuk-select nhsuk-select--error', $field_content );
 						$field_content = str_replace( "type='text' value='' class='", "type='text' value='' class='nhsuk-input nhsuk-input--error ", $field_content );

@@ -53,8 +53,9 @@ function nightingale_render_tabbed_pages( $post ) {
 	$checked = 'on' === $sidebar ? true : false;
 	?>
 
-    <p><b><?php esc_html_e( 'Show this section as tabs?', 'nightingale' ); ?></b></p>
-	<p><i>This will show a tab navigation component at the top of this page. You will need to also toggle this to "on" for any sub pages to ensure consistency. If you have tabs set to active for multiple levels, the tab will show current and parent level pages only.</i></p>
+	<p><b><?php esc_html_e( 'Show this section as tabs?', 'nightingale' ); ?></b></p>
+	<p><i>This will show a tab navigation component at the top of this page. You will need to also toggle this to "on" for any sub pages to ensure consistency. If you have tabs set to active for multiple levels, the tab will show current
+			and parent level pages only.</i></p>
 	<input type="radio" id="tab-on" name="tabPage" value="on"
 		<?php
 		if ( $checked ) :
@@ -71,12 +72,11 @@ function nightingale_render_tabbed_pages( $post ) {
 		?>
 	>
 	<label for="tab-off"><?php esc_html_e( 'Off', 'nightingale' ); ?></label><br>
-<br />
-    <label for="tabName"><b><?php esc_html_e( 'Text to show in Tab for this page', 'nightingale' ); ?></b></label>
-    <p>If you leave this blank, the page name will be used. If your page name is too long and causing ugly tabs, you can use this text to show a shorter title.</p>
+	<br/>
+	<label for="tabName"><b><?php esc_html_e( 'Text to show in Tab for this page', 'nightingale' ); ?></b></label>
+	<p>If you leave this blank, the page name will be used. If your page name is too long and causing ugly tabs, you can use this text to show a shorter title.</p>
 	<?php
-
-            echo '<input name="tabName" id="tabName" value="' .$tabname . '" />';
+	echo '<input name="tabName" id="tabName" value="' . esc_html( $tabname ) . '" />';
 }
 
 /**
@@ -107,7 +107,9 @@ function nightingale_save_tabbed_pages( $post_id ) {
 
 	if ( isset( $_POST['tabPage'] ) ) {
 		$tabbed_page = sanitize_text_field( wp_unslash( $_POST['tabPage'] ) );
-		$tabname = sanitize_text_field( wp_unslash( $_POST['tabName'] ) );
+		if ( isset( $_POST['tabName'] ) ) {
+			$tabname = sanitize_text_field( wp_unslash( $_POST['tabName'] ) );
+		}
 		update_post_meta( $post_id, 'tabbed-page', wp_unslash( $tabbed_page ) );
 		update_post_meta( $post_id, 'tabname', wp_unslash( $tabname ) );
 	}
