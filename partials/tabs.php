@@ -9,21 +9,25 @@
  * @version   1.0 19th November 2020
  */
 
-if( $page_tabbed = get_post_meta( get_the_id(), 'tabbed-page', true ) ) {
-	if ( 'on' === $page_tabbed ) {
-		$args = array(
-			'post_type'   => 'page',
-			'post_parent' => $post->ID,
-			'depth'       => 1,
-			'post_status' => 'publish',
-			'meta_query'  => array(
-				array(
-					'key'   => 'tabbed-page',
-					'value' => 'on',
-				),
+$thispage = get_post_meta(
+	get_the_id(),
+	'tabbed-page',
+	true
+);
+if ( $thispage ) {
+	$args = array(
+		'post_type'   => 'page',
+		'post_parent' => $post->ID,
+		'depth'       => 1,
+		'post_status' => 'publish',
+		'meta_query'  => array(
+			array(
+				'key'   => 'tabbed-page',
+				'value' => 'on',
 			),
-		);
-		if ( ! empty( $post->post_parent ) || ! empty( get_children( $args ) ) ) {
+		),
+	);
+	if ( ! empty( $post->post_parent ) || ! empty( get_children( $args ) ) ) {
 
 		// Start first "Overview" link to parent page.
 		$tabslink = '<li class="nhsuk-bordered-tabs-item';
