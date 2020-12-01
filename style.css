@@ -480,6 +480,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* With :not(.autocomplete__input), the search field is not affected */
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -8954,7 +8955,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
  *    as background-color and color need to always be set together, color should
  *    not be set either.
  */
-.nhsuk-input, input[type="text"],
+.nhsuk-input, input[type="text"]:not(.autocomplete__input),
 input[type="email"],
 input[type="url"],
 input[type="password"],
@@ -8991,7 +8992,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-input, input[type="text"],
+  .nhsuk-input, input[type="text"]:not(.autocomplete__input),
   input[type="email"],
   input[type="url"],
   input[type="password"],
@@ -9014,7 +9015,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
 }
 
 @media print {
-  .nhsuk-input, input[type="text"],
+  .nhsuk-input, input[type="text"]:not(.autocomplete__input),
   input[type="email"],
   input[type="url"],
   input[type="password"],
@@ -9035,7 +9036,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
   }
 }
 
-.nhsuk-input:focus, input:focus[type="text"],
+.nhsuk-input:focus, input:focus[type="text"]:not(.autocomplete__input),
 input:focus[type="email"],
 input:focus[type="url"],
 input:focus[type="password"],
@@ -9058,7 +9059,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   outline-offset: 0;
 }
 
-.nhsuk-input::-webkit-outer-spin-button, input[type="text"]::-webkit-outer-spin-button,
+.nhsuk-input::-webkit-outer-spin-button, input:not(.autocomplete__input)[type="text"]::-webkit-outer-spin-button,
 input[type="email"]::-webkit-outer-spin-button,
 input[type="url"]::-webkit-outer-spin-button,
 input[type="password"]::-webkit-outer-spin-button,
@@ -9075,7 +9076,7 @@ input[type="datetime-local"]::-webkit-outer-spin-button,
 input[type="color"]::-webkit-outer-spin-button,
 textarea::-webkit-outer-spin-button, #login #loginform .user-login::-webkit-outer-spin-button, #login #loginform .user_pass::-webkit-outer-spin-button, .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-outer-spin-button, .learndash-wrapper .wpProQuiz_content input[type="text"]::-webkit-outer-spin-button,
 .nhsuk-input::-webkit-inner-spin-button,
-input[type="text"]::-webkit-inner-spin-button,
+input:not(.autocomplete__input)[type="text"]::-webkit-inner-spin-button,
 input[type="email"]::-webkit-inner-spin-button,
 input[type="url"]::-webkit-inner-spin-button,
 input[type="password"]::-webkit-inner-spin-button,
@@ -9099,7 +9100,7 @@ textarea::-webkit-inner-spin-button,
   margin: 0;
 }
 
-.nhsuk-input[type="number"],
+.nhsuk-input[type="number"], input[type="number"][type="text"]:not(.autocomplete__input),
 input[type="number"],
 textarea[type="number"], #login #loginform .user-login[type="number"], #login #loginform .user_pass[type="number"], .nhsuk-list-panel .comment-respond input[type="number"][type="text"], .learndash-wrapper .wpProQuiz_content input[type="number"][type="text"] {
   -moz-appearance: textfield;
@@ -10940,7 +10941,8 @@ input.is-style-reverse:visited[type="submit"], #content a.is-style-reverse.wp-bl
   color: #005eb8;
 }
 
-#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, input:focus[type="text"],
+/* With :not(.autocomplete__input), the search field is not affected */
+#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, input:focus[type="text"]:not(.autocomplete__input),
 input:focus[type="email"],
 input:focus[type="url"],
 input:focus[type="password"],
@@ -10955,8 +10957,8 @@ input:focus[type="time"],
 input:focus[type="datetime"],
 input:focus[type="datetime-local"],
 input:focus[type="color"],
-textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"], .learndash-wrapper .wpProQuiz_content input:focus[type="text"], .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text], input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
-  box-shadow: inset 0 0 0 4px #ffeb3b;
+textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"], .learndash-wrapper .wpProQuiz_content input:focus[type="text"], .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.autocomplete__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
+  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
 .nhsuk-search__input#search-field {
@@ -10968,6 +10970,14 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.autocomplete__input {
+  padding-right: 0;
+}
+
+.nhsuk-search__submit {
+  margin-left: 0;
 }
 
 #secondary section.widget_search {
@@ -10984,7 +10994,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border: 2px solid #aeb7bd;
   border-radius: 4px 0px 0px 4px;
   float: left;
-  max-width: 80%;
+  max-width: 78%;
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
@@ -11016,8 +11026,8 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 @media (min-width: 40.0625em) {
   .nhsuk-search__submit {
-    padding-top: 6px;
-    margin-top: 0;
+    padding-right: 6px;
+    padding-bottom: 1px;
   }
 }
 
@@ -11136,6 +11146,11 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   margin-left: 16px;
 }
 
+/* Menu item right chevron (mobile): fix color when state is focus */
+a:focus .nhsuk-icon {
+  fill: #4c6272 !important;
+}
+
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
@@ -11146,11 +11161,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header .nhsuk-header__navigation ul li a {
   height: 100%;
-}
-
-.nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
-  border-radius: 4px 0px 0px 4px;
-  border: none;
 }
 
 .nhsuk-header .nhsuk-header__search-toggle,
@@ -11225,12 +11235,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
 }
 
-@media (max-width: 40.0525em) {
-  .nhsuk-header .autocomplete__input {
-    height: 56px;
-  }
-}
-
 @media (max-width: 769px) {
   .nhsuk-header .nhsuk-header__menu-toggle:focus, .nhsuk-header .nhsuk-header__menu-toggle:hover, .nhsuk-header .nhsuk-header__menu-toggle.is-active, .nhsuk-header .nhsuk-header__menu-toggle:active, .nhsuk-header .nhsuk-header__search-toggle:hover, .nhsuk-header .nhsuk-header__search-toggle:focus, .nhsuk-header .nhsuk-header__search-toggle.is-active, .nhsuk-header .nhsuk-header__search-toggle:active {
     background-color: #00376c;
@@ -11254,10 +11258,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
   .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
     color: #005eb8;
-  }
-  .nhsuk-header .nhsuk-header__navigation, .nhsuk-header .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #ffffff;
-    background: #ffffff;
   }
   .nhsuk-header .nhsuk-icon__search, .nhsuk-header .nhsuk-header__search-toggle:focus .nhsuk-icon {
     fill: #ffffff;
@@ -11335,6 +11335,16 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   text-decoration: none;
 }
 
+/* Search box (mobile): height fix */
+.nhsuk-search__close {
+  margin-bottom: 0;
+}
+
+/* Search toggle (mobile): fix font size to centre the magnifying glass */
+button#toggle-search {
+  font-size: 13.3333px;
+}
+
 /* end of header.scss include */
 /*
 // variations to styling required for gutenberg native blocks
@@ -11366,10 +11376,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
   flex-flow: wrap;
-}
-
-.nhsuk-header__search-wrap input[type="text"] {
-  border: none;
 }
 
 .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb .nhsuk-width-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb .nhsuk-width-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .sfwd-breadcrumbs {
@@ -13081,6 +13087,35 @@ ul.download-versions {
   margin-bottom: 0;
 }
 
+/* Heading: smaller font size on desktop */
+.nhsuk-global-alert__heading {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-global-alert__heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+
+@media print {
+  .nhsuk-global-alert__heading {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+/* Margin fix */
+.nhsuk-global-alert__message {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
 .nhsuk-bordered-tabs-container {
   padding-top: 8px;
   background-color: #ffffff;
@@ -13730,10 +13765,6 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
 
 .nhsuk-hero__overlay .nhsuk-grid-column-two-thirds, .nhsuk-hero__overlay .tribe-common div.nhsuk-grid-column-two-thirds, .tribe-common .nhsuk-hero__overlay div.nhsuk-grid-column-two-thirds {
   padding: 0;
-}
-
-.nhsuk-header__search-wrap input[type="text"] {
-  border: 1px solid #aeb7bd;
 }
 
 /* Hero fix so it works on all templates */
