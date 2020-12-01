@@ -10908,6 +10908,14 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   width: 100%;
 }
 
+.autocomplete__input {
+  padding-right: 0;
+}
+
+.nhsuk-search__submit {
+  margin-left: 0;
+}
+
 #secondary section.widget_search {
   background: none;
   padding-left: 0;
@@ -10922,7 +10930,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border: 2px solid #aeb7bd;
   border-radius: 4px 0px 0px 4px;
   float: left;
-  max-width: 80%;
+  max-width: 78%;
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
