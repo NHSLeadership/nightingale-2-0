@@ -50,13 +50,12 @@
 
 /* Heading: smaller font size on desktop */
 .nhsuk-global-alert__heading {
-  font-size   : 24px;
-  line-height : 1.33333;
+  @include nhsuk-typography-responsive(24);
   margin      : 0;
 }
 
 /* Margin fix */
 .nhsuk-global-alert__message {
-  margin-top  : 8px;
+  margin-top  : nhsuk-spacing(2);
   line-height : 1.5;
 }
