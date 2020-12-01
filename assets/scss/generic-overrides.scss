@@ -62,10 +62,12 @@
 	}
   }
 }
+
 .pagination_split_post {
   .post-page-numbers {
 	@extend .nhsuk-tag;
 	@extend .nhsuk-tag--grey;
+
 	&.current {
 	  @extend .nhsuk-tag--white;
 	}
@@ -117,6 +119,7 @@
 	.tags-links, .cat-links {
 	  @extend .nhsuk-tag;
 	  @extend .nhsuk-tag--grey;
+
 	  a {
 		//color: $color_nhsuk-white
 	  }
@@ -140,6 +143,14 @@
   width    : 100%;
 }
 
+.autocomplete__input {
+  padding-right : 0;
+}
+
+.nhsuk-search__submit {
+  margin-left : 0;
+}
+
 #secondary {
   section.widget_search {
 	background    : none;
@@ -155,7 +166,7 @@
 	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 	  border-radius : $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
 	  float         : left;
-	  max-width     : 80%;
+	  max-width     : 78%;
 
 	}
 
@@ -311,51 +322,52 @@
 
 // footer region
 #nhsuk-footer {
-	.nhsuk-width-container {
-		ul.nhsuk-footer__list {
-			&.nhsuk-footer__list--three-columns {
-				li.nhsuk-footer__list-item {
-					width: auto;
-				}
-			}
+  .nhsuk-width-container {
+	ul.nhsuk-footer__list {
+	  &.nhsuk-footer__list--three-columns {
+		li.nhsuk-footer__list-item {
+		  width : auto;
 		}
+	  }
 	}
+  }
 }
 
 // featured image display variations
 .single-post {
-	#content {
-		#maincontent {
-			#contentinner {
-				#primary {
-					.featured-top {
-						width: 100%;
-						.nhsuk-image {
-							img {
-								margin-bottom: nhsuk-spacing(4);
-							}
-						}
-					}
+  #content {
+	#maincontent {
+	  #contentinner {
+		#primary {
+		  .featured-top {
+			width : 100%;
 
-					.featured-left {
-						float: left;
-						width: 33%;
-						margin-right: nhsuk-spacing(3);
-					}
-
-					.featured-right {
-						float: right;
-						width: 33%;
-						margin-left: nhsuk-spacing(3);
-					}
-				}
+			.nhsuk-image {
+			  img {
+				margin-bottom : nhsuk-spacing(4);
+			  }
 			}
+		  }
+
+		  .featured-left {
+			float        : left;
+			width        : 33%;
+			margin-right : nhsuk-spacing(3);
+		  }
+
+		  .featured-right {
+			float       : right;
+			width       : 33%;
+			margin-left : nhsuk-spacing(3);
+		  }
 		}
+	  }
 	}
+  }
 
 }
 
 /* Menu item right chevron (mobile): fix color when state is focus */
 a:focus .nhsuk-icon {
-  fill : #212b32 !important;
+  fill : $color_nhsuk-grey-1 !important;
 }
