@@ -20815,14 +20815,6 @@
   width: 100%;
 }
 
-.edit-post-visual-editor .autocomplete__input, .block-editor-block-styles .autocomplete__input, .block-editor-inserter__menu-help-panel .autocomplete__input {
-  padding-right: 0;
-}
-
-.edit-post-visual-editor .nhsuk-search__submit, .block-editor-block-styles .nhsuk-search__submit, .block-editor-inserter__menu-help-panel .nhsuk-search__submit {
-  margin-left: 0;
-}
-
 .edit-post-visual-editor #secondary section.widget_search, .block-editor-block-styles #secondary section.widget_search, .block-editor-inserter__menu-help-panel #secondary section.widget_search {
   background: none;
   padding-left: 0;
@@ -20837,7 +20829,7 @@
   border: 2px solid #aeb7bd;
   border-radius: 4px 0px 0px 4px;
   float: left;
-  max-width: 78%;
+  max-width: 80%;
 }
 
 .edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-block-styles #secondary .nhsuk-header__search-wrap .nhsuk-search__submit, .block-editor-inserter__menu-help-panel #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
@@ -20990,7 +20982,7 @@
 }
 
 .edit-post-visual-editor a:focus .nhsuk-icon, .block-editor-block-styles a:focus .nhsuk-icon, .block-editor-inserter__menu-help-panel a:focus .nhsuk-icon {
-  fill: #4c6272 !important;
+  fill: #212b32 !important;
 }
 
 .edit-post-visual-editor .editor-post-title__input, .block-editor-block-styles .editor-post-title__input, .block-editor-inserter__menu-help-panel .editor-post-title__input {

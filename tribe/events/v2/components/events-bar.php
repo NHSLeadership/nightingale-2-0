@@ -14,7 +14,6 @@
  * @var bool $display_events_bar Boolean on whether to display the events bar.
  * @var bool $disable_event_search Boolean on whether to disable the event search.
  */
-
 if ( empty( $display_events_bar ) ) {
 	return;
 }
@@ -43,11 +42,11 @@ if ( empty( $disable_event_search ) ) {
 				id="tribe-events-search-filters-container"
 				data-js="tribe-events-search-filters-container"
 		>
-			<?php $this->template( 'components/events-bar/tabs' ); ?>
+			<?php // Disabled temporarily as this component doesn't exist in plugin yet..? $this->template( 'components/events-bar/tabs' ); ?>
 
 			<?php $this->template( 'components/events-bar/search' ); ?>
 
-			<?php $this->template( 'components/events-bar/filters' ); ?>
+			<?php // Disabled temporarily as this component doesn't exist in plugin yet..? $this->template( 'components/events-bar/filters' ); ?>
 		</div>
 	<?php endif; ?>
 
