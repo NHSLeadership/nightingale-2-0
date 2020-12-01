@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description {
+p, .tribe-common .nhsuk-card-group p.nhsuk-card__description {
   margin-bottom: 1.5em;
 }
 
@@ -480,6 +480,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* With :not(.autocomplete__input), the search field is not affected */
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1050,12 +1051,12 @@ caption {
 /* ==========================================================================
    OBJECTS / #GRID
    ========================================================================== */
-.nhsuk-grid-row, .tribe-common .nhsuk-promo-group.nhsuk-grid-row {
+.nhsuk-grid-row, .tribe-common .nhsuk-card-group.nhsuk-grid-row {
   margin-left: -16px;
   margin-right: -16px;
 }
 
-.nhsuk-grid-row:after, .tribe-common .nhsuk-promo-group.nhsuk-grid-row:after {
+.nhsuk-grid-row:after, .tribe-common .nhsuk-card-group.nhsuk-grid-row:after {
   clear: both;
   content: '';
   display: block;
@@ -1073,25 +1074,25 @@ caption {
   }
 }
 
-.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+  .nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third {
     float: left;
     width: 33.3333%;
   }
 }
 
-.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
+.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
+  .nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half {
     float: left;
     width: 50%;
   }
@@ -1842,7 +1843,7 @@ h6,
   }
 }
 
-p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
+p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
 .nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
@@ -1853,7 +1854,7 @@ p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 }
 
 @media (min-width: 40.0625em) {
-  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
+  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -1862,7 +1863,7 @@ p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 }
 
 @media print {
-  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
+  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
   .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
@@ -1870,13 +1871,13 @@ p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
 }
 
 @media (min-width: 40.0625em) {
-  p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
+  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
   .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
 
-p, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description,
+p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
 .nhsuk-body-m {
   color: inherit;
 }
@@ -1951,7 +1952,7 @@ address {
   }
 }
 
-.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
+.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description,
 .nhsuk-lede-text ul {
   font-weight: 400;
   font-size: 20px;
@@ -1960,7 +1961,7 @@ address {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description,
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
@@ -1969,7 +1970,7 @@ address {
 }
 
 @media print {
-  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-lede-text p.nhsuk-promo__description,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description,
   .nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
@@ -2033,9 +2034,9 @@ h1 + .nhsuk-lede-text--small {
   }
 }
 
-p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
+p + h2, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-body-m + h2, address + h2,
 p + .nhsuk-heading-l,
-.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
+.tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
@@ -2059,9 +2060,9 @@ ol + .nhsuk-heading-l {
 }
 
 @media (min-width: 40.0625em) {
-  p + h2, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-body-m + h2, address + h2,
+  p + h2, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-body-m + h2, address + h2,
   p + .nhsuk-heading-l,
-  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-l,
+  .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-l,
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
@@ -2085,11 +2086,11 @@ ol + .nhsuk-heading-l {
   }
 }
 
-p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
+p + h3, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
-.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
+.tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .download-box p.nhsuk-promo__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
 .nhsuk-body-s + h3,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
@@ -2204,11 +2205,11 @@ ol + .nhsuk-heading-m,
 .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content ul + h2,
 .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content ol + h2,
 p + h4,
-.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
+.tribe-common .nhsuk-card-group p.nhsuk-card__description + h4,
 .nhsuk-body-m + h4,
 address + h4,
 p + .nhsuk-heading-s,
-.tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
+.tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
@@ -2232,11 +2233,11 @@ ol + .nhsuk-heading-s {
 }
 
 @media (min-width: 40.0625em) {
-  p + h3, .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h3, .nhsuk-body-m + h3, address + h3,
+  p + h3, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
-  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-m,
+  .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .nhsuk-panel p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .sticky p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-promo-group .nightingale-latest-news .download-box p.nhsuk-promo__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
   .nhsuk-body-s + h3,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
@@ -2351,11 +2352,11 @@ ol + .nhsuk-heading-s {
   .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content ul + h2,
   .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content ol + h2,
   p + h4,
-  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + h4,
+  .tribe-common .nhsuk-card-group p.nhsuk-card__description + h4,
   .nhsuk-body-m + h4,
   address + h4,
   p + .nhsuk-heading-s,
-  .tribe-common .nhsuk-promo-group p.nhsuk-promo__description + .nhsuk-heading-s,
+  .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
@@ -5348,26 +5349,26 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
-.nhsuk-card__content {
+.nhsuk-card__content, .tribe-common .nhsuk-card-group div.nhsuk-card__content {
   padding: 24px;
   position: relative;
 }
 
-.nhsuk-card__content > *:first-child {
+.nhsuk-card__content > *:first-child, .tribe-common .nhsuk-card-group div.nhsuk-card__content > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-card__content > *:last-child {
+.nhsuk-card__content > *:last-child, .tribe-common .nhsuk-card-group div.nhsuk-card__content > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-card__content {
+  .nhsuk-card__content, .tribe-common .nhsuk-card-group div.nhsuk-card__content {
     padding: 32px;
   }
 }
 
-.nhsuk-card__heading, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2,
+.nhsuk-card__heading, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2, .tribe-common .nhsuk-card-group h2.nhsuk-card__heading,
 .nhsuk-card__metadata,
 .nhsuk-card__description {
   margin-bottom: 16px;
@@ -5442,27 +5443,27 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   /* [4] */
 }
 
-.nhsuk-card-group__item {
+.nhsuk-card-group__item, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third {
   display: flex;
   list-style-type: none;
   margin-bottom: 0;
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-card-group__item {
+  .nhsuk-card-group__item, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third {
     flex: 0 0 100%;
   }
 }
 
-.nhsuk-card-group__item .nhsuk-card, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small {
+.nhsuk-card-group__item .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small {
   margin-bottom: 32px;
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-card-group__item .nhsuk-card, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small {
+  .nhsuk-card-group__item .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small {
     margin-bottom: 16px;
   }
-  .nhsuk-card-group__item:last-child .nhsuk-card, .nhsuk-card-group__item:last-child .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item:last-child .is-style-panel-grey.sticky, .nhsuk-card-group__item:last-child .is-style-panel-grey.download-box, .nhsuk-card-group__item:last-child .nhsuk-promo.is-style-promo-small {
+  .nhsuk-card-group__item:last-child .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-card, .nhsuk-card-group__item:last-child .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item:last-child .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.sticky, .nhsuk-card-group__item:last-child .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.download-box, .nhsuk-card-group__item:last-child .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-promo.is-style-promo-small {
     margin-bottom: 0;
   }
 }
@@ -5504,7 +5505,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
-.nhsuk-card__content--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content {
+.nhsuk-card__content--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content, .nhsuk-card.is-style-panel-with-label .tribe-common .nhsuk-card-group div.nhsuk-card__content, .tribe-common .nhsuk-card-group .nhsuk-card.is-style-panel-with-label div.nhsuk-card__content {
   padding-top: 0 !important;
 }
 
@@ -6576,13 +6577,13 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
-.nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-error-summary__body p.nhsuk-promo__description {
+.nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.nhsuk-card__description {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-error-summary__body p.nhsuk-promo__description {
+  .nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.nhsuk-card__description {
     margin-bottom: 24px;
   }
 }
@@ -8890,7 +8891,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
  *    as background-color and color need to always be set together, color should
  *    not be set either.
  */
-.nhsuk-input, input[type="text"],
+.nhsuk-input, input[type="text"]:not(.autocomplete__input),
 input[type="email"],
 input[type="url"],
 input[type="password"],
@@ -8927,7 +8928,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-input, input[type="text"],
+  .nhsuk-input, input[type="text"]:not(.autocomplete__input),
   input[type="email"],
   input[type="url"],
   input[type="password"],
@@ -8950,7 +8951,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
 }
 
 @media print {
-  .nhsuk-input, input[type="text"],
+  .nhsuk-input, input[type="text"]:not(.autocomplete__input),
   input[type="email"],
   input[type="url"],
   input[type="password"],
@@ -8971,7 +8972,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass, .nhsuk-li
   }
 }
 
-.nhsuk-input:focus, input:focus[type="text"],
+.nhsuk-input:focus, input:focus[type="text"]:not(.autocomplete__input),
 input:focus[type="email"],
 input:focus[type="url"],
 input:focus[type="password"],
@@ -8994,7 +8995,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   outline-offset: 0;
 }
 
-.nhsuk-input::-webkit-outer-spin-button, input[type="text"]::-webkit-outer-spin-button,
+.nhsuk-input::-webkit-outer-spin-button, input:not(.autocomplete__input)[type="text"]::-webkit-outer-spin-button,
 input[type="email"]::-webkit-outer-spin-button,
 input[type="url"]::-webkit-outer-spin-button,
 input[type="password"]::-webkit-outer-spin-button,
@@ -9011,7 +9012,7 @@ input[type="datetime-local"]::-webkit-outer-spin-button,
 input[type="color"]::-webkit-outer-spin-button,
 textarea::-webkit-outer-spin-button, #login #loginform .user-login::-webkit-outer-spin-button, #login #loginform .user_pass::-webkit-outer-spin-button, .nhsuk-list-panel .comment-respond input[type="text"]::-webkit-outer-spin-button, .learndash-wrapper .wpProQuiz_content input[type="text"]::-webkit-outer-spin-button,
 .nhsuk-input::-webkit-inner-spin-button,
-input[type="text"]::-webkit-inner-spin-button,
+input:not(.autocomplete__input)[type="text"]::-webkit-inner-spin-button,
 input[type="email"]::-webkit-inner-spin-button,
 input[type="url"]::-webkit-inner-spin-button,
 input[type="password"]::-webkit-inner-spin-button,
@@ -9035,7 +9036,7 @@ textarea::-webkit-inner-spin-button,
   margin: 0;
 }
 
-.nhsuk-input[type="number"],
+.nhsuk-input[type="number"], input[type="number"][type="text"]:not(.autocomplete__input),
 input[type="number"],
 textarea[type="number"], #login #loginform .user-login[type="number"], #login #loginform .user_pass[type="number"], .nhsuk-list-panel .comment-respond input[type="number"][type="text"], .learndash-wrapper .wpProQuiz_content input[type="number"][type="text"] {
   -moz-appearance: textfield;
@@ -10244,7 +10245,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-summary-list__value > p, .tribe-common .nhsuk-promo-group .nhsuk-summary-list__value > p.nhsuk-promo__description {
+.nhsuk-summary-list__value > p, .tribe-common .nhsuk-card-group .nhsuk-summary-list__value > p.nhsuk-card__description {
   margin-bottom: 8px;
 }
 
@@ -10876,7 +10877,8 @@ input.is-style-reverse:visited[type="submit"], #content a.is-style-reverse.wp-bl
   color: #005eb8;
 }
 
-#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, input:focus[type="text"],
+/* With :not(.autocomplete__input), the search field is not affected */
+#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, input:focus[type="text"]:not(.autocomplete__input),
 input:focus[type="email"],
 input:focus[type="url"],
 input:focus[type="password"],
@@ -10891,8 +10893,8 @@ input:focus[type="time"],
 input:focus[type="datetime"],
 input:focus[type="datetime-local"],
 input:focus[type="color"],
-textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"], .learndash-wrapper .wpProQuiz_content input:focus[type="text"], .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text], input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
-  box-shadow: inset 0 0 0 4px #ffeb3b;
+textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type="text"], .learndash-wrapper .wpProQuiz_content input:focus[type="text"], .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.autocomplete__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
+  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
 .nhsuk-search__input#search-field {
@@ -10952,8 +10954,8 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 @media (min-width: 40.0625em) {
   .nhsuk-search__submit {
-    padding-top: 6px;
-    margin-top: 0;
+    padding-right: 6px;
+    padding-bottom: 1px;
   }
 }
 
@@ -11038,7 +11040,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
 }
 
-.nhsuk-grid-row.nhsuk-width-restrict, .tribe-common .nhsuk-width-restrict.nhsuk-promo-group.nhsuk-grid-row {
+.nhsuk-grid-row.nhsuk-width-restrict, .tribe-common .nhsuk-width-restrict.nhsuk-card-group.nhsuk-grid-row {
   margin-left: 0;
   margin-right: 0;
   background: #f0f4f5;
@@ -11072,6 +11074,11 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   margin-left: 16px;
 }
 
+/* Menu item right chevron (mobile): fix color when state is focus */
+a:focus .nhsuk-icon {
+  fill: #212b32 !important;
+}
+
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
@@ -11082,11 +11089,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 .nhsuk-header .nhsuk-header__navigation ul li a {
   height: 100%;
-}
-
-.nhsuk-header .nhsuk-header__search-wrap input[type="text"] {
-  border-radius: 4px 0px 0px 4px;
-  border: none;
 }
 
 .nhsuk-header .nhsuk-header__search-toggle,
@@ -11161,12 +11163,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
 }
 
-@media (max-width: 40.0525em) {
-  .nhsuk-header .autocomplete__input {
-    height: 56px;
-  }
-}
-
 @media (max-width: 769px) {
   .nhsuk-header .nhsuk-header__menu-toggle:focus, .nhsuk-header .nhsuk-header__menu-toggle:hover, .nhsuk-header .nhsuk-header__menu-toggle.is-active, .nhsuk-header .nhsuk-header__menu-toggle:active, .nhsuk-header .nhsuk-header__search-toggle:hover, .nhsuk-header .nhsuk-header__search-toggle:focus, .nhsuk-header .nhsuk-header__search-toggle.is-active, .nhsuk-header .nhsuk-header__search-toggle:active {
     background-color: #00376c;
@@ -11190,10 +11186,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
   .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
     color: #005eb8;
-  }
-  .nhsuk-header .nhsuk-header__navigation, .nhsuk-header .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #ffffff;
-    background: #ffffff;
   }
   .nhsuk-header .nhsuk-icon__search, .nhsuk-header .nhsuk-header__search-toggle:focus .nhsuk-icon {
     fill: #ffffff;
@@ -11271,6 +11263,16 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   text-decoration: none;
 }
 
+/* Search box (mobile): height fix */
+.nhsuk-search__close {
+  margin-bottom: 0;
+}
+
+/* Search toggle (mobile): fix font size to centre the magnifying glass */
+button#toggle-search {
+  font-size: 13.3333px;
+}
+
 /* end of header.scss include */
 /*
 // variations to styling required for gutenberg native blocks
@@ -11300,12 +11302,8 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   padding: 0;
 }
 
-.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
   flex-flow: wrap;
-}
-
-.nhsuk-header__search-wrap input[type="text"] {
-  border: none;
 }
 
 .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb .nhsuk-width-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb .nhsuk-width-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .sfwd-breadcrumbs {
@@ -12669,15 +12667,15 @@ button {
   padding: 8px 16px 4px 56px;
 }
 
-.tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third {
+.tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third {
   margin-bottom: 24px;
 }
 
-.tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half {
+.tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half {
   margin-bottom: 24px;
 }
 
-.tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
+.tribe-common .nhsuk-card-group div.nhsuk-card__content {
   color: #425563;
 }
 
@@ -12720,21 +12718,21 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   margin-right: 8px;
 }
 
-.nhsuk-promo__content .tribe-events-calendar-list__event-datetime, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .tribe-events-calendar-list__event-datetime {
+.nhsuk-card__content .tribe-events-calendar-list__event-datetime, .tribe-common .nhsuk-card-group div.nhsuk-card__content .tribe-events-calendar-list__event-datetime {
   float: left;
   display: block;
 }
 
-.nhsuk-promo__content .tribe-events-calendar-list__event-datetime span.tribe-event-date-end {
+.nhsuk-card__content .tribe-events-calendar-list__event-datetime span.tribe-event-date-end {
   display: block;
 }
 
-.tribe-common .nhsuk-promo-group .event-meta,
+.tribe-common .nhsuk-card-group .event-meta,
 .event-meta {
   margin-bottom: 16px;
 }
 
-.single-tribe_events .tribe-common .nhsuk-promo-group .event-meta, .single-tribe_events
+.single-tribe_events .tribe-common .nhsuk-card-group .event-meta, .single-tribe_events
 .event-meta {
   margin-bottom: 24px;
 }
@@ -12849,7 +12847,7 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   margin-bottom: 32px;
 }
 
-.single-tribe_events .nhsuk-promo__img {
+.single-tribe_events .nhsuk-card__img {
   margin-bottom: 16px;
 }
 
@@ -13014,6 +13012,19 @@ ul.download-versions {
 
 .nhsuk-global-alert__content > *:last-child {
   margin-bottom: 0;
+}
+
+/* Heading: smaller font size on desktop */
+.nhsuk-global-alert__heading {
+  font-size: 24px;
+  line-height: 1.33333;
+  margin: 0;
+}
+
+/* Margin fix */
+.nhsuk-global-alert__message {
+  margin-top: 8px;
+  line-height: 1.5;
 }
 
 .nhsuk-bordered-tabs-container {
@@ -13250,7 +13261,7 @@ ul.download-versions {
   }
 }
 
-.nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
+.nhsuk-promo-group__item {
   margin-bottom: 36px;
 }
 
@@ -13326,7 +13337,7 @@ ul.download-versions {
   max-height: 300px;
 }
 
-.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group .nhsuk-dashboard div.nhsuk-grid-column-one-half {
+.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .nhsuk-dashboard div.nhsuk-grid-column-one-half {
   max-height: 250px;
 }
 
@@ -13344,9 +13355,7 @@ ul.download-versions {
 }
 
 .wp-block-nhsblocks-promo1 .nhsuk-promo__description,
-.wp-block-nhsblocks-promo1 .nhsuk-promo__heading,
-.wp-block-nhsblocks-promo1 .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
-.tribe-common .nhsuk-promo-group .wp-block-nhsblocks-promo1 h2.nhsuk-promo__heading {
+.wp-block-nhsblocks-promo1 .nhsuk-promo__heading {
   padding: 0 32px;
 }
 
@@ -13391,24 +13400,24 @@ ul.download-versions {
   width: 100%;
 }
 
-.nhsuk-promo .nhsuk-promo__content, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content {
+.nhsuk-promo .nhsuk-promo__content {
   padding: 0 0 16px 0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
   padding: 0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading {
   padding: 8px 16px;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content p, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-promo__description {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description {
   padding: 8px;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-readmore, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-readmore {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-readmore {
   padding: 0 32px 8px 0;
 }
 
@@ -13654,10 +13663,6 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   padding: 0;
 }
 
-.nhsuk-header__search-wrap input[type="text"] {
-  border: 1px solid #aeb7bd;
-}
-
 /* Hero fix so it works on all templates */
 .wp-block-nhsblocks-heroblock {
   left: 50%;
@@ -13712,10 +13717,10 @@ section.nhsuk-section:after,
   background: #ffffff;
 }
 
-.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-half,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-half,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-third,
-.wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-third,
-.tribe-common .nhsuk-promo-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-third,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third,
+.tribe-common .nhsuk-card-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-third,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters {
@@ -13957,7 +13962,7 @@ section.nhsuk-section:after,
   color: #005eb8;
 }
 
-.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:hover .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:hover h2.nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading {
   color: #7C2855;
 }
 
@@ -13966,7 +13971,7 @@ section.nhsuk-section:after,
   box-shadow: 0 4px 0 0 #d8dde0;
 }
 
-.nhsuk-promo__link-wrapper:focus .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:focus .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:focus h2.nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:focus .nhsuk-promo__heading {
   background-color: #ffeb3b;
   box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
   color: #212b32;
@@ -13982,12 +13987,12 @@ section.nhsuk-section:after,
   /* [7] */
 }
 
-.nhsuk-promo__link-wrapper:active .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:active h2.nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:active .nhsuk-promo__heading {
   background: none;
   box-shadow: none;
 }
 
-.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:hover .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:hover h2.nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo__link-wrapper:active h2.nhsuk-promo__heading {
+.nhsuk-promo__link-wrapper:hover .nhsuk-promo__heading, .nhsuk-promo__link-wrapper:active .nhsuk-promo__heading {
   text-decoration: none;
 }
 
@@ -14004,7 +14009,7 @@ section.nhsuk-section:after,
   }
 }
 
-.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
+.nhsuk-promo__heading {
   font-weight: 600;
   font-size: 20px;
   font-size: 1.25rem;
@@ -14015,7 +14020,7 @@ section.nhsuk-section:after,
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
+  .nhsuk-promo__heading {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -14023,26 +14028,26 @@ section.nhsuk-section:after,
 }
 
 @media print {
-  .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading {
+  .nhsuk-promo__heading {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-promo__content, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
+.nhsuk-promo__content {
   padding: 24px;
 }
 
-.nhsuk-promo__content > *:first-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content > *:first-child {
+.nhsuk-promo__content > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-promo__content > *:last-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content > *:last-child {
+.nhsuk-promo__content > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo__content, .tribe-common .nhsuk-promo-group div.nhsuk-promo__content {
+  .nhsuk-promo__content {
     padding: 32px;
   }
 }
@@ -14056,14 +14061,14 @@ section.nhsuk-section:after,
 /**
  * Promo small reduces the size of the text heading and description.
  */
-.nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo.is-style-promo-small h2.nhsuk-promo__heading {
+.nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .nhsuk-promo__heading {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo.is-style-promo-small h2.nhsuk-promo__heading {
+  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .nhsuk-promo__heading {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -14071,7 +14076,7 @@ section.nhsuk-section:after,
 }
 
 @media print {
-  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .nhsuk-promo__heading, .nhsuk-promo--small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo--small h2.nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo.is-style-promo-small h2.nhsuk-promo__heading {
+  .nhsuk-promo--small .nhsuk-promo__heading, .nhsuk-promo.is-style-promo-small .nhsuk-promo__heading {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -14117,26 +14122,26 @@ section.nhsuk-section:after,
   }
 }
 
-.nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
+.nhsuk-promo-group__item {
   display: flex;
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
+  .nhsuk-promo-group__item {
     flex: 0 0 100%;
   }
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
+  .nhsuk-promo-group__item {
     margin-bottom: 28px;
   }
-  .nhsuk-promo-group__item:last-child, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third:last-child {
+  .nhsuk-promo-group__item:last-child {
     margin-bottom: 0;
   }
 }
 
-.nhsuk-promo-group__item .nhsuk-promo, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third .nhsuk-promo {
+.nhsuk-promo-group__item .nhsuk-promo {
   margin-bottom: 0;
 }
 
@@ -14214,7 +14219,7 @@ section.nhsuk-section:after,
   max-height: 300px;
 }
 
-.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-promo-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-promo-group .nhsuk-dashboard div.nhsuk-grid-column-one-half {
+.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .nhsuk-dashboard div.nhsuk-grid-column-one-half {
   max-height: 250px;
 }
 
@@ -14222,7 +14227,7 @@ section.nhsuk-section:after,
   max-height: 200px;
 }
 
-.nhsuk-promo-group__item, .tribe-common .nhsuk-promo-group div.nhsuk-promo-group__item.nhsuk-grid-column-one-third {
+.nhsuk-promo-group__item {
   margin-bottom: 36px;
 }
 
@@ -14236,30 +14241,28 @@ section.nhsuk-section:after,
 }
 
 .wp-block-nhsblocks-promo1 .nhsuk-promo__description,
-.wp-block-nhsblocks-promo1 .nhsuk-promo__heading,
-.wp-block-nhsblocks-promo1 .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading,
-.tribe-common .nhsuk-promo-group .wp-block-nhsblocks-promo1 h2.nhsuk-promo__heading {
+.wp-block-nhsblocks-promo1 .nhsuk-promo__heading {
   padding: 0 32px;
 }
 
-.nhsuk-promo .nhsuk-promo__content, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content {
+.nhsuk-promo .nhsuk-promo__content {
   padding: 0 0 16px 0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .is-style-nhsuk-image, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .is-style-nhsuk-image {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-image, .nhsuk-promo .nhsuk-promo__content .is-style-nhsuk-image {
   width: 100%;
   padding: 0;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__heading, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group h2.nhsuk-promo__heading, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content h2.nhsuk-promo__heading {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__heading {
   padding: 8px 16px;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content p, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-promo-group p.nhsuk-promo__description, .tribe-common .nhsuk-promo-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-promo__description {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description {
   padding: 8px;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-readmore, .nhsuk-promo .tribe-common .nhsuk-promo-group div.nhsuk-promo__content .nhsuk-readmore, .tribe-common .nhsuk-promo-group .nhsuk-promo div.nhsuk-promo__content .nhsuk-readmore {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-readmore {
   padding: 0 32px 8px 0;
 }
 
