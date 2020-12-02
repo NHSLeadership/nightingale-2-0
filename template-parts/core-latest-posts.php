@@ -15,7 +15,8 @@ Set up all the arguments that can be defined in the blocks management for latest
 so we can then pass them down to the display elements correctly
 */
 $parent_template_part   = 'latest-posts';
-$posts_to_show          = get_query_var( $namespace . 'postsToShow' ) ? get_query_var( $namespace . 'postsToShow' ) : 5; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+$archive_paged          = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+$posts_to_show          = get_query_var( 'postsToShow' ) ? get_query_var( 'postsToShow' ) : 5; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
 $categories             = get_query_var( $namespace . 'categories' );
 $display_post_content   = get_query_var( $namespace . 'displayPostContent' ) ? get_query_var( $namespace . 'displayPostContent' ) : 0; // Default to not show post content.
 $excerpt_length         = get_query_var( $namespace . 'excerptLength' ) ? get_query_var( $namespace . 'excerptLength' ) : 20; // Default excerpt length of 20 words.
@@ -33,15 +34,14 @@ $args = array(
 	'orderby'             => get_query_var( $namespace . 'orderBy' ) ? get_query_var( $namespace . 'orderBy' ) : 'date',
 	'ignore_sticky_posts' => 1,
 	'suppress_filters'    => false,
+	'paged'               => $archive_paged,
 );
 
+
 if ( ( isset( $categories ) ) && ( ! empty( $categories ) ) ) {
-	$catsout = array();
-	foreach ( $categories as $cattemp ) {
-		$catsout[] = $cattemp['id'];
-	}
-	$args['cat'] = $catsout;
+	$args['cat'] = $categories;
 }
+
 
 
 $sidebar = nightingale_show_sidebar();
@@ -69,7 +69,7 @@ if ( $the_query->have_posts() ) : ?>
 	</div>
 
 	<?php
-
+	the_posts_pagination();
 endif;
 
 /* Restore original Post Data */

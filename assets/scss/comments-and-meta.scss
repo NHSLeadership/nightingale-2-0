@@ -14,6 +14,7 @@
 	  padding          : nhsuk-spacing(3) 0;
 	  display          : block;
 	  background-color : $color-nhsuk-grey-5;
+	  clear: both;
 
 	  #respond {
 		margin-top : nhsuk-spacing(3);
@@ -37,6 +38,8 @@
 		margin-left  : 0;
 		margin-right : 0;
 		padding-left : nhsuk-spacing(3);
+		border-left: 1px solid $color-nhsuk-grey-3;
+		position: relative;
 
 		.comment {
 		  padding-right : 0;
