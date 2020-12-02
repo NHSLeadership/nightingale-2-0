@@ -8,6 +8,7 @@
  * @copyright NHS Leadership Academy, Tony Blacker
  * @version   1.1 21st August 2019
  */
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -87,14 +88,17 @@ get_template_part( 'partials/topnav' );
 ?>
 </header>
 <?php
-if( $page_tabbed = get_post_meta( get_the_id(), 'tabbed-page', true ) ) {
+$thispage = get_post_meta(
+	get_the_id(),
+	'tabbed-page',
+	true
+);
+
+if ( $thispage ) {
 	get_template_part( 'partials/tabs' );
 } else {
 	echo nightingale_breadcrumb(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
-?>
-
-<?php
 
 $page_color = get_post_meta( get_the_id(), 'page-color', true );
 
