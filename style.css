@@ -11004,6 +11004,10 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   margin-left: 0;
 }
 
+.nhsuk-header__search-toggle {
+  margin-right: 4px;
+}
+
 #secondary section.widget_search {
   background: none;
   padding-left: 0;
@@ -11234,6 +11238,7 @@ a:focus .nhsuk-icon {
   background-color: #f0f4f5;
   border-color: #005eb8;
   color: #005eb8;
+  margin-right: 4px;
 }
 
 .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
