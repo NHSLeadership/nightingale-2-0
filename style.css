@@ -2,12 +2,12 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.2.5
+Version: 2.3
 Requires at least: 5.0
-Tested up to: 5.5.1
+Tested up to: 5.6
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
-Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
+Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options, nhs
 Author: Tony Blacker, NHS Leadership Academy
 Author URI: https://www.leadershipacademy.nhs.uk
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-p, .tribe-common .nhsuk-card-group p.nhsuk-card__description {
+p, .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .ld-course-list-items p.nhsuk-card__description, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .tribe-common .ld-course-list-items .ld_course_grid article p.caption {
   margin-bottom: 1.5em;
 }
 
@@ -1051,12 +1051,12 @@ caption {
 /* ==========================================================================
    OBJECTS / #GRID
    ========================================================================== */
-.nhsuk-grid-row, .tribe-common .nhsuk-card-group.nhsuk-grid-row {
+.nhsuk-grid-row, .tribe-common .nhsuk-card-group.nhsuk-grid-row, .tribe-common .nhsuk-grid-row.ld-course-list-items {
   margin-left: -16px;
   margin-right: -16px;
 }
 
-.nhsuk-grid-row:after, .tribe-common .nhsuk-card-group.nhsuk-grid-row:after {
+.nhsuk-grid-row:after, .tribe-common .nhsuk-card-group.nhsuk-grid-row:after, .tribe-common .nhsuk-grid-row.ld-course-list-items:after {
   clear: both;
   content: '';
   display: block;
@@ -1074,25 +1074,25 @@ caption {
   }
 }
 
-.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third {
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-third {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third {
+  .nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-third {
     float: left;
     width: 33.3333%;
   }
 }
 
-.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half {
+.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-half {
   box-sizing: border-box;
   padding: 0 16px;
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half {
+  .nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-half {
     float: left;
     width: 50%;
   }
@@ -1593,7 +1593,7 @@ h2,
 }
 
 h3,
-.nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
+.nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -1605,7 +1605,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1614,7 +1614,7 @@ h3,
 
 @media print {
   h3,
-  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -1622,7 +1622,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
+  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .sticky a, .nightingale-latest-news .download-box a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
     margin-bottom: 24px;
   }
 }
@@ -1843,7 +1843,7 @@ h6,
   }
 }
 
-p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
+p, .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .ld-course-list-items p.nhsuk-card__description, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .tribe-common .ld-course-list-items .ld_course_grid article p.caption,
 .nhsuk-body-m, address {
   font-size: 16px;
   font-size: 1rem;
@@ -1854,7 +1854,7 @@ p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
 }
 
 @media (min-width: 40.0625em) {
-  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
+  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .ld-course-list-items p.nhsuk-card__description, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .tribe-common .ld-course-list-items .ld_course_grid article p.caption,
   .nhsuk-body-m, address {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -1863,7 +1863,7 @@ p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
 }
 
 @media print {
-  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
+  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .ld-course-list-items p.nhsuk-card__description, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .tribe-common .ld-course-list-items .ld_course_grid article p.caption,
   .nhsuk-body-m, address {
     font-size: 14pt;
     line-height: 1.15;
@@ -1871,13 +1871,13 @@ p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
 }
 
 @media (min-width: 40.0625em) {
-  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
+  p, .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .ld-course-list-items p.nhsuk-card__description, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .tribe-common .ld-course-list-items .ld_course_grid article p.caption,
   .nhsuk-body-m, address {
     margin-bottom: 24px;
   }
 }
 
-p, .tribe-common .nhsuk-card-group p.nhsuk-card__description,
+p, .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .ld-course-list-items p.nhsuk-card__description, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .tribe-common .ld-course-list-items .ld_course_grid article p.caption,
 .nhsuk-body-m {
   color: inherit;
 }
@@ -1952,7 +1952,7 @@ address {
   }
 }
 
-.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description,
+.nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description, .nhsuk-lede-text .tribe-common .ld-course-list-items p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-lede-text p.nhsuk-card__description, .nhsuk-lede-text .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-lede-text p.caption, .nhsuk-lede-text .tribe-common .ld-course-list-items .ld_course_grid article p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-lede-text p.caption,
 .nhsuk-lede-text ul {
   font-weight: 400;
   font-size: 20px;
@@ -1961,7 +1961,7 @@ address {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description, .nhsuk-lede-text .tribe-common .ld-course-list-items p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-lede-text p.nhsuk-card__description, .nhsuk-lede-text .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-lede-text p.caption, .nhsuk-lede-text .tribe-common .ld-course-list-items .ld_course_grid article p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-lede-text p.caption,
   .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
@@ -1970,7 +1970,7 @@ address {
 }
 
 @media print {
-  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description,
+  .nhsuk-lede-text p, .nhsuk-lede-text .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-lede-text p.nhsuk-card__description, .nhsuk-lede-text .tribe-common .ld-course-list-items p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-lede-text p.nhsuk-card__description, .nhsuk-lede-text .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-lede-text p.caption, .nhsuk-lede-text .tribe-common .ld-course-list-items .ld_course_grid article p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-lede-text p.caption,
   .nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
@@ -2034,9 +2034,12 @@ h1 + .nhsuk-lede-text--small {
   }
 }
 
-p + h2, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-body-m + h2, address + h2,
+p + h2, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .nhsuk-body-m + h2, address + h2,
 p + .nhsuk-heading-l,
 .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-l,
+.tribe-common .ld-course-list-items p.nhsuk-card__description + .nhsuk-heading-l,
+.ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .nhsuk-heading-l,
+.tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-l,
 .nhsuk-body-m + .nhsuk-heading-l,
 address + .nhsuk-heading-l,
 .nhsuk-body-s + h2,
@@ -2060,9 +2063,12 @@ ol + .nhsuk-heading-l {
 }
 
 @media (min-width: 40.0625em) {
-  p + h2, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-body-m + h2, address + h2,
+  p + h2, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .nhsuk-body-m + h2, address + h2,
   p + .nhsuk-heading-l,
   .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-l,
+  .tribe-common .ld-course-list-items p.nhsuk-card__description + .nhsuk-heading-l,
+  .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .nhsuk-heading-l,
+  .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-l,
   .nhsuk-body-m + .nhsuk-heading-l,
   address + .nhsuk-heading-l,
   .nhsuk-body-s + h2,
@@ -2086,11 +2092,14 @@ ol + .nhsuk-heading-l {
   }
 }
 
-p + h3, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h3, .nhsuk-body-m + h3, address + h3,
+p + h3, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h3, .tribe-common .ld-course-list-items p.nhsuk-card__description + h3, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h3, .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
 .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-m,
+.tribe-common .ld-course-list-items p.nhsuk-card__description + .nhsuk-heading-m,
+.ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .nhsuk-heading-m,
+.tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
+address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .tribe-common .ld-course-list-items .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .ld-course-list-items p.nhsuk-card__description + a, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.caption + a, .nightingale-latest-news .nhsuk-panel .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + a, .tribe-common .ld-course-list-items .ld_course_grid article .nightingale-latest-news .nhsuk-panel p.caption + a, .nightingale-latest-news .nhsuk-panel .tribe-common .ld-course-list-items .ld_course_grid article p.caption + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .tribe-common .ld-course-list-items .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .ld-course-list-items p.nhsuk-card__description + a, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.caption + a, .nightingale-latest-news .sticky .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + a, .tribe-common .ld-course-list-items .ld_course_grid article .nightingale-latest-news .sticky p.caption + a, .nightingale-latest-news .sticky .tribe-common .ld-course-list-items .ld_course_grid article p.caption + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .tribe-common .ld-course-list-items .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .ld-course-list-items p.nhsuk-card__description + a, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.caption + a, .nightingale-latest-news .download-box .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + a, .tribe-common .ld-course-list-items .ld_course_grid article .nightingale-latest-news .download-box p.caption + a, .nightingale-latest-news .download-box .tribe-common .ld-course-list-items .ld_course_grid article p.caption + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.caption + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.caption + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .tribe-common .nhsuk-card-group .nhsuk-card__content p.caption + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p.caption + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content address + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.caption + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content article p.caption + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-body-m + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
 .nhsuk-body-s + h3,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
 .article-footer .cat-links + h3,
@@ -2137,6 +2146,24 @@ address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .article-footer .tags-links + h2,
 .article-footer .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .comments-link + h2,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .article-footer .comments-link + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content a + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+.article-footer .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .cat-links + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .article-footer .cat-links + h2,
+.article-footer .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .tags-links + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .article-footer .tags-links + h2,
+.article-footer .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .comments-link + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .article-footer .comments-link + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-body-s + h2,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content a + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+.article-footer .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .cat-links + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .article-footer .cat-links + h2,
+.article-footer .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .tags-links + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .article-footer .tags-links + h2,
+.article-footer .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .comments-link + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .article-footer .comments-link + h2,
 .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-s + h2,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content a + h2,
 .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
@@ -2192,6 +2219,12 @@ ol + .nhsuk-heading-m,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content ul + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content ol + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-list + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content ul + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content ol + h2,
 .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-list + h2,
 .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content ul + h2,
 .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content ol + h2,
@@ -2206,10 +2239,16 @@ ol + .nhsuk-heading-m,
 .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content ol + h2,
 p + h4,
 .tribe-common .nhsuk-card-group p.nhsuk-card__description + h4,
+.tribe-common .ld-course-list-items p.nhsuk-card__description + h4,
+.ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h4,
+.tribe-common .ld-course-list-items .ld_course_grid article p.caption + h4,
 .nhsuk-body-m + h4,
 address + h4,
 p + .nhsuk-heading-s,
 .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-s,
+.tribe-common .ld-course-list-items p.nhsuk-card__description + .nhsuk-heading-s,
+.ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .nhsuk-heading-s,
+.tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
 .nhsuk-body-s + h4,
@@ -2233,11 +2272,14 @@ ol + .nhsuk-heading-s {
 }
 
 @media (min-width: 40.0625em) {
-  p + h3, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h3, .nhsuk-body-m + h3, address + h3,
+  p + h3, .tribe-common .nhsuk-card-group p.nhsuk-card__description + h3, .tribe-common .ld-course-list-items p.nhsuk-card__description + h3, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h3, .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
   .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-m,
+  .tribe-common .ld-course-list-items p.nhsuk-card__description + .nhsuk-heading-m,
+  .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .nhsuk-heading-m,
+  .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
+  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .tribe-common .ld-course-list-items .nightingale-latest-news .nhsuk-panel p.nhsuk-card__description + a, .nightingale-latest-news .nhsuk-panel .tribe-common .ld-course-list-items p.nhsuk-card__description + a, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nightingale-latest-news .nhsuk-panel p.caption + a, .nightingale-latest-news .nhsuk-panel .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + a, .tribe-common .ld-course-list-items .ld_course_grid article .nightingale-latest-news .nhsuk-panel p.caption + a, .nightingale-latest-news .nhsuk-panel .tribe-common .ld-course-list-items .ld_course_grid article p.caption + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nightingale-latest-news .sticky p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .tribe-common .ld-course-list-items .nightingale-latest-news .sticky p.nhsuk-card__description + a, .nightingale-latest-news .sticky .tribe-common .ld-course-list-items p.nhsuk-card__description + a, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nightingale-latest-news .sticky p.caption + a, .nightingale-latest-news .sticky .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + a, .tribe-common .ld-course-list-items .ld_course_grid article .nightingale-latest-news .sticky p.caption + a, .nightingale-latest-news .sticky .tribe-common .ld-course-list-items .ld_course_grid article p.caption + a, .nightingale-latest-news .sticky .nhsuk-body-m + a, .nightingale-latest-news .sticky address + a, .nightingale-latest-news .download-box p + a, .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .nhsuk-card-group p.nhsuk-card__description + a, .tribe-common .ld-course-list-items .nightingale-latest-news .download-box p.nhsuk-card__description + a, .nightingale-latest-news .download-box .tribe-common .ld-course-list-items p.nhsuk-card__description + a, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nightingale-latest-news .download-box p.caption + a, .nightingale-latest-news .download-box .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + a, .tribe-common .ld-course-list-items .ld_course_grid article .nightingale-latest-news .download-box p.caption + a, .nightingale-latest-news .download-box .tribe-common .ld-course-list-items .ld_course_grid article p.caption + a, .nightingale-latest-news .download-box .nhsuk-body-m + a, .nightingale-latest-news .download-box address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.caption + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p.caption + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .tribe-common .nhsuk-card-group .nhsuk-card__content p.caption + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content p.caption + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content address + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.caption + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.thumbnail.course .nhsuk-card__content p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content article p.caption + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-body-m + h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content address + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content address + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p + h2, .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .nhsuk-card-group p.nhsuk-card__description + h2, .tribe-common .ld-course-list-items .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.nhsuk-card__description + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .ld-course-list-items p.nhsuk-card__description + h2, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h2, .tribe-common .ld-course-list-items .ld_course_grid article .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content p.caption + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-body-m + h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content address + h2,
   .nhsuk-body-s + h3,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h3,
   .article-footer .cat-links + h3,
@@ -2284,6 +2326,24 @@ ol + .nhsuk-heading-s {
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .article-footer .tags-links + h2,
   .article-footer .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .comments-link + h2,
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .article-footer .comments-link + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content a + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+  .article-footer .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .cat-links + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .article-footer .cat-links + h2,
+  .article-footer .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .tags-links + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .article-footer .tags-links + h2,
+  .article-footer .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .comments-link + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .article-footer .comments-link + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-body-s + h2,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content a + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
+  .article-footer .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .cat-links + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .article-footer .cat-links + h2,
+  .article-footer .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .tags-links + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .article-footer .tags-links + h2,
+  .article-footer .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .comments-link + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .article-footer .comments-link + h2,
   .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-body-s + h2,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content a + h2,
   .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h2,
@@ -2339,6 +2399,12 @@ ol + .nhsuk-heading-s {
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content ul + h2,
+  .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content ol + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-list + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content ul + h2,
+  .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content ol + h2,
   .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-list + h2,
   .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content ul + h2,
   .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content ol + h2,
@@ -2353,10 +2419,16 @@ ol + .nhsuk-heading-s {
   .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content ol + h2,
   p + h4,
   .tribe-common .nhsuk-card-group p.nhsuk-card__description + h4,
+  .tribe-common .ld-course-list-items p.nhsuk-card__description + h4,
+  .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + h4,
+  .tribe-common .ld-course-list-items .ld_course_grid article p.caption + h4,
   .nhsuk-body-m + h4,
   address + h4,
   p + .nhsuk-heading-s,
   .tribe-common .nhsuk-card-group p.nhsuk-card__description + .nhsuk-heading-s,
+  .tribe-common .ld-course-list-items p.nhsuk-card__description + .nhsuk-heading-s,
+  .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .nhsuk-heading-s,
+  .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
   .nhsuk-body-s + h4,
@@ -5321,7 +5393,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
  * 6. Stops the heading from spanning the full width of the card.
  * 7. Removes padding top for the feature heading positioning.
  */
-.nhsuk-card, .nhsuk-panel.is-style-panel-grey, .is-style-panel-grey.sticky, .is-style-panel-grey.download-box, .nhsuk-promo.is-style-promo-small {
+.nhsuk-card, .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .thumbnail.course, .nhsuk-panel.is-style-panel-grey, .is-style-panel-grey.sticky, .is-style-panel-grey.download-box, .nhsuk-promo.is-style-promo-small {
   margin-bottom: 40px;
   background: #ffffff;
   border: 1px solid #d8dde0;
@@ -5331,7 +5403,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-card, .nhsuk-panel.is-style-panel-grey, .is-style-panel-grey.sticky, .is-style-panel-grey.download-box, .nhsuk-promo.is-style-promo-small {
+  .nhsuk-card, .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .thumbnail.course, .nhsuk-panel.is-style-panel-grey, .is-style-panel-grey.sticky, .is-style-panel-grey.download-box, .nhsuk-promo.is-style-promo-small {
     margin-bottom: 48px;
   }
 }
@@ -5349,28 +5421,29 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
-.nhsuk-card__content, .tribe-common .nhsuk-card-group div.nhsuk-card__content {
+.nhsuk-card__content, .tribe-common .nhsuk-card-group div.nhsuk-card__content, .tribe-common .ld-course-list-items div.nhsuk-card__content {
   padding: 24px;
   position: relative;
 }
 
-.nhsuk-card__content > *:first-child, .tribe-common .nhsuk-card-group div.nhsuk-card__content > *:first-child {
+.nhsuk-card__content > *:first-child, .tribe-common .nhsuk-card-group div.nhsuk-card__content > *:first-child, .tribe-common .ld-course-list-items div.nhsuk-card__content > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-card__content > *:last-child, .tribe-common .nhsuk-card-group div.nhsuk-card__content > *:last-child {
+.nhsuk-card__content > *:last-child, .tribe-common .nhsuk-card-group div.nhsuk-card__content > *:last-child, .tribe-common .ld-course-list-items div.nhsuk-card__content > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-card__content, .tribe-common .nhsuk-card-group div.nhsuk-card__content {
+  .nhsuk-card__content, .tribe-common .nhsuk-card-group div.nhsuk-card__content, .tribe-common .ld-course-list-items div.nhsuk-card__content {
     padding: 32px;
   }
 }
 
-.nhsuk-card__heading, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2, .tribe-common .nhsuk-card-group h2.nhsuk-card__heading,
+.nhsuk-card__heading, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2, .tribe-common .nhsuk-card-group h2.nhsuk-card__heading, .tribe-common .ld-course-list-items h2.nhsuk-card__heading,
 .nhsuk-card__metadata,
-.nhsuk-card__description {
+.nhsuk-card__description,
+.ld-course-list-items .ld_course_grid article .caption {
   margin-bottom: 16px;
 }
 
@@ -5384,15 +5457,15 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   cursor: pointer;
 }
 
-.nhsuk-card--clickable:hover .nhsuk-card__heading a, .nhsuk-card--clickable:hover .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:hover h2 a,
-.nhsuk-card--clickable:hover .nhsuk-card__link, .nhsuk-card--clickable:active .nhsuk-card__heading a, .nhsuk-card--clickable:active .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:active h2 a,
+.nhsuk-card--clickable:hover .nhsuk-card__heading a, .nhsuk-card--clickable:hover .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2 a, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2 a, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:hover h2 a, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:hover h2 a,
+.nhsuk-card--clickable:hover .nhsuk-card__link, .nhsuk-card--clickable:active .nhsuk-card__heading a, .nhsuk-card--clickable:active .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2 a, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2 a, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:active h2 a, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:active h2 a,
 .nhsuk-card--clickable:active .nhsuk-card__link {
   color: #7C2855;
   text-decoration: none;
 }
 
-.nhsuk-card--clickable:hover .nhsuk-card__heading a:focus, .nhsuk-card--clickable:hover .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a:focus, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus,
-.nhsuk-card--clickable:hover .nhsuk-card__link:focus, .nhsuk-card--clickable:active .nhsuk-card__heading a:focus, .nhsuk-card--clickable:active .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a:focus, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus,
+.nhsuk-card--clickable:hover .nhsuk-card__heading a:focus, .nhsuk-card--clickable:hover .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a:focus, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2 a:focus, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2 a:focus, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus, .nhsuk-card--clickable:hover .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:hover h2 a:focus,
+.nhsuk-card--clickable:hover .nhsuk-card__link:focus, .nhsuk-card--clickable:active .nhsuk-card__heading a:focus, .nhsuk-card--clickable:active .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 a:focus, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2 a:focus, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2 a:focus, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus, .nhsuk-card--clickable:active .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 a:focus, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card--clickable:active h2 a:focus,
 .nhsuk-card--clickable:active .nhsuk-card__link:focus {
   color: #212b32;
 }
@@ -5414,7 +5487,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 *
 * Flexbox is used to make each card in a row the same height.
 */
-.nhsuk-card-group {
+.nhsuk-card-group, .ld-course-list-items {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 16px;
@@ -5422,65 +5495,80 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-card-group {
+  .nhsuk-card-group, .ld-course-list-items {
     margin-bottom: 40px;
   }
 }
 
-.nhsuk-card-group + h2,
+.nhsuk-card-group + h2, .ld-course-list-items + h2,
 .nhsuk-card-group + .nhsuk-heading-l,
+.ld-course-list-items + .nhsuk-heading-l,
 .nhsuk-card-group + h3,
+.ld-course-list-items + h3,
 .nhsuk-card-group + .nhsuk-heading-m,
+.ld-course-list-items + .nhsuk-heading-m,
 .nightingale-latest-news .nhsuk-panel .nhsuk-card-group + a,
+.nightingale-latest-news .nhsuk-panel .ld-course-list-items + a,
 .nightingale-latest-news .sticky .nhsuk-card-group + a,
+.nightingale-latest-news .sticky .ld-course-list-items + a,
 .nightingale-latest-news .download-box .nhsuk-card-group + a,
+.nightingale-latest-news .download-box .ld-course-list-items + a,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card-group + h2,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content .ld-course-list-items + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .nhsuk-card-group + h2,
+.ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content .ld-course-list-items + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .nhsuk-card-group + h2,
+.ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content .ld-course-list-items + h2,
 .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .nhsuk-card-group + h2,
+.is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content .ld-course-list-items + h2,
 .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .nhsuk-card-group + h2,
+.is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content .ld-course-list-items + h2,
 .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .nhsuk-card-group + h2,
-.is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card-group + h2 {
+.is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content .ld-course-list-items + h2,
+.is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .nhsuk-card-group + h2,
+.is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content .ld-course-list-items + h2 {
   padding-top: 0;
   /* [4] */
 }
 
-.nhsuk-card-group__item, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third {
+.nhsuk-card-group__item, .ld-course-list-items .ld_course_grid, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third {
   display: flex;
   list-style-type: none;
   margin-bottom: 0;
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-card-group__item, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third {
+  .nhsuk-card-group__item, .ld-course-list-items .ld_course_grid, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third {
     flex: 0 0 100%;
   }
 }
 
-.nhsuk-card-group__item .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small {
+.nhsuk-card-group__item .nhsuk-card, .ld-course-list-items .ld_course_grid .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .ld-course-list-items .ld_course_grid article, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third article, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld_course_grid article, .tribe-common .ld-course-list-items .ld_course_grid div.nhsuk-card-group__item.nhsuk-grid-column-one-third article, .ld-course-list-items .ld_course_grid .thumbnail.course, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld-course-list-items .ld_course_grid .thumbnail.course, .ld-course-list-items .ld_course_grid .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .thumbnail.course, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld_course_grid .thumbnail.course, .tribe-common .ld-course-list-items .ld_course_grid div.nhsuk-card-group__item.nhsuk-grid-column-one-third .thumbnail.course, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .ld-course-list-items .ld_course_grid .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .ld-course-list-items .ld_course_grid .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small, .ld-course-list-items .ld_course_grid .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small {
   margin-bottom: 32px;
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-card-group__item .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small {
+  .nhsuk-card-group__item .nhsuk-card, .ld-course-list-items .ld_course_grid .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-card, .ld-course-list-items .ld_course_grid article, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third article, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld_course_grid article, .tribe-common .ld-course-list-items .ld_course_grid div.nhsuk-card-group__item.nhsuk-grid-column-one-third article, .ld-course-list-items .ld_course_grid .thumbnail.course, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld-course-list-items .ld_course_grid .thumbnail.course, .ld-course-list-items .ld_course_grid .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .thumbnail.course, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .ld_course_grid .thumbnail.course, .tribe-common .ld-course-list-items .ld_course_grid div.nhsuk-card-group__item.nhsuk-grid-column-one-third .thumbnail.course, .nhsuk-card-group__item .nhsuk-panel.is-style-panel-grey, .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item .is-style-panel-grey.sticky, .ld-course-list-items .ld_course_grid .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.sticky, .nhsuk-card-group__item .is-style-panel-grey.download-box, .ld-course-list-items .ld_course_grid .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .is-style-panel-grey.download-box, .nhsuk-card-group__item .nhsuk-promo.is-style-promo-small, .ld-course-list-items .ld_course_grid .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third .nhsuk-promo.is-style-promo-small {
     margin-bottom: 16px;
   }
-  .nhsuk-card-group__item:last-child .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-card, .nhsuk-card-group__item:last-child .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item:last-child .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.sticky, .nhsuk-card-group__item:last-child .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.download-box, .nhsuk-card-group__item:last-child .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-promo.is-style-promo-small {
+  .nhsuk-card-group__item:last-child .nhsuk-card, .ld-course-list-items .ld_course_grid:last-child .nhsuk-card, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-card, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-card, .nhsuk-card-group__item:last-child .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .nhsuk-card-group__item:last-child article, .ld-course-list-items .ld_course_grid:last-child article, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .ld_course_grid article, .nhsuk-card-group__item:last-child .ld-course-list-items .ld_course_grid .thumbnail.course, .ld-course-list-items .ld_course_grid .nhsuk-card-group__item:last-child .thumbnail.course, .ld-course-list-items .ld_course_grid:last-child .thumbnail.course, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .ld_course_grid .thumbnail.course, .nhsuk-card-group__item:last-child .nhsuk-panel.is-style-panel-grey, .ld-course-list-items .ld_course_grid:last-child .nhsuk-panel.is-style-panel-grey, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-panel.is-style-panel-grey, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-panel.is-style-panel-grey, .nhsuk-card-group__item:last-child .is-style-panel-grey.sticky, .ld-course-list-items .ld_course_grid:last-child .is-style-panel-grey.sticky, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.sticky, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.sticky, .nhsuk-card-group__item:last-child .is-style-panel-grey.download-box, .ld-course-list-items .ld_course_grid:last-child .is-style-panel-grey.download-box, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.download-box, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .is-style-panel-grey.download-box, .nhsuk-card-group__item:last-child .nhsuk-promo.is-style-promo-small, .ld-course-list-items .ld_course_grid:last-child .nhsuk-promo.is-style-promo-small, .tribe-common .nhsuk-card-group div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-promo.is-style-promo-small, .tribe-common .ld-course-list-items div.nhsuk-card-group__item.nhsuk-grid-column-one-third:last-child .nhsuk-promo.is-style-promo-small {
     margin-bottom: 0;
   }
 }
 
 /* Card feature
   ========================================================================== */
-.nhsuk-card--feature, .nhsuk-card.is-style-panel-with-label, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey, .is-style-panel-with-label.is-style-panel-grey.sticky, .is-style-panel-with-label.is-style-panel-grey.download-box, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small {
+.nhsuk-card--feature, .nhsuk-card.is-style-panel-with-label, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey, .is-style-panel-with-label.is-style-panel-grey.sticky, .is-style-panel-with-label.is-style-panel-grey.download-box, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small {
   margin-top: 40px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-card--feature, .nhsuk-card.is-style-panel-with-label, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey, .is-style-panel-with-label.is-style-panel-grey.sticky, .is-style-panel-with-label.is-style-panel-grey.download-box, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small {
+  .nhsuk-card--feature, .nhsuk-card.is-style-panel-with-label, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey, .is-style-panel-with-label.is-style-panel-grey.sticky, .is-style-panel-with-label.is-style-panel-grey.download-box, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small {
     margin-top: 48px;
   }
 }
 
-.nhsuk-card__heading--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
+.nhsuk-card__heading--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
   background: #005eb8;
   color: #ffffff;
   display: inline-block;
@@ -5495,7 +5583,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-card__heading--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
+  .nhsuk-card__heading--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content h2, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content h2, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content h2, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content h2 {
     left: -33px;
     /* [5] */
     margin-right: -32px;
@@ -5505,7 +5593,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
-.nhsuk-card__content--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content, .nhsuk-card.is-style-panel-with-label .tribe-common .nhsuk-card-group div.nhsuk-card__content, .tribe-common .nhsuk-card-group .nhsuk-card.is-style-panel-with-label div.nhsuk-card__content {
+.nhsuk-card__content--feature, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content, .ld-course-list-items .ld_course_grid article.is-style-panel-with-label .nhsuk-card__content, .ld-course-list-items .ld_course_grid .is-style-panel-with-label.thumbnail.course .nhsuk-card__content, .is-style-panel-with-label.nhsuk-panel.is-style-panel-grey .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.sticky .nhsuk-card__content, .is-style-panel-with-label.is-style-panel-grey.download-box .nhsuk-card__content, .is-style-panel-with-label.nhsuk-promo.is-style-promo-small .nhsuk-card__content, .nhsuk-card.is-style-panel-with-label .tribe-common .nhsuk-card-group div.nhsuk-card__content, .tribe-common .nhsuk-card-group .nhsuk-card.is-style-panel-with-label div.nhsuk-card__content, .nhsuk-card.is-style-panel-with-label .tribe-common .ld-course-list-items div.nhsuk-card__content, .tribe-common .ld-course-list-items .nhsuk-card.is-style-panel-with-label div.nhsuk-card__content {
   padding-top: 0 !important;
 }
 
@@ -6577,13 +6665,13 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
-.nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.nhsuk-card__description {
+.nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.nhsuk-card__description, .nhsuk-error-summary__body .tribe-common .ld-course-list-items p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-error-summary__body p.nhsuk-card__description, .nhsuk-error-summary__body .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.caption, .nhsuk-error-summary__body .tribe-common .ld-course-list-items .ld_course_grid article p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-error-summary__body p.caption {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.nhsuk-card__description {
+  .nhsuk-error-summary__body p, .nhsuk-error-summary__body .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.nhsuk-card__description, .nhsuk-error-summary__body .tribe-common .ld-course-list-items p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-error-summary__body p.nhsuk-card__description, .nhsuk-error-summary__body .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-error-summary__body p.caption, .nhsuk-error-summary__body .tribe-common .ld-course-list-items .ld_course_grid article p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-error-summary__body p.caption {
     margin-bottom: 24px;
   }
 }
@@ -10245,7 +10333,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-summary-list__value > p, .tribe-common .nhsuk-card-group .nhsuk-summary-list__value > p.nhsuk-card__description {
+.nhsuk-summary-list__value > p, .tribe-common .nhsuk-card-group .nhsuk-summary-list__value > p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-summary-list__value > p.nhsuk-card__description, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-summary-list__value > p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-summary-list__value > p.caption {
   margin-bottom: 8px;
 }
 
@@ -10794,7 +10882,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 
 /* colour variable to be used with color-mixer.scss */
 /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
-.nhsuk-panel-group, .ld-course-list-items, .ld-course-list-items .ld_course_grid article {
+.nhsuk-panel-group {
   margin-left: 0;
   margin-right: 0;
 }
@@ -10908,6 +10996,14 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   width: 100%;
 }
 
+.autocomplete__input {
+  padding-right: 0;
+}
+
+.nhsuk-search__submit {
+  margin-left: 0;
+}
+
 #secondary section.widget_search {
   background: none;
   padding-left: 0;
@@ -10922,7 +11018,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border: 2px solid #aeb7bd;
   border-radius: 4px 0px 0px 4px;
   float: left;
-  max-width: 80%;
+  max-width: 78%;
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
@@ -11040,7 +11136,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
 }
 
-.nhsuk-grid-row.nhsuk-width-restrict, .tribe-common .nhsuk-width-restrict.nhsuk-card-group.nhsuk-grid-row {
+.nhsuk-grid-row.nhsuk-width-restrict, .tribe-common .nhsuk-width-restrict.nhsuk-card-group.nhsuk-grid-row, .tribe-common .nhsuk-width-restrict.nhsuk-grid-row.ld-course-list-items {
   margin-left: 0;
   margin-right: 0;
   background: #f0f4f5;
@@ -11076,7 +11172,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 
 /* Menu item right chevron (mobile): fix color when state is focus */
 a:focus .nhsuk-icon {
-  fill: #212b32 !important;
+  fill: #4c6272 !important;
 }
 
 .nhsuk-header .nhsuk-header__navigation {
@@ -11302,7 +11398,7 @@ button#toggle-search {
   padding: 0;
 }
 
-.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
+.nhsuk-grid-column-one-third, .tribe-common div.nhsuk-grid-column-one-third, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-third, .nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-half, .nhsuk-grid-column-one-quarter {
   flex-flow: wrap;
 }
 
@@ -11474,16 +11570,16 @@ button {
   margin-left: 16px;
 }
 
-.nhsuk-card .nhsuk-card__description, .nhsuk-panel.is-style-panel-grey .nhsuk-card__description, .is-style-panel-grey.sticky .nhsuk-card__description, .is-style-panel-grey.download-box .nhsuk-card__description, .nhsuk-promo.is-style-promo-small .nhsuk-card__description {
+.nhsuk-card .nhsuk-card__description, .ld-course-list-items .ld_course_grid article .nhsuk-card__description, .ld-course-list-items .ld_course_grid .thumbnail.course .nhsuk-card__description, .nhsuk-panel.is-style-panel-grey .nhsuk-card__description, .is-style-panel-grey.sticky .nhsuk-card__description, .is-style-panel-grey.download-box .nhsuk-card__description, .nhsuk-promo.is-style-promo-small .nhsuk-card__description, .ld-course-list-items .ld_course_grid article .caption, .ld-course-list-items .ld_course_grid .thumbnail.course article .caption, .ld-course-list-items .ld_course_grid article .thumbnail.course .caption {
   display: flow-root;
 }
 
-.nhsuk-card.is-style-panel-grey, .is-style-panel-grey.nhsuk-panel, .is-style-panel-grey.sticky, .is-style-panel-grey.download-box, .is-style-panel-grey.nhsuk-promo.is-style-promo-small {
+.nhsuk-card.is-style-panel-grey, .ld-course-list-items .ld_course_grid article.is-style-panel-grey, .ld-course-list-items .ld_course_grid .is-style-panel-grey.thumbnail.course, .is-style-panel-grey.nhsuk-panel, .is-style-panel-grey.sticky, .is-style-panel-grey.download-box, .is-style-panel-grey.nhsuk-promo.is-style-promo-small {
   background: inherit;
   border: none;
 }
 
-.nhsuk-card figure, .nhsuk-panel.is-style-panel-grey figure, .is-style-panel-grey.sticky figure, .is-style-panel-grey.download-box figure, .nhsuk-promo.is-style-promo-small figure {
+.nhsuk-card figure, .ld-course-list-items .ld_course_grid article figure, .ld-course-list-items .ld_course_grid .thumbnail.course figure, .nhsuk-panel.is-style-panel-grey figure, .is-style-panel-grey.sticky figure, .is-style-panel-grey.download-box figure, .nhsuk-promo.is-style-promo-small figure {
   margin: 0;
 }
 
@@ -11625,6 +11721,7 @@ button {
   padding: 16px 0;
   display: block;
   background-color: #f0f4f5;
+  clear: both;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond {
@@ -11647,6 +11744,8 @@ button {
   margin-left: 0;
   margin-right: 0;
   padding-left: 16px;
+  border-left: 1px solid #aeb7bd;
+  position: relative;
 }
 
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .children .comment {
@@ -12599,6 +12698,7 @@ button {
 }
 
 .ld-course-list-items .ld_course_grid .thumbnail.course {
+  margin-bottom: 40px;
   position: relative;
   padding-bottom: 120px;
 }
@@ -12667,15 +12767,15 @@ button {
   padding: 8px 16px 4px 56px;
 }
 
-.tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third {
+.tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-third {
   margin-bottom: 24px;
 }
 
-.tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half {
+.tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-half {
   margin-bottom: 24px;
 }
 
-.tribe-common .nhsuk-card-group div.nhsuk-card__content {
+.tribe-common .nhsuk-card-group div.nhsuk-card__content, .tribe-common .ld-course-list-items div.nhsuk-card__content {
   color: #425563;
 }
 
@@ -12718,7 +12818,7 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   margin-right: 8px;
 }
 
-.nhsuk-card__content .tribe-events-calendar-list__event-datetime, .tribe-common .nhsuk-card-group div.nhsuk-card__content .tribe-events-calendar-list__event-datetime {
+.nhsuk-card__content .tribe-events-calendar-list__event-datetime, .tribe-common .nhsuk-card-group div.nhsuk-card__content .tribe-events-calendar-list__event-datetime, .tribe-common .ld-course-list-items div.nhsuk-card__content .tribe-events-calendar-list__event-datetime {
   float: left;
   display: block;
 }
@@ -12727,12 +12827,12 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   display: block;
 }
 
-.tribe-common .nhsuk-card-group .event-meta,
+.tribe-common .nhsuk-card-group .event-meta, .tribe-common .ld-course-list-items .event-meta,
 .event-meta {
   margin-bottom: 16px;
 }
 
-.single-tribe_events .tribe-common .nhsuk-card-group .event-meta, .single-tribe_events
+.single-tribe_events .tribe-common .nhsuk-card-group .event-meta, .single-tribe_events .tribe-common .ld-course-list-items .event-meta, .single-tribe_events
 .event-meta {
   margin-bottom: 24px;
 }
@@ -13016,9 +13116,25 @@ ul.download-versions {
 
 /* Heading: smaller font size on desktop */
 .nhsuk-global-alert__heading {
-  font-size: 24px;
-  line-height: 1.33333;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
   margin: 0;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-global-alert__heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+
+@media print {
+  .nhsuk-global-alert__heading {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
 }
 
 /* Margin fix */
@@ -13041,7 +13157,7 @@ ul.download-versions {
 
 .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item {
   display: inline-block;
-  padding: 16px 24px;
+  padding: 8px 16px;
   margin-bottom: 0;
   font-size: 16px;
 }
@@ -13062,6 +13178,7 @@ ul.download-versions {
 
 .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
   background-color: #f0f4f5;
+  word-break: initial;
   border: 2px solid #aeb7bd;
   border-radius: 4px 4px 0 0;
   margin-bottom: -2px;
@@ -13070,34 +13187,46 @@ ul.download-versions {
   color: #005eb8;
 }
 
-@media (max-width: 40.0525em) {
+@media (max-width: 61.865em) {
   .nhsuk-bordered-tabs-container {
     background: inherit;
     border-bottom: none;
   }
-  .nhsuk-bordered-tabs-container:before {
-    content: 'Pages in this section:';
-    font-weight: 600;
-    margin: 0 0 16px 16px;
+  .nhsuk-bordered-tabs-container .close-menu-buddynav {
+    display: none;
+    background: #ffffff;
+    top: -8px;
+    position: absolute;
+  }
+  .nhsuk-bordered-tabs-container .label-navigation-buddynav {
+    border-radius: 4px;
+    border: 2px solid #768692;
+    background: #ffffff;
+    padding: 8px 16px;
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs {
-    display: block;
+    display: none;
     list-style: none;
     padding: 0;
     margin-top: 8px;
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item {
-    background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left 0.75rem no-repeat;
-    padding: 0 0 8px 32px;
+    padding: 8px 0 8px 32px;
     position: relative;
     display: list-item;
-  }
-  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
-    border: none !important;
+    background: #ffffff;
+    width: 100%;
+    border-bottom: 2px solid #f0f4f5;
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
     display: inline-block;
     color: #212b32;
+  }
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
+    background: #005eb8;
+  }
+  .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active a {
+    color: #ffffff;
   }
 }
 
@@ -13289,18 +13418,18 @@ ul.download-versions {
   overflow: auto;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item, .nhsuk-dashboard .ld-course-list-items .ld_course_grid, .ld-course-list-items .nhsuk-dashboard .ld_course_grid {
+.nhsuk-dashboard .nhsuk-panel-group__item {
   overflow: hidden;
   margin-bottom: 2rem;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper {
   background: inherit;
   box-shadow: none;
   width: 100%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box {
   background: inherit;
   margin: 0;
   margin-top: 0;
@@ -13311,7 +13440,7 @@ ul.download-versions {
   height: 100%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-panel.is-style-panel-with-label .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label h3, .is-style-panel-with-label.sticky .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky h3, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label h3, .is-style-panel-with-label.download-box .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box h3, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box h3, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3 .rich-text, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky h3 .rich-text, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky h3 .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .is-style-panel-with-label.download-box h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3 .rich-text, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box h3 .rich-text, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box h3 .rich-text {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3 .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3 .rich-text {
   z-index: 2;
   top: 0;
   margin: 0 -20px;
@@ -13322,12 +13451,12 @@ ul.download-versions {
   font-size: 1.1rem;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-dashboard__image {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-dashboard__image {
   width: 100%;
   height: 100%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-promo__img {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-promo__img {
   position: relative;
   top: -16px;
   z-index: 1;
@@ -13337,7 +13466,7 @@ ul.download-versions {
   max-height: 300px;
 }
 
-.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .nhsuk-dashboard div.nhsuk-grid-column-one-half {
+.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .nhsuk-dashboard div.nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-half, .tribe-common .ld-course-list-items .nhsuk-dashboard div.nhsuk-grid-column-one-half {
   max-height: 250px;
 }
 
@@ -13413,7 +13542,7 @@ ul.download-versions {
   padding: 8px 16px;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description, .nhsuk-promo .nhsuk-promo__content .tribe-common .ld-course-list-items p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description, .nhsuk-promo .nhsuk-promo__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.caption, .nhsuk-promo .nhsuk-promo__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-promo .nhsuk-promo__content p.caption {
   padding: 8px;
 }
 
@@ -13646,7 +13775,7 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   display: flow-root;
 }
 
-.wp-block-nhsblocks-rowgroup .nhsuk-panel-group, .wp-block-nhsblocks-rowgroup .ld-course-list-items, .wp-block-nhsblocks-rowgroup .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .wp-block-nhsblocks-rowgroup article {
+.wp-block-nhsblocks-rowgroup .nhsuk-panel-group {
   padding: 0;
 }
 
@@ -13717,10 +13846,12 @@ section.nhsuk-section:after,
   background: #ffffff;
 }
 
-.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-half,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-half, .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-half, .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-half, .tribe-common .ld-course-list-items .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-half,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-third,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third,
 .tribe-common .nhsuk-card-group .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-third,
+.wp-block-nhsblocks-stripeblock.nhsuk-section .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-third,
+.tribe-common .ld-course-list-items .wp-block-nhsblocks-stripeblock.nhsuk-section div.nhsuk-grid-column-one-third,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-one-quarter,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-two-thirds,
 .wp-block-nhsblocks-stripeblock.nhsuk-section .nhsuk-grid-column-three-quarters {
@@ -13885,7 +14016,7 @@ section.nhsuk-section:after,
  *
  * 1. Flexbox is used to make each panel in a row the same height.
  */
-.nhsuk-panel-group, .ld-course-list-items, .ld-course-list-items .ld_course_grid article {
+.nhsuk-panel-group {
   display: flex;
   flex-wrap: wrap;
   /* [1] */
@@ -13893,32 +14024,32 @@ section.nhsuk-section:after,
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-panel-group, .ld-course-list-items, .ld-course-list-items .ld_course_grid article {
+  .nhsuk-panel-group {
     margin-bottom: 24px;
   }
 }
 
-.nhsuk-panel-group__item, .ld-course-list-items .ld_course_grid {
+.nhsuk-panel-group__item {
   display: flex;
   /* [1] */
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-panel-group__item, .ld-course-list-items .ld_course_grid {
+  .nhsuk-panel-group__item {
     flex: 0 0 100%;
   }
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-panel-group__item, .ld-course-list-items .ld_course_grid {
+  .nhsuk-panel-group__item {
     margin-bottom: 24px;
   }
-  .nhsuk-panel-group__item:last-child, .ld-course-list-items .ld_course_grid:last-child {
+  .nhsuk-panel-group__item:last-child {
     margin-bottom: 0;
   }
 }
 
-.nhsuk-panel-group__item .nhsuk-panel, .ld-course-list-items .ld_course_grid .nhsuk-panel, .nhsuk-panel-group__item .sticky, .ld-course-list-items .ld_course_grid .sticky, .nhsuk-panel-group__item .download-box, .ld-course-list-items .ld_course_grid .download-box {
+.nhsuk-panel-group__item .nhsuk-panel, .nhsuk-panel-group__item .sticky, .nhsuk-panel-group__item .download-box {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -14167,22 +14298,22 @@ section.nhsuk-section:after,
   display: flow-root;
 }
 
-.wp-block-nhsblock-rowgroup .nhsuk-panel-group, .wp-block-nhsblock-rowgroup .ld-course-list-items, .wp-block-nhsblock-rowgroup .ld-course-list-items .ld_course_grid article, .ld-course-list-items .ld_course_grid .wp-block-nhsblock-rowgroup article {
+.wp-block-nhsblock-rowgroup .nhsuk-panel-group {
   padding: 0;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item, .nhsuk-dashboard .ld-course-list-items .ld_course_grid, .ld-course-list-items .nhsuk-dashboard .ld_course_grid {
+.nhsuk-dashboard .nhsuk-panel-group__item {
   overflow: hidden;
   margin-bottom: 2rem;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-promo__link-wrapper, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-promo__link-wrapper {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper {
   background: inherit;
   box-shadow: none;
   width: 100%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box {
   background: inherit;
   margin: 0;
   margin-top: 0;
@@ -14193,7 +14324,7 @@ section.nhsuk-section:after,
   height: 100%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-panel.is-style-panel-with-label .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label h3, .is-style-panel-with-label.sticky .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky h3, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label h3, .is-style-panel-with-label.download-box .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box h3, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box h3, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3 .rich-text, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky h3 .rich-text, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky h3 .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .is-style-panel-with-label.download-box h3 .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3 .rich-text, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box h3 .rich-text, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box h3 .rich-text {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-panel-with-label__label, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-panel-with-label__label, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label h3 .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .nhsuk-panel.is-style-panel-with-label h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky h3 .rich-text, .is-style-panel-with-label.sticky h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .rich-text, .is-style-panel-with-label.download-box h3 .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .rich-text, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box h3 .rich-text {
   z-index: 2;
   top: 0;
   margin: 0 -20px;
@@ -14204,12 +14335,12 @@ section.nhsuk-section:after,
   font-size: 1.1rem;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-dashboard__image, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-dashboard__image, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-dashboard__image {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-dashboard__image, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-dashboard__image {
   width: 100%;
   height: 100%;
 }
 
-.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel-with-label .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.sticky .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-promo__img, .nhsuk-dashboard .ld-course-list-items .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-promo__img, .ld-course-list-items .nhsuk-dashboard .ld_course_grid .is-style-panel-with-label.download-box .nhsuk-promo__img {
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-panel.is-style-panel-with-label .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.sticky .nhsuk-promo__img, .nhsuk-dashboard .nhsuk-panel-group__item .is-style-panel-with-label.download-box .nhsuk-promo__img {
   position: relative;
   top: -16px;
   z-index: 1;
@@ -14219,7 +14350,7 @@ section.nhsuk-section:after,
   max-height: 300px;
 }
 
-.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .nhsuk-dashboard div.nhsuk-grid-column-one-half {
+.nhsuk-dashboard .nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-half, .tribe-common .nhsuk-card-group .nhsuk-dashboard div.nhsuk-grid-column-one-half, .nhsuk-dashboard .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-half, .tribe-common .ld-course-list-items .nhsuk-dashboard div.nhsuk-grid-column-one-half {
   max-height: 250px;
 }
 
@@ -14258,7 +14389,7 @@ section.nhsuk-section:after,
   padding: 8px 16px;
 }
 
-.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description {
+.nhsuk-promo .nhsuk-promo__content .nhsuk-promo__description, .nhsuk-promo .nhsuk-promo__content p, .nhsuk-promo .nhsuk-promo__content .tribe-common .nhsuk-card-group p.nhsuk-card__description, .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description, .nhsuk-promo .nhsuk-promo__content .tribe-common .ld-course-list-items p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-promo .nhsuk-promo__content p.nhsuk-card__description, .nhsuk-promo .nhsuk-promo__content .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption, .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group .nhsuk-promo .nhsuk-promo__content p.caption, .nhsuk-promo .nhsuk-promo__content .tribe-common .ld-course-list-items .ld_course_grid article p.caption, .tribe-common .ld-course-list-items .ld_course_grid article .nhsuk-promo .nhsuk-promo__content p.caption {
   padding: 8px;
 }
 

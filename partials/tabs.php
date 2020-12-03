@@ -27,6 +27,8 @@ if ( $thispage ) {
 			),
 		),
 	);
+
+	$tabcount = 1;
 	if ( ! empty( $post->post_parent ) || ! empty( get_children( $args ) ) ) {
 
 		// Start first "Overview" link to parent page.
@@ -40,7 +42,7 @@ if ( $thispage ) {
 			// and all the other links are to child pages...
 			$tabslink .= '  nhsuk-bordered-tabs-item-active';
 			$altlink  .= ' aria-current="page"';
-
+			$tabcount ++;
 			$tabname = get_post_meta( $post->ID, 'tabname', true );
 			if ( $tabname ) {
 				$tabtitle = $tabname;
@@ -72,20 +74,19 @@ if ( $thispage ) {
 			$tabslink     .= $tabtitle;
 			$tabslink     .= '</a></li>';
 		}
-		$tabsize  = strlen( $tabtitle ); // start a count of characters in the tabs. If we get too silly with size, revert to contents display.
-		$tabsize += 12;
 		$tabsmenu = $tabslink;
 		$altmenu  = $altlink;
 
 		// Get all child/sibling pages (depending on whether this is a parent or child page) that use this tabbed page template.
 		$args     = array(
-			'post_type'   => 'page',
-			'post_parent' => $post_parent,
-			'orderby'     => 'menu_order',
-			'order'       => 'ASC',
-			'depth'       => 1,
-			'post_status' => 'publish',
-			'meta_query'  => array(
+			'post_type'      => 'page',
+			'post_parent'    => $post_parent,
+			'orderby'        => 'menu_order',
+			'order'          => 'ASC',
+			'depth'          => 1,
+			'post_status'    => 'publish',
+			'posts_per_page' => - 1,
+			'meta_query'     => array(
 				array(
 					'key'   => 'tabbed-page',
 					'value' => 'on',
@@ -100,6 +101,7 @@ if ( $thispage ) {
 		while ( $children->have_posts() ) {
 			$children->the_post();
 			// Build tab.
+			$tabcount ++;
 			$tabslink = '<li class="nhsuk-bordered-tabs-item ';
 			$altlink  = '<li class="nhsuk-contents-list__item" ';
 			$tabname  = get_post_meta( $post->ID, 'tabname', true );
@@ -121,8 +123,7 @@ if ( $thispage ) {
 				$tabslink .= '</a></li>';
 				$altlink  .= '><a class="nhsuk-contents-list__link" href="' . get_permalink( $post ) . '">' . $tabtitle . '</a></li>';
 			}
-			$tabsize += strlen( $tabtitle );
-			$tabsize += 12;
+
 			// If number of tabs exceeds number of icons, reset to start of icon array (icons will repeat from the start).
 			if ( ! next( $icons ) ) {
 				reset( $icons );
@@ -153,7 +154,7 @@ if ( $thispage ) {
 	<?php echo nightingale_breadcrumb(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	<div class="nhsuk-full-width-container">
 		<?php
-		if ( $tabsize > 185 ) { // if we have too much content for some nice tabs, show as contents list instead.
+		if ( $tabcount > 10 ) { // if we have too much content for some nice tabs, show as contents list instead.
 			?>
 			<div class="nhsuk-width-container">
 				<nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">

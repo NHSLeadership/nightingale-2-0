@@ -55,7 +55,7 @@ function nightingale_render_tabbed_pages( $post ) {
 
 	<p><b><?php esc_html_e( 'Show this section as tabs?', 'nightingale' ); ?></b></p>
 	<p><i>This will show a tab navigation component at the top of this page. You will need to also toggle this to "on" for any sub pages to ensure consistency. If you have tabs set to active for multiple levels, the tab will show current
-			and parent level pages only.</i></p>
+			and parent level pages only.</i>. This is not designed for more than 10 pages to display, it will revert to a contents list style if you have more than 10 siblings active.</p>
 	<input type="radio" id="tab-on" name="tabPage" value="on"
 		<?php
 		if ( $checked ) :

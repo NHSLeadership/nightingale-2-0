@@ -12,7 +12,7 @@
 
 	.nhsuk-bordered-tabs-item {
 	  display       : inline-block;
-	  padding       : nhsuk-spacing(3) nhsuk-spacing(4);
+	  padding       : nhsuk-spacing(2) nhsuk-spacing(3);
 	  margin-bottom : 0;
 	  font-size     : $nhsuk-base-font-size;
 
@@ -34,7 +34,7 @@
 
 	  &.nhsuk-bordered-tabs-item-active {
 		background-color : $color_nhsuk-grey-5;
-
+		word-break    	 : initial;
 		border           : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 		border-radius    : $nhsuk-border-radius $nhsuk-border-radius 0 0;
 		margin-bottom    : -$nhsuk-border-width-form-element;
