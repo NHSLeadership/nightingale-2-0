@@ -3,7 +3,7 @@
  * The search results page
  * This is the template file to display search results.
  * It is used to display a a list of pages / posts matching a search query.
- * Each result is presented in its own promo panel at 1/3 width.
+ * Each result is presented in its own card at 1/3 width.
  * The sidebar is intentionally disabled on this view, regardless of site settings.
  *
  * @link      https://developer.wordpress.org/themes/basics/template-hierarchy/
@@ -28,29 +28,33 @@ get_header();
 			<?php
 			if ( have_posts() ) :
 				?>
-				<div class="nhsuk-grid-row nhsuk-promo-group">
+				<div class="nhsuk-grid-row nhsuk-card-group">
 					<?php
 					/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
 						?>
-						<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item nhsuk-postslisting">
-							<div class="nhsuk-promo">
-								<a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
+						<div class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-postslisting">
+							<div class="nhsuk-card nhsuk-card--clickable">
+
 									<?php
 									if ( has_post_thumbnail() ) :
-										the_post_thumbnail( 'thumbnail', [ 'class' => 'nhsuk-promo__img' ] );
+										the_post_thumbnail( 'thumbnail', [ 'class' => 'nhsuk-card__img' ] );
 									else :
 										$fallback = get_theme_mod( 'blog_fallback' );
 										if ( $fallback ) {
-											echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-promo__img' ] );
+											echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-card__img' ] );
 										}
 									endif;
 									?>
-									<div class="nhsuk-promo__content">
-										<?php the_title( '<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
+									<div class="nhsuk-card__content">
+										<h2 class="nhsuk-card__heading nhsuk-heading-m">
+											<a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
+												<?php the_title(); ?>
+											</a>
+										</h2>
 										<?php do_action( 'nightingale_before_archive_content' ); ?>
-										<p class="nhsuk-promo__description">
+										<p class="nhsuk-card__description">
 											<?php
 											$excerpt = get_the_excerpt();
 											$keys    = explode( ' ', $s );
@@ -60,7 +64,6 @@ get_header();
 										</p>
 										<?php do_action( 'nightingale_after_archive_content' ); ?>
 									</div>
-								</a>
 							</div>
 						</div>
 						<?php

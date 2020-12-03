@@ -63,6 +63,17 @@
   }
 }
 
+.pagination_split_post {
+  .post-page-numbers {
+	@extend .nhsuk-tag;
+	@extend .nhsuk-tag--grey;
+
+	&.current {
+	  @extend .nhsuk-tag--white;
+	}
+  }
+}
+
 .gallery-caption {
   @extend .nhsuk-image__caption;
 }
@@ -75,42 +86,6 @@
   color : $color_nhsuk-blue;
 }
 
-.nhsuk-pill-standard {
-  border-radius    : $nhsuk-border-radius;
-  border           : $nhsuk-border-width-form-element solid;
-  background-color : $color_nhsuk-white;
-  text-align       : center;
-  padding          : nhsuk-spacing(1) nhsuk-spacing(3);
-  width            : fit-content;
-  text-transform   : uppercase;
-  font-weight      : $nhsuk-font-bold;
-  letter-spacing   : .5px;
-  font-size        : 0.75rem;
-  line-height      : 1.1;
-  display          : inline-block;
-  position         : relative;
-  top              : -nhsuk-spacing(1);
-  border-color     : $color_nhsuk-grey-1;
-  color            : $color_nhsuk-grey-1;
-}
-
-.nhsuk-pill-notice {
-  @extend .nhsuk-pill-standard;
-  border-color : $color_nhsuk-blue;
-  color        : $color_nhsuk-blue;
-}
-
-.nhsuk-pill-success {
-  @extend .nhsuk-pill-standard;
-  border-color : $color_nhsuk-green;
-  color        : $color_nhsuk-green;
-}
-
-.nhsuk-pill-warn {
-  @extend .nhsuk-pill-standard;
-  border-color : $color_nhsuk-red;
-  color        : $color_nhsuk-red;
-}
 
 #primary {
   h1, p, .nhsuk-pagination__page {
@@ -131,23 +106,30 @@
 
   footer {
 	.edit-link {
-	  @extend .nhsuk-pill-standard;
+	  @extend .nhsuk-tag;
+	  @extend .nhsuk-tag--white;
 	  text-decoration : none;
 	  /*margin-left: nhsuk-spacing(4);*/
 
 	  a {
-		color : $color_nhsuk-grey-1;
+		color : $color_nhsuk-blue;
 	  }
 	}
 
 	.tags-links, .cat-links {
-	  @extend .nhsuk-pill-notice;
+	  @extend .nhsuk-tag;
+	  @extend .nhsuk-tag--grey;
+
+	  a {
+		//color: $color_nhsuk-white
+	  }
 	}
   }
 }
 
-#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text], input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
-  box-shadow : inset 0 0 0 nhsuk-spacing(1) $color_nhsuk-yellow;
+/* With :not(.autocomplete__input), the search field is not affected */
+#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.autocomplete__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
+  box-shadow : 0 0 0 nhsuk-spacing(1) $color_nhsuk-yellow;
 }
 
 .nhsuk-search__input#search-field {
@@ -161,6 +143,16 @@
   width    : 100%;
 }
 
+.autocomplete__input {
+  padding-right : 0;
+}
+
+.nhsuk-search__submit {
+  margin-left : 0;
+}
+.nhsuk-header__search-toggle {
+  margin-right: nhsuk-spacing(1);
+}
 #secondary {
   section.widget_search {
 	background    : none;
@@ -176,7 +168,7 @@
 	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
 	  border-radius : $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
 	  float         : left;
-	  max-width     : 80%;
+	  max-width     : 78%;
 
 	}
 
@@ -209,11 +201,10 @@
   }
 }
 
-
 @media (min-width : 40.0625em) {
   .nhsuk-search__submit {
-	padding-top : 6px;
-	margin-top  : 0;
+	padding-right  : 6px;
+	padding-bottom : 1px;
   }
 }
 
@@ -333,46 +324,52 @@
 
 // footer region
 #nhsuk-footer {
-	.nhsuk-width-container {
-		ul.nhsuk-footer__list {
-			&.nhsuk-footer__list--three-columns {
-				li.nhsuk-footer__list-item {
-					width: auto;
-				}
-			}
+  .nhsuk-width-container {
+	ul.nhsuk-footer__list {
+	  &.nhsuk-footer__list--three-columns {
+		li.nhsuk-footer__list-item {
+		  width : auto;
 		}
+	  }
 	}
+  }
 }
 
 // featured image display variations
 .single-post {
-	#content {
-		#maincontent {
-			#contentinner {
-				#primary {
-					.featured-top {
-						width: 100%;
-						.nhsuk-image {
-							img {
-								margin-bottom: nhsuk-spacing(4);
-							}
-						}
-					}
+  #content {
+	#maincontent {
+	  #contentinner {
+		#primary {
+		  .featured-top {
+			width : 100%;
 
-					.featured-left {
-						float: left;
-						width: 33%;
-						margin-right: nhsuk-spacing(3);
-					}
-
-					.featured-right {
-						float: right;
-						width: 33%;
-						margin-left: nhsuk-spacing(3);
-					}
-				}
+			.nhsuk-image {
+			  img {
+				margin-bottom : nhsuk-spacing(4);
+			  }
 			}
-		}
-	}
+		  }
 
+		  .featured-left {
+			float        : left;
+			width        : 33%;
+			margin-right : nhsuk-spacing(3);
+		  }
+
+		  .featured-right {
+			float       : right;
+			width       : 33%;
+			margin-left : nhsuk-spacing(3);
+		  }
+		}
+	  }
+	}
+  }
+
+}
+
+/* Menu item right chevron (mobile): fix color when state is focus */
+a:focus .nhsuk-icon {
+  fill : $color_nhsuk-grey-1 !important;
 }

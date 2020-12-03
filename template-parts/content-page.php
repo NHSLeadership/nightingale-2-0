@@ -19,8 +19,12 @@
 
 	<div class="entry-content">
 		<?php
-		if ( function_exists( 'nightingale_clean_bad_content' ) ) {
-			nightingale_clean_bad_content( true );
+		if ( ! post_password_required() ) {
+			if ( function_exists( 'nightingale_clean_bad_content' ) ) {
+				nightingale_clean_bad_content( true );
+			}
+		} else {
+			echo get_the_password_form( $post->ID ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 		?>
 

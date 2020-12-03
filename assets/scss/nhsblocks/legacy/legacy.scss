@@ -1,0 +1,150 @@
+.nhsuk-panel-with-label {
+  width: 100%;
+
+  .nhsuk-panel-with-label__label {
+	a, a:visited {
+	  color: $color_nhsuk-white;
+	}
+  }
+
+  .entry-footer {
+	span {
+	  padding: 0 10px;
+	}
+  }
+}
+
+/*panel extension*/
+.nhsuk-panel.is-style-panel-grey {
+  @extend .nhsuk-panel--grey;
+}
+
+.nhsuk-panel.is-style-panel-with-label {
+  @extend .nhsuk-panel-with-label;
+
+  h3, h3 .rich-text {
+	@extend .nhsuk-panel-with-label__label;
+  }
+}
+
+/* promo extension */
+.nhsuk-promo.is-style-promo-small {
+  @extend .nhsuk-promo--small;
+}
+.nhsuk-promo {
+  figure {
+	margin: 0;
+  }
+}
+
+.wp-block-nhsblocks-panel1 {
+  .paneltext {
+	display: flow-root;
+  }
+}
+
+// fix for ever diminishing panels
+.wp-block-nhsblock-rowgroup {
+  .nhsuk-panel-group {
+	padding: 0;
+  }
+}
+
+//Dashboard group extended from panel group
+.nhsuk-dashboard {
+  .nhsuk-panel-group__item {
+	overflow: hidden;
+	margin-bottom: 2rem;
+
+	.nhsuk-promo__link-wrapper {
+	  background: inherit;
+	  box-shadow: none;
+	  width: 100%;
+
+
+	}
+	.nhsuk-panel-with-label {
+	  background: inherit;
+	  margin: 0;
+	  margin-top: 0;
+	  margin-bottom: 0;
+	  background-size: cover;
+	  position: relative;
+	  padding: 33.33% 0;
+	  height: 100%;
+
+	  .nhsuk-panel-with-label__label {
+		z-index: 2;
+		top: 0;
+		margin: 0 -20px;
+		position: absolute;
+		top: 50%;
+		left: 10%;
+		max-width: 90%;
+		font-size: 1.1rem;
+	  }
+
+	  .nhsuk-dashboard__image {
+		width: 100%;
+		height: 100%;
+	  }
+	  .nhsuk-promo__img {
+		position: relative;
+		top: -16px;
+		z-index: 1;
+	  }
+
+	}
+  }
+
+  .nhsuk-grid-column-full-width {
+	max-height: 300px;
+  }
+
+  .nhsuk-grid-column-one-half {
+	max-height: 250px;
+  }
+
+  .nhsuk-grid-column-one-third, .nhsuk-grid-column-two-thirds {
+	max-height: 200px;
+  }
+
+}
+
+// promo box tweak
+.nhsuk-promo-group__item {
+  margin-bottom: 36px;
+}
+.wp-block-nhsblocks-promo1 {
+  .nhsuk-image{
+	width: 100%;
+  }
+  img.nhsuk-promo__img {
+	// padding: 10px;
+	width: 100%;
+	height: auto;
+  }
+
+
+
+  .nhsuk-promo__description,
+  .nhsuk-promo__heading{
+	padding: 0 32px;
+  }
+}
+.nhsuk-promo .nhsuk-promo__content{
+  padding: 0 0 nhsuk-spacing(3) 0;
+  .nhsuk-image{
+	width: 100%;
+	padding: 0;
+  }
+  .nhsuk-promo__heading {
+	padding: nhsuk-spacing(2) nhsuk-spacing(3);
+  }
+  .nhsuk-promo__description, p {
+	padding: nhsuk-spacing(2);
+  }
+  .nhsuk-readmore {
+	padding: 0 nhsuk-spacing(5) nhsuk-spacing(2) 0;
+  }
+}

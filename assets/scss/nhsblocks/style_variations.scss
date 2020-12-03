@@ -67,20 +67,21 @@
 }
 /*panel extension*/
 .nhsuk-panel.is-style-panel-grey {
-  @extend .nhsuk-panel--grey;
+  @extend .nhsuk-card;
+  background: $color_nhsuk-light-grey
 }
 
 .nhsuk-panel.is-style-panel-with-label {
-  @extend .nhsuk-panel-with-label;
+  @extend .nhsuk-do-dont-list;
 
   h3, h3 .rich-text {
-    @extend .nhsuk-panel-with-label__label;
+    @extend .nhsuk-do-dont-list__label
   }
 }
 
 /* promo extension */
 .nhsuk-promo.is-style-promo-small {
-  @extend .nhsuk-promo--small;
+  @extend .nhsuk-card;
 }
 
 .nhsuk-promo {
@@ -131,12 +132,6 @@
   }
   .nhsuk-grid-column-two-thirds {
     padding: 0;
-  }
-}
-
-.nhsuk-header__search-wrap {
-  input[type="text"] {
-    border: 1px solid $color_nhsuk-grey-3;
   }
 }
 

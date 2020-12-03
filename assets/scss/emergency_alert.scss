@@ -47,3 +47,15 @@
   position : relative;
   margin   : 0 nhsuk-spacing(3);
 }
+
+/* Heading: smaller font size on desktop */
+.nhsuk-global-alert__heading {
+  @include nhsuk-typography-responsive(24);
+  margin      : 0;
+}
+
+/* Margin fix */
+.nhsuk-global-alert__message {
+  margin-top  : nhsuk-spacing(2);
+  line-height : 1.5;
+}

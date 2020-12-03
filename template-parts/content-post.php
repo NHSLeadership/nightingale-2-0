@@ -41,30 +41,34 @@ else :
 		endif;
 	}
 	?>
-	nhsuk-promo-group__item nhsuk-postslisting">
-		<div class="nhsuk-promo">
-			<a class="nhsuk-promo__link-wrapper" href="<?php the_permalink(); ?>">
+	nhsuk-card-group__item nhsuk-postslisting">
+		<div class="nhsuk-card nhsuk-card--clickable">
+
 
 				<?php
 				if ( ( 'latest-posts' !== $parent_template_part ) || ( ( 'latest-posts' === $parent_template_part ) && ( 0 !== $display_featured_image ) ) ) {
 					if ( has_post_thumbnail() ) :
 
-						the_post_thumbnail( 'default', [ 'class' => 'nhsuk-promo__img' ] );
+						the_post_thumbnail( 'default', [ 'class' => 'nhsuk-card__img' ] );
 
 					else :
 
 						$fallback = get_theme_mod( 'blog_fallback' );
 
 						if ( $fallback ) {
-							echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-promo__img' ] );
+							echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-card__img' ] );
 						}
 
 					endif;
 				}
 				?>
 
-				<div class="nhsuk-promo__content">
-					<?php the_title( '<h2 class="nhsuk-promo__heading">', '</h2>' ); ?>
+				<div class="nhsuk-card__content">
+					<h2 class="nhsuk-card__heading nhsuk-heading-m">
+						<a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
+							<?php the_title(); ?>
+						</a>
+					</h2>
 
 					<?php
 					if ( ( 'latest-posts' === $parent_template_part ) && ( 0 !== $display_author ) ) {
@@ -98,7 +102,6 @@ else :
 					<?php do_action( 'nightingale_after_archive_content' ); ?>
 
 				</div>
-			</a>
 		</div>
 	</div>
 

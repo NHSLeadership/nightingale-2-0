@@ -1,273 +1,375 @@
-
 //Gravity forms gumpfh
 .gform_heading {
   .gform_description {
-    font-size: 1rem;
-    font-weight: $nhsuk-font-bold;
+	font-size   : 1rem;
+	font-weight : $nhsuk-font-bold;
   }
 }
+
 .tingle-modal-box {
   .ginput_container_checkbox {
-    @extend .nhsuk-checkboxes !optional;
-    .gfield_checkbox {
-      li {
-        @extend .nhsuk-checkboxes__item;
-        label {
-          @extend .nhsuk-label;
-          @extend .nhsuk-checkboxes__label;
-          padding-left: 50px;
-        }
-        input {
-          @extend .nhsuk-checkboxes__input;
-        }
-      }
-    }
+	@extend .nhsuk-checkboxes !optional;
+
+	.gfield_checkbox {
+	  li {
+		@extend .nhsuk-checkboxes__item;
+
+		label {
+		  @extend .nhsuk-label;
+		  @extend .nhsuk-checkboxes__label;
+		  padding-left : 50px;
+		}
+
+		input {
+		  @extend .nhsuk-checkboxes__input;
+		}
+	  }
+	}
   }
+
   .ginput_container_radio {
-    @extend .nhsuk-radios !optional;
-    .gfield_radio {
-      li {
-        @extend .nhsuk-radios__item;
+	@extend .nhsuk-radios !optional;
 
-        input {
-          @extend .nhsuk-radios__input;
-        }
+	.gfield_radio {
+	  li {
+		@extend .nhsuk-radios__item;
 
-        label {
-          @extend .nhsuk-label;
-          @extend .nhsuk-radios__label;
-          padding-left : 50px;
-        }
-      }
-    }
+		input {
+		  @extend .nhsuk-radios__input;
+		}
+
+		label {
+		  @extend .nhsuk-label;
+		  @extend .nhsuk-radios__label;
+		  padding-left : 50px;
+		}
+	  }
+	}
   }
 }
+
 .gform_wrapper {
-  margin-top: 0 !important;
+  margin-top : 0 !important;
+
   .gf_progressbar_wrapper {
-    .gf_progressbar {
-      border-radius    : $nhsuk-border-radius;
-      background-color : $color_nhsuk-white;
-      padding: nhsuk-spacing(2);
+	.gf_progressbar {
+	  border-radius    : $nhsuk-border-radius;
+	  background-color : $color_nhsuk-white;
+	  padding          : nhsuk-spacing(2);
 
-      .percentbar_blue {
-        background-color : $color_nhsuk-blue;
-      }
+	  .percentbar_blue {
+		background-color : $color_nhsuk-blue;
+	  }
 
-      .gf_progressbar_percentage {
-        border-radius : $nhsuk-border-radius;
-        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.3));
-        background-color: $color_nhsuk-blue;
+	  .gf_progressbar_percentage {
+		border-radius    : $nhsuk-border-radius;
+		background       : linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3));
+		background-color : $color_nhsuk-blue;
 
-        span {
-          font-size   : $nhsuk-base-font-size;
-          font-family : $nhsuk-font, $nhsuk-font-fallback;
-        }
-      }
+		span {
+		  font-size   : $nhsuk-base-font-size;
+		  font-family : $nhsuk-font, $nhsuk-font-fallback;
+		}
+	  }
 
-      &:after {
-        border-radius : $nhsuk-border-radius;
-      }
-    }
+	  &:after {
+		border-radius : $nhsuk-border-radius;
+	  }
+	}
   }
+
   .gform_body {
-    .gfield_select {
-      @extend .nhsuk-select;
-    }
-    ul.gform_fields {
-      li.gfield.gfield_html {
-        dl.nhsuk-summary-list {
-          background : $color_nhsuk-white;
-          padding    : nhsuk-spacing(4);
-          padding-left: nhsuk-spacing(4);
-        }
-      }
-    }
-    .address_city, .address_state {
-      width: 50%;
-      float: left;
-    }
-    .address_city {
-      padding-right: nhsuk-spacing(2);
-    }
-    .address_state {
-      padding-left: nhsuk-spacing(2);
-    }
-    ul.gform_fields {
-      list-style: none;
-      margin-left: 0;
-      padding-left: 0;
-      li.gfield {
-        .ginput_preview {
-          clear: both;
-          padding: nhsuk-spacing(2) 0;
-          strong {
-            padding-left: nhsuk-spacing(3);
-          }
-        }
-      }
-    }
-    .nhsuk-required-message {
-      font-weight: $nhsuk-font-bold;
-      font-style: italic;
-      padding-left: nhsuk-spacing(4);
-    }
+	.gfield_select {
+	  @extend .nhsuk-select;
+	}
 
-    .nhsuk-textarea {
-      min-height: 200px;
-    }
+	ul.gform_fields {
+	  li.gfield.gfield_html {
+		dl.nhsuk-summary-list {
+		  background   : $color_nhsuk-white;
+		  padding      : nhsuk-spacing(4);
+		  padding-left : nhsuk-spacing(4);
+		}
+	  }
+	}
 
-    .gform_hidden {
-      display: none;
-    }
+	.address_city, .address_state {
+	  width : 50%;
+	  float : left;
+	}
 
-    .gform_wrapper {
+	.address_city {
+	  padding-right : nhsuk-spacing(2);
+	}
 
-      .gfield_error {
-        .nhsuk-select {
-          @extend .nhsuk-select--error;
-        }
-      }
-      li.gfield fieldset {
-        .nhsuk-textarea {
-          width: 100%;
-        }
-      }
+	.address_state {
+	  padding-left : nhsuk-spacing(2);
+	}
 
-    }
+	ul.gform_fields {
+	  list-style   : none;
+	  margin-left  : 0;
+	  padding-left : 0;
 
-    .gform_button, .gform_next_button {
-      @extend .nhsuk-button;
-    }
-    .gform_previous_button {
-      @extend .nhsuk-button;
-      @extend .nhsuk-button--reverse;
-    }
-    ul.ui-sortable {
-      list-style-type: none;
-    }
-    .gsurvey-rating {
-      direction: rtl;
-      &:not(:checked) > label {
-        width           : 40px;
-        height          : 40px;
-        background-size : 35px 35px;
-        font-size       : 0 !important;
-        float: none;
-        display: inline-block;
-        position: relative;
+	  li.gfield {
+		.ginput_container {
+		  input:read-only, select:read-only {
+			background-color : inherit;
+			border           : 1px solid $color_nhsuk-mid-grey;
+		  }
+		}
 
-        &:hover, .gsurvey-rating:not(:checked) > label:hover ~ label {
-          background-size : 35px 35px;
-        }
-      }
+		.ginput_preview {
+		  clear   : both;
+		  padding : nhsuk-spacing(2) 0;
 
-      > input:checked ~ label {
-        background-size : 35px 35px;
-        font-size       : 0 !important;
-        float: none;
-        display: inline-block;
-        position: relative;
-      }
+		  strong {
+			padding-left : nhsuk-spacing(3);
+		  }
+		}
+	  }
+	}
 
-      &:after {
-        clear : both;
-      }
-    }
+	.nhsuk-required-message {
+	  font-weight  : $nhsuk-font-bold;
+	  font-style   : italic;
+	  padding-left : nhsuk-spacing(4);
+	}
 
-    .ginput_container_name, .clear-multi {
-      display: flex;
-      span, .ginput_container {
-        padding: nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(2) 0;
-        &.name-prefix, &.name-first, &.name-middle, &.name-last, &.name_suffix {
-          display: flex;
-          label {
-            padding: 0 nhsuk-spacing(3) 0 nhsuk-spacing(2);
-            font-size: 1.25rem;
-            color: $color_nhsuk-dark-grey;
-          }
-        }
-      }
-    }
-    table.gsurvey-likert {
-      background: $color_nhsuk-white;
-      .gsurvey-likert-row-label, .gsurvey-likert-choice-label {
-        font-size: 1rem;
-        padding: nhsuk-spacing(2);
-        background: $color_nhsuk-blue;
-        color: $color_nhsuk-white;
-      }
-      td.gsurvey-likert-choice, td.gsurvey-likert-choice.gsurvey-likert-selected {
-        background-color: $color_nhsuk-white;
-        background-size: 35px 35px;
-      }
-      tr:nth-child(odd) .gsurvey-likert-row-label {
-        background: $color_nhsuk-dark-blue;
-      }
-      td.gsurvey-likert-choice {
-        height: 50px;
-      }
-    }
-    .nhsuk-form-group--error {
-      table.gsurvey-likert {
-        border: $nhsuk-border-width-form-element solid $color_nhsuk-red;
-      }
-    }
-    .gform_delete {
-      float: left;
-      height: 28px;
-    }
+	.nhsuk-textarea {
+	  min-height : 200px;
+	}
+
+	.gform_hidden {
+	  display : none;
+	}
+
+	.gform_wrapper {
+
+	  .gfield_error {
+		.nhsuk-select {
+		  @extend .nhsuk-select--error;
+		}
+	  }
+
+	  li.gfield fieldset {
+		.nhsuk-textarea {
+		  width : 100%;
+		}
+	  }
+
+	}
+
+	.gform_button, .gform_next_button {
+	  @extend .nhsuk-button;
+	}
+
+	.gform_previous_button {
+	  @extend .nhsuk-button;
+	  @extend .nhsuk-button--reverse;
+	}
+
+	ul.ui-sortable {
+	  list-style-type : none;
+	}
+
+	.gsurvey-rating {
+	  direction : rtl;
+
+	  &:not(:checked) > label {
+		width           : 40px;
+		height          : 40px;
+		background-size : 35px 35px;
+		font-size       : 0 !important;
+		float           : none;
+		display         : inline-block;
+		position        : relative;
+
+		&:hover, .gsurvey-rating:not(:checked) > label:hover ~ label {
+		  background-size : 35px 35px;
+		}
+	  }
+
+	  > input:checked ~ label {
+		background-size : 35px 35px;
+		font-size       : 0 !important;
+		float           : none;
+		display         : inline-block;
+		position        : relative;
+	  }
+
+	  &:after {
+		clear : both;
+	  }
+	}
+
+	.ginput_container_name, .clear-multi {
+	  display : flex;
+
+	  span, .ginput_container {
+		padding : nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(2) 0;
+
+		&.name-prefix, &.name-first, &.name-middle, &.name-last, &.name_suffix {
+		  display : flex;
+
+		  label {
+			padding   : 0 nhsuk-spacing(3) 0 nhsuk-spacing(2);
+			font-size : 1.25rem;
+			color     : $color_nhsuk-dark-grey;
+		  }
+		}
+	  }
+	}
+
+	table.gsurvey-likert {
+	  background : $color_nhsuk-white;
+
+	  .gsurvey-likert-row-label, .gsurvey-likert-choice-label {
+		font-size  : 1rem;
+		padding    : nhsuk-spacing(2);
+		background : $color_nhsuk-blue;
+		color      : $color_nhsuk-white;
+	  }
+
+	  td.gsurvey-likert-choice, td.gsurvey-likert-choice.gsurvey-likert-selected {
+		background-color : $color_nhsuk-white;
+		background-size  : 35px 35px;
+	  }
+
+	  tr:nth-child(odd) .gsurvey-likert-row-label {
+		background : $color_nhsuk-dark-blue;
+	  }
+
+	  td.gsurvey-likert-choice {
+		height : 50px;
+	  }
+	}
+
+	.nhsuk-form-group--error {
+	  table.gsurvey-likert {
+		border : $nhsuk-border-width-form-element solid $color_nhsuk-red;
+	  }
+	}
+
+	.gform_delete {
+	  float  : left;
+	  height : 28px;
+	}
   }
+
   .gform_page_footer {
-    padding-top: nhsuk-spacing(5) !important;
+	padding-top : nhsuk-spacing(5) !important;
   }
+
   #ui-datepicker-div {
-    border: $nhsuk-border-width-form-element solid $color_nhsuk-blue;
-    border-radius: $nhsuk-border-radius;
-    background: $color_nhsuk-white;
+	border        : $nhsuk-border-width-form-element solid $color_nhsuk-blue;
+	border-radius : $nhsuk-border-radius;
+	background    : $color_nhsuk-white;
   }
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width : 1024px) {
   .gform_wrapper {
-    .gform_body {
-      table.gsurvey-likert {
-        td.gsurvey-likert-choice {
-          display: inline-block;
-          border-top: 0;
-          border-right: 0;
-        }
-        td {
-          input {
-            position: relative;
-          }
-        }
-      }
-    }
+	.gform_body {
+	  table.gsurvey-likert {
+		td.gsurvey-likert-choice {
+		  display      : inline-block;
+		  border-top   : 0;
+		  border-right : 0;
+		}
+
+		td {
+		  input {
+			position : relative;
+		  }
+		}
+	  }
+	}
   }
 }
-@media only screen and (max-device-width: 799px) {
-  .gform_wrapper {
-    .gform_body {
-      .ginput_container {
-        .gsurvey-rating {
-          &:not(:checked)>label {
-              background-size: 28px 28px;
-              width: 30px;
-              height: 30px;
 
-          }
-          &>input>checked~label {
-            background-size: 28px 28px;
-          }
-        }
-      }
-    }
+@media only screen and (max-device-width : 799px) {
+  .gform_wrapper {
+	.gform_body {
+	  .ginput_container {
+		.gsurvey-rating {
+		  &:not(:checked) > label {
+			background-size : 28px 28px;
+			width           : 30px;
+			height          : 30px;
+
+		  }
+
+		  & > input > checked ~ label {
+			background-size : 28px 28px;
+		  }
+		}
+	  }
+	}
   }
 }
 
 .gv-datatables-container {
   .gv-field-label {
-    word-break: normal;
+	word-break : normal;
+  }
+}
+
+// Gravity view approval styling
+.tippy-popper {
+  .tippy-content {
+	margin-top: nhsuk-spacing(2);
+	.gv-approval-toggle {
+	  border: 0;
+	  margin-bottom: nhsuk-spacing(3);
+	  display: block !important;
+	  &:before {
+		word-break  : initial;
+		width       : fit-content;
+		position    : relative;
+		border      : 0;
+		padding     : unset;
+		font-size   : $nhsuk-base-font-size;
+		font-family : $nhsuk-font, $nhsuk-font-fallback;
+		color       : white;
+	  }
+
+	  @extend .nhsuk-button;
+	  &:hover {
+		background: $color_nhsuk-light-grey;
+		&:before {
+		  color: $color_nhsuk-black;
+		  text-decoration: underline;
+		}
+	  }
+
+	  &.gv-approval-approved {
+		&:before {
+		  content : '\2713 \00A0 Approve';
+		}
+
+	  }
+	  &.gv-approval-disapproved {
+		background: $color_nhsuk-red;
+		&:before {
+		  content: '\2715 \00A0 Decline';
+		}
+		&:hover {
+		  background: $color_nhsuk-light-grey;
+		}
+	  }
+
+	  &.gv-approval-unapproved {
+		background: $color_nhsuk-warm-yellow;
+		&:before {
+		  content: '\27F2 \00A0 Reset';
+		  background: inherit;
+		  color: $color_nhsuk-black;
+		}
+		&:hover {
+		  background: $color_nhsuk-light-grey;
+		}
+	  }
+	}
   }
 }

@@ -472,8 +472,8 @@ input[type="submit"] {
   @extend .nhsuk-button;
 }
 
-
-input[type="text"],
+/* With :not(.autocomplete__input), the search field is not affected */
+input[type="text"]:not(.autocomplete__input),
 input[type="email"],
 input[type="url"],
 input[type="password"],

@@ -1,13 +1,13 @@
 === Nightingale 2.0 ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.2.5
-Stable tag: 2.2.5
+Version: 2.3
+Stable tag: 2.3
 
 
 == Description ==
@@ -42,6 +42,21 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+= 2.3 =
+Feature release:
+* Upstream library updated to nhsuk v4
+* Panel and Promo elements revised to use new Card component
+* Search and emergency header updated (props to @idiosyn)
+* New tabbed navigation component - toggle on or off on page edit view, all sibling and immediate parent page are
+displayed in responsive tabs
+* Fix to comments renderer to ensure valid markup and proper display
+* Events Calendar styling revised to use new nhsuk card component
+* Filter added to breadcrumb to enable extending easier
+* Accessibility improvements to gravity forms output
+* Added legacy components for blocks previously created using panel or promo styling
+* Minor css tidying, removing redundant !important tags and improving specificity
+* Added password obfuscation for password protected pages (props to @tporteus)
 
 = 2.2.5 =
 Maintenance release:

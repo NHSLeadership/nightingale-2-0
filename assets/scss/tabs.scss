@@ -1,0 +1,99 @@
+.nhsuk-bordered-tabs-container {
+  padding-top      : nhsuk-spacing(2);
+  background-color : $color_nhsuk-white;
+  border-bottom    : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
+
+
+  .nhsuk-bordered-tabs {
+	padding       : 0;
+	margin-bottom : 0;
+	display       : flex;
+
+
+	.nhsuk-bordered-tabs-item {
+	  display       : inline-block;
+	  padding       : nhsuk-spacing(2) nhsuk-spacing(3);
+	  margin-bottom : 0;
+	  font-size     : $nhsuk-base-font-size;
+
+
+	  a {
+		text-decoration : none;
+		word-break      : initial;
+
+
+		&:visited {
+		  text-decoration : none;
+		  color           : $nhsuk-link-visited-color;
+		}
+
+		&:hover {
+		  text-decoration : underline;
+		}
+	  }
+
+	  &.nhsuk-bordered-tabs-item-active {
+		background-color : $color_nhsuk-grey-5;
+		word-break    	 : initial;
+		border           : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
+		border-radius    : $nhsuk-border-radius $nhsuk-border-radius 0 0;
+		margin-bottom    : -$nhsuk-border-width-form-element;
+		border-bottom    : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
+		font-weight      : $nhsuk-font-bold;
+		color            : $nhsuk-link-color;
+	  }
+	}
+  }
+}
+
+
+@include mq($until : large-desktop) {
+  .nhsuk-bordered-tabs-container {
+	background    : inherit;
+	border-bottom : none;
+
+	.close-menu-buddynav {
+	  display    : none;
+	  background : $color_nhsuk-white;
+	  top        : -#{nhsuk-spacing(2)};
+	  position   : absolute;
+	}
+
+	.label-navigation-buddynav {
+	  border-radius : $nhsuk-border-radius;
+	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-2;
+	  background    : $color_nhsuk-white;
+	  padding       : nhsuk-spacing(2) nhsuk-spacing(3);
+	}
+
+	.nhsuk-bordered-tabs {
+	  display    : none;
+	  list-style : none;
+	  padding    : 0;
+	  margin-top : nhsuk-spacing(2);
+
+	  .nhsuk-bordered-tabs-item {
+		padding       : nhsuk-spacing(2) 0 nhsuk-spacing(2) nhsuk-spacing(5);
+		position      : relative;
+		display       : list-item;
+		background    : $color_nhsuk-white;
+		width         : 100%;
+		border-bottom : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
+
+		a {
+		  display : inline-block;
+		  color   : $nhsuk-text-color;
+		}
+
+		&.nhsuk-bordered-tabs-item-active {
+		  background : $color_nhsuk-blue;
+
+		  a {
+			color : $color_nhsuk-white;
+		  }
+		}
+	  }
+	}
+  }
+}
+

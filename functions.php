@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.2.5 23rd October 2020
+ * @version   2.3 1st December 2020
  */
 
 /**
@@ -355,9 +355,14 @@ require get_template_directory() . '/inc/breadcrumbs.php';
 require get_template_directory() . '/inc/color-picker.php';
 
 /**
- * Color Picker.
+ * Last Reviewed.
  */
 require get_template_directory() . '/inc/last-reviewed.php';
+
+/**
+ * Tabbed Page layout.
+ */
+require get_template_directory() . '/inc/tabbed-pages.php';
 
 /**
  * Create an array of active plugins.

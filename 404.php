@@ -22,8 +22,8 @@ get_header();
 					<h1 class="entry-title">404 - Page not found</h1>
 				</header>
 				<div class="page-content">
-					<div class="wp-block-nhsblocks-panel1 nhsuk-panel is-style-panel-with-label">
-						<h3 class="nhsuk-panel-with-label__label"><?php echo esc_html__( 'Oops', 'nightingale' ); ?></h3>
+					<div class="wp-block-nhsblocks-panel1 nhsuk-do-dont-list is-style-panel-with-label">
+						<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Oops', 'nightingale' ); ?></h3>
 						<div class="paneltext">
 							<p><?php echo esc_html__( 'Sorry, this page can\'t be found at the moment, please use the search facility below, select an item from the contents or alternatively return to the home page', 'nightingale' ); ?></p>
 							<a class="wp-block-nhsblocks-nhsbutton alignright nhsuk-button" href="<?php echo esc_attr( get_home_url() ); ?>"><?php echo esc_html__( 'Home Page', 'nightingale' ); ?></a>

@@ -31,7 +31,7 @@
 }
 
 
-.tribe-common .nhsuk-promo-group {
+.tribe-common .nhsuk-card-group {
 
   &.nhsuk-grid-row {
 
@@ -43,8 +43,8 @@
 
 	@extend .nhsuk-grid-column-one-third;
 
-	&.nhsuk-promo-group__item {
-	  @extend .nhsuk-promo-group__item;
+	&.nhsuk-card-group__item {
+	  @extend .nhsuk-card-group__item;
 	}
 
 	margin-bottom : nhsuk-spacing(4);
@@ -57,19 +57,19 @@
 	margin-bottom : nhsuk-spacing(4);
   }
 
-  div.nhsuk-promo__content {
+  div.nhsuk-card__content {
 
-	@extend .nhsuk-promo__content;
+	@extend .nhsuk-card__content;
 	color : $color_nhsuk-dark-grey;
 
   }
 
-  p.nhsuk-promo__description {
+  p.nhsuk-card__description {
 	@extend p;
   }
 
-  h2.nhsuk-promo__heading {
-	@extend .nhsuk-promo__heading;
+  h2.nhsuk-card__heading {
+	@extend .nhsuk-card__heading;
   }
 
 }
@@ -114,7 +114,7 @@ button.tribe-events-c-top-bar__datepicker-button {
   margin-right : nhsuk-spacing(2);
 }
 
-.nhsuk-promo__content .tribe-events-calendar-list__event-datetime {
+.nhsuk-card__content .tribe-events-calendar-list__event-datetime {
   float   : left;
   display : block;
 
@@ -123,7 +123,7 @@ button.tribe-events-c-top-bar__datepicker-button {
   }
 }
 
-.tribe-common .nhsuk-promo-group .event-meta,
+.tribe-common .nhsuk-card-group .event-meta,
 .event-meta {
   margin-bottom : nhsuk-spacing(3);
 
@@ -258,7 +258,7 @@ button.tribe-events-c-top-bar__datepicker-button {
 	margin-bottom : nhsuk-spacing(5);
   }
 
-  .nhsuk-promo__img {
+  .nhsuk-card__img {
 	margin-bottom : nhsuk-spacing(3);
   }
 
