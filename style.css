@@ -12402,6 +12402,10 @@ button {
   border-color: #d5281b;
 }
 
+.learndash-wrapper .ld-breadcrumbs .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-course-status .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-item-details .ld-course-status-segment .ld-course-status-content {
+  position: relative;
+}
+
 .learndash-wrapper .ld-content-actions a.ld-primary-color {
   flex: initial;
   -webkit-box-flex: initial;
