@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.3
-Stable tag: 2.3
+Version: 2.3.0.1
+Stable tag: 2.3.0.1
 
 
 == Description ==
@@ -42,6 +42,9 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+ = 2.3.0.1 =
+ Bugfix release:
+* Breadcrumbs in learndash broke outside of template bounds. This has been resolved.
 
 = 2.3 =
 Feature release:

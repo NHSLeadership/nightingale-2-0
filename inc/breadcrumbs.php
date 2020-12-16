@@ -91,7 +91,7 @@ function nightingale_breadcrumb() {
 
 	if ( true === nightingale_uncanny_breadcrumb_check() ) {
 
-		$breadcrumbs = esc_html( uo_breadcrumbs() );
+		$breadcrumbs = uo_breadcrumbs( false );
 
 	} else {
 
@@ -127,7 +127,9 @@ function nightingale_breadcrumb() {
 			}
 		</style>';
 	}
+	?>
 
+	<?php
 	printf(
 		'<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb"><div class="nhsuk-width-container">%1$s <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="%2$s"> %3$s %4$s</a></p></div></nav>',
 		$breadcrumbs, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -136,9 +138,7 @@ function nightingale_breadcrumb() {
 		esc_html( $back_one_level[1] )
 	);
 
-
 	$output = ob_get_clean();
-
 
 
 	return $output;
