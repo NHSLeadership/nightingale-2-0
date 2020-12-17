@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.3
+Version: 2.3.0.1
 Requires at least: 5.0
 Tested up to: 5.6
 Requires PHP: 5.2.4
@@ -12400,6 +12400,10 @@ button {
 
 .learndash-wrapper .ld-status.ld-status-waiting {
   border-color: #d5281b;
+}
+
+.learndash-wrapper .ld-breadcrumbs .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-course-status .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-item-details .ld-course-status-segment .ld-course-status-content {
+  position: relative;
 }
 
 .learndash-wrapper .ld-content-actions a.ld-primary-color {

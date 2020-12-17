@@ -58,6 +58,11 @@
   }
 
   .ld-breadcrumbs, .ld-course-status, .ld-item-details {
+	.ld-course-status-segment {
+	  .ld-course-status-content {
+		position: relative;
+	  }
+	}
 	.ld-status {
 	  &.ld-status-progress {
 		@extend .nhsuk-tag;
