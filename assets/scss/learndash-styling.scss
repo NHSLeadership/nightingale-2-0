@@ -238,7 +238,7 @@
   }
 
   .ld-login-modal {
-	border: 5px solid $color_nhsuk-grey-5;
+	border: nhsuk-spacing(1) solid $color_nhsuk-grey-5;
 	  .ld-login-modal-register {
 		background: $color_nhsuk-dark-blue;
 		.ld-button.ld-button-reverse.ld-js-register-account {
