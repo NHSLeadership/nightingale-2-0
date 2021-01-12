@@ -14626,6 +14626,7 @@ section.nhsuk-section:after,
   left: 0;
   text-align: center;
   border-top: 4px solid #003087;
+  background: #ffffff !important;
   font-weight: normal;
 }
 

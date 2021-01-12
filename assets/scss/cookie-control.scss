@@ -8,6 +8,7 @@
   left           : 0;
   text-align     : center;
   border-top     : nhsuk-spacing(1) solid $color_nhsuk-dark-blue;
+  background : $color_nhsuk-white !important;
   font-weight    : normal;
 
   .cookie-notice-container {
