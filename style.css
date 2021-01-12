@@ -1225,7 +1225,7 @@ caption {
  *    gutters, just centre the content instead of adding gutters.
  * 5. Full width container, spanning the entire width of the viewport
  */
-.nhsuk-width-container, #cookie-notice .cookie-notice-container {
+.nhsuk-width-container, #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container #cn-notice-buttons {
   margin: 0 16px;
   /* [1] */
   max-width: 960px;
@@ -1234,14 +1234,14 @@ caption {
 }
 
 @media (min-width: 48.0625em) {
-  .nhsuk-width-container, #cookie-notice .cookie-notice-container {
+  .nhsuk-width-container, #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container #cn-notice-buttons {
     margin: 0 32px;
     /* [3] */
   }
 }
 
 @media (min-width: 1024px) {
-  .nhsuk-width-container, #cookie-notice .cookie-notice-container {
+  .nhsuk-width-container, #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container #cn-notice-buttons {
     margin: 0 auto;
   }
 }
@@ -1628,7 +1628,7 @@ h3,
 }
 
 h4,
-.nhsuk-heading-s, #cookie-notice .cookie-notice-container {
+.nhsuk-heading-s, #cookie-notice .cookie-notice-container .cn-text-container {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556;
@@ -1640,7 +1640,7 @@ h4,
 
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s, #cookie-notice .cookie-notice-container {
+  .nhsuk-heading-s, #cookie-notice .cookie-notice-container .cn-text-container {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -1649,7 +1649,7 @@ h4,
 
 @media print {
   h4,
-  .nhsuk-heading-s, #cookie-notice .cookie-notice-container {
+  .nhsuk-heading-s, #cookie-notice .cookie-notice-container .cn-text-container {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -1657,7 +1657,7 @@ h4,
 
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s, #cookie-notice .cookie-notice-container {
+  .nhsuk-heading-s, #cookie-notice .cookie-notice-container .cn-text-container {
     margin-bottom: 24px;
   }
 }
@@ -2251,13 +2251,13 @@ p + .nhsuk-heading-s,
 .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-s,
 .nhsuk-body-m + .nhsuk-heading-s,
 address + .nhsuk-heading-s,
-#cookie-notice p + .cookie-notice-container,
-#cookie-notice .tribe-common .nhsuk-card-group p.nhsuk-card__description + .cookie-notice-container,
-#cookie-notice .tribe-common .ld-course-list-items p.nhsuk-card__description + .cookie-notice-container,
-#cookie-notice .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .cookie-notice-container,
-#cookie-notice .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .cookie-notice-container,
-#cookie-notice .nhsuk-body-m + .cookie-notice-container,
-#cookie-notice address + .cookie-notice-container,
+#cookie-notice .cookie-notice-container p + .cn-text-container,
+#cookie-notice .cookie-notice-container .tribe-common .nhsuk-card-group p.nhsuk-card__description + .cn-text-container,
+#cookie-notice .cookie-notice-container .tribe-common .ld-course-list-items p.nhsuk-card__description + .cn-text-container,
+#cookie-notice .cookie-notice-container .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .cn-text-container,
+#cookie-notice .cookie-notice-container .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .cn-text-container,
+#cookie-notice .cookie-notice-container .nhsuk-body-m + .cn-text-container,
+#cookie-notice .cookie-notice-container address + .cn-text-container,
 .nhsuk-body-s + h4,
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h4,
 .article-footer .cat-links + h4,
@@ -2268,15 +2268,15 @@ address + .nhsuk-heading-s,
 .article-footer .cat-links + .nhsuk-heading-s,
 .article-footer .tags-links + .nhsuk-heading-s,
 .article-footer .comments-link + .nhsuk-heading-s,
-#cookie-notice .nhsuk-body-s + .cookie-notice-container,
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta #cookie-notice a + .cookie-notice-container,
-#cookie-notice .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .cookie-notice-container,
-.article-footer #cookie-notice .cat-links + .cookie-notice-container,
-#cookie-notice .article-footer .cat-links + .cookie-notice-container,
-.article-footer #cookie-notice .tags-links + .cookie-notice-container,
-#cookie-notice .article-footer .tags-links + .cookie-notice-container,
-.article-footer #cookie-notice .comments-link + .cookie-notice-container,
-#cookie-notice .article-footer .comments-link + .cookie-notice-container,
+#cookie-notice .cookie-notice-container .nhsuk-body-s + .cn-text-container,
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta #cookie-notice .cookie-notice-container a + .cn-text-container,
+#cookie-notice .cookie-notice-container .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .cn-text-container,
+.article-footer #cookie-notice .cookie-notice-container .cat-links + .cn-text-container,
+#cookie-notice .cookie-notice-container .article-footer .cat-links + .cn-text-container,
+.article-footer #cookie-notice .cookie-notice-container .tags-links + .cn-text-container,
+#cookie-notice .cookie-notice-container .article-footer .tags-links + .cn-text-container,
+.article-footer #cookie-notice .cookie-notice-container .comments-link + .cn-text-container,
+#cookie-notice .cookie-notice-container .article-footer .comments-link + .cn-text-container,
 .nhsuk-list + h4,
 ul.download-versions + h4,
 ul + h4,
@@ -2284,9 +2284,9 @@ ol + h4,
 .nhsuk-list + .nhsuk-heading-s,
 ul + .nhsuk-heading-s,
 ol + .nhsuk-heading-s,
-#cookie-notice .nhsuk-list + .cookie-notice-container,
-#cookie-notice ul + .cookie-notice-container,
-#cookie-notice ol + .cookie-notice-container {
+#cookie-notice .cookie-notice-container .nhsuk-list + .cn-text-container,
+#cookie-notice .cookie-notice-container ul + .cn-text-container,
+#cookie-notice .cookie-notice-container ol + .cn-text-container {
   padding-top: 4px;
 }
 
@@ -2450,13 +2450,13 @@ ol + .nhsuk-heading-s,
   .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .nhsuk-heading-s,
   .nhsuk-body-m + .nhsuk-heading-s,
   address + .nhsuk-heading-s,
-  #cookie-notice p + .cookie-notice-container,
-  #cookie-notice .tribe-common .nhsuk-card-group p.nhsuk-card__description + .cookie-notice-container,
-  #cookie-notice .tribe-common .ld-course-list-items p.nhsuk-card__description + .cookie-notice-container,
-  #cookie-notice .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .cookie-notice-container,
-  #cookie-notice .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .cookie-notice-container,
-  #cookie-notice .nhsuk-body-m + .cookie-notice-container,
-  #cookie-notice address + .cookie-notice-container,
+  #cookie-notice .cookie-notice-container p + .cn-text-container,
+  #cookie-notice .cookie-notice-container .tribe-common .nhsuk-card-group p.nhsuk-card__description + .cn-text-container,
+  #cookie-notice .cookie-notice-container .tribe-common .ld-course-list-items p.nhsuk-card__description + .cn-text-container,
+  #cookie-notice .cookie-notice-container .ld-course-list-items .ld_course_grid article .tribe-common .nhsuk-card-group p.caption + .cn-text-container,
+  #cookie-notice .cookie-notice-container .tribe-common .ld-course-list-items .ld_course_grid article p.caption + .cn-text-container,
+  #cookie-notice .cookie-notice-container .nhsuk-body-m + .cn-text-container,
+  #cookie-notice .cookie-notice-container address + .cn-text-container,
   .nhsuk-body-s + h4,
   .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + h4,
   .article-footer .cat-links + h4,
@@ -2467,15 +2467,15 @@ ol + .nhsuk-heading-s,
   .article-footer .cat-links + .nhsuk-heading-s,
   .article-footer .tags-links + .nhsuk-heading-s,
   .article-footer .comments-link + .nhsuk-heading-s,
-  #cookie-notice .nhsuk-body-s + .cookie-notice-container,
-  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta #cookie-notice a + .cookie-notice-container,
-  #cookie-notice .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .cookie-notice-container,
-  .article-footer #cookie-notice .cat-links + .cookie-notice-container,
-  #cookie-notice .article-footer .cat-links + .cookie-notice-container,
-  .article-footer #cookie-notice .tags-links + .cookie-notice-container,
-  #cookie-notice .article-footer .tags-links + .cookie-notice-container,
-  .article-footer #cookie-notice .comments-link + .cookie-notice-container,
-  #cookie-notice .article-footer .comments-link + .cookie-notice-container,
+  #cookie-notice .cookie-notice-container .nhsuk-body-s + .cn-text-container,
+  .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta #cookie-notice .cookie-notice-container a + .cn-text-container,
+  #cookie-notice .cookie-notice-container .nhsuk-list-panel .comment-list .nhsuk-list-panel__item .comment-body .vcard .comment-meta a + .cn-text-container,
+  .article-footer #cookie-notice .cookie-notice-container .cat-links + .cn-text-container,
+  #cookie-notice .cookie-notice-container .article-footer .cat-links + .cn-text-container,
+  .article-footer #cookie-notice .cookie-notice-container .tags-links + .cn-text-container,
+  #cookie-notice .cookie-notice-container .article-footer .tags-links + .cn-text-container,
+  .article-footer #cookie-notice .cookie-notice-container .comments-link + .cn-text-container,
+  #cookie-notice .cookie-notice-container .article-footer .comments-link + .cn-text-container,
   .nhsuk-list + h4,
   ul.download-versions + h4,
   ul + h4,
@@ -2483,9 +2483,9 @@ ol + .nhsuk-heading-s,
   .nhsuk-list + .nhsuk-heading-s,
   ul + .nhsuk-heading-s,
   ol + .nhsuk-heading-s,
-  #cookie-notice .nhsuk-list + .cookie-notice-container,
-  #cookie-notice ul + .cookie-notice-container,
-  #cookie-notice ol + .cookie-notice-container {
+  #cookie-notice .cookie-notice-container .nhsuk-list + .cn-text-container,
+  #cookie-notice .cookie-notice-container ul + .cn-text-container,
+  #cookie-notice .cookie-notice-container ol + .cn-text-container {
     padding-top: 8px;
   }
 }
@@ -7880,13 +7880,13 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     border-top: 4px solid #f0f4f5;
     /* [12] */
   }
-  .nhsuk-header__navigation.js-show .nhsuk-width-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container, #cookie-notice .nhsuk-header__navigation.js-show .cookie-notice-container {
+  .nhsuk-header__navigation.js-show .nhsuk-width-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show .cn-text-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container #cn-notice-buttons, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show #cn-notice-buttons {
     margin: 0 16px;
   }
 }
 
 @media (max-width: 48.0525em) {
-  .nhsuk-header__navigation.js-show .nhsuk-width-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container, #cookie-notice .nhsuk-header__navigation.js-show .cookie-notice-container {
+  .nhsuk-header__navigation.js-show .nhsuk-width-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show .cn-text-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container #cn-notice-buttons, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show #cn-notice-buttons {
     margin: 0;
   }
 }
@@ -11208,7 +11208,7 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   display: none;
 }
 
-#nhsuk-footer .nhsuk-width-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, #nhsuk-footer #cookie-notice .cookie-notice-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, #cookie-notice #nhsuk-footer .cookie-notice-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
+#nhsuk-footer .nhsuk-width-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, #nhsuk-footer #cookie-notice .cookie-notice-container .cn-text-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, #cookie-notice .cookie-notice-container #nhsuk-footer .cn-text-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, #nhsuk-footer #cookie-notice .cookie-notice-container #cn-notice-buttons ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item, #cookie-notice .cookie-notice-container #nhsuk-footer #cn-notice-buttons ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
   width: auto;
 }
 
@@ -11465,7 +11465,7 @@ button#toggle-search {
   flex-flow: wrap;
 }
 
-.nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container .nhsuk-breadcrumb__list, #cookie-notice .nhsuk-breadcrumb .cookie-notice-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container .nhsuk-breadcrumb__list, #cookie-notice .learndash-wrapper ld-breadcrumbs .cookie-notice-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb .nhsuk-width-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, #cookie-notice .nhsuk-breadcrumb .cookie-notice-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container .ld-breadcrumbs-segments, #cookie-notice .learndash-wrapper ld-breadcrumbs .cookie-notice-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb .nhsuk-width-container .sfwd-breadcrumbs, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container .sfwd-breadcrumbs, #cookie-notice .nhsuk-breadcrumb .cookie-notice-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container .sfwd-breadcrumbs, #cookie-notice .learndash-wrapper ld-breadcrumbs .cookie-notice-container .sfwd-breadcrumbs {
+.nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container .cn-text-container .nhsuk-breadcrumb__list, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb .cn-text-container .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container .cn-text-container .nhsuk-breadcrumb__list, #cookie-notice .cookie-notice-container .learndash-wrapper ld-breadcrumbs .cn-text-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-breadcrumb__list, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb #cn-notice-buttons .nhsuk-breadcrumb__list, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-breadcrumb__list, #cookie-notice .cookie-notice-container .learndash-wrapper ld-breadcrumbs #cn-notice-buttons .nhsuk-breadcrumb__list, .nhsuk-breadcrumb .nhsuk-width-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container .cn-text-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb .cn-text-container .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container .cn-text-container .ld-breadcrumbs-segments, #cookie-notice .cookie-notice-container .learndash-wrapper ld-breadcrumbs .cn-text-container .ld-breadcrumbs-segments, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container #cn-notice-buttons .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb #cn-notice-buttons .learndash-wrapper ld-breadcrumbs .ld-breadcrumbs-segments, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container #cn-notice-buttons .ld-breadcrumbs-segments, #cookie-notice .cookie-notice-container .learndash-wrapper ld-breadcrumbs #cn-notice-buttons .ld-breadcrumbs-segments, .nhsuk-breadcrumb .nhsuk-width-container .sfwd-breadcrumbs, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container .cn-text-container .sfwd-breadcrumbs, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb .cn-text-container .sfwd-breadcrumbs, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container #cn-notice-buttons .sfwd-breadcrumbs, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb #cn-notice-buttons .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs .nhsuk-width-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container .cn-text-container .sfwd-breadcrumbs, #cookie-notice .cookie-notice-container .learndash-wrapper ld-breadcrumbs .cn-text-container .sfwd-breadcrumbs, .learndash-wrapper ld-breadcrumbs #cookie-notice .cookie-notice-container #cn-notice-buttons .sfwd-breadcrumbs, #cookie-notice .cookie-notice-container .learndash-wrapper ld-breadcrumbs #cn-notice-buttons .sfwd-breadcrumbs {
   margin: 0 16px 0 0;
 }
 
@@ -13850,7 +13850,7 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
   margin-bottom: 50px;
 }
 
-.nhsuk-hero__overlay .nhsuk-width-container, .nhsuk-hero__overlay #cookie-notice .cookie-notice-container, #cookie-notice .nhsuk-hero__overlay .cookie-notice-container {
+.nhsuk-hero__overlay .nhsuk-width-container, .nhsuk-hero__overlay #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container .nhsuk-hero__overlay .cn-text-container, .nhsuk-hero__overlay #cookie-notice .cookie-notice-container #cn-notice-buttons, #cookie-notice .cookie-notice-container .nhsuk-hero__overlay #cn-notice-buttons {
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -14626,21 +14626,23 @@ section.nhsuk-section:after,
   left: 0;
   text-align: center;
   border-top: 4px solid #003087;
-  background: #ffffff !important;
   font-weight: normal;
+  padding: 0;
 }
 
 #cookie-notice .cookie-notice-container {
+  background-color: #ffffff;
   padding: 0;
-  background: #ffffff !important;
 }
 
 #cookie-notice .cookie-notice-container .cn-text-container {
-  color: #003087 !important;
+  padding-top: 16px;
+  color: #003087;
   text-align: left;
 }
 
 #cookie-notice .cookie-notice-container #cn-notice-buttons {
+  padding-bottom: 16px;
   display: block;
   text-align: right;
 }

@@ -8,22 +8,25 @@
   left           : 0;
   text-align     : center;
   border-top     : nhsuk-spacing(1) solid $color_nhsuk-dark-blue;
-  background : $color_nhsuk-white !important;
   font-weight    : normal;
+  padding: 0;
 
   .cookie-notice-container {
-	@extend .nhsuk-width-container;
+	background-color : $color_nhsuk-white;
 	padding: 0;
-	background : $color_nhsuk-white !important;
-	@extend .nhsuk-heading-s;
 
 	.cn-text-container {
-	  color : $color_nhsuk-dark-blue !important;
+	  @extend .nhsuk-width-container;
+	  @extend .nhsuk-heading-s;
+	  padding-top: nhsuk-spacing(3);
+	  color: $color_nhsuk-dark-blue;
 	  text-align: left;
 	}
 
 
 	#cn-notice-buttons {
+	  @extend .nhsuk-width-container;
+	  padding-bottom: nhsuk-spacing(3);
 	  display : block;
 	  text-align: right;
 
