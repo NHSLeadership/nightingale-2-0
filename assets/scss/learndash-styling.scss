@@ -238,19 +238,68 @@
   }
 
   .ld-login-modal {
-	.ld-login-modal-form {
-	  .ld-modal-heading {
-		color : $color_nhsuk-blue;
-	  }
+	border: nhsuk-spacing(1) solid $color_nhsuk-grey-5;
+	  .ld-login-modal-register {
+		background: $color_nhsuk-dark-blue;
+		.ld-button.ld-button-reverse.ld-js-register-account {
+		  margin-top: nhsuk-spacing(3);
+		  @extend .nhsuk-button;
+		  @extend .nhsuk-button--reverse;
+		}
+		#registerform {
+		  color: $color_nhsuk-white;
+		  font-size: $nhsuk-base-font-size;
+		  label {
+			@extend .nhsuk-label;
+			text-align    : left;
+			color         : $color_nhsuk-white;
+			margin-bottom : nhsuk-spacing(2);
+		  }
 
-	  #loginform {
-		.login-username, .login-password {
-		  &::before {
-			top : 38px;
+		  input[type="text"] {
+			@extend .nhsuk-input;
 		  }
 		}
+
 	  }
 
+	.ld-login-modal-login {
+		.ld-modal-heading {
+		  color : $color_nhsuk-dark-blue;
+		}
+
+	  .ld-login-modal-form {
+		#loginform {
+		  label {
+			@extend .nhsuk-label;
+			text-align: left;
+			color: $color_nhsuk-black;
+			margin-bottom: nhsuk-spacing(2);
+		  }
+		  input[type="text"], input[type="password"] {
+			@extend .nhsuk-input;
+			background: $color_nhsuk-white;
+		  }
+		  p.login-remember {
+			input[type="checkbox"] {
+			  cursor: pointer;
+			  height: nhsuk-spacing(5);
+			  left: 0;
+			  width: nhsuk-spacing(5);
+			  z-index: 1;
+			  position: relative;
+			  top: nhsuk-spacing(2);
+			  margin-right: nhsuk-spacing(3);
+			}
+		  }
+		  .login-username, .login-password {
+			&::before {
+			  display: none;
+			}
+		  }
+		}
+
+	  }
 	}
 
 	input[type=submit] {
