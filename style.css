@@ -11275,14 +11275,16 @@ a:focus .nhsuk-icon {
   box-shadow: none;
 }
 
-.nhsuk-header .nhsuk-header__transactional-service-name a.nhsuk-header__transactional-service-name--link {
-  font-weight: 600;
-  color: #ffffff;
+.nhsuk-header .nhsuk-header__link--service.focus-visible .nhsuk-header__transactional-service-name--link {
+  color: #212b32;
 }
 
-.nhsuk-header .nhsuk-header__transactional-service-name a.nhsuk-header__transactional-service-name--link:hover {
-  text-decoration: none;
-  background-color: transparent;
+.nhsuk-header .nhsuk-header__link--service:hover .nhsuk-header__transactional-service-name--link {
+  text-decoration: underline;
+}
+
+.nhsuk-header .nhsuk-header__transactional-service-name a.nhsuk-header__transactional-service-name--link {
+  font-weight: 600;
   color: #ffffff;
 }
 
@@ -11391,18 +11393,6 @@ a:focus .nhsuk-icon {
   }
 }
 
-.nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:focus, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:active, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:hover {
-  background: inherit;
-}
-
-.nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:focus + .nhsuk-header__transactional-service-name, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:active + .nhsuk-header__transactional-service-name, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:hover + .nhsuk-header__transactional-service-name {
-  background: inherit;
-}
-
-.nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:focus + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:active + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo:hover + .nhsuk-header__transactional-service-name a {
-  color: #ffffff;
-}
-
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:focus, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:active, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:hover {
   background: inherit;
 }
@@ -11410,18 +11400,6 @@ a:focus .nhsuk-icon {
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:focus a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:active a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:hover a {
   color: #ffffff;
   text-decoration: none;
-}
-
-.nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__logo:focus + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__logo:active + .nhsuk-header__transactional-service-name a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__logo:hover + .nhsuk-header__transactional-service-name a {
-  color: inherit;
-}
-
-.nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:focus, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:active, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:hover {
-  background: inherit;
-}
-
-.nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:focus a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:active a, .nhsuk-header.nhsuk-header--transactional.nhsuk-header--white .nhsuk-header__transactional-service-name:hover a {
-  color: inherit;
 }
 
 .nhsuk-header__container {
