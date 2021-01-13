@@ -446,6 +446,17 @@ if ( in_array( 'the-events-calendar/the-events-calendar.php', $active_plugins, t
 	}
 }
 
+/**
+ * Cookie Control plugin check.
+ * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a theme file for
+ * the Cookie Control plugin so the element is presented first on screen for improved accessibility
+ * on screen readers and for keyboard navigation.
+ * The check around the require is to see if the plugin is active on this install
+ */
+if ( in_array( 'cookie-notice/cookie-notice.php', $active_plugins, true ) ) {
+		require get_template_directory() . '/inc/cookie-notice.php';
+}
+
 /*
  * Google Tag Manager.
  * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a file for
