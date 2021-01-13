@@ -13,7 +13,7 @@
 
 $header_colour = get_theme_mod( 'header_styles', 'normal' );
 ?>
-<svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" role="image" focusable="false" viewBox="0 0 40 16">
+<svg class="nhsuk-logo" alt="NHS Logo" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" viewBox="0 0 40 16">
 	<path
 		<?php
 		if ( 'normal' !== $header_colour ) :
