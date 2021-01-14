@@ -35,3 +35,27 @@ add_filter(
 	10,
 	2
 );
+
+if ( is_plugin_active( 'learndash-course-grid/learndash_course_grid.php' ) ) {
+
+    remove_filter('learndash_template', 'learndash_course_grid_course_list', 999999, 5);
+    add_filter('learndash_template', 'nightingale_learndash_course_grid_course_list', 999999, 5);
+
+    function nightingale_learndash_course_grid_course_list($filepath, $name, $args, $echo, $return_file_path)
+    {
+
+        if ($name == "course_list_template" && strpos($filepath, LEARNDASH_LMS_PLUGIN_DIR) !== false) {
+            if ($args['shortcode_atts']['course_grid'] == 'false' ||
+                $args['shortcode_atts']['course_grid'] === false ||
+                empty($args['shortcode_atts']['course_grid'])) {
+                return $filepath;
+            }
+
+            return apply_filters('learndash_course_grid_template',
+                get_template_directory().'/learndash-course-grid/course_list_template.php', $filepath, $name, $args,
+                $return_file_path);
+        }
+
+        return $filepath;
+    }
+}
