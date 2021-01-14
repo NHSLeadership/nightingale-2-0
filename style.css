@@ -11256,12 +11256,6 @@ a:focus .nhsuk-icon {
   fill: #4c6272 !important;
 }
 
-/* Add a focus indicator for keyboard nav on clickable cards */
-.nhsuk-card--clickable.focus-visible {
-  border: 4px solid #ffeb3b;
-  box-shadow: inset 0 0 0 4px #212b32;
-}
-
 .nhsuk-header .nhsuk-header__navigation {
   max-width: 100%;
 }
@@ -14712,4 +14706,22 @@ section.nhsuk-section:after,
 #cookie-notice .cookie-notice-container .cn-close-icon.focus-visible {
   height: 40px;
   width: 40px;
+}
+
+/* Reusable mixin for a focus element outline */
+/* Add a focus indicator for keyboard nav on clickable cards */
+.nhsuk-card--clickable.focus-visible {
+  border: 4px solid #ffeb3b;
+  box-shadow: inset 0 0 0 4px #212b32;
+}
+
+/* add more obvious visual representation when dashboard elements are active on keyboard nav */
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.sticky, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.download-box {
+  border: 4px solid #ffeb3b;
+  box-shadow: inset 0 0 0 4px #212b32;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3.nhsuk-panel-with-label__label, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel.is-style-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.sticky h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.download-box h3 {
+  background-color: #ffeb3b;
+  color: #212b32;
 }

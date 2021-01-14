@@ -373,9 +373,3 @@
 a:focus .nhsuk-icon {
   fill : $color_nhsuk-grey-1 !important;
 }
-
-/* Add a focus indicator for keyboard nav on clickable cards */
-.nhsuk-card--clickable.focus-visible {
-  border: nhsuk-spacing(1) solid $nhsuk-focus-color;
-  box-shadow: inset 0 0 0 nhsuk-spacing(1) $color_nhsuk-black;
-}
