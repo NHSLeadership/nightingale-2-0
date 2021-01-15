@@ -1312,21 +1312,44 @@ document.querySelectorAll(".nhsuk-card--clickable").forEach((panel) => {
 	}
 });
 
-const toggleButton = document.querySelector('#toggle-menu');
-const closeButton = document.querySelector('#close-menu');
-const nav = document.querySelector('#header-navigation');
+const toggleButton = document.getElementById('toggle-menu');
+const closeButton = document.getElementById('close-menu');
+const nav = document.getElementById('header-navigation');
 toggleButton.addEventListener("click", () => {
-	//nav.addEventListener('transitionend', (e) => {
 	if (toggleButton.classList.contains("is-active") === false) { // weird thing where we have to negatively search for
 		// the active indicator, as at the point of searching the flag is not set. So it only exists when we are
 		// actually hiding the nav
 		setTimeout(function(){
-			closeButton.focus();
+			closeButton.focus(); // shift focus to the close icon inside the nav element.
 			trapFocus(nav); // put the keyboard nav in a loop inside the menu element.
 		},100); // add in a slight pause so the nav actually displays and becomes focussable
 	}
-	// });
 });
+
+const toggleSearch = document.getElementById('toggle-search');
+const wrapSearch = document.getElementById('wrap-search');
+toggleSearch.addEventListener("click", () => {
+	if (toggleSearch.classList.contains("is-active") === false) { // weird thing where we have to negatively  search for
+		// the active indicator, as at the point of searching the flag is not set. So it only exists when we are
+		// actually hiding the search box
+		setTimeout(function(){
+
+			var searchField = wrapSearch.querySelector('.autocomplete__input');
+			searchField.focus();
+			trapFocus(wrapSearch); // put the keyboard nav in a loop inside the search wrapper..
+		},100); // add in a slight pause so the searchbox actually displays and is interactive
+	}
+});
+
+closeButton.addEventListener("click", () => {
+	toggleButton.focus();
+});
+
+const closeSearch = document.getElementById('close-search');
+closeSearch.addEventListener("click", () => {
+	toggleSearch.focus();
+});
+
 function trapFocus(element) {
 	var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
 	var firstFocusableEl = focusableEls[0];
