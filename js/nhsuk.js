@@ -1311,3 +1311,45 @@ document.querySelectorAll(".nhsuk-card--clickable").forEach((panel) => {
 		});
 	}
 });
+
+const toggleButton = document.querySelector('#toggle-menu');
+const closeButton = document.querySelector('#close-menu');
+const nav = document.querySelector('#header-navigation');
+toggleButton.addEventListener("click", () => {
+	//nav.addEventListener('transitionend', (e) => {
+	if (toggleButton.classList.contains("is-active") === false) { // weird thing where we have to negatively search for
+		// the active indicator, as at the point of searching the flag is not set. So it only exists when we are
+		// actually hiding the nav
+		setTimeout(function(){
+			closeButton.focus();
+			trapFocus(nav); // put the keyboard nav in a loop inside the menu element.
+		},100); // add in a slight pause so the nav actually displays and becomes focussable
+	}
+	// });
+});
+function trapFocus(element) {
+	var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+	var firstFocusableEl = focusableEls[0];
+	var lastFocusableEl = focusableEls[focusableEls.length - 1];
+	var KEYCODE_TAB = 9;
+
+	element.addEventListener('keydown', function(e) {
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+
+		if (!isTabPressed) {
+			return;
+		}
+
+		if ( e.shiftKey ) /* shift + tab */ {
+			if (document.activeElement === firstFocusableEl) {
+				lastFocusableEl.focus();
+				e.preventDefault();
+			}
+		} else /* tab */ {
+			if (document.activeElement === lastFocusableEl) {
+				firstFocusableEl.focus();
+				e.preventDefault();
+			}
+		}
+	});
+}
