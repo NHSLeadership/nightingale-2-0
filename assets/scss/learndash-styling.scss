@@ -565,3 +565,12 @@
 	padding-right : 10px;
   }
 }
+
+.has-nhs-mid-grey-color {
+	@extend .nhsuk-inset-text;
+	color : $color_nhsuk-black !important;
+	&:before {
+		@extend .nhsuk-u-visually-hidden;
+		content: "Information:";
+	}
+}

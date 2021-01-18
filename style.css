@@ -3862,7 +3862,7 @@ b {
  * Usage: class="nhsuk-u-visually-hidden"
  * See tools/mixins
  */
-.nhsuk-u-visually-hidden {
+.nhsuk-u-visually-hidden, .has-nhs-mid-grey-color:before {
   -webkit-clip-path: inset(50%);
   border: 0;
   clip: rect(0 0 0 0);
@@ -8150,7 +8150,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   width: auto;
 }
 
-.ie8 .nhsuk-search__submit .nhsuk-u-visually-hidden {
+.ie8 .nhsuk-search__submit .nhsuk-u-visually-hidden, .ie8 .nhsuk-search__submit .has-nhs-mid-grey-color:before {
   height: auto;
   position: relative;
   width: auto;
@@ -9248,7 +9248,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
  * 2. Restricts the width of the text to optimise the line length for
  *    readability.
  */
-.nhsuk-inset-text {
+.nhsuk-inset-text, .has-nhs-mid-grey-color {
   /* [1] */
   max-width: 44em;
   /* [2] */
@@ -9258,34 +9258,34 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   border-left: 8px solid #005eb8;
 }
 
-.nhsuk-inset-text > *:first-child {
+.nhsuk-inset-text > *:first-child, .has-nhs-mid-grey-color > *:first-child {
   margin-top: 0;
 }
 
-.nhsuk-inset-text > *:last-child {
+.nhsuk-inset-text > *:last-child, .has-nhs-mid-grey-color > *:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-inset-text {
+  .nhsuk-inset-text, .has-nhs-mid-grey-color {
     margin-bottom: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-inset-text {
+  .nhsuk-inset-text, .has-nhs-mid-grey-color {
     margin-top: 48px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-inset-text {
+  .nhsuk-inset-text, .has-nhs-mid-grey-color {
     padding: 24px;
   }
 }
 
 @media print {
-  .nhsuk-inset-text {
+  .nhsuk-inset-text, .has-nhs-mid-grey-color {
     border-color: #212b32;
   }
 }
@@ -11440,7 +11440,7 @@ button#toggle-search {
   color: #005eb8;
 }
 
-.nhsuk-header__search-form .nhsuk-u-visually-hidden {
+.nhsuk-header__search-form .nhsuk-u-visually-hidden, .nhsuk-header__search-form .has-nhs-mid-grey-color:before {
   background: #ffffff;
   color: #000000;
 }
@@ -12854,6 +12854,14 @@ button {
   padding-right: 10px;
 }
 
+.has-nhs-mid-grey-color {
+  color: #212b32 !important;
+}
+
+.has-nhs-mid-grey-color:before {
+  content: "Information:";
+}
+
 /* Events Calendar Styles */
 .tribe-common div.nhsuk-grid-column-two-thirds {
   padding-left: 0;
@@ -13607,11 +13615,11 @@ ul.download-versions {
   width: 100%;
 }
 
-#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning, .nhsuk-inset-text.is-style-quote-warning {
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning, #content .nhsuk-main-wrapper .is-style-quote-warning.has-nhs-mid-grey-color, .nhsuk-inset-text.is-style-quote-warning, .is-style-quote-warning.has-nhs-mid-grey-color {
   border-left-color: #ffeb3b;
 }
 
-#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning-reverse, .nhsuk-inset-text.is-style-quote-warning-reverse {
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-warning-reverse, #content .nhsuk-main-wrapper .is-style-quote-warning-reverse.has-nhs-mid-grey-color, .nhsuk-inset-text.is-style-quote-warning-reverse, .is-style-quote-warning-reverse.has-nhs-mid-grey-color {
   background: #ffeb3b;
   border: 10px solid #ffeb3b;
   box-shadow: inset 12px 0px 0px 0px #212b32;
@@ -13622,11 +13630,11 @@ ul.download-versions {
   width: 100%;
 }
 
-#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert, .is-style-quote-alert.nhsuk-inset-text {
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert, #content .nhsuk-main-wrapper .is-style-quote-alert.has-nhs-mid-grey-color, .is-style-quote-alert.nhsuk-inset-text, .is-style-quote-alert.has-nhs-mid-grey-color {
   border-left-color: #d5281b;
 }
 
-#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert-reverse, .is-style-quote-alert-reverse.nhsuk-inset-text {
+#content .nhsuk-main-wrapper .nhsuk-inset-text.is-style-quote-alert-reverse, #content .nhsuk-main-wrapper .is-style-quote-alert-reverse.has-nhs-mid-grey-color, .is-style-quote-alert-reverse.nhsuk-inset-text, .is-style-quote-alert-reverse.has-nhs-mid-grey-color {
   background: #d5281b;
   border: 10px solid #d5281b;
   box-shadow: inset 12px 0px 0px 0px #ffffff;
@@ -13874,7 +13882,7 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
 }
 
 /* Inset text inverted link amendment */
-.nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a {
+.nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a, .has-nhs-mid-grey-color .is-style-quote-reverse .nhsuk-inset-text__quote a {
   color: #ffffff;
   font-weight: 700;
 }
