@@ -38,8 +38,10 @@ add_filter(
 
 if ( is_plugin_active( 'learndash-course-grid/learndash_course_grid.php' ) ) {
 
-    remove_filter('learndash_template', 'learndash_course_grid_course_list', 999999, 5);
-    add_filter('learndash_template', 'nightingale_learndash_course_grid_course_list', 999999, 5);
+    add_action ( 'after_setup_theme', function(){
+        remove_filter('learndash_template', 'learndash_course_grid_course_list', 999999, 5);
+    } );
+    add_filter('learndash_template', 'nightingale_learndash_course_grid_course_list', 'learndash-course-grid', 999999, 5);
 
     function nightingale_learndash_course_grid_course_list($filepath, $name, $args, $echo, $return_file_path)
     {

@@ -498,13 +498,28 @@
 	@extend .nhsuk-card-group__item;
 
 	article {
+	  @extend .nhsuk-card--clickable;
 	  display: flex !important;
 	  flex-direction: column;
 	  height: 100%;
 
   	  .caption {
-		  height: 100%;
 		  @extend .nhsuk-card__description;
+		  height: 100%;
+		  display: flex;
+		  flex-direction: column;
+
+		  .entry-title {
+			  order: 1;
+		  }
+		  .learndash-widget {
+			  order: 2;
+			  margin-top: auto;
+		  }
+		  .ld_course_grid_button {
+			  order: 3;
+			  margin-top: auto;
+		  }
 	  }
 
 	  .nhsuk-action-link {
@@ -516,14 +531,18 @@
 
   	  .ld_course_grid_button {
   	    text-align : center;
+
 		&nhsuk-action-link__link {
 		  text-align : left;
 		  position   : relative;
    		}
 
         .btn, .btn-primary {
-		  @extend .nhsuk-button;
-		  @extend .nhsuk-button--secondary;
+		  @extend .nhsuk-action-link__link;
+		  .email-address:after {
+		    content: '<span class="nhsuk-u-visually-hidden" aria-hidden="true"></span>';
+		  }
+		  margin-bottom: 0;
 		}
 	  }
 	}
