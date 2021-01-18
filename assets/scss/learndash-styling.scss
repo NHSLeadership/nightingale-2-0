@@ -574,3 +574,10 @@
 		content: "Information:";
 	}
 }
+
+.learndash-wrapper .ld-status-incomplete.ld-status-icon {
+	color : $color_nhsuk-black !important;
+	border-color : $color_nhsuk-mid-grey !important;
+	background-color : $color_nhsuk-light-grey !important;
+	content: "\2713";
+}

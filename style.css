@@ -12862,6 +12862,13 @@ button {
   content: "Information:";
 }
 
+.learndash-wrapper .ld-status-incomplete.ld-status-icon {
+  color: #212b32 !important;
+  border-color: #768692 !important;
+  background-color: #e8edee !important;
+  content: "\2713";
+}
+
 /* Events Calendar Styles */
 .tribe-common div.nhsuk-grid-column-two-thirds {
   padding-left: 0;
