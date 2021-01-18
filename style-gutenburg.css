@@ -747,7 +747,6 @@
   background-color: #f0f4f5;
   /* With :not(.autocomplete__input), the search field is not affected */
   /* Menu item right chevron (mobile): fix color when state is focus */
-  /* Add a focus indicator for keyboard nav on clickable cards */
   /* colour variable to be used with color-mixer.scss */
   /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
   /*
@@ -20996,11 +20995,6 @@
 
 .edit-post-visual-editor a:focus .nhsuk-icon, .block-editor-block-styles a:focus .nhsuk-icon, .block-editor-inserter__menu-help-panel a:focus .nhsuk-icon {
   fill: #4c6272 !important;
-}
-
-.edit-post-visual-editor .nhsuk-card--clickable.focus-visible, .block-editor-block-styles .nhsuk-card--clickable.focus-visible, .block-editor-inserter__menu-help-panel .nhsuk-card--clickable.focus-visible {
-  border: 4px solid #ffeb3b;
-  box-shadow: inset 0 0 0 4px #212b32;
 }
 
 .edit-post-visual-editor .editor-post-title__input, .block-editor-block-styles .editor-post-title__input, .block-editor-inserter__menu-help-panel .editor-post-title__input {

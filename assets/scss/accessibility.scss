@@ -1,0 +1,31 @@
+/* Reusable mixin for a focus element outline */
+@mixin a11y-focus__outline {
+  border: nhsuk-spacing(1) solid $nhsuk-focus-color;
+  box-shadow: inset 0 0 0 nhsuk-spacing(1) $color_nhsuk-black;
+}
+
+/* Add a focus indicator for keyboard nav on clickable cards */
+.nhsuk-card--clickable
+{
+  &.focus-visible {
+	@include a11y-focus__outline;
+  }
+}
+
+/* add more obvious visual representation when dashboard elements are active on keyboard nav */
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper {
+  &.focus-visible {
+	.nhsuk-panel-with-label {
+	  @include a11y-focus__outline;
+	  h3.nhsuk-panel-with-label__label {
+		background-color: $nhsuk-focus-color;
+		color: $color_nhsuk-black;
+	  }
+	}
+  }
+}
+.autocomplete__input.autocomplete__input--focused, input[type=text], input[type=textarea] {
+  &:focus {
+	@include a11y-focus__outline;
+  }
+}
