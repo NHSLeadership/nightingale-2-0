@@ -231,9 +231,15 @@
 		color      : $color_nhsuk-white;
 	  }
 
-	  td.gsurvey-likert-choice, td.gsurvey-likert-choice.gsurvey-likert-selected {
+	  td.gsurvey-likert-choice {
+		background-image: url('assets/likert_empty.svg');
 		background-color : $color_nhsuk-white;
 		background-size  : 35px 35px;
+
+		&.gsurvey-likert-selected {
+		  background-image: url('assets/tick.svg');
+		  background-color : $color_nhsuk-white;
+		}
 	  }
 
 	  tr:nth-child(odd) .gsurvey-likert-row-label {
