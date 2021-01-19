@@ -42,6 +42,7 @@
 
   .ld-status {
 	@extend .nhsuk-tag;
+	  position: relative;
 
 	&.ld-status-waiting {
 	  border-color : $color_nhsuk-red;
@@ -189,6 +190,9 @@
 
 	.ld-item-list-item {
 	  .ld-item-list-item-preview {
+	    .ld-item-title {
+			line-height: nhsuk-spacing(6);
+		}
 		border : 2px solid transparent;
 
 		a.ld-item-name:hover {
@@ -204,7 +208,7 @@
   }
 
   .ld-progress {
-	margin : 1em 0 0;
+	margin : 1em 0;
   }
 
   ld-breadcrumbs {
@@ -427,15 +431,29 @@
   .wpProQuiz_content .wpProQuiz_time_limit .wpProQuiz_progress,
   .ld-alert-success .ld-alert-icon,
   .ld-alert-success .ld-button,
-  .ld-course-status .ld-status.ld-status-complete {
-	background-color : $color_nhsuk-green !important;
-	color            : $color_nhsuk-white;
-	max-width        : unset;
+  .ld-course-status {
+	&.ld-course-status-not-enrolled {
+		.ld-course-status-label,
+		.ld-course-status-price {
+			color: $color_nhsuk-black;
+		}
+	}
+	.ld-status.ld-status-complete {
+	  background-color: $color_nhsuk-green !important;
+	  color: $color_nhsuk-white;
+	  max-width: unset;
 
-	&:hover {
-	  color            : $color_nhsuk-green !important;
-	  background-color : $color_nhsuk-white !important;
-	  border           : $nhsuk-border-width-form-element solid $color_nhsuk-green !important;
+	  &:hover {
+		  color: $color_nhsuk-green !important;
+		  background-color: $color_nhsuk-white !important;
+		  border: $nhsuk-border-width-form-element solid $color_nhsuk-green !important;
+	  }
+    }
+	.ld-status {
+	  position: relative;
+	  &.ld-status-waiting {
+  	    background-color: $color_nhsuk-yellow;
+	  }
 	}
   }
 
@@ -480,39 +498,59 @@
 	@extend .nhsuk-card-group__item;
 
 	article {
-	  @extend .nhsuk-card;
-	  position       : relative;
-	  padding-bottom : 120px;
+	  @extend .nhsuk-card--clickable;
+	  display: flex !important;
+	  flex-direction: column;
+	  height: 100%;
 
-	  .caption {
-		@extend .nhsuk-card__description;
+  	  .caption {
+		  @extend .nhsuk-card__description;
+		  height: 100%;
+		  display: flex;
+		  flex-direction: column;
+
+		  .entry-title {
+			  order: 1;
+		  }
+		  .learndash-widget {
+			  order: 2;
+			  margin-top: auto;
+		  }
+		  .ld_course_grid_button {
+			  order: 3;
+			  margin-top: auto;
+		  }
 	  }
 
-	  .ld_course_grid_button {
-		text-align : center;
-		position   : absolute;
-		bottom     : nhsuk-spacing(5);
-		width      : 85%;
+	  .nhsuk-action-link {
+		text-align: left;
+		padding: nhsuk-spacing(2);
+		margin-top: auto !important;
+		margin-bottom: nhsuk-spacing(2);
+  	  }
 
-		.btn, .btn-primary {
-		  @extend .nhsuk-button;
-		  @extend .nhsuk-button--secondary;
-		  text-align : center;
+  	  .ld_course_grid_button {
+  	    text-align : center;
+
+		&nhsuk-action-link__link {
+		  text-align : left;
+		  position   : relative;
+   		}
+
+        .btn, .btn-primary {
+		  @extend .nhsuk-action-link__link;
+		  .email-address:after {
+		    content: '<span class="nhsuk-u-visually-hidden" aria-hidden="true"></span>';
+		  }
+		  margin-bottom: 0;
 		}
-	  }
-
-	  .learndash-widget {
-		position : absolute;
-		bottom   : 10px;
-		width    : 90%;
 	  }
 	}
 
 	.thumbnail.course {
-	  margin-bottom  : nhsuk-spacing(6);
+	  margin-bottom  : nhsuk-spacing(5);
 	  @extend .nhsuk-card;
 	  position       : relative;
-	  padding-bottom : 120px;
 
 	  .ld_course_grid_price {
 		background : $color_nhsuk-green !important;
