@@ -195,13 +195,13 @@
 		}
 		border : 2px solid transparent;
 
-		a.ld-item-name:hover {
-		  background : transparent !important;
-		}
-
 		&:hover {
 		  background : transparent;
 		  border     : $nhsuk-border-width-form-element solid $nhsuk-focus-color;
+		}
+		.ld-status-incomplete.ld-status-icon {
+		  border : 2px solid $color_nhsuk-black;
+		  content: "\2713";
 		}
 	  }
 	}
