@@ -191,13 +191,13 @@
 	  .ld-item-list-item-preview {
 		border : 2px solid transparent;
 
-		a.ld-item-name:hover {
-		  background : transparent !important;
-		}
-
 		&:hover {
 		  background : transparent;
 		  border     : $nhsuk-border-width-form-element solid $nhsuk-focus-color;
+		}
+		.ld-status-incomplete.ld-status-icon {
+		  border : 2px solid $color_nhsuk-black;
+		  content: "\2713";
 		}
 	  }
 	}
@@ -564,20 +564,4 @@
   label {
 	padding-right : 10px;
   }
-}
-
-.has-nhs-mid-grey-color {
-	@extend .nhsuk-inset-text;
-	color : $color_nhsuk-black !important;
-	&:before {
-		@extend .nhsuk-u-visually-hidden;
-		content: "Information:";
-	}
-}
-
-.learndash-wrapper .ld-status-incomplete.ld-status-icon {
-	color : $color_nhsuk-black !important;
-	border-color : $color_nhsuk-mid-grey !important;
-	background-color : $color_nhsuk-light-grey !important;
-	content: "\2713";
 }
