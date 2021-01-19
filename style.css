@@ -10878,6 +10878,29 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
+/* Reusable mixin for a focus element outline */
+/* Add a focus indicator for keyboard nav on clickable cards */
+.nhsuk-card--clickable.focus-visible {
+  border: 4px solid #ffeb3b;
+  box-shadow: inset 0 0 0 4px #212b32;
+}
+
+/* add more obvious visual representation when dashboard elements are active on keyboard nav */
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel.is-style-panel-with-label, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.sticky, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.download-box {
+  border: 4px solid #ffeb3b;
+  box-shadow: inset 0 0 0 4px #212b32;
+}
+
+.nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3.nhsuk-panel-with-label__label, .nhsuk-panel.is-style-panel-with-label .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel.is-style-panel-with-label h3, .is-style-panel-with-label.sticky .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.sticky h3, .is-style-panel-with-label.download-box .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3, .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .is-style-panel-with-label.download-box h3 {
+  background-color: #ffeb3b;
+  color: #212b32;
+}
+
+.autocomplete__input.autocomplete__input--focused:focus, input[type=text]:focus, input[type=textarea]:focus {
+  border: 4px solid #ffeb3b;
+  box-shadow: inset 0 0 0 4px #212b32;
+}
+
 /* colour variable to be used with color-mixer.scss */
 /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
 .nhsuk-panel-group {
@@ -12214,9 +12237,15 @@ button {
   color: #ffffff;
 }
 
-.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice, .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice.gsurvey-likert-selected {
+.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
+  background-image: url("assets/likert_empty.svg");
   background-color: #ffffff;
   background-size: 35px 35px;
+}
+
+.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice.gsurvey-likert-selected {
+  background-image: url("assets/tick.svg");
+  background-color: #ffffff;
 }
 
 .gform_wrapper .gform_body table.gsurvey-likert tr:nth-child(odd) .gsurvey-likert-row-label {
@@ -12452,17 +12481,15 @@ button {
   border: 2px solid transparent;
 }
 
-.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title {
-  line-height: 40px;
-}
-
-.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview a.ld-item-name:hover {
-  background: transparent !important;
-}
 
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
   background: transparent;
   border: 2px solid #ffeb3b;
+}
+
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-status-incomplete.ld-status-icon {
+  border: 2px solid #212b32;
+  content: "\2713";
 }
 
 .learndash-wrapper .ld-progress {
@@ -14773,3 +14800,4 @@ section.nhsuk-section:after,
   border: 4px solid #ffeb3b;
   box-shadow: inset 0 0 0 4px #212b32;
 }
+
