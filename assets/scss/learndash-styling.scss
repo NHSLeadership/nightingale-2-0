@@ -470,6 +470,30 @@
   }
 }
 
+nav.learndash-pager {
+  background: none;
+  color: $color-nhsuk_black;
+  width: 100%;
+  ul {
+	list-style: none;
+	display: block;
+	margin: 0 auto;
+	li {
+	  float: left;
+	  margin-right: nhsuk-spacing(3);
+	  a.nhsuk-tag {
+		color: $color-nhsuk_white;
+		&.focus-visible {
+		  color: $color-nhsuk_black;
+		  border: nhsuk-spacing(1) solid $color-nhsuk_black !important; // needs !important tag to over-ride learndash plugin config
+		}
+		&.nhsuk-tag--white {
+		  color: $color-nhsuk_dark-blue;
+		}
+	  }
+	}
+  }
+}
 
 .nhsuk-breadcrumb {
   .sfwd-breadcrumbs {
@@ -495,16 +519,13 @@
   @extend .nhsuk-card-group;
 
   .ld_course_grid {
-	@extend .nhsuk-card-group__item;
 
 	article {
-	  @extend .nhsuk-card--clickable;
 	  display: flex !important;
 	  flex-direction: column;
 	  height: 100%;
 
   	  .caption {
-		  @extend .nhsuk-card__description;
 		  height: 100%;
 		  display: flex;
 		  flex-direction: column;

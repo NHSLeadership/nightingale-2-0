@@ -195,7 +195,7 @@ $thumb_size = isset( $shortcode_atts['thumb_size'] ) && ! empty( $shortcode_atts
 
 ob_start();
 ?>
-<div class="ld_course_grid col-sm-<?php echo $smcol; ?> col-md-<?php echo $col; ?> <?php echo esc_attr( $grid_class ); ?>">
+<div class="nhsuk-card-group__item ld_course_grid col-sm-<?php echo $smcol; ?> col-md-<?php echo $col; ?> <?php echo esc_attr( $grid_class ); ?>">
     <article id="post-<?php the_ID(); ?>" <?php post_class( $course_class . ' thumbnail course nhsuk-card nhsuk-card--clickable' ); ?>>
         <?php if ( $shortcode_atts['show_thumbnail'] == 'true' ) : ?>
             <?php if ( $post->post_type == 'sfwd-courses' ) : ?>
@@ -209,33 +209,31 @@ ob_start();
                     <?php echo $embed_code; ?>
                 </div>
             <?php elseif( has_post_thumbnail() ) :?>
-                <a href="<?php echo esc_url( $button_link ); ?>" rel="bookmark" tabindex="-1">
+
                     <?php the_post_thumbnail( $thumb_size ); ?>
-                </a>
             <?php else : ?>
-                <a href="<?php echo esc_url( $button_link ); ?>" rel="bookmark" tabindex="-1">
                     <img alt="<?php the_title(); ?>" src="<?php echo plugins_url( 'no_image.jpg', LEARNDASH_COURSE_GRID_FILE); ?>"/>
-                </a>
             <?php endif;?>
         <?php endif; ?>
         <?php if ( $shortcode_atts['show_content'] == 'true' ) : ?>
             <div class="caption nhsuk-card__content">
-                <h3 class="entry-title"><?php the_title(); ?></h3>
+                <h2 class="nhsuk-card__heading nhsuk-heading-m"><?php the_title(); ?></h2>
                 <?php if ( ! empty( $short_description ) ) : ?>
-                    <p class="entry-content"><?php echo do_shortcode( htmlspecialchars_decode( $short_description ) ); ?></p>
+                    <p class="nhsuk-card__description"><?php echo do_shortcode( htmlspecialchars_decode( $short_description ) ); ?></p>
                 <?php endif; ?>
-            </div>
-            <div class="nhsuk-action-link">
-                <?php if ( get_current_user_id() && isset( $shortcode_atts['progress_bar'] ) && $shortcode_atts['progress_bar'] == 'true' ) : ?>
-                    <?php echo do_shortcode( '[learndash_course_progress course_id="' . get_the_ID() . '" user_id="' . get_current_user_id() . '"]' ); ?>
-                <?php endif; ?>
-                <a class="nhsuk-action-link__link" role="button" href="<?php echo esc_url( $button_link ); ?>" rel="bookmark">
-                    <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-                    </svg>
-                    <span class="nhsuk-action-link__text"><?php echo esc_attr( $button_text ); ?></span><span class="nhsuk-u-visually-hidden" aria-hidden="true"><?php the_title(); ?></span>
-                </a>
+
+                <div class="nhsuk-action-link">
+                    <?php if ( get_current_user_id() && isset( $shortcode_atts['progress_bar'] ) && $shortcode_atts['progress_bar'] == 'true' ) : ?>
+                        <?php echo do_shortcode( '[learndash_course_progress course_id="' . get_the_ID() . '" user_id="' . get_current_user_id() . '"]' ); ?>
+                    <?php endif; ?>
+                    <a class="nhsuk-action-link__link nhsuk-card__link" role="button" href="<?php echo esc_url( $button_link ); ?>" rel="bookmark">
+                        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                        </svg>
+                        <span class="nhsuk-action-link__text"><?php echo esc_attr( $button_text ); ?></span><span class="nhsuk-u-visually-hidden" aria-hidden="true"><?php the_title(); ?></span>
+                    </a>
+                </div>
             </div>
         <?php endif; ?>
     </article><!-- #post-## -->

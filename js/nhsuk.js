@@ -1300,7 +1300,11 @@
 document.querySelectorAll(".nhsuk-card--clickable").forEach((panel) => {
 	// Check if panel has a link within it
 	if (panel.querySelector("a") !== null) {
+		console.log(panel.querySelector("a"));
 		var activeLink = panel.querySelector("a");
+		panel.addEventListener('click', () => {
+			panel.querySelector('a').click();
+		});
 		// Highlights the active card for keyboard nav when focussed
 		activeLink.addEventListener("focus", () => {
 			panel.classList.add("focus-visible");
