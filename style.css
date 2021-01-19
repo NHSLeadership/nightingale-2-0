@@ -12293,9 +12293,15 @@ button {
   color: #ffffff;
 }
 
-.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice, .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice.gsurvey-likert-selected {
+.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
+  background-image: url("assets/likert_empty.svg");
   background-color: #ffffff;
   background-size: 35px 35px;
+}
+
+.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice.gsurvey-likert-selected {
+  background-image: url("assets/tick.svg");
+  background-color: #ffffff;
 }
 
 .gform_wrapper .gform_body table.gsurvey-likert tr:nth-child(odd) .gsurvey-likert-row-label {
