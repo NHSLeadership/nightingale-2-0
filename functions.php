@@ -474,3 +474,15 @@ require get_template_directory() . '/inc/class-comment-author-role-label.php';
 if ( ! is_admin() ) {
 	require get_template_directory() . '/inc/dynamic-blocks.php';
 }
+
+/**
+ * For security prevent RSS feed disclosing author usernames
+ */
+function nightingale_check_author( $display_name ) {
+    if ( is_feed() ) {
+		// display user id instead of name
+        return get_the_author_meta( 'ID' );
+    }
+    return $display_name;
+}
+add_filter( 'the_author', 'nightingale_check_author', PHP_INT_MAX, 1 );
