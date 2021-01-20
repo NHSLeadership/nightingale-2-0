@@ -486,3 +486,11 @@ function nightingale_check_author( $display_name ) {
     return $display_name;
 }
 add_filter( 'the_author', 'nightingale_check_author', PHP_INT_MAX, 1 );
+
+/**
+ * For security prevent password reset error message providing info on user emails
+ */
+function nightingale_no_login_hints ( $error ) {
+	return 'If your email has been found in our database you will receive a reset link';
+}
+add_filter ( 'login_errors', 'nightingale_no_login_hints' );
