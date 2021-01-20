@@ -5,11 +5,9 @@
  * Override this template in your own theme by creating a file at:
  * [your-theme]/tribe/events/blocks/event-links.php
  *
- * See more documentation about our Blocks Editor templating system.
- *
- * @link http://m.tri.be/1aiy
- *
- * @version 4.7
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Andrew Blane
+ * @version 1.0 20th January 2021
  *
  */
 
