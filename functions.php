@@ -491,6 +491,6 @@ add_filter( 'the_author', 'nightingale_check_author', 9999, 1 );
  * For security prevent password reset error message providing info on user emails
  */
 function nightingale_no_login_hints ( $error ) {
-	return __('If your email has been found in our database you will receive a reset link');
+	return __('If your email has been found in our database you will receive a reset link' , 'nightingale');
 }
 add_filter ( 'login_errors', 'nightingale_no_login_hints' );
