@@ -41,7 +41,7 @@ $sidebar = nightingale_show_sidebar();
 
 		<?php $this->template( 'components/before' ); ?>
 
-		<h1>Events</h1>
+		<h1 class="entry-title nhsuk-heading-l">Events</h1>
 		<header <?php tribe_classes( $header_classes ); ?>>
 			<?php $this->template( 'components/messages' ); ?>
 
