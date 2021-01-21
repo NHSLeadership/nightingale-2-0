@@ -30,7 +30,7 @@ if ( $should_render ) :
 			<div class="tribe-block__btn--link tribe-block__events-gcal">
 				<a
 					href="<?php echo Tribe__Events__Main::instance()->esc_gcal_url( tribe_get_gcal_link() ); ?>"
-					title="<?php esc_attr_e( 'Add to Google Calendar', 'the-events-calendar' ); ?>"
+					title="<?php esc_attr_e( 'Add to Google Calendar', 'nightingale' ); ?>"
 				>
 					<img alt="Google Calendar link" src="<?php echo Tribe__Main::instance()->plugin_url  . 'src/modules/icons/link.svg'; ?>" />
 					<?php echo esc_html( $this->attr( 'googleCalendarLabel' ) ) ?>
@@ -41,7 +41,7 @@ if ( $should_render ) :
 			<div class="tribe-block__btn--link tribe-block__-events-ical">
 				<a
 					href="<?php echo esc_url( tribe_get_single_ical_link() ); ?>"
-					title="<?php esc_attr_e( 'Download .ics file', 'the-events-calendar' ); ?>"
+					title="<?php esc_attr_e( 'Download .ics file', 'nightingale' ); ?>"
 				>
 					<img alt="iCalendar file download link" src="<?php echo Tribe__Main::instance()->plugin_url  . 'src/modules/icons/link.svg'; ?>" />
 					<?php echo esc_html( $this->attr( 'iCalLabel' ) ) ?>
