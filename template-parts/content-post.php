@@ -49,7 +49,7 @@ else :
 				if ( ( 'latest-posts' !== $parent_template_part ) || ( ( 'latest-posts' === $parent_template_part ) && ( 0 !== $display_featured_image ) ) ) {
 					if ( has_post_thumbnail() ) :
 
-						the_post_thumbnail( 'default', [ 'class' => 'nhsuk-card__img' ] );
+						the_post_thumbnail( 'nightingale-square-md', [ 'class' => 'nhsuk-card__img' ] );
 
 					else :
 
