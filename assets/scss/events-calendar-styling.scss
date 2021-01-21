@@ -365,3 +365,8 @@ html.js { // only hit embedded content. Wordpress doesnt make this easy to filte
 	}
   }
 }
+
+/* Event datetime header */
+.tribe-events-schedule__datetime * {
+	color : $color_nhsuk-dark-grey;
+}
