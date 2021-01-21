@@ -65,7 +65,7 @@ else :
 
 				<div class="nhsuk-card__content">
 					<h2 class="nhsuk-card__heading nhsuk-heading-m">
-						<a class="nhsuk-card__link" href="<?php the_permalink(); ?>" title="<?php echo substr(trim(get_the_permalink(),'/'), strripos(trim(get_the_permalink(),'/'),'/')+1); ?>">
+						<a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
 							<?php the_title(); ?>
 						</a>
 					</h2>
