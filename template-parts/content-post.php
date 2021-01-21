@@ -67,11 +67,11 @@ else :
 					<h2 class="nhsuk-card__heading nhsuk-heading-m">
 						<a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
 							<?php the_title(); ?>
-							<?php // Add date if event
+							<?php // If event add date for screen readers
 							if ( get_post_type() === 'tribe_events' ) {
 								$event_date = strtotime ( $post->start_date );
 								$event_date = date ( 'd M Y', $event_date );
-								echo '(' . $event_date . ')';
+								echo '<span class="nhsuk-u-visually-hidden">(' . $event_date . ')</span>';
 							}
 							?>
 						</a>
