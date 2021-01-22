@@ -221,7 +221,7 @@ function nightingale_clean_bad_content( $b_print = false ) {
 }
 
 /**
- * Function to diusplay dropdown of categories for filtering of posts display
+ * Function to display dropdown of categories for filtering of posts display.
  *
  * @param int $catcount  - the number of categories in the original block setup if it is set to specifics.
  * @param array $categories - array of categories in the block setup if it is set to all categories.
@@ -249,21 +249,8 @@ function nightingale_latest_posts_category_filter( $catcount, $categories, $cato
 			                        ) );
 		endif;
 		echo '</form></span></div>';
-		?>
-		<script<?php echo $type_attr; ?>>
-          /* <![CDATA[ */
-          (function() {
-            var dropdown = document.getElementById( 'cat_filter' );
-            function onCatChange() {
-              if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
-                dropdown.parentNode.submit();
-              }
-            }
-            dropdown.onchange = onCatChange;
-          })();
-          /* ]]> */
-		</script>
-	<?php
+		echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/js/latest-posts-category.js"></script>';
+
 	elseif ( $_POST['cat_filter'] ):
 		echo '<div class="nhsuk-width-container nhsuk-cat-filter">';
 		echo '<h2 class="nhsuk-heading-m">';
