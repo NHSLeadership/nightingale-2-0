@@ -442,7 +442,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			'section'     => 'blog_panel',
 			'type'        => 'radio',
 			'label'       => esc_html__( 'Images on Blog Listing ', 'nightingale' ),
-			'description' => esc_html__( 'Choose whether to display image on blog listing page as square or default (square will ensure all blocks are consistently laid out)', 'nightingale' ),
+			'description' => esc_html__( 'Choose whether to display images on blog listing page as square or default (square will ensure all blocks are consistently laid out)', 'nightingale' ),
 			'choices'     => array(
 				'default'  => esc_html__( 'Leave as default proportions', 'nightingale' ),
 				'nightingale-square-md' => esc_html__( 'Show as square (images may be cropped)', 'nightingale' ),
