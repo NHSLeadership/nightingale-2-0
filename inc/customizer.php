@@ -441,7 +441,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			'settings'    => 'blog_image_display',
 			'section'     => 'blog_panel',
 			'type'        => 'radio',
-			'label'       => esc_html__( 'Image on Blog Listing ', 'nightingale' ),
+			'label'       => esc_html__( 'Images on Blog Listing ', 'nightingale' ),
 			'description' => esc_html__( 'Choose whether to display image on blog listing page as square or default (square will ensure all blocks are consistently laid out)', 'nightingale' ),
 			'choices'     => array(
 				'default'  => esc_html__( 'Leave as default proportions', 'nightingale' ),
