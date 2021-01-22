@@ -379,3 +379,10 @@
 	}
   }
 }
+
+// Increase contrast on word count under paragraph box, etc.
+.gp-word-count-label {
+	background: white;
+	color: $color_nhsuk-black;
+	padding: nhsuk-spacing(1);
+}
