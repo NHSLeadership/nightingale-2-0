@@ -17,7 +17,14 @@ so we can then pass them down to the display elements correctly
 $parent_template_part   = 'latest-posts';
 $archive_paged          = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 $posts_to_show          = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
-$categories             = get_query_var( $namespace . 'categories' );
+if ( $_POST['cat_filter'] ) {
+    $categories[] = array( 'id' => $_POST['cat_filter'],
+                            'value' => get_cat_name( $_POST['cat_filter'] )
+                            );
+} else {
+	$categories = get_query_var( $namespace . 'categories' );
+
+}
 $display_post_content   = get_query_var( $namespace . 'displayPostContent' ) ? get_query_var( $namespace . 'displayPostContent' ) : 0; // Default to not show post content.
 $excerpt_length         = get_query_var( $namespace . 'excerptLength' ) ? get_query_var( $namespace . 'excerptLength' ) : 20; // Default excerpt length of 20 words.
 $display_full_post      = get_query_var( $namespace . 'displayPostContentRadio' ) ? get_query_var( $namespace . 'displayPostContentRadio' ) : 'excerpt'; // Default to show excerpt not full post.
@@ -36,10 +43,11 @@ $args = array(
 	'suppress_filters'    => false,
 	'paged'               => $archive_paged,
 );
-
+$catcount = 0;
 if ( ( isset( $categories ) ) && ( ! empty( $categories ) ) ) {
 	foreach ($categories as $cat) {
 		$catout[] = $cat['id'];
+		$catcount ++;
 	}
 	$args['category__in'] = $catout;
 }
@@ -49,7 +57,10 @@ $sidebar = nightingale_show_sidebar();
 $the_query = new WP_Query( $args );
 
 // The Loop.
-if ( $the_query->have_posts() ) : ?>
+if ( $the_query->have_posts() ) :
+    // set up the category dropdown filter
+    nightingale_latest_posts_category_filter( $catcount, $categories, $catout);
+?>
     <div class="nhsuk-grid-row nhsuk-card-group">
 
 		<?php

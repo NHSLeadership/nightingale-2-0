@@ -251,3 +251,20 @@ button {
     margin: 0;
   }
 }
+.nhsuk-cat-filter {
+  margin-bottom: nhsuk-spacing(6);
+  &:after {
+    clear   : both;
+    display : block;
+    content : '';
+  }
+  .nhsuk-heading-m {
+    float: left;
+  }
+  .nhsuk-cat-reset {
+    float: right;
+  }
+  .nhsuk-button {
+    margin-bottom: 0;
+  }
+}
