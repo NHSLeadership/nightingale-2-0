@@ -26,7 +26,7 @@ remove_filter( 'the_content', 'do_blocks', 9 );
 if ( $should_render ) :
 ?>
 	<div class="tribe-block tribe-block__events-link">
-		<h3 class="nhsuk-heading-s">Calendar Links</h3>
+		<h3 class="nhsuk-heading-s"><?php _e('Calendar Links','nightingale') ?></h3>
 		<p> <?php _e('The following links allow you to add this event to your calendar. Note: You need to be logged into your Google account before you can add to your Google calendar.','nightingale') ?></p>
 		<?php if ( $has_google_cal ) : ?>
 			<div class="tribe-block__btn--link tribe-block__events-gcal">
