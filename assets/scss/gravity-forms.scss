@@ -234,7 +234,7 @@
 	  td.gsurvey-likert-choice {
 		background-image: url('assets/likert_empty.svg');
 		background-color : $color_nhsuk-white;
-		background-size  : 35px 35px;
+		background-size  : nhsuk-spacing(4) nhsuk-spacing(4);
 
 		&.gsurvey-likert-selected {
 		  background-image: url('assets/tick.svg');
@@ -247,7 +247,7 @@
 	  }
 
 	  td.gsurvey-likert-choice {
-		height : 50px;
+		height : nhsuk-spacing(7);
 	  }
 	}
 
