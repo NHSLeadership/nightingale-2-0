@@ -162,6 +162,12 @@ function nightingale_setup() {
 
 	remove_theme_support( 'custom-header' );
 	remove_theme_support( 'custom-background' );
+	/*
+	 * Add new suare image thumbnails to give nicer blog posts grid layout
+	 */
+	add_image_size( 'nightingale-square-sm', 200, 200, array( 'centre', 'center' ) ); // Small square with hard crop from middle.
+	add_image_size( 'nightingale-square-md', 500, 500, array( 'centre', 'center' ) ); // Medium square with hard crop from middle.
+	add_image_size( 'nightingale-square-lg', 1000, 1000, array( 'centre', 'center' ) ); // Large square with hard crop from middle.
 
 }
 

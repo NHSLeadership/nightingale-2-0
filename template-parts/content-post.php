@@ -49,7 +49,8 @@ else :
 				if ( ( 'latest-posts' !== $parent_template_part ) || ( ( 'latest-posts' === $parent_template_part ) && ( 0 !== $display_featured_image ) ) ) {
 					if ( has_post_thumbnail() ) :
 
-						the_post_thumbnail( 'default', [ 'class' => 'nhsuk-card__img' ] );
+						$image_proportion = get_theme_mod( 'blog_image_display', 'default' );
+						the_post_thumbnail( $image_proportion, [ 'class' => 'nhsuk-card__img' ] );
 
 					else :
 

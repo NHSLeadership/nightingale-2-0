@@ -202,3 +202,44 @@ function nightingale_clean_bad_content( $b_print = false ) {
 		echo $nightingale_post_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
+
+/**
+ * Function to display dropdown of categories for filtering of posts display.
+ *
+ * @param int $catcount  - the number of categories in the original block setup if it is set to specifics.
+ * @param array $categories - array of categories in the block setup if it is set to all categories.
+ * @param array $catout - array of categories in the block setup if it is set to specifics.
+ */
+function nightingale_latest_posts_category_filter( $catcount, $categories, $catout = array() ) {
+	if( ( $catcount  > 1 ) || ( empty( $categories ) ) ): // there is more than one category, or _all_ categories are available.
+		echo '<div class="nhsuk-width-container nhsuk-cat-filter"><span style="float: right;"><form action="" method="post">';
+		echo '<label class="nhsuk-u-visually-hidden" for="cat_filter">' . __('Filter the posts you can see', 'nightingale' ) . '</label>';
+		if( $catcount  > 1  ): // there is more than one category
+			echo '<select name="cat_filter" id="cat_filter" class="nhsuk-select"><option value="0"></option>';
+			foreach( $catout as $catfiltered ) {
+				echo '<option value="' . $catfiltered . '">' . get_cat_name( $catfiltered ) . '</option>';
+			}
+			echo '</select>';
+		elseif( empty( $categories ) ): // or _all_ categories are available.
+			wp_dropdown_categories( array(
+				                        'hide_if_empty'    => true,
+				                        'name'             => 'cat_filter',
+				                        'orderby'          => 'name',
+				                        'selected'         => $_POST['cat_filter'],
+				                        'hierarchical'     => true,
+				                        'class'            => 'nhsuk-select',
+				                        'show_option_all' => __('Show All')
+			                        ) );
+		endif;
+		echo '</form></span></div>';
+		echo '<script type="text/javascript" src="' . get_template_directory_uri() . '/js/latest-posts-category.js"></script>';
+
+	elseif ( $_POST['cat_filter'] ):
+		echo '<div class="nhsuk-width-container nhsuk-cat-filter">';
+		echo '<h2 class="nhsuk-heading-m">';
+		_e('Showing Posts from the category ', 'nightingale');
+		echo get_cat_name( $_POST['cat_filter'] ) . '</h2><span class="nhsuk-cat-reset">';
+		echo '<form action="" method="post"><input type="hidden" name="cat_filter" value=""0" /><input type="submit" class="nhsuk-button" value="'. __('Reset Filter', 'nightingale') . '" /></form>';
+		echo '</span></div>';
+	endif;
+}

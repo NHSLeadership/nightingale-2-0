@@ -16,8 +16,15 @@ so we can then pass them down to the display elements correctly
 */
 $parent_template_part   = 'latest-posts';
 $archive_paged          = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-$posts_to_show          = get_query_var( 'postsToShow' ) ? get_query_var( 'postsToShow' ) : 5; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
-$categories             = get_query_var( $namespace . 'categories' );
+$posts_to_show          = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+if ( $_POST['cat_filter'] ) {
+    $categories[] = array( 'id' => $_POST['cat_filter'],
+                            'value' => get_cat_name( $_POST['cat_filter'] )
+                            );
+} else {
+	$categories = get_query_var( $namespace . 'categories' );
+
+}
 $display_post_content   = get_query_var( $namespace . 'displayPostContent' ) ? get_query_var( $namespace . 'displayPostContent' ) : 0; // Default to not show post content.
 $excerpt_length         = get_query_var( $namespace . 'excerptLength' ) ? get_query_var( $namespace . 'excerptLength' ) : 20; // Default excerpt length of 20 words.
 $display_full_post      = get_query_var( $namespace . 'displayPostContentRadio' ) ? get_query_var( $namespace . 'displayPostContentRadio' ) : 'excerpt'; // Default to show excerpt not full post.
@@ -36,21 +43,25 @@ $args = array(
 	'suppress_filters'    => false,
 	'paged'               => $archive_paged,
 );
-
-
+$catcount = 0;
 if ( ( isset( $categories ) ) && ( ! empty( $categories ) ) ) {
-	$args['cat'] = $categories;
+	foreach ($categories as $cat) {
+		$catout[] = $cat['id'];
+		$catcount ++;
+	}
+	$args['category__in'] = $catout;
 }
-
-
 
 $sidebar = nightingale_show_sidebar();
 
 $the_query = new WP_Query( $args );
 
 // The Loop.
-if ( $the_query->have_posts() ) : ?>
-	<div class="nhsuk-grid-row nhsuk-card-group">
+if ( $the_query->have_posts() ) :
+    // set up the category dropdown filter
+    nightingale_latest_posts_category_filter( $catcount, $categories, $catout);
+?>
+    <div class="nhsuk-grid-row nhsuk-card-group">
 
 		<?php
 		while ( $the_query->have_posts() ) :
@@ -66,10 +77,60 @@ if ( $the_query->have_posts() ) : ?>
 
 		<?php endwhile; ?>
 
-	</div>
+    </div>
+    <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+        <ul class="nhsuk-list nhsuk-pagination__list">
+			<?php
+			$postsorder = get_query_var( $namespace . 'order' ) ? get_query_var( $namespace . 'order' ) : 'desc';
+			$newer = __('View more recent posts', 'nightingale');
+			$older = __('View older posts', 'nightingale');
+			if( 'desc' === $postsorder ) {
+				$prevtext = $newer;
+				$nexttext = $older;
+			} elseif( 'asc' === $postsorder ) {
+				$prevtext = $older;
+				$nexttext = $newer;
+			} else {
+				$prevtext = '';
+				$nexttext = '';
+			}
+			echo get_query_var( $namespace . 'order' );
+			$prevpage = (int) $paged - 1;
+			if ( ! is_single() && $the_query->max_num_pages > 1 && $prevpage > 0 ) {
+				?>
+                <li class="nhsuk-pagination-item--previous">
+                    <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="<?php echo previous_posts( false ); ?>">
+                        <span class="nhsuk-pagination__title"><?php _e('Previous', 'nightingale'); ?></span>
+                        <span class="nhsuk-u-visually-hidden">:</span>
+                        <span class="nhsuk-pagination__page"><?php echo $prevtext; ?></span>
+                        <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
+                        </svg>
 
-	<?php
-	the_posts_pagination();
+                    </a>
+                </li>
+				<?php
+			}
+
+			$nextpage = (int) $paged + 1;
+			if ( ! is_single() && ( $nextpage <= $the_query->max_num_pages ) && ( 1 != $the_query->max_num_pages ) ) {
+				?>
+                <li class="nhsuk-pagination-item--next">
+                    <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="<?php echo next_posts( $max_page, false ); ?>">
+                        <span class="nhsuk-pagination__title"><?php _e('Next', 'nightingale'); ?></span>
+                        <span class="nhsuk-u-visually-hidden">:</span>
+                        <span class="nhsuk-pagination__page"><?php echo $nexttext; ?></span>
+                        <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+                        </svg>
+                    </a>
+                </li>
+				<?php
+			}
+			?>
+        </ul>
+    </nav>
+<?php
 endif;
 
 /* Restore original Post Data */
