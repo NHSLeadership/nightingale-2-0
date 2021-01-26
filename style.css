@@ -12267,7 +12267,7 @@ button {
 .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
   background-image: url("assets/likert_empty.svg");
   background-color: #ffffff;
-  background-size: 35px 35px;
+  background-size: 24px 24px;
 }
 
 .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice.gsurvey-likert-selected {
@@ -12280,7 +12280,7 @@ button {
 }
 
 .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
-  height: 50px;
+  height: 48px;
 }
 
 .gform_wrapper .gform_body .nhsuk-form-group--error table.gsurvey-likert {
