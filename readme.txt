@@ -42,6 +42,9 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+ = 2.3.1 =
+ Accessibility Improvements
+
  = 2.3.0.1 =
  Bugfix release:
 * Breadcrumbs in learndash broke outside of template bounds. This has been resolved.

@@ -25,18 +25,23 @@
   .nhsuk-header__menu-toggle {
 	box-shadow : none;
   }
-
+.nhsuk-header__link--service {
+  &.focus-visible {
+	.nhsuk-header__transactional-service-name--link {
+	  color : $color_nhsuk-black;
+	}
+  }
+  &:hover {
+	.nhsuk-header__transactional-service-name--link {
+	  text-decoration : underline;
+	}
+  }
+}
 
   .nhsuk-header__transactional-service-name {
 	a.nhsuk-header__transactional-service-name--link {
 	  font-weight : $nhsuk-font-bold;
 	  color       : $color_nhsuk-white;
-
-	  &:hover {
-		text-decoration  : none;
-		background-color : transparent;
-		color            : $color_nhsuk-white;
-	  }
 	}
   }
 
@@ -157,18 +162,6 @@
 	}
 
 
-	.nhsuk-header__logo:focus, .nhsuk-header__logo:active, .nhsuk-header__logo:hover {
-	  background : inherit;
-
-	  & + .nhsuk-header__transactional-service-name {
-		background : inherit;
-
-		a {
-		  color : $color_nhsuk-white;
-		}
-	  }
-	}
-
 	.nhsuk-header__transactional-service-name:focus, .nhsuk-header__transactional-service-name:active, .nhsuk-header__transactional-service-name:hover {
 	  background : inherit;
 
@@ -178,25 +171,6 @@
 	  }
 	}
 
-	&.nhsuk-header--white {
-	  .nhsuk-header__logo:focus, .nhsuk-header__logo:active, .nhsuk-header__logo:hover {
-
-		& + .nhsuk-header__transactional-service-name {
-
-		  a {
-			color : inherit;
-		  }
-		}
-	  }
-
-	  .nhsuk-header__transactional-service-name:focus, .nhsuk-header__transactional-service-name:active, .nhsuk-header__transactional-service-name:hover {
-		background : inherit;
-
-		a {
-		  color : inherit;
-		}
-	  }
-	}
   }
 }
 

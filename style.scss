@@ -28,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/nhsuk-replacement';
 
 
+@import 'assets/scss/accessibility'; // global accessibility improvements
 // start importing the theme specific settings
 @import 'assets/scss/nhs-colours';
 // nhs colour pallette
@@ -69,3 +70,5 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/nhsblocks/legacy/legacy';
 // nhs colour pallette
 @import 'assets/scss/color-mixer';
+// Rework the cookie control notice for better accessibility
+@import 'assets/scss/cookie-control';

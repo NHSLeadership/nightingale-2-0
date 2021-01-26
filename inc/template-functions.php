@@ -99,23 +99,6 @@ function nightingale_shorten_excerpt( $length ) {
 add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 10 );
 
 /**
- * Adds the readmore link to excerpts
- *
- * @param string $more the default more string.
- */
-function nightingale_excerpt_more( $more ) {
-	if ( is_admin() ) {
-		return $more;
-	}
-	global $post;
-	$link  = '';
-	$title = get_the_title( $post->ID );
-
-	return nightingale_read_more_posts( $title, $link );
-}
-
-add_filter( 'excerpt_more', 'nightingale_excerpt_more' );
-/**
  * Customise the read more link.
  *
  * @param string $title The title for the link (used in visually hidden area for screen readers to better describe the link).

@@ -1297,3 +1297,86 @@
 		})))
 	}))
 }]);
+document.querySelectorAll(".nhsuk-card--clickable").forEach((panel) => {
+	// Check if panel has a link within it
+	if (panel.querySelector("a") !== null) {
+		console.log(panel.querySelector("a"));
+		var activeLink = panel.querySelector("a");
+		panel.addEventListener('click', () => {
+			panel.querySelector('a').click();
+		});
+		// Highlights the active card for keyboard nav when focussed
+		activeLink.addEventListener("focus", () => {
+			panel.classList.add("focus-visible");
+		});
+		// Removes the focus highlighting
+		activeLink.addEventListener("blur", () => {
+			panel.classList.remove("focus-visible");
+		});
+	}
+});
+
+const toggleButton = document.getElementById('toggle-menu');
+const closeButton = document.getElementById('close-menu');
+const nav = document.getElementById('header-navigation');
+toggleButton.addEventListener("click", () => {
+	if (toggleButton.classList.contains("is-active") === false) { // weird thing where we have to negatively search for
+		// the active indicator, as at the point of searching the flag is not set. So it only exists when we are
+		// actually hiding the nav
+		setTimeout(function(){
+			closeButton.focus(); // shift focus to the close icon inside the nav element.
+			trapFocus(nav); // put the keyboard nav in a loop inside the menu element.
+		},100); // add in a slight pause so the nav actually displays and becomes focussable
+	}
+});
+
+const toggleSearch = document.getElementById('toggle-search');
+const wrapSearch = document.getElementById('wrap-search');
+toggleSearch.addEventListener("click", () => {
+	if (toggleSearch.classList.contains("is-active") === false) { // weird thing where we have to negatively  search for
+		// the active indicator, as at the point of searching the flag is not set. So it only exists when we are
+		// actually hiding the search box
+		setTimeout(function(){
+
+			var searchField = wrapSearch.querySelector('.autocomplete__input');
+			searchField.focus();
+			trapFocus(wrapSearch); // put the keyboard nav in a loop inside the search wrapper..
+		},100); // add in a slight pause so the searchbox actually displays and is interactive
+	}
+});
+
+closeButton.addEventListener("click", () => {
+	toggleButton.focus();
+});
+
+const closeSearch = document.getElementById('close-search');
+closeSearch.addEventListener("click", () => {
+	toggleSearch.focus();
+});
+
+function trapFocus(element) {
+	var focusableEls = element.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+	var firstFocusableEl = focusableEls[0];
+	var lastFocusableEl = focusableEls[focusableEls.length - 1];
+	var KEYCODE_TAB = 9;
+
+	element.addEventListener('keydown', function(e) {
+		var isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+
+		if (!isTabPressed) {
+			return;
+		}
+
+		if ( e.shiftKey ) /* shift + tab */ {
+			if (document.activeElement === firstFocusableEl) {
+				lastFocusableEl.focus();
+				e.preventDefault();
+			}
+		} else /* tab */ {
+			if (document.activeElement === lastFocusableEl) {
+				firstFocusableEl.focus();
+				e.preventDefault();
+			}
+		}
+	});
+}
