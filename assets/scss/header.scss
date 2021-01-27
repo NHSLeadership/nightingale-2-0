@@ -78,7 +78,6 @@
 	  background-color : $color_nhsuk-grey-5;
 	  border-color     : $color_nhsuk-blue;
 	  color            : $color_nhsuk-blue;
-	  margin-right: nhsuk-spacing(1);
 
 	  .nhsuk-icon__search {
 		fill : $color_nhsuk-blue;
@@ -154,10 +153,11 @@
 	@media (max-width : 769px) {
 	  .nhsuk-header__logo {
 		padding : 10px;
+		padding-left: 0;
 	  }
 
 	  .nhsuk-header__transactional-service-name {
-		padding : 10px 10px 22px 10px;
+		padding : 10px 10px 22px 0px;
 	  }
 	}
 
