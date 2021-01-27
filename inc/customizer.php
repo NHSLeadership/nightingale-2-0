@@ -422,7 +422,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-	// $id
+		// $id
 		'blog_image_display',
 		// $args
 		array(
@@ -434,7 +434,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-	// $id
+		// $id
 		'blog_image_display',
 		// $args
 		array(
@@ -444,7 +444,7 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			'label'       => esc_html__( 'Images on Blog Listing ', 'nightingale' ),
 			'description' => esc_html__( 'Choose whether to display images on blog listing page as square or default (square will ensure all blocks are consistently laid out)', 'nightingale' ),
 			'choices'     => array(
-				'default'  => esc_html__( 'Leave as default proportions', 'nightingale' ),
+				'default'               => esc_html__( 'Leave as default proportions', 'nightingale' ),
 				'nightingale-square-md' => esc_html__( 'Show as square (images may be cropped)', 'nightingale' ),
 			),
 		)

@@ -67,12 +67,13 @@ else :
 				<div class="nhsuk-card__content">
 					<h2 class="nhsuk-card__heading nhsuk-heading-m">
 						<a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
-							<?php the_title(); ?>
-							<?php // If event add date for screen readers
+							<?php
+							the_title();
+							// If event add date for screen readers.
 							if ( get_post_type() === 'tribe_events' ) {
-								$event_date = strtotime ( $post->start_date );
-								$event_date = date ( 'd M Y', $event_date );
-								echo '<span class="nhsuk-u-visually-hidden">(' . $event_date . ')</span>';
+								$event_date = strtotime( $post->start_date );
+								$event_date = date( 'd M Y', $event_date );
+								echo '<span class="nhsuk-u-visually-hidden">(' . esc_html( $event_date ) . ')</span>';
 							}
 							?>
 						</a>
