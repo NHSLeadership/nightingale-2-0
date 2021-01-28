@@ -1,4 +1,4 @@
-=== Nightingale 2.0 ===
+=== Nightingale ===
 Contributors: tblacker
 Requires at least: 5.0
 Tested up to: 5.6
@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.3.0.1
-Stable tag: 2.3.0.1
+Version: 2.3.1
+Stable tag: 2.3.1
 
 
 == Description ==
@@ -43,7 +43,25 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
  = 2.3.1 =
- Accessibility Improvements
+ Accessibility Improvements:
+* Multiple contrast issues addressed, especially in plugin compatability (Gravity Forms, The Events Calendar, LearnDash
+  in particular)
+* Keyboard navigation improvements to all screens
+* Screen reader enhancements added to multiple posts view, header component and to footer region
+* Mobile navigation focus enhanecement for visually impaired users
+* form and search input field focus effect amended to use both yellow and black so contrast is maintained regardless of
+background colour
+
+Base library upgraded to NHSUK Frontend 4.1 (https://github.com/nhsuk/nhsuk-frontend/blob/v4.1.0/)
+
+Functional improvements:
+* new thumbnails added for theme to create square images. Optional on blog listing pages to then use these for
+consistent sizing of blocks (default is to use standard image, but optional to amend to the new square layout)
+* Multiple Gravity Forms layout improvements
+* Learndash grid view added to theme (this only impacts if you have both LearnDash and LearnDash grid view plugins)
+* Fix to nhsuk-card--clickable component so the whole region is selectable and clickable (also accessibility improvement
+ so when keyboard navigating, the whole region is indicated as selected)
+
 
  = 2.3.0.1 =
  Bugfix release:

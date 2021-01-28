@@ -20968,6 +20968,10 @@
   max-width: 983px;
 }
 
+.edit-post-visual-editor .wp-block .is-selected .nhs-grid-row, .block-editor-block-styles .wp-block .is-selected .nhs-grid-row, .block-editor-inserter__menu-help-panel .wp-block .is-selected .nhs-grid-row {
+  border: 2px solid black;
+}
+
 .edit-post-visual-editor .wp-block[data-align=wide], .block-editor-block-styles .wp-block[data-align=wide], .block-editor-inserter__menu-help-panel .wp-block[data-align=wide] {
   /* it can be "data-align=full" and also "right", "left" and "center" */
   max-width: 1228px;
