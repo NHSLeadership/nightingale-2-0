@@ -20893,10 +20893,6 @@
   margin-top: 1.5rem;
 }
 
-.edit-post-visual-editor .nhsuk-readmore, .block-editor-block-styles .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-readmore {
-  float: right;
-}
-
 .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .error404 #primary .page-content .nhsuk-header__search-wrap, .block-editor-block-styles .search-no-results #primary .page-content .nhsuk-header__search-wrap, .block-editor-inserter__menu-help-panel .error404 #primary .page-content .nhsuk-header__search-wrap, .block-editor-inserter__menu-help-panel .search-no-results #primary .page-content .nhsuk-header__search-wrap {
   padding: 5px;
   width: 100%;
@@ -21112,38 +21108,6 @@
   margin: 0 4px;
 }
 
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading {
-  width: 100%;
-}
-
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date {
-  padding: 0 24px;
-}
-
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
-  padding: 16px;
-}
-
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories {
-  padding: 0 16px;
-  margin-bottom: 0;
-  color: #003087;
-}
-
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories {
-  margin-bottom: 48px;
-}
-
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
-  margin-bottom: 32px;
-}
-
-.edit-post-visual-editor .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore, .block-editor-block-styles .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore {
-  position: absolute;
-  bottom: 16px;
-  right: 0;
-}
-
 .edit-post-visual-editor .clear:after, .block-editor-block-styles .clear:after, .block-editor-inserter__menu-help-panel .clear:after {
   clear: both;
   content: '';
@@ -21151,7 +21115,7 @@
 }
 
 .edit-post-visual-editor .nhsuk-readmore, .block-editor-block-styles .nhsuk-readmore, .block-editor-inserter__menu-help-panel .nhsuk-readmore {
-  text-align: right;
+  text-align: left;
   padding-bottom: 16px;
 }
 

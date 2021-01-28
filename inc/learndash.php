@@ -60,8 +60,8 @@ if ( is_plugin_active( 'learndash-course-grid/learndash_course_grid.php' ) ) {
 	function nightingale_learndash_course_grid_course_list( $filepath, $name, $args, $echo, $return_file_path ) {
 
 		if ( 'course_list_template' === $name && false !== strpos( $filepath, LEARNDASH_LMS_PLUGIN_DIR ) ) {
-			if ( 'false' === $args['shortcode_atts']['course_grid'] ||
-				fale === $args['shortcode_atts']['course_grid'] ||
+			if ( false === $args['shortcode_atts']['course_grid'] ||
+				false === $args['shortcode_atts']['course_grid'] ||
 				empty( $args['shortcode_atts']['course_grid'] ) ) {
 				return $filepath;
 			}

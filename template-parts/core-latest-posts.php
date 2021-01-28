@@ -17,7 +17,7 @@ so we can then pass them down to the display elements correctly
 $parent_template_part = 'latest-posts';
 $archive_paged        = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 $posts_to_show        = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
-if ( isset( $_POST['cat_filter'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
+if ( isset( $_POST['cat_filter'] ) && ( ! empty( $_POST['cat_filter'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$cat_filter   = sanitize_text_field( wp_unslash( $_POST['cat_filter'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$categories[] = array(
 		'id'    => $cat_filter,
@@ -25,7 +25,6 @@ if ( isset( $_POST['cat_filter'] ) ) { // phpcs:ignore WordPress.Security.NonceV
 	);
 } else {
 	$categories = get_query_var( $namespace . 'categories' );
-
 }
 $display_post_content   = get_query_var( $namespace . 'displayPostContent' ) ? get_query_var( $namespace . 'displayPostContent' ) : 0; // Default to not show post content.
 $excerpt_length         = get_query_var( $namespace . 'excerptLength' ) ? get_query_var( $namespace . 'excerptLength' ) : 20; // Default excerpt length of 20 words.

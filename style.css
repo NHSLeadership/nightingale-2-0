@@ -11094,10 +11094,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   margin-top: 1.5rem;
 }
 
-.nhsuk-readmore {
-  float: right;
-}
-
 .error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
   padding: 5px;
   width: 100%;
@@ -11464,38 +11460,6 @@ aside#secondary > section {
   margin: 0 4px;
 }
 
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__heading {
-  width: 100%;
-}
-
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_author, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk_post_date {
-  padding: 0 24px;
-}
-
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
-  padding: 16px;
-}
-
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-meta, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .tribe-common, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .event-categories {
-  padding: 0 16px;
-  margin-bottom: 0;
-  color: #003087;
-}
-
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore ~ .event-categories {
-  margin-bottom: 48px;
-}
-
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-promo__description, .nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content p {
-  margin-bottom: 32px;
-}
-
-.nhsuk-postslisting .nhsuk-promo a.nhsuk-promo__link-wrapper div.nhsuk-promo__content .nhsuk-readmore {
-  position: absolute;
-  bottom: 16px;
-  right: 0;
-}
-
 .clear:after {
   clear: both;
   content: '';
@@ -11503,7 +11467,7 @@ aside#secondary > section {
 }
 
 .nhsuk-readmore {
-  text-align: right;
+  text-align: left;
   padding-bottom: 16px;
 }
 

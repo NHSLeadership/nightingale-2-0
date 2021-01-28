@@ -263,4 +263,3 @@ ob_start();
  * @return string                 Filtered course grid HTML output
  */
 echo apply_filters( 'learndash_course_grid_html_output', ob_get_clean(), $post, $shortcode_atts, $user_id ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-?>
