@@ -45,6 +45,8 @@
 				$form_string = str_replace( 'gform_button', 'nhsuk-button gform_button', $form_string );
 				// Style the save and continue functionality.
 				$form_string = preg_replace( "#<a (.*?)class='gform_save_link' (.*?)</a>#", "<a $1 class='nhsuk-button nhsuk-button--secondary gform_save_link' $2</a>", $form_string );
+				// For accessibility add labels (for screen readers only) to survey radio buttons.
+				$form_string = preg_replace("#<td data-label='(.*?)' class='gsurvey-likert-choice'><input name='(.*?)' type='radio' value='(.*?)'id='(.*?)'/></td>#", "<td data-label='$1' class='gsurvey-likert-choice'><label class='nhsuk-u-visually-hidden' for='$4'>$1</label><input name='$2' type='radio' value='$3' id='$4'/></td>", $form_string);
 				return $form_string;
 			},
 			10,

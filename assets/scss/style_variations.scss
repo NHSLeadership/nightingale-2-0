@@ -184,8 +184,10 @@ span.search-terms {
 }
 
 button {
-  margin-right: nhsuk-spacing(3);
-  margin-left: nhsuk-spacing(3);
+  margin: 0;
+  &+.button {
+    margin-left : nhsuk-spacing(3);
+  }
 }
 
 // new card variations

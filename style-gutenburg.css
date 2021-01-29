@@ -20791,10 +20791,6 @@
   margin-left: 0;
 }
 
-.edit-post-visual-editor .nhsuk-header__search-toggle, .block-editor-block-styles .nhsuk-header__search-toggle, .block-editor-inserter__menu-help-panel .nhsuk-header__search-toggle {
-  margin-right: 4px;
-}
-
 .edit-post-visual-editor #secondary section.widget_search, .block-editor-block-styles #secondary section.widget_search, .block-editor-inserter__menu-help-panel #secondary section.widget_search {
   background: none;
   padding-left: 0;
@@ -21152,7 +21148,10 @@
 }
 
 .edit-post-visual-editor button, .block-editor-block-styles button, .block-editor-inserter__menu-help-panel button {
-  margin-right: 16px;
+  margin: 0;
+}
+
+.edit-post-visual-editor button + .button, .block-editor-block-styles button + .button, .block-editor-inserter__menu-help-panel button + .button {
   margin-left: 16px;
 }
 
