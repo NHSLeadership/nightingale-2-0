@@ -66,16 +66,15 @@ else :
 
 				<div class="nhsuk-card__content">
 					<h2 class="nhsuk-card__heading nhsuk-heading-m">
-						<a class="nhsuk-card__link" href="<?php the_permalink(); ?>">
-							<?php the_title(); ?>
-							<?php // If event add date for screen readers
-							if ( get_post_type() === 'tribe_events' ) {
-								$event_date = strtotime ( $post->start_date );
-								$event_date = date ( 'd M Y', $event_date );
-								echo '<span class="nhsuk-u-visually-hidden">(' . $event_date . ')</span>';
-							}
-							?>
-						</a>
+                        <?php
+                        the_title();
+                        // If event add date for screen readers.
+                        if ( get_post_type() === 'tribe_events' ) {
+                            $event_date = strtotime( $post->start_date );
+                            $event_date = date( 'd M Y', $event_date );
+                            echo '<span class="nhsuk-u-visually-hidden">(' . esc_html( $event_date ) . ')</span>';
+                        }
+                        ?>
 					</h2>
 
 					<?php
@@ -105,6 +104,7 @@ else :
 					} else { // everything that isn't the latest posts block behaves as normal.
 						the_excerpt();
 					}
+					echo nightingale_read_more_posts( get_the_title(), get_the_permalink() );
 					?>
 
 					<?php do_action( 'nightingale_after_archive_content' ); ?>

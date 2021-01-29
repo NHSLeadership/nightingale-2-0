@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.3.0.1 16th December 2020
+ * @version   2.3.1 29th January 2020
  */
 
 /**
@@ -162,9 +162,7 @@ function nightingale_setup() {
 
 	remove_theme_support( 'custom-header' );
 	remove_theme_support( 'custom-background' );
-	/*
-	 * Add new suare image thumbnails to give nicer blog posts grid layout
-	 */
+	// Add new suare image thumbnails to give nicer blog posts grid layout.
 	add_image_size( 'nightingale-square-sm', 200, 200, array( 'centre', 'center' ) ); // Small square with hard crop from middle.
 	add_image_size( 'nightingale-square-md', 500, 500, array( 'centre', 'center' ) ); // Medium square with hard crop from middle.
 	add_image_size( 'nightingale-square-lg', 1000, 1000, array( 'centre', 'center' ) ); // Large square with hard crop from middle.
@@ -428,7 +426,7 @@ if ( in_array( 'sfwd-lms/sfwd_lms.php', $active_plugins, true ) ) {
  */
 function nightingale_learndash_admin_fix() {
 	echo '<!-- Tony woz here --><style type="text/css">
-			    #swfd-header {
+				#swfd-header {
 					position: fixed !important;
 					height: 120px;
 				}
@@ -439,6 +437,7 @@ function nightingale_learndash_admin_fix() {
 				}
   </style>';
 }
+
 /**
  * Events Calendar style over-ride.
  * N.B. This is not a plugin, nor does it provide any plugin-like changes. This is a theme file for
@@ -459,7 +458,7 @@ if ( in_array( 'the-events-calendar/the-events-calendar.php', $active_plugins, t
  * The check around the require is to see if the plugin is active on this install
  */
 if ( in_array( 'cookie-notice/cookie-notice.php', $active_plugins, true ) ) {
-		require get_template_directory() . '/inc/cookie-notice.php';
+	require get_template_directory() . '/inc/cookie-notice.php';
 }
 
 /*
@@ -492,21 +491,28 @@ if ( ! is_admin() ) {
 }
 
 /**
- * For security prevent RSS feed disclosing author usernames
+ * For security prevent RSS feed disclosing author usernames.
+ *
+ * @param string $display_name The original name shown by default.
  */
 function nightingale_check_author( $display_name ) {
-    if ( is_feed() ) {
-		// display user id instead of name
-        return get_the_author_meta( 'ID' );
-    }
-    return $display_name;
+	if ( is_feed() ) {
+		// display user id instead of name.
+		return get_the_author_meta( 'ID' );
+	}
+
+	return $display_name;
 }
+
 add_filter( 'the_author', 'nightingale_check_author', 9999, 1 );
 
 /**
  * For security prevent password reset error message providing info on user emails
+ *
+ * @param string $error Original error message to be overwritten.
  */
-function nightingale_no_login_hints ( $error ) {
-	return __('If your email has been found in our database you will receive a reset link' , 'nightingale');
+function nightingale_no_login_hints( $error ) {
+	return __( 'If your email has been found in our database you will receive a reset link', 'nightingale' );
 }
-add_filter ( 'login_errors', 'nightingale_no_login_hints' );
+
+add_filter( 'login_errors', 'nightingale_no_login_hints' );

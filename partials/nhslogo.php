@@ -15,7 +15,7 @@ $header_colour = get_theme_mod( 'header_styles', 'normal' );
 ?>
 <svg class="nhsuk-logo" xmlns:xlink="http://www.w3.org/2000/svg" role="img" aria-labelledby="headerNHSlogo" focusable="false" viewBox="0 0 40 16">
 	<title id="headerNHSlogo">NHS Logo</title>
-    <path
+	<path
 		<?php
 		if ( 'normal' !== $header_colour ) :
 			echo 'fill="#005eb8"';
