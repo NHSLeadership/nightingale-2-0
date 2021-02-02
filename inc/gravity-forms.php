@@ -33,7 +33,7 @@
 				$form_string = preg_replace( "#<div class='gfield_description'(.*?)</div>#", "<span class='nhsuk-hint'$1</span>", $form_string );
 				// Replace field instruction divs with <small> elements.
 				$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
-				// Remove "required" tag NHSUK Service manual insted recommends highlighting optional fields, which is done elsewhere.
+				// Remove "required" tag as NHSUK Service Manual recommends highlighting optional fields instead.
 				$form_string = str_replace( "<span class='gfield_required'>*</span>", '', $form_string );
 				// Replace main gfield_label elements with nhsuk-label.
 				$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
@@ -47,13 +47,22 @@
 				$form_string = preg_replace( "#<a (.*?)class='gform_save_link' (.*?)</a>#", "<a $1 class='nhsuk-button nhsuk-button--secondary gform_save_link' $2</a>", $form_string );
 				// For accessibility add labels (for screen readers only) to survey radio buttons.
 				$form_string = preg_replace("#<td data-label='(.*?)' class='gsurvey-likert-choice'><input name='(.*?)' type='radio' value='(.*?)'id='(.*?)'/></td>#", "<td data-label='$1' class='gsurvey-likert-choice'><label class='nhsuk-u-visually-hidden' for='$4'>$1</label><input name='$2' type='radio' value='$3' id='$4'/></td>", $form_string);
+
+				// For accessibility convert radio labels to legends and place them with radio buttons inside fieldsets.
+				/*
+				* NOTE: this gets messed up if there are hidden fields before the radio buttons.
+				*/
+				$find          = array();
+				$replace       = array();
+				$find []       = "#<li(.*?)nhsuk-form-group(.*?)><label(.*?)>(.*?)</label>(\s*?)<div(.*?)ginput_container nhsuk-radios (.*?)>(.*?)</div></li>#";
+				$replace[]     = "<li$1nhsuk-form-group$2><fieldset class='ginput_container nhsuk-fieldset'><legend class='nhsuk-fieldset__legend'>$4</legend><div class='nhsuk-radios'>$8</div></fieldset></li>";
+				$form_string = preg_replace( $find, $replace, $form_string );
+
 				return $form_string;
 			},
 			10,
 			2
 		);
-
-
 		// Use gform_field_content to style individual fields.
 		// See https://docs.gravityforms.com/gform_field_content.
 		add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 10, 2 );
