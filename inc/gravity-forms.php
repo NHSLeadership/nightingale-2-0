@@ -191,10 +191,6 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			// Style <input>s.
 			$field_content = str_replace( "type='radio'", "type='radio' class='nhsuk-radios__input'", $field_content );
 			// For accessibility convert radio labels to legends and place them with radio buttons inside fieldsets.
-			/*
-			* NOTE: this only applies to radio groups with css class of nhsuk-fieldset.
-			*/
-			echo $field_content;
 			$radiolabel = '';
 			if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 				$radiolabel .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
@@ -207,7 +203,6 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			$find          = "#<label class='gfield_label'(\s*?)>(.*?)</label>(.*?)<div(.*?)>(.*?)<ul class='gfield_radio' id='(.*?)'>(.*?)</ul></div>#";
 			$replace       = "<fieldset class='ginput_container nhsuk-fieldset' id='$6'><legend class='nhsuk-fieldset__legend'>$2 $radiolabel</legend>$3<div class='nhsuk-radios'>$7</div></fieldset>";
 			$field_content = preg_replace( $find, $replace, $field_content );
-			echo '<hr><h3>After modify</h3>' . $field_content;
 			break;
 
 		// Poll.
