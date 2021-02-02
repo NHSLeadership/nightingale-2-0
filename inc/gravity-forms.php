@@ -197,7 +197,6 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			$find          = "#<label class='gfield_label'(.*?)>(.*?)</label>(.*?)<ul class='gfield_radio'(.*?)>(.*?)</ul></div>#";
 			$replace       = "<fieldset class='ginput_container nhsuk-fieldset'><legend class='nhsuk-fieldset__legend'>$2</legend><ul class='nhsuk-radios'>$5</ul></fieldset>";
 			$field_content = preg_replace( $find, $replace, $field_content );
-			echo $field_content;
 			break;
 
 		// Poll.
