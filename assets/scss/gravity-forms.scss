@@ -91,6 +91,47 @@
 		  padding-left : nhsuk-spacing(4);
 		}
 	  }
+
+	  .gsurvey-survey-field {
+		.gsurvey-likert {
+		  .nhsuk-likert {
+			border: 1px solid $color_nhsuk-grey-2;
+			.nhsuk-likert__row {
+			  	border-top : 1px solid $color_nhsuk-grey-2;
+			  	@include clearfix();
+				&:nth-of-type(odd) {
+				  .nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
+					background-color : white;
+					margin-bottom: 0;
+				  }
+				}
+			  .nhsuk-likert__rowlabel {
+				float       : left;
+				font-weight : bold;
+				width: 15%;
+				padding: nhsuk-spacing(4) nhsuk-spacing(3);
+			  }
+			}
+		  }
+
+		  .nhsuk-radios__item {
+			padding      : nhsuk-spacing(7) nhsuk-spacing(3) 0 nhsuk-spacing(4);
+			margin-right : 0;
+
+			.nhsuk-radios__label {
+			  padding-left : nhsuk-spacing(2);
+
+			  &:before {
+				top  : nhsuk-spacing(2);
+				left : nhsuk-spacing(3);
+			  }
+			}
+			&:last-of-type() {
+			  margin-right: 0;
+			}
+		  }
+		}
+	  }
 	}
 
 	.address_city, .address_state {
@@ -221,41 +262,6 @@
 	  }
 	}
 
-	table.gsurvey-likert {
-	  background : $color_nhsuk-white;
-
-	  .gsurvey-likert-row-label, .gsurvey-likert-choice-label {
-		font-size  : 1rem;
-		padding    : nhsuk-spacing(2);
-		background : $color_nhsuk-blue;
-		color      : $color_nhsuk-white;
-	  }
-
-	  td.gsurvey-likert-choice {
-		background-image: url('assets/likert_empty.svg');
-		background-color : $color_nhsuk-white;
-		background-size  : nhsuk-spacing(4) nhsuk-spacing(4);
-
-		&.gsurvey-likert-selected {
-		  background-image: url('assets/tick.svg');
-		  background-color : $color_nhsuk-white;
-		}
-	  }
-
-	  tr:nth-child(odd) .gsurvey-likert-row-label {
-		background : $color_nhsuk-dark-blue;
-	  }
-
-	  td.gsurvey-likert-choice {
-		height : nhsuk-spacing(7);
-	  }
-	}
-
-	.nhsuk-form-group--error {
-	  table.gsurvey-likert {
-		border : $nhsuk-border-width-form-element solid $color_nhsuk-red;
-	  }
-	}
 
 	.gform_delete {
 	  float  : left;
@@ -275,34 +281,15 @@
 
   .ginput_preview {
 	img.gform_delete {
-	  padding: nhsuk-spacing(5) nhsuk-spacing(5) 0px 0px;
-	  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABKUlEQVRYhe2Uuw4BQRSGPwqJW6KgU4jeA0jEC2h4Ku8hXkFJiCdYURJR0Ot0FM5kx2TZHTu7QvZPTjYzszP/d85cIFMme42AM3Az4gwM0wAIMldxSgNAmUXtf6tciJFLBXrlHZs410dltZn/9Qr8HIBZ0rC2cwDnygD+EmDvcjHbU78Dmlr7Qswn3RZAmavKdgUiNQCAPrAFWhqEqQYwBzpJAMyk76BBmOae/DNPAqAELKT/CLQN842MeUDdFiCqSjyy0yH0zCOZxwEAKANL/O2wylzpJJN6MSBW+IlsTPOwh2gi37W2SFhcgYHMKwI1bb0qULHJoACM8SthY17nec9VJV7dDqcKOnDvbodz81cHLhUIdf08gTFVwd+OZRIAHYEIMtchpkDrDvRKkk0dBvEBAAAAAElFTkSuQmCC);
-	  background-size: auto;
-	  width: 0px;
-	  height: 0px;
+	  padding         : nhsuk-spacing(5) nhsuk-spacing(5) 0px 0px;
+	  background      : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABKUlEQVRYhe2Uuw4BQRSGPwqJW6KgU4jeA0jEC2h4Ku8hXkFJiCdYURJR0Ot0FM5kx2TZHTu7QvZPTjYzszP/d85cIFMme42AM3Az4gwM0wAIMldxSgNAmUXtf6tciJFLBXrlHZs410dltZn/9Qr8HIBZ0rC2cwDnygD+EmDvcjHbU78Dmlr7Qswn3RZAmavKdgUiNQCAPrAFWhqEqQYwBzpJAMyk76BBmOae/DNPAqAELKT/CLQN842MeUDdFiCqSjyy0yH0zCOZxwEAKANL/O2wylzpJJN6MSBW+IlsTPOwh2gi37W2SFhcgYHMKwI1bb0qULHJoACM8SthY17nec9VJV7dDqcKOnDvbodz81cHLhUIdf08gTFVwd+OZRIAHYEIMtchpkDrDvRKkk0dBvEBAAAAAElFTkSuQmCC);
+	  background-size : auto;
+	  width           : 0px;
+	  height          : 0px;
 	}
   }
 }
 
-@media only screen and (max-device-width : 1024px) {
-  .gform_wrapper {
-	.gform_body {
-	  table.gsurvey-likert {
-		td.gsurvey-likert-choice {
-		  display      : inline-block;
-		  border-top   : 0;
-		  border-right : 0;
-		}
-
-		td {
-		  input {
-			position : relative;
-		  }
-		}
-	  }
-	}
-  }
-}
 
 @media only screen and (max-device-width : 799px) {
   .gform_wrapper {
@@ -334,11 +321,13 @@
 // Gravity view approval styling
 .tippy-popper {
   .tippy-content {
-	margin-top: nhsuk-spacing(2);
+	margin-top : nhsuk-spacing(2);
+
 	.gv-approval-toggle {
-	  border: 0;
-	  margin-bottom: nhsuk-spacing(3);
-	  display: block !important;
+	  border        : 0;
+	  margin-bottom : nhsuk-spacing(3);
+	  display       : block !important;
+
 	  &:before {
 		word-break  : initial;
 		width       : fit-content;
@@ -351,11 +340,13 @@
 	  }
 
 	  @extend .nhsuk-button;
+
 	  &:hover {
-		background: $color_nhsuk-light-grey;
+		background : $color_nhsuk-light-grey;
+
 		&:before {
-		  color: $color_nhsuk-black;
-		  text-decoration: underline;
+		  color           : $color_nhsuk-black;
+		  text-decoration : underline;
 		}
 	  }
 
@@ -365,25 +356,30 @@
 		}
 
 	  }
+
 	  &.gv-approval-disapproved {
-		background: $color_nhsuk-red;
+		background : $color_nhsuk-red;
+
 		&:before {
-		  content: '\2715 \00A0 Decline';
+		  content : '\2715 \00A0 Decline';
 		}
+
 		&:hover {
-		  background: $color_nhsuk-light-grey;
+		  background : $color_nhsuk-light-grey;
 		}
 	  }
 
 	  &.gv-approval-unapproved {
-		background: $color_nhsuk-warm-yellow;
+		background : $color_nhsuk-warm-yellow;
+
 		&:before {
-		  content: '\27F2 \00A0 Reset';
-		  background: inherit;
-		  color: $color_nhsuk-black;
+		  content    : '\27F2 \00A0 Reset';
+		  background : inherit;
+		  color      : $color_nhsuk-black;
 		}
+
 		&:hover {
-		  background: $color_nhsuk-light-grey;
+		  background : $color_nhsuk-light-grey;
 		}
 	  }
 	}
@@ -392,7 +388,7 @@
 
 // Increase contrast on word count under paragraph box, etc.
 .gp-word-count-label {
-	background: white;
-	color: $color_nhsuk-black;
-	padding: nhsuk-spacing(1);
+  background : white;
+  color      : $color_nhsuk-black;
+  padding    : nhsuk-spacing(1);
 }

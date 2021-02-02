@@ -12080,6 +12080,50 @@ button + .button {
   padding-left: 24px;
 }
 
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert {
+  border: 1px solid #768692;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
+  border-top: 1px solid #768692;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:nth-of-type(odd) .nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__rowlabel {
+  float: left;
+  font-weight: bold;
+  width: 15%;
+  padding: 24px 16px;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li {
+  padding: 48px 16px 0 24px;
+  margin-right: 0;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item .nhsuk-radios__label, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__label, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li .nhsuk-radios__label, .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item label, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li label, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li label {
+  padding-left: 8px;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item .nhsuk-radios__label:before, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__label:before, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li .nhsuk-radios__label:before, .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item label:before, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li label:before, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li label:before {
+  top: 8px;
+  left: 16px;
+}
+
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item:last-of-type, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li:last-of-type, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li:last-of-type {
+  margin-right: 0;
+}
+
 .gform_wrapper .gform_body .address_city, .gform_wrapper .gform_body .address_state {
   width: 50%;
   float: left;
@@ -12183,40 +12227,6 @@ button + .button {
   color: #425563;
 }
 
-.gform_wrapper .gform_body table.gsurvey-likert {
-  background: #ffffff;
-}
-
-.gform_wrapper .gform_body table.gsurvey-likert .gsurvey-likert-row-label, .gform_wrapper .gform_body table.gsurvey-likert .gsurvey-likert-choice-label {
-  font-size: 1rem;
-  padding: 8px;
-  background: #005eb8;
-  color: #ffffff;
-}
-
-.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
-  background-image: url("assets/likert_empty.svg");
-  background-color: #ffffff;
-  background-size: 24px 24px;
-}
-
-.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice.gsurvey-likert-selected {
-  background-image: url("assets/tick.svg");
-  background-color: #ffffff;
-}
-
-.gform_wrapper .gform_body table.gsurvey-likert tr:nth-child(odd) .gsurvey-likert-row-label {
-  background: #003087;
-}
-
-.gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
-  height: 48px;
-}
-
-.gform_wrapper .gform_body .nhsuk-form-group--error table.gsurvey-likert {
-  border: 2px solid #d5281b;
-}
-
 .gform_wrapper .gform_body .gform_delete {
   float: left;
   height: 28px;
@@ -12238,17 +12248,6 @@ button + .button {
   background-size: auto;
   width: 0px;
   height: 0px;
-}
-
-@media only screen and (max-device-width: 1024px) {
-  .gform_wrapper .gform_body table.gsurvey-likert td.gsurvey-likert-choice {
-    display: inline-block;
-    border-top: 0;
-    border-right: 0;
-  }
-  .gform_wrapper .gform_body table.gsurvey-likert td input {
-    position: relative;
-  }
 }
 
 @media only screen and (max-device-width: 799px) {

@@ -45,8 +45,6 @@
 				$form_string = str_replace( 'gform_button', 'nhsuk-button gform_button', $form_string );
 				// Style the save and continue functionality.
 				$form_string = preg_replace( "#<a (.*?)class='gform_save_link' (.*?)</a>#", "<a $1 class='nhsuk-button nhsuk-button--secondary gform_save_link' $2</a>", $form_string );
-				// For accessibility add labels (for screen readers only) to survey radio buttons.
-				$form_string = preg_replace("#<td data-label='(.*?)' class='gsurvey-likert-choice'><input name='(.*?)' type='radio' value='(.*?)'id='(.*?)'/></td>#", "<td data-label='$1' class='gsurvey-likert-choice'><label class='nhsuk-u-visually-hidden' for='$4'>$1</label><input name='$2' type='radio' value='$3' id='$4'/></td>", $form_string);
 				return $form_string;
 			},
 			10,
@@ -75,7 +73,7 @@
 				$grouperror = '';
 			}
 			$label = '';
-			if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+			if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) && ( empty( $field->gsurveyLikertRows) ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 				$label .= '<label for="input_' . $field->formId . '_' . $field->id . '" class="nhsuk-label">' . $field->label; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 				if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 					$label .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
@@ -196,6 +194,7 @@
 				// Poll.
 				case 'poll':
 				case 'survey':
+
 					// options - likert, rank, rating, radio, check, text, textarea, select.
 					// rank - leave alone.
 					// ratings - sorted in css.
@@ -219,6 +218,13 @@
 					$find []       = "#<li class='(.*?)'><input(.*?)type='checkbox'(.*?)><label(.*?)</label></li>#i";
 					$replace[]     = "<div class='nhsuk-checkboxes__item $1'><input $2 type='checkboxes' $3 class='nhsuk-checkboxes__input'><label class='nhsuk-label nhsuk-checkboxes__label' $4</label> </div>";
 					// likert sort out. This is messy.
+					// For accessibility add labels (for screen readers only) to survey radio buttons.
+					$find[] = "#<label class='gfield_label'>(.*?)</label><div(.*?)><table class='gsurvey-likert'(.*?)><thead>(.*?)</thead><tbody>(.*?)</tbody></table></div>#"; // strip out all the table gunk.
+					$replace[] = "<fieldset class='gsurvey-likert nhsuk-fieldset'$2><legend class='nhsuk-fieldset__legend'>$1</legend><div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert'>$5</div></fieldset>"; // replace it with a much simpler div layout.
+					$find[] = "#<tr><td(.*?)class='gsurvey-likert-row-label'>(.*?)</td>(.*?)</tr>#";
+					$replace[] = "<div class='nhsuk-likert__row'$1><div class='nhsuk-likert__item nhsuk-likert__rowlabel'>$2</div>$3</div>";
+					$find[] = "#<td data-label='(.*?)' class='gsurvey-likert-choice'><input name='(.*?)' type='radio' value='(.*?)'id='(.*?)'/></td>#"; // we just have to pull out the td's now.
+					$replace[] = "<div data-label='$1' class='nhsuk-radios__item nhsuk-likert__item'><input name='$2' class='nhsuk-radios__input' type='radio' value='$3' id='$4'/><label class='nhsuk-label nhsuk-radios__label' for='$4'>$1</label></div>"; // and turn them into pretty divs with nhsuk-radios.
 					$field_content = preg_replace( $find, $replace, $field_content );
 					break;
 				// Name inputs.
