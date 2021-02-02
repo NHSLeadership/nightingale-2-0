@@ -50,12 +50,12 @@
 
 				// For accessibility convert radio labels to legends and place them with radio buttons inside fieldsets.
 				/*
-				* NOTE: this gets messed up if there are hidden fields before the radio buttons.
+				* NOTE: this only applies to radio groups with css class of nhsuk-fieldset.
 				*/
 				$find          = array();
 				$replace       = array();
-				$find []       = "#<li(.*?)nhsuk-form-group(.*?)><label(.*?)>(.*?)</label>(\s*?)<div(.*?)ginput_container nhsuk-radios (.*?)>(.*?)</div></li>#";
-				$replace[]     = "<li$1nhsuk-form-group$2><fieldset class='ginput_container nhsuk-fieldset'><legend class='nhsuk-fieldset__legend'>$4</legend><div class='nhsuk-radios'>$8</div></fieldset></li>";
+				$find []       = "#<li(.*?)nhsuk-fieldset(.*?)><label(.*?)>(.*?)</label>(\s*?)<div(.*?)ginput_container nhsuk-radios (.*?)>(.*?)</div></li>#";
+				$replace[]     = "<li$1$2><fieldset class='ginput_container nhsuk-fieldset'><legend class='nhsuk-fieldset__legend'>$4</legend><div class='nhsuk-radios'>$8</div></fieldset></li>";
 				$form_string = preg_replace( $find, $replace, $form_string );
 
 				return $form_string;
