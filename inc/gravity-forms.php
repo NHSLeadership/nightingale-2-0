@@ -74,7 +74,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$grouperror = '';
 	}
 	$label = '';
-	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'radio' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		$label .= '<label for="input_' . $field->formId . '_' . $field->id . '" class="nhsuk-label">' . $field->label; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 			$label .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
@@ -194,9 +194,20 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			/*
 			* NOTE: this only applies to radio groups with css class of nhsuk-fieldset.
 			*/
-			$find          = "#<label class='gfield_label'(.*?)>(.*?)</label>(.*?)<ul class='gfield_radio'(.*?)>(.*?)</ul></div>#";
-			$replace       = "<fieldset class='ginput_container nhsuk-fieldset'><legend class='nhsuk-fieldset__legend'>$2</legend><ul class='nhsuk-radios'>$5</ul></fieldset>";
+			echo $field_content;
+			$radiolabel = '';
+			if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+				$radiolabel .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
+			}
+
+			if ( 1 === $errorflag ) {
+				$radiolabel .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
+			}
+			$radiolabel .= '<br/>';
+			$find          = "#<label class='gfield_label'(\s*?)>(.*?)</label>(.*?)<div(.*?)>(.*?)<ul class='gfield_radio' id='(.*?)'>(.*?)</ul></div>#";
+			$replace       = "<fieldset class='ginput_container nhsuk-fieldset' id='$6'><legend class='nhsuk-fieldset__legend'>$2 $radiolabel</legend>$3<div class='nhsuk-radios'>$7</div></fieldset>";
 			$field_content = preg_replace( $find, $replace, $field_content );
+			echo '<hr><h3>After modify</h3>' . $field_content;
 			break;
 
 		// Poll.
