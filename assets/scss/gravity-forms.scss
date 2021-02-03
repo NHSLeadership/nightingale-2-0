@@ -92,47 +92,112 @@
 		}
 	  }
 
-	  .gsurvey-survey-field {
-		.gsurvey-likert {
-		  .nhsuk-likert {
-			border: 1px solid $color_nhsuk-grey-2;
-			.nhsuk-likert__row {
-			  	border-top : 1px solid $color_nhsuk-grey-2;
-			  	@include clearfix();
-				&:nth-of-type(odd) {
-				  .nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
-					background-color : white;
-					margin-bottom: 0;
+	  @include mq($from : large-desktop) {
+		.gsurvey-survey-field {
+		  .gsurvey-likert {
+			.nhsuk-likert {
+			  border    : 1px solid $color_nhsuk-grey-2;
+			  margin    : 0 auto;
+			  max-width : 100%;
+
+			  .nhsuk-likert__row {
+				display          : flex; /* direction row by default, the cells will be side by side to start */
+				flex-direction   : row;
+				width            : 100%;
+				@include clearfix();
+				background-color : white;
+
+				.nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
+				  margin-bottom : 0;
+				}
+
+				.nhsuk-likert__rowlabel {
+				  font-weight : bold;
+				  padding     : nhsuk-spacing(4) nhsuk-spacing(3);
+				}
+
+				&.nhsuk-likert__header {
+				  .nhsuk-likert__item {
+					background  : $color_nhsuk-blue;
+					color       : $color_nhsuk-white;
+					border      : none;
+					font-weight : 700;
+					padding     : 0 nhsuk-spacing(3);
 				  }
 				}
-			  .nhsuk-likert__rowlabel {
-				float       : left;
-				font-weight : bold;
-				width: 15%;
-				padding: nhsuk-spacing(4) nhsuk-spacing(3);
+
+				&:nth-of-type(odd) {
+				  background : $color_nhsuk-grey-5;
+				}
+			  }
+
+			  .nhsuk-likert__item {
+				padding         : nhsuk-spacing(4) nhsuk-spacing(3);
+				margin-right    : 0;
+				display         : flex; /* yep, the cells can get flexbox layout too */
+				flex            : 1;
+				flex-direction  : column; /* each cell will have its content laid out vertically */
+				align-items     : center; /* centers content horizontally */
+				justify-content : center; /* centers content vertically */
+				border-left     : 1px solid $color_nhsuk-grey-4;
+
+				.nhsuk-radios__label {
+				  padding-left : 0;
+
+				  &:before {
+					top  : calc(50% - 20px);
+					left : calc(50% - 20px);
+				  }
+
+				  &:after {
+					top  : calc(50% - 10px);
+					left : calc(50% - 10px);
+					// absolute values as radio position changed so the active dot needs to be centred, unable to use nhsuk variables.
+				  }
+				}
+
+				&:last-of-type() {
+				  margin-right : 0;
+				}
+			  }
+
+			  &.nhsuk-likert__multi {
+				.nhsuk-likert__row {
+				  .nhsuk-likert__item:first-of-type() {
+					flex : 3;
+				  }
+				}
 			  }
 			}
 		  }
+		}
+	  }
+	  @include mq($until : large-desktop) {
+		.gsurvey-survey-field {
+		  .gsurvey-likert {
+			.nhsuk-likert {
+			  .nhsuk-likert__row {
+				@include clearfix();
+				padding: nhsuk-spacing(3) 0;
+				border-top: 1px solid $color_nhsuk-grey-4;
+				&.nhsuk-likert__header {
+				  display : none;
+				}
+				.nhsuk-likert__item {
+				  @include clearfix();
+				  .nhsuk-radios__label {
+					.nhsuk-u-visually-hidden {
+					  position: relative;
+					  clip: unset;
+					  clip-path: unset;
+					}
+				  }
+				  &.nhsuk-likert__rowlabel {
+					font-weight: 700;
 
-		  .nhsuk-radios__item {
-			padding      : nhsuk-spacing(7) nhsuk-spacing(3) 0 nhsuk-spacing(4);
-			margin-right : 0;
-
-			.nhsuk-radios__label {
-			  padding-left : nhsuk-spacing(2);
-
-			  &:before {
-				top  : nhsuk-spacing(2);
-				left : nhsuk-spacing(3);
+				  }
+				}
 			  }
-			  &:after {
-				top: 18px;
-				left: 26px;
-				// absolute values as radio position changed so the active dot needs to be centred, unable to use nhsuk variables.
-			  }
-			}
-			&:last-of-type() {
-			  margin-right: 0;
 			}
 		  }
 		}

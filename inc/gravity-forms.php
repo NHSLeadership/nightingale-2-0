@@ -219,12 +219,29 @@
 					$replace[]     = "<div class='nhsuk-checkboxes__item $1'><input $2 type='checkboxes' $3 class='nhsuk-checkboxes__input'><label class='nhsuk-label nhsuk-checkboxes__label' $4</label> </div>";
 					// likert sort out. This is messy.
 					// For accessibility add labels (for screen readers only) to survey radio buttons.
+				$likertlabel = '';
+				if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+					$likertlabel .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
+				}
+
+				if ( 1 === $errorflag ) {
+					$likertlabel .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
+				}
+				$likertlabel .= '<br/>';
 					$find[] = "#<label class='gfield_label'>(.*?)</label><div(.*?)><table class='gsurvey-likert'(.*?)><thead>(.*?)</thead><tbody>(.*?)</tbody></table></div>#"; // strip out all the table gunk.
-					$replace[] = "<fieldset class='gsurvey-likert nhsuk-fieldset'$2><legend class='nhsuk-fieldset__legend'>$1</legend><div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert'>$5</div></fieldset>"; // replace it with a much simpler div layout.
-					$find[] = "#<tr><td(.*?)class='gsurvey-likert-row-label'>(.*?)</td>(.*?)</tr>#";
+					$replace[] = "<fieldset class='gsurvey-likert nhsuk-fieldset'$2><legend class='nhsuk-fieldset__legend'>$1$likertlabel</legend><div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert'><div class='nhsuk-likert__row nhsuk-likert__header'>$4</div>$5</div></fieldset>"; // replace it with a much simpler div layout.
+					$find[] = "#<th(.*?)>(.*?)</th>#";
+					$replace[] = "<div class='nhsuk-radios__item nhsuk-likert__item'>$2</div>";
+					$find[] = "#<div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert'>(.*?)<tr><td(.*?)class='gsurvey-likert-row-label'>(.*?)</td>(.*?)</tr></div>#"; // identify multi row tables.
+					$replace[] = "<div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert nhsuk-likert__multi'>$1<tr><td$2 class='gsurvey-likert-row-label'>$3</td>$4</tr></div>";
+					$find[] = "#<tr><td(.*?)class='gsurvey-likert-row-label'>(.*?)</td>(.*?)</tr>#"; // modify multi row grids.
 					$replace[] = "<div class='nhsuk-likert__row'$1><div class='nhsuk-likert__item nhsuk-likert__rowlabel'>$2</div>$3</div>";
+					$find[] = "#<tr>(.*?)</tr>#"; // now mop up the single row grids.
+					$replace[] = "<div class='nhsuk-likert__row'>$1</div>";
+
 					$find[] = "#<td data-label='(.*?)' class='gsurvey-likert-choice'><input name='(.*?)' type='radio' value='(.*?)'id='(.*?)'/></td>#"; // we just have to pull out the td's now.
-					$replace[] = "<div data-label='$1' class='nhsuk-radios__item nhsuk-likert__item'><input name='$2' class='nhsuk-radios__input' type='radio' value='$3' id='$4'/><label class='nhsuk-label nhsuk-radios__label' for='$4'>$1</label></div>"; // and turn them into pretty divs with nhsuk-radios.
+					$replace[] = "<div data-label='$1' class='nhsuk-radios__item nhsuk-likert__item'><input name='$2' class='nhsuk-radios__input' type='radio' value='$3' id='$4'/><label class='nhsuk-label nhsuk-radios__label' for='$4'><span class='nhsuk-u-visually-hidden'>$1</span></label></div>"; // and turn them into pretty divs with nhsuk-radios.
+
 					$field_content = preg_replace( $find, $replace, $field_content );
 					break;
 				// Name inputs.
