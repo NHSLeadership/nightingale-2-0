@@ -52,11 +52,6 @@
 			2
 		);
 
-		return $form_string;
-	},
-	10,
-	2
-);
 // Use gform_field_content to style individual fields.
 // See https://docs.gravityforms.com/gform_field_content.
 add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 10, 2 );
@@ -107,7 +102,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 				$field_content = str_replace( "type='text' value='' class='", "type='text' value='' class='nhsuk-input ", $field_content );
 			}
 			break;
-      
+
 		// Date inputs.
 		case 'date':
 			if ( 1 === $errorflag ) {
@@ -116,7 +111,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 				$field_content = str_replace( "type='text' value='' class='", "type='text' value='' class='nhsuk-input nhsuk-input--width-5 ", $field_content );
 			}
 			break;
-      
+
 		// Web address inputs.
 		case 'website':
 			if ( 1 === $errorflag ) {
@@ -262,7 +257,6 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 					$replace[] = "<div data-label='$1' class='nhsuk-radios__item nhsuk-likert__item'><input name='$2' class='nhsuk-radios__input' type='radio' value='$3' id='$4'/><label class='nhsuk-label nhsuk-radios__label' for='$4'><span class='nhsuk-u-visually-hidden'>$1</span></label></div>"; // and turn them into pretty divs with nhsuk-radios.
 
 					$field_content = preg_replace( $find, $replace, $field_content );
-			$field_content = preg_replace( $find, $replace, $field_content );
 			break;
 		// Name inputs.
 		case 'name':
