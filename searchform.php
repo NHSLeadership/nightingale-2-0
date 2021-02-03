@@ -32,7 +32,14 @@ if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
 	$search_form   = 'id=search' . $searchid . '';
 	$search_field  = 'search-field' . $searchid;
 }
-
+/*
+ * The nhsuk library does a call home to nhs.funnelback.co.uk to provide search suggestions from nhs.uk website.
+ * We dont want that happening. Currently the only disabling is to manually rework nhsuk.js.min to remove the callback.
+ * Line 1231 to line 1240 deletion seems to complete this (as of Feb 3rd 2021) of nhsuk.js, then minify this file.
+ * @todo A more robust method of disabling this function. Recorded in Jira as
+ * https://nhsleadership.atlassian.net/browse/DI-2912, recorded as an issue with nhsuk as
+ * https://github.com/nhsuk/nhsuk-frontend/issues/568
+ */
 ?>
 <button class="nhsuk-header__search-toggle" <?php echo esc_attr( $toggle_search ); ?> aria-controls="search" aria-label="Open search" aria-expanded="false">
 	<svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
