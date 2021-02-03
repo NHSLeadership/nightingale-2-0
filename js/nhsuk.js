@@ -1228,16 +1228,7 @@
 		var t = e.length > 36 ? "..." : "", n = e.substring(0, 36) + t;
 		return '\n    <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path></svg>\n    <a href="https://www.nhs.uk/search?collection=nhs-meta&query='.concat(e, '">\n      ').concat(n, "\n    </a>\n  ")
 	}, s = function (e, t) {
-		var n = "".concat("https://nhs.funnelback.co.uk/s/suggest.json", "?collection=nhs-meta&partial_query=").concat(e, "&sort=0&fmt=json++&profile=&show=").concat(10),
-			r = new XMLHttpRequest;
-		r.open("GET", n), r.onload = function () {
-			if (200 === r.status) {
-				var e = JSON.parse(r.responseText).map((function (e) {
-					return e.disp
-				}));
-				t(e)
-			}
-		}, r.send()
+
 	}, c = function (e, t) {
 		if (e && t) {
 			var n = e, r = e.className, o = new RegExp("\\b ".concat(t, "\\b"));
