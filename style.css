@@ -12120,6 +12120,11 @@ button + .button {
   left: 16px;
 }
 
+.gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item .nhsuk-radios__label:after, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__label:after, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li .nhsuk-radios__label:after, .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item label:after, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li label:after, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li label:after {
+  top: 18px;
+  left: 26px;
+}
+
 .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-radios__item:last-of-type, .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .tingle-modal-box .ginput_container_radio .gfield_radio li:last-of-type, .tingle-modal-box .ginput_container_radio .gfield_radio .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert li:last-of-type {
   margin-right: 0;
 }

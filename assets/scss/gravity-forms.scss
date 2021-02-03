@@ -125,6 +125,11 @@
 				top  : nhsuk-spacing(2);
 				left : nhsuk-spacing(3);
 			  }
+			  &:after {
+				top: 18px;
+				left: 26px;
+				// absolute values as radio position changed so the active dot needs to be centred, unable to use nhsuk variables.
+			  }
 			}
 			&:last-of-type() {
 			  margin-right: 0;
