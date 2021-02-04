@@ -10,49 +10,48 @@
  * @package      Nightingale Theme
  */
 
-add_filter(
-	'gform_get_form_filter',
-	function ( $form_string, $form ) {
-		// Replace form description span with <nhsuk-hint> elements.
-		$form_string = preg_replace( "#<span class='gform_description'>(.*?)</span>#", '<span class="nhsuk-hint">$1</span>', $form_string );
-		// Style error messages.
-		// Message at top of form.
-		$form_string = str_replace( 'validation_error', 'nhsuk-error-message is-error', $form_string );
-		// Fields with CSS class = "gfield_error".
-		$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
-		// Fields contained in <li> elements that have CSS class = "gfield_error".
-		$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );
-		// Error messages below fields.
-		$form_string = str_replace( 'validation_message', 'nhsuk-u-visually-hidden validation_message', $form_string );
-		// Style <ul>.
-		$form_string = str_replace( "class='gform_fields", "class='c-form-list gform_fields", $form_string );
-		// Replace <h3> with <h2>.
-		$form_string = str_replace( '<h3', '<h2', $form_string );
-		$form_string = str_replace( '/h3>', '/h2>', $form_string );
-		// Replace field description divs with <small> elements.
-		$form_string = preg_replace( "#<div class='gfield_description'(.*?)</div>#", "<span class='nhsuk-hint'$1</span>", $form_string );
-		// Replace field instruction divs with <small> elements.
-		$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
-		// Remove "required" tag as NHSUK Service Manual recommends highlighting optional fields instead.
-		$form_string = str_replace( "<span class='gfield_required'>*</span>", '', $form_string );
-		// Replace main gfield_label elements with nhsuk-label.
-		$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
-		// Remove <ul>s around elements.
-		$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );
-		// Add nhsuk-form-group to form <li> elements.
-		$form_string = preg_replace( "#<li(.*?)field_(.*?)class='(.*?)#m", "<li$1field_$2class='nhsuk-form-group $3", $form_string );
-		// Style the submit button.
-		$form_string = str_replace( 'gform_button', 'nhsuk-button gform_button', $form_string );
-		// Style the save and continue functionality.
-		$form_string = preg_replace( "#<a (.*?)class='gform_save_link' (.*?)</a>#", "<a $1 class='nhsuk-button nhsuk-button--secondary gform_save_link' $2</a>", $form_string );
-		// For accessibility add labels (for screen readers only) to survey radio buttons.
-		$form_string = preg_replace( "#<td data-label='(.*?)' class='gsurvey-likert-choice'><input name='(.*?)' type='radio' value='(.*?)'id='(.*?)'/></td>#", "<td data-label='$1' class='gsurvey-likert-choice'><label class='nhsuk-u-visually-hidden' for='$4'>$1</label><input name='$2' type='radio' value='$3' id='$4'/></td>", $form_string );
 
-		return $form_string;
-	},
-	10,
-	2
-);
+		add_filter(
+			'gform_get_form_filter',
+			function ( $form_string, $form ) {
+				// Replace form description span with <nhsuk-hint> elements.
+				$form_string = preg_replace( "#<span class='gform_description'>(.*?)</span>#", '<span class="nhsuk-hint">$1</span>', $form_string );
+				// Style error messages.
+				// Message at top of form.
+				$form_string = str_replace( 'validation_error', 'nhsuk-error-message is-error', $form_string );
+				// Fields with CSS class = "gfield_error".
+				$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
+				// Fields contained in <li> elements that have CSS class = "gfield_error".
+				$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );
+				// Error messages below fields.
+				$form_string = str_replace( 'validation_message', 'nhsuk-u-visually-hidden validation_message', $form_string );
+				// Style <ul>.
+				$form_string = str_replace( "class='gform_fields", "class='c-form-list gform_fields", $form_string );
+				// Replace <h3> with <h2>.
+				$form_string = str_replace( '<h3', '<h2', $form_string );
+				$form_string = str_replace( '/h3>', '/h2>', $form_string );
+				// Replace field description divs with <small> elements.
+				$form_string = preg_replace( "#<div class='gfield_description'(.*?)</div>#", "<span class='nhsuk-hint'$1</span>", $form_string );
+				// Replace field instruction divs with <small> elements.
+				$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
+				// Remove "required" tag NHSUK Service manual insted recommends highlighting optional fields, which is done elsewhere.
+				$form_string = str_replace( "<span class='gfield_required'>*</span>", '', $form_string );
+				// Replace main gfield_label elements with nhsuk-label.
+				$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
+				// Remove <ul>s around elements.
+				$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );
+				// Add nhsuk-form-group to form <li> elements.
+				$form_string = preg_replace( "#<li(.*?)field_(.*?)class='(.*?)#m", "<li$1field_$2class='nhsuk-form-group $3", $form_string );
+				// Style the submit button.
+				$form_string = str_replace( 'gform_button', 'nhsuk-button gform_button', $form_string );
+				// Style the save and continue functionality.
+				$form_string = preg_replace( "#<a (.*?)class='gform_save_link' (.*?)</a>#", "<a $1 class='nhsuk-button nhsuk-button--secondary gform_save_link' $2</a>", $form_string );
+				return $form_string;
+			},
+			10,
+			2
+		);
+
 // Use gform_field_content to style individual fields.
 // See https://docs.gravityforms.com/gform_field_content.
 add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 10, 2 );
@@ -74,7 +73,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		$grouperror = '';
 	}
 	$label = '';
-	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'radio' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+	if ( ( 'html' !== $field->type ) && ( 'section' !== $field->type ) && ( 'radio' !== $field->type ) && ( 'address' !== $field->type ) && ( 'hidden_label' !== $field->labelPlacement )  && ( empty( $field->gsurveyLikertRows) ) ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		$label .= '<label for="input_' . $field->formId . '_' . $field->id . '" class="nhsuk-label">' . $field->label; // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 			$label .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
@@ -103,6 +102,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 				$field_content = str_replace( "type='text' value='' class='", "type='text' value='' class='nhsuk-input ", $field_content );
 			}
 			break;
+
 		// Date inputs.
 		case 'date':
 			if ( 1 === $errorflag ) {
@@ -111,6 +111,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 				$field_content = str_replace( "type='text' value='' class='", "type='text' value='' class='nhsuk-input nhsuk-input--width-5 ", $field_content );
 			}
 			break;
+
 		// Web address inputs.
 		case 'website':
 			if ( 1 === $errorflag ) {
@@ -231,7 +232,31 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			$find []       = "#<li class='(.*?)'><input(.*?)type='checkbox'(.*?)><label(.*?)</label></li>#i";
 			$replace[]     = "<div class='nhsuk-checkboxes__item $1'><input $2 type='checkboxes' $3 class='nhsuk-checkboxes__input'><label class='nhsuk-label nhsuk-checkboxes__label' $4</label> </div>";
 			// likert sort out. This is messy.
-			$field_content = preg_replace( $find, $replace, $field_content );
+					// For accessibility add labels (for screen readers only) to survey radio buttons.
+				$likertlabel = '';
+				if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+					$likertlabel .= '&nbsp;&nbsp;<span class="nhsuk-tag">Optional</span>';
+				}
+
+				if ( 1 === $errorflag ) {
+					$likertlabel .= '<span class="nhsuk-error-message">' . $field->validation_message . '</span>';
+				}
+				$likertlabel .= '<br/>';
+					$find[] = "#<label class='gfield_label'>(.*?)</label><div(.*?)><table class='gsurvey-likert'(.*?)><thead>(.*?)</thead><tbody>(.*?)</tbody></table></div>#"; // strip out all the table gunk.
+					$replace[] = "<fieldset class='gsurvey-likert nhsuk-fieldset'$2><legend class='nhsuk-fieldset__legend'>$1$likertlabel</legend><div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert'><div class='nhsuk-likert__row nhsuk-likert__header'>$4</div>$5</div></fieldset>"; // replace it with a much simpler div layout.
+					$find[] = "#<th(.*?)>(.*?)</th>#";
+					$replace[] = "<div class='nhsuk-radios__item nhsuk-likert__item'>$2</div>";
+					$find[] = "#<div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert'>(.*?)<tr><td(.*?)class='gsurvey-likert-row-label'>(.*?)</td>(.*?)</tr></div>#"; // identify multi row tables.
+					$replace[] = "<div class='nhsuk-radios nhsuk-radios--inline nhsuk-likert nhsuk-likert__multi'>$1<tr><td$2 class='gsurvey-likert-row-label'>$3</td>$4</tr></div>";
+					$find[] = "#<tr><td(.*?)class='gsurvey-likert-row-label'>(.*?)</td>(.*?)</tr>#"; // modify multi row grids.
+					$replace[] = "<div class='nhsuk-likert__row'$1><div class='nhsuk-likert__item nhsuk-likert__rowlabel'>$2</div>$3</div>";
+					$find[] = "#<tr>(.*?)</tr>#"; // now mop up the single row grids.
+					$replace[] = "<div class='nhsuk-likert__row'>$1</div>";
+
+					$find[] = "#<td data-label='(.*?)' class='gsurvey-likert-choice'><input name='(.*?)' type='radio' value='(.*?)'id='(.*?)'/></td>#"; // we just have to pull out the td's now.
+					$replace[] = "<div data-label='$1' class='nhsuk-radios__item nhsuk-likert__item'><input name='$2' class='nhsuk-radios__input' type='radio' value='$3' id='$4'/><label class='nhsuk-label nhsuk-radios__label' for='$4'><span class='nhsuk-u-visually-hidden'>$1</span></label></div>"; // and turn them into pretty divs with nhsuk-radios.
+
+					$field_content = preg_replace( $find, $replace, $field_content );
 			break;
 		// Name inputs.
 		case 'name':
@@ -292,6 +317,7 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			$field_content = preg_replace( '/<tr bgcolor="\#EAF2FA"(.*?)<\/tr>/si', '<div class="nhsuk-summary-list__row"><dt class="nhsuk-summary-list__key"$1</dt>', $field_content );
 			$field_content = preg_replace( '/<tr bgcolor="\#FFFFFF"(.*?)<\/tr>/si', '<dd class="nhsuk-summary-list__value"$1</dd></div>', $field_content );
 			$field_content = preg_replace( '/<td width="20">&nbsp;<\/td>/si', '', $field_content );
+
 
 			$field_content = preg_replace( '/<td(.*?)>(.*?)<\/td>/si', '$2', $field_content );
 			$field_content = preg_replace( '/<font style="font-family: sans-serif; font-size:12px;">(.*?)<\/font>/si', '$1', $field_content );
