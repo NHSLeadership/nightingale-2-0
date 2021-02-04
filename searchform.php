@@ -32,6 +32,7 @@ if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
 	$search_form   = 'id=search' . $searchid . '';
 	$search_field  = 'search-field' . $searchid;
 }
+
 /*
  * The nhsuk library does a call home to nhs.funnelback.co.uk to provide search suggestions from nhs.uk website.
  * We dont want that happening. Currently the only disabling is to manually rework nhsuk.js.min to remove the callback.
