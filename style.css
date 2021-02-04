@@ -12145,6 +12145,7 @@ button + .button {
   }
   .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert.nhsuk-likert__multi .nhsuk-likert__row .nhsuk-likert__item:first-of-type {
     flex: 3;
+    min-width: 250px;
   }
 }
 
