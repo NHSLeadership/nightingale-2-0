@@ -1,25 +1,23 @@
 <?php
 /**
  * Generate breadcrumbs
- *
  * Get path to current page and leave breacrumb trail for users to navigate back up the decision tree
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/
- *
- * @package Nightingale
+ * @link      https://developer.wordpress.org/themes/basics/template-files/
+ * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 21st August 2019
+ * @version   1.1 21st August 2019
  */
 
 /**
  *  Create the breadcrumb
  *
- * @param int     $id Post id of the page being queried.
- * @param boolean $link Should current page be linked or not.
+ * @param int     $id        Post id of the page being queried.
+ * @param boolean $link      Should current page be linked or not.
  * @param string  $separator Add any fancy separators.
- * @param string  $nicename Clean up the name or not.
- * @param array   $visited Has this page been visited.
- * @param boolean $iscrumb Is this to be added to the breadcrumb.
+ * @param string  $nicename  Clean up the name or not.
+ * @param array   $visited   Has this page been visited.
+ * @param boolean $iscrumb   Is this to be added to the breadcrumb.
  *
  * @return array  $chain
  */
@@ -45,6 +43,7 @@ function nightingale_category_parents( $id, $link = false, $separator = '', $nic
 	} else {
 		$chain .= '<li class="nhsuk-breadcrumb__item">' . $name . $separator . '</li>';
 	}
+
 	return $chain;
 }
 
@@ -87,9 +86,9 @@ function nightingale_breadcrumb() {
 	if ( true === nightingale_uncanny_breadcrumb_check() ) {
 		$breadcrumbs = uo_breadcrumbs( false );
 	} else {
-		$back_one_level = empty( $back_one_level ) ? array( esc_url( home_url() ), __( 'Home', 'nightingale' ) ) : $back_one_level;
+		$back_one_level                 = empty( $back_one_level ) ? array( esc_url( home_url() ), __( 'Home', 'nightingale' ) ) : $back_one_level;
 		list( $trail, $back_one_level ) = nightingale_breadcrumb_trail();
-		$breadcrumbs = sprintf(
+		$breadcrumbs                    = sprintf(
 			'<ol class="nhsuk-breadcrumb__list"><li class="nhsuk-breadcrumb__item"><a href="%2$s">%3$s</a></li>%1$s</ol>',
 			$trail,
 			esc_url( home_url() ),
@@ -121,6 +120,7 @@ function nightingale_breadcrumb() {
 	);
 
 	$output = ob_get_clean();
+
 	return $output;
 }
 
@@ -174,7 +174,7 @@ function nightingale_breadcrumb_trail() {
 			$home_page = get_option( 'page_on_front' );
 			foreach ( $ancestors as $ancestor ) {
 				if ( ( end( $ancestors ) !== $ancestor ) && ( ( $home_page !== $ancestor ) ) ) {
-					$trail .= '<li class="nhsuk-breadcrumb__item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</span></a></li>';
+					$trail         .= '<li class="nhsuk-breadcrumb__item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</span></a></li>';
 					$back_one_level = array(
 						esc_url( get_permalink( $ancestor ) ),
 						wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ),
@@ -189,5 +189,6 @@ function nightingale_breadcrumb_trail() {
 	if ( ! ( is_archive() || is_category() || is_post_type_archive() || is_search() || is_404() || is_singular( 'tribe_events' ) ) ) {
 		$trail .= '<li class="nhsuk-breadcrumb__item current">' . esc_html( get_the_title() ) . '</li>';
 	}
+
 	return array( apply_filters( 'nightingale_modify_breadcrumb', $trail ), $back_one_level );
 }

@@ -43,25 +43,34 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
  = 2.3.1 =
- Accessibility Improvements:
-* Multiple contrast issues addressed, especially in plugin compatability (Gravity Forms, The Events Calendar, LearnDash
-  in particular)
-* Keyboard navigation improvements to all screens
-* Screen reader enhancements added to multiple posts view, header component and to footer region
-* Mobile navigation focus enhanecement for visually impaired users
-* form and search input field focus effect amended to use both yellow and black so contrast is maintained regardless of
-background colour
-
-Base library upgraded to NHSUK Frontend 4.1 (https://github.com/nhsuk/nhsuk-frontend/blob/v4.1.0/)
-
-Functional improvements:
-* new thumbnails added for theme to create square images. Optional on blog listing pages to then use these for
+* Accessibility Improvements:
+  * Multiple contrast issues addressed, especially in plugin compatability (Gravity Forms, The Events Calendar,
+  LearnDash in particular)
+  * Aria roles corrected
+  * Keyboard navigation improvements to all screens
+  * Screen reader enhancements added to multiple posts view, header component and to footer region
+  * Mobile navigation focus enhanecement for visually impaired users
+  * form and search input field focus effect amended to use both yellow and black so contrast is maintained regardless
+  of background colour
+* Base library upgraded to NHSUK Frontend 4.1 (https://github.com/nhsuk/nhsuk-frontend/blob/v4.1.0/)
+* Logo / site title hover effect remedied to be in line with nhsuk framework
+* Improvements to IE10/11 support
+* Search improvements - particularly on mobile where clicking to open search now focuses inside the search box.
+* Various improvements to Gravity Forms integration:
+  * Likert icon modified to match rest of radio displays (also improves contrast and accessibility)
+  * Likert display modified from tables to divs to be more responsive
+  * Likert labels next to each option as screen reader assists
+  * Radios - label modified to legend and bought inside fieldset
+* Security tweaks:
+  * Author name hidden in rss feeds to reduce chance of enumeration
+  * Login hint messages modified to not reveal whether a username already exists
+* Functional improvements:
+  * new thumbnails added for theme to create square images. Optional on blog listing pages to then use these for
 consistent sizing of blocks (default is to use standard image, but optional to amend to the new square layout)
-* Multiple Gravity Forms layout improvements
-* Learndash grid view added to theme (this only impacts if you have both LearnDash and LearnDash grid view plugins)
-* Fix to nhsuk-card--clickable component so the whole region is selectable and clickable (also accessibility improvement
- so when keyboard navigating, the whole region is indicated as selected)
-
+  * Multiple Gravity Forms layout improvements
+  * Learndash grid view added to theme (this only impacts if you have both LearnDash and LearnDash grid view plugins)
+  * Fix to nhsuk-card--clickable component so the whole region is selectable and clickable (also accessibility
+ improvement so when keyboard navigating, the whole region is indicated as selected)
 
  = 2.3.0.1 =
  Bugfix release:
