@@ -211,7 +211,7 @@ function nightingale_clean_bad_content( $b_print = false ) {
  * @param array $catout     - array of categories in the block setup if it is set to specifics.
  */
 function nightingale_latest_posts_category_filter( $catcount, $categories, $catout = array() ) {
-	$postfilter = wp_unslash( $_POST['cat_filter'] ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+	$postfilter = wp_unslash( isset( $_POST['cat_filter'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	if ( ( $catcount > 1 ) || ( empty( $categories ) ) ) : // there is more than one category, or _all_ categories are available.
 		echo '<div class="nhsuk-width-container nhsuk-cat-filter"><span style="float: right;"><form action="" method="post">';
 		echo '<label class="nhsuk-u-visually-hidden" for="cat_filter">' . esc_html__( 'Filter the posts you can see', 'nightingale' ) . '</label>';

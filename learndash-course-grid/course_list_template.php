@@ -14,8 +14,6 @@ $col   = is_float( $col ) ? number_format( $col, 1 ) : $col;
 $col   = str_replace( '.', '-', $col );
 
 global $post;
-// $post_id = $post->ID; - we shouldn't be over-riding wp global assignment here, so commented out to test.
-
 $course_id = $post->ID;
 $user_id   = get_current_user_id();
 
@@ -41,10 +39,10 @@ if ( isset( $shortcode_atts['course_id'] ) ) {
 	$button_link = get_permalink();
 }
 
-$button_link = apply_filters( 'learndash_course_grid_custom_button_link', $button_link, $post_id );
+$button_link = apply_filters( 'learndash_course_grid_custom_button_link', $button_link, $course_id );
 
 $button_text = isset( $button_text ) && ! empty( $button_text ) ? $button_text : __( 'Explore ', 'nightingale' );
-$button_text = apply_filters( 'learndash_course_grid_custom_button_text', $button_text, $post_id );
+$button_text = apply_filters( 'learndash_course_grid_custom_button_text', $button_text, $course_id );
 
 $options          = get_option( 'sfwd_cpt_options' );
 $currency_setting = class_exists( 'LearnDash_Settings_Section' ) ? LearnDash_Settings_Section::get_section_setting( 'LearnDash_Settings_Section_PayPal', 'paypal_currency' ) : null;
@@ -71,7 +69,7 @@ if ( class_exists( 'NumberFormatter' ) ) {
  */
 $currency = apply_filters( 'learndash_course_grid_currency', $currency, $course_id );
 
-$course_options           = get_post_meta( $post_id, '_sfwd-courses', true );
+$course_options           = get_post_meta( $course_id, '_sfwd-courses', true );
 $legacy_short_description = isset( $course_options['sfwd-courses_course_short_description'] ) ? $course_options['sfwd-courses_course_short_description'] : '';
 // For LD >= 3.0.
 if ( function_exists( 'learndash_get_course_price' ) ) {
