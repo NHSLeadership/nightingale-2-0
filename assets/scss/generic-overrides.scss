@@ -300,6 +300,12 @@
   }
 }
 
+@media (min-width : 40.0525em) {
+  .nhsuk-header__search-wrap, body.buddypress #buddypress .group-invites-search {
+	display : inline-block;
+  }
+}
+
 // fix middle of three blocks so it is the same width as outside blocks.
 .nhsuk-grid-row {
   &.nhsuk-width-restrict {

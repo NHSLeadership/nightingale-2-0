@@ -45,6 +45,7 @@ $args     = array(
 	'paged'               => $archive_paged,
 );
 $catcount = 0;
+$catout   = array();
 if ( ( isset( $categories ) ) && ( ! empty( $categories ) ) ) {
 	foreach ( $categories as $cattmp ) {
 		$catout[] = $cattmp['id'];
@@ -117,7 +118,7 @@ if ( $the_query->have_posts() ) :
 			if ( ! is_single() && ( $nextpage <= $the_query->max_num_pages ) && ( 1 !== $the_query->max_num_pages ) ) {
 				?>
 				<li class="nhsuk-pagination-item--next">
-					<a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="<?php echo esc_html( next_posts( $max_page, false ) ); ?>">
+					<a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="<?php echo esc_html( next_posts( $the_query->max_num_pages, false ) ); ?>">
 						<span class="nhsuk-pagination__title"><?php esc_html_e( 'Next', 'nightingale' ); ?></span>
 						<span class="nhsuk-u-visually-hidden">:</span>
 						<span class="nhsuk-pagination__page"><?php echo esc_html( $nexttext ); ?></span>

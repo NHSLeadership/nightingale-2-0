@@ -8,7 +8,7 @@
   @extend .nhsuk-button--secondary;
 }
 
-.nhsuk-button.is-style-reverse, a.nhsuk-button.is-style-reverse { /* reverse button style*/
+.nhsuk-button.is-style-reverse { /* reverse button style*/
   @extend .nhsuk-button--reverse;
 }
 
@@ -30,6 +30,7 @@
 .nhsuk-care-card.nhsuk-care-card--type.is-style-warning-callout { /* Warning Callout */
 
   background-color: $color_nhsuk-pale-yellow;
+  border: 1px solid $color_nhsuk-yellow;
 
   .nhsuk-care-card__heading-container{
     background-color: $color_nhsuk-yellow;
@@ -56,6 +57,7 @@
   .nhsuk-care-card__content{
     background-color: $color_nhsuk-pale-yellow;
     padding-top: 0;
+    border: none;
   }
 }
 
@@ -65,30 +67,7 @@
     margin: 0 !important;
   }
 }
-/*panel extension*/
-.nhsuk-panel.is-style-panel-grey {
-  @extend .nhsuk-card;
-  background: $color_nhsuk-light-grey
-}
 
-.nhsuk-panel.is-style-panel-with-label {
-  @extend .nhsuk-do-dont-list;
-
-  h3, h3 .rich-text {
-    @extend .nhsuk-do-dont-list__label
-  }
-}
-
-/* promo extension */
-.nhsuk-promo.is-style-promo-small {
-  @extend .nhsuk-card;
-}
-
-.nhsuk-promo {
-  figure {
-    margin: 0;
-  }
-}
 
 /*do and dont list extension*/
 .nhsuk-do-dont-list {
@@ -110,26 +89,11 @@
   }
 }
 
-.wp-block-nhsblocks-panel1 {
-  .paneltext {
-    display: flow-root;
-  }
-}
 
-// fix for ever diminishing panels
-.wp-block-nhsblocks-rowgroup {
-  .nhsuk-panel-group {
-    padding: 0;
-  }
-}
 
 
 .nhsuk-hero__overlay {
   margin-bottom: 50px;
-  .nhsuk-width-container {
-    padding-left: nhsuk-spacing(4);
-    padding-right: nhsuk-spacing(4);
-  }
   .nhsuk-grid-column-two-thirds {
     padding: 0;
   }
@@ -140,11 +104,36 @@
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  max-width: 100%;
+  max-width: 100vw;
   position: relative;
   right: 50%;
   width: 100vw;
-  .wp-block-nhsblocks-heroinner {
-    margin-left: -8px;
+}
+
+// new card variations
+.nhsuk-card {
+  .nhsuk-card__description {
+    display: flow-root;
+  }
+}
+.nhsuk-card.is-style-panel-with-label {
+  @extend .nhsuk-card--feature;
+  .nhsuk-card__content {
+    @extend .nhsuk-card__content--feature;
+
+    h2 {
+      @extend .nhsuk-card__heading;
+      @extend .nhsuk-card__heading--feature;
+      @extend .nhsuk-heading-m;
+    }
+  }
+}
+.nhsuk-card.is-style-panel-grey {
+  background: inherit;
+  border: none;
+}
+.nhsuk-card {
+  figure {
+    margin: 0;
   }
 }

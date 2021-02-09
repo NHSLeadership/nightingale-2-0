@@ -42,6 +42,15 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+ = 2.3.1.2 =
+ * bugfix release:
+   * removed various warnings triggered by unchecked values
+   * removed console.log bugfixing statements
+   * corrected minor issues with plugin compatability files
+   * fixed $back_one_level when used with uncanny toolkit breadcrumbs
+   * fixed header search bug in safari
+
  = 2.3.1 =
 * Accessibility Improvements:
   * Multiple contrast issues addressed, especially in plugin compatability (Gravity Forms, The Events Calendar,
