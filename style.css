@@ -11019,6 +11019,12 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   }
 }
 
+@media (min-width: 40.0525em) {
+  .nhsuk-header__search-wrap, body.buddypress #buddypress .group-invites-search {
+    display: inline-block;
+  }
+}
+
 .nhsuk-grid-row.nhsuk-width-restrict, .tribe-common .nhsuk-width-restrict.nhsuk-card-group.nhsuk-grid-row, .tribe-common .nhsuk-width-restrict.nhsuk-grid-row.ld-course-list-items {
   margin-left: 0;
   margin-right: 0;
@@ -13503,7 +13509,7 @@ ul.download-versions {
   width: 100%;
 }
 
-.nhsuk-care-card .nhsuk-care-card-content, .learndash-wrapper .ld-table-list .nhsuk-care-card-content {
+.nhsuk-care-card .nhsuk-care-card__content, .learndash-wrapper .ld-table-list .nhsuk-care-card__content {
   overflow: auto;
 }
 
@@ -13835,7 +13841,7 @@ input.is-style-reverse[type="submit"], #content a.is-style-reverse.wp-block-butt
 }
 
 /* Inset text inverted link amendment */
-.nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a {
+.nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a {
   color: #ffffff;
   font-weight: 700;
 }

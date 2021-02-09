@@ -49,6 +49,7 @@ one level only. To show further levels, we recommend using the right (or left) h
    * removed console.log bugfixing statements
    * corrected minor issues with plugin compatability files
    * fixed $back_one_level when used with uncanny toolkit breadcrumbs
+   * fixed header search bug in safari
 
  = 2.3.1 =
 * Accessibility Improvements:

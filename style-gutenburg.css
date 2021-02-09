@@ -16221,6 +16221,12 @@
   }
 }
 
+@media (min-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-header__search-wrap, .edit-post-visual-editor body.buddypress #buddypress .group-invites-search, .block-editor-block-styles .nhsuk-header__search-wrap, .block-editor-block-styles body.buddypress #buddypress .group-invites-search, .block-editor-inserter__menu-help-panel .nhsuk-header__search-wrap, .block-editor-inserter__menu-help-panel body.buddypress #buddypress .group-invites-search {
+    display: inline-block;
+  }
+}
+
 .edit-post-visual-editor .nhsuk-grid-row.nhsuk-width-restrict, .block-editor-block-styles .nhsuk-grid-row.nhsuk-width-restrict, .block-editor-inserter__menu-help-panel .nhsuk-grid-row.nhsuk-width-restrict {
   margin-left: 0;
   margin-right: 0;
@@ -16493,7 +16499,7 @@
   width: 100%;
 }
 
-.edit-post-visual-editor .nhsuk-care-card .nhsuk-care-card-content, .block-editor-block-styles .nhsuk-care-card .nhsuk-care-card-content, .block-editor-inserter__menu-help-panel .nhsuk-care-card .nhsuk-care-card-content {
+.edit-post-visual-editor .nhsuk-care-card .nhsuk-care-card__content, .block-editor-block-styles .nhsuk-care-card .nhsuk-care-card__content, .block-editor-inserter__menu-help-panel .nhsuk-care-card .nhsuk-care-card__content {
   overflow: auto;
 }
 
@@ -16900,7 +16906,7 @@
   height: 34px;
 }
 
-.edit-post-visual-editor .nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a, .block-editor-block-styles .nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a, .block-editor-inserter__menu-help-panel .nhsuk-inset-text is-style-quote-reverse .nhsuk-inset-text__quote a {
+.edit-post-visual-editor .nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a, .block-editor-block-styles .nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a, .block-editor-inserter__menu-help-panel .nhsuk-inset-text .is-style-quote-reverse .nhsuk-inset-text__quote a {
   color: #ffffff;
   font-weight: 700;
 }
