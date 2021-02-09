@@ -17,7 +17,6 @@ function nightingale_cookie_footer() {
 				if ( ( cookieBlock ) ) { 
 					matches = cookieBlock.matches ? cookieBlock.matches('#cookie-notice') : cookieBlock.msMatchesSelector('#cookie-notice');
 					if ( matches === true ) {
-						console.log('got to here didnt we');
 						const bodyWrapper = document.querySelector( 'body' );
 						const headerContent = document.querySelector( '.nhsuk-header' );
 						bodyWrapper.insertBefore( cookieBlock, headerContent );
