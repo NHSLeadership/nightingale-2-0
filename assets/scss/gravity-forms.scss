@@ -342,6 +342,11 @@
 
   .gform_page_footer {
 	padding-top : nhsuk-spacing(5) !important;
+	a.gform_save_link {
+	  float: left;
+	  margin-left: 0;
+	  margin-right: nhsuk-spacing(4);
+	}
   }
 
   #ui-datepicker-div {
