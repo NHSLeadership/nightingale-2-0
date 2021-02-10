@@ -12195,6 +12195,12 @@ button + .button {
   padding-top: 32px !important;
 }
 
+.gform_wrapper .gform_page_footer a.gform_save_link {
+  float: left;
+  margin-left: 0;
+  margin-right: 24px;
+}
+
 .gform_wrapper #ui-datepicker-div {
   border: 2px solid #005eb8;
   border-radius: 4px;
