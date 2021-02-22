@@ -469,11 +469,11 @@
   padding    : nhsuk-spacing(1);
 }
 
-.gf-all-fields { // style up the all-fields summary to look like it should. This is a sleight of hand.
+.gf-all-fields { // style up the all-fields summary to look like it should.
   @extend .nhsuk-summary-list;
   li {
 	&.field-type-section {
-	  background-color: $color_nhsuk-white; // !important required to over ride plugin genertaed inline styling.
+	  background-color: $color_nhsuk-white;
 	  text-align: center;
 
 	  span:empty {
