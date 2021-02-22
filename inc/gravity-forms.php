@@ -308,20 +308,6 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 			$field_content = str_replace( "type='checkbox'", "type='checkbox' class='nhsuk-checkboxes__input'", $field_content );
 			$field_content = '<div class="nhsuk_checkboxes">' . $field_content . '</div>';
 			break;
-		case 'html':
-			// style the submission preview screen.
-			$field_content = preg_replace( '/<table(.*?)>(.*?)<\/table>/si', '<div>$2</div>', $field_content );
-			$field_content = preg_replace( '/<table(.*?)>(.*?)<\/table>/si', '<div><dl class="nhsuk-summary-list">$2</dl></div>', $field_content );
-			$field_content = preg_replace( '/<tbody>(.*?)<\/tbody>/i', '$1', $field_content );
-			$field_content = preg_replace( '/<tr bgcolor="\#EAF2FA"(.*?)<\/tr>/si', '<div class="nhsuk-summary-list__row"><dt class="nhsuk-summary-list__key"$1</dt>', $field_content );
-			$field_content = preg_replace( '/<tr bgcolor="\#FFFFFF"(.*?)<\/tr>/si', '<dd class="nhsuk-summary-list__value"$1</dd></div>', $field_content );
-			$field_content = preg_replace( '/<td width="20">&nbsp;<\/td>/si', '', $field_content );
-
-
-			$field_content = preg_replace( '/<td(.*?)>(.*?)<\/td>/si', '$2', $field_content );
-			$field_content = preg_replace( '/<font style="font-family: sans-serif; font-size:12px;">(.*?)<\/font>/si', '$1', $field_content );
-
-			break;
 		default: // everything else.
 			$field_content = $field_content;
 			break;

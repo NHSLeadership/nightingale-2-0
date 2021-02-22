@@ -468,3 +468,59 @@
   color      : $color_nhsuk-black;
   padding    : nhsuk-spacing(1);
 }
+
+.gf-all-fields { // style up the all-fields summary to look like it should. This is a sleight of hand.
+  @extend .nhsuk-summary-list;
+  li {
+	&.field-type-section {
+	  background-color: $color_nhsuk-white; // !important required to over ride plugin genertaed inline styling.
+	  text-align: center;
+
+	  span:empty {
+		padding-bottom: 0;
+		padding-top: 0;
+	  }
+	}
+	@extend .nhsuk-summary-list__row;
+	span:not(.label) {
+	  @extend .nhsuk-summary-list__value;
+	}
+	span.label {
+	  @extend .nhsuk-summary-list__key;
+	}
+	hr.gpnf-nested-entries-hr {
+	  display: none;
+	}
+	table[bgcolor="#EAEAEA"] { // nested forms display.
+	  background: inherit;
+	  border-top: none !important; // !important required to over ride plugin genertaed inline styling.
+	  table[bgcolor="#FFFFFF"] { // nested forms display.
+
+		tr[bgcolor="#FAF4EA"] { // sub form headers. Get rid of nasty orange/tan appearance.
+		  background : $color_nhsuk-grey-5;
+		  color      : $color_nhsuk-blue;
+		  td {
+			padding-top: nhsuk-spacing(1);
+			padding-bottom: nhsuk-spacing(1);
+			font {
+			  font-size: $nhsuk-base-font-size !important // !important required to over ride plugin genertaed inline styling.
+			}
+		  }
+		}
+		tr[bgcolor="#FFFFFF"] {
+		  background : $color_nhsuk-grey-5 !important;
+		}
+		td:empty {
+		  display: none;
+		}
+	  }
+	}
+	table.gfcs-value { // chained select displays.
+	  td {
+		span {
+		  border-bottom : none;
+		}
+	  }
+	}
+  }
+}

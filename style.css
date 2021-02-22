@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.3.1.2
+Version: 2.3.1.3
 Requires at least: 5.0
 Tested up to: 5.6
 Requires PHP: 5.2.4
@@ -6230,12 +6230,12 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   color: #212b32;
   outline: 4px solid transparent;
   text-decoration: none;
-  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
   background-size: 32px 32px;
 }
 
 .nhsuk-expander .nhsuk-details__summary-text, .nhsuk-details.is-style-expander .nhsuk-details__summary-text {
-  background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
   background-size: 32px 32px;
   color: #005eb8;
   cursor: pointer;
@@ -6283,7 +6283,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 .nhsuk-expander[open] .nhsuk-details__summary:focus .nhsuk-details__summary-text, .nhsuk-details.is-style-expander[open] .nhsuk-details__summary:focus .nhsuk-details__summary-text {
-  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
   /* [3] */
   background-size: 32px 32px;
 }
@@ -6293,7 +6293,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 .nhsuk-expander[open] .nhsuk-details__summary-text, .nhsuk-details.is-style-expander[open] .nhsuk-details__summary-text {
-  background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+  background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
   /* [3] */
   background-size: 32px 32px;
 }
@@ -6932,8 +6932,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
  * 16. Use non variable colour to follow NHS England guidelines on logo colour
  * 17. On print stylesheets remove the header link
  * 18. Remove random top margin in Safari
- * 19. Align close icon with nav item arrow icons
- * 20. Add nhsuk-spacing(9) to align right and left main nav with header
  */
 /* ==========================================================================
    COMPONENTS / #HEADER / #AUTOCOMPLETE
@@ -6947,13 +6945,9 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
    * 6. Drop shadow on search suggestions dopdown box, custom spread and blur
    * 7. Z-index to bring the dropdown to the front
    * 8. No current spacing at 12px so using this value
-   * 9. Z-index to being search box to the front for focus state style
-   * 10. Custom padding to stop text jumping on focus
 */
 .autocomplete-container {
   display: inline-block;
-  z-index: 1;
-  /* [9] */
 }
 
 @media (max-width: 40.0525em) {
@@ -6988,12 +6982,10 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     /* [3] */
   }
   .autocomplete__input:focus {
-    border: 4px solid #212b32;
-    box-shadow: 0 0 0 4px #ffeb3b;
+    border: 4px solid #ffeb3b;
+    box-shadow: inset 0 0 0 4px #212b32;
     outline: 4px solid transparent;
     outline-offset: 4px;
-    padding: 0 13px;
-    /* [10] */
   }
 }
 
@@ -7016,12 +7008,10 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     /* [3] */
   }
   .autocomplete__input:focus {
-    border: 2px solid #212b32;
-    box-shadow: 0 0 0 4px #ffeb3b;
+    border: 1px solid #ffeb3b;
+    box-shadow: inset 0 0 0 4px #ffeb3b;
     outline: 4px solid transparent;
     outline-offset: 4px;
-    padding: 0 11px;
-    /* [10] */
   }
   .autocomplete__input::placeholder {
     color: #768692;
@@ -7227,12 +7217,12 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   box-shadow: 0 0 0 4px #003d78;
 }
 
-.nhsuk-header__link:focus {
-  box-shadow: none;
+.nhsuk-header__link:focus .nhsuk-logo {
+  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
-.nhsuk-header__link:focus .nhsuk-logo {
-  box-shadow: 0 0 0 4px #ffeb3b, 0 4px 0 4px #212b32;
+.nhsuk-header__link:focus:hover .nhsuk-logo {
+  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
 @media print {
@@ -7344,7 +7334,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   outline: 4px solid transparent;
   /* 1 */
   outline-offset: 4px;
-  box-shadow: 0 0 0 2px #ffeb3b, 0 4px 0 2px #212b32;
+  box-shadow: none;
 }
 
 .nhsuk-header__search-toggle:focus .nhsuk-icon {
@@ -7445,7 +7435,8 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
   .nhsuk-search__submit:focus {
     background-color: #ffeb3b;
-    box-shadow: 0 -4px #ffeb3b, 0 4px #212b32;
+    border-bottom: 4px solid #212b32;
+    box-shadow: inset 0 0 0 4px #ffeb3b;
     outline: 4px solid transparent;
     outline-offset: 4px;
   }
@@ -7458,6 +7449,12 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   .nhsuk-search__submit:focus .nhsuk-icon {
     fill: #212b32;
   }
+  .nhsuk-search__submit:active {
+    background-color: #00401e;
+  }
+  .nhsuk-search__submit:active .nhsuk-icon {
+    fill: #ffffff;
+  }
   .nhsuk-search__close {
     background-color: transparent;
     border: 0;
@@ -7465,9 +7462,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     height: 40px;
     padding: 0;
     width: 40px;
-    margin-left: 8px;
-    margin-right: -8px;
-    /* [19] */
+    margin-left: 16px;
     margin-top: 8px;
   }
   .nhsuk-search__close .nhsuk-icon__close {
@@ -7537,6 +7532,10 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     /* [2] */
     line-height: inherit;
     outline: none;
+    padding-left: 9px;
+    /* [7] */
+    padding-top: 2px;
+    /* [7] */
     width: 44px;
     /* [2] */
   }
@@ -7552,7 +7551,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
   .nhsuk-search__submit:hover {
     background-color: #003d78;
-    border: 1px solid #ffffff;
     cursor: pointer;
   }
   .nhsuk-search__submit:hover .nhsuk-icon__search {
@@ -7566,7 +7564,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     outline: 4px solid transparent;
     /* 1 */
     outline-offset: 4px;
-    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+    box-shadow: none;
   }
   .nhsuk-search__submit:focus .nhsuk-icon {
     fill: #212b32;
@@ -7677,7 +7675,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   outline: 4px solid transparent;
   /* 1 */
   outline-offset: 4px;
-  box-shadow: 0 0 0 2px #ffeb3b, 0 4px 0 2px #212b32;
+  box-shadow: none;
 }
 
 .nhsuk-header__menu-toggle:focus .nhsuk-icon {
@@ -7745,7 +7743,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   width: 40px;
   overflow: hidden;
   position: absolute;
-  right: 8px;
+  right: 16px;
   top: 8px;
   white-space: nowrap;
 }
@@ -7823,10 +7821,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   top: 11px;
 }
 
-.nhsuk-header__navigation-link:visited, .nhsuk-header .nhsuk-header__navigation ul li a:visited {
-  color: #005eb8;
-}
-
 @media (min-width: 61.875em) {
   .nhsuk-header__navigation-link:visited, .nhsuk-header .nhsuk-header__navigation ul li a:visited {
     color: #ffffff;
@@ -7834,15 +7828,10 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  background-color: #003d78;
   box-shadow: none;
-  color: #005eb8;
+  color: #ffffff;
   text-decoration: underline;
-}
-
-@media (min-width: 61.875em) {
-  .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    color: #ffffff;
-  }
 }
 
 .nhsuk-header__navigation-link:hover .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a:hover .nhsuk-icon__chevron-right {
@@ -7862,10 +7851,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 .nhsuk-header__navigation-link:active:hover, .nhsuk-header .nhsuk-header__navigation ul li a:active:hover, .nhsuk-header__navigation-link:focus:hover, .nhsuk-header .nhsuk-header__navigation ul li a:focus:hover {
   background-color: #ffeb3b;
   color: #212b32;
-}
-
-.nhsuk-header__navigation-link:active:hover .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a:active:hover .nhsuk-icon__chevron-right, .nhsuk-header__navigation-link:focus:hover .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a:focus:hover .nhsuk-icon__chevron-right {
-  fill: #212b32;
 }
 
 .nhsuk-header__navigation-link:active:visited, .nhsuk-header .nhsuk-header__navigation ul li a:active:visited, .nhsuk-header__navigation-link:focus:visited, .nhsuk-header .nhsuk-header__navigation ul li a:focus:visited {
@@ -7890,7 +7875,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     background-color: #005eb8;
     display: block;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 960px;
   }
   .nhsuk-header__navigation-list, .nhsuk-header .nhsuk-header__navigation ul {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -7915,6 +7900,13 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
     color: #ffffff;
     line-height: normal;
+  }
+  .nhsuk-header__navigation-link:active, .nhsuk-header .nhsuk-header__navigation ul li a:active {
+    background-color: #002f5c;
+    color: #f0f4f5;
+  }
+  .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header__navigation-link:active, .nhsuk-header .nhsuk-header__navigation ul li a:active, .nhsuk-header__navigation-link.is-active, .nhsuk-header .nhsuk-header__navigation ul li a.is-active {
+    background-color: #004b93;
   }
 }
 
@@ -8069,7 +8061,15 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 .nhsuk-header__transactional-service-name--link:hover {
-  text-decoration: underline;
+  color: #ffffff;
+}
+
+.nhsuk-header__transactional-service-name--link:focus {
+  text-decoration: none;
+}
+
+.nhsuk-header__transactional-service-name--link:focus:hover {
+  color: #212b32;
 }
 
 .nhsuk-header--transactional .nhsuk-header__link {
@@ -8114,16 +8114,12 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 
 .nhsuk-header__link--service:focus {
   background: #ffeb3b;
-  box-shadow: 0 0 0 4px #ffeb3b, 0 4px 0 4px #212b32;
+  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
 .nhsuk-header__link--service:focus .nhsuk-header__service-name {
   color: #212b32;
   text-decoration: none;
-}
-
-.nhsuk-header__link--service:focus .nhsuk-logo {
-  box-shadow: none;
 }
 
 .nhsuk-header__service-name {
@@ -8158,6 +8154,18 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   }
 }
 
+@media (max-width: 48.0525em) {
+  .nhsuk-header__service-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .nhsuk-header__service-name {
+    font-size: 14px;
+  }
+}
+
 .nhsuk-header__logo--only {
   max-width: 100%;
 }
@@ -8168,7 +8176,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
     align-items: center;
     display: flex;
     margin-bottom: 0;
-    max-width: 270px;
     width: auto;
   }
   .nhsuk-header__logo--only .nhsuk-header__service-name {
@@ -8186,8 +8193,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 }
 
 .nhsuk-header--organisation .nhsuk-header__link:hover {
-  color: #ffffff;
-  text-decoration: underline;
+  box-shadow: 0 1px 0 0 #ffffff;
 }
 
 .nhsuk-header--organisation .nhsuk-header__link:hover .nhsuk-logo {
@@ -8196,7 +8202,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 
 .nhsuk-header--organisation .nhsuk-header__link:focus {
   background: #ffeb3b;
-  box-shadow: 0 0 0 4px #ffeb3b, 0 4px 0 4px #212b32;
+  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
 .nhsuk-header--organisation .nhsuk-header__link:focus .nhsuk-organisation-name,
@@ -8206,10 +8212,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 
 .nhsuk-header--organisation .nhsuk-header__link:focus .nhsuk-logo {
   box-shadow: none;
-}
-
-.nhsuk-header--organisation .nhsuk-header__link:focus:hover {
-  text-decoration: none;
 }
 
 .nhsuk-header--organisation .nhsuk-header__logo .nhsuk-logo {
@@ -8320,21 +8322,20 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   background-color: #ffffff;
 }
 
+.nhsuk-header--white .nhsuk-header__link:hover .nhsuk-logo {
+  box-shadow: none;
+}
+
+.nhsuk-header--white .nhsuk-header__link:focus .nhsuk-logo {
+  box-shadow: 4px 0 0 0 #ffeb3b, -4px 0 0 0 #ffeb3b, -4px 0 0 #ffeb3b, 0 0 0 4px #ffeb3b, 0 4px 0 4px #212b32;
+}
+
 .nhsuk-header--white .nhsuk-logo .nhsuk-logo__background {
   fill: #005eb8;
 }
 
 .nhsuk-header--white .nhsuk-logo .nhsuk-logo__text {
   fill: #ffffff;
-}
-
-.nhsuk-header--white .nhsuk-header__link:hover {
-  color: #212b32;
-  text-decoration: underline;
-}
-
-.nhsuk-header--white .nhsuk-header__link:hover .nhsuk-organisation-descriptor {
-  color: #212b32;
 }
 
 .nhsuk-header--white .nhsuk-search__submit {
@@ -8347,11 +8348,16 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 
 .nhsuk-header--white .nhsuk-search__submit:hover {
   background-color: #004b93;
-  border-color: #004b93;
 }
 
 .nhsuk-header--white .nhsuk-search__submit:focus {
   background-color: #ffeb3b;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-header--white .nhsuk-search__submit:focus {
+    border: 1px solid #212b32;
+  }
 }
 
 .nhsuk-header--white .nhsuk-search__submit:focus .nhsuk-icon__search {
@@ -8361,17 +8367,18 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 .nhsuk-header--white .autocomplete__input,
 .nhsuk-header--white .nhsuk-search__input {
   border: 1px solid #aeb7bd;
+  border-right: 0;
 }
 
 .nhsuk-header--white .autocomplete__input:focus,
 .nhsuk-header--white .nhsuk-search__input:focus {
-  border: 2px solid #212b32;
+  border: 1px solid #212b32;
 }
 
 @media (max-width: 40.0525em) {
   .nhsuk-header--white .autocomplete__input:focus,
   .nhsuk-header--white .nhsuk-search__input:focus {
-    border: 4px solid #212b32;
+    border: 4px solid #ffeb3b;
   }
 }
 
@@ -8389,7 +8396,9 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 .nhsuk-header--white .nhsuk-header__search-toggle.is-active, .nhsuk-header--white .nhsuk-header__search-toggle:hover,
 .nhsuk-header--white .nhsuk-header__menu-toggle.is-active,
 .nhsuk-header--white .nhsuk-header__menu-toggle:hover {
-  border-color: #004b93;
+  background-color: #005eb8;
+  border-color: #005eb8;
+  box-shadow: none;
   color: #ffffff;
 }
 
@@ -8401,7 +8410,15 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 
 .nhsuk-header--white .nhsuk-header__search-toggle:focus,
 .nhsuk-header--white .nhsuk-header__menu-toggle:focus {
+  background-color: #ffeb3b;
+  border: 0;
+  box-shadow: 0 4px 0 0 #212b32;
   color: #212b32;
+  outline: 4px solid transparent;
+  /* 1 */
+  outline-offset: 4px;
+  border: 1px solid #212b32 !important;
+  box-shadow: none;
 }
 
 .nhsuk-header--white .nhsuk-header__search-toggle:focus .nhsuk-icon,
@@ -8436,12 +8453,24 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
   color: #212b32;
 }
 
+.nhsuk-header--organisation.nhsuk-header--white .nhsuk-header__link:hover {
+  box-shadow: 0 1px 0 0 #005eb8;
+}
+
+.nhsuk-header--organisation.nhsuk-header--white .nhsuk-header__link:focus {
+  box-shadow: 0 4px 0 0 #212b32;
+}
+
+.nhsuk-header--organisation.nhsuk-header--white .nhsuk-header__link:focus .nhsuk-logo {
+  box-shadow: none;
+}
+
 .nhsuk-header--white-nav .nhsuk-header__navigation {
   background-color: #ffffff;
 }
 
 .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-list, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul {
-  border-top: 1px solid #f0f4f5;
+  border-top: 1px solid #d8dde0;
 }
 
 .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a {
@@ -8450,6 +8479,10 @@ html.js .tribe-events-page-template.wp-embed-responsive .learndash-wrapper .wp-e
 
 .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:visited, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:visited, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:visited {
   color: #005eb8;
+}
+
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:hover, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:hover, .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:active, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:active, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:active, .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link.is-active, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a.is-active, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a.is-active {
+  background-color: transparent;
 }
 
 .nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:focus, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:focus {
@@ -10082,7 +10115,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
  * 5. In older browsers such as IE8, :last-child is not available,
  *    so only show the border divider where it is available.
  */
-.nhsuk-summary-list {
+.nhsuk-summary-list, .gf-all-fields {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -10093,7 +10126,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list {
+  .nhsuk-summary-list, .gf-all-fields {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -10101,14 +10134,14 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-summary-list {
+  .nhsuk-summary-list, .gf-all-fields {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list {
+  .nhsuk-summary-list, .gf-all-fields {
     display: table;
     table-layout: fixed;
     /* [1] */
@@ -10117,35 +10150,36 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list {
+  .nhsuk-summary-list, .gf-all-fields {
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-summary-list__row {
+  .nhsuk-summary-list__row, .gf-all-fields li {
     border-bottom: 1px solid #d8dde0;
     margin-bottom: 16px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list__row {
+  .nhsuk-summary-list__row, .gf-all-fields li {
     display: table-row;
   }
 }
 
-.nhsuk-summary-list__key,
+.nhsuk-summary-list__key, .gf-all-fields li span.label,
 .nhsuk-summary-list__value,
+.gf-all-fields li span:not(.label),
 .nhsuk-summary-list__actions {
   margin: 0;
   /* [2] */
-  vertical-align: top;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list__key,
+  .nhsuk-summary-list__key, .gf-all-fields li span.label,
   .nhsuk-summary-list__value,
+  .gf-all-fields li span:not(.label),
   .nhsuk-summary-list__actions {
     border-bottom: 1px solid #d8dde0;
     display: table-cell;
@@ -10167,42 +10201,47 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-summary-list__key,
-.nhsuk-summary-list__value {
+.nhsuk-summary-list__key, .gf-all-fields li span.label,
+.nhsuk-summary-list__value,
+.gf-all-fields li span:not(.label) {
   /* [3] */
   overflow-wrap: break-word;
   word-wrap: break-word;
   /* [4] */
 }
 
-.nhsuk-summary-list__key {
+.nhsuk-summary-list__key, .gf-all-fields li span.label {
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list__key {
+  .nhsuk-summary-list__key, .gf-all-fields li span.label {
     width: 30%;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-summary-list__value {
+  
+  .nhsuk-summary-list__value,
+  .gf-all-fields li span:not(.label) {
     margin-bottom: 16px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list__value {
+  
+  .nhsuk-summary-list__value,
+  .gf-all-fields li span:not(.label) {
     width: 50%;
   }
 }
 
-.nhsuk-summary-list__value > p, .tribe-common .nhsuk-card-group .nhsuk-summary-list__value > p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-summary-list__value > p.nhsuk-card__description {
+.nhsuk-summary-list__value > p, .gf-all-fields li span:not(.label) > p, .tribe-common .nhsuk-card-group .nhsuk-summary-list__value > p.nhsuk-card__description, .gf-all-fields li .tribe-common .nhsuk-card-group span:not(.label) > p.nhsuk-card__description, .tribe-common .nhsuk-card-group .gf-all-fields li span:not(.label) > p.nhsuk-card__description, .tribe-common .ld-course-list-items .nhsuk-summary-list__value > p.nhsuk-card__description, .gf-all-fields li .tribe-common .ld-course-list-items span:not(.label) > p.nhsuk-card__description, .tribe-common .ld-course-list-items .gf-all-fields li span:not(.label) > p.nhsuk-card__description {
   margin-bottom: 8px;
 }
 
-.nhsuk-summary-list__value > :last-child {
+.nhsuk-summary-list__value > :last-child, .gf-all-fields li span:not(.label) > :last-child {
   margin-bottom: 0;
 }
 
@@ -10231,10 +10270,14 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   padding-right: 0;
 }
 
-.nhsuk-summary-list--no-border .nhsuk-summary-list__key,
+.nhsuk-summary-list--no-border .nhsuk-summary-list__key, .nhsuk-summary-list--no-border .gf-all-fields li span.label, .gf-all-fields li .nhsuk-summary-list--no-border span.label,
 .nhsuk-summary-list--no-border .nhsuk-summary-list__value,
+.nhsuk-summary-list--no-border .gf-all-fields li span:not(.label),
+.gf-all-fields li .nhsuk-summary-list--no-border span:not(.label),
 .nhsuk-summary-list--no-border .nhsuk-summary-list__actions,
-.nhsuk-summary-list--no-border .nhsuk-summary-list__row {
+.nhsuk-summary-list--no-border .nhsuk-summary-list__row,
+.nhsuk-summary-list--no-border .gf-all-fields li,
+.gf-all-fields .nhsuk-summary-list--no-border li {
   border: 0;
 }
 
@@ -10382,7 +10425,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
  * 3. Removing default screen reader behaviour
  * 4. Assigning role of table-row on desktop to give default screen reader behaviour
  * 5. Using justify content to space out elements in the row on mobile
- * 6. Assigning a minimum width in case of black cell
+ * 6. Assigning a minimum width incase of black cell
  * 7. Aligning content to the right on mobile
  * 8. Aligning mobile header to left to split it from the data
  * 9. Hiding mobile specific header from desktop view
@@ -11980,7 +12023,7 @@ button + .button {
   border-radius: 4px;
 }
 
-.gform_wrapper .gform_body ul.gform_fields li.gfield.gfield_html dl.nhsuk-summary-list {
+.gform_wrapper .gform_body ul.gform_fields li.gfield.gfield_html dl.nhsuk-summary-list, .gform_wrapper .gform_body ul.gform_fields li.gfield.gfield_html dl.gf-all-fields {
   background: #ffffff;
   padding: 24px;
   padding-left: 24px;
@@ -12294,6 +12337,51 @@ button + .button {
   background: white;
   color: #212b32;
   padding: 4px;
+}
+
+.gf-all-fields li.field-type-section {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.gf-all-fields li.field-type-section span:empty {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.gf-all-fields li hr.gpnf-nested-entries-hr {
+  display: none;
+}
+
+.gf-all-fields li table[bgcolor="#EAEAEA"] {
+  background: inherit;
+  border-top: none !important;
+}
+
+.gf-all-fields li table[bgcolor="#EAEAEA"] table[bgcolor="#FFFFFF"] tr[bgcolor="#FAF4EA"] {
+  background: #f0f4f5;
+  color: #005eb8;
+}
+
+.gf-all-fields li table[bgcolor="#EAEAEA"] table[bgcolor="#FFFFFF"] tr[bgcolor="#FAF4EA"] td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.gf-all-fields li table[bgcolor="#EAEAEA"] table[bgcolor="#FFFFFF"] tr[bgcolor="#FAF4EA"] td font {
+  font-size: 16px !important;
+}
+
+.gf-all-fields li table[bgcolor="#EAEAEA"] table[bgcolor="#FFFFFF"] tr[bgcolor="#FFFFFF"] {
+  background: #f0f4f5 !important;
+}
+
+.gf-all-fields li table[bgcolor="#EAEAEA"] table[bgcolor="#FFFFFF"] td:empty {
+  display: none;
+}
+
+.gf-all-fields li table.gfcs-value td span {
+  border-bottom: none;
 }
 
 .learndash-wrapper {
