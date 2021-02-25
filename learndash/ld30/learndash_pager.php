@@ -29,7 +29,7 @@ if ( ( isset( $pager_results ) ) && ( ! empty( $pager_results ) ) ) {
 		$href_val_prefix = '';
 	}
 	// Generic wrappers. These can be changes via the switch below.
-	$wrapper_before = ' <nav role="navigation" aria-label="Pagination Navigation" class="learndash-pager learndash-pager-' . $pager_context . '">
+	$wrapper_before = ' <nav role="navigation" aria-label="Pagination Navigation" class="learndash-pager learndash-pager-' . $pager_context . '"  data-nonce="' . wp_create_nonce( 'learndash-pager' ) . '">
 							<ul>';
 	$wrapper_after  = '      </ul>
 						</nav>';
