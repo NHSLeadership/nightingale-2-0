@@ -8,8 +8,9 @@
  * @organisation NHS Leadership Academy
  * @copyright    OGL v3
  * @package      Nightingale Theme
- * Most email clients do not support style blocks. We'll define our styles here and output them inline in the markup below.
+ * Most email clients do not support style blocks.
  */
+
 ?>
 
 <ul class="gf-all-fields"">

@@ -43,6 +43,12 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+ = 2.3.1.4 =
+ * bugfix release:
+  * Fixed pagination in learndash content (added new nonce value to ensure correct form submission)
+  * fixed php warning on all_fields template (related to original styles array which is no longer used)
+  * tested against WordPress 5.7
+
  = 2.3.1.3 =
  * bugfix release:
   * minor change to gravity forms summary (all_fields) view to prevent markup error that blocked submission.
