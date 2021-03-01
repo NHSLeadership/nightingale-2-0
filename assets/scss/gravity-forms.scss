@@ -79,9 +79,6 @@
   }
 
   .gform_body {
-	.gfield_select {
-	  @extend .nhsuk-select;
-	}
 
 	ul.gform_fields {
 	  li.gfield.gfield_html {
@@ -258,27 +255,12 @@
 
 	.gform_wrapper {
 
-	  .gfield_error {
-		.nhsuk-select {
-		  @extend .nhsuk-select--error;
-		}
-	  }
-
 	  li.gfield fieldset {
 		.nhsuk-textarea {
 		  width : 100%;
 		}
 	  }
 
-	}
-
-	.gform_button, .gform_next_button {
-	  @extend .nhsuk-button;
-	}
-
-	.gform_previous_button {
-	  @extend .nhsuk-button;
-	  @extend .nhsuk-button--reverse;
 	}
 
 	ul.ui-sortable {

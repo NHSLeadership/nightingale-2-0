@@ -42,7 +42,11 @@ add_filter(
 		// Add nhsuk-form-group to form <li> elements.
 		$form_string = preg_replace( "#<li(.*?)field_(.*?)class='(.*?)#m", "<li$1field_$2class='nhsuk-form-group $3", $form_string );
 		// Style the submit button.
-		$form_string = str_replace( 'gform_button', 'nhsuk-button gform_button', $form_string );
+		$form_string = str_replace( 'gform_button', 'nhsuk-button', $form_string );
+		// Style the next button.
+		$form_string = str_replace( 'gform_next_button button', 'nhsuk-button', $form_string );
+		// Style the previous button.
+		$form_string = str_replace( 'gform_previous_button button', 'nhsuk-button nhsuk-button--reverse', $form_string );
 		// Style the save and continue functionality.
 		$form_string = preg_replace( "#<a (.*?)class='gform_save_link' (.*?)</a>#", "<a $1 class='nhsuk-button nhsuk-button--secondary gform_save_link' $2</a>", $form_string );
 
@@ -92,7 +96,6 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 	}
 	$wrapper = '';
 	$choices = ''; // initialise all the strings.
-
 	switch ( $field->type ) {
 		// Text inputs.
 		case 'text':
@@ -133,14 +136,14 @@ function nightingale_clean_gf_inputs( $field_content, $field ) {
 		// Selects.
 		case 'select':
 			// Replace li with field group.
-			$field_content = str_replace( 'ginput_container ginput_container_select', 'ginput_container ginput_container_select nhsuk-dropdown', $field_content );
+			$field_content = str_replace( 'ginput_container ginput_container_select', 'nhsuk-dropdown', $field_content );
 			if ( 'number' === $field->type ) {
 				$field_content = preg_replace( "#<input(.*?)class='#", "<input$1class='c-form-input ", $field_content );
 			}
 			if ( 1 === $errorflag ) {
-				$field_content = str_replace( 'gfield_select', 'gfield_select nhsuk-select nhsuk-select--error', $field_content );
+				$field_content = str_replace( 'gfield_select', 'nhsuk-select nhsuk-select--error', $field_content );
 			} else {
-				$field_content = str_replace( 'gfield_select', 'gfield_select nhsuk-select', $field_content );
+				$field_content = str_replace( 'gfield_select', 'nhsuk-select', $field_content );
 			}
 			break;
 
