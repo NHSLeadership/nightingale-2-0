@@ -11248,6 +11248,13 @@ button#toggle-search {
   font-size: 13.3333px;
 }
 
+@media (min-width: 48.0625em) {
+  .nhsuk-header--organisation .nhsuk-header__link {
+    max-width: 500px;
+    float: left;
+  }
+}
+
 /* end of header.scss include */
 /*
 // variations to styling required for gutenberg native blocks
@@ -12937,6 +12944,10 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 
 .tribe-common .nhsuk-checkboxes .nhsuk-checkboxes__item label, .tribe-common .tingle-modal-box .ginput_container_checkbox .nhsuk-checkboxes__item label, .tingle-modal-box .tribe-common .ginput_container_checkbox .nhsuk-checkboxes__item label, .tribe-common .nhsuk-checkboxes .nhsuk-list-panel .comment-respond .comment-form-cookies-consent label, .nhsuk-list-panel .comment-respond .tribe-common .nhsuk-checkboxes .comment-form-cookies-consent label, .tribe-common .tingle-modal-box .ginput_container_checkbox .nhsuk-list-panel .comment-respond .comment-form-cookies-consent label, .nhsuk-list-panel .comment-respond .tribe-common .tingle-modal-box .ginput_container_checkbox .comment-form-cookies-consent label, .tingle-modal-box .tribe-common .ginput_container_checkbox .nhsuk-list-panel .comment-respond .comment-form-cookies-consent label, .nhsuk-list-panel .comment-respond .tingle-modal-box .tribe-common .ginput_container_checkbox .comment-form-cookies-consent label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox .tribe-common .nhsuk-checkboxes li label, .tribe-common .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .tribe-common .ginput_container_checkbox .gfield_checkbox li label {
   padding: 8px 16px 4px 56px;
+}
+
+.tribe-common span.nhsuk-action-link__text {
+  margin-left: 40px;
 }
 
 .tribe-common .nhsuk-card-group div.nhsuk-grid-column-one-third, .tribe-common .ld-course-list-items div.nhsuk-grid-column-one-third {

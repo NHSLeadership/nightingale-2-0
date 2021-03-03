@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.3.1.3
-Stable tag: 2.3.1.3
+Version: 2.3.1.4
+Stable tag: 2.3.1.4
 
 
 == Description ==
@@ -46,13 +46,14 @@ one level only. To show further levels, we recommend using the right (or left) h
  = 2.3.1.4 =
  * bugfix release:
   * Fixed pagination in learndash content (added new nonce value to ensure correct form submission)
-  * fixed php warning on all_fields template (related to original styles array which is no longer used)
-  * tested against WordPress 5.7
+  * Fixed php warning on all_fields template (related to original styles array which is no longer used)
+  * Fixed action links in calendar context
+  * Tweak to Nhsuk header width
+  * Tested against WordPress 5.7
 
  = 2.3.1.3 =
  * bugfix release:
   * minor change to gravity forms summary (all_fields) view to prevent markup error that blocked submission.
-
 
  = 2.3.1.2 =
  * bugfix release:
