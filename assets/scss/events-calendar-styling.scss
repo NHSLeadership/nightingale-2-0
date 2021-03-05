@@ -9,36 +9,42 @@
 
   .nhsuk-radios {
 	.nhsuk-radios__item {
-	  margin: nhsuk-spacing(2) 0;
+	  margin : nhsuk-spacing(2) 0;
+
 	  label {
-		padding: nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(1) nhsuk-spacing(6);
+		padding : nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(1) nhsuk-spacing(6);
 	  }
 	}
   }
+
   .nhsuk-checkboxes {
 	.nhsuk-checkboxes__item {
-	  margin: nhsuk-spacing(2) 0;
+	  margin : nhsuk-spacing(2) 0;
+
 	  label {
-		padding: nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(1) nhsuk-spacing(8);
+		padding : nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(1) nhsuk-spacing(8);
 	  }
 	}
   }
-}
 
-
-.tribe-common .nhsuk-card-group {
-
-  div.nhsuk-grid-column-one-third, div.nhsuk-grid-column-one-half, div.nhsuk-grid-column-two-thirds {
-	padding: 0 nhsuk-spacing(3);
-	margin-bottom : nhsuk-spacing(4);
+  span.nhsuk-action-link__text {
+	margin-left : nhsuk-spacing(6);
   }
 
-  div.nhsuk-card__content {
-	padding: nhsuk-spacing(4);
-	color : $color_nhsuk-dark-grey;
+  .nhsuk-card-group {
+
+	div.nhsuk-grid-column-one-third, div.nhsuk-grid-column-one-half, div.nhsuk-grid-column-two-thirds {
+	  padding       : 0 nhsuk-spacing(3);
+	  margin-bottom : nhsuk-spacing(4);
+	}
+
+	div.nhsuk-card__content {
+	  padding : nhsuk-spacing(4);
+	  color   : $color_nhsuk-dark-grey;
+
+	}
 
   }
-
 }
 
 .tribe-events .tribe-events-c-top-bar__datepicker {
@@ -172,47 +178,34 @@ button.tribe-events-c-top-bar__datepicker-button {
 }
 
 #tribe-events-content {
-  a.tribe-events-gcal,
-  a.tribe-events-ical,
-  a.tribe-events-button,
+  .nhsuk-button,
   button:not(.tribe-tickets__rsvp-ar-quantity-input-number) {
-	@extend .nhsuk-button;
 	margin           : 0 nhsuk-spacing(3) nhsuk-spacing(2) 0;
-	background-color : $nhsuk-button-color;
-	color            : $nhsuk-button-text-color;
-	font-size        : $nhsuk-base-font-size;
+	padding: nhsuk-spacing(2) nhsuk-spacing(4);
 
 	&:last-child {
 	  margin-right : 0;
 	}
 
-	&.tribe-tickets__rsvp-form-button--cancel {
-	  @extend .nhsuk-button--reverse;
-	}
 
-	&.tribe-tickets__rsvp-ar-guest-list-item-button {
-	  @extend .nhsuk-button--secondary;
+  }
+}
+button.tribe-tickets__rsvp-ar-guest-list-item-button {
 
-	  &:not(.tribe-tickets__rsvp-ar-guest-list-item-button--inactive) {
-		svg.tribe-tickets__rsvp-ar-guest-icon {
-		  path {
-			fill   : $color_nhsuk-yellow !important;
-			stroke : $color_nhsuk-white !important;
-		  }
-		}
+  &:not(.tribe-tickets__rsvp-ar-guest-list-item-button--inactive) {
+	svg.tribe-tickets__rsvp-ar-guest-icon {
+	  path {
+		fill   : $color_nhsuk-white !important;
+		stroke : $color_nhsuk-white !important;
 	  }
 	}
   }
-
-  .tribe-tickets__rsvp-ar-quantity-input-number {
-	box-shadow : none;
-  }
+}
+.tribe-tickets__rsvp-form-button--cancel {
+  background: $color_nhsuk-white;
 }
 
 #rsvp-now {
-  @extend .nhsuk-grid-column-full;
-
-
   .tribe-tickets__rsvp-wrapper {
 	max-width : 100%;
   }
@@ -238,18 +231,10 @@ button.tribe-events-c-top-bar__datepicker-button {
   white-space : nowrap;
 }
 
-/* Events Tickets Styles */
+/* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
 
 
 .tribe-tickets-rsvp {
-
-  @extend .nhsuk-do-dont-list;
-
-  h2.tribe-events-tickets-title {
-
-	@extend .nhsuk-do-dont-list__label;
-
-  }
 
   .tribe-events-tickets {
 	background-color : transparent;
@@ -317,7 +302,7 @@ html.js { // only hit embedded content. Wordpress doesnt make this easy to filte
 		  }
 
 		  a {
-			@extend .nhsuk-button;
+			//@extend .nhsuk-button;
 		  }
 		}
 
