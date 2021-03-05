@@ -55,10 +55,9 @@ function nightingale_archive_pagination() {
 
 		}
 
-		$pagination .= "<li class='nhsuk-pagination-numbers'>";
+		$pagination .= "<li class='tony nhsuk-pagination-numbers'>";
 
 		foreach ( $paginate as $element ) {
-
 			$pagination .= $element;
 		}
 
@@ -171,4 +170,11 @@ function nightingale_posts_link__class($format) {
 }
 add_filter('next_post_link', 'nightingale_posts_link__class');
 add_filter('previous_post_link', 'nightingale_posts_link__class');
+
+add_filter( 'wp_link_pages_link', 'nightingale_split_post_pagination' );
+function nightingale_split_post_pagination( $output ) {
+	$output = str_replace( '"post-page-numbers current"', '"post-page-numbers current nhsuk-tag nhsuk-tag--white"', $output );
+	$output = str_replace( '"post-page-numbers"', '"post-page-numbers nhsuk-tag nhsuk-tag--grey"', $output );
+	return $output;
+}
 
