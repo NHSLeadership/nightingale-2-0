@@ -204,9 +204,12 @@ add_action(
 add_filter( 'tribe_template_pre_html:events/v2/month/calendar-body/day/calendar-events/calendar-event/tooltip', '__return_false' );
 
 add_filter( 'the_content', 'nightingale_events_buttons', 99 );
+
+/**
+ * Modify all tribe buttons to be nhsuk-styled in one hit. Saves approx 40kb in css output.
+ */
 function nightingale_events_buttons( $output ) {
 	// Style every button.
-	$find = array( 'tribe-events-button', 'tribe-tickets__rsvp-form-button' );
 	$output = str_replace( 'tribe-events-button', 'nhsuk-button', $output );
 	$output = str_replace( 'tribe-tickets__rsvp-form-button', 'nhsuk-button', $output );
 	// Style the ical button.
@@ -218,8 +221,6 @@ function nightingale_events_buttons( $output ) {
 	$output = str_replace( 'tribe-tickets__rsvp-form-button--cancel', 'nhsuk-button--reverse', $output );
 	// Style the guest list button.
 	$output = str_replace( 'tribe-tickets__rsvp-ar-guest-list-item-button', 'nhsuk-button--secondary', $output );
-
-
 
 	return $output;
 }

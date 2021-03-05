@@ -12294,6 +12294,10 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 }
 
 /* Events Calendar Styles */
+#tribe-events, #tribe-events-pg-template, .tribe-events-pg-template {
+  padding: 0;
+}
+
 .tribe-common div.nhsuk-grid-column-two-thirds {
   padding-left: 0;
 }
