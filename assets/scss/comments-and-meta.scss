@@ -1,7 +1,7 @@
 /*
 // variations to styling required for WordPress comments
 // @author Tony Blacker, NHS Leadership Academy
-// @version 1.0 3rd October 2019
+// @version 1.1 5th March 2021
 */
 .nhsuk-list-panel {
   margin-bottom : nhsuk-spacing(3);
@@ -23,11 +23,11 @@
 		#commentform {
 		  display : flow-root;
 		}
-
+		.nhsuk-button.submit {
+		float: right;
+	  }
 		#cancel-comment-reply-link {
-		  @extend .nhsuk-button;
-		  @extend .nhsuk-button--reverse;
-		  float    : right;
+		  float    : left;
 		  position : absolute;
 		  bottom   : 0;
 		  left     : 0;
@@ -83,24 +83,6 @@
 			width : 50%;
 		  }
 
-		  .fn {
-			font-style : normal;
-
-			.comment-author-label {
-			  @extend .nhsuk-tag;
-
-			  &.comment-author-label-administrator {
-				@extend .nhsuk-tag;
-				@extend .nhsuk-tag--aqua-green;
-			  }
-
-			  &.comment-author-label-facilitator {
-				@extend .nhsuk-tag;
-				@extend .nhsuk-tag--blue;
-			  }
-			}
-		  }
-
 		  cite {
 			display         : block;
 			text-decoration : none;
@@ -113,9 +95,8 @@
 
 		  .comment-meta {
 			a {
-			  //text-decoration : none;
 			  color           : $color_nhsuk-black;
-			  @extend .nhsuk-body-s;
+			  font-size: 0.85rem;
 
 			  &:hover {
 				background : none;
@@ -165,35 +146,19 @@
 			width       : 15px;
 			margin-left : nhsuk-spacing(2);
 		  }
-
-		  .comment-reply-link {
-			display : inline-block;
-
-		  }
-
-		  .comment-edit-link {
-			display     : inline-block;
-			position    : relative;
-			left        : 0px;
-			margin-left : nhsuk-spacing(2);
-		  }
 		}
-
-
 	  }
 	}
   }
+  .comment-reply-link {
+	display : inline-block;
 
+  }
+  .comment-edit-link {
+	display     : inline-block;
+	margin-left : nhsuk-spacing(2);
+  }
   .comment-respond {
-	@extend .nhsuk-form-group;
-
-	label {
-	  @extend .nhsuk-label;
-	}
-
-	input[type="text"] {
-	  @extend .nhsuk-input;
-	}
 
 	textarea {
 	  height : 200px;
@@ -203,33 +168,19 @@
 	  margin-bottom : 48px;
 	}
 
-	input[type="submit"] {
-	  @extend .nhsuk-button;
-	  float : right;
-	}
-
-	.comment-form-cookies-consent {
-	  @extend .nhsuk-checkboxes__item;
-
-	  input[type="checkbox"] {
-		@extend .nhsuk-checkboxes__input;
-
-		& ~ label {
-		  @extend .nhsuk-checkboxes__label
-		}
-	  }
-	}
 
 	.logged-in-as {
 	  float : right;
 
 	  a {
 		font-size       : 0.75rem;
-		//text-decoration : none;
 
 		&:nth-of-type(2) {
-		  @extend .nhsuk-tag;
-		  @extend .nhsuk-tag--white;
+		  border: 1px solid $color_nhsuk-black;
+		  font-size: 1rem;
+		  padding: nhsuk-spacing(1);
+		  background: $color_nhsuk-white;
+		  color: $color_nhsuk-blue;
 		}
 	  }
 	}
@@ -239,60 +190,24 @@
 .article-footer {
   .cat-links {
 	float : right;
-	@extend .nhsuk-body-s;
-
   }
 
   .tags-links {
 	float        : left;
 	margin-right : nhsuk-spacing(3);
-	@extend .nhsuk-body-s;
 
   }
 
-  .comments-link {
-	float : left;
-	@extend .nhsuk-body-s;
-	@extend .nhsuk-tag;
-	@extend .nhsuk-tag--green;
-
-	a {
-	  color : $color_nhsuk-green;
-
-	  &:visited {
-		color : $color_nhsuk-green;
-	  }
-	}
-  }
 }
 
-.navigation {
-  .nhsuk-pagination {
-	clear : both;
-	width : 100%;
 
-	ul.nhsuk-pagination__list {
-	  margin-left : 0;
-
-	  li.nhsuk-pagination-item--previous {
-		float : left;
-
-		a {
-		  @extend .nhsuk-pagination__link;
-		}
-	  }
-
-	  li.nhsuk-pagination-item--next {
-		float : right;
-
-		a {
-		  @extend .nhsuk-pagination__link;
-		}
-	  }
-	}
-  }
+li.nhsuk-pagination-item--previous {
+  float : left;
 }
 
+li.nhsuk-pagination-item--next {
+  float : right;
+}
 .pagination_split_post {
   .post-page-numbers {
 

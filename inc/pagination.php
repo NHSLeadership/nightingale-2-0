@@ -161,3 +161,14 @@ function nightingale_link_pages_args_prevnext_add( $args ) {
 
 	return $args;
 }
+
+/**
+ * Add a class to previous link in pagination.
+ */
+function nightingale_posts_link__class($format) {
+	$format = str_replace('href=', 'class="nhsuk-pagination__link" href=', $format);
+	return $format;
+}
+add_filter('next_post_link', 'nightingale_posts_link__class');
+add_filter('previous_post_link', 'nightingale_posts_link__class');
+

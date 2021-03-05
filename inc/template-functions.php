@@ -247,3 +247,36 @@ function nightingale_latest_posts_category_filter( $catcount, $categories, $cato
 			echo '</span></div>';
 	endif;
 }
+add_filter( 'comment_form_field_cookies', 'nightingale_style_comment_cookies' );
+/**
+ * Modify the markup of the comment cookie checkbox to match nhsuk styled output.
+ * @return string corrected output
+ */
+function nightingale_style_comment_cookies() {
+	return '<p class="comment-form-cookies-consent nhsuk-checkboxes__item">
+				<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" class="nhsuk-checkboxes__input" value="yes">
+				<label class="nhsuk-checkboxes__label" for="wp-comment-cookies-consent">' . esc_html__( 'Save my name, email, and website in this browser for the next time I comment.', 'nightingale' ) .'</label>
+			</p>';
+}
+
+add_filter( 'comment_form_defaults', 'nightingale_comment_defaults' );
+function nightingale_comment_defaults( $defaults ) {
+	$defaults['class_container'] = 'nhsuk-form-group';
+	$defaults['submit_button'] = '<input name="%1$s" type="submit" id="%2$s" class="nhsuk-button %3$s" value="%4$s" />';
+	return $defaults;
+}
+
+add_filter( 'cancel_comment_reply_link', 'nightingale_cancel_comment_link' );
+function nightingale_cancel_comment_link( $link ) {
+	$link = str_replace( 'id="cancel-comment-reply-link"', 'id="cancel-comment-reply-link" class="nhsuk-button nhsuk-button--reverse"', $link );
+	return $link;
+}
+
+
+add_filter( 'get_comment_author_link', 'nightingale_comments', 98 );
+function nightingale_comments( $return ) {
+	$return = str_replace( 'comment-author-label-administrator', 'nhsuk-tag--aqua-green', $return );
+	$return = str_replace( 'comment-author-label-facilitator', 'nhsuk-tag--blue', $return );
+	$return = str_replace( 'comment-author-label', 'comment-author-label nhsuk-tag', $return );
+	return $return;
+}

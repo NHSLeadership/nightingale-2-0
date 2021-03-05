@@ -207,6 +207,8 @@ add_filter( 'the_content', 'nightingale_events_buttons', 99 );
 
 /**
  * Modify all tribe buttons to be nhsuk-styled in one hit. Saves approx 40kb in css output.
+ *
+ * @param string $output - the raw html that we are cleaning up.
  */
 function nightingale_events_buttons( $output ) {
 	// Style every button.
