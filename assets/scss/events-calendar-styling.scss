@@ -3,12 +3,7 @@
 
 .tribe-common {
 
-  div.nhsuk-grid-column-one-third {
-	@extend .nhsuk-grid-column-one-third;
-  }
-
   div.nhsuk-grid-column-two-thirds {
-	@extend .nhsuk-grid-column-two-thirds;
 	padding-left : 0;
   }
 
@@ -33,43 +28,15 @@
 
 .tribe-common .nhsuk-card-group {
 
-  &.nhsuk-grid-row {
-
-	@extend .nhsuk-grid-row;
-
-  }
-
-  div.nhsuk-grid-column-one-third {
-
-	@extend .nhsuk-grid-column-one-third;
-
-	&.nhsuk-card-group__item {
-	  @extend .nhsuk-card-group__item;
-	}
-
-	margin-bottom : nhsuk-spacing(4);
-
-  }
-
-  div.nhsuk-grid-column-one-half {
-	@extend .nhsuk-grid-column-one-half;
-
+  div.nhsuk-grid-column-one-third, div.nhsuk-grid-column-one-half, div.nhsuk-grid-column-two-thirds {
+	padding: 0 nhsuk-spacing(3);
 	margin-bottom : nhsuk-spacing(4);
   }
 
   div.nhsuk-card__content {
-
-	@extend .nhsuk-card__content;
+	padding: nhsuk-spacing(4);
 	color : $color_nhsuk-dark-grey;
 
-  }
-
-  p.nhsuk-card__description {
-	@extend p;
-  }
-
-  h2.nhsuk-card__heading {
-	@extend .nhsuk-card__heading;
   }
 
 }

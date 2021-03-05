@@ -28,7 +28,7 @@ if ( $should_render ) :
 		<h3 class="nhsuk-heading-s"><?php esc_html_e( 'Calendar Links', 'nightingale' ); ?></h3>
 		<p> <?php esc_html_e( 'The following links allow you to add this event to your calendar. Note: You need to be logged into your Google account before you can add to your Google calendar.', 'nightingale' ); ?></p>
 		<?php if ( $has_google_cal ) : ?>
-			<div class="tribe-block__btn--link tribe-block__events-gcal">
+			<div class="tribe-block__btn--link nhsuk-button tribe-block__events-gcal">
 				<a
 					href="<?php echo esc_url( Tribe__Events__Main::instance()->esc_gcal_url( tribe_get_gcal_link() ) ); ?>"
 					title="<?php esc_attr_e( 'Add to Google Calendar', 'nightingale' ); ?>"
@@ -39,7 +39,7 @@ if ( $should_render ) :
 			</div>
 		<?php endif; ?>
 		<?php if ( $has_ical ) : ?>
-			<div class="tribe-block__btn--link tribe-block__-events-ical">
+			<div class="tribe-block__btn--link nhsuk-button tribe-block__-events-ical">
 				<a
 					href="<?php echo esc_url( tribe_get_single_ical_link() ); ?>"
 					title="<?php esc_attr_e( 'Download .ics file', 'nightingale' ); ?>"
