@@ -33,6 +33,8 @@ $topmenu_args = array(
 	'theme_location'  => 'main-menu',
 	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 	'item_spacing'    => 'preserve',
+    'add_li_class'    => 'nhsuk-header__navigation-item',
+    'link_class'      => 'nhsuk-header__navigation-link',
 );
 ?>
 <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">

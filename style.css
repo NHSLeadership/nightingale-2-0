@@ -6940,19 +6940,19 @@ b {
   fill: #212b32;
 }
 
-.nhsuk-header__navigation-list, .nhsuk-header .nhsuk-header__navigation ul {
+.nhsuk-header__navigation-list {
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-.nhsuk-header__navigation-item, .nhsuk-header .nhsuk-header__navigation ul li {
+.nhsuk-header__navigation-item {
   border-top: 1px solid #f0f4f5;
   margin-bottom: 0;
   position: relative;
 }
 
-.nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
+.nhsuk-header__navigation-link {
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
@@ -6966,7 +6966,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
+  .nhsuk-header__navigation-link {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -6974,46 +6974,46 @@ b {
 }
 
 @media print {
-  .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
+  .nhsuk-header__navigation-link {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
-.nhsuk-header__navigation-link .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a .nhsuk-icon__chevron-right {
+.nhsuk-header__navigation-link .nhsuk-icon__chevron-right {
   fill: #aeb7bd;
   position: absolute;
   right: 4px;
   top: 11px;
 }
 
-.nhsuk-header__navigation-link:visited, .nhsuk-header .nhsuk-header__navigation ul li a:visited {
+.nhsuk-header__navigation-link:visited {
   color: #005eb8;
 }
 
 @media (min-width: 61.875em) {
-  .nhsuk-header__navigation-link:visited, .nhsuk-header .nhsuk-header__navigation ul li a:visited {
+  .nhsuk-header__navigation-link:visited {
     color: #ffffff;
   }
 }
 
-.nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+.nhsuk-header__navigation-link:hover {
   box-shadow: none;
   color: #005eb8;
   text-decoration: underline;
 }
 
 @media (min-width: 61.875em) {
-  .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover {
+  .nhsuk-header__navigation-link:hover {
     color: #ffffff;
   }
 }
 
-.nhsuk-header__navigation-link:hover .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a:hover .nhsuk-icon__chevron-right {
+.nhsuk-header__navigation-link:hover .nhsuk-icon__chevron-right {
   fill: #005eb8;
 }
 
-.nhsuk-header__navigation-link:active, .nhsuk-header .nhsuk-header__navigation ul li a:active, .nhsuk-header__navigation-link:focus, .nhsuk-header .nhsuk-header__navigation ul li a:focus {
+.nhsuk-header__navigation-link:active, .nhsuk-header__navigation-link:focus {
   background-color: #ffeb3b;
   border-bottom: 4px solid #212b32;
   box-shadow: none;
@@ -7023,16 +7023,16 @@ b {
   text-decoration: none;
 }
 
-.nhsuk-header__navigation-link:active:hover, .nhsuk-header .nhsuk-header__navigation ul li a:active:hover, .nhsuk-header__navigation-link:focus:hover, .nhsuk-header .nhsuk-header__navigation ul li a:focus:hover {
+.nhsuk-header__navigation-link:active:hover, .nhsuk-header__navigation-link:focus:hover {
   background-color: #ffeb3b;
   color: #212b32;
 }
 
-.nhsuk-header__navigation-link:active:hover .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a:active:hover .nhsuk-icon__chevron-right, .nhsuk-header__navigation-link:focus:hover .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li a:focus:hover .nhsuk-icon__chevron-right {
+.nhsuk-header__navigation-link:active:hover .nhsuk-icon__chevron-right, .nhsuk-header__navigation-link:focus:hover .nhsuk-icon__chevron-right {
   fill: #212b32;
 }
 
-.nhsuk-header__navigation-link:active:visited, .nhsuk-header .nhsuk-header__navigation ul li a:active:visited, .nhsuk-header__navigation-link:focus:visited, .nhsuk-header .nhsuk-header__navigation ul li a:focus:visited {
+.nhsuk-header__navigation-link:active:visited, .nhsuk-header__navigation-link:focus:visited {
   background-color: #ffeb3b;
   color: #212b32;
 }
@@ -7056,7 +7056,7 @@ b {
     margin: 0 auto;
     max-width: 1024px;
   }
-  .nhsuk-header__navigation-list, .nhsuk-header .nhsuk-header__navigation ul {
+  .nhsuk-header__navigation-list {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     display: -ms-flexbox;
     /* [14] */
@@ -7068,15 +7068,15 @@ b {
   .nhsuk-header__navigation-list--small {
     justify-content: flex-start;
   }
-  .nhsuk-header__navigation-item, .nhsuk-header .nhsuk-header__navigation ul li {
+  .nhsuk-header__navigation-item {
     border-top: 0;
     margin: 0;
     text-align: center;
   }
-  .nhsuk-header__navigation-item .nhsuk-icon__chevron-right, .nhsuk-header .nhsuk-header__navigation ul li .nhsuk-icon__chevron-right {
+  .nhsuk-header__navigation-item .nhsuk-icon__chevron-right {
     display: none;
   }
-  .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
+  .nhsuk-header__navigation-link {
     color: #ffffff;
     line-height: normal;
   }
@@ -7118,22 +7118,20 @@ b {
 .ie8 .nhsuk-header__search-toggle,
 .ie8 .nhsuk-search__close,
 .ie8 .nhsuk-header__navigation-title,
-.ie8 .nhsuk-header__navigation-link .nhsuk-icon__chevron-right,
-.ie8 .nhsuk-header .nhsuk-header__navigation ul li a .nhsuk-icon__chevron-right,
-.nhsuk-header .nhsuk-header__navigation ul li .ie8 a .nhsuk-icon__chevron-right {
+.ie8 .nhsuk-header__navigation-link .nhsuk-icon__chevron-right {
   display: none;
 }
 
-.ie8 .nhsuk-header__navigation-list, .ie8 .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header__navigation .ie8 ul {
+.ie8 .nhsuk-header__navigation-list {
   display: table;
 }
 
-.ie8 .nhsuk-header__navigation-item, .ie8 .nhsuk-header .nhsuk-header__navigation ul li, .nhsuk-header .nhsuk-header__navigation ul .ie8 li {
+.ie8 .nhsuk-header__navigation-item {
   display: table-cell;
   /* [15] */
 }
 
-.ie8 .nhsuk-header__navigation-item a:hover, .ie8 .nhsuk-header .nhsuk-header__navigation ul li a:hover, .nhsuk-header .nhsuk-header__navigation ul .ie8 li a:hover {
+.ie8 .nhsuk-header__navigation-item a:hover {
   color: #005eb8;
 }
 
@@ -7153,10 +7151,10 @@ b {
 }
 
 @media (min-width: 61.875em) {
-  .ie9 .nhsuk-header__navigation-list, .ie9 .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header__navigation .ie9 ul {
+  .ie9 .nhsuk-header__navigation-list {
     display: table;
   }
-  .ie9 .nhsuk-header__navigation-item, .ie9 .nhsuk-header .nhsuk-header__navigation ul li, .nhsuk-header .nhsuk-header__navigation ul .ie9 li {
+  .ie9 .nhsuk-header__navigation-item {
     display: table-cell;
   }
 }
@@ -7592,7 +7590,7 @@ b {
   color: #212b32;
 }
 
-.nhsuk-header--white .nhsuk-header__navigation-list, .nhsuk-header--white .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header__navigation .nhsuk-header--white ul {
+.nhsuk-header--white .nhsuk-header__navigation-list {
   border-top: 0;
 }
 
@@ -7604,23 +7602,23 @@ b {
   background-color: #ffffff;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-list, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-list {
   border-top: 1px solid #f0f4f5;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link {
   color: #005eb8;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:visited, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:visited, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:visited {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:visited {
   color: #005eb8;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:focus, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:focus {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus {
   color: #212b32;
 }
 
-.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus:hover, .nhsuk-header--white-nav .nhsuk-header .nhsuk-header__navigation ul li a:focus:hover, .nhsuk-header .nhsuk-header--white-nav .nhsuk-header__navigation ul li a:focus:hover {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus:hover {
   background: #ffeb3b;
 }
 
@@ -10313,7 +10311,7 @@ a:focus .nhsuk-icon {
   .nhsuk-header .nhsuk-header__navigation .nhsuk-icon__close {
     color: #005eb8;
   }
-  .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header__navigation-link, .nhsuk-header .nhsuk-header__navigation ul li a {
+  .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header__navigation-link {
     color: #005eb8;
   }
   .nhsuk-header .nhsuk-icon__search, .nhsuk-header .nhsuk-header__search-toggle:focus .nhsuk-icon {

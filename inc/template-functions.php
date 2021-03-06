@@ -280,3 +280,19 @@ function nightingale_comments( $return ) {
 	$return = str_replace( 'comment-author-label', 'comment-author-label nhsuk-tag', $return );
 	return $return;
 }
+
+function nightingale_additional_menu_class_on_li($classes, $item, $args) {
+	if(isset($args->add_li_class)) {
+		$classes[] = $args->add_li_class;
+	}
+	return $classes;
+}
+add_filter('nav_menu_css_class', 'nightingale_additional_menu_class_on_li', 1, 3);
+
+function nightingale_additional_menu_class_on_a( $atts, $item, $args ) {
+	if (property_exists($args, 'link_class')) {
+		$atts['class'] = $args->link_class;
+	}
+	return $atts;
+}
+add_filter( 'nav_menu_link_attributes', 'nightingale_additional_menu_class_on_a', 1, 3 );

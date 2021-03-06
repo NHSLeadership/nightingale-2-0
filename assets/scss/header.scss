@@ -3,17 +3,13 @@
 	max-width : 100%;
 
 	ul {
-	  @extend .nhsuk-header__navigation-list;
 	  overflow : hidden;
 
 
 	  li {
-		@extend .nhsuk-header__navigation-item;
 
 		a {
-		  @extend .nhsuk-header__navigation-link;
 		  height : 100%;
-
 		}
 	  }
 	}
