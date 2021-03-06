@@ -58,7 +58,7 @@ add_filter(
 
 // Use gform_field_content to style individual fields.
 // See https://docs.gravityforms.com/gform_field_content.
-add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 10, 2 );
+add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 12, 2 );
 
 /**
  * Clean Gravity Forms inputs out

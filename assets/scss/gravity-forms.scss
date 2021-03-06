@@ -452,7 +452,6 @@
 }
 
 .gf-all-fields { // style up the all-fields summary to look like it should.
-  @extend .nhsuk-summary-list;
   li {
 	&.field-type-section {
 	  background-color: $color_nhsuk-white;
@@ -462,13 +461,6 @@
 		padding-bottom: 0;
 		padding-top: 0;
 	  }
-	}
-	@extend .nhsuk-summary-list__row;
-	span:not(.label) {
-	  @extend .nhsuk-summary-list__value;
-	}
-	span.label {
-	  @extend .nhsuk-summary-list__key;
 	}
 	hr.gpnf-nested-entries-hr {
 	  display: none;

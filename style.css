@@ -9243,7 +9243,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
  * 5. In older browsers such as IE8, :last-child is not available,
  *    so only show the border divider where it is available.
  */
-.nhsuk-summary-list, .gf-all-fields {
+.nhsuk-summary-list {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -9254,7 +9254,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list, .gf-all-fields {
+  .nhsuk-summary-list {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -9262,14 +9262,14 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-summary-list, .gf-all-fields {
+  .nhsuk-summary-list {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list, .gf-all-fields {
+  .nhsuk-summary-list {
     display: table;
     table-layout: fixed;
     /* [1] */
@@ -9278,27 +9278,26 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list, .gf-all-fields {
+  .nhsuk-summary-list {
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-summary-list__row, .gf-all-fields li {
+  .nhsuk-summary-list__row {
     border-bottom: 1px solid #d8dde0;
     margin-bottom: 16px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list__row, .gf-all-fields li {
+  .nhsuk-summary-list__row {
     display: table-row;
   }
 }
 
-.nhsuk-summary-list__key, .gf-all-fields li span.label,
+.nhsuk-summary-list__key,
 .nhsuk-summary-list__value,
-.gf-all-fields li span:not(.label),
 .nhsuk-summary-list__actions {
   margin: 0;
   /* [2] */
@@ -9306,9 +9305,8 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list__key, .gf-all-fields li span.label,
+  .nhsuk-summary-list__key,
   .nhsuk-summary-list__value,
-  .gf-all-fields li span:not(.label),
   .nhsuk-summary-list__actions {
     border-bottom: 1px solid #d8dde0;
     display: table-cell;
@@ -9330,47 +9328,42 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   }
 }
 
-.nhsuk-summary-list__key, .gf-all-fields li span.label,
-.nhsuk-summary-list__value,
-.gf-all-fields li span:not(.label) {
+.nhsuk-summary-list__key,
+.nhsuk-summary-list__value {
   /* [3] */
   overflow-wrap: break-word;
   word-wrap: break-word;
   /* [4] */
 }
 
-.nhsuk-summary-list__key, .gf-all-fields li span.label {
+.nhsuk-summary-list__key {
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-summary-list__key, .gf-all-fields li span.label {
+  .nhsuk-summary-list__key {
     width: 30%;
   }
 }
 
 @media (max-width: 40.0525em) {
-  
-  .nhsuk-summary-list__value,
-  .gf-all-fields li span:not(.label) {
+  .nhsuk-summary-list__value {
     margin-bottom: 16px;
   }
 }
 
 @media (min-width: 40.0625em) {
-  
-  .nhsuk-summary-list__value,
-  .gf-all-fields li span:not(.label) {
+  .nhsuk-summary-list__value {
     width: 50%;
   }
 }
 
-.nhsuk-summary-list__value > p, .gf-all-fields li span:not(.label) > p {
+.nhsuk-summary-list__value > p {
   margin-bottom: 8px;
 }
 
-.nhsuk-summary-list__value > :last-child, .gf-all-fields li span:not(.label) > :last-child {
+.nhsuk-summary-list__value > :last-child {
   margin-bottom: 0;
 }
 
@@ -9399,14 +9392,10 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   padding-right: 0;
 }
 
-.nhsuk-summary-list--no-border .nhsuk-summary-list__key, .nhsuk-summary-list--no-border .gf-all-fields li span.label, .gf-all-fields li .nhsuk-summary-list--no-border span.label,
+.nhsuk-summary-list--no-border .nhsuk-summary-list__key,
 .nhsuk-summary-list--no-border .nhsuk-summary-list__value,
-.nhsuk-summary-list--no-border .gf-all-fields li span:not(.label),
-.gf-all-fields li .nhsuk-summary-list--no-border span:not(.label),
 .nhsuk-summary-list--no-border .nhsuk-summary-list__actions,
-.nhsuk-summary-list--no-border .nhsuk-summary-list__row,
-.nhsuk-summary-list--no-border .gf-all-fields li,
-.gf-all-fields .nhsuk-summary-list--no-border li {
+.nhsuk-summary-list--no-border .nhsuk-summary-list__row {
   border: 0;
 }
 
@@ -11108,7 +11097,7 @@ li.nhsuk-pagination-item--next {
   border-radius: 4px;
 }
 
-.gform_wrapper .gform_body ul.gform_fields li.gfield.gfield_html dl.nhsuk-summary-list, .gform_wrapper .gform_body ul.gform_fields li.gfield.gfield_html dl.gf-all-fields {
+.gform_wrapper .gform_body ul.gform_fields li.gfield.gfield_html dl.nhsuk-summary-list {
   background: #ffffff;
   padding: 24px;
   padding-left: 24px;
