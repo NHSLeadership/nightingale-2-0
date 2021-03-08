@@ -162,16 +162,26 @@ function nightingale_link_pages_args_prevnext_add( $args ) {
 }
 
 /**
- * Add a class to previous link in pagination.
+ * Add a class to previous link in pagination
+ *
+ * @param string $format the original markup.
  */
-function nightingale_posts_link__class($format) {
-	$format = str_replace('href=', 'class="nhsuk-pagination__link" href=', $format);
+function nightingale_posts_link__class( $format ) {
+	$format = str_replace( 'href=', 'class="nhsuk-pagination__link" href=', $format );
 	return $format;
 }
-add_filter('next_post_link', 'nightingale_posts_link__class');
-add_filter('previous_post_link', 'nightingale_posts_link__class');
+add_filter( 'next_post_link', 'nightingale_posts_link__class' );
+add_filter( 'previous_post_link', 'nightingale_posts_link__class' );
 
 add_filter( 'wp_link_pages_link', 'nightingale_split_post_pagination' );
+
+/**
+ * Function to add tag markup to pagination output
+ *
+ * @param string $output the original markup.
+ *
+ * @return string $output the corrected markup
+ */
 function nightingale_split_post_pagination( $output ) {
 	$output = str_replace( '"post-page-numbers current"', '"post-page-numbers current nhsuk-tag nhsuk-tag--white"', $output );
 	$output = str_replace( '"post-page-numbers"', '"post-page-numbers nhsuk-tag nhsuk-tag--grey"', $output );

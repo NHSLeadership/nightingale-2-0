@@ -109,10 +109,13 @@ function nightingale_breadcrumb() {
 				right: 0;
 			}
 		</style>';
-		printf(
-			'<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb"><div class="nhsuk-width-container">%1$s </div></nav>',
-			$breadcrumbs // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-		);
+		echo '<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb"><div class="nhsuk-width-container">';
+		$breadcrumbs = str_replace( '<span class="sep"> &raquo; </span>', '', $breadcrumbs );
+		$breadcrumbs = str_replace( 'sfwd-breadcrumbs', 'nhsuk-breadcrumb__list', $breadcrumbs );
+		$breadcrumbs = str_replace( '<span itemscope', '<span class="nhsuk-breadcrumb__item" itemscope', $breadcrumbs );
+		echo $breadcrumbs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo '</div></nav>';
+
 	} else {
 
 		printf(

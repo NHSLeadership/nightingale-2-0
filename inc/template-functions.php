@@ -250,23 +250,40 @@ function nightingale_latest_posts_category_filter( $catcount, $categories, $cato
 add_filter( 'comment_form_field_cookies', 'nightingale_style_comment_cookies' );
 /**
  * Modify the markup of the comment cookie checkbox to match nhsuk styled output.
+ *
  * @return string corrected output
  */
 function nightingale_style_comment_cookies() {
 	return '<p class="comment-form-cookies-consent nhsuk-checkboxes__item">
 				<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" class="nhsuk-checkboxes__input" value="yes">
-				<label class="nhsuk-checkboxes__label" for="wp-comment-cookies-consent">' . esc_html__( 'Save my name, email, and website in this browser for the next time I comment.', 'nightingale' ) .'</label>
+				<label class="nhsuk-checkboxes__label" for="wp-comment-cookies-consent">' . esc_html__( 'Save my name, email, and website in this browser for the next time I comment.', 'nightingale' ) . '</label>
 			</p>';
 }
 
 add_filter( 'comment_form_defaults', 'nightingale_comment_defaults' );
+
+/**
+ * Function to clean up the comment form and use nhs markup
+ *
+ * @param string $defaults the original default fields for comments.
+ *
+ * @return string
+ */
 function nightingale_comment_defaults( $defaults ) {
 	$defaults['class_container'] = 'nhsuk-form-group';
-	$defaults['submit_button'] = '<input name="%1$s" type="submit" id="%2$s" class="nhsuk-button %3$s" value="%4$s" />';
+	$defaults['submit_button']   = '<input name="%1$s" type="submit" id="%2$s" class="nhsuk-button %3$s" value="%4$s" />';
 	return $defaults;
 }
 
 add_filter( 'cancel_comment_reply_link', 'nightingale_cancel_comment_link' );
+
+/**
+ * Function to add nhsuk button styling to cancel comment link
+ *
+ * @param string $link the original markup for the link.
+ *
+ * @return string|string[]
+ */
 function nightingale_cancel_comment_link( $link ) {
 	$link = str_replace( 'id="cancel-comment-reply-link"', 'id="cancel-comment-reply-link" class="nhsuk-button nhsuk-button--reverse"', $link );
 	return $link;
@@ -274,6 +291,14 @@ function nightingale_cancel_comment_link( $link ) {
 
 
 add_filter( 'get_comment_author_link', 'nightingale_comments', 98 );
+
+/**
+ * Function to add tag markup to comments
+ *
+ * @param string $return the original markup.
+ *
+ * @return string $return the corrected markup
+ */
 function nightingale_comments( $return ) {
 	$return = str_replace( 'comment-author-label-administrator', 'nhsuk-tag--aqua-green', $return );
 	$return = str_replace( 'comment-author-label-facilitator', 'nhsuk-tag--blue', $return );
@@ -281,16 +306,35 @@ function nightingale_comments( $return ) {
 	return $return;
 }
 
-function nightingale_additional_menu_class_on_li($classes, $item, $args) {
-	if(isset($args->add_li_class)) {
+/**
+ * Function to modify markup on menu list items
+ *
+ * @param array $classes the original classes.
+ * @param int   $item the item in question.
+ * @param array $args the arguments for this element.
+ *
+ * @return array $classes the modified class array.
+ */
+function nightingale_additional_menu_class_on_li( $classes, $item, $args ) {
+	if ( isset( $args->add_li_class ) ) {
 		$classes[] = $args->add_li_class;
 	}
 	return $classes;
 }
-add_filter('nav_menu_css_class', 'nightingale_additional_menu_class_on_li', 1, 3);
 
+add_filter( 'nav_menu_css_class', 'nightingale_additional_menu_class_on_li', 1, 3 );
+
+/**
+ * Function to modify markup on menu links
+ *
+ * @param array $atts the menu attributes.
+ * @param int   $item the item in question.
+ * @param array $args the arguments for this element.
+ *
+ * @return mixed the returned corrected argument
+ */
 function nightingale_additional_menu_class_on_a( $atts, $item, $args ) {
-	if (property_exists($args, 'link_class')) {
+	if ( property_exists( $args, 'link_class' ) ) {
 		$atts['class'] = $args->link_class;
 	}
 	return $atts;
