@@ -1,7 +1,35 @@
-.edit-post-visual-editor, .block-editor-block-styles, .block-editor-inserter__menu-help-panel { // target only the editor itself
-  //@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+@import 'assets/scss/default';
+@import 'assets/scss/nhsuk-replacement-gutenberg';
+@import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
+@import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
+@import 'assets/scss/accessibility'; // global accessibility improvements
+// start importing the theme specific settings
+@import 'assets/scss/nhs-colours';
+// nhs colour pallette
+@import 'assets/scss/generic-overrides';
+// generic over-rides to remove default wordpress styling issues
+@import 'assets/scss/style_variations';
+// Gravity Forms plugin styling to match NHSUK design patterns
+@import 'assets/scss/gravity-forms';
+// LearnDash plugin styling to match NHSUK design patterns
+@import 'assets/scss/learndash-styling';
 
-  @import 'assets/scss/nhsuk-replacement';
+// Events Calendar plugin styling to match NHSUK design patterns
+@import 'assets/scss/events-calendar-styling';
+// Download Monitor plugin styling to match NHSUK design patterns
+@import 'assets/scss/download-monitor';
+@import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
+@import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
+@import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
+
+// Legacy components - added 16th November 2020
+@import 'assets/scss/nhsblocks/legacy/panel/panel';
+@import 'assets/scss/nhsblocks/legacy/promo/promo';
+@import 'assets/scss/nhsblocks/legacy/legacy';
+// nhs colour pallette
+@import 'assets/scss/color-mixer';
+.edit-post-visual-editor, .block-editor-block-styles, .block-editor-inserter__menu-help-panel { // target only the editor itself
+
   ul {
     list-style: none;
   }
@@ -19,10 +47,7 @@
   .nhsuk-header__search-form {
     height: 0;
   }
-  // start importing the theme specific settings
 
-  @import 'assets/scss/generic-overrides'; // generic over-rides to remove default wordpress styling issues
-  @import 'assets/scss/nhs-colours'; // nhs colour pallette
   .editor-post-title__input {
     font-family: $nhsuk-font, $nhsuk-font-fallback;
     @extend h1;
@@ -41,9 +66,7 @@
 
 
   }
-  @import 'assets/scss/style_variations';// style variations
-  @import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
-  @import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
+
   [data-type="nhsblocks/stripesblock"] {
     width: 100%;
     max-width: 100%;
@@ -95,7 +118,6 @@
     }
   }
 
-  @import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
   .is-style-panel-with-label {
     h3 {
       width  : fit-content;
@@ -170,7 +192,7 @@
       z-index   : 2;
       top       : 0;
       margin    : 0 -20px;
-      top       : 50%;
+      top       : 36%;
       max-width : 90%;
 
       .rich-text {
@@ -294,53 +316,28 @@
         width : 100%;
       }
 
-      [data-type="nhsblocks/onethird"] {
-        @extend .nhsuk-grid-column-one-third;
-
         .nhsuk-grid-column-one-third {
           @extend %innerBlocks;
         }
-
-      }
-
-      [data-type="nhsblocks/onehalf"] {
-        @extend .nhsuk-grid-column-one-half;
 
         .nhsuk-grid-column-one-half {
           @extend %innerBlocks;
         }
 
-      }
-
-      [data-type="nhsblocks/twothirds"] {
-        @extend .nhsuk-grid-column-two-thirds;
-
         .nhsuk-grid-column-two-thirds {
           @extend %innerBlocks;
         }
-
-      }
-
-      [data-type="nhsblocks/onequarter"] {
-        @extend .nhsuk-grid-column-one-quarter;
 
         .nhsuk-grid-column-one-quarter {
           @extend %innerBlocks;
         }
 
-      }
-
-      [data-type="nhsblocks/threequarters"] {
-        @extend .nhsuk-grid-column-three-quarters;
-
         .nhsuk-grid-column-three-quarters {
           @extend %innerBlocks;
         }
-      }
     }
 
   }
-
   /* make the table cells more obvious when editing */
   .is-selected {
     figure.is-style-nhsuk-table-responsive {
@@ -366,9 +363,4 @@
       min-height: 50px;
     }
   }
-  @import 'assets/scss/color-mixer';//gutenberg page style overrides
-  // Legacy components - added 16th November 2020
-  @import 'assets/scss/nhsblocks/legacy/panel/panel';
-  @import 'assets/scss/nhsblocks/legacy/promo/promo';
-  @import 'assets/scss/nhsblocks/legacy/legacy';
 }

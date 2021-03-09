@@ -1592,7 +1592,7 @@ h2,
 }
 
 h3,
-.nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.nhsuk-heading-m, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
@@ -1604,7 +1604,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+  .nhsuk-heading-m, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1613,7 +1613,7 @@ h3,
 
 @media print {
   h3,
-  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+  .nhsuk-heading-m, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -1621,7 +1621,7 @@ h3,
 
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+  .nhsuk-heading-m, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     margin-bottom: 24px;
   }
 }
@@ -2068,10 +2068,9 @@ ol + .nhsuk-heading-l {
 p + h3, .nhsuk-body-m + h3, address + h3,
 p + .nhsuk-heading-m,
 .nhsuk-body-m + .nhsuk-heading-m,
-address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
+address + .nhsuk-heading-m, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
 .nhsuk-body-s + h3,
 .nhsuk-body-s + .nhsuk-heading-m,
-.nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
 .nhsuk-list + h3,
 ul + h3,
@@ -2079,9 +2078,6 @@ ol + h3,
 .nhsuk-list + .nhsuk-heading-m,
 ul + .nhsuk-heading-m,
 ol + .nhsuk-heading-m,
-.nightingale-latest-news .nhsuk-panel .nhsuk-list + a,
-.nightingale-latest-news .nhsuk-panel ul + a,
-.nightingale-latest-news .nhsuk-panel ol + a,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
@@ -2113,10 +2109,9 @@ ol + .nhsuk-heading-s,
   p + h3, .nhsuk-body-m + h3, address + h3,
   p + .nhsuk-heading-m,
   .nhsuk-body-m + .nhsuk-heading-m,
-  address + .nhsuk-heading-m, .nightingale-latest-news .nhsuk-panel p + a, .nightingale-latest-news .nhsuk-panel .nhsuk-body-m + a, .nightingale-latest-news .nhsuk-panel address + a, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
+  address + .nhsuk-heading-m, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
   .nhsuk-body-s + h3,
   .nhsuk-body-s + .nhsuk-heading-m,
-  .nightingale-latest-news .nhsuk-panel .nhsuk-body-s + a,
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
   .nhsuk-list + h3,
   ul + h3,
@@ -2124,9 +2119,6 @@ ol + .nhsuk-heading-s,
   .nhsuk-list + .nhsuk-heading-m,
   ul + .nhsuk-heading-m,
   ol + .nhsuk-heading-m,
-  .nightingale-latest-news .nhsuk-panel .nhsuk-list + a,
-  .nightingale-latest-news .nhsuk-panel ul + a,
-  .nightingale-latest-news .nhsuk-panel ol + a,
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
   .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
@@ -3628,7 +3620,7 @@ b {
   }
 }
 
-.nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type {
+.nhsuk-action-link__link {
   font-weight: 400;
   font-size: 18px;
   font-size: 1.125rem;
@@ -3645,7 +3637,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type {
+  .nhsuk-action-link__link {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -3653,18 +3645,18 @@ b {
 }
 
 @media print {
-  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type {
+  .nhsuk-action-link__link {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
-.nhsuk-action-link__link:hover .nhsuk-action-link__text, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:hover:last-of-type .nhsuk-action-link__text {
+.nhsuk-action-link__link:hover .nhsuk-action-link__text {
   text-decoration: underline;
   /* [6] */
 }
 
-.nhsuk-action-link__link:focus, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:focus:last-of-type {
+.nhsuk-action-link__link:focus {
   background-color: #ffeb3b;
   box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
   color: #212b32;
@@ -3672,28 +3664,28 @@ b {
   text-decoration: none;
 }
 
-.nhsuk-action-link__link:focus:hover .nhsuk-action-link__text, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:focus:hover:last-of-type .nhsuk-action-link__text {
+.nhsuk-action-link__link:focus:hover .nhsuk-action-link__text {
   color: #212b32;
   text-decoration: none;
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type {
+  .nhsuk-action-link__link {
     padding-left: 26px;
     /* [2] */
   }
 }
 
 @media print {
-  .nhsuk-action-link__link, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type {
+  .nhsuk-action-link__link {
     color: #212b32;
   }
-  .nhsuk-action-link__link:visited, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:visited:last-of-type {
+  .nhsuk-action-link__link:visited {
     color: #212b32;
   }
 }
 
-.nhsuk-action-link__link .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle {
+.nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
   fill: #007f3b;
   height: 36px;
   left: -3px;
@@ -3703,17 +3695,17 @@ b {
 }
 
 @media print {
-  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle {
+  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
     color: #212b32;
     fill: #212b32;
   }
-  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:active, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:active, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:focus, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:focus, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:visited, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle:visited {
+  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:active, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:focus, .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:visited {
     color: #212b32;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle, .nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type .nhsuk-icon__arrow-right-circle {
+  .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
     height: 24px;
     left: -2px;
     margin-bottom: 0;
@@ -4407,7 +4399,6 @@ b {
 .nhsuk-card-group + .nhsuk-heading-l,
 .nhsuk-card-group + h3,
 .nhsuk-card-group + .nhsuk-heading-m,
-.nightingale-latest-news .nhsuk-panel .nhsuk-card-group + a,
 .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-card-group + h2 {
   padding-top: 0;
   /* [4] */
@@ -10222,17 +10213,6 @@ button#toggle-search {
   margin: 0 16px 0 0;
 }
 
-/* Latest Posts skinning */
-.nightingale-latest-news .nhsuk-panel {
-  margin-bottom: 16px;
-}
-
-.nightingale-latest-news .nhsuk-panel .wp-block-latest-posts__post-excerpt a:last-of-type {
-  margin-top: 32px;
-  margin-bottom: 0;
-  width: 100%;
-}
-
 .nhsuk-grid-column-width, .nhsuk-grid-column-full {
   clear: both;
 }
@@ -10360,6 +10340,16 @@ button + .button {
   display: flow-root;
 }
 
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content {
+  margin-top: 40px;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content {
+    margin-top: 48px;
+  }
+}
+
 .nhsuk-card.is-style-panel-grey {
   background: inherit;
   border: none;
@@ -10379,7 +10369,7 @@ button + .button {
   content: '';
 }
 
-.nhsuk-cat-filter .nhsuk-heading-m, .nhsuk-cat-filter .nightingale-latest-news .nhsuk-panel a, .nightingale-latest-news .nhsuk-panel .nhsuk-cat-filter a, .nhsuk-cat-filter .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-cat-filter h2 {
+.nhsuk-cat-filter .nhsuk-heading-m, .nhsuk-cat-filter .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2, .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-cat-filter h2 {
   float: left;
 }
 
