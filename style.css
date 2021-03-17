@@ -9473,72 +9473,13 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   width: 100%;
 }
 
-.nhsuk-search__input {
-  padding-right: 0;
-}
-
-.nhsuk-search__submit {
-  margin-left: 0;
-}
-
-#secondary section.widget_search {
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#secondary .nhsuk-header__search-wrap {
-  padding: 24px 0;
-}
-
-#secondary .nhsuk-header__search-wrap .nhsuk-search__input {
-  float: left;
-  max-width: 78%;
-}
-
-#secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 2px solid #aeb7bd;
-  border-left: none;
-  margin-top: 0;
-  float: left;
-  box-shadow: 0 !important;
-}
-
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
-  background-color: #f0f4f5;
-  border-color: #005eb8;
-  color: #005eb8;
-}
-
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #005eb8;
-}
-
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
-  background-color: #005eb8;
-  color: #ffffff;
-}
-
-#secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
-  fill: #ffffff;
-}
-
-@media (min-width: 40.0625em) {
-  .nhsuk-search__submit {
-    padding: 1px 6px;
-  }
-}
-
 #primary .page-content .nhsuk-header__search-toggle, #primary .page-content .nhsuk-search__close {
   display: none;
 }
 
 #primary .page-content .nhsuk-header__search-wrap {
-  padding: 8px 24px;
   display: inline-block;
-  width: 80%;
-  border: 2px solid #005eb8;
-  border-radius: 4px;
+  width: 100%;
 }
 
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
@@ -9546,25 +9487,15 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
   border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
+  margin: 16px 0 0 5%;
 }
 
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
-  background-color: #f0f4f5;
-  border-color: #005eb8;
-  color: #005eb8;
-}
-
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #005eb8;
-}
-
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
-  background-color: #005eb8;
-  color: #ffffff;
-}
-
-#primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
-  fill: #ffffff;
+@media (max-width: 40.0525em) {
+  #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+    max-width: 73%;
+    margin: 0;
+    height: 52px;
+  }
 }
 
 #primary .widget-title a {
@@ -9575,41 +9506,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 .nhsuk-content__clearfix {
   clear: both;
   margin-top: 1.5rem;
-}
-
-.error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
-  padding: 5px;
-  width: 100%;
-}
-
-.error404 #primary .page-content .nhsuk-header__search-form, .search-no-results #primary .page-content .nhsuk-header__search-form {
-  display: block;
-  padding: 0;
-}
-
-.error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-  float: left;
-  max-width: 80%;
-  margin: 16px 0 0 5%;
-}
-
-@media (max-width: 40.0525em) {
-  .error404 #primary .page-content .nhsuk-header__search-wrap, .search-no-results #primary .page-content .nhsuk-header__search-wrap {
-    border: 0;
-    padding: 0;
-  }
-  .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-    float: left;
-    max-width: 73%;
-    margin: 0;
-    height: 50px;
-  }
-}
-
-@media (min-width: 40.0525em) {
-  .nhsuk-header__search-wrap, body.buddypress #buddypress .group-invites-search {
-    display: inline-block;
-  }
 }
 
 .nhsuk-grid-row.nhsuk-width-restrict {
@@ -9961,16 +9857,31 @@ button + .button {
   padding: 0;
 }
 
-#secondary section#widget_search {
+#secondary section.widget_search {
   height: 4.5rem;
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#secondary section#widget_search .nhsuk-header__search-wrap {
+#secondary section.widget_search .nhsuk-header__search-wrap {
   padding-top: 16px;
+  padding: 24px 0;
 }
 
-#secondary section#widget_search .nhsuk-header__search-wrap .nhsuk-search__input {
+#secondary section.widget_search .nhsuk-header__search-wrap .nhsuk-search__input {
   width: 81%;
+  float: left;
+  max-width: 78%;
+  border-color: #aeb7bd;
+}
+
+#secondary section.widget_search .nhsuk-header__search-wrap .nhsuk-search__submit {
+  border: 2px solid #aeb7bd;
+  border-left: none;
+  margin-top: 0;
+  float: left;
+  box-shadow: 0 !important;
 }
 
 #secondary section #wp-calendar caption {
