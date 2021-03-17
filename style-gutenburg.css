@@ -8014,8 +8014,6 @@
 }
 
 .edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 2px solid #aeb7bd;
-  border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 78%;
 }

@@ -1,44 +1,21 @@
 .nhsuk-header {
-  .nhsuk-header__navigation {
-	max-width : 100%;
-
-	ul {
-	  overflow : hidden;
-
-
-	  li {
-
-		a {
-		  height : 100%;
-		}
+  &.nhsuk-header--transactional {
+	.nhsuk-header__navigation {
+	  max-width: 100%;
+	}
+  }
+  &.nhsuk-header--organisation {
+	@media (min-width : 48.0625em) {
+	  .nhsuk-header__link {
+		max-width : 500px;
+		float     : left;
 	  }
 	}
   }
 
-  .nhsuk-header__search-toggle,
-  .nhsuk-search__close,
-  .nhsuk-header__navigation-close,
-  .nhsuk-header__menu-toggle {
-	box-shadow : none;
-  }
-.nhsuk-header__link--service {
-  &.focus-visible {
-	.nhsuk-header__transactional-service-name--link {
-	  color : $color_nhsuk-black;
-	}
-  }
-  &:hover {
-	.nhsuk-header__transactional-service-name--link {
-	  text-decoration : underline;
-	}
-  }
-}
-
-  .nhsuk-header__transactional-service-name {
-	a.nhsuk-header__transactional-service-name--link {
-	  font-weight : $nhsuk-font-bold;
-	  color       : $color_nhsuk-white;
-	}
+  a.nhsuk-header__link--service {
+	display: contents;
+	float: left;
   }
 
   .nhsuk-search__input {
@@ -47,12 +24,21 @@
 	border-right  : none;
   }
 
+  @media (max-width : 40.0525em) {
+	.nhsuk-search__input {
+	  border : $nhsuk-border-width-form-element solid $nhsuk-border-color;
+	  height : 52px;
+	}
+  }
+
+
+  // Below here is all the white header variation.
   &.nhsuk-header--white {
 	.nhsuk-header__search-wrap input[type="search"] {
 	  border : $nhsuk-border-width-form-element solid $nhsuk-border-color;
 	}
 
-	a.nhsuk-header__transactional-service-name--link {
+	.nhsuk-header__transactional-service-name--link {
 	  color       : $color_nhsuk-blue;
 	  font-weight : $nhsuk-font-bold;
 	}
@@ -62,16 +48,18 @@
 	  .nhsuk-header__menu-toggle {
 		border : $nhsuk-border-width-form-element solid $color_nhsuk-blue;
 		color  : $color_nhsuk-blue;
-	  }
-
-	  .nhsuk-header__menu-toggle.is-active {
-		color  : $color_nhsuk-white;
-		border : 0px;
+		&:hover {
+		  color: $color_nhsuk-white;
+		}
+		&.is-active {
+		  color  : $color_nhsuk-white;
+		  border : 0px;
+		}
 	  }
 	}
 
 	.nhsuk-header__search-toggle {
-	  background-color : $color_nhsuk-grey-5;
+	  background-color : $color_nhsuk-white;
 	  border-color     : $color_nhsuk-blue;
 	  color            : $color_nhsuk-blue;
 
@@ -80,132 +68,5 @@
 	  }
 	}
 
-	.nhsuk-header__search-toggle.is_active {
-	  background-color : $color_nhsuk-blue;
-	  color            : $color_nhsuk-white;
-
-	  .nhsuk-icon__search {
-		fill : $color_nhsuk-white;
-	  }
-	}
-  }
-
-  .nhsuk-header__menu-toggle {
-	margin-right : -nhsuk-spacing(1);
-  }
-
-  @media (min-width : 40.0625em) {
-	margin-top : 0;
-  }
-
-  @media (max-width : 769px) { // desktop breakpoint and below
-	.nhsuk-header__menu-toggle:focus, .nhsuk-header__menu-toggle:hover, .nhsuk-header__menu-toggle.is-active, .nhsuk-header__menu-toggle:active, .nhsuk-header__search-toggle:hover, .nhsuk-header__search-toggle:focus, .nhsuk-header__search-toggle.is-active, .nhsuk-header__search-toggle:active {
-	  background-color : darken($color_nhsuk-blue, 15%);
-	  background       : darken($color_nhsuk-blue, 15%);
-	  color            : $color_nhsuk-white;
-	}
-	.nhsuk-header--white {
-	  .nhsuk-header__menu-toggle {
-		background-color : $color_nhsuk-white;
-		background       : $color_nhsuk-white;
-		color            : $color_nhsuk-blue;
-	  }
-
-	  .nhsuk-header__menu-toggle:hover, .nhsuk-header__search-toggle:hover, .nhsuk-header__menu-toggle.is-active, .nhsuk-header__menu-toggle:active, .nhsuk-header__search-toggle.is-active, .nhsuk-header__search-toggle:active {
-		color : $color_nhsuk-white;
-	  }
-	}
-	.nhsuk-header__navigation {
-	  color      : $color_nhsuk-black;
-	  background : $color_nhsuk-white;
-
-	  .nhsuk-icon__close {
-		color : $color_nhsuk-blue;
-	  }
-	}
-	.nhsuk-header__navigation ul li a, .nhsuk-header__navigation-link {
-	  color : $color_nhsuk-blue;
-	}
-	.nhsuk-icon__search, .nhsuk-header__search-toggle:focus .nhsuk-icon {
-	  fill : $color_nhsuk-white;
-	}
-	.nhsuk-header__container {
-	  position   : relative;
-	  min-height : 110px;
-
-	  .nhsuk-header__logo {
-		position : relative;
-		top      : -10px;
-
-		& + .nhsuk-header__transactional-service-name {
-		  position : absolute;
-		  top      : 50px;
-		}
-	  }
-	}
-  }
-
-  &.nhsuk-header--transactional {
-	@media (max-width : 769px) {
-	  .nhsuk-header__logo {
-		padding : 10px;
-		padding-left: 0;
-	  }
-
-	  .nhsuk-header__transactional-service-name {
-		padding : 10px 10px 22px 0px;
-	  }
-	}
-
-
-	.nhsuk-header__transactional-service-name:focus, .nhsuk-header__transactional-service-name:active, .nhsuk-header__transactional-service-name:hover {
-	  background : inherit;
-
-	  a {
-		color           : $color_nhsuk-white;
-		text-decoration : none;
-	  }
-	}
-
-  }
-
-  &.nhsuk-header--organisation {
-	@media (min-width: 48.0625em) {
-	  .nhsuk-header__link {
-		max-width: 500px;
-		float: left;
-	  }
-	}
   }
 }
-
-.nhsuk-header__container {
-  padding-bottom : nhsuk-spacing(3);
-  min-height     : 80px;
-}
-
-.nhsuk-header--transactional {
-  .nhsuk-header__search {
-	@media (min-width : 40.0625em) {
-	  height : 1rem;
-	}
-  }
-
-  .nhsuk-header__link {
-	width           : auto;
-	display         : inline-block;
-	text-decoration : none;
-  }
-}
-
-/* Search box (mobile): height fix */
-.nhsuk-search__close {
-  margin-bottom : 0;
-}
-
-/* Search toggle (mobile): fix font size to centre the magnifying glass */
-button#toggle-search {
-  font-size : 13.3333px;
-}
-
-/* end of header.scss include */

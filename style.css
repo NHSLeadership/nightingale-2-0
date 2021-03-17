@@ -9492,8 +9492,6 @@ textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pas
 }
 
 #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 2px solid #aeb7bd;
-  border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 78%;
 }
@@ -9649,150 +9647,8 @@ a:focus .nhsuk-icon {
   fill: #4c6272 !important;
 }
 
-.nhsuk-header .nhsuk-header__navigation {
+.nhsuk-header.nhsuk-header--transactional .nhsuk-header__navigation {
   max-width: 100%;
-}
-
-.nhsuk-header .nhsuk-header__navigation ul {
-  overflow: hidden;
-}
-
-.nhsuk-header .nhsuk-header__navigation ul li a {
-  height: 100%;
-}
-
-.nhsuk-header .nhsuk-header__search-toggle,
-.nhsuk-header .nhsuk-search__close,
-.nhsuk-header .nhsuk-header__navigation-close,
-.nhsuk-header .nhsuk-header__menu-toggle {
-  box-shadow: none;
-}
-
-.nhsuk-header .nhsuk-header__link--service.focus-visible .nhsuk-header__transactional-service-name--link {
-  color: #212b32;
-}
-
-.nhsuk-header .nhsuk-header__link--service:hover .nhsuk-header__transactional-service-name--link {
-  text-decoration: underline;
-}
-
-.nhsuk-header .nhsuk-header__transactional-service-name a.nhsuk-header__transactional-service-name--link {
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.nhsuk-header .nhsuk-search__input {
-  border-radius: 4px 0 0 4px;
-  border: none;
-  border-right: none;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type="search"] {
-  border: 2px solid #d8dde0;
-}
-
-.nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
-  color: #005eb8;
-  font-weight: 600;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border: 2px solid #005eb8;
-  color: #005eb8;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle.is-active {
-  color: #ffffff;
-  border: 0px;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  background-color: #f0f4f5;
-  border-color: #005eb8;
-  color: #005eb8;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #005eb8;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #005eb8;
-  color: #ffffff;
-}
-
-.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
-  fill: #ffffff;
-}
-
-.nhsuk-header .nhsuk-header__menu-toggle {
-  margin-right: -nhsuk-spacing(1);
-}
-
-@media (min-width: 40.0625em) {
-  .nhsuk-header {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 769px) {
-  .nhsuk-header .nhsuk-header__menu-toggle:focus, .nhsuk-header .nhsuk-header__menu-toggle:hover, .nhsuk-header .nhsuk-header__menu-toggle.is-active, .nhsuk-header .nhsuk-header__menu-toggle:active, .nhsuk-header .nhsuk-header__search-toggle:hover, .nhsuk-header .nhsuk-header__search-toggle:focus, .nhsuk-header .nhsuk-header__search-toggle.is-active, .nhsuk-header .nhsuk-header__search-toggle:active {
-    background-color: #00376c;
-    background: #00376c;
-    color: #ffffff;
-  }
-  .nhsuk-header .nhsuk-header--white .nhsuk-header__menu-toggle {
-    background-color: #ffffff;
-    background: #ffffff;
-    color: #005eb8;
-  }
-  .nhsuk-header .nhsuk-header--white .nhsuk-header__menu-toggle:hover, .nhsuk-header .nhsuk-header--white .nhsuk-header__search-toggle:hover, .nhsuk-header .nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .nhsuk-header .nhsuk-header--white .nhsuk-header__menu-toggle:active, .nhsuk-header .nhsuk-header--white .nhsuk-header__search-toggle.is-active, .nhsuk-header .nhsuk-header--white .nhsuk-header__search-toggle:active {
-    color: #ffffff;
-  }
-  .nhsuk-header .nhsuk-header__navigation {
-    color: #212b32;
-    background: #ffffff;
-  }
-  .nhsuk-header .nhsuk-header__navigation .nhsuk-icon__close {
-    color: #005eb8;
-  }
-  .nhsuk-header .nhsuk-header__navigation ul li a, .nhsuk-header .nhsuk-header__navigation-link {
-    color: #005eb8;
-  }
-  .nhsuk-header .nhsuk-icon__search, .nhsuk-header .nhsuk-header__search-toggle:focus .nhsuk-icon {
-    fill: #ffffff;
-  }
-  .nhsuk-header .nhsuk-header__container {
-    position: relative;
-    min-height: 110px;
-  }
-  .nhsuk-header .nhsuk-header__container .nhsuk-header__logo {
-    position: relative;
-    top: -10px;
-  }
-  .nhsuk-header .nhsuk-header__container .nhsuk-header__logo + .nhsuk-header__transactional-service-name {
-    position: absolute;
-    top: 50px;
-  }
-}
-
-@media (max-width: 769px) {
-  .nhsuk-header.nhsuk-header--transactional .nhsuk-header__logo {
-    padding: 10px;
-    padding-left: 0;
-  }
-  .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name {
-    padding: 10px 10px 22px 0px;
-  }
-}
-
-.nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:focus, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:active, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:hover {
-  background: inherit;
-}
-
-.nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:focus a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:active a, .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name:hover a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 @media (min-width: 48.0625em) {
@@ -9802,34 +9658,57 @@ a:focus .nhsuk-icon {
   }
 }
 
-.nhsuk-header__container {
-  padding-bottom: 16px;
-  min-height: 80px;
+.nhsuk-header a.nhsuk-header__link--service {
+  display: contents;
+  float: left;
 }
 
-@media (min-width: 40.0625em) {
-  .nhsuk-header--transactional .nhsuk-header__search {
-    height: 1rem;
+.nhsuk-header .nhsuk-search__input {
+  border-radius: 4px 0 0 4px;
+  border: none;
+  border-right: none;
+}
+
+@media (max-width: 40.0525em) {
+  .nhsuk-header .nhsuk-search__input {
+    border: 2px solid #d8dde0;
+    height: 52px;
   }
 }
 
-.nhsuk-header--transactional .nhsuk-header__link {
-  width: auto;
-  display: inline-block;
-  text-decoration: none;
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type="search"] {
+  border: 2px solid #d8dde0;
 }
 
-/* Search box (mobile): height fix */
-.nhsuk-search__close {
-  margin-bottom: 0;
+.nhsuk-header.nhsuk-header--white .nhsuk-header__transactional-service-name--link {
+  color: #005eb8;
+  font-weight: 600;
 }
 
-/* Search toggle (mobile): fix font size to centre the magnifying glass */
-button#toggle-search {
-  font-size: 13.3333px;
+.nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
+  border: 2px solid #005eb8;
+  color: #005eb8;
 }
 
-/* end of header.scss include */
+.nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle:hover {
+  color: #ffffff;
+}
+
+.nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle.is-active {
+  color: #ffffff;
+  border: 0px;
+}
+
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
+  background-color: #ffffff;
+  border-color: #005eb8;
+  color: #005eb8;
+}
+
+.nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
+  fill: #005eb8;
+}
+
 /*
 // variations to styling required for gutenberg native blocks
 // @author Tony Blacker, NHS Leadership Academy
