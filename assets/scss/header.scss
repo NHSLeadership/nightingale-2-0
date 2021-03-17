@@ -43,12 +43,12 @@
 
   .nhsuk-search__input {
 	border-radius : $nhsuk-border-radius 0 0 $nhsuk-border-radius;
-	border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-2;
+	border        : none;
 	border-right  : none;
   }
 
   &.nhsuk-header--white {
-	.nhsuk-header__search-wrap input[type="text"] {
+	.nhsuk-header__search-wrap input[type="search"] {
 	  border : $nhsuk-border-width-form-element solid $nhsuk-border-color;
 	}
 
@@ -167,6 +167,15 @@
 	  }
 	}
 
+  }
+
+  &.nhsuk-header--organisation {
+	@media (min-width: 48.0625em) {
+	  .nhsuk-header__link {
+		max-width: 500px;
+		float: left;
+	  }
+	}
   }
 }
 

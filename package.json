@@ -21,7 +21,7 @@
   "dependencies": {
     "dart-sass": "^1.25.0",
     "grunt": "^1.3.0",
-    "nhsuk-frontend": "^4.1.0",
+    "nhsuk-frontend": "^5.0.0",
     "node-sass": "^5.0.0",
     "nunjucks": "^3.2.3",
     "penthouse": "^2.3.1",

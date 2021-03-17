@@ -17,7 +17,7 @@ if ( has_nav_menu( 'footer-menu' ) ) { // Check to see if there is a footer menu
 	if ( $menu_item ) { // Get the array of wp objects, the nav items for our queried location.
 		?>
 		<h2 class="nhsuk-u-visually-hidden">Support links</h2>
-		<ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+		<ul class="nhsuk-footer__list">
 			<?php
 
 			foreach ( $menu_item as $nav_item ) {
