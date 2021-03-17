@@ -1,147 +1,161 @@
-
 //style out any widgets in the right hand column
 #secondary {
+
   section {
 
-  border-top: 2px solid $color_nhsuk-blue;
-  margin-bottom: nhsuk-spacing(5);
-  padding-top: nhsuk-spacing(3);
-  padding-bottom: nhsuk-spacing(3);
+	border-top     : 2px solid $color_nhsuk-blue;
+	margin-bottom  : nhsuk-spacing(5);
+	padding-top    : nhsuk-spacing(3);
+	padding-bottom : nhsuk-spacing(3);
 
-    h2 {
-      font-size: 1.25rem;
-      line-height: 1.2;
-      margin-bottom: nhsuk-spacing(3);
-      padding-top: nhsuk-spacing(3);
+	h2 {
+	  font-size     : 1.25rem;
+	  line-height   : 1.2;
+	  margin-bottom : nhsuk-spacing(3);
+	  padding-top   : nhsuk-spacing(3);
 
-      a {
-        text-decoration: none;
-      }
+	  a {
+		text-decoration : none;
+	  }
 
-      @media (min-width: 40.0625em){
-        font-size: 1.5rem;
-        line-height: 1.2;
-      }
+	  @media (min-width : 40.0625em) {
+		font-size   : 1.5rem;
+		line-height : 1.2;
+	  }
 
-    }
+	}
 
-    div {
+	div {
 
-      p {
-        @extend .nhsuk-list-panel--results-items__no-results;
-      }
-    }
+	  p {
+		@extend .nhsuk-list-panel--results-items__no-results;
+	  }
+	}
 
-    ul, ol {
-      list-style: none;
-      margin-bottom: nhsuk-spacing(3);
-      padding-left: 0;
+	ul, ol {
+	  list-style    : none;
+	  margin-bottom : nhsuk-spacing(3);
+	  padding-left  : 0;
 
-      li, h4 {
+	  li, h4 {
 
-        font-size: .875rem;
-        line-height: 1.71429;
-        margin-bottom: nhsuk-spacing(2);
+		font-size     : .875rem;
+		line-height   : 1.71429;
+		margin-bottom : nhsuk-spacing(2);
 
-        @media (min-width: 40.0625em){
-          font-size: 1rem;
-          line-height: 1.5;
-        }
+		@media (min-width : 40.0625em) {
+		  font-size   : 1rem;
+		  line-height : 1.5;
+		}
 
-        a {
-          @extend .nhsuk-list-panel__link;
-          padding: 0;
-        }
-      }
-    }
+		a {
+		  @extend .nhsuk-list-panel__link;
+		  padding : 0;
+		}
+	  }
+	}
 
-    &#widget_search {
-      height: 4.5rem;
+	&.widget_search {
+	  height        : 4.5rem;
+	  background    : none;
+	  padding-left  : 0;
+	  padding-right : 0;
 
-      .nhsuk-header__search-wrap {
-        padding-top: nhsuk-spacing(3);
+	  .nhsuk-header__search-wrap {
+		padding-top : nhsuk-spacing(3);
+		padding     : nhsuk-spacing(4) 0;
 
-        .nhsuk-search__input {
-          width: 81%;
-        }
+		.nhsuk-search__input {
+		  width        : 81%;
+		  float        : left;
+		  max-width    : 78%;
+		  border-color : $color_nhsuk-grey-3;
+		}
+
+		.nhsuk-search__submit {
+		  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
+		  border-left : none;
+		  margin-top  : 0;
+		  float       : left;
+		  box-shadow  : 0 !important;
+		}
+
+	  }
+	}
+
+	#wp-calendar {
+	  caption {
+		position       : relative;
+		top            : nhsuk-spacing(2);
+		clip           : unset;
+		clip-path      : unset;
+		height         : auto;
+		width          : auto;
+		background     : $color_nhsuk-blue;
+		color          : $color_nhsuk-white;
+		font-size      : 1.25rem;
+		text-transform : uppercase;
+	  }
+
+	  td, th {
+		padding-left  : nhsuk-spacing(1);
+		padding-right : nhsuk-spacing(1);
+		font-size     : 1rem;
+	  }
+	}
+
+	//subpages nav alteration
+	ul > li {
+	  border-bottom : 1px solid $color_nhsuk-grey-3;
+
+	}
+
+	ul > li > ul > li, ul > li > ul > li > ul > li {
+	  padding       : 0;
+	  margin        : 0;
+	  border-bottom : none;
+	}
+
+	ul > li > ul > li:last-of-type, ul > li > ul > li > ul > li:last-of-type {
+	  margin-bottom : nhsuk-spacing(3);
+	}
+
+	ul > li > ul > li > a {
+	  border-left : 2px solid $color_nhsuk-blue;
+
+	  padding     : 0 0 0 nhsuk-spacing(2);
+	  margin      : nhsuk-spacing(2) 0 0 nhsuk-spacing(2);
+	}
+
+	ul > li > ul > li > ul > li > a {
+
+	  padding       : 0 0 0 10px;
+	  margin        : nhsuk-spacing(2) 0 0 nhsuk-spacing(3);
+	  border-bottom : none;
+
+	  &:before {
+		content : "-  ";
+		color   : $color_nhsuk-light-grey;
+	  }
+	}
 
 
-      }
-    }
+	ul {
+	  li {
+		a {
 
-    #wp-calendar {
-      caption {
-        position: relative;
-        top: nhsuk-spacing(2);
-        clip: unset;
-        clip-path: unset;
-        height: auto;
-        width: auto;
-        background: $color_nhsuk-blue;
-        color: $color_nhsuk-white;
-        font-size: 1.25rem;
-        text-transform: uppercase;
-      }
+		  border-bottom : none;
+		  padding       : 0;
+		}
+	  }
 
-      td, th {
-        padding-left: nhsuk-spacing(1);
-        padding-right: nhsuk-spacing(1);
-        font-size: 1rem;
-      }
-    }
+	  li.widget_subpages__active {
+		& > a {
+		  background : $color_nhsuk-blue;
+		  color      : $color_nhsuk-white;
+		}
+	  }
 
-    //subpages nav alteration
-     ul > li {
-      border-bottom: 1px solid $color_nhsuk-grey-3;
-
-    }
-
-     ul > li > ul > li,  ul > li > ul > li > ul > li {
-      padding: 0;
-      margin: 0;
-      border-bottom: none;
-    }
-
-    ul > li > ul > li:last-of-type,  ul > li > ul > li > ul > li:last-of-type {
-      margin-bottom: nhsuk-spacing(3);
-    }
-
-    ul > li > ul > li > a {
-      border-left: 2px solid $color_nhsuk-blue;
-
-      padding: 0 0 0 nhsuk-spacing(2);
-      margin: nhsuk-spacing(2) 0 0 nhsuk-spacing(2);
-    }
-
-    ul > li > ul > li > ul > li > a {
-
-      padding: 0 0 0 10px;
-      margin: nhsuk-spacing(2) 0 0 nhsuk-spacing(3);
-      border-bottom: none;
-
-      &:before {
-        content: "-  ";
-        color: $color_nhsuk-light-grey;
-      }
-    }
-
-
-      ul {
-        li {
-          a {
-
-            border-bottom: none;
-            padding: 0;
-          }
-        }
-
-        li.widget_subpages__active {
-          & > a {
-            background: $color_nhsuk-blue;
-            color: $color_nhsuk-white;
-          }
-        }
-
-      }
+	}
   }
 }

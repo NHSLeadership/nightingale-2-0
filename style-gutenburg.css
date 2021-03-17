@@ -7995,72 +7995,13 @@
   width: 100%;
 }
 
-.edit-post-visual-editor .nhsuk-search__input {
-  padding-right: 0;
-}
-
-.edit-post-visual-editor .nhsuk-search__submit {
-  margin-left: 0;
-}
-
-.edit-post-visual-editor #secondary section.widget_search {
-  background: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.edit-post-visual-editor #secondary .nhsuk-header__search-wrap {
-  padding: 24px 0;
-}
-
-.edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-search__input {
-  float: left;
-  max-width: 78%;
-}
-
-.edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-search__submit {
-  border: 2px solid #aeb7bd;
-  border-left: none;
-  margin-top: 0;
-  float: left;
-  box-shadow: 0 !important;
-}
-
-.edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
-  background-color: #f0f4f5;
-  border-color: #005eb8;
-  color: #005eb8;
-}
-
-.edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #005eb8;
-}
-
-.edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
-  background-color: #005eb8;
-  color: #ffffff;
-}
-
-.edit-post-visual-editor #secondary .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
-  fill: #ffffff;
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-search__submit {
-    padding: 1px 6px;
-  }
-}
-
 .edit-post-visual-editor #primary .page-content .nhsuk-header__search-toggle, .edit-post-visual-editor #primary .page-content .nhsuk-search__close {
   display: none;
 }
 
 .edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap {
-  padding: 8px 24px;
   display: inline-block;
-  width: 80%;
-  border: 2px solid #005eb8;
-  border-radius: 4px;
+  width: 100%;
 }
 
 .edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
@@ -8068,25 +8009,15 @@
   border-radius: 4px 0px 0px 4px;
   float: left;
   max-width: 80%;
+  margin: 16px 0 0 5%;
 }
 
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle {
-  background-color: #f0f4f5;
-  border-color: #005eb8;
-  color: #005eb8;
-}
-
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #005eb8;
-}
-
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active {
-  background-color: #005eb8;
-  color: #ffffff;
-}
-
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-header__search-toggle.is_active .nhsuk-icon__search {
-  fill: #ffffff;
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
+    max-width: 73%;
+    margin: 0;
+    height: 52px;
+  }
 }
 
 .edit-post-visual-editor #primary .widget-title a {
@@ -8097,41 +8028,6 @@
 .edit-post-visual-editor .nhsuk-content__clearfix {
   clear: both;
   margin-top: 1.5rem;
-}
-
-.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap {
-  padding: 5px;
-  width: 100%;
-}
-
-.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-form, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-form {
-  display: block;
-  padding: 0;
-}
-
-.edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-  float: left;
-  max-width: 80%;
-  margin: 16px 0 0 5%;
-}
-
-@media (max-width: 40.0525em) {
-  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap {
-    border: 0;
-    padding: 0;
-  }
-  .edit-post-visual-editor .error404 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input, .edit-post-visual-editor .search-no-results #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-    float: left;
-    max-width: 73%;
-    margin: 0;
-    height: 50px;
-  }
-}
-
-@media (min-width: 40.0525em) {
-  .edit-post-visual-editor .nhsuk-header__search-wrap, .edit-post-visual-editor body.buddypress #buddypress .group-invites-search {
-    display: inline-block;
-  }
 }
 
 .edit-post-visual-editor .nhsuk-grid-row.nhsuk-width-restrict {
