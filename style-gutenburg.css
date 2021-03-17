@@ -9487,3 +9487,21 @@
 .edit-post-visual-editor .dlmPreviewButton iframe {
   min-height: 50px;
 }
+
+.edit-post-visual-editor .has-child-selected {
+  border: 1px solid #f0f4f5;
+  padding: 8px;
+}
+
+.edit-post-visual-editor .has-child-selected div.wp-block {
+  border: 1px solid #d8dde0;
+  padding: 8px;
+}
+
+.edit-post-visual-editor .has-child-selected div.wp-block.has-child-selected {
+  border-color: #aeb7bd;
+}
+
+.edit-post-visual-editor .has-child-selected div.wp-block.block-list-appender {
+  border: none;
+}

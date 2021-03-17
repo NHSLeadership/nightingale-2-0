@@ -106,6 +106,7 @@
   /* end LearnDash mitigation routine */
 
   /* make the table cells more obvious when editing */
+
   .is-selected {
     figure.is-style-nhsuk-table-responsive {
       thead, tr, th, td {
@@ -128,6 +129,21 @@
     border: 2px dashed $color-nhsuk-dark-grey;
     iframe {
       min-height: 50px;
+    }
+  }
+  // tweak to make editor experience slightly easier
+  .has-child-selected {
+    border: 1px solid $color-nhsuk-grey-5;
+    padding: nhsuk-spacing(2);
+    div.wp-block {
+      border: 1px solid $color-nhsuk-grey-4;
+      padding: nhsuk-spacing(2);
+      &.has-child-selected {
+        border-color: $color_nhsuk-grey-3;
+      }
+      &.block-list-appender {
+        border: none;
+      }
     }
   }
 }
