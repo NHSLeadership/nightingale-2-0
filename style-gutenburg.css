@@ -4289,7 +4289,7 @@
   color: #7C2855;
 }
 
-.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor #login #loginform #wp-submit, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -4317,7 +4317,7 @@
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor #login #loginform #wp-submit, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -4325,61 +4325,61 @@
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor #login #loginform #wp-submit, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor #login #loginform #wp-submit, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     margin-bottom: 36px;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor #login #loginform #wp-submit, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     padding: 8px 16px;
   }
 }
 
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor #login #loginform #wp-submit:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor #login #loginform #wp-submit:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor #login #loginform #wp-submit:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor #login #loginform #wp-submit:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
   color: #ffffff;
   text-decoration: none;
 }
 
-.edit-post-visual-editor .nhsuk-button::-moz-focus-inner, .edit-post-visual-editor #login #loginform #wp-submit::-moz-focus-inner, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
+.edit-post-visual-editor .nhsuk-button::-moz-focus-inner, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-.edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor #login #loginform #wp-submit:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
   background-color: #00662f;
 }
 
-.edit-post-visual-editor .nhsuk-button:focus, .edit-post-visual-editor #login #loginform #wp-submit:focus, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus {
+.edit-post-visual-editor .nhsuk-button:focus, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
 
-.edit-post-visual-editor .nhsuk-button:focus:visited, .edit-post-visual-editor #login #loginform #wp-submit:focus:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
+.edit-post-visual-editor .nhsuk-button:focus:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
   color: #212b32;
 }
 
-.edit-post-visual-editor .nhsuk-button:focus:visited:active, .edit-post-visual-editor #login #loginform #wp-submit:focus:visited:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
+.edit-post-visual-editor .nhsuk-button:focus:visited:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
   color: #ffffff;
 }
 
-.edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor #login #loginform #wp-submit:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active {
+.edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
 
-.edit-post-visual-editor .nhsuk-button::before, .edit-post-visual-editor #login #loginform #wp-submit::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::before {
+.edit-post-visual-editor .nhsuk-button::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::before {
   background: transparent;
   bottom: -6px;
   content: '';
@@ -4390,7 +4390,7 @@
   top: -2px;
 }
 
-.edit-post-visual-editor .nhsuk-button:active::before, .edit-post-visual-editor #login #loginform #wp-submit:active::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active::before {
+.edit-post-visual-editor .nhsuk-button:active::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active::before {
   top: -6px;
 }
 
@@ -4464,10 +4464,8 @@
 
 .edit-post-visual-editor .nhsuk-button--disabled,
 .edit-post-visual-editor .nhsuk-button[disabled="disabled"],
-.edit-post-visual-editor #login #loginform #wp-submit[disabled="disabled"],
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"],
 .edit-post-visual-editor .nhsuk-button[disabled],
-.edit-post-visual-editor #login #loginform #wp-submit[disabled],
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled] {
   background-color: #007f3b;
   opacity: 0.5;
@@ -4476,10 +4474,8 @@
 
 .edit-post-visual-editor .nhsuk-button--disabled:hover,
 .edit-post-visual-editor .nhsuk-button[disabled="disabled"]:hover,
-.edit-post-visual-editor #login #loginform #wp-submit[disabled="disabled"]:hover,
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"]:hover,
 .edit-post-visual-editor .nhsuk-button[disabled]:hover,
-.edit-post-visual-editor #login #loginform #wp-submit[disabled]:hover,
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled]:hover {
   background-color: #007f3b;
   cursor: default;
@@ -4487,10 +4483,8 @@
 
 .edit-post-visual-editor .nhsuk-button--disabled:focus,
 .edit-post-visual-editor .nhsuk-button[disabled="disabled"]:focus,
-.edit-post-visual-editor #login #loginform #wp-submit[disabled="disabled"]:focus,
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"]:focus,
 .edit-post-visual-editor .nhsuk-button[disabled]:focus,
-.edit-post-visual-editor #login #loginform #wp-submit[disabled]:focus,
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled]:focus {
   background-color: #007f3b;
   outline: none;
@@ -4498,10 +4492,8 @@
 
 .edit-post-visual-editor .nhsuk-button--disabled:active,
 .edit-post-visual-editor .nhsuk-button[disabled="disabled"]:active,
-.edit-post-visual-editor #login #loginform #wp-submit[disabled="disabled"]:active,
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"]:active,
 .edit-post-visual-editor .nhsuk-button[disabled]:active,
-.edit-post-visual-editor #login #loginform #wp-submit[disabled]:active,
 .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle[disabled]:active {
   box-shadow: 0 4px 0 #00401e;
   top: 0;
@@ -6071,7 +6063,7 @@
   }
 }
 
-.edit-post-visual-editor .nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .edit-post-visual-editor #login #loginform label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
+.edit-post-visual-editor .nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
   margin-bottom: 8px;
 }
 
@@ -6174,7 +6166,7 @@
 .edit-post-visual-editor input[type="datetime"],
 .edit-post-visual-editor input[type="datetime-local"],
 .edit-post-visual-editor input[type="color"],
-.edit-post-visual-editor textarea, .edit-post-visual-editor #login #loginform .user-login, .edit-post-visual-editor #login #loginform .user_pass {
+.edit-post-visual-editor textarea {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -6211,7 +6203,7 @@
   .edit-post-visual-editor input[type="datetime"],
   .edit-post-visual-editor input[type="datetime-local"],
   .edit-post-visual-editor input[type="color"],
-  .edit-post-visual-editor textarea, .edit-post-visual-editor #login #loginform .user-login, .edit-post-visual-editor #login #loginform .user_pass {
+  .edit-post-visual-editor textarea {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -6234,7 +6226,7 @@
   .edit-post-visual-editor input[type="datetime"],
   .edit-post-visual-editor input[type="datetime-local"],
   .edit-post-visual-editor input[type="color"],
-  .edit-post-visual-editor textarea, .edit-post-visual-editor #login #loginform .user-login, .edit-post-visual-editor #login #loginform .user_pass {
+  .edit-post-visual-editor textarea {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -6255,7 +6247,7 @@
 .edit-post-visual-editor input:focus[type="datetime"],
 .edit-post-visual-editor input:focus[type="datetime-local"],
 .edit-post-visual-editor input:focus[type="color"],
-.edit-post-visual-editor textarea:focus, .edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus {
+.edit-post-visual-editor textarea:focus {
   border: 2px solid #212b32;
   box-shadow: inset 0 0 0 2px;
   outline: 4px solid #ffeb3b;
@@ -6278,7 +6270,7 @@
 .edit-post-visual-editor input[type="datetime"]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type="datetime-local"]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type="color"]::-webkit-outer-spin-button,
-.edit-post-visual-editor textarea::-webkit-outer-spin-button, .edit-post-visual-editor #login #loginform .user-login::-webkit-outer-spin-button, .edit-post-visual-editor #login #loginform .user_pass::-webkit-outer-spin-button,
+.edit-post-visual-editor textarea::-webkit-outer-spin-button,
 .edit-post-visual-editor .nhsuk-input::-webkit-inner-spin-button,
 .edit-post-visual-editor input:not(.nhsuk-search__input)[type="text"]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type="email"]::-webkit-inner-spin-button,
@@ -6295,16 +6287,14 @@
 .edit-post-visual-editor input[type="datetime"]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type="datetime-local"]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type="color"]::-webkit-inner-spin-button,
-.edit-post-visual-editor textarea::-webkit-inner-spin-button,
-.edit-post-visual-editor #login #loginform .user-login::-webkit-inner-spin-button,
-.edit-post-visual-editor #login #loginform .user_pass::-webkit-inner-spin-button {
+.edit-post-visual-editor textarea::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 .edit-post-visual-editor .nhsuk-input[type="number"], .edit-post-visual-editor input[type="number"][type="text"]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type="number"],
-.edit-post-visual-editor textarea[type="number"], .edit-post-visual-editor #login #loginform .user-login[type="number"], .edit-post-visual-editor #login #loginform .user_pass[type="number"] {
+.edit-post-visual-editor textarea[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -6382,7 +6372,7 @@
   }
 }
 
-.edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor #login #loginform label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label {
+.edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -6392,7 +6382,7 @@
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor #login #loginform label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label {
+  .edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -6400,7 +6390,7 @@
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor #login #loginform label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label {
+  .edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -7980,7 +7970,7 @@
 .edit-post-visual-editor input:focus[type="datetime"],
 .edit-post-visual-editor input:focus[type="datetime-local"],
 .edit-post-visual-editor input:focus[type="color"],
-.edit-post-visual-editor textarea:focus, .edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search], .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
+.edit-post-visual-editor textarea:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search], .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
   box-shadow: 0 0 0 4px #ffeb3b;
 }
 
@@ -8064,16 +8054,6 @@
   fill: #4c6272 !important;
 }
 
-.edit-post-visual-editor .nhsuk-search__submit {
-  box-shadow: none;
-  color: #005eb8;
-}
-
-.edit-post-visual-editor .nhsuk-header__search-form .nhsuk-u-visually-hidden {
-  background: #ffffff;
-  color: #000000;
-}
-
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;
@@ -8091,10 +8071,6 @@
   flex-flow: wrap;
 }
 
-.edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list {
-  margin: 0 16px 0 0;
-}
-
 .edit-post-visual-editor .nhsuk-grid-column-width, .edit-post-visual-editor .nhsuk-grid-column-full {
   clear: both;
 }
@@ -8107,10 +8083,23 @@
 .edit-post-visual-editor #login #loginform {
   margin-top: 0;
   box-shadow: none;
+  border: none;
 }
 
 .edit-post-visual-editor #login #loginform #wp-submit {
-  height: auto;
+  background-color: #007f3b;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #006747;
+  padding: 12px 16px;
+  font-size: 1.1875rem;
+  line-height: 1.47368;
+}
+
+.edit-post-visual-editor #login #loginform label {
+  font-size: 1.1875rem;
+  line-height: 1.47368;
+  font-weight: 400;
 }
 
 .edit-post-visual-editor .nhsuk-promo img.nhsuk-promo__img {
@@ -8257,7 +8246,7 @@
   float: right;
 }
 
-.edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter #login #loginform #wp-submit, .edit-post-visual-editor #login #loginform .nhsuk-cat-filter #wp-submit, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
+.edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
 
@@ -8664,7 +8653,7 @@
   border-bottom: none;
 }
 
-.edit-post-visual-editor .learndash-wrapper .ld-section-heading .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-section-heading #login #loginform #wp-submit, .edit-post-visual-editor #login #loginform .learndash-wrapper .ld-section-heading #wp-submit, .edit-post-visual-editor .learndash-wrapper .ld-section-heading .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .learndash-wrapper .ld-section-heading .gv-approval-toggle {
+.edit-post-visual-editor .learndash-wrapper .ld-section-heading .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-section-heading .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .learndash-wrapper .ld-section-heading .gv-approval-toggle {
   display: none;
 }
 
@@ -9144,13 +9133,13 @@
   }
 }
 
-.edit-post-visual-editor #tribe-events-content .nhsuk-button, .edit-post-visual-editor #tribe-events-content #login #loginform #wp-submit, .edit-post-visual-editor #login #loginform #tribe-events-content #wp-submit, .edit-post-visual-editor #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle,
+.edit-post-visual-editor #tribe-events-content .nhsuk-button, .edit-post-visual-editor #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle,
 .edit-post-visual-editor #tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number) {
   margin: 0 16px 8px 0;
   padding: 8px 24px;
 }
 
-.edit-post-visual-editor #tribe-events-content .nhsuk-button:last-child, .edit-post-visual-editor #tribe-events-content #login #loginform #wp-submit:last-child, .edit-post-visual-editor #login #loginform #tribe-events-content #wp-submit:last-child, .edit-post-visual-editor #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle:last-child, .edit-post-visual-editor .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle:last-child,
+.edit-post-visual-editor #tribe-events-content .nhsuk-button:last-child, .edit-post-visual-editor #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle:last-child, .edit-post-visual-editor .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle:last-child,
 .edit-post-visual-editor #tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number):last-child {
   margin-right: 0;
 }
@@ -9414,7 +9403,7 @@
   list-style: none;
 }
 
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor #login #loginform #wp-submit:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor #login #loginform #wp-submit:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor #login #loginform #wp-submit:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor #login #loginform #wp-submit:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
+.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
   color: #ffffff;
   text-decoration: none;
 }

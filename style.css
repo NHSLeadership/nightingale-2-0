@@ -3924,7 +3924,7 @@ b {
  * 3. Use a pseudo element to expand the click target area to include the
  *    button's shadow as well, in case users try to click it.
  */
-.nhsuk-button, #login #loginform #wp-submit, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
+.nhsuk-button, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -3952,7 +3952,7 @@ b {
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #login #loginform #wp-submit, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
+  .nhsuk-button, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -3960,61 +3960,61 @@ b {
 }
 
 @media print {
-  .nhsuk-button, #login #loginform #wp-submit, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
+  .nhsuk-button, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #login #loginform #wp-submit, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
+  .nhsuk-button, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
     margin-bottom: 36px;
   }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-button, #login #loginform #wp-submit, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
+  .nhsuk-button, .tippy-popper .tippy-content .gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap {
     padding: 8px 16px;
   }
 }
 
-.nhsuk-button:link, #login #loginform #wp-submit:link, .tippy-popper .tippy-content .gv-approval-toggle:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .nhsuk-button:visited, #login #loginform #wp-submit:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .nhsuk-button:active, #login #loginform #wp-submit:active, .tippy-popper .tippy-content .gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .nhsuk-button:hover, #login #loginform #wp-submit:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover {
+.nhsuk-button:link, .tippy-popper .tippy-content .gv-approval-toggle:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .nhsuk-button:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .nhsuk-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .nhsuk-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover {
   color: #ffffff;
   text-decoration: none;
 }
 
-.nhsuk-button::-moz-focus-inner, #login #loginform #wp-submit::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner {
+.nhsuk-button::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-.nhsuk-button:hover, #login #loginform #wp-submit:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover {
+.nhsuk-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover {
   background-color: #00662f;
 }
 
-.nhsuk-button:focus, #login #loginform #wp-submit:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus {
+.nhsuk-button:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
 
-.nhsuk-button:focus:visited, #login #loginform #wp-submit:focus:visited, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited {
+.nhsuk-button:focus:visited, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited {
   color: #212b32;
 }
 
-.nhsuk-button:focus:visited:active, #login #loginform #wp-submit:focus:visited:active, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited:active {
+.nhsuk-button:focus:visited:active, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited:active {
   color: #ffffff;
 }
 
-.nhsuk-button:active, #login #loginform #wp-submit:active, .tippy-popper .tippy-content .gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active {
+.nhsuk-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
 
-.nhsuk-button::before, #login #loginform #wp-submit::before, .tippy-popper .tippy-content .gv-approval-toggle::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before {
+.nhsuk-button::before, .tippy-popper .tippy-content .gv-approval-toggle::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before {
   background: transparent;
   bottom: -6px;
   content: '';
@@ -4025,78 +4025,78 @@ b {
   top: -2px;
 }
 
-.nhsuk-button:active::before, #login #loginform #wp-submit:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before {
+.nhsuk-button:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before {
   top: -6px;
 }
 
 /**
  * Button variations
  */
-.nhsuk-button--secondary, .nhsuk-button.is-style-secondary, #login #loginform .is-style-secondary#wp-submit, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info {
+.nhsuk-button--secondary, .nhsuk-button.is-style-secondary, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info {
   background-color: #4c6272;
   box-shadow: 0 4px 0 #263139;
 }
 
-.nhsuk-button--secondary:hover, .nhsuk-button.is-style-secondary:hover, #login #loginform .is-style-secondary#wp-submit:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover {
+.nhsuk-button--secondary:hover, .nhsuk-button.is-style-secondary:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover {
   background-color: #384853;
 }
 
-.nhsuk-button--secondary:focus, .nhsuk-button.is-style-secondary:focus, #login #loginform .is-style-secondary#wp-submit:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus {
+.nhsuk-button--secondary:focus, .nhsuk-button.is-style-secondary:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
 
-.nhsuk-button--secondary:active, .nhsuk-button.is-style-secondary:active, #login #loginform .is-style-secondary#wp-submit:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active {
+.nhsuk-button--secondary:active, .nhsuk-button.is-style-secondary:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active {
   background: #263139;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
 
-.nhsuk-button--secondary.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-secondary, #login #loginform .nhsuk-button--disabled.is-style-secondary#wp-submit, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-secondary.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.cn-button.bootstrap.cn-more-info {
+.nhsuk-button--secondary.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-secondary, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-secondary.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.cn-button.bootstrap.cn-more-info {
   background-color: #4c6272;
 }
 
-.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #login #loginform .is-style-reverse#wp-submit, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap {
+.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap {
   background-color: #ffffff;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
 }
 
-.nhsuk-button--reverse:hover, .nhsuk-button.is-style-reverse:hover, #login #loginform .is-style-reverse#wp-submit:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:hover {
+.nhsuk-button--reverse:hover, .nhsuk-button.is-style-reverse:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:hover {
   background-color: #f2f2f2;
   color: #212b32;
 }
 
-.nhsuk-button--reverse:focus, .nhsuk-button.is-style-reverse:focus, #login #loginform .is-style-reverse#wp-submit:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:focus {
+.nhsuk-button--reverse:focus, .nhsuk-button.is-style-reverse:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
 
-.nhsuk-button--reverse:active, .nhsuk-button.is-style-reverse:active, #login #loginform .is-style-reverse#wp-submit:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:active {
+.nhsuk-button--reverse:active, .nhsuk-button.is-style-reverse:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:active {
   background: #212b32;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
 
-.nhsuk-button--reverse:link, .nhsuk-button.is-style-reverse:link, #login #loginform .is-style-reverse#wp-submit:link, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link {
+.nhsuk-button--reverse:link, .nhsuk-button.is-style-reverse:link, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link {
   color: #212b32;
 }
 
-.nhsuk-button--reverse:link:active, .nhsuk-button.is-style-reverse:link:active, #login #loginform .is-style-reverse#wp-submit:link:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link:active {
+.nhsuk-button--reverse:link:active, .nhsuk-button.is-style-reverse:link:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link:active {
   color: #ffffff;
 }
 
-.nhsuk-button--reverse.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-reverse, #login #loginform .nhsuk-button--disabled.is-style-reverse#wp-submit, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap {
+.nhsuk-button--reverse.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-reverse, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap {
   background-color: #ffffff;
 }
 
-.nhsuk-button--reverse.nhsuk-button--disabled:focus, .nhsuk-button--disabled.nhsuk-button.is-style-reverse:focus, #login #loginform .nhsuk-button--disabled.is-style-reverse#wp-submit:focus, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap:focus {
+.nhsuk-button--reverse.nhsuk-button--disabled:focus, .nhsuk-button--disabled.nhsuk-button.is-style-reverse:focus, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap:focus {
   background-color: #ffffff;
 }
 
@@ -4105,11 +4105,9 @@ b {
  */
 .nhsuk-button--disabled,
 .nhsuk-button[disabled="disabled"],
-#login #loginform #wp-submit[disabled="disabled"],
 .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"],
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled="disabled"],
 .nhsuk-button[disabled],
-#login #loginform #wp-submit[disabled],
 .tippy-popper .tippy-content .gv-approval-toggle[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled] {
   background-color: #007f3b;
@@ -4119,11 +4117,9 @@ b {
 
 .nhsuk-button--disabled:hover,
 .nhsuk-button[disabled="disabled"]:hover,
-#login #loginform #wp-submit[disabled="disabled"]:hover,
 .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled="disabled"]:hover,
 .nhsuk-button[disabled]:hover,
-#login #loginform #wp-submit[disabled]:hover,
 .tippy-popper .tippy-content .gv-approval-toggle[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled]:hover {
   background-color: #007f3b;
@@ -4132,11 +4128,9 @@ b {
 
 .nhsuk-button--disabled:focus,
 .nhsuk-button[disabled="disabled"]:focus,
-#login #loginform #wp-submit[disabled="disabled"]:focus,
 .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled="disabled"]:focus,
 .nhsuk-button[disabled]:focus,
-#login #loginform #wp-submit[disabled]:focus,
 .tippy-popper .tippy-content .gv-approval-toggle[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled]:focus {
   background-color: #007f3b;
@@ -4145,21 +4139,18 @@ b {
 
 .nhsuk-button--disabled:active,
 .nhsuk-button[disabled="disabled"]:active,
-#login #loginform #wp-submit[disabled="disabled"]:active,
 .tippy-popper .tippy-content .gv-approval-toggle[disabled="disabled"]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled="disabled"]:active,
 .nhsuk-button[disabled]:active,
-#login #loginform #wp-submit[disabled]:active,
 .tippy-popper .tippy-content .gv-approval-toggle[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap[disabled]:active {
   box-shadow: 0 4px 0 #00401e;
   top: 0;
 }
 
-.nhsuk-button--secondary[disabled="disabled"], .nhsuk-button.is-style-secondary[disabled="disabled"], #login #loginform .is-style-secondary#wp-submit[disabled="disabled"], .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"], #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"], #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"],
+.nhsuk-button--secondary[disabled="disabled"], .nhsuk-button.is-style-secondary[disabled="disabled"], .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"], #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"], #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"],
 .nhsuk-button--secondary[disabled],
 .nhsuk-button.is-style-secondary[disabled],
-#login #loginform .is-style-secondary#wp-submit[disabled],
 .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled] {
@@ -4167,10 +4158,9 @@ b {
   opacity: 0.5;
 }
 
-.nhsuk-button--secondary[disabled="disabled"]:hover, .nhsuk-button.is-style-secondary[disabled="disabled"]:hover, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"]:hover,
+.nhsuk-button--secondary[disabled="disabled"]:hover, .nhsuk-button.is-style-secondary[disabled="disabled"]:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"]:hover,
 .nhsuk-button--secondary[disabled]:hover,
 .nhsuk-button.is-style-secondary[disabled]:hover,
-#login #loginform .is-style-secondary#wp-submit[disabled]:hover,
 .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled]:hover {
@@ -4178,20 +4168,18 @@ b {
   cursor: default;
 }
 
-.nhsuk-button--secondary[disabled="disabled"]:focus, .nhsuk-button.is-style-secondary[disabled="disabled"]:focus, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"]:focus,
+.nhsuk-button--secondary[disabled="disabled"]:focus, .nhsuk-button.is-style-secondary[disabled="disabled"]:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"]:focus,
 .nhsuk-button--secondary[disabled]:focus,
 .nhsuk-button.is-style-secondary[disabled]:focus,
-#login #loginform .is-style-secondary#wp-submit[disabled]:focus,
 .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled]:focus {
   outline: none;
 }
 
-.nhsuk-button--secondary[disabled="disabled"]:active, .nhsuk-button.is-style-secondary[disabled="disabled"]:active, #login #loginform .is-style-secondary#wp-submit[disabled="disabled"]:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"]:active,
+.nhsuk-button--secondary[disabled="disabled"]:active, .nhsuk-button.is-style-secondary[disabled="disabled"]:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled="disabled"]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled="disabled"]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled="disabled"]:active,
 .nhsuk-button--secondary[disabled]:active,
 .nhsuk-button.is-style-secondary[disabled]:active,
-#login #loginform .is-style-secondary#wp-submit[disabled]:active,
 .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info[disabled]:active {
@@ -4199,39 +4187,35 @@ b {
   top: 0;
 }
 
-.nhsuk-button--reverse[disabled="disabled"], .nhsuk-button.is-style-reverse[disabled="disabled"], #login #loginform .is-style-reverse#wp-submit[disabled="disabled"], .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"], #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"],
+.nhsuk-button--reverse[disabled="disabled"], .nhsuk-button.is-style-reverse[disabled="disabled"], .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"], #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"],
 .nhsuk-button--reverse[disabled],
 .nhsuk-button.is-style-reverse[disabled],
-#login #loginform .is-style-reverse#wp-submit[disabled],
 .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled] {
   background-color: #ffffff;
   opacity: 0.5;
 }
 
-.nhsuk-button--reverse[disabled="disabled"]:hover, .nhsuk-button.is-style-reverse[disabled="disabled"]:hover, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"]:hover,
+.nhsuk-button--reverse[disabled="disabled"]:hover, .nhsuk-button.is-style-reverse[disabled="disabled"]:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"]:hover,
 .nhsuk-button--reverse[disabled]:hover,
 .nhsuk-button.is-style-reverse[disabled]:hover,
-#login #loginform .is-style-reverse#wp-submit[disabled]:hover,
 .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled]:hover {
   background-color: #ffffff;
   cursor: default;
 }
 
-.nhsuk-button--reverse[disabled="disabled"]:focus, .nhsuk-button.is-style-reverse[disabled="disabled"]:focus, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"]:focus,
+.nhsuk-button--reverse[disabled="disabled"]:focus, .nhsuk-button.is-style-reverse[disabled="disabled"]:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"]:focus,
 .nhsuk-button--reverse[disabled]:focus,
 .nhsuk-button.is-style-reverse[disabled]:focus,
-#login #loginform .is-style-reverse#wp-submit[disabled]:focus,
 .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled]:focus {
   outline: none;
 }
 
-.nhsuk-button--reverse[disabled="disabled"]:active, .nhsuk-button.is-style-reverse[disabled="disabled"]:active, #login #loginform .is-style-reverse#wp-submit[disabled="disabled"]:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"]:active,
+.nhsuk-button--reverse[disabled="disabled"]:active, .nhsuk-button.is-style-reverse[disabled="disabled"]:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled="disabled"]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled="disabled"]:active,
 .nhsuk-button--reverse[disabled]:active,
 .nhsuk-button.is-style-reverse[disabled]:active,
-#login #loginform .is-style-reverse#wp-submit[disabled]:active,
 .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap[disabled]:active {
   box-shadow: 0 4px 0 #212b32;
@@ -7361,7 +7345,7 @@ b {
   }
 }
 
-.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, #login #loginform label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .tingle-modal-box .ginput_container_radio .gfield_radio li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
+.nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .tingle-modal-box .ginput_container_radio .gfield_radio li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
   margin-bottom: 8px;
 }
 
@@ -7483,7 +7467,7 @@ input[type="time"],
 input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
-textarea, #login #loginform .user-login, #login #loginform .user_pass {
+textarea {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -7520,7 +7504,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass {
   input[type="datetime"],
   input[type="datetime-local"],
   input[type="color"],
-  textarea, #login #loginform .user-login, #login #loginform .user_pass {
+  textarea {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -7543,7 +7527,7 @@ textarea, #login #loginform .user-login, #login #loginform .user_pass {
   input[type="datetime"],
   input[type="datetime-local"],
   input[type="color"],
-  textarea, #login #loginform .user-login, #login #loginform .user_pass {
+  textarea {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -7564,7 +7548,7 @@ input:focus[type="time"],
 input:focus[type="datetime"],
 input:focus[type="datetime-local"],
 input:focus[type="color"],
-textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus {
+textarea:focus {
   border: 2px solid #212b32;
   box-shadow: inset 0 0 0 2px;
   outline: 4px solid #ffeb3b;
@@ -7587,7 +7571,7 @@ input[type="time"]::-webkit-outer-spin-button,
 input[type="datetime"]::-webkit-outer-spin-button,
 input[type="datetime-local"]::-webkit-outer-spin-button,
 input[type="color"]::-webkit-outer-spin-button,
-textarea::-webkit-outer-spin-button, #login #loginform .user-login::-webkit-outer-spin-button, #login #loginform .user_pass::-webkit-outer-spin-button,
+textarea::-webkit-outer-spin-button,
 .nhsuk-input::-webkit-inner-spin-button,
 input:not(.nhsuk-search__input)[type="text"]::-webkit-inner-spin-button,
 input[type="email"]::-webkit-inner-spin-button,
@@ -7604,16 +7588,14 @@ input[type="time"]::-webkit-inner-spin-button,
 input[type="datetime"]::-webkit-inner-spin-button,
 input[type="datetime-local"]::-webkit-inner-spin-button,
 input[type="color"]::-webkit-inner-spin-button,
-textarea::-webkit-inner-spin-button,
-#login #loginform .user-login::-webkit-inner-spin-button,
-#login #loginform .user_pass::-webkit-inner-spin-button {
+textarea::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 .nhsuk-input[type="number"], input[type="number"][type="text"]:not(.nhsuk-search__input),
 input[type="number"],
-textarea[type="number"], #login #loginform .user-login[type="number"], #login #loginform .user_pass[type="number"] {
+textarea[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -7703,7 +7685,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 /* ==========================================================================
    COMPONENTS/ #LABEL
    ========================================================================== */
-.nhsuk-label, #login #loginform label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
+.nhsuk-label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -7713,7 +7695,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media (min-width: 40.0625em) {
-  .nhsuk-label, #login #loginform label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
+  .nhsuk-label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -7721,7 +7703,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
 }
 
 @media print {
-  .nhsuk-label, #login #loginform label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
+  .nhsuk-label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label, .tingle-modal-box .ginput_container_radio .gfield_radio li label {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -9398,7 +9380,7 @@ textarea[type="number"], #login #loginform .user-login[type="number"], #login #l
   width: 100%;
 }
 
-.nhsuk-button--reverse:visited, .nhsuk-button.is-style-reverse:visited, #login #loginform .is-style-reverse#wp-submit:visited, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:visited {
+.nhsuk-button--reverse:visited, .nhsuk-button.is-style-reverse:visited, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:visited {
   color: #212b32;
 }
 
@@ -9458,7 +9440,7 @@ input:focus[type="time"],
 input:focus[type="datetime"],
 input:focus[type="datetime-local"],
 input:focus[type="color"],
-textarea:focus, #login #loginform .user-login:focus, #login #loginform .user_pass:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.nhsuk-search__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
+textarea:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.nhsuk-search__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
   box-shadow: 0 0 0 4px #ffeb3b;
 }
 
@@ -9610,16 +9592,6 @@ a:focus .nhsuk-icon {
 // @author Tony Blacker, NHS Leadership Academy
 // @version 1.1 12th October 2019
 */
-.nhsuk-search__submit {
-  box-shadow: none;
-  color: #005eb8;
-}
-
-.nhsuk-header__search-form .nhsuk-u-visually-hidden {
-  background: #ffffff;
-  color: #000000;
-}
-
 .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;
@@ -9637,10 +9609,6 @@ a:focus .nhsuk-icon {
   flex-flow: wrap;
 }
 
-.nhsuk-breadcrumb .nhsuk-width-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container .cn-text-container .nhsuk-breadcrumb__list, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb .cn-text-container .nhsuk-breadcrumb__list, .nhsuk-breadcrumb #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-breadcrumb__list, #cookie-notice .cookie-notice-container .nhsuk-breadcrumb #cn-notice-buttons .nhsuk-breadcrumb__list {
-  margin: 0 16px 0 0;
-}
-
 .nhsuk-grid-column-width, .nhsuk-grid-column-full {
   clear: both;
 }
@@ -9654,10 +9622,23 @@ a:focus .nhsuk-icon {
 #login #loginform {
   margin-top: 0;
   box-shadow: none;
+  border: none;
 }
 
 #login #loginform #wp-submit {
-  height: auto;
+  background-color: #007f3b;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #006747;
+  padding: 12px 16px;
+  font-size: 1.1875rem;
+  line-height: 1.47368;
+}
+
+#login #loginform label {
+  font-size: 1.1875rem;
+  line-height: 1.47368;
+  font-weight: 400;
 }
 
 /* Extra Blog Styles */
@@ -9805,7 +9786,7 @@ button + .button {
   float: right;
 }
 
-.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #login #loginform #wp-submit, #login #loginform .nhsuk-cat-filter #wp-submit, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap {
+.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap {
   margin-bottom: 0;
 }
 
@@ -9974,7 +9955,7 @@ button + .button {
   display: flow-root;
 }
 
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button.submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #login #loginform .submit#wp-submit, #login #loginform .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit#wp-submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tippy-popper .tippy-content .submit.gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.gv-approval-toggle, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cookie-notice .cookie-notice-container #cn-notice-buttons .submit.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.cn-button.bootstrap {
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button.submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tippy-popper .tippy-content .submit.gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.gv-approval-toggle, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cookie-notice .cookie-notice-container #cn-notice-buttons .submit.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.cn-button.bootstrap {
   float: right;
 }
 
@@ -10697,7 +10678,7 @@ li.nhsuk-pagination-item--next {
   border-bottom: none;
 }
 
-.learndash-wrapper .ld-section-heading .nhsuk-button, .learndash-wrapper .ld-section-heading #login #loginform #wp-submit, #login #loginform .learndash-wrapper .ld-section-heading #wp-submit, .learndash-wrapper .ld-section-heading .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .learndash-wrapper .ld-section-heading .gv-approval-toggle, .learndash-wrapper .ld-section-heading #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .learndash-wrapper .ld-section-heading .cn-button.bootstrap {
+.learndash-wrapper .ld-section-heading .nhsuk-button, .learndash-wrapper .ld-section-heading .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .learndash-wrapper .ld-section-heading .gv-approval-toggle, .learndash-wrapper .ld-section-heading #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .learndash-wrapper .ld-section-heading .cn-button.bootstrap {
   display: none;
 }
 
@@ -11178,13 +11159,13 @@ button.tribe-events-c-top-bar__datepicker-button:active {
   }
 }
 
-#tribe-events-content .nhsuk-button, #tribe-events-content #login #loginform #wp-submit, #login #loginform #tribe-events-content #wp-submit, #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle, #tribe-events-content #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons #tribe-events-content .cn-button.bootstrap,
+#tribe-events-content .nhsuk-button, #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle, #tribe-events-content #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons #tribe-events-content .cn-button.bootstrap,
 #tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number) {
   margin: 0 16px 8px 0;
   padding: 8px 24px;
 }
 
-#tribe-events-content .nhsuk-button:last-child, #tribe-events-content #login #loginform #wp-submit:last-child, #login #loginform #tribe-events-content #wp-submit:last-child, #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle:last-child, .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle:last-child, #tribe-events-content #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:last-child, #cookie-notice .cookie-notice-container #cn-notice-buttons #tribe-events-content .cn-button.bootstrap:last-child,
+#tribe-events-content .nhsuk-button:last-child, #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle:last-child, .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle:last-child, #tribe-events-content #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:last-child, #cookie-notice .cookie-notice-container #cn-notice-buttons #tribe-events-content .cn-button.bootstrap:last-child,
 #tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number):last-child {
   margin-right: 0;
 }
@@ -11858,11 +11839,11 @@ figure.is-style-nhsuk-table-responsive figcaption {
 // @version 1.0 22nd July 2019
 */
 /* button extension*/
-.nhsuk-button.is-style-secondary, #login #loginform .is-style-secondary#wp-submit, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap {
+.nhsuk-button.is-style-secondary, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap {
   /* secondary button style*/
 }
 
-.nhsuk-button.is-style-reverse, #login #loginform .is-style-reverse#wp-submit, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap {
+.nhsuk-button.is-style-reverse, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap {
   /* reverse button style*/
 }
 
