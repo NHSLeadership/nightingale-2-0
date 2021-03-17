@@ -134,7 +134,7 @@
   /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-  /* With :not(.autocomplete__input), the search field is not affected */
+  /* With :not(.nhsuk-search__input), the search field is not affected */
   /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -183,12 +183,6 @@
  *
  * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
  * http://paulirish.com/2012/box-sizing-border-box-ftw
- */
-  /* ==========================================================================
-   GENERIC / #IE
-   ========================================================================== */
-  /**
- * Add the correct display for HTML5 elements in IE 9-.
  */
   /* ==========================================================================
    ELEMENTS / #FORMS
@@ -273,11 +267,6 @@
   /* ==========================================================================
    STYLES / #ICONS
    ========================================================================== */
-  /**
- * We use SVGs for our icons, with no PNG fallback.
- *
- * For IE8 support, alternate styling is applied to the components using icons.
- */
   /* ==========================================================================
    STYLES / #LISTS
    ========================================================================== */
@@ -450,9 +439,6 @@
  * 6. Remove spacing between back icon and label.
  * 7. Custom padding for the chevron separator icon.
  */
-  /**
- * IE8 fixes
- */
   /* ==========================================================================
    COMPONENTS/ #BUTTON
    ========================================================================== */
@@ -467,9 +453,6 @@
  */
   /**
  * Button disabled states
- */
-  /**
- * IE8 fix for focus styles
  */
   /* ==========================================================================
    COMPONENTS / #CARD
@@ -512,6 +495,7 @@
  * 5. 'Random number' used for spacing to compensate for the triangle.
  * 6. Needed to enable the triangle to show correctly in high contrast mode.
  * 7. Prevent additional padding on headings
+ * 8. Give the action link icon sufficient contrast when used in the immediate variant
  */
   /**
  * Card card variations style.
@@ -614,9 +598,8 @@
   /**
  * 1. Fix legend text wrapping in Edge and IE versions:
  * 2. IE9-11 & Edge 12-13
- * 3. and IE8-11
- * 4. Hack to let legends or elements within legends have margins in webkit browsers.
- * 5. When the legend contains an H1, we want the H1 to inherit all styles from
+ * 3. Hack to let legends or elements within legends have margins in webkit browsers.
+ * 4. When the legend contains an H1, we want the H1 to inherit all styles from
  *    the legend. Effectively we want to be able to treat the heading as if it is
  *    not there.
  */
@@ -651,9 +634,6 @@
  * 13. Remove the arrow in Windows high contrast mode.
  * 14. Reduce spacing and change positioning for Windows high contrast mode.
  * 15. Prevent text breaking out of box on smaller sizes
- */
-  /**
- * IE8/9 fixes
  */
   /* ==========================================================================
    COMPONENTS/ #HINT
@@ -760,9 +740,6 @@
   /* Divider variant */
   /* Conditional */
   /* ==========================================================================
-   COMPONENTS / #REVIEW-DATE
-   ========================================================================== */
-  /* ==========================================================================
    COMPONENTS/ #SELECT
    ========================================================================== */
   /* ==========================================================================
@@ -783,10 +760,7 @@
  * 2. Reset default user agent styles
  * 3. Automatic wrapping for unbreakable text (e.g. URLs)
  * 4. Fallback for older browsers only
- * 5. In older browsers such as IE8, :last-child is not available,
- *    so only show the border divider where it is available.
  */
-  /* [5] */
   /* ==========================================================================
    COMPONENTS / #TABLE
    ========================================================================== */
@@ -817,6 +791,7 @@
  * 7. Aligning content to the right on mobile
  * 8. Aligning mobile header to left to split it from the data
  * 9. Hiding mobile specific header from desktop view
+ * 10. Adding a display block value due to IE 11 not having full flex support
  */
   /* Numeric tables
 ========================================================================== */
@@ -843,9 +818,14 @@
   /* Reusable mixin for a focus element outline */
   /* Add a focus indicator for keyboard nav on clickable cards */
   /* add more obvious visual representation when dashboard elements are active on keyboard nav */
+  /*.autocomplete__input.autocomplete__input--focused, input[type=text], input[type=textarea] {
+  &:focus {
+	@include a11y-focus__outline;
+  }
+}
+*/
   /* colour variable to be used with color-mixer.scss */
   /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
-  /* With :not(.autocomplete__input), the search field is not affected */
   /* Menu item right chevron (mobile): fix color when state is focus */
   /*
 // variations to styling required for gutenberg native blocks
@@ -1413,15 +1393,6 @@
   box-sizing: inherit;
 }
 
-.edit-post-visual-editor article,
-.edit-post-visual-editor aside,
-.edit-post-visual-editor footer,
-.edit-post-visual-editor header,
-.edit-post-visual-editor nav,
-.edit-post-visual-editor section {
-  display: block;
-}
-
 .edit-post-visual-editor button,
 .edit-post-visual-editor input,
 .edit-post-visual-editor select,
@@ -1474,10 +1445,6 @@
     font-size: 14pt;
     /* [2] */
   }
-}
-
-.edit-post-visual-editor .ie8 a:focus {
-  outline: 1px dotted #212b32;
 }
 
 .edit-post-visual-editor .nhsuk-link--no-visited-state:link {
@@ -4322,10 +4289,6 @@
   color: #7C2855;
 }
 
-.edit-post-visual-editor .ie8 .nhsuk-breadcrumb__back {
-  display: none;
-}
-
 .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor #login #loginform #wp-submit, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
@@ -4588,10 +4551,6 @@
 .edit-post-visual-editor .nhsuk-button--reverse[disabled]:active {
   box-shadow: 0 4px 0 #212b32;
   top: 0;
-}
-
-.edit-post-visual-editor .ie8 .nhsuk-button:focus, .edit-post-visual-editor .ie8 #login #loginform #wp-submit:focus, .edit-post-visual-editor #login #loginform .ie8 #wp-submit:focus, .edit-post-visual-editor .ie8 .tippy-popper .tippy-content .gv-approval-toggle:focus, .edit-post-visual-editor .tippy-popper .tippy-content .ie8 .gv-approval-toggle:focus {
-  outline: 1px dotted #212b32;
 }
 
 .edit-post-visual-editor .nhsuk-card {
@@ -5009,6 +4968,11 @@
 
 .edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-details__summary:focus {
   color: #212b32;
+}
+
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+  fill: #ffffff;
+  /* [8] */
 }
 
 .edit-post-visual-editor .nhsuk-checkboxes__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
@@ -5768,7 +5732,7 @@
   /* 1 */
   padding: 0;
   white-space: normal;
-  /* 4 */
+  /* 3 */
 }
 
 @media (min-width: 40.0625em) {
@@ -5879,7 +5843,7 @@
 }
 
 .edit-post-visual-editor .nhsuk-fieldset__heading {
-  /* 5 */
+  /* 4 */
   font-size: inherit;
   font-weight: inherit;
   margin: 0;
@@ -6082,20 +6046,6 @@
   }
 }
 
-.edit-post-visual-editor .ie8 .nhsuk-hero-content {
-  background-color: #005eb8;
-  color: #ffffff;
-  padding: 24px;
-}
-
-.edit-post-visual-editor .ie8 .nhsuk-hero-content .nhsuk-hero__arrow {
-  display: none;
-}
-
-.edit-post-visual-editor .ie9 .nhsuk-hero-content .nhsuk-hero__arrow {
-  display: none;
-}
-
 .edit-post-visual-editor .nhsuk-hint {
   font-weight: 400;
   font-size: 16px;
@@ -6209,7 +6159,7 @@
   }
 }
 
-.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type="text"]:not(.autocomplete__input),
+.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type="text"]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type="email"],
 .edit-post-visual-editor input[type="url"],
 .edit-post-visual-editor input[type="password"],
@@ -6246,7 +6196,7 @@
 }
 
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type="text"]:not(.autocomplete__input),
+  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type="text"]:not(.nhsuk-search__input),
   .edit-post-visual-editor input[type="email"],
   .edit-post-visual-editor input[type="url"],
   .edit-post-visual-editor input[type="password"],
@@ -6269,7 +6219,7 @@
 }
 
 @media print {
-  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type="text"]:not(.autocomplete__input),
+  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type="text"]:not(.nhsuk-search__input),
   .edit-post-visual-editor input[type="email"],
   .edit-post-visual-editor input[type="url"],
   .edit-post-visual-editor input[type="password"],
@@ -6290,7 +6240,7 @@
   }
 }
 
-.edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor input:focus[type="text"]:not(.autocomplete__input),
+.edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor input:focus[type="text"]:not(.nhsuk-search__input),
 .edit-post-visual-editor input:focus[type="email"],
 .edit-post-visual-editor input:focus[type="url"],
 .edit-post-visual-editor input:focus[type="password"],
@@ -6313,7 +6263,7 @@
   outline-offset: 0;
 }
 
-.edit-post-visual-editor .nhsuk-input::-webkit-outer-spin-button, .edit-post-visual-editor input:not(.autocomplete__input)[type="text"]::-webkit-outer-spin-button,
+.edit-post-visual-editor .nhsuk-input::-webkit-outer-spin-button, .edit-post-visual-editor input:not(.nhsuk-search__input)[type="text"]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type="email"]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type="url"]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type="password"]::-webkit-outer-spin-button,
@@ -6330,7 +6280,7 @@
 .edit-post-visual-editor input[type="color"]::-webkit-outer-spin-button,
 .edit-post-visual-editor textarea::-webkit-outer-spin-button, .edit-post-visual-editor #login #loginform .user-login::-webkit-outer-spin-button, .edit-post-visual-editor #login #loginform .user_pass::-webkit-outer-spin-button,
 .edit-post-visual-editor .nhsuk-input::-webkit-inner-spin-button,
-.edit-post-visual-editor input:not(.autocomplete__input)[type="text"]::-webkit-inner-spin-button,
+.edit-post-visual-editor input:not(.nhsuk-search__input)[type="text"]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type="email"]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type="url"]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type="password"]::-webkit-inner-spin-button,
@@ -6352,7 +6302,7 @@
   margin: 0;
 }
 
-.edit-post-visual-editor .nhsuk-input[type="number"], .edit-post-visual-editor input[type="number"][type="text"]:not(.autocomplete__input),
+.edit-post-visual-editor .nhsuk-input[type="number"], .edit-post-visual-editor input[type="number"][type="text"]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type="number"],
 .edit-post-visual-editor textarea[type="number"], .edit-post-visual-editor #login #loginform .user-login[type="number"], .edit-post-visual-editor #login #loginform .user_pass[type="number"] {
   -moz-appearance: textfield;
@@ -7258,17 +7208,6 @@
   display: none;
 }
 
-.edit-post-visual-editor .nhsuk-review-date {
-  margin-top: 40px;
-  color: #4c6272;
-}
-
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-review-date {
-    margin-top: 48px;
-  }
-}
-
 .edit-post-visual-editor .nhsuk-select, .edit-post-visual-editor .tribe-tickets-rsvp select {
   font-weight: 400;
   font-size: 16px;
@@ -7692,6 +7631,13 @@
   /* [6] */
 }
 
+@media all and (-ms-high-contrast: none) {
+  .edit-post-visual-editor .nhsuk-table-responsive .nhsuk-table__body .nhsuk-table__row td {
+    /* [10] */
+    display: block;
+  }
+}
+
 @media (min-width: 48.0625em) {
   .edit-post-visual-editor .nhsuk-table-responsive .nhsuk-table__body .nhsuk-table__row td {
     display: table-cell;
@@ -7959,11 +7905,6 @@
   color: #212b32;
 }
 
-.edit-post-visual-editor .autocomplete__input.autocomplete__input--focused:focus, .edit-post-visual-editor input[type=text]:focus, .edit-post-visual-editor input[type=textarea]:focus {
-  border: 4px solid #ffeb3b;
-  box-shadow: inset 0 0 0 4px #212b32;
-}
-
 .edit-post-visual-editor .nhsuk-panel-group {
   margin-left: 0;
   margin-right: 0;
@@ -7981,10 +7922,6 @@
 
 .edit-post-visual-editor .nhsuk-button--reverse:visited {
   color: #212b32;
-}
-
-.edit-post-visual-editor .autocomplete__menu--visible {
-  display: none;
 }
 
 .edit-post-visual-editor .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination-item--previous, .edit-post-visual-editor .nhsuk-pagination .nhsuk-pagination__list .nhsuk-pagination-item--next {
@@ -8028,7 +7965,7 @@
   color: #005eb8;
 }
 
-.edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text], .edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor input:focus[type="text"]:not(.autocomplete__input),
+.edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text], .edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor input:focus[type="text"]:not(.nhsuk-search__input),
 .edit-post-visual-editor input:focus[type="email"],
 .edit-post-visual-editor input:focus[type="url"],
 .edit-post-visual-editor input:focus[type="password"],
@@ -8043,7 +7980,7 @@
 .edit-post-visual-editor input:focus[type="datetime"],
 .edit-post-visual-editor input:focus[type="datetime-local"],
 .edit-post-visual-editor input:focus[type="color"],
-.edit-post-visual-editor textarea:focus, .edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search], .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text]:not(.autocomplete__input), .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
+.edit-post-visual-editor textarea:focus, .edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search], .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
   box-shadow: 0 0 0 4px #ffeb3b;
 }
 
@@ -8058,7 +7995,7 @@
   width: 100%;
 }
 
-.edit-post-visual-editor .autocomplete__input {
+.edit-post-visual-editor .nhsuk-search__input {
   padding-right: 0;
 }
 
@@ -8207,10 +8144,6 @@
 
 .edit-post-visual-editor .interim-login header, .edit-post-visual-editor .interim-login footer {
   display: none;
-}
-
-.edit-post-visual-editor #nhsuk-footer .nhsuk-width-container ul.nhsuk-footer__list.nhsuk-footer__list--three-columns li.nhsuk-footer__list-item {
-  width: auto;
 }
 
 .edit-post-visual-editor .single-post #content #maincontent #contentinner #primary .featured-top {
