@@ -155,28 +155,30 @@ function nightingale_sidebar_location( $sidebar ) {
  */
 function nightingale_custom_page_colour( $classes ) {
 	$colour = get_theme_mod( 'theme_colour', 'nhs_blue' );
-	if ( 'nhs_blue' !== $colour ) {
-		$colour_array      = array(
-			'005eb8' => 'nhs-blue',
-			'003087' => 'dark-blue',
-			'0072ce' => 'bright-blue',
-			'768692' => 'mid-grey',
-			'425563' => 'dark-grey',
-			'231f20' => 'black',
-			'330072' => 'purple',
-			'ae2573' => 'pink',
-			'704c9c' => 'light-purple',
-			'da291c' => 'emergency-services-red',
-			'006747' => 'dark-green',
-			'78be20' => 'light-green',
-			'00a499' => 'aqua-green',
-			'0b0c0c' => 'gds-black',
-		);
-		$theme_colour_name = 'page-colour--' . $colour_array[ $colour ];
-		$classes[]         = $theme_colour_name;
-	}
+	if ( '' !== $colour ) {
+		if ( 'nhs_blue' !== $colour ) {
+			$colour_array      = array(
+				'005eb8' => 'nhs-blue',
+				'003087' => 'dark-blue',
+				'0072ce' => 'bright-blue',
+				'768692' => 'mid-grey',
+				'425563' => 'dark-grey',
+				'231f20' => 'black',
+				'330072' => 'purple',
+				'ae2573' => 'pink',
+				'704c9c' => 'light-purple',
+				'da291c' => 'emergency-services-red',
+				'006747' => 'dark-green',
+				'78be20' => 'light-green',
+				'00a499' => 'aqua-green',
+				'0b0c0c' => 'gds-black',
+			);
+			$theme_colour_name = 'page-colour--' . $colour_array[ $colour ];
+			$classes[]         = $theme_colour_name;
+		}
 
-	return $classes;
+		return $classes;
+	}
 }
 
 add_filter( 'body_class', 'nightingale_custom_page_colour' );
