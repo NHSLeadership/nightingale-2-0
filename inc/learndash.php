@@ -17,6 +17,31 @@ add_filter(
 		$find    = array();
 		$replace = array();
 		// search for whitespace and trim it down for later searches.
+		// sort out all the buttons in one go.
+		$find[]    = '#ld-button#';
+		$replace[] = 'nhsuk-button';
+		$find[]    = '#ld-item-list-actions#';
+		$replace[] = 'nhsuk-button nhsuk-button--secondary';
+		$find[]    = '#ld-expand-button#';
+		$replace[] = 'nhsuk-button nhsuk-button--secondary';
+		$find[]    = '#ld-logout#';
+		$replace[] = 'nhsuk-button nhsuk-button--secondary';
+		$find[]    = '#ld-login#';
+		$replace[] = 'nhsuk-button';
+		$find[]    = '#button button-primary#';
+		$replace[] = 'nhsuk-button';
+		$find[]    = '#ld-search-prompt#';
+		$replace[] = 'nhsuk-button nhsuk-button--reverse';
+		$find[]    = '#ld-button-reverse#';
+		$replace[] = 'nhsuk-button nhsuk-button--reverse';
+		$find[]    = '#wpProQuiz_button#';
+		$replace[] = 'nhsuk-button';
+		$find[]    = '#wpProQuiz_QuestionButton#';
+		$replace[] = 'nhsuk-button nhsuk-button--secondary';
+		$find[]    = '#wpProQuiz_TipButton#';
+		$replace[] = 'nhsuk-button nhsuk-button--reverse';
+		$find[]    = '#learndash_mark_complete_button#';
+		$replace[] = 'nhsuk-button nhsuk-mark-complete';
 		$find[]    = '/\s\s+/';
 		$replace[] = ' ';
 		// sort out styling page titles.
@@ -36,6 +61,73 @@ add_filter(
 	2
 );
 
+add_filter( 'the_content', 'nightingale_learndash_logins_rework', 99 );
+
+/**
+ * Modify LearnDash login/logout block to show as an nhsuk button
+ *
+ * @param string $content the raw html.
+ *
+ * @return string $content the modified html.
+ */
+function nightingale_learndash_logins_rework( $content ) {
+	$content = str_replace( 'ld-login-button ld-button', 'nhsuk-button', $content );
+	return $content;
+}
+
+/**
+ * Modify login modal buttons.
+ */
+add_filter(
+	'learndash_login_model_register_button_class',
+	function( $register_button_class ) {
+		// May add any custom logic using $register_button_class.
+		$register_button_class .= ' nhsuk-button';
+		// Always return $register_button_class.
+		return $register_button_class;
+	}
+);
+
+/**
+ * Function to amend markup of modal output so that styling becomes native.
+ *
+ * @param string $content - the original markup.
+ */
+function nightingale_learndash_clean_modal_ouput( $content ) {
+	$content = str_replace( 'button button-primary', 'nhsuk-button', $content );
+	$content = str_replace( '<label ', '<label class="nhsuk-label" ', $content );
+	$content = str_replace( 'type="text" ', 'type="text" class="nhsuk-input" ', $content );
+	$content = str_replace( 'type="password" ', 'type="password" class="nhsuk-input" ', $content );
+	return $content;
+}
+
+/**
+ * Clean up the markup inside the learndash registration modal.
+ *
+ * @param string $content the original markup.
+ *
+ * @return string|string[]
+ */
+function nightingale_learndash_clean_modal_registration( $content ) {
+	$content = nightingale_learndash_clean_modal_ouput( $content );
+	return $content;
+}
+
+add_filter( 'learndash_status_bubble', 'nightingale_learndash_status_bubble' );
+
+/**
+ * Function to add tag markup to LD status bubbles
+ *
+ * @param string $content the original markup.
+ *
+ * @return string|string[]
+ */
+function nightingale_learndash_status_bubble( $content ) {
+	$content = str_replace( 'ld-status ', 'nhsuk-tag" ', $content );
+	$content = str_replace( 'ld-status-complete', 'nhsuk-tag--green" ', $content );
+	$content = str_replace( 'ld-status-waiting', 'nhsuk-tag--yellow" ', $content );
+	return $content;
+}
 if ( is_plugin_active( 'learndash-course-grid/learndash_course_grid.php' ) ) {
 
 	add_action(

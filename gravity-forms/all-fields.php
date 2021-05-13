@@ -13,7 +13,7 @@
 
 ?>
 
-<ul class="gf-all-fields"">
+<ul class="gf-all-fields nhsuk-summary-list">
 	<?php
 	foreach ( $items as $item ) :
 
@@ -30,9 +30,9 @@
 
 		?>
 
-		<li class="<?php echo esc_attr( $css_class ); ?>"">
+		<li class="nhsuk-summary-list__row <?php echo esc_attr( $css_class ); ?>"">
 			<span class="nhsuk-label"><?php echo esc_html( $item['label'] ); ?></span>
-			<span><?php echo $item['value']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+			<span class="nhsuk-summary-list__value"><?php echo $item['value']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 		</li>
 
 		<?php

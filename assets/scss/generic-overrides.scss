@@ -22,18 +22,6 @@
 }
 
 //end image extending
-//style default button as secondary button
-#content {
-  a.wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
-	@extend .nhsuk-button;
-	border-radius : $nhsuk-border-radius;
-	background    : $nhsuk-button-color;
-	position      : relative;
-	top           : -nhsuk-spacing(2);
-	margin-bottom : nhsuk-spacing(3);
-	color         : $nhsuk-button-text-color;
-  }
-}
 
 //when button is a link, something goes wonky
 .nhsuk-button--reverse:visited {
@@ -63,23 +51,8 @@
   }
 }
 
-.pagination_split_post {
-  .post-page-numbers {
-	@extend .nhsuk-tag;
-	@extend .nhsuk-tag--grey;
-
-	&.current {
-	  @extend .nhsuk-tag--white;
-	}
-  }
-}
-
 .gallery-caption {
   @extend .nhsuk-image__caption;
-}
-
-.sticky {
-  @extend .nhsuk-panel;
 }
 
 .is-style-outline .wp-block-button__link {
@@ -106,22 +79,9 @@
 
   footer {
 	.edit-link {
-	  @extend .nhsuk-tag;
-	  @extend .nhsuk-tag--white;
 	  text-decoration : none;
-	  /*margin-left: nhsuk-spacing(4);*/
-
 	  a {
 		color : $color_nhsuk-blue;
-	  }
-	}
-
-	.tags-links, .cat-links {
-	  @extend .nhsuk-tag;
-	  @extend .nhsuk-tag--grey;
-
-	  a {
-		//color: $color_nhsuk-white
 	  }
 	}
   }

@@ -464,12 +464,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  @extend .nhsuk-button;
-}
+
 
 /* With :not(.autocomplete__input), the search field is not affected */
 input[type="text"]:not(.autocomplete__input),

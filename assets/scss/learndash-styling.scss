@@ -1,4 +1,9 @@
 .learndash-wrapper {
+  .ld-section-heading {
+	.nhsuk-button {
+	  display: none;
+	}
+  }
   .ld-primary-color {
 	color : $color_nhsuk-blue;
   }
@@ -24,38 +29,23 @@
 	text-decoration : none;
   }
 
-  .ld-button, input[type=submit], .ld-item-list-actions .ld-expand-button, .ld-logout, .ld-login {
-	@extend .nhsuk-button;
-  }
 
   input[type=submit].learndash_mark_complete_button {
 	padding-right : nhsuk-spacing(7);
   }
 
-  .ld-item-list-actions .ld-expand-button, .ld-logout {
-	@extend .nhsuk-button--secondary;
-  }
 
   .sfwd-mark-complete::after {
 	top : 33%;
   }
 
   .ld-status {
-	@extend .nhsuk-tag;
 	  position: relative;
 
 	&.ld-status-waiting {
 	  border-color : $color_nhsuk-red;
 	}
 
-	&.ld-status-progress {
-	  @extend .nhsuk-tag;
-	}
-
-	&.ld-status-complete {
-	  @extend .nhsuk-tag;
-	  @extend .nhsuk-tag--green;
-	}
   }
 
   .ld-breadcrumbs, .ld-course-status, .ld-item-details {
@@ -64,67 +54,6 @@
 		position: relative;
 	  }
 	}
-	.ld-status {
-	  &.ld-status-progress {
-		@extend .nhsuk-tag;
-	  }
-
-	  &.ld-status-complete {
-		@extend .nhsuk-tag;
-		@extend .nhsuk-tag--green
-	  }
-
-	  &.ld-status-waiting {
-		@extend .nhsuk-tag;
-		@extend .nhsuk-tag--yellow
-	  }
-	}
-  }
-
-  .ld-content-actions {
-	.ld-content-action {
-	  .ld-button:first-of-type {
-		@extend .nhsuk-button--reverse;
-	  }
-	}
-
-	a.ld-primary-color {
-	  @extend .nhsuk-button;
-	  @extend .nhsuk-button--secondary;
-	  flex             : initial;
-	  -webkit-box-flex : initial;
-	  -ms-flex         : initial;
-
-	  &:hover {
-		color : $color_nhsuk-white !important;
-	  }
-	}
-  }
-
-  .ld-table-list {
-	@extend .nhsuk-care-card;
-
-	.ld-primary-color-hover {
-
-	  &:hover {
-		background : $nhsuk-focus-color !important;
-		margin     : 0 -20px;
-		padding    : 20px;
-	  }
-	}
-
-	.ld-table-list-header {
-	  @extend .nhsuk-care-card__heading-container;
-
-	  .ld-table-list-title {
-		@extend .nhsuk-care-card__heading;
-	  }
-	}
-
-	.ld-table-list-items {
-	  background : $color_nhsuk-white;
-	  font-size  : 1rem;
-	}
   }
 
   .ld-tab-content, .ld-table-list {
@@ -132,12 +61,6 @@
   }
 
   .ld-item-list {
-	.ld-section-heading {
-	  .ld-search-prompt {
-		@extend .nhsuk-button;
-		@extend .nhsuk-button--reverse;
-	  }
-	}
 
 	.ld-item-search {
 	  .ld-closer {
@@ -179,12 +102,6 @@
 			top : -nhsuk-spacing(5);
 		  }
 		}
-
-		.ld-item-search-submit {
-		  .ld-button {
-			@extend .nhsuk-button;
-		  }
-		}
 	  }
 	}
 
@@ -211,31 +128,6 @@
 	margin : 1em 0;
   }
 
-  ld-breadcrumbs {
-	@extend .nhsuk-breadcrumb;
-
-	.ld-breadcrumbs-segments {
-	  @extend .nhsuk-breadcrumb__list;
-	  white-space : nowrap;
-	  overflow    : hidden;
-
-	  span {
-		@extend .nhsuk-breadcrumb__item;
-		display : inline;
-
-		a {
-		  font-weight : 400;
-		  color       : $color_nhsuk-black;
-		  padding     : nhsuk-spacing(2);
-		}
-
-		&:after {
-		  content : '';
-		}
-	  }
-	}
-  }
-
   .ld-modal {
 	-webkit-transition : none !important;
 	transition         : none !important;
@@ -243,25 +135,36 @@
 
   .ld-login-modal {
 	border: nhsuk-spacing(1) solid $color_nhsuk-grey-5;
+	input[type="text"], input[type="password"] {
+	  background: $color_nhsuk-white;
+	  border-color: $color_nhsuk-grey-1;
+	}
+	label {
+	  text-align    : left;
+	  color         : $color_nhsuk-white;
+	  margin-bottom : nhsuk-spacing(2);
+	}
+	input[type="checkbox"] {
+	  cursor: pointer;
+	  height: nhsuk-spacing(5);
+	  left: 0;
+	  width: nhsuk-spacing(5);
+	  z-index: 1;
+	  position: relative;
+	  top: nhsuk-spacing(2);
+	  margin-right: nhsuk-spacing(3);
+	}
+
 	  .ld-login-modal-register {
 		background: $color_nhsuk-dark-blue;
-		.ld-button.ld-button-reverse.ld-js-register-account {
-		  margin-top: nhsuk-spacing(3);
-		  @extend .nhsuk-button;
-		  @extend .nhsuk-button--reverse;
-		}
 		#registerform {
 		  color: $color_nhsuk-white;
 		  font-size: $nhsuk-base-font-size;
-		  label {
-			@extend .nhsuk-label;
-			text-align    : left;
-			color         : $color_nhsuk-white;
-			margin-bottom : nhsuk-spacing(2);
-		  }
-
-		  input[type="text"] {
-			@extend .nhsuk-input;
+		  #wp-submit {
+			border-radius: nhsuk-spacing(1);
+			border-width: 0;
+			background: $color_nhsuk-white;
+			color: $color_nhsuk-black;
 		  }
 		}
 
@@ -272,43 +175,21 @@
 		  color : $color_nhsuk-dark-blue;
 		}
 
-	  .ld-login-modal-form {
 		#loginform {
-		  label {
-			@extend .nhsuk-label;
-			text-align: left;
-			color: $color_nhsuk-black;
-			margin-bottom: nhsuk-spacing(2);
-		  }
-		  input[type="text"], input[type="password"] {
-			@extend .nhsuk-input;
-			background: $color_nhsuk-white;
-		  }
-		  p.login-remember {
-			input[type="checkbox"] {
-			  cursor: pointer;
-			  height: nhsuk-spacing(5);
-			  left: 0;
-			  width: nhsuk-spacing(5);
-			  z-index: 1;
-			  position: relative;
-			  top: nhsuk-spacing(2);
-			  margin-right: nhsuk-spacing(3);
-			}
-		  }
+
 		  .login-username, .login-password {
 			&::before {
 			  display: none;
 			}
 		  }
 		}
-
-	  }
 	}
 
 	input[type=submit] {
-	  @extend .nhsuk-button;
 	  margin-top : nhsuk-spacing(2);
+	  background: $color_nhsuk-green;
+	  border-radius: 4px;
+	  font-size: 1rem;
 	}
 
 	.ld-button.ld-button-reverse.ld-js-register-account {
@@ -318,155 +199,8 @@
 	}
   }
 
-  /*
-  Style wpProQuiz
-   */
-  .wpProQuiz_content {
-	.wpProQuiz_button {
-	  @extend .nhsuk-button;
-	}
-
-	.wpProQuiz_QuestionButton {
-	  @extend .nhsuk-button--secondary;
-	}
-
-	.wpProQuiz_TipButton {
-	  @extend .nhsuk-button--reverse;
-	}
-
-	input[type="text"] {
-	  @extend .nhsuk-input;
-	  background    : $color_nhsuk-white;
-	  border-radius : $nhsuk-border-radius;
-	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-black;
-	}
-
-	textarea {
-	  @extend .nhsuk-textarea;
-	  min-height    : 10rem;
-	  background    : $color_nhsuk-white;
-	  border-radius : $nhsuk-border-radius;
-	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-black;
-	}
-
-	.wpProQuiz_questionList {
-	  .wpProQuiz_questionListItem {
-		.wpProQuiz_cloze {
-		  background    : $color_nhsuk-white;
-		  border-radius : $nhsuk-border-radius;
-		  border        : $nhsuk-border-width-form-element solid $color_nhsuk-black;
-		}
-
-		.nhsuk-radios__item:last-of-type {
-		  margin-bottom : nhsuk-spacing(2);
-		}
-
-		label {
-		  border       : 0;
-		  padding      : 0;
-		  padding-top  : nhsuk-spacing(1);
-		  padding-left : nhsuk-spacing(2);
-		}
-	  }
-	}
-  }
-
-  /*
-  Change the learndash green to the NHS green
-   */
-  #btn-join.ld-button-transparent.ld-status-complete,
-  .btn-join.ld-button-transparent.ld-status-complete,
-  .ld-button.ld-button-transparent.ld-status-complete,
-  #learndash_mark_complete_button.ld-button-transparent.ld-status-complete,
-  .learndash_mark_complete_button.ld-button-transparent.ld-status-complete,
-  .ld-item-list .ld-item-search .ld-item-search-fields .ld-item-search-submit .ld-button.ld-button-transparent.ld-status-complete,
-  .ld-item-list .ld-item-list-item .ld-item-details .ld-certificate-link,
-  .ld-progress .ld-progress-heading .ld-progress-stats .ld-progress-percentage,
-  .ld-progress .ld-progress-bar .ld-progress-bar-percentage,
-  .ld-score.score-high,
-  .ld-expand-button.ld-button-transparent.ld-status-complete,
-  .ld-status-icon.ld-quiz-complete,
-  .ld-item-icon.ld-quiz-complete,
-  .wpProQuiz_content .wpProQuiz_button.ld-button-transparent.ld-status-complete,
-  .wpProQuiz_content .wpProQuiz_button2.ld-button-transparent.ld-status-complete,
-  .wpProQuiz_content a#quiz_continue_link.ld-button-transparent.ld-status-complete,
-  .wpProQuiz_content form[name=uploadEssay] input[type=submit].ld-button-transparent.ld-status-complete,
-  #wpProQuiz_overlay_close.ld-button-transparent.ld-status-complete,
-  .ld-alert-success,
-  .ld-focus .ld-focus-header #sfwd-mark-complete:after,
-  .ld-focus .ld-focus-header .sfwd-mark-complete:after,
-  .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button,
-  .ld-focus .ld-focus-header #sfwd-mark-complete .learndash_mark_complete_button,
-  .ld-focus .ld-focus-header .sfwd-mark-complete #learndash_mark_complete_button,
-  .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button,
-  .ld-focus .ld-focus-header #sfwd-mark-complete #learndash_mark_complete_button.ld-status-complete,
-  .ld-focus .ld-focus-header #sfwd-mark-complete .learndash_mark_complete_button.ld-status-complete,
-  .ld-focus .ld-focus-header .sfwd-mark-complete #learndash_mark_complete_button.ld-status-complete,
-  .ld-focus .ld-focus-header .sfwd-mark-complete .learndash_mark_complete_button.ld-status-complete,
-  .ld-focus-comments .form-submit #submit.ld-button-transparent.ld-status-complete,
-  .ld-focus-comment .ld-comment-reply a.comment-reply-link.ld-button-transparent.ld-status-complete {
-	color      : $color_nhsuk-green !important;
-	background : $color_nhsuk-white;
-
-	.ld-button {
-	  max-width : unset;
-
-	}
-  }
-
-  .ld-progress-bar-percentage {
-	&.ld-secondary-background {
-	  background-color : $color_nhsuk-green !important;
-	}
-  }
-
-  .ld-certificate-icon,
-  #quiz_continue_link,
-  .course_progress .sending_progress_bar,
-  .wpProQuiz_content a#quiz_continue_link,
-  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect label,
-  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect .wpProQuiz_sortable,
-  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortCriterion,
-  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortText,
-  .wpProQuiz_content .wpProQuiz_time_limit .wpProQuiz_progress,
-  .ld-alert-success .ld-alert-icon,
-  .ld-alert-success .ld-button,
-  .ld-course-status {
-	&.ld-course-status-not-enrolled {
-		.ld-course-status-label,
-		.ld-course-status-price {
-			color: $color_nhsuk-black;
-		}
-	}
-	.ld-status.ld-status-complete {
-	  background-color: $color_nhsuk-green !important;
-	  color: $color_nhsuk-white;
-	  max-width: unset;
-
-	  &:hover {
-		  color: $color_nhsuk-green !important;
-		  background-color: $color_nhsuk-white !important;
-		  border: $nhsuk-border-width-form-element solid $color_nhsuk-green !important;
-	  }
-    }
-	.ld-status {
-	  position: relative;
-	  &.ld-status-waiting {
-  	    background-color: $color_nhsuk-yellow;
-	  }
-	}
-  }
-
-  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortCriterion,
-  .wpProQuiz_content .wpProQuiz_questionListItem.wpProQuiz_answerCorrect > table td .wpProQuiz_maxtrixSortText,
-  .ld-alert-success {
-	border-color : $color_nhsuk-green !important;
-  }
-
-  .ld-status-in-progress,
-  .ld-course-navigation .ld-status-icon.ld-status-in-progress {
-	border-left-color : $color_nhsuk-green !important;
-	border-top-color  : $color_nhsuk-green !important;
+  .nhsuk-mark-complete {
+	padding-right: nhsuk-spacing(5);
   }
 }
 
@@ -495,28 +229,7 @@ nav.learndash-pager {
   }
 }
 
-.nhsuk-breadcrumb {
-  .sfwd-breadcrumbs {
-	@extend .nhsuk-breadcrumb__list;
-
-	span {
-	  @extend .nhsuk-breadcrumb__item;
-
-	  &.sep {
-		display : none;
-	  }
-
-	  a {
-		span {
-		  padding-right : 0;
-		}
-	  }
-	}
-  }
-}
-
 .ld-course-list-items {
-  @extend .nhsuk-card-group;
 
   .ld_course_grid {
 
@@ -559,7 +272,6 @@ nav.learndash-pager {
    		}
 
         .btn, .btn-primary {
-		  @extend .nhsuk-action-link__link;
 		  .email-address:after {
 		    content: '<span class="nhsuk-u-visually-hidden" aria-hidden="true"></span>';
 		  }
@@ -570,7 +282,6 @@ nav.learndash-pager {
 
 	.thumbnail.course {
 	  margin-bottom  : nhsuk-spacing(5);
-	  @extend .nhsuk-card;
 	  position       : relative;
 
 	  .ld_course_grid_price {
@@ -598,10 +309,8 @@ nav.learndash-pager {
 			border-right : 4px solid $color_nhsuk-dark-green;
 		  }
 		}
-
 	  }
 	}
-
   }
 }
 

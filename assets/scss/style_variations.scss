@@ -39,25 +39,7 @@
   }
 }
 
-/* Latest Posts skinning */
-.nightingale-latest-news {
-  .nhsuk-panel {
-    margin-bottom: nhsuk-spacing(3);
-    a {
-      @extend .nhsuk-heading-m;
-      //text-decoration: none;
-    }
 
-    .wp-block-latest-posts__post-excerpt {
-      a:last-of-type {
-        @extend .nhsuk-action-link__link;
-        margin-top: nhsuk-spacing(5);
-        margin-bottom: 0;
-        width: 100%;
-      }
-    }
-  }
-}
 .nhsuk-grid-column-width, .nhsuk-grid-column-full {
   clear: both;
 }
@@ -197,9 +179,10 @@ button {
   }
 }
 .nhsuk-card.is-style-panel-with-label {
+  // these extends needs to stay for legacy reasons.
   @extend .nhsuk-card--feature;
   .nhsuk-card__content {
-    @extend .nhsuk-card__content--feature;
+    @include nhsuk-responsive-margin(7, 'top');
 
     h2 {
       @extend .nhsuk-card__heading;
