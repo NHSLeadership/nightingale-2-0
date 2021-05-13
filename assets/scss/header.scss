@@ -199,4 +199,10 @@ button#toggle-search {
   font-size : 13.3333px;
 }
 
+@media (min-width: 48.0625em) {
+  .nhsuk-header--organisation .nhsuk-header__link {
+    max-width: 500px;
+	float: left;
+  }
+}
 /* end of header.scss include */
