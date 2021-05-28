@@ -20,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "dart-sass": "^1.25.0",
-    "grunt": "^1.3.0",
+    "grunt": "^1.4.1",
     "nhsuk-frontend": "^4.1.0",
     "node-sass": "^6.0.0",
     "nunjucks": "^3.2.3",
