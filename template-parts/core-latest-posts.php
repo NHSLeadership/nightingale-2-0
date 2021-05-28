@@ -15,12 +15,12 @@ Set up all the arguments that can be defined in the blocks management for latest
 so we can then pass them down to the display elements correctly
 */
 $parent_template_part = 'latest-posts';
-if(is_front_page()) {
-	$archive_paged        = get_query_var( 'page' ) ? get_query_var( 'page' ) : 1;
+if ( is_front_page() ) {
+	$archive_paged = get_query_var( 'page' ) ? get_query_var( 'page' ) : 1;
 } else {
-	$archive_paged        = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+	$archive_paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 }
-$posts_to_show        = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+$posts_to_show = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
 if ( isset( $_POST['cat_filter'] ) && ( ! empty( $_POST['cat_filter'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$cat_filter   = sanitize_text_field( wp_unslash( $_POST['cat_filter'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$categories[] = array(
