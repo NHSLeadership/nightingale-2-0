@@ -267,6 +267,11 @@
   /* ==========================================================================
    STYLES / #ICONS
    ========================================================================== */
+  /**
+ * We use SVGs for our icons, with no PNG fallback.
+ *
+ * For IE8 support, alternate styling is applied to the components using icons.
+ */
   /* ==========================================================================
    STYLES / #LISTS
    ========================================================================== */
@@ -439,6 +444,9 @@
  * 6. Remove spacing between back icon and label.
  * 7. Custom padding for the chevron separator icon.
  */
+  /**
+ * IE8 fixes
+ */
   /* ==========================================================================
    COMPONENTS/ #BUTTON
    ========================================================================== */
@@ -453,6 +461,9 @@
  */
   /**
  * Button disabled states
+ */
+  /**
+ * IE8 fix for focus styles
  */
   /* ==========================================================================
    COMPONENTS / #CARD
@@ -495,7 +506,6 @@
  * 5. 'Random number' used for spacing to compensate for the triangle.
  * 6. Needed to enable the triangle to show correctly in high contrast mode.
  * 7. Prevent additional padding on headings
- * 8. Give the action link icon sufficient contrast when used in the immediate variant
  */
   /**
  * Card card variations style.
@@ -598,8 +608,9 @@
   /**
  * 1. Fix legend text wrapping in Edge and IE versions:
  * 2. IE9-11 & Edge 12-13
- * 3. Hack to let legends or elements within legends have margins in webkit browsers.
- * 4. When the legend contains an H1, we want the H1 to inherit all styles from
+ * 3. and IE8-11
+ * 4. Hack to let legends or elements within legends have margins in webkit browsers.
+ * 5. When the legend contains an H1, we want the H1 to inherit all styles from
  *    the legend. Effectively we want to be able to treat the heading as if it is
  *    not there.
  */
@@ -634,6 +645,9 @@
  * 13. Remove the arrow in Windows high contrast mode.
  * 14. Reduce spacing and change positioning for Windows high contrast mode.
  * 15. Prevent text breaking out of box on smaller sizes
+ */
+  /**
+ * IE8/9 fixes
  */
   /* ==========================================================================
    COMPONENTS/ #HINT
@@ -760,7 +774,10 @@
  * 2. Reset default user agent styles
  * 3. Automatic wrapping for unbreakable text (e.g. URLs)
  * 4. Fallback for older browsers only
+ * 5. In older browsers such as IE8, :last-child is not available,
+ *    so only show the border divider where it is available.
  */
+  /* [5] */
   /* ==========================================================================
    COMPONENTS / #TABLE
    ========================================================================== */
@@ -791,7 +808,6 @@
  * 7. Aligning content to the right on mobile
  * 8. Aligning mobile header to left to split it from the data
  * 9. Hiding mobile specific header from desktop view
- * 10. Adding a display block value due to IE 11 not having full flex support
  */
   /* Numeric tables
 ========================================================================== */
@@ -1445,6 +1461,10 @@
     font-size: 14pt;
     /* [2] */
   }
+}
+
+.edit-post-visual-editor .ie8 a:focus {
+  outline: 1px dotted #212b32;
 }
 
 .edit-post-visual-editor .nhsuk-link--no-visited-state:link {
@@ -4289,6 +4309,10 @@
   color: #7C2855;
 }
 
+.edit-post-visual-editor .ie8 .nhsuk-breadcrumb__back {
+  display: none;
+}
+
 .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
@@ -4543,6 +4567,10 @@
 .edit-post-visual-editor .nhsuk-button--reverse[disabled]:active {
   box-shadow: 0 4px 0 #212b32;
   top: 0;
+}
+
+.edit-post-visual-editor .ie8 .nhsuk-button:focus, .edit-post-visual-editor .ie8 .tippy-popper .tippy-content .gv-approval-toggle:focus, .edit-post-visual-editor .tippy-popper .tippy-content .ie8 .gv-approval-toggle:focus {
+  outline: 1px dotted #212b32;
 }
 
 .edit-post-visual-editor .nhsuk-card {
@@ -4960,11 +4988,6 @@
 
 .edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-details__summary:focus {
   color: #212b32;
-}
-
-.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
-  fill: #ffffff;
-  /* [8] */
 }
 
 .edit-post-visual-editor .nhsuk-checkboxes__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
@@ -5724,7 +5747,7 @@
   /* 1 */
   padding: 0;
   white-space: normal;
-  /* 3 */
+  /* 4 */
 }
 
 @media (min-width: 40.0625em) {
@@ -5835,7 +5858,7 @@
 }
 
 .edit-post-visual-editor .nhsuk-fieldset__heading {
-  /* 4 */
+  /* 5 */
   font-size: inherit;
   font-weight: inherit;
   margin: 0;
@@ -6036,6 +6059,20 @@
     position: relative;
     top: 0;
   }
+}
+
+.edit-post-visual-editor .ie8 .nhsuk-hero-content {
+  background-color: #005eb8;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.edit-post-visual-editor .ie8 .nhsuk-hero-content .nhsuk-hero__arrow {
+  display: none;
+}
+
+.edit-post-visual-editor .ie9 .nhsuk-hero-content .nhsuk-hero__arrow {
+  display: none;
 }
 
 .edit-post-visual-editor .nhsuk-hint {
@@ -7619,13 +7656,6 @@
   /* [5] */
   min-width: 1px;
   /* [6] */
-}
-
-@media all and (-ms-high-contrast: none) {
-  .edit-post-visual-editor .nhsuk-table-responsive .nhsuk-table__body .nhsuk-table__row td {
-    /* [10] */
-    display: block;
-  }
 }
 
 @media (min-width: 48.0625em) {
