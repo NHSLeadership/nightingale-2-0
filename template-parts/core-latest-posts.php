@@ -15,7 +15,11 @@ Set up all the arguments that can be defined in the blocks management for latest
 so we can then pass them down to the display elements correctly
 */
 $parent_template_part = 'latest-posts';
-$archive_paged        = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+if(is_front_page()) {
+	$archive_paged        = get_query_var( 'page' ) ? get_query_var( 'page' ) : 1;
+} else {
+	$archive_paged        = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+}
 $posts_to_show        = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
 if ( isset( $_POST['cat_filter'] ) && ( ! empty( $_POST['cat_filter'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$cat_filter   = sanitize_text_field( wp_unslash( $_POST['cat_filter'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
@@ -97,7 +101,7 @@ if ( $the_query->have_posts() ) :
 				$nexttext = '';
 			}
 			echo esc_html( get_query_var( $namespace . 'order' ) );
-			$prevpage = (int) $paged - 1;
+			$prevpage = (int) $archive_paged - 1;
 			if ( ! is_single() && $the_query->max_num_pages > 1 && $prevpage > 0 ) {
 				?>
 				<li class="nhsuk-pagination-item--previous">
@@ -114,7 +118,7 @@ if ( $the_query->have_posts() ) :
 				<?php
 			}
 
-			$nextpage = (int) $paged + 1;
+			$nextpage = (int) $archive_paged + 1;
 			if ( ! is_single() && ( $nextpage <= $the_query->max_num_pages ) && ( 1 !== $the_query->max_num_pages ) ) {
 				?>
 				<li class="nhsuk-pagination-item--next">
