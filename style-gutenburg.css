@@ -878,6 +878,7 @@
 
 .edit-post-visual-editor body {
   margin: 0;
+  position: static;
 }
 
 .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input {

@@ -47,6 +47,7 @@ html {
  */
 body {
   margin: 0;
+  position: static;
 }
 
 /**
