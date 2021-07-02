@@ -61,17 +61,6 @@
 	word-wrap     : break-word;
   }
 
-  .nhsuk-search__submit {
-	float      : left;
-	margin-top : nhsuk-spacing(3);
-  }
-
-  @media(max-width : 48.025em) {
-	.nhsuk-search__submit {
-	  margin-top : 0;
-	}
-  }
-
   footer {
 	.edit-link {
 	  text-decoration : none;
@@ -100,7 +89,7 @@
 
 
 #primary {
-  .page-content {
+  .page-content { // search within content area needs some special treatment
 	.nhsuk-header__search-toggle, .nhsuk-search__close {
 	  display : none;
 	}

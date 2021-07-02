@@ -6896,15 +6896,6 @@
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-.edit-post-visual-editor #primary .nhsuk-search__submit {
-  float: left;
-  margin-top: 16px;
-}
-@media (max-width: 48.025em) {
-  .edit-post-visual-editor #primary .nhsuk-search__submit {
-    margin-top: 0;
-  }
-}
 .edit-post-visual-editor #primary footer .edit-link {
   text-decoration: none;
 }
