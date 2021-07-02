@@ -9135,7 +9135,7 @@ button + .button {
   border-left: none;
   margin-top: 0;
   float: left;
-  box-shadow: 0 !important;
+  box-shadow: 0;
 }
 #secondary section #wp-calendar caption {
   position: relative;

@@ -30,7 +30,7 @@
 
 		?>
 
-		<li class="nhsuk-summary-list__row <?php echo esc_attr( $css_class ); ?>"">
+		<li class="nhsuk-summary-list__row <?php echo esc_attr( $css_class ); ?>">
 			<span class="nhsuk-label"><?php echo esc_html( $item['label'] ); ?></span>
 			<span class="nhsuk-summary-list__value"><?php echo $item['value']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 		</li>
