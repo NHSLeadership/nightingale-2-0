@@ -9,9 +9,8 @@
   "main": "index.js",
   "scripts": {
     "build": "sass --style=expanded --load-path=node_modules/nhsuk-frontend/packages style.scss style.css | sass --load-path=node_modules/nhsuk-frontend/packages style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css",
-    "build-minify": "sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages style.scss style.min.css",
+    "compress": "sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages style.scss style.min.css | sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages page-colours.scss page-colours.css",
     "zip": "zip -r nightingale.zip ./ -x .git .gitignore *.git/* /critical-css-generator.js /postcss.config.js *.github/* /Dockerfile /gruntfile.js /package.json package-lock.json *.DS_Store .DS_Store node_modules/ wp-html-mail/ wp-html-mail/* /phpcs.xml.dist node_modules/**\\* nhsblocks/node_modules/**\\*",
-    "compress": "postcss style.css > style.min.css | postcss page-colours.css > page-colours.min.css",
     "critical": "node critical-css-generator.js"
   },
   "keywords": [],
@@ -20,11 +19,6 @@
   "dependencies": {
     "nhsuk-frontend": "^5.1.0",
     "penthouse": "^2.3.1",
-    "sass": "^1.32.11",
-    "sass-lint": "^1.13.1"
-  },
-  "devDependencies": {
-    "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.1"
+    "sass": "^1.32.11"
   }
 }
