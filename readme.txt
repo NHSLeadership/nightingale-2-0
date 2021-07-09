@@ -43,6 +43,17 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+ = 2.3.2 =
+ * maintenance and bugfix release:
+  * Updated to Gravity Forms 2.5. Very strongly suggest updating gravity forms at the same time as updating to this
+  version of the theme.
+  * Converted all sass to dart-sass for less bloat. If developing with theme, please ensure you run npm install before
+  doing any css work
+  * Updated to nhsuk-frontend version 5.1
+  * reworked all css, but in particular admin to reduce size of files.
+
+
+
  = 2.3.1.4 =
  * bugfix release:
   * Fixed pagination in learndash content (added new nonce value to ensure correct form submission)
