@@ -7134,6 +7134,12 @@
   font-size: 1rem;
   font-weight: 600;
 }
+.edit-post-visual-editor #ui-datepicker-div {
+  background: white;
+  padding: 0 16px;
+  border: 1px solid #768692;
+  border-radius: 4px;
+}
 .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
   padding-left: 50px;
 }
@@ -7142,6 +7148,10 @@
 }
 .edit-post-visual-editor .gform_wrapper {
   margin-top: 0 !important;
+}
+.edit-post-visual-editor .gform_wrapper fieldset {
+  border: 0;
+  margin: 16px 0;
 }
 .edit-post-visual-editor .gform_wrapper .gf_progressbar_wrapper .gf_progressbar {
   border-radius: 4px;
@@ -7163,47 +7173,47 @@
 .edit-post-visual-editor .gform_wrapper .gf_progressbar_wrapper .gf_progressbar:after {
   border-radius: 4px;
 }
-.edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields li.gfield.gfield_html dl.nhsuk-summary-list {
+.edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gfield.gfield_html dl.nhsuk-summary-list {
   background: #ffffff;
   padding: 24px;
   padding-left: 24px;
 }
 @media (min-width: 61.875em) {
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert {
     border: 1px solid #768692;
     margin: 0 auto;
     max-width: 100%;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
     display: flex;
     /* direction row by default, the cells will be side by side to start */
     flex-direction: row;
     width: 100%;
     background-color: white;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:after {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:after {
     clear: both;
     content: "";
     display: block;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
     margin-bottom: 0;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__rowlabel {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__rowlabel {
     font-weight: bold;
     padding: 24px 16px;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row.nhsuk-likert__header .nhsuk-likert__item {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row.nhsuk-likert__header .nhsuk-likert__item {
     background: #005eb8;
     color: #ffffff;
     border: none;
     font-weight: 700;
     padding: 0 16px;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:nth-of-type(odd) {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:nth-of-type(odd) {
     background: #f0f4f5;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item {
     padding: 24px 16px;
     margin-right: 0;
     display: flex;
@@ -7217,49 +7227,49 @@
     /* centers content vertically */
     border-left: 1px solid #d8dde0;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .nhsuk-radios__label, .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item label {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .nhsuk-radios__label, .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item label {
     padding-left: 0;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .nhsuk-radios__label:before, .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label:before, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item label:before {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .nhsuk-radios__label:before, .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label:before, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item label:before {
     top: calc(50% - 20px);
     left: calc(50% - 20px);
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .nhsuk-radios__label:after, .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label:after, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item label:after {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .nhsuk-radios__label:after, .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label:after, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item label:after {
     top: calc(50% - 10px);
     left: calc(50% - 10px);
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item:last-of-type() {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__item:last-of-type() {
     margin-right: 0;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert.nhsuk-likert__multi .nhsuk-likert__row .nhsuk-likert__item:first-of-type() {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert.nhsuk-likert__multi .nhsuk-likert__row .nhsuk-likert__item:first-of-type() {
     flex: 3;
     min-width: 250px;
   }
 }
 @media (max-width: 61.865em) {
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
     padding: 16px 0;
     border-top: 1px solid #d8dde0;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:after {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:after {
     clear: both;
     content: "";
     display: block;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row.nhsuk-likert__header {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row.nhsuk-likert__header {
     display: none;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item:after {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item:after {
     clear: both;
     content: "";
     display: block;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item .nhsuk-radios__label .nhsuk-u-visually-hidden, .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label .nhsuk-u-visually-hidden, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item label .nhsuk-u-visually-hidden {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item .nhsuk-radios__label .nhsuk-u-visually-hidden, .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item .tingle-modal-box .ginput_container_radio .gfield_radio li label .nhsuk-u-visually-hidden, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item label .nhsuk-u-visually-hidden {
     position: relative;
     clip: unset;
     clip-path: unset;
   }
-  .edit-post-visual-editor .gform_wrapper .gform_body ul.gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item.nhsuk-likert__rowlabel {
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item.nhsuk-likert__rowlabel {
     font-weight: 700;
   }
 }
