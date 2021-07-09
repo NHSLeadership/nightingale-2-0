@@ -10148,6 +10148,9 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
   line-height: 1.5;
   padding-right: 8px;
 }
+.tribe-events .tribe-events-c-top-bar__datepicker span.tribe-events-c-top-bar__datepicker-desktop {
+  color: #ffffff;
+}
 
 .tribe-events-c-top-bar .tribe-topbar-prefix {
   margin-right: 8px;

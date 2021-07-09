@@ -56,6 +56,9 @@
   span {
 	line-height   : 1.5;
 	padding-right : nhsuk-spacing(2);
+	&.tribe-events-c-top-bar__datepicker-desktop {
+	  color : $color_nhsuk-white;
+	}
   }
 }
 
@@ -181,7 +184,8 @@ button.tribe-events-c-top-bar__datepicker-button {
 
 #tribe-events-content {
   .nhsuk-button,
-  button:not(.tribe-tickets__rsvp-ar-quantity-input-number) {
+  button:not(.tribe-tickets__rsvp-ar-quantity-input-number),
+  tribe-common-c-btn {
 	margin           : 0 nhsuk-spacing(3) nhsuk-spacing(2) 0;
 	padding: nhsuk-spacing(2) nhsuk-spacing(4);
 

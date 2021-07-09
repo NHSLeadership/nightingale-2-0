@@ -7766,6 +7766,9 @@
   line-height: 1.5;
   padding-right: 8px;
 }
+.edit-post-visual-editor .tribe-events .tribe-events-c-top-bar__datepicker span.tribe-events-c-top-bar__datepicker-desktop {
+  color: #ffffff;
+}
 .edit-post-visual-editor .tribe-events-c-top-bar .tribe-topbar-prefix {
   margin-right: 8px;
 }
