@@ -4,17 +4,6 @@
 // @version 1.1 12th October 2019
 */
 
-.nhsuk-search__submit {
-  box-shadow: none;
-  color: #005eb8;
-}
-.nhsuk-header__search-form {
-  .nhsuk-u-visually-hidden {
-    background: #ffffff;
-    color: #000000;
-  }
-}
-
 
 .nhsuk-grid-column-two-thirds.contentright {
   float: right;
@@ -31,14 +20,6 @@
   flex-flow: wrap;
 }
 
-.nhsuk-breadcrumb {
-  .nhsuk-width-container {
-    .nhsuk-breadcrumb__list {
-      margin: 0 nhsuk-spacing(3) 0 0;
-    };
-  }
-}
-
 
 .nhsuk-grid-column-width, .nhsuk-grid-column-full {
   clear: both;
@@ -51,17 +32,22 @@
   #loginform {
     margin-top: 0;
     box-shadow: none;
+    border: none;
     #wp-submit {
-      @extend .nhsuk-button;
-      height: auto;
+      background-color: $color_nhsuk-green;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      box-shadow: 0 4px 0 $color_nhsuk-dark-green;
+      padding: 12px 16px;
+      font-size: 1.1875rem;
+      line-height: 1.47368;
     }
 
-    .user-login, .user_pass {
-      @extend .nhsuk-input;
-    }
 
     label {
-      @extend .nhsuk-label;
+      font-size: 1.1875rem;
+      line-height: 1.47368;
+      font-weight: 400;
     }
   }
 }

@@ -55,7 +55,7 @@ function nightingale_archive_pagination() {
 
 		}
 
-		$pagination .= "<li class='tony nhsuk-pagination-numbers'>";
+		$pagination .= "<li class='nhsuk-pagination-numbers'>";
 
 		foreach ( $paginate as $element ) {
 			$pagination .= $element;

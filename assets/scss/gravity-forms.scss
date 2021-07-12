@@ -5,7 +5,12 @@
 	font-weight : $nhsuk-font-bold;
   }
 }
-
+#ui-datepicker-div {
+  background: white;
+  padding: 0 nhsuk-spacing(3);
+  border: 1px solid $color_nhsuk-mid-grey;
+  border-radius: 4px;
+}
 .tingle-modal-box {
   .ginput_container_checkbox {
 	@extend .nhsuk-checkboxes !optional;
@@ -51,6 +56,11 @@
 .gform_wrapper {
   margin-top : 0 !important;
 
+  fieldset {
+	border: 0;
+	margin: nhsuk-spacing(3) 0;
+  }
+
   .gf_progressbar_wrapper {
 	.gf_progressbar {
 	  border-radius    : $nhsuk-border-radius;
@@ -80,8 +90,8 @@
 
   .gform_body {
 
-	ul.gform_fields {
-	  li.gfield.gfield_html {
+	.gform_fields {
+	  .gfield.gfield_html {
 		dl.nhsuk-summary-list {
 		  background   : $color_nhsuk-white;
 		  padding      : nhsuk-spacing(4);

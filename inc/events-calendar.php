@@ -213,6 +213,8 @@ add_filter( 'the_content', 'nightingale_events_buttons', 99 );
 function nightingale_events_buttons( $output ) {
 	// Style every button.
 	$output = str_replace( 'tribe-events-button', 'nhsuk-button', $output );
+	$output = str_replace( 'tribe-common-c-btn', 'nhsuk-button', $output );
+
 	$output = str_replace( 'tribe-tickets__rsvp-form-button', 'nhsuk-button', $output );
 	// Style the ical button.
 	$output = str_replace( 'tribe-events-ical', 'nhsuk-button--reverse', $output );

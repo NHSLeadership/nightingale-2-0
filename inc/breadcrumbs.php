@@ -182,7 +182,7 @@ function nightingale_breadcrumb_trail() {
 			$home_page = get_option( 'page_on_front' );
 			foreach ( $ancestors as $ancestor ) {
 				if ( ( end( $ancestors ) !== $ancestor ) && ( ( $home_page !== $ancestor ) ) ) {
-					$trail         .= '<li class="nhsuk-breadcrumb__item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</span></a></li>';
+					$trail         .= '<li class="nhsuk-breadcrumb__item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</a></li>';
 					$back_one_level = array(
 						esc_url( get_permalink( $ancestor ) ),
 						wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ),

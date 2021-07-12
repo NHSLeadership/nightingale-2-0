@@ -24,8 +24,3 @@
 	}
   }
 }
-.autocomplete__input.autocomplete__input--focused, input[type=text], input[type=textarea] {
-  &:focus {
-	@include a11y-focus__outline;
-  }
-}

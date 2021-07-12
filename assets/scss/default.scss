@@ -466,8 +466,8 @@ table {
 --------------------------------------------------------------*/
 
 
-/* With :not(.autocomplete__input), the search field is not affected */
-input[type="text"]:not(.autocomplete__input),
+/* With :not(.nhsuk-search__input), the search field is not affected */
+input[type="text"]:not(.nhsuk-search__input),
 input[type="email"],
 input[type="url"],
 input[type="password"],
