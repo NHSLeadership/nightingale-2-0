@@ -8766,10 +8766,13 @@ textarea[type=number] {
 }
 #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
   border: 2px solid #f0f4f5;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   float: left;
-  max-width: 80%;
-  margin: 16px 0 0 5%;
+  max-width: 90%;
+  margin: 0;
+}
+#primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
+  float: left;
 }
 @media (max-width: 40.0525em) {
   #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
@@ -8860,7 +8863,7 @@ a:focus .nhsuk-icon {
 }
 .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle.is-active {
   color: #ffffff;
-  border: 0px;
+  border: 0;
 }
 
 /*
