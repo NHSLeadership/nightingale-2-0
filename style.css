@@ -8696,12 +8696,6 @@ textarea[type=number] {
   color: #212b32;
 }
 
-/*.autocomplete__input.autocomplete__input--focused, input[type=text], input[type=textarea] {
-  &:focus {
-	@include a11y-focus__outline;
-  }
-}
-*/
 /* colour variable to be used with color-mixer.scss */
 /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
 .nhsuk-panel-group {
@@ -8849,17 +8843,6 @@ a:focus .nhsuk-icon {
     border: 2px solid #d8dde0;
     height: 52px;
   }
-}
-.nhsuk-header.nhsuk-header--white {
-  /*.nhsuk-header__search-toggle {
-    background-color : $color_nhsuk-white;
-    border-color     : $color_nhsuk-blue;
-    color            : $color_nhsuk-blue;
-
-    .nhsuk-icon__search {
-  	fill : $color_nhsuk-blue;
-    }
-  }*/
 }
 .nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=search] {
   border: 2px solid #d8dde0;
@@ -10265,12 +10248,14 @@ button.tribe-events-c-top-bar__datepicker-button:active {
 }
 
 #tribe-events-content .nhsuk-button, #tribe-events-content #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons #tribe-events-content .cn-button.bootstrap, #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle,
-#tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number) {
+#tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number),
+#tribe-events-content tribe-common-c-btn {
   margin: 0 16px 8px 0;
   padding: 8px 24px;
 }
 #tribe-events-content .nhsuk-button:last-child, #tribe-events-content #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:last-child, #cookie-notice .cookie-notice-container #cn-notice-buttons #tribe-events-content .cn-button.bootstrap:last-child, #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle:last-child, .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle:last-child,
-#tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number):last-child {
+#tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number):last-child,
+#tribe-events-content tribe-common-c-btn:last-child {
   margin-right: 0;
 }
 
