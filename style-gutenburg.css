@@ -7763,24 +7763,8 @@
   line-height: 1.5;
   padding-right: 8px;
 }
-.edit-post-visual-editor .tribe-events .tribe-events-c-top-bar__datepicker span.tribe-events-c-top-bar__datepicker-desktop {
-  color: #ffffff;
-}
 .edit-post-visual-editor .tribe-events-c-top-bar .tribe-topbar-prefix {
   margin-right: 8px;
-}
-.edit-post-visual-editor button.tribe-events-c-top-bar__datepicker-button {
-  background-color: #005eb8;
-  padding: 4px 8px;
-  font-size: 16px;
-}
-.edit-post-visual-editor button.tribe-events-c-top-bar__datepicker-button svg {
-  fill: #ffffff;
-  width: 16px;
-  height: 16px;
-}
-.edit-post-visual-editor button.tribe-events-c-top-bar__datepicker-button:active {
-  background-color: #005eb8;
 }
 .edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input {
   padding: 16px;
@@ -7865,24 +7849,6 @@
     background-color: transparent;
   }
 }
-.edit-post-visual-editor #tribe-events-content .nhsuk-button, .edit-post-visual-editor #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle,
-.edit-post-visual-editor #tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number),
-.edit-post-visual-editor #tribe-events-content tribe-common-c-btn {
-  margin: 0 16px 8px 0;
-  padding: 8px 24px;
-}
-.edit-post-visual-editor #tribe-events-content .nhsuk-button:last-child, .edit-post-visual-editor #tribe-events-content .tippy-popper .tippy-content .gv-approval-toggle:last-child, .edit-post-visual-editor .tippy-popper .tippy-content #tribe-events-content .gv-approval-toggle:last-child,
-.edit-post-visual-editor #tribe-events-content button:not(.tribe-tickets__rsvp-ar-quantity-input-number):last-child,
-.edit-post-visual-editor #tribe-events-content tribe-common-c-btn:last-child {
-  margin-right: 0;
-}
-.edit-post-visual-editor button.tribe-tickets__rsvp-ar-guest-list-item-button:not(.tribe-tickets__rsvp-ar-guest-list-item-button--inactive) svg.tribe-tickets__rsvp-ar-guest-icon path {
-  fill: #ffffff !important;
-  stroke: #ffffff !important;
-}
-.edit-post-visual-editor .tribe-tickets__rsvp-form-button--cancel {
-  background: #ffffff;
-}
 .edit-post-visual-editor #rsvp-now .tribe-tickets__rsvp-wrapper {
   max-width: 100%;
 }
@@ -7906,10 +7872,6 @@
 .edit-post-visual-editor .tribe-tickets-rsvp .tribe-events-tickets input[type=email],
 .edit-post-visual-editor .tribe-tickets-rsvp .tribe-events-tickets select {
   width: 100%;
-}
-.edit-post-visual-editor .tribe-tickets-rsvp .tribe-button.tribe-button--rsvp {
-  background-color: #005eb8;
-  font-size: 16px;
 }
 .edit-post-visual-editor .widget-area ol.tribe-list-widget {
   list-style: none;
@@ -7946,6 +7908,9 @@
 }
 .edit-post-visual-editor html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-card .wp-embed-footer {
   display: none;
+}
+.edit-post-visual-editor .tribe-events .tribe-events-c-top-bar__datepicker-button:hover span.tribe-events-c-top-bar__datepicker-desktop {
+  color: #425563;
 }
 .edit-post-visual-editor .tribe-events-schedule__datetime * {
   color: #425563;

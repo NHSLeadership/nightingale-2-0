@@ -23,6 +23,7 @@ add_filter(
 		// Fields with CSS class = "gfield_error".
 		$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
 		// Fields contained in li elements that have CSS class = "gfield_error".
+
 		$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );   // legacy.
 		$form_string = preg_replace( "#<div(.*?)gfield_error(.*?)<input(.*?)class='#s", "<div$1gfield_error$2<input$3class='gfield_error is-error ", $form_string ); // new.
 		// Error messages below fields.
@@ -75,9 +76,9 @@ add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 12, 5 );
  *
  * @param string $field_content the rendered output of a GF generated object.
  * @param array  $field         the initialised value of the field as created by GF.
- * @param string $value         the default value of the input field.
- * @param int    $lead_id       unused variable.
- * @param int    $form_id       the identifier for the container form.
+ * @param string $value         unused in this function, but required to get to the form_id value as parent function specifies it.
+ * @param int    $lead_id       unused in this function, but required to get to the form_id value as parent function specifies it.
+ * @param int    $form_id       the ID of the wrapping form, used to determine whether the form is legacy view or not.
  *
  * @return string
  */
@@ -487,6 +488,7 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$replace[] = "<div class='gchoice nhsuk-radios__item $1'><input $2 type='radio' $3 class='nhsuk-radios__input'><label class='nhsuk-label nhsuk-radios__label' $4</label> </div>";
 				$find []   = "#<div class='gchoice (.*?)'><input(.*?)class='gfield-choice-input(.*?)type='checkbox'(.*?)><label(.*?)</label></div>#i";
 				$replace[] = "<div class='gchoice nhsuk-checkboxes__item $1'><input $2 type='checkboxes' class='gfield_choice_input nhsuk-checkboxes__input $3 $4><label class='nhsuk-label nhsuk-checkboxes__label' $5</label> </div>";
+
 				// likert sort out. This is messy.
 
 				$find[]        = "#<label class='gfield_label'>(.*?)</label><div(.*?)><table class='gsurvey-likert'(.*?)><thead>(.*?)</thead><tbody>(.*?)</tbody></table></div>#";                                                                                                              // strip out all the table gunk.

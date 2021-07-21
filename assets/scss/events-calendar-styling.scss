@@ -56,9 +56,7 @@
   span {
 	line-height   : 1.5;
 	padding-right : nhsuk-spacing(2);
-	&.tribe-events-c-top-bar__datepicker-desktop {
-	  color : $color_nhsuk-white;
-	}
+
   }
 }
 
@@ -66,22 +64,6 @@
   margin-right : nhsuk-spacing(2);
 }
 
-
-button.tribe-events-c-top-bar__datepicker-button {
-  background-color : $nhsuk-link-color;
-  padding          : nhsuk-spacing(1) nhsuk-spacing(2);
-  font-size        : $nhsuk-base-font-size;
-
-  svg {
-	fill   : $color_nhsuk-white;
-	width  : nhsuk-spacing(3);
-	height : nhsuk-spacing(3);
-  }
-
-  &:active {
-	background-color : $nhsuk-link-color;
-  }
-}
 
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input {
   padding      : nhsuk-spacing(3);
@@ -182,34 +164,6 @@ button.tribe-events-c-top-bar__datepicker-button {
 
 }
 
-#tribe-events-content {
-  .nhsuk-button,
-  button:not(.tribe-tickets__rsvp-ar-quantity-input-number),
-  tribe-common-c-btn {
-	margin           : 0 nhsuk-spacing(3) nhsuk-spacing(2) 0;
-	padding: nhsuk-spacing(2) nhsuk-spacing(4);
-
-	&:last-child {
-	  margin-right : 0;
-	}
-
-
-  }
-}
-button.tribe-tickets__rsvp-ar-guest-list-item-button {
-
-  &:not(.tribe-tickets__rsvp-ar-guest-list-item-button--inactive) {
-	svg.tribe-tickets__rsvp-ar-guest-icon {
-	  path {
-		fill   : $color_nhsuk-white !important;
-		stroke : $color_nhsuk-white !important;
-	  }
-	}
-  }
-}
-.tribe-tickets__rsvp-form-button--cancel {
-  background: $color_nhsuk-white;
-}
 
 #rsvp-now {
   .tribe-tickets__rsvp-wrapper {
@@ -255,13 +209,6 @@ button.tribe-tickets__rsvp-ar-guest-list-item-button {
   .tribe-events-tickets select {
 
 	width : 100%;
-
-  }
-
-  .tribe-button.tribe-button--rsvp {
-
-	background-color : $nhsuk-link-color;
-	font-size        : $nhsuk-base-font-size;
 
   }
 
@@ -319,7 +266,9 @@ html.js { // only hit embedded content. Wordpress doesnt make this easy to filte
 	}
   }
 }
-
+.tribe-events .tribe-events-c-top-bar__datepicker-button:hover span.tribe-events-c-top-bar__datepicker-desktop {
+  color: $color_nhsuk-dark-grey;
+}
 /* Event datetime header */
 .tribe-events-schedule__datetime * {
 	color : $color_nhsuk-dark-grey;
