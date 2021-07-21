@@ -15,14 +15,14 @@ Set up all the arguments that can be defined in the blocks management for latest
 so we can then pass them down to the display elements correctly
 */
 $parent_template_part = 'latest-posts';
-if(is_front_page()) {
-	$archive_paged        = get_query_var( 'page' ) ? get_query_var( 'page' ) : 1;
+if ( is_front_page() ) {
+	$archive_paged = get_query_var( 'page' ) ? get_query_var( 'page' ) : 1;
 } else {
-	$archive_paged        = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
+	$archive_paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 }
-$posts_to_show        = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
-if ( isset( $_POST['cat_filter'] ) && ( ! empty( $_POST['cat_filter'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
-	$cat_filter   = sanitize_text_field( wp_unslash( $_POST['cat_filter'] ) ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
+$posts_to_show = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+if ( isset( $_POST['cat_filter'] ) && ( ! empty( $_POST['cat_filter'] ) ) ) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         // phpcs:ignore WordPress.Security.NonceVerification.Missing
+	$cat_filter   = sanitize_text_field( wp_unslash( $_POST['cat_filter'] ) );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$categories[] = array(
 		'id'    => $cat_filter,
 		'value' => get_cat_name( $cat_filter ),
@@ -30,14 +30,14 @@ if ( isset( $_POST['cat_filter'] ) && ( ! empty( $_POST['cat_filter'] ) ) ) { //
 } else {
 	$categories = get_query_var( $namespace . 'categories' );
 }
-$display_post_content   = get_query_var( $namespace . 'displayPostContent' ) ? get_query_var( $namespace . 'displayPostContent' ) : 0; // Default to not show post content.
-$excerpt_length         = get_query_var( $namespace . 'excerptLength' ) ? get_query_var( $namespace . 'excerptLength' ) : 20; // Default excerpt length of 20 words.
+$display_post_content   = get_query_var( $namespace . 'displayPostContent' ) ? get_query_var( $namespace . 'displayPostContent' ) : 0;                   // Default to not show post content.
+$excerpt_length         = get_query_var( $namespace . 'excerptLength' ) ? get_query_var( $namespace . 'excerptLength' ) : 20;          // Default excerpt length of 20 words.
 $display_full_post      = get_query_var( $namespace . 'displayPostContentRadio' ) ? get_query_var( $namespace . 'displayPostContentRadio' ) : 'excerpt'; // Default to show excerpt not full post.
-$display_author         = get_query_var( $namespace . 'displayAuthor' ) ? get_query_var( $namespace . 'displayAuthor' ) : 0; // Default to not show author.
-$display_post_date      = get_query_var( $namespace . 'displayPostDate' ) ? get_query_var( $namespace . 'displayPostDate' ) : 0; // Default to not show post date.
-$display_featured_image = get_query_var( $namespace . 'displayFeaturedImage' ) ? get_query_var( $namespace . 'displayFeaturedImage' ) : 0; // Default to not show Featured Image.
-$post_layout            = get_query_var( $namespace . 'postLayout' ) ? get_query_var( $namespace . 'postLayout' ) : 'row'; // Default to show as rows.
-$columns                = get_query_var( $namespace . 'columns' ) ? get_query_var( $namespace . 'columns' ) : 3; // Default to 3 column display.
+$display_author         = get_query_var( $namespace . 'displayAuthor' ) ? get_query_var( $namespace . 'displayAuthor' ) : 0;                             // Default to not show author.
+$display_post_date      = get_query_var( $namespace . 'displayPostDate' ) ? get_query_var( $namespace . 'displayPostDate' ) : 0;                         // Default to not show post date.
+$display_featured_image = get_query_var( $namespace . 'displayFeaturedImage' ) ? get_query_var( $namespace . 'displayFeaturedImage' ) : 0;               // Default to not show Featured Image.
+$post_layout            = get_query_var( $namespace . 'postLayout' ) ? get_query_var( $namespace . 'postLayout' ) : 'row';                               // Default to show as rows.
+$columns                = get_query_var( $namespace . 'columns' ) ? get_query_var( $namespace . 'columns' ) : 3;                                         // Default to 3 column display.
 
 $args     = array(
 	'posts_per_page'      => $posts_to_show,

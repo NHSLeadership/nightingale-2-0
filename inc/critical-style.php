@@ -15,15 +15,15 @@ function nightingale_critical_styles() {
 	get_template_part( 'partials/criticalcss' );
 	if ( is_admin_bar_showing() ) { // admin bar styling tweak to stop flicker effect.
 		?>
-        #wpadminbar {
-            height: 32px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 99999;
-            background: #1d2327;
-        }
+		#wpadminbar {
+		height: 32px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 99999;
+		background: #1d2327;
+		}
 		<?php
 	}
 	echo '</style>';
