@@ -22,7 +22,8 @@ add_filter(
 
 		// Fields with CSS class = "gfield_error".
 		$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
-		// Fields contained in <li> elements that have CSS class = "gfield_error".
+		// Fields contained in li elements that have CSS class = "gfield_error".
+
 		$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );   // legacy.
 		$form_string = preg_replace( "#<div(.*?)gfield_error(.*?)<input(.*?)class='#s", "<div$1gfield_error$2<input$3class='gfield_error is-error ", $form_string ); // new.
 		// Error messages below fields.
@@ -40,10 +41,10 @@ add_filter(
 		$form_string = str_replace( "<span class='gfield_required'>*</span>", '', $form_string );
 		// Replace main gfield_label elements with nhsuk-label.
 		$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
-		// Remove <ul>s around elements.
+		// Remove uls around elements.
 		$form_string = preg_replace( "#<div class='gfield_radio(.*?)>(.*?)</div></div>#s", '$2</div>', $form_string );                                               // new - radios.
 		$form_string = preg_replace( "#<ul class='gfield(.*?)>(.*?)</ul>#s", '$2', $form_string );                                                                   // legacy.
-		// Add nhsuk-form-group to form <li> elements.
+		// Add nhsuk-form-group to form li elements.
 		$form_string = preg_replace( "#<li(.*?)field_(.*?)class='(.*?)#m", "<li$1field_$2class='nhsuk-form-group $3", $form_string );                                // legacy.
 
 		// Style the submit button.
@@ -199,9 +200,9 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$field_content = str_replace( "<li class='", "<div class='nhsuk-radios__item ", $field_content );
 				$field_content = str_replace( '</li', '</div', $field_content );
 				$field_content = preg_replace( '#<label for(.*?)>(.*?)</label>#i', "<label class='nhsuk-label nhsuk-radios__label' for$1>$2</label>", $field_content );
-				// Style <input>s.
+				// Style inputs.
 				$field_content = str_replace( "type='radio'", "type='radio' class='nhsuk-radios__input'", $field_content );                          // legacy.
-				$field_content = str_replace( 'gfield-choice-input', 'nhsuk-radios__input', $field_content );                                        // new.
+				$field_content = str_replace( 'gfield-choice-input', 'nhsuk-radios__input', $field_content );                                    // new.
 				$field_content = str_replace( 'gchoice gchoice_', 'nhsuk-radios__item gchoice gchoice_', $field_content );                           // new.
 				// For accessibility convert radio labels to legends and place them with radio buttons inside fieldsets.
 				$radiolabel = '';
