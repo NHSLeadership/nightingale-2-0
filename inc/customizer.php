@@ -312,6 +312,35 @@ function nightingale_customize_register( $wp_customize ) {
 			),
 		)
 	);
+
+	/*
+	 * Display sitemap on 404 page?
+	 */
+	$wp_customize->add_setting(
+		'blog_404sitemap_display',
+		array(
+			'default'           => 'true',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		// $id
+		'blog_404sitemap_display',
+		// $args
+		array(
+			'settings'    => 'blog_404sitemap_display',
+			'section'     => 'section_layout',
+			'priority'    => '120',
+			'type'        => 'radio',
+			'label'       => esc_html__( 'Show sitemap on 404 page?', 'nightingale' ),
+			'description' => esc_html__( 'Choose whether or not to show the WordPress sitemap on 404 pages.', 'nightingale' ),
+			'choices'     => array(
+				'true'  => esc_html__( 'Yes', 'nightingale' ),
+				'false' => esc_html__( 'No', 'nightingale' ),
+			),
+		)
+	);
 }
 
 add_action( 'customize_register', 'nightingale_customize_register' );
