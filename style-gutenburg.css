@@ -5343,7 +5343,7 @@
 .edit-post-visual-editor input[type=email],
 .edit-post-visual-editor input[type=url],
 .edit-post-visual-editor input[type=password],
-.edit-post-visual-editor input[type=search],
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor input[type=tel],
 .edit-post-visual-editor input[type=range],
@@ -5379,7 +5379,7 @@
 .edit-post-visual-editor input[type=email],
 .edit-post-visual-editor input[type=url],
 .edit-post-visual-editor input[type=password],
-.edit-post-visual-editor input[type=search],
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor input[type=tel],
 .edit-post-visual-editor input[type=range],
@@ -5401,7 +5401,7 @@
 .edit-post-visual-editor input[type=email],
 .edit-post-visual-editor input[type=url],
 .edit-post-visual-editor input[type=password],
-.edit-post-visual-editor input[type=search],
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor input[type=tel],
 .edit-post-visual-editor input[type=range],
@@ -5421,7 +5421,7 @@
 .edit-post-visual-editor input[type=email]:focus,
 .edit-post-visual-editor input[type=url]:focus,
 .edit-post-visual-editor input[type=password]:focus,
-.edit-post-visual-editor input[type=search]:focus,
+.edit-post-visual-editor input[type=search]:focus:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type=number]:focus,
 .edit-post-visual-editor input[type=tel]:focus,
 .edit-post-visual-editor input[type=range]:focus,
@@ -5443,7 +5443,7 @@
 .edit-post-visual-editor input[type=email]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=url]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=password]::-webkit-outer-spin-button,
-.edit-post-visual-editor input[type=search]::-webkit-outer-spin-button,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input)::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=number]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=tel]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=range]::-webkit-outer-spin-button,
@@ -5460,7 +5460,7 @@
 .edit-post-visual-editor input[type=email]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=url]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=password]::-webkit-inner-spin-button,
-.edit-post-visual-editor input[type=search]::-webkit-inner-spin-button,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input)::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=number]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=tel]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=range]::-webkit-inner-spin-button,
@@ -5479,7 +5479,7 @@
 .edit-post-visual-editor input[type=number][type=email],
 .edit-post-visual-editor input[type=number][type=url],
 .edit-post-visual-editor input[type=number][type=password],
-.edit-post-visual-editor input[type=number][type=search],
+.edit-post-visual-editor input[type=number][type=search]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor input[type=number][type=tel],
 .edit-post-visual-editor input[type=number][type=range],
@@ -6897,11 +6897,8 @@
   color: #005eb8;
 }
 .edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text], .edit-post-visual-editor .nhsuk-input:focus,
-.edit-post-visual-editor textarea:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search], .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
+.edit-post-visual-editor textarea:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
   box-shadow: 0 0 0 4px #ffeb3b;
-}
-.edit-post-visual-editor .nhsuk-search__input#search-field {
-  width: 15rem;
 }
 .edit-post-visual-editor #cookie-notice {
   position: fixed;
