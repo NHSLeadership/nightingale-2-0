@@ -32,7 +32,12 @@ get_header();
 							?>
 						</div>
 					</div>
-					<?php get_template_part( 'template-parts/sitemap' ); ?>
+					<?php
+						$blog_404sitemap_display = get_theme_mod( 'blog_404sitemap_display', 'true' );
+						if ( 'true ' === $blog_404sitemap_display ) {
+							get_template_part( 'template-parts/sitemap' );
+						}
+					?>
 				</div>
 				<div class="nhsuk-content__clearfix"></div>
 			</section>
