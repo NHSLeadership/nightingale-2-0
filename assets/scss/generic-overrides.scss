@@ -22,27 +22,10 @@
 }
 
 //end image extending
-//style default button as secondary button
-#content {
-  a.wp-block-button__link, .wp-block-file__button, .wp-block-file a.wp-block-file__button, .wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
-	@extend .nhsuk-button;
-	border-radius : $nhsuk-border-radius;
-	background    : $nhsuk-button-color;
-	position      : relative;
-	top           : -nhsuk-spacing(2);
-	margin-bottom : nhsuk-spacing(3);
-	color         : $nhsuk-button-text-color;
-  }
-}
 
 //when button is a link, something goes wonky
 .nhsuk-button--reverse:visited {
   color : $color_nhsuk-black;
-}
-
-// disabling search suggest. I really dont like doing this, but the nhsuk frontend library uses a paid service for indexing and the search suggest leverages this feed rather than a website specific one.
-.autocomplete__menu--visible {
-  display : none;
 }
 
 //pagination modification
@@ -63,23 +46,8 @@
   }
 }
 
-.pagination_split_post {
-  .post-page-numbers {
-	@extend .nhsuk-tag;
-	@extend .nhsuk-tag--grey;
-
-	&.current {
-	  @extend .nhsuk-tag--white;
-	}
-  }
-}
-
 .gallery-caption {
   @extend .nhsuk-image__caption;
-}
-
-.sticky {
-  @extend .nhsuk-panel;
 }
 
 .is-style-outline .wp-block-button__link {
@@ -93,42 +61,18 @@
 	word-wrap     : break-word;
   }
 
-  .nhsuk-search__submit {
-	float      : left;
-	margin-top : nhsuk-spacing(3);
-  }
-
-  @media(max-width : 48.025em) {
-	.nhsuk-search__submit {
-	  margin-top : 0;
-	}
-  }
-
   footer {
 	.edit-link {
-	  @extend .nhsuk-tag;
-	  @extend .nhsuk-tag--white;
 	  text-decoration : none;
-	  /*margin-left: nhsuk-spacing(4);*/
-
 	  a {
 		color : $color_nhsuk-blue;
-	  }
-	}
-
-	.tags-links, .cat-links {
-	  @extend .nhsuk-tag;
-	  @extend .nhsuk-tag--grey;
-
-	  a {
-		//color: $color_nhsuk-white
 	  }
 	}
   }
 }
 
-/* With :not(.autocomplete__input), the search field is not affected */
-#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.autocomplete__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
+
+#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.nhsuk-search__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
   box-shadow : 0 0 0 nhsuk-spacing(1) $color_nhsuk-yellow;
 }
 
@@ -143,111 +87,37 @@
   width    : 100%;
 }
 
-.autocomplete__input {
-  padding-right : 0;
-}
-
-.nhsuk-search__submit {
-  margin-left : 0;
-}
-.nhsuk-header__search-toggle {
-  margin-right: nhsuk-spacing(1);
-}
-#secondary {
-  section.widget_search {
-	background    : none;
-	padding-left  : 0;
-	padding-right : 0;
-  }
-
-  .nhsuk-header__search-wrap {
-	padding : nhsuk-spacing(4) 0;
-
-
-	.nhsuk-search__input {
-	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
-	  border-radius : $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
-	  float         : left;
-	  max-width     : 78%;
-
-	}
-
-	.nhsuk-search__submit {
-	  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
-	  border-left : none;
-	  margin-top  : 0;
-	  float       : left;
-	  box-shadow  : 0 !important;
-	}
-
-	.nhsuk-header__search-toggle {
-	  background-color : $color_nhsuk-grey-5;
-	  border-color     : $color_nhsuk-blue;
-	  color            : $color_nhsuk-blue;
-
-	  .nhsuk-icon__search {
-		fill : $color_nhsuk-blue;
-	  }
-	}
-
-	.nhsuk-header__search-toggle.is_active {
-	  background-color : $color_nhsuk-blue;
-	  color            : $color_nhsuk-white;
-
-	  .nhsuk-icon__search {
-		fill : $color_nhsuk-white;
-	  }
-	}
-  }
-}
-
-@media (min-width : 40.0625em) {
-  .nhsuk-search__submit {
-	padding-right  : 6px;
-	padding-bottom : 1px;
-  }
-}
 
 #primary {
-  .page-content {
+  .page-content { // search within content area needs some special treatment
 	.nhsuk-header__search-toggle, .nhsuk-search__close {
 	  display : none;
 	}
 
 
 	.nhsuk-header__search-wrap {
-	  padding       : nhsuk-spacing(2) nhsuk-spacing(4);
 	  display       : inline-block;
-	  width         : 80%;
-	  border        : $nhsuk-border-width-form-element solid $color_nhsuk-blue;
-	  border-radius : $nhsuk-border-radius;
-
+	  width   : 100%;
 	  .nhsuk-search__input {
 		border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
-		border-radius : $nhsuk-border-radius 0px 0px $nhsuk-border-radius;
+		border-radius : $nhsuk-border-radius 0 0 $nhsuk-border-radius;
 		float         : left;
-		max-width     : 80%;
-
+		max-width     : 90%;
+		margin    : 0;
 	  }
-
-
-	  .nhsuk-header__search-toggle {
-		background-color : $color_nhsuk-grey-5;
-		border-color     : $color_nhsuk-blue;
-		color            : $color_nhsuk-blue;
-
-		.nhsuk-icon__search {
-		  fill : $color_nhsuk-blue;
-		}
+	  .nhsuk-search__submit {
+		float: left;
 	  }
-
-	  .nhsuk-header__search-toggle.is_active {
-		background-color : $color_nhsuk-blue;
-		color            : $color_nhsuk-white;
-
-		.nhsuk-icon__search {
-		  fill : $color_nhsuk-white;
+	}
+	@media (max-width : 40.0525em) {
+	  .nhsuk-header__search-wrap {
+		.nhsuk-search__input {
+		  max-width : 73%;
+		  margin    : 0;
+		  height    : 52px;
 		}
+
+
 	  }
 	}
   }
@@ -265,48 +135,6 @@
   margin-top : 1.5rem;
 }
 
-.nhsuk-readmore {
-  float : right;
-}
-
-.error404 #primary .page-content, .search-no-results #primary .page-content {
-  .nhsuk-header__search-wrap {
-	padding : 5px;
-	width   : 100%;
-  }
-
-  .nhsuk-header__search-form {
-	display : block;
-	padding : 0;
-  }
-
-  .nhsuk-header__search-wrap {
-	.nhsuk-search__input {
-	  float     : left;
-	  max-width : 80%;
-	  margin    : 16px 0 0 5%;
-	}
-
-
-  }
-
-  @media (max-width : 40.0525em) {
-	.nhsuk-header__search-wrap {
-	  border  : 0;
-	  padding : 0;
-
-	  .nhsuk-search__input {
-		float     : left;
-		max-width : 73%;
-		margin    : 0;
-		height    : 50px;
-	  }
-
-
-	}
-  }
-}
-
 // fix middle of three blocks so it is the same width as outside blocks.
 .nhsuk-grid-row {
   &.nhsuk-width-restrict {
@@ -322,18 +150,6 @@
   }
 }
 
-// footer region
-#nhsuk-footer {
-  .nhsuk-width-container {
-	ul.nhsuk-footer__list {
-	  &.nhsuk-footer__list--three-columns {
-		li.nhsuk-footer__list-item {
-		  width : auto;
-		}
-	  }
-	}
-  }
-}
 
 // featured image display variations
 .single-post {

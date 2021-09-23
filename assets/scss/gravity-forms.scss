@@ -5,7 +5,12 @@
 	font-weight : $nhsuk-font-bold;
   }
 }
-
+#ui-datepicker-div {
+  background: white;
+  padding: 0 nhsuk-spacing(3);
+  border: 1px solid $color_nhsuk-mid-grey;
+  border-radius: 4px;
+}
 .tingle-modal-box {
   .ginput_container_checkbox {
 	@extend .nhsuk-checkboxes !optional;
@@ -51,6 +56,11 @@
 .gform_wrapper {
   margin-top : 0 !important;
 
+  fieldset {
+	border: 0;
+	margin: nhsuk-spacing(3) 0;
+  }
+
   .gf_progressbar_wrapper {
 	.gf_progressbar {
 	  border-radius    : $nhsuk-border-radius;
@@ -79,16 +89,125 @@
   }
 
   .gform_body {
-	.gfield_select {
-	  @extend .nhsuk-select;
-	}
 
-	ul.gform_fields {
-	  li.gfield.gfield_html {
+	.gform_fields {
+	  .gfield.gfield_html {
 		dl.nhsuk-summary-list {
 		  background   : $color_nhsuk-white;
 		  padding      : nhsuk-spacing(4);
 		  padding-left : nhsuk-spacing(4);
+		}
+	  }
+
+	  @include mq($from : large-desktop) {
+		.gsurvey-survey-field {
+		  .gsurvey-likert {
+			.nhsuk-likert {
+			  border    : 1px solid $color_nhsuk-grey-2;
+			  margin    : 0 auto;
+			  max-width : 100%;
+
+			  .nhsuk-likert__row {
+				display          : flex; /* direction row by default, the cells will be side by side to start */
+				flex-direction   : row;
+				width            : 100%;
+				@include clearfix();
+				background-color : white;
+
+				.nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
+				  margin-bottom : 0;
+				}
+
+				.nhsuk-likert__rowlabel {
+				  font-weight : bold;
+				  padding     : nhsuk-spacing(4) nhsuk-spacing(3);
+				}
+
+				&.nhsuk-likert__header {
+				  .nhsuk-likert__item {
+					background  : $color_nhsuk-blue;
+					color       : $color_nhsuk-white;
+					border      : none;
+					font-weight : 700;
+					padding     : 0 nhsuk-spacing(3);
+				  }
+				}
+
+				&:nth-of-type(odd) {
+				  background : $color_nhsuk-grey-5;
+				}
+			  }
+
+			  .nhsuk-likert__item {
+				padding         : nhsuk-spacing(4) nhsuk-spacing(3);
+				margin-right    : 0;
+				display         : flex; /* yep, the cells can get flexbox layout too */
+				flex            : 1;
+				flex-direction  : column; /* each cell will have its content laid out vertically */
+				align-items     : center; /* centers content horizontally */
+				justify-content : center; /* centers content vertically */
+				border-left     : 1px solid $color_nhsuk-grey-4;
+
+				.nhsuk-radios__label {
+				  padding-left : 0;
+
+				  &:before {
+					top  : calc(50% - 20px);
+					left : calc(50% - 20px);
+				  }
+
+				  &:after {
+					top  : calc(50% - 10px);
+					left : calc(50% - 10px);
+					// absolute values as radio position changed so the active dot needs to be centred, unable to use nhsuk variables.
+				  }
+				}
+
+				&:last-of-type() {
+				  margin-right : 0;
+				}
+			  }
+
+			  &.nhsuk-likert__multi {
+				.nhsuk-likert__row {
+				  .nhsuk-likert__item:first-of-type() {
+					flex : 3;
+					min-width: 250px;
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	  @include mq($until : large-desktop) {
+		.gsurvey-survey-field {
+		  .gsurvey-likert {
+			.nhsuk-likert {
+			  .nhsuk-likert__row {
+				@include clearfix();
+				padding: nhsuk-spacing(3) 0;
+				border-top: 1px solid $color_nhsuk-grey-4;
+				&.nhsuk-likert__header {
+				  display : none;
+				}
+				.nhsuk-likert__item {
+				  @include clearfix();
+				  .nhsuk-radios__label {
+					.nhsuk-u-visually-hidden {
+					  position: relative;
+					  clip: unset;
+					  clip-path: unset;
+					}
+				  }
+				  &.nhsuk-likert__rowlabel {
+					font-weight: 700;
+
+				  }
+				}
+			  }
+			}
+		  }
 		}
 	  }
 	}
@@ -146,27 +265,12 @@
 
 	.gform_wrapper {
 
-	  .gfield_error {
-		.nhsuk-select {
-		  @extend .nhsuk-select--error;
-		}
-	  }
-
 	  li.gfield fieldset {
 		.nhsuk-textarea {
 		  width : 100%;
 		}
 	  }
 
-	}
-
-	.gform_button, .gform_next_button {
-	  @extend .nhsuk-button;
-	}
-
-	.gform_previous_button {
-	  @extend .nhsuk-button;
-	  @extend .nhsuk-button--reverse;
 	}
 
 	ul.ui-sortable {
@@ -221,35 +325,6 @@
 	  }
 	}
 
-	table.gsurvey-likert {
-	  background : $color_nhsuk-white;
-
-	  .gsurvey-likert-row-label, .gsurvey-likert-choice-label {
-		font-size  : 1rem;
-		padding    : nhsuk-spacing(2);
-		background : $color_nhsuk-blue;
-		color      : $color_nhsuk-white;
-	  }
-
-	  td.gsurvey-likert-choice, td.gsurvey-likert-choice.gsurvey-likert-selected {
-		background-color : $color_nhsuk-white;
-		background-size  : 35px 35px;
-	  }
-
-	  tr:nth-child(odd) .gsurvey-likert-row-label {
-		background : $color_nhsuk-dark-blue;
-	  }
-
-	  td.gsurvey-likert-choice {
-		height : 50px;
-	  }
-	}
-
-	.nhsuk-form-group--error {
-	  table.gsurvey-likert {
-		border : $nhsuk-border-width-form-element solid $color_nhsuk-red;
-	  }
-	}
 
 	.gform_delete {
 	  float  : left;
@@ -259,6 +334,11 @@
 
   .gform_page_footer {
 	padding-top : nhsuk-spacing(5) !important;
+	a.gform_save_link {
+	  float: left;
+	  margin-left: 0;
+	  margin-right: nhsuk-spacing(4);
+	}
   }
 
   #ui-datepicker-div {
@@ -266,27 +346,18 @@
 	border-radius : $nhsuk-border-radius;
 	background    : $color_nhsuk-white;
   }
-}
 
-@media only screen and (max-device-width : 1024px) {
-  .gform_wrapper {
-	.gform_body {
-	  table.gsurvey-likert {
-		td.gsurvey-likert-choice {
-		  display      : inline-block;
-		  border-top   : 0;
-		  border-right : 0;
-		}
-
-		td {
-		  input {
-			position : relative;
-		  }
-		}
-	  }
+  .ginput_preview {
+	img.gform_delete {
+	  padding         : nhsuk-spacing(5) nhsuk-spacing(5) 0px 0px;
+	  background      : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABKUlEQVRYhe2Uuw4BQRSGPwqJW6KgU4jeA0jEC2h4Ku8hXkFJiCdYURJR0Ot0FM5kx2TZHTu7QvZPTjYzszP/d85cIFMme42AM3Az4gwM0wAIMldxSgNAmUXtf6tciJFLBXrlHZs410dltZn/9Qr8HIBZ0rC2cwDnygD+EmDvcjHbU78Dmlr7Qswn3RZAmavKdgUiNQCAPrAFWhqEqQYwBzpJAMyk76BBmOae/DNPAqAELKT/CLQN842MeUDdFiCqSjyy0yH0zCOZxwEAKANL/O2wylzpJJN6MSBW+IlsTPOwh2gi37W2SFhcgYHMKwI1bb0qULHJoACM8SthY17nec9VJV7dDqcKOnDvbodz81cHLhUIdf08gTFVwd+OZRIAHYEIMtchpkDrDvRKkk0dBvEBAAAAAElFTkSuQmCC);
+	  background-size : auto;
+	  width           : 0px;
+	  height          : 0px;
 	}
   }
 }
+
 
 @media only screen and (max-device-width : 799px) {
   .gform_wrapper {
@@ -318,11 +389,13 @@
 // Gravity view approval styling
 .tippy-popper {
   .tippy-content {
-	margin-top: nhsuk-spacing(2);
+	margin-top : nhsuk-spacing(2);
+
 	.gv-approval-toggle {
-	  border: 0;
-	  margin-bottom: nhsuk-spacing(3);
-	  display: block !important;
+	  border        : 0;
+	  margin-bottom : nhsuk-spacing(3);
+	  display       : block !important;
+
 	  &:before {
 		word-break  : initial;
 		width       : fit-content;
@@ -335,11 +408,13 @@
 	  }
 
 	  @extend .nhsuk-button;
+
 	  &:hover {
-		background: $color_nhsuk-light-grey;
+		background : $color_nhsuk-light-grey;
+
 		&:before {
-		  color: $color_nhsuk-black;
-		  text-decoration: underline;
+		  color           : $color_nhsuk-black;
+		  text-decoration : underline;
 		}
 	  }
 
@@ -349,25 +424,85 @@
 		}
 
 	  }
+
 	  &.gv-approval-disapproved {
-		background: $color_nhsuk-red;
+		background : $color_nhsuk-red;
+
 		&:before {
-		  content: '\2715 \00A0 Decline';
+		  content : '\2715 \00A0 Decline';
 		}
+
 		&:hover {
-		  background: $color_nhsuk-light-grey;
+		  background : $color_nhsuk-light-grey;
 		}
 	  }
 
 	  &.gv-approval-unapproved {
-		background: $color_nhsuk-warm-yellow;
+		background : $color_nhsuk-warm-yellow;
+
 		&:before {
-		  content: '\27F2 \00A0 Reset';
-		  background: inherit;
-		  color: $color_nhsuk-black;
+		  content    : '\27F2 \00A0 Reset';
+		  background : inherit;
+		  color      : $color_nhsuk-black;
 		}
+
 		&:hover {
-		  background: $color_nhsuk-light-grey;
+		  background : $color_nhsuk-light-grey;
+		}
+	  }
+	}
+  }
+}
+
+// Increase contrast on word count under paragraph box, etc.
+.gp-word-count-label {
+  background : white;
+  color      : $color_nhsuk-black;
+  padding    : nhsuk-spacing(1);
+}
+
+.gf-all-fields { // style up the all-fields summary to look like it should.
+  li {
+	&.field-type-section {
+	  background-color: $color_nhsuk-white;
+	  text-align: center;
+
+	  span:empty {
+		padding-bottom: 0;
+		padding-top: 0;
+	  }
+	}
+	hr.gpnf-nested-entries-hr {
+	  display: none;
+	}
+	table[bgcolor="#EAEAEA"] { // nested forms display.
+	  background: inherit;
+	  border-top: none !important; // !important required to over ride plugin genertaed inline styling.
+	  table[bgcolor="#FFFFFF"] { // nested forms display.
+
+		tr[bgcolor="#FAF4EA"] { // sub form headers. Get rid of nasty orange/tan appearance.
+		  background : $color_nhsuk-grey-5;
+		  color      : $color_nhsuk-blue;
+		  td {
+			padding-top: nhsuk-spacing(1);
+			padding-bottom: nhsuk-spacing(1);
+			font {
+			  font-size: $nhsuk-base-font-size !important // !important required to over ride plugin genertaed inline styling.
+			}
+		  }
+		}
+		tr[bgcolor="#FFFFFF"] {
+		  background : $color_nhsuk-grey-5 !important;
+		}
+		td:empty {
+		  display: none;
+		}
+	  }
+	}
+	table.gfcs-value { // chained select displays.
+	  td {
+		span {
+		  border-bottom : none;
 		}
 	  }
 	}

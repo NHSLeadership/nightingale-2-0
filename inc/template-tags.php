@@ -57,14 +57,14 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'nightingale' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<p class="cat-links">' . esc_html__( 'Posted in %1$s', 'nightingale' ) . '</p>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<p class="cat-links nhsuk-tag nhsuk-tag--grey">' . esc_html__( 'Posted in %1$s', 'nightingale' ) . '</p>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'nightingale' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<p class="tags-links">' . esc_html__( 'Tagged %1$s', 'nightingale' ) . '</p>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<p class="tags-links nhsuk-tag nhsuk-tag--grey">' . esc_html__( 'Tagged %1$s', 'nightingale' ) . '</p>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 
@@ -100,7 +100,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 				),
 				get_the_title()
 			),
-			'<p class="edit-link">',
+			'<p class="edit-link nhsuk-tag nhsuk-tag--white">',
 			'</p>'
 		);
 	}

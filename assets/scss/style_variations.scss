@@ -4,17 +4,6 @@
 // @version 1.1 12th October 2019
 */
 
-.nhsuk-search__submit {
-  box-shadow: none;
-  color: #005eb8;
-}
-.nhsuk-header__search-form {
-  .nhsuk-u-visually-hidden {
-    background: #ffffff;
-    color: #000000;
-  }
-}
-
 
 .nhsuk-grid-column-two-thirds.contentright {
   float: right;
@@ -31,33 +20,7 @@
   flex-flow: wrap;
 }
 
-.nhsuk-breadcrumb {
-  .nhsuk-width-container {
-    .nhsuk-breadcrumb__list {
-      margin: 0 nhsuk-spacing(3) 0 0;
-    };
-  }
-}
 
-/* Latest Posts skinning */
-.nightingale-latest-news {
-  .nhsuk-panel {
-    margin-bottom: nhsuk-spacing(3);
-    a {
-      @extend .nhsuk-heading-m;
-      //text-decoration: none;
-    }
-
-    .wp-block-latest-posts__post-excerpt {
-      a:last-of-type {
-        @extend .nhsuk-action-link__link;
-        margin-top: nhsuk-spacing(5);
-        margin-bottom: 0;
-        width: 100%;
-      }
-    }
-  }
-}
 .nhsuk-grid-column-width, .nhsuk-grid-column-full {
   clear: both;
 }
@@ -69,17 +32,22 @@
   #loginform {
     margin-top: 0;
     box-shadow: none;
+    border: none;
     #wp-submit {
-      @extend .nhsuk-button;
-      height: auto;
+      background-color: $color_nhsuk-green;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      box-shadow: 0 4px 0 $color_nhsuk-dark-green;
+      padding: 12px 16px;
+      font-size: 1.1875rem;
+      line-height: 1.47368;
     }
 
-    .user-login, .user_pass {
-      @extend .nhsuk-input;
-    }
 
     label {
-      @extend .nhsuk-label;
+      font-size: 1.1875rem;
+      line-height: 1.47368;
+      font-weight: 400;
     }
   }
 }
@@ -141,47 +109,11 @@ aside#secondary > section{
   }
 }
 
-.nhsuk-postslisting {
-  .nhsuk-promo {
-    a.nhsuk-promo__link-wrapper {
-      div.nhsuk-promo__content {
-        .nhsuk-promo__heading {
-          width : 100%;
-        }
-
-        .nhsuk_post_author, .nhsuk_post_date {
-          padding : 0 nhsuk-spacing(4);
-        }
-
-        .nhsuk-promo__description, p {
-          padding : nhsuk-spacing(3);
-        }
-        .event-meta, .tribe-common, .event-categories {
-          padding : 0 nhsuk-spacing(3);
-          margin-bottom: 0;
-          color : $color_nhsuk-dark-blue;
-        }
-        .nhsuk-readmore ~ .event-categories {
-          margin-bottom: nhsuk-spacing(7);
-        }
-        .nhsuk-promo__description, p {
-          margin-bottom : nhsuk-spacing(5);
-        }
-
-        .nhsuk-readmore {
-          position : absolute;
-          bottom   : nhsuk-spacing(3);
-          right    : 0;
-        }
-      }
-    }
-  }
-}
 .clear{
   @include clearfix();
 }
 .nhsuk-readmore {
-  text-align: right;
+  text-align: left;
   padding-bottom: nhsuk-spacing(3);
 }
 
@@ -220,8 +152,10 @@ span.search-terms {
 }
 
 button {
-  margin-right: nhsuk-spacing(3);
-  margin-left: nhsuk-spacing(3);
+  margin: 0;
+  &+.button {
+    margin-left : nhsuk-spacing(3);
+  }
 }
 
 // new card variations
@@ -231,9 +165,10 @@ button {
   }
 }
 .nhsuk-card.is-style-panel-with-label {
+  // these extends needs to stay for legacy reasons.
   @extend .nhsuk-card--feature;
   .nhsuk-card__content {
-    @extend .nhsuk-card__content--feature;
+    @include nhsuk-responsive-margin(7, 'top');
 
     h2 {
       @extend .nhsuk-card__heading;
@@ -249,5 +184,22 @@ button {
 .nhsuk-card {
   figure {
     margin: 0;
+  }
+}
+.nhsuk-cat-filter {
+  margin-bottom: nhsuk-spacing(6);
+  &:after {
+    clear   : both;
+    display : block;
+    content : '';
+  }
+  .nhsuk-heading-m {
+    float: left;
+  }
+  .nhsuk-cat-reset {
+    float: right;
+  }
+  .nhsuk-button {
+    margin-bottom: 0;
   }
 }

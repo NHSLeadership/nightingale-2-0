@@ -2,9 +2,9 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.3
+Version: 2.3.2.2
 Requires at least: 5.0
-Tested up to: 5.6
+Tested up to: 5.8
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
 Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
@@ -25,9 +25,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 @import 'assets/scss/default';
-@import 'assets/scss/nhsuk-replacement';
+@import 'node_modules/nhsuk-frontend/packages/nhsuk.scss';
 
 
+@import 'assets/scss/accessibility'; // global accessibility improvements
 // start importing the theme specific settings
 @import 'assets/scss/nhs-colours';
 // nhs colour pallette
@@ -69,3 +70,5 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'assets/scss/nhsblocks/legacy/legacy';
 // nhs colour pallette
 @import 'assets/scss/color-mixer';
+// Rework the cookie control notice for better accessibility
+@import 'assets/scss/cookie-control';

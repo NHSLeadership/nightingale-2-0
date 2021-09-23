@@ -1,0 +1,12 @@
+// This is a simple file to load in all nhsuk variables so if you wish to create standalone
+// scss outputs for plugins, simply import this file at the top and it will integrate with
+// the rest of the suite.
+
+// Settings
+@import 'node_modules/nhsuk-frontend/packages/core/settings/all';
+
+// Tools
+@import 'node_modules/nhsuk-frontend/packages/core/tools/all';
+
+// start importing the theme specific settings
+@import 'assets/scss/nhs-colours';

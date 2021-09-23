@@ -5,7 +5,7 @@ const fs = require('fs')
 // Also force inclusion of full width layout as well as two columns - a page may
 // have one but never both
 penthouse({
-    url: 'http://localhost/index.php',
+    url: 'http://people-clone.local/index.php',
     css: 'style.min.css',
     forceInclude: [
         '.nhsuk-header__inverted',

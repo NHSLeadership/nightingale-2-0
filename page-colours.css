@@ -3,7 +3,6 @@
 #content .page-style--nhs-blue #secondary section {
   border-top-color: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header,
 .page-colour--nhs-blue .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--nhs-blue #secondary section h2.widget-title,
@@ -35,27 +34,21 @@
   background: #005eb8;
   color: #ffffff;
 }
-
 .page-colour--nhs-blue .nhsuk-details__summary,
 .page-colour--nhs-blue .nhsuk-details__summary-text,
 .page-colour--nhs-blue .nhsuk-promo__heading,
-.page-colour--nhs-blue .nhsuk-card__heading
-a, #content .page-style--nhs-blue .nhsuk-details__summary,
+.page-colour--nhs-blue .nhsuk-card__heading a, #content .page-style--nhs-blue .nhsuk-details__summary,
 #content .page-style--nhs-blue .nhsuk-details__summary-text,
 #content .page-style--nhs-blue .nhsuk-promo__heading,
-#content .page-style--nhs-blue .nhsuk-card__heading
-a {
+#content .page-style--nhs-blue .nhsuk-card__heading a {
   color: #005eb8;
 }
-
 .page-colour--nhs-blue a.nhsuk-button, #content .page-style--nhs-blue a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--nhs-blue a.nhsuk-button--reverse, .page-colour--nhs-blue a.is-style-reverse, #content .page-style--nhs-blue a.nhsuk-button--reverse, #content .page-style--nhs-blue a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--nhs-blue .nhsuk-inset-text,
 .page-colour--nhs-blue .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--nhs-blue .is-style-default .nhsuk-care-card__arrow:after,
@@ -69,7 +62,6 @@ a {
 #content .page-style--nhs-blue #secondary section {
   border-color: #005eb8;
 }
-
 .page-colour--nhs-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--nhs-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--nhs-blue .nhsuk-pagination__link .nhsuk-icon, #content .page-style--nhs-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -77,17 +69,14 @@ a {
 #content .page-style--nhs-blue .nhsuk-pagination__link .nhsuk-icon {
   fill: #005eb8;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--nhs-blue .nhsuk-icon__search, #content .page-style--nhs-blue .nhsuk-icon__search {
     fill: #005eb8;
   }
 }
-
 .page-colour--nhs-blue #secondary section ul > li > ul > li > a, #content .page-style--nhs-blue #secondary section ul > li > ul > li > a {
   border-left: 2px solid #005eb8;
 }
-
 .page-colour--nhs-blue .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--nhs-blue .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #005eb8;
 }
@@ -95,59 +84,47 @@ a {
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation {
   background: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #00376c;
   background: #00376c;
 }
-
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #00376c;
   background: #00376c;
   color: #ffffff;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #005eb8;
   color: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #005eb8;
   color: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #005eb8;
 }
-
 .page-colour--nhs-blue .nhsuk-header .nhsuk-icon__close {
   fill: #005eb8;
 }
-
 @media (max-width: 989px) {
   .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation-link {
     color: #005eb8;
@@ -163,7 +140,6 @@ a {
 #content .page-style--dark-blue #secondary section {
   border-top-color: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header,
 .page-colour--dark-blue .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--dark-blue #secondary section h2.widget-title,
@@ -195,27 +171,21 @@ a {
   background: #003087;
   color: #ffffff;
 }
-
 .page-colour--dark-blue .nhsuk-details__summary,
 .page-colour--dark-blue .nhsuk-details__summary-text,
 .page-colour--dark-blue .nhsuk-promo__heading,
-.page-colour--dark-blue .nhsuk-card__heading
-a, #content .page-style--dark-blue .nhsuk-details__summary,
+.page-colour--dark-blue .nhsuk-card__heading a, #content .page-style--dark-blue .nhsuk-details__summary,
 #content .page-style--dark-blue .nhsuk-details__summary-text,
 #content .page-style--dark-blue .nhsuk-promo__heading,
-#content .page-style--dark-blue .nhsuk-card__heading
-a {
+#content .page-style--dark-blue .nhsuk-card__heading a {
   color: #003087;
 }
-
 .page-colour--dark-blue a.nhsuk-button, #content .page-style--dark-blue a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--dark-blue a.nhsuk-button--reverse, .page-colour--dark-blue a.is-style-reverse, #content .page-style--dark-blue a.nhsuk-button--reverse, #content .page-style--dark-blue a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--dark-blue .nhsuk-inset-text,
 .page-colour--dark-blue .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--dark-blue .is-style-default .nhsuk-care-card__arrow:after,
@@ -229,7 +199,6 @@ a {
 #content .page-style--dark-blue #secondary section {
   border-color: #003087;
 }
-
 .page-colour--dark-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--dark-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--dark-blue .nhsuk-pagination__link .nhsuk-icon, #content .page-style--dark-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -237,17 +206,14 @@ a {
 #content .page-style--dark-blue .nhsuk-pagination__link .nhsuk-icon {
   fill: #003087;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--dark-blue .nhsuk-icon__search, #content .page-style--dark-blue .nhsuk-icon__search {
     fill: #003087;
   }
 }
-
 .page-colour--dark-blue #secondary section ul > li > ul > li > a, #content .page-style--dark-blue #secondary section ul > li > ul > li > a {
   border-left: 2px solid #003087;
 }
-
 .page-colour--dark-blue .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--dark-blue .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #003087;
 }
@@ -255,59 +221,47 @@ a {
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation {
   background: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #00153b;
   background: #00153b;
 }
-
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #00153b;
   background: #00153b;
   color: #ffffff;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #003087;
   color: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #003087;
   color: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #003087;
 }
-
 .page-colour--dark-blue .nhsuk-header .nhsuk-icon__close {
   fill: #003087;
 }
-
 @media (max-width: 989px) {
   .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation-link {
     color: #003087;
@@ -323,7 +277,6 @@ a {
 #content .page-style--bright-blue #secondary section {
   border-top-color: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header,
 .page-colour--bright-blue .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--bright-blue #secondary section h2.widget-title,
@@ -355,27 +308,21 @@ a {
   background: #0072ce;
   color: #ffffff;
 }
-
 .page-colour--bright-blue .nhsuk-details__summary,
 .page-colour--bright-blue .nhsuk-details__summary-text,
 .page-colour--bright-blue .nhsuk-promo__heading,
-.page-colour--bright-blue .nhsuk-card__heading
-a, #content .page-style--bright-blue .nhsuk-details__summary,
+.page-colour--bright-blue .nhsuk-card__heading a, #content .page-style--bright-blue .nhsuk-details__summary,
 #content .page-style--bright-blue .nhsuk-details__summary-text,
 #content .page-style--bright-blue .nhsuk-promo__heading,
-#content .page-style--bright-blue .nhsuk-card__heading
-a {
+#content .page-style--bright-blue .nhsuk-card__heading a {
   color: #0072ce;
 }
-
 .page-colour--bright-blue a.nhsuk-button, #content .page-style--bright-blue a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--bright-blue a.nhsuk-button--reverse, .page-colour--bright-blue a.is-style-reverse, #content .page-style--bright-blue a.nhsuk-button--reverse, #content .page-style--bright-blue a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--bright-blue .nhsuk-inset-text,
 .page-colour--bright-blue .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--bright-blue .is-style-default .nhsuk-care-card__arrow:after,
@@ -389,7 +336,6 @@ a {
 #content .page-style--bright-blue #secondary section {
   border-color: #0072ce;
 }
-
 .page-colour--bright-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--bright-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--bright-blue .nhsuk-pagination__link .nhsuk-icon, #content .page-style--bright-blue .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -397,17 +343,14 @@ a {
 #content .page-style--bright-blue .nhsuk-pagination__link .nhsuk-icon {
   fill: #0072ce;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--bright-blue .nhsuk-icon__search, #content .page-style--bright-blue .nhsuk-icon__search {
     fill: #0072ce;
   }
 }
-
 .page-colour--bright-blue #secondary section ul > li > ul > li > a, #content .page-style--bright-blue #secondary section ul > li > ul > li > a {
   border-left: 2px solid #0072ce;
 }
-
 .page-colour--bright-blue .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--bright-blue .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #0072ce;
 }
@@ -415,59 +358,47 @@ a {
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation {
   background: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #004882;
   background: #004882;
 }
-
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #004882;
   background: #004882;
   color: #ffffff;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #0072ce;
   color: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #0072ce;
   color: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #0072ce;
 }
-
 .page-colour--bright-blue .nhsuk-header .nhsuk-icon__close {
   fill: #0072ce;
 }
-
 @media (max-width: 989px) {
   .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation-link {
     color: #0072ce;
@@ -483,7 +414,6 @@ a {
 #content .page-style--mid-grey #secondary section {
   border-top-color: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header,
 .page-colour--mid-grey .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--mid-grey #secondary section h2.widget-title,
@@ -515,27 +445,21 @@ a {
   background: #768692;
   color: #ffffff;
 }
-
 .page-colour--mid-grey .nhsuk-details__summary,
 .page-colour--mid-grey .nhsuk-details__summary-text,
 .page-colour--mid-grey .nhsuk-promo__heading,
-.page-colour--mid-grey .nhsuk-card__heading
-a, #content .page-style--mid-grey .nhsuk-details__summary,
+.page-colour--mid-grey .nhsuk-card__heading a, #content .page-style--mid-grey .nhsuk-details__summary,
 #content .page-style--mid-grey .nhsuk-details__summary-text,
 #content .page-style--mid-grey .nhsuk-promo__heading,
-#content .page-style--mid-grey .nhsuk-card__heading
-a {
+#content .page-style--mid-grey .nhsuk-card__heading a {
   color: #768692;
 }
-
 .page-colour--mid-grey a.nhsuk-button, #content .page-style--mid-grey a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--mid-grey a.nhsuk-button--reverse, .page-colour--mid-grey a.is-style-reverse, #content .page-style--mid-grey a.nhsuk-button--reverse, #content .page-style--mid-grey a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--mid-grey .nhsuk-inset-text,
 .page-colour--mid-grey .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--mid-grey .is-style-default .nhsuk-care-card__arrow:after,
@@ -549,7 +473,6 @@ a {
 #content .page-style--mid-grey #secondary section {
   border-color: #768692;
 }
-
 .page-colour--mid-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--mid-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--mid-grey .nhsuk-pagination__link .nhsuk-icon, #content .page-style--mid-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -557,17 +480,14 @@ a {
 #content .page-style--mid-grey .nhsuk-pagination__link .nhsuk-icon {
   fill: #768692;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--mid-grey .nhsuk-icon__search, #content .page-style--mid-grey .nhsuk-icon__search {
     fill: #768692;
   }
 }
-
 .page-colour--mid-grey #secondary section ul > li > ul > li > a, #content .page-style--mid-grey #secondary section ul > li > ul > li > a {
   border-left: 2px solid #768692;
 }
-
 .page-colour--mid-grey .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--mid-grey .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #768692;
 }
@@ -575,59 +495,47 @@ a {
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation {
   background: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #535f68;
   background: #535f68;
 }
-
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #535f68;
   background: #535f68;
   color: #ffffff;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #768692;
   color: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #768692;
   color: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #768692;
 }
-
 .page-colour--mid-grey .nhsuk-header .nhsuk-icon__close {
   fill: #768692;
 }
-
 @media (max-width: 989px) {
   .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation-link {
     color: #768692;
@@ -643,7 +551,6 @@ a {
 #content .page-style--dark-grey #secondary section {
   border-top-color: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header,
 .page-colour--dark-grey .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--dark-grey #secondary section h2.widget-title,
@@ -675,27 +582,21 @@ a {
   background: #425563;
   color: #ffffff;
 }
-
 .page-colour--dark-grey .nhsuk-details__summary,
 .page-colour--dark-grey .nhsuk-details__summary-text,
 .page-colour--dark-grey .nhsuk-promo__heading,
-.page-colour--dark-grey .nhsuk-card__heading
-a, #content .page-style--dark-grey .nhsuk-details__summary,
+.page-colour--dark-grey .nhsuk-card__heading a, #content .page-style--dark-grey .nhsuk-details__summary,
 #content .page-style--dark-grey .nhsuk-details__summary-text,
 #content .page-style--dark-grey .nhsuk-promo__heading,
-#content .page-style--dark-grey .nhsuk-card__heading
-a {
+#content .page-style--dark-grey .nhsuk-card__heading a {
   color: #425563;
 }
-
 .page-colour--dark-grey a.nhsuk-button, #content .page-style--dark-grey a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--dark-grey a.nhsuk-button--reverse, .page-colour--dark-grey a.is-style-reverse, #content .page-style--dark-grey a.nhsuk-button--reverse, #content .page-style--dark-grey a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--dark-grey .nhsuk-inset-text,
 .page-colour--dark-grey .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--dark-grey .is-style-default .nhsuk-care-card__arrow:after,
@@ -709,7 +610,6 @@ a {
 #content .page-style--dark-grey #secondary section {
   border-color: #425563;
 }
-
 .page-colour--dark-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--dark-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--dark-grey .nhsuk-pagination__link .nhsuk-icon, #content .page-style--dark-grey .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -717,17 +617,14 @@ a {
 #content .page-style--dark-grey .nhsuk-pagination__link .nhsuk-icon {
   fill: #425563;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--dark-grey .nhsuk-icon__search, #content .page-style--dark-grey .nhsuk-icon__search {
     fill: #425563;
   }
 }
-
 .page-colour--dark-grey #secondary section ul > li > ul > li > a, #content .page-style--dark-grey #secondary section ul > li > ul > li > a {
   border-left: 2px solid #425563;
 }
-
 .page-colour--dark-grey .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--dark-grey .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #425563;
 }
@@ -735,59 +632,47 @@ a {
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation {
   background: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #232e35;
   background: #232e35;
 }
-
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #232e35;
   background: #232e35;
   color: #ffffff;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #425563;
   color: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #425563;
   color: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #425563;
 }
-
 .page-colour--dark-grey .nhsuk-header .nhsuk-icon__close {
   fill: #425563;
 }
-
 @media (max-width: 989px) {
   .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation-link {
     color: #425563;
@@ -803,7 +688,6 @@ a {
 #content .page-style--black #secondary section {
   border-top-color: #000000;
 }
-
 .page-colour--black .nhsuk-header,
 .page-colour--black .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--black #secondary section h2.widget-title,
@@ -835,27 +719,21 @@ a {
   background: #000000;
   color: #ffffff;
 }
-
 .page-colour--black .nhsuk-details__summary,
 .page-colour--black .nhsuk-details__summary-text,
 .page-colour--black .nhsuk-promo__heading,
-.page-colour--black .nhsuk-card__heading
-a, #content .page-style--black .nhsuk-details__summary,
+.page-colour--black .nhsuk-card__heading a, #content .page-style--black .nhsuk-details__summary,
 #content .page-style--black .nhsuk-details__summary-text,
 #content .page-style--black .nhsuk-promo__heading,
-#content .page-style--black .nhsuk-card__heading
-a {
+#content .page-style--black .nhsuk-card__heading a {
   color: #000000;
 }
-
 .page-colour--black a.nhsuk-button, #content .page-style--black a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--black a.nhsuk-button--reverse, .page-colour--black a.is-style-reverse, #content .page-style--black a.nhsuk-button--reverse, #content .page-style--black a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--black .nhsuk-inset-text,
 .page-colour--black .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--black .is-style-default .nhsuk-care-card__arrow:after,
@@ -869,7 +747,6 @@ a {
 #content .page-style--black #secondary section {
   border-color: #000000;
 }
-
 .page-colour--black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--black .nhsuk-pagination__link .nhsuk-icon, #content .page-style--black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -877,17 +754,14 @@ a {
 #content .page-style--black .nhsuk-pagination__link .nhsuk-icon {
   fill: #000000;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--black .nhsuk-icon__search, #content .page-style--black .nhsuk-icon__search {
     fill: #000000;
   }
 }
-
 .page-colour--black #secondary section ul > li > ul > li > a, #content .page-style--black #secondary section ul > li > ul > li > a {
   border-left: 2px solid #000000;
 }
-
 .page-colour--black .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--black .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #000000;
 }
@@ -895,59 +769,47 @@ a {
 .page-colour--black .nhsuk-header .nhsuk-header__navigation {
   background: #000000;
 }
-
 .page-colour--black .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--black .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--black .nhsuk-header .nhsuk-search__submit:hover {
   background-color: black;
   background: black;
 }
-
 .page-colour--black .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--black .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--black .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--black .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: black;
   background: black;
   color: #ffffff;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #000000;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #000000;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #000000;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #000000;
   color: #000000;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #000000;
   color: #000000;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #000000;
 }
-
 .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #000000;
 }
-
 .page-colour--black .nhsuk-header .nhsuk-icon__close {
   fill: #000000;
 }
-
 @media (max-width: 989px) {
   .page-colour--black .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--black .nhsuk-header .nhsuk-header__navigation-link {
     color: #000000;
@@ -963,7 +825,6 @@ a {
 #content .page-style--purple #secondary section {
   border-top-color: #330072;
 }
-
 .page-colour--purple .nhsuk-header,
 .page-colour--purple .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--purple #secondary section h2.widget-title,
@@ -995,27 +856,21 @@ a {
   background: #330072;
   color: #ffffff;
 }
-
 .page-colour--purple .nhsuk-details__summary,
 .page-colour--purple .nhsuk-details__summary-text,
 .page-colour--purple .nhsuk-promo__heading,
-.page-colour--purple .nhsuk-card__heading
-a, #content .page-style--purple .nhsuk-details__summary,
+.page-colour--purple .nhsuk-card__heading a, #content .page-style--purple .nhsuk-details__summary,
 #content .page-style--purple .nhsuk-details__summary-text,
 #content .page-style--purple .nhsuk-promo__heading,
-#content .page-style--purple .nhsuk-card__heading
-a {
+#content .page-style--purple .nhsuk-card__heading a {
   color: #330072;
 }
-
 .page-colour--purple a.nhsuk-button, #content .page-style--purple a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--purple a.nhsuk-button--reverse, .page-colour--purple a.is-style-reverse, #content .page-style--purple a.nhsuk-button--reverse, #content .page-style--purple a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--purple .nhsuk-inset-text,
 .page-colour--purple .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--purple .is-style-default .nhsuk-care-card__arrow:after,
@@ -1029,7 +884,6 @@ a {
 #content .page-style--purple #secondary section {
   border-color: #330072;
 }
-
 .page-colour--purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--purple .nhsuk-pagination__link .nhsuk-icon, #content .page-style--purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -1037,17 +891,14 @@ a {
 #content .page-style--purple .nhsuk-pagination__link .nhsuk-icon {
   fill: #330072;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--purple .nhsuk-icon__search, #content .page-style--purple .nhsuk-icon__search {
     fill: #330072;
   }
 }
-
 .page-colour--purple #secondary section ul > li > ul > li > a, #content .page-style--purple #secondary section ul > li > ul > li > a {
   border-left: 2px solid #330072;
 }
-
 .page-colour--purple .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--purple .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #330072;
 }
@@ -1055,59 +906,47 @@ a {
 .page-colour--purple .nhsuk-header .nhsuk-header__navigation {
   background: #330072;
 }
-
 .page-colour--purple .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--purple .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #110026;
   background: #110026;
 }
-
 .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #110026;
   background: #110026;
   color: #ffffff;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #330072;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #330072;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #330072;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #330072;
   color: #330072;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #330072;
   color: #330072;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #330072;
 }
-
 .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #330072;
 }
-
 .page-colour--purple .nhsuk-header .nhsuk-icon__close {
   fill: #330072;
 }
-
 @media (max-width: 989px) {
   .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--purple .nhsuk-header .nhsuk-header__navigation-link {
     color: #330072;
@@ -1123,7 +962,6 @@ a {
 #content .page-style--pink #secondary section {
   border-top-color: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header,
 .page-colour--pink .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--pink #secondary section h2.widget-title,
@@ -1155,27 +993,21 @@ a {
   background: #ae2573;
   color: #ffffff;
 }
-
 .page-colour--pink .nhsuk-details__summary,
 .page-colour--pink .nhsuk-details__summary-text,
 .page-colour--pink .nhsuk-promo__heading,
-.page-colour--pink .nhsuk-card__heading
-a, #content .page-style--pink .nhsuk-details__summary,
+.page-colour--pink .nhsuk-card__heading a, #content .page-style--pink .nhsuk-details__summary,
 #content .page-style--pink .nhsuk-details__summary-text,
 #content .page-style--pink .nhsuk-promo__heading,
-#content .page-style--pink .nhsuk-card__heading
-a {
+#content .page-style--pink .nhsuk-card__heading a {
   color: #ae2573;
 }
-
 .page-colour--pink a.nhsuk-button, #content .page-style--pink a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--pink a.nhsuk-button--reverse, .page-colour--pink a.is-style-reverse, #content .page-style--pink a.nhsuk-button--reverse, #content .page-style--pink a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--pink .nhsuk-inset-text,
 .page-colour--pink .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--pink .is-style-default .nhsuk-care-card__arrow:after,
@@ -1189,7 +1021,6 @@ a {
 #content .page-style--pink #secondary section {
   border-color: #ae2573;
 }
-
 .page-colour--pink .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--pink .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--pink .nhsuk-pagination__link .nhsuk-icon, #content .page-style--pink .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -1197,17 +1028,14 @@ a {
 #content .page-style--pink .nhsuk-pagination__link .nhsuk-icon {
   fill: #ae2573;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--pink .nhsuk-icon__search, #content .page-style--pink .nhsuk-icon__search {
     fill: #ae2573;
   }
 }
-
 .page-colour--pink #secondary section ul > li > ul > li > a, #content .page-style--pink #secondary section ul > li > ul > li > a {
   border-left: 2px solid #ae2573;
 }
-
 .page-colour--pink .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--pink .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #ae2573;
 }
@@ -1215,59 +1043,47 @@ a {
 .page-colour--pink .nhsuk-header .nhsuk-header__navigation {
   background: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--pink .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #6f1849;
   background: #6f1849;
 }
-
 .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #6f1849;
   background: #6f1849;
   color: #ffffff;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #ae2573;
   color: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #ae2573;
   color: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #ae2573;
 }
-
 .page-colour--pink .nhsuk-header .nhsuk-icon__close {
   fill: #ae2573;
 }
-
 @media (max-width: 989px) {
   .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--pink .nhsuk-header .nhsuk-header__navigation-link {
     color: #ae2573;
@@ -1283,7 +1099,6 @@ a {
 #content .page-style--light-purple #secondary section {
   border-top-color: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header,
 .page-colour--light-purple .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--light-purple #secondary section h2.widget-title,
@@ -1315,27 +1130,21 @@ a {
   background: #704c9c;
   color: #ffffff;
 }
-
 .page-colour--light-purple .nhsuk-details__summary,
 .page-colour--light-purple .nhsuk-details__summary-text,
 .page-colour--light-purple .nhsuk-promo__heading,
-.page-colour--light-purple .nhsuk-card__heading
-a, #content .page-style--light-purple .nhsuk-details__summary,
+.page-colour--light-purple .nhsuk-card__heading a, #content .page-style--light-purple .nhsuk-details__summary,
 #content .page-style--light-purple .nhsuk-details__summary-text,
 #content .page-style--light-purple .nhsuk-promo__heading,
-#content .page-style--light-purple .nhsuk-card__heading
-a {
+#content .page-style--light-purple .nhsuk-card__heading a {
   color: #704c9c;
 }
-
 .page-colour--light-purple a.nhsuk-button, #content .page-style--light-purple a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--light-purple a.nhsuk-button--reverse, .page-colour--light-purple a.is-style-reverse, #content .page-style--light-purple a.nhsuk-button--reverse, #content .page-style--light-purple a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--light-purple .nhsuk-inset-text,
 .page-colour--light-purple .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--light-purple .is-style-default .nhsuk-care-card__arrow:after,
@@ -1349,7 +1158,6 @@ a {
 #content .page-style--light-purple #secondary section {
   border-color: #704c9c;
 }
-
 .page-colour--light-purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--light-purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--light-purple .nhsuk-pagination__link .nhsuk-icon, #content .page-style--light-purple .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -1357,17 +1165,14 @@ a {
 #content .page-style--light-purple .nhsuk-pagination__link .nhsuk-icon {
   fill: #704c9c;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--light-purple .nhsuk-icon__search, #content .page-style--light-purple .nhsuk-icon__search {
     fill: #704c9c;
   }
 }
-
 .page-colour--light-purple #secondary section ul > li > ul > li > a, #content .page-style--light-purple #secondary section ul > li > ul > li > a {
   border-left: 2px solid #704c9c;
 }
-
 .page-colour--light-purple .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--light-purple .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #704c9c;
 }
@@ -1375,59 +1180,47 @@ a {
 .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation {
   background: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--light-purple .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #4b3369;
   background: #4b3369;
 }
-
 .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #4b3369;
   background: #4b3369;
   color: #ffffff;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #704c9c;
   color: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #704c9c;
   color: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #704c9c;
 }
-
 .page-colour--light-purple .nhsuk-header .nhsuk-icon__close {
   fill: #704c9c;
 }
-
 @media (max-width: 989px) {
   .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation-link {
     color: #704c9c;
@@ -1443,7 +1236,6 @@ a {
 #content .page-style--emergency-services-red #secondary section {
   border-top-color: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header,
 .page-colour--emergency-services-red .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--emergency-services-red #secondary section h2.widget-title,
@@ -1475,27 +1267,21 @@ a {
   background: #d5281b;
   color: #ffffff;
 }
-
 .page-colour--emergency-services-red .nhsuk-details__summary,
 .page-colour--emergency-services-red .nhsuk-details__summary-text,
 .page-colour--emergency-services-red .nhsuk-promo__heading,
-.page-colour--emergency-services-red .nhsuk-card__heading
-a, #content .page-style--emergency-services-red .nhsuk-details__summary,
+.page-colour--emergency-services-red .nhsuk-card__heading a, #content .page-style--emergency-services-red .nhsuk-details__summary,
 #content .page-style--emergency-services-red .nhsuk-details__summary-text,
 #content .page-style--emergency-services-red .nhsuk-promo__heading,
-#content .page-style--emergency-services-red .nhsuk-card__heading
-a {
+#content .page-style--emergency-services-red .nhsuk-card__heading a {
   color: #d5281b;
 }
-
 .page-colour--emergency-services-red a.nhsuk-button, #content .page-style--emergency-services-red a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--emergency-services-red a.nhsuk-button--reverse, .page-colour--emergency-services-red a.is-style-reverse, #content .page-style--emergency-services-red a.nhsuk-button--reverse, #content .page-style--emergency-services-red a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--emergency-services-red .nhsuk-inset-text,
 .page-colour--emergency-services-red .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--emergency-services-red .is-style-default .nhsuk-care-card__arrow:after,
@@ -1509,7 +1295,6 @@ a {
 #content .page-style--emergency-services-red #secondary section {
   border-color: #d5281b;
 }
-
 .page-colour--emergency-services-red .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--emergency-services-red .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--emergency-services-red .nhsuk-pagination__link .nhsuk-icon, #content .page-style--emergency-services-red .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -1517,17 +1302,14 @@ a {
 #content .page-style--emergency-services-red .nhsuk-pagination__link .nhsuk-icon {
   fill: #d5281b;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--emergency-services-red .nhsuk-icon__search, #content .page-style--emergency-services-red .nhsuk-icon__search {
     fill: #d5281b;
   }
 }
-
 .page-colour--emergency-services-red #secondary section ul > li > ul > li > a, #content .page-style--emergency-services-red #secondary section ul > li > ul > li > a {
   border-left: 2px solid #d5281b;
 }
-
 .page-colour--emergency-services-red .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--emergency-services-red .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #d5281b;
 }
@@ -1535,59 +1317,47 @@ a {
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation {
   background: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #911b12;
   background: #911b12;
 }
-
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #911b12;
   background: #911b12;
   color: #ffffff;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #d5281b;
   color: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #d5281b;
   color: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #d5281b;
 }
-
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-icon__close {
   fill: #d5281b;
 }
-
 @media (max-width: 989px) {
   .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation-link {
     color: #d5281b;
@@ -1603,7 +1373,6 @@ a {
 #content .page-style--dark-green #secondary section {
   border-top-color: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header,
 .page-colour--dark-green .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--dark-green #secondary section h2.widget-title,
@@ -1635,27 +1404,21 @@ a {
   background: #006747;
   color: #ffffff;
 }
-
 .page-colour--dark-green .nhsuk-details__summary,
 .page-colour--dark-green .nhsuk-details__summary-text,
 .page-colour--dark-green .nhsuk-promo__heading,
-.page-colour--dark-green .nhsuk-card__heading
-a, #content .page-style--dark-green .nhsuk-details__summary,
+.page-colour--dark-green .nhsuk-card__heading a, #content .page-style--dark-green .nhsuk-details__summary,
 #content .page-style--dark-green .nhsuk-details__summary-text,
 #content .page-style--dark-green .nhsuk-promo__heading,
-#content .page-style--dark-green .nhsuk-card__heading
-a {
+#content .page-style--dark-green .nhsuk-card__heading a {
   color: #006747;
 }
-
 .page-colour--dark-green a.nhsuk-button, #content .page-style--dark-green a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--dark-green a.nhsuk-button--reverse, .page-colour--dark-green a.is-style-reverse, #content .page-style--dark-green a.nhsuk-button--reverse, #content .page-style--dark-green a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--dark-green .nhsuk-inset-text,
 .page-colour--dark-green .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--dark-green .is-style-default .nhsuk-care-card__arrow:after,
@@ -1669,7 +1432,6 @@ a {
 #content .page-style--dark-green #secondary section {
   border-color: #006747;
 }
-
 .page-colour--dark-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--dark-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--dark-green .nhsuk-pagination__link .nhsuk-icon, #content .page-style--dark-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -1677,17 +1439,14 @@ a {
 #content .page-style--dark-green .nhsuk-pagination__link .nhsuk-icon {
   fill: #006747;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--dark-green .nhsuk-icon__search, #content .page-style--dark-green .nhsuk-icon__search {
     fill: #006747;
   }
 }
-
 .page-colour--dark-green #secondary section ul > li > ul > li > a, #content .page-style--dark-green #secondary section ul > li > ul > li > a {
   border-left: 2px solid #006747;
 }
-
 .page-colour--dark-green .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--dark-green .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #006747;
 }
@@ -1695,59 +1454,47 @@ a {
 .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation {
   background: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-green .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #001b12;
   background: #001b12;
 }
-
 .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #001b12;
   background: #001b12;
   color: #ffffff;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #006747;
   color: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #006747;
   color: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #006747;
 }
-
 .page-colour--dark-green .nhsuk-header .nhsuk-icon__close {
   fill: #006747;
 }
-
 @media (max-width: 989px) {
   .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation-link {
     color: #006747;
@@ -1763,7 +1510,6 @@ a {
 #content .page-style--light-green #secondary section {
   border-top-color: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header,
 .page-colour--light-green .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--light-green #secondary section h2.widget-title,
@@ -1795,27 +1541,21 @@ a {
   background: #78be20;
   color: #ffffff;
 }
-
 .page-colour--light-green .nhsuk-details__summary,
 .page-colour--light-green .nhsuk-details__summary-text,
 .page-colour--light-green .nhsuk-promo__heading,
-.page-colour--light-green .nhsuk-card__heading
-a, #content .page-style--light-green .nhsuk-details__summary,
+.page-colour--light-green .nhsuk-card__heading a, #content .page-style--light-green .nhsuk-details__summary,
 #content .page-style--light-green .nhsuk-details__summary-text,
 #content .page-style--light-green .nhsuk-promo__heading,
-#content .page-style--light-green .nhsuk-card__heading
-a {
+#content .page-style--light-green .nhsuk-card__heading a {
   color: #78be20;
 }
-
 .page-colour--light-green a.nhsuk-button, #content .page-style--light-green a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--light-green a.nhsuk-button--reverse, .page-colour--light-green a.is-style-reverse, #content .page-style--light-green a.nhsuk-button--reverse, #content .page-style--light-green a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--light-green .nhsuk-inset-text,
 .page-colour--light-green .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--light-green .is-style-default .nhsuk-care-card__arrow:after,
@@ -1829,7 +1569,6 @@ a {
 #content .page-style--light-green #secondary section {
   border-color: #78be20;
 }
-
 .page-colour--light-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--light-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--light-green .nhsuk-pagination__link .nhsuk-icon, #content .page-style--light-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -1837,17 +1576,14 @@ a {
 #content .page-style--light-green .nhsuk-pagination__link .nhsuk-icon {
   fill: #78be20;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--light-green .nhsuk-icon__search, #content .page-style--light-green .nhsuk-icon__search {
     fill: #78be20;
   }
 }
-
 .page-colour--light-green #secondary section ul > li > ul > li > a, #content .page-style--light-green #secondary section ul > li > ul > li > a {
   border-left: 2px solid #78be20;
 }
-
 .page-colour--light-green .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--light-green .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #78be20;
 }
@@ -1855,59 +1591,47 @@ a {
 .page-colour--light-green .nhsuk-header .nhsuk-header__navigation {
   background: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--light-green .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #4f7d15;
   background: #4f7d15;
 }
-
 .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #4f7d15;
   background: #4f7d15;
   color: #ffffff;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #78be20;
   color: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #78be20;
   color: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #78be20;
 }
-
 .page-colour--light-green .nhsuk-header .nhsuk-icon__close {
   fill: #78be20;
 }
-
 @media (max-width: 989px) {
   .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--light-green .nhsuk-header .nhsuk-header__navigation-link {
     color: #78be20;
@@ -1923,7 +1647,6 @@ a {
 #content .page-style--aqua-green #secondary section {
   border-top-color: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header,
 .page-colour--aqua-green .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--aqua-green #secondary section h2.widget-title,
@@ -1955,27 +1678,21 @@ a {
   background: #00a499;
   color: #ffffff;
 }
-
 .page-colour--aqua-green .nhsuk-details__summary,
 .page-colour--aqua-green .nhsuk-details__summary-text,
 .page-colour--aqua-green .nhsuk-promo__heading,
-.page-colour--aqua-green .nhsuk-card__heading
-a, #content .page-style--aqua-green .nhsuk-details__summary,
+.page-colour--aqua-green .nhsuk-card__heading a, #content .page-style--aqua-green .nhsuk-details__summary,
 #content .page-style--aqua-green .nhsuk-details__summary-text,
 #content .page-style--aqua-green .nhsuk-promo__heading,
-#content .page-style--aqua-green .nhsuk-card__heading
-a {
+#content .page-style--aqua-green .nhsuk-card__heading a {
   color: #00a499;
 }
-
 .page-colour--aqua-green a.nhsuk-button, #content .page-style--aqua-green a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--aqua-green a.nhsuk-button--reverse, .page-colour--aqua-green a.is-style-reverse, #content .page-style--aqua-green a.nhsuk-button--reverse, #content .page-style--aqua-green a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--aqua-green .nhsuk-inset-text,
 .page-colour--aqua-green .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--aqua-green .is-style-default .nhsuk-care-card__arrow:after,
@@ -1989,7 +1706,6 @@ a {
 #content .page-style--aqua-green #secondary section {
   border-color: #00a499;
 }
-
 .page-colour--aqua-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--aqua-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--aqua-green .nhsuk-pagination__link .nhsuk-icon, #content .page-style--aqua-green .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -1997,17 +1713,14 @@ a {
 #content .page-style--aqua-green .nhsuk-pagination__link .nhsuk-icon {
   fill: #00a499;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--aqua-green .nhsuk-icon__search, #content .page-style--aqua-green .nhsuk-icon__search {
     fill: #00a499;
   }
 }
-
 .page-colour--aqua-green #secondary section ul > li > ul > li > a, #content .page-style--aqua-green #secondary section ul > li > ul > li > a {
   border-left: 2px solid #00a499;
 }
-
 .page-colour--aqua-green .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--aqua-green .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #00a499;
 }
@@ -2015,59 +1728,47 @@ a {
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation {
   background: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-search__submit:hover {
   background-color: #005852;
   background: #005852;
 }
-
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: #005852;
   background: #005852;
   color: #ffffff;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #00a499;
   color: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #00a499;
   color: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #00a499;
 }
-
 .page-colour--aqua-green .nhsuk-header .nhsuk-icon__close {
   fill: #00a499;
 }
-
 @media (max-width: 989px) {
   .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation-link {
     color: #00a499;
@@ -2083,7 +1784,6 @@ a {
 #content .page-style--gds-black #secondary section {
   border-top-color: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header,
 .page-colour--gds-black .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--gds-black #secondary section h2.widget-title,
@@ -2115,27 +1815,21 @@ a {
   background: #0b0c0c;
   color: #ffffff;
 }
-
 .page-colour--gds-black .nhsuk-details__summary,
 .page-colour--gds-black .nhsuk-details__summary-text,
 .page-colour--gds-black .nhsuk-promo__heading,
-.page-colour--gds-black .nhsuk-card__heading
-a, #content .page-style--gds-black .nhsuk-details__summary,
+.page-colour--gds-black .nhsuk-card__heading a, #content .page-style--gds-black .nhsuk-details__summary,
 #content .page-style--gds-black .nhsuk-details__summary-text,
 #content .page-style--gds-black .nhsuk-promo__heading,
-#content .page-style--gds-black .nhsuk-card__heading
-a {
+#content .page-style--gds-black .nhsuk-card__heading a {
   color: #0b0c0c;
 }
-
 .page-colour--gds-black a.nhsuk-button, #content .page-style--gds-black a.nhsuk-button {
   color: #ffffff;
 }
-
 .page-colour--gds-black a.nhsuk-button--reverse, .page-colour--gds-black a.is-style-reverse, #content .page-style--gds-black a.nhsuk-button--reverse, #content .page-style--gds-black a.is-style-reverse {
   color: #000000;
 }
-
 .page-colour--gds-black .nhsuk-inset-text,
 .page-colour--gds-black .is-style-default .nhsuk-care-card__arrow:before,
 .page-colour--gds-black .is-style-default .nhsuk-care-card__arrow:after,
@@ -2149,7 +1843,6 @@ a {
 #content .page-style--gds-black #secondary section {
   border-color: #0b0c0c;
 }
-
 .page-colour--gds-black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
 .page-colour--gds-black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--previous a .nhsuk-icon,
 .page-colour--gds-black .nhsuk-pagination__link .nhsuk-icon, #content .page-style--gds-black .navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next a .nhsuk-icon,
@@ -2157,17 +1850,14 @@ a {
 #content .page-style--gds-black .nhsuk-pagination__link .nhsuk-icon {
   fill: #0b0c0c;
 }
-
 @media (min-width: 40.0625em) {
   .page-colour--gds-black .nhsuk-icon__search, #content .page-style--gds-black .nhsuk-icon__search {
     fill: #0b0c0c;
   }
 }
-
 .page-colour--gds-black #secondary section ul > li > ul > li > a, #content .page-style--gds-black #secondary section ul > li > ul > li > a {
   border-left: 2px solid #0b0c0c;
 }
-
 .page-colour--gds-black .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, #content .page-style--gds-black .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   background-color: #0b0c0c;
 }
@@ -2175,59 +1865,47 @@ a {
 .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation {
   background: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--gds-black .nhsuk-header .nhsuk-search__submit:hover {
   background-color: black;
   background: black;
 }
-
 .page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:active {
   background-color: black;
   background: black;
   color: #ffffff;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
   color: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
   background-color: #ffffff;
   background: #ffffff;
   color: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
   color: #ffffff;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
   border-color: #0b0c0c;
   color: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
   border-color: #0b0c0c;
   color: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
   fill: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
   background-color: #0b0c0c;
 }
-
 .page-colour--gds-black .nhsuk-header .nhsuk-icon__close {
   fill: #0b0c0c;
 }
-
 @media (max-width: 989px) {
   .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation ul li a, .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation-link {
     color: #0b0c0c;
@@ -2237,3 +1915,5 @@ a {
     background: #ffffff;
   }
 }
+
+/*# sourceMappingURL=page-colours.css.map */

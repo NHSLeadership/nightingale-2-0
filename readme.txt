@@ -1,4 +1,4 @@
-=== Nightingale 2.0 ===
+=== Nightingale ===
 Contributors: tblacker
 Requires at least: 5.0
 Tested up to: 5.6
@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.3
-Stable tag: 2.3
+Version: 2.3.2.2
+Stable tag: 2.3.2.2
 
 
 == Description ==
@@ -42,6 +42,78 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+= 2.3.2.1 =
+ * hotfix
+  * Updated stylesheet version in markup so old cached versions are not called and result in wonky displays.
+
+ = 2.3.2.1 =
+ * hotfix
+  * header area without NHS logo was restricted to 80px width. This has been resolved.
+
+ = 2.3.2 =
+ * maintenance and bugfix release:
+  * Updated to Gravity Forms 2.5. Very strongly suggest updating gravity forms at the same time as updating to this
+  version of the theme.
+  * Converted all sass to dart-sass for less bloat. If developing with theme, please ensure you run npm install before
+  doing any css work
+  * Updated to nhsuk-frontend version 5.1
+  * reworked all css, but in particular admin to reduce size of files.
+
+
+
+ = 2.3.1.4 =
+ * bugfix release:
+  * Fixed pagination in learndash content (added new nonce value to ensure correct form submission)
+  * Fixed php warning on all_fields template (related to original styles array which is no longer used)
+  * Fixed action links in calendar context
+  * Tweak to Nhsuk header width
+  * Tested against WordPress 5.7
+
+ = 2.3.1.3 =
+ * bugfix release:
+  * minor change to gravity forms summary (all_fields) view to prevent markup error that blocked submission.
+
+ = 2.3.1.2 =
+ * bugfix release:
+   * removed various warnings triggered by unchecked values
+   * removed console.log bugfixing statements
+   * corrected minor issues with plugin compatability files
+   * fixed $back_one_level when used with uncanny toolkit breadcrumbs
+   * fixed header search bug in safari
+
+ = 2.3.1 =
+* Accessibility Improvements:
+  * Multiple contrast issues addressed, especially in plugin compatability (Gravity Forms, The Events Calendar,
+  LearnDash in particular)
+  * Aria roles corrected
+  * Keyboard navigation improvements to all screens
+  * Screen reader enhancements added to multiple posts view, header component and to footer region
+  * Mobile navigation focus enhanecement for visually impaired users
+  * form and search input field focus effect amended to use both yellow and black so contrast is maintained regardless
+  of background colour
+* Base library upgraded to NHSUK Frontend 4.1 (https://github.com/nhsuk/nhsuk-frontend/blob/v4.1.0/)
+* Logo / site title hover effect remedied to be in line with nhsuk framework
+* Improvements to IE10/11 support
+* Search improvements - particularly on mobile where clicking to open search now focuses inside the search box.
+* Various improvements to Gravity Forms integration:
+  * Likert icon modified to match rest of radio displays (also improves contrast and accessibility)
+  * Likert display modified from tables to divs to be more responsive
+  * Likert labels next to each option as screen reader assists
+  * Radios - label modified to legend and bought inside fieldset
+* Security tweaks:
+  * Author name hidden in rss feeds to reduce chance of enumeration
+  * Login hint messages modified to not reveal whether a username already exists
+* Functional improvements:
+  * new thumbnails added for theme to create square images. Optional on blog listing pages to then use these for
+consistent sizing of blocks (default is to use standard image, but optional to amend to the new square layout)
+  * Multiple Gravity Forms layout improvements
+  * Learndash grid view added to theme (this only impacts if you have both LearnDash and LearnDash grid view plugins)
+  * Fix to nhsuk-card--clickable component so the whole region is selectable and clickable (also accessibility
+ improvement so when keyboard navigating, the whole region is indicated as selected)
+
+ = 2.3.0.1 =
+ Bugfix release:
+* Breadcrumbs in learndash broke outside of template bounds. This has been resolved.
 
 = 2.3 =
 Feature release:
