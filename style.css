@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.3.2.2
+Version: 2.3.3
 Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 5.2.4
@@ -6937,7 +6937,7 @@ b {
 input[type=email],
 input[type=url],
 input[type=password],
-input[type=search],
+input[type=search]:not(.nhsuk-search__input),
 input[type=number],
 input[type=tel],
 input[type=range],
@@ -6973,7 +6973,7 @@ textarea {
 input[type=email],
 input[type=url],
 input[type=password],
-input[type=search],
+input[type=search]:not(.nhsuk-search__input),
 input[type=number],
 input[type=tel],
 input[type=range],
@@ -6995,7 +6995,7 @@ textarea {
 input[type=email],
 input[type=url],
 input[type=password],
-input[type=search],
+input[type=search]:not(.nhsuk-search__input),
 input[type=number],
 input[type=tel],
 input[type=range],
@@ -7015,7 +7015,7 @@ textarea {
 input[type=email]:focus,
 input[type=url]:focus,
 input[type=password]:focus,
-input[type=search]:focus,
+input[type=search]:focus:not(.nhsuk-search__input),
 input[type=number]:focus,
 input[type=tel]:focus,
 input[type=range]:focus,
@@ -7038,7 +7038,7 @@ textarea:focus {
 input[type=email]::-webkit-outer-spin-button,
 input[type=url]::-webkit-outer-spin-button,
 input[type=password]::-webkit-outer-spin-button,
-input[type=search]::-webkit-outer-spin-button,
+input[type=search]:not(.nhsuk-search__input)::-webkit-outer-spin-button,
 input[type=number]::-webkit-outer-spin-button,
 input[type=tel]::-webkit-outer-spin-button,
 input[type=range]::-webkit-outer-spin-button,
@@ -7055,7 +7055,7 @@ input[type=text]:not(.nhsuk-search__input)::-webkit-inner-spin-button,
 input[type=email]::-webkit-inner-spin-button,
 input[type=url]::-webkit-inner-spin-button,
 input[type=password]::-webkit-inner-spin-button,
-input[type=search]::-webkit-inner-spin-button,
+input[type=search]:not(.nhsuk-search__input)::-webkit-inner-spin-button,
 input[type=number]::-webkit-inner-spin-button,
 input[type=tel]::-webkit-inner-spin-button,
 input[type=range]::-webkit-inner-spin-button,
@@ -7072,6 +7072,7 @@ textarea::-webkit-inner-spin-button {
 }
 
 .nhsuk-input[type=number], input[type=number][type=text]:not(.nhsuk-search__input),
+input[type=number][type=search]:not(.nhsuk-search__input),
 input[type=number],
 textarea[type=number] {
   /* stylelint-disable-line string-quotes */
@@ -8742,12 +8743,8 @@ textarea[type=number] {
   color: #005eb8;
 }
 
-#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search], input:focus[type=tel], input:focus[type=text]:not(.nhsuk-search__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
+#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search]:not(.nhsuk-search__input), input:focus[type=tel], input:focus[type=text]:not(.nhsuk-search__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
   box-shadow: 0 0 0 4px #ffeb3b;
-}
-
-.nhsuk-search__input#search-field {
-  width: 15rem;
 }
 
 #cookie-notice {
@@ -8835,17 +8832,6 @@ a:focus .nhsuk-icon {
 .nhsuk-header a.nhsuk-header__link--service {
   display: contents;
   float: left;
-}
-.nhsuk-header .nhsuk-search__input {
-  border-radius: 4px 0 0 4px;
-  border: none;
-  border-right: none;
-}
-@media (max-width: 40.0525em) {
-  .nhsuk-header .nhsuk-search__input {
-    border: 2px solid #d8dde0;
-    height: 52px;
-  }
 }
 .nhsuk-header.nhsuk-header--white .nhsuk-header__search-wrap input[type=search] {
   border: 2px solid #d8dde0;
@@ -9423,10 +9409,10 @@ li.nhsuk-pagination-item--next {
 }
 @media (min-width: 600px) {
   #primary .gallery.alignleft, #primary .wp-block-gallery.alignleft {
-    margin-right: calc(2 * 1rem);
+    margin-right: 2rem;
   }
   #primary .gallery.alignright, #primary .wp-block-gallery.alignright {
-    margin-left: calc(2 * 1rem);
+    margin-left: 2rem;
   }
   #primary .gallery.gallery-columns-1 .gallery-item, #primary .gallery.gallery-columns-1 .wp-block-gallery-item, #primary .gallery.columns-1 .gallery-item, #primary .gallery.columns-1 .wp-block-gallery-item, #primary .wp-block-gallery.gallery-columns-1 .gallery-item, #primary .wp-block-gallery.gallery-columns-1 .wp-block-gallery-item, #primary .wp-block-gallery.columns-1 .gallery-item, #primary .wp-block-gallery.columns-1 .wp-block-gallery-item {
     width: 100%;
@@ -10911,7 +10897,7 @@ figure.is-style-nhsuk-table-responsive td {
 }
 
 .wp-block-nhsblocks-heroblock {
-  width: calc(100vw -20px);
+  width: calc(100vw - 20px);
   margin: 0 calc(-50vw + 50% + 12px);
 }
 
@@ -10938,7 +10924,7 @@ section.nhsuk-section:nth-of-type(even),
 }
 
 .page-template-full-width-page section.nhsuk-section {
-  width: calc(100vw -20px);
+  width: calc(100vw - 20px);
   margin: 0 calc(-50vw + 50% + 12px);
 }
 
