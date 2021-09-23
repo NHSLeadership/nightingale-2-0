@@ -18,20 +18,6 @@
 	float: left;
   }
 
-  .nhsuk-search__input {
-	border-radius : $nhsuk-border-radius 0 0 $nhsuk-border-radius;
-	border        : none;
-	border-right  : none;
-  }
-
-  @media (max-width : 40.0525em) {
-	.nhsuk-search__input {
-	  border : $nhsuk-border-width-form-element solid $nhsuk-border-color;
-	  height : 52px;
-	}
-  }
-
-
   // Below here is all the white header variation.
   &.nhsuk-header--white {
 	.nhsuk-header__search-wrap input[type="search"] {
