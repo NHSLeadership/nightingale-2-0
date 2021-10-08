@@ -6,8 +6,8 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.3.3
-Stable tag: 2.3.3
+Version: 2.3.4
+Stable tag: 2.3.4
 
 
 == Description ==
@@ -42,27 +42,32 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+ = 2.3.4 =
+ * Bugfix release:
+  * Fixed cookie control positioning
+  * Fixed additional LD page button CSS
+  * Fixed additional LD expander buttons accessibility
+
 = 2.3.2.1 =
- * hotfix
+ * Hotfix
   * Updated stylesheet version in markup so old cached versions are not called and result in wonky displays.
 
  = 2.3.2.1 =
- * hotfix
-  * header area without NHS logo was restricted to 80px width. This has been resolved.
+ * Hotfix
+  * Header area without NHS logo was restricted to 80px width. This has been resolved.
 
  = 2.3.2 =
- * maintenance and bugfix release:
+ * Maintenance and bugfix release:
   * Updated to Gravity Forms 2.5. Very strongly suggest updating gravity forms at the same time as updating to this
   version of the theme.
   * Converted all sass to dart-sass for less bloat. If developing with theme, please ensure you run npm install before
   doing any css work
   * Updated to nhsuk-frontend version 5.1
-  * reworked all css, but in particular admin to reduce size of files.
-
-
+  * Reworked all css, but in particular admin to reduce size of files.
 
  = 2.3.1.4 =
- * bugfix release:
+ * Bugfix release:
   * Fixed pagination in learndash content (added new nonce value to ensure correct form submission)
   * Fixed php warning on all_fields template (related to original styles array which is no longer used)
   * Fixed action links in calendar context

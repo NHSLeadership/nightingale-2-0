@@ -1,9 +1,9 @@
 .learndash-wrapper {
-  .ld-section-heading {
-	.nhsuk-button {
-	  display: none;
-	}
+
+  .learndash_join_button {
+    margin-top: 25px;
   }
+
   .ld-primary-color {
 	color : $color_nhsuk-blue;
   }
@@ -16,8 +16,11 @@
 	color : $color_nhsuk-blue !important;
   }
 
-  .ld-icon.ld-primary-background, .ld-expand-button, .ld-expand-button.ld-button-alternate .ld-icon {
-	background : $color_nhsuk-blue;
+  .ld-icon.ld-primary-background, .ld-expand-button {
+	  @extend .nhsuk-button;
+  }
+  .ld-expand-button.ld-button-alternate .ld-icon {
+	  color : $color_nhsuk-blue !important;
   }
 
   a {
@@ -29,23 +32,33 @@
 	text-decoration : none;
   }
 
-
   input[type=submit].learndash_mark_complete_button {
 	padding-right : nhsuk-spacing(7);
   }
-
 
   .sfwd-mark-complete::after {
 	top : 33%;
   }
 
   .ld-status {
-	  position: relative;
+	  @extend .nhsuk-tag;
+	  border-radius: 0;
+	  line-height: 1.0;
+	  text-transform: none;
+	  &.ld-status-waiting {
+		  @extend .nhsuk-tag--yellow;
+	  }
+  }
 
-	&.ld-status-waiting {
-	  border-color : $color_nhsuk-red;
-	}
-
+  .ld-course-status.ld-course-status-not-enrolled {
+	  .ld-course-status-label {
+		  font-size: inherit;
+		  font-weight: inherit;
+		  color: $color_nhsuk-black;
+	  }
+	  .ld-course-status-price {
+		  color: $color_nhsuk-black;
+	  }
   }
 
   .ld-breadcrumbs, .ld-course-status, .ld-item-details {
@@ -56,8 +69,23 @@
 	}
   }
 
+  .ld-topic-list.ld-table-list {
+	  .ld-table-list-lesson-details {
+		  font-size: inherit;
+		  line-height: inherit;
+	  }
+  }
+
   .ld-tab-content, .ld-table-list {
 	margin : 0 16px;
+    .ld-table-list-header {
+		background-color: $color_nhsuk-blue;
+	}
+    .ld-table-list-lesson-details {
+		.ld-lesson-list-progress {
+			text-transform: none;
+		}
+	}
   }
 
   .ld-item-list {

@@ -3738,7 +3738,7 @@
 .edit-post-visual-editor .nhsuk-breadcrumb__backlink:visited:hover {
   color: #7C2855;
 }
-.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -3765,58 +3765,58 @@
   /* 4 */
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
   }
 }
 @media print {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     margin-bottom: 36px;
   }
 }
 @media (max-width: 40.0525em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     padding: 8px 16px;
   }
 }
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-button::-moz-focus-inner, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
+.edit-post-visual-editor .nhsuk-button::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::-moz-focus-inner, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
   background-color: #00662f;
 }
-.edit-post-visual-editor .nhsuk-button:focus, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus {
+.edit-post-visual-editor .nhsuk-button:focus, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.edit-post-visual-editor .nhsuk-button:focus:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
+.edit-post-visual-editor .nhsuk-button:focus:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
   color: #212b32;
 }
-.edit-post-visual-editor .nhsuk-button:focus:visited:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
+.edit-post-visual-editor .nhsuk-button:focus:visited:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus:visited:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus:visited:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
   color: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active {
+.edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.edit-post-visual-editor .nhsuk-button::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::before {
+.edit-post-visual-editor .nhsuk-button::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::before {
   background: transparent;
   bottom: -6px;
   content: "";
@@ -3826,7 +3826,7 @@
   right: -2px;
   top: -2px;
 }
-.edit-post-visual-editor .nhsuk-button:active::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active::before {
+.edit-post-visual-editor .nhsuk-button:active::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active::before {
   top: -6px;
 }
 .edit-post-visual-editor .nhsuk-button--secondary {
@@ -3886,8 +3886,12 @@
 }
 .edit-post-visual-editor .nhsuk-button--disabled,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled],
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background,
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle,
 .edit-post-visual-editor .nhsuk-button[disabled],
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background,
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle {
   background-color: #007f3b;
   opacity: 0.5;
@@ -3895,24 +3899,36 @@
 }
 .edit-post-visual-editor .nhsuk-button--disabled:hover,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled]:hover,
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:hover,
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button:hover,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:hover,
 .edit-post-visual-editor .nhsuk-button[disabled]:hover,
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background:hover,
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button:hover,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle:hover {
   background-color: #007f3b;
   cursor: default;
 }
 .edit-post-visual-editor .nhsuk-button--disabled:focus,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled]:focus,
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:focus,
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button:focus,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:focus,
 .edit-post-visual-editor .nhsuk-button[disabled]:focus,
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background:focus,
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button:focus,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle:focus {
   background-color: #007f3b;
   outline: none;
 }
 .edit-post-visual-editor .nhsuk-button--disabled:active,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled]:active,
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:active,
+.edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button:active,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:active,
 .edit-post-visual-editor .nhsuk-button[disabled]:active,
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background:active,
+.edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button:active,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle:active {
   box-shadow: 0 4px 0 #00401e;
   top: 0;
@@ -6646,7 +6662,7 @@
 .edit-post-visual-editor .nhsuk-table__cell--numeric {
   text-align: right;
 }
-.edit-post-visual-editor .nhsuk-tag {
+.edit-post-visual-editor .nhsuk-tag, .edit-post-visual-editor .learndash-wrapper .ld-status {
   font-weight: 600;
   font-size: 14px;
   font-size: 0.875rem;
@@ -6664,14 +6680,14 @@
   text-decoration: none;
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-tag {
+  .edit-post-visual-editor .nhsuk-tag, .edit-post-visual-editor .learndash-wrapper .ld-status {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1;
   }
 }
 @media print {
-  .edit-post-visual-editor .nhsuk-tag {
+  .edit-post-visual-editor .nhsuk-tag, .edit-post-visual-editor .learndash-wrapper .ld-status {
     font-size: 14pt;
     line-height: 1;
   }
@@ -6721,7 +6737,7 @@
   border-color: #4d3708;
   color: #4d3708;
 }
-.edit-post-visual-editor .nhsuk-tag--yellow {
+.edit-post-visual-editor .nhsuk-tag--yellow, .edit-post-visual-editor .learndash-wrapper .ld-status.ld-status-waiting {
   background-color: #fff59d;
   border-color: #4d4712;
   color: #4d4712;
@@ -7121,7 +7137,7 @@
 .edit-post-visual-editor .nhsuk-cat-filter .nhsuk-cat-reset {
   float: right;
 }
-.edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
+.edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
 .edit-post-visual-editor .gform_heading .gform_description {
@@ -7474,8 +7490,8 @@
 .edit-post-visual-editor .gf-all-fields li table.gfcs-value td span {
   border-bottom: none;
 }
-.edit-post-visual-editor .learndash-wrapper .ld-section-heading .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-section-heading .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .learndash-wrapper .ld-section-heading .gv-approval-toggle {
-  display: none;
+.edit-post-visual-editor .learndash-wrapper .learndash_join_button {
+  margin-top: 25px;
 }
 .edit-post-visual-editor .learndash-wrapper .ld-primary-color {
   color: #005eb8;
@@ -7486,8 +7502,8 @@
 .edit-post-visual-editor .learndash-wrapper #ld-user-register {
   color: #005eb8 !important;
 }
-.edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
-  background: #005eb8;
+.edit-post-visual-editor .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+  color: #005eb8 !important;
 }
 .edit-post-visual-editor .learndash-wrapper a {
   text-decoration: underline;
@@ -7503,16 +7519,33 @@
   top: 33%;
 }
 .edit-post-visual-editor .learndash-wrapper .ld-status {
-  position: relative;
+  border-radius: 0;
+  line-height: 1;
+  text-transform: none;
 }
-.edit-post-visual-editor .learndash-wrapper .ld-status.ld-status-waiting {
-  border-color: #d5281b;
+.edit-post-visual-editor .learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-label {
+  font-size: inherit;
+  font-weight: inherit;
+  color: #212b32;
+}
+.edit-post-visual-editor .learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-price {
+  color: #212b32;
 }
 .edit-post-visual-editor .learndash-wrapper .ld-breadcrumbs .ld-course-status-segment .ld-course-status-content, .edit-post-visual-editor .learndash-wrapper .ld-course-status .ld-course-status-segment .ld-course-status-content, .edit-post-visual-editor .learndash-wrapper .ld-item-details .ld-course-status-segment .ld-course-status-content {
   position: relative;
 }
+.edit-post-visual-editor .learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-lesson-details {
+  font-size: inherit;
+  line-height: inherit;
+}
 .edit-post-visual-editor .learndash-wrapper .ld-tab-content, .edit-post-visual-editor .learndash-wrapper .ld-table-list {
   margin: 0 16px;
+}
+.edit-post-visual-editor .learndash-wrapper .ld-tab-content .ld-table-list-header, .edit-post-visual-editor .learndash-wrapper .ld-table-list .ld-table-list-header {
+  background-color: #005eb8;
+}
+.edit-post-visual-editor .learndash-wrapper .ld-tab-content .ld-table-list-lesson-details .ld-lesson-list-progress, .edit-post-visual-editor .learndash-wrapper .ld-table-list .ld-table-list-lesson-details .ld-lesson-list-progress {
+  text-transform: none;
 }
 .edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
   content: "";
@@ -7636,14 +7669,14 @@
   float: left;
   margin-right: 16px;
 }
-.edit-post-visual-editor nav.learndash-pager ul li a.nhsuk-tag {
+.edit-post-visual-editor nav.learndash-pager ul li a.nhsuk-tag, .edit-post-visual-editor nav.learndash-pager ul li .learndash-wrapper a.ld-status, .edit-post-visual-editor .learndash-wrapper nav.learndash-pager ul li a.ld-status {
   color: #ffffff;
 }
-.edit-post-visual-editor nav.learndash-pager ul li a.nhsuk-tag.focus-visible {
+.edit-post-visual-editor nav.learndash-pager ul li a.nhsuk-tag.focus-visible, .edit-post-visual-editor nav.learndash-pager ul li .learndash-wrapper a.focus-visible.ld-status, .edit-post-visual-editor .learndash-wrapper nav.learndash-pager ul li a.focus-visible.ld-status {
   color: #212b32;
   border: 4px solid #212b32 !important;
 }
-.edit-post-visual-editor nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white {
+.edit-post-visual-editor nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, .edit-post-visual-editor nav.learndash-pager ul li .learndash-wrapper a.nhsuk-tag--white.ld-status, .edit-post-visual-editor .learndash-wrapper nav.learndash-pager ul li a.nhsuk-tag--white.ld-status {
   color: #003087;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid article {
@@ -8035,7 +8068,7 @@
 .edit-post-visual-editor ul {
   list-style: none;
 }
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
+.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
   color: #ffffff;
   text-decoration: none;
 }

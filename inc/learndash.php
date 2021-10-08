@@ -18,12 +18,16 @@ add_filter(
 		$replace = array();
 		// search for whitespace and trim it down for later searches.
 		// sort out all the buttons in one go.
+		// search for whitespace and trim it down for later searches.
+		// sort out all the buttons in one go.
 		$find[]    = '#ld-button#';
 		$replace[] = 'nhsuk-button';
-		$find[]    = '#ld-item-list-actions#';
-		$replace[] = 'nhsuk-button nhsuk-button--secondary';
-		$find[]    = '#ld-expand-button#';
-		$replace[] = 'nhsuk-button nhsuk-button--secondary';
+		$find[]    = '#btn-join#';
+		$replace[] = 'nhsuk-button';
+		$find[]    = '#ld-icon-arrow-down ld-icon ld-primary-background#';
+		$replace[] = '';
+		$find[]    = '#ld-text ld-primary-color#';
+		$replace[] = '';
 		$find[]    = '#ld-logout#';
 		$replace[] = 'nhsuk-button nhsuk-button--secondary';
 		$find[]    = '#ld-login#';
