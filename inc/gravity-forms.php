@@ -55,7 +55,6 @@ add_filter(
 		$form_string = str_replace( 'gform_previous_button button', 'nhsuk-button nhsuk-button--reverse', $form_string );
 		// Style the save and continue functionality.
         $form_string = str_replace( 'gform_save_link button', 'nhsuk-button nhsuk-button--secondary', $form_string );
-        $form_string = str_replace( "value='Send Link'", "value='Send Link' class='nhsuk-button'", $form_string );
         $outerfind[]    = 'gfield ';
 		$outerreplace[] = 'gfield nhsuk-form-group ';
 		$outerfind[]    = 'gfield_error';
