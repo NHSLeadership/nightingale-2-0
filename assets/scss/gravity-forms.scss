@@ -336,6 +336,10 @@
 	padding-top : nhsuk-spacing(5) !important;
 	.nhsuk-button--secondary svg path { fill: $color_nhsuk-white;
 	}
+	.nhsuk-button--secondary {
+		float: left;
+		margin-right: 20px;
+	}
   }
 
   #ui-datepicker-div {

@@ -7375,6 +7375,10 @@
 .edit-post-visual-editor .gform_wrapper .gform_page_footer .nhsuk-button--secondary svg path {
   fill: #ffffff;
 }
+.edit-post-visual-editor .gform_wrapper .gform_page_footer .nhsuk-button--secondary {
+  float: left;
+  margin-right: 20px;
+}
 .edit-post-visual-editor .gform_wrapper #ui-datepicker-div {
   border: 2px solid #005eb8;
   border-radius: 4px;
