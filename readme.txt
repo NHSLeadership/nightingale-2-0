@@ -42,6 +42,9 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+= 2.3.4.1 =
+ * Bugfix release:
+  * Minor change has been done so that the expand button work properly.
 
  = 2.3.4 =
  * Bugfix release:
