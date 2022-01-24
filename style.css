@@ -9738,7 +9738,7 @@ li.nhsuk-pagination-item--next {
 }
 .gform_wrapper .gform_page_footer .gform_next_page_errors_button {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 28px;
   -webkit-appearance: none;
   background-color: #4c6272;
@@ -9759,7 +9759,7 @@ li.nhsuk-pagination-item--next {
 }
 .gform_wrapper .gform_page_footer .gform_resubmit_button {
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 28px;
   -webkit-appearance: none;
   background-color: #007f3b;
