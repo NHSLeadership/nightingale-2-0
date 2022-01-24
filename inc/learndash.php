@@ -22,8 +22,6 @@ add_filter(
 		$replace[] = 'nhsuk-button';
 		$find[]    = '#ld-item-list-actions#';
 		$replace[] = 'nhsuk-button nhsuk-button--secondary';
-		$find[]    = '#ld-expand-button#';
-		$replace[] = 'nhsuk-button nhsuk-button--secondary';
 		$find[]    = '#ld-logout#';
 		$replace[] = 'nhsuk-button nhsuk-button--secondary';
 		$find[]    = '#ld-login#';
