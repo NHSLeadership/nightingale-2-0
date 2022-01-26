@@ -9729,10 +9729,54 @@ li.nhsuk-pagination-item--next {
 .gform_wrapper .gform_page_footer {
   padding-top: 32px !important;
 }
-.gform_wrapper .gform_page_footer a.gform_save_link {
+.gform_wrapper .gform_page_footer .nhsuk-button--secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info svg path, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap svg path, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle svg path, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button svg path {
+  fill: #ffffff;
+}
+.gform_wrapper .gform_page_footer .nhsuk-button--secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button {
   float: left;
-  margin-left: 0;
-  margin-right: 24px;
+  margin-right: 20px;
+}
+.gform_wrapper .gform_page_footer .gform_next_page_errors_button {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 28px;
+  -webkit-appearance: none;
+  background-color: #4c6272;
+  box-shadow: 0 4px 0 #263139;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: auto;
+}
+.gform_wrapper .gform_page_footer .gform_resubmit_button {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 28px;
+  -webkit-appearance: none;
+  background-color: #007f3b;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #00401e;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0;
+  padding: 12px 18px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: auto;
 }
 .gform_wrapper #ui-datepicker-div {
   border: 2px solid #005eb8;
