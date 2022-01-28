@@ -10167,6 +10167,17 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
   padding-right: 10px;
 }
 
+.sfwd-courses .featured-top {
+  height: 320px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+}
+
 /* Events Calendar Styles */
 #tribe-events, #tribe-events-pg-template, .tribe-events-pg-template {
   padding: 0;
