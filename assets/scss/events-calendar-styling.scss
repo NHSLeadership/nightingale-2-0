@@ -164,6 +164,31 @@
 
 }
 
+.tribe-events .tribe-events-c-events-bar__search-form {
+	.tribe-events-c-search__button {
+		font-weight: 400;
+		font-size: 16px;
+		font-size: 1rem;
+		line-height: 1.5;
+		margin-bottom: 28px;
+		-webkit-appearance: none;
+		background-color: #007f3b;
+		border: 2px solid transparent;
+		border-radius: 4px;
+		box-shadow: 0 4px 0 #00401e;
+		box-sizing: border-box;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 600;
+		margin-top: 0;
+		padding: 12px 16px;
+		position: relative;
+		text-align: center;
+		vertical-align: top;
+		width: auto;
+	}
+}
 
 #rsvp-now {
   .tribe-tickets__rsvp-wrapper {
@@ -266,7 +291,7 @@ html.js { // only hit embedded content. Wordpress doesnt make this easy to filte
 	}
   }
 }
-.tribe-events .tribe-events-c-top-bar__datepicker-button:hover span.tribe-events-c-top-bar__datepicker-desktop {
+.tribe-events .tribe-events-c-top-bar__datepicker-form .tribe-events-c-top-bar__datepicker {
   color: $color_nhsuk-dark-grey;
 }
 /* Event datetime header */
