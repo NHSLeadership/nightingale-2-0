@@ -8012,9 +8012,6 @@
 .edit-post-visual-editor .tribe-events-schedule__datetime * {
   color: #425563;
 }
-.edit-post-visual-editor .tribe-tickets__rsvp-form-buttons .tribe-common-h7 .tribe-tickets__rsvp-form-button .tribe-tickets__rsvp-form-button--cancel {
-  border: 5px solid red;
-}
 .edit-post-visual-editor .download-count {
   float: right;
 }
