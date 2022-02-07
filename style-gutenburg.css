@@ -7800,6 +7800,9 @@
 .edit-post-visual-editor #ld_course_categorydropdown label {
   padding-right: 10px;
 }
+.edit-post-visual-editor .sfwd-courses .featured-top {
+  display: none;
+}
 .edit-post-visual-editor #tribe-events, .edit-post-visual-editor #tribe-events-pg-template, .edit-post-visual-editor .tribe-events-pg-template {
   padding: 0;
 }

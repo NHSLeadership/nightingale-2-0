@@ -10146,6 +10146,10 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
   padding-right: 10px;
 }
 
+.sfwd-courses .featured-top {
+  display: none;
+}
+
 /* Events Calendar Styles */
 #tribe-events, #tribe-events-pg-template, .tribe-events-pg-template {
   padding: 0;
