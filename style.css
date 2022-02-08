@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.3.3
+Version: 2.4
 Requires at least: 5.0
 Tested up to: 5.8
 Requires PHP: 5.2.4
@@ -3707,7 +3707,7 @@ b {
  * 3. Use a pseudo element to expand the click target area to include the
  *    button's shadow as well, in case users try to click it.
  */
-.nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tippy-popper .tippy-content .gv-approval-toggle {
+.nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -3734,58 +3734,58 @@ b {
   /* 4 */
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
   }
 }
 @media print {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     margin-bottom: 36px;
   }
 }
 @media (max-width: 40.0525em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     padding: 8px 16px;
   }
 }
-.nhsuk-button:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .tippy-popper .tippy-content .gv-approval-toggle:link, .nhsuk-button:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, .nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .tippy-popper .tippy-content .gv-approval-toggle:active, .nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.nhsuk-button:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .learndash-wrapper .ld-icon.ld-primary-background:link, .learndash-wrapper .ld-expand-button:link, .tippy-popper .tippy-content .gv-approval-toggle:link, .nhsuk-button:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .learndash-wrapper .ld-icon.ld-primary-background:visited, .learndash-wrapper .ld-expand-button:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, .nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active, .nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.nhsuk-button::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
+.nhsuk-button::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner, .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .ld-expand-button::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
   background-color: #00662f;
 }
-.nhsuk-button:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus {
+.nhsuk-button:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus, .learndash-wrapper .ld-icon.ld-primary-background:focus, .learndash-wrapper .ld-expand-button:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.nhsuk-button:focus:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
+.nhsuk-button:focus:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited, .learndash-wrapper .ld-icon.ld-primary-background:focus:visited, .learndash-wrapper .ld-expand-button:focus:visited, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
   color: #212b32;
 }
-.nhsuk-button:focus:visited:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited:active, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
+.nhsuk-button:focus:visited:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited:active, .learndash-wrapper .ld-icon.ld-primary-background:focus:visited:active, .learndash-wrapper .ld-expand-button:focus:visited:active, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
   color: #ffffff;
 }
-.nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .tippy-popper .tippy-content .gv-approval-toggle:active {
+.nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.nhsuk-button::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before, .tippy-popper .tippy-content .gv-approval-toggle::before {
+.nhsuk-button::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before, .learndash-wrapper .ld-icon.ld-primary-background::before, .learndash-wrapper .ld-expand-button::before, .tippy-popper .tippy-content .gv-approval-toggle::before {
   background: transparent;
   bottom: -6px;
   content: "";
@@ -3795,67 +3795,67 @@ b {
   right: -2px;
   top: -2px;
 }
-.nhsuk-button:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before {
+.nhsuk-button:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before, .learndash-wrapper .ld-icon.ld-primary-background:active::before, .learndash-wrapper .ld-expand-button:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before {
   top: -6px;
 }
 
 /**
  * Button variations
  */
-.nhsuk-button--secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, .nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle {
+.nhsuk-button--secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, .nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button {
   background-color: #4c6272;
   box-shadow: 0 4px 0 #263139;
 }
-.nhsuk-button--secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover, .nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover {
+.nhsuk-button--secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover, .nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-secondary.ld-expand-button:hover {
   background-color: #384853;
 }
-.nhsuk-button--secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus, .nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus {
+.nhsuk-button--secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus, .nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-secondary.ld-expand-button:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.nhsuk-button--secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active, .nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active {
+.nhsuk-button--secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active, .nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-secondary.ld-expand-button:active {
   background: #263139;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.nhsuk-button--secondary.nhsuk-button--disabled, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.cn-button.bootstrap.cn-more-info, .nhsuk-button--disabled.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-secondary.gv-approval-toggle {
+.nhsuk-button--secondary.nhsuk-button--disabled, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.cn-button.bootstrap.cn-more-info, .nhsuk-button--disabled.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-secondary.gv-approval-toggle, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-expand-button {
   background-color: #4c6272;
 }
 
-.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle {
+.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button {
   background-color: #ffffff;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
 }
-.nhsuk-button--reverse:hover, .nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:hover {
+.nhsuk-button--reverse:hover, .nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:hover, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-reverse.ld-expand-button:hover {
   background-color: #f2f2f2;
   color: #212b32;
 }
-.nhsuk-button--reverse:focus, .nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:focus {
+.nhsuk-button--reverse:focus, .nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-reverse.ld-expand-button:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.nhsuk-button--reverse:active, .nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:active {
+.nhsuk-button--reverse:active, .nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:active, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-reverse.ld-expand-button:active {
   background: #212b32;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.nhsuk-button--reverse:link, .nhsuk-button.is-style-reverse:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link {
+.nhsuk-button--reverse:link, .nhsuk-button.is-style-reverse:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:link, .learndash-wrapper .is-style-reverse.ld-expand-button:link {
   color: #212b32;
 }
-.nhsuk-button--reverse:link:active, .nhsuk-button.is-style-reverse:link:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link:active {
+.nhsuk-button--reverse:link:active, .nhsuk-button.is-style-reverse:link:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link:active, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:link:active, .learndash-wrapper .is-style-reverse.ld-expand-button:link:active {
   color: #ffffff;
 }
-.nhsuk-button--reverse.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle {
+.nhsuk-button--reverse.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-expand-button {
   background-color: #ffffff;
 }
-.nhsuk-button--reverse.nhsuk-button--disabled:focus, .nhsuk-button--disabled.nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle:focus {
+.nhsuk-button--reverse.nhsuk-button--disabled:focus, .nhsuk-button--disabled.nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-expand-button:focus {
   background-color: #ffffff;
 }
 
@@ -3866,9 +3866,13 @@ b {
 .nhsuk-button--disabled,
 .nhsuk-button[disabled=disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap,
+.learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background,
+.learndash-wrapper [disabled=disabled].ld-expand-button,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle,
 .nhsuk-button[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap,
+.learndash-wrapper [disabled].ld-icon.ld-primary-background,
+.learndash-wrapper [disabled].ld-expand-button,
 .tippy-popper .tippy-content [disabled].gv-approval-toggle {
   background-color: #007f3b;
   opacity: 0.5;
@@ -3877,9 +3881,13 @@ b {
 .nhsuk-button--disabled:hover,
 .nhsuk-button[disabled=disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap:hover,
+.learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:hover,
+.learndash-wrapper [disabled=disabled].ld-expand-button:hover,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:hover,
 .nhsuk-button[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap:hover,
+.learndash-wrapper [disabled].ld-icon.ld-primary-background:hover,
+.learndash-wrapper [disabled].ld-expand-button:hover,
 .tippy-popper .tippy-content [disabled].gv-approval-toggle:hover {
   background-color: #007f3b;
   cursor: default;
@@ -3887,9 +3895,13 @@ b {
 .nhsuk-button--disabled:focus,
 .nhsuk-button[disabled=disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap:focus,
+.learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:focus,
+.learndash-wrapper [disabled=disabled].ld-expand-button:focus,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:focus,
 .nhsuk-button[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap:focus,
+.learndash-wrapper [disabled].ld-icon.ld-primary-background:focus,
+.learndash-wrapper [disabled].ld-expand-button:focus,
 .tippy-popper .tippy-content [disabled].gv-approval-toggle:focus {
   background-color: #007f3b;
   outline: none;
@@ -3897,78 +3909,98 @@ b {
 .nhsuk-button--disabled:active,
 .nhsuk-button[disabled=disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap:active,
+.learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:active,
+.learndash-wrapper [disabled=disabled].ld-expand-button:active,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:active,
 .nhsuk-button[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap:active,
+.learndash-wrapper [disabled].ld-icon.ld-primary-background:active,
+.learndash-wrapper [disabled].ld-expand-button:active,
 .tippy-popper .tippy-content [disabled].gv-approval-toggle:active {
   box-shadow: 0 4px 0 #00401e;
   top: 0;
 }
 
-.nhsuk-button--secondary[disabled=disabled], #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info, [disabled=disabled].nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle,
+.nhsuk-button--secondary[disabled=disabled], #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info, [disabled=disabled].nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button,
 .nhsuk-button--secondary[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info,
 [disabled].nhsuk-button.is-style-secondary,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-secondary.cn-button.bootstrap,
-.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle {
+.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle,
+.learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background,
+.learndash-wrapper [disabled].is-style-secondary.ld-expand-button {
   background-color: #4c6272;
   opacity: 0.5;
 }
-.nhsuk-button--secondary[disabled=disabled]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:hover, [disabled=disabled].nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:hover,
+.nhsuk-button--secondary[disabled=disabled]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:hover, [disabled=disabled].nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:hover,
 .nhsuk-button--secondary[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info:hover,
 [disabled].nhsuk-button.is-style-secondary:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-secondary.cn-button.bootstrap:hover,
-.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:hover {
+.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:hover,
+.learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background:hover,
+.learndash-wrapper [disabled].is-style-secondary.ld-expand-button:hover {
   background-color: #4c6272;
   cursor: default;
 }
-.nhsuk-button--secondary[disabled=disabled]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:focus, [disabled=disabled].nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:focus,
+.nhsuk-button--secondary[disabled=disabled]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:focus, [disabled=disabled].nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:focus,
 .nhsuk-button--secondary[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info:focus,
 [disabled].nhsuk-button.is-style-secondary:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-secondary.cn-button.bootstrap:focus,
-.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:focus {
+.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:focus,
+.learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background:focus,
+.learndash-wrapper [disabled].is-style-secondary.ld-expand-button:focus {
   outline: none;
 }
-.nhsuk-button--secondary[disabled=disabled]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:active, [disabled=disabled].nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:active,
+.nhsuk-button--secondary[disabled=disabled]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:active, [disabled=disabled].nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:active, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:active,
 .nhsuk-button--secondary[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info:active,
 [disabled].nhsuk-button.is-style-secondary:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-secondary.cn-button.bootstrap:active,
-.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:active {
+.tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:active,
+.learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background:active,
+.learndash-wrapper [disabled].is-style-secondary.ld-expand-button:active {
   box-shadow: 0 4px 0 #263139;
   top: 0;
 }
 
-.nhsuk-button--reverse[disabled=disabled], [disabled=disabled].nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle,
+.nhsuk-button--reverse[disabled=disabled], [disabled=disabled].nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button,
 .nhsuk-button--reverse[disabled],
 [disabled].nhsuk-button.is-style-reverse,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap,
-.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle {
+.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle,
+.learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background,
+.learndash-wrapper [disabled].is-style-reverse.ld-expand-button {
   background-color: #ffffff;
   opacity: 0.5;
 }
-.nhsuk-button--reverse[disabled=disabled]:hover, [disabled=disabled].nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:hover,
+.nhsuk-button--reverse[disabled=disabled]:hover, [disabled=disabled].nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:hover, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:hover, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:hover,
 .nhsuk-button--reverse[disabled]:hover,
 [disabled].nhsuk-button.is-style-reverse:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap:hover,
-.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:hover {
+.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:hover,
+.learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background:hover,
+.learndash-wrapper [disabled].is-style-reverse.ld-expand-button:hover {
   background-color: #ffffff;
   cursor: default;
 }
-.nhsuk-button--reverse[disabled=disabled]:focus, [disabled=disabled].nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:focus,
+.nhsuk-button--reverse[disabled=disabled]:focus, [disabled=disabled].nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:focus,
 .nhsuk-button--reverse[disabled]:focus,
 [disabled].nhsuk-button.is-style-reverse:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap:focus,
-.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:focus {
+.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:focus,
+.learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background:focus,
+.learndash-wrapper [disabled].is-style-reverse.ld-expand-button:focus {
   outline: none;
 }
-.nhsuk-button--reverse[disabled=disabled]:active, [disabled=disabled].nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:active,
+.nhsuk-button--reverse[disabled=disabled]:active, [disabled=disabled].nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:active, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:active, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:active,
 .nhsuk-button--reverse[disabled]:active,
 [disabled].nhsuk-button.is-style-reverse:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap:active,
-.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:active {
+.tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:active,
+.learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background:active,
+.learndash-wrapper [disabled].is-style-reverse.ld-expand-button:active {
   box-shadow: 0 4px 0 #212b32;
   top: 0;
 }
@@ -5442,19 +5474,14 @@ b {
  * 4. Remove inner border on buttons for Firefox, see
  *    https://github.com/necolas/normalize.css/issues/393
  * 5. Proprietary extension so form field looks the same in Safari
- * 6. Custom spacing to position the search icon
- * 7. Drop shadow on search suggestions dopdown box, custom spread and blur
- * 8. No current spacing at 12px so using this value
- * 9. Z-index to bring the dropdown to the front
- * 10. Custom margin to move menu toggle past the search toggle button
- * 11. Custom border value between expanded search and expanded menu if both open at the same time
- * 12. Don't display the link address for the logo anchor, see
+ * 6. Custom margin to move menu toggle past the search toggle button
+ * 7. Custom border value between expanded search and expanded menu if both open at the same time
+ * 8. Don't display the link address for the logo anchor, see
  *     core/elements/_links.scss
- * 13. Use non variable colour to follow NHS England guidelines on logo colour
- * 14. On print stylesheets remove the header link
- * 15. Remove random top margin in Safari
- * 16. Align close icon with nav item arrow icons
- * 17. Add nhsuk-spacing(9) to align right and left main nav with header
+ * 9. Use non variable colour to follow NHS England guidelines on logo colour
+ * 10. Remove random top margin in Safari
+ * 11. Align close icon with nav item arrow icons
+ * 12. Add nhsuk-spacing(9) to align right and left main nav with header
  */
 .nhsuk-header {
   background-color: #005eb8;
@@ -5475,12 +5502,19 @@ b {
 }
 @media (max-width: 40.0525em) {
   .nhsuk-header__container {
+    margin: 0;
     padding: 16px;
   }
 }
 
 .nhsuk-header__logo {
   float: left;
+}
+@media (max-width: 40.0525em) {
+  .nhsuk-header__logo {
+    position: relative;
+    z-index: 1;
+  }
 }
 .nhsuk-header__logo .nhsuk-logo__background {
   fill: #ffffff;
@@ -5538,7 +5572,7 @@ b {
 @media print {
   .nhsuk-header__link:after {
     content: "";
-    /* [15] */
+    /* [8] */
   }
 }
 .nhsuk-header__link:hover, .nhsuk-header__link:active, .nhsuk-header__link:focus {
@@ -5560,7 +5594,7 @@ b {
 }
 .nhsuk-header__content.js-show {
   border-bottom: 4px solid #f0f4f5;
-  /* [12] */
+  /* [7] */
 }
 @media (min-width: 40.0625em) {
   .nhsuk-header__content {
@@ -5638,35 +5672,26 @@ b {
 .nhsuk-header__search-toggle:focus .nhsuk-icon {
   fill: #212b32;
 }
+@media (min-width: 40.0625em) {
+  .nhsuk-header__search-toggle {
+    display: none;
+  }
+}
 
 .nhsuk-header__search-form {
   height: 100%;
   overflow: visible;
 }
-
-.nhsuk-search__input::placeholder {
-  color: #4c6272;
-  font-size: 16px;
-}
-.nhsuk-search__input:-ms-input-placeholder {
-  color: #4c6272;
-  font-size: 16px;
-}
-.nhsuk-search__input::-webkit-input-placeholder {
-  color: #4c6272;
-  font-size: 16px;
+@media (max-width: 40.0525em) {
+  .nhsuk-header__search-form {
+    background-color: #ffffff;
+    display: flex;
+    padding: 16px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-header__container {
-    margin: 0;
-  }
-
-  .nhsuk-header__logo {
-    position: relative;
-    z-index: 1;
-  }
-
   .nhsuk-header__search-wrap {
     display: none;
   }
@@ -5679,61 +5704,101 @@ b {
     padding-top: 16px;
     text-align: left;
   }
-
-  .nhsuk-header__search-form {
-    background-color: #ffffff;
-    display: flex;
-    padding: 16px;
-    width: 100%;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-header__search-wrap {
+    display: block;
+    line-height: 0;
   }
+}
 
+.nhsuk-search__input {
+  -webkit-appearance: listbox;
+  /* [5] */
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  padding: 0 16px;
+}
+.nhsuk-search__input:focus {
+  border: 4px solid #212b32;
+  box-shadow: 0 0 0 4px #ffeb3b;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  padding: 0 9px;
+}
+.nhsuk-search__input::placeholder {
+  color: #4c6272;
+  font-size: 16px;
+}
+.nhsuk-search__input:-ms-input-placeholder {
+  color: #4c6272;
+  font-size: 16px;
+}
+.nhsuk-search__input::-webkit-input-placeholder {
+  color: #4c6272;
+  font-size: 16px;
+}
+@media (max-width: 40.0525em) {
   .nhsuk-search__input {
-    -webkit-appearance: listbox;
-    /* [5] */
     border-bottom: 1px solid #aeb7bd;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 0;
     border-left: 1px solid #aeb7bd;
     border-right: 0;
     border-top: 1px solid #aeb7bd;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 0;
     flex-grow: 2;
     -ms-flex-positive: 2;
-    /* [1] */
     font-size: inherit;
     height: 52px;
     /* [4] */
     margin: 0;
     outline: none;
-    padding: 0 16px;
     width: 100%;
     /* [4] */
     z-index: 1;
   }
-  .nhsuk-search__input:focus {
-    border: 4px solid #212b32;
-    box-shadow: 0 0 0 4px #ffeb3b;
-    outline: 4px solid transparent;
-    outline-offset: 4px;
-    padding: 0 13px;
-    /* [11] */
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-search__input {
+    border: 1px solid #ffffff;
+    font-size: 16px;
+    height: 40px;
+    /* [2] */
+    width: 200px;
+    /* [2] */
   }
+}
+@media (min-width: 48.0625em) {
+  .nhsuk-search__input {
+    width: 235px;
+  }
+}
 
+.nhsuk-search__submit {
+  border: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  float: right;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  padding: 0;
+}
+.nhsuk-search__submit::-moz-focus-inner {
+  border: 0;
+  /* [4] */
+}
+.nhsuk-search__submit:hover {
+  cursor: pointer;
+}
+@media (max-width: 40.0525em) {
   .nhsuk-search__submit {
     background-color: #007f3b;
-    border: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 4px;
-    float: right;
-    font-size: inherit;
     height: 52px;
     /* [2] */
-    line-height: inherit;
     margin: 0;
-    outline: none;
     padding: 8px 8px 0;
   }
   .nhsuk-search__submit .nhsuk-icon__search {
@@ -5743,13 +5808,8 @@ b {
     width: 38px;
     /* [3] */
   }
-  .nhsuk-search__submit::-moz-focus-inner {
-    border: 0;
-    /* [4] */
-  }
   .nhsuk-search__submit:hover {
     background-color: #00662f;
-    cursor: pointer;
   }
   .nhsuk-search__submit:focus {
     background-color: #ffeb3b;
@@ -5766,7 +5826,52 @@ b {
   .nhsuk-search__submit:focus .nhsuk-icon {
     fill: #212b32;
   }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-search__submit {
+    background-color: #f0f4f5;
+    display: block;
+    height: 40px;
+    /* [2] */
+    width: 44px;
+    /* [2] */
+  }
+  .nhsuk-search__submit .nhsuk-icon__search {
+    height: 27px;
+    /* [3] */
+    width: 27px;
+    /* [3] */
+  }
+  .nhsuk-search__submit:hover {
+    background-color: #003d78;
+    border: 1px solid #ffffff;
+  }
+  .nhsuk-search__submit:hover .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+  .nhsuk-search__submit:focus {
+    background-color: #ffeb3b;
+    border: 0;
+    box-shadow: 0 4px 0 0 #212b32;
+    color: #212b32;
+    outline: 4px solid transparent;
+    /* 1 */
+    outline-offset: 4px;
+    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  }
+  .nhsuk-search__submit:focus .nhsuk-icon {
+    fill: #212b32;
+  }
+  .nhsuk-search__submit:active {
+    background-color: #002f5c;
+    border: 0;
+  }
+  .nhsuk-search__submit:active .nhsuk-icon__search {
+    fill: #ffffff;
+  }
+}
 
+@media (max-width: 40.0525em) {
   .nhsuk-search__close {
     background-color: transparent;
     border: 0;
@@ -5776,7 +5881,7 @@ b {
     width: 40px;
     margin-left: 8px;
     margin-right: -8px;
-    /* [17] */
+    /* [11] */
     margin-top: 8px;
   }
   .nhsuk-search__close .nhsuk-icon__close {
@@ -5802,100 +5907,11 @@ b {
   }
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-header__search-wrap {
-    display: block;
-    line-height: 0;
-  }
-
-  .nhsuk-header__search-toggle {
-    display: none;
-  }
-
-  .nhsuk-search__input {
-    -webkit-appearance: listbox;
-    /* [5] */
-    border: 1px solid #ffffff;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 0;
-    font-size: 16px;
-    height: 40px;
-    /* [2] */
-    padding: 0 12px;
-    /* [9] */
-    width: 200px;
-    /* [2] */
-  }
-  .nhsuk-search__input:focus {
-    border: 2px solid #212b32;
-    box-shadow: 0 0 0 4px #ffeb3b;
-    outline: 4px solid transparent;
-    outline-offset: 4px;
-    padding: 0 11px;
-    /* [11] */
-  }
-
-  .nhsuk-search__submit {
-    background-color: #f0f4f5;
-    border: 0;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 4px;
-    display: block;
-    float: right;
-    font-size: inherit;
-    height: 40px;
-    /* [2] */
-    line-height: inherit;
-    outline: none;
-    width: 44px;
-    /* [2] */
-  }
-  .nhsuk-search__submit .nhsuk-icon__search {
-    height: 27px;
-    /* [3] */
-    width: 27px;
-    /* [3] */
-  }
-  .nhsuk-search__submit::-moz-focus-inner {
-    border: 0;
-    /* [4] */
-  }
-  .nhsuk-search__submit:hover {
-    background-color: #003d78;
-    border: 1px solid #ffffff;
-    cursor: pointer;
-  }
-  .nhsuk-search__submit:hover .nhsuk-icon__search {
-    fill: #ffffff;
-  }
-  .nhsuk-search__submit:focus {
-    background-color: #ffeb3b;
-    border: 0;
-    box-shadow: 0 4px 0 0 #212b32;
-    color: #212b32;
-    outline: 4px solid transparent;
-    /* 1 */
-    outline-offset: 4px;
-    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
-  }
-  .nhsuk-search__submit:focus .nhsuk-icon {
-    fill: #212b32;
-  }
-  .nhsuk-search__submit:active {
-    background-color: #002f5c;
-    border: 0;
-  }
-  .nhsuk-search__submit:active .nhsuk-icon__search {
-    fill: #ffffff;
-  }
-
   .nhsuk-search__close {
     display: none;
   }
 }
+
 .nhsuk-search__input--withdropdown {
   border-bottom-left-radius: 0;
 }
@@ -5904,11 +5920,6 @@ b {
   border-bottom-right-radius: 0;
 }
 
-@media (min-width: 48.0625em) {
-  .nhsuk-search__input {
-    width: 235px;
-  }
-}
 /* Main navigation
  *
  * Appears below the header strip
@@ -5933,7 +5944,7 @@ b {
   font-weight: 400;
   line-height: 24px;
   margin-right: 0;
-  /* [11] */
+  /* [6] */
   padding: 7px 16px;
   position: relative;
   text-decoration: none;
@@ -5957,12 +5968,6 @@ b {
   border-color: #f0f4f5;
   color: #f0f4f5;
 }
-@media (max-width: 48.0525em) {
-  .nhsuk-header__menu-toggle {
-    margin-right: 0;
-    /* [11] */
-  }
-}
 @media (max-width: 40.0525em) {
   .nhsuk-header__menu-toggle {
     right: 48px;
@@ -5971,7 +5976,12 @@ b {
 @media (min-width: 40.0625em) and (max-width: 61.865em) {
   .nhsuk-header__menu-toggle {
     margin-top: 0;
-    /* [16] */
+    /* [10] */
+  }
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__menu-toggle {
+    display: none;
   }
 }
 .nhsuk-header__menu-toggle:focus {
@@ -6015,9 +6025,9 @@ b {
 @media (max-width: 61.865em) {
   .nhsuk-header__navigation.js-show {
     border-bottom: 4px solid #f0f4f5;
-    /* [12] */
+    /* [7] */
     border-top: 4px solid #f0f4f5;
-    /* [12] */
+    /* [7] */
   }
   .nhsuk-header__navigation.js-show .nhsuk-width-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container #cn-notice-buttons, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show #cn-notice-buttons, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show .cn-text-container {
     margin: 0 16px;
@@ -6028,12 +6038,26 @@ b {
     margin: 0;
   }
 }
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation {
+    background-color: #005eb8;
+    display: block;
+    margin: 0 auto;
+    max-width: 1024px;
+    /* [12] */
+  }
+}
 
 .nhsuk-header__navigation-title {
   font-weight: 600;
   margin-bottom: 0;
   padding: 16px;
   position: relative;
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-title {
+    display: none;
+  }
 }
 
 .nhsuk-header__navigation-close {
@@ -6076,11 +6100,30 @@ b {
   margin: 0;
   padding-left: 0;
 }
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-list {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+}
 
 .nhsuk-header__navigation-item {
   border-top: 1px solid #f0f4f5;
   margin-bottom: 0;
   position: relative;
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-item {
+    border-top: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .nhsuk-header__navigation-item .nhsuk-icon__chevron-right {
+    display: none;
+  }
 }
 
 .nhsuk-header__navigation-link {
@@ -6106,6 +6149,12 @@ b {
   .nhsuk-header__navigation-link {
     font-size: 14pt;
     line-height: 1.2;
+  }
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-link {
+    color: #ffffff;
+    line-height: normal;
   }
 }
 .nhsuk-header__navigation-link .nhsuk-icon__chevron-right {
@@ -6156,56 +6205,18 @@ b {
   color: #212b32;
 }
 
-/**
- * Large desktop styles
-**/
 @media (min-width: 61.875em) {
-  .nhsuk-header__menu-toggle {
-    display: none;
-  }
-
-  .nhsuk-header__navigation-title {
-    display: none;
-  }
-
   .nhsuk-header__navigation-item--for-mobile {
     display: none;
   }
+}
 
-  .nhsuk-header__navigation {
-    background-color: #005eb8;
-    display: block;
-    margin: 0 auto;
-    max-width: 1024px;
-    /* [18] */
-  }
-
-  .nhsuk-header__navigation-list {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    width: 100%;
-  }
-
+@media (min-width: 61.875em) {
   .nhsuk-header__navigation-list--small {
     justify-content: flex-start;
   }
-
-  .nhsuk-header__navigation-item {
-    border-top: 0;
-    margin: 0;
-    text-align: center;
-  }
-  .nhsuk-header__navigation-item .nhsuk-icon__chevron-right {
-    display: none;
-  }
-
-  .nhsuk-header__navigation-link {
-    color: #ffffff;
-    line-height: normal;
-  }
 }
+
 /**
  * Transactional Header with service name
 **/
@@ -6214,14 +6225,8 @@ b {
   padding-left: 16px;
   padding-top: 3px;
 }
-@media (max-width: 40.0525em) {
-  .nhsuk-header__transactional-service-name {
-    padding-top: 4px;
-  }
-}
-
 @media (max-width: 61.865em) {
-  .nhsuk-header__transactional-service-name--long {
+  .nhsuk-header__transactional-service-name {
     padding-left: 0;
     padding-top: 8px;
     width: 100%;
@@ -6565,7 +6570,7 @@ b {
 }
 .nhsuk-header--white .nhsuk-organisation-name {
   color: #000;
-  /* [14] */
+  /* [9] */
   /* stylelint-disable-line color-no-hex */
 }
 .nhsuk-header--white .nhsuk-organisation-descriptor {
@@ -8450,7 +8455,7 @@ textarea[type=number] {
 /* ==========================================================================
    #TAG
    ========================================================================== */
-.nhsuk-tag {
+.nhsuk-tag, .learndash-wrapper .ld-status {
   font-weight: 600;
   font-size: 14px;
   font-size: 0.875rem;
@@ -8468,14 +8473,14 @@ textarea[type=number] {
   text-decoration: none;
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-tag {
+  .nhsuk-tag, .learndash-wrapper .ld-status {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1;
   }
 }
 @media print {
-  .nhsuk-tag {
+  .nhsuk-tag, .learndash-wrapper .ld-status {
     font-size: 14pt;
     line-height: 1;
   }
@@ -8483,25 +8488,25 @@ textarea[type=number] {
 
 /* Colour variants
   ========================================================================== */
-.nhsuk-tag--white, .nhsuk-tag.is-style-white {
+.nhsuk-tag--white, .nhsuk-tag.is-style-white, .learndash-wrapper .is-style-white.ld-status {
   background-color: #ffffff;
   border-color: #212b32;
   color: #212b32;
 }
 
-.nhsuk-tag--grey, .nhsuk-tag.is-style-grey {
+.nhsuk-tag--grey, .nhsuk-tag.is-style-grey, .learndash-wrapper .is-style-grey.ld-status {
   background-color: #dbe0e3;
   border-color: #354550;
   color: #354550;
 }
 
-.nhsuk-tag--green, .nhsuk-tag.is-style-green {
+.nhsuk-tag--green, .nhsuk-tag.is-style-green, .learndash-wrapper .is-style-green.ld-status {
   background-color: #cce5d8;
   border-color: #004c23;
   color: #004c23;
 }
 
-.nhsuk-tag--aqua-green, .nhsuk-tag.is-style-aqua-green {
+.nhsuk-tag--aqua-green, .nhsuk-tag.is-style-aqua-green, .learndash-wrapper .is-style-aqua-green.ld-status {
   background-color: #ccedeb;
   border-color: #00524d;
   color: #00524d;
@@ -8513,31 +8518,31 @@ textarea[type=number] {
   color: #004281;
 }
 
-.nhsuk-tag--purple, .nhsuk-tag.is-style-purple {
+.nhsuk-tag--purple, .nhsuk-tag.is-style-purple, .learndash-wrapper .is-style-purple.ld-status {
   background-color: #d6cce3;
   border-color: #240050;
   color: #240050;
 }
 
-.nhsuk-tag--pink, .nhsuk-tag.is-style-pink {
+.nhsuk-tag--pink, .nhsuk-tag.is-style-pink, .learndash-wrapper .is-style-pink.ld-status {
   background-color: #efd3e3;
   border-color: #57133a;
   color: #57133a;
 }
 
-.nhsuk-tag--red, .nhsuk-tag.is-style-red {
+.nhsuk-tag--red, .nhsuk-tag.is-style-red, .learndash-wrapper .is-style-red.ld-status {
   background-color: #f7d4d1;
   border-color: #6b140e;
   color: #6b140e;
 }
 
-.nhsuk-tag--orange, .nhsuk-tag.is-style-orange {
+.nhsuk-tag--orange, .nhsuk-tag.is-style-orange, .learndash-wrapper .is-style-orange.ld-status {
   background-color: #ffdc8e;
   border-color: #4d3708;
   color: #4d3708;
 }
 
-.nhsuk-tag--yellow, .nhsuk-tag.is-style-yellow {
+.nhsuk-tag--yellow, .nhsuk-tag.is-style-yellow, .learndash-wrapper .is-style-yellow.ld-status, .learndash-wrapper .ld-status.ld-status-waiting {
   background-color: #fff59d;
   border-color: #4d4712;
   color: #4d4712;
@@ -8713,7 +8718,7 @@ textarea[type=number] {
   width: 100%;
 }
 
-.nhsuk-button--reverse:visited, .nhsuk-button.is-style-reverse:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:visited, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:visited {
+.nhsuk-button--reverse:visited, .nhsuk-button.is-style-reverse:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:visited, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:visited, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:visited, .learndash-wrapper .is-style-reverse.ld-expand-button:visited {
   color: #212b32;
 }
 
@@ -9036,7 +9041,7 @@ button + .button {
 .nhsuk-cat-filter .nhsuk-cat-reset {
   float: right;
 }
-.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
+.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap, .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
 
@@ -9179,7 +9184,7 @@ button + .button {
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #commentform {
   display: flow-root;
 }
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button.submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cookie-notice .cookie-notice-container #cn-notice-buttons .submit.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.cn-button.bootstrap, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tippy-popper .tippy-content .submit.gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.gv-approval-toggle {
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button.submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cookie-notice .cookie-notice-container #cn-notice-buttons .submit.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.cn-button.bootstrap, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .learndash-wrapper .submit.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.ld-icon.ld-primary-background, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .learndash-wrapper .submit.ld-expand-button, .learndash-wrapper .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.ld-expand-button, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tippy-popper .tippy-content .submit.gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.gv-approval-toggle {
   float: right;
 }
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link {
@@ -9703,10 +9708,54 @@ li.nhsuk-pagination-item--next {
 .gform_wrapper .gform_page_footer {
   padding-top: 32px !important;
 }
-.gform_wrapper .gform_page_footer a.gform_save_link {
+.gform_wrapper .gform_page_footer .nhsuk-button--secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info svg path, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap svg path, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle svg path, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button svg path {
+  fill: #ffffff;
+}
+.gform_wrapper .gform_page_footer .nhsuk-button--secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button {
   float: left;
-  margin-left: 0;
-  margin-right: 24px;
+  margin-right: 20px;
+}
+.gform_wrapper .gform_page_footer .gform_next_page_errors_button {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 28px;
+  -webkit-appearance: none;
+  background-color: #4c6272;
+  box-shadow: 0 4px 0 #263139;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: auto;
+}
+.gform_wrapper .gform_page_footer .gform_resubmit_button {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 28px;
+  -webkit-appearance: none;
+  background-color: #007f3b;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #00401e;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0;
+  padding: 12px 18px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: auto;
 }
 .gform_wrapper #ui-datepicker-div {
   border: 2px solid #005eb8;
@@ -9826,11 +9875,11 @@ li.nhsuk-pagination-item--next {
   border-bottom: none;
 }
 
-.learndash-wrapper .ld-section-heading .nhsuk-button, .learndash-wrapper .ld-section-heading #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .learndash-wrapper .ld-section-heading .cn-button.bootstrap, .learndash-wrapper .ld-section-heading .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .learndash-wrapper .ld-section-heading .gv-approval-toggle {
-  display: none;
+.learndash-wrapper .learndash_join_button {
+  margin-top: 25px;
 }
 .learndash-wrapper .ld-primary-color {
-  color: #005eb8;
+  color: #ffffff;
 }
 .learndash-wrapper a.ld-login-text.ld-login-button:hover {
   color: #ffffff !important;
@@ -9838,8 +9887,8 @@ li.nhsuk-pagination-item--next {
 .learndash-wrapper #ld-user-register {
   color: #005eb8 !important;
 }
-.learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
-  background: #005eb8;
+.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+  color: #005eb8 !important;
 }
 .learndash-wrapper a {
   text-decoration: underline;
@@ -9855,16 +9904,33 @@ li.nhsuk-pagination-item--next {
   top: 33%;
 }
 .learndash-wrapper .ld-status {
-  position: relative;
+  border-radius: 0;
+  line-height: 1;
+  text-transform: none;
 }
-.learndash-wrapper .ld-status.ld-status-waiting {
-  border-color: #d5281b;
+.learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-label {
+  font-size: inherit;
+  font-weight: inherit;
+  color: #212b32;
+}
+.learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-price {
+  color: #212b32;
 }
 .learndash-wrapper .ld-breadcrumbs .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-course-status .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-item-details .ld-course-status-segment .ld-course-status-content {
   position: relative;
 }
+.learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-lesson-details {
+  font-size: inherit;
+  line-height: inherit;
+}
 .learndash-wrapper .ld-tab-content, .learndash-wrapper .ld-table-list {
   margin: 0 16px;
+}
+.learndash-wrapper .ld-tab-content .ld-table-list-header, .learndash-wrapper .ld-table-list .ld-table-list-header {
+  background-color: #005eb8;
+}
+.learndash-wrapper .ld-tab-content .ld-table-list-lesson-details .ld-lesson-list-progress, .learndash-wrapper .ld-table-list .ld-table-list-lesson-details .ld-lesson-list-progress {
+  text-transform: none;
 }
 .learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
   content: "";
@@ -9989,14 +10055,14 @@ nav.learndash-pager ul li {
   float: left;
   margin-right: 16px;
 }
-nav.learndash-pager ul li a.nhsuk-tag {
+nav.learndash-pager ul li a.nhsuk-tag, nav.learndash-pager ul li .learndash-wrapper a.ld-status, .learndash-wrapper nav.learndash-pager ul li a.ld-status {
   color: #ffffff;
 }
-nav.learndash-pager ul li a.nhsuk-tag.focus-visible {
+nav.learndash-pager ul li a.nhsuk-tag.focus-visible, nav.learndash-pager ul li .learndash-wrapper a.focus-visible.ld-status, .learndash-wrapper nav.learndash-pager ul li a.focus-visible.ld-status {
   color: #212b32;
   border: 4px solid #212b32 !important;
 }
-nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul li a.nhsuk-tag.is-style-white {
+nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul li a.nhsuk-tag.is-style-white, nav.learndash-pager ul li .learndash-wrapper a.nhsuk-tag--white.ld-status, nav.learndash-pager ul li .learndash-wrapper a.ld-status.is-style-white, .learndash-wrapper nav.learndash-pager ul li a.nhsuk-tag--white.ld-status, .learndash-wrapper nav.learndash-pager ul li a.ld-status.is-style-white {
   color: #003087;
 }
 
@@ -10078,6 +10144,10 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 }
 #ld_course_categorydropdown label {
   padding-right: 10px;
+}
+
+.sfwd-courses .featured-top {
+  display: none;
 }
 
 /* Events Calendar Styles */
@@ -10219,6 +10289,30 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
   }
 }
 
+.tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 28px;
+  -webkit-appearance: none;
+  background-color: #007f3b;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #00401e;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: auto;
+}
+
 #rsvp-now .tribe-tickets__rsvp-wrapper {
   max-width: 100%;
 }
@@ -10288,7 +10382,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
   display: none;
 }
 
-.tribe-events .tribe-events-c-top-bar__datepicker-button:hover span.tribe-events-c-top-bar__datepicker-desktop {
+.tribe-events .tribe-events-c-top-bar__datepicker-form .tribe-events-c-top-bar__datepicker {
   color: #425563;
 }
 
@@ -10813,11 +10907,11 @@ figure.is-style-nhsuk-table-responsive td {
 // @version 1.0 22nd July 2019
 */
 /* button extension*/
-.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle {
+.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button {
   /* secondary button style*/
 }
 
-.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle {
+.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button {
   /* reverse button style*/
 }
 
@@ -11624,6 +11718,10 @@ section.nhsuk-section:after,
 #cookie-notice .cookie-notice-container .cn-close-icon.focus-visible {
   height: 40px;
   width: 40px;
+}
+
+#ccc #ccc-icon:active {
+  top: auto !important;
 }
 
 /*# sourceMappingURL=style.css.map */

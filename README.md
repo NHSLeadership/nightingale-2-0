@@ -1,6 +1,7 @@
-# Nightingale 2.3.3
-<img src="https://img.shields.io/badge/nightingale-v2.2.4-blue"> <a href="https://github.com/nhsuk/nhsuk-frontend
-"><img src="https://img.shields.io/badge/nhsuk--frontend-v3.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5.5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
+# Nightingale 2.4
+<img src="https://img.shields.io/badge/nightingale-v2.4-blue"> 
+<a href="https://github.com/nhsuk/nhsuk-frontend">
+<img src="https://img.shields.io/badge/nhsuk--frontend-v4.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5.5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
 
 #### *A WordPress theme for the NHS, based on the NHS.UK frontend library.*
 
@@ -100,7 +101,7 @@ This theme has been extended to style the following plugins automatically:
  - [x] Formidable Forms
  - [x] LearnDash - please use the latest version of LD and use the LD30 theme with no primary, secondary or tertiary colours defined
  - [x] Download Monitor
- - [x] The Events Calendar
+ - [x] The Events Calendar - Please use the 'Skeleton Styles' display template
  - [x] WP HTML Email
   
 ## Progress
