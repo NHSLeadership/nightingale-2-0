@@ -101,7 +101,7 @@ This theme has been extended to style the following plugins automatically:
  - [x] Formidable Forms
  - [x] LearnDash - please use the latest version of LD and use the LD30 theme with no primary, secondary or tertiary colours defined
  - [x] Download Monitor
- - [x] The Events Calendar
+ - [x] The Events Calendar - Please use the 'Skeleton Styles' display template
  - [x] WP HTML Email
   
 ## Progress
