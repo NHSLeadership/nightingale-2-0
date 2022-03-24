@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 } // Exit if accessed directly
 
 ?>
-<p><a class="aligncenter nhsuk-button" href="<?php esc_html( $dlm_download->the_download_link() ); ?>" rel="nofollow">
+<p><a class="aligncenter nhsuk-button" href="<?php esc_attr( $dlm_download->the_download_link() ); ?>" rel="nofollow">
 		<?php
 		// translators: link to the download.
 		printf( esc_html_e( 'Download &ldquo;%s&rdquo;', 'nightingale' ), esc_html( $dlm_download->get_title() ) );

@@ -7,17 +7,15 @@
  *
  * See more documentation about our views templating system.
  *
- * @link http://evnt.is/1aiy
- *
- * @version 4.9.10
- *
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2022
  */
+
 ?>
-    <button
-        class="nhsuk-button tribe-events-c-search__button"
-        type="submit"
-        name="submit-bar"
-    >
-        <?php printf( esc_html__( 'Find %s', 'the-events-calendar' ), tribe_get_event_label_plural() ); ?>
-    </button>
+	<button class="nhsuk-button tribe-events-c-search__button" type="submit" name="submit-bar">
+		<?php
+		esc_html_e( 'Find Events', 'nightingale' );
+		?>
+	</button>
 <?php
