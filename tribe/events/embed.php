@@ -5,8 +5,9 @@
  * if the active theme does not include an embed.php template.
  * Override this template in your own theme by creating a file at [your-theme]/tribe-events/embed.php
  *
- * @version 4.2
- * @package TribeEventsCalendar
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2022
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

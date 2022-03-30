@@ -6,8 +6,9 @@
  *
  * Override this template in your own theme by creating a file at [your-theme]/tribe-events/single-event.php
  *
- * @package TribeEventsCalendar
- * @version 4.6.19
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2022
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,11 +25,7 @@ $event_id = get_the_ID();
 <div id="tribe-events-content" class="tribe-events-single">
 
 	<p class="tribe-events-back">
-		<a href="
-			<?php
-			echo esc_url( tribe_get_events_link() );
-			?>
-		">
+		<a href="<?php echo esc_url( tribe_get_events_link() ); ?>">
 			<?php
 			/* translators: %s: events. */
 			printf( '&laquo; ' . esc_html_x( 'All %s', '%s Events plural label', 'nightingale' ), esc_html( $events_label_plural ) );

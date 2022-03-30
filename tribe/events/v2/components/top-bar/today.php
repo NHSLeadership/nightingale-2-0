@@ -11,19 +11,11 @@
  *
  * @package Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.0 18th February 2020
+ * @version 1.0 18th February 2022
  */
 
 ?>
-<a
-		href="
-	<?php
-		echo esc_url( $today_url );
-	?>
-"
-		class="tribe-common-c-btn-border tribe-events-c-top-bar__today-button tribe-common-a11y-hidden"
-		data-js="tribe-events-view-link"
->
+<a href="<?php echo esc_url( $today_url ); ?> " class="tribe-common-c-btn-border tribe-events-c-top-bar__today-button tribe-common-a11y-hidden" data-js="tribe-events-view-link">
 	<?php
 	esc_html_e( 'Show all events', 'nightingale' );
 	?>
