@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nhsuk-frontend": "^5.2.1",
+    "nhsuk-frontend": "^6.1.0",
     "penthouse": "^2.3.2",
     "sass": "^1.49.9"
   }
