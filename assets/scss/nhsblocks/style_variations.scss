@@ -19,11 +19,11 @@
 
 /*care card extension*/
 .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent { /* urgent infocard*/
-  @extend .nhsuk-care-card--urgent;
+  @extend .nhsuk-care-card--urgent !optional;
 }
 
 .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate { /* urgent infocard*/
-  @extend .nhsuk-care-card--immediate;
+  @extend .nhsuk-care-card--immediate !optional;
 }
 
 .wp-block-nhsblocks-card1.is-style-warning-callout.nhsuk-care-card,
