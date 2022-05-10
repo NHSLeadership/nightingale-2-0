@@ -28,7 +28,7 @@
 	div {
 
 	  p {
-		@extend .nhsuk-list-panel--results-items__no-results;
+		@extend .nhsuk-list-panel--results-items__no-results !optional;
 	  }
 	}
 
@@ -49,7 +49,7 @@
 		}
 
 		a {
-		  @extend .nhsuk-list-panel__link;
+		  @extend .nhsuk-list-panel__link !optional;
 		  padding : 0;
 		}
 	  }
