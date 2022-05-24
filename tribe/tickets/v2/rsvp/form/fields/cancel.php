@@ -8,11 +8,9 @@
  *
  * See more documentation about our Blocks Editor templating system.
  *
- * @link https://evnt.is/1amp Help article for RSVP & Ticket template files.
- *
- * @since 4.12.3
- *
- * @version 4.12.3
+ * @package Nightingale
+ * @copyright NHS Leadership Academy, Tony Blacker
+ * @version 1.0 18th February 2022
  */
 
 ?>
@@ -20,5 +18,5 @@
 	class="nhsuk-button--reverse tribe-common-h7 tribe-tickets__rsvp-form-button tribe-tickets__rsvp-form-button--cancel"
 	type="reset"
 >
-	<?php esc_html_e( 'Cancel', 'event-tickets' ); ?>
+	<?php esc_html_e( 'Cancel', 'nightingale' ); ?>
 </button>
