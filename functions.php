@@ -516,3 +516,27 @@ function nightingale_no_login_hints( $error ) {
 }
 
 add_filter( 'login_errors', 'nightingale_no_login_hints' );
+
+/**
+ * Remove non-compatible blocks
+ *
+ * @param array $allowed_blocks allowed blocks.
+ * @return array
+ */
+function nhsb_allowed_block_types( $allowed_blocks ) {
+	$all_blocks     = array_keys( WP_Block_Type_Registry::get_instance()->get_all_registered() );
+	$blocks_to_hide = array(
+		'core/navigation',
+		'core/navigation-link',
+		'core/navigation-submenu',
+		'core/post-navigation-link',
+	);
+
+	foreach ( array_diff( $all_blocks, $blocks_to_hide ) as $block ) {
+		$result_blocks[] = $block;
+	}
+	return $result_blocks;
+}
+
+add_filter( 'allowed_block_types', 'nhsb_allowed_block_types' );
+
