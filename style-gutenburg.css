@@ -501,6 +501,30 @@
   /* Care card
     ========================================================================== */
   /* ==========================================================================
+     COMPONENTS / #CARE-CARD
+     ========================================================================== */
+  /**
+   * Care card default styles.
+   *
+   * 1. Default care card colour set to blue (non-urgent care card) -
+   *    using the @mixin care-card tools/_mixins.scss.
+   *    The same mixin is used for each care card, setting the background
+   *    colour,text colour and print border width with the variables.
+   * 2. This shows as a solid border in high contrast mode in Windows, so helps
+   *    differentiates care cards from the rest of the content.
+   * 3. 'Random number' for the heading triangle.
+   * 4. 'Random number' for the heading triangle positioning.
+   * 5. 'Random number' used for spacing to compensate for the triangle.
+   * 6. Needed to enable the triangle to show correctly in high contrast mode.
+   * 7. Prevent additional padding on headings
+   * 8. Give the action link icon sufficient contrast when used in the immediate variant
+   */
+  /**
+   * Card card variations style.
+   *
+   * 1. <a> needs to be white because the background colour is black.
+   */
+  /* ==========================================================================
      COMPONENTS/ #CHECKBOXES
      ========================================================================== */
   /**
@@ -4230,6 +4254,247 @@
 .edit-post-visual-editor .nhsuk-card--care--emergency .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
   fill: #ffffff;
   /* [14] */
+}
+.edit-post-visual-editor .nhsuk-care-card {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  /* [1] */
+  border: 1px solid transparent;
+  /* [2] */
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card {
+    margin-top: 48px;
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card .nhsuk-card--care__heading-container {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-care-card {
+    border: 4px solid #212b32;
+    color: #212b32;
+    page-break-inside: avoid;
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card__heading-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  position: relative;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__heading-container {
+    padding-left: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__heading-container {
+    padding-right: 32px;
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card__arrow {
+  bottom: -10px;
+  /* [3] */
+  display: block;
+  height: 20px;
+  /* [3] */
+  left: 30px;
+  /* [4] */
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 20px;
+  /* [3] */
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-care-card__arrow {
+    display: none;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__arrow {
+    left: 38px;
+    /* [4] */
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card__arrow:before, .edit-post-visual-editor .nhsuk-care-card__arrow:after {
+  border: solid 32px #005eb8;
+  /* [3] */
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  /* [6] */
+  width: 0;
+}
+.edit-post-visual-editor .nhsuk-care-card__heading {
+  font-weight: 600;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin: 0;
+  padding-top: 0;
+  /* [7] */
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-care-card__heading {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-care-card__heading {
+    color: #212b32;
+    fill: #212b32;
+  }
+  .edit-post-visual-editor .nhsuk-care-card__heading:active, .edit-post-visual-editor .nhsuk-care-card__heading:focus, .edit-post-visual-editor .nhsuk-care-card__heading:visited {
+    color: #212b32;
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card__content {
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #ffffff;
+  border: 1px solid #d8dde0;
+  border-top: 0;
+  padding-top: 32px;
+  /* [5] */
+}
+.edit-post-visual-editor .nhsuk-care-card__content > *:first-child {
+  margin-top: 0;
+}
+.edit-post-visual-editor .nhsuk-care-card__content > *:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__content {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__content {
+    padding-left: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__content {
+    padding-right: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-care-card__content {
+    padding-bottom: 32px;
+    padding-top: 36px;
+    /* [5] */
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-care-card__content {
+    color: #212b32;
+    fill: #212b32;
+  }
+  .edit-post-visual-editor .nhsuk-care-card__content:active, .edit-post-visual-editor .nhsuk-care-card__content:focus, .edit-post-visual-editor .nhsuk-care-card__content:visited {
+    color: #212b32;
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card--urgent .nhsuk-card--care__heading-container {
+  background-color: #d5281b;
+  color: #ffffff;
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-care-card--urgent {
+    border: 6px solid #212b32;
+    color: #212b32;
+    page-break-inside: avoid;
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card--urgent .nhsuk-care-card__arrow:before, .edit-post-visual-editor .nhsuk-care-card--urgent .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-card--care__heading-container {
+  background-color: #d5281b;
+  color: #ffffff;
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-care-card--immediate {
+    border: 8px solid #212b32;
+    color: #212b32;
+    page-break-inside: avoid;
+  }
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-care-card__arrow:before, .edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-care-card__content {
+  background-color: #212b32;
+  border: 0;
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-care-card__content a {
+  color: #ffffff;
+  /* [1] */
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-care-card__content a:focus {
+  color: #212b32;
+  /* [1] */
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-details,
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-details__summary {
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-details__summary:hover {
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-details__summary:focus {
+  color: #212b32;
+}
+.edit-post-visual-editor .nhsuk-care-card--immediate .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+  fill: #ffffff;
+  /* [8] */
+}
+.edit-post-visual-editor .nhsuk-care-card .nhsuk-care-card__heading-container {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+.edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent {
+  /* urgent infocard*/
+}
+.edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__heading-container {
+  background-color: #d5281b;
+}
+.edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__arrow:before, .edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
+}
+.edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate {
+  /* urgent infocard*/
+}
+.edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__content {
+  background-color: #212b32;
+  color: #ffffff;
+}
+.edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__heading-container {
+  background-color: #d5281b;
+}
+.edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__arrow:before, .edit-post-visual-editor .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
 }
 .edit-post-visual-editor .nhsuk-checkboxes__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
   font-weight: 400;
