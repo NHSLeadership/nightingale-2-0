@@ -7657,7 +7657,7 @@
   position: relative;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
-  background: #007f3b;
+  background: #007f3b !important;
   color: #ffffff;
   position: absolute;
   font-size: 14px;

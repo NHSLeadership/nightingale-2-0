@@ -313,7 +313,7 @@ nav.learndash-pager {
 	  position       : relative;
 
 	  .ld_course_grid_price {
-		background : $color_nhsuk-green;
+		background : $color_nhsuk-green !important;
 		color: $color_nhsuk-white;
 		position: absolute;
 		font-size: 14px;
