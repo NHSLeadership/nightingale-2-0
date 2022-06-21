@@ -9759,7 +9759,15 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
   position: relative;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
-  background: #007f3b !important;
+  background: #007f3b;
+  color: #ffffff;
+  position: absolute;
+  font-size: 14px;
+  left: -8px;
+  top: 10px;
+  padding: 3px 10px;
+  z-index: 2;
+  font-weight: bold;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
   border-top: 4px solid #425563;
@@ -9771,6 +9779,10 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled:before {
   border-top: 4px solid #003087;
   border-right: 4px solid #003087;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.free {
   background: #007f3b;
@@ -9796,28 +9808,6 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 
 .sfwd-courses .featured-top {
   display: none;
-}
-
-.ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
-  background: #007f3b !important;
-  color: #ffffff;
-  position: absolute;
-  font-size: 14px;
-  left: -8px;
-  top: 10px;
-  padding: 3px 10px;
-  z-index: 2;
-  font-weight: bold;
-}
-
-.ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
-  border: 4px solid transparent;
-  border-top: 4px solid #006747 !important;
-  border-right: 4px solid #006747 !important;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
 }
 
 /* Events Calendar Styles */
