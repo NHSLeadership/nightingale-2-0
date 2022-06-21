@@ -516,3 +516,26 @@ function nightingale_no_login_hints( $error ) {
 }
 
 add_filter( 'login_errors', 'nightingale_no_login_hints' );
+
+add_filter(
+	'wp_kses_allowed_html',
+	function ( $tags ) {
+
+		$tags['svg']  = array(
+			'xmlns'      => array(),
+			'fill'       => array(),
+			'viewbox'    => array(),
+			'role'       => array(),
+			'ariahidden' => array(),
+			'focusable'  => array(),
+			'class'      => array(),
+		);
+		$tags['path'] = array(
+			'd'    => array(),
+			'fill' => array(),
+		);
+		return $tags;
+	},
+	10,
+	2
+);
