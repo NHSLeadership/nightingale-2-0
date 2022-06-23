@@ -45,6 +45,8 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.4.3=
 * Style fix for enrol module banners
+* Style fix for for Action link and pagination block elements
+* Style fix for care card legacy block
 
 =2.4.2=
 * Updated NHSUK Frontend to Version 6.1.0
