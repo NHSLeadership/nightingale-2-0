@@ -2,9 +2,9 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.4.2
+Version: 2.4.3
 Requires at least: 5.0
-Tested up to: 5.8
+Tested up to: 6
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
 Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
@@ -9760,17 +9760,29 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
   background: #007f3b !important;
+  color: #ffffff;
+  position: absolute;
+  font-size: 14px;
+  left: -8px;
+  top: 10px;
+  padding: 3px 10px;
+  z-index: 2;
+  font-weight: bold;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
-  border-top: 4px solid #425563;
-  border-right: 4px solid #425563;
+  left: 0;
+  top: 100%;
+  border-top: 8px solid #425563;
+  border-left: 8px solid transparent;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled {
   background: #005eb8;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled:before {
-  border-top: 4px solid #003087;
-  border-right: 4px solid #003087;
+  border-top: 8px solid #003087;
+  content: "";
+  position: absolute;
+  left: 0;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.free {
   background: #007f3b;
@@ -11065,6 +11077,282 @@ section.nhsuk-section:after,
 }
 .nhsuk-promo-group__item .nhsuk-promo {
   margin-bottom: 0;
+}
+
+/* ==========================================================================
+   COMPONENTS / #CARE-CARD
+   ========================================================================== */
+/**
+ * Care card default styles.
+ *
+ * 1. Default care card colour set to blue (non-urgent care card) -
+ *    using the @mixin care-card tools/_mixins.scss.
+ *    The same mixin is used for each care card, setting the background
+ *    colour,text colour and print border width with the variables.
+ * 2. This shows as a solid border in high contrast mode in Windows, so helps
+ *    differentiates care cards from the rest of the content.
+ * 3. 'Random number' for the heading triangle.
+ * 4. 'Random number' for the heading triangle positioning.
+ * 5. 'Random number' used for spacing to compensate for the triangle.
+ * 6. Needed to enable the triangle to show correctly in high contrast mode.
+ * 7. Prevent additional padding on headings
+ * 8. Give the action link icon sufficient contrast when used in the immediate variant
+ */
+.nhsuk-care-card {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  /* [1] */
+  border: 1px solid transparent;
+  /* [2] */
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card {
+    margin-top: 48px;
+  }
+}
+.nhsuk-care-card .nhsuk-card--care__heading-container {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+@media print {
+  .nhsuk-care-card {
+    border: 4px solid #212b32;
+    color: #212b32;
+    page-break-inside: avoid;
+  }
+}
+
+.nhsuk-care-card__heading-container {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  position: relative;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__heading-container {
+    padding-left: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__heading-container {
+    padding-right: 32px;
+  }
+}
+
+.nhsuk-care-card__arrow {
+  bottom: -10px;
+  /* [3] */
+  display: block;
+  height: 20px;
+  /* [3] */
+  left: 30px;
+  /* [4] */
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 20px;
+  /* [3] */
+}
+@media print {
+  .nhsuk-care-card__arrow {
+    display: none;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__arrow {
+    left: 38px;
+    /* [4] */
+  }
+}
+.nhsuk-care-card__arrow:before, .nhsuk-care-card__arrow:after {
+  border: solid 32px #005eb8;
+  /* [3] */
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  /* [6] */
+  width: 0;
+}
+
+.nhsuk-care-card__heading {
+  font-weight: 600;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin: 0;
+  padding-top: 0;
+  /* [7] */
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__heading {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+  }
+}
+@media print {
+  .nhsuk-care-card__heading {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+@media print {
+  .nhsuk-care-card__heading {
+    color: #212b32;
+    fill: #212b32;
+  }
+  .nhsuk-care-card__heading:active, .nhsuk-care-card__heading:focus, .nhsuk-care-card__heading:visited {
+    color: #212b32;
+  }
+}
+
+.nhsuk-care-card__content {
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #ffffff;
+  border: 1px solid #d8dde0;
+  border-top: 0;
+  padding-top: 32px;
+  /* [5] */
+}
+.nhsuk-care-card__content > *:first-child {
+  margin-top: 0;
+}
+.nhsuk-care-card__content > *:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__content {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__content {
+    padding-left: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__content {
+    padding-right: 32px;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-care-card__content {
+    padding-bottom: 32px;
+    padding-top: 36px;
+    /* [5] */
+  }
+}
+@media print {
+  .nhsuk-care-card__content {
+    color: #212b32;
+    fill: #212b32;
+  }
+  .nhsuk-care-card__content:active, .nhsuk-care-card__content:focus, .nhsuk-care-card__content:visited {
+    color: #212b32;
+  }
+}
+
+/**
+ * Card card variations style.
+ *
+ * 1. <a> needs to be white because the background colour is black.
+ */
+.nhsuk-care-card--urgent .nhsuk-card--care__heading-container, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-card--care__heading-container {
+  background-color: #d5281b;
+  color: #ffffff;
+}
+@media print {
+  .nhsuk-care-card--urgent, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent {
+    border: 6px solid #212b32;
+    color: #212b32;
+    page-break-inside: avoid;
+  }
+}
+.nhsuk-care-card--urgent .nhsuk-care-card__arrow:before, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__arrow:before, .nhsuk-care-card--urgent .nhsuk-care-card__arrow:after, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
+}
+
+.nhsuk-care-card--immediate .nhsuk-card--care__heading-container, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-card--care__heading-container {
+  background-color: #d5281b;
+  color: #ffffff;
+}
+@media print {
+  .nhsuk-care-card--immediate, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate {
+    border: 8px solid #212b32;
+    color: #212b32;
+    page-break-inside: avoid;
+  }
+}
+.nhsuk-care-card--immediate .nhsuk-care-card__arrow:before, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__arrow:before, .nhsuk-care-card--immediate .nhsuk-care-card__arrow:after, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
+}
+.nhsuk-care-card--immediate .nhsuk-care-card__content, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__content {
+  background-color: #212b32;
+  border: 0;
+  color: #ffffff;
+}
+.nhsuk-care-card--immediate .nhsuk-care-card__content a, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__content a {
+  color: #ffffff;
+  /* [1] */
+}
+.nhsuk-care-card--immediate .nhsuk-care-card__content a:focus, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__content a:focus {
+  color: #212b32;
+  /* [1] */
+}
+.nhsuk-care-card--immediate .nhsuk-details, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-details,
+.nhsuk-care-card--immediate .nhsuk-details__summary,
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-details__summary {
+  color: #ffffff;
+}
+.nhsuk-care-card--immediate .nhsuk-details__summary:hover, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-details__summary:hover {
+  color: #ffffff;
+}
+.nhsuk-care-card--immediate .nhsuk-details__summary:focus, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-details__summary:focus {
+  color: #212b32;
+}
+.nhsuk-care-card--immediate .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+  fill: #ffffff;
+  /* [8] */
+}
+
+.nhsuk-care-card .nhsuk-care-card__heading-container {
+  background-color: #005eb8;
+  color: #ffffff;
+}
+
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent {
+  /* urgent infocard*/
+}
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__heading-container {
+  background-color: #d5281b;
+}
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__arrow:before, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
+}
+
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate {
+  /* urgent infocard*/
+}
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__content {
+  background-color: #212b32;
+  color: #ffffff;
+}
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__heading-container {
+  background-color: #d5281b;
+}
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__arrow:before, .wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate .nhsuk-care-card__arrow:after {
+  border-color: #d5281b;
 }
 
 .nhsuk-panel-with-label, .nhsuk-panel.is-style-panel-with-label {
