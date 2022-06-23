@@ -7658,17 +7658,29 @@
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
   background: #007f3b !important;
+  color: #ffffff;
+  position: absolute;
+  font-size: 14px;
+  left: -8px;
+  top: 10px;
+  padding: 3px 10px;
+  z-index: 2;
+  font-weight: bold;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
-  border-top: 4px solid #425563;
-  border-right: 4px solid #425563;
+  left: 0;
+  top: 100%;
+  border-top: 8px solid #425563;
+  border-left: 8px solid transparent;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled {
   background: #005eb8;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled:before {
-  border-top: 4px solid #003087;
-  border-right: 4px solid #003087;
+  border-top: 8px solid #003087;
+  content: "";
+  position: absolute;
+  left: 0;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.free {
   background: #007f3b;

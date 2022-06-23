@@ -2,9 +2,9 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.4.2
+Version: 2.4.3
 Requires at least: 5.0
-Tested up to: 5.8
+Tested up to: 6
 Requires PHP: 5.2.4
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
 Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
@@ -9760,17 +9760,29 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price {
   background: #007f3b !important;
+  color: #ffffff;
+  position: absolute;
+  font-size: 14px;
+  left: -8px;
+  top: 10px;
+  padding: 3px 10px;
+  z-index: 2;
+  font-weight: bold;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price:before {
-  border-top: 4px solid #425563;
-  border-right: 4px solid #425563;
+  left: 0;
+  top: 100%;
+  border-top: 8px solid #425563;
+  border-left: 8px solid transparent;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled {
   background: #005eb8;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.ribbon-enrolled:before {
-  border-top: 4px solid #003087;
-  border-right: 4px solid #003087;
+  border-top: 8px solid #003087;
+  content: "";
+  position: absolute;
+  left: 0;
 }
 .ld-course-list-items .ld_course_grid .thumbnail.course .ld_course_grid_price.free {
   background: #007f3b;
