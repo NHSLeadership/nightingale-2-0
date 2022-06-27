@@ -314,18 +314,30 @@ nav.learndash-pager {
 
 	  .ld_course_grid_price {
 		background : $color_nhsuk-green !important;
+		color: $color_nhsuk-white;
+		position: absolute;
+		font-size: 14px;
+		left: -8px;
+		top: 10px;
+		padding: 3px 10px;
+		z-index: 2;
+		font-weight: bold;
 
 		&:before {
-		  border-top   : 4px solid $color_nhsuk-dark-grey;
-		  border-right : 4px solid $color_nhsuk-dark-grey;
+		  left: 0;
+		  top: 100%;
+		  border-top: 8px solid $color_nhsuk-dark-grey;
+		  border-left: 8px solid transparent;
 		}
 
 		&.ribbon-enrolled {
 		  background : $color_nhsuk-blue;
 
 		  &:before {
-			border-top   : 4px solid $color_nhsuk-dark-blue;
-			border-right : 4px solid $color_nhsuk-dark-blue;
+			border-top: 8px solid $color_nhsuk-dark-blue;
+			content: '';
+			position: absolute;
+			left: 0;
 		  }
 		}
 
