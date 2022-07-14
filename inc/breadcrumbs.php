@@ -9,6 +9,8 @@
  * @version   1.1 21st August 2019
  */
 
+$hide_breadcrumbs = false;
+
 /**
  *  Create the breadcrumb
  *
@@ -83,6 +85,12 @@ function nightingale_breadcrumb() {
 	if ( is_home() && is_front_page() ) {
 		return;
 	}
+
+	global $hide_breadcrumbs;
+	if ( $hide_breadcrumbs ) {
+		return;
+	}
+
 	if ( true === nightingale_uncanny_breadcrumb_check() ) {
 		$breadcrumbs = uo_breadcrumbs( false );
 	} else {
@@ -199,4 +207,15 @@ function nightingale_breadcrumb_trail() {
 	}
 
 	return array( apply_filters( 'nightingale_modify_breadcrumb', $trail ), $back_one_level );
+}
+
+/**
+ * Nightingale Breadcrumb hide
+ *
+ * @param boolean $status breadcrumd to hide or not.
+ * @return void
+ */
+function nightingale_hide_breadcrumbs( $status = false ) {
+	global $hide_breadcrumbs;
+	$hide_breadcrumbs = $status;
 }
