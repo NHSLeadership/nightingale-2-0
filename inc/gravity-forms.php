@@ -218,6 +218,9 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$find          = '#<label class="nhsuk-form-group(.*?)>(.*?)</label>#i';
 				$replace       = "<legend class='nhsuk-fieldset__legend$1>$2 $radiolabel</legend>";
 				$field_content = preg_replace( $find, $replace, $field_content );
+
+				$field_content = str_replace( "onfocus=\"jQuery(this).next('input').focus();\" />", "onfocus=\"jQuery(this).next('input').focus();\" /><label class=\"nhsuk-radios__label\" style=\"padding:6px;\"></label>", $field_content );
+				$field_content = str_replace( 'onfocus=\'jQuery(this).prev("input")[0].click()', 'style="width:50%;" onfocus=\'jQuery(this).parent().find("input[type=\"radio\"]").first().prop("checked", true)', $field_content );
 				break;
 
 			// Poll.
