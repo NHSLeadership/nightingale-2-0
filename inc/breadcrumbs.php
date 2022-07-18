@@ -181,7 +181,14 @@ function nightingale_breadcrumb_trail() {
 		$post   = $wp_query->get_queried_object();
 		$trail  = '<li class="nhsuk-breadcrumb__item"><a href="' . esc_url( tribe_get_events_link() ) . '">' . esc_html( tribe_get_event_label_plural() ) . '</a></li>';
 		$trail .= '<li class="nhsuk-breadcrumb__item event">' . esc_html( get_the_title( $post ) ) . '</li>';
-	} elseif ( is_page() ) {
+	} elseif ( is_page() || ! empty(
+		get_post_types(
+			array(
+				'public'   => true,
+				'_builtin' => false,
+			)
+		)[ get_post_type() ]
+	) ) { // Condition added to consider custom post types as well.
 		$post = $wp_query->get_queried_object();
 		if ( 0 !== $post->post_parent ) {
 			$title     = the_title( '', '', false );
