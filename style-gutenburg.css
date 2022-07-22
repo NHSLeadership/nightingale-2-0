@@ -5270,6 +5270,8 @@
 .edit-post-visual-editor input[type=datetime],
 .edit-post-visual-editor input[type=datetime-local],
 .edit-post-visual-editor input[type=color],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
 .edit-post-visual-editor textarea {
   font-weight: 400;
   font-size: 16px;
@@ -5306,6 +5308,8 @@
 .edit-post-visual-editor input[type=datetime],
 .edit-post-visual-editor input[type=datetime-local],
 .edit-post-visual-editor input[type=color],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
 .edit-post-visual-editor textarea {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -5328,6 +5332,8 @@
 .edit-post-visual-editor input[type=datetime],
 .edit-post-visual-editor input[type=datetime-local],
 .edit-post-visual-editor input[type=color],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
 .edit-post-visual-editor textarea {
     font-size: 14pt;
     line-height: 1.15;
@@ -5348,6 +5354,8 @@
 .edit-post-visual-editor input[type=datetime]:focus,
 .edit-post-visual-editor input[type=datetime-local]:focus,
 .edit-post-visual-editor input[type=color]:focus,
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input[type=text]:focus,
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]:focus,
 .edit-post-visual-editor textarea:focus {
   border: 2px solid #212b32;
   box-shadow: inset 0 0 0 2px;
@@ -5370,6 +5378,8 @@
 .edit-post-visual-editor input[type=datetime]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=datetime-local]::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=color]::-webkit-outer-spin-button,
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input[type=text]:focus::-webkit-outer-spin-button,
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]::-webkit-outer-spin-button,
 .edit-post-visual-editor textarea::-webkit-outer-spin-button,
 .edit-post-visual-editor .nhsuk-input::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input)::-webkit-inner-spin-button,
@@ -5387,6 +5397,8 @@
 .edit-post-visual-editor input[type=datetime]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=datetime-local]::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=color]::-webkit-inner-spin-button,
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input[type=text]:focus::-webkit-inner-spin-button,
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]::-webkit-inner-spin-button,
 .edit-post-visual-editor textarea::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -5406,6 +5418,8 @@
 .edit-post-visual-editor input[type=number][type=datetime],
 .edit-post-visual-editor input[type=number][type=datetime-local],
 .edit-post-visual-editor input[type=number][type=color],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus,
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text],
 .edit-post-visual-editor textarea[type=number] {
   /* stylelint-disable-line string-quotes */
   -moz-appearance: textfield;
@@ -6535,10 +6549,6 @@
 }
 .edit-post-visual-editor #primary footer .edit-link a {
   color: #005eb8;
-}
-.edit-post-visual-editor #login #loginform .user-login:focus, .edit-post-visual-editor #login #loginform .user_pass:focus, .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text], .edit-post-visual-editor .nhsuk-input:focus,
-.edit-post-visual-editor textarea:focus, .edit-post-visual-editor .nhsuk-list-panel .comment-respond input:focus[type=text], .edit-post-visual-editor input:focus[type=color], .edit-post-visual-editor input:focus[type=date], .edit-post-visual-editor input:focus[type=datetime-local], .edit-post-visual-editor input:focus[type=datetime], .edit-post-visual-editor input:focus[type=email], .edit-post-visual-editor input:focus[type=month], .edit-post-visual-editor input:focus[type=number], .edit-post-visual-editor input:focus[type=password], .edit-post-visual-editor input:focus[type=range], .edit-post-visual-editor input:focus[type=search]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=tel], .edit-post-visual-editor input:focus[type=text]:not(.nhsuk-search__input), .edit-post-visual-editor input:focus[type=time], .edit-post-visual-editor input:focus[type=url], .edit-post-visual-editor input:focus[type=week], .edit-post-visual-editor textarea:focus {
-  box-shadow: 0 0 0 4px #ffeb3b;
 }
 .edit-post-visual-editor #cookie-notice {
   position: fixed;
