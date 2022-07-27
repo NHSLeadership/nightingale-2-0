@@ -43,6 +43,12 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+=2.4.4=
+* Changes for accessibility issue in the header
+* WordPress breadcrumb fixes and improvements
+* Fix for gravity forms radio button for other options not showing
+* Style changes to make input box to have a thick black border when focused
+
 =2.4.3=
 * Style fix for enrol module banners
 * Style fix for for Action link and pagination block elements

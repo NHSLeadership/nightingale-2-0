@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.4.3
+Version: 2.4.4
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -6928,6 +6928,8 @@ input[type=time],
 input[type=datetime],
 input[type=datetime-local],
 input[type=color],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
 textarea {
   font-weight: 400;
   font-size: 16px;
@@ -6964,6 +6966,8 @@ input[type=time],
 input[type=datetime],
 input[type=datetime-local],
 input[type=color],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
 textarea {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -6986,6 +6990,8 @@ input[type=time],
 input[type=datetime],
 input[type=datetime-local],
 input[type=color],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
 textarea {
     font-size: 14pt;
     line-height: 1.15;
@@ -7006,6 +7012,8 @@ input[type=time]:focus,
 input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 input[type=color]:focus,
+.learndash-wrapper .wpProQuiz_content input[type=text]:focus,
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]:focus,
 textarea:focus {
   border: 2px solid #212b32;
   box-shadow: inset 0 0 0 2px;
@@ -7029,6 +7037,8 @@ input[type=time]::-webkit-outer-spin-button,
 input[type=datetime]::-webkit-outer-spin-button,
 input[type=datetime-local]::-webkit-outer-spin-button,
 input[type=color]::-webkit-outer-spin-button,
+.learndash-wrapper .wpProQuiz_content input[type=text]:focus::-webkit-outer-spin-button,
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]::-webkit-outer-spin-button,
 textarea::-webkit-outer-spin-button,
 .nhsuk-input::-webkit-inner-spin-button,
 input[type=text]:not(.nhsuk-search__input)::-webkit-inner-spin-button,
@@ -7046,6 +7056,8 @@ input[type=time]::-webkit-inner-spin-button,
 input[type=datetime]::-webkit-inner-spin-button,
 input[type=datetime-local]::-webkit-inner-spin-button,
 input[type=color]::-webkit-inner-spin-button,
+.learndash-wrapper .wpProQuiz_content input[type=text]:focus::-webkit-inner-spin-button,
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]::-webkit-inner-spin-button,
 textarea::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -7054,6 +7066,8 @@ textarea::-webkit-inner-spin-button {
 .nhsuk-input[type=number], input[type=number][type=text]:not(.nhsuk-search__input),
 input[type=number][type=search]:not(.nhsuk-search__input),
 input[type=number],
+.learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus,
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text],
 textarea[type=number] {
   /* stylelint-disable-line string-quotes */
   -moz-appearance: textfield;
@@ -8394,10 +8408,6 @@ textarea[type=number] {
 }
 #primary footer .edit-link a {
   color: #005eb8;
-}
-
-#login #loginform .user-login:focus, #login #loginform .user_pass:focus, .learndash-wrapper .wpProQuiz_content input:focus[type=text], .nhsuk-input:focus, .nhsuk-list-panel .comment-respond input:focus[type=text], input:focus[type=color], input:focus[type=date], input:focus[type=datetime-local], input:focus[type=datetime], input:focus[type=email], input:focus[type=month], input:focus[type=number], input:focus[type=password], input:focus[type=range], input:focus[type=search]:not(.nhsuk-search__input), input:focus[type=tel], input:focus[type=text]:not(.nhsuk-search__input), input:focus[type=time], input:focus[type=url], input:focus[type=week], textarea:focus {
-  box-shadow: 0 0 0 4px #ffeb3b;
 }
 
 #cookie-notice {

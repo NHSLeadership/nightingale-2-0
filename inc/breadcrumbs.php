@@ -9,6 +9,8 @@
  * @version   1.1 21st August 2019
  */
 
+$hide_breadcrumbs = false;
+
 /**
  *  Create the breadcrumb
  *
@@ -80,9 +82,15 @@ function nightingale_uncanny_breadcrumb_check() {
  * @return string $breadcrumbs.
  */
 function nightingale_breadcrumb() {
-	if ( is_home() && is_front_page() ) {
+	if ( is_home() || is_front_page() ) {
 		return;
 	}
+
+	global $hide_breadcrumbs;
+	if ( $hide_breadcrumbs ) {
+		return;
+	}
+
 	if ( true === nightingale_uncanny_breadcrumb_check() ) {
 		$breadcrumbs = uo_breadcrumbs( false );
 	} else {
@@ -173,7 +181,14 @@ function nightingale_breadcrumb_trail() {
 		$post   = $wp_query->get_queried_object();
 		$trail  = '<li class="nhsuk-breadcrumb__item"><a href="' . esc_url( tribe_get_events_link() ) . '">' . esc_html( tribe_get_event_label_plural() ) . '</a></li>';
 		$trail .= '<li class="nhsuk-breadcrumb__item event">' . esc_html( get_the_title( $post ) ) . '</li>';
-	} elseif ( is_page() ) {
+	} elseif ( is_page() || ! empty(
+		get_post_types(
+			array(
+				'public'   => true,
+				'_builtin' => false,
+			)
+		)[ get_post_type() ]
+	) ) { // Condition added to consider custom post types as well.
 		$post = $wp_query->get_queried_object();
 		if ( 0 !== $post->post_parent ) {
 			$title     = the_title( '', '', false );
@@ -182,6 +197,9 @@ function nightingale_breadcrumb_trail() {
 			$home_page = get_option( 'page_on_front' );
 			foreach ( $ancestors as $ancestor ) {
 				if ( ( end( $ancestors ) !== $ancestor ) && ( ( $home_page !== $ancestor ) ) ) {
+					if ( (int) $home_page === $ancestor ) {
+						continue;
+					};
 					$trail         .= '<li class="nhsuk-breadcrumb__item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</a></li>';
 					$back_one_level = array(
 						esc_url( get_permalink( $ancestor ) ),
@@ -199,4 +217,15 @@ function nightingale_breadcrumb_trail() {
 	}
 
 	return array( apply_filters( 'nightingale_modify_breadcrumb', $trail ), $back_one_level );
+}
+
+/**
+ * Nightingale Breadcrumb hide
+ *
+ * @param boolean $status breadcrumd to hide or not.
+ * @return void
+ */
+function nightingale_hide_breadcrumbs( $status = false ) {
+	global $hide_breadcrumbs;
+	$hide_breadcrumbs = $status;
 }
