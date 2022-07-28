@@ -20,7 +20,7 @@ if ( is_front_page() ) {
 } else {
 	$archive_paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 }
-$posts_to_show = get_query_var( 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
+$posts_to_show = get_query_var( $namespace . 'postsToShow' ); // phpcs:ignore WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase
 if ( isset( $_POST['cat_filter'] ) && ( ! empty( $_POST['cat_filter'] ) ) ) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$cat_filter   = sanitize_text_field( wp_unslash( $_POST['cat_filter'] ) );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          // phpcs:ignore WordPress.Security.NonceVerification.Missing
 	$categories[] = array(
