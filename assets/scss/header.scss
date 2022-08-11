@@ -45,3 +45,9 @@
 	}
   }
 }
+
+.nhsuk-header__menu-toggle {
+	@include mq($until: tablet) {
+		top: -64px;
+	}
+}
