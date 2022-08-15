@@ -46,6 +46,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 =2.4.5=
 * Fix for horizontal scrollbar
 * Style changes for the Header Menu
+* Fix to limit the number of posts shown to selected amount
 
 =2.4.4=
 * Changes for accessibility issue in the header
