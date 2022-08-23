@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.4.4
+Version: 2.4.5
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -38,6 +38,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  overflow-x: hidden;
 }
 
 /* Sections
@@ -8513,6 +8514,12 @@ a:focus .nhsuk-icon {
 .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle.is-active {
   color: #ffffff;
   border: 0;
+}
+
+@media (max-width: 40.0525em) {
+  .nhsuk-header__menu-toggle {
+    top: -64px;
+  }
 }
 
 /*
