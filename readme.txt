@@ -43,6 +43,9 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+=2.4.6=
+* Fix for crashes caused by template-functions.php
+
 =2.4.5=
 * Fix for horizontal scrollbar
 * Style changes for the Header Menu
