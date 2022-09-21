@@ -62,7 +62,7 @@ if ( has_custom_logo() ) {
 			</a>
 		</div>
 		<div class="nhsuk-header__transactional-service-name">
-			<a href="<?php echo esc_url_raw( get_home_url() ); ?>" class="nhsuk-header__transactional-service-name--link" aria-label="<?php bloginfo( 'name' ); ?> homepage">
+			<a href="<?php echo esc_url_raw( get_home_url() ); ?>" tabindex="-1" class="nhsuk-header__transactional-service-name--link" aria-label="<?php bloginfo( 'name' ); ?> homepage">
 				<?php echo esc_html( $logo_line_1 ); ?>
 			</a>
 		</div>
