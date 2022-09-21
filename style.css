@@ -8517,7 +8517,7 @@ a:focus .nhsuk-icon {
 }
 
 @media (max-width: 40.0525em) {
-  .nhsuk-header__menu-toggle {
+  .nhsuk-header.nhsuk-header--transactional .nhsuk-header__menu-toggle {
     top: -64px;
   }
 }
