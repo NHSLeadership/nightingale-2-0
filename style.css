@@ -8497,7 +8497,7 @@ a:focus .nhsuk-icon {
     padding-left: 7px;
   }
 }
-@media (min-width: 48.0625em) {
+@media (max-width: 40.0525em) {
   .nhsuk-header.nhsuk-header--organisation .nhsuk-header__link {
     max-width: 500px;
     float: left;

@@ -16,7 +16,7 @@
     }
 
     &.nhsuk-header--organisation {
-        @media (min-width : 48.0625em) {
+        @include mq($until: tablet) {
             .nhsuk-header__link {
                 max-width: 500px;
                 float: left;
