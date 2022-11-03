@@ -1,57 +1,76 @@
 .nhsuk-header {
-  &.nhsuk-header--transactional {
-	.nhsuk-header__navigation {
-	  max-width: 100%;
-	}
-  }
-  &.nhsuk-header--organisation {
-	@media (min-width : 48.0625em) {
-	  .nhsuk-header__link {
-		max-width : 500px;
-		float     : left;
-	  }
-	}
-  }
+    &.nhsuk-header--transactional {
+        .nhsuk-header__navigation {
+            max-width: 100%;
+        }
 
-  a.nhsuk-header__link--service {
-	display: contents;
-	float: left;
-  }
+        .nhsuk-header__transactional-service-name {
+            inline-size: 350px;
+            overflow-wrap: break-word;
 
-  // Below here is all the white header variation.
-  &.nhsuk-header--white {
-	.nhsuk-header__search-wrap input[type="search"] {
-	  border : $nhsuk-border-width-form-element solid $nhsuk-border-color;
-	}
+            @include mq($until: tablet) {
+                inline-size: 150px;
+                padding-left: 7px;
+            }
+        }
+    }
 
-	.nhsuk-header__transactional-service-name--link {
-	  color       : $color_nhsuk-blue;
-	  font-weight : $nhsuk-font-bold;
-	}
+    &.nhsuk-header--organisation {
+        @include mq($until: tablet) {
+            .nhsuk-header__link {
+                max-width: 500px;
+                float: left;
+            }
+        }
+    }
+
+    a.nhsuk-header__link--service {
+        display: contents;
+        float: left;
+    }
+
+    // Below here is all the white header variation.
+    &.nhsuk-header--white {
+        .nhsuk-header__search-wrap input[type="search"] {
+            border: $nhsuk-border-width-form-element solid $nhsuk-border-color;
+        }
+
+        .nhsuk-header__transactional-service-name--link {
+            color: $color_nhsuk-blue;
+            font-weight: $nhsuk-font-bold;
+        }
 
 
-	.nhsuk-header__menu {
-	  .nhsuk-header__menu-toggle {
-		border : $nhsuk-border-width-form-element solid $color_nhsuk-blue;
-		color  : $color_nhsuk-blue;
-		&:hover {
-		  color: $color_nhsuk-white;
-		}
-		&.is-active {
-		  color  : $color_nhsuk-white;
-		  border : 0;
-		}
-	  }
-	}
-  }
+        .nhsuk-header__menu {
+            .nhsuk-header__menu-toggle {
+                border: $nhsuk-border-width-form-element solid $color_nhsuk-blue;
+                color: $color_nhsuk-blue;
+
+                &:hover {
+                    color: $color_nhsuk-white;
+                }
+
+                &.is-active {
+                    color: $color_nhsuk-white;
+                    border: 0;
+                }
+            }
+        }
+    }
 }
 
 .nhsuk-header {
-	&.nhsuk-header--transactional {
-		.nhsuk-header__menu-toggle {
-			@include mq($until: tablet) {
-				top: -64px;
-			}
-		}
-	}
+    &.nhsuk-header--transactional {
+        .nhsuk-header__menu-toggle {
+            position: absolute;
+
+            @include mq($until: tablet) {
+                top: auto;
+            }
+        }
+    }
+
+    .nhsuk-header__menu {
+        position: relative;
+    }
 }

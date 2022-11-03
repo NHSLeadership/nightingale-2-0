@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.4.7
+Version: 2.4.8
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -8487,7 +8487,17 @@ a:focus .nhsuk-icon {
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__navigation {
   max-width: 100%;
 }
-@media (min-width: 48.0625em) {
+.nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name {
+  inline-size: 350px;
+  overflow-wrap: break-word;
+}
+@media (max-width: 40.0525em) {
+  .nhsuk-header.nhsuk-header--transactional .nhsuk-header__transactional-service-name {
+    inline-size: 150px;
+    padding-left: 7px;
+  }
+}
+@media (max-width: 40.0525em) {
   .nhsuk-header.nhsuk-header--organisation .nhsuk-header__link {
     max-width: 500px;
     float: left;
@@ -8516,10 +8526,16 @@ a:focus .nhsuk-icon {
   border: 0;
 }
 
+.nhsuk-header.nhsuk-header--transactional .nhsuk-header__menu-toggle {
+  position: absolute;
+}
 @media (max-width: 40.0525em) {
   .nhsuk-header.nhsuk-header--transactional .nhsuk-header__menu-toggle {
-    top: -64px;
+    top: auto;
   }
+}
+.nhsuk-header .nhsuk-header__menu {
+  position: relative;
 }
 
 /*
