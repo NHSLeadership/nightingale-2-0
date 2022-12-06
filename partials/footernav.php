@@ -21,8 +21,9 @@ if ( has_nav_menu( 'footer-menu' ) ) { // Check to see if there is a footer menu
 			<?php
 
 			foreach ( $menu_item as $nav_item ) {
-
-				echo '<li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="' . esc_url( $nav_item->url ) . '">' . esc_html( $nav_item->title ) . '</a></li>';
+				echo '<li class="nhsuk-footer__list-item"><a ' .
+				( ! empty( $nav_item->xfn ) ? 'rel="' . esc_html( $nav_item->xfn ) . '"' : '' )
+				. 'class="nhsuk-footer__list-item-link" href="' . esc_url( $nav_item->url ) . '">' . esc_html( $nav_item->title ) . '</a></li>';
 
 			}
 			// below div is a horrible hacky workaround to stop safari from jumping links all over the show on hover. As and when upstream library gets fixed, this div can come out.

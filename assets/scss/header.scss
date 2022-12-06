@@ -5,12 +5,12 @@
         }
 
         .nhsuk-header__transactional-service-name {
-            inline-size: 350px;
+            inline-size: 300px;
             overflow-wrap: break-word;
+            padding-left: 7px;
 
             @include mq($until: tablet) {
                 inline-size: 150px;
-                padding-left: 7px;
             }
         }
     }
@@ -63,10 +63,12 @@
     &.nhsuk-header--transactional {
         .nhsuk-header__menu-toggle {
             position: absolute;
-
             @include mq($until: tablet) {
                 top: auto;
             }
+            @include mq($from: tablet) {
+                left: -76px;
+            }    
         }
     }
 
