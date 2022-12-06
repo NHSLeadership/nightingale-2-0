@@ -45,6 +45,9 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.4.9=
 * Removes composer dependency
+* Fix search and menu button style in tablets
+* Fix horizontal scrolling in category pages
+* Fix for footer menu doesn't output link relationship
 
 =2.4.8=
 * Header style improvements
