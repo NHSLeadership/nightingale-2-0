@@ -39,12 +39,13 @@ get_header();
 
 									<?php
 									if ( has_post_thumbnail() ) :
-										the_post_thumbnail( 'thumbnail', [ 'class' => 'nhsuk-card__img' ] );
+										$image_proportion = get_theme_mod( 'blog_image_display', 'default' );
+										the_post_thumbnail( $image_proportion, [ 'class' => 'nhsuk-card__img' ] );
 									else :
 										$fallback = get_theme_mod( 'blog_fallback' );
-										if ( $fallback ) {
+										if ( $fallback ) :
 											echo wp_get_attachment_image( $fallback, 'thumbnail', false, [ 'class' => 'nhsuk-card__img' ] );
-										}
+										endif;
 									endif;
 									?>
 									<div class="nhsuk-card__content">
@@ -57,8 +58,10 @@ get_header();
 										<p class="nhsuk-card__description">
 											<?php
 											$excerpt = get_the_excerpt();
-											$keys    = explode( ' ', $s );
-											$excerpt = preg_replace( '/(' . implode( '|', $keys ) . ')/iu', '<span class="search-terms">\0</span>', $excerpt );
+											if ( ( str_contains( $excerpt, $s ) ) && ( !empty( $s ) ) ) :
+												$keys    = explode( ' ', $s );
+												$excerpt = preg_replace( '/(' . implode( '|', $keys ) . ')/iu', '<span class="search-terms">\0</span>', $excerpt );
+											endif;
 											echo $excerpt; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 											?>
 										</p>
