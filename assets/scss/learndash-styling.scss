@@ -1,4 +1,4 @@
-.learndash-wrapper {
+.learndash-wrapper, .learndash-wrapper .learndash-wrap {
 
   .learndash_join_button {
     margin-top: 25px;
@@ -378,4 +378,8 @@ nav.learndash-pager {
 	.featured-top {
 		display: none;
 	}
+}
+
+.learndash-wrapper .ld-expand-button {
+	@extend .nhsuk-button;
 }

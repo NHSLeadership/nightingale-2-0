@@ -3748,7 +3748,7 @@ b {
  * 3. Use a pseudo element to expand the click target area to include the
  *    button's shadow as well, in case users try to click it.
  */
-.nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+.nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -3775,40 +3775,40 @@ b {
   /* 4 */
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
   }
 }
 @media print {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     margin-bottom: 36px;
   }
 }
 @media (max-width: 40.0525em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     padding: 8px 16px;
   }
 }
-.nhsuk-button:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .learndash-wrapper .ld-icon.ld-primary-background:link, .learndash-wrapper .ld-expand-button:link, .tippy-popper .tippy-content .gv-approval-toggle:link, .nhsuk-button:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .learndash-wrapper .ld-icon.ld-primary-background:visited, .learndash-wrapper .ld-expand-button:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, .nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active, .nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.nhsuk-button:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .learndash-wrapper .ld-icon.ld-primary-background:link, .learndash-wrapper .ld-expand-button:link, .learndash-wrapper .learndash-wrap .ld-expand-button:link, .tippy-popper .tippy-content .gv-approval-toggle:link, .nhsuk-button:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .learndash-wrapper .ld-icon.ld-primary-background:visited, .learndash-wrapper .ld-expand-button:visited, .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, .nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .learndash-wrapper .learndash-wrap .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active, .nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.nhsuk-button::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner, .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .ld-expand-button::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
+.nhsuk-button::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner, .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .ld-expand-button::-moz-focus-inner, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .learndash-wrap .ld-expand-button::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
   background-color: #00662f;
 }
-.nhsuk-button:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus, .learndash-wrapper .ld-icon.ld-primary-background:focus, .learndash-wrapper .ld-expand-button:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus {
+.nhsuk-button:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus, .learndash-wrapper .ld-icon.ld-primary-background:focus, .learndash-wrapper .ld-expand-button:focus, .learndash-wrapper .learndash-wrap .ld-expand-button:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
@@ -3820,13 +3820,13 @@ b {
 .nhsuk-button:focus:visited:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited:active, .learndash-wrapper .ld-icon.ld-primary-background:focus:visited:active, .learndash-wrapper .ld-expand-button:focus:visited:active, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
   color: #ffffff;
 }
-.nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active {
+.nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .learndash-wrapper .learndash-wrap .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.nhsuk-button::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before, .learndash-wrapper .ld-icon.ld-primary-background::before, .learndash-wrapper .ld-expand-button::before, .tippy-popper .tippy-content .gv-approval-toggle::before {
+.nhsuk-button::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before, .learndash-wrapper .ld-icon.ld-primary-background::before, .learndash-wrapper .ld-expand-button::before, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::before, .learndash-wrapper .learndash-wrap .ld-expand-button::before, .tippy-popper .tippy-content .gv-approval-toggle::before {
   background: transparent;
   bottom: -6px;
   content: "";
@@ -3836,14 +3836,14 @@ b {
   right: -2px;
   top: -2px;
 }
-.nhsuk-button:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before, .learndash-wrapper .ld-icon.ld-primary-background:active::before, .learndash-wrapper .ld-expand-button:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before {
+.nhsuk-button:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before, .learndash-wrapper .ld-icon.ld-primary-background:active::before, .learndash-wrapper .ld-expand-button:active::before, .learndash-wrapper .learndash-wrap .ld-expand-button:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before {
   top: -6px;
 }
 
 /**
  * Button variations
  */
-.nhsuk-button--secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, .nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button {
+.nhsuk-button--secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, .nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button {
   background-color: #4c6272;
   box-shadow: 0 4px 0 #263139;
 }
@@ -3866,7 +3866,7 @@ b {
   background-color: #4c6272;
 }
 
-.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button {
+.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button {
   background-color: #ffffff;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
@@ -3909,11 +3909,13 @@ b {
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap,
 .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background,
 .learndash-wrapper [disabled=disabled].ld-expand-button,
+.learndash-wrapper .learndash-wrap [disabled=disabled].ld-expand-button,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle,
 .nhsuk-button[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap,
 .learndash-wrapper [disabled].ld-icon.ld-primary-background,
 .learndash-wrapper [disabled].ld-expand-button,
+.learndash-wrapper .learndash-wrap [disabled].ld-expand-button,
 .tippy-popper .tippy-content [disabled].gv-approval-toggle {
   background-color: #007f3b;
   opacity: 0.5;
@@ -8118,7 +8120,7 @@ textarea[type=number] {
 /* ==========================================================================
    #TAG
    ========================================================================== */
-.nhsuk-tag, .learndash-wrapper .ld-status {
+.nhsuk-tag, .learndash-wrapper .ld-status, .learndash-wrapper .learndash-wrap .ld-status {
   font-weight: 600;
   font-size: 14px;
   font-size: 0.875rem;
@@ -8136,14 +8138,14 @@ textarea[type=number] {
   text-decoration: none;
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-tag, .learndash-wrapper .ld-status {
+  .nhsuk-tag, .learndash-wrapper .ld-status, .learndash-wrapper .learndash-wrap .ld-status {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1;
   }
 }
 @media print {
-  .nhsuk-tag, .learndash-wrapper .ld-status {
+  .nhsuk-tag, .learndash-wrapper .ld-status, .learndash-wrapper .learndash-wrap .ld-status {
     font-size: 14pt;
     line-height: 1;
   }
@@ -8151,25 +8153,25 @@ textarea[type=number] {
 
 /* Colour variants
   ========================================================================== */
-.nhsuk-tag--white, .nhsuk-tag.is-style-white, .learndash-wrapper .is-style-white.ld-status {
+.nhsuk-tag--white, .nhsuk-tag.is-style-white, .learndash-wrapper .is-style-white.ld-status, .learndash-wrapper .learndash-wrap .is-style-white.ld-status {
   background-color: #ffffff;
   border-color: #212b32;
   color: #212b32;
 }
 
-.nhsuk-tag--grey, .nhsuk-tag.is-style-grey, .learndash-wrapper .is-style-grey.ld-status {
+.nhsuk-tag--grey, .nhsuk-tag.is-style-grey, .learndash-wrapper .is-style-grey.ld-status, .learndash-wrapper .learndash-wrap .is-style-grey.ld-status {
   background-color: #dbe0e3;
   border-color: #354550;
   color: #354550;
 }
 
-.nhsuk-tag--green, .nhsuk-tag.is-style-green, .learndash-wrapper .is-style-green.ld-status {
+.nhsuk-tag--green, .nhsuk-tag.is-style-green, .learndash-wrapper .is-style-green.ld-status, .learndash-wrapper .learndash-wrap .is-style-green.ld-status {
   background-color: #cce5d8;
   border-color: #004c23;
   color: #004c23;
 }
 
-.nhsuk-tag--aqua-green, .nhsuk-tag.is-style-aqua-green, .learndash-wrapper .is-style-aqua-green.ld-status {
+.nhsuk-tag--aqua-green, .nhsuk-tag.is-style-aqua-green, .learndash-wrapper .is-style-aqua-green.ld-status, .learndash-wrapper .learndash-wrap .is-style-aqua-green.ld-status {
   background-color: #ccedeb;
   border-color: #00524d;
   color: #00524d;
@@ -8181,31 +8183,31 @@ textarea[type=number] {
   color: #004281;
 }
 
-.nhsuk-tag--purple, .nhsuk-tag.is-style-purple, .learndash-wrapper .is-style-purple.ld-status {
+.nhsuk-tag--purple, .nhsuk-tag.is-style-purple, .learndash-wrapper .is-style-purple.ld-status, .learndash-wrapper .learndash-wrap .is-style-purple.ld-status {
   background-color: #d6cce3;
   border-color: #240050;
   color: #240050;
 }
 
-.nhsuk-tag--pink, .nhsuk-tag.is-style-pink, .learndash-wrapper .is-style-pink.ld-status {
+.nhsuk-tag--pink, .nhsuk-tag.is-style-pink, .learndash-wrapper .is-style-pink.ld-status, .learndash-wrapper .learndash-wrap .is-style-pink.ld-status {
   background-color: #efd3e3;
   border-color: #57133a;
   color: #57133a;
 }
 
-.nhsuk-tag--red, .nhsuk-tag.is-style-red, .learndash-wrapper .is-style-red.ld-status {
+.nhsuk-tag--red, .nhsuk-tag.is-style-red, .learndash-wrapper .is-style-red.ld-status, .learndash-wrapper .learndash-wrap .is-style-red.ld-status {
   background-color: #f7d4d1;
   border-color: #6b140e;
   color: #6b140e;
 }
 
-.nhsuk-tag--orange, .nhsuk-tag.is-style-orange, .learndash-wrapper .is-style-orange.ld-status {
+.nhsuk-tag--orange, .nhsuk-tag.is-style-orange, .learndash-wrapper .is-style-orange.ld-status, .learndash-wrapper .learndash-wrap .is-style-orange.ld-status {
   background-color: #ffdc8e;
   border-color: #4d3708;
   color: #4d3708;
 }
 
-.nhsuk-tag--yellow, .nhsuk-tag.is-style-yellow, .learndash-wrapper .is-style-yellow.ld-status, .learndash-wrapper .ld-status.ld-status-waiting {
+.nhsuk-tag--yellow, .nhsuk-tag.is-style-yellow, .learndash-wrapper .is-style-yellow.ld-status, .learndash-wrapper .learndash-wrap .is-style-yellow.ld-status, .learndash-wrapper .ld-status.ld-status-waiting, .learndash-wrapper .learndash-wrap .ld-status.ld-status-waiting {
   background-color: #fff59d;
   border-color: #4d4712;
   color: #4d4712;
@@ -8727,7 +8729,7 @@ button + .button {
 .nhsuk-cat-filter .nhsuk-cat-reset {
   float: right;
 }
-.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap, .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
+.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap, .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
 
@@ -9561,67 +9563,67 @@ li.nhsuk-pagination-item--next {
   border-bottom: none;
 }
 
-.learndash-wrapper .learndash_join_button {
+.learndash-wrapper .learndash_join_button, .learndash-wrapper .learndash-wrap .learndash_join_button {
   margin-top: 25px;
 }
-.learndash-wrapper .ld-primary-color {
+.learndash-wrapper .ld-primary-color, .learndash-wrapper .learndash-wrap .ld-primary-color {
   color: #ffffff;
 }
-.learndash-wrapper a.ld-login-text.ld-login-button:hover {
+.learndash-wrapper a.ld-login-text.ld-login-button:hover, .learndash-wrapper .learndash-wrap a.ld-login-text.ld-login-button:hover {
   color: #ffffff !important;
 }
-.learndash-wrapper #ld-user-register {
+.learndash-wrapper #ld-user-register, .learndash-wrapper .learndash-wrap #ld-user-register {
   color: #005eb8 !important;
 }
-.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon {
+.learndash-wrapper .ld-expand-button.ld-button-alternate .ld-icon, .learndash-wrapper .learndash-wrap .ld-expand-button.ld-button-alternate .ld-icon {
   color: #005eb8 !important;
 }
-.learndash-wrapper a {
+.learndash-wrapper a, .learndash-wrapper .learndash-wrap a {
   text-decoration: underline;
 }
-.learndash-wrapper a:hover {
+.learndash-wrapper a:hover, .learndash-wrapper .learndash-wrap a:hover {
   color: #212b32 !important;
   text-decoration: none;
 }
-.learndash-wrapper input[type=submit].learndash_mark_complete_button {
+.learndash-wrapper input[type=submit].learndash_mark_complete_button, .learndash-wrapper .learndash-wrap input[type=submit].learndash_mark_complete_button {
   padding-right: 48px;
 }
-.learndash-wrapper .sfwd-mark-complete::after {
+.learndash-wrapper .sfwd-mark-complete::after, .learndash-wrapper .learndash-wrap .sfwd-mark-complete::after {
   top: 33%;
 }
-.learndash-wrapper .ld-status {
+.learndash-wrapper .ld-status, .learndash-wrapper .learndash-wrap .ld-status {
   border-radius: 0;
   line-height: 1;
   text-transform: none;
 }
-.learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-label {
+.learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-label, .learndash-wrapper .learndash-wrap .ld-course-status.ld-course-status-not-enrolled .ld-course-status-label {
   font-size: inherit;
   font-weight: inherit;
   color: #212b32;
 }
-.learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-price {
+.learndash-wrapper .ld-course-status.ld-course-status-not-enrolled .ld-course-status-price, .learndash-wrapper .learndash-wrap .ld-course-status.ld-course-status-not-enrolled .ld-course-status-price {
   color: #212b32;
 }
-.learndash-wrapper .ld-breadcrumbs .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-course-status .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-item-details .ld-course-status-segment .ld-course-status-content {
+.learndash-wrapper .ld-breadcrumbs .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-course-status .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .ld-item-details .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .learndash-wrap .ld-breadcrumbs .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .learndash-wrap .ld-course-status .ld-course-status-segment .ld-course-status-content, .learndash-wrapper .learndash-wrap .ld-item-details .ld-course-status-segment .ld-course-status-content {
   position: relative;
 }
-.learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-lesson-details {
+.learndash-wrapper .ld-topic-list.ld-table-list .ld-table-list-lesson-details, .learndash-wrapper .learndash-wrap .ld-topic-list.ld-table-list .ld-table-list-lesson-details {
   font-size: inherit;
   line-height: inherit;
 }
-.learndash-wrapper .ld-tab-content, .learndash-wrapper .ld-table-list {
+.learndash-wrapper .ld-tab-content, .learndash-wrapper .ld-table-list, .learndash-wrapper .learndash-wrap .ld-tab-content, .learndash-wrapper .learndash-wrap .ld-table-list {
   margin: 0 16px;
 }
-.learndash-wrapper .ld-tab-content .ld-table-list-header, .learndash-wrapper .ld-table-list .ld-table-list-header {
+.learndash-wrapper .ld-tab-content .ld-table-list-header, .learndash-wrapper .ld-table-list .ld-table-list-header, .learndash-wrapper .learndash-wrap .ld-tab-content .ld-table-list-header, .learndash-wrapper .learndash-wrap .ld-table-list .ld-table-list-header {
   background-color: #005eb8;
 }
-.learndash-wrapper .ld-tab-content .ld-table-list-lesson-details .ld-lesson-list-progress, .learndash-wrapper .ld-table-list .ld-table-list-lesson-details .ld-lesson-list-progress {
+.learndash-wrapper .ld-tab-content .ld-table-list-lesson-details .ld-lesson-list-progress, .learndash-wrapper .ld-table-list .ld-table-list-lesson-details .ld-lesson-list-progress, .learndash-wrapper .learndash-wrap .ld-tab-content .ld-table-list-lesson-details .ld-lesson-list-progress, .learndash-wrapper .learndash-wrap .ld-table-list .ld-table-list-lesson-details .ld-lesson-list-progress {
   text-transform: none;
 }
-.learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before {
+.learndash-wrapper .ld-item-list .ld-item-search .ld-closer:before, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-search .ld-closer:before {
   content: "";
 }
-.learndash-wrapper .ld-item-list .ld-item-search .ld-closer:after {
+.learndash-wrapper .ld-item-list .ld-item-search .ld-closer:after, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-search .ld-closer:after {
   content: "x";
   margin-left: 0.25em;
   border-radius: 50%;
@@ -9633,11 +9635,11 @@ li.nhsuk-pagination-item--next {
   color: #768692;
   line-height: 0.9rem;
 }
-.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper {
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-search .ld-item-search-wrapper {
   background: #ffffff;
   border: 2px solid #425563;
 }
-.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper:before {
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper:before, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-search .ld-item-search-wrapper:before {
   width: 0;
   height: 0;
   border-left: 24px solid #e8edee;
@@ -9647,43 +9649,43 @@ li.nhsuk-pagination-item--next {
   right: 260px;
   top: -17px;
 }
-.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name {
+.learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name {
   top: -nhsuk-spacing(5);
 }
-.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
   border: 2px solid transparent;
 }
-.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title {
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title {
   line-height: 40px;
 }
-.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
   background: transparent;
   border: 2px solid #ffeb3b;
 }
-.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-status-incomplete.ld-status-icon {
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-status-incomplete.ld-status-icon, .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-status-incomplete.ld-status-icon {
   border: 2px solid #212b32;
   content: "✓";
 }
-.learndash-wrapper .ld-progress {
+.learndash-wrapper .ld-progress, .learndash-wrapper .learndash-wrap .ld-progress {
   margin: 1em 0;
 }
-.learndash-wrapper .ld-modal {
+.learndash-wrapper .ld-modal, .learndash-wrapper .learndash-wrap .ld-modal {
   -webkit-transition: none !important;
   transition: none !important;
 }
-.learndash-wrapper .ld-login-modal {
+.learndash-wrapper .ld-login-modal, .learndash-wrapper .learndash-wrap .ld-login-modal {
   border: 4px solid #f0f4f5;
 }
-.learndash-wrapper .ld-login-modal input[type=text], .learndash-wrapper .ld-login-modal input[type=password] {
+.learndash-wrapper .ld-login-modal input[type=text], .learndash-wrapper .ld-login-modal input[type=password], .learndash-wrapper .learndash-wrap .ld-login-modal input[type=text], .learndash-wrapper .learndash-wrap .ld-login-modal input[type=password] {
   background: #ffffff;
   border-color: #4c6272;
 }
-.learndash-wrapper .ld-login-modal label {
+.learndash-wrapper .ld-login-modal label, .learndash-wrapper .learndash-wrap .ld-login-modal label {
   text-align: left;
   color: #ffffff;
   margin-bottom: 8px;
 }
-.learndash-wrapper .ld-login-modal input[type=checkbox] {
+.learndash-wrapper .ld-login-modal input[type=checkbox], .learndash-wrapper .learndash-wrap .ld-login-modal input[type=checkbox] {
   cursor: pointer;
   height: 32px;
   left: 0;
@@ -9693,37 +9695,37 @@ li.nhsuk-pagination-item--next {
   top: 8px;
   margin-right: 16px;
 }
-.learndash-wrapper .ld-login-modal .ld-login-modal-register {
+.learndash-wrapper .ld-login-modal .ld-login-modal-register, .learndash-wrapper .learndash-wrap .ld-login-modal .ld-login-modal-register {
   background: #003087;
 }
-.learndash-wrapper .ld-login-modal .ld-login-modal-register #registerform {
+.learndash-wrapper .ld-login-modal .ld-login-modal-register #registerform, .learndash-wrapper .learndash-wrap .ld-login-modal .ld-login-modal-register #registerform {
   color: #ffffff;
   font-size: 16px;
 }
-.learndash-wrapper .ld-login-modal .ld-login-modal-register #registerform #wp-submit {
+.learndash-wrapper .ld-login-modal .ld-login-modal-register #registerform #wp-submit, .learndash-wrapper .learndash-wrap .ld-login-modal .ld-login-modal-register #registerform #wp-submit {
   border-radius: 4px;
   border-width: 0;
   background: #ffffff;
   color: #212b32;
 }
-.learndash-wrapper .ld-login-modal .ld-login-modal-login .ld-modal-heading {
+.learndash-wrapper .ld-login-modal .ld-login-modal-login .ld-modal-heading, .learndash-wrapper .learndash-wrap .ld-login-modal .ld-login-modal-login .ld-modal-heading {
   color: #003087;
 }
-.learndash-wrapper .ld-login-modal .ld-login-modal-login #loginform .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-login #loginform .login-password::before {
+.learndash-wrapper .ld-login-modal .ld-login-modal-login #loginform .login-username::before, .learndash-wrapper .ld-login-modal .ld-login-modal-login #loginform .login-password::before, .learndash-wrapper .learndash-wrap .ld-login-modal .ld-login-modal-login #loginform .login-username::before, .learndash-wrapper .learndash-wrap .ld-login-modal .ld-login-modal-login #loginform .login-password::before {
   display: none;
 }
-.learndash-wrapper .ld-login-modal input[type=submit] {
+.learndash-wrapper .ld-login-modal input[type=submit], .learndash-wrapper .learndash-wrap .ld-login-modal input[type=submit] {
   margin-top: 8px;
   background: #007f3b;
   border-radius: 4px;
   font-size: 1rem;
 }
-.learndash-wrapper .ld-login-modal .ld-button.ld-button-reverse.ld-js-register-account {
+.learndash-wrapper .ld-login-modal .ld-button.ld-button-reverse.ld-js-register-account, .learndash-wrapper .learndash-wrap .ld-login-modal .ld-button.ld-button-reverse.ld-js-register-account {
   color: #212b32;
   border-radius: 4px;
   box-shadow: 0 4px 0 #00401e;
 }
-.learndash-wrapper .nhsuk-mark-complete {
+.learndash-wrapper .nhsuk-mark-complete, .learndash-wrapper .learndash-wrap .nhsuk-mark-complete {
   padding-right: 32px;
 }
 
@@ -9741,7 +9743,7 @@ nav.learndash-pager ul li {
   float: left;
   margin-right: 16px;
 }
-nav.learndash-pager ul li a.nhsuk-tag, nav.learndash-pager ul li .learndash-wrapper a.ld-status, .learndash-wrapper nav.learndash-pager ul li a.ld-status {
+nav.learndash-pager ul li a.nhsuk-tag, nav.learndash-pager ul li .learndash-wrapper a.ld-status, .learndash-wrapper nav.learndash-pager ul li a.ld-status, nav.learndash-pager ul li .learndash-wrapper .learndash-wrap a.ld-status, .learndash-wrapper .learndash-wrap nav.learndash-pager ul li a.ld-status {
   color: #ffffff;
 }
 nav.learndash-pager ul li a.nhsuk-tag.focus-visible, nav.learndash-pager ul li .learndash-wrapper a.focus-visible.ld-status, .learndash-wrapper nav.learndash-pager ul li a.focus-visible.ld-status {
@@ -10605,11 +10607,11 @@ figure.is-style-nhsuk-table-responsive td {
 // @version 1.0 22nd July 2019
 */
 /* button extension*/
-.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button {
+.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button {
   /* secondary button style*/
 }
 
-.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button {
+.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button {
   /* reverse button style*/
 }
 
