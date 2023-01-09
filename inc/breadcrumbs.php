@@ -36,7 +36,11 @@ function nightingale_category_parents( $id, $link = false, $separator = '', $nic
 	}
 	if ( $parent->parent && ( $parent->parent !== $parent->term_id ) && ! in_array( $parent->parent, $visited, true ) ) {
 		$visited[] = $parent->parent;
-		$chain    .= '<li class="nhsuk-breadcrumb__item"><a itemprop="item" href="' . get_category_parents( $parent->parent, $link, $separator, $nicename ) . '</li>' . $separator;
+		if ( $link ) {
+			$chain .= '<li class="nhsuk-breadcrumb__item">' . get_category_parents( $parent->parent, $link, $separator, $nicename ) . '</li>' . $separator;
+		} else {
+			$chain .= '<li class="nhsuk-breadcrumb__item"><a itemprop="item" href="' . get_category_parents( $parent->parent, $link, $separator, $nicename ) . '">' . $name . '</a></li>' . $separator;
+		}
 	}
 	if ( $iscrumb ) {
 		$chain .= '<li class="nhsuk-breadcrumb__item"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '">' . $name . '</a></li>' . $separator;
