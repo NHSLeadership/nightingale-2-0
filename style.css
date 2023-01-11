@@ -9445,6 +9445,9 @@ li.nhsuk-pagination-item--next {
   vertical-align: top;
   width: auto;
 }
+.gform_wrapper .gform_page_footer > .nhsuk-button, .gform_wrapper #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_page_footer > .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer > .cn-button.bootstrap, .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-icon.ld-primary-background, .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-icon.ld-primary-background, .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-expand-button, .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-expand-button, .gform_wrapper .learndash-wrapper .learndash-wrap .gform_page_footer > .ld-icon.ld-primary-background, .gform_wrapper .learndash-wrapper .learndash-wrap .gform_page_footer > .ld-expand-button, .gform_wrapper .tippy-popper .tippy-content .gform_page_footer > .gv-approval-toggle, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer > .gv-approval-toggle {
+  font-size: 19px !important;
+}
 .gform_wrapper #ui-datepicker-div {
   border: 2px solid #005eb8;
   border-radius: 4px;
