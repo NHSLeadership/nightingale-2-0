@@ -7058,6 +7058,9 @@
   vertical-align: top;
   width: auto;
 }
+.edit-post-visual-editor .gform_wrapper .gform_page_footer > .nhsuk-button, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-icon.ld-primary-background, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-expand-button, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .learndash-wrap .gform_page_footer > .ld-icon.ld-primary-background, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .learndash-wrap .gform_page_footer > .ld-expand-button, .edit-post-visual-editor .gform_wrapper .tippy-popper .tippy-content .gform_page_footer > .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .gform_wrapper .gform_page_footer > .gv-approval-toggle {
+  font-size: 19px !important;
+}
 .edit-post-visual-editor .gform_wrapper #ui-datepicker-div {
   border: 2px solid #005eb8;
   border-radius: 4px;
