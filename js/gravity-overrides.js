@@ -1,3 +1,7 @@
+jQuery(window).on('load', function () {
+  jQuery(".gform_last_page_button").removeClass('gform_last_page_button').addClass('nhsuk-button nhsuk-button--secondary');
+});
+
 if (typeof gForm !== 'undefined') {
   gform.addFilter('gform_file_upload_markup', function (html, file, up, strings, imagesUrl) {
     var formId = up.settings.multipart_params.form_id,

@@ -50,9 +50,11 @@ add_filter(
 		// Style the submit button.
 		$form_string = str_replace( 'gform_button', 'nhsuk-button', $form_string );
 		// Style the next button.
-		$form_string = str_replace( 'gform_next_button button', 'nhsuk-button', $form_string );
+		$form_string = str_replace( 'gform_next_button gform-theme-button button', 'nhsuk-button', $form_string );
 		// Style the previous button.
-		$form_string = str_replace( 'gform_previous_button button', 'nhsuk-button nhsuk-button--reverse', $form_string );
+		$form_string = str_replace( 'gform_previous_button gform-theme-button', 'nhsuk-button nhsuk-button--reverse', $form_string );
+		// Style last page button.
+		$form_string = str_replace( 'button gform_button gform_last_page_button', 'nhsuk-button nhsuk-button--reverse', $form_string );
 		// Style the save and continue functionality.
 		$form_string    = str_replace( 'gform_save_link button', 'nhsuk-button nhsuk-button--secondary', $form_string );
 		$form_string    = str_replace( 'gform_save_link', 'nhsuk-button nhsuk-button--secondary', $form_string );
@@ -70,7 +72,7 @@ add_filter(
 
 // Use gform_field_content to style individual fields.
 // See https://docs.gravityforms.com/gform_field_content.
-add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 12, 5 );
+add_filter( 'gform_field_content', 'nightingale_clean_gf_inputs', 100, 5 );
 
 /**
  * Clean Gravity Forms inputs out
