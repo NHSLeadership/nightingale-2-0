@@ -1,5 +1,7 @@
 jQuery(window).on('load', function () {
-  jQuery(".gform_last_page_button").removeClass('gform_last_page_button').addClass('nhsuk-button nhsuk-button--secondary');
+  if (jQuery(".gform_last_page_button")[0]) {
+    jQuery(".gform_last_page_button").removeClass('gform_last_page_button').addClass('nhsuk-button nhsuk-button--secondary');
+  }
 });
 
 if (typeof gForm !== 'undefined') {
