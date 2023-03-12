@@ -193,7 +193,7 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$field_content = str_replace( '</li', '</div', $field_content );
 				$field_content = str_replace( 'gfield-choice-input', 'gfield-choice-input nhsuk-checkboxes__input', $field_content );
 				$field_content = preg_replace( '#<label for(.*?)>(.*?)</label>#i', "<label for$1 class='nhsuk-label nhsuk-checkboxes__label'>$2</label>", $field_content );
-
+				$field_content = str_replace( 'gform-field-label', 'nhsuk-label nhsuk-checkboxes__label', $field_content );
 				// Style <input>s.
 				$field_content = str_replace( "type='checkbox'", "type='checkbox' class='nhsuk-checkboxes__input'", $field_content );
 				break;
