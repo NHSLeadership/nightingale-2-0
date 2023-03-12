@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.4.12=
 * Button style improvement for gravity forms 2.7
+* Fix for checkbox rendering in gravity forms 2.7
 
 =2.4.11=
 * Button style fix for gravity forms with legacy markup enabled
