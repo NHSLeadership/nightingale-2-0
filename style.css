@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.4.11
+Version: 2.4.12
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -9566,6 +9566,11 @@ li.nhsuk-pagination-item--next {
   border-bottom: none;
 }
 
+@media only screen and (max-width: 641px) {
+  .gform_legacy_markup_wrapper input:not([type=radio]):not([type=checkbox]):not([type=image]):not([type=file]) {
+    line-height: 28px !important;
+  }
+}
 .learndash-wrapper .learndash_join_button, .learndash-wrapper .learndash-wrap .learndash_join_button {
   margin-top: 25px;
 }
