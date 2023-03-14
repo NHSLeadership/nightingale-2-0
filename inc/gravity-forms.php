@@ -50,13 +50,13 @@ add_filter(
 		// Style the submit button.
 		$form_string = str_replace( 'gform_button', 'nhsuk-button', $form_string );
 		// Style the next button.
-		$form_string = str_replace( 'gform_next_button gform-theme-button button', 'nhsuk-button', $form_string );
+		$form_string = str_replace( 'gform_next_button gform-theme-button button', 'nhsuk-button', $form_string ); // For Gravity Forms version 2.7+.
 		$form_string = str_replace( 'gform_next_button button', 'nhsuk-button', $form_string ); // Prior to gforms 2.7.
 		// Style the previous button.
-		$form_string = str_replace( 'gform_previous_button gform-theme-button', 'nhsuk-button nhsuk-button--reverse', $form_string );
+		$form_string = str_replace( 'gform_previous_button gform-theme-button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
 		$form_string = str_replace( 'gform_previous_button button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // Prior to gforms 2.7.
 		// Style last page button.
-		$form_string = str_replace( 'button gform_button gform_last_page_button', 'nhsuk-button nhsuk-button--reverse', $form_string );
+		$form_string = str_replace( 'button gform_button gform_last_page_button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
 		// Style the save and continue functionality.
 		$form_string    = str_replace( 'gform_save_link button', 'nhsuk-button nhsuk-button--secondary', $form_string );
 		$form_string    = str_replace( 'gform_save_link', 'nhsuk-button nhsuk-button--secondary', $form_string );
@@ -193,7 +193,8 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$field_content = str_replace( '</li', '</div', $field_content );
 				$field_content = str_replace( 'gfield-choice-input', 'gfield-choice-input nhsuk-checkboxes__input', $field_content );
 				$field_content = preg_replace( '#<label for(.*?)>(.*?)</label>#i', "<label for$1 class='nhsuk-label nhsuk-checkboxes__label'>$2</label>", $field_content );
-				$field_content = str_replace( 'gform-field-label', 'nhsuk-label nhsuk-checkboxes__label', $field_content );
+				// Fix for gravity forms 2.7+.
+				$field_content = str_replace( 'gform-field-label gform-field-label--type-inline', 'nhsuk-label nhsuk-checkboxes__label', $field_content );
 				// Style <input>s.
 				$field_content = str_replace( "type='checkbox'", "type='checkbox' class='nhsuk-checkboxes__input'", $field_content );
 				break;
