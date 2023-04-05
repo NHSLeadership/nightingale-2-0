@@ -380,7 +380,7 @@ if ( ! empty( $network_plugins ) ) { // add network plugins to array if network 
 	}
 }
 
-// Only perform these over-rides if there are active plugins
+// Only perform these over-rides if there are active plugins.
 if ( $active_plugins ) {
 
 	/**
