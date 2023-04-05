@@ -444,7 +444,6 @@ if ( $active_plugins ) {
 	if ( in_array( 'cookie-notice/cookie-notice.php', $active_plugins, true ) ) {
 		require get_template_directory() . '/inc/cookie-notice.php';
 	}
-
 }
 
 /**
