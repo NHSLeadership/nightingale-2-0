@@ -4,7 +4,7 @@
  *
  * @package   Nightingale-2-0
  * @copyright NHS Leadership Academy, Very Twisty
- * @version   Feburary 2020
+ * @version   April 2023
  */
 
 // Tutorial found here:
@@ -122,7 +122,7 @@ function nightingale_page_last_reviewed() {
 		return;
 	}
 
-	$updated_date = get_the_modified_time( 'j F, Y' );
+	$updated_date = get_the_modified_time( 'j F Y' );
 	?>
 
 	<div class="nhsuk-review-date">
