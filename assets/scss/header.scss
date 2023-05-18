@@ -62,7 +62,6 @@
 .nhsuk-header {
     &.nhsuk-header--transactional {
         .nhsuk-header__menu-toggle {
-            position: absolute;
             @include mq($until: tablet) {
                 top: auto;
             }
