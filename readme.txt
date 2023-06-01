@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.4.13=
 * Fix for date format in last page reviewed text
+* Fix for alignment issue with responsive menu button
 
 =2.4.12=
 * Button style improvement for gravity forms 2.7
