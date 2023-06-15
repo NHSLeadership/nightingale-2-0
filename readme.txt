@@ -6,7 +6,7 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.4.14
+Version: 2.4.13
 Stable tag: 2.4
 
 
@@ -43,12 +43,11 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
-=2.4.14=
-* Removes !important from position absolute within .screen-reader-text class.
-
 =2.4.13=
 * Fix for date format in last page reviewed text
 * Fix for alignment issue with responsive menu button
+* Bug fixes for search results page
+* Removes !important from position absolute within .screen-reader-text class.
 
 =2.4.12=
 * Button style improvement for gravity forms 2.7
