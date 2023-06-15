@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.4.12
+Version: 2.4.13
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -532,7 +532,7 @@ table {
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  position: absolute !important;
+  position: absolute;
   width: 1px;
   word-wrap: normal !important;
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */
@@ -8528,9 +8528,6 @@ a:focus .nhsuk-icon {
   border: 0;
 }
 
-.nhsuk-header.nhsuk-header--transactional .nhsuk-header__menu-toggle {
-  position: absolute;
-}
 @media (max-width: 40.0525em) {
   .nhsuk-header.nhsuk-header--transactional .nhsuk-header__menu-toggle {
     top: auto;
