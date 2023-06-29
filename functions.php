@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.4.13 15 jun 2023
+ * @version   2.4.14 29 jun 2023
  */
 
 /**
@@ -541,3 +541,38 @@ add_filter(
 	10,
 	2
 );
+
+$user_id   = get_current_user_id();
+$user_meta = get_user_meta( $user_id );
+if ( in_array( 'auth0/WP_Auth0.php', (array) get_option( 'active_plugins', array() ), true ) &&
+! empty( $user_meta['nhsl_oauth_token'] ) &&
+! empty( $user_meta['wp_auth0_obj'] ) &&
+! current_user_can( 'manage_options' ) ) {
+	add_action( 'wp_head', 'nhsl_header_custom' );
+	add_action( 'admin_head', 'nhsl_admin_head_custom' );
+	add_filter( 'show_admin_bar', '__return_false' );
+}
+
+/**
+ * Custom style to hide user profile divs
+ *
+ * @return void
+ */
+function nhsl_header_custom() {
+
+	echo '<style>#your-profile{display: none;}#updateusers{display: none;}
+	#buddypress{display: none;}</style>';
+
+}
+
+/**
+ * Custom style to hide user profile divs in admin section
+ *
+ * @return void
+ */
+function nhsl_admin_head_custom() {
+
+	echo '<style>#profile-nav{display: none;}#bp_xprofile_user_admin_fields_details{display: none;}
+	#bp_xprofile_user_admin_avatar{display: none;}#major-publishing-actions{display: none;}</style>';
+
+}
