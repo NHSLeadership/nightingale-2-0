@@ -131,7 +131,7 @@ function nightingale_breadcrumb() {
 	} else {
 
 		printf(
-			'<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb"><div class="nhsuk-width-container">%1$s <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="%2$s"> %3$s %4$s</a></p></div></nav>',
+			'<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb"><div class="nhsuk-width-container">%1$s <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="%2$s"><span class="nhsuk-u-visually-hidden"> %3$s &nbsp;</span> %4$s</a></p></div></nav>',
 			$breadcrumbs, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			esc_url( $back_one_level[0] ),
 			esc_html( 'Back to ', 'nightingale' ),
