@@ -19,6 +19,6 @@
   "dependencies": {
     "nhsuk-frontend": "^7.0.0",
     "penthouse": "^2.3.2",
-    "sass": "^1.49.9"
+    "sass": "^1.67.0"
   }
 }
