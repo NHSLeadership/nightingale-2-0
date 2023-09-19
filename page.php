@@ -45,4 +45,3 @@ flush();
 <?php
 flush();
 get_footer();
-?>
