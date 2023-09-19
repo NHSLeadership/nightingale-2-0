@@ -45,6 +45,8 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.5.1=
 * Vulnerability fixes.
+* Node package updates
+* Code improvements
 
 =2.5.0=
 * Updated nhsuk-frontend to verion 7.0.0
