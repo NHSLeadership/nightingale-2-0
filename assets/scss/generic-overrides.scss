@@ -182,3 +182,7 @@
 a:focus .nhsuk-icon {
   fill : $color_nhsuk-grey-1 !important;
 }
+
+.nhsuk-action-link__link + div {
+	margin-left: 34px;
+}
