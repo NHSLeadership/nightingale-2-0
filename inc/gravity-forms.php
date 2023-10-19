@@ -515,7 +515,15 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$field_content = preg_replace( $find, $replace, $field_content );
 				$field_content = str_replace( 'nhsuk-checkboxes__input  nhsuk-radios__input', 'nhsuk-checkboxes__input', $field_content );
 				break;
-
+			// Chained Selects.
+			case 'chainedselect':
+				if ( 1 === $errorflag ) {
+					$errorclass = 'nhsuk-select--error';
+				}
+				$find[]        = '<select';
+				$replace[]     = '<select class="gfield_select nhsuk-select ' . $errorclass . '"';
+				$field_content = str_replace( $find, $replace, $field_content );
+				break;
 			default: // everything else.
 				$field_content = $field_content;
 				break;
