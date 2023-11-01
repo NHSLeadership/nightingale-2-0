@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.5.1
+Version: 2.5.2
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -8550,6 +8550,10 @@ textarea[type=number] {
 /* Menu item right chevron (mobile): fix color when state is focus */
 a:focus .nhsuk-icon {
   fill: #4c6272 !important;
+}
+
+.nhsuk-action-link__link + div {
+  margin-left: 34px;
 }
 
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__navigation {
