@@ -8552,6 +8552,10 @@ a:focus .nhsuk-icon {
   fill: #4c6272 !important;
 }
 
+.nhsuk-action-link__link + div {
+  margin-left: 34px;
+}
+
 .nhsuk-header.nhsuk-header--transactional .nhsuk-header__navigation {
   max-width: 100%;
 }

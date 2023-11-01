@@ -46,6 +46,8 @@ one level only. To show further levels, we recommend using the right (or left) h
 =2.5.1=
 * Vulnerability fixes.
 * Node package updates
+* Style fix for gravity forms chained drop-downs
+* Fix for action link block obscures text.
 * Code improvements
 
 =2.5.0=
