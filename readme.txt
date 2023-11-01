@@ -6,7 +6,7 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.5.2
+Version: 2.5.1
 Stable tag: 2.5
 
 
@@ -43,13 +43,11 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
-=2.5.2=
-* Fix for action link block obscures text.
-
 =2.5.1=
 * Vulnerability fixes.
 * Node package updates
 * Style fix for gravity forms chained drop-downs
+* Fix for action link block obscures text.
 * Code improvements
 
 =2.5.0=
