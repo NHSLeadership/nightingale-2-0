@@ -102,16 +102,15 @@ add_filter( 'admin_body_class', 'nightingale_admin_body_class' );
  *
  * @link https://wordpress.stackexchange.com/a/154951/17187
  *
- * @param String $classes Current body classes.
+ * @param string $classes Current body classes.
  *
- * @return String          Altered body classes.
+ * @return string          Altered body classes.
  */
 function nightingale_admin_body_class( $classes ) {
 
 	global $pagenow;
-
 	if ( 'post.php' !== $pagenow && 'post-new.php' !== $pagenow ) {
-		return;
+		return "$classes";
 	}
 
 	$page_color = esc_attr( get_post_meta( get_the_id(), 'page-color', true ) );
