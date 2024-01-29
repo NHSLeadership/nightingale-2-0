@@ -1333,7 +1333,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
+.edit-post-visual-editor td {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1341,26 +1341,26 @@
 }
 @media print {
   .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
+.edit-post-visual-editor td {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
+.edit-post-visual-editor td {
     padding-bottom: 16px;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
+.edit-post-visual-editor td {
     padding-right: 24px;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
-  .edit-post-visual-editor td {
+.edit-post-visual-editor td {
     padding-top: 16px;
   }
 }
@@ -1750,7 +1750,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+.edit-post-visual-editor .nhsuk-heading-xl {
     font-size: 48px;
     font-size: 3rem;
     line-height: 1.16667;
@@ -1758,14 +1758,14 @@
 }
 @media print {
   .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+.edit-post-visual-editor .nhsuk-heading-xl {
     font-size: 32pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
-  .edit-post-visual-editor .nhsuk-heading-xl {
+.edit-post-visual-editor .nhsuk-heading-xl {
     margin-bottom: 48px;
   }
 }
@@ -1781,7 +1781,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+.edit-post-visual-editor .nhsuk-heading-l {
     font-size: 32px;
     font-size: 2rem;
     line-height: 1.25;
@@ -1789,14 +1789,14 @@
 }
 @media print {
   .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+.edit-post-visual-editor .nhsuk-heading-l {
     font-size: 24pt;
     line-height: 1.05;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h2,
-  .edit-post-visual-editor .nhsuk-heading-l {
+.edit-post-visual-editor .nhsuk-heading-l {
     margin-bottom: 24px;
   }
 }
@@ -1813,8 +1813,8 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.edit-post-visual-editor .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1822,16 +1822,16 @@
 }
 @media print {
   .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.edit-post-visual-editor .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h3,
-  .edit-post-visual-editor .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.edit-post-visual-editor .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     margin-bottom: 24px;
   }
 }
@@ -1847,7 +1847,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+.edit-post-visual-editor .nhsuk-heading-s {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -1855,14 +1855,14 @@
 }
 @media print {
   .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+.edit-post-visual-editor .nhsuk-heading-s {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h4,
-  .edit-post-visual-editor .nhsuk-heading-s {
+.edit-post-visual-editor .nhsuk-heading-s {
     margin-bottom: 24px;
   }
 }
@@ -1878,7 +1878,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+.edit-post-visual-editor .nhsuk-heading-xs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1886,14 +1886,14 @@
 }
 @media print {
   .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+.edit-post-visual-editor .nhsuk-heading-xs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h5,
-  .edit-post-visual-editor .nhsuk-heading-xs {
+.edit-post-visual-editor .nhsuk-heading-xs {
     margin-bottom: 24px;
   }
 }
@@ -1909,7 +1909,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+.edit-post-visual-editor .nhsuk-heading-xxs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1917,14 +1917,14 @@
 }
 @media print {
   .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+.edit-post-visual-editor .nhsuk-heading-xxs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h6,
-  .edit-post-visual-editor .nhsuk-heading-xxs {
+.edit-post-visual-editor .nhsuk-heading-xxs {
     margin-bottom: 24px;
   }
 }
@@ -2034,7 +2034,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor address, .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m {
+.edit-post-visual-editor .nhsuk-body-m {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -2042,14 +2042,14 @@
 }
 @media print {
   .edit-post-visual-editor address, .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m {
+.edit-post-visual-editor .nhsuk-body-m {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor address, .edit-post-visual-editor p,
-  .edit-post-visual-editor .nhsuk-body-m {
+.edit-post-visual-editor .nhsuk-body-m {
     margin-bottom: 24px;
   }
 }
@@ -2121,7 +2121,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-lede-text p,
-  .edit-post-visual-editor .nhsuk-lede-text ul {
+.edit-post-visual-editor .nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -2129,7 +2129,7 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-lede-text p,
-  .edit-post-visual-editor .nhsuk-lede-text ul {
+.edit-post-visual-editor .nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -2170,7 +2170,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-body-l + h2,
-  .edit-post-visual-editor .nhsuk-body-l + .nhsuk-heading-l {
+.edit-post-visual-editor .nhsuk-body-l + .nhsuk-heading-l {
     padding-top: 8px;
   }
 }
@@ -2191,18 +2191,18 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor p + h2,
-  .edit-post-visual-editor .nhsuk-body-m + h2, .edit-post-visual-editor address + h2,
-  .edit-post-visual-editor p + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-l,
-  .edit-post-visual-editor address + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-body-s + h2,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-l,
-  .edit-post-visual-editor .nhsuk-list + h2,
-  .edit-post-visual-editor ul + h2,
-  .edit-post-visual-editor ol + h2,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-l,
-  .edit-post-visual-editor ul + .nhsuk-heading-l,
-  .edit-post-visual-editor ol + .nhsuk-heading-l {
+.edit-post-visual-editor .nhsuk-body-m + h2, .edit-post-visual-editor address + h2,
+.edit-post-visual-editor p + .nhsuk-heading-l,
+.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-l,
+.edit-post-visual-editor address + .nhsuk-heading-l,
+.edit-post-visual-editor .nhsuk-body-s + h2,
+.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-l,
+.edit-post-visual-editor .nhsuk-list + h2,
+.edit-post-visual-editor ul + h2,
+.edit-post-visual-editor ol + h2,
+.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-l,
+.edit-post-visual-editor ul + .nhsuk-heading-l,
+.edit-post-visual-editor ol + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
@@ -2244,39 +2244,39 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor p + h3,
-  .edit-post-visual-editor .nhsuk-body-m + h3, .edit-post-visual-editor address + h3,
-  .edit-post-visual-editor p + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2,
-  .edit-post-visual-editor address + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
-  .edit-post-visual-editor .nhsuk-body-s + h3,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
-  .edit-post-visual-editor .nhsuk-list + h3,
-  .edit-post-visual-editor ul + h3,
-  .edit-post-visual-editor ol + h3,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
-  .edit-post-visual-editor ul + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
-  .edit-post-visual-editor ol + .nhsuk-heading-m,
-  .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
-  .edit-post-visual-editor p + h4,
-  .edit-post-visual-editor .nhsuk-body-m + h4,
-  .edit-post-visual-editor address + h4,
-  .edit-post-visual-editor p + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-s,
-  .edit-post-visual-editor address + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-body-s + h4,
-  .edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-s,
-  .edit-post-visual-editor .nhsuk-list + h4,
-  .edit-post-visual-editor ul + h4,
-  .edit-post-visual-editor ol + h4,
-  .edit-post-visual-editor .nhsuk-list + .nhsuk-heading-s,
-  .edit-post-visual-editor ul + .nhsuk-heading-s,
-  .edit-post-visual-editor ol + .nhsuk-heading-s {
+.edit-post-visual-editor .nhsuk-body-m + h3, .edit-post-visual-editor address + h3,
+.edit-post-visual-editor p + .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2,
+.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2,
+.edit-post-visual-editor address + .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
+.edit-post-visual-editor .nhsuk-body-s + h3,
+.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
+.edit-post-visual-editor .nhsuk-list + h3,
+.edit-post-visual-editor ul + h3,
+.edit-post-visual-editor ol + h3,
+.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
+.edit-post-visual-editor ul + .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
+.edit-post-visual-editor ol + .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
+.edit-post-visual-editor p + h4,
+.edit-post-visual-editor .nhsuk-body-m + h4,
+.edit-post-visual-editor address + h4,
+.edit-post-visual-editor p + .nhsuk-heading-s,
+.edit-post-visual-editor .nhsuk-body-m + .nhsuk-heading-s,
+.edit-post-visual-editor address + .nhsuk-heading-s,
+.edit-post-visual-editor .nhsuk-body-s + h4,
+.edit-post-visual-editor .nhsuk-body-s + .nhsuk-heading-s,
+.edit-post-visual-editor .nhsuk-list + h4,
+.edit-post-visual-editor ul + h4,
+.edit-post-visual-editor ol + h4,
+.edit-post-visual-editor .nhsuk-list + .nhsuk-heading-s,
+.edit-post-visual-editor ul + .nhsuk-heading-s,
+.edit-post-visual-editor ol + .nhsuk-heading-s {
     padding-top: 8px;
   }
 }
@@ -4576,7 +4576,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-details + h2,
-  .edit-post-visual-editor .nhsuk-details + .nhsuk-heading-l {
+.edit-post-visual-editor .nhsuk-details + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
@@ -5192,23 +5192,23 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input),
-  .edit-post-visual-editor input[type=email],
-  .edit-post-visual-editor input[type=url],
-  .edit-post-visual-editor input[type=password],
-  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
-  .edit-post-visual-editor input[type=number],
-  .edit-post-visual-editor input[type=tel],
-  .edit-post-visual-editor input[type=range],
-  .edit-post-visual-editor input[type=date],
-  .edit-post-visual-editor input[type=month],
-  .edit-post-visual-editor input[type=week],
-  .edit-post-visual-editor input[type=time],
-  .edit-post-visual-editor input[type=datetime],
-  .edit-post-visual-editor input[type=datetime-local],
-  .edit-post-visual-editor input[type=color],
-  .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
-  .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
-  .edit-post-visual-editor textarea {
+.edit-post-visual-editor input[type=email],
+.edit-post-visual-editor input[type=url],
+.edit-post-visual-editor input[type=password],
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
+.edit-post-visual-editor input[type=number],
+.edit-post-visual-editor input[type=tel],
+.edit-post-visual-editor input[type=range],
+.edit-post-visual-editor input[type=date],
+.edit-post-visual-editor input[type=month],
+.edit-post-visual-editor input[type=week],
+.edit-post-visual-editor input[type=time],
+.edit-post-visual-editor input[type=datetime],
+.edit-post-visual-editor input[type=datetime-local],
+.edit-post-visual-editor input[type=color],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+.edit-post-visual-editor textarea {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -5216,23 +5216,23 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input),
-  .edit-post-visual-editor input[type=email],
-  .edit-post-visual-editor input[type=url],
-  .edit-post-visual-editor input[type=password],
-  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
-  .edit-post-visual-editor input[type=number],
-  .edit-post-visual-editor input[type=tel],
-  .edit-post-visual-editor input[type=range],
-  .edit-post-visual-editor input[type=date],
-  .edit-post-visual-editor input[type=month],
-  .edit-post-visual-editor input[type=week],
-  .edit-post-visual-editor input[type=time],
-  .edit-post-visual-editor input[type=datetime],
-  .edit-post-visual-editor input[type=datetime-local],
-  .edit-post-visual-editor input[type=color],
-  .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
-  .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
-  .edit-post-visual-editor textarea {
+.edit-post-visual-editor input[type=email],
+.edit-post-visual-editor input[type=url],
+.edit-post-visual-editor input[type=password],
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
+.edit-post-visual-editor input[type=number],
+.edit-post-visual-editor input[type=tel],
+.edit-post-visual-editor input[type=range],
+.edit-post-visual-editor input[type=date],
+.edit-post-visual-editor input[type=month],
+.edit-post-visual-editor input[type=week],
+.edit-post-visual-editor input[type=time],
+.edit-post-visual-editor input[type=datetime],
+.edit-post-visual-editor input[type=datetime-local],
+.edit-post-visual-editor input[type=color],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+.edit-post-visual-editor textarea {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -5909,8 +5909,8 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-summary-list__key,
-  .edit-post-visual-editor .nhsuk-summary-list__value,
-  .edit-post-visual-editor .nhsuk-summary-list__actions {
+.edit-post-visual-editor .nhsuk-summary-list__value,
+.edit-post-visual-editor .nhsuk-summary-list__actions {
     border-bottom: 1px solid #d8dde0;
     display: table-cell;
     padding-bottom: 8px;

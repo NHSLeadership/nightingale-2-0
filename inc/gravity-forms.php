@@ -58,19 +58,62 @@ add_filter(
 		// Style last page button.
 		$form_string = str_replace( 'button gform_button gform_last_page_button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
 		// Style the save and continue functionality.
-		$form_string    = str_replace( 'gform_save_link button', 'nhsuk-button nhsuk-button--secondary', $form_string );
-		$form_string    = str_replace( 'gform_save_link', 'nhsuk-button nhsuk-button--secondary', $form_string );
-		$outerfind[]    = 'gfield ';
-		$outerreplace[] = 'gfield nhsuk-form-group ';
+		$form_string = str_replace( 'gform_save_link button', 'nhsuk-button nhsuk-button--secondary', $form_string );
+		$form_string = str_replace( 'gform_save_link', 'nhsuk-button nhsuk-button--secondary', $form_string );
+
 		$outerfind[]    = 'gfield_error';
 		$outerreplace[] = 'gfield_error nhsuk-form-group--error';
 		$form_string    = str_replace( $outerfind, $outerreplace, $form_string );
-
+		$form_string    = replace_gfield_class_with_nhsuk( $form_string );
 		return $form_string;
 	},
 	10,
 	2
 );
+
+/**
+ * Str_replace was replacing every 'gfield' in the input box to 'gfield nhsuk-form-group'.
+ * For example, an address '10 springfield road' was convereting into '10 springfield nhsuk-form-group'.
+ * This method used php DOMDocument() to do the replacement.
+ *
+ * @param string $html_text the rendered html output of a GF.
+ * @return string
+ */
+function replace_gfield_class_with_nhsuk( $html_text ) {
+	$dom = new DOMDocument();
+
+	// Enable internal error handling mode to stop libxml errors display in the browser.
+	libxml_use_internal_errors( true );
+	// Load HTML into the DOMDocument.
+	$dom->loadHTML( $html_text, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD );
+
+	// Create a DOMXPath object to query the DOMDocument.
+	$xpath = new DOMXPath( $dom );
+
+	// Replace the class name.
+	$gfield_class = 'gfield';
+	$nhsuk_class  = 'gfield nhsuk-form-group';
+
+	// Find elements with the old class name.
+	$elements = $xpath->query( "//*[contains(@class, '$gfield_class')]" );
+	// Loop through the found elements and replace the class name.
+	foreach ( $elements as $element ) {
+		$classes     = explode( ' ', $element->getAttribute( 'class' ) );
+		$new_classes = array_map(
+			function ( $class ) use ( $gfield_class, $nhsuk_class ) {
+				return ( $class === $gfield_class ) ? $nhsuk_class : $class;
+			},
+			$classes
+		);
+		$element->setAttribute( 'class', implode( ' ', $new_classes ) );
+	}
+
+	libxml_use_internal_errors( false );
+
+	// Get the modified HTML.
+	return $dom->saveHTML();
+}
+
 
 // Use gform_field_content to style individual fields.
 // See https://docs.gravityforms.com/gform_field_content.

@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.5.3
+Version: 2.5.4
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -894,7 +894,7 @@ td {
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -902,26 +902,26 @@ td {
 }
 @media print {
   th,
-  td {
+td {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     padding-bottom: 16px;
   }
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     padding-right: 24px;
   }
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     padding-top: 16px;
   }
 }
@@ -1424,7 +1424,7 @@ h1,
 }
 @media (min-width: 40.0625em) {
   h1,
-  .nhsuk-heading-xl {
+.nhsuk-heading-xl {
     font-size: 48px;
     font-size: 3rem;
     line-height: 1.16667;
@@ -1432,14 +1432,14 @@ h1,
 }
 @media print {
   h1,
-  .nhsuk-heading-xl {
+.nhsuk-heading-xl {
     font-size: 32pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h1,
-  .nhsuk-heading-xl {
+.nhsuk-heading-xl {
     margin-bottom: 48px;
   }
 }
@@ -1456,7 +1456,7 @@ h2,
 }
 @media (min-width: 40.0625em) {
   h2,
-  .nhsuk-heading-l {
+.nhsuk-heading-l {
     font-size: 32px;
     font-size: 2rem;
     line-height: 1.25;
@@ -1464,14 +1464,14 @@ h2,
 }
 @media print {
   h2,
-  .nhsuk-heading-l {
+.nhsuk-heading-l {
     font-size: 24pt;
     line-height: 1.05;
   }
 }
 @media (min-width: 40.0625em) {
   h2,
-  .nhsuk-heading-l {
+.nhsuk-heading-l {
     margin-bottom: 24px;
   }
 }
@@ -1489,8 +1489,8 @@ h3,
 }
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1498,16 +1498,16 @@ h3,
 }
 @media print {
   h3,
-  .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     margin-bottom: 24px;
   }
 }
@@ -1525,8 +1525,8 @@ h4,
 }
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .cn-text-container {
+.nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .cn-text-container {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -1534,16 +1534,16 @@ h4,
 }
 @media print {
   h4,
-  .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .cn-text-container {
+.nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .cn-text-container {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .cn-text-container {
+.nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .cn-text-container {
     margin-bottom: 24px;
   }
 }
@@ -1560,7 +1560,7 @@ h5,
 }
 @media (min-width: 40.0625em) {
   h5,
-  .nhsuk-heading-xs {
+.nhsuk-heading-xs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1568,14 +1568,14 @@ h5,
 }
 @media print {
   h5,
-  .nhsuk-heading-xs {
+.nhsuk-heading-xs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h5,
-  .nhsuk-heading-xs {
+.nhsuk-heading-xs {
     margin-bottom: 24px;
   }
 }
@@ -1592,7 +1592,7 @@ h6,
 }
 @media (min-width: 40.0625em) {
   h6,
-  .nhsuk-heading-xxs {
+.nhsuk-heading-xxs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1600,14 +1600,14 @@ h6,
 }
 @media print {
   h6,
-  .nhsuk-heading-xxs {
+.nhsuk-heading-xxs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h6,
-  .nhsuk-heading-xxs {
+.nhsuk-heading-xxs {
     margin-bottom: 24px;
   }
 }
@@ -1725,7 +1725,7 @@ address, p,
 }
 @media (min-width: 40.0625em) {
   address, p,
-  .nhsuk-body-m {
+.nhsuk-body-m {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1733,14 +1733,14 @@ address, p,
 }
 @media print {
   address, p,
-  .nhsuk-body-m {
+.nhsuk-body-m {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   address, p,
-  .nhsuk-body-m {
+.nhsuk-body-m {
     margin-bottom: 24px;
   }
 }
@@ -1822,7 +1822,7 @@ address {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-lede-text p,
-  .nhsuk-lede-text ul {
+.nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1830,7 +1830,7 @@ address {
 }
 @media print {
   .nhsuk-lede-text p,
-  .nhsuk-lede-text ul {
+.nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -1884,7 +1884,7 @@ h1 + .nhsuk-lede-text--small {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-body-l + h2,
-  .nhsuk-body-l + .nhsuk-heading-l {
+.nhsuk-body-l + .nhsuk-heading-l {
     padding-top: 8px;
   }
 }
@@ -1906,18 +1906,18 @@ ol + .nhsuk-heading-l {
 }
 @media (min-width: 40.0625em) {
   p + h2,
-  .nhsuk-body-m + h2, address + h2,
-  p + .nhsuk-heading-l,
-  .nhsuk-body-m + .nhsuk-heading-l,
-  address + .nhsuk-heading-l,
-  .nhsuk-body-s + h2,
-  .nhsuk-body-s + .nhsuk-heading-l,
-  .nhsuk-list + h2,
-  ul + h2,
-  ol + h2,
-  .nhsuk-list + .nhsuk-heading-l,
-  ul + .nhsuk-heading-l,
-  ol + .nhsuk-heading-l {
+.nhsuk-body-m + h2, address + h2,
+p + .nhsuk-heading-l,
+.nhsuk-body-m + .nhsuk-heading-l,
+address + .nhsuk-heading-l,
+.nhsuk-body-s + h2,
+.nhsuk-body-s + .nhsuk-heading-l,
+.nhsuk-list + h2,
+ul + h2,
+ol + h2,
+.nhsuk-list + .nhsuk-heading-l,
+ul + .nhsuk-heading-l,
+ol + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
@@ -1967,46 +1967,46 @@ ol + .nhsuk-heading-s,
 }
 @media (min-width: 40.0625em) {
   p + h3,
-  .nhsuk-body-m + h3, address + h3,
-  p + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2,
-  .nhsuk-body-m + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2,
-  address + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
-  .nhsuk-body-s + h3,
-  .nhsuk-body-s + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
-  .nhsuk-list + h3,
-  ul + h3,
-  ol + h3,
-  .nhsuk-list + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
-  ul + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
-  ol + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
-  p + h4,
-  .nhsuk-body-m + h4,
-  address + h4,
-  p + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container p + .cn-text-container,
-  .nhsuk-body-m + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .nhsuk-body-m + .cn-text-container,
-  address + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container address + .cn-text-container,
-  .nhsuk-body-s + h4,
-  .nhsuk-body-s + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .nhsuk-body-s + .cn-text-container,
-  .nhsuk-list + h4,
-  ul + h4,
-  ol + h4,
-  .nhsuk-list + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .nhsuk-list + .cn-text-container,
-  ul + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container ul + .cn-text-container,
-  ol + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container ol + .cn-text-container {
+.nhsuk-body-m + h3, address + h3,
+p + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2,
+.nhsuk-body-m + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2,
+address + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
+.nhsuk-body-s + h3,
+.nhsuk-body-s + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
+.nhsuk-list + h3,
+ul + h3,
+ol + h3,
+.nhsuk-list + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
+ul + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
+ol + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
+p + h4,
+.nhsuk-body-m + h4,
+address + h4,
+p + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container p + .cn-text-container,
+.nhsuk-body-m + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .nhsuk-body-m + .cn-text-container,
+address + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container address + .cn-text-container,
+.nhsuk-body-s + h4,
+.nhsuk-body-s + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .nhsuk-body-s + .cn-text-container,
+.nhsuk-list + h4,
+ul + h4,
+ol + h4,
+.nhsuk-list + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .nhsuk-list + .cn-text-container,
+ul + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container ul + .cn-text-container,
+ol + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container ol + .cn-text-container {
     padding-top: 8px;
   }
 }
@@ -4862,7 +4862,7 @@ b {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-details + h2,
-  .nhsuk-details + .nhsuk-heading-l {
+.nhsuk-details + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
@@ -6826,23 +6826,23 @@ textarea {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-input, input[type=text]:not(.nhsuk-search__input),
-  input[type=email],
-  input[type=url],
-  input[type=password],
-  input[type=search]:not(.nhsuk-search__input),
-  input[type=number],
-  input[type=tel],
-  input[type=range],
-  input[type=date],
-  input[type=month],
-  input[type=week],
-  input[type=time],
-  input[type=datetime],
-  input[type=datetime-local],
-  input[type=color],
-  .learndash-wrapper .wpProQuiz_content input:focus[type=text],
-  .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
-  textarea {
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search]:not(.nhsuk-search__input),
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+textarea {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -6850,23 +6850,23 @@ textarea {
 }
 @media print {
   .nhsuk-input, input[type=text]:not(.nhsuk-search__input),
-  input[type=email],
-  input[type=url],
-  input[type=password],
-  input[type=search]:not(.nhsuk-search__input),
-  input[type=number],
-  input[type=tel],
-  input[type=range],
-  input[type=date],
-  input[type=month],
-  input[type=week],
-  input[type=time],
-  input[type=datetime],
-  input[type=datetime-local],
-  input[type=color],
-  .learndash-wrapper .wpProQuiz_content input:focus[type=text],
-  .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
-  textarea {
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search]:not(.nhsuk-search__input),
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+textarea {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -7644,8 +7644,8 @@ textarea[type=number] {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-summary-list__key,
-  .nhsuk-summary-list__value,
-  .nhsuk-summary-list__actions {
+.nhsuk-summary-list__value,
+.nhsuk-summary-list__actions {
     border-bottom: 1px solid #d8dde0;
     display: table-cell;
     padding-bottom: 8px;
@@ -8411,6 +8411,8 @@ textarea[type=number] {
   .js-enabled .nhsuk-tabs__panel > :last-child {
     margin-bottom: 0;
   }
+}
+@media (min-width: 40.0625em) {
   .js-enabled .nhsuk-tabs__panel--hidden {
     display: none;
   }
@@ -10638,7 +10640,7 @@ figure.is-style-nhsuk-table-responsive figcaption {
     }*/
   }
   figure.is-style-nhsuk-table-responsive th,
-  figure.is-style-nhsuk-table-responsive td {
+figure.is-style-nhsuk-table-responsive td {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -10652,7 +10654,7 @@ figure.is-style-nhsuk-table-responsive figcaption {
     page-break-inside: avoid;
   }
   figure.is-style-nhsuk-table-responsive th,
-  figure.is-style-nhsuk-table-responsive td {
+figure.is-style-nhsuk-table-responsive td {
     font-size: 14pt;
     line-height: 1.15;
   }
