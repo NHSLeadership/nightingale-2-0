@@ -64,7 +64,7 @@ add_filter(
 		$outerfind[]    = 'gfield_error';
 		$outerreplace[] = 'gfield_error nhsuk-form-group--error';
 		$form_string    = str_replace( $outerfind, $outerreplace, $form_string );
-		$form_string    = replace_gfield_class_with_nhsuk( $form_string );
+		$form_string    = add_nhsuk_class( $form_string ); // Add  'nhsuk-form-group' to 'gfield'.
 		return $form_string;
 	},
 	10,
@@ -76,14 +76,54 @@ add_filter(
  * For example, an address '10 springfield road' was convereting into '10 springfield nhsuk-form-group'.
  * This method used php DOMDocument() to do the replacement.
  *
- * @param string $html_text the rendered html output of a GF.
+ * @param string $form_string the rendered html output of a GF.
+ * @param string $additional  Additional class to append.
  * @return string
  */
-function replace_gfield_class_with_nhsuk( $html_text ) {
-	$dom = new DOMDocument();
+function add_nhsuk_class( $form_string, $additional = '' ) {
+	global $wp_version;
+	if ( (float) $wp_version >= 6.2 ) {
+		$form_string = add_nhsuk_class_with_tag_processor( $form_string, $additional = '' );
+		return $form_string;
+	} else {
+		$form_string = add_nhsuk_class_with_dom( $form_string, $additional = '' );
+		return $form_string;
+	}
 
+}
+
+/**
+ * This method uses WP html tag processor to add nhsuk class.
+ *
+ * @param string $form_string the rendered html output of a GF.
+ * @param string $additional  Additional class to append.
+ * @return string
+ */
+function add_nhsuk_class_with_tag_processor( $form_string, $additional = '' ) {
+	$form_string = new \WP_HTML_Tag_Processor( $form_string );
+	$query       = array(
+		'class_name' => 'gfield',
+	);
+	$class_name  = 'nhsuk-form-group' . ! empty( $additional ) ? ' ' . $additional : '';
+	while ( $form_string->next_tag( $query ) ) {
+		$form_string->add_class( $class_name );
+	}
+	return $form_string->get_updated_html();
+}
+
+
+/**
+ * This method used php DOMDocument() to add nhsuk class.
+ *
+ * @param string $html_text the rendered html output of a GF.
+ * @param string $additional  Additional class to append.
+ * @return string
+ */
+function add_nhsuk_class_with_dom( $html_text, $additional = '' ) {
 	// Enable internal error handling mode to stop libxml errors display in the browser.
 	libxml_use_internal_errors( true );
+
+	$dom = new DOMDocument();
 	// Load HTML into the DOMDocument.
 	$dom->loadHTML( $html_text, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD );
 
@@ -93,7 +133,9 @@ function replace_gfield_class_with_nhsuk( $html_text ) {
 	// Replace the class name.
 	$gfield_class = 'gfield';
 	$nhsuk_class  = 'gfield nhsuk-form-group';
-
+	if ( ! empty( $additional ) ) {
+		$nhsuk_class = $nhsuk_class . ' ' . $additional;
+	}
 	// Find elements with the old class name.
 	$elements = $xpath->query( "//*[contains(@class, '$gfield_class')]" );
 	// Loop through the found elements and replace the class name.
@@ -113,6 +155,7 @@ function replace_gfield_class_with_nhsuk( $html_text ) {
 	// Get the modified HTML.
 	return $dom->saveHTML();
 }
+
 
 
 // Use gform_field_content to style individual fields.
@@ -382,8 +425,8 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 		} else {
 			$outererror = '';
 		}
-		$outerfind[]    = 'gfield ';
-		$outerreplace[] = 'gfield nhsuk-form-group ' . $outererror;
+		$field_content    = add_nhsuk_class( $field_content, $outererror ); // Add  'nhsuk-form-group' to 'gfield'.
+
 		// reverse the logic of required highlighting - instead highlight only the optional fields.
 		if ( true !== $field->isRequired ) { // phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 			$outerfind[]    = '</label>';
