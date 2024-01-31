@@ -131,8 +131,8 @@ function add_nhsuk_class_with_dom( $html_text, $additional = '' ) {
 	$xpath = new DOMXPath( $dom );
 
 	// Replace the class name.
-	$gfield_class = 'gfield';
-	$nhsuk_class  = 'gfield nhsuk-form-group';
+	$gfield_class = 'gfield ';
+	$nhsuk_class  = 'nhsuk-form-group';
 	if ( ! empty( $additional ) ) {
 		$nhsuk_class = $nhsuk_class . ' ' . $additional;
 	}
@@ -140,14 +140,11 @@ function add_nhsuk_class_with_dom( $html_text, $additional = '' ) {
 	$elements = $xpath->query( "//*[contains(@class, '$gfield_class')]" );
 	// Loop through the found elements and replace the class name.
 	foreach ( $elements as $element ) {
-		$classes     = explode( ' ', $element->getAttribute( 'class' ) );
-		$new_classes = array_map(
-			function ( $class ) use ( $gfield_class, $nhsuk_class ) {
-				return ( $class === $gfield_class ) ? $nhsuk_class : $class;
-			},
-			$classes
+		$class_attr = $element->getAttribute( 'class' );
+		$element->setAttribute(
+			'class',
+			$class_attr . ' ' . $nhsuk_class
 		);
-		$element->setAttribute( 'class', implode( ' ', $new_classes ) );
 	}
 
 	libxml_use_internal_errors( false );
