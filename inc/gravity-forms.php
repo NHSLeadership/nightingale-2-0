@@ -104,7 +104,10 @@ function add_nhsuk_class_with_tag_processor( $form_string, $additional = '' ) {
 	$query       = array(
 		'class_name' => 'gfield',
 	);
-	$class_name  = 'nhsuk-form-group' . ! empty( $additional ) ? ' ' . $additional : '';
+	$class_name  = 'nhsuk-form-group';
+	if ( ! empty( $additional ) ) {
+		$class_name = $class_name . ' ' . $additional;
+	}
 	while ( $form_string->next_tag( $query ) ) {
 		$form_string->add_class( $class_name );
 	}
