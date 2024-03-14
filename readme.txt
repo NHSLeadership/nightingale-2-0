@@ -1,12 +1,12 @@
 === Nightingale ===
 Contributors: tblacker
 Requires at least: 5.0
-Tested up to: 5.6
+Tested up to: 6.2
 Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.5.4
+Version: 2.5.5
 Stable tag: 2.5
 
 
@@ -42,6 +42,9 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=2.5.5=
+* nhsuk-frontend framework updates
 
 =2.5.4=
 * Fix for gravity form css class conversion to nhsuk
