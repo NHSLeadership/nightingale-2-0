@@ -33,3 +33,11 @@ section.nhsuk-section,
 		}
 	}
 }
+.wp-block-table.is-style-stripes {
+
+	border-color: var(--table--stripes-border-color);
+	border-bottom: 1px;
+	td {
+		border: 1px solid;
+	}
+}
