@@ -44,7 +44,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 == Changelog
 
 =2.5.6=
-* Style improvements for table block
+* Style improvements for table block with stripe option.
 
 =2.5.5=
 * nhsuk-frontend framework updates
