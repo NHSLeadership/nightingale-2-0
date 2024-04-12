@@ -1590,15 +1590,12 @@
   fill: #007f3b;
 }
 .edit-post-visual-editor .nhsuk-icon__chevron-down {
-  fill: #005eb8;
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.edit-post-visual-editor .nhsuk-icon__chevron-down path {
   fill: #ffffff;
+  height: 24px;
+  position: absolute;
+  right: 4px;
+  transform: rotate(90deg);
+  width: 24px;
 }
 .edit-post-visual-editor .nhsuk-icon__chevron-up {
   fill: #005eb8;
@@ -4189,7 +4186,8 @@
 .edit-post-visual-editor .nhsuk-card__content--primary .nhsuk-icon {
   display: block;
   fill: #005eb8;
-  margin-top: -nhsuk-spacing(2);
+  margin-top: -8px;
+  pointer-events: none;
   position: absolute;
   right: 24px;
   top: 50%;
@@ -5217,7 +5215,7 @@
   border: 2px solid #4c6272; /* 2 */
   border-radius: 0;
   box-sizing: border-box;
-  height: 40px;
+  min-height: 40px;
   margin-top: 0;
   padding: 4px;
   width: 100%;
@@ -5376,6 +5374,83 @@
 }
 .edit-post-visual-editor .nhsuk-input--width-2 {
   max-width: 5.4ex;
+}
+.edit-post-visual-editor .nhsuk-input__wrapper {
+  display: flex;
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__wrapper {
+    display: block;
+  }
+}
+.edit-post-visual-editor .nhsuk-input__prefix,
+.edit-post-visual-editor .nhsuk-input__suffix {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #d8dde0;
+  border: 2px solid #4c6272;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-block;
+  flex: 0 0 auto;
+  min-height: 40px;
+  min-width: 2.5rem;
+  padding: 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    max-width: 9.1ex;
+    display: block;
+    height: 100%;
+    white-space: normal;
+  }
+}
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    line-height: 1.6;
+    font-size: 1.1875rem;
+  }
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__prefix {
+    border-bottom: 0;
+  }
+}
+@media (min-width: 20em) {
+  .edit-post-visual-editor .nhsuk-input__prefix {
+    border-right: 0;
+  }
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    border-top: 0;
+  }
+}
+@media (min-width: 20em) {
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    border-left: 0;
+  }
 }
 .edit-post-visual-editor .nhsuk-inset-text {
   /* [1] */
@@ -5842,7 +5917,7 @@
   line-height: 1.5;
   border: 2px solid #4c6272;
   box-sizing: border-box;
-  height: 40px;
+  min-height: 40px;
   max-width: 100%;
   padding: 4px;
 }
