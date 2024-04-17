@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.5.7
+Version: 2.5.8
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -894,7 +894,7 @@ td {
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -902,26 +902,26 @@ td {
 }
 @media print {
   th,
-  td {
+td {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     padding-bottom: 16px;
   }
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     padding-right: 24px;
   }
 }
 @media (min-width: 40.0625em) {
   th,
-  td {
+td {
     padding-top: 16px;
   }
 }
@@ -1218,12 +1218,15 @@ caption {
 }
 
 .nhsuk-icon__chevron-down {
+  fill: #005eb8;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.nhsuk-icon__chevron-down path {
   fill: #ffffff;
-  height: 24px;
-  position: absolute;
-  right: 4px;
-  transform: rotate(90deg);
-  width: 24px;
 }
 
 .nhsuk-icon__chevron-up {
@@ -1421,7 +1424,7 @@ h1,
 }
 @media (min-width: 40.0625em) {
   h1,
-  .nhsuk-heading-xl {
+.nhsuk-heading-xl {
     font-size: 48px;
     font-size: 3rem;
     line-height: 1.16667;
@@ -1429,14 +1432,14 @@ h1,
 }
 @media print {
   h1,
-  .nhsuk-heading-xl {
+.nhsuk-heading-xl {
     font-size: 32pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h1,
-  .nhsuk-heading-xl {
+.nhsuk-heading-xl {
     margin-bottom: 48px;
   }
 }
@@ -1453,7 +1456,7 @@ h2,
 }
 @media (min-width: 40.0625em) {
   h2,
-  .nhsuk-heading-l {
+.nhsuk-heading-l {
     font-size: 32px;
     font-size: 2rem;
     line-height: 1.25;
@@ -1461,14 +1464,14 @@ h2,
 }
 @media print {
   h2,
-  .nhsuk-heading-l {
+.nhsuk-heading-l {
     font-size: 24pt;
     line-height: 1.05;
   }
 }
 @media (min-width: 40.0625em) {
   h2,
-  .nhsuk-heading-l {
+.nhsuk-heading-l {
     margin-bottom: 24px;
   }
 }
@@ -1486,8 +1489,8 @@ h3,
 }
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1495,16 +1498,16 @@ h3,
 }
 @media print {
   h3,
-  .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h3,
-  .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+.nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
     margin-bottom: 24px;
   }
 }
@@ -1522,8 +1525,8 @@ h4,
 }
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .cn-text-container {
+.nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .cn-text-container {
     font-size: 22px;
     font-size: 1.375rem;
     line-height: 1.45455;
@@ -1531,16 +1534,16 @@ h4,
 }
 @media print {
   h4,
-  .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .cn-text-container {
+.nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .cn-text-container {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h4,
-  .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .cn-text-container {
+.nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .cn-text-container {
     margin-bottom: 24px;
   }
 }
@@ -1557,7 +1560,7 @@ h5,
 }
 @media (min-width: 40.0625em) {
   h5,
-  .nhsuk-heading-xs {
+.nhsuk-heading-xs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1565,14 +1568,14 @@ h5,
 }
 @media print {
   h5,
-  .nhsuk-heading-xs {
+.nhsuk-heading-xs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h5,
-  .nhsuk-heading-xs {
+.nhsuk-heading-xs {
     margin-bottom: 24px;
   }
 }
@@ -1589,7 +1592,7 @@ h6,
 }
 @media (min-width: 40.0625em) {
   h6,
-  .nhsuk-heading-xxs {
+.nhsuk-heading-xxs {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1597,14 +1600,14 @@ h6,
 }
 @media print {
   h6,
-  .nhsuk-heading-xxs {
+.nhsuk-heading-xxs {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   h6,
-  .nhsuk-heading-xxs {
+.nhsuk-heading-xxs {
     margin-bottom: 24px;
   }
 }
@@ -1722,7 +1725,7 @@ address, p,
 }
 @media (min-width: 40.0625em) {
   address, p,
-  .nhsuk-body-m {
+.nhsuk-body-m {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -1730,14 +1733,14 @@ address, p,
 }
 @media print {
   address, p,
-  .nhsuk-body-m {
+.nhsuk-body-m {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   address, p,
-  .nhsuk-body-m {
+.nhsuk-body-m {
     margin-bottom: 24px;
   }
 }
@@ -1819,7 +1822,7 @@ address {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-lede-text p,
-  .nhsuk-lede-text ul {
+.nhsuk-lede-text ul {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.33333;
@@ -1827,7 +1830,7 @@ address {
 }
 @media print {
   .nhsuk-lede-text p,
-  .nhsuk-lede-text ul {
+.nhsuk-lede-text ul {
     font-size: 18pt;
     line-height: 1.15;
   }
@@ -1881,7 +1884,7 @@ h1 + .nhsuk-lede-text--small {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-body-l + h2,
-  .nhsuk-body-l + .nhsuk-heading-l {
+.nhsuk-body-l + .nhsuk-heading-l {
     padding-top: 8px;
   }
 }
@@ -1903,18 +1906,18 @@ ol + .nhsuk-heading-l {
 }
 @media (min-width: 40.0625em) {
   p + h2,
-  .nhsuk-body-m + h2, address + h2,
-  p + .nhsuk-heading-l,
-  .nhsuk-body-m + .nhsuk-heading-l,
-  address + .nhsuk-heading-l,
-  .nhsuk-body-s + h2,
-  .nhsuk-body-s + .nhsuk-heading-l,
-  .nhsuk-list + h2,
-  ul + h2,
-  ol + h2,
-  .nhsuk-list + .nhsuk-heading-l,
-  ul + .nhsuk-heading-l,
-  ol + .nhsuk-heading-l {
+.nhsuk-body-m + h2, address + h2,
+p + .nhsuk-heading-l,
+.nhsuk-body-m + .nhsuk-heading-l,
+address + .nhsuk-heading-l,
+.nhsuk-body-s + h2,
+.nhsuk-body-s + .nhsuk-heading-l,
+.nhsuk-list + h2,
+ul + h2,
+ol + h2,
+.nhsuk-list + .nhsuk-heading-l,
+ul + .nhsuk-heading-l,
+ol + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
@@ -1964,46 +1967,46 @@ ol + .nhsuk-heading-s,
 }
 @media (min-width: 40.0625em) {
   p + h3,
-  .nhsuk-body-m + h3, address + h3,
-  p + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2,
-  .nhsuk-body-m + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2,
-  address + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
-  .nhsuk-body-s + h3,
-  .nhsuk-body-s + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
-  .nhsuk-list + h3,
-  ul + h3,
-  ol + h3,
-  .nhsuk-list + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
-  ul + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
-  ol + .nhsuk-heading-m,
-  .nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
-  p + h4,
-  .nhsuk-body-m + h4,
-  address + h4,
-  p + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container p + .cn-text-container,
-  .nhsuk-body-m + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .nhsuk-body-m + .cn-text-container,
-  address + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container address + .cn-text-container,
-  .nhsuk-body-s + h4,
-  .nhsuk-body-s + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .nhsuk-body-s + .cn-text-container,
-  .nhsuk-list + h4,
-  ul + h4,
-  ol + h4,
-  .nhsuk-list + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container .nhsuk-list + .cn-text-container,
-  ul + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container ul + .cn-text-container,
-  ol + .nhsuk-heading-s,
-  #cookie-notice .cookie-notice-container ol + .cn-text-container {
+.nhsuk-body-m + h3, address + h3,
+p + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content p + h2,
+.nhsuk-body-m + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-m + h2,
+address + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content address + h2,
+.nhsuk-body-s + h3,
+.nhsuk-body-s + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-body-s + h2,
+.nhsuk-list + h3,
+ul + h3,
+ol + h3,
+.nhsuk-list + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content .nhsuk-list + h2,
+ul + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content ul + h2,
+ol + .nhsuk-heading-m,
+.nhsuk-card.is-style-panel-with-label .nhsuk-card__content ol + h2,
+p + h4,
+.nhsuk-body-m + h4,
+address + h4,
+p + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container p + .cn-text-container,
+.nhsuk-body-m + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .nhsuk-body-m + .cn-text-container,
+address + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container address + .cn-text-container,
+.nhsuk-body-s + h4,
+.nhsuk-body-s + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .nhsuk-body-s + .cn-text-container,
+.nhsuk-list + h4,
+ul + h4,
+ol + h4,
+.nhsuk-list + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container .nhsuk-list + .cn-text-container,
+ul + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container ul + .cn-text-container,
+ol + .nhsuk-heading-s,
+#cookie-notice .cookie-notice-container ol + .cn-text-container {
     padding-top: 8px;
   }
 }
@@ -4355,40 +4358,184 @@ b {
   fill: #ffffff; /* [14] */
 }
 
-/* Card primary
-  ========================================================================== */
-.nhsuk-card__content--primary {
-  padding-right: 75px;
+/* ==========================================================================
+   COMPONENTS/ #CHECKBOXES
+   ========================================================================== */
+/**
+ * 1. remove 300ms pause on mobile.
+ * 2. Fix bug in IE11 caused by transform rotate (-45deg).
+ */
+.nhsuk-checkboxes__item, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  clear: left;
+  display: block;
+  margin-bottom: 8px;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  position: relative;
 }
-@media (min-width: 48.0625em) {
-  .nhsuk-card__content--primary {
-    height: 100%;
+@media (min-width: 40.0625em) {
+  .nhsuk-checkboxes__item, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
   }
 }
-.nhsuk-card__content--primary .nhsuk-icon {
-  display: block;
-  fill: #005eb8;
-  margin-top: -8px;
-  pointer-events: none;
+@media print {
+  .nhsuk-checkboxes__item, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.nhsuk-checkboxes__item:last-child, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li:last-child,
+.nhsuk-checkboxes__item:last-of-type,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li:last-of-type {
+  margin-bottom: 0;
+}
+
+.nhsuk-checkboxes__input, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input {
+  cursor: pointer;
+  height: 40px;
+  left: 0;
+  margin: 0;
+  opacity: 0;
   position: absolute;
-  right: 24px;
-  top: 50%;
+  top: 0;
+  width: 40px;
+  z-index: 1;
 }
 
-/* Card secondary
-  ========================================================================== */
-.nhsuk-card--secondary {
+.nhsuk-checkboxes__label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 8px 12px 4px;
+  -ms-touch-action: manipulation; /* 1 */
+  touch-action: manipulation;
+}
+
+.nhsuk-checkboxes__hint {
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + label::before {
+  background: #ffffff;
+  border: 2px solid #4c6272;
+  box-sizing: border-box;
+  content: "";
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + label::after {
   background: transparent;
-  border-bottom: 4px solid #d8dde0;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
+  border: solid;
+  border-top-color: transparent;
+  border-width: 0 0 4px 4px;
+  content: "";
+  height: 10px;
+  left: 10px;
+  opacity: 0; /* 2 */
+  position: absolute;
+  top: 13px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 22px;
 }
 
-.nhsuk-card__content--secondary {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
+/*
+ * Focus state
+ *
+ * 1. Since box-shadows are removed when users customise their colours
+ *    We set a transparent outline that is shown instead.
+ *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
+ */
+.nhsuk-checkboxes__input:focus + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:focus + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + label::before {
+  border: 4px solid #212b32;
+  box-shadow: 0 0 0 4px #ffeb3b;
+}
+
+/* Selected state */
+.nhsuk-checkboxes__input:checked + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:checked + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + label::after {
+  opacity: 1;
+}
+
+/* Disabled state */
+.nhsuk-checkboxes__input:disabled, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled,
+.nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + .nhsuk-checkboxes__label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:disabled + label,
+.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + label {
+  cursor: default;
+}
+
+.nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + .nhsuk-checkboxes__label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:disabled + label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + label {
+  opacity: 0.5;
+}
+
+/* Divider variant */
+.nhsuk-checkboxes__divider {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212b32;
+  margin-bottom: 8px;
+  text-align: center;
+  width: 40px;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-checkboxes__divider {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+@media print {
+  .nhsuk-checkboxes__divider {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+/*
+ * Conditional
+ *
+ * 1. Calculate the amount of padding needed to keep the border
+ *    centered against the checkbox.
+ * 2. Move the border centered with the checkbox.
+ * 3. Move the contents of the conditional inline with the label.
+ */
+/* 1 */
+/* 2 */
+/* 3 */
+.nhsuk-checkboxes__conditional {
+  margin-bottom: 16px;
+  border-left: 4px solid #4c6272;
+  margin-left: 18px;
+  padding-left: 30px;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-checkboxes__conditional {
+    margin-bottom: 24px;
+  }
+}
+.nhsuk-checkboxes__conditional > :last-child {
+  margin-bottom: 0;
+}
+
+.js-enabled .nhsuk-checkboxes__conditional--hidden {
+  display: none;
 }
 
 /* ==========================================================================
@@ -4715,7 +4862,7 @@ b {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-details + h2,
-  .nhsuk-details + .nhsuk-heading-l {
+.nhsuk-details + .nhsuk-heading-l {
     padding-top: 24px;
   }
 }
@@ -5101,48 +5248,37 @@ b {
 /* ==========================================================================
    COMPONENTS / #FOOTER
    ========================================================================== */
-.nhsuk-footer-container {
+.nhsuk-footer {
   padding-bottom: 24px;
   padding-top: 24px;
   background-color: #d8dde0;
   border-top: 4px solid #005eb8;
 }
-.nhsuk-footer-container:after {
+.nhsuk-footer:after {
   clear: both;
   content: "";
   display: block;
 }
 @media print {
-  .nhsuk-footer-container {
+  .nhsuk-footer {
     display: none;
   }
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-footer-container {
+  .nhsuk-footer {
     padding-bottom: 32px;
   }
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-footer-container {
-    padding-top: 32px;
-  }
-}
-
-.nhsuk-footer {
-  background-color: #d8dde0;
-  margin-bottom: 15px;
-}
-@media (min-width: 48.0625em) {
   .nhsuk-footer {
-    display: flex;
-    justify-content: space-between;
+    padding-top: 32px;
   }
 }
 
 .nhsuk-footer__list {
   padding-bottom: 16px;
   list-style-type: none;
-  margin-bottom: 25px;
+  margin: 0;
   padding-left: 0;
 }
 @media (min-width: 40.0625em) {
@@ -5150,18 +5286,11 @@ b {
     padding-bottom: 24px;
   }
 }
-.nhsuk-footer__list:last-child {
-  margin-bottom: 15px;
-}
 @media (min-width: 48.0625em) {
   .nhsuk-footer__list {
     float: left;
     padding-bottom: 0;
-    padding-right: 40px;
     width: 75%;
-  }
-  .nhsuk-footer__list:last-child {
-    padding-right: 0;
   }
 }
 
@@ -5186,26 +5315,19 @@ b {
 }
 @media (min-width: 48.0625em) {
   .nhsuk-footer__list-item {
-    float: none;
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 48.0625em) {
-  .nhsuk-footer-default__list-item {
     float: left;
     margin-right: 32px;
   }
 }
 
 .nhsuk-footer__list-item-link {
-  color: #003087;
+  color: #4c6272;
 }
 .nhsuk-footer__list-item-link:visited {
-  color: #003087;
+  color: #4c6272;
 }
 .nhsuk-footer__list-item-link:hover {
-  color: #7c2855;
+  color: #212b32;
 }
 
 .nhsuk-footer__copyright {
@@ -5213,7 +5335,7 @@ b {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
-  color: #231f20;
+  color: #4c6272;
   margin-bottom: 0;
 }
 @media (min-width: 40.0625em) {
@@ -5229,11 +5351,11 @@ b {
     line-height: 1.2;
   }
 }
-
-@media (max-width: 48.0525em) {
-  .nhsuk-footer__meta {
-    border-top: 1px solid #f0f4f5;
-    padding-top: 35px;
+@media (min-width: 48.0625em) {
+  .nhsuk-footer__copyright {
+    float: right;
+    text-align: right;
+    width: 25%;
   }
 }
 
@@ -5241,7 +5363,7 @@ b {
    COMPONENTS / #HEADER
    ========================================================================== */
 /**
-* The behaviour with regards to responsiveness is as follow:
+ * The behaviour with regards to responsiveness is as follow:
  *
  * - Mobile to tablet view
  *   Menu toggle button visible and navigation links hidden, search toggle
@@ -5254,40 +5376,49 @@ b {
  * - Desktop+ view
  *   Menu toggle button hidden and navigation links visible, search toggle
  *   button hidden and search form visible
+ *
+ * 1. Custom height and width of the logo
+ * 2. Custom height and width of form items
+ * 3. Custom height and width of svg icons
+ * 4. Remove inner border on buttons for Firefox, see
+ *    https://github.com/necolas/normalize.css/issues/393
+ * 5. Proprietary extension so form field looks the same in Safari
+ * 6. Custom margin to move menu toggle past the search toggle button
+ * 7. Custom border value between expanded search and expanded menu if both open at the same time
+ * 8. Don't display the link address for the logo anchor, see
+ *     core/elements/_links.scss
+ * 9. Use non variable colour to follow NHS England guidelines on logo colour
+ * 10. Remove random top margin in Safari
+ * 11. Align close icon with nav item arrow icons
+ * 12. Add nhsuk-spacing(9) to align right and left main nav with header
  */
 .nhsuk-header {
   background-color: #005eb8;
 }
+.nhsuk-header:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 
 .nhsuk-header__container {
-  margin: 0 16px; /* [1] */
-  max-width: 960px; /* [2] */
-  /* [4] */
   padding: 20px 0;
 }
-@media (min-width: 48.0625em) {
-  .nhsuk-header__container {
-    margin: 0 32px; /* [3] */
-  }
-}
-@media (min-width: 1024px) {
-  .nhsuk-header__container {
-    margin: 0 auto;
-  }
+.nhsuk-header__container:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 @media (max-width: 40.0525em) {
   .nhsuk-header__container {
-    padding-bottom: 0;
-  }
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-header__container {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: space-between;
+    margin: 0;
+    padding: 16px;
   }
 }
 
+.nhsuk-header__logo {
+  float: left;
+}
 @media (max-width: 40.0525em) {
   .nhsuk-header__logo {
     position: relative;
@@ -5318,6 +5449,7 @@ b {
 .nhsuk-header__logo .nhsuk-logo {
   height: 40px;
   width: 100px;
+  /* [1] */
   border: 0;
 }
 @media (max-width: 48.0525em) {
@@ -5334,6 +5466,7 @@ b {
 .nhsuk-header__link {
   height: 40px;
   width: 100px;
+  /* [1] */
   display: block;
 }
 .nhsuk-header__link:hover .nhsuk-logo {
@@ -5347,36 +5480,20 @@ b {
 }
 @media print {
   .nhsuk-header__link:after {
-    content: "";
+    content: ""; /* [8] */
   }
 }
 .nhsuk-header__link:hover, .nhsuk-header__link:active, .nhsuk-header__link:focus {
   background-color: transparent;
 }
 
-.nhsuk-header__logo--only {
-  max-width: 100%;
-}
-@media (max-width: 40.0525em) {
-  .nhsuk-header__logo--only {
-    padding-bottom: 16px;
-  }
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-header__logo--only .nhsuk-header__link--service {
-    align-items: center;
-    display: flex;
-    -ms-flex-align: center;
-    margin-bottom: 0;
-    width: auto;
-  }
-  .nhsuk-header__logo--only .nhsuk-header__service-name {
-    padding-left: 16px;
-  }
-}
-
 .nhsuk-header__content {
   position: relative;
+}
+.nhsuk-header__content:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 @media print {
   .nhsuk-header__content {
@@ -5384,9 +5501,12 @@ b {
   }
 }
 .nhsuk-header__content.js-show {
-  border-bottom: 4px solid #f0f4f5;
+  border-bottom: 4px solid #f0f4f5; /* [7] */
 }
 @media (min-width: 40.0625em) {
+  .nhsuk-header__content {
+    float: right;
+  }
   .nhsuk-header__content.js-show {
     border-bottom: 0;
   }
@@ -5396,14 +5516,67 @@ b {
   position: relative;
   text-align: right;
 }
+.nhsuk-header__search:after {
+  clear: both;
+  content: "";
+  display: block;
+}
 @media (min-width: 40.0625em) {
   .nhsuk-header__search {
+    float: left;
     margin-left: 8px;
   }
 }
 
-.nhsuk-header__search-no-nav {
-  padding-bottom: 16px;
+.nhsuk-header__search-toggle {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  min-height: 40px; /* [2] */
+  padding: 4px 8px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nhsuk-header__search-toggle::-moz-focus-inner {
+  border: 0;
+}
+.nhsuk-header__search-toggle:hover {
+  background-color: #003d78;
+  border-color: #f0f4f5;
+  box-shadow: none;
+}
+.nhsuk-header__search-toggle:focus {
+  border: 1px solid #ffeb3b !important; /* stylelint-disable-line declaration-no-important */ /* [2] */
+}
+.nhsuk-header__search-toggle:active, .nhsuk-header__search-toggle.is-active {
+  background-color: #002f5c;
+  border-color: #f0f4f5;
+  color: #f0f4f5;
+}
+.nhsuk-header__search-toggle .nhsuk-icon__search {
+  fill: #ffffff;
+  height: 21px; /* [3] */
+  width: 21px; /* [3] */
+}
+.nhsuk-header__search-toggle:focus {
+  background-color: #ffeb3b;
+  border: 0;
+  box-shadow: 0 4px 0 0 #212b32;
+  color: #212b32;
+  outline: 4px solid transparent; /* 1 */
+  outline-offset: 4px;
+  box-shadow: 0 0 0 2px #ffeb3b, 0 4px 0 2px #212b32;
+}
+.nhsuk-header__search-toggle:focus .nhsuk-icon {
+  fill: #212b32;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-header__search-toggle {
+    display: none;
+  }
 }
 
 .nhsuk-header__search-form {
@@ -5412,21 +5585,36 @@ b {
 }
 @media (max-width: 40.0525em) {
   .nhsuk-header__search-form {
+    background-color: #ffffff;
     display: flex;
-    margin: 16px 0 0;
-    position: relative;
+    padding: 16px;
     width: 100%;
   }
 }
 
+@media (max-width: 40.0525em) {
+  .nhsuk-header__search-wrap {
+    display: none;
+  }
+  .nhsuk-header__search-wrap.js-show {
+    clear: both;
+    display: flex;
+    margin-bottom: -20px;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-top: 16px;
+    text-align: left;
+  }
+}
 @media (min-width: 40.0625em) {
   .nhsuk-header__search-wrap {
     display: block;
+    line-height: 0;
   }
 }
 
 .nhsuk-search__input {
-  -webkit-appearance: listbox;
+  -webkit-appearance: listbox; /* [5] */
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 0;
   border-top-left-radius: 4px;
@@ -5438,7 +5626,7 @@ b {
   box-shadow: 0 0 0 4px #ffeb3b;
   outline: 4px solid transparent;
   outline-offset: 4px;
-  padding: 0 13px;
+  padding: 0 9px;
 }
 .nhsuk-search__input::placeholder {
   color: #4c6272;
@@ -5454,16 +5642,17 @@ b {
 }
 @media (max-width: 40.0525em) {
   .nhsuk-search__input {
-    border: 1px solid #ffffff;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
+    border-bottom: 1px solid #aeb7bd;
+    border-left: 1px solid #aeb7bd;
+    border-right: 0;
+    border-top: 1px solid #aeb7bd;
     flex-grow: 2;
     -ms-flex-positive: 2;
     font-size: inherit;
-    height: 40px;
+    height: 52px; /* [4] */
     margin: 0;
     outline: none;
-    width: 100%;
+    width: 100%; /* [4] */
     z-index: 1;
   }
 }
@@ -5471,8 +5660,8 @@ b {
   .nhsuk-search__input {
     border: 1px solid #ffffff;
     font-size: 16px;
-    height: 40px;
-    width: 200px;
+    height: 40px; /* [2] */
+    width: 200px; /* [2] */
   }
 }
 @media (min-width: 48.0625em) {
@@ -5494,34 +5683,25 @@ b {
   padding: 0;
 }
 .nhsuk-search__submit::-moz-focus-inner {
-  border: 0;
+  border: 0; /* [4] */
 }
 .nhsuk-search__submit:hover {
   cursor: pointer;
 }
 @media (max-width: 40.0525em) {
   .nhsuk-search__submit {
-    background-color: #f0f4f5;
-    border: 0;
-    height: 40px;
+    background-color: #007f3b;
+    height: 52px; /* [2] */
     margin: 0;
     padding: 8px 8px 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 9;
   }
   .nhsuk-search__submit .nhsuk-icon__search {
-    fill: #005eb8;
-    height: 27px;
-    width: 27px;
+    fill: #ffffff;
+    height: 38px; /* [3] */
+    width: 38px; /* [3] */
   }
   .nhsuk-search__submit:hover {
-    background-color: #003d78;
-    border: 1px solid #ffffff;
-  }
-  .nhsuk-search__submit:hover .nhsuk-icon {
-    fill: #ffffff;
+    background-color: #00662f;
   }
   .nhsuk-search__submit:focus {
     background-color: #ffeb3b;
@@ -5543,13 +5723,12 @@ b {
   .nhsuk-search__submit {
     background-color: #f0f4f5;
     display: block;
-    height: 40px;
-    line-height: 1;
-    width: 44px;
+    height: 40px; /* [2] */
+    width: 44px; /* [2] */
   }
   .nhsuk-search__submit .nhsuk-icon__search {
-    height: 27px;
-    width: 27px;
+    height: 27px; /* [3] */
+    width: 27px; /* [3] */
   }
   .nhsuk-search__submit:hover {
     background-color: #003d78;
@@ -5579,6 +5758,252 @@ b {
   }
 }
 
+@media (max-width: 40.0525em) {
+  .nhsuk-search__close {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 40px;
+    padding: 0;
+    width: 40px;
+    margin-left: 8px;
+    margin-right: -8px; /* [11] */
+    margin-top: 8px;
+  }
+  .nhsuk-search__close .nhsuk-icon__close {
+    fill: #005eb8;
+    height: 40px;
+    width: 40px;
+  }
+  .nhsuk-search__close::-moz-focus-inner {
+    border: 0;
+  }
+  .nhsuk-search__close:hover .nhsuk-icon__close {
+    fill: #3d4e5b;
+  }
+  .nhsuk-search__close:focus {
+    background-color: #ffeb3b;
+    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+    color: #212b32;
+    outline: 4px solid transparent;
+    text-decoration: none;
+  }
+  .nhsuk-search__close:focus .nhsuk-icon__close {
+    fill: #212b32;
+  }
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-search__close {
+    display: none;
+  }
+}
+
+.nhsuk-search__input--withdropdown {
+  border-bottom-left-radius: 0;
+}
+
+.nhsuk-search__submit--withdropdown {
+  border-bottom-right-radius: 0;
+}
+
+/* Main navigation
+ *
+ * Appears below the header strip
+   ====================================================================== */
+.nhsuk-header__menu {
+  float: right;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-header__menu {
+    float: left;
+  }
+}
+
+.nhsuk-header__menu-toggle {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 0; /* [6] */
+  padding: 7px 16px;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.nhsuk-header__menu-toggle::-moz-focus-inner {
+  border: 0;
+}
+.nhsuk-header__menu-toggle:hover {
+  background-color: #003d78;
+  border-color: #f0f4f5;
+  box-shadow: none;
+}
+.nhsuk-header__menu-toggle:focus {
+  border: 1px solid #ffeb3b !important; /* stylelint-disable-line declaration-no-important */ /* [2] */
+}
+.nhsuk-header__menu-toggle:active, .nhsuk-header__menu-toggle.is-active {
+  background-color: #002f5c;
+  border-color: #f0f4f5;
+  color: #f0f4f5;
+}
+@media (max-width: 40.0525em) {
+  .nhsuk-header__menu-toggle {
+    right: 48px;
+  }
+}
+@media (min-width: 40.0625em) and (max-width: 61.865em) {
+  .nhsuk-header__menu-toggle {
+    margin-top: 0; /* [10] */
+  }
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__menu-toggle {
+    display: none;
+  }
+}
+.nhsuk-header__menu-toggle:focus {
+  background-color: #ffeb3b;
+  border: 0;
+  box-shadow: 0 4px 0 0 #212b32;
+  color: #212b32;
+  outline: 4px solid transparent; /* 1 */
+  outline-offset: 4px;
+  box-shadow: 0 0 0 2px #ffeb3b, 0 4px 0 2px #212b32;
+}
+.nhsuk-header__menu-toggle:focus .nhsuk-icon {
+  fill: #212b32;
+}
+
+/* 'only' modifier for when there is only the menu in the header, no search
+   ====================================================================== */
+@media (max-width: 40.0525em) {
+  .nhsuk-header__menu--only .nhsuk-header__menu-toggle {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+}
+
+.nhsuk-header__navigation {
+  background-color: #ffffff;
+  clear: both;
+  display: none;
+  overflow: hidden;
+}
+@media print {
+  .nhsuk-header__navigation {
+    display: none;
+  }
+}
+.nhsuk-header__navigation.js-show {
+  display: block;
+}
+@media (max-width: 61.865em) {
+  .nhsuk-header__navigation.js-show {
+    border-bottom: 4px solid #f0f4f5; /* [7] */
+    border-top: 4px solid #f0f4f5; /* [7] */
+  }
+  .nhsuk-header__navigation.js-show .nhsuk-width-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container #cn-notice-buttons, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show #cn-notice-buttons, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show .cn-text-container {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 48.0525em) {
+  .nhsuk-header__navigation.js-show .nhsuk-width-container, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container #cn-notice-buttons, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show #cn-notice-buttons, .nhsuk-header__navigation.js-show #cookie-notice .cookie-notice-container .cn-text-container, #cookie-notice .cookie-notice-container .nhsuk-header__navigation.js-show .cn-text-container {
+    margin: 0;
+  }
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation {
+    background-color: #005eb8;
+    display: block;
+    margin: 0 auto;
+    max-width: 1024px; /* [12] */
+  }
+}
+
+.nhsuk-header__navigation-title {
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 16px;
+  position: relative;
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-title {
+    display: none;
+  }
+}
+
+.nhsuk-header__navigation-close {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 40px;
+  padding: 0;
+  width: 40px;
+  overflow: hidden;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  white-space: nowrap;
+}
+.nhsuk-header__navigation-close .nhsuk-icon__close {
+  fill: #005eb8;
+  height: 40px;
+  width: 40px;
+}
+.nhsuk-header__navigation-close::-moz-focus-inner {
+  border: 0;
+}
+.nhsuk-header__navigation-close:hover .nhsuk-icon__close {
+  fill: #3d4e5b;
+}
+.nhsuk-header__navigation-close:focus {
+  background-color: #ffeb3b;
+  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  color: #212b32;
+  outline: 4px solid transparent;
+  text-decoration: none;
+}
+.nhsuk-header__navigation-close:focus .nhsuk-icon__close {
+  fill: #212b32;
+}
+
+.nhsuk-header__navigation-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-list {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.nhsuk-header__navigation-item {
+  border-top: 1px solid #f0f4f5;
+  margin-bottom: 0;
+  position: relative;
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-item {
+    border-top: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .nhsuk-header__navigation-item .nhsuk-icon__chevron-right {
+    display: none;
+  }
+}
+
 .nhsuk-header__navigation-link {
   font-weight: 400;
   font-size: 14px;
@@ -5586,12 +6011,10 @@ b {
   line-height: 1.71429;
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
-  color: #ffffff;
+  color: #005eb8;
   display: block;
-  font-size: inherit;
-  padding: 16px 12px;
-  text-decoration: underline;
-  white-space: nowrap;
+  padding: 12px 16px;
+  text-decoration: none;
 }
 @media (min-width: 40.0625em) {
   .nhsuk-header__navigation-link {
@@ -5606,9 +6029,10 @@ b {
     line-height: 1.2;
   }
 }
-@media (min-width: 40.0625em) {
+@media (min-width: 61.875em) {
   .nhsuk-header__navigation-link {
-    padding: 12px 16px;
+    color: #ffffff;
+    line-height: normal;
   }
 }
 .nhsuk-header__navigation-link .nhsuk-icon__chevron-right {
@@ -5618,7 +6042,7 @@ b {
   top: 11px;
 }
 .nhsuk-header__navigation-link:visited {
-  color: #ffffff;
+  color: #005eb8;
 }
 @media (min-width: 61.875em) {
   .nhsuk-header__navigation-link:visited {
@@ -5627,13 +6051,16 @@ b {
 }
 .nhsuk-header__navigation-link:hover {
   box-shadow: none;
-  color: #ffffff;
-  text-decoration: none;
+  color: #005eb8;
+  text-decoration: underline;
 }
 @media (min-width: 61.875em) {
   .nhsuk-header__navigation-link:hover {
     color: #ffffff;
   }
+}
+.nhsuk-header__navigation-link:hover .nhsuk-icon__chevron-right {
+  fill: #005eb8;
 }
 .nhsuk-header__navigation-link:active, .nhsuk-header__navigation-link:focus {
   background-color: #ffeb3b;
@@ -5648,156 +6075,182 @@ b {
   background-color: #ffeb3b;
   color: #212b32;
 }
+.nhsuk-header__navigation-link:active:hover .nhsuk-icon__chevron-right, .nhsuk-header__navigation-link:focus:hover .nhsuk-icon__chevron-right {
+  fill: #212b32;
+}
 .nhsuk-header__navigation-link:active:visited, .nhsuk-header__navigation-link:focus:visited {
   background-color: #ffeb3b;
   color: #212b32;
 }
 
-.nhsuk-header__menu-toggle {
-  background: transparent;
-  border: 0;
-  border-bottom: 4px solid transparent;
-  border-radius: 0;
-  border-top: 4px solid transparent;
-  box-sizing: border-box;
-  cursor: pointer;
-  margin: 0;
-  overflow: visible;
-  position: relative;
-  right: 0;
-  text-align: center;
-  text-decoration: underline;
-  vertical-align: top;
-  visibility: hidden;
-  width: auto;
-  z-index: 1;
-}
-.nhsuk-header__menu-toggle.nhsuk-header__navigation-link {
-  padding-right: 30px;
-}
-@media (min-width: 48.0625em) {
-  .nhsuk-header__menu-toggle {
-    display: none;
-  }
-}
-.nhsuk-header__menu-toggle:focus {
-  text-decoration: none;
-}
-.nhsuk-header__menu-toggle:focus .nhsuk-icon__chevron-down {
-  fill: #212b32;
-}
-
-.nhsuk-header__menu-toggle--visible {
-  visibility: visible;
-  display: block;
-}
-
-.nhsuk-header__menu-toggle[aria-expanded=true] .nhsuk-icon__chevron-down {
-  transform: rotate(270deg);
-}
-
-.nhsuk-navigation {
-  display: flex;
-}
-@media (max-width: 40.0525em) {
-  .nhsuk-navigation {
-    position: relative;
-    z-index: 10;
-  }
-}
-
-.nhsuk-header__drop-down, .nhsuk-header__navigation-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nhsuk-header__navigation-list {
-  margin: 0 16px; /* [1] */
-  max-width: 960px; /* [2] */
-  /* [4] */
-  width: 100%;
-}
-@media (min-width: 48.0625em) {
-  .nhsuk-header__navigation-list {
-    margin: 0 32px; /* [3] */
-  }
-}
-@media (min-width: 1024px) {
-  .nhsuk-header__navigation-list {
-    margin: 0 auto;
-  }
-}
-@media (min-width: 48.0625em) {
-  .nhsuk-header__navigation-list {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.js-enabled .nhsuk-header__navigation-list {
-  display: flex;
-}
-
-.nhsuk-header__navigation-item {
-  margin-bottom: 0;
-}
-
-.nhsuk-navigation-container {
-  position: relative;
-}
-
-.nhsuk-header__drop-down {
-  background-color: #ffffff;
-  border-bottom: 4px solid #f0f4f5;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  left: 0;
-}
-@media print {
-  .nhsuk-header__drop-down {
-    display: none;
-  }
-}
-.nhsuk-header__drop-down .nhsuk-header__navigation-link {
-  color: #005eb8;
-  padding: 12px 16px;
-}
-.nhsuk-header__drop-down .nhsuk-header__navigation-item {
-  border-top: 1px solid #f0f4f5;
-  margin-bottom: 0;
-}
 @media (min-width: 61.875em) {
-  .nhsuk-header__drop-down .nhsuk-header__navigation-item {
-    border-top: 0;
-    margin: 0;
-    text-align: center;
+  .nhsuk-header__navigation-item--for-mobile {
+    display: none;
   }
 }
 
-.nhsuk-header__drop-down--hidden {
-  display: none;
-}
-
-.nhsuk-mobile-menu-container {
-  align-self: center;
-  display: none;
-}
-
-.nhsuk-mobile-menu-container--visible {
-  display: block;
-}
-
-@media (min-width: 48.0625em) {
-  .nhsuk-header__navigation-item--home {
-    display: none;
+@media (min-width: 61.875em) {
+  .nhsuk-header__navigation-list--small {
+    justify-content: flex-start;
   }
 }
 
 /**
-    * These are the styles for the organisation header variants.
-*/
+ * Transactional Header with service name
+**/
+.nhsuk-header__transactional-service-name {
+  float: left;
+  padding-left: 16px;
+  padding-top: 3px;
+}
+@media (max-width: 61.865em) {
+  .nhsuk-header__transactional-service-name {
+    padding-left: 0;
+    padding-top: 8px;
+    width: 100%;
+  }
+}
+
+.nhsuk-header__transactional-service-name--link {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.nhsuk-header__transactional-service-name--link:visited {
+  color: #ffffff;
+}
+.nhsuk-header__transactional-service-name--link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nhsuk-header__transactional-service-name--link:focus {
+  color: #212b32;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  text-decoration: none;
+}
+.nhsuk-header__transactional-service-name--link:active {
+  color: #002f5c;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-header__transactional-service-name--link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+@media print {
+  .nhsuk-header__transactional-service-name--link {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+.nhsuk-header__transactional-service-name--link:hover {
+  text-decoration: underline;
+}
+
+.nhsuk-header--transactional .nhsuk-header__link {
+  height: 32px;
+  width: 80px;
+  display: block;
+}
+.nhsuk-header--transactional .nhsuk-logo {
+  height: 32px;
+  width: 80px;
+}
+.nhsuk-header--transactional .nhsuk-header__transactional-service-name {
+  float: left;
+}
+
+.nhsuk-header__link--service {
+  height: auto;
+  margin-bottom: -4px;
+  text-decoration: none;
+  width: auto;
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__link--service {
+    align-items: center;
+    display: flex;
+    -ms-flex-align: center;
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+.nhsuk-header__link--service:hover {
+  background: none;
+}
+.nhsuk-header__link--service:hover .nhsuk-header__service-name {
+  text-decoration: underline;
+}
+.nhsuk-header__link--service:focus {
+  background: #ffeb3b;
+  box-shadow: 0 0 0 4px #ffeb3b, 0 4px 0 4px #212b32;
+}
+.nhsuk-header__link--service:focus .nhsuk-header__service-name {
+  color: #212b32;
+  text-decoration: none;
+}
+.nhsuk-header__link--service:focus .nhsuk-logo {
+  box-shadow: none;
+}
+
+.nhsuk-header__service-name {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-header__service-name {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+@media print {
+  .nhsuk-header__service-name {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+@media (min-width: 61.875em) {
+  .nhsuk-header__service-name {
+    padding-left: 16px;
+  }
+}
+@media (max-width: 61.865em) {
+  .nhsuk-header__service-name {
+    max-width: 220px;
+  }
+}
+
+.nhsuk-header__logo--only {
+  max-width: 100%;
+}
+@media (min-width: 40.0625em) {
+  .nhsuk-header__logo--only .nhsuk-header__link--service {
+    align-items: center;
+    display: flex;
+    -ms-flex-align: center;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .nhsuk-header__logo--only .nhsuk-header__service-name {
+    padding-left: 16px;
+  }
+}
+
+/**
+ * Organisational header
+**/
 .nhsuk-header--organisation .nhsuk-header__link {
   height: auto;
   text-decoration: none;
@@ -5900,199 +6353,25 @@ b {
   }
 }
 
-.nhsuk-organisation-logo {
+.nhsuk-org-logo {
   border: 0;
   max-height: 100px;
   max-width: 280px;
 }
 @media (max-width: 450px) {
-  .nhsuk-organisation-logo {
+  .nhsuk-org-logo {
     max-width: 150px;
   }
 }
 
-.nhsuk-organisation-logo[src$=".svg"] {
+.nhsuk-org-logo[src$=".svg"] {
   height: auto;
   max-width: 220px;
   width: 100%;
 }
 
-/**
-    * These are the styles for the service header variants.
-*/
-.nhsuk-header__link--service {
-  height: auto;
-  margin-bottom: -4px;
-  text-decoration: none;
-  width: auto;
-}
-@media (min-width: 61.875em) {
-  .nhsuk-header__link--service {
-    align-items: center;
-    display: flex;
-    -ms-flex-align: center;
-    margin-bottom: 0;
-    width: auto;
-  }
-}
-.nhsuk-header__link--service:hover {
-  background: none;
-}
-.nhsuk-header__link--service:hover .nhsuk-header__service-name {
-  text-decoration: underline;
-}
-.nhsuk-header__link--service:focus {
-  background: #ffeb3b;
-  box-shadow: 0 0 0 4px #ffeb3b, 0 4px 0 4px #212b32;
-}
-.nhsuk-header__link--service:focus .nhsuk-header__service-name {
-  color: #212b32;
-  text-decoration: none;
-}
-.nhsuk-header__link--service:focus .nhsuk-logo {
-  box-shadow: none;
-}
-
-.nhsuk-header__service-name {
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #ffffff;
-  display: block;
-  padding-left: 0;
-  padding-right: 0;
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-header__service-name {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.47368;
-  }
-}
-@media print {
-  .nhsuk-header__service-name {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media (min-width: 61.875em) {
-  .nhsuk-header__service-name {
-    padding-left: 16px;
-  }
-}
-@media (max-width: 61.865em) {
-  .nhsuk-header__service-name {
-    max-width: 220px;
-  }
-}
-
-/**
-    * These are the styles for the transactional header variants.
-*/
-.nhsuk-header__transactional-service-name {
-  padding-left: 16px;
-  padding-top: 3px;
-}
-@media (max-width: 40.0525em) {
-  .nhsuk-header__transactional-service-name {
-    padding-bottom: 16px;
-  }
-}
-@media (max-width: 40.0525em) {
-  .nhsuk-header__transactional-service-name {
-    padding-left: 0;
-    padding-top: 8px;
-    width: 100%;
-  }
-}
-
-.nhsuk-header__transactional-service-name--link {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  text-decoration: none;
-}
-.nhsuk-header__transactional-service-name--link:visited {
-  color: #ffffff;
-}
-.nhsuk-header__transactional-service-name--link:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-.nhsuk-header__transactional-service-name--link:focus {
-  color: #212b32;
-  outline: 4px solid transparent;
-  outline-offset: 4px;
-  text-decoration: none;
-}
-.nhsuk-header__transactional-service-name--link:active {
-  color: #002f5c;
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-header__transactional-service-name--link {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.47368;
-  }
-}
-@media print {
-  .nhsuk-header__transactional-service-name--link {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-.nhsuk-header__transactional-service-name--link:hover {
-  text-decoration: underline;
-}
-
-.nhsuk-header__transactional .nhsuk-header__container {
-  justify-content: normal;
-}
-.nhsuk-header__transactional .nhsuk-header__link {
-  height: 32px;
-  width: 80px;
-  display: block;
-}
-.nhsuk-header__transactional .nhsuk-logo {
-  height: 32px;
-  width: 80px;
-}
-
-.nhsuk-header__transactional--logo {
-  max-width: 100%;
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-header__transactional--logo .nhsuk-header__link--service {
-    align-items: center;
-    display: flex;
-    -ms-flex-align: center;
-    margin-bottom: 0;
-    width: auto;
-  }
-  .nhsuk-header__transactional--logo .nhsuk-header__service-name {
-    padding-left: 16px;
-  }
-}
-
-/**
-    * These are the styles for the white header variants.
-*/
 .nhsuk-header--white {
   background-color: #ffffff;
-}
-.nhsuk-header--white .nhsuk-header__search-wrap {
-  margin-bottom: 16px;
-}
-@media (max-width: 40.0525em) {
-  .nhsuk-header--white .nhsuk-header__search-wrap::after {
-    background: #ffffff;
-  }
-}
-.nhsuk-header--white .nhsuk-navigation-container {
-  background-color: #005eb8;
 }
 .nhsuk-header--white .nhsuk-logo .nhsuk-logo__background {
   fill: #005eb8;
@@ -6134,13 +6413,41 @@ b {
     border: 4px solid #212b32;
   }
 }
+.nhsuk-header--white .nhsuk-header__search-toggle,
+.nhsuk-header--white .nhsuk-header__menu-toggle {
+  border-color: #005eb8;
+  color: #005eb8;
+}
+.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon,
+.nhsuk-header--white .nhsuk-header__menu-toggle .nhsuk-icon {
+  fill: #005eb8;
+}
+.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .nhsuk-header--white .nhsuk-header__search-toggle:hover,
+.nhsuk-header--white .nhsuk-header__menu-toggle.is-active,
+.nhsuk-header--white .nhsuk-header__menu-toggle:hover {
+  border-color: #004b93;
+  color: #ffffff;
+}
+.nhsuk-header--white .nhsuk-header__search-toggle.is-active .nhsuk-icon, .nhsuk-header--white .nhsuk-header__search-toggle:hover .nhsuk-icon,
+.nhsuk-header--white .nhsuk-header__menu-toggle.is-active .nhsuk-icon,
+.nhsuk-header--white .nhsuk-header__menu-toggle:hover .nhsuk-icon {
+  fill: #ffffff;
+}
+.nhsuk-header--white .nhsuk-header__search-toggle:focus,
+.nhsuk-header--white .nhsuk-header__menu-toggle:focus {
+  color: #212b32;
+}
+.nhsuk-header--white .nhsuk-header__search-toggle:focus .nhsuk-icon,
+.nhsuk-header--white .nhsuk-header__menu-toggle:focus .nhsuk-icon {
+  fill: #212b32;
+}
 @media (max-width: 40.0525em) {
   .nhsuk-header--white .nhsuk-header__search-form {
     padding-top: 0;
   }
 }
 .nhsuk-header--white .nhsuk-organisation-name {
-  color: black;
+  color: #000; /* [9] */ /* stylelint-disable-line color-no-hex */
 }
 .nhsuk-header--white .nhsuk-organisation-descriptor {
   color: #005eb8;
@@ -6148,33 +6455,30 @@ b {
 .nhsuk-header--white .nhsuk-header__transactional-service-name--link {
   color: #212b32;
 }
+.nhsuk-header--white .nhsuk-header__navigation-list {
+  border-top: 0;
+}
 .nhsuk-header--white .nhsuk-header__service-name {
   color: #212b32;
 }
 
-.nhsuk-header--white-nav .nhsuk-navigation-container {
+.nhsuk-header--white-nav .nhsuk-header__navigation {
   background-color: #ffffff;
 }
-.nhsuk-header--white-nav .nhsuk-navigation {
-  background-color: #ffffff;
-}
-.nhsuk-header--white-nav .nhsuk-navigation .nhsuk-header__navigation-list {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-list {
   border-top: 1px solid #f0f4f5;
 }
-.nhsuk-header--white-nav .nhsuk-navigation .nhsuk-header__navigation-link {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link {
   color: #005eb8;
 }
-.nhsuk-header--white-nav .nhsuk-navigation .nhsuk-header__navigation-link:visited {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:visited {
   color: #005eb8;
 }
-.nhsuk-header--white-nav .nhsuk-navigation .nhsuk-header__navigation-link:focus {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus {
   color: #212b32;
 }
-.nhsuk-header--white-nav .nhsuk-navigation .nhsuk-header__navigation-link:focus:hover {
+.nhsuk-header--white-nav .nhsuk-header__navigation .nhsuk-header__navigation-link:focus:hover {
   background: #ffeb3b;
-}
-.nhsuk-header--white-nav .nhsuk-navigation .nhsuk-icon__chevron-down {
-  fill: #005eb8;
 }
 
 /* ==========================================================================
@@ -6515,30 +6819,30 @@ textarea {
   border: 2px solid #4c6272; /* 2 */
   border-radius: 0;
   box-sizing: border-box;
-  min-height: 40px;
+  height: 40px;
   margin-top: 0;
   padding: 4px;
   width: 100%;
 }
 @media (min-width: 40.0625em) {
   .nhsuk-input, input[type=text]:not(.nhsuk-search__input),
-  input[type=email],
-  input[type=url],
-  input[type=password],
-  input[type=search]:not(.nhsuk-search__input),
-  input[type=number],
-  input[type=tel],
-  input[type=range],
-  input[type=date],
-  input[type=month],
-  input[type=week],
-  input[type=time],
-  input[type=datetime],
-  input[type=datetime-local],
-  input[type=color],
-  .learndash-wrapper .wpProQuiz_content input:focus[type=text],
-  .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
-  textarea {
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search]:not(.nhsuk-search__input),
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+textarea {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -6546,23 +6850,23 @@ textarea {
 }
 @media print {
   .nhsuk-input, input[type=text]:not(.nhsuk-search__input),
-  input[type=email],
-  input[type=url],
-  input[type=password],
-  input[type=search]:not(.nhsuk-search__input),
-  input[type=number],
-  input[type=tel],
-  input[type=range],
-  input[type=date],
-  input[type=month],
-  input[type=week],
-  input[type=time],
-  input[type=datetime],
-  input[type=datetime-local],
-  input[type=color],
-  .learndash-wrapper .wpProQuiz_content input:focus[type=text],
-  .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
-  textarea {
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search]:not(.nhsuk-search__input),
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+textarea {
     font-size: 14pt;
     line-height: 1.15;
   }
@@ -6672,87 +6976,6 @@ textarea[type=number] {
 
 .nhsuk-input--width-2 {
   max-width: 5.4ex;
-}
-
-.nhsuk-input__wrapper {
-  display: flex;
-}
-@media (max-width: 19.99em) {
-  .nhsuk-input__wrapper {
-    display: block;
-  }
-}
-
-.nhsuk-input__prefix,
-.nhsuk-input__suffix {
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  background-color: #d8dde0;
-  border: 2px solid #4c6272;
-  box-sizing: border-box;
-  cursor: default;
-  display: inline-block;
-  flex: 0 0 auto;
-  min-height: 40px;
-  min-width: 2.5rem;
-  padding: 4px;
-  text-align: center;
-  white-space: nowrap;
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-input__prefix,
-  .nhsuk-input__suffix {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.47368;
-  }
-}
-@media print {
-  .nhsuk-input__prefix,
-  .nhsuk-input__suffix {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media (max-width: 19.99em) {
-  .nhsuk-input__prefix,
-  .nhsuk-input__suffix {
-    max-width: 9.1ex;
-    display: block;
-    height: 100%;
-    white-space: normal;
-  }
-}
-@media (max-width: 40.0525em) {
-  .nhsuk-input__prefix,
-  .nhsuk-input__suffix {
-    line-height: 1.6;
-    font-size: 1.1875rem;
-  }
-}
-
-@media (max-width: 19.99em) {
-  .nhsuk-input__prefix {
-    border-bottom: 0;
-  }
-}
-@media (min-width: 20em) {
-  .nhsuk-input__prefix {
-    border-right: 0;
-  }
-}
-
-@media (max-width: 19.99em) {
-  .nhsuk-input__suffix {
-    border-top: 0;
-  }
-}
-@media (min-width: 20em) {
-  .nhsuk-input__suffix {
-    border-left: 0;
-  }
 }
 
 /* ==========================================================================
@@ -7096,186 +7319,6 @@ textarea[type=number] {
 }
 
 /* ==========================================================================
-   COMPONENTS/ #CHECKBOXES
-   ========================================================================== */
-/**
- * 1. remove 300ms pause on mobile.
- * 2. Fix bug in IE11 caused by transform rotate (-45deg).
- */
-.nhsuk-checkboxes__item, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  clear: left;
-  display: block;
-  margin-bottom: 8px;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  position: relative;
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-checkboxes__item, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.47368;
-  }
-}
-@media print {
-  .nhsuk-checkboxes__item, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-
-.nhsuk-checkboxes__item:last-child, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li:last-child,
-.nhsuk-checkboxes__item:last-of-type,
-.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li:last-of-type {
-  margin-bottom: 0;
-}
-
-.nhsuk-checkboxes__input, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input {
-  cursor: pointer;
-  height: 40px;
-  left: 0;
-  margin: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 40px;
-  z-index: 1;
-}
-
-.nhsuk-checkboxes__label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 0;
-  padding: 8px 12px 4px;
-  -ms-touch-action: manipulation; /* 1 */
-  touch-action: manipulation;
-}
-
-.nhsuk-checkboxes__hint {
-  display: block;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + label::before {
-  background: #ffffff;
-  border: 2px solid #4c6272;
-  box-sizing: border-box;
-  content: "";
-  height: 40px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 40px;
-}
-
-.nhsuk-checkboxes__input + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input + label::after {
-  background: transparent;
-  border: solid;
-  border-top-color: transparent;
-  border-width: 0 0 4px 4px;
-  content: "";
-  height: 10px;
-  left: 10px;
-  opacity: 0; /* 2 */
-  position: absolute;
-  top: 13px;
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  width: 22px;
-}
-
-/*
- * Focus state
- *
- * 1. Since box-shadows are removed when users customise their colours
- *    We set a transparent outline that is shown instead.
- *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
- */
-.nhsuk-checkboxes__input:focus + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + .nhsuk-checkboxes__label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:focus + label::before, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + label::before {
-  border: 4px solid #212b32;
-  box-shadow: 0 0 0 4px #ffeb3b;
-}
-
-/* Selected state */
-.nhsuk-checkboxes__input:checked + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + .nhsuk-checkboxes__label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:checked + label::after, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + label::after {
-  opacity: 1;
-}
-
-/* Disabled state */
-.nhsuk-checkboxes__input:disabled, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled,
-.nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label,
-.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + .nhsuk-checkboxes__label,
-.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:disabled + label,
-.tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + label {
-  cursor: default;
-}
-
-.nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + .nhsuk-checkboxes__label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:disabled + label, .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + label {
-  opacity: 0.5;
-}
-
-/* Divider variant */
-.nhsuk-checkboxes__divider {
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #212b32;
-  margin-bottom: 8px;
-  text-align: center;
-  width: 40px;
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-checkboxes__divider {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.47368;
-  }
-}
-@media print {
-  .nhsuk-checkboxes__divider {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-
-/*
- * Conditional
- *
- * 1. Calculate the amount of padding needed to keep the border
- *    centered against the checkbox.
- * 2. Move the border centered with the checkbox.
- * 3. Move the contents of the conditional inline with the label.
- */
-/* 1 */
-/* 2 */
-/* 3 */
-.nhsuk-checkboxes__conditional {
-  margin-bottom: 16px;
-  border-left: 4px solid #4c6272;
-  margin-left: 18px;
-  padding-left: 30px;
-}
-@media (min-width: 40.0625em) {
-  .nhsuk-checkboxes__conditional {
-    margin-bottom: 24px;
-  }
-}
-.nhsuk-checkboxes__conditional > :last-child {
-  margin-bottom: 0;
-}
-
-.js-enabled .nhsuk-checkboxes__conditional--hidden {
-  display: none;
-}
-
-/* ==========================================================================
    COMPONENTS/ #RADIOS
    ========================================================================== */
 /**
@@ -7477,7 +7520,7 @@ textarea[type=number] {
   line-height: 1.5;
   border: 2px solid #4c6272;
   box-sizing: border-box;
-  min-height: 40px;
+  height: 40px;
   max-width: 100%;
   padding: 4px;
 }
@@ -7601,8 +7644,8 @@ textarea[type=number] {
 }
 @media (min-width: 40.0625em) {
   .nhsuk-summary-list__key,
-  .nhsuk-summary-list__value,
-  .nhsuk-summary-list__actions {
+.nhsuk-summary-list__value,
+.nhsuk-summary-list__actions {
     border-bottom: 1px solid #d8dde0;
     display: table-cell;
     padding-bottom: 8px;
@@ -8368,6 +8411,8 @@ textarea[type=number] {
   .js-enabled .nhsuk-tabs__panel > :last-child {
     margin-bottom: 0;
   }
+}
+@media (min-width: 40.0625em) {
   .js-enabled .nhsuk-tabs__panel--hidden {
     display: none;
   }
@@ -10595,7 +10640,7 @@ figure.is-style-nhsuk-table-responsive figcaption {
     }*/
   }
   figure.is-style-nhsuk-table-responsive th,
-  figure.is-style-nhsuk-table-responsive td {
+figure.is-style-nhsuk-table-responsive td {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
@@ -10609,7 +10654,7 @@ figure.is-style-nhsuk-table-responsive figcaption {
     page-break-inside: avoid;
   }
   figure.is-style-nhsuk-table-responsive th,
-  figure.is-style-nhsuk-table-responsive td {
+figure.is-style-nhsuk-table-responsive td {
     font-size: 14pt;
     line-height: 1.15;
   }
