@@ -1,5 +1,5 @@
-# Nightingale 2.5.8
-<img src="https://img.shields.io/badge/nightingale-v2.5.8-blue"> 
+# Nightingale 2.5.9
+<img src="https://img.shields.io/badge/nightingale-v2.5.9-blue"> 
 <a href="https://github.com/nhsuk/nhsuk-frontend">
 <img src="https://img.shields.io/badge/nhsuk--frontend-v6.1.0-blue"></a> <a href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img src="https://img.shields.io/badge/license-GPL%20(%3E%3D3)-green"></a> <a href="https://wordpress.org"><img src="https://img.shields.io/badge/WordPress-v5.5%20%2B-lightgrey"></a> <img src="https://img.shields.io/badge/php-5.6%2B-red"> <img src="https://img.shields.io/badge/pull%20requests-welcome-blueviolet"> <a href="https://wordpress.org/themes/nightingale"><img src="https://img.shields.io/badge/theme%20install-WP%20repo-lightgrey"></a>
 
