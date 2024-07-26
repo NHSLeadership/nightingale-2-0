@@ -3725,7 +3725,7 @@ b {
  * 3. Use a pseudo element to expand the click target area to include the
  *    button's shadow as well, in case users try to click it.
  */
-.nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+.nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -3752,58 +3752,58 @@ b {
   /* 4 */
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
   }
 }
 @media print {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     margin-bottom: 36px;
   }
 }
 @media (max-width: 40.0525em) {
-  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
+  .nhsuk-button, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, .event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .ld-expand-button, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .learndash-wrapper .learndash-wrap .ld-expand-button, .tippy-popper .tippy-content .gv-approval-toggle {
     padding: 8px 16px;
   }
 }
-.nhsuk-button:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:link, .learndash-wrapper .ld-icon.ld-primary-background:link, .learndash-wrapper .ld-expand-button:link, .learndash-wrapper .learndash-wrap .ld-expand-button:link, .tippy-popper .tippy-content .gv-approval-toggle:link, .nhsuk-button:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:visited, .learndash-wrapper .ld-icon.ld-primary-background:visited, .learndash-wrapper .ld-expand-button:visited, .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, .nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .learndash-wrapper .learndash-wrap .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active, .nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.nhsuk-button:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:link, .event-no-resize-button:link, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:link, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:link, .learndash-wrapper .ld-icon.ld-primary-background:link, .learndash-wrapper .ld-expand-button:link, .learndash-wrapper .learndash-wrap .ld-expand-button:link, .tippy-popper .tippy-content .gv-approval-toggle:link, .nhsuk-button:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:visited, .event-no-resize-button:visited, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:visited, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:visited, .learndash-wrapper .ld-icon.ld-primary-background:visited, .learndash-wrapper .ld-expand-button:visited, .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .tippy-popper .tippy-content .gv-approval-toggle:visited, .nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .event-no-resize-button:active, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .learndash-wrapper .learndash-wrap .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active, .nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .event-no-resize-button:hover, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:hover, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.nhsuk-button::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button::-moz-focus-inner, .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .ld-expand-button::-moz-focus-inner, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .learndash-wrap .ld-expand-button::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
+.nhsuk-button::-moz-focus-inner, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::-moz-focus-inner, .event-no-resize-button::-moz-focus-inner, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button::-moz-focus-inner, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button::-moz-focus-inner, .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .ld-expand-button::-moz-focus-inner, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::-moz-focus-inner, .learndash-wrapper .learndash-wrap .ld-expand-button::-moz-focus-inner, .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .event-no-resize-button:hover, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:hover, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
   background-color: #00662f;
 }
-.nhsuk-button:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus, .learndash-wrapper .ld-icon.ld-primary-background:focus, .learndash-wrapper .ld-expand-button:focus, .learndash-wrapper .learndash-wrap .ld-expand-button:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus {
+.nhsuk-button:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus, .event-no-resize-button:focus, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:focus, .learndash-wrapper .ld-icon.ld-primary-background:focus, .learndash-wrapper .ld-expand-button:focus, .learndash-wrapper .learndash-wrap .ld-expand-button:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.nhsuk-button:focus:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus:visited, .learndash-wrapper .ld-icon.ld-primary-background:focus:visited, .learndash-wrapper .ld-expand-button:focus:visited, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
+.nhsuk-button:focus:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited, .event-no-resize-button:focus:visited, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus:visited, .learndash-wrapper .ld-icon.ld-primary-background:focus:visited, .learndash-wrapper .ld-expand-button:focus:visited, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
   color: #212b32;
 }
-.nhsuk-button:focus:visited:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited:active, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus:visited:active, .learndash-wrapper .ld-icon.ld-primary-background:focus:visited:active, .learndash-wrapper .ld-expand-button:focus:visited:active, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
+.nhsuk-button:focus:visited:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:visited:active, .event-no-resize-button:focus:visited:active, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus:visited:active, .learndash-wrapper .ld-icon.ld-primary-background:focus:visited:active, .learndash-wrapper .ld-expand-button:focus:visited:active, .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
   color: #ffffff;
 }
-.nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .learndash-wrapper .learndash-wrap .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active {
+.nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .event-no-resize-button:active, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .learndash-wrapper .learndash-wrap .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.nhsuk-button::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button::before, .learndash-wrapper .ld-icon.ld-primary-background::before, .learndash-wrapper .ld-expand-button::before, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::before, .learndash-wrapper .learndash-wrap .ld-expand-button::before, .tippy-popper .tippy-content .gv-approval-toggle::before {
+.nhsuk-button::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap::before, .event-no-resize-button::before, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button::before, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button::before, .learndash-wrapper .ld-icon.ld-primary-background::before, .learndash-wrapper .ld-expand-button::before, .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::before, .learndash-wrapper .learndash-wrap .ld-expand-button::before, .tippy-popper .tippy-content .gv-approval-toggle::before {
   background: transparent;
   bottom: -6px;
   content: "";
@@ -3813,67 +3813,67 @@ b {
   right: -2px;
   top: -2px;
 }
-.nhsuk-button:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active::before, .learndash-wrapper .ld-icon.ld-primary-background:active::before, .learndash-wrapper .ld-expand-button:active::before, .learndash-wrapper .learndash-wrap .ld-expand-button:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before {
+.nhsuk-button:active::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active::before, .event-no-resize-button:active::before, .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active::before, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:active::before, .learndash-wrapper .ld-icon.ld-primary-background:active::before, .learndash-wrapper .ld-expand-button:active::before, .learndash-wrapper .learndash-wrap .ld-expand-button:active::before, .tippy-popper .tippy-content .gv-approval-toggle:active::before {
   top: -6px;
 }
 
 /**
  * Button variations
  */
-.nhsuk-button--secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, .nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button {
+.nhsuk-button--secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, .nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button, .is-style-secondary.event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.event-no-resize-button {
   background-color: #4c6272;
   box-shadow: 0 4px 0 #263139;
 }
-.nhsuk-button--secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover, .nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-secondary.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button:hover {
+.nhsuk-button--secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover, .nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-secondary.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button:hover, .is-style-secondary.event-no-resize-button:hover {
   background-color: #384853;
 }
-.nhsuk-button--secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus, .nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-secondary.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button:focus {
+.nhsuk-button--secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus, .nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-secondary.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button:focus, .is-style-secondary.event-no-resize-button:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.nhsuk-button--secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active, .nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-secondary.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button:active {
+.nhsuk-button--secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active, .nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-secondary.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button:active, .is-style-secondary.event-no-resize-button:active {
   background: #263139;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.nhsuk-button--secondary.nhsuk-button--disabled, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.cn-button.bootstrap.cn-more-info, .nhsuk-button--disabled.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-secondary.gv-approval-toggle, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-button--disabled.is-style-secondary.tribe-events-c-search__button {
+.nhsuk-button--secondary.nhsuk-button--disabled, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.cn-button.bootstrap.cn-more-info, .nhsuk-button--disabled.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-secondary.gv-approval-toggle, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-button--disabled.is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-button--disabled.is-style-secondary.tribe-events-c-search__button, .nhsuk-button--disabled.is-style-secondary.event-no-resize-button {
   background-color: #4c6272;
 }
 
-.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button {
+.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button, .is-style-reverse.event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.event-no-resize-button {
   background-color: #ffffff;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
 }
-.nhsuk-button--reverse:hover, .nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:hover, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-reverse.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:hover {
+.nhsuk-button--reverse:hover, .nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:hover, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-reverse.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:hover, .is-style-reverse.event-no-resize-button:hover {
   background-color: #f2f2f2;
   color: #212b32;
 }
-.nhsuk-button--reverse:focus, .nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-reverse.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:focus {
+.nhsuk-button--reverse:focus, .nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-reverse.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:focus, .is-style-reverse.event-no-resize-button:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.nhsuk-button--reverse:active, .nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:active, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-reverse.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:active {
+.nhsuk-button--reverse:active, .nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:active, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-reverse.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:active, .is-style-reverse.event-no-resize-button:active {
   background: #212b32;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.nhsuk-button--reverse:link, .nhsuk-button.is-style-reverse:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:link, .learndash-wrapper .is-style-reverse.ld-expand-button:link, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:link {
+.nhsuk-button--reverse:link, .nhsuk-button.is-style-reverse:link, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:link, .learndash-wrapper .is-style-reverse.ld-expand-button:link, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:link, .is-style-reverse.event-no-resize-button:link {
   color: #212b32;
 }
-.nhsuk-button--reverse:link:active, .nhsuk-button.is-style-reverse:link:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link:active, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:link:active, .learndash-wrapper .is-style-reverse.ld-expand-button:link:active, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:link:active {
+.nhsuk-button--reverse:link:active, .nhsuk-button.is-style-reverse:link:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:link:active, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:link:active, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:link:active, .learndash-wrapper .is-style-reverse.ld-expand-button:link:active, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:link:active, .is-style-reverse.event-no-resize-button:link:active {
   color: #ffffff;
 }
-.nhsuk-button--reverse.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-button--disabled.is-style-reverse.tribe-events-c-search__button {
+.nhsuk-button--reverse.nhsuk-button--disabled, .nhsuk-button--disabled.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-button--disabled.is-style-reverse.tribe-events-c-search__button, .nhsuk-button--disabled.is-style-reverse.event-no-resize-button {
   background-color: #ffffff;
 }
-.nhsuk-button--reverse.nhsuk-button--disabled:focus, .nhsuk-button--disabled.nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-button--disabled.is-style-reverse.tribe-events-c-search__button:focus {
+.nhsuk-button--reverse.nhsuk-button--disabled:focus, .nhsuk-button--disabled.nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-button--disabled.is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .nhsuk-button--disabled.is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper .nhsuk-button--disabled.is-style-reverse.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-button--disabled.is-style-reverse.tribe-events-c-search__button:focus, .nhsuk-button--disabled.is-style-reverse.event-no-resize-button:focus {
   background-color: #ffffff;
 }
 
@@ -3884,14 +3884,18 @@ b {
 .nhsuk-button--disabled,
 .nhsuk-button[disabled=disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap,
+[disabled=disabled].event-no-resize-button,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button,
+.tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].event-no-resize-button,
 .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background,
 .learndash-wrapper [disabled=disabled].ld-expand-button,
 .learndash-wrapper .learndash-wrap [disabled=disabled].ld-expand-button,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle,
 .nhsuk-button[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap,
+[disabled].event-no-resize-button,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button,
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].event-no-resize-button,
 .learndash-wrapper [disabled].ld-icon.ld-primary-background,
 .learndash-wrapper [disabled].ld-expand-button,
 .learndash-wrapper .learndash-wrap [disabled].ld-expand-button,
@@ -3903,12 +3907,14 @@ b {
 .nhsuk-button--disabled:hover,
 .nhsuk-button[disabled=disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap:hover,
+[disabled=disabled].event-no-resize-button:hover,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button:hover,
 .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:hover,
 .learndash-wrapper [disabled=disabled].ld-expand-button:hover,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:hover,
 .nhsuk-button[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap:hover,
+[disabled].event-no-resize-button:hover,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button:hover,
 .learndash-wrapper [disabled].ld-icon.ld-primary-background:hover,
 .learndash-wrapper [disabled].ld-expand-button:hover,
@@ -3919,12 +3925,14 @@ b {
 .nhsuk-button--disabled:focus,
 .nhsuk-button[disabled=disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap:focus,
+[disabled=disabled].event-no-resize-button:focus,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button:focus,
 .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:focus,
 .learndash-wrapper [disabled=disabled].ld-expand-button:focus,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:focus,
 .nhsuk-button[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap:focus,
+[disabled].event-no-resize-button:focus,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button:focus,
 .learndash-wrapper [disabled].ld-icon.ld-primary-background:focus,
 .learndash-wrapper [disabled].ld-expand-button:focus,
@@ -3935,12 +3943,14 @@ b {
 .nhsuk-button--disabled:active,
 .nhsuk-button[disabled=disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap:active,
+[disabled=disabled].event-no-resize-button:active,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button:active,
 .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:active,
 .learndash-wrapper [disabled=disabled].ld-expand-button:active,
 .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:active,
 .nhsuk-button[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap:active,
+[disabled].event-no-resize-button:active,
 .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button:active,
 .learndash-wrapper [disabled].ld-icon.ld-primary-background:active,
 .learndash-wrapper [disabled].ld-expand-button:active,
@@ -3949,7 +3959,7 @@ b {
   top: 0;
 }
 
-.nhsuk-button--secondary[disabled=disabled], #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info, [disabled=disabled].nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button,
+.nhsuk-button--secondary[disabled=disabled], #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info, [disabled=disabled].nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button, [disabled=disabled].is-style-secondary.event-no-resize-button,
 .nhsuk-button--secondary[disabled],
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info,
 [disabled].nhsuk-button.is-style-secondary,
@@ -3957,11 +3967,12 @@ b {
 .tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle,
 .learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background,
 .learndash-wrapper [disabled].is-style-secondary.ld-expand-button,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button,
+[disabled].is-style-secondary.event-no-resize-button {
   background-color: #4c6272;
   opacity: 0.5;
 }
-.nhsuk-button--secondary[disabled=disabled]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:hover, [disabled=disabled].nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button:hover,
+.nhsuk-button--secondary[disabled=disabled]:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:hover, [disabled=disabled].nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button:hover, [disabled=disabled].is-style-secondary.event-no-resize-button:hover,
 .nhsuk-button--secondary[disabled]:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info:hover,
 [disabled].nhsuk-button.is-style-secondary:hover,
@@ -3969,11 +3980,12 @@ b {
 .tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:hover,
 .learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background:hover,
 .learndash-wrapper [disabled].is-style-secondary.ld-expand-button:hover,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button:hover {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button:hover,
+[disabled].is-style-secondary.event-no-resize-button:hover {
   background-color: #4c6272;
   cursor: default;
 }
-.nhsuk-button--secondary[disabled=disabled]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:focus, [disabled=disabled].nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button:focus,
+.nhsuk-button--secondary[disabled=disabled]:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:focus, [disabled=disabled].nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button:focus, [disabled=disabled].is-style-secondary.event-no-resize-button:focus,
 .nhsuk-button--secondary[disabled]:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info:focus,
 [disabled].nhsuk-button.is-style-secondary:focus,
@@ -3981,10 +3993,11 @@ b {
 .tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:focus,
 .learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background:focus,
 .learndash-wrapper [disabled].is-style-secondary.ld-expand-button:focus,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button:focus {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button:focus,
+[disabled].is-style-secondary.event-no-resize-button:focus {
   outline: none;
 }
-.nhsuk-button--secondary[disabled=disabled]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:active, [disabled=disabled].nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:active, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button:active,
+.nhsuk-button--secondary[disabled=disabled]:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].cn-button.bootstrap.cn-more-info:active, [disabled=disabled].nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-secondary.gv-approval-toggle:active, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper [disabled=disabled].is-style-secondary.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-secondary.tribe-events-c-search__button:active, [disabled=disabled].is-style-secondary.event-no-resize-button:active,
 .nhsuk-button--secondary[disabled]:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].cn-button.bootstrap.cn-more-info:active,
 [disabled].nhsuk-button.is-style-secondary:active,
@@ -3992,51 +4005,56 @@ b {
 .tippy-popper .tippy-content [disabled].is-style-secondary.gv-approval-toggle:active,
 .learndash-wrapper [disabled].is-style-secondary.ld-icon.ld-primary-background:active,
 .learndash-wrapper [disabled].is-style-secondary.ld-expand-button:active,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button:active {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-secondary.tribe-events-c-search__button:active,
+[disabled].is-style-secondary.event-no-resize-button:active {
   box-shadow: 0 4px 0 #263139;
   top: 0;
 }
 
-.nhsuk-button--reverse[disabled=disabled], [disabled=disabled].nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button,
+.nhsuk-button--reverse[disabled=disabled], [disabled=disabled].nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button, [disabled=disabled].is-style-reverse.event-no-resize-button,
 .nhsuk-button--reverse[disabled],
 [disabled].nhsuk-button.is-style-reverse,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap,
 .tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle,
 .learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background,
 .learndash-wrapper [disabled].is-style-reverse.ld-expand-button,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button,
+[disabled].is-style-reverse.event-no-resize-button {
   background-color: #ffffff;
   opacity: 0.5;
 }
-.nhsuk-button--reverse[disabled=disabled]:hover, [disabled=disabled].nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:hover, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:hover, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button:hover,
+.nhsuk-button--reverse[disabled=disabled]:hover, [disabled=disabled].nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:hover, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:hover, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:hover, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button:hover, [disabled=disabled].is-style-reverse.event-no-resize-button:hover,
 .nhsuk-button--reverse[disabled]:hover,
 [disabled].nhsuk-button.is-style-reverse:hover,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap:hover,
 .tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:hover,
 .learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background:hover,
 .learndash-wrapper [disabled].is-style-reverse.ld-expand-button:hover,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button:hover {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button:hover,
+[disabled].is-style-reverse.event-no-resize-button:hover {
   background-color: #ffffff;
   cursor: default;
 }
-.nhsuk-button--reverse[disabled=disabled]:focus, [disabled=disabled].nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button:focus,
+.nhsuk-button--reverse[disabled=disabled]:focus, [disabled=disabled].nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:focus, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button:focus, [disabled=disabled].is-style-reverse.event-no-resize-button:focus,
 .nhsuk-button--reverse[disabled]:focus,
 [disabled].nhsuk-button.is-style-reverse:focus,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap:focus,
 .tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:focus,
 .learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background:focus,
 .learndash-wrapper [disabled].is-style-reverse.ld-expand-button:focus,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button:focus {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button:focus,
+[disabled].is-style-reverse.event-no-resize-button:focus {
   outline: none;
 }
-.nhsuk-button--reverse[disabled=disabled]:active, [disabled=disabled].nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:active, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:active, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button:active,
+.nhsuk-button--reverse[disabled=disabled]:active, [disabled=disabled].nhsuk-button.is-style-reverse:active, #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled=disabled].is-style-reverse.cn-button.bootstrap:active, .tippy-popper .tippy-content [disabled=disabled].is-style-reverse.gv-approval-toggle:active, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-icon.ld-primary-background:active, .learndash-wrapper [disabled=disabled].is-style-reverse.ld-expand-button:active, .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].is-style-reverse.tribe-events-c-search__button:active, [disabled=disabled].is-style-reverse.event-no-resize-button:active,
 .nhsuk-button--reverse[disabled]:active,
 [disabled].nhsuk-button.is-style-reverse:active,
 #cookie-notice .cookie-notice-container #cn-notice-buttons [disabled].is-style-reverse.cn-button.bootstrap:active,
 .tippy-popper .tippy-content [disabled].is-style-reverse.gv-approval-toggle:active,
 .learndash-wrapper [disabled].is-style-reverse.ld-icon.ld-primary-background:active,
 .learndash-wrapper [disabled].is-style-reverse.ld-expand-button:active,
-.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button:active {
+.tribe-events .tribe-events-c-events-bar__search-form [disabled].is-style-reverse.tribe-events-c-search__button:active,
+[disabled].is-style-reverse.event-no-resize-button:active {
   box-shadow: 0 4px 0 #212b32;
   top: 0;
 }
@@ -8500,7 +8518,7 @@ textarea[type=number] {
   width: 100%;
 }
 
-.nhsuk-button--reverse:visited, .nhsuk-button.is-style-reverse:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:visited, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:visited, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:visited, .learndash-wrapper .is-style-reverse.ld-expand-button:visited, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:visited {
+.nhsuk-button--reverse:visited, .nhsuk-button.is-style-reverse:visited, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:visited, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:visited, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:visited, .learndash-wrapper .is-style-reverse.ld-expand-button:visited, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button:visited, .is-style-reverse.event-no-resize-button:visited {
   color: #212b32;
 }
 
@@ -8847,7 +8865,7 @@ button + .button {
 .nhsuk-cat-filter .nhsuk-cat-reset {
   float: right;
 }
-.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap, .nhsuk-cat-filter .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-cat-filter .tribe-events-c-search__button, .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
+.nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap, .nhsuk-cat-filter .event-no-resize-button, .nhsuk-cat-filter .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .nhsuk-cat-filter .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-cat-filter .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-cat-filter .event-no-resize-button, .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
 
@@ -8990,7 +9008,7 @@ button + .button {
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #commentform {
   display: flow-root;
 }
-.nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button.submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cookie-notice .cookie-notice-container #cn-notice-buttons .submit.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.cn-button.bootstrap, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tribe-events .tribe-events-c-events-bar__search-form .submit.tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.tribe-events-c-search__button, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .learndash-wrapper .submit.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.ld-icon.ld-primary-background, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .learndash-wrapper .submit.ld-expand-button, .learndash-wrapper .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.ld-expand-button, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tippy-popper .tippy-content .submit.gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.gv-approval-toggle {
+.nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .nhsuk-button.submit, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cookie-notice .cookie-notice-container #cn-notice-buttons .submit.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.cn-button.bootstrap, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.event-no-resize-button, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tribe-events .tribe-events-c-events-bar__search-form .submit.tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.tribe-events-c-search__button, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .learndash-wrapper .submit.ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.ld-icon.ld-primary-background, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .learndash-wrapper .submit.ld-expand-button, .learndash-wrapper .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.ld-expand-button, .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .tippy-popper .tippy-content .submit.gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond .submit.gv-approval-toggle {
   float: right;
 }
 .nhsuk-list-panel .comment-list .nhsuk-list-panel__item #respond #cancel-comment-reply-link {
@@ -9506,10 +9524,10 @@ li.nhsuk-pagination-item--next {
 .gform_wrapper .gform_page_footer {
   padding-top: 32px !important;
 }
-.gform_wrapper .gform_page_footer .nhsuk-button--secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info svg path, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap svg path, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle svg path, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button svg path, .gform_wrapper .gform_page_footer .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button svg path, .tribe-events .tribe-events-c-events-bar__search-form .gform_wrapper .gform_page_footer .is-style-secondary.tribe-events-c-search__button svg path {
+.gform_wrapper .gform_page_footer .nhsuk-button--secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info svg path, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary svg path, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap svg path, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap svg path, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle svg path, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background svg path, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button svg path, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button svg path, .gform_wrapper .gform_page_footer .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button svg path, .tribe-events .tribe-events-c-events-bar__search-form .gform_wrapper .gform_page_footer .is-style-secondary.tribe-events-c-search__button svg path, .gform_wrapper .gform_page_footer .is-style-secondary.event-no-resize-button svg path {
   fill: #ffffff;
 }
-.gform_wrapper .gform_page_footer .nhsuk-button--secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button, .gform_wrapper .gform_page_footer .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .gform_wrapper .gform_page_footer .is-style-secondary.tribe-events-c-search__button {
+.gform_wrapper .gform_page_footer .nhsuk-button--secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .cn-button.bootstrap.cn-more-info, .gform_wrapper .gform_page_footer .nhsuk-button.is-style-secondary, .gform_wrapper .gform_page_footer #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer .is-style-secondary.cn-button.bootstrap, .gform_wrapper .gform_page_footer .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer .is-style-secondary.gv-approval-toggle, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-icon.ld-primary-background, .gform_wrapper .gform_page_footer .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .gform_wrapper .gform_page_footer .is-style-secondary.ld-expand-button, .gform_wrapper .gform_page_footer .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .gform_wrapper .gform_page_footer .is-style-secondary.tribe-events-c-search__button, .gform_wrapper .gform_page_footer .is-style-secondary.event-no-resize-button {
   float: left;
   margin-right: 20px;
 }
@@ -9555,7 +9573,7 @@ li.nhsuk-pagination-item--next {
   vertical-align: top;
   width: auto;
 }
-.gform_wrapper .gform_page_footer > .nhsuk-button, .gform_wrapper #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_page_footer > .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer > .cn-button.bootstrap, .gform_wrapper .tribe-events .tribe-events-c-events-bar__search-form .gform_page_footer > .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .gform_wrapper .gform_page_footer > .tribe-events-c-search__button, .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-icon.ld-primary-background, .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-icon.ld-primary-background, .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-expand-button, .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-expand-button, .gform_wrapper .tippy-popper .tippy-content .gform_page_footer > .gv-approval-toggle, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer > .gv-approval-toggle {
+.gform_wrapper .gform_page_footer > .nhsuk-button, .gform_wrapper #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_page_footer > .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .gform_wrapper .gform_page_footer > .cn-button.bootstrap, .gform_wrapper .gform_page_footer > .event-no-resize-button, .gform_wrapper .tribe-events .tribe-events-c-events-bar__search-form .gform_page_footer > .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .gform_wrapper .gform_page_footer > .tribe-events-c-search__button, .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-icon.ld-primary-background, .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-icon.ld-primary-background, .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-expand-button, .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-expand-button, .gform_wrapper .tippy-popper .tippy-content .gform_page_footer > .gv-approval-toggle, .tippy-popper .tippy-content .gform_wrapper .gform_page_footer > .gv-approval-toggle {
   font-size: 19px !important;
 }
 .gform_wrapper #ui-datepicker-div {
@@ -10107,8 +10125,22 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
   }
 }
 
-.tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button {
+.tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button {
   margin: 15px;
+}
+
+/* Hover state styling */
+.event-no-resize-button:hover {
+  background-color: #007f3b;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+/* Active state styling without resizing */
+.event-no-resize-button:active {
+  background-color: #007f3b;
+  border-color: rgba(0, 0, 0, 0);
+  transform: none; /* Ensure no scaling effect */
+  outline: none; /* Remove focus outline if present */
 }
 
 #rsvp-now .tribe-tickets__rsvp-wrapper {
@@ -10699,9 +10731,9 @@ figure.is-style-nhsuk-table-responsive figcaption {
 // @version 1.0 22nd July 2019
 */
 /* button extension*/
-.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button { /* secondary button style*/ }
+.nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.tribe-events-c-search__button, .is-style-secondary.event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-secondary.event-no-resize-button { /* secondary button style*/ }
 
-.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button { /* reverse button style*/ }
+.nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.tribe-events-c-search__button, .is-style-reverse.event-no-resize-button, .tribe-events .tribe-events-c-events-bar__search-form .is-style-reverse.event-no-resize-button { /* reverse button style*/ }
 
 /* reveal extension*/
 .nhsuk-details.is-style-expander { /* expander reveal style*/ }

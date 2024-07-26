@@ -13,7 +13,7 @@
  */
 
 ?>
-	<button class="nhsuk-button tribe-events-c-search__button" type="submit" name="submit-bar">
+	<button class="event-no-resize-button" type="submit" name="submit-bar">
 		<?php
 		esc_html_e( 'Find Events', 'nightingale' );
 		?>

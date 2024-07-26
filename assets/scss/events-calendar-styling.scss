@@ -171,6 +171,25 @@
 	}
 }
 
+  /* Hover state styling */
+  .event-no-resize-button:hover {
+	background-color: #007f3b;
+	border-color: rgba(0,0,0,0);
+  }
+
+  /* Active state styling without resizing */
+.event-no-resize-button:active {
+	background-color: #007f3b;
+	border-color: rgba(0,0,0,0);
+	transform: none; /* Ensure no scaling effect */
+	outline: none; /* Remove focus outline if present */
+  }
+  .event-no-resize-button {
+	@extend .nhsuk-button;
+	@extend .tribe-events-c-search__button;
+  }
+
+
 #rsvp-now {
   .tribe-tickets__rsvp-wrapper {
 	max-width : 100%;
