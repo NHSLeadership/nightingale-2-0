@@ -10093,10 +10093,9 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
   background-color: #007f3b;
+  outline: none;
 }
 
-/* Hover state styling */
-/* Active state styling without resizing */
 #rsvp-now .tribe-tickets__rsvp-wrapper {
   max-width: 100%;
 }

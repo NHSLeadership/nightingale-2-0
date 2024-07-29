@@ -793,8 +793,6 @@
   /* login form customisation */
   /* Extra Blog Styles */
   /* Events Calendar Styles */
-  /* Hover state styling */
-  /* Active state styling without resizing */
   /* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
   /* Events Widgets */
   /* embedded events */
@@ -7485,6 +7483,7 @@
 }
 .edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
   background-color: #007f3b;
+  outline: none;
 }
 .edit-post-visual-editor #rsvp-now .tribe-tickets__rsvp-wrapper {
   max-width: 100%;

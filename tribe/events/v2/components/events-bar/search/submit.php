@@ -13,7 +13,7 @@
  */
 
 ?>
-	<button class="tribe-common-c-btn tribe-events-c-search__button tribe-events-c-search__button_green" type="submit" name="submit-bar">
+	<button class="tribe-common-c-btn tribe-events-c-search__button" type="submit" name="submit-bar">
 		<?php
 		esc_html_e( 'Find Events', 'nightingale' );
 		?>
