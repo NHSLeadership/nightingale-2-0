@@ -165,10 +165,42 @@
 }
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
-	background-color: #007f3b;
+	background-color: $color_nhsuk-green;
+	color: $color_nhsuk-white;
 	outline: none;
+	&:focus{
+		background-color: $color_nhsuk-yellow;
+		color: $color_nhsuk-black;
+		outline: none;
+	}
+	&:hover{
+		background-color: $color_nhsuk-dark-green;
+		color: $color_nhsuk-white;
+		outline: none;
+	}
 }
 
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button {
+	outline: none;
+	box-shadow: 0 4px 0 $color-nhsuk-black;
+	border: 2px solid transparent;
+    border-radius: 4px;
+	&:focus{
+		background-color: $color_nhsuk-black;
+		color: $color_nhsuk-white;
+		outline: none;
+	}
+	&:hover{
+		background-color: $color_nhsuk-white;
+		color: $color_nhsuk-black;
+		outline: none;
+	}
+	&:active{
+		background-color: $color_nhsuk-black;
+		color: $color_nhsuk-white;
+		outline: none;
+	}
+}
 
 #rsvp-now {
   .tribe-tickets__rsvp-wrapper {

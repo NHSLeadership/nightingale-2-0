@@ -10093,6 +10093,39 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 
 .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
   background-color: #007f3b;
+  color: #ffffff;
+  outline: none;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button:focus {
+  background-color: #ffeb3b;
+  color: #212b32;
+  outline: none;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button:hover {
+  background-color: #006747;
+  color: #ffffff;
+  outline: none;
+}
+
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button {
+  outline: none;
+  box-shadow: 0 4px 0 #212b32;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button:focus {
+  background-color: #212b32;
+  color: #ffffff;
+  outline: none;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button:hover {
+  background-color: #ffffff;
+  color: #212b32;
+  outline: none;
+}
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button:active {
+  background-color: #212b32;
+  color: #ffffff;
   outline: none;
 }
 
