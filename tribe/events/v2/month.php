@@ -94,7 +94,6 @@ if ( empty( $disable_event_search ) ) {
 	}
 
 	.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__datepicker {
-		position: absolute;
 		right: 0;
 	}
 

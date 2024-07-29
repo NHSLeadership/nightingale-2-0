@@ -66,7 +66,7 @@
 
 
 .tribe-common--breakpoint-medium.tribe-common .tribe-common-form-control-text__input {
-  padding      : nhsuk-spacing(3);
+  padding      : nhsuk-spacing(5);
   margin-right : nhsuk-spacing(2);
 }
 
@@ -166,29 +166,29 @@
 
 .tribe-events .tribe-events-c-events-bar__search-form {
 	.tribe-events-c-search__button {
-		font-weight: 400;
-		font-size: 16px;
-		font-size: 1rem;
-		line-height: 1.5;
-		margin-bottom: 28px;
-		-webkit-appearance: none;
-		background-color: #007f3b;
-		border: 2px solid transparent;
-		border-radius: 4px;
-		box-shadow: 0 4px 0 #00401e;
-		box-sizing: border-box;
-		color: #fff;
-		cursor: pointer;
-		display: inline-block;
-		font-weight: 600;
-		margin-top: 0;
-		padding: 12px 16px;
-		position: relative;
-		text-align: center;
-		vertical-align: top;
-		width: auto;
+		@extend .nhsuk-button;
+		margin: 15px;
 	}
 }
+
+  /* Hover state styling */
+  .event-no-resize-button:hover {
+	background-color: #007f3b;
+	border-color: rgba(0,0,0,0);
+  }
+
+  /* Active state styling without resizing */
+.event-no-resize-button:active {
+	background-color: #007f3b;
+	border-color: rgba(0,0,0,0);
+	transform: none; /* Ensure no scaling effect */
+	outline: none; /* Remove focus outline if present */
+  }
+  .event-no-resize-button {
+	@extend .nhsuk-button;
+	@extend .tribe-events-c-search__button;
+  }
+
 
 #rsvp-now {
   .tribe-tickets__rsvp-wrapper {
