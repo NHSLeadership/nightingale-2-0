@@ -793,8 +793,6 @@
   /* login form customisation */
   /* Extra Blog Styles */
   /* Events Calendar Styles */
-  /* Hover state styling */
-  /* Active state styling without resizing */
   /* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
   /* Events Widgets */
   /* embedded events */
@@ -3667,7 +3665,7 @@
 .edit-post-visual-editor .nhsuk-breadcrumb__backlink:visited:hover {
   color: #7c2855;
 }
-.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .event-no-resize-button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
@@ -3694,58 +3692,58 @@
   /* 4 */
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .event-no-resize-button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.47368;
   }
 }
 @media print {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .event-no-resize-button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .event-no-resize-button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     margin-bottom: 36px;
   }
 }
 @media (max-width: 40.0525em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .event-no-resize-button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     padding: 8px 16px;
   }
 }
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .event-no-resize-button:link, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:link, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .event-no-resize-button:visited, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:visited, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .event-no-resize-button:active, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .event-no-resize-button:hover, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:hover, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-button::-moz-focus-inner, .edit-post-visual-editor .event-no-resize-button::-moz-focus-inner, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button::-moz-focus-inner, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button::-moz-focus-inner, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
+.edit-post-visual-editor .nhsuk-button::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button::-moz-focus-inner, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .event-no-resize-button:hover, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:hover, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
+.edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
   background-color: #00662f;
 }
-.edit-post-visual-editor .nhsuk-button:focus, .edit-post-visual-editor .event-no-resize-button:focus, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:focus, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:focus, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus {
+.edit-post-visual-editor .nhsuk-button:focus, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:focus, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
   box-shadow: 0 4px 0 #212b32;
   color: #212b32;
   outline: 4px solid transparent;
 }
-.edit-post-visual-editor .nhsuk-button:focus:visited, .edit-post-visual-editor .event-no-resize-button:focus:visited, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
+.edit-post-visual-editor .nhsuk-button:focus:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited {
   color: #212b32;
 }
-.edit-post-visual-editor .nhsuk-button:focus:visited:active, .edit-post-visual-editor .event-no-resize-button:focus:visited:active, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:focus:visited:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus:visited:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus:visited:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
+.edit-post-visual-editor .nhsuk-button:focus:visited:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus:visited:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus:visited:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus:visited:active {
   color: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .event-no-resize-button:active, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active {
+.edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active {
   background: #00401e;
   box-shadow: none;
   color: #ffffff;
   top: 4px;
 }
-.edit-post-visual-editor .nhsuk-button::before, .edit-post-visual-editor .event-no-resize-button::before, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button::before, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::before {
+.edit-post-visual-editor .nhsuk-button::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::before {
   background: transparent;
   bottom: -6px;
   content: "";
@@ -3755,7 +3753,7 @@
   right: -2px;
   top: -2px;
 }
-.edit-post-visual-editor .nhsuk-button:active::before, .edit-post-visual-editor .event-no-resize-button:active::before, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active::before, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:active::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active::before {
+.edit-post-visual-editor .nhsuk-button:active::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active::before {
   top: -6px;
 }
 .edit-post-visual-editor .nhsuk-button--secondary {
@@ -3815,17 +3813,11 @@
 }
 .edit-post-visual-editor .nhsuk-button--disabled,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled],
-.edit-post-visual-editor [disabled=disabled].event-no-resize-button,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].event-no-resize-button,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button,
 .edit-post-visual-editor .learndash-wrapper .learndash-wrap [disabled=disabled].ld-expand-button,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle,
 .edit-post-visual-editor .nhsuk-button[disabled],
-.edit-post-visual-editor [disabled].event-no-resize-button,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled].event-no-resize-button,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button,
 .edit-post-visual-editor .learndash-wrapper .learndash-wrap [disabled].ld-expand-button,
@@ -3836,14 +3828,10 @@
 }
 .edit-post-visual-editor .nhsuk-button--disabled:hover,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled]:hover,
-.edit-post-visual-editor [disabled=disabled].event-no-resize-button:hover,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button:hover,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:hover,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button:hover,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:hover,
 .edit-post-visual-editor .nhsuk-button[disabled]:hover,
-.edit-post-visual-editor [disabled].event-no-resize-button:hover,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button:hover,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background:hover,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button:hover,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle:hover {
@@ -3852,14 +3840,10 @@
 }
 .edit-post-visual-editor .nhsuk-button--disabled:focus,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled]:focus,
-.edit-post-visual-editor [disabled=disabled].event-no-resize-button:focus,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button:focus,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:focus,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button:focus,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:focus,
 .edit-post-visual-editor .nhsuk-button[disabled]:focus,
-.edit-post-visual-editor [disabled].event-no-resize-button:focus,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button:focus,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background:focus,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button:focus,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle:focus {
@@ -3868,14 +3852,10 @@
 }
 .edit-post-visual-editor .nhsuk-button--disabled:active,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled]:active,
-.edit-post-visual-editor [disabled=disabled].event-no-resize-button:active,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled=disabled].tribe-events-c-search__button:active,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-icon.ld-primary-background:active,
 .edit-post-visual-editor .learndash-wrapper [disabled=disabled].ld-expand-button:active,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled=disabled].gv-approval-toggle:active,
 .edit-post-visual-editor .nhsuk-button[disabled]:active,
-.edit-post-visual-editor [disabled].event-no-resize-button:active,
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form [disabled].tribe-events-c-search__button:active,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background:active,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button:active,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle:active {
@@ -6697,7 +6677,7 @@
 .edit-post-visual-editor .nhsuk-cat-filter .nhsuk-cat-reset {
   float: right;
 }
-.edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .event-no-resize-button, .edit-post-visual-editor .nhsuk-cat-filter .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .edit-post-visual-editor .nhsuk-cat-filter .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-cat-filter .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .nhsuk-cat-filter .event-no-resize-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
+.edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
 .edit-post-visual-editor .gform_heading .gform_description {
@@ -6976,7 +6956,7 @@
   vertical-align: top;
   width: auto;
 }
-.edit-post-visual-editor .gform_wrapper .gform_page_footer > .nhsuk-button, .edit-post-visual-editor .gform_wrapper .gform_page_footer > .event-no-resize-button, .edit-post-visual-editor .gform_wrapper .tribe-events .tribe-events-c-events-bar__search-form .gform_page_footer > .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .gform_wrapper .gform_page_footer > .tribe-events-c-search__button, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-icon.ld-primary-background, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-expand-button, .edit-post-visual-editor .gform_wrapper .tippy-popper .tippy-content .gform_page_footer > .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .gform_wrapper .gform_page_footer > .gv-approval-toggle {
+.edit-post-visual-editor .gform_wrapper .gform_page_footer > .nhsuk-button, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-icon.ld-primary-background, .edit-post-visual-editor .gform_wrapper .learndash-wrapper .gform_page_footer > .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .gform_wrapper .gform_page_footer > .ld-expand-button, .edit-post-visual-editor .gform_wrapper .tippy-popper .tippy-content .gform_page_footer > .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .gform_wrapper .gform_page_footer > .gv-approval-toggle {
   font-size: 19px !important;
 }
 .edit-post-visual-editor .gform_wrapper #ui-datepicker-div {
@@ -7501,18 +7481,41 @@
     background-color: transparent;
   }
 }
-.edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button {
-  margin: 15px;
-}
-.edit-post-visual-editor .event-no-resize-button:hover {
+.edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button {
   background-color: #007f3b;
-  border-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  outline: none;
 }
-.edit-post-visual-editor .event-no-resize-button:active {
-  background-color: #007f3b;
-  border-color: rgba(0, 0, 0, 0);
-  transform: none; /* Ensure no scaling effect */
-  outline: none; /* Remove focus outline if present */
+.edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button:focus {
+  background-color: #ffeb3b;
+  color: #212b32;
+  outline: none;
+}
+.edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-common-c-btn.tribe-events-c-search__button:hover {
+  background-color: #006747;
+  color: #ffffff;
+  outline: none;
+}
+.edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button {
+  outline: none;
+  box-shadow: 0 4px 0 #212b32;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+.edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button:focus {
+  background-color: #212b32;
+  color: #ffffff;
+  outline: none;
+}
+.edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button:hover {
+  background-color: #ffffff;
+  color: #212b32;
+  outline: none;
+}
+.edit-post-visual-editor .tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__today-button:active {
+  background-color: #212b32;
+  color: #ffffff;
+  outline: none;
 }
 .edit-post-visual-editor #rsvp-now .tribe-tickets__rsvp-wrapper {
   max-width: 100%;
@@ -7703,7 +7706,7 @@
 .edit-post-visual-editor ul {
   list-style: none;
 }
-.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:link, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:link, .edit-post-visual-editor .event-no-resize-button:link, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:visited, .edit-post-visual-editor .event-no-resize-button:visited, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:active, .edit-post-visual-editor .event-no-resize-button:active, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .tribe-events-c-search__button:hover, .edit-post-visual-editor .event-no-resize-button:hover, .edit-post-visual-editor .tribe-events .tribe-events-c-events-bar__search-form .event-no-resize-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
+.edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
   color: #ffffff;
   text-decoration: none;
 }
