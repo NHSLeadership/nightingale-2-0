@@ -47,6 +47,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Composer dependancy fix
 * gitignore changes
 * Fix for style caching
+* Argument fix for wp_enqueue_style()
 
 =2.5.9=
 * Button style fix for event plugin
