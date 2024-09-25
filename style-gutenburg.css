@@ -6590,6 +6590,9 @@
 .edit-post-visual-editor .nhsuk-action-link__link + div {
   margin-left: 34px;
 }
+.edit-post-visual-editor .nhsuk-header__navigation-item {
+  border-top: none;
+}
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;
