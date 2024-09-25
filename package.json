@@ -8,7 +8,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass --style=expanded --load-path=node_modules/nhsuk-frontend/packages style.scss style.css | sass --load-path=node_modules/nhsuk-frontend/packages style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css",
+    "build": "sass --style=expanded --load-path=node_modules/nhsuk-frontend/packages style.scss style.css | sass --load-path=node_modules/nhsuk-frontend/packages style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css | cp ./node_modules/nhsuk-frontend/dist/nhsuk.min.js js/nhsuk.min.js",
     "compress": "sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages style.scss style.min.css | sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages page-colours.scss page-colours.min.css",
     "zip": "zip -r nightingale.zip ./ -x .git .gitignore *.git/* /critical-css-generator.js /postcss.config.js *.github/* /Dockerfile /gruntfile.js /package.json package-lock.json *.DS_Store .DS_Store node_modules/ /phpcs.xml.dist node_modules/**\\* nhsblocks/node_modules/**\\*",
     "critical": "node critical-css-generator.js"
