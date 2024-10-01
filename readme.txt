@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.6.1=
 * Removed wp-html-mail folder
+* Style improvements for events plugin
 
 =2.6.0=
 * Composer dependancy fix
