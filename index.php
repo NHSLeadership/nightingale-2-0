@@ -9,7 +9,7 @@
  * @link      https://developer.wordpress.org/themes/basics/template-hierarchy/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.6.0 30th July 2024
+ * @version   2.6.1 6th September 2024
  */
 
 get_header();

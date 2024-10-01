@@ -179,4 +179,7 @@ if ( empty( $disable_event_search ) ) {
 	.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:hover {
 		cursor: not-allowed;
 	}
+	.tribe-events .tribe-events-c-top-bar__datepicker-button:after {
+  		display: none;
+	}
 </style>
