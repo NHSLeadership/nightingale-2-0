@@ -6593,6 +6593,22 @@
 .edit-post-visual-editor .nhsuk-header__navigation-item {
   border-top: none;
 }
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-search__submit {
+    background-color: #f0f4f5;
+    border: 0;
+    margin: 0;
+    padding: 8px 8px 0;
+    position: absolute;
+    right: 0;
+    top: auto;
+    height: 52px;
+    z-index: 9;
+  }
+  .edit-post-visual-editor .nhsuk-header__search-form {
+    padding: 16px 0 0 0;
+  }
+}
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;
