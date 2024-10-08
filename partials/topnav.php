@@ -11,7 +11,7 @@
  * @version 1.0 13th January 2020
  */
 
-$menu_locations = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).
+$menu_locations     = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).
 $mobile_toggle_menu = '<li class="nhsuk-mobile-menu-container"><button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
             <span class="nhsuk-u-visually-hidden">Browse</span>
             More
@@ -19,7 +19,7 @@ $mobile_toggle_menu = '<li class="nhsuk-mobile-menu-container"><button class="nh
               <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
             </svg>
           </button> <ul class="nhsuk-header__drop-down nhsuk-header__drop-down--hidden"></ul></li>';
-$topmenu_args = array(
+$topmenu_args       = array(
 	'menu'            => 'main-menu',
 	'menu_class'      => 'nhsuk-header__navigation-list',
 	'menu_id'         => 'menu-menu-top-menu',
