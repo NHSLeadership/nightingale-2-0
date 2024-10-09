@@ -16,12 +16,12 @@ if ( has_nav_menu( 'footer-menu' ) ) { // Check to see if there is a footer menu
 	$menu_item = wp_get_nav_menu_items( $menu_id );
 	if ( $menu_item ) { // Get the array of wp objects, the nav items for our queried location.
 		?>
-		<h2 class="nhsuk-u-visually-hidden">Support links</h2>
+		
 		<ul class="nhsuk-footer__list">
 			<?php
 
 			foreach ( $menu_item as $nav_item ) {
-				echo '<li class="nhsuk-footer__list-item"><a ' .
+				echo '<li class="nhsuk-footer__list-item nhsuk-footer-default__list-item"><a ' .
 				( ! empty( $nav_item->xfn ) ? 'rel="' . esc_html( $nav_item->xfn ) . '"' : '' )
 				. 'class="nhsuk-footer__list-item-link" href="' . esc_url( $nav_item->url ) . '">' . esc_html( $nav_item->title ) . '</a></li>';
 
