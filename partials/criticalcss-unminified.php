@@ -402,10 +402,10 @@ position: relative
 }
 
 .nhsuk-footer {
-padding-bottom: 24px;
-padding-top: 24px;
+
+
 background-color: #d8dde0;
-border-top: 4px solid #005eb8
+
 }
 
 @media (min-width:40.0625em) {
