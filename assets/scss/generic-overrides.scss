@@ -206,18 +206,21 @@ a:focus .nhsuk-icon {
         padding: 16px 0 0 0;
     }
 }
-// @media (max-width: 40.0525em) {
-// 	.nhsuk-header .nhsuk-search__input {
-// 		border: none;
-// 	}
-// }
-// @media (max-width: 40.0525em) {
-//     .nhsuk-search__submit {
-//         height: auto;
-//         position: relative;
-//     }
-// }
-// .nhsuk-header .nhsuk-search__input {
-//     margin-left: -14px;
-// }
-	
+
+
+@media (min-width: 40.0625em) {
+	.nhsuk-header__container {
+        justify-content: normal;
+    }
+	.nhsuk-header__transactional-service-name {
+		padding-left: 28px;
+		width: 100%;
+	}
+    .nhsuk-header__search {
+        margin-left: 0px;
+        width: 100%;
+    }
+	.nhsuk-header__content {
+		width: 100%;
+	}
+}
