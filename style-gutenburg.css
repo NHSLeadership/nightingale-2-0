@@ -6609,6 +6609,22 @@
     padding: 16px 0 0 0;
   }
 }
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-header__container {
+    justify-content: normal;
+  }
+  .edit-post-visual-editor .nhsuk-header__transactional-service-name {
+    padding-left: 28px;
+    width: 100%;
+  }
+  .edit-post-visual-editor .nhsuk-header__search {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .edit-post-visual-editor .nhsuk-header__content {
+    width: 100%;
+  }
+}
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;

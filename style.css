@@ -8536,6 +8536,22 @@ a:focus .nhsuk-icon {
     padding: 16px 0 0 0;
   }
 }
+@media (min-width: 40.0625em) {
+  .nhsuk-header__container {
+    justify-content: normal;
+  }
+  .nhsuk-header__transactional-service-name {
+    padding-left: 28px;
+    width: 100%;
+  }
+  .nhsuk-header__search {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .nhsuk-header__content {
+    width: 100%;
+  }
+}
 /*
 // variations to styling required for gutenberg native blocks
 // @author Tony Blacker, NHS Leadership Academy
