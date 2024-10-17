@@ -8536,6 +8536,9 @@ a:focus .nhsuk-icon {
     padding: 16px 0 0 0;
     background-color: #005eb8;
   }
+  .nhsuk-header__search-wrap {
+    display: block;
+  }
 }
 @media (min-width: 40.0625em) {
   .nhsuk-header__container {
