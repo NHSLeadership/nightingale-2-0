@@ -532,12 +532,6 @@ display: block
 padding: 20px 0
 }
 
-.nhsuk-header__container:after {
-clear: both;
-content: "";
-display: block
-}
-
 @media (max-width:40.0525em) {
 .nhsuk-header__container {
 padding: 16px
@@ -637,7 +631,6 @@ z-index: 1
 display: none
 }
 .nhsuk-header__search-form {
-background-color: #fff;
 display: -ms-flexbox;
 display: flex;
 padding: 16px;
