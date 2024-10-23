@@ -88,31 +88,29 @@
 	}
 
 
-	.nhsuk-header__search-wrap {
-	  display       : inline-block;
-	  width   : 100%;
-	  .nhsuk-search__input {
-		border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
-		border-radius : $nhsuk-border-radius 0 0 $nhsuk-border-radius;
-		float         : left;
-		max-width     : 90%;
-		margin    : 0;
-	  }
-	  .nhsuk-search__submit {
-		float: left;
-	  }
-	}
-	@media (max-width : 40.0525em) {
-	  .nhsuk-header__search-wrap {
-		.nhsuk-search__input {
-		  max-width : 73%;
-		  margin    : 0;
-		  height    : 52px;
-		}
-
-
-	  }
-	}
+	//.nhsuk-header__search-wrap {
+	//  display       : inline-block;
+	//  width   : 100%;
+	//  .nhsuk-search__input {
+	//	border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
+	//	border-radius : $nhsuk-border-radius 0 0 $nhsuk-border-radius;
+	//	float         : left;
+	//	max-width     : 90%;
+	//	margin    : 0;
+	//  }
+	//  .nhsuk-search__submit {
+	//	float: left;
+	//  }
+	//}
+	//@media (max-width : 40.0525em) {
+	//  .nhsuk-header__search-wrap {
+	//	.nhsuk-search__input {
+	//	  max-width : 73%;
+	//	  margin    : 0;
+	//	  height    : 52px;
+	//	}
+	//  }
+	//}
   }
 
   .widget-title {
@@ -199,7 +197,7 @@ a:focus .nhsuk-icon {
 		position: absolute;
 		right: 0;
 		top: auto;
-		height: 52px;
+		height: 40px;
 		z-index: 9;
 	}
 	.nhsuk-header__search-form {
