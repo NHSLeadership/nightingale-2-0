@@ -8,7 +8,7 @@ penthouse({
     url: 'https://demo.local/index.php',
     css: 'style.min.css',
     forceInclude: [
-        '.nhsuk-header__inverted',
+        //'.nhsuk-header__inverted',
         '.nhsuk-header',
         '.nhsuk-header--organisation',
         '.nhsuk-header--white',
