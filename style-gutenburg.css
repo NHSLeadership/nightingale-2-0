@@ -6531,27 +6531,6 @@
 .edit-post-visual-editor #primary .page-content .nhsuk-header__search-toggle, .edit-post-visual-editor #primary .page-content .nhsuk-search__close {
   display: none;
 }
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap {
-  display: inline-block;
-  width: 100%;
-}
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 2px solid #f0f4f5;
-  border-radius: 4px 0 0 4px;
-  float: left;
-  max-width: 90%;
-  margin: 0;
-}
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
-  float: left;
-}
-@media (max-width: 40.0525em) {
-  .edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-    max-width: 73%;
-    margin: 0;
-    height: 52px;
-  }
-}
 .edit-post-visual-editor #primary .widget-title a {
   color: #ffffff;
   text-decoration: none;
@@ -6589,6 +6568,45 @@
 }
 .edit-post-visual-editor .nhsuk-action-link__link + div {
   margin-left: 34px;
+}
+.edit-post-visual-editor .nhsuk-header__navigation-item {
+  border-top: none;
+}
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-search__submit {
+    background-color: #f0f4f5;
+    border: 0;
+    margin: 0;
+    padding: 8px 8px 0;
+    position: absolute;
+    right: 0;
+    top: auto;
+    height: 40px;
+    z-index: 9;
+  }
+  .edit-post-visual-editor .nhsuk-header__search-form {
+    padding: 16px 0 0 0;
+    background-color: #005eb8;
+  }
+  .edit-post-visual-editor .nhsuk-header__search-wrap {
+    display: block;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-header__container {
+    justify-content: normal;
+  }
+  .edit-post-visual-editor .nhsuk-header__transactional-service-name {
+    padding-left: 28px;
+    width: 100%;
+  }
+  .edit-post-visual-editor .nhsuk-header__search {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .edit-post-visual-editor .nhsuk-header__content {
+    width: 100%;
+  }
 }
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
