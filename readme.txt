@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.7.0=
 * Upgrade nhsuk-frontend to 8.3.0
+* Show weekends in event calendar
 
 =2.6.1=
 * Removed wp-html-mail folder
