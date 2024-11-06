@@ -34,7 +34,7 @@ $topmenu_args       = array(
 	'echo'            => true,
 	'depth'           => 1,
 	'walker'          => '',
-	'theme_location'  => '',
+	'theme_location'  => 'main-menu',
 	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s' . $mobile_toggle_menu . '</ul>',
 	'item_spacing'    => 'preserve',
 	'add_li_class'    => 'nhsuk-header__navigation-item',
