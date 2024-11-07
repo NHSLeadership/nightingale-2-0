@@ -706,6 +706,14 @@
   /* ==========================================================================
      COMPONENTS/ #SELECT
      ========================================================================== */
+  /**
+   * Select input sizing
+   * 1. Uses rems so that safari input scales with font size
+   * 2. This min-width was chosen because:
+   *    - it makes the Select wider than it is tall (which is what users expect)
+   *    - 20ex + 3ex matches the 'width-10' variant of the input component
+   *    - it fits comfortably on screens as narrow as 240px wide
+   */
   /* ==========================================================================
      COMPONENTS / #SKIP-LINK
      ========================================================================== */
@@ -1590,15 +1598,12 @@
   fill: #007f3b;
 }
 .edit-post-visual-editor .nhsuk-icon__chevron-down {
-  fill: #005eb8;
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-.edit-post-visual-editor .nhsuk-icon__chevron-down path {
   fill: #ffffff;
+  height: 24px;
+  position: absolute;
+  right: 4px;
+  transform: rotate(90deg);
+  width: 24px;
 }
 .edit-post-visual-editor .nhsuk-icon__chevron-up {
   fill: #005eb8;
@@ -1656,6 +1661,15 @@
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor ol, .edit-post-visual-editor ul, .edit-post-visual-editor .nhsuk-list {
     margin-bottom: 24px;
+  }
+}
+.edit-post-visual-editor ol ol, .edit-post-visual-editor ul ol, .edit-post-visual-editor ol ul, .edit-post-visual-editor ul ul, .edit-post-visual-editor .nhsuk-list ol, .edit-post-visual-editor .nhsuk-list ul, .edit-post-visual-editor ol .nhsuk-list, .edit-post-visual-editor ul .nhsuk-list, .edit-post-visual-editor .nhsuk-list .nhsuk-list {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor ol ol, .edit-post-visual-editor ul ol, .edit-post-visual-editor ol ul, .edit-post-visual-editor ul ul, .edit-post-visual-editor .nhsuk-list ol, .edit-post-visual-editor .nhsuk-list ul, .edit-post-visual-editor ol .nhsuk-list, .edit-post-visual-editor ul .nhsuk-list, .edit-post-visual-editor .nhsuk-list .nhsuk-list {
+    margin-top: 8px;
   }
 }
 .edit-post-visual-editor ol > li, .edit-post-visual-editor ul > li, .edit-post-visual-editor .nhsuk-list > li {
@@ -3549,25 +3563,6 @@
     display: none;
   }
 }
-.edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-icon__chevron-right {
-  fill: #aeb7bd;
-  height: 18px;
-  position: relative;
-  top: 5px;
-  width: 18px;
-}
-@media (min-width: 61.875em) {
-  .edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-icon__chevron-right {
-    margin: 0 3px 0 5px;
-  }
-}
-.edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-icon__chevron-left {
-  float: left;
-  height: 24px;
-  left: -8px;
-  position: relative;
-  width: 24px;
-}
 .edit-post-visual-editor .nhsuk-breadcrumb + .nhsuk-width-container .nhsuk-main-wrapper {
   padding-top: 0;
 }
@@ -3810,6 +3805,28 @@
 }
 .edit-post-visual-editor .nhsuk-button--reverse.nhsuk-button--disabled:focus {
   background-color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-button--warning {
+  background-color: #d5281b;
+  box-shadow: 0 4px 0 #6b140e;
+}
+.edit-post-visual-editor .nhsuk-button--warning:hover {
+  background-color: #a82015;
+}
+.edit-post-visual-editor .nhsuk-button--warning:focus {
+  background: #ffeb3b;
+  box-shadow: 0 4px 0 #212b32;
+  color: #212b32;
+  outline: 4px solid transparent;
+}
+.edit-post-visual-editor .nhsuk-button--warning:active {
+  background: #6b140e;
+  box-shadow: none;
+  color: #ffffff;
+  top: 4px;
+}
+.edit-post-visual-editor .nhsuk-button--warning.nhsuk-button--disabled {
+  background-color: #d5281b;
 }
 .edit-post-visual-editor .nhsuk-button--disabled,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled],
@@ -4189,7 +4206,8 @@
 .edit-post-visual-editor .nhsuk-card__content--primary .nhsuk-icon {
   display: block;
   fill: #005eb8;
-  margin-top: -nhsuk-spacing(2);
+  margin-top: -8px;
+  pointer-events: none;
   position: absolute;
   right: 24px;
   top: 50%;
@@ -4724,7 +4742,7 @@
 }
 .edit-post-visual-editor .nhsuk-error-summary {
   padding: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   border: 4px solid #d5281b;
 }
 @media (min-width: 40.0625em) {
@@ -4734,7 +4752,7 @@
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-error-summary {
-    margin-bottom: 56px;
+    margin-bottom: 48px;
   }
 }
 @media (min-width: 40.0625em) {
@@ -5217,7 +5235,7 @@
   border: 2px solid #4c6272; /* 2 */
   border-radius: 0;
   box-sizing: border-box;
-  height: 40px;
+  min-height: 40px;
   margin-top: 0;
   padding: 4px;
   width: 100%;
@@ -5377,6 +5395,83 @@
 .edit-post-visual-editor .nhsuk-input--width-2 {
   max-width: 5.4ex;
 }
+.edit-post-visual-editor .nhsuk-input__wrapper {
+  display: flex;
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__wrapper {
+    display: block;
+  }
+}
+.edit-post-visual-editor .nhsuk-input__prefix,
+.edit-post-visual-editor .nhsuk-input__suffix {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #d8dde0;
+  border: 2px solid #4c6272;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-block;
+  flex: 0 0 auto;
+  min-height: 40px;
+  min-width: 2.5rem;
+  padding: 4px;
+  text-align: center;
+  white-space: nowrap;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    max-width: 9.1ex;
+    display: block;
+    height: 100%;
+    white-space: normal;
+  }
+}
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-input__prefix,
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    line-height: 1.6;
+    font-size: 1.1875rem;
+  }
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__prefix {
+    border-bottom: 0;
+  }
+}
+@media (min-width: 20em) {
+  .edit-post-visual-editor .nhsuk-input__prefix {
+    border-right: 0;
+  }
+}
+@media (max-width: 19.99em) {
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    border-top: 0;
+  }
+}
+@media (min-width: 20em) {
+  .edit-post-visual-editor .nhsuk-input__suffix {
+    border-left: 0;
+  }
+}
 .edit-post-visual-editor .nhsuk-inset-text {
   /* [1] */
   max-width: 44em;
@@ -5433,14 +5528,17 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-label--xl,
+.edit-post-visual-editor .nhsuk-label--l,
+.edit-post-visual-editor .nhsuk-label--m {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 .edit-post-visual-editor .nhsuk-label--xl {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.25;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-label--xl {
@@ -5455,19 +5553,10 @@
     line-height: 1.15;
   }
 }
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-label--xl {
-    margin-bottom: 48px;
-  }
-}
 .edit-post-visual-editor .nhsuk-label--l {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.33333;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-label--l {
@@ -5482,19 +5571,10 @@
     line-height: 1.05;
   }
 }
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-label--l {
-    margin-bottom: 24px;
-  }
-}
 .edit-post-visual-editor .nhsuk-label--m {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-label--m {
@@ -5509,19 +5589,12 @@
     line-height: 1.15;
   }
 }
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-label--m {
-    margin-bottom: 24px;
-  }
-}
 .edit-post-visual-editor .nhsuk-label--s {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  display: block;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-label--s {
@@ -5534,11 +5607,6 @@
   .edit-post-visual-editor .nhsuk-label--s {
     font-size: 14pt;
     line-height: 1.15;
-  }
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-label--s {
-    margin-bottom: 24px;
   }
 }
 .edit-post-visual-editor .nhsuk-label-wrapper {
@@ -5842,7 +5910,8 @@
   line-height: 1.5;
   border: 2px solid #4c6272;
   box-sizing: border-box;
-  height: 40px;
+  height: 2.5rem; /* [1] */
+  min-width: 23ex; /* [2] */
   max-width: 100%;
   padding: 4px;
 }
@@ -6462,27 +6531,6 @@
 .edit-post-visual-editor #primary .page-content .nhsuk-header__search-toggle, .edit-post-visual-editor #primary .page-content .nhsuk-search__close {
   display: none;
 }
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap {
-  display: inline-block;
-  width: 100%;
-}
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-  border: 2px solid #f0f4f5;
-  border-radius: 4px 0 0 4px;
-  float: left;
-  max-width: 90%;
-  margin: 0;
-}
-.edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__submit {
-  float: left;
-}
-@media (max-width: 40.0525em) {
-  .edit-post-visual-editor #primary .page-content .nhsuk-header__search-wrap .nhsuk-search__input {
-    max-width: 73%;
-    margin: 0;
-    height: 52px;
-  }
-}
 .edit-post-visual-editor #primary .widget-title a {
   color: #ffffff;
   text-decoration: none;
@@ -6520,6 +6568,45 @@
 }
 .edit-post-visual-editor .nhsuk-action-link__link + div {
   margin-left: 34px;
+}
+.edit-post-visual-editor .nhsuk-header__navigation-item {
+  border-top: none;
+}
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-search__submit {
+    background-color: #f0f4f5;
+    border: 0;
+    margin: 0;
+    padding: 8px 8px 0;
+    position: absolute;
+    right: 0;
+    top: auto;
+    height: 40px;
+    z-index: 9;
+  }
+  .edit-post-visual-editor .nhsuk-header__search-form {
+    padding: 16px 0 0 0;
+    background-color: #005eb8;
+  }
+  .edit-post-visual-editor .nhsuk-header__search-wrap {
+    display: block;
+  }
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-header__container {
+    justify-content: normal;
+  }
+  .edit-post-visual-editor .nhsuk-header__transactional-service-name {
+    padding-left: 28px;
+    width: 100%;
+  }
+  .edit-post-visual-editor .nhsuk-header__search {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .edit-post-visual-editor .nhsuk-header__content {
+    width: 100%;
+  }
 }
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;

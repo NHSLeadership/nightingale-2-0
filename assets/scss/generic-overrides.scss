@@ -86,33 +86,6 @@
 	.nhsuk-header__search-toggle, .nhsuk-search__close {
 	  display : none;
 	}
-
-
-	.nhsuk-header__search-wrap {
-	  display       : inline-block;
-	  width   : 100%;
-	  .nhsuk-search__input {
-		border        : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
-		border-radius : $nhsuk-border-radius 0 0 $nhsuk-border-radius;
-		float         : left;
-		max-width     : 90%;
-		margin    : 0;
-	  }
-	  .nhsuk-search__submit {
-		float: left;
-	  }
-	}
-	@media (max-width : 40.0525em) {
-	  .nhsuk-header__search-wrap {
-		.nhsuk-search__input {
-		  max-width : 73%;
-		  margin    : 0;
-		  height    : 52px;
-		}
-
-
-	  }
-	}
   }
 
   .widget-title {
@@ -185,4 +158,46 @@ a:focus .nhsuk-icon {
 
 .nhsuk-action-link__link + div {
 	margin-left: 34px;
+}
+.nhsuk-header__navigation-item {
+    border-top: none;
+}
+
+@media (max-width: 40.0525em) {
+	.nhsuk-search__submit {
+		background-color: #f0f4f5;
+		border: 0;
+		margin: 0;
+		padding: 8px 8px 0;
+		position: absolute;
+		right: 0;
+		top: auto;
+		height: 40px;
+		z-index: 9;
+	}
+	.nhsuk-header__search-form {
+        padding: 16px 0 0 0;
+		background-color:$color_nhsuk-blue;
+    }
+	.nhsuk-header__search-wrap {
+        display: block;
+    }
+}
+
+
+@media (min-width: 40.0625em) {
+	.nhsuk-header__container {
+        justify-content: normal;
+    }
+	.nhsuk-header__transactional-service-name {
+		padding-left: 28px;
+		width: 100%;
+	}
+    .nhsuk-header__search {
+        margin-left: 0px;
+        width: 100%;
+    }
+	.nhsuk-header__content {
+		width: 100%;
+	}
 }

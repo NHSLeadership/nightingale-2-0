@@ -17,8 +17,8 @@ flush();
 </main>
 </div>
 
-<footer>
-	<div class="nhsuk-footer" id="nhsuk-footer">
+<footer role="contentinfo">
+	<div class="nhsuk-footer-container" id="nhsuk-footer">
 		<div class="nhsuk-width-container">
 			<?php if ( is_active_sidebar( 'footer-region' ) ) : ?>
 				<div id="nhsuk-footer-widgets" class="nhsuk-footer__widgets widget-area" role="complementary">
@@ -26,10 +26,14 @@ flush();
 				</div>
 				<?php
 			endif;
-
-			get_template_part( 'partials/footernav' );
-			get_template_part( 'partials/footer-copyright' );
 			?>
+			<h2 class="nhsuk-u-visually-hidden">Support links</h2>
+			<div class="nhsuk-footer">
+			<?php
+				get_template_part( 'partials/footernav' );
+				get_template_part( 'partials/footer-copyright' );
+			?>
+			</div>
 
 		</div>
 	</div>
