@@ -6,7 +6,7 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.0
+Version: 2.7.1
 Stable tag: 2.5
 
 
@@ -43,9 +43,11 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+=2.7.1=
+* Show weekends in event calendar
+
 =2.7.0=
 * Upgrade nhsuk-frontend to 8.3.0
-* Show weekends in event calendar
 
 =2.6.1=
 * Removed wp-html-mail folder
