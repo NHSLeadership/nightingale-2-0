@@ -50,7 +50,6 @@
 @include mq($until : large-desktop) {
   .nhsuk-bordered-tabs-container {
 	background    : inherit;
-	border-bottom : none;
 
 	.close-menu-buddynav {
 	  display    : none;
@@ -67,7 +66,6 @@
 	}
 
 	.nhsuk-bordered-tabs {
-	  display    : none;
 	  list-style : none;
 	  padding    : 0;
 	  margin-top : nhsuk-spacing(2);
@@ -78,16 +76,13 @@
 		display       : list-item;
 		background    : $color_nhsuk-white;
 		width         : 100%;
-		border-bottom : $nhsuk-border-width-form-element solid $color_nhsuk-grey-5;
-
 		a {
 		  display : inline-block;
 		  color   : $nhsuk-text-color;
 		}
 
 		&.nhsuk-bordered-tabs-item-active {
-		  background : $color_nhsuk-blue;
-
+		   border-bottom: none;
 		  a {
 			color : $color_nhsuk-white;
 		  }
