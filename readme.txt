@@ -6,7 +6,7 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.0
+Version: 2.7.1
 Stable tag: 2.5
 
 
@@ -42,6 +42,13 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=2.7.1=
+* Show weekends in event calendar
+* Fix for event calendar content has html tags in mobile view
+* Fix for tabbed navigation in mobile view
+* Improved version handling in enqueue style and script
+* Header improvement on theme customisation
 
 =2.7.0=
 * Upgrade nhsuk-frontend to 8.3.0

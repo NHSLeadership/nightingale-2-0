@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.0
+Version: 2.7.1
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -8513,7 +8513,6 @@ a:focus .nhsuk-icon {
   }
   .nhsuk-header__search-form {
     padding: 16px 0 0 0;
-    background-color: #005eb8;
   }
   .nhsuk-header__search-wrap {
     display: block;
@@ -10221,7 +10220,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
 @media (max-width: 61.865em) {
   .nhsuk-bordered-tabs-container {
     background: inherit;
-    border-bottom: none;
   }
   .nhsuk-bordered-tabs-container .close-menu-buddynav {
     display: none;
@@ -10236,7 +10234,6 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
     padding: 8px 16px;
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs {
-    display: none;
     list-style: none;
     padding: 0;
     margin-top: 8px;
@@ -10247,14 +10244,13 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
     display: list-item;
     background: #ffffff;
     width: 100%;
-    border-bottom: 2px solid #f0f4f5;
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item a {
     display: inline-block;
     color: #212b32;
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active {
-    background: #005eb8;
+    border-bottom: none;
   }
   .nhsuk-bordered-tabs-container .nhsuk-bordered-tabs .nhsuk-bordered-tabs-item.nhsuk-bordered-tabs-item-active a {
     color: #ffffff;

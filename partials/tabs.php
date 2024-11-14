@@ -29,6 +29,8 @@ if ( $thispage ) {
 	);
 
 	$tabcount = 1;
+	$section_title = '';
+	$tabsmenu = '';
 	if ( ! empty( $post->post_parent ) || ! empty( get_children( $args ) ) ) {
 
 		// Start first "Overview" link to parent page.

@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.7.0 25 oct 2024
+ * @version   2.7.1 13 nov 2024
  */
 
 /**
@@ -243,11 +243,11 @@ add_action( 'widgets_init', 'nightingale_widgets_init' );
  * Enqueue scripts and styles.
  */
 function nightingale_scripts() {
-	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array() );
-	wp_enqueue_style( 'nightingale-page-colours', get_template_directory_uri() . '/page-colours.min.css', array() );
-	wp_enqueue_script( 'nightingale-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), false, true );
-	wp_enqueue_script( 'nightingale-nhs-library', get_template_directory_uri() . '/js/nhsuk.min.js', array(), false, true );
-	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', array(), false, true );
+	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), wp_get_theme( 'nightingale' )->get( 'Version' ) );
+	wp_enqueue_style( 'nightingale-page-colours', get_template_directory_uri() . '/page-colours.min.css', array(), wp_get_theme( 'nightingale' )->get( 'Version' ) );
+	wp_enqueue_script( 'nightingale-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
+	wp_enqueue_script( 'nightingale-nhs-library', get_template_directory_uri() . '/js/nhsuk.min.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
+	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

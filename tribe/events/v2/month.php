@@ -126,13 +126,6 @@ if ( empty( $disable_event_search ) ) {
 		bottom: 5px;
 	}
 
-	.tribe-events .tribe-events-calendar-month__header-column:nth-of-type(6),
-	.tribe-events .tribe-events-calendar-month__header-column:nth-of-type(7),
-	.tribe-events .tribe-events-calendar-month__day:nth-of-type(6),
-	.tribe-events .tribe-events-calendar-month__day:nth-of-type(7) {
-		display: none;
-	}
-
 	.tribe-events .tribe-events-calendar-month__header .tribe-events-calendar-month__header-column,
 	.tribe-events .tribe-events-calendar-month__body .tribe-events-calendar-month__day {
 		width: 20%;
