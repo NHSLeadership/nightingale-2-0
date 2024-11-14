@@ -32,7 +32,7 @@ $event_date_attr = $event->dates->start->format( Dates::DBDATEFORMAT );
 		</time>
 	<?php else : ?>
 		<time datetime="<?php echo esc_attr( $event_date_attr ); ?>">
-			<?php echo esc_html( $event->schedule_details->value() ); ?>
+			<?php echo wp_kses_post( $event->schedule_details->value() ); ?>
 		</time>
 	<?php endif; ?>
 	<?php $this->template( 'month/mobile-events/mobile-day/mobile-event/date/meta', [ 'event' => $event ] ); ?>
