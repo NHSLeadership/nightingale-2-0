@@ -47,6 +47,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Show weekends in event calendar
 * Fix for event calendar content has html tags in mobile view
 * Fix for tabbed navigation in mobile view
+* Improved version handling in enqueue style and script
 
 =2.7.0=
 * Upgrade nhsuk-frontend to 8.3.0
