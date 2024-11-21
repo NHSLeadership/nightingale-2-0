@@ -42,7 +42,7 @@ $topmenu_args       = array(
 );
 ?>
 <div class="nhsuk-navigation-container">
-	<nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+	<nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
 	<?php
 	wp_nav_menu( $topmenu_args );
 	?>

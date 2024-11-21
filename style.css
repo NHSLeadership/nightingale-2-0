@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.1
+Version: 2.7.2
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -8497,6 +8497,10 @@ a:focus .nhsuk-icon {
 
 .nhsuk-header__navigation-item {
   border-top: none;
+}
+
+.nhsuk-navigation-container .nhsuk-navigation .nhsuk-icon__chevron-down {
+  fill: #ffffff;
 }
 
 @media (max-width: 40.0525em) {
