@@ -138,9 +138,10 @@ $page-colours             : (
 		  }
 
 		  .nhsuk-header__menu-toggle {
-			background-color : #ffffff;
-			background       : #ffffff;
-			color            : $colour;
+			// background-color : #ffffff;
+			// background       : #ffffff;
+			//color            : $colour;
+			color: $color_nhsuk-white;	
 		  }
 
 		  .nhsuk-header__menu-toggle.is-active, .nhsuk-header__menu-toggle:active, .nhsuk-header__search-toggle.is-active, .nhsuk-header__search-toggle:active {
