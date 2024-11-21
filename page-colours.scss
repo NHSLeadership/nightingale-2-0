@@ -53,7 +53,6 @@ $page-colours             : (
 	.nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 	.nhsuk-hero--image-description .nhsuk-hero-content,
 	.nhsuk-panel-with-label__label,
-	.nhsuk-header__search-form,
 	.nhsuk-panel.is-style-panel-with-label h3,
 	.nhsuk-panel.is-style-panel-with-label h3 .rich-text {
 
@@ -180,9 +179,13 @@ $page-colours             : (
 		.nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
 			color : $colour;
 		}
-		.nhsuk-header__navigation, .nhsuk-header__navigation-link:hover, .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-		  background-color : #ffffff;
-		  background       : #ffffff;
+		.nhsuk-header__navigation, .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .nhsuk-header .nhsuk-header__navigation ul li {
+			background-color : #ffffff;
+			background : #ffffff;
+		}
+		.nhsuk-header .nhsuk-header__navigation ul li a:hover {
+			background-color : $colour;
+			background : $colour;
 		}
 	  }
 	}
