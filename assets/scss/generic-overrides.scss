@@ -162,6 +162,13 @@ a:focus .nhsuk-icon {
 .nhsuk-header__navigation-item {
     border-top: none;
 }
+.nhsuk-navigation-container {
+	.nhsuk-navigation {
+		.nhsuk-icon__chevron-down {
+			fill: $color_nhsuk-white;
+		}
+	}
+}
 
 @media (max-width: 40.0525em) {
 	.nhsuk-search__submit {

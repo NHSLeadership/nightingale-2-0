@@ -1111,7 +1111,6 @@ p {
 	}
 	.nhsuk-header__search-form {
 		padding: 16px 0 0 0;
-		background-color: #005eb8;
 	}
 	.nhsuk-header__search-wrap {
 		display: block;

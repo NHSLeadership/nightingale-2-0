@@ -6572,6 +6572,9 @@
 .edit-post-visual-editor .nhsuk-header__navigation-item {
   border-top: none;
 }
+.edit-post-visual-editor .nhsuk-navigation-container .nhsuk-navigation .nhsuk-icon__chevron-down {
+  fill: #ffffff;
+}
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-search__submit {
     background-color: #f0f4f5;
