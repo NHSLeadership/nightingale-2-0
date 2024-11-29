@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.2
+Version: 2.7.3
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -11622,6 +11622,14 @@ section.nhsuk-section:after,
 
 .has-gds-black-background-color {
   background-color: "#0b0c0c";
+}
+
+.has-nhs-grey-dark-color {
+  color: #425563;
+}
+
+.has-nhs-grey-dark-background-color {
+  background-color: #425563;
 }
 
 #cookie-notice {
