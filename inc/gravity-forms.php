@@ -2,15 +2,46 @@
 /**
  * Customised Gravity Forms output markup
  *
- * @date         September 26 2019
- * @version      1.0
- * @author       Tony Blacker
+ * @date         December 3 2024
+ * @version      1.1
+ * @author       Tony Blacker, Chris Brown
  * @organisation NHS Leadership Academy
  * @copyright    OGL v3
  * @package      Nightingale Theme
  */
 
 add_filter(
+	'gform_get_form_filter',
+	function ( $form_string, $form ) {
+		// Replace form description span with <nhsuk-hint> elements.
+		$form_string = preg_replace( "#<span class='gform_description'>(.*?)</span>#", '<span class="nhsuk-hint">$1</span>', $form_string );
+		// Style error messages.
+		// Message at top of form.
+		$form_string = str_replace( 'validation_error', 'nhsuk-error-message is-error', $form_string );                                                              // legacy.
+		$form_string = str_replace( 'gform_submission_error', 'nhsuk-error-message is-error', $form_string );                                                        // new.
+
+		// Fields with CSS class = "gfield_error".
+		$form_string = str_replace( 'gfield_error', 'is-error gfield_error', $form_string );
+		// Fields contained in li elements that have CSS class = "gfield_error".
+
+		$form_string = preg_replace( "#<li(.*?)gfield_error(.*?)<input(.*?)class='#s", "<li$1gfield_error$2<input$3class='gfield_error is-error ", $form_string );   // legacy.
+		$form_string = preg_replace( "#<div(.*?)gfield_error(.*?)<input(.*?)class='#s", "<div$1gfield_error$2<input$3class='gfield_error is-error ", $form_string ); // new.
+		// Error messages below fields.
+		$form_string = str_replace( 'validation_message', 'nhsuk-u-visually-hidden validation_message', $form_string );
+		// Style <ul>.
+		$form_string = str_replace( "class='gform_fields", "class='c-form-list gform_fields", $form_string );
+		// Replace <h3> with <h2>.
+		$form_string = str_replace( '<h3', '<h2', $form_string );
+		$form_string = str_replace( '/h3>', '/h2>', $form_string );
+		// Replace field description divs with <small> elements.
+		$form_string = preg_replace( "#<div class='gfield_description'(.*?)</div>#", "<span class='nhsuk-hint'$1</span>", $form_string );
+		// Replace field instruction divs with <small> elements.
+		$form_string = preg_replace( "#<div class='instruction(.*?)>(.*?)</div>#", '<small>$2</small>', $form_string );
+		// Remove "required" tag NHSUK Service manual insted recommends highlighting optional fields, which is done elsewhere.
+		$form_string = str_replace( "<span class='gfield_required'>*</span>", '', $form_string );
+		// Replace main gfield_label elements with nhsuk-label.
+		$form_string = preg_replace( '#gfield_label#s', 'nhsuk-label', $form_string );
+		// Remove uls around elements.add_filter(
 	'gform_get_form_filter',
 	function ( $form_string, $form ) {
 		// Replace form description span with <nhsuk-hint> elements.
@@ -50,13 +81,13 @@ add_filter(
 		// Style the submit button.
 		$form_string = str_replace( 'gform_button', 'nhsuk-button', $form_string );
 		// Style the next button.
-		$form_string = str_replace( 'gform_next_button gform-theme-button button', 'nhsuk-button', $form_string ); // For Gravity Forms version 2.7+.
+		$form_string = str_replace( 'gform_next_button gform-theme-button button', 'gform_next_button nhsuk-button', $form_string ); // For Gravity Forms version 2.7+.
 		$form_string = str_replace( 'gform_next_button button', 'nhsuk-button', $form_string ); // Prior to gforms 2.7.
 		// Style the previous button.
-		$form_string = str_replace( 'gform_previous_button gform-theme-button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
+		$form_string = str_replace( 'gform_previous_button gform-theme-button', 'gform_previous_button nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
 		$form_string = str_replace( 'gform_previous_button button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // Prior to gforms 2.7.
 		// Style last page button.
-		$form_string = str_replace( 'button gform_button gform_last_page_button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
+		$form_string = str_replace( 'button gform_button gform_last_page_button', 'gform_previous_button nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
 		// Style the save and continue functionality.
 		$form_string = str_replace( 'gform_save_link button', 'nhsuk-button nhsuk-button--secondary', $form_string );
 		$form_string = str_replace( 'gform_save_link', 'nhsuk-button nhsuk-button--secondary', $form_string );
