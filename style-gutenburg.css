@@ -7792,6 +7792,12 @@
 .edit-post-visual-editor .has-gds-black-background-color {
   background-color: "#0b0c0c";
 }
+.edit-post-visual-editor .has-nhs-grey-dark-color {
+  color: #425563;
+}
+.edit-post-visual-editor .has-nhs-grey-dark-background-color {
+  background-color: #425563;
+}
 .edit-post-visual-editor ul {
   list-style: none;
 }
