@@ -475,7 +475,6 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 			case 'name':
 				// leave this alone, they seem to have done a decent job and it is very accessible now.
 				break;
-
 			// Checkboxes.
 			case 'checkbox':
 				$find[]        = 'gfield_checkbox';
