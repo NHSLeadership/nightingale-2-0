@@ -474,6 +474,12 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 			// Name inputs.
 			case 'name':
 				// leave this alone, they seem to have done a decent job and it is very accessible now.
+				// However, prefix dropdown needs changes.
+				$field_content = preg_replace(
+					'/<select(?![^>]*\bclass=)/',
+					'<select class="nhsuk-select"',
+					$field_content
+				);
 				break;
 
 			// Checkboxes.
@@ -496,6 +502,7 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$find[]        = 'gfield_select';
 				$replace[]     = 'gfield_select nhsuk-select ' . $errorclass;
 				$field_content = str_replace( $find, $replace, $field_content );
+				$field_content = str_replace( 'input_7.2', 'name="input_7.23"', $field_content );
 				break;
 			case 'radio':
 			case 'quiz':
