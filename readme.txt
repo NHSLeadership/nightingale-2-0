@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.7.3=
 * Fix for Stripes block dark grey formatting
+* Events calendar thumbnails fix in listing
 
 =2.7.2=
 * Accessibility improvements

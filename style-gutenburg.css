@@ -7672,6 +7672,12 @@
 .edit-post-visual-editor .tribe-events-schedule__datetime * {
   color: #425563;
 }
+.edit-post-visual-editor .tribe_events_thumbnail {
+  width: 100%; /* or a fixed width like 150px */
+  aspect-ratio: 4/3; /* Maintains a 4:3 aspect ratio */
+  object-fit: cover; /* Ensures the image fills the area */
+  display: block; /* Prevents inline spacing issues */
+}
 .edit-post-visual-editor .download-count {
   float: right;
 }

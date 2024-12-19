@@ -10098,6 +10098,13 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
   color: #425563;
 }
 
+.tribe_events_thumbnail {
+  width: 100%; /* or a fixed width like 150px */
+  aspect-ratio: 4/3; /* Maintains a 4:3 aspect ratio */
+  object-fit: cover; /* Ensures the image fills the area */
+  display: block; /* Prevents inline spacing issues */
+}
+
 .download-count {
   float: right;
 }

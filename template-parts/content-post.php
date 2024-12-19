@@ -49,8 +49,12 @@ else :
 				if ( ( 'latest-posts' !== $parent_template_part ) || ( ( 'latest-posts' === $parent_template_part ) && ( 0 !== $display_featured_image ) ) ) {
 					if ( has_post_thumbnail() ) :
 
+						$tribe_thumbnail_class = '';
+						if ( get_post_type() === 'tribe_events' ) :
+							$tribe_thumbnail_class = 'tribe_events_thumbnail';
+						endif;
 						$image_proportion = get_theme_mod( 'blog_image_display', 'default' );
-						the_post_thumbnail( $image_proportion, [ 'class' => 'nhsuk-card__img' ] );
+						the_post_thumbnail( $image_proportion, attr: [ 'class' => 'nhsuk-card__img ' . $tribe_thumbnail_class ] );
 
 					else :
 
