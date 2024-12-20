@@ -541,3 +541,16 @@ add_filter(
 	10,
 	2
 );
+
+function split_text($text, $length = 100, $parts = 2) {
+    $wrapped = wordwrap($text, $length, "\n", true);
+    $lines = explode("\n", $wrapped, $parts);
+    $result = [];
+    
+    for ($line_index = 0; $line_index < $parts; $line_index++) {
+        // Safely assign line if it exists, otherwise use an empty string
+        $result['line_' . ($line_index + 1)] = isset($lines[$line_index]) ? $lines[$line_index] : '';
+    }
+    
+    return $result;
+}

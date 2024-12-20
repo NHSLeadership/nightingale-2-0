@@ -8526,9 +8526,6 @@ a:focus .nhsuk-icon {
   .nhsuk-header__container {
     justify-content: normal;
   }
-  .nhsuk-header__container .nhsuk-header__logo .nhsuk-header__link .nhsuk-organisation-name {
-    min-width: 540px;
-  }
   .nhsuk-header__transactional-service-name {
     padding-left: 28px;
     width: 100%;

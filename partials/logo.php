@@ -70,16 +70,23 @@ if ( has_custom_logo() ) {
 	} else { // Organisational style display.
 		?>
 		<div class="nhsuk-header__logo">
-			<a href="<?php echo esc_url_raw( get_home_url() ); ?>" class="nhsuk-header__link" aria-label="<?php bloginfo( 'name' ); ?> homepage">
-				<span class="nhsuk-header__link">
-					<?php
-					get_template_part( 'partials/nhslogo' );
+            <a href="<?php echo esc_url_raw(get_home_url()); ?>" class="nhsuk-header__link" aria-label="<?php bloginfo('name'); ?> homepage">
+				<?php
+				get_template_part('partials/nhslogo');
+				$logo_lines = split_text($logo_line_1);
+				?>
+				<span class="nhsuk-organisation-name">
+				<?php echo esc_html($logo_lines['line_1']);
+				if (!empty($logo_lines['line_2'])) {
 					?>
-					<span class="nhsuk-organisation-name"><?php echo esc_html( $logo_line_1 ); ?></span>
-					<span class="nhsuk-organisation-descriptor"><?php echo esc_html( $logo_line_2 ); ?></span>
+					<span class="nhsuk-organisation-name-split"><?php echo esc_html($logo_lines['line_2']); ?></span>
+					<?php
+				}
+				?>      
 				</span>
-			</a>
-		</div>
+				<span class="nhsuk-organisation-descriptor"><?php echo esc_html($logo_line_2); ?></span>
+            </a>
+        </div>
 		<?php
 	}
 } else {
@@ -95,7 +102,18 @@ if ( has_custom_logo() ) {
 		?>
 		<a href="<?php echo esc_url_raw( get_home_url() ); ?>" class="nhsuk-header__link nhsuk-header__link--service" aria-label="<?php bloginfo( 'name' ); ?> homepage">
 			<span class="nhsuk-header__link">
-				<span class="nhsuk-organisation-name"><?php echo esc_html( $logo_line_1 ); ?></span>
+				<?php
+				$logo_lines = split_text($logo_line_1);
+				?>
+				<span class="nhsuk-organisation-name">
+				<?php echo esc_html($logo_lines['line_1']);
+				if (!empty($logo_lines['line_2'])) {
+				?>
+					<span class="nhsuk-organisation-name-split"><?php echo esc_html($logo_lines['line_2']); ?></span>
+				<?php
+				}
+				?>      
+				</span>
 				<span class="nhsuk-organisation-descriptor"><?php echo esc_html( $logo_line_2 ); ?></span>
 			</span>
 		</a>
