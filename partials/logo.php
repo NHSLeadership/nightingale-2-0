@@ -73,15 +73,15 @@ if ( has_custom_logo() ) {
             <a href="<?php echo esc_url_raw(get_home_url()); ?>" class="nhsuk-header__link" aria-label="<?php bloginfo('name'); ?> homepage">
 				<?php
 				get_template_part('partials/nhslogo');
-				$logo_lines = split_text($logo_line_1);
+				$logo_lines = split_text($logo_line_1 );
 				?>
-				<span class="nhsuk-organisation-name">
-				<?php echo esc_html($logo_lines['line_1']);
-				if (!empty($logo_lines['line_2'])) {
-					?>
-					<span class="nhsuk-organisation-name-split"><?php echo esc_html($logo_lines['line_2']); ?></span>
-					<?php
-				}
+				<span class="nhsuk-organisation-name"><?php echo esc_html( array_shift( $logo_lines ) );?>
+				<?php	
+				foreach ($logo_lines as $logo_line) :
+				?>
+					<span class="nhsuk-organisation-name-split"><?php echo esc_html( $logo_line ); ?></span>
+				<?php
+				endforeach
 				?>      
 				</span>
 				<span class="nhsuk-organisation-descriptor"><?php echo esc_html($logo_line_2); ?></span>
@@ -103,15 +103,15 @@ if ( has_custom_logo() ) {
 		<a href="<?php echo esc_url_raw( get_home_url() ); ?>" class="nhsuk-header__link nhsuk-header__link--service" aria-label="<?php bloginfo( 'name' ); ?> homepage">
 			<span class="nhsuk-header__link">
 				<?php
-				$logo_lines = split_text($logo_line_1);
+				$logo_lines = split_text($logo_line_1 );
 				?>
-				<span class="nhsuk-organisation-name">
-				<?php echo esc_html($logo_lines['line_1']);
-				if (!empty($logo_lines['line_2'])) {
+				<span class="nhsuk-organisation-name"><?php echo esc_html( array_shift( $logo_lines ) );?>
+				<?php	
+				foreach ($logo_lines as $logo_line) :
 				?>
-					<span class="nhsuk-organisation-name-split"><?php echo esc_html($logo_lines['line_2']); ?></span>
+					<span class="nhsuk-organisation-name-split"><?php echo esc_html( $logo_line ); ?></span>
 				<?php
-				}
+				endforeach
 				?>      
 				</span>
 				<span class="nhsuk-organisation-descriptor"><?php echo esc_html( $logo_line_2 ); ?></span>
