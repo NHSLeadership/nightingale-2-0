@@ -47,6 +47,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Fix for Stripes block dark grey formatting
 * Events calendar thumbnails fix in listing
 * Site name width improvement in the header
+* PHP warning fix
 
 =2.7.2=
 * Accessibility improvements
