@@ -48,7 +48,6 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Events calendar thumbnails fix in listing
 * Site name width improvement in the header
 * PHP warning fix
-* Style improvement for prefix/title field in gravity forms
 
 =2.7.2=
 * Accessibility improvements
