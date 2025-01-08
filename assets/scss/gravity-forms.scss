@@ -313,7 +313,7 @@
 	  span, .ginput_container {
 		padding : nhsuk-spacing(2) nhsuk-spacing(3) nhsuk-spacing(2) 0;
 
-		&.name-prefix, &.name-first, &.name-middle, &.name-last, &.name_suffix {
+		&.name-prefix, &.name-first, &.name-middle, &.name-last, &.name-suffix {
 		  display : flex;
 
 		  label {
@@ -560,4 +560,10 @@
 		// @todo remove !important if possible.
 		line-height: 28px !important;
 	}
+}
+.name_prefix,
+.name_suffix,
+.name_middle {
+  label {
+    color: inherit !important;
 }
