@@ -699,22 +699,13 @@ function nightingale_gravity_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'nightingale_gravity_scripts' );
 
-add_filter( 'gform_field_css_class', 'remove_prefix_validation_class', 10, 3 );
-function remove_prefix_validation_class( $classes, $field, $form ) {
-	// Check if the field is a "Name" field and target the Prefix subfield
-	if ( $field->type === 'name' && isset( $field->inputs ) ) {
-		// Loop through inputs and check for the Prefix subfield (usually index 0)
-		foreach ( $field->inputs as $input ) {
-			if ( $input['label'] === 'Prefix' ) {
-				// Remove the validation class for the Prefix input
-				$classes = str_replace( 'gfield_invalid', '', $classes );
-				break;
-			}
-		}
-	}
-	return $classes;
-}
-
+/**
+ * This function adds the passed classs name to the select box.
+ * 
+ * @param mixed $html HTML content.
+ * @param mixed $class_name class name to add.
+ * @return array|string|null
+ */
 function add_class_to_select( $html, $class_name ) {
 	// Regex to find the <select> tag.
 	$pattern = '/<select([^>]*)>/i';
