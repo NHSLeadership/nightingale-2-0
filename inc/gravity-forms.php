@@ -509,6 +509,9 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 			// Name inputs.
 			case 'name':
 				// leave this alone, they seem to have done a decent job and it is very accessible now.
+				if ( strpos( $field_content, '<select' ) !== false ) {
+					$field_content = add_class_to_select( $field_content, 'nhsuk-select' );
+				}
 				break;
 			// Checkboxes.
 			case 'checkbox':
@@ -695,3 +698,34 @@ function nightingale_gravity_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'nightingale_gravity_scripts' );
+
+/**
+ * This function adds the passed classs name to the select box.
+ * 
+ * @param mixed $html HTML content.
+ * @param mixed $class_name class name to add.
+ * @return array|string|null
+ */
+function add_class_to_select( $html, $class_name ) {
+	// Regex to find the <select> tag.
+	$pattern = '/<select([^>]*)>/i';
+
+	// Perform the replacement.
+	$updated_html = preg_replace_callback(
+		$pattern,
+		function ( $matches ) use ( $class_name ) {
+			if ( strpos( $matches[1], 'class=' ) !== false ) {
+				// If a class already exists, append the new class if not present.
+				return str_replace( 'class="', 'class="' . $class_name . ' ', $matches[0] );
+			} else {
+				// No class attribute, add one.
+				return '<select' . $matches[1] . ' class="' . $class_name . '">';
+			}
+		},
+		$html
+	);
+
+	return $updated_html;
+}
+
+
