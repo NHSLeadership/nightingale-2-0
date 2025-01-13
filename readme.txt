@@ -6,7 +6,7 @@ Requires PHP: 5.6
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.2
+Version: 2.7.3
 Stable tag: 2.5
 
 
@@ -42,6 +42,13 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=2.7.3=
+* Fix for Stripes block dark grey formatting
+* Events calendar thumbnails fix in listing
+* Site name width improvement in the header
+* PHP warning fix
+* Style improvement for prefix/title field in gravity forms
 
 =2.7.2=
 * Accessibility improvements

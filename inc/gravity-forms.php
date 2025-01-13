@@ -61,15 +61,50 @@ add_filter(
 		$form_string = str_replace( 'gform_save_link button', 'nhsuk-button nhsuk-button--secondary', $form_string );
 		$form_string = str_replace( 'gform_save_link', 'nhsuk-button nhsuk-button--secondary', $form_string );
 
-		$outerfind[]    = 'gfield_error';
-		$outerreplace[] = 'gfield_error nhsuk-form-group--error';
-		$form_string    = str_replace( $outerfind, $outerreplace, $form_string );
+		$form_string = add_nhsuk_group_error_class_for_validation( $form_string );
 		$form_string    = add_nhsuk_class( $form_string ); // Add  'nhsuk-form-group' to 'gfield'.
 		return $form_string;
 	},
 	10,
 	2
 );
+
+/**
+ * Adds nhsuk form group error class to gravity form div having individual form elemen(s)
+ * with gfield error class.
+ *
+ * @param mixed $html html content.
+ * @return bool|string
+ */
+function add_nhsuk_group_error_class_for_validation( $html ) {
+	$doc = new DOMDocument();
+	libxml_use_internal_errors( true ); // Suppress warnings from malformed HTML.
+	$doc->loadHTML( $html );
+	libxml_clear_errors();
+
+	$xpath      = new DOMXPath( $doc );
+	$outer_divs = $xpath->query( "//div[contains(@class, 'ginput_container')]" );
+
+	if ( $outer_divs->length > 0 ) {
+		foreach ( $outer_divs as $outer_div ) {
+			// Find the nested inner div with class 'gfield_error is-error' inside the outer div.
+			$inner_divs = $xpath->query( ".//*[contains(@class, 'gfield_error is-error')]", $outer_div );
+			if ( $inner_divs->length > 0 ) {
+				// Append the 'nhsuk-form-group--error' class to the outer div.
+				$existing_class = $outer_div->getAttribute( 'class' );
+				$new_class      = 'nhsuk-form-group--error';
+				$class_array    = explode( ' ', $existing_class );
+				if ( ! in_array( $new_class, $class_array, true ) ) {
+					$updated_class = trim( $existing_class . ' ' . $new_class );
+					$outer_div->setAttribute( 'class', $updated_class );
+				}
+				break;
+			}
+		}
+	}
+	// Output the modified HTML.
+	return $doc->saveHTML();
+}
 
 /**
  * Str_replace was replacing every 'gfield' in the input box to 'gfield nhsuk-form-group'.
@@ -474,8 +509,10 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 			// Name inputs.
 			case 'name':
 				// leave this alone, they seem to have done a decent job and it is very accessible now.
+				if ( strpos( $field_content, '<select' ) !== false ) {
+					$field_content = add_class_to_select( $field_content, 'nhsuk-select' );
+				}
 				break;
-
 			// Checkboxes.
 			case 'checkbox':
 				$find[]        = 'gfield_checkbox';
@@ -661,3 +698,34 @@ function nightingale_gravity_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'nightingale_gravity_scripts' );
+
+/**
+ * This function adds the passed classs name to the select box.
+ * 
+ * @param mixed $html HTML content.
+ * @param mixed $class_name class name to add.
+ * @return array|string|null
+ */
+function add_class_to_select( $html, $class_name ) {
+	// Regex to find the <select> tag.
+	$pattern = '/<select([^>]*)>/i';
+
+	// Perform the replacement.
+	$updated_html = preg_replace_callback(
+		$pattern,
+		function ( $matches ) use ( $class_name ) {
+			if ( strpos( $matches[1], 'class=' ) !== false ) {
+				// If a class already exists, append the new class if not present.
+				return str_replace( 'class="', 'class="' . $class_name . ' ', $matches[0] );
+			} else {
+				// No class attribute, add one.
+				return '<select' . $matches[1] . ' class="' . $class_name . '">';
+			}
+		},
+		$html
+	);
+
+	return $updated_html;
+}
+
+
