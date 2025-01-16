@@ -77,20 +77,25 @@ add_filter(
  * @return bool|string
  */
 function add_nhsuk_group_error_class_for_validation( $html ) {
-	$doc = new DOMDocument();
-	libxml_use_internal_errors( true ); // Suppress warnings from malformed HTML.
+	// Create a new DOMDocument instance with UTF-8 encoding.
+	$doc = new DOMDocument( '1.0', 'UTF-8' );
+	// Suppress warnings due to malformed HTML.
+	libxml_use_internal_errors( true );
+	// Ensure the HTML is encoded in UTF-8 before loading.
+	$html = mb_convert_encoding( $html, 'HTML-ENTITIES', 'UTF-8' );
+	// Load HTML with UTF-8 encoding.
 	$doc->loadHTML( $html );
 	libxml_clear_errors();
-
-	$xpath      = new DOMXPath( $doc );
+	// Create XPath for DOM traversal.
+	$xpath = new DOMXPath( $doc );
+	// Query the outer divs.
 	$outer_divs = $xpath->query( "//div[contains(@class, 'ginput_container')]" );
-
 	if ( $outer_divs->length > 0 ) {
 		foreach ( $outer_divs as $outer_div ) {
-			// Find the nested inner div with class 'gfield_error is-error' inside the outer div.
+			// Find the inner divs containing error classes.
 			$inner_divs = $xpath->query( ".//*[contains(@class, 'gfield_error is-error')]", $outer_div );
 			if ( $inner_divs->length > 0 ) {
-				// Append the 'nhsuk-form-group--error' class to the outer div.
+				// Append the 'nhsuk-form-group--error' class.
 				$existing_class = $outer_div->getAttribute( 'class' );
 				$new_class      = 'nhsuk-form-group--error';
 				$class_array    = explode( ' ', $existing_class );
@@ -102,8 +107,12 @@ function add_nhsuk_group_error_class_for_validation( $html ) {
 			}
 		}
 	}
-	// Output the modified HTML.
-	return $doc->saveHTML();
+
+	// Save the HTML and return it with proper encoding handling.
+	$html = $doc->saveHTML();
+
+	// Convert the HTML back to UTF-8 and return.
+	return mb_convert_encoding( $html, 'UTF-8', 'HTML-ENTITIES' );
 }
 
 /**

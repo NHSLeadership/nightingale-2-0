@@ -207,3 +207,9 @@ a:focus .nhsuk-icon {
 		width: 100%;
 	}
 }
+@media (min-width: 48.0625em) {
+    .nhsuk-header--organisation .nhsuk-header__link {
+        max-width: 500px;
+        width: max-content;
+    }
+}
