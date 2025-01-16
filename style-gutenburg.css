@@ -6610,6 +6610,12 @@
     width: 100%;
   }
 }
+@media (min-width: 48.0625em) {
+  .edit-post-visual-editor .nhsuk-header--organisation .nhsuk-header__link {
+    max-width: 500px;
+    width: max-content;
+  }
+}
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;
