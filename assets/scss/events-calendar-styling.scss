@@ -310,3 +310,10 @@ html.js { // only hit embedded content. Wordpress doesnt make this easy to filte
 .tribe-events-schedule__datetime * {
 	color : $color_nhsuk-dark-grey;
 }
+
+.tribe_events_thumbnail {
+	width: 100%; /* or a fixed width like 150px */
+	aspect-ratio: 4 / 3; /* Maintains a 4:3 aspect ratio */
+	object-fit: cover; /* Ensures the image fills the area */
+	display: block; /* Prevents inline spacing issues */
+}

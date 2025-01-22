@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.2
+Version: 2.7.4
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 5.2.4
@@ -8538,6 +8538,12 @@ a:focus .nhsuk-icon {
     width: 100%;
   }
 }
+@media (min-width: 48.0625em) {
+  .nhsuk-header--organisation .nhsuk-header__link {
+    max-width: 500px;
+    width: max-content;
+  }
+}
 /*
 // variations to styling required for gutenberg native blocks
 // @author Tony Blacker, NHS Leadership Academy
@@ -9366,10 +9372,10 @@ li.nhsuk-pagination-item--next {
 .gform_wrapper .gform_body .ginput_container_name span, .gform_wrapper .gform_body .ginput_container_name .ginput_container, .gform_wrapper .gform_body .clear-multi span, .gform_wrapper .gform_body .clear-multi .ginput_container {
   padding: 8px 16px 8px 0;
 }
-.gform_wrapper .gform_body .ginput_container_name span.name-prefix, .gform_wrapper .gform_body .ginput_container_name span.name-first, .gform_wrapper .gform_body .ginput_container_name span.name-middle, .gform_wrapper .gform_body .ginput_container_name span.name-last, .gform_wrapper .gform_body .ginput_container_name span.name_suffix, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-prefix, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-first, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-middle, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-last, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name_suffix, .gform_wrapper .gform_body .clear-multi span.name-prefix, .gform_wrapper .gform_body .clear-multi span.name-first, .gform_wrapper .gform_body .clear-multi span.name-middle, .gform_wrapper .gform_body .clear-multi span.name-last, .gform_wrapper .gform_body .clear-multi span.name_suffix, .gform_wrapper .gform_body .clear-multi .ginput_container.name-prefix, .gform_wrapper .gform_body .clear-multi .ginput_container.name-first, .gform_wrapper .gform_body .clear-multi .ginput_container.name-middle, .gform_wrapper .gform_body .clear-multi .ginput_container.name-last, .gform_wrapper .gform_body .clear-multi .ginput_container.name_suffix {
+.gform_wrapper .gform_body .ginput_container_name span.name-prefix, .gform_wrapper .gform_body .ginput_container_name span.name-first, .gform_wrapper .gform_body .ginput_container_name span.name-middle, .gform_wrapper .gform_body .ginput_container_name span.name-last, .gform_wrapper .gform_body .ginput_container_name span.name-suffix, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-prefix, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-first, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-middle, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-last, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-suffix, .gform_wrapper .gform_body .clear-multi span.name-prefix, .gform_wrapper .gform_body .clear-multi span.name-first, .gform_wrapper .gform_body .clear-multi span.name-middle, .gform_wrapper .gform_body .clear-multi span.name-last, .gform_wrapper .gform_body .clear-multi span.name-suffix, .gform_wrapper .gform_body .clear-multi .ginput_container.name-prefix, .gform_wrapper .gform_body .clear-multi .ginput_container.name-first, .gform_wrapper .gform_body .clear-multi .ginput_container.name-middle, .gform_wrapper .gform_body .clear-multi .ginput_container.name-last, .gform_wrapper .gform_body .clear-multi .ginput_container.name-suffix {
   display: flex;
 }
-.gform_wrapper .gform_body .ginput_container_name span.name-prefix label, .gform_wrapper .gform_body .ginput_container_name span.name-first label, .gform_wrapper .gform_body .ginput_container_name span.name-middle label, .gform_wrapper .gform_body .ginput_container_name span.name-last label, .gform_wrapper .gform_body .ginput_container_name span.name_suffix label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-prefix label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-first label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-middle label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-last label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name_suffix label, .gform_wrapper .gform_body .clear-multi span.name-prefix label, .gform_wrapper .gform_body .clear-multi span.name-first label, .gform_wrapper .gform_body .clear-multi span.name-middle label, .gform_wrapper .gform_body .clear-multi span.name-last label, .gform_wrapper .gform_body .clear-multi span.name_suffix label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-prefix label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-first label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-middle label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-last label, .gform_wrapper .gform_body .clear-multi .ginput_container.name_suffix label {
+.gform_wrapper .gform_body .ginput_container_name span.name-prefix label, .gform_wrapper .gform_body .ginput_container_name span.name-first label, .gform_wrapper .gform_body .ginput_container_name span.name-middle label, .gform_wrapper .gform_body .ginput_container_name span.name-last label, .gform_wrapper .gform_body .ginput_container_name span.name-suffix label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-prefix label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-first label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-middle label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-last label, .gform_wrapper .gform_body .ginput_container_name .ginput_container.name-suffix label, .gform_wrapper .gform_body .clear-multi span.name-prefix label, .gform_wrapper .gform_body .clear-multi span.name-first label, .gform_wrapper .gform_body .clear-multi span.name-middle label, .gform_wrapper .gform_body .clear-multi span.name-last label, .gform_wrapper .gform_body .clear-multi span.name-suffix label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-prefix label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-first label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-middle label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-last label, .gform_wrapper .gform_body .clear-multi .ginput_container.name-suffix label {
   padding: 0 16px 0 8px;
   font-size: 1.25rem;
   color: #425563;
@@ -9556,6 +9562,12 @@ li.nhsuk-pagination-item--next {
     line-height: 28px !important;
   }
 }
+.name_prefix label,
+.name_suffix label,
+.name_middle label {
+  color: inherit !important;
+}
+
 .learndash-wrapper .learndash_join_button, .learndash-wrapper .learndash-wrap .learndash_join_button {
   margin-top: 25px;
 }
@@ -10096,6 +10108,13 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
 /* Event datetime header */
 .tribe-events-schedule__datetime * {
   color: #425563;
+}
+
+.tribe_events_thumbnail {
+  width: 100%; /* or a fixed width like 150px */
+  aspect-ratio: 4/3; /* Maintains a 4:3 aspect ratio */
+  object-fit: cover; /* Ensures the image fills the area */
+  display: block; /* Prevents inline spacing issues */
 }
 
 .download-count {
@@ -11622,6 +11641,14 @@ section.nhsuk-section:after,
 
 .has-gds-black-background-color {
   background-color: "#0b0c0c";
+}
+
+.has-nhs-grey-dark-color {
+  color: #425563;
+}
+
+.has-nhs-grey-dark-background-color {
+  background-color: #425563;
 }
 
 #cookie-notice {

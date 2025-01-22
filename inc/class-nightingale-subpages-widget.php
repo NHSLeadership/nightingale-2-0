@@ -89,8 +89,12 @@ class Nightingale_Subpages_Widget extends WP_Widget {
 		$nightingale_subpages_is_first = true;
 
 		// Build title.
-		$title = esc_attr( $instance['title'] );
-		if ( 1 === $instance['title_from_parent'] ) {
+		$title = '';
+		if ( ! empty( $instance['title_from_parent'] ) ) {
+			$title = esc_attr( $instance['title'] );
+		}
+
+		if ( ! empty( $instance['title_from_parent'] ) && ( 1 === $instance['title_from_parent'] ) ) {
 			$title = apply_filters( 'nightingale_subpages_widget_title', get_the_title( $parents[0] ) );
 			if ( 1 === $instance['title_link'] ) {
 				$title = '<a href="' . esc_url( get_permalink( $parents[0] ) ) . '">' . esc_html( $title ) . '</a>';
