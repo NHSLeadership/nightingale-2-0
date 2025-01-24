@@ -54,7 +54,7 @@ else :
 							$tribe_thumbnail_class = 'tribe_events_thumbnail';
 						endif;
 						$image_proportion = get_theme_mod( 'blog_image_display', 'default' );
-						the_post_thumbnail( $image_proportion, attr: [ 'class' => 'nhsuk-card__img ' . $tribe_thumbnail_class ] );
+						the_post_thumbnail( $image_proportion, [ 'class' => 'nhsuk-card__img ' . $tribe_thumbnail_class ] );
 
 					else :
 
