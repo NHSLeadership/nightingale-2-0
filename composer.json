@@ -1,15 +1,19 @@
 {
     "name": "nhsleadership/nightingale",
-    "description": " NHSUK Frontend style theme for WordPress",
-    "repositories":[
+    "description": "NHSUK Frontend style theme for WordPress",
+    "repositories": [
         {
-            "type":"composer",
-            "url":"https://wpackagist.org"
+            "type": "composer",
+            "url": "https://wpackagist.org"
         }
     ],
     "type": "wordpress-theme",
     "support": {
         "issues": "https://github.com/NHSLeadership/nightingale-2-0/issues",
         "source": "https://github.com/NHSLeadership/nightingale-2-0"
-    }
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "license": "GPL-3.0-or-later"
 }
