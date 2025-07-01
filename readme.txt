@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.7.6=
 * Security update
+* Gets the visitor IP from CloudFlare in Gravity Forms.
 
 =2.7.5=
 * PHP 8 Support Only - This release marks the beginning of support exclusively for PHP 8 and above. Older PHP versions are no longer supported.
