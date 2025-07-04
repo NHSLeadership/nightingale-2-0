@@ -568,3 +568,26 @@
 		color: inherit !important;
 	}
 }
+
+/* Gravity Forms Save and Continue button fix */
+button[data-submission-type="save-continue"] {
+  margin-left: 0 !important;
+
+  svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    line-height: 1.47368;
+  }
+
+  @media only screen and (max-width: 641px) {
+    line-height: 2;
+
+    svg {
+      width: 0.9em;
+      height: 0.9em;
+      margin-right: 0.4em;
+    }
+  }
+}

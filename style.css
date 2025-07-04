@@ -9568,6 +9568,28 @@ li.nhsuk-pagination-item--next {
   color: inherit !important;
 }
 
+/* Gravity Forms Save and Continue button fix */
+button[data-submission-type=save-continue] {
+  margin-left: 0 !important;
+}
+button[data-submission-type=save-continue] svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  line-height: 1.47368;
+}
+@media only screen and (max-width: 641px) {
+  button[data-submission-type=save-continue] {
+    line-height: 2;
+  }
+  button[data-submission-type=save-continue] svg {
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.4em;
+  }
+}
+
 .learndash-wrapper .learndash_join_button, .learndash-wrapper .learndash-wrap .learndash_join_button {
   margin-top: 25px;
 }
