@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.7.5 06 feb 2025
+ * @version   2.7.6 02 jul 2025
  */
 
 /**
@@ -553,4 +553,22 @@ function split_text( $text, $length = 100, $parts = 2 ) {
 	}
 
 	return $result;
+}
+
+add_filter( 'gform_ip_address', 'cloudflare_gform_ip_address' );
+/**
+ * Get the visitor IP from CloudFlare
+ *
+ * @param mixed $ip IP address.
+ */
+function cloudflare_gform_ip_address( $ip ) {
+	// Return the IP address provided by CloudFlare.
+	if ( isset( $_SERVER['CF-Connecting-IP'] ) && ! empty( $_SERVER['CF-Connecting-IP'] ) ) {
+		$ip = isset( $_SERVER['CF-Connecting-IP'] );
+		GFCommon::log_debug( message: __METHOD__ . '(): CF-Connecting-IP: ' . $ip );
+	} elseif ( isset( $_SERVER['HTTP_CF_CONNECTING_IP'] ) && ! empty( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
+		$ip = isset( $_SERVER['HTTP_CF_CONNECTING_IP'] );
+		GFCommon::log_debug( __METHOD__ . '(): HTTP_CF_CONNECTING_IP: ' . $ip );
+	}
+	return $ip;
 }

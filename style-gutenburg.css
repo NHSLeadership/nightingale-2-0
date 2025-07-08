@@ -800,6 +800,7 @@
   */
   /* login form customisation */
   /* Extra Blog Styles */
+  /* Gravity Forms Save and Continue button fix */
   /* Events Calendar Styles */
   /* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
   /* Events Widgets */
@@ -7176,6 +7177,26 @@
 .edit-post-visual-editor .name_suffix label,
 .edit-post-visual-editor .name_middle label {
   color: inherit !important;
+}
+.edit-post-visual-editor button[data-submission-type=save-continue] {
+  margin-left: 0 !important;
+}
+.edit-post-visual-editor button[data-submission-type=save-continue] svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  line-height: 1.47368;
+}
+@media only screen and (max-width: 641px) {
+  .edit-post-visual-editor button[data-submission-type=save-continue] {
+    line-height: 2;
+  }
+  .edit-post-visual-editor button[data-submission-type=save-continue] svg {
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.4em;
+  }
 }
 .edit-post-visual-editor .learndash-wrapper .learndash_join_button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .learndash_join_button {
   margin-top: 25px;
