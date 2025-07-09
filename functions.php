@@ -556,19 +556,27 @@ function split_text( $text, $length = 100, $parts = 2 ) {
 }
 
 add_filter( 'gform_ip_address', 'cloudflare_gform_ip_address' );
+
 /**
- * Get the visitor IP from CloudFlare
+ * Use Cloudflare's real client IP for Gravity Forms if available.
  *
- * @param mixed $ip IP address.
+ * @param string $ip The original IP address detected by Gravity Forms.
+ * @return string The trusted IP address, prioritizing Cloudflare headers.
  */
 function cloudflare_gform_ip_address( $ip ) {
-	// Return the IP address provided by CloudFlare.
-	if ( isset( $_SERVER['CF-Connecting-IP'] ) && ! empty( $_SERVER['CF-Connecting-IP'] ) ) {
-		$ip = isset( $_SERVER['CF-Connecting-IP'] );
-		GFCommon::log_debug( message: __METHOD__ . '(): CF-Connecting-IP: ' . $ip );
-	} elseif ( isset( $_SERVER['HTTP_CF_CONNECTING_IP'] ) && ! empty( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
-		$ip = isset( $_SERVER['HTTP_CF_CONNECTING_IP'] );
-		GFCommon::log_debug( __METHOD__ . '(): HTTP_CF_CONNECTING_IP: ' . $ip );
+	$cf_ip_raw = null;
+
+	if ( isset( $_SERVER['CF-Connecting-IP'] ) ) {
+		// Safely extract and sanitize the value.
+		$cf_ip_raw = sanitize_text_field( wp_unslash( $_SERVER['CF-Connecting-IP'] ) );
+	} elseif ( isset( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
+		$cf_ip_raw = sanitize_text_field( wp_unslash( $_SERVER['HTTP_CF_CONNECTING_IP'] ) );
 	}
+
+	if ( $cf_ip_raw && filter_var( $cf_ip_raw, FILTER_VALIDATE_IP ) ) {
+		GFCommon::log_debug( __METHOD__ . '(): Using sanitized Cloudflare IP: ' . $cf_ip_raw );
+		return $cf_ip_raw;
+	}
+	GFCommon::log_debug( __METHOD__ . '(): Using original IP: ' . $ip );
 	return $ip;
 }
