@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Tony Blacker
- * @version   2.7.5 06 feb 2025
+ * @version   2.7.6 02 jul 2025
  */
 
 /**
@@ -553,4 +553,30 @@ function split_text( $text, $length = 100, $parts = 2 ) {
 	}
 
 	return $result;
+}
+
+add_filter( 'gform_ip_address', 'cloudflare_gform_ip_address' );
+
+/**
+ * Use Cloudflare's real client IP for Gravity Forms if available.
+ *
+ * @param string $ip The original IP address detected by Gravity Forms.
+ * @return string The trusted IP address, prioritizing Cloudflare headers.
+ */
+function cloudflare_gform_ip_address( $ip ) {
+	$cf_ip_raw = null;
+
+	if ( isset( $_SERVER['CF-Connecting-IP'] ) ) {
+		// Safely extract and sanitize the value.
+		$cf_ip_raw = sanitize_text_field( wp_unslash( $_SERVER['CF-Connecting-IP'] ) );
+	} elseif ( isset( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
+		$cf_ip_raw = sanitize_text_field( wp_unslash( $_SERVER['HTTP_CF_CONNECTING_IP'] ) );
+	}
+
+	if ( $cf_ip_raw && filter_var( $cf_ip_raw, FILTER_VALIDATE_IP ) ) {
+		GFCommon::log_debug( __METHOD__ . '(): Using sanitized Cloudflare IP: ' . $cf_ip_raw );
+		return $cf_ip_raw;
+	}
+	GFCommon::log_debug( __METHOD__ . '(): Using original IP: ' . $ip );
+	return $ip;
 }
