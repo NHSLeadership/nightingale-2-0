@@ -119,7 +119,7 @@
 
   /* clearfix after grouped items to sort out some display wirdiness */
   .block-editor-inner-blocks {
-    @include clearfix();
+    @include nhsuk-clearfix();
   }
 
   // Download Monitor plugin styling to match NHSUK design patterns

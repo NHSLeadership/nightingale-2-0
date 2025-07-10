@@ -47,7 +47,7 @@
 }
 
 
-@include mq($until : large-desktop) {
+@include nhsuk-media-query($until : large-desktop) {
   .nhsuk-bordered-tabs-container {
 	background    : inherit;
 

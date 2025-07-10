@@ -16,7 +16,7 @@ section.nhsuk-section,
 [data-type="nhsblocks/stripesblock"] .is-block-content{
 
 	padding: 64px 20px;
-	@include clearfix();
+	@include nhsuk-clearfix();
 }
 
 .nhsuk-striped-blocks{

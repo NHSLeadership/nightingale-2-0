@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .nhsuk-panel {
-  @include panel($color_nhsuk-white, $nhsuk-text-color);
+  @include nhsuk-panel($color_nhsuk-white, $nhsuk-text-color);
   width: 100%;
 }
 
@@ -18,12 +18,12 @@
    ========================================================================== */
 
 .nhsuk-panel-with-label {
-  @include panel-with-label($color_nhsuk-white, $nhsuk-text-color, $color_nhsuk-grey-4);
+  @include nhsuk-panel-with-label($color_nhsuk-white, $nhsuk-text-color, $color_nhsuk-grey-4);
 }
 
 .nhsuk-panel-with-label__label {
-  @include heading-label($color_nhsuk-blue, $color_nhsuk-white);
-  @include print-color($nhsuk-print-text-color);
+  @include nhsuk-heading-label($color_nhsuk-blue, $color_nhsuk-white);
+  @include nhsuk-print-color($nhsuk-print-text-color);
 }
 
 /* Panel group
@@ -36,20 +36,20 @@
  */
 
 .nhsuk-panel-group {
-  @include flex(); /* [1] */
+  @include nhsuk-flex(); /* [1] */
 
   margin-bottom: nhsuk-spacing(5);
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     margin-bottom: nhsuk-spacing(4);
   }
 
 }
 
 .nhsuk-panel-group__item {
-  @include flex-item(); /* [1] */
+  @include nhsuk-flex-item(); /* [1] */
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     margin-bottom: nhsuk-spacing(4);
 
     &:last-child {

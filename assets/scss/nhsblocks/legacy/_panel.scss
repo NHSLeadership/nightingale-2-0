@@ -36,20 +36,20 @@
  */
 
 .nhsuk-panel-group {
-  @include flex(); /* [1] */
+  @include nhsuk-flex(); /* [1] */
 
   margin-bottom: nhsuk-spacing(5);
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     margin-bottom: nhsuk-spacing(4);
   }
 
 }
 
 .nhsuk-panel-group__item {
-  @include flex-item(); /* [1] */
+  @include nhsuk-flex-item(); /* [1] */
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     margin-bottom: nhsuk-spacing(4);
 
     &:last-child {

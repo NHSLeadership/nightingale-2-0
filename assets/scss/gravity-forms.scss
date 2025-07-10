@@ -99,7 +99,7 @@
 		}
 	  }
 
-	  @include mq($from : large-desktop) {
+	  @include nhsuk-media-query($from : large-desktop) {
 		.gsurvey-survey-field {
 		  .gsurvey-likert {
 			.nhsuk-likert {
@@ -111,7 +111,7 @@
 				display          : flex; /* direction row by default, the cells will be side by side to start */
 				flex-direction   : row;
 				width            : 100%;
-				@include clearfix();
+				@include nhsuk-clearfix();
 				background-color : white;
 
 				.nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
@@ -180,19 +180,19 @@
 		  }
 		}
 	  }
-	  @include mq($until : large-desktop) {
+	  @include nhsuk-media-query($until : large-desktop) {
 		.gsurvey-survey-field {
 		  .gsurvey-likert {
 			.nhsuk-likert {
 			  .nhsuk-likert__row {
-				@include clearfix();
+				@include nhsuk-clearfix();
 				padding: nhsuk-spacing(3) 0;
 				border-top: 1px solid $color_nhsuk-grey-4;
 				&.nhsuk-likert__header {
 				  display : none;
 				}
 				.nhsuk-likert__item {
-				  @include clearfix();
+				  @include nhsuk-clearfix();
 				  .nhsuk-radios__label {
 					.nhsuk-u-visually-hidden {
 					  position: relative;

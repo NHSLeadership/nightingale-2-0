@@ -110,7 +110,7 @@ aside#secondary > section{
 }
 
 .clear{
-  @include clearfix();
+  @include nhsuk-clearfix();
 }
 .nhsuk-readmore {
   text-align: left;

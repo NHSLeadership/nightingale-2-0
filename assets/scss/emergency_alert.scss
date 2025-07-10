@@ -32,7 +32,7 @@
 }
 
 .nhsuk-global-alert {
-  @include print-hide();
+  @include nhsuk-print-hide();
   background-color : $color_nhsuk-yellow;
   padding-bottom   : nhsuk-spacing(4);
   padding-top      : nhsuk-spacing(4);
@@ -43,14 +43,14 @@
 }
 
 .nhsuk-global-alert__content {
-  @include top-and-bottom;
+  // @include top-and-bottom;
   position : relative;
   margin   : 0 nhsuk-spacing(3);
 }
 
 /* Heading: smaller font size on desktop */
 .nhsuk-global-alert__heading {
-  @include nhsuk-typography-responsive(24);
+  @include nhsuk-font-size(36);
   margin      : 0;
 }
 

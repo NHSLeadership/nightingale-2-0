@@ -11806,33 +11806,27 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
   position: relative;
   margin: 0 16px;
 }
-.nhsuk-global-alert__content > *:first-child {
-  margin-top: 0;
-}
-.nhsuk-global-alert__content > *:last-child {
-  margin-bottom: 0;
-}
 
 /* Heading: smaller font size on desktop */
 .nhsuk-global-alert__heading {
   margin: 0;
 }
 .nhsuk-global-alert__heading {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 1.22222;
 }
 @media (min-width: 40.0625em) {
   .nhsuk-global-alert__heading {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.29167;
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.16667;
   }
 }
 @media print {
   .nhsuk-global-alert__heading {
-    font-size: 16pt;
-    line-height: 1.25;
+    font-size: 20pt;
+    line-height: 1.2;
   }
 }
 
@@ -11958,21 +11952,21 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
   padding-right: 40px; /* [3] */
 }
 .nhsuk-feedback-banner__heading {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 1.22222;
 }
 @media (min-width: 40.0625em) {
   .nhsuk-feedback-banner__heading {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.29167;
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.16667;
   }
 }
 @media print {
   .nhsuk-feedback-banner__heading {
-    font-size: 16pt;
-    line-height: 1.25;
+    font-size: 20pt;
+    line-height: 1.2;
   }
 }
 
@@ -12687,30 +12681,24 @@ section.nhsuk-section::after,
   font-weight: 600;
 }
 .nhsuk-promo__heading {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 1.22222;
 }
 @media (min-width: 40.0625em) {
   .nhsuk-promo__heading {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.29167;
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.16667;
   }
 }
 @media print {
   .nhsuk-promo__heading {
-    font-size: 16pt;
-    line-height: 1.25;
+    font-size: 20pt;
+    line-height: 1.2;
   }
 }
 
-.nhsuk-promo__content > *:first-child {
-  margin-top: 0;
-}
-.nhsuk-promo__content > *:last-child {
-  margin-bottom: 0;
-}
 .nhsuk-promo__content {
   padding: 24px;
 }
@@ -12916,21 +12904,21 @@ section.nhsuk-section::after,
   font-weight: 600;
 }
 .nhsuk-care-card__heading {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 27px;
+  font-size: 1.6875rem;
+  line-height: 1.22222;
 }
 @media (min-width: 40.0625em) {
   .nhsuk-care-card__heading {
-    font-size: 24px;
-    font-size: 1.5rem;
-    line-height: 1.29167;
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.16667;
   }
 }
 @media print {
   .nhsuk-care-card__heading {
-    font-size: 16pt;
-    line-height: 1.25;
+    font-size: 20pt;
+    line-height: 1.2;
   }
 }
 @media print {
@@ -12948,12 +12936,6 @@ section.nhsuk-section::after,
   border: 1px solid #d8dde0;
   border-top: 0;
   padding-top: 32px; /* [5] */
-}
-.nhsuk-care-card__content > *:first-child {
-  margin-top: 0;
-}
-.nhsuk-care-card__content > *:last-child {
-  margin-bottom: 0;
 }
 .nhsuk-care-card__content {
   padding-bottom: 24px;
