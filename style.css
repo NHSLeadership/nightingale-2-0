@@ -10348,6 +10348,48 @@ button + .button {
   margin-bottom: 0;
 }
 
+.nhsuk-button--secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info, .nhsuk-button.is-style-secondary, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background, .learndash-wrapper .is-style-secondary.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button {
+  background-color: #4c6272;
+  box-shadow: 0 4px 0 #263139 !important;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.nhsuk-button--secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover, .nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-secondary.ld-expand-button:hover {
+  background-color: #384853;
+}
+.nhsuk-button--secondary::after, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info::after, .nhsuk-button.is-style-secondary::after, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap::after, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle::after, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background::after, .learndash-wrapper .is-style-secondary.ld-expand-button::after, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button::after {
+  box-shadow: 0 4px 0 #263139 !important;
+}
+.nhsuk-button--secondary::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info::before, .nhsuk-button.is-style-secondary::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap::before, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle::before, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background::before, .learndash-wrapper .is-style-secondary.ld-expand-button::before, .learndash-wrapper .learndash-wrap .is-style-secondary.ld-expand-button::before {
+  border: 2px solid transparent;
+}
+.nhsuk-button--secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus, .nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-secondary.ld-expand-button:focus, .nhsuk-button--secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active, .nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-secondary.ld-expand-button:active {
+  border-color: transparent;
+  color: #fff;
+}
+.nhsuk-button--secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus, .nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-secondary.ld-expand-button:focus {
+  background-color: transparent;
+}
+.nhsuk-button--secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:active, .nhsuk-button.is-style-secondary:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:active, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:active, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:active, .learndash-wrapper .is-style-secondary.ld-expand-button:active {
+  background-color: #263139;
+}
+.nhsuk-button--secondary:not(:focus):not(:active)::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:not(:focus):not(:active)::before, .nhsuk-button.is-style-secondary:not(:focus):not(:active)::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:not(:focus):not(:active)::before, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:not(:focus):not(:active)::before, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:not(:focus):not(:active)::before, .learndash-wrapper .is-style-secondary.ld-expand-button:not(:focus):not(:active)::before {
+  border-color: transparent;
+}
+.nhsuk-button--reverse, .nhsuk-button.is-style-reverse, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background, .learndash-wrapper .is-style-reverse.ld-expand-button, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button {
+  box-shadow: 0 4px 0 #263139 !important;
+  border: 2px solid transparent;
+}
+.nhsuk-button--reverse::after, .nhsuk-button.is-style-reverse::after, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap::after, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle::after, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background::after, .learndash-wrapper .is-style-reverse.ld-expand-button::after, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button::after {
+  box-shadow: 0 4px 0 #263139 !important;
+}
+.nhsuk-button--reverse::before, .nhsuk-button.is-style-reverse::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap::before, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle::before, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background::before, .learndash-wrapper .is-style-reverse.ld-expand-button::before, .learndash-wrapper .learndash-wrap .is-style-reverse.ld-expand-button::before {
+  border: 2px solid transparent;
+}
+.nhsuk-button--reverse:not(:focus):not(:active)::before, .nhsuk-button.is-style-reverse:not(:focus):not(:active)::before, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:not(:focus):not(:active)::before, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:not(:focus):not(:active)::before, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:not(:focus):not(:active)::before, .learndash-wrapper .is-style-reverse.ld-expand-button:not(:focus):not(:active)::before {
+  border-color: transparent;
+}
+
 #secondary section {
   border-top: 2px solid #005eb8;
   margin-bottom: 32px;

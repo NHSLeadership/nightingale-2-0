@@ -7464,6 +7464,47 @@
 .edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
+.edit-post-visual-editor .nhsuk-button--secondary {
+  background-color: #4c6272;
+  box-shadow: 0 4px 0 #263139 !important;
+  color: #fff;
+  border: 2px solid transparent;
+}
+.edit-post-visual-editor .nhsuk-button--secondary:hover {
+  background-color: #384853;
+}
+.edit-post-visual-editor .nhsuk-button--secondary::after {
+  box-shadow: 0 4px 0 #263139 !important;
+}
+.edit-post-visual-editor .nhsuk-button--secondary::before {
+  border: 2px solid transparent;
+}
+.edit-post-visual-editor .nhsuk-button--secondary:focus, .edit-post-visual-editor .nhsuk-button--secondary:active {
+  border-color: transparent;
+  color: #fff;
+}
+.edit-post-visual-editor .nhsuk-button--secondary:focus {
+  background-color: transparent;
+}
+.edit-post-visual-editor .nhsuk-button--secondary:active {
+  background-color: #263139;
+}
+.edit-post-visual-editor .nhsuk-button--secondary:not(:focus):not(:active)::before {
+  border-color: transparent;
+}
+.edit-post-visual-editor .nhsuk-button--reverse {
+  box-shadow: 0 4px 0 #263139 !important;
+  border: 2px solid transparent;
+}
+.edit-post-visual-editor .nhsuk-button--reverse::after {
+  box-shadow: 0 4px 0 #263139 !important;
+}
+.edit-post-visual-editor .nhsuk-button--reverse::before {
+  border: 2px solid transparent;
+}
+.edit-post-visual-editor .nhsuk-button--reverse:not(:focus):not(:active)::before {
+  border-color: transparent;
+}
 .edit-post-visual-editor .gform_heading .gform_description {
   font-size: 1rem;
   font-weight: 600;
