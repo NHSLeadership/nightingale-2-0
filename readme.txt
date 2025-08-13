@@ -6,8 +6,8 @@ Requires PHP: 8.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.6
-Stable tag: 2.7
+Version: 3.0.0
+Stable tag: 3.0.0
 
 
 == Description ==
@@ -42,6 +42,10 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=3.0.0=
+* NHUK Frontend framework upgrade to v10
+* Security update
 
 =2.7.6=
 * Security update

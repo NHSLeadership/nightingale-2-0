@@ -4,12 +4,12 @@
     "type": "git",
     "url": "https://github.com/NHSLeadership/nightingale-2-0.git"
   },
-  "version": "2.7.6",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass --style=expanded --load-path=node_modules/nhsuk-frontend/packages style.scss style.css | sass --load-path=node_modules/nhsuk-frontend/packages style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css | cp ./node_modules/nhsuk-frontend/dist/nhsuk.min.js js/nhsuk.min.js",
-    "compress": "sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages style.scss style.min.css | sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages page-colours.scss page-colours.min.css",
+    "build": "sass --style=expanded --load-path=node_modules/nhsuk-frontend/src/nhsuk style.scss style.css | sass --load-path=node_modules/nhsuk-frontend/src/nhsuk style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css | cp ./node_modules/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js js/nhsuk.min.js",
+    "compress": "sass --style=compressed --load-path=node_modules/nhsuk-frontend/src/nhsuk style.scss style.min.css | sass --style=compressed --load-path=node_modules/nhsuk-frontend/src/nhsuk page-colours.scss page-colours.min.css",
     "zip": "zip -r nightingale.zip ./ -x .git .gitignore *.git/* /critical-css-generator.js /postcss.config.js *.github/* /Dockerfile /gruntfile.js /package.json package-lock.json *.DS_Store .DS_Store node_modules/ /phpcs.xml.dist node_modules/**\\* nhsblocks/node_modules/**\\*",
     "critical": "node critical-css-generator.js"
   },
@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nhsuk-frontend": "^9.6.3",
+    "nhsuk-frontend": "^10.0.0-internal.2",
     "penthouse": "^2.3.2",
     "sass": "^1.67.0"
   }
