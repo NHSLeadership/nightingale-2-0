@@ -13,24 +13,15 @@
 
 $header_colour = get_theme_mod( 'header_styles', 'normal' );
 ?>
-<svg class="nhsuk-logo" xmlns:xlink="http://www.w3.org/2000/svg" role="img" aria-labelledby="headerNHSlogo" focusable="false" viewBox="0 0 40 16">
+<svg class="nhsuk-header__logo" xmlns:xlink="http://www.w3.org/2000/svg" role="img" height="40" width="100" aria-labelledby="headerNHSlogo" focusable="false" viewBox="0 0 200 80">
 	<title id="headerNHSlogo">NHS Logo</title>
-	<path
+	<path fill="currentcolor"
 		<?php
-		if ( 'normal' !== $header_colour ) :
-			echo 'fill="#005eb8"';
-		else :
-			echo 'class="nhsuk-logo__background"';
-		endif;
+		// if ( 'normal' !== $header_colour ) :
+		// 	echo 'fill="#fff"';
+		// else :
+		// 	echo 'fill="currentcolor"';
+		// endif;
 		?>
-			d="M0 0h40v16H0z"></path>
-	<path
-		<?php
-		if ( 'normal' !== $header_colour ) :
-			echo 'fill="#fff"';
-		else :
-			echo 'class="nhsuk-logo__text"';
-		endif;
-		?>
-			d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+			d="M200 0v80H0V0h200Zm-27.5 5.5c-14.5 0-29 5-29 22 0 10.2 7.7 13.5 14.7 16.3l.7.3c5.4 2 10.1 3.9 10.1 8.4 0 6.5-8.5 7.5-14 7.5s-12.5-1.5-16-3.5L135 70c5.5 2 13.5 3.5 20 3.5 15.5 0 32-4.5 32-22.5 0-19.5-25.5-16.5-25.5-25.5 0-5.5 5.5-6.5 12.5-6.5a35 35 0 0 1 14.5 3l4-13.5c-4.5-2-12-3-20-3Zm-131 2h-22l-14 65H22l9-45h.5l13.5 45h21.5l14-65H64l-9 45h-.5l-13-45Zm63 0h-18l-13 65h17l6-28H117l-5.5 28H129l13.5-65H125L119.5 32h-20l5-24.5Z"></path>
 </svg>

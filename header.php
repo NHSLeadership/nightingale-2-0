@@ -24,7 +24,7 @@
 	flush();
 	?>
 </head>
-<body <?php body_class( 'js-enabled' ); ?>>
+<body <?php body_class(); ?>>
 <?php
 if ( ! function_exists( 'wp_body_open' ) ) {
 	/**
@@ -48,35 +48,32 @@ if ( 'normal' !== $header_colour ) {
 } else {
 	$header_colour_text = '';
 }
-echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $header_colour_text ) . '" role="banner">';
+echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $header_colour_text ) . '" role="banner" data-module="nhsuk-header">';
 ?>
-<div class="nhsuk-header__container">
+<div class="nhsuk-header__container nhsuk-width-container">
+	<div class="nhsuk-header__service">
+		<?php
+		get_template_part( 'partials/logo' );
+		?>
+	</div>	
 	<?php
-	get_template_part( 'partials/logo' );
+	$header_search = get_theme_mod( 'show_search', 'yes' );
+	if ( 'no' === $header_search ) {
+		$headersearchextra = 'nhsuk-header__menu--only';
+	} else {
+		$headersearchextra = '';
+	}
 	?>
-	<div class="nhsuk-header__content" id="content-header">
 
-		<?php
-		$header_search = get_theme_mod( 'show_search', 'yes' );
-		if ( 'no' === $header_search ) {
-			$headersearchextra = 'nhsuk-header__menu--only';
-		} else {
-			$headersearchextra = '';
-		}
+	<?php
+	if ( 'yes' === $header_search ) {
 		?>
-
+		<search class="nhsuk-header__search">
+			<?php get_search_form(); ?>
+		</search>
 		<?php
-		if ( 'yes' === $header_search ) {
-			?>
-			<div class="nhsuk-header__search">
-				<?php get_search_form(); ?>
-			</div>
-			<?php
-		}
-		?>
-
-	</div>
-	
+	}
+	?>
 </div>
 
 <!-- Navigation container -->
