@@ -10521,10 +10521,6 @@ a:focus .nhsuk-icon {
   margin-left: 34px;
 }
 
-.nhsuk-header__navigation-item {
-  border-top: none;
-}
-
 .nhsuk-navigation-container .nhsuk-navigation .nhsuk-icon__chevron-down {
   fill: #ffffff;
 }
@@ -10554,10 +10550,6 @@ a:focus .nhsuk-icon {
   }
   .nhsuk-header__transactional-service-name {
     padding-left: 28px;
-    width: 100%;
-  }
-  .nhsuk-header__search {
-    margin-left: 0px;
     width: 100%;
   }
   .nhsuk-header__content {

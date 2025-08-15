@@ -7275,9 +7275,6 @@
 .edit-post-visual-editor .nhsuk-action-link__link + div {
   margin-left: 34px;
 }
-.edit-post-visual-editor .nhsuk-header__navigation-item {
-  border-top: none;
-}
 .edit-post-visual-editor .nhsuk-navigation-container .nhsuk-navigation .nhsuk-icon__chevron-down {
   fill: #ffffff;
 }
@@ -7306,10 +7303,6 @@
   }
   .edit-post-visual-editor .nhsuk-header__transactional-service-name {
     padding-left: 28px;
-    width: 100%;
-  }
-  .edit-post-visual-editor .nhsuk-header__search {
-    margin-left: 0px;
     width: 100%;
   }
   .edit-post-visual-editor .nhsuk-header__content {
