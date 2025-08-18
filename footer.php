@@ -17,23 +17,21 @@ flush();
 </main>
 </div>
 
-<footer role="contentinfo">
-	<div class="nhsuk-footer-container" id="nhsuk-footer">
-		<div class="nhsuk-width-container">
-			<?php if ( is_active_sidebar( 'footer-region' ) ) : ?>
-				<div id="nhsuk-footer-widgets" class="nhsuk-footer__widgets widget-area" role="complementary">
-					<?php dynamic_sidebar( 'footer-region' ); ?>
-				</div>
-				<?php
-			endif;
-			?>
+
+
+<footer class="nhsuk-footer" role="contentinfo">
+	<div class="nhsuk-width-container" id="nhsuk-footer">
+		<?php
+		if ( is_active_sidebar( 'footer-region' ) ) :
+			dynamic_sidebar( 'footer-region' );
+		endif;
+		?>
+		<div class="nhsuk-footer__meta">
 			<h2 class="nhsuk-u-visually-hidden">Support links</h2>
-			<div class="nhsuk-footer">
 			<?php
 				get_template_part( 'partials/footernav' );
 				get_template_part( 'partials/footer-copyright' );
 			?>
-			</div>
 
 		</div>
 	</div>
