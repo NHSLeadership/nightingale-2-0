@@ -263,7 +263,8 @@ add_action( 'wp_enqueue_scripts', 'nightingale_scripts' );
  * This filter targets the script with handle 'my-es-module' and modifies its tag
  * to enable ES module syntax (e.g., `import`, `export`) in the browser.
  *
- * Only affects the script with handle 'my-es-module'. All other scripts remain unchanged.
+ * Only affects the script with handle 'nightingale-nhs-library' or 'nightingale-nhs-library-init'.
+ * All other scripts remain unchanged.
  *
  * @param string $tag    The original HTML script tag.
  * @param string $handle The registered script handle.
