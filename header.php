@@ -66,14 +66,37 @@ echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $
 	?>
 
 	<?php
+	$account_class = '';
 	if ( 'yes' === $header_search ) {
+		$account_class = 'nhsuk-header__account--break';
 		?>
 		<search class="nhsuk-header__search">
 			<?php get_search_form(); ?>
 		</search>
 		<?php
 	}
+	
+	if ( is_user_logged_in() && get_theme_mod( 'show_account_info', true )) {
+		$user = wp_get_current_user();
 	?>
+		<nav class="nhsuk-header__account <?php echo esc_attr( $account_class ); ?>" aria-label="Account">
+			<ul class="nhsuk-header__account-list">
+				<li class="nhsuk-header__account-item">
+					<svg class="nhsuk-icon nhsuk-icon--user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" focusable="false" aria-hidden="true">
+						<path d="M12 1a11 11 0 1 1 0 22 11 11 0 0 1 0-22Zm0 2a9 9 0 0 0-5 16.5V18a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v1.5A9 9 0 0 0 12 3Zm0 3a3.5 3.5 0 1 1-3.5 3.5A3.4 3.4 0 0 1 12 6Z" />
+					</svg>
+					<?php echo esc_html( get_user_full_name() ); ?>
+				</li>
+				<li class="nhsuk-header__account-item">
+					<a class="nhsuk-header__account-link" href="<?php echo esc_url( wp_logout_url() ); ?>">
+						Log out
+					</a>
+				</li>
+			</ul>
+		</nav>
+	<?php
+	}
+	?>	
 </div>
 
 <!-- Navigation container -->

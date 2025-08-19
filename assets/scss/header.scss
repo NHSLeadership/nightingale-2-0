@@ -1,77 +1,10 @@
 .nhsuk-header {
-    &.nhsuk-header--transactional {
-        .nhsuk-header__navigation {
-            max-width: 100%;
+
+    .nhsuk-header__account {
+        &--break {
+            flex-basis: 100%;
+            width: 100%;
+
         }
-
-        .nhsuk-header__transactional-service-name {
-            inline-size: 300px;
-            overflow-wrap: break-word;
-            padding-left: 7px;
-
-            @include nhsuk-media-query($until: tablet) {
-                inline-size: 150px;
-            }
-        }
-    }
-
-    &.nhsuk-header--organisation {
-        @include nhsuk-media-query($until: tablet) {
-            .nhsuk-header__link {
-                max-width: 500px;
-                float: left;
-            }
-        }
-    }
-
-    a.nhsuk-header__link--service {
-        display: contents;
-        float: left;
-    }
-
-    // Below here is all the white header variation.
-    &.nhsuk-header--white {
-        .nhsuk-header__search-wrap input[type="search"] {
-            border: $nhsuk-border-width-form-element solid $nhsuk-border-color;
-        }
-
-        .nhsuk-header__transactional-service-name--link {
-            color: $color_nhsuk-blue;
-            font-weight: $nhsuk-font-bold;
-        }
-
-
-        .nhsuk-header__menu {
-            .nhsuk-header__menu-toggle {
-                border: $nhsuk-border-width-form-element solid $color_nhsuk-blue;
-                color: $color_nhsuk-blue;
-
-                &:hover {
-                    color: $color_nhsuk-white;
-                }
-
-                &.is-active {
-                    color: $color_nhsuk-white;
-                    border: 0;
-                }
-            }
-        }
-    }
-}
-
-.nhsuk-header {
-    &.nhsuk-header--transactional {
-        .nhsuk-header__menu-toggle {
-            @include nhsuk-media-query($until: tablet) {
-                top: auto;
-            }
-            @include nhsuk-media-query($from: tablet) {
-                left: -76px;
-            }    
-        }
-    }
-
-    .nhsuk-header__menu {
-        position: relative;
     }
 }

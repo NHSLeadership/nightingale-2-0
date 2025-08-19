@@ -117,6 +117,9 @@ $page-colours             : (
 
   .page-colour--#{$name} {
 	.nhsuk-header {
+	  .nhsuk-header__account {
+		background-color: darken($colour, 10%);
+	  }
 	  .nhsuk-header__navigation {
 		background: $colour;
 	  }
