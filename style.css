@@ -10562,6 +10562,11 @@ a:focus .nhsuk-icon {
     width: max-content;
   }
 }
+.nhsuk-header .nhsuk-header__account--break {
+  flex-basis: 100%;
+  width: 100%;
+}
+
 /*
 // variations to styling required for gutenberg native blocks
 // @author Tony Blacker, NHS Leadership Academy

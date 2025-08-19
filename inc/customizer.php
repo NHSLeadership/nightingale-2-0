@@ -504,7 +504,26 @@ function nightingale_add_blog_settings( $wp_customize ) {
 			)
 		)
 	);
+
+	$wp_customize->add_setting(
+		'show_account_info',
+		array(
+			'default'           => true,
+			'sanitize_callback' => 'nightingale_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'show_account_info',
+		array(
+			'label'   => __( 'Show user info in header', 'nightingale' ),
+			'description' => __( 'Show the logged in user\'s name and a logout link', 'nightingale' ),
+			'section' => 'section_header',
+			'type'    => 'checkbox',
+		)
+	);
 }
+
 
 add_action( 'customize_register', 'nightingale_add_blog_settings' );
 

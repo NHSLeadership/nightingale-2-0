@@ -668,3 +668,38 @@ function inject_logo_markup_into_custom_logo( $html ) {
 	}
 	return $html;
 }
+
+/**
+ * Retrieves the full name of the currently logged-in user.
+ *
+ * Combines the user's first and last name from user meta.
+ * Falls back to display name if either is missing.
+ * Returns an empty string if the user is not logged in.
+ *
+ * @return string The sanitized full name of the user, or an empty string if not logged in.
+ */
+function get_user_full_name() {
+	// Ensure the user is logged in before accessing user data.
+	if ( ! is_user_logged_in() ) {
+		return '';
+	}
+
+	// Get the current user's ID.
+	$user_id = get_current_user_id();
+
+	// Retrieve first and last name from user meta.
+	$first_name = get_user_meta( $user_id, 'first_name', true );
+	$last_name  = get_user_meta( $user_id, 'last_name', true );
+
+	// Combine names and trim extra whitespace.
+	$full_name = trim( $first_name . ' ' . $last_name );
+
+	// Fallback to display name if full name is empty.
+	if ( empty( $full_name ) ) {
+		$user      = wp_get_current_user();
+		$full_name = $user->display_name;
+	}
+
+	// Sanitize output for safe display.
+	return $full_name;
+}
