@@ -11,8 +11,8 @@
   color : $nhsuk-link-color;
 
   &:focus {
-	background-color : $color_shade_nhsuk-blue-35;
-	box-shadow       : 0 0 0 4px $color_shade_nhsuk-blue-35;
+	background-color : nhsuk-shade(nhsuk-colour("blue"), 35%);
+	box-shadow       : 0 0 0 4px nhsuk-shade(nhsuk-colour("blue"), 35%);
 	color            : $color_nhsuk-white;
 	outline          : $nhsuk-focus-width solid transparent;
 	outline-offset   : $nhsuk-focus-width;
@@ -25,8 +25,8 @@
   }
 
   &:active {
-	background-color : $color_shade_nhsuk-blue-50;
-	box-shadow       : 0 0 0 4px $color_shade_nhsuk-blue-35;
+	background-color : nhsuk-shade(nhsuk-colour("blue"), 50%);
+	box-shadow       : 0 0 0 4px nhsuk-shade(nhsuk-colour("blue"), 35%);
 	color            : $color_nhsuk-white;
   }
 }

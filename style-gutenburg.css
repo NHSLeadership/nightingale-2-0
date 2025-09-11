@@ -10,231 +10,90 @@
    * 1. Correct the line height in all browsers.
    * 2. Prevent adjustments of font size after orientation changes in iOS.
    */
-  /* Sections
-  	 ========================================================================== */
-  /**
-   * Remove the margin in all browsers.
-   */
-  /**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-  /* Grouping content
-  	 ========================================================================== */
-  /**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
-  /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-  /* Text-level semantics
-  	 ========================================================================== */
-  /**
-   * Remove the gray background on active links in IE 10.
-   */
-  /**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-  /**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
-  /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-  /**
-   * Add the correct font size in all browsers.
-   */
-  /**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
-  /* Embedded content
-  	 ========================================================================== */
-  /**
-   * Remove the border on images inside links in IE 10.
-   */
-  /* Forms
-  	 ========================================================================== */
-  /**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
-  /**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
-  /**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
-  /**
-   * Remove the inner border and padding in Firefox.
-   */
-  /**
-   * Restore the focus styles unset by the previous rule.
-   */
-  /**
-   * Correct the padding in Firefox.
-   */
-  /**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *		`fieldset` elements in all browsers.
-   */
-  /**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
-  /**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
-  /**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
-  /**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-  /**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-  /**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
-  /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
-  /* Interactive
-  	 ========================================================================== */
-  /*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
-  /*
-   * Add the correct display in all browsers.
-   */
-  /* Misc
-  	 ========================================================================== */
-  /**
-   * Add the correct display in IE 10+.
-   */
-  /**
-   * Add the correct display in IE 10.
-   */
-  /*--------------------------------------------------------------
-  # Typography
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Elements
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Forms
-  --------------------------------------------------------------*/
-  /* With :not(.nhsuk-search__input), the search field is not affected */
-  /*--------------------------------------------------------------
-  # Navigation
-  --------------------------------------------------------------*/
-  /* Small menu. */
-  /*--------------------------------------------------------------
-  # Accessibility
-  --------------------------------------------------------------*/
-  /* Text meant only for screen readers. */
-  /* Do not show the outline on the skip link target. */
-  /*--------------------------------------------------------------
-  # Alignments
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Clearings
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Widgets
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Content
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  ## Posts and pages
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  ## Comments
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Infinite scroll
-  --------------------------------------------------------------*/
-  /* Globally hidden elements when Infinite Scroll is supported and in use. */
-  /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-  /*--------------------------------------------------------------
-  # Media
-  --------------------------------------------------------------*/
-  /* Make sure embeds and iframes fit their containers. */
-  /* Make sure logo link wraps around logo image. */
-  /*--------------------------------------------------------------
-  ## Captions
-  --------------------------------------------------------------*/
-  /* Reusable mixin for a focus element outline */
-  /* Add a focus indicator for keyboard nav on clickable cards */
-  /* add more obvious visual representation when dashboard elements are active on keyboard nav */
-  /* colour variable to be used with color-mixer.scss */
-  /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
-  /* Menu item right chevron (mobile): fix color when state is focus */
-  /*
-  // variations to styling required for gutenberg native blocks
-  // @author Tony Blacker, NHS Leadership Academy
-  // @version 1.1 12th October 2019
-  */
-  /* login form customisation */
-  /* Extra Blog Styles */
-  /* Gravity Forms Save and Continue button fix */
-  /* Events Calendar Styles */
-  /* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
-  /* Events Widgets */
-  /* embedded events */
-  /* Event datetime header */
-  background-color: #f0f4f5;
-  /* admin styles widget tweaks */
-  /*
-  Learn dash admin panel mitigation
-   */
-  /* end LearnDash mitigation routine */
-  /* make the table cells more obvious when editing */
-  /* clearfix after grouped items to sort out some display wirdiness */
 }
 .edit-post-visual-editor html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   overflow-x: hidden;
 }
+.edit-post-visual-editor {
+  /* Sections
+  	 ========================================================================== */
+  /**
+   * Remove the margin in all browsers.
+   */
+}
 .edit-post-visual-editor body {
   margin: 0;
+}
+.edit-post-visual-editor {
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
 }
 .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input {
   font-size: 2em;
   margin: 0.67em 0;
+}
+.edit-post-visual-editor {
+  /* Grouping content
+  	 ========================================================================== */
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
 }
 .edit-post-visual-editor hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+}
 .edit-post-visual-editor pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
+.edit-post-visual-editor {
+  /* Text-level semantics
+  	 ========================================================================== */
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+}
 .edit-post-visual-editor a {
   background-color: transparent;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
 }
 .edit-post-visual-editor abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+}
 .edit-post-visual-editor b,
 .edit-post-visual-editor strong {
   font-weight: bolder;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 }
 .edit-post-visual-editor code,
 .edit-post-visual-editor kbd,
@@ -242,8 +101,19 @@
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct font size in all browsers.
+   */
+}
 .edit-post-visual-editor small {
   font-size: 80%;
+}
+.edit-post-visual-editor {
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
 }
 .edit-post-visual-editor sub,
 .edit-post-visual-editor sup {
@@ -258,8 +128,23 @@
 .edit-post-visual-editor sup {
   top: -0.5em;
 }
+.edit-post-visual-editor {
+  /* Embedded content
+  	 ========================================================================== */
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+}
 .edit-post-visual-editor img {
   border-style: none;
+}
+.edit-post-visual-editor {
+  /* Forms
+  	 ========================================================================== */
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
 }
 .edit-post-visual-editor button,
 .edit-post-visual-editor input,
@@ -270,15 +155,31 @@
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+}
 .edit-post-visual-editor button,
 .edit-post-visual-editor select { /* 1 */
   text-transform: none;
+}
+.edit-post-visual-editor {
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
 }
 .edit-post-visual-editor button,
 .edit-post-visual-editor [type=button],
 .edit-post-visual-editor [type=reset],
 .edit-post-visual-editor [type=submit] {
   -webkit-appearance: button;
+}
+.edit-post-visual-editor {
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
 }
 .edit-post-visual-editor button::-moz-focus-inner,
 .edit-post-visual-editor [type=button]::-moz-focus-inner,
@@ -287,14 +188,32 @@
   border-style: none;
   padding: 0;
 }
+.edit-post-visual-editor {
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+}
 .edit-post-visual-editor button:-moz-focusring,
 .edit-post-visual-editor [type=button]:-moz-focusring,
 .edit-post-visual-editor [type=reset]:-moz-focusring,
 .edit-post-visual-editor [type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+.edit-post-visual-editor {
+  /**
+   * Correct the padding in Firefox.
+   */
+}
 .edit-post-visual-editor fieldset {
   padding: 0.35em 0.75em 0.625em;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *		`fieldset` elements in all browsers.
+   */
 }
 .edit-post-visual-editor legend {
   box-sizing: border-box; /* 1 */
@@ -304,43 +223,110 @@
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+}
 .edit-post-visual-editor progress {
   vertical-align: baseline;
 }
+.edit-post-visual-editor {
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+}
 .edit-post-visual-editor textarea {
   overflow: auto;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
 }
 .edit-post-visual-editor [type=checkbox],
 .edit-post-visual-editor [type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+}
 .edit-post-visual-editor [type=number]::-webkit-inner-spin-button,
 .edit-post-visual-editor [type=number]::-webkit-outer-spin-button {
   height: auto;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
 }
 .edit-post-visual-editor [type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+}
 .edit-post-visual-editor [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
 }
 .edit-post-visual-editor ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+.edit-post-visual-editor {
+  /* Interactive
+  	 ========================================================================== */
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+}
 .edit-post-visual-editor details {
   display: block;
+}
+.edit-post-visual-editor {
+  /*
+   * Add the correct display in all browsers.
+   */
 }
 .edit-post-visual-editor summary {
   display: list-item;
 }
+.edit-post-visual-editor {
+  /* Misc
+  	 ========================================================================== */
+  /**
+   * Add the correct display in IE 10+.
+   */
+}
 .edit-post-visual-editor template {
   display: none;
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct display in IE 10.
+   */
+}
 .edit-post-visual-editor [hidden] {
   display: none;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Typography
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor body,
 .edit-post-visual-editor button,
@@ -392,6 +378,11 @@
 .edit-post-visual-editor big {
   font-size: 125%;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Elements
+  --------------------------------------------------------------*/
+}
 .edit-post-visual-editor html {
   box-sizing: border-box;
 }
@@ -442,6 +433,18 @@
   margin: 0 0 1.5em;
   width: 100%;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Forms
+  --------------------------------------------------------------*/
+  /* With :not(.nhsuk-search__input), the search field is not affected */
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Navigation
+  --------------------------------------------------------------*/
+  /* Small menu. */
+}
 .edit-post-visual-editor .menu-toggle,
 .edit-post-visual-editor .main-navigation.toggled ul {
   display: block;
@@ -471,6 +474,12 @@
   float: right;
   text-align: right;
   width: 50%;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Accessibility
+  --------------------------------------------------------------*/
+  /* Text meant only for screen readers. */
 }
 .edit-post-visual-editor .screen-reader-text {
   border: 0;
@@ -505,8 +514,16 @@
   z-index: 100000;
   /* Above WP toolbar. */
 }
+.edit-post-visual-editor {
+  /* Do not show the outline on the skip link target. */
+}
 .edit-post-visual-editor #content[tabindex="-1"]:focus {
   outline: 0;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Alignments
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .alignleft {
   display: inline;
@@ -523,6 +540,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Clearings
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .clear:before,
 .edit-post-visual-editor .clear:after,
@@ -548,12 +570,25 @@
 .edit-post-visual-editor .site-footer:after {
   clear: both;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Widgets
+  --------------------------------------------------------------*/
+}
 .edit-post-visual-editor .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
 .edit-post-visual-editor .widget select {
   max-width: 100%;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Content
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  ## Posts and pages
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .sticky {
   display: block;
@@ -574,19 +609,38 @@
   clear: both;
   margin: 0 0 1.5em;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  ## Comments
+  --------------------------------------------------------------*/
+}
 .edit-post-visual-editor .comment-content a {
   word-wrap: break-word;
 }
 .edit-post-visual-editor .bypostauthor {
   display: block;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Infinite scroll
+  --------------------------------------------------------------*/
+  /* Globally hidden elements when Infinite Scroll is supported and in use. */
+}
 .edit-post-visual-editor .infinite-scroll .posts-navigation,
 .edit-post-visual-editor .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
   display: none;
 }
+.edit-post-visual-editor {
+  /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+}
 .edit-post-visual-editor .infinity-end.neverending .site-footer {
   display: block;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Media
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .page-content .wp-smiley,
 .edit-post-visual-editor .entry-content .wp-smiley,
@@ -596,13 +650,24 @@
   margin-top: 0;
   padding: 0;
 }
+.edit-post-visual-editor {
+  /* Make sure embeds and iframes fit their containers. */
+}
 .edit-post-visual-editor embed,
 .edit-post-visual-editor iframe,
 .edit-post-visual-editor object {
   max-width: 100%;
 }
+.edit-post-visual-editor {
+  /* Make sure logo link wraps around logo image. */
+}
 .edit-post-visual-editor .custom-logo-link {
   display: inline-block;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  ## Captions
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .wp-caption {
   margin-bottom: 1.5em;
@@ -620,13 +685,9 @@
   text-align: center;
 }
 .edit-post-visual-editor html {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .edit-post-visual-editor *, .edit-post-visual-editor *::before, .edit-post-visual-editor *::after {
-  -moz-box-sizing: inherit;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 .edit-post-visual-editor button,
@@ -739,13 +800,9 @@
   }
 }
 .edit-post-visual-editor html {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .edit-post-visual-editor *, .edit-post-visual-editor *::before, .edit-post-visual-editor *::after {
-  -moz-box-sizing: inherit;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 .edit-post-visual-editor html {
@@ -927,14 +984,14 @@
   border: 0;
   padding: 0;
 }
-.edit-post-visual-editor .nhsuk-grid-row {
-  margin-right: -16px;
-  margin-left: -16px;
-}
 .edit-post-visual-editor .nhsuk-grid-row::after {
   clear: both;
   content: "";
   display: block;
+}
+.edit-post-visual-editor .nhsuk-grid-row {
+  margin-right: -16px;
+  margin-left: -16px;
 }
 .edit-post-visual-editor .nhsuk-grid-column-one-quarter {
   box-sizing: border-box;
@@ -1044,16 +1101,34 @@
   margin-right: 16px;
   margin-left: 16px;
 }
+@supports (margin: max(calc(0px))) {
+  .edit-post-visual-editor .nhsuk-width-container {
+    margin-right: max(16px, calc(16px + env(safe-area-inset-right)));
+    margin-left: max(16px, calc(16px + env(safe-area-inset-left)));
+  }
+}
 @media (min-width: 48.0625em) {
   .edit-post-visual-editor .nhsuk-width-container {
     margin-right: 32px;
     margin-left: 32px;
+  }
+  @supports (margin: max(calc(0px))) {
+    .edit-post-visual-editor .nhsuk-width-container {
+      margin-right: max(32px, calc(16px + env(safe-area-inset-right)));
+      margin-left: max(32px, calc(16px + env(safe-area-inset-left)));
+    }
   }
 }
 @media (min-width: 1024px) {
   .edit-post-visual-editor .nhsuk-width-container {
     margin-right: auto;
     margin-left: auto;
+  }
+  @supports (margin: max(calc(0px))) {
+    .edit-post-visual-editor .nhsuk-width-container {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
 .edit-post-visual-editor .nhsuk-width-container-fluid {
@@ -1068,66 +1143,55 @@
   }
 }
 .edit-post-visual-editor .nhsuk-icon {
-  height: 34px;
-  width: 34px;
-}
-.edit-post-visual-editor .nhsuk-icon__search {
   fill: currentcolor;
+  height: 1.5rem;
+  width: 1.5rem;
 }
-.edit-post-visual-editor .nhsuk-icon__user {
-  fill: currentcolor;
-}
-.edit-post-visual-editor .nhsuk-icon__chevron-left {
-  fill: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-icon__chevron-right {
-  fill: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-icon__close {
-  fill: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-icon__cross {
-  fill: #d5281b;
-}
-.edit-post-visual-editor .nhsuk-icon__tick {
-  stroke: #007f3b;
-}
-.edit-post-visual-editor .nhsuk-icon__arrow-right {
-  fill: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-icon__arrow-left {
-  fill: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-icon__arrow-right-circle {
-  fill: #007f3b;
-}
-.edit-post-visual-editor .nhsuk-icon__chevron-down {
-  fill: currentcolor;
-}
-.edit-post-visual-editor .nhsuk-icon__emdash path {
-  fill: #aeb7bd;
-}
-.edit-post-visual-editor .nhsuk-icon__plus {
-  fill: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-icon__minus {
-  fill: #005eb8;
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-icon {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 .edit-post-visual-editor .nhsuk-icon--size-25 {
-  height: 42.5px;
-  width: 42.5px;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-icon--size-25 {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 .edit-post-visual-editor .nhsuk-icon--size-50 {
-  height: 51px;
-  width: 51px;
+  height: 2.25rem;
+  width: 2.25rem;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-icon--size-50 {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 .edit-post-visual-editor .nhsuk-icon--size-75 {
-  height: 59.5px;
-  width: 59.5px;
+  height: 2.625rem;
+  width: 2.625rem;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-icon--size-75 {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 .edit-post-visual-editor .nhsuk-icon--size-100 {
-  height: 68px;
-  width: 68px;
+  height: 3rem;
+  width: 3rem;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-icon--size-100 {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 .edit-post-visual-editor ol, .edit-post-visual-editor ul, .edit-post-visual-editor .nhsuk-list {
   list-style-type: none;
@@ -1263,13 +1327,15 @@
 .edit-post-visual-editor .nhsuk-list--cross {
   list-style: none;
   margin-top: 0;
-  padding-left: 40px;
+  padding-left: 2.25rem;
   position: relative;
 }
-.edit-post-visual-editor .nhsuk-list--tick svg,
-.edit-post-visual-editor .nhsuk-list--cross svg {
-  left: -4px;
-  margin-top: -5px;
+.edit-post-visual-editor .nhsuk-list--tick .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-list--cross .nhsuk-icon {
+  height: 2rem;
+  width: 2rem;
+  left: -0.25rem;
+  margin-top: -0.25rem;
   position: absolute;
 }
 .edit-post-visual-editor hr, .edit-post-visual-editor .nhsuk-section-break {
@@ -3306,7 +3372,7 @@
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
 }
-.edit-post-visual-editor .nhsuk-u-secondary-text-color {
+.edit-post-visual-editor .nhsuk-u-secondary-text-colour {
   color: #4c6272 !important;
 }
 .edit-post-visual-editor .nhsuk-u-visually-hidden {
@@ -3385,6 +3451,85 @@
   }
 }
 .edit-post-visual-editor .nhsuk-action-link {
+  display: inline-block;
+  padding-left: 1.625rem;
+  position: relative;
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-action-link:not(:focus):hover .nhsuk-action-link__text {
+  text-decoration: underline;
+}
+.edit-post-visual-editor .nhsuk-action-link {
+  font-weight: 600;
+}
+.edit-post-visual-editor .nhsuk-action-link {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1.26316;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-action-link {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1.09091;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-action-link {
+    font-size: 15pt;
+    line-height: 24px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-action-link {
+    color: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-action-link {
+    color: #000000;
+    text-decoration: underline;
+  }
+  .edit-post-visual-editor .nhsuk-action-link .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:visited {
+    color: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:visited .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:hover, .edit-post-visual-editor .nhsuk-action-link:hover:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-action-link:hover:visited .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:active, .edit-post-visual-editor .nhsuk-action-link:active:visited {
+    color: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-action-link:active:visited .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:focus, .edit-post-visual-editor .nhsuk-action-link:focus:visited {
+    background-color: #ffeb3b;
+    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+    outline: 4px solid transparent;
+    text-decoration: none;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:focus,
+  .edit-post-visual-editor .nhsuk-action-link:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-action-link:focus:visited,
+  .edit-post-visual-editor .nhsuk-action-link:focus:visited .nhsuk-icon {
+    color: #212b32;
+    fill: #212b32;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:focus:hover, .edit-post-visual-editor .nhsuk-action-link:focus:visited:hover {
+    text-decoration: none;
+  }
+  .edit-post-visual-editor .nhsuk-action-link:not(:focus):hover {
+    color: rgba(0, 0, 0, 0.99);
+  }
+}
+.edit-post-visual-editor .nhsuk-action-link {
   margin-bottom: 32px;
 }
 @media (min-width: 40.0625em) {
@@ -3392,227 +3537,413 @@
     margin-bottom: 40px;
   }
 }
-.edit-post-visual-editor .nhsuk-action-link__link {
-  display: inline-block;
-  padding-left: 38px;
-  position: relative;
-  text-decoration: none;
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-action-link {
+    line-height: 36px;
+    padding-left: 2.4375rem;
+  }
 }
-.edit-post-visual-editor .nhsuk-action-link__link {
-  font-weight: 600;
-}
-.edit-post-visual-editor .nhsuk-action-link__link {
-  font-size: 19px;
-  font-size: 1.1875rem;
-  line-height: 1.42105;
+.edit-post-visual-editor .nhsuk-action-link .nhsuk-icon {
+  fill: #007f3b !important;
+  left: -0.125rem;
+  position: absolute;
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-action-link__link {
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 1.36364;
+  .edit-post-visual-editor .nhsuk-action-link .nhsuk-icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    left: -0.1875rem;
   }
 }
-@media print {
-  .edit-post-visual-editor .nhsuk-action-link__link {
-    font-size: 15pt;
-    line-height: 1.25;
-  }
-}
-.edit-post-visual-editor .nhsuk-action-link__link:not(:focus):hover .nhsuk-action-link__text {
-  text-decoration: underline;
-}
-@media (max-width: 40.0525em) {
-  .edit-post-visual-editor .nhsuk-action-link__link {
-    padding-left: 26px;
-  }
-}
-@media print {
-  .edit-post-visual-editor .nhsuk-action-link__link {
-    color: #212b32;
-  }
-  .edit-post-visual-editor .nhsuk-action-link__link:visited {
-    color: #212b32;
-  }
-}
-.edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
-  fill: #007f3b !important;
-  height: 36px;
-  left: -3px;
-  position: absolute;
-  top: -3px;
-  width: 36px;
-}
-@media print {
-  .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
-    color: #212b32;
-    fill: #212b32;
-  }
-  .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:active, .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:focus, .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:visited {
-    color: #212b32;
-  }
-}
-@media (max-width: 40.0525em) {
-  .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
-    height: 24px;
-    left: -2px;
-    margin-bottom: 0;
-    top: 1px;
-    width: 24px;
-  }
-}
-.edit-post-visual-editor .nhsuk-action-link__link:focus .nhsuk-icon__arrow-right-circle {
+.edit-post-visual-editor .nhsuk-action-link:focus .nhsuk-icon {
   fill: #212b32 !important;
 }
-.edit-post-visual-editor .nhsuk-back-link {
-  padding-top: 16px;
-  line-height: 1;
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-back-link {
-    padding-top: 24px;
-  }
-}
-.edit-post-visual-editor .nhsuk-back-link__link {
-  background: none;
-  border: 0;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 0 0 16px;
-  position: relative;
-}
-.edit-post-visual-editor .nhsuk-back-link__link {
-  color: #005eb8;
+.edit-post-visual-editor .nhsuk-action-link--reverse {
+  color: #ffffff;
   text-decoration: underline;
 }
-.edit-post-visual-editor .nhsuk-back-link__link .nhsuk-icon {
-  fill: #005eb8;
+.edit-post-visual-editor .nhsuk-action-link--reverse .nhsuk-icon {
+  fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:visited {
-  color: #330072;
+.edit-post-visual-editor .nhsuk-action-link--reverse:visited {
+  color: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:visited .nhsuk-icon {
-  fill: #330072;
+.edit-post-visual-editor .nhsuk-action-link--reverse:visited .nhsuk-icon {
+  fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:hover, .edit-post-visual-editor .nhsuk-back-link__link:hover:visited {
-  color: #7c2855;
+.edit-post-visual-editor .nhsuk-action-link--reverse:hover, .edit-post-visual-editor .nhsuk-action-link--reverse:hover:visited {
+  color: #ffffff;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link__link:hover:visited .nhsuk-icon {
-  fill: #7c2855;
+.edit-post-visual-editor .nhsuk-action-link--reverse:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-action-link--reverse:hover:visited .nhsuk-icon {
+  fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:active, .edit-post-visual-editor .nhsuk-back-link__link:active:visited {
-  color: #002f5c;
+.edit-post-visual-editor .nhsuk-action-link--reverse:active, .edit-post-visual-editor .nhsuk-action-link--reverse:active:visited {
+  color: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link__link:active:visited .nhsuk-icon {
-  fill: #002f5c;
+.edit-post-visual-editor .nhsuk-action-link--reverse:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-action-link--reverse:active:visited .nhsuk-icon {
+  fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:focus, .edit-post-visual-editor .nhsuk-back-link__link:focus:visited {
+.edit-post-visual-editor .nhsuk-action-link--reverse:focus, .edit-post-visual-editor .nhsuk-action-link--reverse:focus:visited {
   background-color: #ffeb3b;
   box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
   outline: 4px solid transparent;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:focus,
-.edit-post-visual-editor .nhsuk-back-link__link:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link__link:focus:visited,
-.edit-post-visual-editor .nhsuk-back-link__link:focus:visited .nhsuk-icon {
+.edit-post-visual-editor .nhsuk-action-link--reverse:focus,
+.edit-post-visual-editor .nhsuk-action-link--reverse:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-action-link--reverse:focus:visited,
+.edit-post-visual-editor .nhsuk-action-link--reverse:focus:visited .nhsuk-icon {
   color: #212b32;
   fill: #212b32;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:focus:hover, .edit-post-visual-editor .nhsuk-back-link__link:focus:visited:hover {
+.edit-post-visual-editor .nhsuk-action-link--reverse:focus:hover, .edit-post-visual-editor .nhsuk-action-link--reverse:focus:visited:hover {
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-back-link__link:visited {
-  color: #005eb8;
+.edit-post-visual-editor .nhsuk-action-link--reverse:not(:focus):hover {
+  color: rgba(255, 255, 255, 0.99);
 }
-.edit-post-visual-editor .nhsuk-back-link__link:visited .nhsuk-icon {
-  fill: #005eb8;
+.edit-post-visual-editor .nhsuk-action-link--reverse:link {
+  text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-back-link__link {
+.edit-post-visual-editor .nhsuk-action-link--reverse:not(:focus) .nhsuk-icon {
+  fill: #ffffff !important;
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  padding-left: 1em;
+  position: relative;
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  font-weight: 400;
+}
+.edit-post-visual-editor .nhsuk-back-link {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-back-link__link {
+  .edit-post-visual-editor .nhsuk-back-link {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
   }
 }
 @media print {
-  .edit-post-visual-editor .nhsuk-back-link__link {
+  .edit-post-visual-editor .nhsuk-back-link {
     font-size: 12pt;
     line-height: 1.3;
   }
 }
-.edit-post-visual-editor .nhsuk-back-link__link .nhsuk-icon__chevron-left {
-  height: 24px;
-  left: -8px;
-  position: absolute;
-  top: -1px;
-  width: 24px;
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-back-link__link .nhsuk-icon__chevron-left {
-    top: 0;
-  }
-}
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link {
-  color: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link {
+  color: #005eb8;
   text-decoration: underline;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link .nhsuk-icon {
-  fill: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link .nhsuk-icon {
+  fill: #005eb8;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:visited {
-  color: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link:visited {
+  color: #330072;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:visited .nhsuk-icon {
-  fill: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link:visited .nhsuk-icon {
+  fill: #330072;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:hover, .edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:hover:visited {
-  color: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link:hover, .edit-post-visual-editor .nhsuk-back-link:hover:visited {
+  color: #7c2855;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:hover:visited .nhsuk-icon {
-  fill: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link:hover:visited .nhsuk-icon {
+  fill: #7c2855;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:active, .edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:active:visited {
-  color: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link:active, .edit-post-visual-editor .nhsuk-back-link:active:visited {
+  color: #002f5c;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:active:visited .nhsuk-icon {
-  fill: #ffffff;
+.edit-post-visual-editor .nhsuk-back-link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link:active:visited .nhsuk-icon {
+  fill: #002f5c;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus, .edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus:visited {
+.edit-post-visual-editor .nhsuk-back-link:focus, .edit-post-visual-editor .nhsuk-back-link:focus:visited {
   background-color: #ffeb3b;
   box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
   outline: 4px solid transparent;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus,
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus:visited,
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus:visited .nhsuk-icon {
+.edit-post-visual-editor .nhsuk-back-link:focus,
+.edit-post-visual-editor .nhsuk-back-link:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link:focus:visited,
+.edit-post-visual-editor .nhsuk-back-link:focus:visited .nhsuk-icon {
   color: #212b32;
   fill: #212b32;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus:hover, .edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:focus:visited:hover {
+.edit-post-visual-editor .nhsuk-back-link:focus:hover, .edit-post-visual-editor .nhsuk-back-link:focus:visited:hover {
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-back-link__link:not(:focus):hover {
+.edit-post-visual-editor .nhsuk-back-link:visited {
+  color: #005eb8;
+}
+.edit-post-visual-editor .nhsuk-back-link:visited .nhsuk-icon {
+  fill: #005eb8;
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  margin-top: 16px;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-back-link {
+    margin-top: 24px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-back-link {
+    display: none;
+  }
+}
+.edit-post-visual-editor .nhsuk-back-link::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  color: currentcolor;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 2px;
+  outline: 0.1052631579em solid currentcolor;
+  outline-offset: -0.1052631579em;
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+  transform: translateX(0.1052631579em) rotate(225deg);
+}
+@supports (border-width: max(0px)) {
+  .edit-post-visual-editor .nhsuk-back-link::before {
+    outline-width: max(2px, 0.1052631579em) max(2px, 0.1052631579em) 0 0;
+    font-size: max(19px, 1em);
+  }
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:visited {
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:visited .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:hover, .edit-post-visual-editor .nhsuk-back-link--reverse:hover:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse:hover:visited .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:active, .edit-post-visual-editor .nhsuk-back-link--reverse:active:visited {
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse:active:visited .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus, .edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited {
+  background-color: #ffeb3b;
+  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  outline: 4px solid transparent;
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus,
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited,
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited .nhsuk-icon {
+  color: #212b32;
+  fill: #212b32;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus:hover, .edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited:hover {
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:not(:focus):hover {
+  color: rgba(255, 255, 255, 0.99);
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  padding-left: 1em;
+  position: relative;
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  font-weight: 400;
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-back-link {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-back-link {
+    font-size: 12pt;
+    line-height: 1.3;
+  }
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  color: #005eb8;
+  text-decoration: underline;
+}
+.edit-post-visual-editor .nhsuk-back-link .nhsuk-icon {
+  fill: #005eb8;
+}
+.edit-post-visual-editor .nhsuk-back-link:visited {
+  color: #330072;
+}
+.edit-post-visual-editor .nhsuk-back-link:visited .nhsuk-icon {
+  fill: #330072;
+}
+.edit-post-visual-editor .nhsuk-back-link:hover, .edit-post-visual-editor .nhsuk-back-link:hover:visited {
+  color: #7c2855;
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link:hover:visited .nhsuk-icon {
+  fill: #7c2855;
+}
+.edit-post-visual-editor .nhsuk-back-link:active, .edit-post-visual-editor .nhsuk-back-link:active:visited {
+  color: #002f5c;
+}
+.edit-post-visual-editor .nhsuk-back-link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link:active:visited .nhsuk-icon {
+  fill: #002f5c;
+}
+.edit-post-visual-editor .nhsuk-back-link:focus, .edit-post-visual-editor .nhsuk-back-link:focus:visited {
+  background-color: #ffeb3b;
+  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  outline: 4px solid transparent;
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link:focus,
+.edit-post-visual-editor .nhsuk-back-link:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link:focus:visited,
+.edit-post-visual-editor .nhsuk-back-link:focus:visited .nhsuk-icon {
+  color: #212b32;
+  fill: #212b32;
+}
+.edit-post-visual-editor .nhsuk-back-link:focus:hover, .edit-post-visual-editor .nhsuk-back-link:focus:visited:hover {
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link:visited {
+  color: #005eb8;
+}
+.edit-post-visual-editor .nhsuk-back-link:visited .nhsuk-icon {
+  fill: #005eb8;
+}
+.edit-post-visual-editor .nhsuk-back-link {
+  margin-top: 16px;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-back-link {
+    margin-top: 24px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-back-link {
+    display: none;
+  }
+}
+.edit-post-visual-editor .nhsuk-back-link::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  color: currentcolor;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 2px;
+  outline: 0.1052631579em solid currentcolor;
+  outline-offset: -0.1052631579em;
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+  transform: translateX(0.1052631579em) rotate(225deg);
+}
+@supports (border-width: max(0px)) {
+  .edit-post-visual-editor .nhsuk-back-link::before {
+    outline-width: max(2px, 0.1052631579em) max(2px, 0.1052631579em) 0 0;
+    font-size: max(19px, 1em);
+  }
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:visited {
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:visited .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:hover, .edit-post-visual-editor .nhsuk-back-link--reverse:hover:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse:hover:visited .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:active, .edit-post-visual-editor .nhsuk-back-link--reverse:active:visited {
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse:active:visited .nhsuk-icon {
+  fill: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus, .edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited {
+  background-color: #ffeb3b;
+  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  outline: 4px solid transparent;
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus,
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited,
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited .nhsuk-icon {
+  color: #212b32;
+  fill: #212b32;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:focus:hover, .edit-post-visual-editor .nhsuk-back-link--reverse:focus:visited:hover {
+  text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-back-link--reverse:not(:focus):hover {
   color: rgba(255, 255, 255, 0.99);
 }
 .edit-post-visual-editor .nhsuk-breadcrumb {
-  padding-top: 16px;
+  color: #212b32;
+}
+.edit-post-visual-editor .nhsuk-breadcrumb {
+  margin-top: 16px;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-breadcrumb {
+    margin-top: 24px;
+  }
 }
 @media print {
   .edit-post-visual-editor .nhsuk-breadcrumb {
     display: none;
   }
 }
+.edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-back-link {
+  margin: 0;
+}
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-breadcrumb {
-    padding-top: 24px;
+  .edit-post-visual-editor .nhsuk-breadcrumb .nhsuk-back-link {
+    display: none;
   }
 }
 .edit-post-visual-editor .nhsuk-breadcrumb__list {
@@ -3620,6 +3951,11 @@
   margin: 0;
   padding: 0;
 }
+.edit-post-visual-editor .nhsuk-breadcrumb__list::after {
+  clear: both;
+  content: "";
+  display: block;
+}
 .edit-post-visual-editor .nhsuk-breadcrumb__list {
   font-weight: 400;
 }
@@ -3646,43 +3982,66 @@
     display: none;
   }
 }
-.edit-post-visual-editor .nhsuk-breadcrumb__item {
-  display: inline-block;
+.edit-post-visual-editor .nhsuk-breadcrumb__list-item {
+  float: left;
   margin-bottom: 0;
+  margin-left: 1em;
+  padding-left: 1.2651650429em;
+  position: relative;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb__item {
+.edit-post-visual-editor .nhsuk-breadcrumb__list-item::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  color: #4c6272;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 2px;
+  outline: 0.125em solid currentcolor;
+  outline-offset: -0.125em;
+  clip-path: polygon(100% 100%, 100% 0, 0 0);
+  transform: translateX(-0.1401650429em) rotate(45deg);
+}
+@supports (border-width: max(0px)) {
+  .edit-post-visual-editor .nhsuk-breadcrumb__list-item::before {
+    outline-width: max(2px, 0.125em) max(2px, 0.125em) 0 0;
+    font-size: max(16px, 1em);
+  }
+}
+.edit-post-visual-editor .nhsuk-breadcrumb__list-item:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+.edit-post-visual-editor .nhsuk-breadcrumb__list-item:first-child::before {
+  display: none;
+}
+.edit-post-visual-editor .nhsuk-breadcrumb__link {
+  display: inline-block;
+}
+.edit-post-visual-editor .nhsuk-breadcrumb__link {
   font-weight: 400;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb__item {
+.edit-post-visual-editor .nhsuk-breadcrumb__link {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-breadcrumb__item {
+  .edit-post-visual-editor .nhsuk-breadcrumb__link {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
   }
 }
 @media print {
-  .edit-post-visual-editor .nhsuk-breadcrumb__item {
+  .edit-post-visual-editor .nhsuk-breadcrumb__link {
     font-size: 12pt;
     line-height: 1.3;
   }
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__item:not(:last-child)::after {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23768692' height='18' width='18' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z'%3E%3C/path%3E%3C/svg%3E") no-repeat 0 0;
-  content: "";
-  display: inline-block;
-  height: 19px;
-  margin-left: 9px;
-  margin-right: 2px;
-  vertical-align: middle;
-  width: 18px;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__item:not(:last-child)::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' height='18' width='18' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z'%3E%3C/path%3E%3C/svg%3E");
 }
 .edit-post-visual-editor .nhsuk-breadcrumb__link:visited {
   color: #005eb8;
@@ -3690,33 +4049,50 @@
 .edit-post-visual-editor .nhsuk-breadcrumb__link:visited .nhsuk-icon {
   fill: #005eb8;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse {
+  color: #ffffff;
+}
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link {
   color: #ffffff;
   text-decoration: underline;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link .nhsuk-icon {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link .nhsuk-icon {
   fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:visited {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:visited,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:visited {
   color: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:visited .nhsuk-icon {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:visited .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:visited .nhsuk-icon {
   fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover:visited {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover:visited,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:hover,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:hover:visited {
   color: #ffffff;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover:visited .nhsuk-icon {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:hover:visited .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:hover .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:hover:visited .nhsuk-icon {
   fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active:visited {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active:visited,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:active,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:active:visited {
   color: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active:visited .nhsuk-icon {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:active:visited .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:active .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:active:visited .nhsuk-icon {
   fill: #ffffff;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:visited {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:visited,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus:visited {
   background-color: #ffeb3b;
   box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
   outline: 4px solid transparent;
@@ -3724,130 +4100,28 @@
 }
 .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus,
 .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:visited,
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:visited .nhsuk-icon {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:visited .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus .nhsuk-icon,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus:visited,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus:visited .nhsuk-icon {
   color: #212b32;
   fill: #212b32;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:hover, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:visited:hover {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:hover, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:focus:visited:hover,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus:hover,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:focus:visited:hover {
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:not(:focus):hover {
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__link:not(:focus):hover,
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-back-link:not(:focus):hover {
   color: rgba(255, 255, 255, 0.99);
 }
-.edit-post-visual-editor .nhsuk-breadcrumb__back {
-  margin: 0;
-  line-height: 1;
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-breadcrumb__back {
-    display: none;
-  }
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink {
-  background: none;
-  border: 0;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 0 0 16px;
-  position: relative;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink:visited {
-  color: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink:visited .nhsuk-icon {
-  fill: #005eb8;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink {
-  font-weight: 400;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-breadcrumb__backlink {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-}
-@media print {
-  .edit-post-visual-editor .nhsuk-breadcrumb__backlink {
-    font-size: 12pt;
-    line-height: 1.3;
-  }
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink::before {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23005eb8' height='24' width='24' viewBox='8 0 24 24'%3E%3Cpath d='M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z'%3E%3C/path%3E%3C/svg%3E") no-repeat 8px 0;
-  content: "";
-  display: block;
-  height: 24px;
-  left: -8px;
-  position: absolute;
-  top: -1px;
-  width: 24px;
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-breadcrumb__backlink::before {
-    top: 0;
-  }
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink {
-  color: #ffffff;
-  text-decoration: underline;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink .nhsuk-icon {
-  fill: #ffffff;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:visited {
-  color: #ffffff;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:visited .nhsuk-icon {
-  fill: #ffffff;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:hover, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:hover:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:hover:visited .nhsuk-icon {
-  fill: #ffffff;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:active, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:active:visited {
-  color: #ffffff;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:active:visited .nhsuk-icon {
-  fill: #ffffff;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus:visited {
-  background-color: #ffeb3b;
-  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
-  outline: 4px solid transparent;
-  text-decoration: none;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus,
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus:visited,
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus:visited .nhsuk-icon {
-  color: #212b32;
-  fill: #212b32;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus:hover, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus:visited:hover {
-  text-decoration: none;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:not(:focus):hover {
-  color: rgba(255, 255, 255, 0.99);
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink:hover::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%237c2855' height='24' width='24' viewBox='8 0 24 24'%3E%3Cpath d='M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z'%3E%3C/path%3E%3C/svg%3E");
-}
-.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink::before, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:active::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' height='24' width='24' viewBox='8 0 24 24'%3E%3Cpath d='M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z'%3E%3C/path%3E%3C/svg%3E");
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__backlink:focus::before, .edit-post-visual-editor .nhsuk-breadcrumb__backlink:active::before, .edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__backlink:focus::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212b32' height='24' width='24' viewBox='8 0 24 24'%3E%3Cpath d='M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z'%3E%3C/path%3E%3C/svg%3E");
+.edit-post-visual-editor .nhsuk-breadcrumb--reverse .nhsuk-breadcrumb__list-item::before {
+  color: rgba(255, 255, 255, 0.6);
 }
 .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
-  -webkit-appearance: none;
+  appearance: none;
   box-shadow: 0 4px 0 #00401e;
   background-color: #007f3b;
   border: 2px solid transparent;
@@ -4042,10 +4316,17 @@
   pointer-events: none;
 }
 .edit-post-visual-editor .nhsuk-card {
-  background: #ffffff;
-  border: 1px solid #d8dde0;
   position: relative;
   width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #d8dde0;
+  color: #212b32;
+}
+.edit-post-visual-editor .nhsuk-card > *:first-child {
+  margin-top: 0;
+}
+.edit-post-visual-editor .nhsuk-card > *:last-child {
+  margin-bottom: 0;
 }
 .edit-post-visual-editor .nhsuk-card {
   margin-bottom: 40px;
@@ -4053,6 +4334,12 @@
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card {
     margin-bottom: 48px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-card {
+    border: 1px solid #000000;
+    page-break-inside: avoid;
   }
 }
 .edit-post-visual-editor .nhsuk-card__img {
@@ -4146,6 +4433,33 @@
   }
 }
 .edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
+  border: 1px solid #d8dde0;
+  padding-top: 0 !important;
+  background-color: #ffffff;
+  border: 1px solid #d8dde0;
+  color: #212b32;
+}
+.edit-post-visual-editor .nhsuk-card--feature > *:first-child, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label > *:first-child {
+  margin-top: 0;
+}
+.edit-post-visual-editor .nhsuk-card--feature > *:last-child, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label > *:last-child {
+  margin-bottom: 0;
+}
+.edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
+  margin-bottom: 40px;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
+    margin-bottom: 48px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
+    border: 1px solid #000000;
+    page-break-inside: avoid;
+  }
+}
+.edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
   margin-top: 40px;
 }
 @media (min-width: 40.0625em) {
@@ -4153,27 +4467,61 @@
     margin-top: 48px;
   }
 }
+.edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
+  padding: 24px;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
+    padding: 32px;
+  }
+}
 .edit-post-visual-editor .nhsuk-card__heading--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
-  background: #005eb8;
+  background-color: #005eb8;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
   color: #ffffff;
   display: inline-block;
-  left: -25px;
+  margin: 0;
   margin-bottom: 8px;
-  margin-right: -24px;
-  padding: 8px 24px;
+  margin-left: -33px;
+  padding: 8px 32px;
   position: relative;
-  top: -8px;
+  top: -16px;
+}
+.edit-post-visual-editor .nhsuk-card__heading--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.31818;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card__heading--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
-    left: -33px;
-    margin-right: -32px;
-    padding: 8px 32px;
-    top: -16px;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 1.23077;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-card__heading--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+    font-size: 17pt;
+    line-height: 1.25;
+  }
+}
+@media (max-width: 40.0525em) {
+  .edit-post-visual-editor .nhsuk-card__heading--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+    margin-left: -25px;
+    padding: 8px 24px;
+    top: -8px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-card__heading--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+    color: #000000;
+    background: none;
+    top: 0;
   }
 }
 .edit-post-visual-editor .nhsuk-card__content--feature {
-  padding-top: 0 !important;
+  padding: 0;
 }
 .edit-post-visual-editor .nhsuk-card--care .nhsuk-card--care__heading-container {
   background-color: #005eb8;
@@ -4181,8 +4529,8 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-card--care {
-    border: 4px solid #212b32;
-    color: #212b32;
+    color: #000000;
+    border: 4px solid #000000;
     page-break-inside: avoid;
   }
 }
@@ -4195,7 +4543,8 @@
   }
 }
 .edit-post-visual-editor .nhsuk-card--care__heading-container {
-  padding-bottom: 16px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 15px;
   padding-top: 16px;
   position: relative;
 }
@@ -4242,15 +4591,11 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-card--care__heading {
-    color: #212b32;
-    fill: #212b32;
-  }
-  .edit-post-visual-editor .nhsuk-card--care__heading:active, .edit-post-visual-editor .nhsuk-card--care__heading:focus, .edit-post-visual-editor .nhsuk-card--care__heading:visited {
-    color: #212b32;
+    color: #000000;
   }
 }
 .edit-post-visual-editor .nhsuk-card--care__arrow {
-  bottom: -10px;
+  bottom: -11px;
   display: block;
   height: 20px;
   left: 30px;
@@ -4285,8 +4630,8 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-card--care--urgent {
-    border: 6px solid #212b32;
-    color: #212b32;
+    color: #000000;
+    border: 6px solid #000000;
     page-break-inside: avoid;
   }
 }
@@ -4299,8 +4644,8 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-card--care--emergency {
-    border: 8px solid #212b32;
-    color: #212b32;
+    color: #000000;
+    border: 8px solid #000000;
     page-break-inside: avoid;
   }
 }
@@ -4359,8 +4704,8 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-card--care--emergency .nhsuk-card__content {
+    color: #000000;
     background-color: #ffffff;
-    color: #212b32;
   }
 }
 .edit-post-visual-editor .nhsuk-card--care--emergency .nhsuk-details,
@@ -4373,15 +4718,15 @@
 .edit-post-visual-editor .nhsuk-card--care--emergency .nhsuk-details__summary:focus {
   color: #212b32;
 }
-.edit-post-visual-editor .nhsuk-card--care--emergency .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+.edit-post-visual-editor .nhsuk-card--care--emergency .nhsuk-action-link__link .nhsuk-icon {
   fill: #ffffff;
 }
 .edit-post-visual-editor .nhsuk-card__content--primary {
-  padding-right: 75px;
+  padding-right: 72px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card__content--primary {
-    padding-right: 83px;
+    padding-right: 80px;
   }
 }
 @media (min-width: 48.0625em) {
@@ -4391,10 +4736,10 @@
 }
 .edit-post-visual-editor .nhsuk-card__content--primary .nhsuk-icon {
   display: block;
-  width: 27px;
-  height: 27px;
   fill: #005eb8;
-  margin-top: -13px;
+  height: 2rem;
+  width: 2rem;
+  margin-top: -16px;
   pointer-events: none;
   position: absolute;
   top: 50%;
@@ -4470,7 +4815,6 @@
   box-sizing: border-box;
   margin-bottom: 0;
   padding: 8px 12px 4px;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 .edit-post-visual-editor .nhsuk-checkboxes__hint {
@@ -4500,8 +4844,6 @@
   opacity: 0;
   position: absolute;
   top: 13px;
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   width: 22px;
 }
@@ -4581,14 +4923,17 @@
   padding: 0;
 }
 .edit-post-visual-editor .nhsuk-contents-list__item {
-  background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='19' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left 0.75rem no-repeat;
   padding: 0 0 0 32px;
   position: relative;
 }
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-contents-list__item {
-    background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__emdash' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' width='16' height='1' aria-hidden='true'%3E%3Cpath d='M0 0h19v1H0z'%3E%3C/path%3E%3C/svg%3E") left 0.875rem no-repeat;
-  }
+.edit-post-visual-editor .nhsuk-contents-list__item::before {
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  top: 0.75em;
+  width: 16px;
+  border-top: 1px solid #aeb7bd;
 }
 .edit-post-visual-editor .nhsuk-contents-list__link {
   display: inline-block;
@@ -4621,7 +4966,7 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-details {
-    color: #212b32;
+    color: #000000;
   }
 }
 .edit-post-visual-editor .nhsuk-details {
@@ -4845,7 +5190,7 @@
     }
   }
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__summary::before {
-    display: none !important;
+    display: none;
   }
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__summary:focus {
     box-shadow: none;
@@ -4854,7 +5199,8 @@
     color: #005eb8;
     cursor: pointer;
     display: inline-block;
-    padding: 4px 4px 4px 38px;
+    padding: 4px;
+    padding-left: 35px;
     position: relative;
   }
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__summary:hover .nhsuk-details__summary-text {
@@ -4872,26 +5218,20 @@
     fill: #212b32;
   }
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__summary-text::before {
-    background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+    background-color: currentcolor;
+    clip-path: path("M13.5 1a12.5 12.5 0 1 1 0 25 12.5 12.5 0 0 1 0-25Zm0 6c-.8 0-1.5.7-1.5 1.5V12H8.5c-.8 0-1.4.6-1.5 1.4v.1c0 .8.7 1.5 1.5 1.5H12v3.5c0 .8.6 1.4 1.4 1.5h.1c.8 0 1.5-.7 1.5-1.5V15h3.5c.8 0 1.4-.6 1.5-1.4v-.1c0-.8-.7-1.5-1.5-1.5H15V8.5c0-.8-.6-1.4-1.4-1.5Z");
     content: "";
-    display: inline-block;
-    height: 32px;
+    height: 27px;
     left: 0;
     position: absolute;
-    top: calc(50% - 16px);
-    width: 32px;
-  }
-  .edit-post-visual-editor .nhsuk-expander .nhsuk-details__summary:focus .nhsuk-details__summary-text::before {
-    background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__plus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M12 8v8M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+    top: calc(50% - 13.5px);
+    width: 27px;
   }
   .edit-post-visual-editor .nhsuk-expander[open] {
     border-bottom-width: 1px;
   }
   .edit-post-visual-editor .nhsuk-expander[open] .nhsuk-details__summary-text::before {
-    background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='%23005eb8'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
-  }
-  .edit-post-visual-editor .nhsuk-expander[open] .nhsuk-details__summary:focus .nhsuk-details__summary-text::before {
-    background: #ffeb3b url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__minus' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' aria-hidden='true'%3E%3Ccircle cx='12' cy='12' r='10' fill='002f5c'%3E%3C/circle%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M8 12h8'%3E%3C/path%3E%3C/svg%3E%0A") left -2px center no-repeat;
+    clip-path: path("M13.5 1a12.5 12.5 0 1 1 0 25 12.5 12.5 0 0 1 0-25Zm5 11h-10a1.5 1.5 0 0 0 0 3h10a1.5 1.5 0 0 0 0-3Z");
   }
 }
 .edit-post-visual-editor .nhsuk-expander-group {
@@ -4924,6 +5264,7 @@
   border: 1px solid #d8dde0;
   padding-top: 0 !important;
   background-color: #ffffff;
+  border: 1px solid #d8dde0;
   color: #212b32;
 }
 .edit-post-visual-editor .nhsuk-do-dont-list > *:first-child {
@@ -4938,6 +5279,12 @@
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-do-dont-list {
     margin-bottom: 48px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-do-dont-list {
+    border: 1px solid #000000;
+    page-break-inside: avoid;
   }
 }
 .edit-post-visual-editor .nhsuk-do-dont-list {
@@ -4956,17 +5303,23 @@
     padding: 32px;
   }
 }
-@media print {
-  .edit-post-visual-editor .nhsuk-do-dont-list {
-    border: 1px solid #212b32;
-    page-break-inside: avoid;
-  }
+.edit-post-visual-editor .nhsuk-do-dont-list .nhsuk-icon__cross,
+.edit-post-visual-editor .nhsuk-do-dont-list .nhsuk-icon--cross {
+  fill: #d5281b;
+}
+.edit-post-visual-editor .nhsuk-do-dont-list .nhsuk-icon__tick,
+.edit-post-visual-editor .nhsuk-do-dont-list .nhsuk-icon--tick {
+  fill: #007f3b;
 }
 .edit-post-visual-editor .nhsuk-do-dont-list__label {
   background-color: #005eb8;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
   color: #ffffff;
   display: inline-block;
-  margin: 0 0 8px -33px;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: -33px;
   padding: 8px 32px;
   position: relative;
   top: -16px;
@@ -4992,25 +5345,20 @@
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-do-dont-list__label {
     margin-left: -25px;
-    margin-right: 0;
     padding: 8px 24px;
     top: -8px;
   }
 }
 @media print {
   .edit-post-visual-editor .nhsuk-do-dont-list__label {
+    color: #000000;
     background: none;
-    color: #212b32;
     top: 0;
   }
 }
 @media print {
   .edit-post-visual-editor .nhsuk-do-dont-list__label {
-    color: #212b32;
-    fill: #212b32;
-  }
-  .edit-post-visual-editor .nhsuk-do-dont-list__label:active, .edit-post-visual-editor .nhsuk-do-dont-list__label:focus, .edit-post-visual-editor .nhsuk-do-dont-list__label:visited {
-    color: #212b32;
+    color: #000000;
   }
 }
 .edit-post-visual-editor .nhsuk-error-message {
@@ -5301,11 +5649,7 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-hero {
-    color: #212b32;
-    fill: #212b32;
-  }
-  .edit-post-visual-editor .nhsuk-hero:active, .edit-post-visual-editor .nhsuk-hero:focus, .edit-post-visual-editor .nhsuk-hero:visited {
-    color: #212b32;
+    color: #000000;
   }
 }
 .edit-post-visual-editor .nhsuk-hero .nhsuk-link,
@@ -5418,7 +5762,7 @@
     height: 320px;
   }
 }
-@media screen and (-ms-high-contrast: active) {
+@media screen and (forced-colors: active), (-ms-high-contrast: active) {
   .edit-post-visual-editor .nhsuk-hero--image {
     min-height: 0;
   }
@@ -5431,7 +5775,7 @@
     min-height: 200px;
   }
 }
-@media screen and (-ms-high-contrast: active) {
+@media screen and (forced-colors: active), (-ms-high-contrast: active) {
   .edit-post-visual-editor .nhsuk-hero--image .nhsuk-hero__overlay {
     height: auto;
     min-height: 0;
@@ -5479,6 +5823,13 @@
   transform: rotate(45deg);
   width: 0;
 }
+@media print {
+  .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content {
+    color: #000000;
+    max-width: 100%;
+    padding: 0;
+  }
+}
 @media (min-width: 23.4375em) {
   .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content {
     width: 85%;
@@ -5503,14 +5854,7 @@
     left: 46px;
   }
 }
-@media print {
-  .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content {
-    color: #212b32;
-    max-width: 100%;
-    padding: 0;
-  }
-}
-@media screen and (-ms-high-contrast: active) {
+@media screen and (forced-colors: active), (-ms-high-contrast: active) {
   .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content {
     bottom: 0;
     margin-bottom: 0;
@@ -5641,8 +5985,6 @@
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
 .edit-post-visual-editor textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
   border: 2px solid #4c6272;
   border-radius: 0;
@@ -6032,7 +6374,7 @@
 }
 @media print {
   .edit-post-visual-editor .nhsuk-inset-text {
-    border-color: #212b32;
+    border-color: #000000;
   }
 }
 .edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
@@ -6173,10 +6515,10 @@
   width: 50%;
 }
 .edit-post-visual-editor .nhsuk-pagination-item--previous .nhsuk-icon {
-  left: -6px;
+  left: -0.375rem;
 }
 .edit-post-visual-editor .nhsuk-pagination-item--previous .nhsuk-pagination__title {
-  padding-left: 32px;
+  padding-left: 1.2307692308em;
 }
 .edit-post-visual-editor .nhsuk-pagination-item--next {
   float: right;
@@ -6184,10 +6526,10 @@
   width: 50%;
 }
 .edit-post-visual-editor .nhsuk-pagination-item--next .nhsuk-icon {
-  right: -6px;
+  right: -0.375rem;
 }
 .edit-post-visual-editor .nhsuk-pagination-item--next .nhsuk-pagination__title {
-  padding-right: 32px;
+  padding-right: 1.2307692308em;
 }
 .edit-post-visual-editor .nhsuk-pagination__link {
   display: block;
@@ -6195,41 +6537,81 @@
   text-decoration: none;
   width: 100%;
 }
-@media print {
-  .edit-post-visual-editor .nhsuk-pagination__link {
-    color: #212b32;
-  }
-}
-.edit-post-visual-editor .nhsuk-pagination__link .nhsuk-icon {
-  position: absolute;
-  top: -2px;
-}
-@media print {
-  .edit-post-visual-editor .nhsuk-pagination__link .nhsuk-icon {
-    color: #212b32;
-    margin-top: 0;
-  }
-}
-.edit-post-visual-editor .nhsuk-pagination__title {
-  display: block;
-}
-.edit-post-visual-editor .nhsuk-pagination__title {
+.edit-post-visual-editor .nhsuk-pagination__link {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 1.31818;
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-pagination__title {
+  .edit-post-visual-editor .nhsuk-pagination__link {
     font-size: 26px;
     font-size: 1.625rem;
     line-height: 1.23077;
   }
 }
 @media print {
-  .edit-post-visual-editor .nhsuk-pagination__title {
+  .edit-post-visual-editor .nhsuk-pagination__link {
     font-size: 17pt;
     line-height: 1.25;
   }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-pagination__link {
+    color: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link {
+    color: #000000;
+    text-decoration: underline;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:visited {
+    color: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:visited .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:hover, .edit-post-visual-editor .nhsuk-pagination__link:hover:visited {
+    color: #000000;
+    text-decoration: none;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:hover .nhsuk-icon, .edit-post-visual-editor .nhsuk-pagination__link:hover:visited .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:active, .edit-post-visual-editor .nhsuk-pagination__link:active:visited {
+    color: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:active .nhsuk-icon, .edit-post-visual-editor .nhsuk-pagination__link:active:visited .nhsuk-icon {
+    fill: #000000;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:focus, .edit-post-visual-editor .nhsuk-pagination__link:focus:visited {
+    background-color: #ffeb3b;
+    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+    outline: 4px solid transparent;
+    text-decoration: none;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:focus,
+  .edit-post-visual-editor .nhsuk-pagination__link:focus .nhsuk-icon, .edit-post-visual-editor .nhsuk-pagination__link:focus:visited,
+  .edit-post-visual-editor .nhsuk-pagination__link:focus:visited .nhsuk-icon {
+    color: #212b32;
+    fill: #212b32;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:focus:hover, .edit-post-visual-editor .nhsuk-pagination__link:focus:visited:hover {
+    text-decoration: none;
+  }
+  .edit-post-visual-editor .nhsuk-pagination__link:not(:focus):hover {
+    color: rgba(0, 0, 0, 0.99);
+  }
+}
+.edit-post-visual-editor .nhsuk-pagination__link .nhsuk-icon {
+  position: absolute;
+  top: 0;
+  height: 1.2307692308em;
+  width: 1.2307692308em;
+}
+.edit-post-visual-editor .nhsuk-pagination__title {
+  display: block;
 }
 @media print {
   .edit-post-visual-editor .nhsuk-pagination__title::after {
@@ -6311,7 +6693,6 @@
   display: inline-block;
   margin-bottom: 0;
   padding: 8px 12px 4px;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
 .edit-post-visual-editor .nhsuk-radios__hint {
@@ -6489,6 +6870,11 @@
   border: 0 !important;
   white-space: nowrap !important;
   user-select: none;
+}
+@supports (left: max(calc(0px))) {
+  .edit-post-visual-editor .nhsuk-skip-link {
+    left: max(16px, calc(16px + env(safe-area-inset-left)));
+  }
 }
 .edit-post-visual-editor .nhsuk-skip-link-focused-element:focus {
   outline: none;
@@ -6802,6 +7188,7 @@
   border: 1px solid #d8dde0;
   padding-top: 0 !important;
   background-color: #ffffff;
+  border: 1px solid #d8dde0;
   color: #212b32;
 }
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab > *:first-child {
@@ -6816,6 +7203,12 @@
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
     margin-bottom: 48px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
+    border: 1px solid #000000;
+    page-break-inside: avoid;
   }
 }
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
@@ -6834,12 +7227,6 @@
     padding: 32px;
   }
 }
-@media print {
-  .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
-    border: 1px solid #212b32;
-    page-break-inside: avoid;
-  }
-}
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab .nhsuk-table,
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab .nhsuk-table-container,
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab .nhsuk-table-responsive {
@@ -6847,9 +7234,13 @@
 }
 .edit-post-visual-editor .nhsuk-table__heading-tab {
   background-color: #005eb8;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
   color: #ffffff;
   display: inline-block;
-  margin: 0 0 8px -33px;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: -33px;
   padding: 8px 32px;
   position: relative;
   top: -16px;
@@ -6875,15 +7266,14 @@
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-table__heading-tab {
     margin-left: -25px;
-    margin-right: 0;
     padding: 8px 24px;
     top: -8px;
   }
 }
 @media print {
   .edit-post-visual-editor .nhsuk-table__heading-tab {
+    color: #000000;
     background: none;
-    color: #212b32;
     top: 0;
   }
 }
@@ -6927,7 +7317,7 @@
   justify-content: space-between;
   min-width: 1px;
 }
-@media all and (-ms-high-contrast: none) {
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .edit-post-visual-editor .nhsuk-table-responsive .nhsuk-table__body .nhsuk-table__row th,
   .edit-post-visual-editor .nhsuk-table-responsive .nhsuk-table__body .nhsuk-table__row td {
     display: block;
@@ -7054,7 +7444,7 @@
   border: 0;
 }
 .edit-post-visual-editor .nhsuk-textarea {
-  -webkit-appearance: none;
+  appearance: none;
   border: 2px solid #4c6272;
   border-radius: 0;
   box-sizing: border-box;
@@ -7098,6 +7488,7 @@
   border: 1px solid #ffeb3b;
   padding-top: 0 !important;
   background-color: #fff9c4;
+  border: 1px solid #ffeb3b;
   color: #212b32;
 }
 .edit-post-visual-editor .nhsuk-warning-callout > *:first-child {
@@ -7112,6 +7503,12 @@
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-warning-callout {
     margin-bottom: 48px;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-warning-callout {
+    border: 1px solid #000000;
+    page-break-inside: avoid;
   }
 }
 .edit-post-visual-editor .nhsuk-warning-callout {
@@ -7130,17 +7527,15 @@
     padding: 32px;
   }
 }
-@media print {
-  .edit-post-visual-editor .nhsuk-warning-callout {
-    border: 1px solid #212b32;
-    page-break-inside: avoid;
-  }
-}
 .edit-post-visual-editor .nhsuk-warning-callout__label {
   background-color: #ffeb3b;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
   color: #212b32;
   display: inline-block;
-  margin: 0 0 8px -33px;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: -33px;
   padding: 8px 32px;
   position: relative;
   top: -16px;
@@ -7166,21 +7561,27 @@
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-warning-callout__label {
     margin-left: -25px;
-    margin-right: 0;
     padding: 8px 24px;
     top: -8px;
   }
 }
 @media print {
   .edit-post-visual-editor .nhsuk-warning-callout__label {
+    color: #000000;
     background: none;
-    color: #212b32;
     top: 0;
   }
+}
+.edit-post-visual-editor {
+  /* Reusable mixin for a focus element outline */
+  /* Add a focus indicator for keyboard nav on clickable cards */
 }
 .edit-post-visual-editor .nhsuk-card--clickable.focus-visible {
   border: 4px solid #ffeb3b;
   box-shadow: inset 0 0 0 4px #212b32;
+}
+.edit-post-visual-editor {
+  /* add more obvious visual representation when dashboard elements are active on keyboard nav */
 }
 .edit-post-visual-editor .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label {
   border: 4px solid #ffeb3b;
@@ -7189,6 +7590,10 @@
 .edit-post-visual-editor .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3.nhsuk-panel-with-label__label {
   background-color: #ffeb3b;
   color: #212b32;
+}
+.edit-post-visual-editor {
+  /* colour variable to be used with color-mixer.scss */
+  /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
 }
 .edit-post-visual-editor .nhsuk-panel-group {
   margin-left: 0;
@@ -7269,6 +7674,9 @@
   width: 33%;
   margin-left: 16px;
 }
+.edit-post-visual-editor {
+  /* Menu item right chevron (mobile): fix color when state is focus */
+}
 .edit-post-visual-editor a:focus .nhsuk-icon {
   fill: #4c6272 !important;
 }
@@ -7315,6 +7723,13 @@
     width: max-content;
   }
 }
+.edit-post-visual-editor {
+  /*
+  // variations to styling required for gutenberg native blocks
+  // @author Tony Blacker, NHS Leadership Academy
+  // @version 1.1 12th October 2019
+  */
+}
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;
@@ -7330,6 +7745,9 @@
 }
 .edit-post-visual-editor .nhsuk-grid-column-width, .edit-post-visual-editor .nhsuk-grid-column-full {
   clear: both;
+}
+.edit-post-visual-editor {
+  /* login form customisation */
 }
 .edit-post-visual-editor #login {
   padding-top: 0 !important;
@@ -7353,6 +7771,9 @@
   font-size: 1.1875rem;
   line-height: 1.47368;
   font-weight: 400;
+}
+.edit-post-visual-editor {
+  /* Extra Blog Styles */
 }
 .edit-post-visual-editor .nhsuk-promo img.nhsuk-promo__img {
   padding: 0;
@@ -7532,12 +7953,14 @@
     display: flex; /* direction row by default, the cells will be side by side to start */
     flex-direction: row;
     width: 100%;
-    background-color: white;
   }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row::after {
     clear: both;
     content: "";
     display: block;
+  }
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
+    background-color: white;
   }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
     margin-bottom: 0;
@@ -7586,14 +8009,14 @@
   }
 }
 @media (max-width: 61.865em) {
-  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
-    padding: 16px 0;
-    border-top: 1px solid #d8dde0;
-  }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row::after {
     clear: both;
     content: "";
     display: block;
+  }
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
+    padding: 16px 0;
+    border-top: 1px solid #d8dde0;
   }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row.nhsuk-likert__header {
     display: none;
@@ -7876,6 +8299,9 @@
 .edit-post-visual-editor .name_middle label {
   color: inherit !important;
 }
+.edit-post-visual-editor {
+  /* Gravity Forms Save and Continue button fix */
+}
 .edit-post-visual-editor button[data-submission-type=save-continue] {
   margin-left: 0 !important;
 }
@@ -7985,11 +8411,11 @@
 .edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name {
   top: -nhsuk-spacing(5);
 }
-.edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
-  border: 2px solid transparent;
-}
 .edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title {
   line-height: 40px;
+}
+.edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
+  border: 2px solid transparent;
 }
 .edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
   background: transparent;
@@ -8119,11 +8545,11 @@
   text-align: left;
   position: relative;
 }
-.edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
-  margin-bottom: 0;
-}
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn .email-address:after, .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary .email-address:after {
   content: '<span class="nhsuk-u-visually-hidden" aria-hidden="true"></span>';
+}
+.edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
+  margin-bottom: 0;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course {
   margin-bottom: 32px;
@@ -8176,6 +8602,9 @@
 }
 .edit-post-visual-editor .sfwd-courses .featured-top {
   display: none;
+}
+.edit-post-visual-editor {
+  /* Events Calendar Styles */
 }
 .edit-post-visual-editor #tribe-events, .edit-post-visual-editor #tribe-events-pg-template, .edit-post-visual-editor .tribe-events-pg-template {
   padding: 0;
@@ -8352,6 +8781,9 @@
 .edit-post-visual-editor .nowrap {
   white-space: nowrap;
 }
+.edit-post-visual-editor {
+  /* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
+}
 .edit-post-visual-editor .tribe-tickets-rsvp .tribe-events-tickets {
   background-color: transparent;
 }
@@ -8360,11 +8792,17 @@
 .edit-post-visual-editor .tribe-tickets-rsvp .tribe-events-tickets select {
   width: 100%;
 }
+.edit-post-visual-editor {
+  /* Events Widgets */
+}
 .edit-post-visual-editor .widget-area ol.tribe-list-widget {
   list-style: none;
 }
 .edit-post-visual-editor .widget-area ol.tribe-list-widget .tribe-clearfix:before {
   display: none;
+}
+.edit-post-visual-editor {
+  /* embedded events */
 }
 .edit-post-visual-editor html.js .tribe-events-page-template.wp-embed-responsive {
   color: inherit;
@@ -8398,6 +8836,9 @@
 }
 .edit-post-visual-editor .tribe-events .tribe-events-c-top-bar__datepicker-form .tribe-events-c-top-bar__datepicker {
   color: #425563;
+}
+.edit-post-visual-editor {
+  /* Event datetime header */
 }
 .edit-post-visual-editor .tribe-events-schedule__datetime * {
   color: #425563;
@@ -8537,6 +8978,9 @@
 .edit-post-visual-editor ul {
   list-style: none;
 }
+.edit-post-visual-editor {
+  background-color: #f0f4f5;
+}
 .edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
   color: #ffffff;
   text-decoration: none;
@@ -8563,8 +9007,16 @@
   font-family: "Frutiger W01", arial, sans-serif;
   font-size: 16px;
 }
+.edit-post-visual-editor {
+  /* admin styles widget tweaks */
+}
 .edit-post-visual-editor .block-editor-block-styles__item-preview .editor-styles-wrapper {
   font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
+}
+.edit-post-visual-editor {
+  /*
+  Learn dash admin panel mitigation
+   */
 }
 .edit-post-visual-editor #sfwd-header .ld-global-header {
   position: inherit;
@@ -8586,9 +9038,16 @@
   top: 170px;
   padding: 0 7px;
 }
+.edit-post-visual-editor {
+  /* end LearnDash mitigation routine */
+  /* make the table cells more obvious when editing */
+}
 .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive thead, .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive tr, .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive th, .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive td {
   border: 1px dashed #aeb7bd;
   min-width: 2rem;
+}
+.edit-post-visual-editor {
+  /* clearfix after grouped items to sort out some display wirdiness */
 }
 .edit-post-visual-editor .block-editor-inner-blocks::after {
   clear: both;

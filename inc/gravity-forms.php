@@ -70,6 +70,38 @@ add_filter(
 );
 
 /**
+ * Safely encodes extended UTF-8 characters into numeric HTML entities.
+ *
+ * This function ensures consistent rendering of special characters (e.g. §¢∞ªº•ç´†˙¬∆ƒß®©∫~µΩ≈å√∑∂∆˚¬…æ“¡€)
+ * across browsers, email clients, and PDF outputs. It prevents double encoding,
+ * handles charset validation, and supports full Unicode ranges.
+ *
+ * Recommended for sanitizing dynamic content before output in HTML or XML contexts.
+ *
+ * @param string $input Raw UTF-8 string containing extended or special characters.
+ * @return string Encoded string with numeric entities for all non-ASCII characters.
+ *
+ * @example
+ *   echo safe_encode("© 2025 ∞ µ"); // Outputs: &#169; 2025 &#8734; &#181;
+ *
+ * @see https://www.php.net/manual/en/function.mb-encode-numericentity.php
+ * @see https://www.php.net/manual/en/function.html-entity-decode.php
+ */
+function safe_encode( $input ) {
+	// Ensure input is UTF-8.
+	if ( ! mb_check_encoding( $input, 'UTF-8' ) ) {
+		$input = mb_convert_encoding( $input, 'UTF-8', 'auto' );
+	}
+
+	// Decode any existing entities to avoid double encoding.
+	$decoded = html_entity_decode( $input, ENT_QUOTES | ENT_HTML5, 'UTF-8' );
+
+	// Encode using numeric entities for full Unicode coverage.
+	$convmap = array( 0x80, 0x10FFFF, 0, 0xFFFF );
+	return mb_encode_numericentity( $decoded, $convmap, 'UTF-8' );
+}
+
+/**
  * Adds nhsuk form group error class to gravity form div having individual form elemen(s)
  * with gfield error class.
  *
@@ -82,7 +114,9 @@ function add_nhsuk_group_error_class_for_validation( $html ) {
 	// Suppress warnings due to malformed HTML.
 	libxml_use_internal_errors( true );
 	// Ensure the HTML is encoded in UTF-8 before loading.
-	$html = mb_convert_encoding( $html, 'HTML-ENTITIES', 'UTF-8' );
+	// $html = mb_convert_encoding( $html, 'HTML-ENTITIES', 'UTF-8' );.
+	$html = safe_encode( $html );
+
 	// Load HTML with UTF-8 encoding.
 	$doc->loadHTML( $html );
 	libxml_clear_errors();
@@ -457,7 +491,7 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$field_content = str_replace( 'ginput_container_consent', 'ginput_container_consent nhsuk-checkboxes__item', $field_content );
 				$field_content = str_replace( 'gfield_consent_label', 'gfield_consent_label nhsuk-label nhsuk-checkboxes__label', $field_content );
 				$field_content = str_replace( "type='checkbox'", "type='checkbox' class='nhsuk-checkboxes__input'", $field_content );
-				$field_content = '<div class="nhsuk_checkboxes">' . $field_content . '</div>';
+				$field_content = '<div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">' . $field_content . '</div>';
 				break;
 			default: // everything else.
 				$field_content = $field_content;
@@ -525,7 +559,7 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 			// Checkboxes.
 			case 'checkbox':
 				$find[]        = 'gfield_checkbox';
-				$replace[]     = 'gfield_checkbox nhsuk_checkbox';
+				$replace[]     = 'gfield_checkbox nhsuk-checkboxes';
 				$find[]        = 'gchoice ';
 				$replace[]     = 'gchoice nhsuk-checkboxes__item ';
 				$find[]        = 'gfield-choice-input';
@@ -600,7 +634,7 @@ function nightingale_clean_gf_inputs( $field_content, $field, $value, $lead_id, 
 				$find[]        = "type='checkbox'";
 				$replace[]     = "type='checkbox' class='nhsuk-checkboxes__input'";
 				$field_content = str_replace( $find, $replace, $field_content );
-				$field_content = '<div class="nhsuk_checkboxes">' . $field_content . '</div>';
+				$field_content = '<div class="nhsuk-checkboxes" data-module="nhsuk-checkboxes">' . $field_content . '</div>';
 				break;
 			// Poll.
 			case 'poll':

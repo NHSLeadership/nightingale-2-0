@@ -88,7 +88,7 @@ echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $
 					<?php echo esc_html( get_user_full_name() ); ?>
 				</li>
 				<li class="nhsuk-header__account-item">
-					<a class="nhsuk-header__account-link" href="<?php echo esc_url( wp_logout_url() ); ?>">
+					<a class="nhsuk-header__account-link" href="<?php echo esc_url( wp_logout_url( home_url() ) ); ?>">
 						Log out
 					</a>
 				</li>

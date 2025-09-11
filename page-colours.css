@@ -82,18 +82,18 @@
 }
 
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__account {
-  background-color: #004485;
+  background-color: rgb(0, 67.9456521739, 133);
 }
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation {
   background: #005eb8;
 }
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #00376c;
-  background: #00376c;
+  background-color: rgb(0, 54.9184782609, 107.5);
+  background: rgb(0, 54.9184782609, 107.5);
 }
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #00376c;
-  background: #00376c;
+  background-color: rgb(0, 54.9184782609, 107.5);
+  background: rgb(0, 54.9184782609, 107.5);
   color: #ffffff;
 }
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white {
@@ -227,18 +227,18 @@
 }
 
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__account {
-  background-color: #001e54;
+  background-color: rgb(0, 29.8666666667, 84);
 }
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation {
   background: #003087;
 }
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #00153b;
-  background: #00153b;
+  background-color: rgb(0, 20.8, 58.5);
+  background: rgb(0, 20.8, 58.5);
 }
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #00153b;
-  background: #00153b;
+  background-color: rgb(0, 20.8, 58.5);
+  background: rgb(0, 20.8, 58.5);
   color: #ffffff;
 }
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white {
@@ -372,18 +372,18 @@
 }
 
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__account {
-  background-color: #00569b;
+  background-color: rgb(0, 85.7766990291, 155);
 }
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation {
   background: #0072ce;
 }
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #004882;
-  background: #004882;
+  background-color: rgb(0, 71.6650485437, 129.5);
+  background: rgb(0, 71.6650485437, 129.5);
 }
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #004882;
-  background: #004882;
+  background-color: rgb(0, 71.6650485437, 129.5);
+  background: rgb(0, 71.6650485437, 129.5);
   color: #ffffff;
 }
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white {
@@ -517,18 +517,18 @@
 }
 
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__account {
-  background-color: #5e6c77;
+  background-color: rgb(94.3780487805, 108.2317073171, 118.6219512195);
 }
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation {
   background: #768692;
 }
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #535f68;
-  background: #535f68;
+  background-color: rgb(83.0792682927, 95.2743902439, 104.4207317073);
+  background: rgb(83.0792682927, 95.2743902439, 104.4207317073);
 }
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #535f68;
-  background: #535f68;
+  background-color: rgb(83.0792682927, 95.2743902439, 104.4207317073);
+  background: rgb(83.0792682927, 95.2743902439, 104.4207317073);
   color: #ffffff;
 }
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white {
@@ -662,18 +662,18 @@
 }
 
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__account {
-  background-color: #2e3b44;
+  background-color: rgb(45.6, 58.7272727273, 68.4);
 }
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation {
   background: #425563;
 }
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #232e35;
-  background: #232e35;
+  background-color: rgb(35.4, 45.5909090909, 53.1);
+  background: rgb(35.4, 45.5909090909, 53.1);
 }
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #232e35;
-  background: #232e35;
+  background-color: rgb(35.4, 45.5909090909, 53.1);
+  background: rgb(35.4, 45.5909090909, 53.1);
   color: #ffffff;
 }
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white {
@@ -952,18 +952,18 @@
 }
 
 .page-colour--purple .nhsuk-header .nhsuk-header__account {
-  background-color: #1c003f;
+  background-color: rgb(28.1842105263, 0, 63);
 }
 .page-colour--purple .nhsuk-header .nhsuk-header__navigation {
   background: #330072;
 }
 .page-colour--purple .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--purple .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #110026;
-  background: #110026;
+  background-color: rgb(16.7763157895, 0, 37.5);
+  background: rgb(16.7763157895, 0, 37.5);
 }
 .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #110026;
-  background: #110026;
+  background-color: rgb(16.7763157895, 0, 37.5);
+  background: rgb(16.7763157895, 0, 37.5);
   color: #ffffff;
 }
 .page-colour--purple .nhsuk-header.nhsuk-header--white {
@@ -1097,18 +1097,18 @@
 }
 
 .page-colour--pink .nhsuk-header .nhsuk-header__account {
-  background-color: #841c57;
+  background-color: rgb(131.9431279621, 28.0568720379, 87.2037914692);
 }
 .page-colour--pink .nhsuk-header .nhsuk-header__navigation {
   background: #ae2573;
 }
 .page-colour--pink .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--pink .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #6f1849;
-  background: #6f1849;
+  background-color: rgb(110.9146919431, 23.5853080569, 73.3056872038);
+  background: rgb(110.9146919431, 23.5853080569, 73.3056872038);
 }
 .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #6f1849;
-  background: #6f1849;
+  background-color: rgb(110.9146919431, 23.5853080569, 73.3056872038);
+  background: rgb(110.9146919431, 23.5853080569, 73.3056872038);
   color: #ffffff;
 }
 .page-colour--pink .nhsuk-header.nhsuk-header--white {
@@ -1242,18 +1242,18 @@
 }
 
 .page-colour--light-purple .nhsuk-header .nhsuk-header__account {
-  background-color: #573b7a;
+  background-color: rgb(87.3793103448, 59.2931034483, 121.7068965517);
 }
 .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation {
   background: #704c9c;
 }
 .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--light-purple .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #4b3369;
-  background: #4b3369;
+  background-color: rgb(75.0689655172, 50.9396551724, 104.5603448276);
+  background: rgb(75.0689655172, 50.9396551724, 104.5603448276);
 }
 .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #4b3369;
-  background: #4b3369;
+  background-color: rgb(75.0689655172, 50.9396551724, 104.5603448276);
+  background: rgb(75.0689655172, 50.9396551724, 104.5603448276);
   color: #ffffff;
 }
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white {
@@ -1387,18 +1387,18 @@
 }
 
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__account {
-  background-color: #a82015;
+  background-color: rgb(167.7375, 31.5, 21.2625);
 }
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation {
   background: #d5281b;
 }
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #911b12;
-  background: #911b12;
+  background-color: rgb(145.10625, 27.25, 18.39375);
+  background: rgb(145.10625, 27.25, 18.39375);
 }
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #911b12;
-  background: #911b12;
+  background-color: rgb(145.10625, 27.25, 18.39375);
+  background: rgb(145.10625, 27.25, 18.39375);
   color: #ffffff;
 }
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white {
@@ -1532,18 +1532,18 @@
 }
 
 .page-colour--dark-green .nhsuk-header .nhsuk-header__account {
-  background-color: #003424;
+  background-color: rgb(0, 52, 35.8446601942);
 }
 .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation {
   background: #006747;
 }
 .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-green .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #001b12;
-  background: #001b12;
+  background-color: rgb(0, 26.5, 18.2669902913);
+  background: rgb(0, 26.5, 18.2669902913);
 }
 .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #001b12;
-  background: #001b12;
+  background-color: rgb(0, 26.5, 18.2669902913);
+  background: rgb(0, 26.5, 18.2669902913);
   color: #ffffff;
 }
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white {
@@ -1677,18 +1677,18 @@
 }
 
 .page-colour--light-green .nhsuk-header .nhsuk-header__account {
-  background-color: #5c9219;
+  background-color: rgb(92.4324324324, 146.3513513514, 24.6486486486);
 }
 .page-colour--light-green .nhsuk-header .nhsuk-header__navigation {
   background: #78be20;
 }
 .page-colour--light-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--light-green .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #4f7d15;
-  background: #4f7d15;
+  background-color: rgb(78.6486486486, 124.527027027, 20.972972973);
+  background: rgb(78.6486486486, 124.527027027, 20.972972973);
 }
 .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #4f7d15;
-  background: #4f7d15;
+  background-color: rgb(78.6486486486, 124.527027027, 20.972972973);
+  background: rgb(78.6486486486, 124.527027027, 20.972972973);
   color: #ffffff;
 }
 .page-colour--light-green .nhsuk-header.nhsuk-header--white {
@@ -1822,18 +1822,18 @@
 }
 
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__account {
-  background-color: #007169;
+  background-color: rgb(0, 113, 105.4207317073);
 }
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation {
   background: #00a499;
 }
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: #005852;
-  background: #005852;
+  background-color: rgb(0, 87.5, 81.631097561);
+  background: rgb(0, 87.5, 81.631097561);
 }
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: #005852;
-  background: #005852;
+  background-color: rgb(0, 87.5, 81.631097561);
+  background: rgb(0, 87.5, 81.631097561);
   color: #ffffff;
 }
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white {
