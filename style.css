@@ -10782,10 +10782,13 @@ a:focus .nhsuk-icon {
     width: max-content;
   }
 }
-.login form {
-  background: inherit;
-  border: inherit;
-  box-shadow: inherit;
+body.login .nhsuk-header__search-form {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
 }
 
 .nhsuk-header .nhsuk-header__account--break {

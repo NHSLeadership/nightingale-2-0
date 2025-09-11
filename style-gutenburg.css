@@ -7723,10 +7723,13 @@
     width: max-content;
   }
 }
-.edit-post-visual-editor .login form {
-  background: inherit;
-  border: inherit;
-  box-shadow: inherit;
+.edit-post-visual-editor body.login .nhsuk-header__search-form {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
 }
 .edit-post-visual-editor {
   /*
