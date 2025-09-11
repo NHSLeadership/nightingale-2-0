@@ -7723,6 +7723,11 @@
     width: max-content;
   }
 }
+.edit-post-visual-editor .login form {
+  background: inherit;
+  border: inherit;
+  box-shadow: inherit;
+}
 .edit-post-visual-editor {
   /*
   // variations to styling required for gutenberg native blocks

@@ -10782,6 +10782,12 @@ a:focus .nhsuk-icon {
     width: max-content;
   }
 }
+.login form {
+  background: inherit;
+  border: inherit;
+  box-shadow: inherit;
+}
+
 .nhsuk-header .nhsuk-header__account--break {
   flex-basis: 100%;
   width: 100%;
