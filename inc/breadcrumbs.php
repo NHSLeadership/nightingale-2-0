@@ -37,17 +37,17 @@ function nightingale_category_parents( $id, $link = false, $separator = '', $nic
 	if ( $parent->parent && ( $parent->parent !== $parent->term_id ) && ! in_array( $parent->parent, $visited, true ) ) {
 		$visited[] = $parent->parent;
 		if ( $link ) {
-			$chain .= '<li class="nhsuk-breadcrumb__item">' . get_category_parents( $parent->parent, $link, $separator, $nicename ) . '</li>' . $separator;
+			$chain .= '<li class="nhsuk-breadcrumb__list-item">' . get_category_parents( $parent->parent, $link, $separator, $nicename ) . '</li>' . $separator;
 		} else {
-			$chain .= '<li class="nhsuk-breadcrumb__item"><a itemprop="item" href="' . get_category_parents( $parent->parent, $link, $separator, $nicename ) . '">' . $name . '</a></li>' . $separator;
+			$chain .= '<li class="nhsuk-breadcrumb__list-item"><a itemprop="item" href="' . get_category_parents( $parent->parent, $link, $separator, $nicename ) . '">' . $name . '</a></li>' . $separator;
 		}
 	}
 	if ( $iscrumb ) {
-		$chain .= '<li class="nhsuk-breadcrumb__item"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '">' . $name . '</a></li>' . $separator;
+		$chain .= '<li class="nhsuk-breadcrumb__list-item"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '">' . $name . '</a></li>' . $separator;
 	} elseif ( $link && ! $iscrumb ) {
-		$chain .= '<li class="nhsuk-breadcrumb__item"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '">' . $name . '</a>' . $separator . '</li>';
+		$chain .= '<li class="nhsuk-breadcrumb__list-item"><a itemprop="item" href="' . esc_url( get_category_link( $parent->term_id ) ) . '">' . $name . '</a>' . $separator . '</li>';
 	} else {
-		$chain .= '<li class="nhsuk-breadcrumb__item">' . $name . $separator . '</li>';
+		$chain .= '<li class="nhsuk-breadcrumb__list-item">' . $name . $separator . '</li>';
 	}
 
 	return $chain;
@@ -101,7 +101,7 @@ function nightingale_breadcrumb() {
 		list( $trail, $back_one_level ) = nightingale_breadcrumb_trail();
 		$back_one_level                 = empty( $back_one_level ) ? array( esc_url( home_url() ), __( 'Home', 'nightingale' ) ) : $back_one_level;
 		$breadcrumbs                    = sprintf(
-			'<ol class="nhsuk-breadcrumb__list"><li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="%2$s">%3$s</a></li>%1$s</ol>',
+			'<ol class="nhsuk-breadcrumb__list"><li class="nhsuk-breadcrumb__list-item"><a class="nhsuk-breadcrumb__link" href="%2$s">%3$s</a></li>%1$s</ol>',
 			$trail,
 			esc_url( home_url() ),
 			esc_html( __( 'Home', 'nightingale' ) )
@@ -124,7 +124,7 @@ function nightingale_breadcrumb() {
 		echo '<div class="nhsuk-width-container"><nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">';
 		$breadcrumbs = str_replace( '<span class="sep"> &raquo; </span>', '', $breadcrumbs );
 		$breadcrumbs = str_replace( 'sfwd-breadcrumbs', 'nhsuk-breadcrumb__list', $breadcrumbs );
-		$breadcrumbs = str_replace( '<span itemscope', '<span class="nhsuk-breadcrumb__item" itemscope', $breadcrumbs );
+		$breadcrumbs = str_replace( '<span itemscope', '<span class="nhsuk-breadcrumb__list-item" itemscope', $breadcrumbs );
 		echo $breadcrumbs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo '</nav></div>';
 
@@ -133,9 +133,7 @@ function nightingale_breadcrumb() {
 		printf(
 			'<div class="nhsuk-width-container">
 						<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">%1$s 
-							<p class="nhsuk-breadcrumb__back">
-								<a class="nhsuk-breadcrumb__backlink" href="%2$s"><span class="nhsuk-u-visually-hidden"> %3$s &nbsp;</span> %4$s</a>
-							</p>
+							<a class="nhsuk-back-link" href="%2$s"><span class="nhsuk-u-visually-hidden"> %3$s &nbsp;</span> %4$s</a>
 						</nav>
 					</div>',
 			$breadcrumbs, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -169,15 +167,15 @@ function nightingale_breadcrumb_trail() {
 		if ( 0 !== $this_cat->parent && ! is_wp_error( $cat_parents ) ) {
 			$trail = $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
-		$trail .= '<li class="nhsuk-breadcrumb__item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';
+		$trail .= '<li class="nhsuk-breadcrumb__list-item"><a  href="' . esc_url( get_category_link( $this_cat ) ) . '">' . esc_html( single_cat_title( '', false ) ) . '</a></li>';
 	} elseif ( is_post_type_archive( 'tribe_events' ) ) {
-		$trail = '<li class="nhsuk-breadcrumb__item">' . esc_html( tribe_get_event_label_plural() ) . '</li>';
+		$trail = '<li class="nhsuk-breadcrumb__list-item">' . esc_html( tribe_get_event_label_plural() ) . '</li>';
 	} elseif ( is_archive() && ! is_category() ) {
-		$trail = '<li class="nhsuk-breadcrumb__item">' . esc_html( 'Archives', 'nightingale' ) . '</li>';
+		$trail = '<li class="nhsuk-breadcrumb__list-item">' . esc_html( 'Archives', 'nightingale' ) . '</li>';
 	} elseif ( is_search() ) {
-		$trail = '<li class="nhsuk-breadcrumb__item">' . esc_html( 'Search Results', 'nightingale' ) . '</li>';
+		$trail = '<li class="nhsuk-breadcrumb__list-item">' . esc_html( 'Search Results', 'nightingale' ) . '</li>';
 	} elseif ( is_404() ) {
-		$trail = '<li class="nhsuk-breadcrumb__item">' . esc_html( '404 Not Found', 'nightingale' ) . '</li>';
+		$trail = '<li class="nhsuk-breadcrumb__list-item">' . esc_html( '404 Not Found', 'nightingale' ) . '</li>';
 	} elseif ( is_singular( 'post' ) ) {
 		$category    = get_the_category();
 		$category_id = get_cat_ID( $category[0]->cat_name );
@@ -186,11 +184,11 @@ function nightingale_breadcrumb_trail() {
 			$trail .= $cat_parents; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	} elseif ( is_singular( 'attachment' ) ) {
-		$trail = '<li class="nhsuk-breadcrumb__item">' . the_title() . '</li>';
+		$trail = '<li class="nhsuk-breadcrumb__list-item">' . the_title() . '</li>';
 	} elseif ( is_singular( 'tribe_events' ) ) {
 		$post   = $wp_query->get_queried_object();
-		$trail  = '<li class="nhsuk-breadcrumb__item"><a href="' . esc_url( tribe_get_events_link() ) . '">' . esc_html( tribe_get_event_label_plural() ) . '</a></li>';
-		$trail .= '<li class="nhsuk-breadcrumb__item event">' . esc_html( get_the_title( $post ) ) . '</li>';
+		$trail  = '<li class="nhsuk-breadcrumb__list-item"><a href="' . esc_url( tribe_get_events_link() ) . '">' . esc_html( tribe_get_event_label_plural() ) . '</a></li>';
+		$trail .= '<li class="nhsuk-breadcrumb__list-item event">' . esc_html( get_the_title( $post ) ) . '</li>';
 	} elseif ( is_page() || ! empty(
 		get_post_types(
 			array(
@@ -210,7 +208,7 @@ function nightingale_breadcrumb_trail() {
 					if ( (int) $home_page === $ancestor ) {
 						continue;
 					};
-					$trail         .= '<li class="nhsuk-breadcrumb__item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</a></li>';
+					$trail         .= '<li class="nhsuk-breadcrumb__list-item"> <a href="' . esc_url( get_permalink( $ancestor ) ) . '">' . esc_html( wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ) ) . '</a></li>';
 					$back_one_level = array(
 						esc_url( get_permalink( $ancestor ) ),
 						wp_strip_all_tags( apply_filters( 'single_post_title', get_the_title( $ancestor ) ) ),
@@ -223,9 +221,8 @@ function nightingale_breadcrumb_trail() {
 	}
 
 	if ( ! ( is_archive() || is_category() || is_post_type_archive() || is_search() || is_404() || is_singular( 'tribe_events' ) ) ) {
-		$trail .= '<li class="nhsuk-breadcrumb__item current">' . esc_html( get_the_title() ) . '</li>';
+		$trail .= '<li class="nhsuk-breadcrumb__list-item current">' . esc_html( get_the_title() ) . '</li>';
 	}
-
 	return array( apply_filters( 'nightingale_modify_breadcrumb', $trail ), $back_one_level );
 }
 

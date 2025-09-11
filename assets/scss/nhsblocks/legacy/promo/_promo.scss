@@ -15,14 +15,14 @@
  */
 
 .nhsuk-promo {
-  margin-bottom: nhsuk-spacing(5) + $nhsuk-box-shadow-link; /* [1] */
+  margin-bottom: nhsuk-spacing(5) + $nhsuk-border-width; /* [1] */
   width: 100%;
 }
 
 .nhsuk-promo__link-wrapper {
   background-color: $color_nhsuk-white;
   border: 1px solid transparent;
-  box-shadow: 0 $nhsuk-box-shadow-link 0 0 $color_nhsuk-grey-4; /* [2] */
+  box-shadow: 0 $nhsuk-border-width 0 0 $color_nhsuk-grey-4; /* [2] */
   display: block;
   height: 100%; /* [3] */
   position: relative; /* [4] */
@@ -39,7 +39,7 @@
 
   &:focus {
     background-color: $color_nhsuk-white;
-    box-shadow: 0 $nhsuk-box-shadow-link 0 0 $color_nhsuk-grey-4;
+    box-shadow: 0 $nhsuk-border-width 0 0 $color_nhsuk-grey-4;
 
     .nhsuk-promo__heading {
       @include nhsuk-focused-text();
@@ -50,7 +50,7 @@
   &:active {
     background-color: $color_nhsuk-white; /* [7] */
     box-shadow: none;
-    top: $nhsuk-box-shadow-link; /* [7] */
+    top: $nhsuk-border-width; /* [7] */
 
     .nhsuk-promo__heading {
       background: none;
@@ -124,10 +124,10 @@
 .nhsuk-promo-group {
   @include nhsuk-flex();
 
-  margin-bottom: nhsuk-spacing(5) + $nhsuk-box-shadow-link;
+  margin-bottom: nhsuk-spacing(5) + $nhsuk-border-width;
 
   @include nhsuk-media-query($until: desktop) {
-    margin-bottom: nhsuk-spacing(4) + $nhsuk-box-shadow-link;
+    margin-bottom: nhsuk-spacing(4) + $nhsuk-border-width;
   }
 
 }
@@ -136,7 +136,7 @@
   @include nhsuk-flex-item();
 
   @include nhsuk-media-query($until: desktop) {
-    margin-bottom: nhsuk-spacing(4) + $nhsuk-box-shadow-link;
+    margin-bottom: nhsuk-spacing(4) + $nhsuk-border-width;
 
     &:last-child {
       margin-bottom: 0;

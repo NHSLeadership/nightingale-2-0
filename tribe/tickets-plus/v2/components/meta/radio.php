@@ -39,7 +39,7 @@ $classes[]  = 'nhsuk-form-group';
 			</h3>
 		</legend>
 
-		<div class="nhsuk-radios">
+		<div class="nhsuk-radios" data-module="nhsuk-radios">
 			<?php
 			foreach ( $options as $option ) :
 				$option_slug = md5( sanitize_title( $option ) );

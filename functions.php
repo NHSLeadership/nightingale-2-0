@@ -249,10 +249,13 @@ function nightingale_scripts() {
 	wp_enqueue_script( 'nightingale-nhs-library', get_template_directory_uri() . '/js/nhsuk.min.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
 	wp_enqueue_script( 'nightingale-nhs-library-init', get_template_directory_uri() . '/js/nhsuk-init.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
 	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
+	wp_enqueue_script( 'nhsuk-enhancements', get_template_directory_uri() . '/js/nhsuk-enhancements.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 
 add_action( 'wp_enqueue_scripts', 'nightingale_scripts' );
 

@@ -16,7 +16,7 @@
   @include nhsuk-print-hide();
   background-color: $color_nhsuk-white;
   bottom: 0;
-  box-shadow: 0 -4px 0 0 $nhsuk-box-shadow;
+  box-shadow: 0 -4px 0 0 $nhsuk-focus-colour; //$nhsuk-box-shadow;
   display: none; /* [1] */
   margin: 0 auto;
   padding-bottom: nhsuk-spacing(4);

@@ -12,6 +12,13 @@ if ( ! class_exists( 'Comment_Author_Role_Label' ) ) :
 	 * Add User Role to Comments.
 	 */
 	class Comment_Author_Role_Label {
+
+		/**
+		 * Holds the HTML label for the comment author's role.
+		 *
+		 * @var string
+		 */
+		public $comment_user_role;
 		/**
 		 * Comment_Author_Role_Label constructor.
 		 */
