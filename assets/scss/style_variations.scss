@@ -203,3 +203,22 @@ button {
     margin-bottom: 0;
   }
 }
+
+@media (min-width: get-breakpoint-width(tablet)) {
+  #error-404 {
+    input[type="search"] {
+      border: 1px solid $color_nhsuk-grey-3;
+    }
+    .nhsuk-icon__search {
+      path {
+        fill: $color_nhsuk-white;
+      }
+    }
+    .nhsuk-header__search-submit {
+      background-color: $color_nhsuk-blue;
+    }
+    .wp-block-nhsblocks-nhsbutton {
+      margin-top: nhsuk-spacing(-2);
+    }
+  }
+}

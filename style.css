@@ -10984,6 +10984,20 @@ button + .button {
   margin-bottom: 0;
 }
 
+@media (min-width: 641px) {
+  #error-404 input[type=search] {
+    border: 1px solid #aeb7bd;
+  }
+  #error-404 .nhsuk-icon__search path {
+    fill: #ffffff;
+  }
+  #error-404 .nhsuk-header__search-submit {
+    background-color: #005eb8;
+  }
+  #error-404 .wp-block-nhsblocks-nhsbutton {
+    margin-top: -8px;
+  }
+}
 #secondary section {
   border-top: 2px solid #005eb8;
   margin-bottom: 32px;

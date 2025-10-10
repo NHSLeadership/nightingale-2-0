@@ -17,7 +17,7 @@ get_header();
 	<div id="primary" class=" nhsuk-grid-row nhsuk-width-restrict">
 
 		<div class="nhsuk-grid-column-full full-width">
-			<section class="error-404 not-found">
+			<section id="error-404" class="error-404 not-found">
 				<header class="entry-header">
 					<h1 class="entry-title">404 - Page not found</h1>
 				</header>

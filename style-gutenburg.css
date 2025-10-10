@@ -7903,6 +7903,20 @@
 .edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
+@media (min-width: 641px) {
+  .edit-post-visual-editor #error-404 input[type=search] {
+    border: 1px solid #aeb7bd;
+  }
+  .edit-post-visual-editor #error-404 .nhsuk-icon__search path {
+    fill: #ffffff;
+  }
+  .edit-post-visual-editor #error-404 .nhsuk-header__search-submit {
+    background-color: #005eb8;
+  }
+  .edit-post-visual-editor #error-404 .wp-block-nhsblocks-nhsbutton {
+    margin-top: -8px;
+  }
+}
 .edit-post-visual-editor .gform_heading .gform_description {
   font-size: 1rem;
   font-weight: 600;
