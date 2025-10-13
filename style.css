@@ -10986,7 +10986,7 @@ button + .button {
 
 @media (min-width: 641px) {
   #error-404 input[type=search] {
-    border: 0.5px solid #e8edee;
+    border: 1px solid #e8edee;
   }
   #error-404 .nhsuk-header__search-submit {
     background-color: #e8edee;

@@ -7905,7 +7905,7 @@
 }
 @media (min-width: 641px) {
   .edit-post-visual-editor #error-404 input[type=search] {
-    border: 0.5px solid #e8edee;
+    border: 1px solid #e8edee;
   }
   .edit-post-visual-editor #error-404 .nhsuk-header__search-submit {
     background-color: #e8edee;

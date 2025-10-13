@@ -207,7 +207,7 @@ button {
 @media (min-width: get-breakpoint-width(tablet)) {
   #error-404 {
     input[type="search"] {
-      border: 0.5px solid $color_nhsuk_light-grey;
+      border: 1px solid $color_nhsuk_light-grey;
     }
     .nhsuk-header__search-submit {
       background-color: $color_nhsuk_light-grey;
