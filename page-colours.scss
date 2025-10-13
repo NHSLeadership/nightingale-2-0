@@ -118,7 +118,15 @@ $page-colours             : (
   .page-colour--#{$name} {
 	.nhsuk-header {
 	  .nhsuk-header__account {
-		background-color: darken($colour, 10%);
+		@if $colour == $color_gds_black {
+			background-color: lighten($color_gds_black, 10%); // fallback to lighten
+		} @else {
+			background-color: darken($colour, 10%);
+		}
+		border: none;
+	  }
+	  .nhsuk-header__account-item {
+		outline: 1px solid $colour;
 	  }
 	  .nhsuk-header__navigation {
 		background: $colour;

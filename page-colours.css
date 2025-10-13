@@ -83,6 +83,10 @@
 
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__account {
   background-color: rgb(0, 67.9456521739, 133);
+  border: none;
+}
+.page-colour--nhs-blue .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #005eb8;
 }
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation {
   background: #005eb8;
@@ -234,6 +238,10 @@
 
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__account {
   background-color: rgb(0, 29.8666666667, 84);
+  border: none;
+}
+.page-colour--dark-blue .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #003087;
 }
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation {
   background: #003087;
@@ -385,6 +393,10 @@
 
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__account {
   background-color: rgb(0, 85.7766990291, 155);
+  border: none;
+}
+.page-colour--bright-blue .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #0072ce;
 }
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation {
   background: #0072ce;
@@ -536,6 +548,10 @@
 
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__account {
   background-color: rgb(94.3780487805, 108.2317073171, 118.6219512195);
+  border: none;
+}
+.page-colour--mid-grey .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #768692;
 }
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation {
   background: #768692;
@@ -687,6 +703,10 @@
 
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__account {
   background-color: rgb(45.6, 58.7272727273, 68.4);
+  border: none;
+}
+.page-colour--dark-grey .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #425563;
 }
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation {
   background: #425563;
@@ -838,6 +858,10 @@
 
 .page-colour--black .nhsuk-header .nhsuk-header__account {
   background-color: black;
+  border: none;
+}
+.page-colour--black .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #000000;
 }
 .page-colour--black .nhsuk-header .nhsuk-header__navigation {
   background: #000000;
@@ -989,6 +1013,10 @@
 
 .page-colour--purple .nhsuk-header .nhsuk-header__account {
   background-color: rgb(28.1842105263, 0, 63);
+  border: none;
+}
+.page-colour--purple .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #330072;
 }
 .page-colour--purple .nhsuk-header .nhsuk-header__navigation {
   background: #330072;
@@ -1140,6 +1168,10 @@
 
 .page-colour--pink .nhsuk-header .nhsuk-header__account {
   background-color: rgb(131.9431279621, 28.0568720379, 87.2037914692);
+  border: none;
+}
+.page-colour--pink .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #ae2573;
 }
 .page-colour--pink .nhsuk-header .nhsuk-header__navigation {
   background: #ae2573;
@@ -1291,6 +1323,10 @@
 
 .page-colour--light-purple .nhsuk-header .nhsuk-header__account {
   background-color: rgb(87.3793103448, 59.2931034483, 121.7068965517);
+  border: none;
+}
+.page-colour--light-purple .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #704c9c;
 }
 .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation {
   background: #704c9c;
@@ -1442,6 +1478,10 @@
 
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__account {
   background-color: rgb(167.7375, 31.5, 21.2625);
+  border: none;
+}
+.page-colour--emergency-services-red .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #d5281b;
 }
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation {
   background: #d5281b;
@@ -1593,6 +1633,10 @@
 
 .page-colour--dark-green .nhsuk-header .nhsuk-header__account {
   background-color: rgb(0, 52, 35.8446601942);
+  border: none;
+}
+.page-colour--dark-green .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #006747;
 }
 .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation {
   background: #006747;
@@ -1744,6 +1788,10 @@
 
 .page-colour--light-green .nhsuk-header .nhsuk-header__account {
   background-color: rgb(92.4324324324, 146.3513513514, 24.6486486486);
+  border: none;
+}
+.page-colour--light-green .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #78be20;
 }
 .page-colour--light-green .nhsuk-header .nhsuk-header__navigation {
   background: #78be20;
@@ -1895,6 +1943,10 @@
 
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__account {
   background-color: rgb(0, 113, 105.4207317073);
+  border: none;
+}
+.page-colour--aqua-green .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #00a499;
 }
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation {
   background: #00a499;
@@ -2045,7 +2097,11 @@
 }
 
 .page-colour--gds-black .nhsuk-header .nhsuk-header__account {
-  background-color: black;
+  background-color: rgb(35.3913043478, 38.6086956522, 38.6086956522);
+  border: none;
+}
+.page-colour--gds-black .nhsuk-header .nhsuk-header__account-item {
+  outline: 1px solid #0b0c0c;
 }
 .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation {
   background: #0b0c0c;
