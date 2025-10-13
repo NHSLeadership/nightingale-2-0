@@ -7905,13 +7905,10 @@
 }
 @media (min-width: 641px) {
   .edit-post-visual-editor #error-404 input[type=search] {
-    border: 1px solid #aeb7bd;
-  }
-  .edit-post-visual-editor #error-404 .nhsuk-icon__search path {
-    fill: #ffffff;
+    border: 0.5px solid #e8edee;
   }
   .edit-post-visual-editor #error-404 .nhsuk-header__search-submit {
-    background-color: #005eb8;
+    background-color: #e8edee;
   }
   .edit-post-visual-editor #error-404 .wp-block-nhsblocks-nhsbutton {
     margin-top: -8px;

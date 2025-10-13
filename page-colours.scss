@@ -193,5 +193,16 @@ $page-colours             : (
 		}
 	  }
 	}
+	.error-404 {
+		input[type="search"] {
+		border: 1px solid $color_nhsuk-light-grey;
+		}
+		.nhsuk-icon__search {
+			path {
+				fill: $colour;
+			}
+		}
+	}
+	
   }
 }
