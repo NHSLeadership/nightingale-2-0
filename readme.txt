@@ -6,7 +6,7 @@ Requires PHP: 8.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.6
+Version: 2.7.7
 Stable tag: 2.7
 
 
@@ -42,6 +42,9 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=2.7.7=
+* Search box style improvement in 404 page
 
 =2.7.6=
 * Security update

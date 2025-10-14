@@ -8,8 +8,8 @@
  * available in unminified format. This file is NOT used in any way in the live output.
  *
  * @package Nightingale
- * @copyright NHS Leadership Academy, Tony Blacker
- * @version 1.1 30th April 2020
+ * @copyright NHS Leadership Academy, Tony Blacker and Mahesh Murali P
+ * @version 1.2 14th October 2025
  */
 
 ?>
@@ -61,7 +61,10 @@ button:-moz-focusring,
 body,
 button,
 input {
-	font-family: Frutiger W01, Arial, Sans-serif;
+	font-family:
+		Frutiger W01,
+		Arial,
+		Sans-serif;
 }
 h2 {
 	clear: both;
@@ -136,7 +139,10 @@ a:visited {
 html {
 	background-color: #d8dde0;
 	overflow-y: scroll;
-	font-family: Frutiger W01, Arial, Sans-serif;
+	font-family:
+		Frutiger W01,
+		Arial,
+		Sans-serif;
 }
 @font-face {
 	font-display: swap;
@@ -144,8 +150,11 @@ html {
 	font-style: normal;
 	font-weight: 400;
 	src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix");
-	src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"),
-		url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"),
+	src:
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.eot?#iefix") format("eot"),
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2") format("woff2"),
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff") format("woff"),
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.ttf") format("truetype"),
 		url("https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg");
 }
 @font-face {
@@ -154,8 +163,11 @@ html {
 	font-style: normal;
 	font-weight: 600;
 	src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix");
-	src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"),
-		url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"),
+	src:
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.eot?#iefix") format("eot"),
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2") format("woff2"),
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff") format("woff"),
+		url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.ttf") format("truetype"),
 		url("https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg");
 }
 body {
@@ -719,14 +731,6 @@ p {
 	width: 100px;
 	display: block;
 }
-.nhsuk-header__logo--only {
-	max-width: 100%;
-}
-@media (max-width: 40.0525em) {
-	.nhsuk-header__logo--only {
-		padding-bottom: 16px;
-	}
-}
 .nhsuk-header__content {
 	position: relative;
 }
@@ -1010,6 +1014,9 @@ p {
 		line-height: 13px;
 	}
 }
+.nhsuk-organisation-name .nhsuk-organisation-name-split {
+	display: block;
+}
 .nhsuk-organisation-descriptor {
 	color: #fff;
 	display: block;
@@ -1053,9 +1060,6 @@ p {
 	line-height: 1.5;
 	text-decoration: none;
 }
-.nhsuk-header__transactional-service-name--link:visited {
-	color: #fff;
-}
 @media (min-width: 40.0625em) {
 	.nhsuk-header__transactional-service-name--link {
 		font-size: 19px;
@@ -1097,6 +1101,9 @@ p {
 .nhsuk-header__navigation-item {
 	border-top: none;
 }
+.nhsuk-navigation-container .nhsuk-navigation .nhsuk-icon__chevron-down {
+	fill: #fff;
+}
 @media (max-width: 40.0525em) {
 	.nhsuk-search__submit {
 		background-color: #f0f4f5;
@@ -1130,6 +1137,12 @@ p {
 	}
 	.nhsuk-header__content {
 		width: 100%;
+	}
+}
+@media (min-width: 48.0625em) {
+	.nhsuk-header--organisation .nhsuk-header__link {
+		max-width: 500px;
+		width: max-content;
 	}
 }
 .nhsuk-grid-column-full {
@@ -1169,6 +1182,33 @@ button {
 	background-color: #ffeb3b;
 	padding-bottom: 24px;
 	padding-top: 24px;
+}
+.nhsuk-global-alert a {
+	color: #005eb8;
+}
+.nhsuk-global-alert__content {
+	position: relative;
+	margin: 0 16px;
+}
+.nhsuk-global-alert__content > *:first-child {
+	margin-top: 0;
+}
+.nhsuk-global-alert__heading {
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 1.4;
+	margin: 0;
+}
+@media (min-width: 40.0625em) {
+	.nhsuk-global-alert__heading {
+		font-size: 24px;
+		font-size: 1.5rem;
+		line-height: 1.33333;
+	}
+}
+.nhsuk-global-alert__message {
+	margin-top: 8px;
+	line-height: 1.5;
 }
 .nhsuk-hero__overlay {
 	margin-bottom: 50px;
@@ -1276,4 +1316,3 @@ button {
 	font-weight: normal;
 	padding: 0;
 }
-

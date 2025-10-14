@@ -190,5 +190,13 @@ $page-colours             : (
 		}
 	  }
 	}
+	.error-404 {
+		.nhsuk-icon__search {
+			path {
+				fill: $colour;
+			}
+		}
+	}
+	
   }
 }
