@@ -1183,9 +1183,6 @@ button {
 	padding-bottom: 24px;
 	padding-top: 24px;
 }
-.nhsuk-global-alert a {
-	color: #005eb8;
-}
 .nhsuk-global-alert__content {
 	position: relative;
 	margin: 0 16px;
