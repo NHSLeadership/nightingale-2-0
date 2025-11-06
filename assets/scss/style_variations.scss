@@ -203,31 +203,29 @@ button {
     margin-bottom: 0;
   }
 }
-// Tablet and up (≥ 48.0625em / 769px)
-@media (min-width: 48.0625em) {
-  #error-404 {
+
+
+#error-404 {
     input[type="search"] {
-      width: 684px;
+      width: 95%;
 			border: 1px solid $color_nhsuk-light-grey;
-			&:focus,
+      &:focus,
 			&:active {
 				border: 3px solid $color_nhsuk-black;
+             
 			}
+
 		}
-    .nhsuk-header__search-submit {
-      background-color: $color_nhsuk_light-grey;
+    .nhsuk-search__submit {
+      position: absolute;
+      display: inline-block;
     }
-
     .wp-block-nhsblocks-nhsbutton {
-        margin-top: - nhsuk-spacing(2);
+        margin-top: nhsuk-spacing(3);
     }
-  }  
-}
-
-
-// Mobile and small tablets (< 48.0625em)
-@media (max-width: 48.0624em) {
-  #error-404-search {
-    display: none;
-  }
-}
+    .nhsuk-do-dont-list svg.nhsuk-icon {
+        width: 27px;
+        height: 27px;
+    }
+  }    
+  

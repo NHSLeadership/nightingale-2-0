@@ -139,9 +139,6 @@
     background: #005eb8;
   }
 }
-.page-colour--nhs-blue .error-404 .nhsuk-icon__search path {
-  fill: #005eb8;
-}
 
 .page-colour--dark-blue .nhsuk-footer,
 .page-colour--dark-blue #secondary section, #content .page-style--dark-blue .nhsuk-footer,
@@ -283,9 +280,6 @@
     background-color: #003087;
     background: #003087;
   }
-}
-.page-colour--dark-blue .error-404 .nhsuk-icon__search path {
-  fill: #003087;
 }
 
 .page-colour--bright-blue .nhsuk-footer,
@@ -429,9 +423,6 @@
     background: #0072ce;
   }
 }
-.page-colour--bright-blue .error-404 .nhsuk-icon__search path {
-  fill: #0072ce;
-}
 
 .page-colour--mid-grey .nhsuk-footer,
 .page-colour--mid-grey #secondary section, #content .page-style--mid-grey .nhsuk-footer,
@@ -573,9 +564,6 @@
     background-color: #768692;
     background: #768692;
   }
-}
-.page-colour--mid-grey .error-404 .nhsuk-icon__search path {
-  fill: #768692;
 }
 
 .page-colour--dark-grey .nhsuk-footer,
@@ -719,9 +707,6 @@
     background: #425563;
   }
 }
-.page-colour--dark-grey .error-404 .nhsuk-icon__search path {
-  fill: #425563;
-}
 
 .page-colour--black .nhsuk-footer,
 .page-colour--black #secondary section, #content .page-style--black .nhsuk-footer,
@@ -863,9 +848,6 @@
     background-color: #000000;
     background: #000000;
   }
-}
-.page-colour--black .error-404 .nhsuk-icon__search path {
-  fill: #000000;
 }
 
 .page-colour--purple .nhsuk-footer,
@@ -1009,9 +991,6 @@
     background: #330072;
   }
 }
-.page-colour--purple .error-404 .nhsuk-icon__search path {
-  fill: #330072;
-}
 
 .page-colour--pink .nhsuk-footer,
 .page-colour--pink #secondary section, #content .page-style--pink .nhsuk-footer,
@@ -1153,9 +1132,6 @@
     background-color: #ae2573;
     background: #ae2573;
   }
-}
-.page-colour--pink .error-404 .nhsuk-icon__search path {
-  fill: #ae2573;
 }
 
 .page-colour--light-purple .nhsuk-footer,
@@ -1299,9 +1275,6 @@
     background: #704c9c;
   }
 }
-.page-colour--light-purple .error-404 .nhsuk-icon__search path {
-  fill: #704c9c;
-}
 
 .page-colour--emergency-services-red .nhsuk-footer,
 .page-colour--emergency-services-red #secondary section, #content .page-style--emergency-services-red .nhsuk-footer,
@@ -1443,9 +1416,6 @@
     background-color: #d5281b;
     background: #d5281b;
   }
-}
-.page-colour--emergency-services-red .error-404 .nhsuk-icon__search path {
-  fill: #d5281b;
 }
 
 .page-colour--dark-green .nhsuk-footer,
@@ -1589,9 +1559,6 @@
     background: #006747;
   }
 }
-.page-colour--dark-green .error-404 .nhsuk-icon__search path {
-  fill: #006747;
-}
 
 .page-colour--light-green .nhsuk-footer,
 .page-colour--light-green #secondary section, #content .page-style--light-green .nhsuk-footer,
@@ -1733,9 +1700,6 @@
     background-color: #78be20;
     background: #78be20;
   }
-}
-.page-colour--light-green .error-404 .nhsuk-icon__search path {
-  fill: #78be20;
 }
 
 .page-colour--aqua-green .nhsuk-footer,
@@ -1879,9 +1843,6 @@
     background: #00a499;
   }
 }
-.page-colour--aqua-green .error-404 .nhsuk-icon__search path {
-  fill: #00a499;
-}
 
 .page-colour--gds-black .nhsuk-footer,
 .page-colour--gds-black #secondary section, #content .page-style--gds-black .nhsuk-footer,
@@ -2023,9 +1984,6 @@
     background-color: #0b0c0c;
     background: #0b0c0c;
   }
-}
-.page-colour--gds-black .error-404 .nhsuk-icon__search path {
-  fill: #0b0c0c;
 }
 
 /*# sourceMappingURL=page-colours.css.map */

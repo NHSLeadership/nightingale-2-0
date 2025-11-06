@@ -6776,25 +6776,23 @@
 .edit-post-visual-editor .nhsuk-cat-filter .nhsuk-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .edit-post-visual-editor .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
 }
-@media (min-width: 48.0625em) {
-  .edit-post-visual-editor #error-404 input[type=search] {
-    width: 684px;
-    border: 1px solid #e8edee;
-  }
-  .edit-post-visual-editor #error-404 input[type=search]:focus, .edit-post-visual-editor #error-404 input[type=search]:active {
-    border: 3px solid #212b32;
-  }
-  .edit-post-visual-editor #error-404 .nhsuk-header__search-submit {
-    background-color: #e8edee;
-  }
-  .edit-post-visual-editor #error-404 .wp-block-nhsblocks-nhsbutton {
-    margin-top: -8px;
-  }
+.edit-post-visual-editor #error-404 input[type=search] {
+  width: 95%;
+  border: 1px solid #e8edee;
 }
-@media (max-width: 48.0624em) {
-  .edit-post-visual-editor #error-404-search {
-    display: none;
-  }
+.edit-post-visual-editor #error-404 input[type=search]:focus, .edit-post-visual-editor #error-404 input[type=search]:active {
+  border: 3px solid #212b32;
+}
+.edit-post-visual-editor #error-404 .nhsuk-search__submit {
+  position: absolute;
+  display: inline-block;
+}
+.edit-post-visual-editor #error-404 .wp-block-nhsblocks-nhsbutton {
+  margin-top: 16px;
+}
+.edit-post-visual-editor #error-404 .nhsuk-do-dont-list svg.nhsuk-icon {
+  width: 27px;
+  height: 27px;
 }
 .edit-post-visual-editor .gform_heading .gform_description {
   font-size: 1rem;

@@ -26,12 +26,16 @@ get_header();
 						<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Oops', 'nightingale' ); ?></h3>
 						<div class="paneltext">
 							<p><?php echo esc_html__( 'Sorry, this page can\'t be found at the moment, please use the search facility below, select an item from the contents or alternatively return to the home page', 'nightingale' ); ?></p>
-							<a class="wp-block-nhsblocks-nhsbutton alignright nhsuk-button" href="<?php echo esc_attr( get_home_url() ); ?>"><?php echo esc_html__( 'Home Page', 'nightingale' ); ?></a>
+							
 							<div id="error-404-search" class="error-404-search">
 								<?php
 								get_search_form();
 								?>
+								<a class="wp-block-nhsblocks-nhsbutton nhsuk-button" href="<?php echo esc_attr( get_home_url() ); ?>">
+									<?php echo esc_html__( 'Home Page', 'nightingale' ); ?>
+								</a>
 							</div>
+
 						</div>
 					</div>
 					<?php

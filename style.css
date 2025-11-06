@@ -8732,26 +8732,25 @@ button + .button {
   margin-bottom: 0;
 }
 
-@media (min-width: 48.0625em) {
-  #error-404 input[type=search] {
-    width: 684px;
-    border: 1px solid #e8edee;
-  }
-  #error-404 input[type=search]:focus, #error-404 input[type=search]:active {
-    border: 3px solid #212b32;
-  }
-  #error-404 .nhsuk-header__search-submit {
-    background-color: #e8edee;
-  }
-  #error-404 .wp-block-nhsblocks-nhsbutton {
-    margin-top: -8px;
-  }
+#error-404 input[type=search] {
+  width: 95%;
+  border: 1px solid #e8edee;
 }
-@media (max-width: 48.0624em) {
-  #error-404-search {
-    display: none;
-  }
+#error-404 input[type=search]:focus, #error-404 input[type=search]:active {
+  border: 3px solid #212b32;
 }
+#error-404 .nhsuk-search__submit {
+  position: absolute;
+  display: inline-block;
+}
+#error-404 .wp-block-nhsblocks-nhsbutton {
+  margin-top: 16px;
+}
+#error-404 .nhsuk-do-dont-list svg.nhsuk-icon {
+  width: 27px;
+  height: 27px;
+}
+
 #secondary section {
   border-top: 2px solid #005eb8;
   margin-bottom: 32px;
