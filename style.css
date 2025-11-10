@@ -8732,21 +8732,21 @@ button + .button {
   margin-bottom: 0;
 }
 
-#error-404 input[type=search] {
+#error-404 input[type=search], #error-no-results input[type=search] {
   width: 95%;
   border: 1px solid #e8edee;
 }
-#error-404 input[type=search]:focus, #error-404 input[type=search]:active {
+#error-404 input[type=search]:focus, #error-404 input[type=search]:active, #error-no-results input[type=search]:focus, #error-no-results input[type=search]:active {
   border: 3px solid #212b32;
 }
-#error-404 .nhsuk-search__submit {
+#error-404 .nhsuk-search__submit, #error-no-results .nhsuk-search__submit {
   position: absolute;
   display: inline-block;
 }
-#error-404 .wp-block-nhsblocks-nhsbutton {
+#error-404 .wp-block-nhsblocks-nhsbutton, #error-no-results .wp-block-nhsblocks-nhsbutton {
   margin-top: 16px;
 }
-#error-404 .nhsuk-do-dont-list svg.nhsuk-icon {
+#error-404 .nhsuk-do-dont-list svg.nhsuk-icon, #error-no-results .nhsuk-do-dont-list svg.nhsuk-icon {
   width: 27px;
   height: 27px;
 }

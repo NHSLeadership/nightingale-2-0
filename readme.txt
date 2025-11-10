@@ -44,7 +44,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 == Changelog
 
 =2.7.7=
-* Search box style improvement in 404 page
+* Enhances the search box styling on the 404 page and on search results pages with no results
 
 =2.7.6=
 * Security update
