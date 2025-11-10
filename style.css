@@ -2,13 +2,13 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.6
+Version: 2.7.7
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 8.0
 Description: Theme for NHS organisations based on the NHS Digital frontend framework. Highly customisable for all types of NHS organisations, from campaign sites to primary care providers to arms length bodies to community practices. This can also be used for non NHS organisations.
 Tags: education, right-sidebar, custom-menu, footer-widgets, threaded-comments, theme-options
-Author: Tony Blacker, NHS Leadership Academy
+Author: Mahesh Murali P and Tony Blacker, NHS Leadership Academy
 Author URI: https://www.leadershipacademy.nhs.uk
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
 License: GNU General Public License v3 or later
@@ -8730,6 +8730,25 @@ button + .button {
 }
 .nhsuk-cat-filter .nhsuk-button, .nhsuk-cat-filter #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons .nhsuk-cat-filter .cn-button.bootstrap, .nhsuk-cat-filter .learndash-wrapper .ld-icon.ld-primary-background, .learndash-wrapper .nhsuk-cat-filter .ld-icon.ld-primary-background, .nhsuk-cat-filter .learndash-wrapper .ld-expand-button, .learndash-wrapper .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .learndash-wrapper .learndash-wrap .ld-expand-button, .learndash-wrapper .learndash-wrap .nhsuk-cat-filter .ld-expand-button, .nhsuk-cat-filter .tippy-popper .tippy-content .gv-approval-toggle, .tippy-popper .tippy-content .nhsuk-cat-filter .gv-approval-toggle {
   margin-bottom: 0;
+}
+
+#error-404 input[type=search], #error-no-results input[type=search] {
+  width: 95%;
+  border: 1px solid #e8edee;
+}
+#error-404 input[type=search]:focus, #error-404 input[type=search]:active, #error-no-results input[type=search]:focus, #error-no-results input[type=search]:active {
+  border: 3px solid #212b32;
+}
+#error-404 .nhsuk-search__submit, #error-no-results .nhsuk-search__submit {
+  position: absolute;
+  display: inline-block;
+}
+#error-404 .wp-block-nhsblocks-nhsbutton, #error-no-results .wp-block-nhsblocks-nhsbutton {
+  margin-top: 16px;
+}
+#error-404 .nhsuk-do-dont-list svg.nhsuk-icon, #error-no-results .nhsuk-do-dont-list svg.nhsuk-icon {
+  width: 27px;
+  height: 27px;
 }
 
 #secondary section {
