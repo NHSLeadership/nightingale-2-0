@@ -18,7 +18,7 @@
 
 	<div class="page-content">
 		<div class="wp-block-nhsblocks-panel1 nhsuk-do-dont-list is-style-panel-with-label">
-			<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Oops', 'nightingale' ); ?></h3>
+			<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Something\'s not right', 'nightingale' ); ?></h3>
 			<div class="paneltext">
 				
 			<?php
@@ -40,7 +40,7 @@
 				elseif ( is_search() ) :
 					?>
 
-					<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'nightingale' ); ?></p>
+					<p><?php esc_html_e( 'Sorry, we couldn\'t find anything. Try changing your search terms.', 'nightingale' ); ?></p>
 					<?php
 					get_search_form();
 
