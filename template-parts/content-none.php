@@ -18,7 +18,7 @@
 
 	<div class="page-content">
 		<div class="wp-block-nhsblocks-panel1 nhsuk-do-dont-list is-style-panel-with-label">
-			<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Something\'s not right', 'nightingale' ); ?></h3>
+			<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Change your search terms', 'nightingale' ); ?></h3>
 			<div class="paneltext">
 				
 			<?php
