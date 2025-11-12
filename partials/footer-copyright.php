@@ -26,7 +26,7 @@ $custom_copyright_text      = get_theme_mod( 'copyright_text', '' );
 		} else {
 			bloginfo( 'name' );
 		}
-		echo esc_html( date_i18n( __( 'Y', 'nightingale' ) ) );
+		echo esc_html( date_i18n( __( ' Y', 'nightingale' ) ) );
 	}
 	?>
 </p>
