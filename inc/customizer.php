@@ -3,8 +3,8 @@
  * Nightingale Theme Customizer
  *
  * @package   Nightingale
- * @copyright NHS Leadership Academy, Tony Blacker
- * @version   1.1 21st August 2019
+ * @copyright NHS Leadership Academy, Mahesh Murali P and Tony Blacker
+ * @version   1.2 12th November 2025
  */
 
 /**
@@ -31,6 +31,14 @@ function nightingale_customize_register( $wp_customize ) {
 				'render_callback' => 'nightingale_customize_partial_blogdescription',
 			)
 		);
+		$wp_customize->selective_refresh->add_partial(
+			'copyright_text',
+			array(
+				'selector'        => '.nhsuk-footer__copyright',
+				'render_callback' => 'nightingale_customize_partial_copyright_text',
+			)
+		);
+
 	}
 
 	/*
@@ -139,6 +147,26 @@ function nightingale_customize_register( $wp_customize ) {
 			'active_callback' => function () use ( $wp_customize ) {
 				return 'yes' === $wp_customize->get_setting( 'org_name_checkbox' )->value();
 			},
+		)
+	);
+
+	// Copyright text under Site Identity.
+	$wp_customize->add_setting(
+		'copyright_text',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'nightingale_sanitize_nohtml',
+		)
+	);
+
+	$wp_customize->add_control(
+		'copyright_text',
+		array(
+			'label'       => esc_html__( 'Copyright text', 'nightingale' ),
+			'description' => esc_html__( 'Text to display after the © symbol in the footer (e.g. "Organisation name. All rights reserved."). Leave empty to fall back to the site title or organisation name.', 'nightingale' ),
+			'section'     => 'title_tagline',
+			'type'        => 'textarea',
 		)
 	);
 
@@ -539,6 +567,16 @@ function nightingale_customize_partial_blogname() {
 function nightingale_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
+
+/**
+ * Render the copyright text for the selective refresh partial.
+ *
+ * @return void
+ */
+function nightingale_customize_partial_copyright_text() {
+	echo wp_kses_post( get_theme_mod( 'copyright_text', '' ) );
+}
+
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
