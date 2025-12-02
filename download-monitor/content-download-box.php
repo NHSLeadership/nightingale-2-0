@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php
 		if ( $dlm_download->get_version()->has_version_number() ) {
 			// translators: State Version variant.
-			printf( esc_html_e( 'Version %s', 'nightingale' ), esc_html( $dlm_download->get_version()->get_version_number() ) );
+			printf( esc_html__( 'Version %s', 'nightingale' ), esc_html( $dlm_download->get_version()->get_version_number() ) );
 		}
 		?>
 		" href="
