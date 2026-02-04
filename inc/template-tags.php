@@ -195,7 +195,7 @@ function nightingale_comment_display( $comment, $args, $depth ) {
 	</div>
 	<?php
 	if ( '0' === $comment->comment_approved ) {
-		echo '<em class="comment-awaiting-moderation">' . esc_html( _e( 'Your comment is awaiting moderation.', 'nightingale' ) ) . '</em><br/>';
+		echo '<em class="comment-awaiting-moderation">' . esc_html__( 'Your comment is awaiting moderation.', 'nightingale' ) . '</em><br/>';
 	}
 
 	echo '<div class="reply">';
