@@ -26,10 +26,11 @@ function nightingale_archive_pagination() {
 
 	$paginate = paginate_links(
 		array(
-			'mid_size'  => 2,
-			'prev_text' => $args['prev_text'],
-			'next_text' => $args['next_text'],
-			'type'      => 'array',
+			'mid_size'           => 2,
+			'prev_text'          => $args['prev_text'],
+			'next_text'          => $args['next_text'],
+			'type'               => 'array',
+			'before_page_number' => '<span class="nhsuk-u-visually-hidden">Page </span>',
 		)
 	);
 
@@ -194,4 +195,3 @@ function nightingale_split_post_pagination( $output ) {
 	$output = str_replace( '"post-page-numbers"', '"post-page-numbers nhsuk-tag nhsuk-tag--grey"', $output );
 	return $output;
 }
-
