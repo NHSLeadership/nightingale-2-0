@@ -44,7 +44,8 @@ one level only. To show further levels, we recommend using the right (or left) h
 == Changelog
 
 =2.7.10=
-* Fix duplicate IDs in search form when used in header and 404 templates (accessibility).
+* Fix duplicate IDs in search form when used in header and 404 templates (accessibility)
+* Fix keyboard focus order in pagination to follow logical reading order (accessibility)
 * Security update
 
 =2.7.9=
