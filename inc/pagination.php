@@ -26,10 +26,11 @@ function nightingale_archive_pagination() {
 
 	$paginate = paginate_links(
 		array(
-			'mid_size'  => 2,
-			'prev_text' => $args['prev_text'],
-			'next_text' => $args['next_text'],
-			'type'      => 'array',
+			'mid_size'           => 2,
+			'prev_text'          => $args['prev_text'],
+			'next_text'          => $args['next_text'],
+			'type'               => 'array',
+			'before_page_number' => '<span class="nhsuk-u-visually-hidden">Page </span>',
 		)
 	);
 
@@ -42,26 +43,33 @@ function nightingale_archive_pagination() {
 		$first_item = array_slice( $paginate, 0, 1 )[0];
 		$last_item  = array_slice( $paginate, $count, 1 )[0];
 
-		if ( false !== strpos( $last_item, 'class="next page-numbers"' ) ) {
+		$prev_markup = '';
+		$next_markup = '';
 
-			$pagination .= "<li class='nhsuk-pagination-item--next'>{$last_item}</li>";
+		// Capture next, to output later.
+		if ( false !== strpos( $last_item, 'class="next page-numbers"' ) ) {
+			$next_markup = "<li class='nhsuk-pagination-item--next'>{$last_item}</li>";
 			array_pop( $paginate );
 		}
 
+		// Capture prev, to output later.
 		if ( false !== strpos( $first_item, 'class="prev page-numbers"' ) ) {
-
-			$pagination .= "<li class='nhsuk-pagination-item--previous'>{$first_item}</li>";
+			$prev_markup = "<li class='nhsuk-pagination-item--previous'>{$first_item}</li>";
 			array_shift( $paginate );
-
 		}
 
-		$pagination .= "<li class='nhsuk-pagination-numbers'>";
+		// Output in correct focus order: Previous -> Numbers -> Next.
+		$pagination .= $prev_markup;
 
+		$pagination .= "<li class='nhsuk-pagination-numbers'>";
 		foreach ( $paginate as $element ) {
 			$pagination .= $element;
 		}
+		$pagination .= '</li>';
 
-		$pagination .= '</li></ul></nav></div>';
+		$pagination .= $next_markup;
+
+		$pagination .= '</ul></nav></div>';
 
 		echo $pagination; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
@@ -187,4 +195,3 @@ function nightingale_split_post_pagination( $output ) {
 	$output = str_replace( '"post-page-numbers"', '"post-page-numbers nhsuk-tag nhsuk-tag--grey"', $output );
 	return $output;
 }
-
