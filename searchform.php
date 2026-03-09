@@ -15,7 +15,6 @@ if ( ! empty( get_search_query() ) ) {
 
 if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
 	$GLOBALS['nightingale_search_form_counter'] = 1;
-	$searchid                                   = '';
 	$wrap_search                                = 'wrap-search';
 	$search_form                                = 'search';
 	$search_field                               = 'search-field';
