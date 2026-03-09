@@ -15,20 +15,14 @@ if ( ! empty( get_search_query() ) ) {
 
 if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
 	$GLOBALS['nightingale_search_form_counter'] = 1;
-	$searchid                                   = '';
-	$toggle_search                              = 'id=toggle-search';
-	$wrap_search                                = 'id=wrap-search';
-	$search_form                                = 'id=search';
+	$wrap_search                                = 'wrap-search';
+	$search_form                                = 'search';
 	$search_field                               = 'search-field';
-	$close_search                               = 'id=close-search';
 } else {
-	$GLOBALS['nightingale_search_form_counter'] ++;
+	++$GLOBALS['nightingale_search_form_counter'];
 	$searchid      = $GLOBALS['nightingale_search_form_counter'];
-	$toggle_search = '';
-	$wrap_search   = 'id="wrap-search-' . $searchid . '"';
-	$autocomplete  = '';
-	$close_search  = '';
-	$search_form   = 'id="search-' . $searchid . '"';
+	$wrap_search   = 'wrap-search-' . $searchid;
+	$search_form   = 'search-' . $searchid;
 	$search_field  = 'search-field' . $searchid;
 }
 
@@ -41,8 +35,8 @@ if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
  * https://github.com/nhsuk/nhsuk-frontend/issues/568
  */
 ?>
-<div class="nhsuk-header__search-wrap" <?php echo esc_attr( $wrap_search ); ?>>
-	<form class="nhsuk-header__search-form" <?php echo esc_attr( $search_form ); ?> action="/" method="get" role="search">
+<div class="nhsuk-header__search-wrap" id="<?php echo esc_attr( $wrap_search ); ?>">
+	<form class="nhsuk-header__search-form" id="<?php echo esc_attr( $search_form ); ?>" action="/" method="get" role="search">
 	<label class="nhsuk-u-visually-hidden" for="<?php echo esc_attr( $search_field ); ?>"><?php esc_html_e( 'Search this website', 'nightingale' ); ?></label>
 		<input class="nhsuk-search__input" id="<?php echo esc_attr( $search_field ); ?>" name="s" type="search" placeholder="<?php echo esc_attr__( 'Search', 'nightingale' ); ?>" autocomplete="off">
 		<button class="nhsuk-search__submit" type="submit">
