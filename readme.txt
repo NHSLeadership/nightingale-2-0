@@ -6,7 +6,7 @@ Requires PHP: 8.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.9
+Version: 2.7.10
 Stable tag: 2.7
 
 
@@ -42,6 +42,12 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=2.7.10=
+* Fix duplicate IDs in search form when used in header and 404 templates (accessibility)
+* Improve pagination accessibility by fixing keyboard focus order and adding screen‑reader context to page numbers. (accessibility)
+* Fix for function in template tag
+* Security update
 
 =2.7.9=
 * Fix translation call in Download Monitor template

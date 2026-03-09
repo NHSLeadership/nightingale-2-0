@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.9
+Version: 2.7.10
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 8.0
@@ -3722,7 +3722,7 @@ b {
   background-color: #007f3b;
   border: 2px solid transparent;
   border-radius: 4px;
-  box-shadow: 0 4px 0 #00401e;
+  box-shadow: 0 4px 0 rgb(0, 63.5, 29.5);
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -3770,7 +3770,7 @@ b {
   padding: 0;
 }
 .nhsuk-button:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, .learndash-wrapper .ld-icon.ld-primary-background:hover, .learndash-wrapper .ld-expand-button:hover, .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .tippy-popper .tippy-content .gv-approval-toggle:hover {
-  background-color: #00662f;
+  background-color: rgb(0, 101.6, 47.2);
 }
 .nhsuk-button:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus, .learndash-wrapper .ld-icon.ld-primary-background:focus, .learndash-wrapper .ld-expand-button:focus, .learndash-wrapper .learndash-wrap .ld-expand-button:focus, .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
@@ -3785,7 +3785,7 @@ b {
   color: #ffffff;
 }
 .nhsuk-button:active, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, .learndash-wrapper .ld-icon.ld-primary-background:active, .learndash-wrapper .ld-expand-button:active, .learndash-wrapper .learndash-wrap .ld-expand-button:active, .tippy-popper .tippy-content .gv-approval-toggle:active {
-  background: #00401e;
+  background: rgb(0, 63.5, 29.5);
   box-shadow: none;
   color: #ffffff;
   top: 4px;
@@ -3812,7 +3812,7 @@ b {
   box-shadow: 0 4px 0 #263139;
 }
 .nhsuk-button--secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:hover, .nhsuk-button.is-style-secondary:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:hover, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-secondary.ld-expand-button:hover {
-  background-color: #384853;
+  background-color: rgb(55.6, 71.6947368421, 83.4);
 }
 .nhsuk-button--secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap.cn-more-info:focus, .nhsuk-button.is-style-secondary:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-secondary.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-secondary.gv-approval-toggle:focus, .learndash-wrapper .is-style-secondary.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-secondary.ld-expand-button:focus {
   background: #ffeb3b;
@@ -3836,7 +3836,7 @@ b {
   color: #212b32;
 }
 .nhsuk-button--reverse:hover, .nhsuk-button.is-style-reverse:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:hover, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:hover, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:hover, .learndash-wrapper .is-style-reverse.ld-expand-button:hover {
-  background-color: #f2f2f2;
+  background-color: rgb(242.25, 242.25, 242.25);
   color: #212b32;
 }
 .nhsuk-button--reverse:focus, .nhsuk-button.is-style-reverse:focus, #cookie-notice .cookie-notice-container #cn-notice-buttons .is-style-reverse.cn-button.bootstrap:focus, .tippy-popper .tippy-content .is-style-reverse.gv-approval-toggle:focus, .learndash-wrapper .is-style-reverse.ld-icon.ld-primary-background:focus, .learndash-wrapper .is-style-reverse.ld-expand-button:focus {
@@ -3866,10 +3866,10 @@ b {
 
 .nhsuk-button--warning {
   background-color: #d5281b;
-  box-shadow: 0 4px 0 #6b140e;
+  box-shadow: 0 4px 0 rgb(106.5, 20, 13.5);
 }
 .nhsuk-button--warning:hover {
-  background-color: #a82015;
+  background-color: rgb(167.7375, 31.5, 21.2625);
 }
 .nhsuk-button--warning:focus {
   background: #ffeb3b;
@@ -3878,7 +3878,7 @@ b {
   outline: 4px solid transparent;
 }
 .nhsuk-button--warning:active {
-  background: #6b140e;
+  background: rgb(106.5, 20, 13.5);
   box-shadow: none;
   color: #ffffff;
   top: 4px;
@@ -3947,7 +3947,7 @@ b {
 .learndash-wrapper [disabled].ld-icon.ld-primary-background:active,
 .learndash-wrapper [disabled].ld-expand-button:active,
 .tippy-popper .tippy-content [disabled].gv-approval-toggle:active {
-  box-shadow: 0 4px 0 #00401e;
+  box-shadow: 0 4px 0 rgb(0, 63.5, 29.5);
   top: 0;
 }
 
@@ -5350,7 +5350,7 @@ b {
   display: block;
 }
 .nhsuk-header__link:hover .nhsuk-logo {
-  box-shadow: 0 0 0 4px #003d78;
+  box-shadow: 0 0 0 4px rgb(0, 61.1, 119.6);
 }
 .nhsuk-header__link:focus {
   box-shadow: none;
@@ -5531,7 +5531,7 @@ b {
     width: 27px;
   }
   .nhsuk-search__submit:hover {
-    background-color: #003d78;
+    background-color: rgb(0, 61.1, 119.6);
     border: 1px solid #ffffff;
   }
   .nhsuk-search__submit:hover .nhsuk-icon {
@@ -5566,7 +5566,7 @@ b {
     width: 27px;
   }
   .nhsuk-search__submit:hover {
-    background-color: #003d78;
+    background-color: rgb(0, 61.1, 119.6);
     border: 1px solid #ffffff;
   }
   .nhsuk-search__submit:hover .nhsuk-icon__search {
@@ -6134,8 +6134,8 @@ b {
   fill: #ffffff;
 }
 .nhsuk-header--white .nhsuk-search__submit:hover {
-  background-color: #004b93;
-  border-color: #004b93;
+  background-color: rgb(0, 75.2, 147.2);
+  border-color: rgb(0, 75.2, 147.2);
 }
 .nhsuk-header--white .nhsuk-search__submit:focus {
   background-color: #ffeb3b;
@@ -7931,8 +7931,8 @@ textarea[type=number] {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1;
-  background-color: #0055a6;
-  border: 1px solid #0055a6;
+  background-color: rgb(0, 84.6, 165.6);
+  border: 1px solid rgb(0, 84.6, 165.6);
   color: #ffffff;
   display: inline-block;
   outline: 2px solid transparent;
@@ -7966,57 +7966,57 @@ textarea[type=number] {
 }
 
 .nhsuk-tag--grey, .nhsuk-tag.is-style-grey, .learndash-wrapper .is-style-grey.ld-status, .learndash-wrapper .learndash-wrap .is-style-grey.ld-status {
-  background-color: #dbe0e3;
-  border-color: #354550;
-  color: #354550;
+  background-color: rgb(219.2, 223.6, 226.8);
+  border-color: rgb(53.2, 68.6, 79.8);
+  color: rgb(53.2, 68.6, 79.8);
 }
 
 .nhsuk-tag--green, .nhsuk-tag.is-style-green, .learndash-wrapper .is-style-green.ld-status, .learndash-wrapper .learndash-wrap .is-style-green.ld-status {
-  background-color: #cce5d8;
-  border-color: #004c23;
-  color: #004c23;
+  background-color: rgb(204, 229.4, 215.8);
+  border-color: rgb(0, 76.2, 35.4);
+  color: rgb(0, 76.2, 35.4);
 }
 
 .nhsuk-tag--aqua-green, .nhsuk-tag.is-style-aqua-green, .learndash-wrapper .is-style-aqua-green.ld-status, .learndash-wrapper .learndash-wrap .is-style-aqua-green.ld-status {
-  background-color: #ccedeb;
-  border-color: #00524d;
-  color: #00524d;
+  background-color: rgb(204, 236.8, 234.6);
+  border-color: rgb(0, 82, 76.5);
+  color: rgb(0, 82, 76.5);
 }
 
 .nhsuk-tag--blue {
-  background-color: #ccdff1;
-  border-color: #004281;
-  color: #004281;
+  background-color: rgb(204, 222.8, 240.8);
+  border-color: rgb(0, 65.8, 128.8);
+  color: rgb(0, 65.8, 128.8);
 }
 
 .nhsuk-tag--purple, .nhsuk-tag.is-style-purple, .learndash-wrapper .is-style-purple.ld-status, .learndash-wrapper .learndash-wrap .is-style-purple.ld-status {
-  background-color: #d6cce3;
-  border-color: #240050;
-  color: #240050;
+  background-color: rgb(214.2, 204, 226.8);
+  border-color: rgb(35.7, 0, 79.8);
+  color: rgb(35.7, 0, 79.8);
 }
 
 .nhsuk-tag--pink, .nhsuk-tag.is-style-pink, .learndash-wrapper .is-style-pink.ld-status, .learndash-wrapper .learndash-wrap .is-style-pink.ld-status {
-  background-color: #efd3e3;
-  border-color: #57133a;
-  color: #57133a;
+  background-color: rgb(238.8, 211.4, 227);
+  border-color: rgb(87, 18.5, 57.5);
+  color: rgb(87, 18.5, 57.5);
 }
 
 .nhsuk-tag--red, .nhsuk-tag.is-style-red, .learndash-wrapper .is-style-red.ld-status, .learndash-wrapper .learndash-wrap .is-style-red.ld-status {
-  background-color: #f7d4d1;
-  border-color: #6b140e;
-  color: #6b140e;
+  background-color: rgb(246.6, 212, 209.4);
+  border-color: rgb(106.5, 20, 13.5);
+  color: rgb(106.5, 20, 13.5);
 }
 
 .nhsuk-tag--orange, .nhsuk-tag.is-style-orange, .learndash-wrapper .is-style-orange.ld-status, .learndash-wrapper .learndash-wrap .is-style-orange.ld-status {
-  background-color: #ffdc8e;
-  border-color: #4d3708;
-  color: #4d3708;
+  background-color: rgb(255, 219.5, 141.5);
+  border-color: rgb(76.5, 55.2, 8.4);
+  color: rgb(76.5, 55.2, 8.4);
 }
 
 .nhsuk-tag--yellow, .nhsuk-tag.is-style-yellow, .learndash-wrapper .is-style-yellow.ld-status, .learndash-wrapper .learndash-wrap .is-style-yellow.ld-status, .learndash-wrapper .ld-status.ld-status-waiting, .learndash-wrapper .learndash-wrap .ld-status.ld-status-waiting {
   background-color: #fff59d;
-  border-color: #4d4712;
-  color: #4d4712;
+  border-color: rgb(76.5, 70.5, 17.7);
+  color: rgb(76.5, 70.5, 17.7);
 }
 
 /* Remove tag border
@@ -10188,8 +10188,8 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
   /* [1] */
 }
 .nhsuk-global-alert a:focus {
-  background-color: #003d78;
-  box-shadow: 0 0 0 4px #003d78;
+  background-color: rgb(0, 61.1, 119.6);
+  box-shadow: 0 0 0 4px rgb(0, 61.1, 119.6);
   color: #ffffff;
   outline: 4px solid transparent;
   outline-offset: 4px;
@@ -10201,7 +10201,7 @@ html.js .tribe-events-page-template.wp-embed-responsive .wp-embed.nhsuk-care-car
 }
 .nhsuk-global-alert a:active {
   background-color: #002f5c;
-  box-shadow: 0 0 0 4px #003d78;
+  box-shadow: 0 0 0 4px rgb(0, 61.1, 119.6);
   color: #ffffff;
 }
 
