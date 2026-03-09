@@ -46,6 +46,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 =2.7.10=
 * Fix duplicate IDs in search form when used in header and 404 templates (accessibility)
 * Improve pagination accessibility by fixing keyboard focus order and adding screen‑reader context to page numbers. (accessibility)
+* Fix for function in template tag
 * Security update
 
 =2.7.9=
