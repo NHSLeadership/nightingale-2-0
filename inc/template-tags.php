@@ -61,15 +61,22 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 				if ( 1 === count( $categories ) ) {
 
 					$category = $categories[0];
-					$url      = get_category_link( $category );
+					$url      = get_category_link( $category->term_id );
 
 					if ( ! is_wp_error( $url ) ) {
 						printf(
-							'<p class="cat-links nhsuk-tag nhsuk-tag--grey">%s <a href="%s">%s</a></p>',
-							esc_html__( 'Posted in', 'nightingale' ),
-							esc_url( $url ),
-							esc_html( $category->name )
+							'<p class="cat-links nhsuk-tag nhsuk-tag--grey">%s</p>',
+							sprintf(
+								/* translators: %s: Category name wrapped in a link */
+								esc_html__( 'Posted in %s', 'nightingale' ),
+								sprintf(
+									'<a href="%s">%s</a>',
+									esc_url( $url ),
+									esc_html( $category->name )
+								)
+							)
 						);
+
 					}
 				} else {
 
@@ -77,7 +84,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 					$items = array();
 
 					foreach ( $categories as $category ) {
-						$url = get_category_link( $category );
+						$url = get_category_link( $category->term_id );
 						if ( ! is_wp_error( $url ) ) {
 							$items[] = sprintf(
 								'<li><a href="%s">%s</a></li>',
@@ -105,7 +112,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 				if ( 1 === count( $tags ) ) {
 
 					$tag = $tags[0];
-					$url = get_tag_link( $tag );
+					$url = get_tag_link( $tag->term_id );
 
 					if ( ! is_wp_error( $url ) ) {
 						printf(
@@ -120,7 +127,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 					$items = array();
 
 					foreach ( $tags as $tag ) {
-						$url = get_tag_link( $tag );
+						$url = get_tag_link( $tag->term_id );
 						if ( ! is_wp_error( $url ) ) {
 							$items[] = sprintf(
 								'<li><a href="%s" rel="tag">%s</a></li>',
