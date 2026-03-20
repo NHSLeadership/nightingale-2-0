@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.10
+Version: 2.7.11
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 8.0
@@ -9031,6 +9031,11 @@ button + .button {
   color: #005eb8;
 }
 
+.article-footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .article-footer .cat-links {
   float: right;
 }
@@ -9039,6 +9044,18 @@ button + .button {
   margin-right: 16px;
 }
 
+@media screen and (max-width: 40.0625em) {
+  .article-footer .edit-link {
+    clear: both;
+    margin-top: 8px;
+  }
+  .article-footer .cat-links,
+  .article-footer .tags-links {
+    margin-top: 8px;
+    width: 100%;
+    margin-right: 0;
+  }
+}
 li.nhsuk-pagination-item--previous {
   float: left;
 }

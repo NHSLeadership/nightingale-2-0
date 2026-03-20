@@ -188,6 +188,13 @@
 }
 
 .article-footer {
+
+  &::after {
+	content: "";
+	display: block;
+	clear: both;
+ }
+
   .cat-links {
 	float : right;
   }
@@ -199,7 +206,21 @@
   }
 
 }
+// Example: mobile breakpoint at 40rem (~640px). Adjust to your scale.
+@media screen and (max-width : 40.0625em) {
+  .article-footer .edit-link {
+	clear : both;
+  	margin-top : nhsuk-spacing(2);
+  }
+  
+  .article-footer .cat-links,
+  .article-footer .tags-links {
+    margin-top : nhsuk-spacing(2);
+    width: 100%;
+    margin-right: 0;
+  }
 
+}
 
 li.nhsuk-pagination-item--previous {
   float : left;

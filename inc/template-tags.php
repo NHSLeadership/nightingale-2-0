@@ -53,18 +53,91 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 	function nightingale_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'nightingale' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<p class="cat-links nhsuk-tag nhsuk-tag--grey">' . esc_html__( 'Posted in %1$s', 'nightingale' ) . '</p>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			// Categories (semantic list).
+			$categories = get_the_category();
+			if ( ! empty( $categories ) && ! is_wp_error( $categories ) ) {
+
+				// 1 category: keep existing "single line" markup (no UL/LI)
+				if ( 1 === count( $categories ) ) {
+
+					$category = $categories[0];
+					$url      = get_category_link( $category );
+
+					if ( ! is_wp_error( $url ) ) {
+						printf(
+							'<p class="cat-links nhsuk-tag nhsuk-tag--grey">%s <a href="%s">%s</a></p>',
+							esc_html__( 'Posted in', 'nightingale' ),
+							esc_url( $url ),
+							esc_html( $category->name )
+						);
+					}
+				} else {
+
+					// 2+ categories: semantic list, ONLY the label styled.
+					$items = array();
+
+					foreach ( $categories as $category ) {
+						$url = get_category_link( $category );
+						if ( ! is_wp_error( $url ) ) {
+							$items[] = sprintf(
+								'<li><a href="%s">%s</a></li>',
+								esc_url( $url ),
+								esc_html( $category->name )
+							);
+						}
+					}
+
+					if ( $items ) {
+						printf(
+							'<div class="cat-links nhsuk-tag nhsuk-tag--grey"><p class="nhsuk-u-margin-bottom-0">%s</p> <ul class="nhsuk-list nhsuk-list--inline nhsuk-u-margin-bottom-1">%s</ul></div>',
+							esc_html__( 'Posted in', 'nightingale' ),
+							wp_kses_post( implode( '', $items ) )
+						);
+					}
+				}
 			}
 
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'nightingale' ) );
-			if ( $tags_list ) {
-				/* translators: 1: list of tags. */
-				printf( '<p class="tags-links nhsuk-tag nhsuk-tag--grey">' . esc_html__( 'Tagged %1$s', 'nightingale' ) . '</p>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			// Tags (semantic list, keep existing wrapper classes).
+			$tags = get_the_tags();
+			if ( ! empty( $tags ) && ! is_wp_error( $tags ) ) {
+
+				// 1 tag: keep existing "single line" markup (no UL/LI)
+				if ( 1 === count( $tags ) ) {
+
+					$tag = $tags[0];
+					$url = get_tag_link( $tag );
+
+					if ( ! is_wp_error( $url ) ) {
+						printf(
+							'<p class="tags-links nhsuk-tag nhsuk-tag--grey">%s <a href="%s" rel="tag">%s</a></p>',
+							esc_html__( 'Tagged', 'nightingale' ),
+							esc_url( $url ),
+							esc_html( $tag->name )
+						);
+					}
+				} else {
+					// 2+ tags: semantic list, with ONLY the label styled
+					$items = array();
+
+					foreach ( $tags as $tag ) {
+						$url = get_tag_link( $tag );
+						if ( ! is_wp_error( $url ) ) {
+							$items[] = sprintf(
+								'<li><a href="%s" rel="tag">%s</a></li>',
+								esc_url( $url ),
+								esc_html( $tag->name )
+							);
+						}
+					}
+
+					if ( $items ) {
+						printf(
+							'<div class="tags-links nhsuk-tag nhsuk-tag--grey"><p class="nhsuk-u-margin-bottom-0">%s</p> <ul class="nhsuk-list nhsuk-list--inline nhsuk-u-margin-bottom-1">%s</ul></div>',
+							esc_html__( 'Tagged', 'nightingale' ),
+							wp_kses_post( implode( '', $items ) )
+						);
+					}
+				}
 			}
 		}
 
