@@ -66,13 +66,15 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 					if ( ! is_wp_error( $url ) ) {
 						printf(
 							'<p class="cat-links nhsuk-tag nhsuk-tag--grey">%s</p>',
-							sprintf(
-								/* translators: %s: Category name wrapped in a link */
-								esc_html__( 'Posted in %s', 'nightingale' ),
+							wp_kses_post(
 								sprintf(
-									'<a href="%s">%s</a>',
-									esc_url( $url ),
-									esc_html( $category->name )
+									/* translators: %s: Category name wrapped in a link */
+									__( 'Posted in %s', 'nightingale' ),
+									sprintf(
+										'<a href="%s" rel="category tag">%s</a>',
+										esc_url( $url ),
+										esc_html( $category->name )
+									)
 								)
 							)
 						);
@@ -80,7 +82,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 					}
 				} else {
 
-					// 2+ categories: semantic list, ONLY the label styled.
+					// 2+ categories: semantic list
 					$items = array();
 
 					foreach ( $categories as $category ) {
@@ -123,7 +125,7 @@ if ( ! function_exists( 'nightingale_entry_footer' ) ) :
 						);
 					}
 				} else {
-					// 2+ tags: semantic list, with ONLY the label styled
+					// 2+ tags: semantic list
 					$items = array();
 
 					foreach ( $tags as $tag ) {
