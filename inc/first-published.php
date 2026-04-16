@@ -4,7 +4,7 @@
  *
  * @package   Nightingale-2-0
  * @copyright NHS Leadership Academy, Mahesh Murali P
- * @version   April 2024
+ * @version   2.7.12
  */
 
 /**
@@ -46,32 +46,44 @@ function nightingale_render_firstpublished( $post ) {
  * @param int $post_id The post ID.
  */
 function nightingale_save_firstpublished( $post_id ) {
-	global $pagenow;
-
-	if ( 'post.php' !== $pagenow && 'post-new.php' !== $pagenow ) {
+	// Only run on page edits in the admin.
+	if ( ! is_admin() ) {
 		return;
 	}
 
-	$is_autosave = wp_is_post_autosave( $post_id );
-	$is_revision = wp_is_post_revision( $post_id );
-
-	$nonce = '';
-	if ( isset( $_POST['nightingale-first-published-nonce'] ) ) {
-		$nonce = sanitize_text_field( wp_unslash( $_POST['nightingale-first-published-nonce'] ) );
-	}
-
-	$is_valid_nonce = ( ! empty( $nonce ) && wp_verify_nonce( $nonce, basename( __FILE__ ) ) );
-
-	if ( $is_autosave || $is_revision || ! $is_valid_nonce ) {
+	// Optional but recommended: ensure we're saving the right post type.
+	if ( 'page' !== get_post_type( $post_id ) ) {
 		return;
 	}
 
+	// Bail on autosave / revisions.
+	if ( wp_is_post_autosave( $post_id ) || wp_is_post_revision( $post_id ) ) {
+		return;
+	}
+
+	// Verify nonce.
+	if ( ! isset( $_POST['nightingale-first-published-nonce'] ) ) {
+		return;
+	}
+
+	$nonce = sanitize_text_field( wp_unslash( $_POST['nightingale-first-published-nonce'] ) );
+	if ( ! wp_verify_nonce( $nonce, basename( __FILE__ ) ) ) {
+		return;
+	}
+
+	// ✅ Capability check (addresses the code review comment).
+	if ( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+
+	// Save the setting.
 	if ( isset( $_POST['firstPublished'] ) ) {
 		$first_published = sanitize_text_field( wp_unslash( $_POST['firstPublished'] ) );
 		update_post_meta( $post_id, 'first-published', $first_published );
 	}
 }
 add_action( 'save_post', 'nightingale_save_firstpublished' );
+
 
 add_action( 'page_after_content', 'nightingale_page_first_published', 10 );
 /**
