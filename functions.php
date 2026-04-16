@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Mahesh Murali P and Tony Blacker
- * @version   2.7.11
+ * @version   2.7.12
  */
 
 /**
@@ -362,6 +362,11 @@ require get_template_directory() . '/inc/color-picker.php';
  * Last Reviewed.
  */
 require get_template_directory() . '/inc/last-reviewed.php';
+
+/**
+ * First Published.
+ */
+require get_template_directory() . '/inc/first-published.php';
 
 /**
  * Tabbed Page layout.
