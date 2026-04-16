@@ -71,7 +71,7 @@ function nightingale_save_firstpublished( $post_id ) {
 		return;
 	}
 
-	// ✅ Capability check (addresses the code review comment).
+	// Capability check (addresses the code review comment).
 	if ( ! current_user_can( 'edit_post', $post_id ) ) {
 		return;
 	}
