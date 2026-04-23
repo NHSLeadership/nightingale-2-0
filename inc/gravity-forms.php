@@ -50,10 +50,10 @@ add_filter(
 		// Style the submit button.
 		$form_string = str_replace( 'gform_button', 'nhsuk-button', $form_string );
 		// Style the next button.
-		$form_string = str_replace( 'gform_next_button gform-theme-button button', 'nhsuk-button', $form_string ); // For Gravity Forms version 2.7+.
+		$form_string = str_replace( 'gform_next_button gform-theme-button button', 'gform_next_button nhsuk-button', $form_string ); // For Gravity Forms version 2.7+.
 		$form_string = str_replace( 'gform_next_button button', 'nhsuk-button', $form_string ); // Prior to gforms 2.7.
 		// Style the previous button.
-		$form_string = str_replace( 'gform_previous_button gform-theme-button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
+		$form_string = str_replace( 'gform_previous_button gform-theme-button', 'gform_previous_button nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
 		$form_string = str_replace( 'gform_previous_button button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // Prior to gforms 2.7.
 		// Style last page button.
 		$form_string = str_replace( 'button gform_button gform_last_page_button', 'nhsuk-button nhsuk-button--reverse', $form_string ); // For Gravity Forms version 2.7+.
@@ -133,7 +133,6 @@ function add_nhsuk_class( $form_string, $additional = '' ) {
 		$form_string = add_nhsuk_class_with_dom( $form_string, $additional = '' );
 		return $form_string;
 	}
-
 }
 
 /**
@@ -710,7 +709,7 @@ add_action( 'wp_enqueue_scripts', 'nightingale_gravity_scripts' );
 
 /**
  * This function adds the passed classs name to the select box.
- * 
+ *
  * @param mixed $html HTML content.
  * @param mixed $class_name class name to add.
  * @return array|string|null
@@ -736,5 +735,3 @@ function add_class_to_select( $html, $class_name ) {
 
 	return $updated_html;
 }
-
-
