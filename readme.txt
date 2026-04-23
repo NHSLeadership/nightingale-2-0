@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.7.12=
 * Add optional First published date to page metadata display, shown alongside Page last reviewed.
+* Gravity form button improvements.
 
 =2.7.11=
 * Accessibility improvements to category and tag links
