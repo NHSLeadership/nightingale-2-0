@@ -708,7 +708,7 @@ function nightingale_gravity_scripts() {
 add_action( 'wp_enqueue_scripts', 'nightingale_gravity_scripts' );
 
 /**
- * This function adds the passed classs name to the select box.
+ * This function adds the passed class name to the select box.
  *
  * @param mixed $html HTML content.
  * @param mixed $class_name class name to add.
