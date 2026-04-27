@@ -26,7 +26,7 @@
 function nightingale_lastreviewed_metabox() {
 	add_meta_box(
 		'nightingale-last-reviewed-metabox',
-		__( 'Toggle Page Reviewd', 'nightingale' ),
+		__( 'Toggle Page Reviewed', 'nightingale' ),
 		'nightingale_render_lastreviewed',
 		'page',
 		'side',
@@ -110,7 +110,7 @@ function nightingale_save_lastreviewed( $post_id ) {
 
 add_action( 'save_post', 'nightingale_save_lastreviewed' );
 
-add_action( 'page_after_content', 'nightingale_page_last_reviewed' );
+add_action( 'page_after_content', 'nightingale_page_last_reviewed', 20 );
 
 /**
  * Displays the last reviewed date on the post.
