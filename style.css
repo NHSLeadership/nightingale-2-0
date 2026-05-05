@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.12
+Version: 2.7.13
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 8.0
@@ -10674,6 +10674,78 @@ figure.is-style-nhsuk-table-responsive figcaption {
 
 .nhsuk-table-responsive table, .is-style-nhsuk-table-responsive table, table {
   margin: 0;
+}
+
+/* =====================================================
+   NHS Tabs
+   ===================================================== */
+/* -----------------------------------------------------
+   Desktop behaviour
+   ----------------------------------------------------- */
+@media (min-width: 48.0625em) {
+  .nhsuk-tabs__list {
+    display: flex;
+    width: 100%;
+  }
+  /* =========================
+     Tabs – Blue style (DESKTOP)
+     ========================= */
+  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item {
+    background-color: #005eb8;
+  }
+  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__tab,
+  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+    color: #ffffff;
+  }
+  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item--selected {
+    background-color: #003087;
+  }
+  /* =========================
+     Tabs – Reverse style (DESKTOP)
+     ========================= */
+  .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item {
+    background-color: #212b32;
+  }
+  .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__tab {
+    color: #ffffff;
+  }
+  .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item--selected {
+    background-color: #ffffff;
+  }
+  .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+    color: #212b32;
+  }
+}
+/* -----------------------------------------------------
+   Mobile behaviour 
+   ----------------------------------------------------- */
+@media (max-width: 48.0625em) {
+  /* Adjust marker alignment on small screens */
+  .nhsuk-tabs__list-item::before {
+    margin-left: -14px;
+  }
+  /* Blue & Reverse styles fall back to Standard on mobile */
+  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item,
+  .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item {
+    background-color: transparent;
+  }
+}
+/* -----------------------------------------------------
+   Base styles (all screens)
+   ----------------------------------------------------- */
+.nhsuk-tabs {
+  max-width: 100%;
+}
+
+.nhsuk-tabs__list-item {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.nhsuk-tabs__tab {
+  white-space: normal;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
 /*
