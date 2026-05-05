@@ -10682,14 +10682,15 @@ figure.is-style-nhsuk-table-responsive figcaption {
 /* -----------------------------------------------------
    Desktop behaviour
    ----------------------------------------------------- */
-@media (min-width: 48.0625em) {
+/* -----------------------------------------------------
+   Desktop behaviour (matches NHS tabs JS)
+   ----------------------------------------------------- */
+@media (min-width: 40.0625em) {
   .nhsuk-tabs__list {
     display: flex;
     width: 100%;
   }
-  /* =========================
-     Tabs – Blue style (DESKTOP)
-     ========================= */
+  /* Tabs – Blue style (DESKTOP) */
   .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item {
     background-color: #005eb8;
   }
@@ -10700,9 +10701,7 @@ figure.is-style-nhsuk-table-responsive figcaption {
   .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item--selected {
     background-color: #003087;
   }
-  /* =========================
-     Tabs – Reverse style (DESKTOP)
-     ========================= */
+  /* Tabs – Reverse style (DESKTOP) */
   .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item {
     background-color: #212b32;
   }
@@ -10717,19 +10716,35 @@ figure.is-style-nhsuk-table-responsive figcaption {
   }
 }
 /* -----------------------------------------------------
-   Mobile behaviour 
+   Mobile behaviour
    ----------------------------------------------------- */
-@media (max-width: 48.0625em) {
+@media (max-width: 40.0625em) {
   /* Adjust marker alignment on small screens */
   .nhsuk-tabs__list-item::before {
     margin-left: -14px;
   }
-  /* Blue & Reverse styles fall back to Standard on mobile */
+  /* Blue & Reverse fall back to Standard on mobile */
   .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item,
   .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item {
     background-color: transparent;
   }
 }
+/* --------------------------------------------------
+   Restore accessible focus colours for Tabs variants
+   Do not override NHS focus text colour
+   -------------------------------------------------- */
+/* --------------------------------------------------
+   Restore accessible focus colours for Tabs variants
+   NHS focus overrides should win on keyboard focus
+   -------------------------------------------------- */
+.wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__tab:focus,
+.wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__tab:focus-visible,
+.wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__tab:focus,
+.wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__tab:focus-visible {
+  background-color: #ffeb3b; /* yellow */
+  color: #212b32; /* black */
+}
+
 /* -----------------------------------------------------
    Base styles (all screens)
    ----------------------------------------------------- */
