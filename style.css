@@ -10694,12 +10694,14 @@ figure.is-style-nhsuk-table-responsive figcaption {
   .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item {
     background-color: #005eb8;
   }
-  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__tab,
-  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__tab {
     color: #ffffff;
   }
+  .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+    color: #212b32;
+  }
   .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item--selected {
-    background-color: #003087;
+    background-color: #ffffff;
   }
   /* Tabs – Reverse style (DESKTOP) */
   .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item {
@@ -10713,6 +10715,9 @@ figure.is-style-nhsuk-table-responsive figcaption {
   }
   .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
     color: #212b32;
+  }
+  .js-enabled .nhsuk-tabs__list-item {
+    padding: 8px 14px;
   }
 }
 /* -----------------------------------------------------
@@ -10741,8 +10746,10 @@ figure.is-style-nhsuk-table-responsive figcaption {
 .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__tab:focus-visible,
 .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__tab:focus,
 .wp-block-nhsblocks-nhstabs[class*=is-style-reverse] .nhsuk-tabs__tab:focus-visible {
-  background-color: #ffeb3b; /* yellow */
-  color: #212b32; /* black */
+  background-color: #ffeb3b;
+  /* yellow */
+  color: #212b32;
+  /* black */
 }
 
 /* -----------------------------------------------------

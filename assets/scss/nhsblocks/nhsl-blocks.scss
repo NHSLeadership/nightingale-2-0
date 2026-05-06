@@ -276,37 +276,40 @@ $tag-variants: (
     background-color: $color_nhsuk-blue;
   }
 
-  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab,
-  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"]
-  .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab {
     color: $color_nhsuk-white;
   }
 
-  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"]
-  .nhsuk-tabs__list-item--selected {
-    background-color: $color_nhsuk-dark-blue;
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+    color: $color_nhsuk-black;
   }
 
-  /* Tabs – Reverse style (DESKTOP) */
-  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"]
-  .nhsuk-tabs__list-item {
-    background-color: $color_nhsuk-black;
-  }
-
-  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"]
-  .nhsuk-tabs__tab {
-    color: $color_nhsuk-white;
-  }
-
-  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"]
-  .nhsuk-tabs__list-item--selected {
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__list-item--selected {
+    // background-color: $color_nhsuk-dark-blue;
     background-color: $color_nhsuk-white;
   }
 
-  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"]
-  .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+  /* Tabs – Reverse style (DESKTOP) */
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__list-item {
+    background-color: $color_nhsuk-black;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab {
+    color: $color_nhsuk-white;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__list-item--selected {
+    background-color: $color_nhsuk-white;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
     color: $color_nhsuk-black;
   }
+
+  .js-enabled .nhsuk-tabs__list-item {
+    padding: 8px 14px;
+  }
+
 }
 
 /* -----------------------------------------------------
@@ -337,16 +340,14 @@ $tag-variants: (
    NHS focus overrides should win on keyboard focus
    -------------------------------------------------- */
 
-.wp-block-nhsblocks-nhstabs[class*="is-style-blue"]
-.nhsuk-tabs__tab:focus,
-.wp-block-nhsblocks-nhstabs[class*="is-style-blue"]
-.nhsuk-tabs__tab:focus-visible,
-.wp-block-nhsblocks-nhstabs[class*="is-style-reverse"]
-.nhsuk-tabs__tab:focus,
-.wp-block-nhsblocks-nhstabs[class*="is-style-reverse"]
-.nhsuk-tabs__tab:focus-visible {
-  background-color: $nhsuk-focus-color;       /* yellow */
-  color: $nhsuk-focus-text-color;              /* black */
+.wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab:focus,
+.wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab:focus-visible,
+.wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab:focus,
+.wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab:focus-visible {
+  background-color: $nhsuk-focus-color;
+  /* yellow */
+  color: $nhsuk-focus-text-color;
+  /* black */
 }
 
 /* -----------------------------------------------------
