@@ -10689,6 +10689,7 @@ figure.is-style-nhsuk-table-responsive figcaption {
   .nhsuk-tabs__list {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
   }
   /* Tabs – Blue style (DESKTOP) */
   .wp-block-nhsblocks-nhstabs[class*=is-style-blue] .nhsuk-tabs__list-item {
