@@ -6,7 +6,7 @@ Requires PHP: 8.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.12
+Version: 2.7.13
 Stable tag: 2.7
 
 
@@ -42,6 +42,9 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=2.7.13=
+* Support for new NHS tabs block.
 
 =2.7.12=
 * Add optional First published date to page metadata display, shown alongside Page last reviewed.

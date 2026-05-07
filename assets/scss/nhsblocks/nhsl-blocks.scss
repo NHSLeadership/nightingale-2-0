@@ -254,3 +254,117 @@ $tag-variants: (
     }
   }
 }
+
+/* =====================================================
+   NHS Tabs
+   ===================================================== */
+/* -----------------------------------------------------
+   Desktop behaviour
+   ----------------------------------------------------- */
+/* -----------------------------------------------------
+   Desktop behaviour (matches NHS tabs JS)
+   ----------------------------------------------------- */
+@media (min-width: 40.0625em) {
+
+  .nhsuk-tabs__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Tabs – Blue style (DESKTOP) */
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__list-item {
+    background-color: $color_nhsuk-blue;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab {
+    color: $color_nhsuk-white;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+    color: $color_nhsuk-black;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__list-item--selected {
+    // background-color: $color_nhsuk-dark-blue;
+    background-color: $color_nhsuk-white;
+  }
+
+  /* Tabs – Reverse style (DESKTOP) */
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__list-item {
+    background-color: $color_nhsuk-black;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab {
+    color: $color_nhsuk-white;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__list-item--selected {
+    background-color: $color_nhsuk-white;
+  }
+
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__list-item--selected .nhsuk-tabs__tab {
+    color: $color_nhsuk-black;
+  }
+
+  .js-enabled .nhsuk-tabs__list-item {
+    padding: 8px 14px;
+  }
+
+}
+
+/* -----------------------------------------------------
+   Mobile behaviour
+   ----------------------------------------------------- */
+@media (max-width: 40.0625em) {
+
+  /* Adjust marker alignment on small screens */
+  .nhsuk-tabs__list-item::before {
+    margin-left: -14px;
+  }
+
+  /* Blue & Reverse fall back to Standard on mobile */
+  .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__list-item,
+  .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__list-item {
+    background-color: transparent;
+  }
+}
+
+
+/* --------------------------------------------------
+   Restore accessible focus colours for Tabs variants
+   Do not override NHS focus text colour
+   -------------------------------------------------- */
+
+/* --------------------------------------------------
+   Restore accessible focus colours for Tabs variants
+   NHS focus overrides should win on keyboard focus
+   -------------------------------------------------- */
+
+.wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab:focus,
+.wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab:focus-visible,
+.wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab:focus,
+.wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab:focus-visible {
+  background-color: $nhsuk-focus-color;
+  /* yellow */
+  color: $nhsuk-focus-text-color;
+  /* black */
+}
+
+/* -----------------------------------------------------
+   Base styles (all screens)
+   ----------------------------------------------------- */
+.nhsuk-tabs {
+  max-width: 100%;
+}
+
+.nhsuk-tabs__list-item {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.nhsuk-tabs__tab {
+  white-space: normal;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
