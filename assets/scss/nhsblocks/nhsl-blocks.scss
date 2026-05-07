@@ -269,6 +269,7 @@ $tag-variants: (
   .nhsuk-tabs__list {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   /* Tabs – Blue style (DESKTOP) */
