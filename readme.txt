@@ -45,6 +45,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 =2.7.13=
 * Support for new NHS tabs block.
+* Security update
 
 =2.7.12=
 * Add optional First published date to page metadata display, shown alongside Page last reviewed.
