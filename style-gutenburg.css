@@ -10,843 +10,90 @@
    * 1. Correct the line height in all browsers.
    * 2. Prevent adjustments of font size after orientation changes in iOS.
    */
-  /* Sections
-  	 ========================================================================== */
-  /**
-   * Remove the margin in all browsers.
-   */
-  /**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-  /* Grouping content
-  	 ========================================================================== */
-  /**
-   * 1. Add the correct box sizing in Firefox.
-   * 2. Show the overflow in Edge and IE.
-   */
-  /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-  /* Text-level semantics
-  	 ========================================================================== */
-  /**
-   * Remove the gray background on active links in IE 10.
-   */
-  /**
-   * 1. Remove the bottom border in Chrome 57-
-   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
-   */
-  /**
-   * Add the correct font weight in Chrome, Edge, and Safari.
-   */
-  /**
-   * 1. Correct the inheritance and scaling of font size in all browsers.
-   * 2. Correct the odd `em` font sizing in all browsers.
-   */
-  /**
-   * Add the correct font size in all browsers.
-   */
-  /**
-   * Prevent `sub` and `sup` elements from affecting the line height in
-   * all browsers.
-   */
-  /* Embedded content
-  	 ========================================================================== */
-  /**
-   * Remove the border on images inside links in IE 10.
-   */
-  /* Forms
-  	 ========================================================================== */
-  /**
-   * 1. Change the font styles in all browsers.
-   * 2. Remove the margin in Firefox and Safari.
-   */
-  /**
-   * Remove the inheritance of text transform in Edge, Firefox, and IE.
-   * 1. Remove the inheritance of text transform in Firefox.
-   */
-  /**
-   * Correct the inability to style clickable types in iOS and Safari.
-   */
-  /**
-   * Remove the inner border and padding in Firefox.
-   */
-  /**
-   * Restore the focus styles unset by the previous rule.
-   */
-  /**
-   * Correct the padding in Firefox.
-   */
-  /**
-   * 1. Correct the text wrapping in Edge and IE.
-   * 2. Correct the color inheritance from `fieldset` elements in IE.
-   * 3. Remove the padding so developers are not caught out when they zero out
-   *		`fieldset` elements in all browsers.
-   */
-  /**
-   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-   */
-  /**
-   * Remove the default vertical scrollbar in IE 10+.
-   */
-  /**
-   * 1. Add the correct box sizing in IE 10.
-   * 2. Remove the padding in IE 10.
-   */
-  /**
-   * Correct the cursor style of increment and decrement buttons in Chrome.
-   */
-  /**
-   * 1. Correct the odd appearance in Chrome and Safari.
-   * 2. Correct the outline style in Safari.
-   */
-  /**
-   * Remove the inner padding in Chrome and Safari on macOS.
-   */
-  /**
-   * 1. Correct the inability to style clickable types in iOS and Safari.
-   * 2. Change font properties to `inherit` in Safari.
-   */
-  /* Interactive
-  	 ========================================================================== */
-  /*
-   * Add the correct display in Edge, IE 10+, and Firefox.
-   */
-  /*
-   * Add the correct display in all browsers.
-   */
-  /* Misc
-  	 ========================================================================== */
-  /**
-   * Add the correct display in IE 10+.
-   */
-  /**
-   * Add the correct display in IE 10.
-   */
-  /*--------------------------------------------------------------
-  # Typography
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Elements
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Forms
-  --------------------------------------------------------------*/
-  /* With :not(.nhsuk-search__input), the search field is not affected */
-  /*--------------------------------------------------------------
-  # Navigation
-  --------------------------------------------------------------*/
-  /* Small menu. */
-  /*--------------------------------------------------------------
-  # Accessibility
-  --------------------------------------------------------------*/
-  /* Text meant only for screen readers. */
-  /* Do not show the outline on the skip link target. */
-  /*--------------------------------------------------------------
-  # Alignments
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Clearings
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Widgets
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Content
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  ## Posts and pages
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  ## Comments
-  --------------------------------------------------------------*/
-  /*--------------------------------------------------------------
-  # Infinite scroll
-  --------------------------------------------------------------*/
-  /* Globally hidden elements when Infinite Scroll is supported and in use. */
-  /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-  /*--------------------------------------------------------------
-  # Media
-  --------------------------------------------------------------*/
-  /* Make sure embeds and iframes fit their containers. */
-  /* Make sure logo link wraps around logo image. */
-  /*--------------------------------------------------------------
-  ## Captions
-  --------------------------------------------------------------*/
-  /* stylelint-disable color-no-hex */
-  /* stylelint-enable color-no-hex */
-  /* stylelint-disable string-quotes, order/properties-alphabetical-order */
-  /* stylelint-disable indentation */
-  /* stylelint-disable color-no-hex */
-  /* ==========================================================================
-     GENERIC / #BOX-SIZING
-     ========================================================================== */
-  /**
-   * Set the global `box-sizing` state to `border-box`.
-   *
-   * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-   * http://paulirish.com/2012/box-sizing-border-box-ftw
-   */
-  /* ==========================================================================
-     ELEMENTS / #FORMS
-     ========================================================================== */
-  /**
-   * Make sure our form elements don’t use any UA-specific font styles: we want
-   * them to use ours. This may need reverting as more design information becomes
-   * available, and we start putting together more complete forms.
-   */
-  /* ==========================================================================
-     ELEMENTS / #LINKS
-     ========================================================================== */
-  /**
-   * Our basic `<a>` elements only need very minimal styling.
-   * It uses the @mixin nhsuk-link-style-default within tools/links.
-   * Anything more opinionated (e.g. buttons, calls-to-action, etc.) will need a
-   * class defining in the Components layer.
-   *
-   * 1. Outputs full link URL for print.
-   * 2. Point unit used for print.
-   */
-  /* ==========================================================================
-     ELEMENTS / #PAGE
-     ========================================================================== */
-  /**
-   * High-level, page-level styling.
-   *
-   * 1. The reason for this is to prevent "centering jumps" when navigating back
-   *    and forth between pages with enough content to have a vertical scroll bar
-   *    and pages that do not.
-   * 2. Fonts on OSX will look more consistent with other systems that do not
-   *    render text using sub-pixel anti-aliasing.
-   * 3. Override the user agent style margin of 8px.
-   * 4. Ensure the page always fills at least the entire height of the viewport.
-   */
-  /* ==========================================================================
-     ELEMENTS / #TABLES
-     ========================================================================== */
-  /**
-   * 1. Force `<table>`s to be full-width by default.
-   */
-  /* ==========================================================================
-     OBJECTS / #GRID
-     ========================================================================== */
-  /* ==========================================================================
-     OBJECTS / #MAIN-WRAPPER
-     ========================================================================== */
-  /**
-   * Page wrapper for the grid system
-   *
-   * Usage:
-   * <div class="nhsuk-width-container">
-   *   <div class="nhsuk-main-wrapper">
-   *    <!-- Wrapper for the main content of your page which applies padding
-   *         to the top / bottom -->
-   *   </div>
-   * </div>
-   *
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/govuk-frontend
-   *
-   * 1. In IE11 the `main` element can be used, but is not recognized  –
-   *    meaning it's not defined in IE's default style sheet,
-   *    so it uses CSS initial value, which is inline.
-   */
-  /* ==========================================================================
-     OBJECTS / #WIDTH-CONTAINER
-     ========================================================================== */
-  /**
-   * Page width for the grid system
-   *
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/govuk-frontend
-   *
-   * 1. On mobile, add half width gutters
-   * 2. Limit the width of the container to the page width
-   * 3. From desktop, add full width gutters
-   * 4. As soon as the viewport is greater than the width of the page plus the
-   *    gutters, just centre the content instead of adding gutters.
-   * 5. Full width container, spanning the entire width of the viewport
-   */
-  /* ==========================================================================
-     STYLES / #ICONS
-     ========================================================================== */
-  /* ==========================================================================
-     STYLES / #LISTS
-     ========================================================================== */
-  /**
-   * 1. 'Random number' used to align ul and ol left with content.
-   * 2. 'Random number' used to give sufficient spacing between text and icon.
-   * 3. 'Random number' used to align icon and text.
-   */
-  /* ==========================================================================
-     STYLES / #SECTION-BREAK
-     ========================================================================== */
-  /**
-   * 1. Extended the section-break--l code for usage of a semantic <hr> with
-   * no class name.
-   *
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/govuk-frontend
-   */
-  /* ==========================================================================
-     STYLES / #TYPOGRAPHY
-     ========================================================================== */
-  /* Headings */
-  /* Captions to be used inside headings */
-  /* Body (paragraphs) */
-  /**
-   * Lede text
-   *
-   * 1. Apply lede text styling to p and ul within the lede element
-   * 2. Reduces the spacing between the page heading and the lede text
-   */
-  /* [2] */
-  /**
-   * Contextual adjustments
-   *
-   * Add top padding to headings that appear directly after paragraphs.
-   *
-   * 1. Removes the padding-top because of the lede-text's increased margin-bottom
-   *
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/nhsuk-frontend
-   */
-  /* [1] */
-  /* Font weight for <strong> and <b> */
-  /* ==========================================================================
-     UTILITIES / #CLEARFIX
-     ========================================================================== */
-  /**
-   * Automatically clear an elements
-   * child elements
-   *
-   * Usage: class="nhsuk-u-clear"
-   * See tools/mixins
-   */
-  /* ==========================================================================
-     UTILITIES / #GRID
-     ========================================================================== */
-  /**
-   * Force grid widths on all screen sizes
-   * By default all grid elements will go to 100% width
-   * on screen sizes below tablet, these utilities can force
-   * custom widths on all screen sizes
-   *
-   * Usage: class="nhsuk-u-one-half"
-   */
-  /* stylelint-disable declaration-no-important */
-  /**
-   * Force grid widths on screen sizes on tablet
-   * and above
-   *
-   * By default all grid elements will go to 100% width
-   * on every screen size, these utilities can force
-   * custom widths on screen sizes on tablet
-   * and above
-   *
-   * Usage: class="nhsuk-u-one-half-tablet"
-   */
-  /* ==========================================================================
-     UTILITIES / #LINK-NOWRAP
-     ========================================================================== */
-  /**
-   * Prevent long anchor links from line breaking
-   * on smaller screens
-   *
-   * Usage: class="nhsuk-u-nowrap"
-   */
-  /* ==========================================================================
-     UTILITIES / #READING-WIDTH
-     ========================================================================== */
-  /**
-   * Reading width mixin, add a maximum width
-   * to large pieces of content
-   *
-   * Usage: class="nhsuk-u-reading-width"
-   * See tools/mixins
-   */
-  /* ==========================================================================
-     UTILITIES / #TYPOGRAPHY
-     ========================================================================== */
-  /**
-   * Font size and line height
-   *
-   * Generate typography override classes for each responsive font map in the
-   * typography scale eg .nhsuk-u-font-size-48
-   *
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/govuk-frontend
-   */
-  /* Weights
-     ========================================================================== */
-  /**
-   * Generate font weight override classes for normal and bold
-   * eg .nhsuk-u-font-weight-normal
-   */
-  /* Colours
-     ========================================================================== */
-  /**
-   * Secondary text colour $nhsuk-secondary-text-color
-   * eg <p class="nhsuk-u-secondary-text-color">Published on: 15 March 2018</p>
-   */
-  /* ==========================================================================
-     UTILITIES / #VISUALLY-HIDDEN
-     ========================================================================== */
-  /**
-   * Hide elements visually but keep it in the DOM
-   *
-   * Usage: class="nhsuk-u-visually-hidden"
-   * See tools/mixins
-   */
-  /* ==========================================================================
-     UTILITIES / #WIDTH
-     ========================================================================== */
-  /**
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/govuk-frontend
-   * Force element widths on all screen sizes
-   *
-   * Usage: class="nhsuk-u-width-full"
-   */
-  /* stylelint-disable declaration-no-important */
-  /* ==========================================================================
-     COMPONENTS/ #ACTION-LINK
-     ========================================================================== */
-  /**
-   * 1. Display is inline-block so the top and bottom margins/paddings are
-   *    respected.
-   * 2. 'Random number' is used to properly have sufficient space between icon
-   *    and text.
-   * 3. Position is relative so the arrow icon can display absolute.
-   * 4. Text decoration none used to override default <a> styling.
-   * 5. Box shadow 8px used instead of the default 4px.
-   * 6. Text decoration underline used to override default <a> styling.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #BACK-LINK
-     ========================================================================== */
-  /**
-   * 1. Allow space for the arrow.
-   * 2. Align the icon with the start of the back link.
-   * 3. Align the icon with the middle of the text.
-   */
-  /* ==========================================================================
-      COMPONENTS / #BREADCRUMB
-     ========================================================================== */
-  /**
-   * 1. Hide the breadcrumb on print stylesheets.
-   * 2. Bespoke spacing numbers used as there is no 20px
-   *    spacing mapped in settings/spacing.
-   * 3. Don't show the full breadcrumb below tablet size.
-   * 4. Typography sizing mixin, see core/tools/_typography
-   * 5. and core/settings/_typography for size maps.
-   * 5. .. but show a back to index page link.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #BUTTON
-     ========================================================================== */
-  /**
-   * 1. Ensure that any global link styles are overridden.
-   * 2. Fix unwanted button padding in Firefox.
-   * 3. Use a pseudo element to expand the click target area to include the
-   *    button's shadow as well, in case users try to click it.
-   */
-  /**
-   * Button variations
-   */
-  /**
-   * Button disabled states
-   */
-  /* stylelint-disable string-quotes */
-  /* ==========================================================================
-     COMPONENTS / #CARD
-     ========================================================================== */
-  /**
-   * 1. Is needed for the :active top positioning, and invisible clickable overlay.
-   * 2. Border is used to create a divider between the white content
-   *    box and an image.
-   * 3. Creates the 'pressed down' effect when clicked.
-   * 4. Removes padding-top from headings directly after the card group.
-   * 5. Includes the border width to achieve the correct left alignment.
-   * 6. Stops the heading from spanning the full width of the card.
-   * 7. Removes padding top for the feature heading positioning.
-   * 8. Default care card colour set to blue (non-urgent care card) -
-   *    using the @mixin care-card tools/_mixins.scss.
-   *    The same mixin is used for each care card, setting the background
-   *    colour,text colour and print border width with the variables.
-   * 9. 'Random number' for the heading triangle.
-   * 10. 'Random number' for the heading triangle positioning.
-   * 11. 'Random number' used for spacing to compensate for the triangle.
-   * 12. Needed to enable the triangle to show correctly in high contrast mode.
-   * 13. Prevent additional padding on headings
-   * 14. Give the action link icon sufficient contrast when used in the emergency variant
-   * 15. Reset the positioning to the default [1] to display heading triangle on a coloured background.
-   * 16. Emergency care card <a> needs to be white because the background colour is black.
-   * 17. Trick IE10 into rendering the invisible clickable area. Without this it does not.
-   */
-  /* Clickable card
-    ========================================================================== */
-  /* Card group
-    ========================================================================== */
-  /**
-  * Card group allows you to have a row of cards.
-  *
-  * Flexbox is used to make each card in a row the same height.
-  */
-  /* Card feature
-    ========================================================================== */
-  /* Care card
-    ========================================================================== */
-  /* Card primary
-    ========================================================================== */
-  /* Card secondary
-    ========================================================================== */
-  /* ==========================================================================
-     COMPONENTS/ #CHECKBOXES
-     ========================================================================== */
-  /**
-   * 1. remove 300ms pause on mobile.
-   * 2. Fix bug in IE11 caused by transform rotate (-45deg).
-   */
-  /*
-   * Focus state
-   *
-   * 1. Since box-shadows are removed when users customise their colours
-   *    We set a transparent outline that is shown instead.
-   *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
-   */
-  /* Selected state */
-  /* Disabled state */
-  /* Divider variant */
-  /*
-   * Conditional
-   *
-   * 1. Calculate the amount of padding needed to keep the border
-   *    centered against the checkbox.
-   * 2. Move the border centered with the checkbox.
-   * 3. Move the contents of the conditional inline with the label.
-   */
-  /* 1 */
-  /* 2 */
-  /* 3 */
-  /* ==========================================================================
-     COMPONENTS / #CONTENTS-LIST
-     ========================================================================== */
-  /**
-   * 1. Creates a grey line before each list
-   *    item using a ASCII number for the symbol.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #DATE-INPUT
-     ========================================================================== */
-  /**
-   * 1. font-size: 0 removes whitespace caused by inline-block
-   */
-  /* ==========================================================================
-     COMPONENTS / #DETAILS
-     ========================================================================== */
-  /**
-   * Details component.
-   *
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/govuk-frontend
-   *
-   * 1. Style the summary to look like a link...
-   * 2. Make the focus outline shrink-wrap the text content of the summary
-   * 3. Absolutely position the marker against this element
-   * 3. Allow for absolutely positioned marker and align with disclosed text
-   * 4. Only underline the text, not the arrow
-   * 5. Remove the default details marker so we can style our own consistently and
-   *    ensure it displays in Firefox
-   * 6. Custom padding to left align the details text with the summary
-   */
-  /**
-   * Expander variation.
-   *
-   * 1. !important used because the icon is populated
-   *    by the JavaScript polyfill
-   * 2. Remove the default hover, focus and active
-   *    styles for this component.
-   * 3. -2px left margin to align the icon to the content.
-   * 4. When a group of details is used reduce the
-   *    margin between them so they sit together.
-   */
-  /* ==========================================================================
-     COMPONENTS / #DO-DONT-LIST
-     ========================================================================== */
-  /**
-   * Do and Don't lists help users understand more easily what they should
-   * and shouldn't do.
-   *
-   * 1. Uses @mixin panel-with-label from tools/_mixins.
-   * 2. Uses @mixin heading-label from tools/_mixins.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #ERROR-MESSAGE
-     ========================================================================== */
-  /* ==========================================================================
-     COMPONENTS/ #ERROR-SUMMARY
-     ========================================================================== */
-  /**
-   * 1. Cross-component class - adjusts styling of list component.
-   * 2. Override default link styling to use error colour
-   */
-  /* ==========================================================================
-     COMPONENTS/ #FIELDSET
-     ========================================================================== */
-  /**
-   * 1. Fix legend text wrapping in Edge and IE versions:
-   * 2. IE9-11 & Edge 12-13
-   * 3. Hack to let legends or elements within legends have margins in webkit browsers.
-   * 4. When the legend contains an H1, we want the H1 to inherit all styles from
-   *    the legend. Effectively we want to be able to treat the heading as if it is
-   *    not there.
-   */
-  /* Heading modifiers */
-  /* ==========================================================================
-     COMPONENTS / #HERO
-     ========================================================================== */
-  /**
-   *  Hero component shared styles.
-   *
-   * 1. Position relative to support the description
-   *    appearing over the image.
-   * 2. Adds a border between the header and hero, if required
-   */
-  /**
-   *  Hero component image styles
-   *
-   * 3. Center the background image.
-   * 4. Stop the height affecting print stylesheets.
-   * 5. Show more of the image for larger screen sizes
-   * 6. Overlay must be min same height as .nhsuk-hero--image to cover the image.
-   * 7. Darken the background image with an overlay.
-   * 12. Remove any heights/min heights in Windows high contrast mode.
-   */
-  /**
-   *  Hero component description styles.
-   *
-   * 8. 'Random number' for the triangle.
-   * 9. 'Random number' for the triangle positioning.
-   * 10. Needed to enable the triangle to show correctly in high contrast mode.
-   * 11. Give the description box a max width.
-   * 13. Remove the arrow in Windows high contrast mode.
-   * 14. Reduce spacing and change positioning for Windows high contrast mode.
-   * 15. Prevent text breaking out of box on smaller sizes
-   */
-  /* ==========================================================================
-     COMPONENTS/ #HINT
-     ========================================================================== */
-  /* ==========================================================================
-     COMPONENTS / #IMAGES
-     ========================================================================== */
-  /**
-   * 1. Overrides default browser margin values.
-   * 2. Makes the image width two thirds of its container for desktop.
-   * 3. Avoid image printing full width of a page.
-   * 4. Removes top margin from subsequent nhsuk-image.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #INPUT
-     ========================================================================== */
-  /**
-   * 1. Disable inner shadow and remove rounded corners
-   * 2. setting any background-color makes text invisible when changing colours to dark
-   *    backgrounds in Firefox (https://bugzilla.mozilla.org/show_bug.cgi?id=1335476)
-   *    as background-color and color need to always be set together, color should
-   *    not be set either.
-   */
-  /* ==========================================================================
-     COMPONENTS / #INSET-TEXT
-     ========================================================================== */
-  /**
-   * 1. Removes top margin from first element and bottom margin from last,
-   *    to ensure correct spacing within the component.
-   * 2. Restricts the width of the text to optimise the line length for
-   *    readability.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #LABEL
-     ========================================================================== */
-  /* Modifiers that make labels look more like their equivalent headings */
-  /* ==========================================================================
-     COMPONENTS / #PAGINATION
-     ========================================================================== */
-  /**
-   * 1. Padding to give the icon spacing.
-   * 2. Append the word 'page' after next and
-   *    previous on print stylesheets to make it easier
-   *    to understand in print context.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #RADIOS
-     ========================================================================== */
-  /**
-   * 1. remove 300ms pause on mobile.
-   * 2. Fix bug in IE11 caused by transform rotate (-45deg).
-   */
-  /**
-   * Focus state
-   *
-   * 1. Since box-shadows are removed when users customise their colours
-   *    We set a transparent outline that is shown instead.
-   *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
-   */
-  /* Selected state */
-  /* Disabled state */
-  /*
-   * Inline variant
-   *
-   * 1. Prevent inline modifier being used with conditional reveals
-   */
-  /* Divider variant */
-  /* Conditional */
-  /* ==========================================================================
-     COMPONENTS/ #SELECT
-     ========================================================================== */
-  /**
-   * Select input sizing
-   * 1. Uses rems so that safari input scales with font size
-   * 2. This min-width was chosen because:
-   *    - it makes the Select wider than it is tall (which is what users expect)
-   *    - 20ex + 3ex matches the 'width-10' variant of the input component
-   *    - it fits comfortably on screens as narrow as 240px wide
-   */
-  /* ==========================================================================
-     COMPONENTS / #SKIP-LINK
-     ========================================================================== */
-  /**
-   * 1. Hides the skip link off the page,
-   * 2. until the link gains focus from keyboard tabbing.
-   */
-  /* ==========================================================================
-     COMPONENTS/ #SUMMARY-LIST
-     ========================================================================== */
-  /**
-   * Original code taken from GDS (Government Digital Service)
-   * https://github.com/alphagov/govuk-frontend
-   *
-   * 1. Required to allow us to wrap words that overflow.
-   * 2. Reset default user agent styles
-   * 3. Automatic wrapping for unbreakable text (e.g. URLs)
-   * 4. Fallback for older browsers only
-   */
-  /* ==========================================================================
-     COMPONENTS / #TABLE
-     ========================================================================== */
-  /**
-   * Table container is used to ensure the table does not break the container.
-   *
-   * 1. Margin is removed so there isn't double spacing.
-   */
-  /* Table row hover
-  ========================================================================== */
-  /**
-   * Table row hover is used to aid readability for users.
-   */
-  /* Table panel with tab heading
-  ========================================================================== */
-  /**
-   * 1. Margin is removed so there isn't double spacing.
-   */
-  /* Responsive table
-  ========================================================================== */
-  /**
-   * 1. Hiding the thead on mobile
-   * 2. Displaying the thead on desktop
-   * 3. Removing default screen reader behaviour
-   * 4. Assigning role of table-row on desktop to give default screen reader behaviour
-   * 5. Using justify content to space out elements in the row on mobile
-   * 6. Assigning a minimum width in case of black cell
-   * 7. Aligning content to the right on mobile
-   * 8. Aligning mobile header to left to split it from the data
-   * 9. Hiding mobile specific header from desktop view
-   * 10. Adding a display block value due to IE 11 not having full flex support
-   */
-  /* Numeric tables
-  ========================================================================== */
-  /**
-   * Right aligns table cells for numeric tables.
-   */
-  /* ==========================================================================
-     #TAG
-     ========================================================================== */
-  /* Colour variants
-    ========================================================================== */
-  /* Remove tag border
-    ========================================================================== */
-  /* ==========================================================================
-     COMPONENTS/ #TEXTAREA
-     ========================================================================== */
-  /* ==========================================================================
-     COMPONENTS / #WARNING-CALLOUT
-     ========================================================================== */
-  /**
-   * 1. Uses @mixin panel-with-label from tools/_mixins.
-   * 2. Uses @mixin heading-label from tools/_mixins.
-   */
-  /* Reusable mixin for a focus element outline */
-  /* Add a focus indicator for keyboard nav on clickable cards */
-  /* add more obvious visual representation when dashboard elements are active on keyboard nav */
-  /* colour variable to be used with color-mixer.scss */
-  /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
-  /* Menu item right chevron (mobile): fix color when state is focus */
-  /*
-  // variations to styling required for gutenberg native blocks
-  // @author Tony Blacker, NHS Leadership Academy
-  // @version 1.1 12th October 2019
-  */
-  /* login form customisation */
-  /* Extra Blog Styles */
-  /* Gravity Forms Save and Continue button fix */
-  /* Events Calendar Styles */
-  /* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
-  /* Events Widgets */
-  /* embedded events */
-  /* Event datetime header */
-  background-color: #f0f4f5;
-  /* admin styles widget tweaks */
-  /*
-  Learn dash admin panel mitigation
-   */
-  /* end LearnDash mitigation routine */
-  /* make the table cells more obvious when editing */
-  /* clearfix after grouped items to sort out some display wirdiness */
 }
 .edit-post-visual-editor html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   overflow-x: hidden;
 }
+.edit-post-visual-editor {
+  /* Sections
+  	 ========================================================================== */
+  /**
+   * Remove the margin in all browsers.
+   */
+}
 .edit-post-visual-editor body {
   margin: 0;
+}
+.edit-post-visual-editor {
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
 }
 .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input {
   font-size: 2em;
   margin: 0.67em 0;
+}
+.edit-post-visual-editor {
+  /* Grouping content
+  	 ========================================================================== */
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
 }
 .edit-post-visual-editor hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+}
 .edit-post-visual-editor pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
+.edit-post-visual-editor {
+  /* Text-level semantics
+  	 ========================================================================== */
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+}
 .edit-post-visual-editor a {
   background-color: transparent;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
 }
 .edit-post-visual-editor abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+}
 .edit-post-visual-editor b,
 .edit-post-visual-editor strong {
   font-weight: bolder;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 }
 .edit-post-visual-editor code,
 .edit-post-visual-editor kbd,
@@ -854,8 +101,19 @@
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct font size in all browsers.
+   */
+}
 .edit-post-visual-editor small {
   font-size: 80%;
+}
+.edit-post-visual-editor {
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
 }
 .edit-post-visual-editor sub,
 .edit-post-visual-editor sup {
@@ -870,8 +128,23 @@
 .edit-post-visual-editor sup {
   top: -0.5em;
 }
+.edit-post-visual-editor {
+  /* Embedded content
+  	 ========================================================================== */
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+}
 .edit-post-visual-editor img {
   border-style: none;
+}
+.edit-post-visual-editor {
+  /* Forms
+  	 ========================================================================== */
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
 }
 .edit-post-visual-editor button,
 .edit-post-visual-editor input,
@@ -882,15 +155,31 @@
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+}
 .edit-post-visual-editor button,
 .edit-post-visual-editor select { /* 1 */
   text-transform: none;
+}
+.edit-post-visual-editor {
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
 }
 .edit-post-visual-editor button,
 .edit-post-visual-editor [type=button],
 .edit-post-visual-editor [type=reset],
 .edit-post-visual-editor [type=submit] {
   -webkit-appearance: button;
+}
+.edit-post-visual-editor {
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
 }
 .edit-post-visual-editor button::-moz-focus-inner,
 .edit-post-visual-editor [type=button]::-moz-focus-inner,
@@ -899,14 +188,32 @@
   border-style: none;
   padding: 0;
 }
+.edit-post-visual-editor {
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+}
 .edit-post-visual-editor button:-moz-focusring,
 .edit-post-visual-editor [type=button]:-moz-focusring,
 .edit-post-visual-editor [type=reset]:-moz-focusring,
 .edit-post-visual-editor [type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+.edit-post-visual-editor {
+  /**
+   * Correct the padding in Firefox.
+   */
+}
 .edit-post-visual-editor fieldset {
   padding: 0.35em 0.75em 0.625em;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *		`fieldset` elements in all browsers.
+   */
 }
 .edit-post-visual-editor legend {
   box-sizing: border-box; /* 1 */
@@ -916,43 +223,110 @@
   padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+}
 .edit-post-visual-editor progress {
   vertical-align: baseline;
 }
+.edit-post-visual-editor {
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+}
 .edit-post-visual-editor textarea {
   overflow: auto;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
 }
 .edit-post-visual-editor [type=checkbox],
 .edit-post-visual-editor [type=radio] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+}
 .edit-post-visual-editor [type=number]::-webkit-inner-spin-button,
 .edit-post-visual-editor [type=number]::-webkit-outer-spin-button {
   height: auto;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
 }
 .edit-post-visual-editor [type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
+.edit-post-visual-editor {
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+}
 .edit-post-visual-editor [type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+.edit-post-visual-editor {
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
 }
 .edit-post-visual-editor ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+.edit-post-visual-editor {
+  /* Interactive
+  	 ========================================================================== */
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+}
 .edit-post-visual-editor details {
   display: block;
+}
+.edit-post-visual-editor {
+  /*
+   * Add the correct display in all browsers.
+   */
 }
 .edit-post-visual-editor summary {
   display: list-item;
 }
+.edit-post-visual-editor {
+  /* Misc
+  	 ========================================================================== */
+  /**
+   * Add the correct display in IE 10+.
+   */
+}
 .edit-post-visual-editor template {
   display: none;
 }
+.edit-post-visual-editor {
+  /**
+   * Add the correct display in IE 10.
+   */
+}
 .edit-post-visual-editor [hidden] {
   display: none;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Typography
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor body,
 .edit-post-visual-editor button,
@@ -1004,6 +378,11 @@
 .edit-post-visual-editor big {
   font-size: 125%;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Elements
+  --------------------------------------------------------------*/
+}
 .edit-post-visual-editor html {
   box-sizing: border-box;
 }
@@ -1054,6 +433,18 @@
   margin: 0 0 1.5em;
   width: 100%;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Forms
+  --------------------------------------------------------------*/
+  /* With :not(.nhsuk-search__input), the search field is not affected */
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Navigation
+  --------------------------------------------------------------*/
+  /* Small menu. */
+}
 .edit-post-visual-editor .menu-toggle,
 .edit-post-visual-editor .main-navigation.toggled ul {
   display: block;
@@ -1083,6 +474,12 @@
   float: right;
   text-align: right;
   width: 50%;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Accessibility
+  --------------------------------------------------------------*/
+  /* Text meant only for screen readers. */
 }
 .edit-post-visual-editor .screen-reader-text {
   border: 0;
@@ -1117,8 +514,16 @@
   z-index: 100000;
   /* Above WP toolbar. */
 }
+.edit-post-visual-editor {
+  /* Do not show the outline on the skip link target. */
+}
 .edit-post-visual-editor #content[tabindex="-1"]:focus {
   outline: 0;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Alignments
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .alignleft {
   display: inline;
@@ -1135,6 +540,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Clearings
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .clear:before,
 .edit-post-visual-editor .clear:after,
@@ -1160,12 +570,25 @@
 .edit-post-visual-editor .site-footer:after {
   clear: both;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Widgets
+  --------------------------------------------------------------*/
+}
 .edit-post-visual-editor .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
 .edit-post-visual-editor .widget select {
   max-width: 100%;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Content
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  ## Posts and pages
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .sticky {
   display: block;
@@ -1186,19 +609,38 @@
   clear: both;
   margin: 0 0 1.5em;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  ## Comments
+  --------------------------------------------------------------*/
+}
 .edit-post-visual-editor .comment-content a {
   word-wrap: break-word;
 }
 .edit-post-visual-editor .bypostauthor {
   display: block;
 }
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Infinite scroll
+  --------------------------------------------------------------*/
+  /* Globally hidden elements when Infinite Scroll is supported and in use. */
+}
 .edit-post-visual-editor .infinite-scroll .posts-navigation,
 .edit-post-visual-editor .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
   display: none;
 }
+.edit-post-visual-editor {
+  /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+}
 .edit-post-visual-editor .infinity-end.neverending .site-footer {
   display: block;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  # Media
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .page-content .wp-smiley,
 .edit-post-visual-editor .entry-content .wp-smiley,
@@ -1208,13 +650,24 @@
   margin-top: 0;
   padding: 0;
 }
+.edit-post-visual-editor {
+  /* Make sure embeds and iframes fit their containers. */
+}
 .edit-post-visual-editor embed,
 .edit-post-visual-editor iframe,
 .edit-post-visual-editor object {
   max-width: 100%;
 }
+.edit-post-visual-editor {
+  /* Make sure logo link wraps around logo image. */
+}
 .edit-post-visual-editor .custom-logo-link {
   display: inline-block;
+}
+.edit-post-visual-editor {
+  /*--------------------------------------------------------------
+  ## Captions
+  --------------------------------------------------------------*/
 }
 .edit-post-visual-editor .wp-caption {
   margin-bottom: 1.5em;
@@ -1231,6 +684,22 @@
 .edit-post-visual-editor .wp-caption-text {
   text-align: center;
 }
+.edit-post-visual-editor {
+  /* stylelint-disable color-no-hex */
+  /* stylelint-enable color-no-hex */
+  /* stylelint-disable string-quotes, order/properties-alphabetical-order */
+  /* stylelint-disable indentation */
+  /* stylelint-disable color-no-hex */
+  /* ==========================================================================
+     GENERIC / #BOX-SIZING
+     ========================================================================== */
+  /**
+   * Set the global `box-sizing` state to `border-box`.
+   *
+   * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+   * http://paulirish.com/2012/box-sizing-border-box-ftw
+   */
+}
 .edit-post-visual-editor html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1241,11 +710,35 @@
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     ELEMENTS / #FORMS
+     ========================================================================== */
+  /**
+   * Make sure our form elements don’t use any UA-specific font styles: we want
+   * them to use ours. This may need reverting as more design information becomes
+   * available, and we start putting together more complete forms.
+   */
+}
 .edit-post-visual-editor button,
 .edit-post-visual-editor input,
 .edit-post-visual-editor select,
 .edit-post-visual-editor textarea {
   font-family: inherit;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     ELEMENTS / #LINKS
+     ========================================================================== */
+  /**
+   * Our basic `<a>` elements only need very minimal styling.
+   * It uses the @mixin nhsuk-link-style-default within tools/links.
+   * Anything more opinionated (e.g. buttons, calls-to-action, etc.) will need a
+   * class defining in the Components layer.
+   *
+   * 1. Outputs full link URL for print.
+   * 2. Point unit used for print.
+   */
 }
 .edit-post-visual-editor a {
   color: #005eb8;
@@ -1298,6 +791,22 @@
 .edit-post-visual-editor .nhsuk-link--no-visited-state:focus {
   color: #212b32;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     ELEMENTS / #PAGE
+     ========================================================================== */
+  /**
+   * High-level, page-level styling.
+   *
+   * 1. The reason for this is to prevent "centering jumps" when navigating back
+   *    and forth between pages with enough content to have a vertical scroll bar
+   *    and pages that do not.
+   * 2. Fonts on OSX will look more consistent with other systems that do not
+   *    render text using sub-pixel anti-aliasing.
+   * 3. Override the user agent style margin of 8px.
+   * 4. Ensure the page always fills at least the entire height of the viewport.
+   */
+}
 .edit-post-visual-editor html {
   background-color: #d8dde0;
   overflow-y: scroll; /* [1] */
@@ -1313,16 +822,26 @@
   margin: 0; /* [3] */
   min-height: 100%; /* [4] */
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     ELEMENTS / #TABLES
+     ========================================================================== */
+  /**
+   * 1. Force `<table>`s to be full-width by default.
+   */
+}
 .edit-post-visual-editor table {
   margin-bottom: 40px;
-  border-spacing: 0;
-  vertical-align: top;
-  width: 100%; /* [1] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor table {
     margin-bottom: 48px;
   }
+}
+.edit-post-visual-editor table {
+  border-spacing: 0;
+  vertical-align: top;
+  width: 100%; /* [1] */
 }
 @media print {
   .edit-post-visual-editor table {
@@ -1337,12 +856,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  padding-bottom: 8px;
-  padding-right: 16px;
-  padding-top: 8px;
-  border-bottom: 1px solid #d8dde0;
-  text-align: left;
-  vertical-align: top;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
@@ -1359,11 +872,19 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor th,
+.edit-post-visual-editor td {
+  padding-bottom: 8px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
   .edit-post-visual-editor td {
     padding-bottom: 16px;
   }
+}
+.edit-post-visual-editor th,
+.edit-post-visual-editor td {
+  padding-right: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
@@ -1371,11 +892,21 @@
     padding-right: 24px;
   }
 }
+.edit-post-visual-editor th,
+.edit-post-visual-editor td {
+  padding-top: 8px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor th,
   .edit-post-visual-editor td {
     padding-top: 16px;
   }
+}
+.edit-post-visual-editor th,
+.edit-post-visual-editor td {
+  border-bottom: 1px solid #d8dde0;
+  text-align: left;
+  vertical-align: top;
 }
 .edit-post-visual-editor th:last-child,
 .edit-post-visual-editor td:last-child {
@@ -1389,7 +920,6 @@
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556;
-  text-align: left;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor caption {
@@ -1403,6 +933,9 @@
     font-size: 18pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor caption {
+  text-align: left;
 }
 .edit-post-visual-editor .nhsuk-form-group {
   margin-bottom: 16px;
@@ -1431,14 +964,19 @@
   border: 0;
   padding: 0;
 }
-.edit-post-visual-editor .nhsuk-grid-row {
-  margin-left: -16px;
-  margin-right: -16px;
+.edit-post-visual-editor {
+  /* ==========================================================================
+     OBJECTS / #GRID
+     ========================================================================== */
 }
 .edit-post-visual-editor .nhsuk-grid-row:after {
   clear: both;
   content: "";
   display: block;
+}
+.edit-post-visual-editor .nhsuk-grid-row {
+  margin-left: -16px;
+  margin-right: -16px;
 }
 .edit-post-visual-editor .nhsuk-grid-column-one-quarter {
   box-sizing: border-box;
@@ -1500,15 +1038,39 @@
     width: 100%;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     OBJECTS / #MAIN-WRAPPER
+     ========================================================================== */
+  /**
+   * Page wrapper for the grid system
+   *
+   * Usage:
+   * <div class="nhsuk-width-container">
+   *   <div class="nhsuk-main-wrapper">
+   *    <!-- Wrapper for the main content of your page which applies padding
+   *         to the top / bottom -->
+   *   </div>
+   * </div>
+   *
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/govuk-frontend
+   *
+   * 1. In IE11 the `main` element can be used, but is not recognized  –
+   *    meaning it's not defined in IE's default style sheet,
+   *    so it uses CSS initial value, which is inline.
+   */
+}
 .edit-post-visual-editor .nhsuk-main-wrapper {
   padding-top: 40px;
-  padding-bottom: 40px;
-  display: block; /* [1] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-main-wrapper {
     padding-top: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-main-wrapper {
+  padding-bottom: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-main-wrapper {
@@ -1521,6 +1083,9 @@
 .edit-post-visual-editor .nhsuk-main-wrapper > *:last-child {
   margin-bottom: 0;
 }
+.edit-post-visual-editor .nhsuk-main-wrapper {
+  display: block; /* [1] */
+}
 .edit-post-visual-editor .nhsuk-main-wrapper--l {
   padding-top: 48px;
 }
@@ -1531,27 +1096,49 @@
 }
 .edit-post-visual-editor .nhsuk-main-wrapper--s {
   padding-bottom: 24px;
-  padding-top: 24px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-main-wrapper--s {
     padding-bottom: 32px;
   }
 }
+.edit-post-visual-editor .nhsuk-main-wrapper--s {
+  padding-top: 24px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-main-wrapper--s {
     padding-top: 32px;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     OBJECTS / #WIDTH-CONTAINER
+     ========================================================================== */
+  /**
+   * Page width for the grid system
+   *
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/govuk-frontend
+   *
+   * 1. On mobile, add half width gutters
+   * 2. Limit the width of the container to the page width
+   * 3. From desktop, add full width gutters
+   * 4. As soon as the viewport is greater than the width of the page plus the
+   *    gutters, just centre the content instead of adding gutters.
+   * 5. Full width container, spanning the entire width of the viewport
+   */
+}
 .edit-post-visual-editor .nhsuk-width-container {
   margin: 0 16px; /* [1] */
   max-width: 960px; /* [2] */
-  /* [4] */
 }
 @media (min-width: 48.0625em) {
   .edit-post-visual-editor .nhsuk-width-container {
     margin: 0 32px; /* [3] */
   }
+}
+.edit-post-visual-editor .nhsuk-width-container {
+  /* [4] */
 }
 @media (min-width: 1024px) {
   .edit-post-visual-editor .nhsuk-width-container {
@@ -1566,6 +1153,11 @@
   .edit-post-visual-editor .nhsuk-width-container-fluid {
     margin: 0 32px; /* [3] */
   }
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     STYLES / #ICONS
+     ========================================================================== */
 }
 .edit-post-visual-editor .nhsuk-icon {
   height: 34px;
@@ -1637,14 +1229,20 @@
   height: 68px;
   width: 68px;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     STYLES / #LISTS
+     ========================================================================== */
+  /**
+   * 1. 'Random number' used to align ul and ol left with content.
+   * 2. 'Random number' used to give sufficient spacing between text and icon.
+   * 3. 'Random number' used to align icon and text.
+   */
+}
 .edit-post-visual-editor ol, .edit-post-visual-editor ul, .edit-post-visual-editor .nhsuk-list {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 16px;
-  list-style-type: none;
-  margin-top: 0;
-  padding-left: 0;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor ol, .edit-post-visual-editor ul, .edit-post-visual-editor .nhsuk-list {
@@ -1659,19 +1257,29 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor ol, .edit-post-visual-editor ul, .edit-post-visual-editor .nhsuk-list {
+  margin-bottom: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor ol, .edit-post-visual-editor ul, .edit-post-visual-editor .nhsuk-list {
     margin-bottom: 24px;
   }
 }
+.edit-post-visual-editor ol, .edit-post-visual-editor ul, .edit-post-visual-editor .nhsuk-list {
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
+}
 .edit-post-visual-editor ol ol, .edit-post-visual-editor ul ol, .edit-post-visual-editor ol ul, .edit-post-visual-editor ul ul, .edit-post-visual-editor .nhsuk-list ol, .edit-post-visual-editor .nhsuk-list ul, .edit-post-visual-editor ol .nhsuk-list, .edit-post-visual-editor ul .nhsuk-list, .edit-post-visual-editor .nhsuk-list .nhsuk-list {
   margin-top: 8px;
-  margin-bottom: 0;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor ol ol, .edit-post-visual-editor ul ol, .edit-post-visual-editor ol ul, .edit-post-visual-editor ul ul, .edit-post-visual-editor .nhsuk-list ol, .edit-post-visual-editor .nhsuk-list ul, .edit-post-visual-editor ol .nhsuk-list, .edit-post-visual-editor ul .nhsuk-list, .edit-post-visual-editor .nhsuk-list .nhsuk-list {
     margin-top: 8px;
   }
+}
+.edit-post-visual-editor ol ol, .edit-post-visual-editor ul ol, .edit-post-visual-editor ol ul, .edit-post-visual-editor ul ul, .edit-post-visual-editor .nhsuk-list ol, .edit-post-visual-editor .nhsuk-list ul, .edit-post-visual-editor ol .nhsuk-list, .edit-post-visual-editor ul .nhsuk-list, .edit-post-visual-editor .nhsuk-list .nhsuk-list {
+  margin-bottom: 0;
 }
 .edit-post-visual-editor ol > li, .edit-post-visual-editor ul > li, .edit-post-visual-editor .nhsuk-list > li {
   margin-bottom: 8px;
@@ -1705,18 +1313,32 @@
   margin-top: -5px; /* [3] */
   position: absolute;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     STYLES / #SECTION-BREAK
+     ========================================================================== */
+  /**
+   * 1. Extended the section-break--l code for usage of a semantic <hr> with
+   * no class name.
+   *
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/govuk-frontend
+   */
+}
 .edit-post-visual-editor hr, .edit-post-visual-editor .nhsuk-section-break {
   border: 0;
   margin: 0;
 }
 .edit-post-visual-editor .nhsuk-section-break--xl {
   margin-top: 48px;
-  margin-bottom: 48px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-section-break--xl {
     margin-top: 56px;
   }
+}
+.edit-post-visual-editor .nhsuk-section-break--xl {
+  margin-bottom: 48px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-section-break--xl {
@@ -1725,12 +1347,14 @@
 }
 .edit-post-visual-editor hr, .edit-post-visual-editor .nhsuk-section-break--l {
   margin-top: 32px;
-  margin-bottom: 32px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor hr, .edit-post-visual-editor .nhsuk-section-break--l {
     margin-top: 40px;
   }
+}
+.edit-post-visual-editor hr, .edit-post-visual-editor .nhsuk-section-break--l {
+  margin-bottom: 32px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor hr, .edit-post-visual-editor .nhsuk-section-break--l {
@@ -1739,12 +1363,14 @@
 }
 .edit-post-visual-editor .nhsuk-section-break--m {
   margin-top: 16px;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-section-break--m {
     margin-top: 24px;
   }
+}
+.edit-post-visual-editor .nhsuk-section-break--m {
+  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-section-break--m {
@@ -1757,15 +1383,17 @@
 .edit-post-visual-editor hr {
   /* [1] */
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     STYLES / #TYPOGRAPHY
+     ========================================================================== */
+  /* Headings */
+}
 .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
 .edit-post-visual-editor .nhsuk-heading-xl {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.25;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
@@ -1782,6 +1410,13 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
+.edit-post-visual-editor .nhsuk-heading-xl {
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h1, .edit-post-visual-editor .editor-post-title__input,
   .edit-post-visual-editor .nhsuk-heading-xl {
@@ -1793,10 +1428,6 @@
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.33333;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h2,
@@ -1813,6 +1444,13 @@
     line-height: 1.05;
   }
 }
+.edit-post-visual-editor h2,
+.edit-post-visual-editor .nhsuk-heading-l {
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h2,
   .edit-post-visual-editor .nhsuk-heading-l {
@@ -1825,10 +1463,6 @@
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h3,
@@ -1847,6 +1481,14 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor h3,
+.edit-post-visual-editor .nhsuk-heading-m,
+.edit-post-visual-editor .nhsuk-card.is-style-panel-with-label .nhsuk-card__content h2 {
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h3,
   .edit-post-visual-editor .nhsuk-heading-m,
@@ -1859,10 +1501,6 @@
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h4,
@@ -1879,6 +1517,13 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor h4,
+.edit-post-visual-editor .nhsuk-heading-s {
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h4,
   .edit-post-visual-editor .nhsuk-heading-s {
@@ -1890,10 +1535,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h5,
@@ -1909,6 +1550,13 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor h5,
+.edit-post-visual-editor .nhsuk-heading-xs {
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h5,
@@ -1921,10 +1569,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  display: block;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h6,
@@ -1941,20 +1585,27 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor h6,
+.edit-post-visual-editor .nhsuk-heading-xxs {
+  display: block;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor h6,
   .edit-post-visual-editor .nhsuk-heading-xxs {
     margin-bottom: 24px;
   }
 }
+.edit-post-visual-editor {
+  /* Captions to be used inside headings */
+}
 .edit-post-visual-editor .nhsuk-caption-xl {
   font-weight: 400;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.33333;
-  color: #4c6272;
-  display: block;
-  margin-bottom: 4px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-caption-xl {
@@ -1969,14 +1620,16 @@
     line-height: 1.05;
   }
 }
+.edit-post-visual-editor .nhsuk-caption-xl {
+  color: #4c6272;
+  display: block;
+  margin-bottom: 4px;
+}
 .edit-post-visual-editor .nhsuk-caption-l {
   font-weight: 400;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  color: #4c6272;
-  display: block;
-  margin-bottom: 4px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-caption-l {
@@ -1991,13 +1644,16 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-caption-l {
+  color: #4c6272;
+  display: block;
+  margin-bottom: 4px;
+}
 .edit-post-visual-editor .nhsuk-caption-m {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #4c6272;
-  display: block;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-caption-m {
@@ -2012,17 +1668,21 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-caption-m {
+  color: #4c6272;
+  display: block;
+}
 .edit-post-visual-editor .nhsuk-caption--bottom {
   margin-bottom: 0;
   margin-top: 4px;
+}
+.edit-post-visual-editor {
+  /* Body (paragraphs) */
 }
 .edit-post-visual-editor .nhsuk-body-l {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 24px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-body-l {
@@ -2036,6 +1696,11 @@
     font-size: 18pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-body-l {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-body-l {
@@ -2047,9 +1712,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor address, .edit-post-visual-editor p,
@@ -2065,6 +1727,12 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor address, .edit-post-visual-editor p,
+.edit-post-visual-editor .nhsuk-body-m {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor address, .edit-post-visual-editor p,
@@ -2080,9 +1748,6 @@
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
-  display: block;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-body-s {
@@ -2097,6 +1762,11 @@
     line-height: 1.2;
   }
 }
+.edit-post-visual-editor .nhsuk-body-s {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-body-s {
     margin-bottom: 24px;
@@ -2105,13 +1775,19 @@
 .edit-post-visual-editor address {
   font-style: normal;
 }
+.edit-post-visual-editor {
+  /**
+   * Lede text
+   *
+   * 1. Apply lede text styling to p and ul within the lede element
+   * 2. Reduces the spacing between the page heading and the lede text
+   */
+}
 .edit-post-visual-editor .nhsuk-lede-text {
   font-weight: 400;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  margin-bottom: 40px;
-  /* [1] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-lede-text {
@@ -2126,10 +1802,16 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-lede-text {
+  margin-bottom: 40px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-lede-text {
     margin-bottom: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-lede-text {
+  /* [1] */
 }
 .edit-post-visual-editor .nhsuk-lede-text p,
 .edit-post-visual-editor .nhsuk-lede-text ul {
@@ -2158,7 +1840,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 24px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-lede-text--small {
@@ -2173,15 +1854,33 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-lede-text--small {
+  margin-bottom: 24px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-lede-text--small {
     margin-bottom: 32px;
   }
 }
+.edit-post-visual-editor {
+  /* [2] */
+}
 .edit-post-visual-editor h1 + .nhsuk-lede-text, .edit-post-visual-editor .editor-post-title__input + .nhsuk-lede-text,
 .edit-post-visual-editor h1 + .nhsuk-lede-text--small,
 .edit-post-visual-editor .editor-post-title__input + .nhsuk-lede-text--small {
   margin-top: -8px;
+}
+.edit-post-visual-editor {
+  /**
+   * Contextual adjustments
+   *
+   * Add top padding to headings that appear directly after paragraphs.
+   *
+   * 1. Removes the padding-top because of the lede-text's increased margin-bottom
+   *
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/nhsuk-frontend
+   */
 }
 .edit-post-visual-editor .nhsuk-body-l + h2,
 .edit-post-visual-editor .nhsuk-body-l + .nhsuk-heading-l {
@@ -2299,18 +1998,50 @@
     padding-top: 8px;
   }
 }
+.edit-post-visual-editor {
+  /* [1] */
+}
 .edit-post-visual-editor .nhsuk-lede-text + h2,
 .edit-post-visual-editor .nhsuk-lede-text + .nhsuk-heading-l {
   padding-top: 0;
+}
+.edit-post-visual-editor {
+  /* Font weight for <strong> and <b> */
 }
 .edit-post-visual-editor strong,
 .edit-post-visual-editor b {
   font-weight: 600;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     UTILITIES / #CLEARFIX
+     ========================================================================== */
+  /**
+   * Automatically clear an elements
+   * child elements
+   *
+   * Usage: class="nhsuk-u-clear"
+   * See tools/mixins
+   */
+}
 .edit-post-visual-editor .nhsuk-u-clear:after {
   clear: both;
   content: "";
   display: block;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     UTILITIES / #GRID
+     ========================================================================== */
+  /**
+   * Force grid widths on all screen sizes
+   * By default all grid elements will go to 100% width
+   * on screen sizes below tablet, these utilities can force
+   * custom widths on all screen sizes
+   *
+   * Usage: class="nhsuk-u-one-half"
+   */
+  /* stylelint-disable declaration-no-important */
 }
 .edit-post-visual-editor .nhsuk-u-one-half {
   float: left;
@@ -2331,6 +2062,19 @@
 .edit-post-visual-editor .nhsuk-u-three-quarters {
   float: left;
   width: 75% !important;
+}
+.edit-post-visual-editor {
+  /**
+   * Force grid widths on screen sizes on tablet
+   * and above
+   *
+   * By default all grid elements will go to 100% width
+   * on every screen size, these utilities can force
+   * custom widths on screen sizes on tablet
+   * and above
+   *
+   * Usage: class="nhsuk-u-one-half-tablet"
+   */
 }
 .edit-post-visual-editor .nhsuk-u-one-half-tablet {
   width: 100% !important;
@@ -2377,10 +2121,33 @@
     width: 75% !important;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     UTILITIES / #LINK-NOWRAP
+     ========================================================================== */
+  /**
+   * Prevent long anchor links from line breaking
+   * on smaller screens
+   *
+   * Usage: class="nhsuk-u-nowrap"
+   */
+}
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-u-nowrap {
     white-space: nowrap;
   }
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     UTILITIES / #READING-WIDTH
+     ========================================================================== */
+  /**
+   * Reading width mixin, add a maximum width
+   * to large pieces of content
+   *
+   * Usage: class="nhsuk-u-reading-width"
+   * See tools/mixins
+   */
 }
 .edit-post-visual-editor .nhsuk-u-reading-width {
   max-width: 44em;
@@ -3185,6 +2952,20 @@
     padding-left: 64px !important;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     UTILITIES / #TYPOGRAPHY
+     ========================================================================== */
+  /**
+   * Font size and line height
+   *
+   * Generate typography override classes for each responsive font map in the
+   * typography scale eg .nhsuk-u-font-size-48
+   *
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/govuk-frontend
+   */
+}
 .edit-post-visual-editor .nhsuk-u-font-size-64 {
   font-size: 48px !important;
   font-size: 3rem !important;
@@ -3329,14 +3110,41 @@
     line-height: 1.2 !important;
   }
 }
+.edit-post-visual-editor {
+  /* Weights
+     ========================================================================== */
+  /**
+   * Generate font weight override classes for normal and bold
+   * eg .nhsuk-u-font-weight-normal
+   */
+}
 .edit-post-visual-editor .nhsuk-u-font-weight-normal {
   font-weight: 400 !important;
 }
 .edit-post-visual-editor .nhsuk-u-font-weight-bold {
   font-weight: 600 !important;
 }
+.edit-post-visual-editor {
+  /* Colours
+     ========================================================================== */
+  /**
+   * Secondary text colour $nhsuk-secondary-text-color
+   * eg <p class="nhsuk-u-secondary-text-color">Published on: 15 March 2018</p>
+   */
+}
 .edit-post-visual-editor .nhsuk-u-secondary-text-color {
   color: #4c6272 !important; /* stylelint-disable-line declaration-no-important */
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     UTILITIES / #VISUALLY-HIDDEN
+     ========================================================================== */
+  /**
+   * Hide elements visually but keep it in the DOM
+   *
+   * Usage: class="nhsuk-u-visually-hidden"
+   * See tools/mixins
+   */
 }
 .edit-post-visual-editor .nhsuk-u-visually-hidden {
   border: 0;
@@ -3350,6 +3158,19 @@
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     UTILITIES / #WIDTH
+     ========================================================================== */
+  /**
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/govuk-frontend
+   * Force element widths on all screen sizes
+   *
+   * Usage: class="nhsuk-u-width-full"
+   */
+  /* stylelint-disable declaration-no-important */
 }
 .edit-post-visual-editor .nhsuk-u-width-full {
   width: 100% !important;
@@ -3394,6 +3215,21 @@
     width: 25% !important;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #ACTION-LINK
+     ========================================================================== */
+  /**
+   * 1. Display is inline-block so the top and bottom margins/paddings are
+   *    respected.
+   * 2. 'Random number' is used to properly have sufficient space between icon
+   *    and text.
+   * 3. Position is relative so the arrow icon can display absolute.
+   * 4. Text decoration none used to override default <a> styling.
+   * 5. Box shadow 8px used instead of the default 4px.
+   * 6. Text decoration underline used to override default <a> styling.
+   */
+}
 .edit-post-visual-editor .nhsuk-action-link {
   margin-bottom: 32px;
 }
@@ -3407,11 +3243,6 @@
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.55556;
-  display: inline-block; /* [1] */
-  font-weight: 600;
-  padding-left: 38px; /* [2] */
-  position: relative; /* [3] */
-  text-decoration: none; /* [4] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-action-link__link {
@@ -3425,6 +3256,13 @@
     font-size: 18pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-action-link__link {
+  display: inline-block; /* [1] */
+  font-weight: 600;
+  padding-left: 38px; /* [2] */
+  position: relative; /* [3] */
+  text-decoration: none; /* [4] */
 }
 .edit-post-visual-editor .nhsuk-action-link__link:hover .nhsuk-action-link__text {
   text-decoration: underline; /* [6] */
@@ -3453,14 +3291,6 @@
     color: #212b32;
   }
 }
-.edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
-  fill: #007f3b;
-  height: 36px;
-  left: -3px;
-  position: absolute;
-  top: -2px;
-  width: 36px;
-}
 @media print {
   .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
     color: #212b32;
@@ -3469,6 +3299,14 @@
   .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:active, .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:focus, .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle:visited {
     color: #212b32;
   }
+}
+.edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
+  fill: #007f3b;
+  height: 36px;
+  left: -3px;
+  position: absolute;
+  top: -2px;
+  width: 36px;
 }
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
@@ -3479,6 +3317,16 @@
     width: 24px;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #BACK-LINK
+     ========================================================================== */
+  /**
+   * 1. Allow space for the arrow.
+   * 2. Align the icon with the start of the back link.
+   * 3. Align the icon with the middle of the text.
+   */
+}
 .edit-post-visual-editor .nhsuk-back-link {
   margin-bottom: 16px;
 }
@@ -3486,14 +3334,6 @@
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
-  color: #005eb8;
-  background: none;
-  border: 0;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0 0 0 16px; /* 1 */
-  position: relative;
-  text-decoration: none;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-back-link__link {
@@ -3507,6 +3347,9 @@
     font-size: 14pt;
     line-height: 1.2;
   }
+}
+.edit-post-visual-editor .nhsuk-back-link__link {
+  color: #005eb8;
 }
 .edit-post-visual-editor .nhsuk-back-link__link:visited {
   color: #330072;
@@ -3534,6 +3377,15 @@
 .edit-post-visual-editor .nhsuk-back-link__link:active {
   color: #002f5c;
 }
+.edit-post-visual-editor .nhsuk-back-link__link {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0 0 16px; /* 1 */
+  position: relative;
+  text-decoration: none;
+}
 .edit-post-visual-editor .nhsuk-back-link__link .nhsuk-icon__chevron-left {
   height: 24px;
   left: -8px; /* 2 */
@@ -3554,37 +3406,48 @@
 .edit-post-visual-editor .nhsuk-back-link__link:focus .nhsuk-icon__chevron-left {
   fill: #212b32;
 }
-.edit-post-visual-editor .nhsuk-breadcrumb {
-  /* [1] */
-  padding-bottom: 16px;
-  padding-top: 20px; /* [2] */
+.edit-post-visual-editor {
+  /* ==========================================================================
+      COMPONENTS / #BREADCRUMB
+     ========================================================================== */
+  /**
+   * 1. Hide the breadcrumb on print stylesheets.
+   * 2. Bespoke spacing numbers used as there is no 20px
+   *    spacing mapped in settings/spacing.
+   * 3. Don't show the full breadcrumb below tablet size.
+   * 4. Typography sizing mixin, see core/tools/_typography
+   * 5. and core/settings/_typography for size maps.
+   * 5. .. but show a back to index page link.
+   */
 }
 @media print {
   .edit-post-visual-editor .nhsuk-breadcrumb {
     display: none;
   }
 }
+.edit-post-visual-editor .nhsuk-breadcrumb {
+  /* [1] */
+  padding-bottom: 16px;
+  padding-top: 20px; /* [2] */
+}
 .edit-post-visual-editor .nhsuk-breadcrumb + .nhsuk-width-container .nhsuk-main-wrapper {
   padding-top: 0;
-}
-.edit-post-visual-editor .nhsuk-breadcrumb__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-breadcrumb__list {
     display: none; /* [3] */
   }
 }
+.edit-post-visual-editor .nhsuk-breadcrumb__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .edit-post-visual-editor .nhsuk-breadcrumb__item {
   font-weight: 400;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
-  /* [4] */
-  display: inline-block;
-  margin-bottom: 0;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-breadcrumb__item {
@@ -3598,6 +3461,11 @@
     font-size: 14pt;
     line-height: 1.2;
   }
+}
+.edit-post-visual-editor .nhsuk-breadcrumb__item {
+  /* [4] */
+  display: inline-block;
+  margin-bottom: 0;
 }
 .edit-post-visual-editor .nhsuk-breadcrumb__item:not(:last-child):after {
   background: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__chevron-right' xmlns='http://www.w3.org/2000/svg' fill='%23aeb7bd' height='18' width='18' viewBox='0 0 24 24' aria-hidden='true'%3E%3Cpath d='M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z'%3E%3C/path%3E%3C/svg%3E") right 0 top 4px no-repeat;
@@ -3622,10 +3490,6 @@
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
-  /* [4] */
-  margin: 0;
-  padding-left: 16px;
-  position: relative;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-breadcrumb__back {
@@ -3639,6 +3503,12 @@
     font-size: 14pt;
     line-height: 1.2;
   }
+}
+.edit-post-visual-editor .nhsuk-breadcrumb__back {
+  /* [4] */
+  margin: 0;
+  padding-left: 16px;
+  position: relative;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-breadcrumb__back {
@@ -3661,12 +3531,45 @@
 .edit-post-visual-editor .nhsuk-breadcrumb__backlink:visited:hover {
   color: #7c2855;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #BUTTON
+     ========================================================================== */
+  /**
+   * 1. Ensure that any global link styles are overridden.
+   * 2. Fix unwanted button padding in Firefox.
+   * 3. Use a pseudo element to expand the click target area to include the
+   *    button's shadow as well, in case users try to click it.
+   */
+}
 .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.47368;
+  }
+}
+@media print {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   margin-bottom: 28px;
+}
+@media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+    margin-bottom: 36px;
+  }
+}
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
   -webkit-appearance: none;
   background-color: #007f3b;
   border: 2px solid transparent;
@@ -3683,36 +3586,21 @@
   text-align: center;
   vertical-align: top;
   width: auto;
-  /* 2 */
-  /* 3 */
-  /* 4 */
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.47368;
-  }
-}
-@media print {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
-    margin-bottom: 36px;
-  }
 }
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
     padding: 8px 16px;
   }
 }
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  /* 2 */
+}
 .edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
   color: #ffffff;
   text-decoration: none;
+}
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  /* 3 */
 }
 .edit-post-visual-editor .nhsuk-button::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::-moz-focus-inner, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button::-moz-focus-inner, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::-moz-focus-inner {
   border: 0;
@@ -3739,6 +3627,9 @@
   color: #ffffff;
   top: 4px;
 }
+.edit-post-visual-editor .nhsuk-button, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .ld-expand-button, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle {
+  /* 4 */
+}
 .edit-post-visual-editor .nhsuk-button::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-icon.ld-primary-background::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle::before {
   background: transparent;
   bottom: -6px;
@@ -3751,6 +3642,11 @@
 }
 .edit-post-visual-editor .nhsuk-button:active::before, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active::before, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active::before, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active::before, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active::before {
   top: -6px;
+}
+.edit-post-visual-editor {
+  /**
+   * Button variations
+   */
 }
 .edit-post-visual-editor .nhsuk-button--secondary {
   background-color: #4c6272;
@@ -3828,6 +3724,12 @@
 }
 .edit-post-visual-editor .nhsuk-button--warning.nhsuk-button--disabled {
   background-color: #d5281b;
+}
+.edit-post-visual-editor {
+  /**
+   * Button disabled states
+   */
+  /* stylelint-disable string-quotes */
 }
 .edit-post-visual-editor .nhsuk-button--disabled,
 .edit-post-visual-editor .nhsuk-button[disabled=disabled],
@@ -3918,21 +3820,46 @@
   box-shadow: 0 4px 0 #212b32;
   top: 0;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #CARD
+     ========================================================================== */
+  /**
+   * 1. Is needed for the :active top positioning, and invisible clickable overlay.
+   * 2. Border is used to create a divider between the white content
+   *    box and an image.
+   * 3. Creates the 'pressed down' effect when clicked.
+   * 4. Removes padding-top from headings directly after the card group.
+   * 5. Includes the border width to achieve the correct left alignment.
+   * 6. Stops the heading from spanning the full width of the card.
+   * 7. Removes padding top for the feature heading positioning.
+   * 8. Default care card colour set to blue (non-urgent care card) -
+   *    using the @mixin care-card tools/_mixins.scss.
+   *    The same mixin is used for each care card, setting the background
+   *    colour,text colour and print border width with the variables.
+   * 9. 'Random number' for the heading triangle.
+   * 10. 'Random number' for the heading triangle positioning.
+   * 11. 'Random number' used for spacing to compensate for the triangle.
+   * 12. Needed to enable the triangle to show correctly in high contrast mode.
+   * 13. Prevent additional padding on headings
+   * 14. Give the action link icon sufficient contrast when used in the emergency variant
+   * 15. Reset the positioning to the default [1] to display heading triangle on a coloured background.
+   * 16. Emergency care card <a> needs to be white because the background colour is black.
+   * 17. Trick IE10 into rendering the invisible clickable area. Without this it does not.
+   */
+}
 .edit-post-visual-editor .nhsuk-card {
   margin-bottom: 40px;
-  background: #ffffff;
-  border: 1px solid #d8dde0;
-  position: relative; /* [1] */
-  width: 100%;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card {
     margin-bottom: 48px;
   }
 }
-.edit-post-visual-editor .nhsuk-card__img {
-  border-bottom: 1px solid #f0f4f5; /* [2] */
-  display: block;
+.edit-post-visual-editor .nhsuk-card {
+  background: #ffffff;
+  border: 1px solid #d8dde0;
+  position: relative; /* [1] */
   width: 100%;
 }
 @media print {
@@ -3940,14 +3867,19 @@
     display: none;
   }
 }
-.edit-post-visual-editor .nhsuk-card__content {
-  padding: 24px;
+.edit-post-visual-editor .nhsuk-card__img {
+  border-bottom: 1px solid #f0f4f5; /* [2] */
+  display: block;
+  width: 100%;
 }
 .edit-post-visual-editor .nhsuk-card__content > *:first-child {
   margin-top: 0;
 }
 .edit-post-visual-editor .nhsuk-card__content > *:last-child {
   margin-bottom: 0;
+}
+.edit-post-visual-editor .nhsuk-card__content {
+  padding: 24px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card__content {
@@ -3958,6 +3890,10 @@
 .edit-post-visual-editor .nhsuk-card__metadata,
 .edit-post-visual-editor .nhsuk-card__description {
   margin-bottom: 16px;
+}
+.edit-post-visual-editor {
+  /* Clickable card
+    ========================================================================== */
 }
 .edit-post-visual-editor .nhsuk-card--clickable {
   border-bottom-width: 4px;
@@ -3976,6 +3912,15 @@
 .edit-post-visual-editor .nhsuk-card--clickable:active {
   border-color: #aeb7bd;
   bottom: -1px; /* [3] */
+}
+.edit-post-visual-editor {
+  /* Card group
+    ========================================================================== */
+  /**
+  * Card group allows you to have a row of cards.
+  *
+  * Flexbox is used to make each card in a row the same height.
+  */
 }
 .edit-post-visual-editor .nhsuk-card-group {
   display: flex;
@@ -3997,13 +3942,15 @@
 }
 .edit-post-visual-editor .nhsuk-card-group__item {
   display: flex;
-  list-style-type: none;
-  margin-bottom: 0;
 }
 @media (max-width: 48.0525em) {
   .edit-post-visual-editor .nhsuk-card-group__item {
     flex: 0 0 100%;
   }
+}
+.edit-post-visual-editor .nhsuk-card-group__item {
+  list-style-type: none;
+  margin-bottom: 0;
 }
 .edit-post-visual-editor .nhsuk-card-group__item .nhsuk-card {
   margin-bottom: 32px;
@@ -4015,6 +3962,10 @@
   .edit-post-visual-editor .nhsuk-card-group__item:last-child .nhsuk-card {
     margin-bottom: 0;
   }
+}
+.edit-post-visual-editor {
+  /* Card feature
+    ========================================================================== */
 }
 .edit-post-visual-editor .nhsuk-card--feature, .edit-post-visual-editor .nhsuk-card.is-style-panel-with-label {
   margin-top: 40px;
@@ -4046,9 +3997,12 @@
 .edit-post-visual-editor .nhsuk-card__content--feature {
   padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */ /* [7] */
 }
+.edit-post-visual-editor {
+  /* Care card
+    ========================================================================== */
+}
 .edit-post-visual-editor .nhsuk-card--care {
   margin-top: 40px;
-  /* [8] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card--care {
@@ -4066,30 +4020,35 @@
     page-break-inside: avoid;
   }
 }
+.edit-post-visual-editor .nhsuk-card--care {
+  /* [8] */
+}
 .edit-post-visual-editor .nhsuk-card--care__heading-container {
   padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  position: relative;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card--care__heading-container {
     padding-left: 32px;
   }
 }
+.edit-post-visual-editor .nhsuk-card--care__heading-container {
+  padding-right: 24px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card--care__heading-container {
     padding-right: 32px;
   }
+}
+.edit-post-visual-editor .nhsuk-card--care__heading-container {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  position: relative;
 }
 .edit-post-visual-editor .nhsuk-card--care__heading {
   font-weight: 600;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  margin: 0;
-  padding-top: 0; /* [13] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-card--care__heading {
@@ -4112,6 +4071,10 @@
   .edit-post-visual-editor .nhsuk-card--care__heading:active, .edit-post-visual-editor .nhsuk-card--care__heading:focus, .edit-post-visual-editor .nhsuk-card--care__heading:visited {
     color: #212b32;
   }
+}
+.edit-post-visual-editor .nhsuk-card--care__heading {
+  margin: 0;
+  padding-top: 0; /* [13] */
 }
 .edit-post-visual-editor .nhsuk-card--care__arrow {
   bottom: -10px; /* [9] */
@@ -4196,6 +4159,10 @@
 .edit-post-visual-editor .nhsuk-card--care--emergency .nhsuk-action-link__link .nhsuk-icon__arrow-right-circle {
   fill: #ffffff; /* [14] */
 }
+.edit-post-visual-editor {
+  /* Card primary
+    ========================================================================== */
+}
 .edit-post-visual-editor .nhsuk-card__content--primary {
   padding-right: 75px;
 }
@@ -4213,6 +4180,10 @@
   right: 24px;
   top: 50%;
 }
+.edit-post-visual-editor {
+  /* Card secondary
+    ========================================================================== */
+}
 .edit-post-visual-editor .nhsuk-card--secondary {
   background: transparent;
   border-bottom: 4px solid #d8dde0;
@@ -4225,17 +4196,20 @@
   padding-right: 0;
   padding-top: 0;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #CHECKBOXES
+     ========================================================================== */
+  /**
+   * 1. remove 300ms pause on mobile.
+   * 2. Fix bug in IE11 caused by transform rotate (-45deg).
+   */
+}
 .edit-post-visual-editor .nhsuk-checkboxes__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  clear: left;
-  display: block;
-  margin-bottom: 8px;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  position: relative;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-checkboxes__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
@@ -4249,6 +4223,14 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-checkboxes__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li {
+  clear: left;
+  display: block;
+  margin-bottom: 8px;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  position: relative;
 }
 .edit-post-visual-editor .nhsuk-checkboxes__item:last-child, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li:last-child,
 .edit-post-visual-editor .nhsuk-checkboxes__item:last-of-type,
@@ -4306,12 +4288,27 @@
   transform: rotate(-45deg);
   width: 22px;
 }
+.edit-post-visual-editor {
+  /*
+   * Focus state
+   *
+   * 1. Since box-shadows are removed when users customise their colours
+   *    We set a transparent outline that is shown instead.
+   *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
+   */
+}
 .edit-post-visual-editor .nhsuk-checkboxes__input:focus + .nhsuk-checkboxes__label::before, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + .nhsuk-checkboxes__label::before, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:focus + label::before, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:focus + label::before {
   border: 4px solid #212b32;
   box-shadow: 0 0 0 4px #ffeb3b;
 }
+.edit-post-visual-editor {
+  /* Selected state */
+}
 .edit-post-visual-editor .nhsuk-checkboxes__input:checked + .nhsuk-checkboxes__label::after, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + .nhsuk-checkboxes__label::after, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:checked + label::after, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:checked + label::after {
   opacity: 1;
+}
+.edit-post-visual-editor {
+  /* Disabled state */
 }
 .edit-post-visual-editor .nhsuk-checkboxes__input:disabled, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled,
 .edit-post-visual-editor .nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label,
@@ -4323,15 +4320,14 @@
 .edit-post-visual-editor .nhsuk-checkboxes__input:disabled + .nhsuk-checkboxes__label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + .nhsuk-checkboxes__label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li .nhsuk-checkboxes__input:disabled + label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li input:disabled + label {
   opacity: 0.5;
 }
+.edit-post-visual-editor {
+  /* Divider variant */
+}
 .edit-post-visual-editor .nhsuk-checkboxes__divider {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #212b32;
-  margin-bottom: 8px;
-  text-align: center;
-  width: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-checkboxes__divider {
@@ -4346,22 +4342,52 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-checkboxes__divider {
+  color: #212b32;
+  margin-bottom: 8px;
+  text-align: center;
+  width: 40px;
+}
+.edit-post-visual-editor {
+  /*
+   * Conditional
+   *
+   * 1. Calculate the amount of padding needed to keep the border
+   *    centered against the checkbox.
+   * 2. Move the border centered with the checkbox.
+   * 3. Move the contents of the conditional inline with the label.
+   */
+  /* 1 */
+  /* 2 */
+  /* 3 */
+}
 .edit-post-visual-editor .nhsuk-checkboxes__conditional {
   margin-bottom: 16px;
-  border-left: 4px solid #4c6272;
-  margin-left: 18px;
-  padding-left: 30px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-checkboxes__conditional {
     margin-bottom: 24px;
   }
 }
+.edit-post-visual-editor .nhsuk-checkboxes__conditional {
+  border-left: 4px solid #4c6272;
+  margin-left: 18px;
+  padding-left: 30px;
+}
 .edit-post-visual-editor .nhsuk-checkboxes__conditional > :last-child {
   margin-bottom: 0;
 }
 .edit-post-visual-editor .js-enabled .nhsuk-checkboxes__conditional--hidden {
   display: none;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #CONTENTS-LIST
+     ========================================================================== */
+  /**
+   * 1. Creates a grey line before each list
+   *    item using a ASCII number for the symbol.
+   */
 }
 .edit-post-visual-editor .nhsuk-contents-list {
   margin-bottom: 40px;
@@ -4391,13 +4417,21 @@
 .edit-post-visual-editor .nhsuk-contents-list__current {
   font-weight: 600;
 }
-.edit-post-visual-editor .nhsuk-date-input {
-  font-size: 0; /* 1 */
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #DATE-INPUT
+     ========================================================================== */
+  /**
+   * 1. font-size: 0 removes whitespace caused by inline-block
+   */
 }
 .edit-post-visual-editor .nhsuk-date-input:after {
   clear: both;
   content: "";
   display: block;
+}
+.edit-post-visual-editor .nhsuk-date-input {
+  font-size: 0; /* 1 */
 }
 .edit-post-visual-editor .nhsuk-date-input__item {
   display: inline-block;
@@ -4410,23 +4444,46 @@
 .edit-post-visual-editor .nhsuk-date-input__input {
   margin-bottom: 0;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #DETAILS
+     ========================================================================== */
+  /**
+   * Details component.
+   *
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/govuk-frontend
+   *
+   * 1. Style the summary to look like a link...
+   * 2. Make the focus outline shrink-wrap the text content of the summary
+   * 3. Absolutely position the marker against this element
+   * 3. Allow for absolutely positioned marker and align with disclosed text
+   * 4. Only underline the text, not the arrow
+   * 5. Remove the default details marker so we can style our own consistently and
+   *    ensure it displays in Firefox
+   * 6. Custom padding to left align the details text with the summary
+   */
+}
 .edit-post-visual-editor .nhsuk-details {
   color: #212b32;
-  margin-bottom: 16px;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  display: block;
 }
 @media print {
   .edit-post-visual-editor .nhsuk-details {
     color: #212b32;
   }
 }
+.edit-post-visual-editor .nhsuk-details {
+  margin-bottom: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-details {
     margin-bottom: 24px;
   }
+}
+.edit-post-visual-editor .nhsuk-details {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-details {
@@ -4440,6 +4497,9 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-details {
+  display: block;
 }
 .edit-post-visual-editor .nhsuk-details__summary {
   color: #005eb8; /* [1] */
@@ -4508,6 +4568,19 @@
 .edit-post-visual-editor .nhsuk-details__text > *:last-child {
   margin-bottom: 0;
 }
+.edit-post-visual-editor {
+  /**
+   * Expander variation.
+   *
+   * 1. !important used because the icon is populated
+   *    by the JavaScript polyfill
+   * 2. Remove the default hover, focus and active
+   *    styles for this component.
+   * 3. -2px left margin to align the icon to the content.
+   * 4. When a group of details is used reduce the
+   *    margin between them so they sit together.
+   */
+}
 .edit-post-visual-editor .nhsuk-expander {
   background-color: #ffffff;
   border: 1px solid #d8dde0;
@@ -4565,32 +4638,40 @@
 }
 .edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
   padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 0;
-  border-left: 0;
-  margin-left: 0;
-  margin-top: 0;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
     padding-bottom: 24px;
   }
 }
+.edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
+  padding-left: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
     padding-left: 24px;
   }
+}
+.edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
+  padding-right: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
     padding-right: 24px;
   }
 }
+.edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
+  padding-top: 0;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
     padding-top: 0;
   }
+}
+.edit-post-visual-editor .nhsuk-expander .nhsuk-details__text {
+  border-left: 0;
+  margin-left: 0;
+  margin-top: 0;
 }
 .edit-post-visual-editor .nhsuk-expander[open] {
   border-bottom-width: 1px;
@@ -4606,7 +4687,6 @@
 }
 .edit-post-visual-editor .nhsuk-expander-group {
   /* [4] */
-  margin-bottom: 16px;
 }
 .edit-post-visual-editor .nhsuk-expander-group > .nhsuk-details {
   margin-bottom: 8px;
@@ -4615,6 +4695,9 @@
   .edit-post-visual-editor .nhsuk-expander-group > .nhsuk-details {
     margin-bottom: 8px;
   }
+}
+.edit-post-visual-editor .nhsuk-expander-group {
+  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-expander-group {
@@ -4631,15 +4714,17 @@
     padding-top: 24px;
   }
 }
-.edit-post-visual-editor .nhsuk-do-dont-list {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  padding: 24px;
-  background-color: #ffffff;
-  color: #212b32;
-  border: 1px solid #d8dde0;
-  padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
-  /* [1] */
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #DO-DONT-LIST
+     ========================================================================== */
+  /**
+   * Do and Don't lists help users understand more easily what they should
+   * and shouldn't do.
+   *
+   * 1. Uses @mixin panel-with-label from tools/_mixins.
+   * 2. Uses @mixin heading-label from tools/_mixins.
+   */
 }
 .edit-post-visual-editor .nhsuk-do-dont-list > *:first-child {
   margin-top: 0;
@@ -4647,20 +4732,33 @@
 .edit-post-visual-editor .nhsuk-do-dont-list > *:last-child {
   margin-bottom: 0;
 }
+.edit-post-visual-editor .nhsuk-do-dont-list {
+  margin-bottom: 40px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-do-dont-list {
     margin-bottom: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-do-dont-list {
+  margin-top: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-do-dont-list {
     margin-top: 48px;
   }
 }
+.edit-post-visual-editor .nhsuk-do-dont-list {
+  padding: 24px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-do-dont-list {
     padding: 32px;
   }
+}
+.edit-post-visual-editor .nhsuk-do-dont-list {
+  background-color: #ffffff;
+  color: #212b32;
 }
 @media print {
   .edit-post-visual-editor .nhsuk-do-dont-list {
@@ -4668,18 +4766,15 @@
     page-break-inside: avoid;
   }
 }
+.edit-post-visual-editor .nhsuk-do-dont-list {
+  border: 1px solid #d8dde0;
+  padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+  /* [1] */
+}
 .edit-post-visual-editor .nhsuk-do-dont-list__label {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  background-color: #005eb8;
-  color: #ffffff;
-  display: inline-block;
-  margin: 0 0 8px -33px;
-  padding: 8px 32px;
-  position: relative;
-  top: -16px;
-  /* [2] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-do-dont-list__label {
@@ -4693,6 +4788,15 @@
     font-size: 18pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-do-dont-list__label {
+  background-color: #005eb8;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 0 8px -33px;
+  padding: 8px 32px;
+  position: relative;
+  top: -16px;
 }
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-do-dont-list__label {
@@ -4709,6 +4813,9 @@
     top: 0;
   }
 }
+.edit-post-visual-editor .nhsuk-do-dont-list__label {
+  /* [2] */
+}
 @media print {
   .edit-post-visual-editor .nhsuk-do-dont-list__label {
     color: #212b32;
@@ -4718,15 +4825,16 @@
     color: #212b32;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #ERROR-MESSAGE
+     ========================================================================== */
+}
 .edit-post-visual-editor .nhsuk-error-message {
   font-weight: 600;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  clear: both;
-  color: #d5281b;
-  display: block;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-error-message {
@@ -4741,20 +4849,39 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-error-message {
+  clear: both;
+  color: #d5281b;
+  display: block;
+  margin-bottom: 16px;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #ERROR-SUMMARY
+     ========================================================================== */
+  /**
+   * 1. Cross-component class - adjusts styling of list component.
+   * 2. Override default link styling to use error colour
+   */
+}
 .edit-post-visual-editor .nhsuk-error-summary {
   padding: 16px;
-  margin-bottom: 32px;
-  border: 4px solid #d5281b;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-error-summary {
     padding: 24px;
   }
 }
+.edit-post-visual-editor .nhsuk-error-summary {
+  margin-bottom: 32px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-error-summary {
     margin-bottom: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-error-summary {
+  border: 4px solid #d5281b;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-error-summary {
@@ -4771,8 +4898,6 @@
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  margin-top: 0;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-error-summary__title {
@@ -4786,6 +4911,10 @@
     font-size: 18pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-error-summary__title {
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-error-summary__title {
@@ -4839,29 +4968,34 @@
   outline: 4px solid transparent;
   text-decoration: none;
 }
-.edit-post-visual-editor .nhsuk-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #FIELDSET
+     ========================================================================== */
+  /**
+   * 1. Fix legend text wrapping in Edge and IE versions:
+   * 2. IE9-11 & Edge 12-13
+   * 3. Hack to let legends or elements within legends have margins in webkit browsers.
+   * 4. When the legend contains an H1, we want the H1 to inherit all styles from
+   *    the legend. Effectively we want to be able to treat the heading as if it is
+   *    not there.
+   */
 }
 .edit-post-visual-editor .nhsuk-fieldset:after {
   clear: both;
   content: "";
   display: block;
 }
+.edit-post-visual-editor .nhsuk-fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 .edit-post-visual-editor .nhsuk-fieldset__legend {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  box-sizing: border-box; /* 1 */
-  color: #212b32;
-  display: table; /* 2 */
-  margin-bottom: 8px;
-  margin-top: 0;
-  max-width: 100%; /* 1 */
-  padding: 0;
-  white-space: normal; /* 3 */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-fieldset__legend {
@@ -4876,12 +5010,24 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-fieldset__legend {
+  box-sizing: border-box; /* 1 */
+  color: #212b32;
+  display: table; /* 2 */
+  margin-bottom: 8px;
+  margin-top: 0;
+  max-width: 100%; /* 1 */
+  padding: 0;
+  white-space: normal; /* 3 */
+}
+.edit-post-visual-editor {
+  /* Heading modifiers */
+}
 .edit-post-visual-editor .nhsuk-fieldset__legend--xl {
   font-weight: 600;
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.25;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-fieldset__legend--xl {
@@ -4896,12 +5042,14 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-fieldset__legend--xl {
+  margin-bottom: 16px;
+}
 .edit-post-visual-editor .nhsuk-fieldset__legend--l {
   font-weight: 600;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1.33333;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-fieldset__legend--l {
@@ -4916,12 +5064,14 @@
     line-height: 1.05;
   }
 }
+.edit-post-visual-editor .nhsuk-fieldset__legend--l {
+  margin-bottom: 16px;
+}
 .edit-post-visual-editor .nhsuk-fieldset__legend--m {
   font-weight: 600;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-fieldset__legend--m {
@@ -4936,12 +5086,14 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-fieldset__legend--m {
+  margin-bottom: 16px;
+}
 .edit-post-visual-editor .nhsuk-fieldset__legend--s {
   font-weight: 600;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-fieldset__legend--s {
@@ -4956,16 +5108,26 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-fieldset__legend--s {
+  margin-bottom: 16px;
+}
 .edit-post-visual-editor .nhsuk-fieldset__heading {
   /* 4 */
   font-size: inherit;
   font-weight: inherit;
   margin: 0;
 }
-.edit-post-visual-editor .nhsuk-hero {
-  background-color: #005eb8;
-  color: #ffffff;
-  position: relative; /* [1] */
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #HERO
+     ========================================================================== */
+  /**
+   *  Hero component shared styles.
+   *
+   * 1. Position relative to support the description
+   *    appearing over the image.
+   * 2. Adds a border between the header and hero, if required
+   */
 }
 @media print {
   .edit-post-visual-editor .nhsuk-hero {
@@ -4976,23 +5138,42 @@
     color: #212b32;
   }
 }
+.edit-post-visual-editor .nhsuk-hero {
+  background-color: #005eb8;
+  color: #ffffff;
+  position: relative; /* [1] */
+}
 .edit-post-visual-editor .nhsuk-hero .nhsuk-hero--border {
   /* [2] */
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .edit-post-visual-editor .nhsuk-hero__wrapper {
   padding-top: 48px;
-  padding-bottom: 48px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-hero__wrapper {
     padding-top: 56px;
   }
 }
+.edit-post-visual-editor .nhsuk-hero__wrapper {
+  padding-bottom: 48px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-hero__wrapper {
     padding-bottom: 56px;
   }
+}
+.edit-post-visual-editor {
+  /**
+   *  Hero component image styles
+   *
+   * 3. Center the background image.
+   * 4. Stop the height affecting print stylesheets.
+   * 5. Show more of the image for larger screen sizes
+   * 6. Overlay must be min same height as .nhsuk-hero--image to cover the image.
+   * 7. Darken the background image with an overlay.
+   * 12. Remove any heights/min heights in Windows high contrast mode.
+   */
 }
 .edit-post-visual-editor .nhsuk-hero--image {
   background-position: center right; /* [3] */
@@ -5033,6 +5214,19 @@
     height: auto; /* [12] */
     min-height: 0; /* [12] */
   }
+}
+.edit-post-visual-editor {
+  /**
+   *  Hero component description styles.
+   *
+   * 8. 'Random number' for the triangle.
+   * 9. 'Random number' for the triangle positioning.
+   * 10. Needed to enable the triangle to show correctly in high contrast mode.
+   * 11. Give the description box a max width.
+   * 13. Remove the arrow in Windows high contrast mode.
+   * 14. Reduce spacing and change positioning for Windows high contrast mode.
+   * 15. Prevent text breaking out of box on smaller sizes
+   */
 }
 .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content {
   background-color: #005eb8;
@@ -5084,6 +5278,12 @@
   }
 }
 @media (min-width: 40.0625em) {
+  .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content > *:first-child {
+    margin-top: 0;
+  }
+  .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content > *:last-child {
+    margin-bottom: 0;
+  }
   .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content {
     bottom: -48px; /* [8] */
     margin-bottom: 0;
@@ -5091,12 +5291,6 @@
     padding: 32px 40px;
     position: absolute;
     top: auto;
-  }
-  .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content > *:first-child {
-    margin-top: 0;
-  }
-  .edit-post-visual-editor .nhsuk-hero--image-description .nhsuk-hero-content > *:last-child {
-    margin-bottom: 0;
   }
 }
 @media print {
@@ -5117,14 +5311,16 @@
     top: 0;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #HINT
+     ========================================================================== */
+}
 .edit-post-visual-editor .nhsuk-hint {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #4c6272;
-  display: block;
-  margin-bottom: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-hint {
@@ -5139,6 +5335,11 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-hint {
+  color: #4c6272;
+  display: block;
+  margin-bottom: 16px;
+}
 .edit-post-visual-editor .nhsuk-label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label:not(.nhsuk-label--m):not(.nhsuk-label--l):not(.nhsuk-label--xl) + .nhsuk-hint {
   margin-bottom: 8px;
 }
@@ -5148,18 +5349,31 @@
 .edit-post-visual-editor .nhsuk-fieldset__legend + .nhsuk-hint {
   margin-top: -4px;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #IMAGES
+     ========================================================================== */
+  /**
+   * 1. Overrides default browser margin values.
+   * 2. Makes the image width two thirds of its container for desktop.
+   * 3. Avoid image printing full width of a page.
+   * 4. Removes top margin from subsequent nhsuk-image.
+   */
+}
 .edit-post-visual-editor .nhsuk-image {
   background-color: #ffffff;
   border-bottom: 1px solid #d8dde0;
   margin-left: 0; /* [1] */
   margin-right: 0; /* [1] */
   margin-bottom: 32px;
-  margin-top: 32px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-image {
     margin-bottom: 40px;
   }
+}
+.edit-post-visual-editor .nhsuk-image {
+  margin-top: 32px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-image {
@@ -5178,12 +5392,14 @@
 }
 .edit-post-visual-editor .nhsuk-image + .nhsuk-image {
   margin-top: 0;
-  /* [4] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-image + .nhsuk-image {
     margin-top: 0;
   }
+}
+.edit-post-visual-editor .nhsuk-image + .nhsuk-image {
+  /* [4] */
 }
 .edit-post-visual-editor .nhsuk-image__img, .edit-post-visual-editor .nhsuk-image img {
   display: block;
@@ -5193,7 +5409,6 @@
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
-  padding: 16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-image__caption, .edit-post-visual-editor .gallery-caption, .edit-post-visual-editor .nhsuk-image figcaption {
@@ -5207,6 +5422,21 @@
     font-size: 14pt;
     line-height: 1.2;
   }
+}
+.edit-post-visual-editor .nhsuk-image__caption, .edit-post-visual-editor .gallery-caption, .edit-post-visual-editor .nhsuk-image figcaption {
+  padding: 16px;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #INPUT
+     ========================================================================== */
+  /**
+   * 1. Disable inner shadow and remove rounded corners
+   * 2. setting any background-color makes text invisible when changing colours to dark
+   *    backgrounds in Firefox (https://bugzilla.mozilla.org/show_bug.cgi?id=1335476)
+   *    as background-color and color need to always be set together, color should
+   *    not be set either.
+   */
 }
 .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type=email],
@@ -5230,16 +5460,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  -moz-appearance: none; /* 1 */
-  -webkit-appearance: none; /* 1 */
-  appearance: none; /* 1 */
-  border: 2px solid #4c6272; /* 2 */
-  border-radius: 0;
-  box-sizing: border-box;
-  min-height: 40px;
-  margin-top: 0;
-  padding: 4px;
-  width: 100%;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input),
@@ -5287,6 +5507,35 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input),
+.edit-post-visual-editor input[type=email],
+.edit-post-visual-editor input[type=url],
+.edit-post-visual-editor input[type=password],
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input),
+.edit-post-visual-editor input[type=number],
+.edit-post-visual-editor input[type=tel],
+.edit-post-visual-editor input[type=range],
+.edit-post-visual-editor input[type=date],
+.edit-post-visual-editor input[type=month],
+.edit-post-visual-editor input[type=week],
+.edit-post-visual-editor input[type=time],
+.edit-post-visual-editor input[type=datetime],
+.edit-post-visual-editor input[type=datetime-local],
+.edit-post-visual-editor input[type=color],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+.edit-post-visual-editor textarea {
+  -moz-appearance: none; /* 1 */
+  -webkit-appearance: none; /* 1 */
+  appearance: none; /* 1 */
+  border: 2px solid #4c6272; /* 2 */
+  border-radius: 0;
+  box-sizing: border-box;
+  min-height: 40px;
+  margin-top: 0;
+  padding: 4px;
+  width: 100%;
 }
 .edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor input[type=text]:focus:not(.nhsuk-search__input),
 .edit-post-visual-editor input[type=email]:focus,
@@ -5410,17 +5659,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  background-color: #d8dde0;
-  border: 2px solid #4c6272;
-  box-sizing: border-box;
-  cursor: default;
-  display: inline-block;
-  flex: 0 0 auto;
-  min-height: 40px;
-  min-width: 2.5rem;
-  padding: 4px;
-  text-align: center;
-  white-space: nowrap;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-input__prefix,
@@ -5436,6 +5674,20 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-input__prefix,
+.edit-post-visual-editor .nhsuk-input__suffix {
+  background-color: #d8dde0;
+  border: 2px solid #4c6272;
+  box-sizing: border-box;
+  cursor: default;
+  display: inline-block;
+  flex: 0 0 auto;
+  min-height: 40px;
+  min-width: 2.5rem;
+  padding: 4px;
+  text-align: center;
+  white-space: nowrap;
 }
 @media (max-width: 19.99em) {
   .edit-post-visual-editor .nhsuk-input__prefix,
@@ -5473,14 +5725,16 @@
     border-left: 0;
   }
 }
-.edit-post-visual-editor .nhsuk-inset-text {
-  /* [1] */
-  max-width: 44em;
-  /* [2] */
-  margin-bottom: 40px;
-  margin-top: 40px;
-  padding: 16px;
-  border-left: 8px solid #005eb8;
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #INSET-TEXT
+     ========================================================================== */
+  /**
+   * 1. Removes top margin from first element and bottom margin from last,
+   *    to ensure correct spacing within the component.
+   * 2. Restricts the width of the text to optimise the line length for
+   *    readability.
+   */
 }
 .edit-post-visual-editor .nhsuk-inset-text > *:first-child {
   margin-top: 0;
@@ -5488,33 +5742,51 @@
 .edit-post-visual-editor .nhsuk-inset-text > *:last-child {
   margin-bottom: 0;
 }
+.edit-post-visual-editor .nhsuk-inset-text {
+  /* [1] */
+  max-width: 44em;
+  /* [2] */
+  margin-bottom: 40px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-inset-text {
     margin-bottom: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-inset-text {
+  margin-top: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-inset-text {
     margin-top: 48px;
   }
 }
+.edit-post-visual-editor .nhsuk-inset-text {
+  padding: 16px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-inset-text {
     padding: 24px;
   }
+}
+.edit-post-visual-editor .nhsuk-inset-text {
+  border-left: 8px solid #005eb8;
 }
 @media print {
   .edit-post-visual-editor .nhsuk-inset-text {
     border-color: #212b32;
   }
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #LABEL
+     ========================================================================== */
+}
 .edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  display: block;
-  margin-bottom: 4px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
@@ -5528,6 +5800,13 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li label, .edit-post-visual-editor .tingle-modal-box .ginput_container_checkbox .gfield_checkbox li label {
+  display: block;
+  margin-bottom: 4px;
+}
+.edit-post-visual-editor {
+  /* Modifiers that make labels look more like their equivalent headings */
 }
 .edit-post-visual-editor .nhsuk-label--xl,
 .edit-post-visual-editor .nhsuk-label--l,
@@ -5594,8 +5873,6 @@
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  font-weight: 600;
-  margin-top: 0;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-label--s {
@@ -5610,17 +5887,34 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-label--s {
+  font-weight: 600;
+  margin-top: 0;
+}
 .edit-post-visual-editor .nhsuk-label-wrapper {
   margin: 0;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #PAGINATION
+     ========================================================================== */
+  /**
+   * 1. Padding to give the icon spacing.
+   * 2. Append the word 'page' after next and
+   *    previous on print stylesheets to make it easier
+   *    to understand in print context.
+   */
+}
 .edit-post-visual-editor .nhsuk-pagination {
   margin-top: 40px;
-  margin-bottom: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-pagination {
     margin-top: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-pagination {
+  margin-bottom: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-pagination {
@@ -5710,7 +6004,6 @@
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  display: block;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-pagination__title {
@@ -5725,6 +6018,9 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-pagination__title {
+  display: block;
+}
 @media print {
   .edit-post-visual-editor .nhsuk-pagination__title:after {
     content: " page"; /* [2] */
@@ -5734,8 +6030,6 @@
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
-  display: block;
-  text-decoration: underline;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-pagination__page {
@@ -5750,17 +6044,24 @@
     line-height: 1.2;
   }
 }
+.edit-post-visual-editor .nhsuk-pagination__page {
+  display: block;
+  text-decoration: underline;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #RADIOS
+     ========================================================================== */
+  /**
+   * 1. remove 300ms pause on mobile.
+   * 2. Fix bug in IE11 caused by transform rotate (-45deg).
+   */
+}
 .edit-post-visual-editor .nhsuk-radios__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  clear: left;
-  display: block;
-  margin-bottom: 8px;
-  min-height: 40px;
-  padding: 0 0 0 40px;
-  position: relative;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-radios__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li {
@@ -5774,6 +6075,14 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-radios__item, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li {
+  clear: left;
+  display: block;
+  margin-bottom: 8px;
+  min-height: 40px;
+  padding: 0 0 0 40px;
+  position: relative;
 }
 .edit-post-visual-editor .nhsuk-radios__item:last-child, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li:last-child,
 .edit-post-visual-editor .nhsuk-radios__item:last-of-type,
@@ -5828,12 +6137,27 @@
   top: 10px;
   width: 0;
 }
+.edit-post-visual-editor {
+  /**
+   * Focus state
+   *
+   * 1. Since box-shadows are removed when users customise their colours
+   *    We set a transparent outline that is shown instead.
+   *    https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/
+   */
+}
 .edit-post-visual-editor .nhsuk-radios__input:focus + .nhsuk-radios__label::before, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input:focus + label::before, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li input:focus + .nhsuk-radios__label::before, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li input:focus + label::before {
   border: 4px solid #212b32;
   box-shadow: 0 0 0 4px #ffeb3b;
 }
+.edit-post-visual-editor {
+  /* Selected state */
+}
 .edit-post-visual-editor .nhsuk-radios__input:checked + .nhsuk-radios__label::after, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input:checked + label::after, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li input:checked + .nhsuk-radios__label::after, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li input:checked + label::after {
   opacity: 1;
+}
+.edit-post-visual-editor {
+  /* Disabled state */
 }
 .edit-post-visual-editor .nhsuk-radios__input:disabled, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled,
 .edit-post-visual-editor .nhsuk-radios__input:disabled + .nhsuk-radios__label,
@@ -5844,6 +6168,13 @@
 }
 .edit-post-visual-editor .nhsuk-radios__input:disabled + .nhsuk-radios__label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li .nhsuk-radios__input:disabled + label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled + .nhsuk-radios__label, .edit-post-visual-editor .tingle-modal-box .ginput_container_radio .gfield_radio li input:disabled + label {
   opacity: 0.5;
+}
+.edit-post-visual-editor {
+  /*
+   * Inline variant
+   *
+   * 1. Prevent inline modifier being used with conditional reveals
+   */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-radios--inline:after {
@@ -5864,15 +6195,14 @@
   float: none;
   margin-right: 0;
 }
+.edit-post-visual-editor {
+  /* Divider variant */
+}
 .edit-post-visual-editor .nhsuk-radios__divider {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  color: #212b32;
-  margin-bottom: 8px;
-  text-align: center;
-  width: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-radios__divider {
@@ -5887,16 +6217,27 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-radios__divider {
+  color: #212b32;
+  margin-bottom: 8px;
+  text-align: center;
+  width: 40px;
+}
+.edit-post-visual-editor {
+  /* Conditional */
+}
 .edit-post-visual-editor .nhsuk-radios__conditional {
   margin-bottom: 16px;
-  border-left: 4px solid #4c6272;
-  margin-left: 18px;
-  padding-left: 30px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-radios__conditional {
     margin-bottom: 24px;
   }
+}
+.edit-post-visual-editor .nhsuk-radios__conditional {
+  border-left: 4px solid #4c6272;
+  margin-left: 18px;
+  padding-left: 30px;
 }
 .edit-post-visual-editor .nhsuk-radios__conditional > :last-child {
   margin-bottom: 0;
@@ -5904,17 +6245,24 @@
 .edit-post-visual-editor .js-enabled .nhsuk-radios__conditional--hidden {
   display: none;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #SELECT
+     ========================================================================== */
+  /**
+   * Select input sizing
+   * 1. Uses rems so that safari input scales with font size
+   * 2. This min-width was chosen because:
+   *    - it makes the Select wider than it is tall (which is what users expect)
+   *    - 20ex + 3ex matches the 'width-10' variant of the input component
+   *    - it fits comfortably on screens as narrow as 240px wide
+   */
+}
 .edit-post-visual-editor .nhsuk-select, .edit-post-visual-editor .tribe-tickets-rsvp select {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  border: 2px solid #4c6272;
-  box-sizing: border-box;
-  height: 2.5rem; /* [1] */
-  min-width: 23ex; /* [2] */
-  max-width: 100%;
-  padding: 4px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-select, .edit-post-visual-editor .tribe-tickets-rsvp select {
@@ -5928,6 +6276,14 @@
     font-size: 14pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-select, .edit-post-visual-editor .tribe-tickets-rsvp select {
+  border: 2px solid #4c6272;
+  box-sizing: border-box;
+  height: 2.5rem; /* [1] */
+  min-width: 23ex; /* [2] */
+  max-width: 100%;
+  padding: 4px;
 }
 .edit-post-visual-editor .nhsuk-select:focus, .edit-post-visual-editor .tribe-tickets-rsvp select:focus {
   border: 2px solid #212b32;
@@ -5946,6 +6302,15 @@
 .edit-post-visual-editor .nhsuk-select--error {
   border: 2px solid #d5281b;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #SKIP-LINK
+     ========================================================================== */
+  /**
+   * 1. Hides the skip link off the page,
+   * 2. until the link gains focus from keyboard tabbing.
+   */
+}
 .edit-post-visual-editor .nhsuk-skip-link {
   left: -9999px; /* [1] */
   padding: 8px;
@@ -5959,13 +6324,25 @@
 .edit-post-visual-editor .nhsuk-skip-link:visited {
   color: #212b32;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #SUMMARY-LIST
+     ========================================================================== */
+  /**
+   * Original code taken from GDS (Government Digital Service)
+   * https://github.com/alphagov/govuk-frontend
+   *
+   * 1. Required to allow us to wrap words that overflow.
+   * 2. Reset default user agent styles
+   * 3. Automatic wrapping for unbreakable text (e.g. URLs)
+   * 4. Fallback for older browsers only
+   */
+}
 .edit-post-visual-editor .nhsuk-summary-list {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  margin: 0; /* [2] */
-  margin-bottom: 32px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-summary-list {
@@ -5986,6 +6363,10 @@
     table-layout: fixed; /* [1] */
     width: 100%;
   }
+}
+.edit-post-visual-editor .nhsuk-summary-list {
+  margin: 0; /* [2] */
+  margin-bottom: 32px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-summary-list {
@@ -6085,33 +6466,50 @@
 .edit-post-visual-editor .nhsuk-summary-list--no-border .nhsuk-summary-list__row {
   border: 0;
 }
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #TABLE
+     ========================================================================== */
+  /**
+   * Table container is used to ensure the table does not break the container.
+   *
+   * 1. Margin is removed so there isn't double spacing.
+   */
+}
 .edit-post-visual-editor .nhsuk-table-container {
   margin-bottom: 40px;
-  display: block;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  overflow-x: auto;
-  width: 100%;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-table-container {
     margin-bottom: 48px;
   }
 }
+.edit-post-visual-editor .nhsuk-table-container {
+  display: block;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: auto;
+  width: 100%;
+}
 .edit-post-visual-editor .nhsuk-table-container .nhsuk-table {
   margin: 0; /* [1] */
+}
+.edit-post-visual-editor {
+  /* Table row hover
+  ========================================================================== */
+  /**
+   * Table row hover is used to aid readability for users.
+   */
 }
 .edit-post-visual-editor .nhsuk-table__row:hover {
   background-color: #f0f4f5;
 }
-.edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  padding: 24px;
-  background-color: #ffffff;
-  color: #212b32;
-  border: 1px solid #d8dde0;
-  padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+.edit-post-visual-editor {
+  /* Table panel with tab heading
+  ========================================================================== */
+  /**
+   * 1. Margin is removed so there isn't double spacing.
+   */
 }
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab > *:first-child {
   margin-top: 0;
@@ -6119,26 +6517,43 @@
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab > *:last-child {
   margin-bottom: 0;
 }
+.edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
+  margin-bottom: 40px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
     margin-bottom: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
+  margin-top: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
     margin-top: 48px;
   }
 }
+.edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
+  padding: 24px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
     padding: 32px;
   }
+}
+.edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
+  background-color: #ffffff;
+  color: #212b32;
 }
 @media print {
   .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
     border: 1px solid #212b32;
     page-break-inside: avoid;
   }
+}
+.edit-post-visual-editor .nhsuk-table__panel-with-heading-tab {
+  border: 1px solid #d8dde0;
+  padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
 }
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab .nhsuk-table-container,
 .edit-post-visual-editor .nhsuk-table__panel-with-heading-tab .nhsuk-table {
@@ -6148,13 +6563,6 @@
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  background-color: #005eb8;
-  color: #ffffff;
-  display: inline-block;
-  margin: 0 0 8px -33px;
-  padding: 8px 32px;
-  position: relative;
-  top: -16px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-table__heading-tab {
@@ -6168,6 +6576,15 @@
     font-size: 18pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-table__heading-tab {
+  background-color: #005eb8;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0 0 8px -33px;
+  padding: 8px 32px;
+  position: relative;
+  top: -16px;
 }
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-table__heading-tab {
@@ -6183,6 +6600,22 @@
     color: #212b32;
     top: 0;
   }
+}
+.edit-post-visual-editor {
+  /* Responsive table
+  ========================================================================== */
+  /**
+   * 1. Hiding the thead on mobile
+   * 2. Displaying the thead on desktop
+   * 3. Removing default screen reader behaviour
+   * 4. Assigning role of table-row on desktop to give default screen reader behaviour
+   * 5. Using justify content to space out elements in the row on mobile
+   * 6. Assigning a minimum width in case of black cell
+   * 7. Aligning content to the right on mobile
+   * 8. Aligning mobile header to left to split it from the data
+   * 9. Hiding mobile specific header from desktop view
+   * 10. Adding a display block value due to IE 11 not having full flex support
+   */
 }
 .edit-post-visual-editor .nhsuk-table-responsive {
   margin-bottom: 0;
@@ -6271,26 +6704,27 @@
     border-bottom: 3px solid #d8dde0;
   }
 }
+.edit-post-visual-editor {
+  /* Numeric tables
+  ========================================================================== */
+  /**
+   * Right aligns table cells for numeric tables.
+   */
+}
 .edit-post-visual-editor .nhsuk-table__header--numeric,
 .edit-post-visual-editor .nhsuk-table__cell--numeric {
   text-align: right;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     #TAG
+     ========================================================================== */
 }
 .edit-post-visual-editor .nhsuk-tag, .edit-post-visual-editor .learndash-wrapper .ld-status, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-status {
   font-weight: 600;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1;
-  background-color: rgb(0, 84.6, 165.6);
-  border: 1px solid rgb(0, 84.6, 165.6);
-  color: #ffffff;
-  display: inline-block;
-  outline: 2px solid transparent;
-  outline-offset: -2px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  text-decoration: none;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-tag, .edit-post-visual-editor .learndash-wrapper .ld-status, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-status {
@@ -6304,6 +6738,23 @@
     font-size: 14pt;
     line-height: 1;
   }
+}
+.edit-post-visual-editor .nhsuk-tag, .edit-post-visual-editor .learndash-wrapper .ld-status, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-status {
+  background-color: rgb(0, 84.6, 165.6);
+  border: 1px solid rgb(0, 84.6, 165.6);
+  color: #ffffff;
+  display: inline-block;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  text-decoration: none;
+}
+.edit-post-visual-editor {
+  /* Colour variants
+    ========================================================================== */
 }
 .edit-post-visual-editor .nhsuk-tag--white {
   background-color: #ffffff;
@@ -6355,23 +6806,23 @@
   border-color: rgb(76.5, 70.5, 17.7);
   color: rgb(76.5, 70.5, 17.7);
 }
+.edit-post-visual-editor {
+  /* Remove tag border
+    ========================================================================== */
+}
 .edit-post-visual-editor .nhsuk-tag--no-border {
   border: 0;
+}
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS/ #TEXTAREA
+     ========================================================================== */
 }
 .edit-post-visual-editor .nhsuk-textarea {
   font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  -webkit-appearance: none;
-  border: 2px solid #4c6272;
-  border-radius: 0;
-  box-sizing: border-box;
-  display: block;
-  min-height: 40px;
-  padding: 4px;
-  resize: vertical;
-  width: 100%;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-textarea {
@@ -6386,6 +6837,17 @@
     line-height: 1.15;
   }
 }
+.edit-post-visual-editor .nhsuk-textarea {
+  -webkit-appearance: none;
+  border: 2px solid #4c6272;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: block;
+  min-height: 40px;
+  padding: 4px;
+  resize: vertical;
+  width: 100%;
+}
 .edit-post-visual-editor .nhsuk-textarea:focus {
   border: 2px solid #212b32;
   box-shadow: inset 0 0 0 2px;
@@ -6395,15 +6857,14 @@
 .edit-post-visual-editor .nhsuk-textarea--error {
   border: 2px solid #d5281b;
 }
-.edit-post-visual-editor .nhsuk-warning-callout {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  padding: 24px;
-  background-color: #fff9c4;
-  color: #212b32;
-  border: 1px solid #ffeb3b;
-  padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
-  /* [1] */
+.edit-post-visual-editor {
+  /* ==========================================================================
+     COMPONENTS / #WARNING-CALLOUT
+     ========================================================================== */
+  /**
+   * 1. Uses @mixin panel-with-label from tools/_mixins.
+   * 2. Uses @mixin heading-label from tools/_mixins.
+   */
 }
 .edit-post-visual-editor .nhsuk-warning-callout > *:first-child {
   margin-top: 0;
@@ -6411,20 +6872,33 @@
 .edit-post-visual-editor .nhsuk-warning-callout > *:last-child {
   margin-bottom: 0;
 }
+.edit-post-visual-editor .nhsuk-warning-callout {
+  margin-bottom: 40px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-warning-callout {
     margin-bottom: 48px;
   }
+}
+.edit-post-visual-editor .nhsuk-warning-callout {
+  margin-top: 40px;
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-warning-callout {
     margin-top: 48px;
   }
 }
+.edit-post-visual-editor .nhsuk-warning-callout {
+  padding: 24px;
+}
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-warning-callout {
     padding: 32px;
   }
+}
+.edit-post-visual-editor .nhsuk-warning-callout {
+  background-color: #fff9c4;
+  color: #212b32;
 }
 @media print {
   .edit-post-visual-editor .nhsuk-warning-callout {
@@ -6432,18 +6906,15 @@
     page-break-inside: avoid;
   }
 }
+.edit-post-visual-editor .nhsuk-warning-callout {
+  border: 1px solid #ffeb3b;
+  padding-top: 0 !important; /* stylelint-disable-line declaration-no-important */
+  /* [1] */
+}
 .edit-post-visual-editor .nhsuk-warning-callout__label {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.4;
-  background-color: #ffeb3b;
-  color: #212b32;
-  display: inline-block;
-  margin: 0 0 8px -33px;
-  padding: 8px 32px;
-  position: relative;
-  top: -16px;
-  /* [2] */
 }
 @media (min-width: 40.0625em) {
   .edit-post-visual-editor .nhsuk-warning-callout__label {
@@ -6457,6 +6928,15 @@
     font-size: 18pt;
     line-height: 1.15;
   }
+}
+.edit-post-visual-editor .nhsuk-warning-callout__label {
+  background-color: #ffeb3b;
+  color: #212b32;
+  display: inline-block;
+  margin: 0 0 8px -33px;
+  padding: 8px 32px;
+  position: relative;
+  top: -16px;
 }
 @media (max-width: 40.0525em) {
   .edit-post-visual-editor .nhsuk-warning-callout__label {
@@ -6473,9 +6953,19 @@
     top: 0;
   }
 }
+.edit-post-visual-editor .nhsuk-warning-callout__label {
+  /* [2] */
+}
+.edit-post-visual-editor {
+  /* Reusable mixin for a focus element outline */
+  /* Add a focus indicator for keyboard nav on clickable cards */
+}
 .edit-post-visual-editor .nhsuk-card--clickable.focus-visible {
   border: 4px solid #ffeb3b;
   box-shadow: inset 0 0 0 4px #212b32;
+}
+.edit-post-visual-editor {
+  /* add more obvious visual representation when dashboard elements are active on keyboard nav */
 }
 .edit-post-visual-editor .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label {
   border: 4px solid #ffeb3b;
@@ -6484,6 +6974,10 @@
 .edit-post-visual-editor .nhsuk-dashboard .nhsuk-panel-group__item .nhsuk-promo__link-wrapper.focus-visible .nhsuk-panel-with-label h3.nhsuk-panel-with-label__label {
   background-color: #ffeb3b;
   color: #212b32;
+}
+.edit-post-visual-editor {
+  /* colour variable to be used with color-mixer.scss */
+  /* colour variable to be used with page-colour.scss & gutenberg-page-colour.scss */
 }
 .edit-post-visual-editor .nhsuk-panel-group {
   margin-left: 0;
@@ -6564,6 +7058,9 @@
   width: 33%;
   margin-left: 16px;
 }
+.edit-post-visual-editor {
+  /* Menu item right chevron (mobile): fix color when state is focus */
+}
 .edit-post-visual-editor a:focus .nhsuk-icon {
   fill: #4c6272 !important;
 }
@@ -6617,6 +7114,13 @@
     width: max-content;
   }
 }
+.edit-post-visual-editor {
+  /*
+  // variations to styling required for gutenberg native blocks
+  // @author Tony Blacker, NHS Leadership Academy
+  // @version 1.1 12th October 2019
+  */
+}
 .edit-post-visual-editor .nhsuk-grid-column-two-thirds.contentright {
   float: right;
   padding: 0 16px 0 16px;
@@ -6632,6 +7136,9 @@
 }
 .edit-post-visual-editor .nhsuk-grid-column-width, .edit-post-visual-editor .nhsuk-grid-column-full {
   clear: both;
+}
+.edit-post-visual-editor {
+  /* login form customisation */
 }
 .edit-post-visual-editor #login {
   padding-top: 0 !important;
@@ -6655,6 +7162,9 @@
   font-size: 1.1875rem;
   line-height: 1.47368;
   font-weight: 400;
+}
+.edit-post-visual-editor {
+  /* Extra Blog Styles */
 }
 .edit-post-visual-editor .nhsuk-promo img.nhsuk-promo__img {
   padding: 0;
@@ -6852,12 +7362,14 @@
     display: flex; /* direction row by default, the cells will be side by side to start */
     flex-direction: row;
     width: 100%;
-    background-color: white;
   }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:after {
     clear: both;
     content: "";
     display: block;
+  }
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
+    background-color: white;
   }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row .nhsuk-likert__item:not(.nhsuk-likert__rowlabel) {
     margin-bottom: 0;
@@ -6906,14 +7418,14 @@
   }
 }
 @media (max-width: 61.865em) {
-  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
-    padding: 16px 0;
-    border-top: 1px solid #d8dde0;
-  }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row:after {
     clear: both;
     content: "";
     display: block;
+  }
+  .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row {
+    padding: 16px 0;
+    border-top: 1px solid #d8dde0;
   }
   .edit-post-visual-editor .gform_wrapper .gform_body .gform_fields .gsurvey-survey-field .gsurvey-likert .nhsuk-likert .nhsuk-likert__row.nhsuk-likert__header {
     display: none;
@@ -7196,6 +7708,9 @@
 .edit-post-visual-editor .name_middle label {
   color: inherit !important;
 }
+.edit-post-visual-editor {
+  /* Gravity Forms Save and Continue button fix */
+}
 .edit-post-visual-editor button[data-submission-type=save-continue] {
   margin-left: 0 !important;
 }
@@ -7305,11 +7820,11 @@
 .edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-search .ld-item-search-wrapper .ld-item-search-fields .ld-item-search-name {
   top: -nhsuk-spacing(5);
 }
-.edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
-  border: 2px solid transparent;
-}
 .edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview .ld-item-title {
   line-height: 40px;
+}
+.edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview {
+  border: 2px solid transparent;
 }
 .edit-post-visual-editor .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-item-list .ld-item-list-item .ld-item-list-item-preview:hover {
   background: transparent;
@@ -7439,11 +7954,11 @@
   text-align: left;
   position: relative;
 }
-.edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
-  margin-bottom: 0;
-}
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn .email-address:after, .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary .email-address:after {
   content: '<span class="nhsuk-u-visually-hidden" aria-hidden="true"></span>';
+}
+.edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn, .edit-post-visual-editor .ld-course-list-items .ld_course_grid article .ld_course_grid_button .btn-primary {
+  margin-bottom: 0;
 }
 .edit-post-visual-editor .ld-course-list-items .ld_course_grid .thumbnail.course {
   margin-bottom: 32px;
@@ -7496,6 +8011,9 @@
 }
 .edit-post-visual-editor .sfwd-courses .featured-top {
   display: none;
+}
+.edit-post-visual-editor {
+  /* Events Calendar Styles */
 }
 .edit-post-visual-editor #tribe-events, .edit-post-visual-editor #tribe-events-pg-template, .edit-post-visual-editor .tribe-events-pg-template {
   padding: 0;
@@ -7672,6 +8190,9 @@
 .edit-post-visual-editor .nowrap {
   white-space: nowrap;
 }
+.edit-post-visual-editor {
+  /* Events Tickets Styles - only applies if Events > Settings > Display > Enable New RSVP Experience is not selected */
+}
 .edit-post-visual-editor .tribe-tickets-rsvp .tribe-events-tickets {
   background-color: transparent;
 }
@@ -7680,11 +8201,17 @@
 .edit-post-visual-editor .tribe-tickets-rsvp .tribe-events-tickets select {
   width: 100%;
 }
+.edit-post-visual-editor {
+  /* Events Widgets */
+}
 .edit-post-visual-editor .widget-area ol.tribe-list-widget {
   list-style: none;
 }
 .edit-post-visual-editor .widget-area ol.tribe-list-widget .tribe-clearfix:before {
   display: none;
+}
+.edit-post-visual-editor {
+  /* embedded events */
 }
 .edit-post-visual-editor html.js .tribe-events-page-template.wp-embed-responsive {
   color: inherit;
@@ -7718,6 +8245,9 @@
 }
 .edit-post-visual-editor .tribe-events .tribe-events-c-top-bar__datepicker-form .tribe-events-c-top-bar__datepicker {
   color: #425563;
+}
+.edit-post-visual-editor {
+  /* Event datetime header */
 }
 .edit-post-visual-editor .tribe-events-schedule__datetime * {
   color: #425563;
@@ -7857,6 +8387,9 @@
 .edit-post-visual-editor ul {
   list-style: none;
 }
+.edit-post-visual-editor {
+  background-color: #f0f4f5;
+}
 .edit-post-visual-editor .nhsuk-button:link, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:link, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:link, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:link, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:link, .edit-post-visual-editor .wp-block-button__link:link, .edit-post-visual-editor .wp-block-file__button:link, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:link, .edit-post-visual-editor .nhsuk-button:visited, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:visited, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:visited, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:visited, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:visited, .edit-post-visual-editor .wp-block-button__link:visited, .edit-post-visual-editor .wp-block-file__button:visited, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:visited, .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .wp-block-button__link:active, .edit-post-visual-editor .wp-block-file__button:active, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:active, .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .wp-block-button__link:hover, .edit-post-visual-editor .wp-block-file__button:hover, .edit-post-visual-editor .wp-block-file a.wp-block-file__button:hover {
   color: #ffffff;
   text-decoration: none;
@@ -7883,8 +8416,16 @@
   font-family: Frutiger W01, Arial, Sans-serif;
   font-size: 16px;
 }
+.edit-post-visual-editor {
+  /* admin styles widget tweaks */
+}
 .edit-post-visual-editor .block-editor-block-styles__item-preview .editor-styles-wrapper {
   font-family: Frutiger W01, Helvetica, Arial, Sans-serif;
+}
+.edit-post-visual-editor {
+  /*
+  Learn dash admin panel mitigation
+   */
 }
 .edit-post-visual-editor #sfwd-header .ld-global-header {
   position: inherit;
@@ -7906,9 +8447,16 @@
   top: 170px;
   padding: 0 7px;
 }
+.edit-post-visual-editor {
+  /* end LearnDash mitigation routine */
+  /* make the table cells more obvious when editing */
+}
 .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive thead, .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive tr, .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive th, .edit-post-visual-editor .is-selected figure.is-style-nhsuk-table-responsive td {
   border: 1px dashed #aeb7bd;
   min-width: 2rem;
+}
+.edit-post-visual-editor {
+  /* clearfix after grouped items to sort out some display wirdiness */
 }
 .edit-post-visual-editor .block-editor-inner-blocks:after {
   clear: both;
