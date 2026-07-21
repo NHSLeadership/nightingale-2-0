@@ -6,11 +6,11 @@ section.nhsuk-section:nth-of-type(even),
     background: $color_nhsuk-white;
 }
 
-.page-template-full-width-page section.nhsuk-section{
+// .page-template-full-width-page section.nhsuk-section{
 
-  width: calc(100vw - 20px);
-  margin: 0 calc(-50vw + 50% + 12px);
-}
+//   width: calc(100vw - 20px);
+//   margin: 0 calc(-50vw + 50% + 12px);
+// }
 
 section.nhsuk-section,
 [data-type="nhsblocks/stripesblock"] .is-block-content{

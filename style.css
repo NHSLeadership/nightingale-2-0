@@ -11174,11 +11174,6 @@ section.nhsuk-section:nth-of-type(even),
   background: #ffffff;
 }
 
-.page-template-full-width-page section.nhsuk-section {
-  width: calc(100vw - 20px);
-  margin: 0 calc(-50vw + 50% + 12px);
-}
-
 section.nhsuk-section,
 [data-type="nhsblocks/stripesblock"] .is-block-content {
   padding: 64px 20px;
