@@ -46,6 +46,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 =2.7.15=
 * Improve Gutenberg editor stylesheet loading for WordPress 6.9+ compatibility.
 * Security update
+* Update transitive npm dependency `brace-expansion` to 5.0.8 via npm overrides to address security vulnerabilities.
 
 =2.7.14=
 * Fix header menu font size

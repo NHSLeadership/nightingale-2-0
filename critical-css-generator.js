@@ -7,7 +7,7 @@ const fs = require('fs')
 penthouse({
     url: 'https://demo.local/index.php',
     css: 'style.min.css',
-    timeout: 60000,
+    timeout: 70000,
     puppeteer: {
     getBrowser: () =>
       require('puppeteer').launch({

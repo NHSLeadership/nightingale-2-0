@@ -3574,7 +3574,7 @@
   background-color: #007f3b;
   border: 2px solid transparent;
   border-radius: 4px;
-  box-shadow: 0 4px 0 rgb(0, 63.5, 29.5);
+  box-shadow: 0 4px 0 rgb(0%, 24.9019607843%, 11.568627451%);
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
@@ -3607,7 +3607,7 @@
   padding: 0;
 }
 .edit-post-visual-editor .nhsuk-button:hover, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:hover, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:hover, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:hover, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:hover {
-  background-color: rgb(0, 101.6, 47.2);
+  background-color: rgb(0%, 39.8431372549%, 18.5098039216%);
 }
 .edit-post-visual-editor .nhsuk-button:focus, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:focus, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:focus, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:focus, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:focus {
   background: #ffeb3b;
@@ -3622,7 +3622,7 @@
   color: #ffffff;
 }
 .edit-post-visual-editor .nhsuk-button:active, .edit-post-visual-editor .learndash-wrapper .ld-icon.ld-primary-background:active, .edit-post-visual-editor .learndash-wrapper .ld-expand-button:active, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-expand-button:active, .edit-post-visual-editor .tippy-popper .tippy-content .gv-approval-toggle:active {
-  background: rgb(0, 63.5, 29.5);
+  background: rgb(0%, 24.9019607843%, 11.568627451%);
   box-shadow: none;
   color: #ffffff;
   top: 4px;
@@ -3653,7 +3653,7 @@
   box-shadow: 0 4px 0 #263139;
 }
 .edit-post-visual-editor .nhsuk-button--secondary:hover {
-  background-color: rgb(55.6, 71.6947368421, 83.4);
+  background-color: rgb(21.8039215686%, 28.1155830753%, 32.7058823529%);
 }
 .edit-post-visual-editor .nhsuk-button--secondary:focus {
   background: #ffeb3b;
@@ -3676,7 +3676,7 @@
   color: #212b32;
 }
 .edit-post-visual-editor .nhsuk-button--reverse:hover {
-  background-color: rgb(242.25, 242.25, 242.25);
+  background-color: rgb(95%, 95%, 95%);
   color: #212b32;
 }
 .edit-post-visual-editor .nhsuk-button--reverse:focus {
@@ -3705,10 +3705,10 @@
 }
 .edit-post-visual-editor .nhsuk-button--warning {
   background-color: #d5281b;
-  box-shadow: 0 4px 0 rgb(106.5, 20, 13.5);
+  box-shadow: 0 4px 0 rgb(41.7647058824%, 7.8431372549%, 5.2941176471%);
 }
 .edit-post-visual-editor .nhsuk-button--warning:hover {
-  background-color: rgb(167.7375, 31.5, 21.2625);
+  background-color: rgb(65.7794117647%, 12.3529411765%, 8.3382352941%);
 }
 .edit-post-visual-editor .nhsuk-button--warning:focus {
   background: #ffeb3b;
@@ -3717,7 +3717,7 @@
   outline: 4px solid transparent;
 }
 .edit-post-visual-editor .nhsuk-button--warning:active {
-  background: rgb(106.5, 20, 13.5);
+  background: rgb(41.7647058824%, 7.8431372549%, 5.2941176471%);
   box-shadow: none;
   color: #ffffff;
   top: 4px;
@@ -3779,7 +3779,7 @@
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-icon.ld-primary-background:active,
 .edit-post-visual-editor .learndash-wrapper [disabled].ld-expand-button:active,
 .edit-post-visual-editor .tippy-popper .tippy-content [disabled].gv-approval-toggle:active {
-  box-shadow: 0 4px 0 rgb(0, 63.5, 29.5);
+  box-shadow: 0 4px 0 rgb(0%, 24.9019607843%, 11.568627451%);
   top: 0;
 }
 .edit-post-visual-editor .nhsuk-button--secondary[disabled=disabled],
@@ -6740,8 +6740,8 @@
   }
 }
 .edit-post-visual-editor .nhsuk-tag, .edit-post-visual-editor .learndash-wrapper .ld-status, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-status {
-  background-color: rgb(0, 84.6, 165.6);
-  border: 1px solid rgb(0, 84.6, 165.6);
+  background-color: rgb(0%, 33.1764705882%, 64.9411764706%);
+  border: 1px solid rgb(0%, 33.1764705882%, 64.9411764706%);
   color: #ffffff;
   display: inline-block;
   outline: 2px solid transparent;
@@ -6762,49 +6762,49 @@
   color: #212b32;
 }
 .edit-post-visual-editor .nhsuk-tag--grey {
-  background-color: rgb(219.2, 223.6, 226.8);
-  border-color: rgb(53.2, 68.6, 79.8);
-  color: rgb(53.2, 68.6, 79.8);
+  background-color: rgb(85.9607843137%, 87.6862745098%, 88.9411764706%);
+  border-color: rgb(20.862745098%, 26.9019607843%, 31.2941176471%);
+  color: rgb(20.862745098%, 26.9019607843%, 31.2941176471%);
 }
 .edit-post-visual-editor .nhsuk-tag--green {
-  background-color: rgb(204, 229.4, 215.8);
-  border-color: rgb(0, 76.2, 35.4);
-  color: rgb(0, 76.2, 35.4);
+  background-color: rgb(80%, 89.9607843137%, 84.6274509804%);
+  border-color: rgb(0%, 29.8823529412%, 13.8823529412%);
+  color: rgb(0%, 29.8823529412%, 13.8823529412%);
 }
 .edit-post-visual-editor .nhsuk-tag--aqua-green {
-  background-color: rgb(204, 236.8, 234.6);
-  border-color: rgb(0, 82, 76.5);
-  color: rgb(0, 82, 76.5);
+  background-color: rgb(80%, 92.862745098%, 92%);
+  border-color: rgb(0%, 32.1568627451%, 30%);
+  color: rgb(0%, 32.1568627451%, 30%);
 }
 .edit-post-visual-editor .nhsuk-tag--blue {
-  background-color: rgb(204, 222.8, 240.8);
-  border-color: rgb(0, 65.8, 128.8);
-  color: rgb(0, 65.8, 128.8);
+  background-color: rgb(80%, 87.3725490196%, 94.431372549%);
+  border-color: rgb(0%, 25.8039215686%, 50.5098039216%);
+  color: rgb(0%, 25.8039215686%, 50.5098039216%);
 }
 .edit-post-visual-editor .nhsuk-tag--purple {
-  background-color: rgb(214.2, 204, 226.8);
-  border-color: rgb(35.7, 0, 79.8);
-  color: rgb(35.7, 0, 79.8);
+  background-color: rgb(84%, 80%, 88.9411764706%);
+  border-color: rgb(14%, 0%, 31.2941176471%);
+  color: rgb(14%, 0%, 31.2941176471%);
 }
 .edit-post-visual-editor .nhsuk-tag--pink {
-  background-color: rgb(238.8, 211.4, 227);
-  border-color: rgb(87, 18.5, 57.5);
-  color: rgb(87, 18.5, 57.5);
+  background-color: rgb(93.6470588235%, 82.9019607843%, 89.0196078431%);
+  border-color: rgb(34.1176470588%, 7.2549019608%, 22.5490196078%);
+  color: rgb(34.1176470588%, 7.2549019608%, 22.5490196078%);
 }
 .edit-post-visual-editor .nhsuk-tag--red {
-  background-color: rgb(246.6, 212, 209.4);
-  border-color: rgb(106.5, 20, 13.5);
-  color: rgb(106.5, 20, 13.5);
+  background-color: rgb(96.7058823529%, 83.137254902%, 82.1176470588%);
+  border-color: rgb(41.7647058824%, 7.8431372549%, 5.2941176471%);
+  color: rgb(41.7647058824%, 7.8431372549%, 5.2941176471%);
 }
 .edit-post-visual-editor .nhsuk-tag--orange {
-  background-color: rgb(255, 219.5, 141.5);
-  border-color: rgb(76.5, 55.2, 8.4);
-  color: rgb(76.5, 55.2, 8.4);
+  background-color: rgb(100%, 86.0784313725%, 55.4901960784%);
+  border-color: rgb(30%, 21.6470588235%, 3.2941176471%);
+  color: rgb(30%, 21.6470588235%, 3.2941176471%);
 }
 .edit-post-visual-editor .nhsuk-tag--yellow, .edit-post-visual-editor .learndash-wrapper .ld-status.ld-status-waiting, .edit-post-visual-editor .learndash-wrapper .learndash-wrap .ld-status.ld-status-waiting {
   background-color: #fff59d;
-  border-color: rgb(76.5, 70.5, 17.7);
-  color: rgb(76.5, 70.5, 17.7);
+  border-color: rgb(30%, 27.6470588235%, 6.9411764706%);
+  color: rgb(30%, 27.6470588235%, 6.9411764706%);
 }
 .edit-post-visual-editor {
   /* Remove tag border

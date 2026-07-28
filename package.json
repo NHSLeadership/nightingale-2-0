@@ -20,5 +20,8 @@
     "nhsuk-frontend": "^8.3.0",
     "penthouse": "^2.3.2",
     "sass": "^1.67.0"
+  },
+  "overrides": {
+    "brace-expansion": "5.0.8"
   }
 }
