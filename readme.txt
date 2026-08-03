@@ -6,7 +6,7 @@ Requires PHP: 8.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.14
+Version: 2.7.15
 Stable tag: 2.7
 
 
@@ -42,6 +42,11 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=2.7.15=
+* Improve Gutenberg editor stylesheet loading for WordPress 6.9+ compatibility.
+* Security update
+* Update transitive npm dependency `brace-expansion` to 5.0.8 via npm overrides to address security vulnerabilities.
 
 =2.7.14=
 * Fix header menu font size
