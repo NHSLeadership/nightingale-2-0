@@ -43,6 +43,12 @@ one level only. To show further levels, we recommend using the right (or left) h
 
 == Changelog
 
+=2.7.16=
+* Security update
+* Update brace-expansion override to 5.0.12
+* Update transitive npm dependency `extract-zip` to 2.0.1 via npm overrides to address security vulnerabilities
+* Move penthouse from dependencies to devDependencies
+
 =2.7.15=
 * Improve Gutenberg editor stylesheet loading for WordPress 6.9+ compatibility.
 * Security update
