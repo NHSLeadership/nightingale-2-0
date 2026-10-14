@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/NHSLeadership/nightingale-2-0.git"
   },
-  "version": "2.7.15",
+  "version": "2.7.16",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,10 +18,13 @@
   "license": "ISC",
   "dependencies": {
     "nhsuk-frontend": "^8.3.0",
-    "penthouse": "^2.3.2",
     "sass": "^1.67.0"
   },
+  "devDependencies": {
+    "penthouse": "^2.3.3"
+  },
   "overrides": {
-    "brace-expansion": "5.0.8"
+    "brace-expansion": "5.0.12",
+    "extract-zip": "2.0.1"
   }
 }
