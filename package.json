@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/NHSLeadership/nightingale-2-0.git"
   },
-  "version": "2.7.16",
+  "version": "2.7.17",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
   },
   "overrides": {
     "brace-expansion": "5.0.12",
-    "extract-zip": "2.0.1"
+    "extract-zip": "2.0.1",
+    "puppeteer": "25.15.0"
   }
 }
