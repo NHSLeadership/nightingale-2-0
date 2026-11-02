@@ -6,8 +6,8 @@ Requires PHP: 8.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.17
-Stable tag: 2.7.17
+Version: 3.0.0
+Stable tag: 3.0.0
 
 
 == Description ==
@@ -42,6 +42,18 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=3.0.0=
+* Major update: upgrade NHS.UK frontend from 8.x to 10.7
+* Update header, footer, breadcrumb, skip link and other templates to the new NHS.UK markup
+* Move Sass to the module system (@use) instead of @import, with no build warnings
+* Add compatibility styles for content saved with NHS.UK frontend 8.x (back link, font-size and colour helper classes, disabled buttons)
+* Require NHS Blocks 2.0.0 or newer if NHS Blocks is installed
+* Breaking: child themes that override templates or @import theme Sass files may need updating
+* Move JavaScript to js/nhsuk-frontend.min.js. Keep js/nhsuk.min.js as an empty file so child themes that still load it do not get a missing file error
+* Try once to clear the cache of common caching plugins after updating. Hosting and CDN caches may need clearing manually
+* Show a one-time admin notice on sites using a child theme, asking them to check their pages
+* Use the parent theme version for block editor styles, so sites with a child theme get the new editor styles after updating
 
 =2.7.17=
 * Security update
@@ -575,6 +587,9 @@ Additional customiser options and refined display output:
  * Initial work on theme, standardised and tested for accessibility and optimised for performance.
 
 == Upgrade Notice ==
+
+= 3.0.0 =
+This is a major update to NHS.UK frontend version 10. Back up your site before updating. If you use NHS Blocks, update it to 2.0.0 as well. Child themes may need changes. After updating, clear all caches and check your pages.
 
 = 2.1.7.1 =
  * Please upgrade to 2.1.7.1 as previous release had incorrect style.min.css included, and this release also fixes white

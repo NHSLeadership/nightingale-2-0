@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.17
+Version: 3.0.0
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 8.0
@@ -24,52 +24,54 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import 'assets/scss/default';
-@import 'node_modules/nhsuk-frontend/packages/nhsuk.scss';
+@use 'assets/scss/default' as _default;
+@use 'nhsuk-frontend/dist/nhsuk' as _nhsuk-frontend;
 
 
-@import 'assets/scss/accessibility'; // global accessibility improvements
+@use 'assets/scss/accessibility' as _accessibility; // global accessibility improvements
 // start importing the theme specific settings
-@import 'assets/scss/nhs-colours';
 // nhs colour pallette
-@import 'assets/scss/generic-overrides';
+@use 'assets/scss/generic-overrides' as _generic-overrides;
 // generic over-rides to remove default wordpress styling issues
-// @import 'assets/scss/header';
+// @use 'assets/scss/header' as _header;
 // header styles
-@import 'assets/scss/style_variations';
+@use 'assets/scss/style_variations' as _style-variations;
 // block elements
-@import 'assets/scss/sidebar-widgets.scss';
+@use 'assets/scss/sidebar-widgets' as _sidebar-widgets;
 // sidebar elements and subpages navigation
-@import 'assets/scss/comments-and-meta';
+@use 'assets/scss/comments-and-meta' as _comments-and-meta;
 // Print output styling
-@import 'assets/scss/print';
+@use 'assets/scss/print' as _print;
 // over-ride for gallery styling to bring into NHSUK style
-@import 'assets/scss/gallery';
+@use 'assets/scss/gallery' as _gallery;
 // Gravity Forms plugin styling to match NHSUK design patterns
-@import 'assets/scss/gravity-forms';
+@use 'assets/scss/gravity-forms' as _gravity-forms;
 // LearnDash plugin styling to match NHSUK design patterns
-@import 'assets/scss/learndash-styling';
+@use 'assets/scss/learndash-styling' as _learndash-styling;
 
 // Events Calendar plugin styling to match NHSUK design patterns
-@import 'assets/scss/events-calendar-styling';
+@use 'assets/scss/events-calendar-styling' as _events-calendar-styling;
 // Download Monitor plugin styling to match NHSUK design patterns
-@import 'assets/scss/download-monitor';
+@use 'assets/scss/download-monitor' as _download-monitor;
 // Emergency Alert design patterns.
-@import 'assets/scss/emergency_alert';
+@use 'assets/scss/emergency_alert' as _emergency-alert;
 // Add tabbed layout design patterns.
-@import 'assets/scss/tabs';
+@use 'assets/scss/tabs' as _tabs;
 // Add Feedback Banner pattern
-@import 'assets/scss/feedback_banner';
-@import 'assets/scss/nhsblocks/nhsl-blocks'; // specific elements for nhsl-blocks plugin
-@import 'assets/scss/nhsblocks/style_variations';//gutenberg blocks style variations
-@import 'assets/scss/nhsblocks/stripe-blocks';//gutenberg blocks stripe
+@use 'assets/scss/feedback_banner' as _feedback-banner;
+@use 'assets/scss/nhsblocks/nhsl-blocks' as _nhsblocks-nhsl-blocks; // specific elements for nhsl-blocks plugin
+@use 'assets/scss/nhsblocks/style_variations' as _nhsblocks-style-variations;//gutenberg blocks style variations
+@use 'assets/scss/nhsblocks/stripe-blocks' as _nhsblocks-stripe-blocks;//gutenberg blocks stripe
 
 // Legacy components - added 16th November 2020
-@import 'assets/scss/nhsblocks/legacy/panel/panel';
-@import 'assets/scss/nhsblocks/legacy/promo/promo';
-@import 'assets/scss/nhsblocks/legacy/care-card/care-card';
-@import 'assets/scss/nhsblocks/legacy/legacy';
+@use 'assets/scss/nhsblocks/legacy/mixins' as _nhsblocks-legacy-mixins;
+@use 'assets/scss/nhsblocks/legacy/panel/panel' as _nhsblocks-legacy-panel-panel;
+@use 'assets/scss/nhsblocks/legacy/promo/promo' as _nhsblocks-legacy-promo-promo;
+@use 'assets/scss/nhsblocks/legacy/care-card/care-card' as _nhsblocks-legacy-care-card-care-card;
+@use 'assets/scss/nhsblocks/legacy/legacy' as _nhsblocks-legacy-legacy;
 // nhs colour pallette
-@import 'assets/scss/color-mixer';
+@use 'assets/scss/color-mixer' as _color-mixer;
 // Rework the cookie control notice for better accessibility
-@import 'assets/scss/cookie-control';
+@use 'assets/scss/cookie-control' as _cookie-control;
+// Keep content saved under nhsuk-frontend 8.x working
+@use 'assets/scss/nhsuk-8-compat' as _nhsuk-8-compat;

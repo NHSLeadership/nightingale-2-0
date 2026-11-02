@@ -4,7 +4,6 @@
   border-top-color: #005eb8;
 }
 .page-colour--nhs-blue .nhsuk-header,
-.page-colour--nhs-blue .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--nhs-blue #secondary section h2.widget-title,
 .page-colour--nhs-blue .nhsuk-panel-with-label__label,
 .page-colour--nhs-blue #secondary section #wp-calendar caption,
@@ -14,10 +13,11 @@
 .page-colour--nhs-blue .nhsuk-do-dont-list__label,
 .page-colour--nhs-blue .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--nhs-blue .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--nhs-blue .nhsuk-panel-with-label__label,
 .page-colour--nhs-blue .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--nhs-blue .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--nhs-blue .nhsuk-header,
-#content .page-style--nhs-blue .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--nhs-blue #secondary section h2.widget-title,
 #content .page-style--nhs-blue .nhsuk-panel-with-label__label,
 #content .page-style--nhs-blue #secondary section #wp-calendar caption,
@@ -27,6 +27,8 @@
 #content .page-style--nhs-blue .nhsuk-do-dont-list__label,
 #content .page-style--nhs-blue .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--nhs-blue .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--nhs-blue .nhsuk-panel-with-label__label,
 #content .page-style--nhs-blue .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--nhs-blue .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -54,11 +56,15 @@
 .page-colour--nhs-blue .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--nhs-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--nhs-blue #secondary section, #content .page-style--nhs-blue .nhsuk-inset-text,
 #content .page-style--nhs-blue .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--nhs-blue .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--nhs-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--nhs-blue #secondary section {
   border-color: #005eb8;
 }
@@ -69,11 +75,6 @@
 #content .page-style--nhs-blue .nhsuk-pagination__link .nhsuk-icon {
   fill: #005eb8;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--nhs-blue .nhsuk-icon__search, #content .page-style--nhs-blue .nhsuk-icon__search {
-    fill: #005eb8;
-  }
-}
 .page-colour--nhs-blue #secondary section ul > li > ul > li > a, #content .page-style--nhs-blue #secondary section ul > li > ul > li > a {
   border-left: 2px solid #005eb8;
 }
@@ -82,62 +83,21 @@
 }
 
 .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation {
-  background: #005eb8;
+  background-color: #005eb8;
 }
-.page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(0%, 21.5366581415%, 42.1568627451%);
-  background: rgb(0%, 21.5366581415%, 42.1568627451%);
+.page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(20%, 49.4901960784%, 77.7254901961%);
 }
-.page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(0%, 21.5366581415%, 42.1568627451%);
-  background: rgb(0%, 21.5366581415%, 42.1568627451%);
-  color: #ffffff;
+.page-colour--nhs-blue .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #005eb8;
 }
 .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #005eb8;
 }
-.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #005eb8;
-}
-.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #005eb8;
-  color: #005eb8;
-}
-.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #005eb8;
-  color: #005eb8;
-}
-.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #005eb8;
-}
-.page-colour--nhs-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #005eb8;
-}
-.page-colour--nhs-blue .nhsuk-header .nhsuk-icon__close {
-  fill: #005eb8;
-}
-@media (max-width: 989px) {
-  .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #005eb8;
-  }
-  .page-colour--nhs-blue .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #005eb8;
-  }
-  .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation, .page-colour--nhs-blue .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--nhs-blue .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--nhs-blue .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #005eb8;
-    background: #005eb8;
-  }
 }
 
 .page-colour--dark-blue .nhsuk-footer,
@@ -146,7 +106,6 @@
   border-top-color: #003087;
 }
 .page-colour--dark-blue .nhsuk-header,
-.page-colour--dark-blue .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--dark-blue #secondary section h2.widget-title,
 .page-colour--dark-blue .nhsuk-panel-with-label__label,
 .page-colour--dark-blue #secondary section #wp-calendar caption,
@@ -156,10 +115,11 @@
 .page-colour--dark-blue .nhsuk-do-dont-list__label,
 .page-colour--dark-blue .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--dark-blue .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--dark-blue .nhsuk-panel-with-label__label,
 .page-colour--dark-blue .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--dark-blue .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--dark-blue .nhsuk-header,
-#content .page-style--dark-blue .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--dark-blue #secondary section h2.widget-title,
 #content .page-style--dark-blue .nhsuk-panel-with-label__label,
 #content .page-style--dark-blue #secondary section #wp-calendar caption,
@@ -169,6 +129,8 @@
 #content .page-style--dark-blue .nhsuk-do-dont-list__label,
 #content .page-style--dark-blue .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--dark-blue .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--dark-blue .nhsuk-panel-with-label__label,
 #content .page-style--dark-blue .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--dark-blue .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -196,11 +158,15 @@
 .page-colour--dark-blue .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--dark-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--dark-blue #secondary section, #content .page-style--dark-blue .nhsuk-inset-text,
 #content .page-style--dark-blue .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--dark-blue .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--dark-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--dark-blue #secondary section {
   border-color: #003087;
 }
@@ -211,11 +177,6 @@
 #content .page-style--dark-blue .nhsuk-pagination__link .nhsuk-icon {
   fill: #003087;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--dark-blue .nhsuk-icon__search, #content .page-style--dark-blue .nhsuk-icon__search {
-    fill: #003087;
-  }
-}
 .page-colour--dark-blue #secondary section ul > li > ul > li > a, #content .page-style--dark-blue #secondary section ul > li > ul > li > a {
   border-left: 2px solid #003087;
 }
@@ -224,62 +185,21 @@
 }
 
 .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation {
-  background: #003087;
+  background-color: #003087;
 }
-.page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(0%, 8.1568627451%, 22.9411764706%);
-  background: rgb(0%, 8.1568627451%, 22.9411764706%);
+.page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(20%, 35.0588235294%, 62.3529411765%);
 }
-.page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-blue .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(0%, 8.1568627451%, 22.9411764706%);
-  background: rgb(0%, 8.1568627451%, 22.9411764706%);
-  color: #ffffff;
+.page-colour--dark-blue .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #003087;
 }
 .page-colour--dark-blue .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #003087;
 }
-.page-colour--dark-blue .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #003087;
-}
-.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #003087;
-  color: #003087;
-}
-.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #003087;
-  color: #003087;
-}
-.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #003087;
-}
-.page-colour--dark-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #003087;
-}
-.page-colour--dark-blue .nhsuk-header .nhsuk-icon__close {
-  fill: #003087;
-}
-@media (max-width: 989px) {
-  .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #003087;
-  }
-  .page-colour--dark-blue .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #003087;
-  }
-  .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation, .page-colour--dark-blue .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--dark-blue .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--dark-blue .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #003087;
-    background: #003087;
-  }
 }
 
 .page-colour--bright-blue .nhsuk-footer,
@@ -288,7 +208,6 @@
   border-top-color: #0072ce;
 }
 .page-colour--bright-blue .nhsuk-header,
-.page-colour--bright-blue .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--bright-blue #secondary section h2.widget-title,
 .page-colour--bright-blue .nhsuk-panel-with-label__label,
 .page-colour--bright-blue #secondary section #wp-calendar caption,
@@ -298,10 +217,11 @@
 .page-colour--bright-blue .nhsuk-do-dont-list__label,
 .page-colour--bright-blue .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--bright-blue .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--bright-blue .nhsuk-panel-with-label__label,
 .page-colour--bright-blue .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--bright-blue .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--bright-blue .nhsuk-header,
-#content .page-style--bright-blue .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--bright-blue #secondary section h2.widget-title,
 #content .page-style--bright-blue .nhsuk-panel-with-label__label,
 #content .page-style--bright-blue #secondary section #wp-calendar caption,
@@ -311,6 +231,8 @@
 #content .page-style--bright-blue .nhsuk-do-dont-list__label,
 #content .page-style--bright-blue .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--bright-blue .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--bright-blue .nhsuk-panel-with-label__label,
 #content .page-style--bright-blue .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--bright-blue .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -338,11 +260,15 @@
 .page-colour--bright-blue .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--bright-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--bright-blue #secondary section, #content .page-style--bright-blue .nhsuk-inset-text,
 #content .page-style--bright-blue .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--bright-blue .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--bright-blue .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--bright-blue #secondary section {
   border-color: #0072ce;
 }
@@ -353,11 +279,6 @@
 #content .page-style--bright-blue .nhsuk-pagination__link .nhsuk-icon {
   fill: #0072ce;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--bright-blue .nhsuk-icon__search, #content .page-style--bright-blue .nhsuk-icon__search {
-    fill: #0072ce;
-  }
-}
 .page-colour--bright-blue #secondary section ul > li > ul > li > a, #content .page-style--bright-blue #secondary section ul > li > ul > li > a {
   border-left: 2px solid #0072ce;
 }
@@ -366,62 +287,21 @@
 }
 
 .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation {
-  background: #0072ce;
+  background-color: #0072ce;
 }
-.page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(0%, 28.1039406054%, 50.7843137255%);
-  background: rgb(0%, 28.1039406054%, 50.7843137255%);
+.page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(20%, 55.7647058824%, 84.6274509804%);
 }
-.page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--bright-blue .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(0%, 28.1039406054%, 50.7843137255%);
-  background: rgb(0%, 28.1039406054%, 50.7843137255%);
-  color: #ffffff;
+.page-colour--bright-blue .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #0072ce;
 }
 .page-colour--bright-blue .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #0072ce;
 }
-.page-colour--bright-blue .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #0072ce;
-}
-.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #0072ce;
-  color: #0072ce;
-}
-.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #0072ce;
-  color: #0072ce;
-}
-.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #0072ce;
-}
-.page-colour--bright-blue .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #0072ce;
-}
-.page-colour--bright-blue .nhsuk-header .nhsuk-icon__close {
-  fill: #0072ce;
-}
-@media (max-width: 989px) {
-  .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #0072ce;
-  }
-  .page-colour--bright-blue .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #0072ce;
-  }
-  .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation, .page-colour--bright-blue .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--bright-blue .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--bright-blue .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #0072ce;
-    background: #0072ce;
-  }
 }
 
 .page-colour--mid-grey .nhsuk-footer,
@@ -430,7 +310,6 @@
   border-top-color: #768692;
 }
 .page-colour--mid-grey .nhsuk-header,
-.page-colour--mid-grey .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--mid-grey #secondary section h2.widget-title,
 .page-colour--mid-grey .nhsuk-panel-with-label__label,
 .page-colour--mid-grey #secondary section #wp-calendar caption,
@@ -440,10 +319,11 @@
 .page-colour--mid-grey .nhsuk-do-dont-list__label,
 .page-colour--mid-grey .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--mid-grey .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--mid-grey .nhsuk-panel-with-label__label,
 .page-colour--mid-grey .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--mid-grey .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--mid-grey .nhsuk-header,
-#content .page-style--mid-grey .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--mid-grey #secondary section h2.widget-title,
 #content .page-style--mid-grey .nhsuk-panel-with-label__label,
 #content .page-style--mid-grey #secondary section #wp-calendar caption,
@@ -453,6 +333,8 @@
 #content .page-style--mid-grey .nhsuk-do-dont-list__label,
 #content .page-style--mid-grey .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--mid-grey .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--mid-grey .nhsuk-panel-with-label__label,
 #content .page-style--mid-grey .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--mid-grey .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -480,11 +362,15 @@
 .page-colour--mid-grey .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--mid-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--mid-grey #secondary section, #content .page-style--mid-grey .nhsuk-inset-text,
 #content .page-style--mid-grey .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--mid-grey .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--mid-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--mid-grey #secondary section {
   border-color: #768692;
 }
@@ -495,11 +381,6 @@
 #content .page-style--mid-grey .nhsuk-pagination__link .nhsuk-icon {
   fill: #768692;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--mid-grey .nhsuk-icon__search, #content .page-style--mid-grey .nhsuk-icon__search {
-    fill: #768692;
-  }
-}
 .page-colour--mid-grey #secondary section ul > li > ul > li > a, #content .page-style--mid-grey #secondary section ul > li > ul > li > a {
   border-left: 2px solid #768692;
 }
@@ -508,62 +389,21 @@
 }
 
 .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation {
-  background: #768692;
+  background-color: #768692;
 }
-.page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(32.5801052128%, 37.362505978%, 40.9493065519%);
-  background: rgb(32.5801052128%, 37.362505978%, 40.9493065519%);
+.page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(57.0196078431%, 62.0392156863%, 65.8039215686%);
 }
-.page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--mid-grey .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(32.5801052128%, 37.362505978%, 40.9493065519%);
-  background: rgb(32.5801052128%, 37.362505978%, 40.9493065519%);
-  color: #ffffff;
+.page-colour--mid-grey .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #768692;
 }
 .page-colour--mid-grey .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #768692;
 }
-.page-colour--mid-grey .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #768692;
-}
-.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #768692;
-  color: #768692;
-}
-.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #768692;
-  color: #768692;
-}
-.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #768692;
-}
-.page-colour--mid-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #768692;
-}
-.page-colour--mid-grey .nhsuk-header .nhsuk-icon__close {
-  fill: #768692;
-}
-@media (max-width: 989px) {
-  .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #768692;
-  }
-  .page-colour--mid-grey .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #768692;
-  }
-  .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation, .page-colour--mid-grey .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--mid-grey .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--mid-grey .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #768692;
-    background: #768692;
-  }
 }
 
 .page-colour--dark-grey .nhsuk-footer,
@@ -572,7 +412,6 @@
   border-top-color: #425563;
 }
 .page-colour--dark-grey .nhsuk-header,
-.page-colour--dark-grey .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--dark-grey #secondary section h2.widget-title,
 .page-colour--dark-grey .nhsuk-panel-with-label__label,
 .page-colour--dark-grey #secondary section #wp-calendar caption,
@@ -582,10 +421,11 @@
 .page-colour--dark-grey .nhsuk-do-dont-list__label,
 .page-colour--dark-grey .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--dark-grey .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--dark-grey .nhsuk-panel-with-label__label,
 .page-colour--dark-grey .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--dark-grey .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--dark-grey .nhsuk-header,
-#content .page-style--dark-grey .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--dark-grey #secondary section h2.widget-title,
 #content .page-style--dark-grey .nhsuk-panel-with-label__label,
 #content .page-style--dark-grey #secondary section #wp-calendar caption,
@@ -595,6 +435,8 @@
 #content .page-style--dark-grey .nhsuk-do-dont-list__label,
 #content .page-style--dark-grey .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--dark-grey .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--dark-grey .nhsuk-panel-with-label__label,
 #content .page-style--dark-grey .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--dark-grey .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -622,11 +464,15 @@
 .page-colour--dark-grey .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--dark-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--dark-grey #secondary section, #content .page-style--dark-grey .nhsuk-inset-text,
 #content .page-style--dark-grey .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--dark-grey .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--dark-grey .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--dark-grey #secondary section {
   border-color: #425563;
 }
@@ -637,11 +483,6 @@
 #content .page-style--dark-grey .nhsuk-pagination__link .nhsuk-icon {
   fill: #425563;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--dark-grey .nhsuk-icon__search, #content .page-style--dark-grey .nhsuk-icon__search {
-    fill: #425563;
-  }
-}
 .page-colour--dark-grey #secondary section ul > li > ul > li > a, #content .page-style--dark-grey #secondary section ul > li > ul > li > a {
   border-left: 2px solid #425563;
 }
@@ -650,62 +491,21 @@
 }
 
 .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation {
-  background: #425563;
+  background-color: #425563;
 }
-.page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(13.8823529412%, 17.8787878788%, 20.8235294118%);
-  background: rgb(13.8823529412%, 17.8787878788%, 20.8235294118%);
+.page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(40.7058823529%, 46.6666666667%, 51.0588235294%);
 }
-.page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-grey .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(13.8823529412%, 17.8787878788%, 20.8235294118%);
-  background: rgb(13.8823529412%, 17.8787878788%, 20.8235294118%);
-  color: #ffffff;
+.page-colour--dark-grey .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #425563;
 }
 .page-colour--dark-grey .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #425563;
 }
-.page-colour--dark-grey .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #425563;
-}
-.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #425563;
-  color: #425563;
-}
-.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #425563;
-  color: #425563;
-}
-.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #425563;
-}
-.page-colour--dark-grey .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #425563;
-}
-.page-colour--dark-grey .nhsuk-header .nhsuk-icon__close {
-  fill: #425563;
-}
-@media (max-width: 989px) {
-  .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #425563;
-  }
-  .page-colour--dark-grey .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #425563;
-  }
-  .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation, .page-colour--dark-grey .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--dark-grey .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--dark-grey .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #425563;
-    background: #425563;
-  }
 }
 
 .page-colour--black .nhsuk-footer,
@@ -714,7 +514,6 @@
   border-top-color: #000000;
 }
 .page-colour--black .nhsuk-header,
-.page-colour--black .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--black #secondary section h2.widget-title,
 .page-colour--black .nhsuk-panel-with-label__label,
 .page-colour--black #secondary section #wp-calendar caption,
@@ -724,10 +523,11 @@
 .page-colour--black .nhsuk-do-dont-list__label,
 .page-colour--black .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--black .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--black .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--black .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--black .nhsuk-panel-with-label__label,
 .page-colour--black .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--black .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--black .nhsuk-header,
-#content .page-style--black .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--black #secondary section h2.widget-title,
 #content .page-style--black .nhsuk-panel-with-label__label,
 #content .page-style--black #secondary section #wp-calendar caption,
@@ -737,6 +537,8 @@
 #content .page-style--black .nhsuk-do-dont-list__label,
 #content .page-style--black .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--black .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--black .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--black .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--black .nhsuk-panel-with-label__label,
 #content .page-style--black .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--black .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -764,11 +566,15 @@
 .page-colour--black .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--black #secondary section, #content .page-style--black .nhsuk-inset-text,
 #content .page-style--black .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--black .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--black #secondary section {
   border-color: #000000;
 }
@@ -779,11 +585,6 @@
 #content .page-style--black .nhsuk-pagination__link .nhsuk-icon {
   fill: #000000;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--black .nhsuk-icon__search, #content .page-style--black .nhsuk-icon__search {
-    fill: #000000;
-  }
-}
 .page-colour--black #secondary section ul > li > ul > li > a, #content .page-style--black #secondary section ul > li > ul > li > a {
   border-left: 2px solid #000000;
 }
@@ -792,62 +593,21 @@
 }
 
 .page-colour--black .nhsuk-header .nhsuk-header__navigation {
-  background: #000000;
+  background-color: #000000;
 }
-.page-colour--black .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--black .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--black .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: black;
-  background: black;
+.page-colour--black .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 #333333;
 }
-.page-colour--black .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--black .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--black .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--black .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--black .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: black;
-  background: black;
-  color: #ffffff;
+.page-colour--black .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #000000;
 }
 .page-colour--black .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #000000;
 }
-.page-colour--black .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #000000;
-}
-.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #000000;
-  color: #000000;
-}
-.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #000000;
-  color: #000000;
-}
-.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #000000;
-}
-.page-colour--black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #000000;
-}
-.page-colour--black .nhsuk-header .nhsuk-icon__close {
-  fill: #000000;
-}
-@media (max-width: 989px) {
-  .page-colour--black .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #000000;
-  }
-  .page-colour--black .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #000000;
-  }
-  .page-colour--black .nhsuk-header .nhsuk-header__navigation, .page-colour--black .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--black .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--black .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #000000;
-    background: #000000;
-  }
 }
 
 .page-colour--purple .nhsuk-footer,
@@ -856,7 +616,6 @@
   border-top-color: #330072;
 }
 .page-colour--purple .nhsuk-header,
-.page-colour--purple .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--purple #secondary section h2.widget-title,
 .page-colour--purple .nhsuk-panel-with-label__label,
 .page-colour--purple #secondary section #wp-calendar caption,
@@ -866,10 +625,11 @@
 .page-colour--purple .nhsuk-do-dont-list__label,
 .page-colour--purple .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--purple .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--purple .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--purple .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--purple .nhsuk-panel-with-label__label,
 .page-colour--purple .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--purple .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--purple .nhsuk-header,
-#content .page-style--purple .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--purple #secondary section h2.widget-title,
 #content .page-style--purple .nhsuk-panel-with-label__label,
 #content .page-style--purple #secondary section #wp-calendar caption,
@@ -879,6 +639,8 @@
 #content .page-style--purple .nhsuk-do-dont-list__label,
 #content .page-style--purple .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--purple .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--purple .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--purple .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--purple .nhsuk-panel-with-label__label,
 #content .page-style--purple .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--purple .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -906,11 +668,15 @@
 .page-colour--purple .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--purple #secondary section, #content .page-style--purple .nhsuk-inset-text,
 #content .page-style--purple .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--purple .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--purple #secondary section {
   border-color: #330072;
 }
@@ -921,11 +687,6 @@
 #content .page-style--purple .nhsuk-pagination__link .nhsuk-icon {
   fill: #330072;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--purple .nhsuk-icon__search, #content .page-style--purple .nhsuk-icon__search {
-    fill: #330072;
-  }
-}
 .page-colour--purple #secondary section ul > li > ul > li > a, #content .page-style--purple #secondary section ul > li > ul > li > a {
   border-left: 2px solid #330072;
 }
@@ -934,62 +695,21 @@
 }
 
 .page-colour--purple .nhsuk-header .nhsuk-header__navigation {
-  background: #330072;
+  background-color: #330072;
 }
-.page-colour--purple .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--purple .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(6.5789473684%, 0%, 14.7058823529%);
-  background: rgb(6.5789473684%, 0%, 14.7058823529%);
+.page-colour--purple .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(36%, 20%, 55.7647058824%);
 }
-.page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--purple .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--purple .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(6.5789473684%, 0%, 14.7058823529%);
-  background: rgb(6.5789473684%, 0%, 14.7058823529%);
-  color: #ffffff;
+.page-colour--purple .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #330072;
 }
 .page-colour--purple .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #330072;
 }
-.page-colour--purple .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #330072;
-}
-.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #330072;
-  color: #330072;
-}
-.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #330072;
-  color: #330072;
-}
-.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #330072;
-}
-.page-colour--purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #330072;
-}
-.page-colour--purple .nhsuk-header .nhsuk-icon__close {
-  fill: #330072;
-}
-@media (max-width: 989px) {
-  .page-colour--purple .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #330072;
-  }
-  .page-colour--purple .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #330072;
-  }
-  .page-colour--purple .nhsuk-header .nhsuk-header__navigation, .page-colour--purple .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--purple .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--purple .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #330072;
-    background: #330072;
-  }
 }
 
 .page-colour--pink .nhsuk-footer,
@@ -998,7 +718,6 @@
   border-top-color: #ae2573;
 }
 .page-colour--pink .nhsuk-header,
-.page-colour--pink .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--pink #secondary section h2.widget-title,
 .page-colour--pink .nhsuk-panel-with-label__label,
 .page-colour--pink #secondary section #wp-calendar caption,
@@ -1008,10 +727,11 @@
 .page-colour--pink .nhsuk-do-dont-list__label,
 .page-colour--pink .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--pink .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--pink .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--pink .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--pink .nhsuk-panel-with-label__label,
 .page-colour--pink .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--pink .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--pink .nhsuk-header,
-#content .page-style--pink .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--pink #secondary section h2.widget-title,
 #content .page-style--pink .nhsuk-panel-with-label__label,
 #content .page-style--pink #secondary section #wp-calendar caption,
@@ -1021,6 +741,8 @@
 #content .page-style--pink .nhsuk-do-dont-list__label,
 #content .page-style--pink .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--pink .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--pink .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--pink .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--pink .nhsuk-panel-with-label__label,
 #content .page-style--pink .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--pink .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -1048,11 +770,15 @@
 .page-colour--pink .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--pink .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--pink .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--pink #secondary section, #content .page-style--pink .nhsuk-inset-text,
 #content .page-style--pink .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--pink .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--pink .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--pink .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--pink .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--pink #secondary section {
   border-color: #ae2573;
 }
@@ -1063,11 +789,6 @@
 #content .page-style--pink .nhsuk-pagination__link .nhsuk-icon {
   fill: #ae2573;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--pink .nhsuk-icon__search, #content .page-style--pink .nhsuk-icon__search {
-    fill: #ae2573;
-  }
-}
 .page-colour--pink #secondary section ul > li > ul > li > a, #content .page-style--pink #secondary section ul > li > ul > li > a {
   border-left: 2px solid #ae2573;
 }
@@ -1076,62 +797,21 @@
 }
 
 .page-colour--pink .nhsuk-header .nhsuk-header__navigation {
-  background: #ae2573;
+  background-color: #ae2573;
 }
-.page-colour--pink .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--pink .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(43.4959576248%, 9.2491404145%, 28.7473283152%);
-  background: rgb(43.4959576248%, 9.2491404145%, 28.7473283152%);
+.page-colour--pink .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(74.5882352941%, 31.6078431373%, 56.0784313725%);
 }
-.page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--pink .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--pink .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(43.4959576248%, 9.2491404145%, 28.7473283152%);
-  background: rgb(43.4959576248%, 9.2491404145%, 28.7473283152%);
-  color: #ffffff;
+.page-colour--pink .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #ae2573;
 }
 .page-colour--pink .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #ae2573;
 }
-.page-colour--pink .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #ae2573;
-}
-.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #ae2573;
-  color: #ae2573;
-}
-.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #ae2573;
-  color: #ae2573;
-}
-.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #ae2573;
-}
-.page-colour--pink .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #ae2573;
-}
-.page-colour--pink .nhsuk-header .nhsuk-icon__close {
-  fill: #ae2573;
-}
-@media (max-width: 989px) {
-  .page-colour--pink .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #ae2573;
-  }
-  .page-colour--pink .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #ae2573;
-  }
-  .page-colour--pink .nhsuk-header .nhsuk-header__navigation, .page-colour--pink .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--pink .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--pink .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #ae2573;
-    background: #ae2573;
-  }
 }
 
 .page-colour--light-purple .nhsuk-footer,
@@ -1140,7 +820,6 @@
   border-top-color: #704c9c;
 }
 .page-colour--light-purple .nhsuk-header,
-.page-colour--light-purple .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--light-purple #secondary section h2.widget-title,
 .page-colour--light-purple .nhsuk-panel-with-label__label,
 .page-colour--light-purple #secondary section #wp-calendar caption,
@@ -1150,10 +829,11 @@
 .page-colour--light-purple .nhsuk-do-dont-list__label,
 .page-colour--light-purple .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--light-purple .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--light-purple .nhsuk-panel-with-label__label,
 .page-colour--light-purple .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--light-purple .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--light-purple .nhsuk-header,
-#content .page-style--light-purple .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--light-purple #secondary section h2.widget-title,
 #content .page-style--light-purple .nhsuk-panel-with-label__label,
 #content .page-style--light-purple #secondary section #wp-calendar caption,
@@ -1163,6 +843,8 @@
 #content .page-style--light-purple .nhsuk-do-dont-list__label,
 #content .page-style--light-purple .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--light-purple .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--light-purple .nhsuk-panel-with-label__label,
 #content .page-style--light-purple .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--light-purple .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -1190,11 +872,15 @@
 .page-colour--light-purple .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--light-purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--light-purple #secondary section, #content .page-style--light-purple .nhsuk-inset-text,
 #content .page-style--light-purple .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--light-purple .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--light-purple .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--light-purple #secondary section {
   border-color: #704c9c;
 }
@@ -1205,11 +891,6 @@
 #content .page-style--light-purple .nhsuk-pagination__link .nhsuk-icon {
   fill: #704c9c;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--light-purple .nhsuk-icon__search, #content .page-style--light-purple .nhsuk-icon__search {
-    fill: #704c9c;
-  }
-}
 .page-colour--light-purple #secondary section ul > li > ul > li > a, #content .page-style--light-purple #secondary section ul > li > ul > li > a {
   border-left: 2px solid #704c9c;
 }
@@ -1218,62 +899,21 @@
 }
 
 .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation {
-  background: #704c9c;
+  background-color: #704c9c;
 }
-.page-colour--light-purple .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--light-purple .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(29.4388100068%, 19.9763353617%, 41.0040567951%);
-  background: rgb(29.4388100068%, 19.9763353617%, 41.0040567951%);
+.page-colour--light-purple .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(55.137254902%, 43.8431372549%, 68.9411764706%);
 }
-.page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--light-purple .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--light-purple .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(29.4388100068%, 19.9763353617%, 41.0040567951%);
-  background: rgb(29.4388100068%, 19.9763353617%, 41.0040567951%);
-  color: #ffffff;
+.page-colour--light-purple .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #704c9c;
 }
 .page-colour--light-purple .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #704c9c;
 }
-.page-colour--light-purple .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #704c9c;
-}
-.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #704c9c;
-  color: #704c9c;
-}
-.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #704c9c;
-  color: #704c9c;
-}
-.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #704c9c;
-}
-.page-colour--light-purple .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #704c9c;
-}
-.page-colour--light-purple .nhsuk-header .nhsuk-icon__close {
-  fill: #704c9c;
-}
-@media (max-width: 989px) {
-  .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #704c9c;
-  }
-  .page-colour--light-purple .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #704c9c;
-  }
-  .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation, .page-colour--light-purple .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--light-purple .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--light-purple .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #704c9c;
-    background: #704c9c;
-  }
 }
 
 .page-colour--emergency-services-red .nhsuk-footer,
@@ -1282,7 +922,6 @@
   border-top-color: #d5281b;
 }
 .page-colour--emergency-services-red .nhsuk-header,
-.page-colour--emergency-services-red .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--emergency-services-red #secondary section h2.widget-title,
 .page-colour--emergency-services-red .nhsuk-panel-with-label__label,
 .page-colour--emergency-services-red #secondary section #wp-calendar caption,
@@ -1292,10 +931,11 @@
 .page-colour--emergency-services-red .nhsuk-do-dont-list__label,
 .page-colour--emergency-services-red .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--emergency-services-red .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--emergency-services-red .nhsuk-panel-with-label__label,
 .page-colour--emergency-services-red .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--emergency-services-red .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--emergency-services-red .nhsuk-header,
-#content .page-style--emergency-services-red .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--emergency-services-red #secondary section h2.widget-title,
 #content .page-style--emergency-services-red .nhsuk-panel-with-label__label,
 #content .page-style--emergency-services-red #secondary section #wp-calendar caption,
@@ -1305,6 +945,8 @@
 #content .page-style--emergency-services-red .nhsuk-do-dont-list__label,
 #content .page-style--emergency-services-red .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--emergency-services-red .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--emergency-services-red .nhsuk-panel-with-label__label,
 #content .page-style--emergency-services-red .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--emergency-services-red .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -1332,11 +974,15 @@
 .page-colour--emergency-services-red .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--emergency-services-red #secondary section, #content .page-style--emergency-services-red .nhsuk-inset-text,
 #content .page-style--emergency-services-red .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--emergency-services-red .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--emergency-services-red .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--emergency-services-red #secondary section {
   border-color: #d5281b;
 }
@@ -1347,11 +993,6 @@
 #content .page-style--emergency-services-red .nhsuk-pagination__link .nhsuk-icon {
   fill: #d5281b;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--emergency-services-red .nhsuk-icon__search, #content .page-style--emergency-services-red .nhsuk-icon__search {
-    fill: #d5281b;
-  }
-}
 .page-colour--emergency-services-red #secondary section ul > li > ul > li > a, #content .page-style--emergency-services-red #secondary section ul > li > ul > li > a {
   border-left: 2px solid #d5281b;
 }
@@ -1360,62 +1001,21 @@
 }
 
 .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation {
-  background: #d5281b;
+  background-color: #d5281b;
 }
-.page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(56.9044117647%, 10.6862745098%, 7.2132352941%);
-  background: rgb(56.9044117647%, 10.6862745098%, 7.2132352941%);
+.page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(86.8235294118%, 32.5490196078%, 28.4705882353%);
 }
-.page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(56.9044117647%, 10.6862745098%, 7.2132352941%);
-  background: rgb(56.9044117647%, 10.6862745098%, 7.2132352941%);
-  color: #ffffff;
+.page-colour--emergency-services-red .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #d5281b;
 }
 .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #d5281b;
 }
-.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #d5281b;
-}
-.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #d5281b;
-  color: #d5281b;
-}
-.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #d5281b;
-  color: #d5281b;
-}
-.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #d5281b;
-}
-.page-colour--emergency-services-red .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #d5281b;
-}
-.page-colour--emergency-services-red .nhsuk-header .nhsuk-icon__close {
-  fill: #d5281b;
-}
-@media (max-width: 989px) {
-  .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #d5281b;
-  }
-  .page-colour--emergency-services-red .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #d5281b;
-  }
-  .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--emergency-services-red .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--emergency-services-red .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #d5281b;
-    background: #d5281b;
-  }
 }
 
 .page-colour--dark-green .nhsuk-footer,
@@ -1424,7 +1024,6 @@
   border-top-color: #006747;
 }
 .page-colour--dark-green .nhsuk-header,
-.page-colour--dark-green .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--dark-green #secondary section h2.widget-title,
 .page-colour--dark-green .nhsuk-panel-with-label__label,
 .page-colour--dark-green #secondary section #wp-calendar caption,
@@ -1434,10 +1033,11 @@
 .page-colour--dark-green .nhsuk-do-dont-list__label,
 .page-colour--dark-green .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--dark-green .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--dark-green .nhsuk-panel-with-label__label,
 .page-colour--dark-green .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--dark-green .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--dark-green .nhsuk-header,
-#content .page-style--dark-green .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--dark-green #secondary section h2.widget-title,
 #content .page-style--dark-green .nhsuk-panel-with-label__label,
 #content .page-style--dark-green #secondary section #wp-calendar caption,
@@ -1447,6 +1047,8 @@
 #content .page-style--dark-green .nhsuk-do-dont-list__label,
 #content .page-style--dark-green .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--dark-green .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--dark-green .nhsuk-panel-with-label__label,
 #content .page-style--dark-green .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--dark-green .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -1474,11 +1076,15 @@
 .page-colour--dark-green .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--dark-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--dark-green #secondary section, #content .page-style--dark-green .nhsuk-inset-text,
 #content .page-style--dark-green .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--dark-green .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--dark-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--dark-green #secondary section {
   border-color: #006747;
 }
@@ -1489,11 +1095,6 @@
 #content .page-style--dark-green .nhsuk-pagination__link .nhsuk-icon {
   fill: #006747;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--dark-green .nhsuk-icon__search, #content .page-style--dark-green .nhsuk-icon__search {
-    fill: #006747;
-  }
-}
 .page-colour--dark-green #secondary section ul > li > ul > li > a, #content .page-style--dark-green #secondary section ul > li > ul > li > a {
   border-left: 2px solid #006747;
 }
@@ -1502,62 +1103,21 @@
 }
 
 .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation {
-  background: #006747;
+  background-color: #006747;
 }
-.page-colour--dark-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--dark-green .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(0%, 10.3921568627%, 7.1635256044%);
-  background: rgb(0%, 10.3921568627%, 7.1635256044%);
+.page-colour--dark-green .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(20%, 52.3137254902%, 42.2745098039%);
 }
-.page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--dark-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--dark-green .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(0%, 10.3921568627%, 7.1635256044%);
-  background: rgb(0%, 10.3921568627%, 7.1635256044%);
-  color: #ffffff;
+.page-colour--dark-green .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #006747;
 }
 .page-colour--dark-green .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #006747;
 }
-.page-colour--dark-green .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #006747;
-}
-.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #006747;
-  color: #006747;
-}
-.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #006747;
-  color: #006747;
-}
-.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #006747;
-}
-.page-colour--dark-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #006747;
-}
-.page-colour--dark-green .nhsuk-header .nhsuk-icon__close {
-  fill: #006747;
-}
-@media (max-width: 989px) {
-  .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #006747;
-  }
-  .page-colour--dark-green .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #006747;
-  }
-  .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation, .page-colour--dark-green .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--dark-green .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--dark-green .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #006747;
-    background: #006747;
-  }
 }
 
 .page-colour--light-green .nhsuk-footer,
@@ -1566,7 +1126,6 @@
   border-top-color: #78be20;
 }
 .page-colour--light-green .nhsuk-header,
-.page-colour--light-green .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--light-green #secondary section h2.widget-title,
 .page-colour--light-green .nhsuk-panel-with-label__label,
 .page-colour--light-green #secondary section #wp-calendar caption,
@@ -1576,10 +1135,11 @@
 .page-colour--light-green .nhsuk-do-dont-list__label,
 .page-colour--light-green .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--light-green .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--light-green .nhsuk-panel-with-label__label,
 .page-colour--light-green .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--light-green .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--light-green .nhsuk-header,
-#content .page-style--light-green .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--light-green #secondary section h2.widget-title,
 #content .page-style--light-green .nhsuk-panel-with-label__label,
 #content .page-style--light-green #secondary section #wp-calendar caption,
@@ -1589,6 +1149,8 @@
 #content .page-style--light-green .nhsuk-do-dont-list__label,
 #content .page-style--light-green .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--light-green .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--light-green .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--light-green .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--light-green .nhsuk-panel-with-label__label,
 #content .page-style--light-green .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--light-green .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -1616,11 +1178,15 @@
 .page-colour--light-green .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--light-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--light-green #secondary section, #content .page-style--light-green .nhsuk-inset-text,
 #content .page-style--light-green .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--light-green .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--light-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--light-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--light-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--light-green #secondary section {
   border-color: #78be20;
 }
@@ -1631,11 +1197,6 @@
 #content .page-style--light-green .nhsuk-pagination__link .nhsuk-icon {
   fill: #78be20;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--light-green .nhsuk-icon__search, #content .page-style--light-green .nhsuk-icon__search {
-    fill: #78be20;
-  }
-}
 .page-colour--light-green #secondary section ul > li > ul > li > a, #content .page-style--light-green #secondary section ul > li > ul > li > a {
   border-left: 2px solid #78be20;
 }
@@ -1644,62 +1205,21 @@
 }
 
 .page-colour--light-green .nhsuk-header .nhsuk-header__navigation {
-  background: #78be20;
+  background-color: #78be20;
 }
-.page-colour--light-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--light-green .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(30.8426073132%, 48.8341282459%, 8.2246952835%);
-  background: rgb(30.8426073132%, 48.8341282459%, 8.2246952835%);
+.page-colour--light-green .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(57.6470588235%, 79.6078431373%, 30.0392156863%);
 }
-.page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--light-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--light-green .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(30.8426073132%, 48.8341282459%, 8.2246952835%);
-  background: rgb(30.8426073132%, 48.8341282459%, 8.2246952835%);
-  color: #ffffff;
+.page-colour--light-green .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #78be20;
 }
 .page-colour--light-green .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #78be20;
 }
-.page-colour--light-green .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #78be20;
-}
-.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #78be20;
-  color: #78be20;
-}
-.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #78be20;
-  color: #78be20;
-}
-.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #78be20;
-}
-.page-colour--light-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #78be20;
-}
-.page-colour--light-green .nhsuk-header .nhsuk-icon__close {
-  fill: #78be20;
-}
-@media (max-width: 989px) {
-  .page-colour--light-green .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #78be20;
-  }
-  .page-colour--light-green .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #78be20;
-  }
-  .page-colour--light-green .nhsuk-header .nhsuk-header__navigation, .page-colour--light-green .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--light-green .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--light-green .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #78be20;
-    background: #78be20;
-  }
 }
 
 .page-colour--aqua-green .nhsuk-footer,
@@ -1708,7 +1228,6 @@
   border-top-color: #00a499;
 }
 .page-colour--aqua-green .nhsuk-header,
-.page-colour--aqua-green .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--aqua-green #secondary section h2.widget-title,
 .page-colour--aqua-green .nhsuk-panel-with-label__label,
 .page-colour--aqua-green #secondary section #wp-calendar caption,
@@ -1718,10 +1237,11 @@
 .page-colour--aqua-green .nhsuk-do-dont-list__label,
 .page-colour--aqua-green .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--aqua-green .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--aqua-green .nhsuk-panel-with-label__label,
 .page-colour--aqua-green .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--aqua-green .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--aqua-green .nhsuk-header,
-#content .page-style--aqua-green .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--aqua-green #secondary section h2.widget-title,
 #content .page-style--aqua-green .nhsuk-panel-with-label__label,
 #content .page-style--aqua-green #secondary section #wp-calendar caption,
@@ -1731,6 +1251,8 @@
 #content .page-style--aqua-green .nhsuk-do-dont-list__label,
 #content .page-style--aqua-green .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--aqua-green .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--aqua-green .nhsuk-panel-with-label__label,
 #content .page-style--aqua-green .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--aqua-green .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -1758,11 +1280,15 @@
 .page-colour--aqua-green .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--aqua-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--aqua-green #secondary section, #content .page-style--aqua-green .nhsuk-inset-text,
 #content .page-style--aqua-green .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--aqua-green .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--aqua-green .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--aqua-green #secondary section {
   border-color: #00a499;
 }
@@ -1773,11 +1299,6 @@
 #content .page-style--aqua-green .nhsuk-pagination__link .nhsuk-icon {
   fill: #00a499;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--aqua-green .nhsuk-icon__search, #content .page-style--aqua-green .nhsuk-icon__search {
-    fill: #00a499;
-  }
-}
 .page-colour--aqua-green #secondary section ul > li > ul > li > a, #content .page-style--aqua-green #secondary section ul > li > ul > li > a {
   border-left: 2px solid #00a499;
 }
@@ -1786,62 +1307,21 @@
 }
 
 .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation {
-  background: #00a499;
+  background-color: #00a499;
 }
-.page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: rgb(0%, 34.3137254902%, 32.012195122%);
-  background: rgb(0%, 34.3137254902%, 32.012195122%);
+.page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(20%, 71.4509803922%, 68%);
 }
-.page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--aqua-green .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: rgb(0%, 34.3137254902%, 32.012195122%);
-  background: rgb(0%, 34.3137254902%, 32.012195122%);
-  color: #ffffff;
+.page-colour--aqua-green .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #00a499;
 }
 .page-colour--aqua-green .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #00a499;
 }
-.page-colour--aqua-green .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #00a499;
-}
-.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #00a499;
-  color: #00a499;
-}
-.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #00a499;
-  color: #00a499;
-}
-.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #00a499;
-}
-.page-colour--aqua-green .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #00a499;
-}
-.page-colour--aqua-green .nhsuk-header .nhsuk-icon__close {
-  fill: #00a499;
-}
-@media (max-width: 989px) {
-  .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #00a499;
-  }
-  .page-colour--aqua-green .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #00a499;
-  }
-  .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation, .page-colour--aqua-green .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--aqua-green .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--aqua-green .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #00a499;
-    background: #00a499;
-  }
 }
 
 .page-colour--gds-black .nhsuk-footer,
@@ -1850,7 +1330,6 @@
   border-top-color: #0b0c0c;
 }
 .page-colour--gds-black .nhsuk-header,
-.page-colour--gds-black .nhsuk-header--white .nhsuk-search__submit,
 .page-colour--gds-black #secondary section h2.widget-title,
 .page-colour--gds-black .nhsuk-panel-with-label__label,
 .page-colour--gds-black #secondary section #wp-calendar caption,
@@ -1860,10 +1339,11 @@
 .page-colour--gds-black .nhsuk-do-dont-list__label,
 .page-colour--gds-black .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 .page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero-content,
+.page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero__content,
+.page-colour--gds-black .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 .page-colour--gds-black .nhsuk-panel-with-label__label,
 .page-colour--gds-black .nhsuk-panel.is-style-panel-with-label h3,
 .page-colour--gds-black .nhsuk-panel.is-style-panel-with-label h3 .rich-text, #content .page-style--gds-black .nhsuk-header,
-#content .page-style--gds-black .nhsuk-header--white .nhsuk-search__submit,
 #content .page-style--gds-black #secondary section h2.widget-title,
 #content .page-style--gds-black .nhsuk-panel-with-label__label,
 #content .page-style--gds-black #secondary section #wp-calendar caption,
@@ -1873,6 +1353,8 @@
 #content .page-style--gds-black .nhsuk-do-dont-list__label,
 #content .page-style--gds-black .nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 #content .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero-content,
+#content .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero__content,
+#content .page-style--gds-black .nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 #content .page-style--gds-black .nhsuk-panel-with-label__label,
 #content .page-style--gds-black .nhsuk-panel.is-style-panel-with-label h3,
 #content .page-style--gds-black .nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -1900,11 +1382,15 @@
 .page-colour--gds-black .is-style-default .nhsuk-care-card__arrow:after,
 .page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 .page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+.page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+.page-colour--gds-black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 .page-colour--gds-black #secondary section, #content .page-style--gds-black .nhsuk-inset-text,
 #content .page-style--gds-black .is-style-default .nhsuk-care-card__arrow:before,
 #content .page-style--gds-black .is-style-default .nhsuk-care-card__arrow:after,
 #content .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 #content .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+#content .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+#content .page-style--gds-black .nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 #content .page-style--gds-black #secondary section {
   border-color: #0b0c0c;
 }
@@ -1915,11 +1401,6 @@
 #content .page-style--gds-black .nhsuk-pagination__link .nhsuk-icon {
   fill: #0b0c0c;
 }
-@media (min-width: 40.0625em) {
-  .page-colour--gds-black .nhsuk-icon__search, #content .page-style--gds-black .nhsuk-icon__search {
-    fill: #0b0c0c;
-  }
-}
 .page-colour--gds-black #secondary section ul > li > ul > li > a, #content .page-style--gds-black #secondary section ul > li > ul > li > a {
   border-left: 2px solid #0b0c0c;
 }
@@ -1928,62 +1409,21 @@
 }
 
 .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation {
-  background: #0b0c0c;
+  background-color: #0b0c0c;
 }
-.page-colour--gds-black .nhsuk-header .nhsuk-header__navigation-link:hover, .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation ul li a:hover, .page-colour--gds-black .nhsuk-header .nhsuk-search__submit:hover {
-  background-color: black;
-  background: black;
+.page-colour--gds-black .nhsuk-header .nhsuk-header__navigation-container {
+  box-shadow: 0 -1px 0 0 rgb(23.4509803922%, 23.7647058824%, 23.7647058824%);
 }
-.page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle:focus, .page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle:hover, .page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle.is-active, .page-colour--gds-black .nhsuk-header .nhsuk-header__menu-toggle:active, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:hover, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:focus, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle.is-active, .page-colour--gds-black .nhsuk-header .nhsuk-header__search-toggle:active {
-  background-color: black;
-  background: black;
-  color: #ffffff;
+.page-colour--gds-black .nhsuk-header .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+  color: #0b0c0c;
 }
 .page-colour--gds-black .nhsuk-header.nhsuk-header--white {
   background-color: #ffffff;
   color: #0b0c0c;
 }
-.page-colour--gds-black .nhsuk-header.nhsuk-header--white a.nhsuk-header__transactional-service-name--link {
+.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__service-logo,
+.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__service-name[href] {
   color: #0b0c0c;
-}
-.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle {
-  color: #ffffff;
-}
-.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle.is-active, .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu-toggle:active, .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is-active, .page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle:active {
-  color: #ffffff;
-}
-.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__menu .nhsuk-header__menu-toggle {
-  border-color: #0b0c0c;
-  color: #0b0c0c;
-}
-.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle {
-  border-color: #0b0c0c;
-  color: #0b0c0c;
-}
-.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle .nhsuk-icon__search {
-  fill: #0b0c0c;
-}
-.page-colour--gds-black .nhsuk-header.nhsuk-header--white .nhsuk-header__search-toggle.is_active {
-  background-color: #0b0c0c;
-}
-.page-colour--gds-black .nhsuk-header .nhsuk-icon__close {
-  fill: #0b0c0c;
-}
-@media (max-width: 989px) {
-  .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation ul li a {
-    color: #0b0c0c;
-  }
-  .page-colour--gds-black .nhsuk-header .nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-    color: #0b0c0c;
-  }
-  .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation, .page-colour--gds-black .nhsuk-header .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .page-colour--gds-black .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li {
-    background-color: #ffffff;
-    background: #ffffff;
-  }
-  .page-colour--gds-black .nhsuk-header .nhsuk-header .nhsuk-header__navigation ul li a:hover {
-    background-color: #0b0c0c;
-    background: #0b0c0c;
-  }
 }
 
 /*# sourceMappingURL=page-colours.css.map */

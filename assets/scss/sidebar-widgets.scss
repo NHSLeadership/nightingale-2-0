@@ -1,3 +1,5 @@
+@use 'settings' as *;
+
 //style out any widgets in the right hand column
 #secondary {
 
@@ -61,25 +63,9 @@
 	  padding-left  : 0;
 	  padding-right : 0;
 
-	  .nhsuk-header__search-wrap {
-		padding-top : nhsuk-spacing(3);
-		padding     : nhsuk-spacing(4) 0;
-
-		.nhsuk-search__input {
-		  width        : 81%;
-		  float        : left;
-		  max-width    : 78%;
-		  border-color : $color_nhsuk-grey-3;
-		}
-
-		.nhsuk-search__submit {
-		  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
-		  border-left : none;
-		  margin-top  : 0;
-		  float       : left;
-		  box-shadow  : 0;
-		}
-
+	  .nhsuk-header__search {
+		margin  : 0;
+		padding : nhsuk-spacing(4) 0;
 	  }
 	}
 

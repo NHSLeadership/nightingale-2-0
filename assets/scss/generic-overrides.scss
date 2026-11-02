@@ -1,3 +1,34 @@
+@use 'settings' as *;
+@use 'nhsuk-frontend/dist/nhsuk/components/images/images' as _components-images-images;
+@use 'nhsuk-frontend/dist/nhsuk/components/input/input' as _components-input-input;
+@use 'nhsuk-frontend/dist/nhsuk/components/card/card' as _components-card-card;
+
+// Form fields that should look like nhsuk inputs (moved from default.scss so
+// normalize styles keep loading before nhsuk-frontend).
+// Fields that already have .nhsuk-input (such as the header search) are skipped,
+// so these generic styles do not override component styles.
+// .nhsuk-search__input is the older (8.x) header search class.
+input[type="text"]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+.learndash-wrapper .wpProQuiz_content input:focus[type=text],
+.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
+textarea {
+  @extend .nhsuk-input;
+}
+
 .nhsuk-panel-group {
   margin-left  : 0;
   margin-right : 0;
@@ -41,7 +72,7 @@
 	}
 
 	.nhsuk-pagination__link:hover {
-	  box-shadow : 0 0 0 nhsuk-spacing(1) $nhsuk-focus-color inset;
+	  box-shadow : 0 0 0 nhsuk-spacing(1) $nhsuk-focus-colour inset;
 	}
   }
 }
@@ -82,12 +113,6 @@
 
 
 #primary {
-  .page-content { // search within content area needs some special treatment
-	.nhsuk-header__search-toggle, .nhsuk-search__close {
-	  display : none;
-	}
-  }
-
   .widget-title {
 	a {
 	  color           : $color_nhsuk-white;
@@ -162,57 +187,8 @@ a:focus .nhsuk-icon {
 .nhsuk-header__navigation-item {
     border-top: none;
 }
-.nhsuk-navigation-container {
-	.nhsuk-navigation {
-		.nhsuk-icon__chevron-down {
-			fill: $color_nhsuk-white;
-		}
-		.nhsuk-header__navigation-link {
-            font-size: 1rem;
-        }
+.nhsuk-header__navigation {
+	.nhsuk-header__navigation-link {
+		font-size: 1rem;
 	}
-}
-
-@media (max-width: 40.0525em) {
-	.nhsuk-search__submit {
-		background-color: #f0f4f5;
-		border: 0;
-		margin: 0;
-		padding: 8px 8px 0;
-		position: absolute;
-		right: 0;
-		top: auto;
-		height: 40px;
-		z-index: 9;
-	}
-	.nhsuk-header__search-form {
-        padding: 16px 0 0 0;
-    }
-	.nhsuk-header__search-wrap {
-        display: block;
-    }
-}
-
-
-@media (min-width: 40.0625em) {
-	.nhsuk-header__container {
-        justify-content: normal;
-    }
-	.nhsuk-header__transactional-service-name {
-		padding-left: 28px;
-		width: 100%;
-	}
-    .nhsuk-header__search {
-        margin-left: 0px;
-        width: 100%;
-    }
-	.nhsuk-header__content {
-		width: 100%;
-	}
-}
-@media (min-width: 48.0625em) {
-    .nhsuk-header--organisation .nhsuk-header__link {
-        max-width: 500px;
-        width: max-content;
-    }
 }

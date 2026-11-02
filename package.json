@@ -4,20 +4,22 @@
     "type": "git",
     "url": "https://github.com/NHSLeadership/nightingale-2-0.git"
   },
-  "version": "2.7.17",
+  "version": "3.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass --style=expanded --load-path=node_modules/nhsuk-frontend/packages style.scss style.css | sass --load-path=node_modules/nhsuk-frontend/packages style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css | cp ./node_modules/nhsuk-frontend/dist/nhsuk.min.js js/nhsuk.min.js",
-    "compress": "sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages style.scss style.min.css | sass --style=compressed --load-path=node_modules/nhsuk-frontend/packages page-colours.scss page-colours.min.css",
-    "zip": "zip -r nightingale.zip ./ -x .git .gitignore *.git/* /critical-css-generator.js /postcss.config.js *.github/* /Dockerfile /gruntfile.js /package.json package-lock.json *.DS_Store .DS_Store node_modules/ /phpcs.xml.dist node_modules/**\\* nhsblocks/node_modules/**\\*",
-    "critical": "node critical-css-generator.js"
+    "build": "sass --style=expanded --load-path=node_modules style.scss style.css | sass --load-path=node_modules style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css | cp ./node_modules/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js js/nhsuk-frontend.min.js",
+    "compress": "sass --style=compressed --load-path=node_modules style.scss style.min.css | sass --style=compressed --load-path=node_modules page-colours.scss page-colours.min.css",
+    "zip": "zip -r nightingale.zip ./ -x .git .gitignore *.git/* /critical-css-generator.js /postcss.config.js *.github/* /Dockerfile /gruntfile.js /package.json package-lock.json *.DS_Store .DS_Store node_modules/ /phpcs.xml.dist /.npmrc /RELEASING.md scripts/**\\* node_modules/**\\* nhsblocks/node_modules/**\\*",
+    "critical": "node critical-css-generator.js",
+    "set-version": "node scripts/version.js set",
+    "check-version": "node scripts/version.js check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nhsuk-frontend": "^8.3.0",
+    "nhsuk-frontend": "^10.7.1",
     "sass": "^1.67.0"
   },
   "devDependencies": {

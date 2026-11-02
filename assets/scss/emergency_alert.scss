@@ -1,3 +1,5 @@
+@use 'settings' as *;
+
 /* ==========================================================================
    COMPONENTS / #EMERGENCY-ALERT
    ========================================================================== */
@@ -8,11 +10,11 @@
  */
 
 @mixin nhsuk-link-style-inverted {
-  color : $nhsuk-link-color;
+  color : $nhsuk-link-colour;
 
   &:focus {
-	background-color : $color_shade_nhsuk-blue-35;
-	box-shadow       : 0 0 0 4px $color_shade_nhsuk-blue-35;
+	background-color : nhsuk-shade(nhsuk-colour("blue"), 35%);
+	box-shadow       : 0 0 0 4px nhsuk-shade(nhsuk-colour("blue"), 35%);
 	color            : $color_nhsuk-white;
 	outline          : $nhsuk-focus-width solid transparent;
 	outline-offset   : $nhsuk-focus-width;
@@ -25,14 +27,16 @@
   }
 
   &:active {
-	background-color : $color_shade_nhsuk-blue-50;
-	box-shadow       : 0 0 0 4px $color_shade_nhsuk-blue-35;
+	background-color : nhsuk-shade(nhsuk-colour("blue"), 50%);
+	box-shadow       : 0 0 0 4px nhsuk-shade(nhsuk-colour("blue"), 35%);
 	color            : $color_nhsuk-white;
   }
 }
 
 .nhsuk-global-alert {
-  @include print-hide();
+  @media print {
+    display: none;
+  }
   background-color : $color_nhsuk-yellow;
   padding-bottom   : nhsuk-spacing(4);
   padding-top      : nhsuk-spacing(4);
@@ -43,14 +47,14 @@
 }
 
 .nhsuk-global-alert__content {
-  @include top-and-bottom;
+  @include nhsuk-top-and-bottom;
   position : relative;
   margin   : 0 nhsuk-spacing(3);
 }
 
 /* Heading: smaller font size on desktop */
 .nhsuk-global-alert__heading {
-  @include nhsuk-typography-responsive(24);
+  @include nhsuk-font-size(26);
   margin      : 0;
 }
 

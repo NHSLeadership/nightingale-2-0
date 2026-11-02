@@ -14,7 +14,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="theme" content="NHS-nightingale-2.2.0">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
@@ -24,7 +24,8 @@
 	flush();
 	?>
 </head>
-<body <?php body_class( 'js-enabled' ); ?>>
+<body <?php body_class(); ?>>
+<script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' nhsuk-frontend-supported' : '');</script>
 <?php
 if ( ! function_exists( 'wp_body_open' ) ) {
 	/**
@@ -37,54 +38,31 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 wp_body_open();
 ?>
 <?php do_action( 'nightingale_after_body' ); ?>
-<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nightingale' ); ?></a>
+<a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#maincontent"><?php esc_html_e( 'Skip to main content', 'nightingale' ); ?></a>
 <?php
 
 $header_layout = get_theme_mod( 'logo_type', 'transactional' );
 $header_colour = get_theme_mod( 'header_styles', 'normal' );
+$header_search = get_theme_mod( 'show_search', 'yes' );
 
+$header_classes = 'nhsuk-header nhsuk-header--' . $header_layout;
 if ( 'normal' !== $header_colour ) {
-	$header_colour_text = ' nhsuk-header--white';
-} else {
-	$header_colour_text = '';
+	$header_classes .= ' nhsuk-header--white';
 }
-echo '<header class="nhsuk-header nhsuk-header--' . esc_attr( $header_layout . $header_colour_text ) . '" role="banner">';
 ?>
-<div class="nhsuk-header__container">
-	<?php
-	get_template_part( 'partials/logo' );
-	?>
-	<div class="nhsuk-header__content" id="content-header">
-
+<header class="<?php echo esc_attr( $header_classes ); ?>" data-module="nhsuk-header" role="banner">
+	<div class="nhsuk-header__container nhsuk-width-container">
 		<?php
-		$header_search = get_theme_mod( 'show_search', 'yes' );
-		if ( 'no' === $header_search ) {
-			$headersearchextra = 'nhsuk-header__menu--only';
-		} else {
-			$headersearchextra = '';
-		}
-		?>
+		get_template_part( 'partials/logo' );
 
-		<?php
 		if ( 'yes' === $header_search ) {
-			?>
-			<div class="nhsuk-header__search">
-				<?php get_search_form(); ?>
-			</div>
-			<?php
+			get_search_form();
 		}
 		?>
-
 	</div>
-	
-</div>
-
-<!-- Navigation container -->
-<?php
-get_template_part( 'partials/topnav' );
-?>
-
-
+	<?php
+	get_template_part( 'partials/topnav' );
+	?>
 </header>
 <?php
 $thispage = get_post_meta(

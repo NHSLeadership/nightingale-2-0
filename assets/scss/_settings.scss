@@ -1,0 +1,7 @@
+// Shared Sass API for the theme: nhsuk-frontend settings, tools and helpers
+// plus theme colour variables. Emits no CSS, so any partial can safely use:
+//   @use 'settings' as *;
+@forward 'nhsuk-frontend/dist/nhsuk/core/settings';
+@forward 'nhsuk-frontend/dist/nhsuk/core/tools';
+@forward 'nhsuk-frontend/dist/nhsuk/core/helpers';
+@forward 'nhs-colours';

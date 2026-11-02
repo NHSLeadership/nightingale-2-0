@@ -1,6 +1,8 @@
+@use 'settings' as *;
+
 /* Reusable mixin for a focus element outline */
 @mixin a11y-focus__outline {
-  border: nhsuk-spacing(1) solid $nhsuk-focus-color;
+  border: nhsuk-spacing(1) solid $nhsuk-focus-colour;
   box-shadow: inset 0 0 0 nhsuk-spacing(1) $color_nhsuk-black;
 }
 
@@ -18,7 +20,7 @@
 	.nhsuk-panel-with-label {
 	  @include a11y-focus__outline;
 	  h3.nhsuk-panel-with-label__label {
-		background-color: $nhsuk-focus-color;
+		background-color: $nhsuk-focus-colour;
 		color: $color_nhsuk-black;
 	  }
 	}

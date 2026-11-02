@@ -16,18 +16,19 @@ function nightingale_gutenberg_editor_styles() {
 		return;
 	}
 
+	// Use the parent theme version, so child theme sites also get the new editor CSS after an update.
 	wp_enqueue_style(
 		'nhsl-gut-editor-styles',
 		get_template_directory_uri() . '/style-gutenburg.css',
 		array(),
-		wp_get_theme()->get( 'Version' )
+		wp_get_theme( get_template() )->get( 'Version' )
 	);
 
 	wp_enqueue_style(
 		'nhsl-page-colours',
 		get_template_directory_uri() . '/page-colours.min.css',
 		array(),
-		wp_get_theme()->get( 'Version' )
+		wp_get_theme( get_template() )->get( 'Version' )
 	);
 }
 
