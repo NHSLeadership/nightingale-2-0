@@ -4,8 +4,9 @@
  *
  *   npm run set-version 3.2.0    Set a new version in package.json, package-lock.json
  *                                and every other file that has the version.
- *   npm run check-version        Fail if any file has a different version, or if
- *                                readme.txt has no changelog entry for it.
+ *   npm run check-version        Fail if any file (including package-lock.json) has a
+ *                                different version, or if the Changelog section in
+ *                                readme.txt has no entry for it.
  *                                (GitHub also passes the release tag to check it.)
  */
 const fs = require( 'fs' );
@@ -103,9 +104,27 @@ function check( tag ) {
 			errors.push( `${ rule.file }: "${ match[ 0 ].trim() }" should be ${ version }` );
 		}
 	}
+	const lock = JSON.parse( read( 'package-lock.json' ) );
+	if ( lock.version !== version ) {
+		errors.push( `package-lock.json: version "${ lock.version }" should be ${ version }` );
+	}
+	const lockRoot = lock.packages && lock.packages[ '' ];
+	if ( ! lockRoot || lockRoot.version !== version ) {
+		errors.push( `package-lock.json: packages[""].version "${ lockRoot && lockRoot.version }" should be ${ version }` );
+	}
+
+	// Only look in the Changelog section, not in Upgrade Notice or others.
 	const changelogHeading = `=${ version }=`;
-	if ( ! read( 'readme.txt' ).split( '\n' ).some( ( line ) => line.replace( /\s/g, '' ) === changelogHeading ) ) {
-		errors.push( `readme.txt: no changelog entry "=${ version }="` );
+	const lines = read( 'readme.txt' ).split( '\n' );
+	const start = lines.findIndex( ( line ) => /^==\s*Changelog\b/i.test( line ) );
+	let end = lines.findIndex( ( line, i ) => i > start && /^==[^=]/.test( line ) );
+	if ( end === -1 ) {
+		end = lines.length;
+	}
+	if ( start === -1 ) {
+		errors.push( 'readme.txt: no "== Changelog ==" section' );
+	} else if ( ! lines.slice( start + 1, end ).some( ( line ) => line.replace( /\s/g, '' ) === changelogHeading ) ) {
+		errors.push( `readme.txt: no changelog entry "=${ version }=" in the Changelog section` );
 	}
 	if ( tag && tag.replace( /^v/, '' ) !== version ) {
 		errors.push( `git tag ${ tag } does not match version ${ version }` );
