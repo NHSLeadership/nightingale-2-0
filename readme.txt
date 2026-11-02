@@ -52,6 +52,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Keep panels saved with NHS.UK frontend 8.x readable: blue links, normal text size and the old padding (10.x styles .nhsuk-panel as a green panel with white links)
 * Fix NHS Blocks hero banners saved with NHS.UK frontend 8.x, so they keep their 8.x height and layout, and show do/don't list ticks in green
 * Add a visible border to the search box in the sidebar, 404 page and search results page
+* Keep focused header links readable (dark text on yellow) when a page colour is set
 * Ship the NHS.UK frontend icons used by the CSS (search clear and table sort) in assets/nhsuk/images, and load them from the theme folder
 * Require NHS Blocks 2.0.0 or newer if NHS Blocks is installed
 * Breaking: child themes that override templates or @import theme Sass files may need updating

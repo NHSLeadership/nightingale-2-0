@@ -123,7 +123,8 @@ $page-colours             : (
 		box-shadow : 0 -1px 0 0 color.mix(#ffffff, $colour, 20%);
 	  }
 
-	  .nhsuk-header__menu-list .nhsuk-header__navigation-link {
+	  // Skip :focus so the 10.x dark focus text stays readable on yellow.
+	  .nhsuk-header__menu-list .nhsuk-header__navigation-link:not(:focus) {
 		color : $colour;
 	  }
 
@@ -131,8 +132,8 @@ $page-colours             : (
 		background-color : #ffffff;
 		color            : $colour;
 
-		.nhsuk-header__service-logo,
-		.nhsuk-header__service-name[href] {
+		.nhsuk-header__service-logo:not(:focus),
+		.nhsuk-header__service-name[href]:not(:focus) {
 		  color : $colour;
 		}
 	  }
