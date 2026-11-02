@@ -8,6 +8,27 @@
 .nhsuk-panel {
   @include nhsuk-card($card-background-colour: $color_nhsuk-white, $card-text-colour: $nhsuk-text-colour);
   width: 100%;
+
+  // NHS.UK frontend 10.x uses .nhsuk-panel for a green confirmation panel.
+  // Undo its border, padding, large text and white links and captions,
+  // so panels saved with 8.x keep their old look.
+  border: 0;
+  @include nhsuk-responsive-padding(5);
+  @include nhsuk-font-size(19);
+
+  .nhsuk-link,
+  a:not(.nhsuk-button) {
+    @include nhsuk-link-style-default;
+
+    &:not(:focus):not(.\:focus):hover {
+      color: $nhsuk-link-hover-colour;
+    }
+  }
+
+  [class^="nhsuk-caption"],
+  .nhsuk-u-secondary-text-colour {
+    color: $nhsuk-secondary-text-colour !important;
+  }
 }
 
 /* Panel colour variant
