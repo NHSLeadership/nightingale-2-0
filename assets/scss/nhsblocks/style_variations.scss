@@ -141,6 +141,12 @@
     min-height: 320px;
   }
 
+  // 10.x hides the overlay in forced-colour mode, but here it holds the text.
+  @media screen and (forced-colors: active), (-ms-high-contrast: active) {
+    display: block;
+    min-height: 0;
+  }
+
   .nhsuk-grid-column-two-thirds {
     padding: 0;
   }

@@ -19253,6 +19253,12 @@ figure.is-style-nhsuk-table-responsive figcaption {
     min-height: 320px;
   }
 }
+@media screen and (forced-colors: active), (-ms-high-contrast: active) {
+  .nhsuk-hero__overlay:not(:empty) {
+    display: block;
+    min-height: 0;
+  }
+}
 .nhsuk-hero__overlay:not(:empty) .nhsuk-grid-column-two-thirds {
   padding: 0;
 }
