@@ -39,6 +39,13 @@ npm run check-version
 
 `check-version` must say **Version check passed**.
 
+Run `npm run critical`, if CSS changed. It updates `partials/criticalcss.php`, the CSS that is placed in the page `<head>` so the header shows quickly. Before you run it:
+
+- Your local site `https://demo.local` must be running, with Nightingale active.
+- The Theme Colour must be the default **NHS Blue**.
+
+If the CSS in `partials/criticalcss.php` changed, commit it.
+
 ## 5. Test
 
 - Test on a site **with** NHS Blocks and a site **without** it.
