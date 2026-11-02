@@ -5,6 +5,8 @@ on:
   push:
     branches: [master]
     tags: ['*']
+permissions:
+  contents: read
 jobs:
   version-check:
     runs-on: ubuntu-latest
@@ -14,4 +16,6 @@ jobs:
         with:
           node-version: 20
       - name: Check version numbers
-        run: node scripts/version.js check ${{ github.ref_type == 'tag' && github.ref_name || '' }}
+        env:
+          TAG: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
+        run: node scripts/version.js check "$TAG"

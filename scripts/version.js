@@ -103,7 +103,8 @@ function check( tag ) {
 			errors.push( `${ rule.file }: "${ match[ 0 ].trim() }" should be ${ version }` );
 		}
 	}
-	if ( ! new RegExp( `^=\\s*${ version.replace( /\./g, '\\.' ) }\\s*=`, 'm' ).test( read( 'readme.txt' ) ) ) {
+	const changelogHeading = `=${ version }=`;
+	if ( ! read( 'readme.txt' ).split( '\n' ).some( ( line ) => line.replace( /\s/g, '' ) === changelogHeading ) ) {
 		errors.push( `readme.txt: no changelog entry "=${ version }="` );
 	}
 	if ( tag && tag.replace( /^v/, '' ) !== version ) {
