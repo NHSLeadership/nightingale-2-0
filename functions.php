@@ -269,12 +269,25 @@ function nightingale_nhsuk_frontend_module( $tag, $handle, $src ) {
 		return $tag;
 	}
 
+	/*
+	 * NHS.UK frontend 8.x found these components by class name. 10.x only looks for data-module,
+	 * so add it to older markup (saved content, child themes, form plugins) before initialising.
+	 */
+	$legacy_modules = 'for (const [module, selector, needs] of ['
+		. '["nhsuk-checkboxes", ".nhsuk-checkboxes", "input[type=checkbox]"],'
+		. '["nhsuk-radios", ".nhsuk-radios", "input[type=radio]"],'
+		. '["nhsuk-error-summary", ".nhsuk-error-summary"],'
+		. '["nhsuk-skip-link", ".nhsuk-skip-link"]'
+		. ']) { document.querySelectorAll(selector + ":not([data-module])").forEach((el) => {'
+		. ' if (!needs || el.querySelector(needs)) { el.dataset.module = module; } }); }';
+
 	// This rewrites the tag of a script already enqueued with wp_enqueue_script(), so the sniff does not apply.
 	return sprintf(
 		'<script type="module" src="%1$s" id="nightingale-nhs-library-js"></script>' . "\n" . // phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
-		'<script type="module">import { initAll } from %2$s; initAll();</script>' . "\n",
+		'<script type="module">import { initAll } from %2$s; %3$s initAll();</script>' . "\n",
 		esc_url( $src ),
-		wp_json_encode( esc_url_raw( $src ) )
+		wp_json_encode( esc_url_raw( $src ) ),
+		$legacy_modules
 	);
 }
 

@@ -48,6 +48,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Update header, footer, breadcrumb, skip link and other templates to the new NHS.UK markup
 * Move Sass to the module system (@use) instead of @import, with no build warnings
 * Add compatibility styles for content saved with NHS.UK frontend 8.x (back link, font-size and colour helper classes, disabled buttons)
+* Keep checkboxes, radios, error summaries and skip links saved with NHS.UK frontend 8.x working
 * Require NHS Blocks 2.0.0 or newer if NHS Blocks is installed
 * Breaking: child themes that override templates or @import theme Sass files may need updating
 * Move JavaScript to js/nhsuk-frontend.min.js. Keep js/nhsuk.min.js as an empty file so child themes that still load it do not get a missing file error
