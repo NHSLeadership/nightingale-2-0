@@ -17198,6 +17198,40 @@ button + .button {
   color: #ffffff;
 }
 
+#content .nhsuk-header__search-form .nhsuk-input:not(:focus) {
+  margin-right: -1px;
+  padding-right: 12px;
+  padding-left: 11px;
+  border-width: 1px;
+  border-color: #aeb7bd;
+}
+#content .nhsuk-header__search-form .nhsuk-button, #content .nhsuk-header__search-form #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap, #cookie-notice .cookie-notice-container #cn-notice-buttons #content .nhsuk-header__search-form .cn-button.bootstrap {
+  color: #ffffff;
+  background-color: #005eb8;
+}
+#content .nhsuk-header__search-form .nhsuk-button:hover, #content .nhsuk-header__search-form #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:hover, #cookie-notice .cookie-notice-container #cn-notice-buttons #content .nhsuk-header__search-form .cn-button.bootstrap:hover, #content .nhsuk-header__search-form .nhsuk-button:active, #content .nhsuk-header__search-form #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, #cookie-notice .cookie-notice-container #cn-notice-buttons #content .nhsuk-header__search-form .cn-button.bootstrap:active {
+  border-color: #004b93;
+  background-color: #004b93;
+}
+#content .nhsuk-header__search-form .nhsuk-button:active, #content .nhsuk-header__search-form #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:active, #cookie-notice .cookie-notice-container #cn-notice-buttons #content .nhsuk-header__search-form .cn-button.bootstrap:active {
+  background-color: #003d78;
+}
+#content .nhsuk-header__search-form .nhsuk-button:focus:not(:active), #content .nhsuk-header__search-form #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:not(:active), #cookie-notice .cookie-notice-container #cn-notice-buttons #content .nhsuk-header__search-form .cn-button.bootstrap:focus:not(:active), #content .nhsuk-header__search-form .nhsuk-button:focus:not(:active):hover {
+  border-color: transparent;
+  outline: 4px solid transparent;
+  outline-offset: 4px;
+  color: #212b32;
+  background-color: #ffeb3b;
+  box-shadow: 0 4px 0 0 #212b32;
+}
+@media screen and (forced-colors: active), (-ms-high-contrast: active) {
+  #content .nhsuk-header__search-form .nhsuk-button:focus:not(:active), #content .nhsuk-header__search-form #cookie-notice .cookie-notice-container #cn-notice-buttons .cn-button.bootstrap:focus:not(:active), #cookie-notice .cookie-notice-container #cn-notice-buttons #content .nhsuk-header__search-form .cn-button.bootstrap:focus:not(:active), #content .nhsuk-header__search-form .nhsuk-button:focus:not(:active):hover {
+    outline-color: Highlight;
+    color: ButtonText;
+    background-color: ButtonFace;
+  }
+}
+
 /*
 // variations to styling required for WordPress comments
 // @author Tony Blacker, NHS Leadership Academy
