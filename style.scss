@@ -24,6 +24,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+@use 'assets/scss/settings' as _settings; // must load first: sets the frontend asset path
 @use 'assets/scss/default' as _default;
 @use 'nhsuk-frontend/dist/nhsuk' as _nhsuk-frontend;
 

@@ -8,7 +8,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass --style=expanded --load-path=node_modules style.scss style.css | sass --load-path=node_modules style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css | cp ./node_modules/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js js/nhsuk-frontend.min.js",
+    "build": "sass --style=expanded --load-path=node_modules style.scss style.css | sass --load-path=node_modules style-gutenburg.scss style-gutenburg.css | sass page-colours.scss page-colours.css | cp ./node_modules/nhsuk-frontend/dist/nhsuk/nhsuk-frontend.min.js js/nhsuk-frontend.min.js && mkdir -p assets/nhsuk/images && cp ./node_modules/nhsuk-frontend/dist/nhsuk/assets/images/nhsuk-icon-*.svg assets/nhsuk/images/",
     "compress": "sass --style=compressed --load-path=node_modules style.scss style.min.css | sass --style=compressed --load-path=node_modules page-colours.scss page-colours.min.css",
     "zip": "zip -r nightingale.zip ./ -x .git .gitignore *.git/* /critical-css-generator.js /postcss.config.js *.github/* /Dockerfile /gruntfile.js /package.json package-lock.json *.DS_Store .DS_Store node_modules/ /phpcs.xml.dist /.npmrc /RELEASING.md scripts/**\\* node_modules/**\\* nhsblocks/node_modules/**\\*",
     "critical": "node critical-css-generator.js",
