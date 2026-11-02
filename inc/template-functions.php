@@ -339,3 +339,38 @@ function nightingale_additional_menu_class_on_a( $atts, $item, $args ) {
 	return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'nightingale_additional_menu_class_on_a', 1, 3 );
+
+/**
+ * Fallback for the header menu when no menu is set.
+ *
+ * Lists the top-level pages, like wp_page_menu() did, but in the
+ * NHS.UK frontend 10.x header structure.
+ *
+ * @param array $args the wp_nav_menu() arguments.
+ *
+ * @return string the menu markup, or an empty string if there are no pages.
+ */
+function nightingale_page_menu_fallback( $args ) {
+	$pages = get_pages(
+		array(
+			'parent'       => 0,
+			'hierarchical' => 0,
+			'sort_column'  => 'menu_order, post_title',
+		)
+	);
+	$items = '';
+	foreach ( $pages as $page ) {
+		$is_current = is_page( $page->ID );
+		$items     .= sprintf(
+			'<li class="nhsuk-header__navigation-item%1$s"><a class="nhsuk-header__navigation-link" href="%2$s"%3$s>%4$s</a></li>',
+			$is_current ? ' nhsuk-header__navigation-item--current' : '',
+			esc_url( get_permalink( $page ) ),
+			$is_current ? ' aria-current="page"' : '',
+			esc_html( get_the_title( $page ) )
+		);
+	}
+	if ( '' === $items ) {
+		return '';
+	}
+	return sprintf( $args['items_wrap'], esc_attr( $args['menu_id'] ), esc_attr( $args['menu_class'] ), $items );
+}

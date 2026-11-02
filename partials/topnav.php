@@ -20,12 +20,12 @@ $topmenu_args       = array(
 	'container'       => false,
 	'container_class' => '',
 	'container_id'    => '',
-	'fallback_cb'     => 'wp_page_menu',
+	'fallback_cb'     => 'nightingale_page_menu_fallback',
 	'before'          => '',
 	'after'           => '',
 	'link_before'     => '',
 	'link_after'      => '',
-	'echo'            => true,
+	'echo'            => false,
 	'depth'           => 1,
 	'walker'          => '',
 	'theme_location'  => 'main-menu',
@@ -34,11 +34,17 @@ $topmenu_args       = array(
 	'add_li_class'    => 'nhsuk-header__navigation-item',
 	'link_class'      => 'nhsuk-header__navigation-link',
 );
+$top_menu           = wp_nav_menu( $topmenu_args );
+
+// The NHS.UK header script fails if the navigation has no items, so leave it out.
+if ( ! $top_menu || false === strpos( $top_menu, 'nhsuk-header__navigation-item' ) ) {
+	return;
+}
 ?>
 <nav class="nhsuk-header__navigation" id="header-navigation" aria-label="<?php esc_attr_e( 'Primary navigation', 'nightingale' ); ?>">
 	<div class="nhsuk-header__navigation-container nhsuk-width-container">
 		<?php
-		wp_nav_menu( $topmenu_args );
+		echo $top_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped by wp_nav_menu() or nightingale_page_menu_fallback().
 		?>
 	</div>
 </nav>
