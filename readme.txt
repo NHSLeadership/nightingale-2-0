@@ -53,6 +53,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Fix NHS Blocks hero banners saved with NHS.UK frontend 8.x, so they keep their 8.x height and layout, and show do/don't list ticks in green
 * Add a visible border to the search box in the sidebar, 404 page and search results page
 * Keep focused header links readable (dark text on yellow) when a page colour is set
+* Add optional account links to the header (Customizer > Header > Account links in header): user name with a link to the profile, role and Log out. Off by default. "Everyone" also shows a Log in link to visitors. Works with all header colours and page colours. Developers can change the links with the nightingale_header_account_items filter
 * Ship the NHS.UK frontend icons used by the CSS (search clear and table sort) in assets/nhsuk/images, and load them from the theme folder
 * Require NHS Blocks 2.0.0 or newer if NHS Blocks is installed
 * Breaking: child themes that override templates or @import theme Sass files may need updating

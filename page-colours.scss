@@ -1,4 +1,38 @@
 @use "sass:color";
+@use "sass:math";
+
+// WCAG contrast helpers, used to keep account links readable on light brand colours.
+@function _linear($value) {
+  $value : math.div($value, 255);
+  @if $value <= 0.03928 {
+	@return math.div($value, 12.92);
+  }
+  @return math.pow(math.div($value + 0.055, 1.055), 2.4);
+}
+
+@function _luminance($c) {
+  @return 0.2126 * _linear(color.channel($c, "red", $space: rgb))
+	+ 0.7152 * _linear(color.channel($c, "green", $space: rgb))
+	+ 0.0722 * _linear(color.channel($c, "blue", $space: rgb));
+}
+
+@function _contrast($a, $b) {
+  $la : _luminance($a);
+  $lb : _luminance($b);
+  @return math.div(math.max($la, $lb) + 0.05, math.min($la, $lb) + 0.05);
+}
+
+// Darken $c until it has at least 4.5:1 contrast with $against.
+@function _readable($c, $against) {
+  @while _contrast($c, $against) < 4.5 {
+	$c : color.mix(#000000, $c, 5%);
+  }
+  @return rgb(
+	math.round(color.channel($c, "red", $space: rgb)),
+	math.round(color.channel($c, "green", $space: rgb)),
+	math.round(color.channel($c, "blue", $space: rgb))
+  );
+}
 
 $color_nhsuk-white        : #ffffff;
 $color_nhsuk-black        : #000000;
@@ -135,6 +169,38 @@ $page-colours             : (
 		.nhsuk-header__service-logo:not(:focus),
 		.nhsuk-header__service-name[href]:not(:focus) {
 		  color : $colour;
+		}
+
+		$account-text : _readable($colour, #f0f4f5);
+
+		.nhsuk-header__account {
+		  color : $account-text;
+		}
+
+		.nhsuk-header__account-link:not(:focus) {
+		  color : $account-text;
+
+		  &:hover {
+			color : color.mix(#000000, $account-text, 20%);
+		  }
+
+		  .nhsuk-icon {
+			fill : currentcolor;
+		  }
+		}
+	  }
+
+	  // Account box: match the brand colour instead of the default NHS blue.
+	  &:not(.nhsuk-header--white) {
+		$account-bg : _readable(color.mix(#000000, $colour, 20%), #ffffff);
+
+		.nhsuk-header__account {
+		  border-color     : $account-bg;
+		  background-color : $account-bg;
+		}
+
+		.nhsuk-header__account-item {
+		  outline-color : $colour;
 		}
 	  }
 	}

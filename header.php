@@ -58,6 +58,8 @@ if ( 'normal' !== $header_colour ) {
 		if ( 'yes' === $header_search ) {
 			get_search_form();
 		}
+
+		get_template_part( 'partials/header-account' );
 		?>
 	</div>
 	<?php
