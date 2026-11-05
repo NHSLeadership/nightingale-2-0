@@ -16,6 +16,13 @@
     "platformAutomerge": true,
     "schedule": ["at any time"]
   },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true,
+    "schedule": ["before 6am on monday"]
+  },
   "packageRules": [
     {
       "matchDepTypes": ["engines"],
