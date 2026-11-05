@@ -1,0 +1,94 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits"],
+  "composerIgnorePlatformReqs": [],
+  "timezone": "Europe/London",
+  "schedule": ["* 9-16 * * 1-5"],
+  "rangeStrategy": "bump",
+  "dependencyDashboard": true,
+  "osvVulnerabilityAlerts": true,
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "minimumReleaseAge": "0 days",
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true,
+    "schedule": ["at any time"]
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": ["engines"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["composer"],
+      "matchDepNames": ["php", "ext-*"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["composer"],
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "groupName": "composer patch updates",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchManagers": ["composer"],
+      "matchUpdateTypes": ["minor"],
+      "groupName": "composer minor updates",
+      "automerge": false
+    },
+    {
+      "matchManagers": ["composer"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "dependencyDashboardApproval": true
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "groupName": "npm patch updates",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor"],
+      "groupName": "npm minor updates",
+      "automerge": false
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Base image patch/digest bumps carry OS security fixes",
+      "matchManagers": ["dockerfile", "docker-compose"],
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "groupName": "docker patch updates",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchManagers": ["dockerfile", "docker-compose"],
+      "matchUpdateTypes": ["minor"],
+      "groupName": "docker minor updates",
+      "automerge": false
+    },
+    {
+      "matchManagers": ["dockerfile", "docker-compose"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "dependencyDashboardApproval": true
+    }
+  ]
+}
