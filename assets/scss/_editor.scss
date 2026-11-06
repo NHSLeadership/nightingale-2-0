@@ -1,0 +1,138 @@
+// Editor-only styles. Loaded by style-gutenburg.scss via meta.load-css()
+// inside `.edit-post-visual-editor`, so every selector here is scoped to it.
+@use 'default' as _default;
+@use 'nhsuk-replacement-gutenberg' as _nhsuk-replacement-gutenberg;
+@use 'accessibility' as _accessibility; // global accessibility improvements
+@use 'generic-overrides' as _generic-overrides; // generic over-rides to remove default wordpress styling issues
+@use 'style_variations' as _style-variations;
+@use 'gravity-forms' as _gravity-forms; // Gravity Forms plugin styling to match NHSUK design patterns
+@use 'learndash-styling' as _learndash-styling; // LearnDash plugin styling to match NHSUK design patterns
+@use 'events-calendar-styling' as _events-calendar-styling; // Events Calendar plugin styling to match NHSUK design patterns
+@use 'download-monitor' as _download-monitor; // Download Monitor plugin styling to match NHSUK design patterns
+@use 'color-mixer' as _color-mixer; // nhs colour pallette
+@use 'nhsuk-8-compat' as _nhsuk-8-compat; // keep content saved under nhsuk-frontend 8.x working
+@use 'settings' as *;
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/typography' as _core-styles-typography;
+
+ul {
+  list-style: none;
+}
+.nhsuk-button:link, .wp-block-button__link:link, .wp-block-file__button:link, .wp-block-file a.wp-block-file__button:link, .nhsuk-button:visited, .wp-block-button__link:visited, .wp-block-file__button:visited, .wp-block-file a.wp-block-file__button:visited, .nhsuk-button:active, .wp-block-button__link:active, .wp-block-file__button:active, .wp-block-file a.wp-block-file__button:active, .nhsuk-button:hover, .wp-block-button__link:hover, .wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.is-style-reverse:visited, is-style-reverse:link {
+  color: #212b32;
+}
+div.components-toolbar>div {
+  display: -ms-flex;
+}
+.nhsuk-header__search-form {
+  height: 0;
+}
+
+.editor-post-title__input {
+  font-family: $nhsuk-font, $nhsuk-font-fallback;
+  @extend h1;
+}
+.wp-block {
+  max-width : 983px;
+}
+
+.wp-block[data-align=wide] { /* it can be "data-align=full" and also "right", "left" and "center" */
+  max-width : 1228px;
+}
+
+.block-editor-block-list__block {
+  font-family : $nhsuk-font, $nhsuk-font-fallback;
+  font-size   : 16px;
+
+
+}
+
+
+/* admin styles widget tweaks */
+.block-editor-block-styles__item-preview {
+  .editor-styles-wrapper {
+    font-family : Frutiger W01, Helvetica, Arial, Sans-serif;
+  }
+
+}
+
+/*
+Learn dash admin panel mitigation
+ */
+#sfwd-header {
+  .ld-global-header {
+    position : inherit;
+
+    h1 {
+      font-size          : 1.5rem;
+      margin-block-start : 0.5rem;
+      margin-block-end   : 0.5rem;
+      margin-bottom      : 0.5rem;
+      line-height        : 1.6rem;
+    }
+  }
+}
+
+.ld-tabs-ready .ld-tab-buttons a.button, .ld-tabs-ready .ld-tab-buttons button.button {
+  margin-top : 0;
+}
+
+.ld-header-has-tabs {
+  .edit-post-layout {
+    .edit-post-sidebar {
+      top : 225px;
+    }
+
+    .edit-post-header {
+      top     : 170px;
+      padding : 0 7px;
+    }
+  }
+}
+
+/* end LearnDash mitigation routine */
+
+/* make the table cells more obvious when editing */
+
+.is-selected {
+  figure.is-style-nhsuk-table-responsive {
+    thead, tr, th, td {
+      border    : 1px dashed $color_nhsuk-grey-3;
+      min-width : 2rem;
+    }
+  }
+}
+
+
+/* clearfix after grouped items to sort out some display wirdiness */
+.block-editor-inner-blocks {
+  @include nhsuk-clearfix();
+}
+
+// Download Monitor plugin styling to match NHSUK design patterns
+.dlmPreviewButton {
+  padding: 0;
+  min-height: 50px;
+  border: 2px dashed $color-nhsuk-dark-grey;
+  iframe {
+    min-height: 50px;
+  }
+}
+// tweak to make editor experience slightly easier
+.has-child-selected {
+  border: 1px solid $color-nhsuk-grey-5;
+  padding: nhsuk-spacing(2);
+  div.wp-block {
+    border: 1px solid $color-nhsuk-grey-4;
+    padding: nhsuk-spacing(2);
+    &.has-child-selected {
+      border-color: $color_nhsuk-grey-3;
+    }
+    &.block-list-appender {
+      border: none;
+    }
+  }
+}

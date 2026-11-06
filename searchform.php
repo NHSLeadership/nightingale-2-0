@@ -26,27 +26,19 @@ if ( ! isset( $GLOBALS['nightingale_search_form_counter'] ) ) {
 	$search_field  = 'search-field' . $searchid;
 }
 
-/*
- * The nhsuk library does a call home to nhs.funnelback.co.uk to provide search suggestions from nhs.uk website.
- * We dont want that happening. Currently the only disabling is to manually rework nhsuk.js.min to remove the callback.
- * Line 1231 to line 1240 deletion seems to complete this (as of Feb 3rd 2021) of nhsuk.js, then minify this file.
- * @todo A more robust method of disabling this function. Recorded in Jira as
- * https://nhsleadership.atlassian.net/browse/DI-2912, recorded as an issue with nhsuk as
- * https://github.com/nhsuk/nhsuk-frontend/issues/568
- */
 ?>
-<div class="nhsuk-header__search-wrap" id="<?php echo esc_attr( $wrap_search ); ?>">
-	<form class="nhsuk-header__search-form" id="<?php echo esc_attr( $search_form ); ?>" action="/" method="get" role="search">
-	<label class="nhsuk-u-visually-hidden" for="<?php echo esc_attr( $search_field ); ?>"><?php esc_html_e( 'Search this website', 'nightingale' ); ?></label>
-		<input class="nhsuk-search__input" id="<?php echo esc_attr( $search_field ); ?>" name="s" type="search" placeholder="<?php echo esc_attr__( 'Search', 'nightingale' ); ?>" autocomplete="off">
-		<button class="nhsuk-search__submit" type="submit">
-			<svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-				aria-hidden="true" focusable="false">
-				<path
-					d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z">
-				</path>
-			</svg>
-			<span class="nhsuk-u-visually-hidden"><?php echo esc_html__( 'Search', 'nightingale' ); ?></span>
-		</button>
+<search class="nhsuk-header__search" id="<?php echo esc_attr( $wrap_search ); ?>">
+	<form class="nhsuk-header__search-form" id="<?php echo esc_attr( $search_form ); ?>" action="/" method="get" novalidate>
+		<div class="nhsuk-form-group">
+			<label class="nhsuk-label nhsuk-u-visually-hidden" for="<?php echo esc_attr( $search_field ); ?>"><?php esc_html_e( 'Search this website', 'nightingale' ); ?></label>
+			<div class="nhsuk-input-wrapper">
+				<input class="nhsuk-input" id="<?php echo esc_attr( $search_field ); ?>" name="s" type="search" placeholder="<?php echo esc_attr__( 'Search', 'nightingale' ); ?>" autocomplete="off">
+				<button class="nhsuk-button nhsuk-button--icon nhsuk-button--small" data-module="nhsuk-button" type="submit" aria-label="<?php echo esc_attr__( 'Search', 'nightingale' ); ?>">
+					<svg class="nhsuk-icon nhsuk-icon--search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">
+						<path d="m20.7 18.9-4.1-4.1a7 7 0 1 0-1.4 1.4l4 4.1a1 1 0 0 0 1.5 0c.4-.4.4-1 0-1.4ZM6 10.6a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"/>
+					</svg>
+				</button>
+			</div>
+		</div>
 	</form>
-</div>
+</search>

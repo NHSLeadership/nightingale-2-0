@@ -1,3 +1,6 @@
+@use '../../../settings' as *;
+@use '../mixins' as *;
+
 /* ==========================================================================
    COMPONENTS / #CARE-CARD
    ========================================================================== */
@@ -22,7 +25,7 @@
  .nhsuk-care-card {
   @include nhsuk-responsive-margin(7, 'bottom');
   @include nhsuk-responsive-margin(7, 'top');
-  @include care-card($color_nhsuk-blue, $color_nhsuk-white, 4px); /* [1] */
+  @include nightingale-care-card($color_nhsuk-blue, $color_nhsuk-white, 4px); /* [1] */
   border: 1px solid transparent; /* [2] */
 }
 
@@ -44,9 +47,11 @@
   position: absolute;
   transform: rotate(45deg);
   width: 20px; /* [3] */
-  @include print-hide();
+  @media print {
+    display: none;
+  }
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     left: 38px; /* [4] */
   }
 
@@ -65,15 +70,17 @@
 }
 
 .nhsuk-care-card__heading {
-  @include nhsuk-font(24, $weight: bold);
-  @include print-color($nhsuk-print-text-color);
+  @include nhsuk-font(26, $weight: bold);
+  @media print {
+    color: $nhsuk-print-text-colour;
+  }
 
   margin: 0;
   padding-top: 0; /* [7] */
 }
 
 .nhsuk-care-card__content {
-  @include top-and-bottom();
+  @include nhsuk-top-and-bottom();
   @include nhsuk-responsive-padding(5, 'bottom');
   @include nhsuk-responsive-padding(5, 'left');
   @include nhsuk-responsive-padding(5, 'right');
@@ -83,12 +90,14 @@
   border-top: 0;
   padding-top: nhsuk-spacing(5); /* [5] */
 
-  @include mq($from: tablet) {
+  @include nhsuk-media-query($from: tablet) {
     padding-bottom: nhsuk-spacing(5);
     padding-top: 36px; /* [5] */
   }
 
-  @include print-color($nhsuk-print-text-color);
+  @media print {
+    color: $nhsuk-print-text-colour;
+  }
 
 }
 
@@ -99,7 +108,7 @@
  */
 
 .nhsuk-care-card--urgent {
-  @include care-card($color_nhsuk-red, $color_nhsuk-white, 6px);
+  @include nightingale-care-card($color_nhsuk-red, $color_nhsuk-white, 6px);
 
   .nhsuk-care-card__arrow {
     &:before,
@@ -111,7 +120,7 @@
 }
 
 .nhsuk-care-card--immediate {
-  @include care-card($color_nhsuk-red, $color_nhsuk-white, 8px);
+  @include nightingale-care-card($color_nhsuk-red, $color_nhsuk-white, 8px);
 
   .nhsuk-care-card__arrow {
     &:before,
@@ -150,8 +159,8 @@
     }
   }
 
-  .nhsuk-action-link__link {
-    .nhsuk-icon__arrow-right-circle {
+  .nhsuk-action-link {
+    .nhsuk-icon--arrow-right-circle {
       fill: $color_nhsuk-white; /* [8] */
     }
   }
@@ -200,3 +209,11 @@
   }
 }
 
+/*care card extension (block styles for nhsblocks card1)*/
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-urgent { /* urgent infocard*/
+  @extend .nhsuk-care-card--urgent;
+}
+
+.wp-block-nhsblocks-card1.nhsuk-care-card.is-style-immediate { /* urgent infocard*/
+  @extend .nhsuk-care-card--immediate;
+}

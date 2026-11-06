@@ -5,7 +5,7 @@
  * @link      https://developer.wordpress.org/themes/basics/theme-functions/
  * @package   Nightingale
  * @copyright NHS Leadership Academy, Mahesh Murali P and Tony Blacker
- * @version   2.7.17
+ * @version   3.0.0
  */
 
 /**
@@ -246,7 +246,7 @@ function nightingale_scripts() {
 	wp_enqueue_style( 'nightingale-style', get_template_directory_uri() . '/style.min.css', array(), wp_get_theme( 'nightingale' )->get( 'Version' ) );
 	wp_enqueue_style( 'nightingale-page-colours', get_template_directory_uri() . '/page-colours.min.css', array(), wp_get_theme( 'nightingale' )->get( 'Version' ) );
 	wp_enqueue_script( 'nightingale-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
-	wp_enqueue_script( 'nightingale-nhs-library', get_template_directory_uri() . '/js/nhsuk.min.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
+	wp_enqueue_script( 'nightingale-nhs-library', get_template_directory_uri() . '/js/nhsuk-frontend.min.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
 	wp_enqueue_script( 'nightingale-navigation', get_template_directory_uri() . '/js/navigation.js', array(), wp_get_theme( 'nightingale' )->get( 'Version' ), true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -254,6 +254,44 @@ function nightingale_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'nightingale_scripts' );
+
+/**
+ * Load nhsuk-frontend as an ES module and initialise its components.
+ *
+ * @param string $tag    The script tag.
+ * @param string $handle The script handle.
+ * @param string $src    The script source URL.
+ *
+ * @return string
+ */
+function nightingale_nhsuk_frontend_module( $tag, $handle, $src ) {
+	if ( 'nightingale-nhs-library' !== $handle ) {
+		return $tag;
+	}
+
+	/*
+	 * NHS.UK frontend 8.x found these components by class name. 10.x only looks for data-module,
+	 * so add it to older markup (saved content, child themes, form plugins) before initialising.
+	 */
+	$legacy_modules = 'for (const [module, selector, needs] of ['
+		. '["nhsuk-checkboxes", ".nhsuk-checkboxes", "input[type=checkbox]"],'
+		. '["nhsuk-radios", ".nhsuk-radios", "input[type=radio]"],'
+		. '["nhsuk-error-summary", ".nhsuk-error-summary"],'
+		. '["nhsuk-skip-link", ".nhsuk-skip-link"]'
+		. ']) { document.querySelectorAll(selector + ":not([data-module])").forEach((el) => {'
+		. ' if (!needs || el.querySelector(needs)) { el.dataset.module = module; } }); }';
+
+	// This rewrites the tag of a script already enqueued with wp_enqueue_script(), so the sniff does not apply.
+	return sprintf(
+		'<script type="module" src="%1$s" id="nightingale-nhs-library-js"></script>' . "\n" . // phpcs:ignore WordPress.WP.EnqueuedResources.NonEnqueuedScript
+		'<script type="module">import { initAll } from %2$s; %3$s initAll();</script>' . "\n",
+		esc_url( $src ),
+		wp_json_encode( esc_url_raw( $src ) ),
+		$legacy_modules
+	);
+}
+
+add_filter( 'script_loader_tag', 'nightingale_nhsuk_frontend_module', 10, 3 );
 
 /**
  * Encourage download of dependancy plugins
@@ -276,7 +314,7 @@ function nightingale_register_required_plugins() {
 			'slug'         => 'nhsblocks',
 			'source'       => '',
 			'required'     => false,
-			'version'      => '1.1.6',
+			'version'      => '2.0.0',
 			'external_url' => '',
 			'is_callable'  => '',
 		),
@@ -484,6 +522,11 @@ if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) {
  * Shove the critical path css directly into the header.
  */
 require get_template_directory() . '/inc/critical-style.php';
+
+/**
+ * One-time tasks after a theme update (clear caches, child theme notice).
+ */
+require get_template_directory() . '/inc/theme-update.php';
 
 /**
  * Add a pill next to comment author name showing their user role.

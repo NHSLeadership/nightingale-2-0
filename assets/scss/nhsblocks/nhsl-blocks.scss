@@ -1,3 +1,9 @@
+@use '../settings' as *;
+@use '../frontend-core' as _frontend-core;
+@use 'nhsuk-frontend/dist/nhsuk/components/images/images' as _components-images-images;
+@use 'nhsuk-frontend/dist/nhsuk/components/tables/tables' as _components-tables-tables;
+@use 'nhsuk-frontend/dist/nhsuk/components/tag/tag' as _components-tag-tag;
+
 
 
 .nhsuk-care-card {
@@ -345,9 +351,9 @@ $tag-variants: (
 .wp-block-nhsblocks-nhstabs[class*="is-style-blue"] .nhsuk-tabs__tab:focus-visible,
 .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab:focus,
 .wp-block-nhsblocks-nhstabs[class*="is-style-reverse"] .nhsuk-tabs__tab:focus-visible {
-  background-color: $nhsuk-focus-color;
+  background-color: $nhsuk-focus-colour;
   /* yellow */
-  color: $nhsuk-focus-text-color;
+  color: $nhsuk-focus-text-colour;
   /* black */
 }
 

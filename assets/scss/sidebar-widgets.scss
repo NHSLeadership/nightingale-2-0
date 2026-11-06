@@ -1,3 +1,5 @@
+@use 'settings' as *;
+
 //style out any widgets in the right hand column
 #secondary {
 
@@ -61,25 +63,9 @@
 	  padding-left  : 0;
 	  padding-right : 0;
 
-	  .nhsuk-header__search-wrap {
-		padding-top : nhsuk-spacing(3);
-		padding     : nhsuk-spacing(4) 0;
-
-		.nhsuk-search__input {
-		  width        : 81%;
-		  float        : left;
-		  max-width    : 78%;
-		  border-color : $color_nhsuk-grey-3;
-		}
-
-		.nhsuk-search__submit {
-		  border      : $nhsuk-border-width-form-element solid $color_nhsuk-grey-3;
-		  border-left : none;
-		  margin-top  : 0;
-		  float       : left;
-		  box-shadow  : 0;
-		}
-
+	  .nhsuk-header__search {
+		margin  : 0;
+		padding : nhsuk-spacing(4) 0;
 	  }
 	}
 
@@ -156,6 +142,42 @@
 		}
 	  }
 
+	}
+  }
+}
+
+// The search form reuses the 10.x header search, which has no visible
+// border. In the page body (sidebar widget, 404 and no-results pages)
+// use the 10.x white header search style so it stands out on white.
+// The header search is unchanged.
+#content .nhsuk-header__search-form {
+  .nhsuk-input:not(:focus) {
+	margin-right  : -1px;
+	padding-right : 12px;
+	padding-left  : 11px;
+	border-width  : 1px;
+	border-color  : nhsuk-colour("grey-3");
+  }
+
+  .nhsuk-button {
+	color            : $nhsuk-reverse-text-colour;
+	background-color : $nhsuk-brand-colour;
+
+	&:hover,
+	&:active {
+	  border-color     : nhsuk-shade($nhsuk-brand-colour, 20%);
+	  background-color : nhsuk-shade($nhsuk-brand-colour, 20%);
+	}
+
+	&:active {
+	  background-color : nhsuk-shade($nhsuk-brand-colour, 35%);
+	}
+
+	// Keep the yellow 10.x focus style, which the rules above would override.
+	&:focus:not(:active),
+	&:focus:not(:active):hover {
+	  border-color : transparent;
+	  @include nhsuk-focused-button;
 	}
   }
 }

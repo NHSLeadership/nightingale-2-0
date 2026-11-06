@@ -1,3 +1,7 @@
+@use 'settings' as *;
+@use 'nhsuk-frontend/dist/nhsuk/components/button/button' as _components-button-button;
+@use 'nhsuk-frontend/dist/nhsuk/components/tag/tag' as _components-tag-tag;
+
 .learndash-wrapper, .learndash-wrapper .learndash-wrap {
 
   .learndash_join_button {
@@ -142,7 +146,7 @@
 
 		&:hover {
 		  background : transparent;
-		  border     : $nhsuk-border-width-form-element solid $nhsuk-focus-color;
+		  border     : $nhsuk-border-width-form-element solid $nhsuk-focus-colour;
 		}
 		.ld-status-incomplete.ld-status-icon {
 		  border : 2px solid $color_nhsuk-black;
@@ -284,7 +288,7 @@ nav.learndash-pager {
 		  }
 	  }
 
-	  .nhsuk-action-link {
+	  .nightingale-action-link {
 		text-align: left;
 		padding: nhsuk-spacing(2);
 		margin-top: auto !important;

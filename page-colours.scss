@@ -1,3 +1,39 @@
+@use "sass:color";
+@use "sass:math";
+
+// WCAG contrast helpers, used to keep account links readable on light brand colours.
+@function _linear($value) {
+  $value : math.div($value, 255);
+  @if $value <= 0.03928 {
+	@return math.div($value, 12.92);
+  }
+  @return math.pow(math.div($value + 0.055, 1.055), 2.4);
+}
+
+@function _luminance($c) {
+  @return 0.2126 * _linear(color.channel($c, "red", $space: rgb))
+	+ 0.7152 * _linear(color.channel($c, "green", $space: rgb))
+	+ 0.0722 * _linear(color.channel($c, "blue", $space: rgb));
+}
+
+@function _contrast($a, $b) {
+  $la : _luminance($a);
+  $lb : _luminance($b);
+  @return math.div(math.max($la, $lb) + 0.05, math.min($la, $lb) + 0.05);
+}
+
+// Darken $c until it has at least 4.5:1 contrast with $against.
+@function _readable($c, $against) {
+  @while _contrast($c, $against) < 4.5 {
+	$c : color.mix(#000000, $c, 5%);
+  }
+  @return rgb(
+	math.round(color.channel($c, "red", $space: rgb)),
+	math.round(color.channel($c, "green", $space: rgb)),
+	math.round(color.channel($c, "blue", $space: rgb))
+  );
+}
+
 $color_nhsuk-white        : #ffffff;
 $color_nhsuk-black        : #000000;
 $color_nhsuk-blue         : #005eb8;
@@ -42,7 +78,6 @@ $page-colours             : (
 
 
 	.nhsuk-header,
-	.nhsuk-header--white .nhsuk-search__submit,
 	#secondary section h2.widget-title,
 	.nhsuk-panel-with-label__label,
 	#secondary section #wp-calendar caption,
@@ -52,6 +87,8 @@ $page-colours             : (
 	.nhsuk-do-dont-list__label,
 	.nhsuk-care-card.is-style-default .nhsuk-care-card__heading-container,
 	.nhsuk-hero--image-description .nhsuk-hero-content,
+	.nhsuk-hero--image-description .nhsuk-hero__content,
+	.nhsuk-card--feature > .nhsuk-card__content > .nhsuk-card__heading,
 	.nhsuk-panel-with-label__label,
 	.nhsuk-panel.is-style-panel-with-label h3,
 	.nhsuk-panel.is-style-panel-with-label h3 .rich-text {
@@ -83,6 +120,8 @@ $page-colours             : (
 	.is-style-default .nhsuk-care-card__arrow:after,
 	.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:before,
 	.nhsuk-hero--image-description .nhsuk-hero-content .nhsuk-hero__arrow:after,
+	.nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:before,
+	.nhsuk-hero--image-description .nhsuk-hero__content .nhsuk-hero__arrow:after,
 	#secondary section {
 	  border-color : $colour;
 	}
@@ -92,13 +131,6 @@ $page-colours             : (
 	.nhsuk-pagination__link .nhsuk-icon {
 	  fill : $colour;
 	}
-
-	@media (min-width : 40.0625em) {
-	  .nhsuk-icon__search {
-		fill : $colour;
-	  }
-	}
-
 
 	#secondary section ul > li > ul > li > a {
 	  border-left : 2px solid $colour;
@@ -118,77 +150,59 @@ $page-colours             : (
   .page-colour--#{$name} {
 	.nhsuk-header {
 	  .nhsuk-header__navigation {
-		background: $colour;
+		background-color : $colour;
 	  }
-	  .nhsuk-header__navigation-link:hover, .nhsuk-header__navigation ul li a:hover, .nhsuk-search__submit:hover {
-		background-color : darken($colour, 15%);
-		background       : darken($colour, 15%);
+
+	  .nhsuk-header__navigation-container {
+		box-shadow : 0 -1px 0 0 color.mix(#ffffff, $colour, 20%);
 	  }
-	  .nhsuk-header__menu-toggle:focus, .nhsuk-header__menu-toggle:hover, .nhsuk-header__menu-toggle.is-active, .nhsuk-header__menu-toggle:active, .nhsuk-header__search-toggle:hover, .nhsuk-header__search-toggle:focus, .nhsuk-header__search-toggle.is-active, .nhsuk-header__search-toggle:active {
-		background-color : darken($colour, 15%);
-		background       : darken($colour, 15%);
-		color            : #ffffff;
+
+	  // Skip :focus so the 10.x dark focus text stays readable on yellow.
+	  .nhsuk-header__menu-list .nhsuk-header__navigation-link:not(:focus) {
+		color : $colour;
 	  }
-		&.nhsuk-header--white {
-		  background-color : #ffffff;
-		  color            : $colour;
 
-		  a.nhsuk-header__transactional-service-name--link {
-			color : $colour;
-		  }
+	  &.nhsuk-header--white {
+		background-color : #ffffff;
+		color            : $colour;
 
-		  .nhsuk-header__menu-toggle {
-			// background-color : #ffffff;
-			// background       : #ffffff;
-			//color            : $colour;
-			color: $color_nhsuk-white;	
-		  }
-
-		  .nhsuk-header__menu-toggle.is-active, .nhsuk-header__menu-toggle:active, .nhsuk-header__search-toggle.is-active, .nhsuk-header__search-toggle:active {
-			color : #ffffff;
-		  }
-
-
-		  .nhsuk-header__menu {
-			.nhsuk-header__menu-toggle {
-			  border-color : $colour;
-			  color        : $colour;
-			}
-		  }
-
-		.nhsuk-header__search-toggle {
-		  border-color     : $colour;
-		  color            : $colour;
-
-		  .nhsuk-icon__search {
-			fill : $colour;
-		  }
-		}
-
-		.nhsuk-header__search-toggle.is_active {
-		  background-color : $colour;
-		}
-	  }
-		.nhsuk-icon__close {
-		  fill: $colour;
-		}
-	  @media (max-width : 989px) {
-
-		.nhsuk-header__navigation ul li a {
+		.nhsuk-header__service-logo:not(:focus),
+		.nhsuk-header__service-name[href]:not(:focus) {
 		  color : $colour;
 		}
-		.nhsuk-navigation-container .nhsuk-navigation ul li ul li a {
-			color : $colour;
+
+		$account-text : _readable($colour, #f0f4f5);
+
+		.nhsuk-header__account {
+		  color : $account-text;
 		}
-		.nhsuk-header__navigation, .nhsuk-header__navigation-link.nhsuk-header__search-toggle:hover, .nhsuk-header .nhsuk-header__navigation ul li {
-			background-color : #ffffff;
-			background : #ffffff;
-		}
-		.nhsuk-header .nhsuk-header__navigation ul li a:hover {
-			background-color : $colour;
-			background : $colour;
+
+		.nhsuk-header__account-link:not(:focus) {
+		  color : $account-text;
+
+		  &:hover {
+			color : color.mix(#000000, $account-text, 20%);
+		  }
+
+		  .nhsuk-icon {
+			fill : currentcolor;
+		  }
 		}
 	  }
-	}	
+
+	  // Account box: match the brand colour instead of the default NHS blue.
+	  &:not(.nhsuk-header--white) {
+		$account-bg : _readable(color.mix(#000000, $colour, 20%), #ffffff);
+
+		.nhsuk-header__account {
+		  border-color     : $account-bg;
+		  background-color : $account-bg;
+		}
+
+		.nhsuk-header__account-item {
+		  outline-color : $colour;
+		}
+	  }
+	}
   }
 }

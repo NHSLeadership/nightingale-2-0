@@ -107,6 +107,32 @@ function nightingale_customize_register( $wp_customize ) {
 	);
 
 	/*
+	 * Account links in header
+	 */
+	$wp_customize->add_setting(
+		'header_account',
+		array(
+			'default'           => 'off',
+			'sanitize_callback' => 'nightingale_sanitize_select',
+		)
+	);
+
+	$wp_customize->add_control(
+		'header_account',
+		array(
+			'label'       => esc_html__( 'Account links in header', 'nightingale' ),
+			'description' => esc_html__( 'Show the user name, role and a Log out link in the header. "Everyone": only for sites where visitors have accounts, for example courses or members. Visitors see a Log in link.', 'nightingale' ),
+			'section'     => 'section_header',
+			'type'        => 'radio',
+			'choices'     => array(
+				'off'       => esc_html__( 'Off', 'nightingale' ),
+				'logged_in' => esc_html__( 'Logged-in users only', 'nightingale' ),
+				'everyone'  => esc_html__( 'Everyone', 'nightingale' ),
+			),
+		)
+	);
+
+	/*
 	 * Show Organisation Name?
 	 */
 	$wp_customize->add_setting(

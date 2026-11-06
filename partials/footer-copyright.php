@@ -13,7 +13,7 @@ $organisation_name          = get_theme_mod( 'org_name_field', '' );
 $show_org_name_in_copyright = get_theme_mod( 'org_name_checkbox', 'no' );
 $custom_copyright_text      = get_theme_mod( 'copyright_text', '' );
 ?>
-<p class="nhsuk-footer__copyright">
+<p class="nhsuk-body-s nhsuk-footer__copyright">
 	<?php
 	if ( '' !== $custom_copyright_text ) {
 		echo esc_html__( '&copy;', 'nightingale' ) . ' ';

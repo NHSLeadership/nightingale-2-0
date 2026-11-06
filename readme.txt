@@ -6,8 +6,8 @@ Requires PHP: 8.0
 License: GPL v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Theme URI: https://digital.leadershipacademy.nhs.uk/digital-capabilities/websites/nightingale-theme-user-guide/
-Version: 2.7.17
-Stable tag: 2.7.17
+Version: 3.0.0
+Stable tag: 3.0.0
 
 
 == Description ==
@@ -42,6 +42,19 @@ one level only. To show further levels, we recommend using the right (or left) h
  behaves and whether the top level page is linked etc.
 
 == Changelog
+
+=3.0.0=
+* Major update: upgrade NHS.UK frontend from 8.x to 10.7
+* Update theme templates, JavaScript and Sass for NHS.UK frontend 10.7
+* Add backwards compatibility for content created with NHS.UK frontend 8.x
+* Fix compatibility issues with panels, hero banners, form components, links and helper classes
+* Add optional account links to the header
+* Improve search box visibility
+* Include required NHS.UK frontend icons within the theme
+* Require NHS Blocks 2.0.0 or later
+* Improve cache clearing and block editor styles after theme updates
+* Add a one-time notice for sites using child themes
+* Breaking change: child themes overriding templates or importing theme Sass may need updating
 
 =2.7.17=
 * Security update
@@ -575,6 +588,9 @@ Additional customiser options and refined display output:
  * Initial work on theme, standardised and tested for accessibility and optimised for performance.
 
 == Upgrade Notice ==
+
+= 3.0.0 =
+This is a major update to NHS.UK frontend version 10. Back up your site before updating. If you use NHS Blocks, update it to 2.0.0 as well. Child themes may need changes. After updating, clear all caches and check your pages.
 
 = 2.1.7.1 =
  * Please upgrade to 2.1.7.1 as previous release had incorrect style.min.css included, and this release also fixes white
