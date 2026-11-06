@@ -2,7 +2,7 @@
 /*
 Theme Name: Nightingale
 Text Domain: nightingale
-Version: 2.7.17
+Version: 2.7.18
 Requires at least: 5.0
 Tested up to: 6
 Requires PHP: 8.0
@@ -11172,6 +11172,11 @@ section.nhsuk-section:nth-of-type(odd) {
 section.nhsuk-section:nth-of-type(even),
 [data-type="nhsblocks/stripesblock"]:nth-of-type(even) {
   background: #ffffff;
+}
+
+.page-template-full-width-page section.nhsuk-section {
+  width: calc(100vw - 20px);
+  margin: 0 calc(-50vw + 50% + 12px);
 }
 
 section.nhsuk-section,
