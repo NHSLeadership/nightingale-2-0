@@ -56,6 +56,9 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Add a one-time notice for sites using child themes
 * Breaking change: child themes overriding templates or importing theme Sass may need updating
 
+=2.7.18=
+* Restore full-width stripe sections on the full width page template
+
 =2.7.17=
 * Security update
 * Update transitive npm dependency chain by overriding `puppeteer` to 25.15.0 to resolve `extract-zip` advisory path

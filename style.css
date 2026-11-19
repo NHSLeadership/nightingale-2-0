@@ -8259,7 +8259,7 @@ body:not(.nhsuk-frontend-supported) .tingle-modal-box .ginput_container_checkbox
   margin-bottom: 0;
 }
 
-@media screen\0  {
+@media screen� {
   .nhsuk-details {
     margin-top: 8px;
     padding: 16px 0;
@@ -8277,7 +8277,7 @@ body:not(.nhsuk-frontend-supported) .tingle-modal-box .ginput_container_checkbox
     margin-bottom: 16px;
   }
 }
-@media screen\0  and (min-width: 40.0625em) {
+@media screen� and (min-width: 40.0625em) {
   .nhsuk-details__summary-text {
     margin-bottom: 24px;
   }
@@ -8472,7 +8472,7 @@ body:not(.nhsuk-frontend-supported) .tingle-modal-box .ginput_container_checkbox
     padding-right: 32px;
   }
 }
-@media screen\0  {
+@media screen� {
   .nhsuk-expander, .nhsuk-details.is-style-expander {
     margin-top: 0;
     padding: 0;
@@ -8488,18 +8488,18 @@ body:not(.nhsuk-frontend-supported) .tingle-modal-box .ginput_container_checkbox
     line-height: 1.3181818182;
   }
 }
-@media screen\0  and (min-width: 40.0625em) {
+@media screen� and (min-width: 40.0625em) {
   .nhsuk-expander .nhsuk-details__summary-text, .nhsuk-details.is-style-expander .nhsuk-details__summary-text {
     font-size: 1.625rem;
     line-height: 1.2307692308;
   }
 }
-@media screen\0  {
+@media screen� {
   .nhsuk-expander .nhsuk-details__summary-text, .nhsuk-details.is-style-expander .nhsuk-details__summary-text {
     margin-bottom: 16px;
   }
 }
-@media screen\0  and (min-width: 40.0625em) {
+@media screen� and (min-width: 40.0625em) {
   .nhsuk-expander .nhsuk-details__summary-text, .nhsuk-details.is-style-expander .nhsuk-details__summary-text {
     margin-bottom: 24px;
   }
