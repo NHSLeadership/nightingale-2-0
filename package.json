@@ -24,7 +24,7 @@
     "penthouse": "^2.3.3"
   },
   "overrides": {
-    "brace-expansion": "5.0.12",
+    "brace-expansion": "5.0.13",
     "extract-zip": "2.0.1",
     "puppeteer": "25.18.1"
   }
