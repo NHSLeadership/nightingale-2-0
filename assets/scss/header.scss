@@ -1,3 +1,5 @@
+@use 'settings' as *;
+
 .nhsuk-header {
     &.nhsuk-header--transactional {
         .nhsuk-header__navigation {
@@ -9,14 +11,14 @@
             overflow-wrap: break-word;
             padding-left: 7px;
 
-            @include mq($until: tablet) {
+            @include nhsuk-media-query($until: tablet) {
                 inline-size: 150px;
             }
         }
     }
 
     &.nhsuk-header--organisation {
-        @include mq($until: tablet) {
+        @include nhsuk-media-query($until: tablet) {
             .nhsuk-header__link {
                 max-width: 500px;
                 float: left;
@@ -32,7 +34,7 @@
     // Below here is all the white header variation.
     &.nhsuk-header--white {
         .nhsuk-header__search-wrap input[type="search"] {
-            border: $nhsuk-border-width-form-element solid $nhsuk-border-color;
+            border: $nhsuk-border-width-form-element solid $nhsuk-border-colour;
         }
 
         .nhsuk-header__transactional-service-name--link {
@@ -62,10 +64,10 @@
 .nhsuk-header {
     &.nhsuk-header--transactional {
         .nhsuk-header__menu-toggle {
-            @include mq($until: tablet) {
+            @include nhsuk-media-query($until: tablet) {
                 top: auto;
             }
-            @include mq($from: tablet) {
+            @include nhsuk-media-query($from: tablet) {
                 left: -76px;
             }    
         }

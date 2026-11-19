@@ -1,3 +1,6 @@
+@use 'settings' as *;
+@use 'nhsuk-frontend/dist/nhsuk/components/select/select' as _components-select-select;
+
 /* Events Calendar Styles */
 #tribe-events, #tribe-events-pg-template, .tribe-events-pg-template {
   padding: 0;
@@ -99,7 +102,7 @@
 }
 
 .event-date-time {
-  @include clearfix();
+  @include nhsuk-clearfix();
 }
 
 .event-date-time,
@@ -119,7 +122,7 @@
 
 .event-categories {
 
-  @include clearfix();
+  @include nhsuk-clearfix();
 
   ul {
 	position : relative;

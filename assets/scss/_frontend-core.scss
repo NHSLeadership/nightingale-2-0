@@ -1,0 +1,20 @@
+// Front-end only: nhsuk-frontend plus the theme partials that style.scss loads
+// before the nhsblocks partials. Partials that `@extend` selectors defined in
+// these files `@use` this module so their extends still reach them (under the
+// module system, @extend only affects upstream modules). Keep in sync with the
+// order in style.scss; everything here must already be loaded before its users.
+@use 'nhsuk-frontend/dist/nhsuk' as _nhsuk-frontend;
+@use 'accessibility' as _accessibility;
+@use 'generic-overrides' as _generic-overrides;
+@use 'style_variations' as _style-variations;
+@use 'sidebar-widgets' as _sidebar-widgets;
+@use 'comments-and-meta' as _comments-and-meta;
+@use 'print' as _print;
+@use 'gallery' as _gallery;
+@use 'gravity-forms' as _gravity-forms;
+@use 'learndash-styling' as _learndash-styling;
+@use 'events-calendar-styling' as _events-calendar-styling;
+@use 'download-monitor' as _download-monitor;
+@use 'emergency_alert' as _emergency-alert;
+@use 'tabs' as _tabs;
+@use 'feedback_banner' as _feedback-banner;

@@ -39,7 +39,7 @@ These packages are used for local development and build tooling (for example CSS
 - `extract-zip` → `2.0.1`  
   Reason: Addresses `extract-zip` advisory findings in the Puppeteer dependency chain.
 
-- `puppeteer` → `25.15.0`  
+- `puppeteer` → `25.18.1`  
   Reason: Pins a patched Puppeteer dependency chain used by `penthouse` for critical CSS generation, resolving transitive audit findings.
 
 ## Review policy

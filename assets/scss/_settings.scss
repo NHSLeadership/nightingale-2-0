@@ -1,0 +1,11 @@
+// Shared Sass API for the theme: nhsuk-frontend settings, tools and helpers
+// plus theme colour variables. Emits no CSS, so any partial can safely use:
+//   @use 'settings' as *;
+// Images load relative to the compiled CSS in the theme root.
+// "npm run build" copies them into assets/nhsuk/images.
+@forward 'nhsuk-frontend/dist/nhsuk/core/settings' with (
+  $nhsuk-assets-path: 'assets/nhsuk/' !default
+);
+@forward 'nhsuk-frontend/dist/nhsuk/core/tools';
+@forward 'nhsuk-frontend/dist/nhsuk/core/helpers';
+@forward 'nhs-colours';

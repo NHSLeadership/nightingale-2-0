@@ -1,70 +1,67 @@
 // Core
-@mixin _nhsuk-font-face-frutiger {
- // added in here to prevent compile error
-}
 // Settings
-@import 'core/settings/all';
+@use 'nhsuk-frontend/dist/nhsuk/core/settings';
 
 // Tools
-@import 'core/tools/all';
+@use 'nhsuk-frontend/dist/nhsuk/core/tools' as _core-tools;
 
 // Generic
-@import 'core/generic/box-sizing';
+@use 'nhsuk-frontend/dist/nhsuk/core/generic/box-sizing' as _core-generic-box-sizing;
 
 // Elements
-@import 'core/elements/forms';
-@import 'core/elements/links';
-@import 'core/elements/page';
-@import 'core/elements/table';
+@use 'nhsuk-frontend/dist/nhsuk/core/elements/forms' as _core-elements-forms;
+@use 'nhsuk-frontend/dist/nhsuk/core/elements/links' as _core-elements-links;
+@use 'nhsuk-frontend/dist/nhsuk/core/elements/page' as _core-elements-page;
+@use 'nhsuk-frontend/dist/nhsuk/core/elements/table' as _core-elements-table;
 
 // Objects
-@import 'core/objects/form-group';
-@import 'core/objects/grid';
-@import 'core/objects/main-wrapper';
-@import 'core/objects/width-container';
+@use 'nhsuk-frontend/dist/nhsuk/core/objects/form-group' as _core-objects-form-group;
+@use 'nhsuk-frontend/dist/nhsuk/core/objects/grid' as _core-objects-grid;
+@use 'nhsuk-frontend/dist/nhsuk/core/objects/main-wrapper' as _core-objects-main-wrapper;
+@use 'nhsuk-frontend/dist/nhsuk/core/objects/width-container' as _core-objects-width-container;
 
 // Styles
-@import 'core/styles/icons';
-@import 'core/styles/lists';
-@import 'core/styles/section-break';
-@import 'core/styles/typography';
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/icons' as _core-styles-icons;
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/lists' as _core-styles-lists;
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/section-break' as _core-styles-section-break;
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/typography' as _core-styles-typography;
 
 // Utilities
-@import 'core/utilities/clearfix';
-@import 'core/utilities/grid-widths';
-@import 'core/utilities/link-nowrap';
-@import 'core/utilities/reading-width';
-@import 'core/utilities/spacing';
-@import 'core/utilities/typography';
-@import 'core/utilities/visually-hidden';
-@import 'core/utilities/widths';
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/clearfix' as _core-utilities-clearfix;
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/grid-widths' as _core-utilities-grid-widths;
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/link-nowrap' as _core-utilities-link-nowrap;
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/reading-width' as _core-utilities-reading-width;
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/spacing' as _core-utilities-spacing;
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/typography' as _core-utilities-typography;
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/visually-hidden' as _core-utilities-visually-hidden;
+@use 'nhsuk-frontend/dist/nhsuk/core/utilities/widths' as _core-utilities-widths;
 
 // Components
-@import 'components/action-link/action-link';
-@import 'components/back-link/back-link';
-@import 'components/breadcrumb/breadcrumb';
-@import 'components/button/button';
-@import 'components/card/card';
-@import 'components/checkboxes/checkboxes';
-@import 'components/contents-list/contents-list';
-@import 'components/date-input/date-input';
-@import 'components/details/details';
-@import 'components/do-dont-list/do-dont-list';
-@import 'components/error-message/error-message';
-@import 'components/error-summary/error-summary';
-@import 'components/fieldset/fieldset';
-@import 'components/hero/hero';
-@import 'components/hint/hint';
-@import 'components/images/images';
-@import 'components/input/input';
-@import 'components/inset-text/inset-text';
-@import 'components/label/label';
-@import 'components/pagination/pagination';
-@import 'components/radios/radios';
-@import 'components/select/select';
-@import 'components/skip-link/skip-link';
-@import 'components/summary-list/summary-list';
-@import 'components/tables/tables';
-@import 'components/tag/tag';
-@import 'components/textarea/textarea';
-@import 'components/warning-callout/warning-callout';
+@use 'nhsuk-frontend/dist/nhsuk/components/action-link/action-link' as _components-action-link-action-link;
+@use 'nhsuk-frontend/dist/nhsuk/components/back-link/back-link' as _components-back-link-back-link;
+@use 'nhsuk-frontend/dist/nhsuk/components/breadcrumb/breadcrumb' as _components-breadcrumb-breadcrumb;
+@use 'nhsuk-frontend/dist/nhsuk/components/button/button' as _components-button-button;
+@use 'nhsuk-frontend/dist/nhsuk/components/card/card' as _components-card-card;
+@use 'nhsuk-frontend/dist/nhsuk/components/checkboxes/checkboxes' as _components-checkboxes-checkboxes;
+@use 'nhsuk-frontend/dist/nhsuk/components/contents-list/contents-list' as _components-contents-list-contents-list;
+@use 'nhsuk-frontend/dist/nhsuk/components/date-input/date-input' as _components-date-input-date-input;
+@use 'nhsuk-frontend/dist/nhsuk/components/details/details' as _components-details-details;
+@use 'nhsuk-frontend/dist/nhsuk/components/do-dont-list/do-dont-list' as _components-do-dont-list-do-dont-list;
+@use 'nhsuk-frontend/dist/nhsuk/components/error-message/error-message' as _components-error-message-error-message;
+@use 'nhsuk-frontend/dist/nhsuk/components/error-summary/error-summary' as _components-error-summary-error-summary;
+@use 'nhsuk-frontend/dist/nhsuk/components/fieldset/fieldset' as _components-fieldset-fieldset;
+@use 'nhsuk-frontend/dist/nhsuk/components/hero/hero' as _components-hero-hero;
+@use 'nhsuk-frontend/dist/nhsuk/components/hint/hint' as _components-hint-hint;
+@use 'nhsuk-frontend/dist/nhsuk/components/images/images' as _components-images-images;
+@use 'nhsuk-frontend/dist/nhsuk/components/input/input' as _components-input-input;
+@use 'nhsuk-frontend/dist/nhsuk/components/inset-text/inset-text' as _components-inset-text-inset-text;
+@use 'nhsuk-frontend/dist/nhsuk/components/label/label' as _components-label-label;
+@use 'nhsuk-frontend/dist/nhsuk/components/pagination/pagination' as _components-pagination-pagination;
+@use 'nhsuk-frontend/dist/nhsuk/components/radios/radios' as _components-radios-radios;
+@use 'nhsuk-frontend/dist/nhsuk/components/select/select' as _components-select-select;
+@use 'nhsuk-frontend/dist/nhsuk/components/skip-link/skip-link' as _components-skip-link-skip-link;
+@use 'nhsuk-frontend/dist/nhsuk/components/summary-list/summary-list' as _components-summary-list-summary-list;
+@use 'nhsuk-frontend/dist/nhsuk/components/tables/tables' as _components-tables-tables;
+@use 'nhsuk-frontend/dist/nhsuk/components/tag/tag' as _components-tag-tag;
+@use 'nhsuk-frontend/dist/nhsuk/components/textarea/textarea' as _components-textarea-textarea;
+@use 'nhsuk-frontend/dist/nhsuk/components/warning-callout/warning-callout' as _components-warning-callout-warning-callout;

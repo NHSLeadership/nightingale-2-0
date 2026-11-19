@@ -1,3 +1,8 @@
+@use 'settings' as *;
+@use 'nhsuk-frontend/dist/nhsuk/components/card/card' as _components-card-card;
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/typography' as _core-styles-typography;
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/lists' as _core-styles-lists;
+
 /*
 // variations to styling required for gutenberg native blocks
 // @author Tony Blacker, NHS Leadership Academy
@@ -60,7 +65,7 @@
 
 .nhsuk-promo__link-wrapper:hover {
     background-color: $color_nhsuk-white;
-    box-shadow: 0 0 0 nhsuk-spacing(1) $nhsuk-link-hover-color;
+    box-shadow: 0 0 0 nhsuk-spacing(1) $nhsuk-link-hover-colour;
     color: $color_nhsuk-blue;
 }
 
@@ -110,7 +115,7 @@ aside#secondary > section{
 }
 
 .clear{
-  @include clearfix();
+  @include nhsuk-clearfix();
 }
 .nhsuk-readmore {
   text-align: left;

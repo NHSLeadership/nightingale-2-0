@@ -12,13 +12,7 @@
  */
 
 $menu_locations     = get_nav_menu_locations(); // Get our nav locations (set in our theme, usually functions.php).
-$mobile_toggle_menu = '<li class="nhsuk-mobile-menu-container"><button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
-            <span class="nhsuk-u-visually-hidden">Browse</span>
-            More
-            <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
-            </svg>
-          </button> <ul class="nhsuk-header__drop-down nhsuk-header__drop-down--hidden"></ul></li>';
+$mobile_toggle_menu = '<li class="nhsuk-header__menu" hidden><button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" type="button" aria-expanded="false"><span class="nhsuk-u-visually-hidden">' . esc_html__( 'Browse', 'nightingale' ) . ' </span>' . esc_html__( 'More', 'nightingale' ) . '</button></li>';
 $topmenu_args       = array(
 	'menu'            => 'main-menu',
 	'menu_class'      => 'nhsuk-header__navigation-list',
@@ -26,12 +20,12 @@ $topmenu_args       = array(
 	'container'       => false,
 	'container_class' => '',
 	'container_id'    => '',
-	'fallback_cb'     => 'wp_page_menu',
+	'fallback_cb'     => 'nightingale_page_menu_fallback',
 	'before'          => '',
 	'after'           => '',
 	'link_before'     => '',
 	'link_after'      => '',
-	'echo'            => true,
+	'echo'            => false,
 	'depth'           => 1,
 	'walker'          => '',
 	'theme_location'  => 'main-menu',
@@ -40,12 +34,17 @@ $topmenu_args       = array(
 	'add_li_class'    => 'nhsuk-header__navigation-item',
 	'link_class'      => 'nhsuk-header__navigation-link',
 );
-?>
-<div class="nhsuk-navigation-container">
-	<nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
-	<?php
-	wp_nav_menu( $topmenu_args );
-	?>
+$top_menu           = wp_nav_menu( $topmenu_args );
 
-	</nav>
-</div>
+// The NHS.UK header script fails if the navigation has no items, so leave it out.
+if ( ! $top_menu || false === strpos( $top_menu, 'nhsuk-header__navigation-item' ) ) {
+	return;
+}
+?>
+<nav class="nhsuk-header__navigation" id="header-navigation" aria-label="<?php esc_attr_e( 'Primary navigation', 'nightingale' ); ?>">
+	<div class="nhsuk-header__navigation-container nhsuk-width-container">
+		<?php
+		echo $top_menu; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped by wp_nav_menu() or nightingale_page_menu_fallback().
+		?>
+	</div>
+</nav>
