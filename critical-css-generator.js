@@ -93,6 +93,10 @@ penthouse({
     ]
 })
     .then(criticalCss => {
-        // use the critical css
+        // The CSS is inlined in the page, so relative asset URLs must point to the theme folder.
+        criticalCss = criticalCss.replace(
+            /url\((["']?)assets\//g,
+            'url($1<?php echo esc_url( get_template_directory_uri() ); ?>/assets/'
+        )
         fs.writeFileSync('partials/criticalcss.php', criticalCss)
     })
