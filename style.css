@@ -17138,14 +17138,16 @@ button + .button {
   padding: 0;
 }
 #secondary section.widget_search {
-  height: 4.5rem;
   background: none;
   padding-left: 0;
   padding-right: 0;
 }
 #secondary section.widget_search .nhsuk-header__search {
   margin: 0;
-  padding: 24px 0;
+  padding: 0;
+}
+#secondary section.widget_search .nhsuk-form-group {
+  margin-bottom: 0;
 }
 #secondary section #wp-calendar caption {
   position: relative;

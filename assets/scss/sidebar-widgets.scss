@@ -58,14 +58,17 @@
 	}
 
 	&.widget_search {
-	  height        : 4.5rem;
 	  background    : none;
 	  padding-left  : 0;
 	  padding-right : 0;
 
 	  .nhsuk-header__search {
 		margin  : 0;
-		padding : nhsuk-spacing(4) 0;
+		padding : 0;
+	  }
+
+	  .nhsuk-form-group {
+		margin-bottom : 0;
 	  }
 	}
 
