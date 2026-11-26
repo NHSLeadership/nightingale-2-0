@@ -7,7 +7,7 @@
  * @package   Nightingale
  * @copyright NHS Leadership Academy
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html
- * @author    Chris Witham <chris.witham@leadershipacademy.nhs.uk>
+ * @author    Chris Witham <christopher.witham@nhs.net>
  * @since     2.2.0
  * @uses      template-parts/sitemap
  */

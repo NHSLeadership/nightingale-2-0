@@ -1,5 +1,5 @@
 === Nightingale ===
-Contributors: tblacker
+Contributors: tblacker, maheshmuralip, nhsleadership
 Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 8.0

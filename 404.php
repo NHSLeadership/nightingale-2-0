@@ -6,7 +6,7 @@
  * @package   Nightingale
  * @copyright NHS Leadership Academy
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html
- * @author    Tony Blacker <tony.blacker@leadershipacademy.nhs.uk>, Chris Witham <chris.witham@leadershipacademy.nhs.uk>
+ * @author    Tony Blacker <tony.blacker1@nhs.net>, Chris Witham <christopher.witham@nhs.net>
  * @since     1.1.0
  * @since     2.2.0 includes sitemap
  * @uses      template-parts/sitemap
