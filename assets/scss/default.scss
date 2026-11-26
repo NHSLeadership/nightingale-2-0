@@ -466,30 +466,7 @@ table {
 # Forms
 --------------------------------------------------------------*/
 
-
-/* With :not(.nhsuk-search__input), the search field is not affected */
-input[type="text"]:not(.nhsuk-search__input),
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"]:not(.nhsuk-search__input),
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
-.learndash-wrapper .wpProQuiz_content input:focus[type=text],
-.learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text],
-textarea {
-  @extend .nhsuk-input;
-}
-
-
+/* Form field styles live in generic-overrides.scss (they @extend .nhsuk-input). */
 
 /*--------------------------------------------------------------
 # Navigation

@@ -40,7 +40,7 @@ if ( true !== nightingale_uncanny_breadcrumb_check() ) { // suppress this output
 	foreach ( $keys as $key ) :
 		if ( isset( $breadcrumbs[ $key ] ) ) :
 			?>
-			<span class="nhsuk-breadcrumb__item"><a href="<?php echo esc_url( $breadcrumbs[ $key ]['permalink'] ); ?>"><?php echo esc_html( wp_strip_all_tags( $breadcrumbs[ $key ]['title'] ) ); ?></a> </span>
+			<span class="nhsuk-breadcrumb__list-item"><a class="nhsuk-breadcrumb__link" href="<?php echo esc_url( $breadcrumbs[ $key ]['permalink'] ); ?>"><?php echo esc_html( wp_strip_all_tags( $breadcrumbs[ $key ]['title'] ) ); ?></a> </span>
 			<?php
 		endif;
 	endforeach;

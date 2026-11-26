@@ -1,6 +1,14 @@
+@use 'settings' as *;
+@use 'nhsuk-frontend/dist/nhsuk/components/select/select' as _components-select-select;
+
 /* Events Calendar Styles */
 #tribe-events, #tribe-events-pg-template, .tribe-events-pg-template {
   padding: 0;
+}
+
+// The page wrapper already adds top spacing on the main events pages.
+body.post-type-archive-tribe_events .tribe-common.tribe-events .tribe-events-l-container {
+  padding-top : 0;
 }
 
 .tribe-common {
@@ -46,6 +54,15 @@
 
 	}
 
+  }
+}
+
+// Keep the subscribe button still when its list opens wider than the button.
+.tribe-events-view .tribe-events-c-subscribe-dropdown {
+  text-align : right;
+
+  .tribe-events-c-subscribe-dropdown__content {
+	text-align : left;
   }
 }
 
@@ -99,7 +116,7 @@
 }
 
 .event-date-time {
-  @include clearfix();
+  @include nhsuk-clearfix();
 }
 
 .event-date-time,
@@ -119,7 +136,7 @@
 
 .event-categories {
 
-  @include clearfix();
+  @include nhsuk-clearfix();
 
   ul {
 	position : relative;

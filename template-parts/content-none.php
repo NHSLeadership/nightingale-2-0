@@ -17,8 +17,9 @@
 	</header><!-- .page-header -->
 
 	<div class="page-content">
-		<div class="wp-block-nhsblocks-panel1 nhsuk-do-dont-list is-style-panel-with-label">
-			<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Change your search terms', 'nightingale' ); ?></h3>
+		<div class="wp-block-nhsblocks-panel1 nhsuk-card nhsuk-card--feature">
+		<div class="nhsuk-card__content">
+			<h3 class="nhsuk-card__heading"><?php echo esc_html__( 'Change your search terms', 'nightingale' ); ?></h3>
 			<div class="paneltext">
 				
 			<?php
@@ -55,6 +56,7 @@
 				?>
 					
 
+			</div>
 			</div>
 		</div>
 	</div><!-- .page-content -->

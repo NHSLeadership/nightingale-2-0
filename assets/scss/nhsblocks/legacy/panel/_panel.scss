@@ -1,10 +1,34 @@
+@use '../../../settings' as *;
+@use '../mixins' as *;
+
 /* ==========================================================================
    COMPONENTS / #PANEL
    ========================================================================== */
 
 .nhsuk-panel {
-  @include panel($color_nhsuk-white, $nhsuk-text-color);
+  @include nhsuk-card($card-background-colour: $color_nhsuk-white, $card-text-colour: $nhsuk-text-colour);
   width: 100%;
+
+  // NHS.UK frontend 10.x uses .nhsuk-panel for a green confirmation panel.
+  // Undo its border, padding, large text and white links and captions,
+  // so panels saved with 8.x keep their old look.
+  border: 0;
+  @include nhsuk-responsive-padding(5);
+  @include nhsuk-font-size(19);
+
+  .nhsuk-link,
+  a:not(.nhsuk-button) {
+    @include nhsuk-link-style-default;
+
+    &:not(:focus):not(.\:focus):hover {
+      color: $nhsuk-link-hover-colour;
+    }
+  }
+
+  [class^="nhsuk-caption"],
+  .nhsuk-u-secondary-text-colour {
+    color: $nhsuk-secondary-text-colour !important;
+  }
 }
 
 /* Panel colour variant
@@ -18,12 +42,14 @@
    ========================================================================== */
 
 .nhsuk-panel-with-label {
-  @include panel-with-label($color_nhsuk-white, $nhsuk-text-color, $color_nhsuk-grey-4);
+  @include nhsuk-card($card-background-colour: $color_nhsuk-white, $card-text-colour: $nhsuk-text-colour, $card-border-colour: $color_nhsuk-grey-4, $variant: "feature");
 }
 
 .nhsuk-panel-with-label__label {
-  @include heading-label($color_nhsuk-blue, $color_nhsuk-white);
-  @include print-color($nhsuk-print-text-color);
+  @include nightingale-heading-label($color_nhsuk-blue, $color_nhsuk-white);
+  @media print {
+    color: $nhsuk-print-text-colour;
+  }
 }
 
 /* Panel group
@@ -36,20 +62,20 @@
  */
 
 .nhsuk-panel-group {
-  @include flex(); /* [1] */
+  @include nhsuk-flex(); /* [1] */
 
   margin-bottom: nhsuk-spacing(5);
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     margin-bottom: nhsuk-spacing(4);
   }
 
 }
 
 .nhsuk-panel-group__item {
-  @include flex-item(); /* [1] */
+  @include nhsuk-flex-item(); /* [1] */
 
-  @include mq($until: desktop) {
+  @include nhsuk-media-query($until: desktop) {
     margin-bottom: nhsuk-spacing(4);
 
     &:last-child {

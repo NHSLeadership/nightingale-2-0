@@ -6,7 +6,7 @@
  * @package   Nightingale
  * @copyright NHS Leadership Academy
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html
- * @author    Tony Blacker <tony.blacker@leadershipacademy.nhs.uk>, Chris Witham <chris.witham@leadershipacademy.nhs.uk>
+ * @author    Tony Blacker <tony.blacker1@nhs.net>, Chris Witham <christopher.witham@nhs.net>
  * @since     1.1.0
  * @since     2.2.0 includes sitemap
  * @uses      template-parts/sitemap
@@ -22,8 +22,9 @@ get_header();
 					<h1 class="entry-title">404 - Page not found</h1>
 				</header>
 				<div class="page-content">
-					<div class="wp-block-nhsblocks-panel1 nhsuk-do-dont-list is-style-panel-with-label">
-						<h3 class="nhsuk-do-dont-list__label"><?php echo esc_html__( 'Oops', 'nightingale' ); ?></h3>
+					<div class="wp-block-nhsblocks-panel1 nhsuk-card nhsuk-card--feature">
+					<div class="nhsuk-card__content">
+						<h3 class="nhsuk-card__heading"><?php echo esc_html__( 'Oops', 'nightingale' ); ?></h3>
 						<div class="paneltext">
 							<p><?php echo esc_html__( 'Sorry, this page can\'t be found at the moment, please use the search facility below, select an item from the contents or alternatively return to the home page', 'nightingale' ); ?></p>
 							
@@ -36,6 +37,7 @@ get_header();
 								</a>
 							</div>
 
+						</div>
 						</div>
 					</div>
 					<?php

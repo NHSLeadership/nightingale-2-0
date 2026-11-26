@@ -1,3 +1,13 @@
+@use '../../settings' as *;
+@use '../../frontend-core' as _frontend-core;
+@use '../nhsl-blocks' as _nhsl-blocks;
+@use '../style_variations' as _nhsblocks-style-variations;
+@use '../stripe-blocks' as _stripe-blocks;
+@use 'care-card/care-card' as _care-card;
+@use 'mixins' as *;
+@use 'promo/promo' as _promo-promo;
+@use 'panel/panel' as _panel;
+
 .nhsuk-panel-with-label {
   width: 100%;
 

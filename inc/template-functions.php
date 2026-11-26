@@ -107,18 +107,13 @@ add_filter( 'excerpt_length', 'nightingale_shorten_excerpt', 10 );
  */
 function nightingale_read_more_posts( $title, $link ) {
 
-	$readmorelink = '<div class="nhsuk-action-link nhsuk-readmore">';
+	$icon = '<svg class="nhsuk-icon nhsuk-icon--arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true"><path d="M12 2a10 10 0 0 0-10 9h11.7l-4-4a1 1 0 0 1 1.5-1.4l5.6 5.7a1 1 0 0 1 0 1.4l-5.6 5.7a1 1 0 0 1-1.5 0 1 1 0 0 1 0-1.4l4-4H2A10 10 0 1 0 12 2z"/></svg>';
+	$text = '<span class="nhsuk-action-link__text">' . esc_html__( 'read more ', 'nightingale' ) . '<span class="nhsuk-u-visually-hidden">' . esc_html__( ' about ', 'nightingale' ) . $title . '</span></span>';
 	if ( '' !== $link ) {
-		$readmorelink .= '<a class="nhsuk-card__link nhsuk-action-link__link" href="' . $link . '">';
+		$readmorelink = '<a class="nhsuk-action-link nhsuk-readmore nhsuk-card__link" href="' . esc_url( $link ) . '">' . $icon . $text . '</a>';
+	} else {
+		$readmorelink = '<span class="nhsuk-action-link nhsuk-readmore">' . $icon . $text . '</span>';
 	}
-	$readmorelink .= '<span class="nhsuk-action-link__text">' . esc_html__( 'read more ', 'nightingale' ) . '</span><span class="nhsuk-u-visually-hidden">' . esc_html__( ' about ', 'nightingale' ) . $title . '</span><svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-	  <path d="M0 0h24v24H0z" fill="none"></path>
-	  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-	</svg>';
-	if ( '' !== $link ) {
-		$readmorelink .= '</a>';
-	}
-	$readmorelink .= '</div>';
 
 	return $readmorelink;
 
@@ -319,6 +314,9 @@ function nightingale_comments( $return ) {
 function nightingale_additional_menu_class_on_li( $classes, $item, $args ) {
 	if ( isset( $args->add_li_class ) ) {
 		$classes[] = $args->add_li_class;
+		if ( 'nhsuk-header__navigation-item' === $args->add_li_class && in_array( 'current-menu-item', $classes, true ) ) {
+			$classes[] = 'nhsuk-header__navigation-item--current';
+		}
 	}
 	return $classes;
 }
@@ -341,3 +339,38 @@ function nightingale_additional_menu_class_on_a( $atts, $item, $args ) {
 	return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'nightingale_additional_menu_class_on_a', 1, 3 );
+
+/**
+ * Fallback for the header menu when no menu is set.
+ *
+ * Lists the top-level pages, like wp_page_menu() did, but in the
+ * NHS.UK frontend 10.x header structure.
+ *
+ * @param array $args the wp_nav_menu() arguments.
+ *
+ * @return string the menu markup, or an empty string if there are no pages.
+ */
+function nightingale_page_menu_fallback( $args ) {
+	$pages = get_pages(
+		array(
+			'parent'       => 0,
+			'hierarchical' => 0,
+			'sort_column'  => 'menu_order, post_title',
+		)
+	);
+	$items = '';
+	foreach ( $pages as $page ) {
+		$is_current = is_page( $page->ID );
+		$items     .= sprintf(
+			'<li class="nhsuk-header__navigation-item%1$s"><a class="nhsuk-header__navigation-link" href="%2$s"%3$s>%4$s</a></li>',
+			$is_current ? ' nhsuk-header__navigation-item--current' : '',
+			esc_url( get_permalink( $page ) ),
+			$is_current ? ' aria-current="page"' : '',
+			esc_html( get_the_title( $page ) )
+		);
+	}
+	if ( '' === $items ) {
+		return '';
+	}
+	return sprintf( $args['items_wrap'], esc_attr( $args['menu_id'] ), esc_attr( $args['menu_class'] ), $items );
+}

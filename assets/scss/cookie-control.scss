@@ -1,3 +1,9 @@
+@use 'settings' as *;
+@use 'frontend-core' as _frontend-core;
+@use 'nhsuk-frontend/dist/nhsuk/core/objects/width-container' as _core-objects-width-container;
+@use 'nhsuk-frontend/dist/nhsuk/core/styles/typography' as _core-styles-typography;
+@use 'nhsuk-frontend/dist/nhsuk/components/button/button' as _components-button-button;
+
 #cookie-notice {
   position       : fixed;
   min-width      : 100%;
@@ -32,7 +38,7 @@
 
 	  .cn-button.bootstrap {
 		@extend .nhsuk-button;
-		background    : $nhsuk-button-color;
+		background    : $nhsuk-button-colour;
 		margin-bottom : 0;
 
 		&.cn-more-info {

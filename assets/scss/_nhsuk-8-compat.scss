@@ -1,0 +1,52 @@
+// Backwards compatibility for content saved under nhsuk-frontend 8.x.
+//
+// Saved post content keeps its original markup until each page is edited and
+// re-saved, so classes removed in nhsuk-frontend 9/10 must keep working here.
+// Only add rules for classes that can appear in saved content or custom HTML.
+
+@use 'settings' as *;
+
+// Back link block (nhsblocks < 2.0): div.nhsuk-back-link > a.nhsuk-back-link__link > svg.
+// nhsuk 10 draws the chevron with .nhsuk-back-link::before, so hide the old icon.
+.nhsuk-back-link__link {
+	> .nhsuk-icon__chevron-left {
+		display: none;
+	}
+}
+
+// Renamed font-size utilities (32 -> 36, 24 -> 26 in nhsuk-frontend 9).
+.nhsuk-u-font-size-32 {
+	@include nhsuk-font-size(36, $important: true);
+}
+
+.nhsuk-u-font-size-24 {
+	@include nhsuk-font-size(26, $important: true);
+}
+
+// Renamed colour utility (color -> colour in nhsuk-frontend 10).
+.nhsuk-u-secondary-text-color {
+	color: $nhsuk-secondary-text-colour !important;
+}
+
+// Removed modifier (nhsuk-frontend 9 uses the disabled attribute instead).
+.nhsuk-button--disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.nhsuk-card__metadata {
+	margin-bottom: nhsuk-spacing(3);
+}
+
+.nhsuk-form-group--wrapper {
+	@include nhsuk-responsive-margin(5, 'bottom');
+}
+
+.nhsuk-contents-list {
+	@include nhsuk-responsive-margin(6, 'bottom');
+}
+
+.nhsuk-radios--inline.nhsuk-radios--conditional .nhsuk-radios__item {
+	float: none;
+	margin-right: 0;
+}

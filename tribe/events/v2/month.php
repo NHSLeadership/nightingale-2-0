@@ -81,98 +81,97 @@ if ( empty( $disable_event_search ) ) {
 
 	</div>
 
+	<style>
+		<!--
+		added month view styling directly into the template
+
+		-->
+		.tribe-events-c-top-bar__nav-list .tribe-events-c-top-bar__nav-list-item:last-of-type {
+
+		}
+
+		.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__datepicker {
+			right: 0;
+		}
+
+		.tribe-events .tribe-events-c-top-bar__datepicker-button {
+			background-color: #ffffff;
+			box-shadow: none;
+			color: #000000;
+			border-radius: 0;
+			border: 2px solid #4c6272;
+			padding: 10px 25px 10px 10px;
+			appearance: menulist;
+		}
+
+		.tribe-events .tribe-events-c-top-bar__datepicker-button:after {
+			content: '';
+			width: 30px;
+			height: 30px;
+			background: linear-gradient(45deg, transparent 50%, #4c6272 50%),
+			linear-gradient(135deg, #4c6272 50%, transparent 50%),
+			linear-gradient(to right, white, white);
+			background-position: calc(100% - 21px) calc(1em + 2px),
+			calc(100% - 16px) calc(1em + 2px),
+			100% 0;
+			background-size: 5px 5px,
+			5px 5px,
+			2.5em 2.5em;
+			background-repeat: no-repeat;
+			position: relative;
+			left: 25px;
+			bottom: 5px;
+		}
+
+		.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day-date {
+			color: #4c6272;
+		}
+
+		.tribe-events .tribe-events-calendar-month__events .tribe-events-calendar-month__calendar-event {
+			background: #ffffff;
+			border: 1px solid #4c6272;
+			border-radius: 4px;
+			padding: 8px;
+			margin: 8px;
+		}
+
+		a.tribe-events-calendar-month__calendar-event-title-link.tribe-common-anchor-thin {
+			text-decoration: none;
+		}
+
+		.tribe-events .tribe-events-calendar-month__events .tribe-events-calendar-month__calendar-event .tribe-events-calendar-month__calendar-event-details h3 {
+			font-size: 1.25rem;
+		}
+
+		.post-type-archive-tribe_events .tribe-events-tooltip-theme {
+			display: none !important;
+		}
+
+		.tribe-events .tribe-events-c-top-bar__nav {
+			min-width: 485px;
+		}
+
+		.tribe-events-view--month .tribe-events-c-top-bar__datepicker {
+			flex-basis: 100%;
+		}
+
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a:visited .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a:visited .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:visited {
+			color: gray !important;
+			fill: gray !important;
+		}
+
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:hover {
+			cursor: not-allowed;
+		}
+		.tribe-events .tribe-events-c-top-bar__datepicker-button:after {
+	  		display: none;
+		}
+	</style>
 </div>
 
 <?php $this->template( 'components/breakpoints' ); ?>
-<style>
-	<!--
-	added month view styling directly into the template
-
-	-->
-	.tribe-events-c-top-bar__nav-list .tribe-events-c-top-bar__nav-list-item:last-of-type {
-
-	}
-
-	.tribe-common--breakpoint-medium.tribe-events .tribe-events-c-top-bar__datepicker {
-		right: 0;
-	}
-
-	.tribe-events .tribe-events-c-top-bar__datepicker-button {
-		background-color: #ffffff;
-		box-shadow: none;
-		color: #000000;
-		border-radius: 0;
-		border: 2px solid #4c6272;
-		padding: 10px 25px 10px 10px;
-		appearance: menulist;
-	}
-
-	.tribe-events .tribe-events-c-top-bar__datepicker-button:after {
-		content: '';
-		width: 30px;
-		height: 30px;
-		background: linear-gradient(45deg, transparent 50%, #4c6272 50%),
-		linear-gradient(135deg, #4c6272 50%, transparent 50%),
-		linear-gradient(to right, white, white);
-		background-position: calc(100% - 21px) calc(1em + 2px),
-		calc(100% - 16px) calc(1em + 2px),
-		100% 0;
-		background-size: 5px 5px,
-		5px 5px,
-		2.5em 2.5em;
-		background-repeat: no-repeat;
-		position: relative;
-		left: 25px;
-		bottom: 5px;
-	}
-
-	.tribe-events .tribe-events-calendar-month__header .tribe-events-calendar-month__header-column,
-	.tribe-events .tribe-events-calendar-month__body .tribe-events-calendar-month__day {
-		width: 20%;
-	}
-
-	.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-month__day-date {
-		color: #4c6272;
-	}
-
-	.tribe-events .tribe-events-calendar-month__events .tribe-events-calendar-month__calendar-event {
-		background: #ffffff;
-		border: 1px solid #4c6272;
-		border-radius: 4px;
-		padding: 8px;
-		margin: 8px;
-	}
-
-	a.tribe-events-calendar-month__calendar-event-title-link.tribe-common-anchor-thin {
-		text-decoration: none;
-	}
-
-	.tribe-events .tribe-events-calendar-month__events .tribe-events-calendar-month__calendar-event .tribe-events-calendar-month__calendar-event-details h3 {
-		font-size: 1.25rem;
-	}
-
-	.post-type-archive-tribe_events .tribe-events-tooltip-theme {
-		display: none !important;
-	}
-
-	.tribe-events .tribe-events-c-top-bar__nav {
-		min-width: 485px;
-	}
-
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a:visited .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a:visited .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:visited {
-		color: gray !important;
-		fill: gray !important;
-	}
-
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:hover {
-		cursor: not-allowed;
-	}
-	.tribe-events .tribe-events-c-top-bar__datepicker-button:after {
-  		display: none;
-	}
-</style>

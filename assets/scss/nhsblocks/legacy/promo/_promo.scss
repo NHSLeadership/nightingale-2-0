@@ -1,3 +1,6 @@
+@use '../../../settings' as *;
+@use '../mixins' as *;
+
 /* ==========================================================================
    COMPONENTS / #PROMO
    ========================================================================== */
@@ -15,14 +18,14 @@
  */
 
 .nhsuk-promo {
-  margin-bottom: nhsuk-spacing(5) + $nhsuk-box-shadow-link; /* [1] */
+  margin-bottom: nhsuk-spacing(5) + 4px; /* [1] */
   width: 100%;
 }
 
 .nhsuk-promo__link-wrapper {
   background-color: $color_nhsuk-white;
   border: 1px solid transparent;
-  box-shadow: 0 $nhsuk-box-shadow-link 0 0 $color_nhsuk-grey-4; /* [2] */
+  box-shadow: 0 4px 0 0 $color_nhsuk-grey-4; /* [2] */
   display: block;
   height: 100%; /* [3] */
   position: relative; /* [4] */
@@ -33,13 +36,13 @@
     color: $color_nhsuk-blue;
 
     .nhsuk-promo__heading {
-      color: $nhsuk-link-hover-color;
+      color: $nhsuk-link-hover-colour;
     }
   }
 
   &:focus {
     background-color: $color_nhsuk-white;
-    box-shadow: 0 $nhsuk-box-shadow-link 0 0 $color_nhsuk-grey-4;
+    box-shadow: 0 4px 0 0 $color_nhsuk-grey-4;
 
     .nhsuk-promo__heading {
       @include nhsuk-focused-text();
@@ -50,7 +53,7 @@
   &:active {
     background-color: $color_nhsuk-white; /* [7] */
     box-shadow: none;
-    top: $nhsuk-box-shadow-link; /* [7] */
+    top: 4px; /* [7] */
 
     .nhsuk-promo__heading {
       background: none;
@@ -68,7 +71,9 @@
 }
 
 .nhsuk-promo__img {
-  @include print-hide();
+  @media print {
+    display: none;
+  }
 
   border-bottom: 1px solid $color_nhsuk-grey-5; /* [8] */
   display: block;
@@ -77,7 +82,7 @@
 }
 
 .nhsuk-promo__heading {
-  @include nhsuk-font(24, $weight: bold);
+  @include nhsuk-font(26, $weight: bold);
 
   display: inline-block;
   margin-bottom: nhsuk-spacing(3);
@@ -85,12 +90,12 @@
 }
 
 .nhsuk-promo__content {
-  @include top-and-bottom();
+  @include nhsuk-top-and-bottom();
   @include nhsuk-responsive-padding(5);
 }
 
 .nhsuk-promo__description {
-  color: $nhsuk-secondary-text-color;
+  color: $nhsuk-secondary-text-colour;
 }
 
 /* Promo size variant
@@ -103,11 +108,11 @@
 .nhsuk-promo--small {
 
   .nhsuk-promo__heading {
-    @include nhsuk-typography-responsive(19);
+    @include nhsuk-font-size(19);
   }
 
   .nhsuk-promo__description {
-    @include nhsuk-typography-responsive(16);
+    @include nhsuk-font-size(16);
   }
 
 }
@@ -122,21 +127,21 @@
  */
 
 .nhsuk-promo-group {
-  @include flex();
+  @include nhsuk-flex();
 
-  margin-bottom: nhsuk-spacing(5) + $nhsuk-box-shadow-link;
+  margin-bottom: nhsuk-spacing(5) + 4px;
 
-  @include mq($until: desktop) {
-    margin-bottom: nhsuk-spacing(4) + $nhsuk-box-shadow-link;
+  @include nhsuk-media-query($until: desktop) {
+    margin-bottom: nhsuk-spacing(4) + 4px;
   }
 
 }
 
 .nhsuk-promo-group__item {
-  @include flex-item();
+  @include nhsuk-flex-item();
 
-  @include mq($until: desktop) {
-    margin-bottom: nhsuk-spacing(4) + $nhsuk-box-shadow-link;
+  @include nhsuk-media-query($until: desktop) {
+    margin-bottom: nhsuk-spacing(4) + 4px;
 
     &:last-child {
       margin-bottom: 0;
