@@ -76,62 +76,47 @@ if ( empty( $disable_event_search ) ) {
 
 	</div>
 
+	<style>
+		.tribe-events-calendar-day .tribe-events-calendar-day__event,
+		.tribe-events-calendar-day .tribe-events-calendar-day__event {
+			background: #ffffff;
+			border: 2px solid #4c6272;
+			padding: 16px;
+			border-radius: 4px;
+		}
+
+		.tribe-events .tribe-events-calendar-day .tribe-events-calendar-day__time-separator {
+			display: none;
+		}
+
+		.tribe-events .tribe-events-c-top-bar__datepicker-button {
+			background-color: #ffffff;
+			box-shadow: none;
+			color: #000000;
+			border-radius: 0;
+			border: 2px solid #4c6272;
+			padding: 10px 25px 10px 10px;
+			appearance: menulist;
+		}
+
+		.tribe-events .tribe-events-c-top-bar__datepicker-button:after {
+			display: none;
+		}
+
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a:visited .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a:visited .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a .nhsuk-icon,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a,
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:visited {
+			color: gray !important;
+			fill: gray !important;
+		}
+
+		.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:hover {
+			cursor: not-allowed;
+		}
+	</style>
 </div>
 
 <?php $this->template( 'components/breakpoints' ); ?>
-<style>
-	.tribe-events-calendar-day .tribe-events-calendar-day__event,
-	.tribe-events-calendar-day .tribe-events-calendar-day__event {
-		background: #ffffff;
-		border: 2px solid #4c6272;
-		padding: 16px;
-		border-radius: 4px;
-	}
-
-	.tribe-events .tribe-events-calendar-day .tribe-events-calendar-day__time-separator {
-		display: none;
-	}
-
-	.tribe-events .tribe-events-c-top-bar__datepicker-button {
-		background-color: #ffffff;
-		box-shadow: none;
-		color: #000000;
-		border-radius: 0;
-		border: 2px solid #4c6272;
-		padding: 10px 25px 10px 10px;
-		appearance: menulist;
-	}
-
-	.tribe-events .tribe-events-c-top-bar__datepicker-button:after {
-		content: '';
-		width: 30px;
-		height: 30px;
-		background: linear-gradient(45deg, transparent 50%, #4c6272 50%),
-		linear-gradient(135deg, #4c6272 50%, transparent 50%),
-		linear-gradient(to right, white, white);
-		background-position: calc(100% - 21px) calc(1em + 2px),
-		calc(100% - 16px) calc(1em + 2px),
-		100% 0;
-		background-size: 5px 5px,
-		5px 5px,
-		2.5em 2.5em;
-		background-repeat: no-repeat;
-		position: relative;
-		left: 25px;
-		bottom: 5px;
-	}
-
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a:visited .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a:visited .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--next.disabled a .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list li.nhsuk-pagination-item--prev.disabled a .nhsuk-icon,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a,
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:visited {
-		color: gray !important;
-		fill: gray !important;
-	}
-
-	.navigation .nhsuk-pagination ul.nhsuk-pagination__list .nhsuk-pagination-item--next.disabled a:hover {
-		cursor: not-allowed;
-	}
-</style>

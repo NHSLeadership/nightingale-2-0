@@ -1632,11 +1632,11 @@ caption {
 .nhsuk-input__wrapper {
   display: flex;
 }
-.nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=email],
 .nhsuk-input-wrapper input[type=url],
 .nhsuk-input-wrapper input[type=password],
-.nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=number],
 .nhsuk-input-wrapper input[type=tel],
 .nhsuk-input-wrapper input[type=range],
@@ -1653,11 +1653,11 @@ caption {
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text],
 .nhsuk-input-wrapper textarea,
 .nhsuk-input__wrapper .nhsuk-input,
-.nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input__wrapper input[type=email],
 .nhsuk-input__wrapper input[type=url],
 .nhsuk-input__wrapper input[type=password],
-.nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input__wrapper input[type=number],
 .nhsuk-input__wrapper input[type=tel],
 .nhsuk-input__wrapper input[type=range],
@@ -1677,11 +1677,11 @@ caption {
 }
 .nhsuk-input-wrapper .nhsuk-input--error,
 .nhsuk-input-wrapper .nhsuk-input:focus,
-.nhsuk-input-wrapper input[type=text]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper input[type=text]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=email]:focus,
 .nhsuk-input-wrapper input[type=url]:focus,
 .nhsuk-input-wrapper input[type=password]:focus,
-.nhsuk-input-wrapper input[type=search]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper input[type=search]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=number]:focus,
 .nhsuk-input-wrapper input[type=tel]:focus,
 .nhsuk-input-wrapper input[type=range]:focus,
@@ -1699,11 +1699,11 @@ caption {
 .nhsuk-input-wrapper textarea:focus,
 .nhsuk-input__wrapper .nhsuk-input--error,
 .nhsuk-input__wrapper .nhsuk-input:focus,
-.nhsuk-input__wrapper input[type=text]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input__wrapper input[type=text]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input__wrapper input[type=email]:focus,
 .nhsuk-input__wrapper input[type=url]:focus,
 .nhsuk-input__wrapper input[type=password]:focus,
-.nhsuk-input__wrapper input[type=search]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input__wrapper input[type=search]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input__wrapper input[type=number]:focus,
 .nhsuk-input__wrapper input[type=tel]:focus,
 .nhsuk-input__wrapper input[type=range]:focus,
@@ -1726,11 +1726,11 @@ caption {
   .nhsuk-input__wrapper {
     flex-direction: column;
   }
-  .nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=email],
   .nhsuk-input-wrapper input[type=url],
   .nhsuk-input-wrapper input[type=password],
-  .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=number],
   .nhsuk-input-wrapper input[type=tel],
   .nhsuk-input-wrapper input[type=range],
@@ -1747,11 +1747,11 @@ caption {
   .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text],
   .nhsuk-input-wrapper textarea,
   .nhsuk-input__wrapper .nhsuk-input,
-  .nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input__wrapper input[type=email],
   .nhsuk-input__wrapper input[type=url],
   .nhsuk-input__wrapper input[type=password],
-  .nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input__wrapper input[type=number],
   .nhsuk-input__wrapper input[type=tel],
   .nhsuk-input__wrapper input[type=range],
@@ -1776,11 +1776,11 @@ caption {
   -ms-user-select: none;
   user-select: none;
 }
-.nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=email],
 .nhsuk-input-wrapper input[type=url],
 .nhsuk-input-wrapper input[type=password],
-.nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=number],
 .nhsuk-input-wrapper input[type=tel],
 .nhsuk-input-wrapper input[type=range],
@@ -1812,11 +1812,11 @@ caption {
 .tippy-popper .tippy-content .nhsuk-input-wrapper .gv-approval-toggle {
   margin-top: 8px;
 }
-.nhsuk-input-wrapper .nhsuk-input:first-child, .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper .nhsuk-input:first-child, .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=email]:first-child,
 .nhsuk-input-wrapper input[type=url]:first-child,
 .nhsuk-input-wrapper input[type=password]:first-child,
-.nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=number]:first-child,
 .nhsuk-input-wrapper input[type=tel]:first-child,
 .nhsuk-input-wrapper input[type=range]:first-child,
@@ -1831,11 +1831,11 @@ caption {
 .learndash-wrapper .wpProQuiz_content .nhsuk-input-wrapper input[type=text]:first-child:focus,
 .nhsuk-input-wrapper .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]:first-child,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text]:first-child,
-.nhsuk-input-wrapper textarea:first-child, .nhsuk-input-wrapper .nhsuk-input:only-child, .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper textarea:first-child, .nhsuk-input-wrapper .nhsuk-input:only-child, .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=email]:only-child,
 .nhsuk-input-wrapper input[type=url]:only-child,
 .nhsuk-input-wrapper input[type=password]:only-child,
-.nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper input[type=number]:only-child,
 .nhsuk-input-wrapper input[type=tel]:only-child,
 .nhsuk-input-wrapper input[type=range]:only-child,
@@ -1885,11 +1885,11 @@ caption {
     flex-direction: row;
     align-items: flex-start;
   }
-  .nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper .nhsuk-input, .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=email],
   .nhsuk-input-wrapper input[type=url],
   .nhsuk-input-wrapper input[type=password],
-  .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=number],
   .nhsuk-input-wrapper input[type=tel],
   .nhsuk-input-wrapper input[type=range],
@@ -1922,11 +1922,11 @@ caption {
     margin-top: 0;
     margin-left: 8px;
   }
-  .nhsuk-input-wrapper .nhsuk-input:first-child, .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper .nhsuk-input:first-child, .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=email]:first-child,
   .nhsuk-input-wrapper input[type=url]:first-child,
   .nhsuk-input-wrapper input[type=password]:first-child,
-  .nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=number]:first-child,
   .nhsuk-input-wrapper input[type=tel]:first-child,
   .nhsuk-input-wrapper input[type=range]:first-child,
@@ -1941,11 +1941,11 @@ caption {
   .learndash-wrapper .wpProQuiz_content .nhsuk-input-wrapper input[type=text]:first-child:focus,
   .nhsuk-input-wrapper .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]:first-child,
   .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text]:first-child,
-  .nhsuk-input-wrapper textarea:first-child, .nhsuk-input-wrapper .nhsuk-input:only-child, .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper textarea:first-child, .nhsuk-input-wrapper .nhsuk-input:only-child, .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=email]:only-child,
   .nhsuk-input-wrapper input[type=url]:only-child,
   .nhsuk-input-wrapper input[type=password]:only-child,
-  .nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper input[type=number]:only-child,
   .nhsuk-input-wrapper input[type=tel]:only-child,
   .nhsuk-input-wrapper input[type=range]:only-child,
@@ -5340,11 +5340,11 @@ ul:has(+ .nhsuk-form-group > .nhsuk-label-wrapper:first-child .nhsuk-label, + .n
   margin: 0;
 }
 
-.nhsuk-input, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input, input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=email],
 input[type=url],
 input[type=password],
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=number],
 input[type=tel],
 input[type=range],
@@ -5368,11 +5368,11 @@ textarea {
   -webkit-appearance: none;
   appearance: none;
 }
-.nhsuk-input, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input, input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=email],
 input[type=url],
 input[type=password],
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=number],
 input[type=tel],
 input[type=range],
@@ -5388,11 +5388,11 @@ input[type=color],
 textarea {
   font-weight: 400;
 }
-.nhsuk-input, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input, input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=email],
 input[type=url],
 input[type=password],
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=number],
 input[type=tel],
 input[type=range],
@@ -5410,11 +5410,11 @@ textarea {
   line-height: 1.5;
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-input, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input, input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   input[type=email],
   input[type=url],
   input[type=password],
-  input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   input[type=number],
   input[type=tel],
   input[type=range],
@@ -5433,11 +5433,11 @@ textarea {
   }
 }
 @media print {
-  .nhsuk-input, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input, input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   input[type=email],
   input[type=url],
   input[type=password],
-  input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   input[type=number],
   input[type=tel],
   input[type=range],
@@ -5455,11 +5455,11 @@ textarea {
     line-height: 1.25;
   }
 }
-.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) .nhsuk-input, .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) .nhsuk-input, .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=email],
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=url],
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=password],
-.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=number],
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=tel],
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=range],
@@ -5477,11 +5477,11 @@ textarea {
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) textarea {
   padding-left: calc(0.25rem + 2px);
 }
-.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) .nhsuk-input:not([type=search]), .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=text]:not([type=search]):not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) .nhsuk-input:not([type=search]), .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=text]:not([type=search]):not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=email]:not([type=search]),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=url]:not([type=search]),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=password]:not([type=search]),
-.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=search]:not([type=search]):not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=search]:not([type=search]):not(.nhsuk-search__input, .nhsuk-input),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=number]:not([type=search]),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=tel]:not([type=search]),
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=range]:not([type=search]),
@@ -5499,11 +5499,11 @@ textarea {
 .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) textarea:not([type=search]) {
   padding-right: calc(0.25rem + 2px);
 }
-.nhsuk-input:focus, input[type=text]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input:focus, input[type=text]:focus:not(.nhsuk-search__input, .nhsuk-input),
 input[type=email]:focus,
 input[type=url]:focus,
 input[type=password]:focus,
-input[type=search]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type=search]:focus:not(.nhsuk-search__input, .nhsuk-input),
 input[type=number]:focus,
 input[type=tel]:focus,
 input[type=range]:focus,
@@ -5522,11 +5522,11 @@ textarea:focus {
   outline-offset: 0;
   box-shadow: inset 0 0 0 2px #212b32;
 }
-.nhsuk-input:disabled, input[type=text]:disabled:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input:disabled, input[type=text]:disabled:not(.nhsuk-search__input, .nhsuk-input),
 input[type=email]:disabled,
 input[type=url]:disabled,
 input[type=password]:disabled,
-input[type=search]:disabled:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type=search]:disabled:not(.nhsuk-search__input, .nhsuk-input),
 input[type=number]:disabled,
 input[type=tel]:disabled,
 input[type=range]:disabled,
@@ -5545,11 +5545,11 @@ textarea:disabled {
   background-color: transparent;
   cursor: not-allowed;
 }
-.nhsuk-input:-ms-input-placeholder, input[type=text]:-ms-input-placeholder:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input:-ms-input-placeholder, input[type=text]:-ms-input-placeholder:not(.nhsuk-search__input, .nhsuk-input),
 input[type=email]:-ms-input-placeholder,
 input[type=url]:-ms-input-placeholder,
 input[type=password]:-ms-input-placeholder,
-input[type=search]:-ms-input-placeholder:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type=search]:-ms-input-placeholder:not(.nhsuk-search__input, .nhsuk-input),
 input[type=number]:-ms-input-placeholder,
 input[type=tel]:-ms-input-placeholder,
 input[type=range]:-ms-input-placeholder,
@@ -5566,11 +5566,11 @@ textarea:-ms-input-placeholder {
   opacity: 1;
   color: #4c6272;
 }
-.nhsuk-input::placeholder, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::placeholder,
+.nhsuk-input::placeholder, input[type=text]:not(.nhsuk-search__input, .nhsuk-input)::placeholder,
 input[type=email]::placeholder,
 input[type=url]::placeholder,
 input[type=password]::placeholder,
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::placeholder,
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::placeholder,
 input[type=number]::placeholder,
 input[type=tel]::placeholder,
 input[type=range]::placeholder,
@@ -5587,11 +5587,11 @@ textarea::placeholder {
   opacity: 1;
   color: #4c6272;
 }
-.nhsuk-input::-ms-clear, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::-ms-clear,
+.nhsuk-input::-ms-clear, input[type=text]:not(.nhsuk-search__input, .nhsuk-input)::-ms-clear,
 input[type=email]::-ms-clear,
 input[type=url]::-ms-clear,
 input[type=password]::-ms-clear,
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-ms-clear,
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-ms-clear,
 input[type=number]::-ms-clear,
 input[type=tel]::-ms-clear,
 input[type=range]::-ms-clear,
@@ -5608,11 +5608,11 @@ textarea::-ms-clear {
   display: none;
 }
 @media (min-width: 40.0625em) {
-  .nhsuk-input, input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input, input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   input[type=email],
   input[type=url],
   input[type=password],
-  input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   input[type=number],
   input[type=tel],
   input[type=range],
@@ -5630,7 +5630,7 @@ textarea::-ms-clear {
   }
 }
 
-.nhsuk-input[type=number], input[type=number][type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.nhsuk-input[type=number], input[type=number][type=text]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=number],
 .learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text],
@@ -5639,7 +5639,7 @@ textarea[type=number],
 input[type=search][type=email],
 input[type=search][type=url],
 input[type=search][type=password],
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 input[type=search][type=tel],
 input[type=search][type=range],
 input[type=search][type=date],
@@ -5656,15 +5656,15 @@ textarea[type=search] {
   appearance: textfield;
 }
 
-.nhsuk-input[type=number]::-webkit-inner-spin-button, input[type=number][type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-inner-spin-button,
-input[type=number][type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-inner-spin-button,
+.nhsuk-input[type=number]::-webkit-inner-spin-button, input[type=number][type=text]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-inner-spin-button,
+input[type=number][type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-inner-spin-button,
 input[type=number]::-webkit-inner-spin-button,
 .learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus::-webkit-inner-spin-button,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text]::-webkit-inner-spin-button,
 textarea[type=number]::-webkit-inner-spin-button,
 .nhsuk-input[type=number]::-webkit-outer-spin-button,
-input[type=number][type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-outer-spin-button,
-input[type=number][type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-outer-spin-button,
+input[type=number][type=text]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-outer-spin-button,
+input[type=number][type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-outer-spin-button,
 input[type=number]::-webkit-outer-spin-button,
 .learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus::-webkit-outer-spin-button,
 .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text]::-webkit-outer-spin-button,
@@ -5673,7 +5673,7 @@ textarea[type=number]::-webkit-outer-spin-button,
 input[type=search][type=email]::-webkit-search-decoration,
 input[type=search][type=url]::-webkit-search-decoration,
 input[type=search][type=password]::-webkit-search-decoration,
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-decoration,
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-decoration,
 input[type=search][type=number]::-webkit-search-decoration,
 input[type=search][type=tel]::-webkit-search-decoration,
 input[type=search][type=range]::-webkit-search-decoration,
@@ -5691,7 +5691,7 @@ textarea[type=search]::-webkit-search-decoration,
 input[type=search][type=email]::-webkit-search-results-button,
 input[type=search][type=url]::-webkit-search-results-button,
 input[type=search][type=password]::-webkit-search-results-button,
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-results-button,
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-results-button,
 input[type=search][type=number]::-webkit-search-results-button,
 input[type=search][type=tel]::-webkit-search-results-button,
 input[type=search][type=range]::-webkit-search-results-button,
@@ -5709,7 +5709,7 @@ textarea[type=search]::-webkit-search-results-button,
 input[type=search][type=email]::-webkit-search-results-decoration,
 input[type=search][type=url]::-webkit-search-results-decoration,
 input[type=search][type=password]::-webkit-search-results-decoration,
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-results-decoration,
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-results-decoration,
 input[type=search][type=number]::-webkit-search-results-decoration,
 input[type=search][type=tel]::-webkit-search-results-decoration,
 input[type=search][type=range]::-webkit-search-results-decoration,
@@ -5730,7 +5730,7 @@ textarea[type=search]::-webkit-search-results-decoration {
 input[type=search][type=email]:placeholder-shown::-webkit-search-cancel-button,
 input[type=search][type=url]:placeholder-shown::-webkit-search-cancel-button,
 input[type=search][type=password]:placeholder-shown::-webkit-search-cancel-button,
-input[type=search]:placeholder-shown:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+input[type=search]:placeholder-shown:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
 input[type=search][type=number]:placeholder-shown::-webkit-search-cancel-button,
 input[type=search][type=tel]:placeholder-shown::-webkit-search-cancel-button,
 input[type=search][type=range]:placeholder-shown::-webkit-search-cancel-button,
@@ -5751,7 +5751,7 @@ textarea[type=search]:placeholder-shown::-webkit-search-cancel-button {
 input[type=search][type=email]::-webkit-search-cancel-button,
 input[type=search][type=url]::-webkit-search-cancel-button,
 input[type=search][type=password]::-webkit-search-cancel-button,
-input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
 input[type=search][type=number]::-webkit-search-cancel-button,
 input[type=search][type=tel]::-webkit-search-cancel-button,
 input[type=search][type=range]::-webkit-search-cancel-button,
@@ -5782,7 +5782,7 @@ textarea[type=search]::-webkit-search-cancel-button {
   input[type=search][type=email]::-webkit-search-cancel-button,
   input[type=search][type=url]::-webkit-search-cancel-button,
   input[type=search][type=password]::-webkit-search-cancel-button,
-  input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+  input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
   input[type=search][type=number]::-webkit-search-cancel-button,
   input[type=search][type=tel]::-webkit-search-cancel-button,
   input[type=search][type=range]::-webkit-search-cancel-button,
@@ -5807,7 +5807,7 @@ textarea[type=search]::-webkit-search-cancel-button {
     input[type=search][type=email]::-webkit-search-cancel-button,
     input[type=search][type=url]::-webkit-search-cancel-button,
     input[type=search][type=password]::-webkit-search-cancel-button,
-    input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+    input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
     input[type=search][type=number]::-webkit-search-cancel-button,
     input[type=search][type=tel]::-webkit-search-cancel-button,
     input[type=search][type=range]::-webkit-search-cancel-button,
@@ -6018,11 +6018,11 @@ textarea[type=search]::-webkit-search-cancel-button {
   .nhsuk-input__prefix {
     border-bottom-width: 0;
   }
-  .nhsuk-input-wrapper__prefix + .nhsuk-input, .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper__prefix + .nhsuk-input, .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper__prefix + input[type=email],
   .nhsuk-input-wrapper__prefix + input[type=url],
   .nhsuk-input-wrapper__prefix + input[type=password],
-  .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper__prefix + input[type=number],
   .nhsuk-input-wrapper__prefix + input[type=tel],
   .nhsuk-input-wrapper__prefix + input[type=range],
@@ -6037,11 +6037,11 @@ textarea[type=search]::-webkit-search-cancel-button {
   .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper__prefix + input.wpProQuiz_questionInput[type=text],
   .nhsuk-input-wrapper__prefix + textarea,
   .nhsuk-input__prefix + .nhsuk-input,
-  .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input__prefix + input[type=email],
   .nhsuk-input__prefix + input[type=url],
   .nhsuk-input__prefix + input[type=password],
-  .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input__prefix + input[type=number],
   .nhsuk-input__prefix + input[type=tel],
   .nhsuk-input__prefix + input[type=range],
@@ -6068,11 +6068,11 @@ textarea[type=search]::-webkit-search-cancel-button {
   .nhsuk-input__prefix:first-child {
     margin-left: 0;
   }
-  .nhsuk-input-wrapper__prefix + .nhsuk-input, .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper__prefix + .nhsuk-input, .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper__prefix + input[type=email],
   .nhsuk-input-wrapper__prefix + input[type=url],
   .nhsuk-input-wrapper__prefix + input[type=password],
-  .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input-wrapper__prefix + input[type=number],
   .nhsuk-input-wrapper__prefix + input[type=tel],
   .nhsuk-input-wrapper__prefix + input[type=range],
@@ -6087,11 +6087,11 @@ textarea[type=search]::-webkit-search-cancel-button {
   .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper__prefix + input.wpProQuiz_questionInput[type=text],
   .nhsuk-input-wrapper__prefix + textarea,
   .nhsuk-input__prefix + .nhsuk-input,
-  .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input__prefix + input[type=email],
   .nhsuk-input__prefix + input[type=url],
   .nhsuk-input__prefix + input[type=password],
-  .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .nhsuk-input__prefix + input[type=number],
   .nhsuk-input__prefix + input[type=tel],
   .nhsuk-input__prefix + input[type=range],
@@ -18291,6 +18291,10 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
   padding: 0;
 }
 
+body.post-type-archive-tribe_events .tribe-common.tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
+
 .tribe-common div.nhsuk-grid-column-two-thirds {
   padding-left: 0;
 }
@@ -18316,6 +18320,13 @@ nav.learndash-pager ul li a.nhsuk-tag.nhsuk-tag--white, nav.learndash-pager ul l
 .tribe-common .nhsuk-card-group div.nhsuk-card__content {
   padding: 24px;
   color: #425563;
+}
+
+.tribe-events-view .tribe-events-c-subscribe-dropdown {
+  text-align: right;
+}
+.tribe-events-view .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__content {
+  text-align: left;
 }
 
 .tribe-events .tribe-events-c-top-bar__datepicker {

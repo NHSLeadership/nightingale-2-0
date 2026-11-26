@@ -51,6 +51,7 @@ one level only. To show further levels, we recommend using the right (or left) h
 * Add optional account links to the header
 * Improve search box visibility
 * Fix the sidebar search widget overlapping the next widget
+* Fix Events Calendar layout issues in the search, month and day views
 * Include required NHS.UK frontend icons within the theme
 * Recommend NHS Blocks 2.0.0 or later
 * Improve cache clearing and block editor styles after theme updates

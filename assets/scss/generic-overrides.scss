@@ -8,11 +8,11 @@
 // Fields that already have .nhsuk-input (such as the header search) are skipped,
 // so these generic styles do not override component styles.
 // .nhsuk-search__input is the older (8.x) header search class.
-input[type="text"]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type="text"]:not(.nhsuk-search__input, .nhsuk-input),
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"]:not(.nhsuk-search__input):not(.nhsuk-input),
+input[type="search"]:not(.nhsuk-search__input, .nhsuk-input),
 input[type="number"],
 input[type="tel"],
 input[type="range"],

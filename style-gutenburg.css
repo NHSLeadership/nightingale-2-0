@@ -4793,11 +4793,11 @@
 .edit-post-visual-editor .nhsuk-input__wrapper {
   display: flex;
 }
-.edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=email],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=url],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=password],
-.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=number],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=range],
@@ -4814,11 +4814,11 @@
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text],
 .edit-post-visual-editor .nhsuk-input-wrapper textarea,
 .edit-post-visual-editor .nhsuk-input__wrapper .nhsuk-input,
-.edit-post-visual-editor .nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=email],
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=url],
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=password],
-.edit-post-visual-editor .nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=number],
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=tel],
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=range],
@@ -4838,11 +4838,11 @@
 }
 .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input--error,
 .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:focus,
-.edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=email]:focus,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=url]:focus,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=password]:focus,
-.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=number]:focus,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel]:focus,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=range]:focus,
@@ -4860,11 +4860,11 @@
 .edit-post-visual-editor .nhsuk-input-wrapper textarea:focus,
 .edit-post-visual-editor .nhsuk-input__wrapper .nhsuk-input--error,
 .edit-post-visual-editor .nhsuk-input__wrapper .nhsuk-input:focus,
-.edit-post-visual-editor .nhsuk-input__wrapper input[type=text]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input__wrapper input[type=text]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=email]:focus,
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=url]:focus,
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=password]:focus,
-.edit-post-visual-editor .nhsuk-input__wrapper input[type=search]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input__wrapper input[type=search]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=number]:focus,
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=tel]:focus,
 .edit-post-visual-editor .nhsuk-input__wrapper input[type=range]:focus,
@@ -4887,11 +4887,11 @@
   .edit-post-visual-editor .nhsuk-input__wrapper {
     flex-direction: column;
   }
-  .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=email],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=url],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=password],
-  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=number],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=range],
@@ -4908,11 +4908,11 @@
   .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text],
   .edit-post-visual-editor .nhsuk-input-wrapper textarea,
   .edit-post-visual-editor .nhsuk-input__wrapper .nhsuk-input,
-  .edit-post-visual-editor .nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input__wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input__wrapper input[type=email],
   .edit-post-visual-editor .nhsuk-input__wrapper input[type=url],
   .edit-post-visual-editor .nhsuk-input__wrapper input[type=password],
-  .edit-post-visual-editor .nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input__wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input__wrapper input[type=number],
   .edit-post-visual-editor .nhsuk-input__wrapper input[type=tel],
   .edit-post-visual-editor .nhsuk-input__wrapper input[type=range],
@@ -4936,11 +4936,11 @@
   -ms-user-select: none;
   user-select: none;
 }
-.edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=email],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=url],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=password],
-.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=number],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel],
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=range],
@@ -4970,11 +4970,11 @@
 .edit-post-visual-editor .tippy-popper .tippy-content .nhsuk-input-wrapper .gv-approval-toggle {
   margin-top: 8px;
 }
-.edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:first-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:first-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=email]:first-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=url]:first-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=password]:first-child,
-.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=number]:first-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel]:first-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=range]:first-child,
@@ -4989,11 +4989,11 @@
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .nhsuk-input-wrapper input[type=text]:first-child:focus,
 .edit-post-visual-editor .nhsuk-input-wrapper .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]:first-child,
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text]:first-child,
-.edit-post-visual-editor .nhsuk-input-wrapper textarea:first-child, .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:only-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper textarea:first-child, .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:only-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=email]:only-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=url]:only-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=password]:only-child,
-.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=number]:only-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel]:only-child,
 .edit-post-visual-editor .nhsuk-input-wrapper input[type=range]:only-child,
@@ -5039,11 +5039,11 @@
     flex-direction: row;
     align-items: flex-start;
   }
-  .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=email],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=url],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=password],
-  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=number],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel],
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=range],
@@ -5074,11 +5074,11 @@
     margin-top: 0;
     margin-left: 8px;
   }
-  .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:first-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:first-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:first-child:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=email]:first-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=url]:first-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=password]:first-child,
-  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:first-child:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=number]:first-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel]:first-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=range]:first-child,
@@ -5093,11 +5093,11 @@
   .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .nhsuk-input-wrapper input[type=text]:first-child:focus,
   .edit-post-visual-editor .nhsuk-input-wrapper .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input.wpProQuiz_questionInput[type=text]:first-child,
   .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper input.wpProQuiz_questionInput[type=text]:first-child,
-  .edit-post-visual-editor .nhsuk-input-wrapper textarea:first-child, .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:only-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper textarea:first-child, .edit-post-visual-editor .nhsuk-input-wrapper .nhsuk-input:only-child, .edit-post-visual-editor .nhsuk-input-wrapper input[type=text]:only-child:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=email]:only-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=url]:only-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=password]:only-child,
-  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper input[type=search]:only-child:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=number]:only-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=tel]:only-child,
   .edit-post-visual-editor .nhsuk-input-wrapper input[type=range]:only-child,
@@ -5352,11 +5352,11 @@
 .edit-post-visual-editor .nhsuk-label-wrapper {
   margin: 0;
 }
-.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=email],
 .edit-post-visual-editor input[type=url],
 .edit-post-visual-editor input[type=password],
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor input[type=tel],
 .edit-post-visual-editor input[type=range],
@@ -5380,11 +5380,11 @@
   -webkit-appearance: none;
   appearance: none;
 }
-.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=email],
 .edit-post-visual-editor input[type=url],
 .edit-post-visual-editor input[type=password],
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor input[type=tel],
 .edit-post-visual-editor input[type=range],
@@ -5400,11 +5400,11 @@
 .edit-post-visual-editor textarea {
   font-weight: 400;
 }
-.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=email],
 .edit-post-visual-editor input[type=url],
 .edit-post-visual-editor input[type=password],
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor input[type=tel],
 .edit-post-visual-editor input[type=range],
@@ -5422,11 +5422,11 @@
   line-height: 1.5;
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor input[type=email],
   .edit-post-visual-editor input[type=url],
   .edit-post-visual-editor input[type=password],
-  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor input[type=number],
   .edit-post-visual-editor input[type=tel],
   .edit-post-visual-editor input[type=range],
@@ -5445,11 +5445,11 @@
   }
 }
 @media print {
-  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor input[type=email],
   .edit-post-visual-editor input[type=url],
   .edit-post-visual-editor input[type=password],
-  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor input[type=number],
   .edit-post-visual-editor input[type=tel],
   .edit-post-visual-editor input[type=range],
@@ -5467,11 +5467,11 @@
     line-height: 1.25;
   }
 }
-.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=email],
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=url],
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=password],
-.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=number],
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=tel],
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) input[type=range],
@@ -5489,11 +5489,11 @@
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__prefix) textarea {
   padding-left: calc(0.25rem + 2px);
 }
-.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) .nhsuk-input:not([type=search]), .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=text]:not([type=search]):not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) .nhsuk-input:not([type=search]), .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=text]:not([type=search]):not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=email]:not([type=search]),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=url]:not([type=search]),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=password]:not([type=search]),
-.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=search]:not([type=search]):not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=search]:not([type=search]):not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=number]:not([type=search]),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=tel]:not([type=search]),
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) input[type=range]:not([type=search]),
@@ -5511,11 +5511,11 @@
 .edit-post-visual-editor .nhsuk-input-wrapper:has(.nhsuk-input-wrapper__suffix) textarea:not([type=search]) {
   padding-right: calc(0.25rem + 2px);
 }
-.edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor input[type=text]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input:focus, .edit-post-visual-editor input[type=text]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=email]:focus,
 .edit-post-visual-editor input[type=url]:focus,
 .edit-post-visual-editor input[type=password]:focus,
-.edit-post-visual-editor input[type=search]:focus:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor input[type=search]:focus:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=number]:focus,
 .edit-post-visual-editor input[type=tel]:focus,
 .edit-post-visual-editor input[type=range]:focus,
@@ -5534,11 +5534,11 @@
   outline-offset: 0;
   box-shadow: inset 0 0 0 2px #212b32;
 }
-.edit-post-visual-editor .nhsuk-input:disabled, .edit-post-visual-editor input[type=text]:disabled:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input:disabled, .edit-post-visual-editor input[type=text]:disabled:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=email]:disabled,
 .edit-post-visual-editor input[type=url]:disabled,
 .edit-post-visual-editor input[type=password]:disabled,
-.edit-post-visual-editor input[type=search]:disabled:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor input[type=search]:disabled:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=number]:disabled,
 .edit-post-visual-editor input[type=tel]:disabled,
 .edit-post-visual-editor input[type=range]:disabled,
@@ -5557,11 +5557,11 @@
   background-color: transparent;
   cursor: not-allowed;
 }
-.edit-post-visual-editor .nhsuk-input:-ms-input-placeholder, .edit-post-visual-editor input[type=text]:-ms-input-placeholder:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input:-ms-input-placeholder, .edit-post-visual-editor input[type=text]:-ms-input-placeholder:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=email]:-ms-input-placeholder,
 .edit-post-visual-editor input[type=url]:-ms-input-placeholder,
 .edit-post-visual-editor input[type=password]:-ms-input-placeholder,
-.edit-post-visual-editor input[type=search]:-ms-input-placeholder:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor input[type=search]:-ms-input-placeholder:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=number]:-ms-input-placeholder,
 .edit-post-visual-editor input[type=tel]:-ms-input-placeholder,
 .edit-post-visual-editor input[type=range]:-ms-input-placeholder,
@@ -5578,11 +5578,11 @@
   opacity: 1;
   color: #4c6272;
 }
-.edit-post-visual-editor .nhsuk-input::placeholder, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::placeholder,
+.edit-post-visual-editor .nhsuk-input::placeholder, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input)::placeholder,
 .edit-post-visual-editor input[type=email]::placeholder,
 .edit-post-visual-editor input[type=url]::placeholder,
 .edit-post-visual-editor input[type=password]::placeholder,
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::placeholder,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::placeholder,
 .edit-post-visual-editor input[type=number]::placeholder,
 .edit-post-visual-editor input[type=tel]::placeholder,
 .edit-post-visual-editor input[type=range]::placeholder,
@@ -5599,11 +5599,11 @@
   opacity: 1;
   color: #4c6272;
 }
-.edit-post-visual-editor .nhsuk-input::-ms-clear, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::-ms-clear,
+.edit-post-visual-editor .nhsuk-input::-ms-clear, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input)::-ms-clear,
 .edit-post-visual-editor input[type=email]::-ms-clear,
 .edit-post-visual-editor input[type=url]::-ms-clear,
 .edit-post-visual-editor input[type=password]::-ms-clear,
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-ms-clear,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-ms-clear,
 .edit-post-visual-editor input[type=number]::-ms-clear,
 .edit-post-visual-editor input[type=tel]::-ms-clear,
 .edit-post-visual-editor input[type=range]::-ms-clear,
@@ -5620,11 +5620,11 @@
   display: none;
 }
 @media (min-width: 40.0625em) {
-  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input, .edit-post-visual-editor input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor input[type=email],
   .edit-post-visual-editor input[type=url],
   .edit-post-visual-editor input[type=password],
-  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor input[type=number],
   .edit-post-visual-editor input[type=tel],
   .edit-post-visual-editor input[type=range],
@@ -5641,7 +5641,7 @@
     height: 2.5rem;
   }
 }
-.edit-post-visual-editor .nhsuk-input[type=number], .edit-post-visual-editor input[type=number][type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor .nhsuk-input[type=number], .edit-post-visual-editor input[type=number][type=text]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=number],
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus,
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text],
@@ -5650,7 +5650,7 @@
 .edit-post-visual-editor input[type=search][type=email],
 .edit-post-visual-editor input[type=search][type=url],
 .edit-post-visual-editor input[type=search][type=password],
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
 .edit-post-visual-editor input[type=search][type=tel],
 .edit-post-visual-editor input[type=search][type=range],
 .edit-post-visual-editor input[type=search][type=date],
@@ -5666,15 +5666,15 @@
   -webkit-appearance: textfield;
   appearance: textfield;
 }
-.edit-post-visual-editor .nhsuk-input[type=number]::-webkit-inner-spin-button, .edit-post-visual-editor input[type=number][type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-inner-spin-button,
-.edit-post-visual-editor input[type=number][type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-inner-spin-button,
+.edit-post-visual-editor .nhsuk-input[type=number]::-webkit-inner-spin-button, .edit-post-visual-editor input[type=number][type=text]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-inner-spin-button,
+.edit-post-visual-editor input[type=number][type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-inner-spin-button,
 .edit-post-visual-editor input[type=number]::-webkit-inner-spin-button,
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus::-webkit-inner-spin-button,
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text]::-webkit-inner-spin-button,
 .edit-post-visual-editor textarea[type=number]::-webkit-inner-spin-button,
 .edit-post-visual-editor .nhsuk-input[type=number]::-webkit-outer-spin-button,
-.edit-post-visual-editor input[type=number][type=text]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-outer-spin-button,
-.edit-post-visual-editor input[type=number][type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-outer-spin-button,
+.edit-post-visual-editor input[type=number][type=text]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-outer-spin-button,
+.edit-post-visual-editor input[type=number][type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-outer-spin-button,
 .edit-post-visual-editor input[type=number]::-webkit-outer-spin-button,
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content input[type=number][type=text]:focus::-webkit-outer-spin-button,
 .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label input[type=number].wpProQuiz_questionInput[type=text]::-webkit-outer-spin-button,
@@ -5683,7 +5683,7 @@
 .edit-post-visual-editor input[type=search][type=email]::-webkit-search-decoration,
 .edit-post-visual-editor input[type=search][type=url]::-webkit-search-decoration,
 .edit-post-visual-editor input[type=search][type=password]::-webkit-search-decoration,
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-decoration,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-decoration,
 .edit-post-visual-editor input[type=search][type=number]::-webkit-search-decoration,
 .edit-post-visual-editor input[type=search][type=tel]::-webkit-search-decoration,
 .edit-post-visual-editor input[type=search][type=range]::-webkit-search-decoration,
@@ -5701,7 +5701,7 @@
 .edit-post-visual-editor input[type=search][type=email]::-webkit-search-results-button,
 .edit-post-visual-editor input[type=search][type=url]::-webkit-search-results-button,
 .edit-post-visual-editor input[type=search][type=password]::-webkit-search-results-button,
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-results-button,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-results-button,
 .edit-post-visual-editor input[type=search][type=number]::-webkit-search-results-button,
 .edit-post-visual-editor input[type=search][type=tel]::-webkit-search-results-button,
 .edit-post-visual-editor input[type=search][type=range]::-webkit-search-results-button,
@@ -5719,7 +5719,7 @@
 .edit-post-visual-editor input[type=search][type=email]::-webkit-search-results-decoration,
 .edit-post-visual-editor input[type=search][type=url]::-webkit-search-results-decoration,
 .edit-post-visual-editor input[type=search][type=password]::-webkit-search-results-decoration,
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-results-decoration,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-results-decoration,
 .edit-post-visual-editor input[type=search][type=number]::-webkit-search-results-decoration,
 .edit-post-visual-editor input[type=search][type=tel]::-webkit-search-results-decoration,
 .edit-post-visual-editor input[type=search][type=range]::-webkit-search-results-decoration,
@@ -5739,7 +5739,7 @@
 .edit-post-visual-editor input[type=search][type=email]:placeholder-shown::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=url]:placeholder-shown::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=password]:placeholder-shown::-webkit-search-cancel-button,
-.edit-post-visual-editor input[type=search]:placeholder-shown:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+.edit-post-visual-editor input[type=search]:placeholder-shown:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=number]:placeholder-shown::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=tel]:placeholder-shown::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=range]:placeholder-shown::-webkit-search-cancel-button,
@@ -5759,7 +5759,7 @@
 .edit-post-visual-editor input[type=search][type=email]::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=url]::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=password]::-webkit-search-cancel-button,
-.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+.edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=number]::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=tel]::-webkit-search-cancel-button,
 .edit-post-visual-editor input[type=search][type=range]::-webkit-search-cancel-button,
@@ -5790,7 +5790,7 @@
   .edit-post-visual-editor input[type=search][type=email]::-webkit-search-cancel-button,
   .edit-post-visual-editor input[type=search][type=url]::-webkit-search-cancel-button,
   .edit-post-visual-editor input[type=search][type=password]::-webkit-search-cancel-button,
-  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+  .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
   .edit-post-visual-editor input[type=search][type=number]::-webkit-search-cancel-button,
   .edit-post-visual-editor input[type=search][type=tel]::-webkit-search-cancel-button,
   .edit-post-visual-editor input[type=search][type=range]::-webkit-search-cancel-button,
@@ -5815,7 +5815,7 @@
     .edit-post-visual-editor input[type=search][type=email]::-webkit-search-cancel-button,
     .edit-post-visual-editor input[type=search][type=url]::-webkit-search-cancel-button,
     .edit-post-visual-editor input[type=search][type=password]::-webkit-search-cancel-button,
-    .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input)::-webkit-search-cancel-button,
+    .edit-post-visual-editor input[type=search]:not(.nhsuk-search__input, .nhsuk-input)::-webkit-search-cancel-button,
     .edit-post-visual-editor input[type=search][type=number]::-webkit-search-cancel-button,
     .edit-post-visual-editor input[type=search][type=tel]::-webkit-search-cancel-button,
     .edit-post-visual-editor input[type=search][type=range]::-webkit-search-cancel-button,
@@ -6012,11 +6012,11 @@
   .edit-post-visual-editor .nhsuk-input__prefix {
     border-bottom-width: 0;
   }
-  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=email],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=url],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=password],
-  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=number],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=tel],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=range],
@@ -6031,11 +6031,11 @@
   .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper__prefix + input.wpProQuiz_questionInput[type=text],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + textarea,
   .edit-post-visual-editor .nhsuk-input__prefix + .nhsuk-input,
-  .edit-post-visual-editor .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=email],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=url],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=password],
-  .edit-post-visual-editor .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=number],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=tel],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=range],
@@ -6062,11 +6062,11 @@
   .edit-post-visual-editor .nhsuk-input__prefix:first-child {
     margin-left: 0;
   }
-  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + .nhsuk-input, .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=email],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=url],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=password],
-  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=number],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=tel],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + input[type=range],
@@ -6081,11 +6081,11 @@
   .edit-post-visual-editor .learndash-wrapper .wpProQuiz_content .wpProQuiz_questionListItem label .nhsuk-input-wrapper__prefix + input.wpProQuiz_questionInput[type=text],
   .edit-post-visual-editor .nhsuk-input-wrapper__prefix + textarea,
   .edit-post-visual-editor .nhsuk-input__prefix + .nhsuk-input,
-  .edit-post-visual-editor .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input__prefix + input[type=text]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=email],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=url],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=password],
-  .edit-post-visual-editor .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input):not(.nhsuk-input),
+  .edit-post-visual-editor .nhsuk-input__prefix + input[type=search]:not(.nhsuk-search__input, .nhsuk-input),
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=number],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=tel],
   .edit-post-visual-editor .nhsuk-input__prefix + input[type=range],
@@ -12708,6 +12708,9 @@
 .edit-post-visual-editor #tribe-events, .edit-post-visual-editor #tribe-events-pg-template, .edit-post-visual-editor .tribe-events-pg-template {
   padding: 0;
 }
+.edit-post-visual-editor body.post-type-archive-tribe_events .tribe-common.tribe-events .tribe-events-l-container {
+  padding-top: 0;
+}
 .edit-post-visual-editor .tribe-common div.nhsuk-grid-column-two-thirds {
   padding-left: 0;
 }
@@ -12733,6 +12736,12 @@
 .edit-post-visual-editor .tribe-common .nhsuk-card-group div.nhsuk-card__content {
   padding: 24px;
   color: #425563;
+}
+.edit-post-visual-editor .tribe-events-view .tribe-events-c-subscribe-dropdown {
+  text-align: right;
+}
+.edit-post-visual-editor .tribe-events-view .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__content {
+  text-align: left;
 }
 .edit-post-visual-editor .tribe-events .tribe-events-c-top-bar__datepicker {
   display: flex;

@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+// The page wrapper already adds top spacing on the main events pages.
+body.post-type-archive-tribe_events .tribe-common.tribe-events .tribe-events-l-container {
+  padding-top : 0;
+}
+
 .tribe-common {
 
   div.nhsuk-grid-column-two-thirds {
@@ -49,6 +54,15 @@
 
 	}
 
+  }
+}
+
+// Keep the subscribe button still when its list opens wider than the button.
+.tribe-events-view .tribe-events-c-subscribe-dropdown {
+  text-align : right;
+
+  .tribe-events-c-subscribe-dropdown__content {
+	text-align : left;
   }
 }
 
